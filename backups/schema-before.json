@@ -1,0 +1,780 @@
+{
+  "object": "database",
+  "id": "50cacdf6-02f6-4685-942a-55d26caa27a9",
+  "cover": null,
+  "icon": {
+    "type": "external",
+    "external": {
+      "url": "https://img.icons8.com/ios-filled/250/000000/nike.png"
+    }
+  },
+  "created_time": "2020-09-13T12:32:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "422adcc4-3ce5-40c0-8baf-972c55171c4e"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "f62c9b01-1fde-48cb-b64c-fa9e1a3c585c"
+  },
+  "last_edited_time": "2026-06-12T08:53:00.000Z",
+  "title": [
+    {
+      "type": "text",
+      "text": {
+        "content": "Companies",
+        "link": null
+      },
+      "annotations": {
+        "bold": false,
+        "italic": false,
+        "strikethrough": false,
+        "underline": false,
+        "code": false,
+        "color": "default"
+      },
+      "plain_text": "Companies",
+      "href": null
+    }
+  ],
+  "description": [],
+  "is_inline": false,
+  "properties": {
+    "Relationship": {
+      "id": "%2CM~0",
+      "name": "Relationship",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b619d1bd-d51a-401b-9167-9b0922d74066",
+            "name": "Client",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "45062e50-1ad3-4f12-98c9-68bbf0527c77",
+            "name": "Client-Prospect",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "2d2bc744-438f-44cb-a4e5-16943a3b011d",
+            "name": "Partner",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "d446c5af-8a81-43ac-816d-a614cfe71a04",
+            "name": "Partner-Dream",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "64aa968e-6123-4f26-bcc6-6a536daff0b6",
+            "name": "Partner-Prospect",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "7eeb1b2d-92a4-4861-9c3f-037b34eced7e",
+            "name": "Vendor",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "13d3226a-c561-4694-bf20-f5e0f9c620aa",
+            "name": "Vendor-Prospect",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "6a8cbe4e-6121-473b-bfb4-6f5700a51b60",
+            "name": "Admirer",
+            "color": "brown",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Website": {
+      "id": "3A%3Ai",
+      "name": "Website",
+      "description": null,
+      "type": "url",
+      "url": {}
+    },
+    "CRM Stage": {
+      "id": "5e(t",
+      "name": "CRM Stage",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "b549096f-2e71-45c9-9d16-639465ba7bfc",
+            "name": "Didn't Happen",
+            "color": "gray",
+            "description": null
+          },
+          {
+            "id": "ac7c3bcd-868c-4c97-a703-bc1588fc8027",
+            "name": "1. Attraction",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "47365c41-840f-418f-b515-50eac59789e6",
+            "name": "2. Infatuation",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "44c4d3ff-e559-41a4-877b-aff7826a41eb",
+            "name": "3. To Meet",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "00e91872-f730-40c4-836f-89c477861e78",
+            "name": "4. Shortlisted",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "16665a66-1255-4009-bf9b-45f9fc0b47ae",
+            "name": "5. Relationship Material",
+            "color": "pink",
+            "description": null
+          },
+          {
+            "id": "a59b21d1-57ba-4d87-a052-d0d1eb483bce",
+            "name": "6. Engaged",
+            "color": "green",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Last Contacted": {
+      "id": "%3CHwU",
+      "name": "Last Contacted",
+      "description": null,
+      "type": "date",
+      "date": {}
+    },
+    "Instagram": {
+      "id": "%3FcrQ",
+      "name": "Instagram",
+      "description": null,
+      "type": "url",
+      "url": {}
+    },
+    "Email": {
+      "id": "G%5DIg",
+      "name": "Email",
+      "description": null,
+      "type": "email",
+      "email": {}
+    },
+    "Notes": {
+      "id": "K%7Dak",
+      "name": "Notes",
+      "description": null,
+      "type": "rich_text",
+      "rich_text": {}
+    },
+    "For Fuse": {
+      "id": "MNEZ",
+      "name": "For Fuse",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "Day Rate": {
+      "id": "QQ~j",
+      "name": "Day Rate",
+      "description": null,
+      "type": "number",
+      "number": {
+        "format": "pound"
+      }
+    },
+    "Rating": {
+      "id": "YLZ%60",
+      "name": "Rating",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "de22b3eb-1353-4f1e-97a4-859cd2ed5c68",
+            "name": "Fantastic!",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "fa9fd6d1-3030-469f-827a-aaf705876abc",
+            "name": "Great!",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "I@RP",
+            "name": "Good!",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "582fd9e1-1ae3-49da-ad6f-002248ce03c8",
+            "name": "Need to vet",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "a678089c-d3e8-44af-9bf0-9259ec8ab3a9",
+            "name": "Only in a pinch",
+            "color": "pink",
+            "description": null
+          },
+          {
+            "id": "e952b03e-c81d-489b-9088-011a08377b65",
+            "name": "Not right",
+            "color": "red",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Size": {
+      "id": "%5DD~e",
+      "name": "Size",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "f7404e1e-05da-4337-a8e8-9aa8def316f2",
+            "name": "100+",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "f1e9a53d-d2e9-4f19-bf1d-f0964bb6d96b",
+            "name": "<100",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "72a69599-5d35-4854-83f7-b1167109d826",
+            "name": "<40",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "761c9252-a971-4e9f-bcef-268ff8c584dc",
+            "name": "<10",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "7029c9c2-9b16-4dde-9810-43698bc1bdb6",
+            "name": "1",
+            "color": "green",
+            "description": null
+          }
+        ]
+      }
+    },
+    "For WF": {
+      "id": "%5ENA_",
+      "name": "For WF",
+      "description": null,
+      "type": "checkbox",
+      "checkbox": {}
+    },
+    "CRM Status": {
+      "id": "_Fur",
+      "name": "CRM Status",
+      "description": null,
+      "type": "formula",
+      "formula": {
+        "expression": "if(dateBetween(now(), {{notion:block_property:%3CHwU:a61be5c3-a9d5-4142-88cb-1425b13f47ac:cbc62d3f-257e-46e7-a9d7-20179d62d643}}, \"months\") > 3, \"Time to reach out!\", \"\ud83d\udc4d\")"
+      }
+    },
+    "Country": {
+      "id": "bY8L",
+      "name": "Country",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "26ef989e-20d4-4fbe-9cf4-433c9a66bee6",
+            "name": "*",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "d0bc8ce2-9b42-42d0-bd38-9d63dad6065c",
+            "name": "Argentina",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "877bef4b-32be-465c-9cdf-6afaa58bb537",
+            "name": "Australia",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "c48a120d-ae5e-4630-bf44-199200ecb120",
+            "name": "Austria",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "bfcedc68-2e02-4aec-bb9e-b01284c61972",
+            "name": "Belgium",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "8b3753b0-aa0c-4fb1-bd82-98916f9f880b",
+            "name": "Brazil",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "474701a8-e1e1-4eb1-957e-17022e984ec1",
+            "name": "Bosnia",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "793e65d7-e04e-45f0-a361-2108b3e66e72",
+            "name": "Canada",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "d456b250-cada-4dda-8fda-4fa527e7d0f1",
+            "name": "China",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "acfaa479-e241-4ca2-9cd6-02a54048e65f",
+            "name": "Czech Republic",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "c30ae220-2f1f-47b8-a84d-07d7b4407f27",
+            "name": "Denmark",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "31c9867c-71a2-4bd5-8d08-c459d654b676",
+            "name": "Finland",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "1ec921ad-a6c1-4f50-9cd5-83a1a606ea97",
+            "name": "France",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "6cb14852-5cdd-449b-a24f-381fd93a2101",
+            "name": "Germany",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "9ff085b8-b3ef-409b-aa77-1d84273618a4",
+            "name": "Greece",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "a4d0c4f5-c76d-4be1-acc3-d5cbeefa0cc8",
+            "name": "Hong Kong",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "4d3a392f-8b30-438c-9d37-8ee074644d82",
+            "name": "Hungary",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "449af991-c6f5-4b94-8085-c0a0a45340f9",
+            "name": "Iceland",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "dede61dc-ad4e-4ae1-9ada-aff1bbb62786",
+            "name": "India",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "77993b47-b38e-4584-bbf7-e095a9975c3d",
+            "name": "Italy",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "8e3fab7e-d242-4f65-82ba-891f1daeeb97",
+            "name": "Japan",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "d3ee54d2-44a3-468e-9edf-1a4bd71fe11b",
+            "name": "Kenya",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "ab497646-c7ed-449a-b6ed-108934a06cdf",
+            "name": "Mali",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "13a27a42-85a1-4224-9574-6e902c314188",
+            "name": "Netherlands",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "a8b1bd8e-5b33-49d3-b2d6-53185cbb8eb0",
+            "name": "New Zealand",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "6c501f5a-d95b-468b-8902-9a39f0194356",
+            "name": "Norway",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "779d0e92-f862-48bb-bfc7-36de8a6f0cbf",
+            "name": "Pakistan",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "a4e5257f-c99b-42bc-8b03-bf51ba49a368",
+            "name": "Poland",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "35de3c27-6311-4ba4-a182-e654be26edc9",
+            "name": "Portugal",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "916d4079-1933-4385-a2ef-d9ed82bf3f1a",
+            "name": "Russia",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "c13f7172-af69-4436-aba7-d4e180893a15",
+            "name": "Senegal",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "49f729a6-74c6-4e93-b135-80d1f8252384",
+            "name": "Singapore",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "2e4d21c6-0fc7-4c53-9f1e-a986cbceef23",
+            "name": "Slovakia",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "32787bc5-5967-4015-b2f2-191c608fe72f",
+            "name": "Slovenia",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "5045197e-ddb0-41ef-ac97-19c5d91c5af0",
+            "name": "South Africa",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "9c8b8daf-cae4-4cdc-8a7c-28baba910fe7",
+            "name": "South Korea",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "6ca295d6-68fd-49bc-9c22-dfcbb661dfca",
+            "name": "Spain",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "e0bc27c8-b4d5-4ac1-8e9d-fdecdd3e0890",
+            "name": "Sweden",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "8c14fd8c-c843-43fc-86b5-81173814fda0",
+            "name": "Switzerland",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "3f72389c-b3f0-4b11-b91b-19a4f634ae75",
+            "name": "UK",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "bbbd5a9e-09fe-484f-81fd-e8f8047e454e",
+            "name": "US",
+            "color": "default",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Expertise": {
+      "id": "roc%7D",
+      "name": "Expertise",
+      "description": null,
+      "type": "multi_select",
+      "multi_select": {
+        "options": [
+          {
+            "id": "8e2fcc83-95a7-4b42-9482-ccb2eb8ae245",
+            "name": "*Client",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "03e042e3-dd50-495e-987a-6133e5454c38",
+            "name": "3D / Animation",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "fe440602-7da5-434a-af74-6c1ea909d684",
+            "name": "Advertising",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "5b77ae23-0316-4919-a31e-66f239b3f0ba",
+            "name": "Architecture",
+            "color": "pink",
+            "description": null
+          },
+          {
+            "id": "3ca6cf42-770e-4ab2-bcd0-a2cc6ef2525f",
+            "name": "Artist",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "d50c1a59-d440-4b82-9617-2e9136a499da",
+            "name": "Brand design",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "3aed8a50-3f1b-4ff3-9aee-511a95456835",
+            "name": "Consultant",
+            "color": "pink",
+            "description": null
+          },
+          {
+            "id": "3db18f62-7606-44d5-b76d-07c5937f45d2",
+            "name": "Copywriting",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "987114fa-e81f-4a79-bc49-82afac74b13e",
+            "name": "Creative Technologist",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "a49d080b-ea91-442e-b5c9-3e4ef4bdd56e",
+            "name": "Creative Direction",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "34acc0d9-1665-4349-ad55-331f3da6af05",
+            "name": "Data Visualisation",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "c8db50db-6103-49bc-b74c-934507fe98c4",
+            "name": "Developer",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "721b0d3e-fd0b-4c0e-a709-9dd5f264ad18",
+            "name": "Film / Production",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "664c1879-9f8d-4f87-b29b-39c780763f68",
+            "name": "Graphic design",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "f3bafc41-bf0b-4ef2-8517-ad8f0aeeddc3",
+            "name": "Illustration",
+            "color": "gray",
+            "description": null
+          },
+          {
+            "id": "784a9b63-b13f-45af-ac1a-9fe0a0aa0da2",
+            "name": "Manufacturing",
+            "color": "default",
+            "description": null
+          },
+          {
+            "id": "7ff8f375-c571-4544-a351-e0efa86c90d3",
+            "name": "Paper",
+            "color": "blue",
+            "description": null
+          },
+          {
+            "id": "88ea8eeb-f9ef-4514-bdff-f16f4f538b57",
+            "name": "Photography",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "74d64ba2-a421-4ef8-aa9b-41286210d888",
+            "name": "PR/Marketing",
+            "color": "brown",
+            "description": null
+          },
+          {
+            "id": "8a84b87f-8cd9-4fa6-b74f-903493408b62",
+            "name": "Product Design",
+            "color": "purple",
+            "description": null
+          },
+          {
+            "id": "62dd4323-5ace-467f-9c5a-83e505b63de6",
+            "name": "Printer",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "51f3d5d3-9218-48ea-a62e-6225d07b5ffc",
+            "name": "Saas",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "591a27b1-83f2-46da-9022-bea008e7bab5",
+            "name": "Space",
+            "color": "green",
+            "description": null
+          },
+          {
+            "id": "f317a8ce-0b72-4d79-a5e8-d0b075a9bc23",
+            "name": "Strategy / Research",
+            "color": "pink",
+            "description": null
+          },
+          {
+            "id": "736112f2-0fca-4b16-b174-c4867ff63f07",
+            "name": "Type design",
+            "color": "yellow",
+            "description": null
+          },
+          {
+            "id": "1a68c6bb-dc6b-4d1c-9a0d-b48c912523c2",
+            "name": "Video Games",
+            "color": "orange",
+            "description": null
+          },
+          {
+            "id": "142442a5-7dab-4f36-a703-ab5ffce767fb",
+            "name": "Sound Design",
+            "color": "red",
+            "description": null
+          },
+          {
+            "id": "77dbc1b9-66c6-46ac-b9e8-516dbfb98cb7",
+            "name": "Website design",
+            "color": "blue",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Seniority": {
+      "id": "~C%3F%3A",
+      "name": "Seniority",
+      "description": null,
+      "type": "select",
+      "select": {
+        "options": [
+          {
+            "id": "oV^\\",
+            "name": "Junior",
+            "color": "pink",
+            "description": null
+          }
+        ]
+      }
+    },
+    "Name": {
+      "id": "title",
+      "name": "Name",
+      "description": null,
+      "type": "title",
+      "title": {}
+    },
+    "URL": {
+      "id": "1f7820a6-7cda-4190-829e-2faf285a8be6",
+      "name": "URL",
+      "description": null,
+      "type": "url",
+      "url": {}
+    }
+  },
+  "parent": {
+    "type": "block_id",
+    "block_id": "2159b995-8bef-4df0-9704-2128a4cd197d"
+  },
+  "url": "https://app.notion.com/p/50cacdf602f64685942a55d26caa27a9",
+  "public_url": "https://jonathanquaade.notion.site/50cacdf602f64685942a55d26caa27a9",
+  "in_trash": false,
+  "archived": false,
+  "request_id": "2a7e4196-63b5-4bfa-a370-42cc3ed62134"
+}
