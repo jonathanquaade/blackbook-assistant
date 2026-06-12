@@ -79,6 +79,12 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
   → 5–10 work images (upload to Images property AND as blocks at top of page body,
   above the divider) → unresolvables as numbered Open Questions → `Needs Review`.
   If evidence suggests Jonathan knows them, ask the story question.
+  **Clipped-Name convention:** the web clipper only lets Jonathan set Name + URL, so
+  he writes his notes INTO the Name field ("Studio X — jack's friend, type side").
+  That note text is his instruction to you: highest-priority signal for tagging and
+  context. Use it, preserve it verbatim in Source, then clean Name to just the name.
+  Clipped baseline values are `set_by: clipper` in provenance (restructurable), NOT
+  `jonathan` (locked).
 - **P2 verify** (Stale or >90d, batch ≤ 10, LinkedIn ≤ 5): check live facts, write
   DIFFS as proposals in Open Questions, never overwrite. Clean → bump date only.
 - **P3 scout**: candidates to the separate Candidates DB, digest to Jonathan,
