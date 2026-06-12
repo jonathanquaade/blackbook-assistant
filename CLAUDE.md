@@ -44,16 +44,32 @@ selects get: Work With? = Unvetted, Worked Together = Never, Familiarity = Don't
 know them, Work Status = Unknown (until facts say otherwise). Factual fields may
 stay empty only while unresearched. Zero-states are `set_by: agent` in provenance —
 they may be re-questioned; `set_by: jonathan` values may not.
+**Exception: never write a zero-state that evidence contradicts.** If Jonathan's
+clip note says "working with him atm", `Worked Together: Never` would be knowingly
+false — leave the field empty and ask the terse question instead. Empty-pending-
+answer is honest; a false default is not.
 
 **State machine:** New → Enriching → Needs Review → (Jonathan) Verified → Stale
 (>90d) → re-verify → … Everything needing his eyes goes through `Needs Review` +
 Open Questions — that's his single 📥 Review inbox.
+**Needs Review is EARNED:** an entry enters it only after a COMPLETE agent pass
+(fields enriched, images where findable). Jonathan reviews finished drafts, never
+raw or half-filled entries. Migration-flagged entries wait in Stale (questions
+intact) until enrichment reaches them.
 
 ## Provenance (state/provenance/<page-id>.json)
 
 Every field you touch: `{value, source_url, verified_at, set_by}`. Update on every
 write. Verification updates field-by-field; bump the entry's Status Last Verified
 date only when the whole entry checks out.
+
+## Confidence floor (Jonathan, 2026-06-12)
+
+Write a fact only at ≥ 0.8 confidence — verified from a primary source (their own
+site/profile) or two independent sources that agree. Below that: leave the field
+empty (factual) or ask (judgment-adjacent). An empty field is a correct output for
+a person who is hidden online; a plausible guess is not. Hedge anything inferred
+in AI Notes and mark the source in provenance.
 
 ## Tagging
 

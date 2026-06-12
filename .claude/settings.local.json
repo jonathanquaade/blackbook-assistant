@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL https://tably.com -o /tmp/tably.html)",
+      "Read(//tmp/**)",
+      "mcp__Claude_in_Chrome__navigate"
+    ]
+  }
+}
