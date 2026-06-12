@@ -160,8 +160,9 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
   judgment ("work with him at fuse", "10/10", "5 autonomy"), write it with
   `keeper.py set --from-jonathan` (set_by: jonathan, his quote preserved in
   Source). Mapping: "work(ed) with him/her at X" → Worked Together: Repeatedly
-  (sustained colleague work) + Works At context; "10/10" or "rating N" → Rating;
-  "N autonomy" → Autonomy. Anything his note does NOT state stays a terse question.
+  (sustained colleague work) AND Familiarity: Know them well (working together
+  answers both; never ask what a note already implies) + Works At context;
+  "10/10" or "rating N" → Rating; "N autonomy" → Autonomy. Anything his note does NOT state stays a terse question.
   **Clipped-Name convention:** the web clipper only lets Jonathan set Name + URL, so
   he writes his notes INTO the Name field ("Studio X — jack's friend, type side").
   That note text is his instruction to you: highest-priority signal for tagging and
