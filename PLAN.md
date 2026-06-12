@@ -101,6 +101,24 @@ Exit criteria: spec §9 Phase 0 ✓s, plus `schema-before.json` committed.
 - `scripts/taxonomy.ts`: tag stats, co-occurrence, split/merge proposals (P4 report,
   includes override-rate metric).
 
+## Phase R — Review channel (Jonathan's request 2026-06-12; design before Phase 3)
+
+Problem: Open Questions only work if Jonathan goes to Notion. The agent needs a way
+to REACH him — "it's not scalable that the agent can't contact me."
+
+Build in two steps:
+1. **v1 — push digest (cheap, immediate):** every P1/P2/P3 run ends by sending
+   Jonathan a notification (macOS push via Claude Code / email / WhatsApp — pick one)
+   with a breakdown: entries processed, open questions count, deep link to the
+   📥 Review view. One-way; answers still happen in Notion. Ship alongside Phase 2.
+2. **v2 — interactive review app:** a tiny Next.js app (Jonathan's stack: Next +
+   Vercel + Tailwind + Clerk auth) showing one entry per screen — images, drafted
+   fields, each Open Question as tappable multiple-choice + a free-text input —
+   writing answers straight back to Notion via API. Mobile-first, inbox-zero flow.
+   This is probably the real seed of "The List" app and may absorb Phase 5's
+   shortlist UI. Spec it after two weeks of v1 usage data (which question types
+   recur, what volume).
+
 ## Phase 5 — Project shortlists (deferred, design agreed 2026-06-12)
 
 - New **Projects** database with a relation to Companies ("Shortlist"); reverse
@@ -110,13 +128,36 @@ Exit criteria: spec §9 Phase 0 ✓s, plus `schema-before.json` committed.
 - A future frontend ("The List") would read this same structure; build Notion-native
   first.
 
+## Schema v3 — simplification (Jonathan, 2026-06-12: "simplify, the Fuse way")
+
+- Killed: For Fuse, For WF (→ Phase 5 Projects DB; checkmarks in backup), Works Here
+  (Works At is now one-way; org's people = filter by Works At), Word of Mouth
+  (reputation → Notes), Rating Notes (rating reasoning → Notes). 30 → 25 properties.
+- **No meaningless Empty:** judgment selects always hold a value. Zero-states:
+  `Work With?: Unvetted`, `Worked Together: Never`, `Familiarity: Don't know them`,
+  `Work Status: Unknown`. Backfilled on all rows; pipelines must set zero-states on
+  new entries too. Factual fields (Type, Size, Country, links) may be empty only
+  while unresearched. (Supersedes the earlier "blanks stay blank" decision for
+  Worked Together.)
+- **Story capture (the "how do I know them" memory):** no new field — short verdicts
+  in Notes, long stories in the page body. The agent nudges: whenever Worked
+  Together becomes Once/Repeatedly, or Familiarity ≥ Met or spoken, or Work With?
+  leaves Unvetted, and Notes is empty → ONE Open Question: "How do you know them /
+  what was working together like? One line in Notes." Built into P1 (intake asks
+  "how do you know them?" when evidence suggests prior contact) and the correction
+  scan (fires when Jonathan flips a relationship field). Never nags twice.
+
 ## Conventions (agreed 2026-06-12)
 
 - **Fields filter, pages read.** Anything worth sorting/filtering lives in a property;
   long-form context lives in the page body. `Notes` property = one-line headline,
   Jonathan-owned.
-- **Page body layout:** agent-owned image section at top, then a divider; everything
-  below the divider is Jonathan's — agent reads it for signals, never writes there.
+- **Page body layout:** agent-owned image section at top, then a divider; below the
+  divider is Jonathan's space. The agent MAY append a note below the divider when
+  Jonathan approves that specific addition first (e.g. via an Open Question or the
+  review channel: "want me to add this to the page?"); agent-added body notes are
+  signed `— Keeper, YYYY-MM-DD` so authorship stays obvious. Unprompted writes
+  remain forbidden.
 - **One review inbox:** saved view "📥 Review" = `Entry Status: Needs Review`. Every
   pipeline that needs Jonathan's eyes routes through it via Entry Status + Open
   Questions. Views are created by hand (API can't), checklist provided.

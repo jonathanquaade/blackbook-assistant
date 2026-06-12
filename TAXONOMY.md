@@ -26,7 +26,8 @@ the corrections loop (state/corrections.jsonl → distillation → Jonathan appr
 | Creative direction | leads creative output across a team/project; sets the vision |
 | Creative technology | code-driven interactive work: installations, generative, AR/VR, games |
 | Digital product design | designs software products: apps, tools, interfaces beyond marketing sites |
-| Film & video production | directs, shoots or produces moving image |
+| Fabrication | builds physical things: sets, props, workshops, manufacturing |
+| Film & video production | directs, shoots or produces moving image — directors, DOPs, producers |
 | Frontend development (apps) | builds native/mobile apps (iOS, Android, desktop) |
 | Frontend development (web) | builds websites: the code that ships in a browser |
 | Graphic design | visual design output: posters, editorial, packaging, data visualisation |
@@ -34,10 +35,9 @@ the corrections loop (state/corrections.jsonl → distillation → Jonathan appr
 | Illustration | draws/illustrates |
 | Industrial design | designs physical products: objects, furniture, hardware |
 | Insights & research | user/market research, audience insights, testing |
-| Paper & materials | supplies paper/materials/manufacturing (vendor capability) |
+| Paper & materials | supplies paper and materials — merchants, not makers (vendor capability) |
 | Photography | shoots photos professionally |
 | Print production | prints things (vendor capability) |
-| Producing | produces creative projects: budgets, logistics, crews, making it happen |
 | Product design | ⚠ TRANSITIONAL — being re-sorted into Industrial design / Digital product design during verification; do not apply to new entries |
 | Social media content | creates content for social platforms (short video, formats, creator work) |
 | Sound design | audio: sound design, composition, music for media |
@@ -69,9 +69,6 @@ the corrections loop (state/corrections.jsonl → distillation → Jonathan appr
   Insights & research. Strategy consultancies often get both.
 - **Brand strategy vs Creative direction**: thinking/positioning → Brand strategy.
   Leading the making → Creative direction.
-- **Producing vs Film & video production**: Producing = the organizing capability
-  (any medium: shoots, events, campaigns). Film & video production = the craft of
-  making moving image. A line producer for brand campaigns → Producing only.
 - **Social media content vs Film & video production**: platform-native creator
   output (formats, hooks, channel growth) → Social media content. Crafted films
   that also get posted → Film & video production.
@@ -91,6 +88,12 @@ entry passes verification:
 
 ## Changelog
 
+- **v2.1 (2026-06-12, Jonathan's corrections):** (1) Manufacturing was wrongly merged
+  into Paper & materials — suppliers and makers differ. Added **Fabrication** (set
+  builders, workshops); Paper & materials = supply only. (2) Producing folded into
+  Film & video production (Jonathan: producers belong there; separate tag was his
+  mistake — added v2, removed same day).
+
 - **v2 (2026-06-12, Jonathan's corrections):** split Can build websites →
   Frontend (web)/Frontend (apps)/Backend; split Strategy & research → Brand
   strategy / Insights & research; split Product design → Industrial / Digital
@@ -104,5 +107,3 @@ entry passes verification:
 - Tag count (26) exceeds the 12–20 target — flag low-usage tags at next P4.
 - Graphic design is the biggest tag (157). If Jonathan keeps overriding it into
   subsets (editorial, packaging…), propose a split at the next P4.
-- Paper & materials: Jonathan questioned what it is — candidates for rename/merge
-  at next P4 if it stays fuzzy.
