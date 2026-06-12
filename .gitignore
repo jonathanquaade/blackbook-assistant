@@ -1,4 +1,7 @@
 .env
 node_modules/
 .DS_Store
-assets/
+assets/**
+!assets/*/
+!assets/*/manifest.json
+!assets/*/clipped.md

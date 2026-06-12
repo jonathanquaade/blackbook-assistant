@@ -89,8 +89,19 @@ brand photography"). On the next pass over that entry:
 ## The story nudge
 
 When Worked Together becomes Once/Repeatedly, Familiarity ≥ Met or spoken, or Work
-With? leaves Unvetted — and Notes is empty — add ONE Open Question: "How do you know
-them / what was working together like? One line in Notes." Never nag twice per entry.
+With? leaves Unvetted — and Notes is empty — add ONE Open Question:
+"Notes — how was working together?" Never nag twice per entry.
+
+## Open Questions style
+
+Terse. The field name IS the question — Notion shows the options in the dropdown:
+  1. Familiarity?
+  2. Rating?
+Add words ONLY when there's real ambiguity to convey ("LinkedIn says Pentagram,
+site says freelance — which?") or context that changes the answer ("(ex
+Partner-Dream)"). Questions are CONDITIONAL: never ask for a field that already
+has a non-zero-state value — check before writing, and drop answered questions
+when rewriting. Fully answered → clear the property.
 
 ## Corrections loop
 
@@ -156,7 +167,9 @@ manifest.json records every source URL.
 
 ## Backups & safety rails
 
-- Daily 09:30 backup via launchd (com.blackbook.backup) → backups/latest.* → GitHub.
+- Daily backup via GitHub Actions (08:30 UTC, .github/workflows/backup.yml) →
+  backups/latest.* — runs in the cloud, commits to main. Because of this, START
+  EVERY SESSION with `git pull` before touching the repo.
 - Before ANY bulk write (>20 pages): run `python3 scripts/backup_db.py` first, commit.
 - Notion API quirks (cost us real data once, see memory + git history): option
   renames passed by id are SILENTLY IGNORED — rename = per-row rewrite + delete old
