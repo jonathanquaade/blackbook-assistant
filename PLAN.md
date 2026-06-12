@@ -24,11 +24,11 @@ beginner-friendly constraint:
 |---|------|-----------|--------|
 | 1 | Create `.env` in this repo: `NOTION_API_KEY=...` (it's gitignored; never paste the key in chat) | Phase 0 | ✅ 2026-06-12 (integration: `blacbook-assistant`) |
 | 2 | In Notion: open the Companies DB → ⋯ → Connections → add the integration the key belongs to | Phase 0 | ✅ 2026-06-12 |
-| 3 | Claude in Chrome extension installed + connected | Phase 1 | ☐ (not connected as of 2026-06-12) |
-| 4 | Turbo Downloader for Instagram extension installed | Phase 1 | ☐ |
+| 3 | Claude in Chrome extension installed + connected | Phase 1 | ✅ 2026-06-12 (via Dia) |
+| 4 | Turbo Downloader for Instagram extension installed | Phase 1 | ✅ per Jonathan (in Dia) |
 | 5 | Decide: commit `assets/` to git, or sync via iCloud/Dropbox and gitignore it | Phase 1 | ☐ |
-| 6 | Create saved views from the checklist (📥 Review etc.) | Phase 1 | ☐ |
-| 7 | Work through the 53 entries in 📥 Review (migration questions) | Phase 1 | ☐ |
+| 6 | Create saved views from the checklist (📥 Review etc.) | Phase 1 | ✅ 2026-06-12 |
+| 7 | Review queue — DEFERRED by Jonathan until enrichment automation reduces it to pure judgment calls; agent enriches factual fields on Needs Review entries first | — | ⏸ |
 
 **Phase 0: ✅ COMPLETE 2026-06-12.** Repo: github.com/jonathanquaade/blackbook-assistant
 (private). Implementation notes: Notion API silently ignores select-option renames
