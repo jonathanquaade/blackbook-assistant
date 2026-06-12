@@ -22,11 +22,19 @@ beginner-friendly constraint:
 
 | # | What | Needed by | Status |
 |---|------|-----------|--------|
-| 1 | Create `.env` in this repo: `NOTION_API_KEY=...` (it's gitignored; never paste the key in chat) | Phase 0 | ☐ |
-| 2 | In Notion: open the Companies DB → ⋯ → Connections → add the integration the key belongs to | Phase 0 | ☐ |
+| 1 | Create `.env` in this repo: `NOTION_API_KEY=...` (it's gitignored; never paste the key in chat) | Phase 0 | ✅ 2026-06-12 (integration: `blacbook-assistant`) |
+| 2 | In Notion: open the Companies DB → ⋯ → Connections → add the integration the key belongs to | Phase 0 | ✅ 2026-06-12 |
 | 3 | Claude in Chrome extension installed + connected | Phase 1 | ☐ (not connected as of 2026-06-12) |
 | 4 | Turbo Downloader for Instagram extension installed | Phase 1 | ☐ |
 | 5 | Decide: commit `assets/` to git, or sync via iCloud/Dropbox and gitignore it | Phase 1 | ☐ |
+| 6 | Create saved views from the checklist (📥 Review etc.) | Phase 1 | ☐ |
+| 7 | Work through the 53 entries in 📥 Review (migration questions) | Phase 1 | ☐ |
+
+**Phase 0: ✅ COMPLETE 2026-06-12.** Repo: github.com/jonathanquaade/blackbook-assistant
+(private). Implementation notes: Notion API silently ignores select-option renames
+(re-apply as per-row value rewrites + option deletion); option names match
+case-insensitively (case-only renames collide); deleted property names stay reserved
+(reverse relation is "Works Here", not "People").
 
 ## Phase 0 — Schema & migration (one session, API only, no browser)
 
