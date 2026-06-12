@@ -183,6 +183,10 @@ def stage_cleanup():
     print('cleanup stage done')
 
 AGENT_FIELDS = {'Entry Status', 'Open Questions', 'AI Notes'}
+# bulk-written defaults are agent-set: verification may re-question them;
+# only values Jonathan actively chose are shielded as set_by: jonathan
+ZERO_STATES = {'Work With?': 'Unvetted', 'Worked Together': 'Never',
+               'Familiarity': "Don't know them", 'Work Status': 'Unknown'}
 
 def plain(prop):
     t = prop['type']; v = prop.get(t)
@@ -204,10 +208,11 @@ def stage_provenance():
         for name, prop in row['properties'].items():
             val = plain(prop)
             if val in (None, [], '', False): continue
+            agent_set = name in AGENT_FIELDS or ZERO_STATES.get(name) == val
             rec[name] = {'value': val,
                          'source_url': None,
                          'verified_at': None,
-                         'set_by': 'agent' if name in AGENT_FIELDS else 'jonathan'}
+                         'set_by': 'agent' if agent_set else 'jonathan'}
         with open(f'state/provenance/{row["id"]}.json', 'w') as f:
             json.dump({'page_id': row['id'], 'migrated_at': '2026-06-12', 'fields': rec}, f, indent=2)
     print(f'provenance stage done: {len(rows)} files')

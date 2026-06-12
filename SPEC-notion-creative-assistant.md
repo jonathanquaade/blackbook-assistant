@@ -1,3 +1,10 @@
+> **STATUS (2026-06-12): partially superseded.** This is the founding spec; the schema
+> has since evolved (schema v3: Word of Mouth, Rating Notes, For Fuse/For WF and the
+> two-way Works At relation were removed; judgment selects use explicit zero-states
+> instead of Empty; taxonomy is at 26 tags). **PLAN.md and TAXONOMY.md are the source
+> of truth on schema and conventions** — do not recreate fields from this document.
+> Principles (§0), guardrails (§4.0) and pipeline designs (§3) remain authoritative.
+
 # SPEC — Creative Database Assistant ("The Keeper")
 
 A Claude Code project that maintains Jonathan's Notion database of creatives, studios,
