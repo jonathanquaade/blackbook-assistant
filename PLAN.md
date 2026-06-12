@@ -147,6 +147,23 @@ Build in two steps:
   "how do you know them?" when evidence suggests prior contact) and the correction
   scan (fires when Jonathan flips a relationship field). Never nags twice.
 
+## Browser strategy (revised 2026-06-12, after the extension permission gap)
+
+The Claude extension's approved-sites store is per-device and only its own side
+panel can grant approvals; connected Claude Code sessions cannot (verified on Dia
+and fresh Chrome; see memory). Agent browsing through the extension is therefore
+PARKED until an extension update ships an approval flow. Current division:
+1. **No browser needed (works today, ~85% of intake):** WebFetch/WebSearch for
+   facts, scrape.py for images (Squarespace, WordPress, Figma oEmbed, generic).
+2. **Playwright headless (Jonathan approved in principle, install pending):**
+   JS-rendered sites (Framer), passcoded case studies (state/passcodes.json),
+   public Figma file screenshots. Fully autonomous, carries no logins.
+3. **Logged-in platforms (Instagram, LinkedIn): parked.** LinkedIn mostly avoided
+   via Google snippets (no login needed). Instagram options, Jonathan's call:
+   (a) wait for extension fix (safest), (b) Playwright persistent profile he logs
+   into once (elevated challenge risk, spec accepts pause-on-challenge), (c) a
+   separate scouting account. Re-test the extension weekly.
+
 ## Conventions (agreed 2026-06-12)
 
 - **Fields filter, pages read.** Anything worth sorting/filtering lives in a property;
