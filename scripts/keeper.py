@@ -156,9 +156,16 @@ def archive_raw(page_id, label, text):
     with open(os.path.join(d, 'clipped.md'), 'a') as f:
         f.write(f'# {label} ({datetime.now().isoformat(timespec="seconds")})\n\n{text}\n\n')
 
-def cmd_set(page_id, payload, source_url=None):
+def cmd_set(page_id, payload, source_url=None, from_jonathan=False):
     fields = json.loads(payload)
-    guard(page_id, fields)
+    if from_jonathan:
+        # values Jonathan stated himself (clip note / chat): set_by jonathan,
+        # judgment fields allowed. Notes and Verified stay forbidden.
+        for f, v in fields.items():
+            if f == 'Notes': sys.exit("CONTRACT: Notes is Jonathan's page-side field; his note text belongs in Source.")
+            if f == 'Entry Status': sys.exit('CONTRACT: status flows stay agent-managed; he flips Verified in Notion.')
+    else:
+        guard(page_id, fields)
     if 'Name' in fields:
         # mechanical guarantee: the raw title (Jonathan's clip notes live there)
         # is archived verbatim BEFORE it can be overwritten
@@ -166,8 +173,9 @@ def cmd_set(page_id, payload, source_url=None):
         if live and live.strip() != fields['Name'].strip():
             archive_raw(page_id, 'Raw Name before overwrite', live)
     api(f'pages/{page_id}', {'properties': {f: encode(f, v) for f, v in fields.items()}})
-    prov_update(page_id, fields, set_by='agent', source_url=source_url)
-    print(f'set {list(fields)} on {page_id}')
+    prov_update(page_id, fields, set_by='jonathan' if from_jonathan else 'agent',
+                source_url=source_url)
+    print(f'set {list(fields)} on {page_id} ({"jonathan-stated" if from_jonathan else "agent"})')
 
 def cmd_ask(page_id, text):
     api(f'pages/{page_id}', {'properties': {
@@ -265,7 +273,7 @@ if __name__ == '__main__':
     elif cmd == 'get': cmd_get(a[1])
     elif cmd == 'set':
         src = a[a.index('--source') + 1] if '--source' in a else None
-        cmd_set(a[1], a[2], src)
+        cmd_set(a[1], a[2], src, from_jonathan='--from-jonathan' in a)
     elif cmd == 'ask': cmd_ask(a[1], a[2])
     elif cmd == 'status': cmd_status(a[1], a[2])
     elif cmd == 'upload': cmd_upload(a[1], a[2])

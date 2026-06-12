@@ -5,3 +5,7 @@ Product designer with a background in communication design. Building products an
 Most of my work lives in fintech, with frequent detours into adjacent and emerging spaces. I focus on 0-to-1: the part where nothing exists yet and decisions carry the most weight. I reach for research when the outcome is genuinely unclear. Otherwise I move fast — drawing on heuristics, behavioral patterns, prior results, and market precedent. Speed of delivery is part of the craft. Good UX means three things in balance: a product that solves the right problem, works without friction, and is polished enough to earn trust. That requires shaping what gets built with business, sweating the details in the UI, and thinking about the full arc — from the first ad impression to the moment a customer recommends you to someone else.
 
 e.branevsky@gmail.com
+# Raw Name before overwrite (2026-06-12T17:06:34)
+
+Eugene Serpokrylov work with him at fuse. his passowrd to his website is “sesame”
+

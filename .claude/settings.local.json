@@ -3,7 +3,25 @@
     "allow": [
       "Bash(curl -sL https://tably.com -o /tmp/tably.html)",
       "Read(//tmp/**)",
-      "mcp__Claude_in_Chrome__navigate"
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(curl -s \"https://www.figma.com/api/oembed?url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FjztyENFelT4eonvB4ZizGX%2FGeorgy-Gushchin-Portfolio%3Fnode-id%3D55-36007\")",
+      "Bash(curl -s \"https://www.figma.com/api/oembed?url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FzT41pXMstoygHHsHF5Vyyt%2FVova-%257C-Fuse%3Fnode-id%3D0-1\")",
+      "Bash(python3 scripts/keeper.py set 37df84ba-ae13-813a-88e1-dd255011c652 '{\"AI Notes\":\"Product designer at Fuse Energy, works with Jonathan \\(his note\\). Portfolio is a public Figma file \\(embedded in this page, thumbnail above\\). Public footprint is thin: a Behance \\(georgy_gushchin\\) and a LinkedIn \\(Limassol, Cyprus\\) exist under this name but could not be confirmed as him at the 0.8 threshold, so neither was used. Country left empty for the same reason. No Autonomy estimate: no public evidence; Jonathan knows him first-hand and can set it.\"}')",
+      "Bash(python3 scripts/keeper.py ask 37df84ba-ae13-813a-88e1-dd255011c652 '1. Familiarity? *)",
+      "Bash(python3 scripts/keeper.py log \"P1 rerun: Jonathan-stated facts written via --from-jonathan on 4 Fuse colleagues; Figma thumbnails+embeds added to Georgy & Vova \\(oEmbed, no browser\\). Dia automation fully blocked after restart \\(all domains incl. google.com\\); browser work deferred to Chrome setup.\")",
+      "WebSearch",
+      "Bash(curl -sL https://www.nadialeecohen.com/ -o /tmp/nadia.html)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" https://www.nadialeecohen.com/balenciaga-2022 -o /tmp/bal.html)",
+      "Bash(python3 scripts/keeper.py set 368f84ba-ae13-81fb-87e3-dc03ea6756f8 '{\"Type\":\"Person\",\"Capabilities\":[\"Photography\",\"Film & video production\",\"Art practice\"],\"Country\":[\"US\"],\"Size\":\"1\",\"Work Status\":\"Freelance\",\"Instagram\":\"https://www.instagram.com/nadialeecohen/\",\"Autonomy\":\"5\",\"Work With?\":\"Unvetted\",\"Worked Together\":\"Never\",\"Familiarity\":\"Don'\\\\''t know them\",\"Source\":\"In DB pre-migration; enriched from nadialeecohen.com, Wikipedia, Artnet \\(2026-06-12\\)\",\"Entry Status\":\"Enriching\"}' --source https://www.nadialeecohen.com/about)",
+      "Bash(python3 scripts/keeper.py set 368f84ba-ae13-81fb-87e3-dc03ea6756f8 '{\"AI Notes\":\"British photographer, filmmaker and artist \\(b. 1992, Essex\\), based in Los Angeles. Character-driven, saturated Americana; shape-shifting self-portraiture. Books: Women \\(2020\\), Hello My Name Is \\(IDEA, 2021\\); solo shows at Jeffrey Deitch LA \\(2022\\); represented by Fahey/Klein and Deitch. Campaigns: Balenciaga, Schiaparelli, Gucci, Miu Miu, D&G x SKIMS, Gentle Monster. Music film for A$AP Rocky, Tyler the Creator, Kali Uchis. Has shot Rihanna, Kim Kardashian, Pamela Anderson, Sophia Loren. Autonomy 5 \\(estimate, unverified\\): self-initiated books and exhibitions define her practice; brands hire her vision. Jonathan thought she had no portfolio; she does \\(nadialeecohen.com, found via search, proposed as Website\\). Instagram capture pending Chrome setup; site images cover photography, video stills not yet captured.\"}')",
+      "Bash(python3 scripts/keeper.py body-reset 368f84ba-ae13-81fb-87e3-dc03ea6756f8)",
+      "Bash(python3 scripts/keeper.py upload 368f84ba-ae13-81fb-87e3-dc03ea6756f8 assets/368f84ba-ae13-81fb-87e3-dc03ea6756f8)",
+      "Bash(python3 scripts/keeper.py ask 368f84ba-ae13-81fb-87e3-dc03ea6756f8 '1. Website: change to nadialeecohen.com? \\(currently holds her Instagram link\\) *)",
+      "Bash(python3 scripts/keeper.py log \"P1: Nadia Lee Cohen enriched from portfolio site + press, 5 captioned campaign images uploaded, Autonomy 5 estimated. IG capture deferred to Chrome. Website correction proposed, not overwritten \\(set_by jonathan\\).\")",
+      "Bash(git add *)"
     ]
   }
 }

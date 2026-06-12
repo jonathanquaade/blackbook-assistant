@@ -156,6 +156,12 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
   8. Status → Needs Review (never Verified). Log the run.
+  **Clip-note-stated facts:** when Jonathan's note states a relationship fact or
+  judgment ("work with him at fuse", "10/10", "5 autonomy"), write it with
+  `keeper.py set --from-jonathan` (set_by: jonathan, his quote preserved in
+  Source). Mapping: "work(ed) with him/her at X" → Worked Together: Repeatedly
+  (sustained colleague work) + Works At context; "10/10" or "rating N" → Rating;
+  "N autonomy" → Autonomy. Anything his note does NOT state stays a terse question.
   **Clipped-Name convention:** the web clipper only lets Jonathan set Name + URL, so
   he writes his notes INTO the Name field ("Studio X — jack's friend, type side").
   That note text is his instruction to you: highest-priority signal for tagging and

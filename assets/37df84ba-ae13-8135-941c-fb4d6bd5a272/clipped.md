@@ -53,3 +53,7 @@ LinkedIn ->
 Email ->
 
 unfinished
+# Raw Name before overwrite (2026-06-12T17:06:41)
+
+Vova Stegantsov https://www.figma.com/design/zT41pXMstoygHHsHF5Vyyt/Vova-%7C-Fuse?node-id=0-1&t=mlpdwQFPF4emvngZ-1 10/10 we worked toghter at fuse 
+
