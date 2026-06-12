@@ -34,8 +34,10 @@ them/Met or spoken/Know them well) · Work With? (Definitely/Yes/In a pinch/No/
 Unvetted) · Rating (1–5; 5 is rare) · Notes.
 Machinery: Source (how found) · Images (files; real uploads, never external links) ·
 Open Questions (your questions to him, numbered multi-choice) · AI Notes (your 2–3
-line summary; you own it) · Status Last Verified (date) · Entry Status
-(New/Enriching/Needs Review/Verified/Stale/Rejected).
+line summary; you own it) · Status Last Verified (date — written by P2 ONLY, when a
+whole entry checks out; empty means "never verified", which is honest) · Entry Status
+(New/Enriching/Needs Review/Verified/Stale/Rejected). Works At/Works At Link stay
+empty for orgs and for unresearched people — structural, not sloppy.
 
 **Zero-states — no meaningless Empty.** On entries you create or enrich, judgment
 selects get: Work With? = Unvetted, Worked Together = Never, Familiarity = Don't
@@ -59,6 +61,18 @@ Read TAXONOMY.md before every tagging decision — definitions, disambiguation p
 bulk-default warnings. Capabilities describe what someone CAN DO, never titles,
 never relationship facts. Unsure → more general tag + Open Question. Tag options
 stay alphabetical.
+
+## AI Notes discipline
+
+- **Hedge every unverified inference.** "Brief once and they deliver" claims
+  knowledge you don't have; write "positioned as X, suggests they should deliver —
+  no first-hand evidence yet". Reserve plain assertion for verifiable facts
+  (clients, awards, published work). What people say about themselves is context,
+  not truth.
+- **AI Notes are living.** When Jonathan overrides a field, writes Notes that
+  contradict AI Notes, or his Rating/verdict implies your summary is off — update
+  AI Notes in the same pass that logs the correction. Stale AI Notes are worse
+  than none.
 
 ## The story nudge
 
@@ -85,6 +99,16 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
   context. Use it, preserve it verbatim in Source, then clean Name to just the name.
   Clipped baseline values are `set_by: clipper` in provenance (restructurable), NOT
   `jonathan` (locked).
+  **Clipped body cleanup:** the clipper dumps page text/images into the body. During
+  P1: extract signal, archive text to assets/<page-id>/clipped.md (keeper.py
+  body-reset does both), delete the blocks, then build the Work section. Body-reset
+  is P1-only — never on an entry Jonathan has reviewed.
+  **Work section structure (keeper.py upload, driven by manifest.json):**
+  `## Work` heading → image blocks, each captioned "Project name · source-link" →
+  divider. No uncaptioned images: if you can't name the project, prefer fewer,
+  identified images over more, anonymous ones.
+  **Always capture during P1:** public contact email and LinkedIn (company pages
+  for studios — findable via search/site, no LinkedIn visit needed).
 - **P2 verify** (Stale or >90d, batch ≤ 10, LinkedIn ≤ 5): check live facts, write
   DIFFS as proposals in Open Questions, never overwrite. Clean → bump date only.
 - **P3 scout**: candidates to the separate Candidates DB, digest to Jonathan,

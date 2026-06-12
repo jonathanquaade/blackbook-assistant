@@ -188,22 +188,57 @@ def upload_file(path):
     json.load(urllib.request.urlopen(req))
     return fu['id'], name
 
-def cmd_upload(page_id, paths):
-    page = api(f'pages/{page_id}')
-    existing = page['properties']['Images']['files']
-    uploads = [upload_file(p) for p in paths]
-    files = existing + [{'type': 'file_upload', 'file_upload': {'id': fid}, 'name': name}
-                        for fid, name in uploads]
-    api(f'pages/{page_id}', {'properties': {'Images': {'files': files}}})
-    blocks = [{'type': 'image', 'image': {'type': 'file_upload', 'file_upload': {'id': fid}}}
-              for fid, name in uploads]
-    # agent-owned section sits at the top; divider separates it from Jonathan's space
-    children = api(f'blocks/{page_id}/children?page_size=20')['results']
-    if not any(b['type'] == 'divider' for b in children):
-        blocks.append({'type': 'divider', 'divider': {}})
+def block_text(b):
+    v = b.get(b['type'], {})
+    return ''.join(t.get('plain_text', '') for t in v.get('rich_text', []))
+
+def cmd_body_reset(page_id):
+    """Archive page-body text to assets/<id>/clipped.md, then delete all blocks.
+    P1-only: for raw clipped entries before the agent builds the Work section."""
+    blocks, cursor = [], None
+    while True:
+        q = f'blocks/{page_id}/children?page_size=100' + (f'&start_cursor={cursor}' if cursor else '')
+        r = api(q)
+        blocks += r['results']
+        if not r.get('has_more'): break
+        cursor = r['next_cursor']
+    os.makedirs(os.path.join(REPO, 'assets', page_id), exist_ok=True)
+    texts = [t for t in (block_text(b) for b in blocks) if t.strip()]
+    if texts:
+        with open(os.path.join(REPO, 'assets', page_id, 'clipped.md'), 'a') as f:
+            f.write(f'# Archived page body ({date.today()})\n\n' + '\n\n'.join(texts) + '\n')
+    for b in blocks:
+        api(f'blocks/{b["id"]}', method='DELETE')
+        time.sleep(0.2)
+    print(f'body reset: {len(blocks)} blocks removed, {len(texts)} text blocks archived')
+
+def cmd_upload(page_id, asset_dir):
+    """Build the agent-owned Work section from asset_dir/manifest.json:
+    heading, captioned images (caption = title + source link), divider.
+    Replaces the Images property. Manifest entries: {file, source_url, caption?, link?}."""
+    manifest = json.load(open(os.path.join(asset_dir, 'manifest.json')))
+    uploads = []
+    for entry in manifest:
+        fid, name = upload_file(os.path.join(asset_dir, entry['file']))
+        uploads.append((fid, name, entry))
+    api(f'pages/{page_id}', {'properties': {'Images': {'files': [
+        {'type': 'file_upload', 'file_upload': {'id': fid}, 'name': name}
+        for fid, name, _ in uploads]}}})
+    blocks = [{'type': 'heading_2', 'heading_2': {'rich_text': [{'text': {'content': 'Work'}}]}}]
+    for fid, name, entry in uploads:
+        caption = []
+        if entry.get('caption'):
+            caption.append({'text': {'content': entry['caption'] + ' · '}})
+        link = entry.get('link') or entry.get('source_url')
+        if link:
+            label = link.split('//')[-1].split('/')[0]
+            caption.append({'text': {'content': label, 'link': {'url': link}}})
+        blocks.append({'type': 'image', 'image': {'type': 'file_upload',
+                       'file_upload': {'id': fid}, 'caption': caption}})
+    blocks.append({'type': 'divider', 'divider': {}})
     api(f'blocks/{page_id}/children', {'children': blocks})
-    prov_update(page_id, {'Images': [n for _, n in uploads]})
-    print(f'uploaded {len(uploads)} files to {page_id}')
+    prov_update(page_id, {'Images': [e['file'] for e in manifest]})
+    print(f'uploaded {len(uploads)} captioned images to {page_id}')
 
 def cmd_log(text):
     with open(os.path.join(REPO, 'state', 'browser-log.md'), 'a') as f:
@@ -221,6 +256,7 @@ if __name__ == '__main__':
         cmd_set(a[1], a[2], src)
     elif cmd == 'ask': cmd_ask(a[1], a[2])
     elif cmd == 'status': cmd_status(a[1], a[2])
-    elif cmd == 'upload': cmd_upload(a[1], a[2:])
+    elif cmd == 'upload': cmd_upload(a[1], a[2])
+    elif cmd == 'body-reset': cmd_body_reset(a[1])
     elif cmd == 'log': cmd_log(' '.join(a[1:]))
     else: sys.exit(__doc__)
