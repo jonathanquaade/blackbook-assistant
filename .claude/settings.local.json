@@ -21,7 +21,14 @@
       "Bash(python3 scripts/keeper.py upload 368f84ba-ae13-81fb-87e3-dc03ea6756f8 assets/368f84ba-ae13-81fb-87e3-dc03ea6756f8)",
       "Bash(python3 scripts/keeper.py ask 368f84ba-ae13-81fb-87e3-dc03ea6756f8 '1. Website: change to nadialeecohen.com? \\(currently holds her Instagram link\\) *)",
       "Bash(python3 scripts/keeper.py log \"P1: Nadia Lee Cohen enriched from portfolio site + press, 5 captioned campaign images uploaded, Autonomy 5 estimated. IG capture deferred to Chrome. Website correction proposed, not overwritten \\(set_by jonathan\\).\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(python3 scripts/scrape.py http://florianrunge.com/ --probe)",
+      "Bash(python3 scripts/scrape.py https://www.nadialeecohen.com/balenciaga-2022 --probe)",
+      "Bash(python3 scripts/scrape.py \"https://www.figma.com/design/jztyENFelT4eonvB4izGX/x\" --probe)",
+      "Bash(python3 scripts/scrape.py https://branevsky.com/warden --probe)",
+      "Bash(python3 -)",
+      "Bash(git commit -q -m 'Tools-over-inline-code: scrape.py crystallizes platform lessons, tool inventory + improvement loop in CLAUDE.md *)",
+      "Bash(git push *)"
     ]
   }
 }

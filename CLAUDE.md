@@ -132,6 +132,28 @@ and Autonomy alike): append `{date, entry, field, proposed, final, inferred_reas
 to state/corrections.jsonl. Reason not inferable → one short Open Question. At ≥ 15
 new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapproved.
 
+## Tools over inline code (Jonathan, 2026-06-12)
+
+The toolbox is scripts/. Reach for a tool first; write inline code only to
+explore. The loop that makes the system improve instead of re-solving:
+1. A problem comes up twice, or its solution carries a lesson (a platform quirk,
+   a trap, a workaround) → crystallize it into a script command, with the lesson
+   written in the docstring.
+2. A tool fails on a new case → fix THE TOOL (not a one-off patch in the
+   session), retry through the tool, commit the fix. Git history is the tool's
+   memory; the docstring is its lesson sheet.
+3. New tool or changed behavior → one line in the inventory below + commit.
+
+Inventory:
+- keeper.py — all Notion I/O: work lists, get/set (contract guards,
+  --from-jonathan), ask, status, upload (captioned Work sections), body-reset,
+  browser log. EVERY Notion write goes through it; never raw API in sessions.
+- scrape.py — portfolio images with per-platform strategies (Squarespace,
+  Framer, Figma oEmbed, WordPress, generic), content-hash dedupe, banner traps
+  documented. --probe to inspect before downloading.
+- backup_db.py — full DB export; runs daily in CI; run manually before bulk ops.
+- migrate_phase0*.py — historical (Phase 0), kept for the record.
+
 ## Pipelines (details in SPEC §3; these are the invariants)
 
 - **P1 intake** (`Entry Status = New`, batch ≤ 10) — run these steps IN ORDER, the
@@ -149,10 +171,12 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
      page for orgs), public Email.
   5. Draft fields via `keeper.py set` (zero-states included; Autonomy estimate with
      hedged reasoning in AI Notes; Jonathan's note verbatim into Source).
-  6. Images: pick 3–10 WORK images you can identify (project name known). Download
-     to assets/<page-id>/, write manifest.json with {file, source_url, caption,
-     link}. `keeper.py body-reset` (archives clipper content) then
-     `keeper.py upload <page-id> assets/<page-id>`.
+  6. Images: `scrape.py <url> --probe` first, then `scrape.py <url> --out
+     assets/<page-id> --caption "Project, year"` per project page (3–10 WORK
+     images, project name known; it dedupes and skips banners/logos). Fill any
+     `needs_caption` entries in manifest.json by hand. Then `keeper.py
+     body-reset` (archives clipper content) and `keeper.py upload <page-id>
+     assets/<page-id>`. Framer warning → use the browser's rendered DOM.
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
   8. Status → Needs Review (never Verified). Log the run.
