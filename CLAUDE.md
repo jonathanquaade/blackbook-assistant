@@ -131,7 +131,12 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
 - **P1 intake** (`Entry Status = New`, batch ≤ 10) — run these steps IN ORDER, the
   same way every time:
   1. `keeper.py work new` → the batch. Per entry: status → Enriching.
-  2. Read the clipped Name: extract Jonathan's note (highest-priority signal).
+  2. **READ THE FULL RAW ENTRY FIRST** — `keeper.py get <id>` for the COMPLETE Name
+     text (never a truncated listing) and skim the body. Archive the raw Name to
+     assets/<id>/clipped.md BEFORE anything else (keeper.py set does this
+     mechanically on Name changes, but read it yourself first — it is Jonathan's
+     instruction channel). Parse it for: relationship facts ("worked with at X" →
+     leave judgment fields empty + ask), site passcodes, links, tagging direction.
   3. Research: their site (WebFetch or browser per §4) + web search. Identify
      person/org, capabilities (TAXONOMY.md), country, size, work status, employer.
   4. Find links: Website (canonical root), Instagram (full URL), LinkedIn (company
@@ -168,6 +173,36 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
 - **P4 taxonomy review** (quarterly): usage stats + corrections → split/merge report.
 - After every run: report what was done; for browser runs append to
   state/browser-log.md (timestamp, entries, pages visited, downloads, anomalies).
+
+## Site passcodes (Jonathan-provided)
+
+Designers often passcode-protect case studies. When Jonathan supplies a site
+passcode (usually in the clip note), USING it is allowed — it is a shared viewing
+code he is entitled to give you, not an account credential (those remain forbidden,
+SPEC §4.0). Save it to state/passcodes.json (gitignored) keyed by page-id, so any
+future session can re-enter: {"<page-id>": {"url": ..., "code": ..., "from": "clip
+note 2026-06-12"}}. Never commit codes; never use a code found on the open web.
+
+## Blocked-tool escalation (no silent giving-up)
+
+When any access fails (extension domain block, fetch refused, paywall):
+1. Try the alternates IN ORDER: WebFetch/curl, web search + cached copies, the same
+   work hosted elsewhere (press articles, Behance/Dribbble, product sites, Figma).
+2. Still blocked → write WHAT failed and WHY into the entry's AI Notes + the run
+   log, and give Jonathan the exact one-line fix ("allow figma.com in extension").
+3. NEVER mark an entry Needs Review while a known information source sits
+   unexplored without a documented reason.
+
+## Self-review gate (run before EVERY Needs Review flip)
+
+Re-open the entry and check, honestly:
+- [ ] Raw clip text re-read end-to-end; every instruction in it acted on or asked about
+- [ ] No judgment field contradicts evidence (incl. Jonathan's notes)
+- [ ] Every runbook step done OR its failure documented in AI Notes/run log
+- [ ] Images: present + captioned, or their absence explained in AI Notes
+- [ ] AI Notes hedged; sources in provenance; no field below 0.8 confidence
+One unchecked box = the entry is not ready. This gate is the difference between
+"ran the steps" and "did the job".
 
 ## Browser rules (SPEC §4.0 is binding — read it before EVERY browser session)
 

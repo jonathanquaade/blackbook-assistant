@@ -150,9 +150,21 @@ def cmd_work(kind):
 def cmd_get(page_id):
     print(json.dumps(entry_dict(api(f'pages/{page_id}')), indent=2, ensure_ascii=False))
 
+def archive_raw(page_id, label, text):
+    d = os.path.join(REPO, 'assets', page_id)
+    os.makedirs(d, exist_ok=True)
+    with open(os.path.join(d, 'clipped.md'), 'a') as f:
+        f.write(f'# {label} ({datetime.now().isoformat(timespec="seconds")})\n\n{text}\n\n')
+
 def cmd_set(page_id, payload, source_url=None):
     fields = json.loads(payload)
     guard(page_id, fields)
+    if 'Name' in fields:
+        # mechanical guarantee: the raw title (Jonathan's clip notes live there)
+        # is archived verbatim BEFORE it can be overwritten
+        live = plain(api(f'pages/{page_id}')['properties']['Name'])
+        if live and live.strip() != fields['Name'].strip():
+            archive_raw(page_id, 'Raw Name before overwrite', live)
     api(f'pages/{page_id}', {'properties': {f: encode(f, v) for f, v in fields.items()}})
     prov_update(page_id, fields, set_by='agent', source_url=source_url)
     print(f'set {list(fields)} on {page_id}')
