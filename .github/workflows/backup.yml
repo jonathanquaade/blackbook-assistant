@@ -1,0 +1,23 @@
+name: Daily Notion backup
+
+on:
+  schedule:
+    - cron: "30 8 * * *"   # 08:30 UTC daily
+  workflow_dispatch: {}     # manual trigger for testing
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run backup
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          git config user.name "keeper-backup"
+          git config user.email "actions@github.com"
+          python3 scripts/backup_db.py

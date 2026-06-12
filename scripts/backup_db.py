@@ -10,12 +10,13 @@ import csv, datetime, json, os, subprocess, sys, time, urllib.request
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(REPO)
 
-env = {}
-with open('.env') as f:
-    for line in f:
-        if '=' in line and not line.strip().startswith('#'):
-            k, v = line.strip().split('=', 1)
-            env[k] = v.strip().strip('"\'')
+env = dict(os.environ)
+if os.path.exists('.env'):  # local; in CI the vars come from GitHub secrets
+    with open('.env') as f:
+        for line in f:
+            if '=' in line and not line.strip().startswith('#'):
+                k, v = line.strip().split('=', 1)
+                env.setdefault(k, v.strip().strip('"\''))
 KEY, DB = env['NOTION_API_KEY'], env['NOTION_DATABASE_ID']
 H = {'Authorization': f'Bearer {KEY}', 'Notion-Version': '2022-06-28',
      'Content-Type': 'application/json'}
