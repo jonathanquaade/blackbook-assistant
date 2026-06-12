@@ -171,11 +171,15 @@ Inventory:
      page for orgs), public Email.
   5. Draft fields via `keeper.py set` (zero-states included; Autonomy estimate with
      hedged reasoning in AI Notes; Jonathan's note verbatim into Source).
-  6. Images: `scrape.py <url> --probe` first, then `scrape.py <url> --out
-     assets/<page-id> --caption "Project, year"` per project page (3–10 WORK
-     images, project name known; it dedupes and skips banners/logos). Fill any
-     `needs_caption` entries in manifest.json by hand. Then `keeper.py
-     body-reset` (archives clipper content) and `keeper.py upload <page-id>
+  6. Images, target ~10 per entry, DEPTH over breadth (Jonathan: 3 images from
+     3 projects beats 10 covers from 10 projects). Go INSIDE projects: interiors
+     and spreads, not just hero/cover shots. `scrape.py <url> --probe` first,
+     then `scrape.py <project-url> --out assets/<page-id> --caption "Project,
+     year" --limit 3` per chosen project (it dedupes and skips banners/logos).
+     Passcoded projects: check state/passcodes.json, enter via browser, capture
+     rendered images. Figma portfolios: open the file in the browser, screenshot
+     strong frames (plus the live embed). Fill any `needs_caption` entries by
+     hand. Then `keeper.py body-reset` and `keeper.py upload <page-id>
      assets/<page-id>`. Framer warning → use the browser's rendered DOM.
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
