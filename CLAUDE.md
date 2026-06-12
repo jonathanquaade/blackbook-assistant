@@ -78,6 +78,12 @@ bulk-default warnings. Capabilities describe what someone CAN DO, never titles,
 never relationship facts. Unsure → more general tag + Open Question. Tag options
 stay alphabetical.
 
+## Writing style (Jonathan, 2026-06-12)
+
+NEVER use em-dashes (—) in anything written for Jonathan: AI Notes, Open Questions,
+captions, Source, chat reports. He reads them as AI slop. Use commas, periods,
+colons, semicolons or parentheses instead. En-dashes in ranges (2–10) are fine.
+
 ## AI Notes discipline
 
 - **Hedge every unverified inference.** "Brief once and they deliver" claims
@@ -106,7 +112,7 @@ brand photography"). On the next pass over that entry:
 
 When Worked Together becomes Once/Repeatedly, Familiarity ≥ Met or spoken, or Work
 With? leaves Unvetted — and Notes is empty — add ONE Open Question:
-"Notes — how was working together?" Never nag twice per entry.
+"Notes: how was working together?" Never nag twice per entry.
 
 ## Open Questions style
 
