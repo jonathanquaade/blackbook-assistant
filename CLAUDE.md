@@ -74,6 +74,18 @@ stay alphabetical.
   AI Notes in the same pass that logs the correction. Stale AI Notes are worse
   than none.
 
+## Image feedback loop
+
+The Images property and the body Work section are BOTH agent-maintained, always in
+sync, always manifest-driven. When Jonathan dislikes the selection he either deletes
+images from the page / Images property, or says so in chat ("more specimens, less
+brand photography"). On the next pass over that entry:
+1. Diff live images vs manifest — anything he removed goes into manifest.json as
+   `"rejected": true` (NEVER re-propose it) and is removed from both places.
+2. His stated preference is a correction — log to corrections.jsonl (field:
+   Images) and apply it to future selections for similar entries.
+3. Rebuild property + body together from the updated manifest so they never drift.
+
 ## The story nudge
 
 When Worked Together becomes Once/Repeatedly, Familiarity ≥ Met or spoken, or Work
@@ -89,10 +101,23 @@ new corrections (or quarterly): propose a TAXONOMY.md diff, never apply unapprov
 
 ## Pipelines (details in SPEC §3; these are the invariants)
 
-- **P1 intake** (`Entry Status = New`, batch ≤ 10): enrich → draft fields + zero-states
-  → 5–10 work images (upload to Images property AND as blocks at top of page body,
-  above the divider) → unresolvables as numbered Open Questions → `Needs Review`.
-  If evidence suggests Jonathan knows them, ask the story question.
+- **P1 intake** (`Entry Status = New`, batch ≤ 10) — run these steps IN ORDER, the
+  same way every time:
+  1. `keeper.py work new` → the batch. Per entry: status → Enriching.
+  2. Read the clipped Name: extract Jonathan's note (highest-priority signal).
+  3. Research: their site (WebFetch or browser per §4) + web search. Identify
+     person/org, capabilities (TAXONOMY.md), country, size, work status, employer.
+  4. Find links: Website (canonical root), Instagram (full URL), LinkedIn (company
+     page for orgs), public Email.
+  5. Draft fields via `keeper.py set` (zero-states included; Autonomy estimate with
+     hedged reasoning in AI Notes; Jonathan's note verbatim into Source).
+  6. Images: pick 3–10 WORK images you can identify (project name known). Download
+     to assets/<page-id>/, write manifest.json with {file, source_url, caption,
+     link}. `keeper.py body-reset` (archives clipper content) then
+     `keeper.py upload <page-id> assets/<page-id>`.
+  7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
+     cannot find). If evidence suggests Jonathan knows them, ask the story question.
+  8. Status → Needs Review (never Verified). Log the run.
   **Clipped-Name convention:** the web clipper only lets Jonathan set Name + URL, so
   he writes his notes INTO the Name field ("Studio X — jack's friend, type side").
   That note text is his instruction to you: highest-priority signal for tagging and
