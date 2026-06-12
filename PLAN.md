@@ -93,6 +93,26 @@ Exit criteria: spec §9 Phase 0 ✓s, plus `schema-before.json` committed.
 - `scripts/taxonomy.ts`: tag stats, co-occurrence, split/merge proposals (P4 report,
   includes override-rate metric).
 
+## Phase 5 — Project shortlists (deferred, design agreed 2026-06-12)
+
+- New **Projects** database with a relation to Companies ("Shortlist"); reverse
+  relation on entries shows "Shortlisted for". Replaces the one-checkbox-per-project
+  pattern (For Fuse, For WF — left untouched until this phase, then migrated into
+  the first two project pages and retired).
+- A future frontend ("The List") would read this same structure; build Notion-native
+  first.
+
+## Conventions (agreed 2026-06-12)
+
+- **Fields filter, pages read.** Anything worth sorting/filtering lives in a property;
+  long-form context lives in the page body. `Notes` property = one-line headline,
+  Jonathan-owned.
+- **Page body layout:** agent-owned image section at top, then a divider; everything
+  below the divider is Jonathan's — agent reads it for signals, never writes there.
+- **One review inbox:** saved view "📥 Review" = `Entry Status: Needs Review`. Every
+  pipeline that needs Jonathan's eyes routes through it via Entry Status + Open
+  Questions. Views are created by hand (API can't), checklist provided.
+
 ## Open questions for Jonathan
 
 1. Assets storage: commit to git or iCloud/Dropbox sync? (prereq #5)

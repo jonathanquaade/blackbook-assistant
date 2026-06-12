@@ -1,7 +1,15 @@
-# Phase 0 — Migration decisions for approval
+# Phase 0 — Migration decisions (APPROVED 2026-06-12, with amendments)
 
-Based on the live database (710 rows, backed up 2026-06-12). Nothing below is applied
-until you approve each section. Edit this file directly or answer in chat.
+Jonathan's amendments to the original proposal:
+- **A:** Sound Design stays as its own tag "Sound design" (19 final tags, not 18).
+  Advertising and Saas are dropped entirely (not capabilities).
+- **B:** approved; the 24 ask-entries get `Entry Status = Needs Review` + an Open
+  Question, answered directly in Notion via the "📥 Review" view. The 29 ex
+  Partner-Dream entries are flagged the same way (set Work With? yourself).
+- **C, D:** approved as proposed.
+- **E:** Last Contacted retired. For Fuse / For WF were project shortlists →
+  **left untouched**, migrate into the Phase 5 Projects database later.
+- **F:** `*` means "unknown" → cleared from the 8 entries, option deleted.
 
 ---
 
