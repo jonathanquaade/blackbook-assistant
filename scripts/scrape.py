@@ -44,6 +44,9 @@ Usage:
   scrape.py URL --render [--passcode CODE] [--text-out FILE] [--probe|--out DIR ...]
       Playwright-rendered DOM: JS sites (Framer), passcoded case studies.
       --text-out also saves the page's rendered text (case study copy).
+  scrape.py shot URL --out DIR --caption TEXT [--full]
+      screenshot a page (website homepage / IG profile) as a body memory-anchor;
+      appends to manifest as a context_shot image.
 """
 import hashlib, json, os, re, sys, time, urllib.parse, urllib.request
 
@@ -123,9 +126,49 @@ def rendered_candidates(url, passcode=None, text_out=None):
     return [{'src': s, 'link': url, 'hint': None}
             for s in dict.fromkeys(srcs) if s.startswith('http')]
 
+def shot(url, out_dir, caption, full=False):
+    """Screenshot a page (website homepage or IG profile) as a memory anchor.
+
+    Jonathan (2026-06-13): every entry should carry a screenshot of the person's
+    website AND their Instagram profile in the body — it helps him remember who
+    they are and what their work looks like at a glance. Viewport shot by default
+    (the hero/grid), --full for the whole page. Saved as the next site-NN, appended
+    to manifest with the caption + link back to the page."""
+    from playwright.sync_api import sync_playwright
+    import hashlib
+    os.makedirs(out_dir, exist_ok=True)
+    mp = os.path.join(out_dir, 'manifest.json')
+    manifest = json.load(open(mp)) if os.path.exists(mp) else []
+    n = len([f for f in os.listdir(out_dir) if f.startswith('site-')])
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        page = b.new_page(viewport={'width': 1440, 'height': 900})
+        page.goto(url, wait_until='domcontentloaded', timeout=45000)
+        page.wait_for_timeout(4000)
+        # dismiss common cookie/login overlays so the shot is clean
+        for sel in ['text=Accept', 'text=Accept all', '[aria-label="Close"]']:
+            try:
+                if page.locator(sel).first.is_visible(timeout=500):
+                    page.locator(sel).first.click(timeout=500)
+            except Exception: pass
+        n += 1
+        fn = f'site-{n:02d}.png'
+        page.screenshot(path=os.path.join(out_dir, fn), full_page=full)
+        b.close()
+    manifest.append({'file': fn, 'source_url': url, 'caption': caption,
+                     'link': url, 'captured_at': time.strftime('%Y-%m-%d'),
+                     'context_shot': True})
+    json.dump(manifest, open(mp, 'w'), indent=2)
+    print(json.dumps({'shot': fn, 'url': url, 'caption': caption}, indent=1))
+
 def main():
     a = sys.argv[1:]
     if not a: sys.exit(__doc__)
+    if a[0] == 'shot':
+        out_dir = a[a.index('--out') + 1] if '--out' in a else None
+        caption = a[a.index('--caption') + 1] if '--caption' in a else 'Screenshot'
+        shot(a[1], out_dir, caption, full='--full' in a)
+        return
     url = a[0]
     probe = '--probe' in a
     out_dir = a[a.index('--out') + 1] if '--out' in a else None

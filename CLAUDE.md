@@ -138,6 +138,17 @@ colons, semicolons or parentheses instead. En-dashes in ranges (2–10) are fine
   contradict AI Notes, or his Rating/verdict implies your summary is off — update
   AI Notes in the same pass that logs the correction. Out-of-date AI Notes are
   worse than none.
+- **Always record SENIORITY + EXPERIENCE** (Jonathan, 2026-06-13). Include a
+  read of how senior they are and their trajectory: e.g. "Senior / Design
+  Director-level, ~10 yrs; ex-Collins, ex-AKQA". It is decision-relevant (can they
+  run a project unsupervised?) and on the record. Ground it in their actual work
+  history (step 4), hedge if inferred. Pair it with the **Autonomy** estimate
+  (1–5, set_by agent) — set Autonomy on every entry where the history supports a
+  read, with the reasoning here. Seniority in prose, Autonomy as the field.
+- **Fold Jonathan's body call-notes into AI Notes.** When he has left detailed
+  notes in the page body (a call/meeting writeup), synthesise them into AI Notes
+  (experience, day rate, working style, his verdict) so the context is usable — he
+  asked for this explicitly (Eugene Ekuban). Keep his short Notes-field verdict.
 
 ## Image feedback loop
 
@@ -244,6 +255,12 @@ Inventory:
      and capture the profile URL from the Google snippet (no login needed). A
      person without a captured LinkedIn is a search you skipped, not an absence;
      if genuinely none exists, say so in AI Notes.
+     **Read their EXPERIENCE, not just grab the URL** (Jonathan, 2026-06-13). Build
+     their work history (roles, employers, years, level) from public sources: the
+     LinkedIn Google snippet, a logged-out visit to the public profile (read-only;
+     NEVER log in, that is forbidden), their site /about, interviews and press. This
+     trajectory is essential context for revisits and for the seniority/Autonomy
+     read. Put it in AI Notes.
   5. Draft fields via `keeper.py set` (zero-states included; Autonomy estimate with
      hedged reasoning in AI Notes). **ALWAYS fill Source.** If Jonathan's clip note
      has provenance text, use it verbatim; otherwise for backfill entries Source is
@@ -280,7 +297,23 @@ Inventory:
      Mixcloud) and `{type:"bookmark", url, caption}` for writing/articles/case
      studies. Always still grab some images too (they read well), but the embed/
      bookmark IS the portfolio for these disciplines. Find the links via their site
-     + web search (e.g. "<name> soundcloud/vimeo"). Give each embed a `caption` AND
+     + web search (e.g. "<name> soundcloud/vimeo").
+     **Context screenshots (every entry):** add a screenshot of their WEBSITE
+     homepage and their INSTAGRAM profile to the body as memory anchors
+     (`scrape.py shot <url> --out DIR --caption "Website" / "Instagram profile"`).
+     Jonathan uses these to remember who someone is at a glance.
+     **Go DEEP, capture ON-CAPABILITY work, never lazy hero shots.** Open each
+     project and pull the actual work that matches their tagged Capability (a
+     product designer's screens, an identity designer's brand system, NOT a hero
+     banner or a photographer's lifestyle shots). Off-capability or hero-only
+     selections are a repeated, called-out failure (Eugene Ekuban, Megan Bowker).
+     If their best work lives at a past employer (e.g. an agency's site), go there
+     and extract the projects they led, attributed.
+     **Instagram for recent work:** creatives' sites lag; their IG often has newer,
+     better projects and video. Go into IG, see which posts are recent, pull the
+     strong ones (images and video). Prefer a screenshot WITH a link caption over a
+     bare bookmark for live/interactive sites (Jonathan can't see a bookmark
+     without clicking). Give each embed a `caption` AND
      a `link` to the source project page: `upload` writes a visible metadata line
      beneath the embed (project name + source link), so the entry self-documents
      what each video is for revisits months later (embed captions alone are faint
