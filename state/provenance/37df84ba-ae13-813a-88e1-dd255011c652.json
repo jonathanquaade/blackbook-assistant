@@ -66,22 +66,33 @@
     },
     "Images": {
       "value": [
-        "site-01.png"
+        "site-01.png",
+        "site-02.png",
+        "site-03.jpg",
+        "site-04.png",
+        "site-05.png",
+        "site-06.png",
+        "site-07.png",
+        "site-08.png",
+        "site-09.png",
+        "site-10.png",
+        "site-11.png",
+        "site-12.png"
       ],
       "source_url": null,
-      "verified_at": "2026-06-12T17:23:04",
+      "verified_at": "2026-06-13T11:31:19",
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Product designer at Fuse Energy, works with Jonathan (his note). Portfolio is a public Figma file (embedded in this page, thumbnail above). Public footprint is thin: a Behance (georgy_gushchin) and a LinkedIn (Limassol, Cyprus) exist under this name but could not be confirmed as him at the 0.8 threshold, so neither was used. Country left empty for the same reason. No Autonomy estimate: no public evidence; Jonathan knows him first-hand and can set it.",
+      "value": "Product designer at Fuse Energy; Jonathan works with him directly (Worked Together: Repeatedly). Portfolio is a public Figma file covering three major Russian tech products: VK (social network \u2014 Boost advertising tool and Tickets commerce), inDrive (ride-hailing redesign and safety communication system), and Avito (classifieds \u2014 checkout flow, map filters, delivery settings). All screens are mobile-first, 375px wide. Behance profile (georgy_gushchin, since 2018) lists Moscow; LinkedIn shows Limassol, Cyprus; both unconfirmed as current at 0.8 confidence, Country left empty. Instagram handle georgy_uncle from Behance; not independently verified. No email found. Autonomy: no estimate, Jonathan has direct experience and is better placed to set it. Figma API used for image export (depth-traversal to find frames inside sections).",
       "source_url": null,
-      "verified_at": "2026-06-12T17:23:38",
+      "verified_at": "2026-06-13T11:30:20",
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Rating?\n2. Autonomy?\n3. Country?",
+      "value": "1. Rating?\n2. Autonomy?\n3. Country?\n4. Notes: how was working together?",
       "source_url": null,
-      "verified_at": "2026-06-12T17:33:20",
+      "verified_at": "2026-06-13T11:07:07",
       "set_by": "agent"
     },
     "Familiarity": {
@@ -89,6 +100,12 @@
       "source_url": null,
       "verified_at": "2026-06-12T17:33:14",
       "set_by": "jonathan"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/georgy_uncle/",
+      "source_url": null,
+      "verified_at": "2026-06-13T11:07:07",
+      "set_by": "agent"
     }
   }
 }
