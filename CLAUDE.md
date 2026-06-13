@@ -118,14 +118,25 @@ With? leaves Unvetted — and Notes is empty — add ONE Open Question:
 
 ## Open Questions style
 
-Terse. The field name IS the question — Notion shows the options in the dropdown:
+**Two-way field.** Agent writes questions to Jonathan; Jonathan writes revisit
+instructions to the agent (when setting an entry to Revisit). Both directions get
+cleared once acted on. Notes is Jonathan's narrative and is never the channel for
+agent instructions — if he has written a revisit instruction in Notes, treat it as
+signal but do not clear it (you cannot write Notes).
+
+**Agent questions** — terse. The field name IS the question:
   1. Familiarity?
   2. Rating?
-Add words ONLY when there's real ambiguity to convey ("LinkedIn says Pentagram,
-site says freelance — which?") or context that changes the answer ("(ex
-Partner-Dream)"). Questions are CONDITIONAL: never ask for a field that already
-has a non-zero-state value — check before writing, and drop answered questions
-when rewriting. Fully answered → clear the property.
+Add words ONLY when there's real ambiguity ("LinkedIn says Pentagram, site says
+freelance — which?") or context that changes the answer ("(ex Partner-Dream)").
+CONDITIONAL: never ask for a field that already has a non-zero-state value.
+Fully answered → clear the property.
+
+**Jonathan's revisit instructions** — he may write free text when setting Revisit:
+"more interior images" / "use this Figma file: URL" / "check if still at Pentagram".
+On the next pass: read these first, act on every instruction, then clear the field.
+If an instruction cannot be completed (blocked source, missing credential), document
+why in AI Notes and clear the instruction anyway — do not leave it as a ghost.
 
 ## Corrections loop
 
