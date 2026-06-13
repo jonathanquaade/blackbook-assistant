@@ -33,3 +33,23 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   → move to Notes (set-notes --relocated-from-body) + extract stated judgment; site
   copy → clipped.md + AI Notes. A blanket script can't tell them apart (120-entry
   scan: bodies are overwhelmingly site copy); needs a per-entry human read.
+
+### From the first backfill batch
+
+- **Name is provenance-locked to `jonathan` on migrated entries** (Phase 0 set
+  everything to jonathan), which BLOCKS the runbook's "clean Name to just the name"
+  step via the agent path. Workaround: do the name-clean through
+  `set --from-jonathan` (it is legitimately his name; the suffix like "| Sound
+  Design" is clipper context already captured in Capabilities; archive_raw fires
+  automatically). Affects most clipper entries with "Name | descriptor" titles.
+  Open question for automation: either reclassify clipper-era Name provenance to
+  `clipper`, or let a routine strip known suffixes via the from-jonathan path.
+  (Alex Hislop.)
+- **Sound/music people**: website is an unlabeled visual moodboard (live events,
+  release artwork), no project names anywhere (no alt text, no headings), and the
+  real work is audio. Rule applied: attribute images to the studio, not invented
+  project names; say so in AI Notes. Future: their best "work" may be audio/links,
+  not images. (Alex Hislop → GETME!.)
+- **The new "Recommended by a friend" Familiarity option works** end-to-end from a
+  "Found through X" note via `set --from-jonathan`. (Alex Hislop, "Found through
+  Colin Doerffler".)
