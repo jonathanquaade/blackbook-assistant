@@ -76,6 +76,8 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   right output for these creatives. General principle: think about the creative
   TYPE and where their real work lives, don't just scrape whatever the homepage
   shows.
+  Note: project videos may be YouTube OR Vimeo (Alex used both) — check for
+  both iframe hosts and convert to clean watch?v=/vimeo.com/<id> URLs for embeds.
 - **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as
