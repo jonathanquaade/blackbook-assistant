@@ -90,6 +90,19 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   site/reel before assuming IG is all they have; fix Website (canonical site) vs
   Instagram (the IG URL) when the clipper conflated them. (Lex Carthur = Alex
   McArthur; film directors keep reels on Vimeo.)
+- **scrape.py --render: never use networkidle** (solved-in-tool): media-heavy
+  portfolios (3D, autoplay video) keep the network busy forever and networkidle
+  times out. Switched to domcontentloaded + fixed settle. (vmragona.com.)
+- **3D/motion people: work is video, but often on their OWN site/Vimeo** — the
+  IG-login trigger did NOT fire for Vincenzo because his portfolio + project films
+  live on vmragona.com (Vimeo embeds) and download fine. The logged-in IG session
+  is only needed for creatives whose work lives ONLY on Instagram (reels/carousel).
+  Pattern for 3D: embed project Vimeo films + use Vimeo thumbnails as preview
+  images + grab any render stills. (Vincenzo: 8 images + 5 embeds.)
+- **Work Status via employment trajectory** (objective rule in action): a web
+  search gave Vincenzo's full history (Monotype -> CC Studio -> Porto Rocha ->
+  co-founder ffforum 2025-present), so Work Status = Studio, Works At Link =
+  ffforum.site. Search the trajectory, don't guess from the portfolio alone.
 - **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as

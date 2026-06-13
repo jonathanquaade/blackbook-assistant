@@ -90,7 +90,11 @@ def rendered_candidates(url, passcode=None, text_out=None):
     with sync_playwright() as p:
         b = p.chromium.launch()
         page = b.new_page(viewport={'width': 1440, 'height': 2400})
-        page.goto(url, wait_until='networkidle', timeout=45000)
+        # domcontentloaded + fixed settle, NOT networkidle: media-heavy portfolios
+        # (3D, video, autoplay) keep the network busy forever and networkidle times
+        # out (vmragona.com, 2026-06-13). Lesson: never wait for networkidle here.
+        page.goto(url, wait_until='domcontentloaded', timeout=45000)
+        page.wait_for_timeout(3000)
         if passcode and page.locator('input[type=password]').count():
             pw = page.locator('input[type=password]').first
             pw.fill(passcode)
