@@ -40,10 +40,12 @@ them/Recommended by a friend/Met or spoken/Know them well) · Work With?
 (Definitely/Yes/In a pinch/No/Unvetted) · Rating (1–5; 5 is rare) · Notes.
 Machinery: Source (how found) · Images (files; real uploads, never external links) ·
 Open Questions (your questions to him, numbered multi-choice) · AI Notes (your 2–3
-line summary; you own it) · Status Last Verified (date — written by P2 ONLY, when a
-whole entry checks out; empty means "never verified", which is honest) · Entry Status
-(New/Enriching/Needs Review/Verified/Revisit/Rejected). Works At/Works At Link stay
-empty for orgs and for unresearched people — structural, not sloppy.
+line summary; you own it) · Status Last Verified (date — set when Jonathan marks an
+entry Verified, his review IS the verification event: `keeper.py stamp-verified`
+stamps newly-Verified entries with the date he verified, P2 bumps it on each later
+re-check; empty means "not yet verified", which is honest. Backfill/P1 leave it
+empty) · Entry Status (New/Enriching/Needs Review/Verified/Revisit/Rejected). Works
+At/Works At Link stay empty for orgs and for unresearched people — structural.
 
 **Zero-states — no meaningless Empty.** On entries you create or enrich, judgment
 selects get: Work With? = Unvetted, Worked Together = Never, Familiarity = Don't
@@ -58,7 +60,9 @@ answer is honest; a false default is not.
 **State machine:** New (or EMPTY, from web clipper) → Enriching → Needs Review →
 Jonathan sets Verified when happy, or Revisit when he wants another agent pass →
 (>90d) → re-verify → … Everything needing his eyes goes through `Needs Review` +
-Open Questions — that's his single 📥 Review inbox.
+Open Questions — that's his single 📥 Review inbox. When he flips an entry to
+Verified, run `keeper.py stamp-verified` (cheap, end of any session/routine) to
+record Status Last Verified = the date he verified it.
 **Needs Review is EARNED:** an entry enters it only after a COMPLETE agent pass
 (fields enriched, images where findable). Jonathan reviews finished drafts, never
 raw or half-filled entries. Migration-flagged entries wait in Revisit (questions
@@ -200,8 +204,10 @@ explore. The loop that makes the system improve instead of re-solving:
 
 Inventory:
 - keeper.py — all Notion I/O: work lists, get/set (contract guards,
-  --from-jonathan), ask, status, upload (captioned Work sections), body-reset,
-  browser log. EVERY Notion write goes through it; never raw API in sessions.
+  --from-jonathan), set-notes (relocate his body words), ask, status,
+  stamp-verified (date newly-Verified entries), upload (captioned Work sections +
+  embed/bookmark non-image work), body-reset, browser log. EVERY Notion write goes
+  through it; never raw API in sessions.
 - scrape.py — portfolio images with per-platform strategies (Squarespace,
   Framer, Figma oEmbed, WordPress, generic), content-hash dedupe, banner traps
   documented. --probe to inspect before downloading.

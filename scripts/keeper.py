@@ -13,6 +13,7 @@ Usage:
   keeper.py set-notes PAGE_ID TEXT --relocated-from-body
       relocate Jonathan's OWN body commentary into Notes (only sanctioned Notes write)
   keeper.py status PAGE_ID STATUS   set Entry Status (Verified is refused)
+  keeper.py stamp-verified          stamp Status Last Verified on newly Verified entries
   keeper.py upload PAGE_ID FILE...  upload images: Images property + page-body blocks
   keeper.py log TEXT                append timestamped line to state/browser-log.md
 """
@@ -290,6 +291,28 @@ def cmd_upload(page_id, asset_dir):
     n_embed = sum(1 for e in manifest if e.get('type') in ('embed', 'bookmark'))
     print(f'uploaded {len(uploads)} images + {n_embed} embeds/bookmarks to {page_id}')
 
+def cmd_stamp_verified():
+    """Stamp Status Last Verified on entries Jonathan has marked Verified.
+
+    Jonathan's review IS the verification event. When he sets Entry Status =
+    Verified, the facts are confirmed as of that moment, so Status Last Verified
+    should record it. We only stamp entries where the date is still EMPTY (P2
+    owns later bumps), and we use the page's last_edited_time as the accurate
+    proxy for WHEN he verified. Run this as a cheap routine/session step.
+    Backfill/P1 must leave Status Last Verified empty until this runs."""
+    rows = query_all({'property': 'Entry Status', 'select': {'equals': 'Verified'}})
+    stamped = 0
+    for r in rows:
+        if (r['properties']['Status Last Verified']['date'] or {}).get('start'):
+            continue
+        when = r['last_edited_time'][:10]
+        api(f'pages/{r["id"]}', {'properties': {'Status Last Verified': encode('Status Last Verified', when)}})
+        prov_update(r['id'], {'Status Last Verified': when}, set_by='jonathan')
+        stamped += 1
+        print(f'  stamped {r["id"]} -> {when}')
+        time.sleep(0.35)
+    print(f'stamp-verified: {stamped} newly stamped of {len(rows)} Verified')
+
 def cmd_set_notes(page_id, text):
     """Relocate Jonathan's OWN words from the page body into the Notes property.
 
@@ -323,6 +346,7 @@ if __name__ == '__main__':
         if '--relocated-from-body' not in a:
             sys.exit("CONTRACT: set-notes only relocates Jonathan's own body words. Pass --relocated-from-body to confirm.")
         cmd_set_notes(a[1], a[2])
+    elif cmd == 'stamp-verified': cmd_stamp_verified()
     elif cmd == 'status': cmd_status(a[1], a[2])
     elif cmd == 'upload': cmd_upload(a[1], a[2])
     elif cmd == 'body-reset': cmd_body_reset(a[1])
