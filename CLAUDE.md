@@ -284,7 +284,9 @@ Inventory:
      download each video's THUMBNAIL as a preview image (Vimeo/YouTube oEmbed gives
      `thumbnail_url`), captioned + linked to the video. Pattern: a gallery of
      thumbnail images up top (glanceable previews, each linking to the film) then
-     the playable embeds below.
+     the playable embeds below. **Every entry gets images, always** — even when
+     embeds carry the real work and even when Vimeo happens to preview, still pull
+     images (thumbnails or stills). An entry should never be embeds-only.
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
   8. Status → Needs Review (never Verified). Log the run.
@@ -369,6 +371,7 @@ Re-open the entry and check, honestly:
       pages) embedded, not skipped.
 - [ ] AI Notes hedged; sources in provenance; no field below 0.8 confidence
 - [ ] Source field filled (clip note, or "Web clipper, <created date>")
+- [ ] Images present for EVERY entry (never embeds-only), even video/audio/writing
 - [ ] Status is Needs Review (incl. after a Revisit pass — flip it back)
 One unchecked box = the entry is not ready. This gate is the difference between
 "ran the steps" and "did the job".
