@@ -103,6 +103,34 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   search gave Vincenzo's full history (Monotype -> CC Studio -> Porto Rocha ->
   co-founder ffforum 2025-present), so Work Status = Studio, Works At Link =
   ffforum.site. Search the trajectory, don't guess from the portfolio alone.
+### From the rest of the first batch (Daniella, Fernanda, Sofia, Eugene E., Megan)
+
+- **scrape.py --render now reads currentSrc, not src** (solved-in-tool): lazy-loaded
+  galleries keep a placeholder in `src` and the real full-res URL in `currentSrc`;
+  reading src missed every image (salazraki.com: 78 "tiny" skips → 8 real images
+  after the fix).
+- **Creative developers: portfolio = live websites**, not images. Capture as
+  screenshots of the live sites they built + bookmarks to them. (Fernanda Ruiz:
+  AMI Paris, Stink Films, Future Corp, Monumento — screenshots + bookmarks.)
+- **Jonathan's call notes in the body = long-form, KEEP it** (do NOT move to Notes
+  or body-reset). Notes is the one-line headline; detailed call notes belong in the
+  body per "fields filter, pages read". Extract judgment from them: "Should we work
+  with them? Yes" → Work With?: Yes; a detailed conversation → Familiarity: Met or
+  spoken (both --from-jonathan). (Eugene Ekuban.)
+- **Half-filled review template in body** (Fernanda): preserve it, append the Work
+  section without body-reset; let Jonathan clean it in review.
+- **Fix Familiarity that contradicts Worked Together** (Fernanda: Repeatedly + a
+  glowing note but Familiarity said Don't know them → set Know them well).
+- **Migration Country can be wrong** — verify it. (Sofia Alazraki was tagged UK;
+  she is Madrid-based → Spain.)
+- **Employer history ("Former X") → trace the CURRENT role via LinkedIn.** Megan
+  Bowker "Former Collins" → now Soon Foundation for the Arts (matched her site's
+  "On Soon"); Vincenzo → co-founder ffforum. Set Work Status from the current role,
+  put the history in AI Notes.
+- **When the personal site doesn't show the real work, pull Instagram** (the rule in
+  action): Megan's site is conceptual/editorial, so her design work came from her IG
+  grid.
+
 - **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as

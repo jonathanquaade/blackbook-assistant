@@ -111,7 +111,12 @@ def rendered_candidates(url, passcode=None, text_out=None):
         for _ in range(8):  # trigger lazy loads
             page.mouse.wheel(0, 1600)
             page.wait_for_timeout(350)
-        srcs = [im.get_attribute('src') or '' for im in page.locator('img').all()]
+        # currentSrc, not the src attribute: lazy-loaded galleries keep a tiny
+        # placeholder in src and the real full-res URL in currentSrc/srcset
+        # (salazraki.com, 2026-06-13). Reading src missed every full image.
+        srcs = page.evaluate(
+            "() => Array.from(document.querySelectorAll('img'))"
+            ".map(i => i.currentSrc || i.src).filter(Boolean)")
         if text_out:
             open(text_out, 'w').write(page.inner_text('body'))
         b.close()
