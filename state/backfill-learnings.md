@@ -131,6 +131,28 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   action): Megan's site is conceptual/editorial, so her design work came from her IG
   grid.
 
+### Round 2 (Jonathan's review of batch 1 → 5 revisits)
+
+- **Context shots are now standard** (`scrape.py shot`): website homepage + IG
+  profile screenshot in every body as memory anchors.
+- **Self-hosted mp4 videos upload to Notion** (`keeper.py` type:video, <=20MB):
+  download the project film, upload as a video block. (Sofia: 3 NOTHING films.)
+- **Going DEEP into project pages yields real work** (vs hero shots): Eugene's
+  OMNIYAT/Spotify Wrapped screens came from the project URLs, not the homepage.
+- **When their IG/site is off-discipline, go to the past employer's case study.**
+  Megan's IG is personal photography; her identity work (Girl Scouts) lives on the
+  COLLINS site — extracted from wearecollins.com/case-studies/girl-scouts.
+- **Image→project link bug** (Vincenzo): scraped stills got wrong captions/links
+  and a project was duplicated as two images. Lesson: Vimeo/oEmbed thumbnails are
+  reliably mapped (thumbnail of vimeo X IS project X); scraped page stills are not —
+  prefer mapped thumbnails, verify caption↔content.
+- **Prefer screenshot+link-caption over bare bookmark** for live sites (Jonathan
+  can't see a bookmark without clicking). Bookmarks only as an extra, not the work.
+- **Two scrape.py bugs fixed**: dedup loop crashed on bookmark/embed entries (no
+  `file` key) → skip them; numbering used file COUNT not max index → `.png` shots
+  collided with `.jpg` scrapes → use max index, extension-agnostic.
+- **Seniority + Autonomy on every entry** (Jonathan): record a seniority read in AI
+  Notes and set the Autonomy estimate, grounded in work history.
 - **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as
