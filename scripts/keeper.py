@@ -256,12 +256,13 @@ def cmd_upload(page_id, asset_dir):
             rt.append({'text': {'content': suffix_link.split('//')[-1].split('/')[0],
                                 'link': {'url': suffix_link}}})
         return rt
-    # upload only the image-type entries
+    # upload file-backed entries (images + self-hosted video files <=20MB)
     img_entries = [e for e in manifest if e.get('type', 'image') == 'image']
-    uploads = [(upload_file(os.path.join(asset_dir, e['file'])), e) for e in img_entries]
+    file_entries = [e for e in manifest if e.get('type', 'image') in ('image', 'video')]
+    uploads = [(upload_file(os.path.join(asset_dir, e['file'])), e) for e in file_entries]
     api(f'pages/{page_id}', {'properties': {'Images': {'files': [
         {'type': 'file_upload', 'file_upload': {'id': fid}, 'name': name}
-        for (fid, name), _ in uploads]}}})
+        for (fid, name), e in uploads if e.get('type', 'image') == 'image']}}})
     fid_by_file = {e['file']: (fid, name) for (fid, name), e in uploads}
     blocks = [{'type': 'heading_2', 'heading_2': {'rich_text': [{'text': {'content': 'Work'}}]}}]
     for entry in manifest:
@@ -280,6 +281,11 @@ def cmd_upload(page_id, asset_dir):
             if entry.get('link') and entry.get('link') != entry['url']:
                 meta.append({'text': {'content': ' · video', 'link': {'url': entry['url']}}})
             blocks.append({'type': 'paragraph', 'paragraph': {'rich_text': meta}})
+        elif kind == 'video':
+            fid, name = fid_by_file[entry['file']]
+            blocks.append({'type': 'video', 'video': {'type': 'file_upload',
+                           'file_upload': {'id': fid},
+                           'caption': cap_rt(entry, entry.get('link') or entry.get('source_url'))}})
         else:
             fid, name = fid_by_file[entry['file']]
             blocks.append({'type': 'image', 'image': {'type': 'file_upload',
@@ -289,7 +295,8 @@ def cmd_upload(page_id, asset_dir):
     api(f'blocks/{page_id}/children', {'children': blocks})
     prov_update(page_id, {'Images': [e['file'] for e in img_entries]})
     n_embed = sum(1 for e in manifest if e.get('type') in ('embed', 'bookmark'))
-    print(f'uploaded {len(uploads)} images + {n_embed} embeds/bookmarks to {page_id}')
+    n_video = sum(1 for e in manifest if e.get('type') == 'video')
+    print(f'uploaded {len(img_entries)} images + {n_video} videos + {n_embed} embeds/bookmarks to {page_id}')
 
 def cmd_stamp_verified():
     """Stamp Status Last Verified on entries Jonathan has marked Verified.
