@@ -14,9 +14,13 @@ beginner-friendly constraint:
 - **Notion is the only database and the only UI.** No Next.js app, no Supabase/Railway
   in v1 — there is nothing to host. Revisit only if "The List" app happens later (then:
   Next + Sanity-style pattern on Vercel + R2 for images, per spec §5).
-- **Claude in Chrome** for browser work (Instagram/LinkedIn/portfolios), riding
-  Jonathan's logged-in sessions per spec §4.
+- **Browser work**: scrape.py for static sites, Playwright for JS-rendered sites,
+  passcoded case studies and Instagram (persistent profile). The Claude in Chrome
+  extension path is PARKED (see "Browser strategy" below).
 - **Local repo folders** for assets, state, provenance, backups.
+- **Background execution**: Claude cloud routines (/schedule) so pipelines run
+  without Jonathan opening anything; GitHub Actions is the fallback runner. See
+  "Long-term architecture".
 
 ## Prerequisites (Jonathan)
 
@@ -29,6 +33,8 @@ beginner-friendly constraint:
 | 5 | Decide: commit `assets/` to git, or sync via iCloud/Dropbox and gitignore it | Phase 1 | ☐ |
 | 6 | Create saved views from the checklist (📥 Review etc.) | Phase 1 | ✅ 2026-06-12 |
 | 7 | Review queue — DEFERRED by Jonathan until enrichment automation reduces it to pure judgment calls; agent enriches factual fields on Needs Review entries first | — | ⏸ |
+| 8 | Playwright installed (`pip install playwright` + chromium) | Stage A | ☐ |
+| 9 | Instagram: log into the persistent Playwright profile once (his account now, scouting account later) | Stage A | ☐ |
 
 **Phase 0: ✅ COMPLETE 2026-06-12.** Repo: github.com/jonathanquaade/blackbook-assistant
 (private). Implementation notes: Notion API silently ignores select-option renames
@@ -80,19 +86,34 @@ Exit criteria: spec §9 Phase 0 ✓s, plus `schema-before.json` committed.
 - Acceptance: bare clipped entry → full draft profile w/ images + Open Questions in
   Needs Review, <3 min agent time.
 
-## Phase 2 — Verification (P2)
+## Phase 2 — Verification (P2, the upkeeper; runs as a weekly routine in Stage B)
 
-- `scripts/verify.ts`: select ≤10 entries by `Status Last Verified` age + Stale,
-  fair rotation via `state/verify-cursor.json`.
-- Diffs as proposals in Open Questions; provenance updated per field; date bumped
-  only when whole entry checks out. LinkedIn ≤5/run, snippets first.
+- Batch ≤10, rotation cursor in `state/verify-cursor.json`: oldest `Status Last
+  Verified` first, never-verified counts as oldest.
+- Per entry, check live facts against stored: website alive and still theirs
+  (redirects, domain drops, rebrands); employer still current (site/about +
+  Google snippets; LinkedIn page visits ≤5/run, snippets first, they don't
+  count); work status drift (went freelance, joined a studio, studio dissolved);
+  link rot (IG handle changes, dead LinkedIn, bounced email domains); new work
+  worth capturing → image proposals, never silent additions.
+- Output discipline: clean entry → bump Status Last Verified only. Any diff →
+  numbered proposal in Open Questions, entry → Needs Review, NEVER overwritten
+  (`set_by: jonathan` doubly so). >90d unverified → Stale automatically.
+- Digest line: "P2: 10 checked, 2 diffs proposed."
 
-## Phase 3 — Scout (P3)
+## Phase 3 — Scout (P3; weekly routine, starts after backfill ≥ 50%)
 
-- `sources.md` v1 (It's Nice That, BP&O, Brand New, Fonts In Use + Jonathan's adds).
-- Create **Candidates** DB (same schema) — needs Jonathan's yes on location/parent page.
-- `scripts/scout.ts`: crawl since `state/scout-last-run.json`, dedupe (name+domain
-  fuzzy), mini-enrich, digest message. Yes → move to main DB + run P1; No → Rejected.
+- `sources.md` v1 (It's Nice That, BP&O, Brand New, Fonts In Use + Jonathan's
+  adds); per-source last-seen cursor in `state/scout-last-run.json`.
+- **Candidates DB**: same schema, sibling database on the Companies page
+  (Jonathan default 2026-06-12, overridable). Created once via API. Rejected is
+  permanent and lives here; never re-propose.
+- Run shape: crawl new posts since cursor → extract names/studios → dedupe
+  against Companies AND Candidates AND Rejected (name + domain fuzzy) →
+  mini-enrich survivors (site, IG link, country, 2–3 images, one hedged line on
+  why interesting) → digest push: "P3: 6 candidates, 2 strong" with names.
+- Verdicts (Notion now, review app later): Yes → page moves to Companies as
+  `New`, next P1 routine picks it up. No → Rejected forever.
 
 ## Phase 4 — Learning (ongoing)
 
@@ -101,23 +122,81 @@ Exit criteria: spec §9 Phase 0 ✓s, plus `schema-before.json` committed.
 - `scripts/taxonomy.ts`: tag stats, co-occurrence, split/merge proposals (P4 report,
   includes override-rate metric).
 
-## Phase R — Review channel (Jonathan's request 2026-06-12; design before Phase 3)
+## Long-term architecture & roadmap (Jonathan approved 2026-06-12)
 
-Problem: Open Questions only work if Jonathan goes to Notion. The agent needs a way
-to REACH him — "it's not scalable that the agent can't contact me."
+End state: Jonathan never needs Claude Code or Claude open. Pipelines run in the
+background on a schedule; he gets a push notification when there is something to
+review; long term he reviews in a web app that also serves search, portfolios,
+shortlists, collaborator accounts and an AI advisor.
 
-Build in two steps:
-1. **v1 — push digest (cheap, immediate):** every P1/P2/P3 run ends by sending
-   Jonathan a notification (macOS push via Claude Code / email / WhatsApp — pick one)
-   with a breakdown: entries processed, open questions count, deep link to the
-   📥 Review view. One-way; answers still happen in Notion. Ship alongside Phase 2.
-2. **v2 — interactive review app:** a tiny Next.js app (Jonathan's stack: Next +
-   Vercel + Tailwind + Clerk auth) showing one entry per screen — images, drafted
-   fields, each Open Question as tappable multiple-choice + a free-text input —
-   writing answers straight back to Notion via API. Mobile-first, inbox-zero flow.
-   This is probably the real seed of "The List" app and may absorb Phase 5's
-   shortlist UI. Spec it after two weeks of v1 usage data (which question types
-   recur, what volume).
+**Four layers:**
+1. **Data**: Notion stays the single source of truth as long as possible. assets/
+   + state/ in git. Images sync to Cloudflare R2 only when the web app ships
+   (spec §5). No second database until Notion API limits actually hurt.
+2. **Agents**: P1–P4 stay Claude Code sessions driven by CLAUDE.md, moved from
+   manual terminal runs to scheduled cloud routines (/schedule). GitHub Actions
+   is the fallback runner if the cloud env can't run Playwright or reach Notion.
+3. **Notification**: every pipeline run ends with a push digest (entries
+   processed, questions waiting, deep link to 📥 Review).
+4. **Interface**: Notion is the UI now; a Next.js review app replaces the review
+   flow (Stage C); that app grows into "The List" (Stage D).
+
+DB reality at decision time: 713 entries; 658 Stale, 53 Needs Review, 2 unset.
+712 missing Type and AI Notes, 713 missing images, 651 missing Instagram. The
+backfill IS the project for the next month.
+
+### Stage A — unblock, backfill, notify (now, ~6 weeks)
+
+**A1. Browser unblock.** Install Playwright. Two modes: headless no-profile
+(passcoded case studies via state/passcodes.json, Framer/JS sites, public Figma;
+live test: branevsky.com/warden) and a persistent profile Jonathan logs into
+Instagram with ONCE (his account now, migrate to a separate scouting account
+later; profile dir gitignored; caps unchanged: ≤10 IG profiles/run, 2–6 s waits,
+any challenge pauses the whole batch). Playwright strategies land in the tools
+(scrape.py or sibling browse.py), lessons in docstrings.
+
+**A2. The backfill.** All 713 entries through a full P1-quality pass, then Needs
+Review. Order: Jonathan-signal entries first (Notes, old CRM values, Day Rate),
+queue built once into state/backfill-queue.json with a shared cursor. First:
+reconcile the 53 current Needs Review (finished drafts stay; migration leftovers
+back to Stale, questions intact). Batches of ≤10 per the P1 runbook; ~66 batches;
+cloud routine 2×/day ≈ 33 days plus manual bursts. The 📥 Review flood this
+creates is expected and is what pulls Stage C forward.
+
+**A3. Digest (Phase R v1).** Every run, manual or routine, ends with a push:
+"P1: 10 enriched, 7 questions waiting" + Review link. Routine-native push; local
+runs log the same line.
+
+### Stage B — background runs (parallel with A)
+
+Cloud routines via /schedule, each ending with the digest push:
+- **P1-backfill**: 2×/day from backfill-queue; becomes plain P1 intake (1×/day)
+  when the queue empties.
+- **P2 upkeep**: weekly (details in Phase 2 section below).
+- **P3 scout**: weekly, only after backfill ≥ 50% done.
+Verify before trusting: NOTION_API_KEY in the cloud env, Playwright runs there,
+state/assets commits push to main (daily backup workflow proves cloud→main works).
+Known gap: the IG persistent profile lives on Jonathan's Mac; cloud routines skip
+IG capture and queue those entries in state/ig-queue.json for local sessions (or
+the later scouting-account profile) to drain.
+
+### Stage C — review app (Phase R v2)
+
+Tiny Next.js app: Vercel + Tailwind + Clerk. Mobile-first inbox, one entry per
+screen: images, drafted fields, Open Questions as tappable choices, free text for
+Notes, writes straight back to Notion. Build trigger: ~2 weeks of digest data OR
+review backlog > 100, whichever first. Requires the R2 image sync (Notion file
+URLs expire); assets/ is canonical so the sync is mechanical and manifest-driven.
+Probably the real seed of "The List"; may absorb Phase 5's shortlist UI.
+
+### Stage D — The List
+
+Browse/search mirroring the 25 properties, portfolio pages from R2, shortlists =
+Phase 5 Projects DB surfaced in-app, collaborator accounts via Clerk, share links
+per shortlist, and an AI advisor (Claude API with read tools over the DB: "who
+should I pull for a type-led packaging job?" answered with work, not just names).
+Notion remains the write-master; the app reads Notion + R2. A real database only
+if a real limit appears.
 
 ## Phase 5 — Project shortlists (deferred, design agreed 2026-06-12)
 
@@ -155,14 +234,14 @@ and fresh Chrome; see memory). Agent browsing through the extension is therefore
 PARKED until an extension update ships an approval flow. Current division:
 1. **No browser needed (works today, ~85% of intake):** WebFetch/WebSearch for
    facts, scrape.py for images (Squarespace, WordPress, Figma oEmbed, generic).
-2. **Playwright headless (Jonathan approved in principle, install pending):**
-   JS-rendered sites (Framer), passcoded case studies (state/passcodes.json),
-   public Figma file screenshots. Fully autonomous, carries no logins.
-3. **Logged-in platforms (Instagram, LinkedIn): parked.** LinkedIn mostly avoided
-   via Google snippets (no login needed). Instagram options, Jonathan's call:
-   (a) wait for extension fix (safest), (b) Playwright persistent profile he logs
-   into once (elevated challenge risk, spec accepts pause-on-challenge), (c) a
-   separate scouting account. Re-test the extension weekly.
+2. **Playwright headless (Jonathan approved, Stage A installs it):** JS-rendered
+   sites (Framer), passcoded case studies (state/passcodes.json), public Figma
+   file screenshots. Fully autonomous, carries no logins.
+3. **Instagram (decided 2026-06-12):** persistent Playwright profile, Jonathan's
+   own account NOW, migrated to a separate scouting account later (re-run the
+   login-once step). Elevated challenge risk accepted; spec's pause-on-challenge
+   rule is absolute, never complete a challenge. LinkedIn stays snippets-first,
+   no login. Extension re-test weekly remains, but nothing blocks on it.
 
 ## Conventions (agreed 2026-06-12)
 

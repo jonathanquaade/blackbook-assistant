@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""scrape.py - portfolio image scraper with per-platform strategies. Stdlib only.
+"""scrape.py - portfolio image scraper with per-platform strategies.
+
+Stdlib only, EXCEPT --render which needs playwright (pip install playwright;
+python3 -m playwright install chromium). Installed 2026-06-12.
 
 Crystallized knowledge (2026-06-12 intake runs). When a strategy fails on a new
 site: fix the STRATEGY here, retry, commit. Don't solve it inline in a session.
@@ -8,8 +11,13 @@ Platform lessons encoded:
 - Squarespace: gallery images live in data-src attributes; the first plain
   <img src> is usually a site-wide banner (trap).
 - Framer: content is client-side rendered; static HTML may have homepage imgs
-  but project pages are empty; og:image is one site-wide asset (trap). If this
-  tool returns nothing for a Framer site, use the browser (rendered DOM).
+  but project pages are empty; og:image is one site-wide asset (trap). Use
+  --render for Framer project pages: the rendered DOM has the real imgs with
+  width queries (keep them, they are already full-res, e.g. ?width=2880).
+- Passcoded case studies (--render --passcode CODE): fill input[type=password],
+  Enter first, then fall back to clicking a view/enter/continue button (sites
+  like branevsky.com use a styled VIEW CASE STUDY div, Enter alone may not
+  submit). Codes live in state/passcodes.json, Jonathan-provided only.
 - Figma: public files yield a thumbnail + a live embed via the oEmbed API
   (needs a browser User-Agent header).
 - WordPress: images under wp-content/uploads in plain src.
@@ -22,6 +30,9 @@ Usage:
       downloads images, appends to DIR/manifest.json, prints a JSON report
   scrape.py URL --probe
       no download: report platform, strategy, candidate count
+  scrape.py URL --render [--passcode CODE] [--text-out FILE] [--probe|--out DIR ...]
+      Playwright-rendered DOM: JS sites (Framer), passcoded case studies.
+      --text-out also saves the page's rendered text (case study copy).
 """
 import hashlib, json, os, re, sys, time, urllib.parse, urllib.request
 
@@ -62,6 +73,36 @@ def candidates(url, html, platform):
         out.append({'src': s, 'link': url, 'hint': None})
     return out
 
+def rendered_candidates(url, passcode=None, text_out=None):
+    """Playwright path: real DOM after JS render and optional passcode entry."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        page = b.new_page(viewport={'width': 1440, 'height': 2400})
+        page.goto(url, wait_until='networkidle', timeout=45000)
+        if passcode and page.locator('input[type=password]').count():
+            pw = page.locator('input[type=password]').first
+            pw.fill(passcode)
+            pw.press('Enter')
+            page.wait_for_timeout(1500)
+            if page.locator('input[type=password]').count():
+                btn = page.locator('button, [role=button], a, div[class*=framer]').filter(
+                    has_text=re.compile(r'view|enter|continue|unlock|submit', re.I))
+                if btn.count():
+                    btn.first.click()
+            try: page.wait_for_load_state('networkidle', timeout=20000)
+            except Exception: pass
+            page.wait_for_timeout(1500)
+        for _ in range(8):  # trigger lazy loads
+            page.mouse.wheel(0, 1600)
+            page.wait_for_timeout(350)
+        srcs = [im.get_attribute('src') or '' for im in page.locator('img').all()]
+        if text_out:
+            open(text_out, 'w').write(page.inner_text('body'))
+        b.close()
+    return [{'src': s, 'link': url, 'hint': None}
+            for s in dict.fromkeys(srcs) if s.startswith('http')]
+
 def main():
     a = sys.argv[1:]
     if not a: sys.exit(__doc__)
@@ -70,10 +111,17 @@ def main():
     out_dir = a[a.index('--out') + 1] if '--out' in a else None
     caption = a[a.index('--caption') + 1] if '--caption' in a else None
     limit = int(a[a.index('--limit') + 1]) if '--limit' in a else 6
+    render = '--render' in a
+    passcode = a[a.index('--passcode') + 1] if '--passcode' in a else None
+    text_out = a[a.index('--text-out') + 1] if '--text-out' in a else None
 
-    html = fetch(url).decode('utf-8', 'replace')
-    platform = detect(url, html)
-    cands = candidates(url, html, platform)
+    if render:
+        platform = 'rendered'
+        cands = rendered_candidates(url, passcode, text_out)
+    else:
+        html = fetch(url).decode('utf-8', 'replace')
+        platform = detect(url, html)
+        cands = candidates(url, html, platform)
     report = {'url': url, 'platform': platform, 'candidates': len(cands)}
     if platform == 'framer' and not cands:
         report['warning'] = 'Framer with empty static HTML: use the browser (rendered DOM)'
