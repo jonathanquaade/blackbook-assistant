@@ -174,6 +174,10 @@ Fully answered → clear the property.
 On the next pass: read these first, act on every instruction, then clear the field.
 If an instruction cannot be completed (blocked source, missing credential), document
 why in AI Notes and clear the instruction anyway — do not leave it as a ghost.
+**ALWAYS flip Revisit → Needs Review when the revisit pass is complete.** An entry
+he set to Revisit and you have finished must go BACK into his review inbox; leaving
+it in Revisit means he never sees the work he asked for. The pass is not done until
+the status is flipped.
 
 ## Corrections loop
 
@@ -323,8 +327,13 @@ Re-open the entry and check, honestly:
 - [ ] Raw clip text re-read end-to-end; every instruction in it acted on or asked about
 - [ ] No judgment field contradicts evidence (incl. Jonathan's notes)
 - [ ] Every runbook step done OR its failure documented in AI Notes/run log
-- [ ] Images: present + captioned, or their absence explained in AI Notes
+- [ ] Images: present + captioned from NAMED projects where the site has them
+      (case-study pages = named work; don't ship generic/anonymous shots when named
+      ones are one click away), or their absence explained in AI Notes
+- [ ] Nothing deferred that is findable NOW. "A future pass could add X" is not
+      allowed if X is reachable this pass — do it now. Needs Review means COMPLETE.
 - [ ] AI Notes hedged; sources in provenance; no field below 0.8 confidence
+- [ ] Status is Needs Review (incl. after a Revisit pass — flip it back)
 One unchecked box = the entry is not ready. This gate is the difference between
 "ran the steps" and "did the job".
 
