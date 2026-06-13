@@ -233,6 +233,11 @@ Inventory:
      deciding what to capture. (Lesson 2026-06-13: Alex Hislop was captured from
      his brand section while his actual Sound-design work lived in a separate
      Music Production section with embeddable videos — a thoroughness failure.)
+     **Check Instagram even when they have a website.** Creatives notoriously let
+     sites go stale while not job-hunting, so IG often holds their most recent
+     work. If IG is clearly newer/richer, capture from there too. Never assume the
+     website is current (ties to the Work Status objective rule: a stale site is
+     weak evidence).
   4. Find links: Website (canonical root), Instagram (full URL), LinkedIn, public
      Email. LinkedIn is NOT optional and NOT just for orgs: ALWAYS run a web search
      for the person's LinkedIn ("<name> <discipline> linkedin", or site:linkedin.com)
