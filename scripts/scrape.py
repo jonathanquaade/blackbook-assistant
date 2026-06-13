@@ -24,8 +24,10 @@ Platform lessons encoded:
   at depth=2 to list pages and top-level sections, (2) query each section
   with /files/{key}/nodes to find FRAME children (375x812 = mobile, 1440x900
   = desktop), (3) export those frames via /images/{key}?ids=...&scale=2.
-  The oEmbed thumbnail is one low-res canvas overview — useful as a single
-  context image, not the primary source. Figma CDN blocks headless Playwright
+  Frames can sit at any depth inside sections — traverse until you find FRAME
+  nodes; do not assume a fixed nesting level. The oEmbed thumbnail is one
+  low-res canvas overview — useful as a single context image, not the primary
+  source. Figma CDN blocks headless Playwright
   (CloudFront 403); use the REST API with FIGMA_API_KEY in .env instead.
   FIGMA_API_KEY is a personal access token (Figma Settings > Security), stored
   in .env, read-only access to files the account can see.
