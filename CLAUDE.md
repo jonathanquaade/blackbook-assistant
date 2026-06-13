@@ -234,7 +234,10 @@ Inventory:
      person without a captured LinkedIn is a search you skipped, not an absence;
      if genuinely none exists, say so in AI Notes.
   5. Draft fields via `keeper.py set` (zero-states included; Autonomy estimate with
-     hedged reasoning in AI Notes; Jonathan's note verbatim into Source).
+     hedged reasoning in AI Notes). **ALWAYS fill Source.** If Jonathan's clip note
+     has provenance text, use it verbatim; otherwise for backfill entries Source is
+     "Web clipper, <page created date>" (get created_time via the API). Never leave
+     Source empty on a completed entry.
   6. Work capture — **match what you capture to the Capability you tagged.** If
      they are Sound design, the work is their music/sound (embed it), NOT their
      brand/design side projects. If Photography, the photos. If 3D, the motion.
@@ -270,7 +273,12 @@ Inventory:
      a `link` to the source project page: `upload` writes a visible metadata line
      beneath the embed (project name + source link), so the entry self-documents
      what each video is for revisits months later (embed captions alone are faint
-     and lost on re-reads).
+     and lost on re-reads). **Notion does NOT show a poster preview for Vimeo (or
+     YouTube) embeds** — a wall of embeds looks blank. So for video creatives also
+     download each video's THUMBNAIL as a preview image (Vimeo/YouTube oEmbed gives
+     `thumbnail_url`), captioned + linked to the video. Pattern: a gallery of
+     thumbnail images up top (glanceable previews, each linking to the film) then
+     the playable embeds below.
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
   8. Status → Needs Review (never Verified). Log the run.
@@ -354,6 +362,7 @@ Re-open the entry and check, honestly:
       MATCHES the tagged Capability. Embeddable videos (YouTube/Vimeo on project
       pages) embedded, not skipped.
 - [ ] AI Notes hedged; sources in provenance; no field below 0.8 confidence
+- [ ] Source field filled (clip note, or "Web clipper, <created date>")
 - [ ] Status is Needs Review (incl. after a Revisit pass — flip it back)
 One unchecked box = the entry is not ready. This gate is the difference between
 "ran the steps" and "did the job".

@@ -78,6 +78,18 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   shows.
   Note: project videos may be YouTube OR Vimeo (Alex used both) — check for
   both iframe hosts and convert to clean watch?v=/vimeo.com/<id> URLs for embeds.
+- **Vimeo/YouTube embeds show NO poster preview in Notion** (Jonathan, 2026-06-13):
+  a wall of embeds looks blank. Fix: also download each video's thumbnail (oEmbed
+  `thumbnail_url`) as a captioned preview image; gallery of thumbnails on top, then
+  the playable embeds. (Lex Carthur: 8 Vimeo thumbnails + 8 embeds.)
+- **Always fill Source on backfill** (Jonathan, 2026-06-13): it is "Web clipper,
+  <page created date>" (API created_time) when there's no clip-note provenance.
+  Was being left empty. Now a self-review gate item. (Retrofitted Alex Hislop.)
+- **"IG-only" entries often aren't** — the Website field held the IG URL, but a web
+  search found his real portfolio (lexcarthur.com) + Vimeo. Always search for a real
+  site/reel before assuming IG is all they have; fix Website (canonical site) vs
+  Instagram (the IG URL) when the clipper conflated them. (Lex Carthur = Alex
+  McArthur; film directors keep reels on Vimeo.)
 - **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as
