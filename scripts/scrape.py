@@ -18,8 +18,17 @@ Platform lessons encoded:
   Enter first, then fall back to clicking a view/enter/continue button (sites
   like branevsky.com use a styled VIEW CASE STUDY div, Enter alone may not
   submit). Codes live in state/passcodes.json, Jonathan-provided only.
-- Figma: public files yield a thumbnail + a live embed via the oEmbed API
-  (needs a browser User-Agent header).
+- Figma: designers use SECTIONS to organise work; actual screens are FRAME
+  nodes nested inside sections, sometimes 3-4 levels deep. Never export the
+  section itself (huge canvas, unintelligible image). Strategy: (1) get file
+  at depth=2 to list pages and top-level sections, (2) query each section
+  with /files/{key}/nodes to find FRAME children (375x812 = mobile, 1440x900
+  = desktop), (3) export those frames via /images/{key}?ids=...&scale=2.
+  The oEmbed thumbnail is one low-res canvas overview — useful as a single
+  context image, not the primary source. Figma CDN blocks headless Playwright
+  (CloudFront 403); use the REST API with FIGMA_API_KEY in .env instead.
+  FIGMA_API_KEY is a personal access token (Figma Settings > Security), stored
+  in .env, read-only access to files the account can see.
 - WordPress: images under wp-content/uploads in plain src.
 - Generic: og:image first, then largest <img>.
 Self-checks: content-hash dedupe (catches the same-banner-N-times failure),
