@@ -266,7 +266,11 @@ Inventory:
      Mixcloud) and `{type:"bookmark", url, caption}` for writing/articles/case
      studies. Always still grab some images too (they read well), but the embed/
      bookmark IS the portfolio for these disciplines. Find the links via their site
-     + web search (e.g. "<name> soundcloud/vimeo").
+     + web search (e.g. "<name> soundcloud/vimeo"). Give each embed a `caption` AND
+     a `link` to the source project page: `upload` writes a visible metadata line
+     beneath the embed (project name + source link), so the entry self-documents
+     what each video is for revisits months later (embed captions alone are faint
+     and lost on re-reads).
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
   8. Status → Needs Review (never Verified). Log the run.

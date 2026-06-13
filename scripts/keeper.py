@@ -265,12 +265,20 @@ def cmd_upload(page_id, asset_dir):
     blocks = [{'type': 'heading_2', 'heading_2': {'rich_text': [{'text': {'content': 'Work'}}]}}]
     for entry in manifest:
         kind = entry.get('type', 'image')
-        if kind == 'embed':
-            blocks.append({'type': 'embed', 'embed': {'url': entry['url'],
+        if kind in ('embed', 'bookmark'):
+            blocks.append({'type': kind, kind: {'url': entry['url'],
                            'caption': cap_rt(entry)}})
-        elif kind == 'bookmark':
-            blocks.append({'type': 'bookmark', 'bookmark': {'url': entry['url'],
-                           'caption': cap_rt(entry)}})
+            # Auditable metadata line BELOW the embed: project name + source link,
+            # so the page itself records what each video/link is (embed captions are
+            # faint and lost on re-reads; this survives and aids revisits months later).
+            meta = [{'text': {'content': (entry.get('caption') or 'Work') + ' — '},
+                     'annotations': {'bold': True}}]
+            link = entry.get('link') or entry['url']
+            meta.append({'text': {'content': link.split('//')[-1].split('/')[0],
+                                  'link': {'url': link}}})
+            if entry.get('link') and entry.get('link') != entry['url']:
+                meta.append({'text': {'content': ' · video', 'link': {'url': entry['url']}}})
+            blocks.append({'type': 'paragraph', 'paragraph': {'rich_text': meta}})
         else:
             fid, name = fid_by_file[entry['file']]
             blocks.append({'type': 'image', 'image': {'type': 'file_upload',
