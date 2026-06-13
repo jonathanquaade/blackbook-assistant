@@ -236,31 +236,51 @@ def cmd_body_reset(page_id):
 
 def cmd_upload(page_id, asset_dir):
     """Build the agent-owned Work section from asset_dir/manifest.json:
-    heading, captioned images (caption = title + source link), divider.
-    Replaces the Images property. Manifest entries: {file, source_url, caption?, link?}."""
+    heading, then each work item in manifest order, divider. Replaces Images property.
+
+    Manifest entries are typed (default 'image'):
+    - image:    {file, source_url, caption?, link?}  -> uploaded file image block
+    - embed:    {type:'embed', url, caption?}        -> Notion embed (SoundCloud,
+                Spotify, Bandcamp, Vimeo, YouTube, NTS...) for audio/video work
+    - bookmark: {type:'bookmark', url, caption?}     -> rich link preview for
+                writing/articles/case studies
+    Non-image work (sound designers, videographers, writers, strategists) lives as
+    embed/bookmark entries so their actual output is in the portfolio, not just stills."""
     manifest = json.load(open(os.path.join(asset_dir, 'manifest.json')))
-    uploads = []
-    for entry in manifest:
-        fid, name = upload_file(os.path.join(asset_dir, entry['file']))
-        uploads.append((fid, name, entry))
+    def cap_rt(entry, suffix_link=None):
+        rt = []
+        if entry.get('caption'):
+            rt.append({'text': {'content': entry['caption'] + (' · ' if suffix_link else '')}})
+        if suffix_link:
+            rt.append({'text': {'content': suffix_link.split('//')[-1].split('/')[0],
+                                'link': {'url': suffix_link}}})
+        return rt
+    # upload only the image-type entries
+    img_entries = [e for e in manifest if e.get('type', 'image') == 'image']
+    uploads = [(upload_file(os.path.join(asset_dir, e['file'])), e) for e in img_entries]
     api(f'pages/{page_id}', {'properties': {'Images': {'files': [
         {'type': 'file_upload', 'file_upload': {'id': fid}, 'name': name}
-        for fid, name, _ in uploads]}}})
+        for (fid, name), _ in uploads]}}})
+    fid_by_file = {e['file']: (fid, name) for (fid, name), e in uploads}
     blocks = [{'type': 'heading_2', 'heading_2': {'rich_text': [{'text': {'content': 'Work'}}]}}]
-    for fid, name, entry in uploads:
-        caption = []
-        if entry.get('caption'):
-            caption.append({'text': {'content': entry['caption'] + ' · '}})
-        link = entry.get('link') or entry.get('source_url')
-        if link:
-            label = link.split('//')[-1].split('/')[0]
-            caption.append({'text': {'content': label, 'link': {'url': link}}})
-        blocks.append({'type': 'image', 'image': {'type': 'file_upload',
-                       'file_upload': {'id': fid}, 'caption': caption}})
+    for entry in manifest:
+        kind = entry.get('type', 'image')
+        if kind == 'embed':
+            blocks.append({'type': 'embed', 'embed': {'url': entry['url'],
+                           'caption': cap_rt(entry)}})
+        elif kind == 'bookmark':
+            blocks.append({'type': 'bookmark', 'bookmark': {'url': entry['url'],
+                           'caption': cap_rt(entry)}})
+        else:
+            fid, name = fid_by_file[entry['file']]
+            blocks.append({'type': 'image', 'image': {'type': 'file_upload',
+                           'file_upload': {'id': fid},
+                           'caption': cap_rt(entry, entry.get('link') or entry.get('source_url'))}})
     blocks.append({'type': 'divider', 'divider': {}})
     api(f'blocks/{page_id}/children', {'children': blocks})
-    prov_update(page_id, {'Images': [e['file'] for e in manifest]})
-    print(f'uploaded {len(uploads)} captioned images to {page_id}')
+    prov_update(page_id, {'Images': [e['file'] for e in img_entries]})
+    n_embed = sum(1 for e in manifest if e.get('type') in ('embed', 'bookmark'))
+    print(f'uploaded {len(uploads)} images + {n_embed} embeds/bookmarks to {page_id}')
 
 def cmd_set_notes(page_id, text):
     """Relocate Jonathan's OWN words from the page body into the Notes property.

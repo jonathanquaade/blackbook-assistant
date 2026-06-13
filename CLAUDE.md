@@ -70,6 +70,14 @@ Every field you touch: `{value, source_url, verified_at, set_by}`. Update on eve
 write. Verification updates field-by-field; bump the entry's Status Last Verified
 date only when the whole entry checks out.
 
+`set_by` values: `jonathan` (his decision, LOCKED — only he changes it) · `clipper`
+(web-clipper baseline, restructurable) · `migration` (Phase-0 import baseline of
+factual fields Name/Website/Instagram/Country/Size — restructurable like clipper;
+Phase 0 wrongly stamped these `jonathan`, reclassified 2026-06-13) · `agent` (you
+researched it). Only `jonathan` is locked; clipper/migration/agent are all freely
+updatable at the confidence floor. Notes and Capabilities stay `jonathan` on
+migrated entries (genuinely his); propose changes to those via Open Questions.
+
 ## Confidence floor (Jonathan, 2026-06-12)
 
 Write a fact only at ≥ 0.8 confidence — verified from a primary source (their own
@@ -77,6 +85,30 @@ site/profile) or two independent sources that agree. Below that: leave the field
 empty (factual) or ask (judgment-adjacent). An empty field is a correct output for
 a person who is hidden online; a plausible guess is not. Hedge anything inferred
 in AI Notes and mark the source in provenance.
+
+## Work Status — objective source resolution (Jonathan, 2026-06-13)
+
+To set Work Status (Freelance/Employed/Studio/Unknown) you must CHECK MULTIPLE
+SOURCES and resolve conflicts by an OBJECTIVE rule, never a vibe. Gather the signal
+from, in order of trust:
+1. **The person's own current portfolio/site** — highest weight. They control it and
+   keep it current; an explicit statement ("currently freelance", "open to work",
+   "Design Lead at Acme") is authoritative.
+2. **Instagram bio** — usually current (people update bios), but often terse/vague.
+3. **LinkedIn** — structured and explicit, BUT frequently STALE: people leave jobs
+   without updating, so a LinkedIn "Present" role is weak evidence on its own.
+
+Objective resolution when sources conflict:
+- **Two sources agree → that wins** (meets the confidence floor). Example: site +
+  Instagram both show freelance, LinkedIn still lists an old employer → Freelance.
+- **Only LinkedIn says employed, but the self-maintained site/IG say otherwise →
+  trust the self-maintained sources** (LinkedIn lag is the common failure mode).
+- **Only LinkedIn has signal, site/IG silent → Employed at 0.8 only if the role
+  reads current**; otherwise Unknown.
+- **Sources genuinely conflict with no majority and no recency signal → Work Status:
+  Unknown + one Open Question.** Never pick the flattering or convenient option.
+Record which sources you checked and which you trusted in AI Notes (e.g. "Freelance:
+site + IG agree; LinkedIn still lists Pentagram, treated as stale").
 
 ## Tagging
 
@@ -185,8 +217,12 @@ Inventory:
      leave judgment fields empty + ask), site passcodes, links, tagging direction.
   3. Research: their site (WebFetch or browser per §4) + web search. Identify
      person/org, capabilities (TAXONOMY.md), country, size, work status, employer.
-  4. Find links: Website (canonical root), Instagram (full URL), LinkedIn (company
-     page for orgs), public Email.
+  4. Find links: Website (canonical root), Instagram (full URL), LinkedIn, public
+     Email. LinkedIn is NOT optional and NOT just for orgs: ALWAYS run a web search
+     for the person's LinkedIn ("<name> <discipline> linkedin", or site:linkedin.com)
+     and capture the profile URL from the Google snippet (no login needed). A
+     person without a captured LinkedIn is a search you skipped, not an absence;
+     if genuinely none exists, say so in AI Notes.
   5. Draft fields via `keeper.py set` (zero-states included; Autonomy estimate with
      hedged reasoning in AI Notes; Jonathan's note verbatim into Source).
   6. Images, target ~10 per entry, DEPTH over breadth (Jonathan: 3 images from
@@ -205,6 +241,14 @@ Inventory:
      state/backfill-learnings.md when you hit it). Fill any `needs_caption`
      entries by hand. Then `keeper.py body-reset` and `keeper.py upload <page-id>
      assets/<page-id>`.
+     **Non-image work (sound designers, videographers, writers, strategists):**
+     images alone misrepresent them. Capture their ACTUAL work as typed manifest
+     entries that `upload` renders in the Work section: `{type:"embed", url,
+     caption}` for audio/video (SoundCloud, Spotify, Bandcamp, Vimeo, YouTube, NTS,
+     Mixcloud) and `{type:"bookmark", url, caption}` for writing/articles/case
+     studies. Always still grab some images too (they read well), but the embed/
+     bookmark IS the portfolio for these disciplines. Find the links via their site
+     + web search (e.g. "<name> soundcloud/vimeo").
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
   8. Status → Needs Review (never Verified). Log the run.
@@ -214,9 +258,13 @@ Inventory:
   Source). Mapping: "work(ed) with him/her at X" → Worked Together: Repeatedly
   (sustained colleague work) AND Familiarity: Know them well (working together
   answers both; never ask what a note already implies) + Works At context;
-  "found through X" / "recommended by X" / "(close) friend of X" / "X put me onto
-  them" → Familiarity: Recommended by a friend (he knows OF them via a trusted
-  person, has not met them himself; do NOT also set Worked Together);
+  "recommended by X" / "X vouches for them" / "my friend X says…" → Familiarity:
+  Recommended by a friend, ONLY when X is genuinely Jonathan's friend AND it is an
+  active vouch (do NOT also set Worked Together). CRITICAL DISTINCTION (correction
+  2026-06-13): "found through X" / "discovered via X" / "came across them through X"
+  is a DISCOVERY PATH, not a recommendation — Jonathan may not know X personally.
+  That stays Familiarity: Don't know them. When unsure whether X is his friend or
+  just a discovery channel, leave Don't know them and do NOT guess.
   "10/10" or "rating N" → Rating; "N autonomy" → Autonomy. Anything his note does NOT state stays a terse question.
   **Body-content handling (every P1/backfill entry):** read the page body before
   body-reset and split it by author. (1) **Clipped site copy** (the subject's own

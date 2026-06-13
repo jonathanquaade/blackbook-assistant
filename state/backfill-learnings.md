@@ -50,6 +50,22 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   real work is audio. Rule applied: attribute images to the studio, not invented
   project names; say so in AI Notes. Future: their best "work" may be audio/links,
   not images. (Alex Hislop → GETME!.)
-- **The new "Recommended by a friend" Familiarity option works** end-to-end from a
-  "Found through X" note via `set --from-jonathan`. (Alex Hislop, "Found through
-  Colin Doerffler".)
+- **"Recommended by a friend" is NARROW** (correction 2026-06-13, Jonathan): it
+  needs X to be his actual friend AND an active vouch. "Found through / discovered
+  via X" is just a discovery path → stays "Don't know them". CLAUDE.md mapping +
+  corrections.jsonl updated. (Alex Hislop: he doesn't know Colin personally.)
+- **LinkedIn must be actively searched every entry** — I skipped it for Alex and he
+  had one. Now a firm P1 step (web search, snippet, no login). (Alex Hislop.)
+- **Work Status needs multi-source objective resolution** (new CLAUDE.md section):
+  check self-site + IG + LinkedIn; 2 agreeing beat 1; self-maintained site/IG beat
+  a stale LinkedIn; unresolvable → Unknown + ask. Don't guess from one source.
+- **Non-image work is now a real feature** (keeper.py): manifest entries can be
+  `{type:"embed",url,caption}` (audio/video) or `{type:"bookmark",url,caption}`
+  (writing), rendered into the Work section by `upload`. For sound/video/writing/
+  strategy people the embed/bookmark IS the portfolio; still grab some images.
+  (Alex Hislop: SoundCloud + NTS show embedded.) Reusable for videographers
+  (Vimeo/YT), writers (article bookmarks), strategists (case-study bookmarks).
+- **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
+  (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
+  Reclassified to `migration` (restructurable). Notes + Capabilities kept as
+  jonathan. Future automation should never blanket-stamp `jonathan` on import.
