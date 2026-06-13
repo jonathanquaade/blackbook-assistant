@@ -65,6 +65,17 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   strategy people the embed/bookmark IS the portfolio; still grab some images.
   (Alex Hislop: SoundCloud + NTS show embedded.) Reusable for videographers
   (Vimeo/YT), writers (article bookmarks), strategists (case-study bookmarks).
+- **THOROUGHNESS FAILURE (Jonathan, 2026-06-13, Alex Hislop round 2):** I captured
+  his Brand Consultancy section and missed his Music Production section entirely —
+  which IS his tagged capability (Sound design) and is full of embeddable YouTube
+  videos (e.g. /commercial-music-production/miu-miu, rapha, prada, nike...). Two
+  rules now in CLAUDE.md: (1) map the WHOLE site nav, every discipline section,
+  before capturing; (2) the captured work must MATCH the tagged Capability — for a
+  sound designer that means embedding the actual music/video, not brand side-work.
+  Embedding YouTube/Vimeo from project pages is trivial (type:embed) and is the
+  right output for these creatives. General principle: think about the creative
+  TYPE and where their real work lives, don't just scrape whatever the homepage
+  shows.
 - **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as

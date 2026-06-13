@@ -221,6 +221,12 @@ Inventory:
      leave judgment fields empty + ask), site passcodes, links, tagging direction.
   3. Research: their site (WebFetch or browser per §4) + web search. Identify
      person/org, capabilities (TAXONOMY.md), country, size, work status, employer.
+     **Map the WHOLE site nav, don't stop at the homepage or first section.**
+     Multi-disciplinary creatives split work into sections (e.g. "Music
+     Production" vs "Brand Consultancy" vs "Design"). Find every section before
+     deciding what to capture. (Lesson 2026-06-13: Alex Hislop was captured from
+     his brand section while his actual Sound-design work lived in a separate
+     Music Production section with embeddable videos — a thoroughness failure.)
   4. Find links: Website (canonical root), Instagram (full URL), LinkedIn, public
      Email. LinkedIn is NOT optional and NOT just for orgs: ALWAYS run a web search
      for the person's LinkedIn ("<name> <discipline> linkedin", or site:linkedin.com)
@@ -229,7 +235,15 @@ Inventory:
      if genuinely none exists, say so in AI Notes.
   5. Draft fields via `keeper.py set` (zero-states included; Autonomy estimate with
      hedged reasoning in AI Notes; Jonathan's note verbatim into Source).
-  6. Images, target ~10 per entry, DEPTH over breadth (Jonathan: 3 images from
+  6. Work capture — **match what you capture to the Capability you tagged.** If
+     they are Sound design, the work is their music/sound (embed it), NOT their
+     brand/design side projects. If Photography, the photos. If 3D, the motion.
+     Capturing off-capability work is a real error (Alex Hislop, 2026-06-13: tagged
+     Sound design, but only his brand consultancy was captured — wrong work
+     entirely). **Embed videos when the project page has them**: YouTube/Vimeo on a
+     case-study page → a `{type:"embed", url, caption}` manifest entry (trivial and
+     far better than a screenshot of a video). Then images:
+     target ~10 per entry, DEPTH over breadth (Jonathan: 3 images from
      3 projects beats 10 covers from 10 projects). Go INSIDE projects: interiors
      and spreads, not just hero/cover shots. `scrape.py <url> --probe` first,
      then `scrape.py <project-url> --out assets/<page-id> --caption "Project,
@@ -332,6 +346,9 @@ Re-open the entry and check, honestly:
       ones are one click away), or their absence explained in AI Notes
 - [ ] Nothing deferred that is findable NOW. "A future pass could add X" is not
       allowed if X is reachable this pass — do it now. Needs Review means COMPLETE.
+- [ ] Whole site nav explored (every discipline section), and the work captured
+      MATCHES the tagged Capability. Embeddable videos (YouTube/Vimeo on project
+      pages) embedded, not skipped.
 - [ ] AI Notes hedged; sources in provenance; no field below 0.8 confidence
 - [ ] Status is Needs Review (incl. after a Revisit pass — flip it back)
 One unchecked box = the entry is not ready. This gate is the difference between
