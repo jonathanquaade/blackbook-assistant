@@ -5,3 +5,16 @@ Vincenzo Marchese Ragona (3D CGI)
 # Archived page body (2026-06-13)
 
 Motion Design
+# Archived page body (2026-06-13)
+
+Work
+
+Showreel 2024 — vmragona.com · video
+
+Apple AirPods — vmragona.com · video
+
+Jamie xx — Let's Do It Again — vmragona.com · video
+
+Puma Speedcat — vmragona.com · video
+
+Boiler Room — vmragona.com · video

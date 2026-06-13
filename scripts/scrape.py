@@ -139,7 +139,11 @@ def shot(url, out_dir, caption, full=False):
     os.makedirs(out_dir, exist_ok=True)
     mp = os.path.join(out_dir, 'manifest.json')
     manifest = json.load(open(mp)) if os.path.exists(mp) else []
-    n = len([f for f in os.listdir(out_dir) if f.startswith('site-')])
+    # max existing index + 1, extension-agnostic, so a .png shot never collides
+    # with an existing site-NN.jpg (counting files breaks across extensions)
+    idxs = [int(re.match(r'site-(\d+)', f).group(1))
+            for f in os.listdir(out_dir) if re.match(r'site-\d+', f)]
+    n = max(idxs) if idxs else 0
     with sync_playwright() as p:
         b = p.chromium.launch()
         page = b.new_page(viewport={'width': 1440, 'height': 900})
@@ -199,7 +203,9 @@ def main():
         p = os.path.join(out_dir, f['file'])
         if os.path.exists(p):
             seen_hashes.add(hashlib.sha256(open(p, 'rb').read()).hexdigest())
-    n_existing = len([f for f in os.listdir(out_dir) if f.startswith('site-')])
+    _idxs = [int(re.match(r'site-(\d+)', f).group(1))
+             for f in os.listdir(out_dir) if re.match(r'site-\d+', f)]
+    n_existing = max(_idxs) if _idxs else 0  # max index, not count (ext-agnostic)
     saved, skipped = [], 0
     for c in cands:
         if len(saved) >= limit: break
