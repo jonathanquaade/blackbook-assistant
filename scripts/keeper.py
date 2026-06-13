@@ -10,6 +10,8 @@ Usage:
   keeper.py get PAGE_ID             entry as readable JSON
   keeper.py set PAGE_ID JSON [--source URL]   update fields, e.g. '{"Type":"Person"}'
   keeper.py ask PAGE_ID TEXT        set Open Questions, status -> Needs Review
+  keeper.py set-notes PAGE_ID TEXT --relocated-from-body
+      relocate Jonathan's OWN body commentary into Notes (only sanctioned Notes write)
   keeper.py status PAGE_ID STATUS   set Entry Status (Verified is refused)
   keeper.py upload PAGE_ID FILE...  upload images: Images property + page-body blocks
   keeper.py log TEXT                append timestamped line to state/browser-log.md
@@ -260,6 +262,20 @@ def cmd_upload(page_id, asset_dir):
     prov_update(page_id, {'Images': [e['file'] for e in manifest]})
     print(f'uploaded {len(uploads)} captioned images to {page_id}')
 
+def cmd_set_notes(page_id, text):
+    """Relocate Jonathan's OWN words from the page body into the Notes property.
+
+    Notes is Jonathan's: cmd_set refuses it in both paths. This is the single
+    sanctioned exception, for ONE job only — moving commentary HE wrote in the
+    page body into the Notes field (his clipper writes into the body; his
+    opinion belongs in the filterable field, not buried below images). It is
+    his text, set_by jonathan, never agent-authored. Do NOT use this to write
+    summaries or anything you composed — that is what AI Notes is for.
+    """
+    api(f'pages/{page_id}', {'properties': {'Notes': encode('Notes', text)}})
+    prov_update(page_id, {'Notes': text}, set_by='jonathan')
+    print(f'set Notes on {page_id} (jonathan, relocated from body)')
+
 def cmd_log(text):
     with open(os.path.join(REPO, 'state', 'browser-log.md'), 'a') as f:
         f.write(f'- {datetime.now().isoformat(timespec="seconds")} — {text}\n')
@@ -275,6 +291,10 @@ if __name__ == '__main__':
         src = a[a.index('--source') + 1] if '--source' in a else None
         cmd_set(a[1], a[2], src, from_jonathan='--from-jonathan' in a)
     elif cmd == 'ask': cmd_ask(a[1], a[2])
+    elif cmd == 'set-notes':
+        if '--relocated-from-body' not in a:
+            sys.exit("CONTRACT: set-notes only relocates Jonathan's own body words. Pass --relocated-from-body to confirm.")
+        cmd_set_notes(a[1], a[2])
     elif cmd == 'status': cmd_status(a[1], a[2])
     elif cmd == 'upload': cmd_upload(a[1], a[2])
     elif cmd == 'body-reset': cmd_body_reset(a[1])

@@ -14,9 +14,14 @@ are historical (its principles and browser guardrails remain binding).
 2. **You never write the judgment fields** — Rating, Worked Together, Familiarity,
    Work With? — except their zero-states on NEW entries (see Zero-states). You may
    estimate Autonomy only, marked `set_by: agent`, reasoning in AI Notes.
-3. **`Notes` is Jonathan's.** Read it (it's signal), never write it. The page body
+3. **`Notes` is Jonathan's.** Read it (it's signal), never author it. The page body
    below the divider is his too — you may append there ONLY when he approved that
    specific addition, signed `— Keeper, YYYY-MM-DD`.
+   **One sanctioned exception (relocation, not authorship):** when Jonathan has
+   typed HIS OWN commentary into the page body (his words, not clipped site copy),
+   move that prose verbatim into Notes via `keeper.py set-notes <id> "..."
+   --relocated-from-body` (set_by jonathan). You are relocating his text, never
+   composing. Your own summaries go in AI Notes, never Notes.
 4. **Quality bar ("Never Settle"):** high quality over speed, but move fast once
    sure; if a requirement seems dumb, question it instead of implementing it.
 
@@ -31,8 +36,8 @@ never both) · Autonomy (1–5 Storonsky scale; the one judgment you may estimat
 Day Rate (number).
 Links: Website · Instagram (full URL) · LinkedIn · Email.
 Jonathan's: Worked Together (Never/Once/Repeatedly) · Familiarity (Don't know
-them/Met or spoken/Know them well) · Work With? (Definitely/Yes/In a pinch/No/
-Unvetted) · Rating (1–5; 5 is rare) · Notes.
+them/Recommended by a friend/Met or spoken/Know them well) · Work With?
+(Definitely/Yes/In a pinch/No/Unvetted) · Rating (1–5; 5 is rare) · Notes.
 Machinery: Source (how found) · Images (files; real uploads, never external links) ·
 Open Questions (your questions to him, numbered multi-choice) · AI Notes (your 2–3
 line summary; you own it) · Status Last Verified (date — written by P2 ONLY, when a
@@ -189,11 +194,17 @@ Inventory:
      and spreads, not just hero/cover shots. `scrape.py <url> --probe` first,
      then `scrape.py <project-url> --out assets/<page-id> --caption "Project,
      year" --limit 3` per chosen project (it dedupes and skips banners/logos).
-     Passcoded projects: check state/passcodes.json, enter via browser, capture
-     rendered images. Figma portfolios: open the file in the browser, screenshot
-     strong frames (plus the live embed). Fill any `needs_caption` entries by
-     hand. Then `keeper.py body-reset` and `keeper.py upload <page-id>
-     assets/<page-id>`. Framer warning → use the browser's rendered DOM.
+     Passcoded projects: check state/passcodes.json, `scrape.py <url> --render
+     --passcode CODE`. Framer / JS-rendered sites: `scrape.py <url> --render`.
+     Figma portfolios: NOT the browser (CloudFront 403s headless). Use the REST
+     API with FIGMA_API_KEY: get the file at depth=2, traverse sections to the
+     FRAME nodes (the actual screens, any depth), export the strong ones via
+     /images at scale=2. Instagram: `scrape.py <profile-url> --render` for the
+     public grid (still images, ~top of grid, no login); video/reels/carousel
+     interiors need the logged-in profile (not built yet — log to
+     state/backfill-learnings.md when you hit it). Fill any `needs_caption`
+     entries by hand. Then `keeper.py body-reset` and `keeper.py upload <page-id>
+     assets/<page-id>`.
   7. Unresolvables → numbered Open Questions (sparingly — only what the agent truly
      cannot find). If evidence suggests Jonathan knows them, ask the story question.
   8. Status → Needs Review (never Verified). Log the run.
@@ -203,7 +214,18 @@ Inventory:
   Source). Mapping: "work(ed) with him/her at X" → Worked Together: Repeatedly
   (sustained colleague work) AND Familiarity: Know them well (working together
   answers both; never ask what a note already implies) + Works At context;
+  "found through X" / "recommended by X" / "(close) friend of X" / "X put me onto
+  them" → Familiarity: Recommended by a friend (he knows OF them via a trusted
+  person, has not met them himself; do NOT also set Worked Together);
   "10/10" or "rating N" → Rating; "N autonomy" → Autonomy. Anything his note does NOT state stays a terse question.
+  **Body-content handling (every P1/backfill entry):** read the page body before
+  body-reset and split it by author. (1) **Clipped site copy** (the subject's own
+  about/marketing text, third-person or first-person-as-them) → archive to
+  clipped.md, mine for factual AI Notes, delete. (2) **Jonathan's own commentary**
+  (his voice, opinions, "I worked with…", "she's amazing", a rating) → extract any
+  stated judgment via `set --from-jonathan` (see mapping above), move his prose
+  verbatim into Notes via `set-notes <id> "…" --relocated-from-body`, then delete.
+  When unsure which it is, treat as site copy (never invent Jonathan's voice).
   **Clipped-Name convention:** the web clipper only lets Jonathan set Name + URL, so
   he writes his notes INTO the Name field ("Studio X — jack's friend, type side").
   That note text is his instruction to you: highest-priority signal for tagging and
