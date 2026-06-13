@@ -200,6 +200,7 @@ def main():
     manifest = json.load(open(mp)) if os.path.exists(mp) else []
     seen_hashes = set()
     for f in manifest:
+        if not f.get('file'): continue  # embeds/bookmarks have no local file
         p = os.path.join(out_dir, f['file'])
         if os.path.exists(p):
             seen_hashes.add(hashlib.sha256(open(p, 'rb').read()).hexdigest())
