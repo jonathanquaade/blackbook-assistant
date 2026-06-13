@@ -64,7 +64,7 @@ case-insensitively (case-only renames collide); deleted property names stay rese
    report shared external employers as add-candidates.
 7. **Retire CRM-era properties** after mapping is applied (values preserved in CSV).
 8. **Init state**: `state/provenance/<page-id>.json` for every row
-   (`set_by: jonathan`, unverified); all entries → `Entry Status = Stale`.
+   (`set_by: jonathan`, unverified); all entries → `Entry Status = Revisit`.
 9. **Write TAXONOMY.md v1** from the approved tag mapping.
 10. **Saved views** (manual, Jonathan, ~5 min with my checklist): Dream partners,
     Proven core, Never again, Needs Review queue.
@@ -98,7 +98,7 @@ Exit criteria: spec §9 Phase 0 ✓s, plus `schema-before.json` committed.
   worth capturing → image proposals, never silent additions.
 - Output discipline: clean entry → bump Status Last Verified only. Any diff →
   numbered proposal in Open Questions, entry → Needs Review, NEVER overwritten
-  (`set_by: jonathan` doubly so). >90d unverified → Stale automatically.
+  (`set_by: jonathan` doubly so). >90d unverified → Revisit automatically.
 - Digest line: "P2: 10 checked, 2 diffs proposed."
 
 ## Phase 3 — Scout (P3; weekly routine, starts after backfill ≥ 50%)
@@ -141,7 +141,7 @@ shortlists, collaborator accounts and an AI advisor.
 4. **Interface**: Notion is the UI now; a Next.js review app replaces the review
    flow (Stage C); that app grows into "The List" (Stage D).
 
-DB reality at decision time: 713 entries; 658 Stale, 53 Needs Review, 2 unset.
+DB reality at decision time: 713 entries; 658 Revisit, 53 Needs Review, 2 unset.
 712 missing Type and AI Notes, 713 missing images, 651 missing Instagram. The
 backfill IS the project for the next month.
 
@@ -159,7 +159,7 @@ any challenge pauses the whole batch). Playwright strategies land in the tools
 Review. Order: Jonathan-signal entries first (Notes, old CRM values, Day Rate),
 queue built once into state/backfill-queue.json with a shared cursor. First:
 reconcile the 53 current Needs Review (finished drafts stay; migration leftovers
-back to Stale, questions intact). Batches of ≤10 per the P1 runbook; ~66 batches;
+back to Revisit, questions intact). Batches of ≤10 per the P1 runbook; ~66 batches;
 cloud routine 2×/day ≈ 33 days plus manual bursts. The 📥 Review flood this
 creates is expected and is what pulls Stage C forward.
 

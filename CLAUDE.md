@@ -7,8 +7,9 @@ are historical (its principles and browser guardrails remain binding).
 
 ## The contract (non-negotiable)
 
-1. **Jonathan is the only source of truth.** You propose; he disposes. NEVER set
-   `Entry Status = Verified`. NEVER overwrite a field marked `set_by: jonathan` in
+1. **Jonathan is the only source of truth.** You propose; he disposes. He sets
+   `Entry Status = Verified` himself in Notion when he is happy with an entry;
+   you NEVER set it. NEVER overwrite a field marked `set_by: jonathan` in
    provenance unless the world visibly changed — and then only as a proposal.
 2. **You never write the judgment fields** — Rating, Worked Together, Familiarity,
    Work With? — except their zero-states on NEW entries (see Zero-states). You may
@@ -36,7 +37,7 @@ Machinery: Source (how found) · Images (files; real uploads, never external lin
 Open Questions (your questions to him, numbered multi-choice) · AI Notes (your 2–3
 line summary; you own it) · Status Last Verified (date — written by P2 ONLY, when a
 whole entry checks out; empty means "never verified", which is honest) · Entry Status
-(New/Enriching/Needs Review/Verified/Stale/Rejected). Works At/Works At Link stay
+(New/Enriching/Needs Review/Verified/Revisit/Rejected). Works At/Works At Link stay
 empty for orgs and for unresearched people — structural, not sloppy.
 
 **Zero-states — no meaningless Empty.** On entries you create or enrich, judgment
@@ -49,12 +50,13 @@ clip note says "working with him atm", `Worked Together: Never` would be knowing
 false — leave the field empty and ask the terse question instead. Empty-pending-
 answer is honest; a false default is not.
 
-**State machine:** New → Enriching → Needs Review → (Jonathan) Verified → Stale
+**State machine:** New (or EMPTY, from web clipper) → Enriching → Needs Review →
+Jonathan sets Verified when happy, or Revisit when he wants another agent pass →
 (>90d) → re-verify → … Everything needing his eyes goes through `Needs Review` +
 Open Questions — that's his single 📥 Review inbox.
 **Needs Review is EARNED:** an entry enters it only after a COMPLETE agent pass
 (fields enriched, images where findable). Jonathan reviews finished drafts, never
-raw or half-filled entries. Migration-flagged entries wait in Stale (questions
+raw or half-filled entries. Migration-flagged entries wait in Revisit (questions
 intact) until enrichment reaches them.
 
 ## Provenance (state/provenance/<page-id>.json)
@@ -93,8 +95,8 @@ colons, semicolons or parentheses instead. En-dashes in ranges (2–10) are fine
   not truth.
 - **AI Notes are living.** When Jonathan overrides a field, writes Notes that
   contradict AI Notes, or his Rating/verdict implies your summary is off — update
-  AI Notes in the same pass that logs the correction. Stale AI Notes are worse
-  than none.
+  AI Notes in the same pass that logs the correction. Out-of-date AI Notes are
+  worse than none.
 
 ## Image feedback loop
 
@@ -207,7 +209,7 @@ Inventory:
   identified images over more, anonymous ones.
   **Always capture during P1:** public contact email and LinkedIn (company pages
   for studios — findable via search/site, no LinkedIn visit needed).
-- **P2 verify** (Stale or >90d, batch ≤ 10, LinkedIn ≤ 5): check live facts, write
+- **P2 verify** (Revisit or >90d, batch ≤ 10, LinkedIn ≤ 5): check live facts, write
   DIFFS as proposals in Open Questions, never overwrite. Clean → bump date only.
 - **P3 scout**: candidates to the separate Candidates DB, digest to Jonathan,
   Rejected is permanent (never re-propose).

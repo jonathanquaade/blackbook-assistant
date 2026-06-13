@@ -6,7 +6,7 @@ only moves data and enforces the hard contract (no Verified, no judgment-field
 writes beyond zero-states, provenance write-through).
 
 Usage:
-  keeper.py work new|stale          work list as JSON lines (stale capped at 10)
+  keeper.py work new|revisit         work list as JSON lines (revisit capped at 10)
   keeper.py get PAGE_ID             entry as readable JSON
   keeper.py set PAGE_ID JSON [--source URL]   update fields, e.g. '{"Type":"Person"}'
   keeper.py ask PAGE_ID TEXT        set Open Questions, status -> Needs Review
@@ -137,12 +137,12 @@ def cmd_work(kind):
     if kind == 'new':
         rows = [r for r in query_all()
                 if (r['properties']['Entry Status']['select'] or {}).get('name') in (None, 'New')]
-    elif kind == 'stale':
-        rows = [r for r in query_all({'property': 'Entry Status', 'select': {'equals': 'Stale'}})]
+    elif kind == 'revisit':
+        rows = [r for r in query_all({'property': 'Entry Status', 'select': {'equals': 'Revisit'}})]
         rows.sort(key=lambda r: (r['properties']['Status Last Verified']['date'] or {}).get('start', ''))
         rows = rows[:10]
     else:
-        sys.exit('work new|stale')
+        sys.exit('work new|revisit')
     for r in rows:
         print(json.dumps(entry_dict(r), ensure_ascii=False))
     print(f'-- {len(rows)} entries', file=sys.stderr)
