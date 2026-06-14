@@ -153,6 +153,19 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   collided with `.jpg` scrapes → use max index, extension-agnostic.
 - **Seniority + Autonomy on every entry** (Jonathan): record a seniority read in AI
   Notes and set the Autonomy estimate, grounded in work history.
+### Batch 4 review fixes (Jonathan 2026-06-15) — "a missing link is a skipped search"
+
+- **Always hunt for a personal WEBSITE**, don't settle for IG/Behance-only. Surya
+  Anand had suryaanand.com (avant-garde type, Abbie Leach Atelier, far better than
+  his lone Behance Semplice project) — missed it entirely first pass. Search
+  "<name> portfolio", try <name>.com/.design.
+- **Always find their real INSTAGRAM** (try handle variants; the reliable source is
+  the external-links list on their own Behance/site/read.cv). Morgan Light is
+  @morgan.light (found via her Behance) — I'd said "no IG found", and @morganlight
+  is a DIFFERENT person (Morgan Lightcatcher). Wrong-person IGs happened twice
+  (Neil's @neilsgraphics too) -> ALWAYS verify bio+grid match; if unsure, ASK.
+- Both fixes now in CLAUDE.md step 4.
+
 ### Batch 4 (Morgan, Kate, Surya, Claudia, Neil)
 
 - **Agency-first wins**: Morgan Light's up&up (Target) flagship pulled hi-res from

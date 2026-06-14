@@ -256,11 +256,21 @@ Inventory:
      website is current (ties to the Work Status objective rule: a stale site is
      weak evidence).
   4. Find links: Website (canonical root), Instagram (full URL), LinkedIn, public
-     Email. LinkedIn is NOT optional and NOT just for orgs: ALWAYS run a web search
-     for the person's LinkedIn ("<name> <discipline> linkedin", or site:linkedin.com)
-     and capture the profile URL from the Google snippet (no login needed). A
-     person without a captured LinkedIn is a search you skipped, not an absence;
-     if genuinely none exists, say so in AI Notes.
+     Email. **A missing link is almost always a search you skipped, not an absence**
+     (Jonathan 2026-06-15, after misses on Surya's site and Morgan's IG):
+     - **Website:** don't settle for an IG/Behance-only listing. Search
+       "<name> portfolio", "<name> design", try <name>.com / .design / .studio.
+       Surya Anand had suryaanand.com (far better work than his Behance) but was
+       listed as IG-only — and it was missed.
+     - **Instagram:** check it even if not linked, and try handle variants
+       (@name, @name.with.dots, @namedesign). The RELIABLE way: read the external
+       links on their OWN Behance / site / read.cv — they link their real IG there
+       (Morgan Light's was @morgan.light, found via her Behance, not @morganlight
+       which is a different person). **ALWAYS verify the handle is the right person**
+       (bio + grid match) before attaching — wrong-person IGs have happened twice
+       (Neil, Morgan). If you cannot confirm, ASK rather than attach or claim none.
+     - **LinkedIn:** ALWAYS search ("<name> <discipline> linkedin"); capture from the
+       Google snippet (no login). Genuinely none → say so in AI Notes.
      **Read their EXPERIENCE, not just grab the URL** (Jonathan, 2026-06-13). Build
      their work history (roles, employers, years, level) from public sources: the
      LinkedIn Google snippet, a logged-out visit to the public profile (read-only;
