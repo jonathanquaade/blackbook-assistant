@@ -153,6 +153,22 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   collided with `.jpg` scrapes → use max index, extension-agnostic.
 - **Seniority + Autonomy on every entry** (Jonathan): record a seniority read in AI
   Notes and set the Autonomy estimate, grounded in work history.
+### Round 4 (Megan multi-project + cookie fix v2)
+
+- **Interviews name an agency designer's projects** — the key technique. When a
+  designer's own site doesn't show their work (common for agency designers), their
+  INTERVIEWS (The Brand Identity, It's Nice That, Creative Boom, etc.) often name the
+  specific projects they worked on. Search "<name> interview", read for project
+  names, then pull those from the agency's case studies at full res. (Megan's own
+  Brand Identity interview named Equinox Hotels + More Than Magic, beyond Girl
+  Scouts — turning a one-project entry into three.)
+- **Spread across projects, not depth on one.** 10 images of one project is a weak
+  portfolio; aim for several projects with a few strong hi-res images each.
+- **Cookie/consent shot fix v2**: explicit known button names (IG: "Allow all
+  cookies" / "Decline optional cookies"), then Escape the login modal, then WAIT
+  ~2.5s for the banner to animate out before the screenshot. The text-regex loop
+  alone was flaky.
+
 ### Round 3 (Jonathan's 2nd review)
 
 - **shot cookie banner fixed**: dismiss consent ("Decline optional cookies" / "Allow

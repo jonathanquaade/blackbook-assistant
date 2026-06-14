@@ -314,7 +314,12 @@ Inventory:
      at X"); only claim they personally led a project when evidence says so. Go deep
      and high-res: agency case studies (often Sanity/Contentful CDNs) downscale in
      the browser — fetch the full-res original (e.g. append ?w=2000 to a sanity.io
-     URL) rather than the pixelated displayed version.
+     URL, ?format=2500w to a squarespace-cdn URL) rather than the pixelated displayed
+     version. Aim for a SPREAD across several projects, not 10 images of one.
+     **To find an agency designer's projects, read their INTERVIEWS** (search
+     "<name> interview"): they routinely name the specific projects they worked on,
+     which then point you to the agency case studies. (Megan Bowker's interview
+     surfaced Equinox Hotels + More Than Magic beyond Girl Scouts.)
      **Instagram for recent work:** creatives' sites lag; their IG often has newer,
      better projects and video. Go into IG, see which posts are recent, pull the
      strong ones (images and video). Prefer a screenshot WITH a link caption over a
