@@ -104,9 +104,13 @@ def cmd_status():
         print('logged OUT (re-run ig.py login)' if _challenged(page) else 'logged in, session valid')
         ctx.close()
 
-def _download(url, out_dir, n, seen, caption, link):
+def _download(req, url, out_dir, n, seen, caption, link):
+    # fetch THROUGH the browser context (carries the logged-in session + headers);
+    # urllib gets 403'd by Instagram's CDN.
     try:
-        data = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=30).read()
+        r = req.get(url, timeout=30000)
+        if r.status != 200: return None
+        data = r.body()
     except Exception:
         return None
     h = hashlib.sha256(data).hexdigest()
@@ -145,42 +149,30 @@ def cmd_grab(profile_url, out_dir, caption, limit, posts, headed):
             ctx.close()
             sys.exit('CHALLENGE/logged-out on Instagram - STOPPING. Re-run ig.py login, '
                      'do not retry blindly. (read-only, no challenge solving)')
-        # collect post links from the grid
-        for _ in range(4):
-            page.mouse.wheel(0, 2000); page.wait_for_timeout(2500)  # 2-6s cadence
-        post_links = page.evaluate(
-            "() => [...new Set(Array.from(document.querySelectorAll('a[href]'))"
-            ".map(a=>a.getAttribute('href')).filter(h=>h&&(h.includes('/p/')||h.includes('/reel/'))))]")
-        if posts:
-            base = 'https://www.instagram.com'
-            for href in post_links:
-                if len(added) >= limit: break
-                page.goto(base + href, wait_until='domcontentloaded', timeout=45000)
-                page.wait_for_timeout(2500)
-                if _challenged(page):
-                    ctx.close(); sys.exit('CHALLENGE mid-run - STOPPING, session may be flagged.')
-                media = page.evaluate(r"""() => {
-                  const v = document.querySelector('video');
-                  if (v && (v.src||'').startsWith('http')) return {kind:'video', src:v.src};
-                  let best=null,bw=0;
-                  document.querySelectorAll('img').forEach(i=>{const w=i.naturalWidth||0;
-                    const s=i.currentSrc||i.src||''; if(s.includes('cdninstagram')&&w>bw){bw=w;best=s}});
-                  return best?{kind:'image', src:best, w:bw}:null;
-                }""")
-                if media:
-                    rec = _download(media['src'], out_dir, n+1, seen, caption, base+href)
-                    if rec: n += 1; added.append(rec); manifest.append(rec)
-                time.sleep(3)
-        else:
-            srcs = page.evaluate(
+        # The grid is VIRTUALISED: off-screen thumbnails unload, so collect srcs at
+        # EACH scroll step and accumulate (a single end-of-scroll snapshot misses
+        # most). The logged-in grid serves full-res (~1080px) images; the 30KB floor
+        # in _download drops the small avatar/profile pics (t51..-19). Post pages are
+        # NOT useful (blob: video + tiny imgs). Gentle, human-paced scroll; if the
+        # grid only ever yields tiny avatars, IG is soft-throttling -> bail (anomaly).
+        acc = {}
+        for _ in range(12):
+            cur = page.evaluate(
                 "() => Array.from(document.querySelectorAll('img'))"
-                ".map(i=>({s:i.currentSrc||i.src,w:i.naturalWidth}))"
-                ".filter(o=>o.s.includes('cdninstagram')&&o.w>=600).map(o=>o.s)")
-            for s in list(dict.fromkeys(srcs)):
-                if len(added) >= limit: break
-                rec = _download(s, out_dir, n+1, seen, caption, profile_url)
-                if rec: n += 1; added.append(rec)
-                time.sleep(1)
+                ".map(i=>i.currentSrc||i.src).filter(s=>s.includes('cdninstagram'))")
+            for s in cur: acc[s.split('?')[0]] = s
+            page.mouse.wheel(0, 1000); page.wait_for_timeout(1500)
+            if _challenged(page):
+                ctx.close(); sys.exit('CHALLENGE mid-scroll - STOPPING.')
+        for s in acc.values():
+            if len(added) >= limit: break
+            rec = _download(ctx.request, s, out_dir, n+1, seen, caption, profile_url)
+            if rec: n += 1; added.append(rec)
+            time.sleep(1)
+        if not added:
+            print('WARNING: no images >=30KB captured - grid likely soft-throttled or '
+                  'only avatars loaded. Stop, let the session rest, retry later (maybe '
+                  '--headed).', file=sys.stderr)
         ctx.close()
     json.dump(manifest, open(mp, 'w'), indent=2)
     print(json.dumps({'grabbed': len(added),
