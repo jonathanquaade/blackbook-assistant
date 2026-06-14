@@ -272,7 +272,16 @@ Inventory:
      has provenance text, use it verbatim; otherwise for backfill entries Source is
      "Web clipper, <page created date>" (get created_time via the API). Never leave
      Source empty on a completed entry.
-  6. Work capture — **match what you capture to the Capability you tagged.** If
+  6. Work capture — **PRIMARY METHOD (Jonathan 2026-06-14): find their projects,
+     then go to the agencies/brands they did them at and take the images/video from
+     THERE.** A designer's best work usually lives on their employers' and clients'
+     sites (agency case studies, the live brand sites they built), NOT on their own
+     site, which is frequently dead, a placeholder, or years stale. So: (a) build
+     their project + employer list from interviews, their CV/read.cv, bios and web
+     search; (b) go to each agency case study / brand site and pull high-res images
+     and video (full-res from the CDN, per below); (c) treat their own site/IG as a
+     supplement. This beats scraping a thin or dead personal site every time.
+     **Match what you capture to the Capability you tagged.** If
      they are Sound design, the work is their music/sound (embed it), NOT their
      brand/design side projects. If Photography, the photos. If 3D, the motion.
      Capturing off-capability work is a real error (Alex Hislop, 2026-06-13: tagged

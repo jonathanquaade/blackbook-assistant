@@ -153,6 +153,15 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   collided with `.jpg` scrapes → use max index, extension-agnostic.
 - **Seniority + Autonomy on every entry** (Jonathan): record a seniority read in AI
   Notes and set the Autonomy estimate, grounded in work history.
+### PRIMARY work-discovery method (Jonathan 2026-06-14)
+
+The best way to find someone's work: **find the projects they've done, identify the
+agencies/brands they did them at, and take the images/video from THOSE sites** (agency
+case studies, live brand sites). A designer's own site is often dead/placeholder/
+stale; their real work lives at their employers and clients. Order: projects+employers
+(interviews, CV/read.cv, search) -> agency case studies + brand sites (high-res from
+CDN) -> own site/IG as supplement. Now the headline rule in CLAUDE.md step 6.
+
 ### Batch 3 (Alberto, Hakan, Leonard, Christine, david) + IG queue
 
 - **Dead/placeholder personal sites are common, esp. for senior people.** david
