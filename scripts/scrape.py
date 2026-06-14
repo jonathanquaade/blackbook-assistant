@@ -148,13 +148,25 @@ def shot(url, out_dir, caption, full=False):
         b = p.chromium.launch()
         page = b.new_page(viewport={'width': 1440, 'height': 900})
         page.goto(url, wait_until='domcontentloaded', timeout=45000)
-        page.wait_for_timeout(4000)
-        # dismiss common cookie/login overlays so the shot is clean
-        for sel in ['text=Accept', 'text=Accept all', '[aria-label="Close"]']:
-            try:
-                if page.locator(sel).first.is_visible(timeout=500):
-                    page.locator(sel).first.click(timeout=500)
-            except Exception: pass
+        page.wait_for_timeout(3500)
+        # ALWAYS clear cookie/consent + login overlays BEFORE the shot, or the
+        # screenshot captures the banner (Jonathan 2026-06-14: every IG shot had the
+        # cookie banner open). Click a consent button by text, then Escape any modal.
+        consent = re.compile(r'^(decline optional cookies|allow all cookies|accept all|'
+                             r'accept|decline|only allow essential|i accept|got it|agree)$', re.I)
+        for _ in range(2):
+            clicked = False
+            for btn in page.get_by_role('button').all():
+                try:
+                    t = (btn.inner_text(timeout=300) or '').strip()
+                    if consent.match(t) and btn.is_visible():
+                        btn.click(timeout=800); clicked = True
+                        page.wait_for_timeout(800); break
+                except Exception: pass
+            if not clicked: break
+        try: page.keyboard.press('Escape')  # close IG login modal etc.
+        except Exception: pass
+        page.wait_for_timeout(800)
         n += 1
         fn = f'site-{n:02d}.png'
         page.screenshot(path=os.path.join(out_dir, fn), full_page=full)

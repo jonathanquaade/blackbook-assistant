@@ -308,7 +308,13 @@ Inventory:
      banner or a photographer's lifestyle shots). Off-capability or hero-only
      selections are a repeated, called-out failure (Eugene Ekuban, Megan Bowker).
      If their best work lives at a past employer (e.g. an agency's site), go there
-     and extract the projects they led, attributed.
+     and extract it. **Agency/studio work counts — do NOT hard-filter it out** for
+     lack of sole-authorship proof; much of a designer's best work is work they did
+     inside an agency. Include it, framed honestly ("at COLLINS", "during their time
+     at X"); only claim they personally led a project when evidence says so. Go deep
+     and high-res: agency case studies (often Sanity/Contentful CDNs) downscale in
+     the browser — fetch the full-res original (e.g. append ?w=2000 to a sanity.io
+     URL) rather than the pixelated displayed version.
      **Instagram for recent work:** creatives' sites lag; their IG often has newer,
      better projects and video. Go into IG, see which posts are recent, pull the
      strong ones (images and video). Prefer a screenshot WITH a link caption over a
