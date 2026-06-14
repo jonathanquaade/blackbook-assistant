@@ -153,6 +153,25 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   collided with `.jpg` scrapes → use max index, extension-agnostic.
 - **Seniority + Autonomy on every entry** (Jonathan): record a seniority read in AI
   Notes and set the Autonomy estimate, grounded in work history.
+### Batch 3 (Alberto, Hakan, Leonard, Christine, david) + IG queue
+
+- **Dead/placeholder personal sites are common, esp. for senior people.** david
+  anastácio's site is a 2021 placeholder; read.cv was offline; Ruiin (Hakan) had a
+  broken SSL cert. Recover their work from: live brand sites they built (Sublime,
+  Moog, Phoebe Philo store), design-feature blogs (ccccache featured his REKKI
+  brand), and press. Their TRAJECTORY comes from web search even when their site
+  is dead.
+- **Wix-hosted videos are downloadable**: video.wixstatic.com/video/<id>/<res>/mp4/
+  file.mp4 (Christine's films; map to projects via nearest heading). Small enough to
+  upload to Notion.
+- **IG queue works**: when IG-only + throttled, finish the rest, append to
+  state/ig-queue.json, still Needs Review. (Leonard Behre IG-only; Hakan's studio
+  IG.) Drain the queue later with ig.py once the session is rested.
+- **A single IG profile context shot works even under throttle** (one nav, cookie
+  dismissed) — gives a memory-anchor grid view even when the full grab is queued.
+- **scrape.py shot --full** for live brand sites (Sublime/Moog full-page) — good
+  single-image capture of a site someone built.
+
 ### Round 4 (Megan multi-project + cookie fix v2)
 
 - **Interviews name an agency designer's projects** — the key technique. When a
