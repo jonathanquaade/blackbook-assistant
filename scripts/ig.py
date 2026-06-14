@@ -57,23 +57,40 @@ def _challenged(page):
         'log in to instagram', 'suspicious', 'we detected', 'confirm it\'s you',
         'enter the code', 'help us confirm'))
 
-def cmd_login():
+def _has_session(ctx):
+    """Logged in once Instagram sets a non-empty sessionid cookie."""
+    for c in ctx.cookies():
+        if c.get('name') == 'sessionid' and c.get('value') and 'instagram' in c.get('domain', ''):
+            return True
+    return False
+
+def cmd_login(timeout_s=360):
+    """Open a headed window and POLL for the login cookie (no stdin needed, so it
+    works even when launched via the harness `!` prefix). Jonathan logs in manually;
+    we detect the sessionid cookie, then save + close."""
     from playwright.sync_api import sync_playwright
     os.makedirs(PROFILE_DIR, exist_ok=True)
-    print('Opening Instagram. Log in MANUALLY in the window (the agent never types '
-          'your credentials). When your profile/grid is visible, come back here and '
-          'press Enter to save the session.')
+    print('Opening a Chromium window to Instagram. Log in MANUALLY there (the agent '
+          'never types your credentials). I will detect when you are logged in and '
+          'save the session automatically - no need to press anything here.')
     with sync_playwright() as p:
         ctx = _ctx(p, headless=False)
         page = ctx.pages[0] if ctx.pages else ctx.new_page()
-        page.goto('https://www.instagram.com/', wait_until='domcontentloaded', timeout=60000)
-        input('\n>>> Press Enter once logged in... ')
-        # confirm + persist
-        page.goto('https://www.instagram.com/', wait_until='domcontentloaded', timeout=60000)
-        page.wait_for_timeout(2000)
-        ok = not _challenged(page)
-        ctx.close()
-    print('session saved, logged in' if ok else 'WARNING: still looks logged out')
+        page.goto('https://www.instagram.com/accounts/login/', wait_until='domcontentloaded', timeout=60000)
+        deadline = time.time() + timeout_s
+        ok = False
+        while time.time() < deadline:
+            if _has_session(ctx):
+                ok = True
+                time.sleep(3)  # let IG finish setting cookies
+                break
+            time.sleep(3)
+        ctx.close()  # persists cookies to PROFILE_DIR
+    if ok:
+        print('detected login, session saved to state/ig-profile/. Run: ig.py status')
+    else:
+        print(f'timed out after {timeout_s}s without detecting login - re-run ig.py login '
+              'and finish logging in within the window.')
 
 def cmd_status():
     from playwright.sync_api import sync_playwright
