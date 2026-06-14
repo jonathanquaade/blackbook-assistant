@@ -153,6 +153,20 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   collided with `.jpg` scrapes → use max index, extension-agnostic.
 - **Seniority + Autonomy on every entry** (Jonathan): record a seniority read in AI
   Notes and set the Autonomy estimate, grounded in work history.
+### Round 3 (Jonathan's 2nd review)
+
+- **shot cookie banner fixed**: dismiss consent ("Decline optional cookies" / "Allow
+  all cookies" / "Accept") + Escape login modal BEFORE the screenshot. Every IG shot
+  previously captured the cookie banner.
+- **Logged-out Instagram is HARD-CAPPED at 640px** (often less for grid thumbnails
+  ~293px). This is the pixelation Jonathan flagged on Fernanda. 1080px+ images AND
+  reel/carousel video REQUIRE the logged-in persistent profile. THIS is the trigger
+  to build it (he logs in once). Until then IG is low-res and stills-only.
+- **Agency CDNs downscale in-browser; fetch the original.** Collins = Sanity CDN
+  (?w=2000), Squarespace = ?format=2500w. The displayed image is pixelated; the
+  origin is sharp. (Megan Girl Scouts, Eugene projects.)
+- **Go deep across MULTIPLE projects + high-res** (Eugene round 2: 3 hi-res each
+  from Spotify Wrapped, OMNIYAT, Mission 44, Nataal, not laptop mockups).
 - **Provenance migration mislabel fixed**: Phase 0 stamped factual fields
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as

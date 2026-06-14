@@ -13,3 +13,6 @@ Monumento — live site by Fernanda Ruiz — monumento.co
 P Magazine — live site by Fernanda Ruiz — pmagazine.co
 
 Sail Away — live site by Fernanda Ruiz — sailawway.com
+# Archived page body (2026-06-14)
+
+Work
