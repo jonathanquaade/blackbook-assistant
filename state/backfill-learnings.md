@@ -153,6 +153,23 @@ Format: one dated entry per learning. Note the entry it came from and whether it
   collided with `.jpg` scrapes → use max index, extension-agnostic.
 - **Seniority + Autonomy on every entry** (Jonathan): record a seniority read in AI
   Notes and set the Autonomy estimate, grounded in work history.
+### Batch 4 (Morgan, Kate, Surya, Claudia, Neil)
+
+- **Agency-first wins**: Morgan Light's up&up (Target) flagship pulled hi-res from
+  the Collins case study + her own portfolio. The method works cleanly when the
+  agency has public case studies.
+- **VERIFY the IG handle is the RIGHT person** before using it. Neil Jackson (3D):
+  @neilsgraphics turned out to be a different logo-for-hire designer (bio/work
+  mismatch). Check the bio + grid match the person; don't attach by name alone.
+- **Work that just isn't publicly capturable** (document + ask/queue, still Needs
+  Review): gated "portfolio on request" (Kate Boudreau), passcode-locked site with
+  no code (Neil Jackson -> asked for passcode), JS/WebGL sites with no extractable
+  media (Neil, Porto Rocha). Build the entry from CV/research, capture a context
+  shot if possible, queue IG, and document the blocker in AI Notes.
+- **CDN sizing**: ?w=2000 on some Sanity images returned ~10MB; use ?w=1500&q=80
+  for a sane ~3-5MB.
+- IG queue now has 4 (Hakan, Leonard, Kate, Surya) for when the session is rested.
+
 ### PRIMARY work-discovery method (Jonathan 2026-06-14)
 
 The best way to find someone's work: **find the projects they've done, identify the
