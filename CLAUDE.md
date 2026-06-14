@@ -327,10 +327,16 @@ Inventory:
      which then point you to the agency case studies. (Megan Bowker's interview
      surfaced Equinox Hotels + More Than Magic beyond Girl Scouts.)
      **Instagram for recent work:** creatives' sites lag; their IG often has newer,
-     better projects and video. Go into IG, see which posts are recent, pull the
-     strong ones (images and video). Prefer a screenshot WITH a link caption over a
-     bare bookmark for live/interactive sites (Jonathan can't see a bookmark
-     without clicking). Give each embed a `caption` AND
+     better projects and video. For full-res IG images + video use `ig.py grab`
+     (Jonathan's logged-in profile). **IG QUEUE:** when an entry's best work needs
+     hi-res IG (IG-only creatives, or IG clearly beats their site) but the session
+     is throttled/unavailable, do NOT ship a bad 640px capture. Finish everything
+     else on the entry, append the entry to state/ig-queue.json
+     ({page_id, name, ig_url, reason, queued_at}), note "IG capture queued" in AI
+     Notes, and still flip to Needs Review. A later session drains the queue with
+     ig.py (one gentle run per profile, <=10/run, respect throttle cooldowns).
+     Prefer a screenshot WITH a link caption over a bare bookmark for
+     live/interactive sites (Jonathan can't see a bookmark without clicking). Give each embed a `caption` AND
      a `link` to the source project page: `upload` writes a visible metadata line
      beneath the embed (project name + source link), so the entry self-documents
      what each video is for revisits months later (embed captions alone are faint
