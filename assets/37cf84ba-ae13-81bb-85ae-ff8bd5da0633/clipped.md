@@ -6,3 +6,8 @@ Work
 Work
 
 Girl Scouts of the USA — full case study (COLLINS) — wearecollins.com
+# Archived page body (2026-06-14)
+
+Work
+
+Girl Scouts of the USA — full case study (COLLINS) — wearecollins.com

@@ -149,24 +149,33 @@ def shot(url, out_dir, caption, full=False):
         page = b.new_page(viewport={'width': 1440, 'height': 900})
         page.goto(url, wait_until='domcontentloaded', timeout=45000)
         page.wait_for_timeout(3500)
-        # ALWAYS clear cookie/consent + login overlays BEFORE the shot, or the
-        # screenshot captures the banner (Jonathan 2026-06-14: every IG shot had the
-        # cookie banner open). Click a consent button by text, then Escape any modal.
-        consent = re.compile(r'^(decline optional cookies|allow all cookies|accept all|'
-                             r'accept|decline|only allow essential|i accept|got it|agree)$', re.I)
-        for _ in range(2):
-            clicked = False
+        # ALWAYS clear the cookie/consent banner + login modal BEFORE the shot, then
+        # WAIT for it to animate away (Jonathan 2026-06-14: IG shots still showed the
+        # banner). Try exact known button names first (IG: "Allow all cookies" /
+        # "Decline optional cookies"), then a generic text fallback.
+        names = ['Allow all cookies', 'Decline optional cookies', 'Accept all',
+                 'Accept All Cookies', 'Accept', 'Allow all', 'Decline', 'Only allow essential',
+                 'I accept', 'Got it', 'Agree']
+        dismissed = False
+        for nm in names:
+            try:
+                btn = page.get_by_role('button', name=nm, exact=True).first
+                if btn.is_visible(timeout=500):
+                    btn.click(timeout=1500); dismissed = True
+                    page.wait_for_timeout(2500)  # let the banner animate out
+                    break
+            except Exception: pass
+        if not dismissed:  # generic fallback: any button whose text looks like consent
+            consent = re.compile(r'(allow all|accept all|accept|decline|agree|got it)', re.I)
             for btn in page.get_by_role('button').all():
                 try:
                     t = (btn.inner_text(timeout=300) or '').strip()
-                    if consent.match(t) and btn.is_visible():
-                        btn.click(timeout=800); clicked = True
-                        page.wait_for_timeout(800); break
+                    if t and consent.search(t) and btn.is_visible():
+                        btn.click(timeout=1000); page.wait_for_timeout(2500); break
                 except Exception: pass
-            if not clicked: break
-        try: page.keyboard.press('Escape')  # close IG login modal etc.
+        try: page.keyboard.press('Escape')  # close IG login modal
         except Exception: pass
-        page.wait_for_timeout(800)
+        page.wait_for_timeout(2000)  # settle before screenshot
         n += 1
         fn = f'site-{n:02d}.png'
         page.screenshot(path=os.path.join(out_dir, fn), full_page=full)
