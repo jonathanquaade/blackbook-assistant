@@ -424,6 +424,12 @@ code he is entitled to give you, not an account credential (those remain forbidd
 SPEC §4.0). Save it to state/passcodes.json (gitignored) keyed by page-id, so any
 future session can re-enter: {"<page-id>": {"url": ..., "code": ..., "from": "clip
 note 2026-06-12"}}. Never commit codes; never use a code found on the open web.
+**A rejected passcode = stop, do not burn attempts (Jonathan, 2026-06-15).** If a
+supplied code keeps failing after a try or two (it was changed, expired, or the gate
+blocks automation), do NOT keep hammering it. Save the code, finish everything else
+on the entry, flip to Needs Review, and ask Jonathan to check/refresh the code. His
+time and tokens beat a brute-forced login. (Bonga Mene: his Figma proto password had
+been changed; four submit methods all rejected the given code.)
 
 ## Blocked-tool escalation (no silent giving-up)
 
