@@ -50,12 +50,18 @@ left a note, so the highest decision-value.
 - Blocked work (locked site, gated portfolio, unconfirmable IG): document in AI
   Notes, ask Jonathan if he can unlock, queue IG, still flip to Needs Review.
 
-**In flight:** batch 5 was queued as tasks (Poolsuite Partners [studio], Harry Boyd,
-Monty Hayton, Henry Heffernan, Jean Reynaud) but NOT started — next agent can do
-these or pick fresh from the pool.
+**In flight:** batch 5 DONE (Poolsuite Partners, Harry Boyd, Monty Hayton, Henry
+Heffernan, Jean Reynaud all enriched + flipped Revisit → Needs Review, commit
+3380ab9). The IG queue (state/ig-queue.json) is still undrained. Next agent: drain
+the IG queue, or pull a fresh batch from the Notes-people pool (Revisit entries).
+Reminder: ALWAYS read the full page body first — Monty's body hid a complete call
+writeup (real day rate, freelance status, that Jonathan had spoken to him) that the
+property fields alone did not show.
 
 **Open review questions for Jonathan:** Hakan (employer: Ruiin vs Bakken & Bæck),
 Claudia (Familiarity — did he work with her?), plus assorted Work With?/Rating.
+Batch 5 specifics: Harry (day rate?), Jean (add Creative direction cap?), Poolsuite
+Partners (Work With? / Rating / add Frontend dev + Identity systems caps?).
 
 **Deferred (not built yet):** Stage B cloud routines + push digest, P2 upkeeper,
 P3 scout, the review app. Note: the formal `backfill-queue.json` was never built —
