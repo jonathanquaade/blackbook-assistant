@@ -4,6 +4,63 @@ Working plan for implementing [SPEC-notion-creative-assistant.md](SPEC-notion-cr
 Database: Notion "Companies" DB — id `50cacdf602f64685942a55d26caa27a9`
 (view `221a8306254a42469c367d9353d1e3c7`).
 
+## ▶ CURRENT STATE & NEXT STEPS (read first — updated 2026-06-15)
+
+**We are deep in the Stage A backfill, doing it MANUALLY in batches of ~5.**
+Jonathan reviews each batch and sends misses back to Revisit with notes in Open
+Questions; the next pass acts on them and flips back to Needs Review. This manual
+phase is deliberate — it is the spec-gathering for the Stage B automation.
+
+**Status (2026-06-15):** 717 entries — 12 Verified, 13 Needs Review, 692 Revisit;
+~26 enriched (have AI Notes). The priority pool is the **~74 Notes-people**
+(Entry Status = Revisit, Notes not empty, AI Notes empty) — entries where Jonathan
+left a note, so the highest decision-value.
+
+**What the next agent does:**
+1. `git pull` first (CI commits backups to main).
+2. Continue the backfill on the Notes-people pool (query: Entry Status=Revisit AND
+   Notes not empty AND AI Notes empty). Batches of ~5.
+3. Follow the CLAUDE.md P1 runbook EXACTLY. Read `state/backfill-learnings.md`
+   first — it is the running log of methods + edge cases.
+4. After each batch: `keeper.py stamp-verified`, commit, push. Report to Jonathan.
+5. **Drain the IG queue** (`state/ig-queue.json`, currently 4: Hakan, Leonard,
+   Kate, Surya) once the IG session is rested. IG SOFT-THROTTLES under rapid
+   automated access, so do ONE gentle `ig.py grab` per profile, spaced out. Login
+   is already done (`state/ig-profile/`, gitignored).
+
+**Tooling already built (use these, do not reinvent):**
+- `keeper.py` — work/get/set (`--from-jonathan`), `set-notes` (relocate his body
+  words → Notes), ask, status, `stamp-verified`, `upload` (images + embeds +
+  bookmarks + video), `body-reset`, log. Every Notion write goes through it.
+- `scrape.py` — static scrape; `--render` (Playwright JS sites + `--passcode`);
+  `shot` (website/IG context screenshots, auto-dismisses cookie banners); Figma via
+  REST API (`FIGMA_API_KEY` in .env).
+- `ig.py` — `login` (done) / `status` / `grab` (full-res IG images + video,
+  read-only, caps + pause-on-challenge). Logged-out IG is capped at 640px; use
+  ig.py when quality/video matters.
+
+**Key methods (full detail in CLAUDE.md):**
+- PRIMARY work discovery: find their projects → go to the agencies/brands they
+  worked at → take images/video from THERE (own sites are often dead/stale/gated).
+- A missing link is a skipped search: hunt for a real website (not IG/Behance-only);
+  find real IG via their own Behance/site external-links + VERIFY the handle is the
+  right person (wrong-person IGs bit twice). If unconfirmable, ask.
+- Non-image work (sound/video/writing) → embeds/bookmarks + thumbnails; every entry
+  still gets images + website/IG context shots; record seniority + set Autonomy.
+- Blocked work (locked site, gated portfolio, unconfirmable IG): document in AI
+  Notes, ask Jonathan if he can unlock, queue IG, still flip to Needs Review.
+
+**In flight:** batch 5 was queued as tasks (Poolsuite Partners [studio], Harry Boyd,
+Monty Hayton, Henry Heffernan, Jean Reynaud) but NOT started — next agent can do
+these or pick fresh from the pool.
+
+**Open review questions for Jonathan:** Hakan (employer: Ruiin vs Bakken & Bæck),
+Claudia (Familiarity — did he work with her?), plus assorted Work With?/Rating.
+
+**Deferred (not built yet):** Stage B cloud routines + push digest, P2 upkeeper,
+P3 scout, the review app. Note: the formal `backfill-queue.json` was never built —
+we pull the Notes-people pool by query instead, which works fine.
+
 ## Stack decision
 
 Keep the spec's stack exactly — it already matches Jonathan's skills and the
@@ -146,6 +203,10 @@ DB reality at decision time: 713 entries; 658 Revisit, 53 Needs Review, 2 unset.
 backfill IS the project for the next month.
 
 ### Stage A — unblock, backfill, notify (now, ~6 weeks)
+
+> STATUS 2026-06-15: A1 DONE (Playwright + ig.py + Figma API all built). A2 IN
+> PROGRESS (manual batches, ~26 enriched). A3 digest NOT built yet. See "CURRENT
+> STATE" at top. backfill-queue.json was not built — we query the Notes-people pool.
 
 **A1. Browser unblock.** Install Playwright. Two modes: headless no-profile
 (passcoded case studies via state/passcodes.json, Framer/JS sites, public Figma;
