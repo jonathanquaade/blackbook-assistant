@@ -10,6 +10,7 @@ each run.
 | BP&O | https://bpando.org | identity work — studios and designers |
 | Brand New (UnderConsideration) | https://www.underconsideration.com/brandnew/ | identity programmes; note studio credits |
 | Fonts In Use | https://fontsinuse.com | type designers, foundries, designers credited in uses |
+| Young Guns (The One Club) | https://youngguns.org/finalists/ | award finalists/winners, under-30 creatives across all disciplines — high-signal talent pool (e.g. Jump Jirakaweekul, Zuzanna Rogatty) |
 
 Candidates for Jonathan to approve before the scout uses them:
 - siteInspire (web design) — https://www.siteinspire.com
