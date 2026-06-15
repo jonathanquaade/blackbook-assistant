@@ -10,7 +10,7 @@ each run.
 | BP&O | https://bpando.org | identity work — studios and designers |
 | Brand New (UnderConsideration) | https://www.underconsideration.com/brandnew/ | identity programmes; note studio credits |
 | Fonts In Use | https://fontsinuse.com | type designers, foundries, designers credited in uses |
-| Young Guns (The One Club) | https://youngguns.org/finalists/ | award finalists/winners, under-30 creatives across all disciplines — high-signal talent pool (e.g. Jump Jirakaweekul, Zuzanna Rogatty) |
+| Young Guns (The One Club) | https://www.oneclub.org/awards/youngguns/-archive/awards/2025/all | under-30 winners across all disciplines, high-signal talent pool (e.g. Jump Jirakaweekul, Zuzanna Rogatty). NOT just the latest year: scout EVERY year. youngguns.org/finalists is only the current edition; the full winners archive is per-year at oneclub.org/awards/youngguns/-archive/awards/{YEAR}/all — iterate YEAR back through 2025, 2024 … to ~2003 (editions YG23 … YG1). Each winner profile links out to their site/socials. |
 
 Candidates for Jonathan to approve before the scout uses them:
 - siteInspire (web design) — https://www.siteinspire.com
