@@ -50,18 +50,23 @@ left a note, so the highest decision-value.
 - Blocked work (locked site, gated portfolio, unconfirmable IG): document in AI
   Notes, ask Jonathan if he can unlock, queue IG, still flip to Needs Review.
 
-**In flight:** batch 5 DONE (Poolsuite Partners, Harry Boyd, Monty Hayton, Henry
-Heffernan, Jean Reynaud all enriched + flipped Revisit → Needs Review, commit
-3380ab9). The IG queue (state/ig-queue.json) is still undrained. Next agent: drain
-the IG queue, or pull a fresh batch from the Notes-people pool (Revisit entries).
-Reminder: ALWAYS read the full page body first — Monty's body hid a complete call
-writeup (real day rate, freelance status, that Jonathan had spoken to him) that the
-property fields alone did not show.
+**In flight:** batch 5 DONE (commit 3380ab9) and batch 6 DONE (commit 64e4f8a:
+Joseph Beattie, Jack Llewellyn, Jump Jirakaweekul, Zuzanna Rogatty, Bonga Mene, all
+Revisit → Needs Review). The IG queue (state/ig-queue.json) is undrained and now has
+5 entries incl. Bonga Mene (his only reachable work source: site down + Figma proto
+private). Next agent: drain the IG queue, or pull a fresh batch from the pool (4 left
+from the last revisit page: Shields/Area Technology, Sandy Candy Kim, Mel Walker,
+Olly Mayes, Alex Howat). Reminders: ALWAYS read the full page body first (Monty's
+body hid a call writeup with his real day rate + freelance status); a self-maintained
+site beats a stale LinkedIn for Work Status (Zuzanna, Monty); for ex-COLLINS/Pentagram
+designers their best work is the agency case studies, not their own minimal sites.
 
 **Open review questions for Jonathan:** Hakan (employer: Ruiin vs Bakken & Bæck),
 Claudia (Familiarity — did he work with her?), plus assorted Work With?/Rating.
-Batch 5 specifics: Harry (day rate?), Jean (add Creative direction cap?), Poolsuite
-Partners (Work With? / Rating / add Frontend dev + Identity systems caps?).
+Batch 5: Harry (day rate?), Jean (add Creative direction cap?), Poolsuite Partners
+(Work With? / Rating / caps?). Batch 6: Jump + Poolsuite (Work With?/Rating), Zuzanna
+(add Creative direction cap?), Jack (story: how was working together?), Bonga (re-share
+the private Figma, or OK to grab his IG next pass — already queued).
 
 **Deferred (not built yet):** Stage B cloud routines + push digest, P2 upkeeper,
 P3 scout, the review app. Note: the formal `backfill-queue.json` was never built —
