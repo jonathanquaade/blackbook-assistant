@@ -68,8 +68,19 @@ Batch 5: Harry (day rate?), Jean (add Creative direction cap?), Poolsuite Partne
 (add Creative direction cap?), Jack (story: how was working together?), Bonga (re-share
 the private Figma, or OK to grab his IG next pass — already queued).
 
+**Agent split + roster (2026-06-15, built):** the pipeline is now three specialist
+subagents (`.claude/agents/scout.md`, `scraper.md`, `reviewer.md`) — scout fills all
+metadata except images, scraper captures the work, reviewer gates against
+`checklists/entry-review.md` before Needs Review (v1 reports / v2 gates + 5% sample).
+The studio roster (`scripts/roster.py`, `state/roster/*.jsonl`) is built and tested;
+keeper mirrors every metadata write into it. NEXT: (Phase 0) Jonathan ranks his top
+studios via Rating, then `roster.py sync-all` seeds the roster from Notion and the
+scout begins the classification + metadata backfill of the ~700 untyped entries; then
+two parallel tracks — Track A scouting (roster diff + movement + digest), Track B
+enrichment (scraper + reviewer, v1 → v2).
+
 **Deferred (not built yet):** Stage B cloud routines + push digest, P2 upkeeper,
-P3 scout, the review app. Note: the formal `backfill-queue.json` was never built —
+the review app. Note: the formal `backfill-queue.json` was never built —
 we pull the Notes-people pool by query instead, which works fine.
 
 ## Stack decision
@@ -169,19 +180,38 @@ Exit criteria: spec §9 Phase 0 ✓s, plus `schema-before.json` committed.
   (`set_by: jonathan` doubly so). >90d unverified → Revisit automatically.
 - Digest line: "P2: 10 checked, 2 diffs proposed."
 
-## Phase 3 — Scout (P3; weekly routine, starts after backfill ≥ 50%)
+## Phase 3 — Scout (P3; redesigned around the studio roster, Jonathan 2026-06-15)
 
-- `sources.md` v1 (It's Nice That, BP&O, Brand New, Fonts In Use + Jonathan's
-  adds); per-source last-seen cursor in `state/scout-last-run.json`.
-- **Candidates DB**: same schema, sibling database on the Companies page
-  (Jonathan default 2026-06-12, overridable). Created once via API. Rejected is
-  permanent and lives here; never re-propose.
-- Run shape: crawl new posts since cursor → extract names/studios → dedupe
-  against Companies AND Candidates AND Rejected (name + domain fuzzy) →
-  mini-enrich survivors (site, IG link, country, 2–3 images, one hedged line on
-  why interesting) → digest push: "P3: 6 candidates, 2 strong" with names.
-- Verdicts (Notion now, review app later): Yes → page moves to Companies as
-  `New`, next P1 routine picks it up. No → Rejected forever.
+The scout cycles a **studio roster** instead of only crawling feed sources, so
+scouting is a cheap diff against our own source of truth rather than re-crawling
+LinkedIn every run.
+
+- **Roster** = git-tracked JSONL (`state/roster/{studios,designers,tenures}.jsonl`,
+  managed by `scripts/roster.py`). It is three things at once: the scouting surface,
+  a parity mirror of the Notion metadata (every keeper write mirrors in, so the
+  roster's git history is the change log of the blackbook's metadata), and the
+  substrate for a future ecosystem visualization (designer movement between studios,
+  overlaps — `tenures.jsonl` is the edge list).
+- **Master studio list** = the studios Jonathan has added to Notion, ranked by the
+  **Rating** field (the studio tier). Two layers: **maintained** (Rating 4–5) are
+  cycled oldest-scouted-first and crawled for new hires; **reference** (rank ≤3 or
+  unranked) sit in the roster only as movement endpoints. The roster therefore holds
+  studios that are not 4–5 — we still need to record where someone went.
+- **Run shape:** `roster.py studios --maintained` → for each, read the team page +
+  LinkedIn "people at <studio>" snippets → `roster.py snapshot <studio_id>
+  <team.json>`. New names = candidates (status Surfaced); departures close tenures.
+  Where a destination is known, `roster.py move`. Mini-enrich survivors (links,
+  country, one hedged line, Autonomy guess) into the roster, NO images. Dedupe
+  against Companies + roster + Rejected. Feed sources (`sources.md`: It's Nice That,
+  BP&O, Brand New, Fonts In Use, Young Guns) still feed candidates the same way.
+- **Candidates live on the roster** (status: Prospect/Surfaced/Approved/Rejected) —
+  no separate Candidates DB. Rejected is permanent here; never re-surface.
+- **Movement grows the network:** a person who moves to a studio we do not maintain
+  goes to `New` in Notion for Jonathan to review; if he then rates that studio 4–5 it
+  graduates to maintained (`roster.py set-rating` flips `maintained`).
+- **Verdicts:** Yes → `roster.py promote` creates a `New` Companies entry, the scout's
+  metadata pass + scraper + reviewer pick it up. No → status Rejected forever.
+- **Digest:** "P3: 6 candidates, 2 strong" with names; Notion now, review app later.
 
 ## Phase 4 — Learning (ongoing)
 
@@ -333,6 +363,8 @@ PARKED until an extension update ships an approval flow. Current division:
 ## Open questions for Jonathan
 
 1. Assets storage: commit to git or iCloud/Dropbox sync? (prereq #5)
-2. Where should the Candidates DB live (same Notion page as Companies, or elsewhere)?
+2. ~~Where should the Candidates DB live?~~ RESOLVED 2026-06-15: no separate
+   Candidates DB. Candidates live on the studio roster (`state/roster/`) as a status
+   (Prospect/Surfaced/Approved/Rejected); approved ones `promote` into Companies.
 3. Is the linked DB the only one in scope, or are there sibling DBs (e.g. an old
    contacts table) whose data should be folded in during migration?

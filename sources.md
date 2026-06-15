@@ -4,6 +4,12 @@ Domains the scout may crawl (also part of the browser allowlist). One per line,
 with what to look for. Jonathan: add/remove freely — the scout reads this file
 each run.
 
+**Primary source = the studio roster, not these feeds.** The scout's main loop cycles
+the maintained studios (Rating 4–5) in `state/roster/` and diffs each studio's team
+page for new hires (`roster.py snapshot`). The team pages of maintained studios are
+allowed scout targets by definition (they are the roster). The feeds below are the
+*secondary* source — they surface people and studios not yet on the roster.
+
 | Source | URL | What to scout |
 |---|---|---|
 | It's Nice That | https://www.itsnicethat.com | featured creatives & studios, all disciplines |
@@ -19,7 +25,8 @@ Candidates for Jonathan to approve before the scout uses them:
 - Agency/studio team pages worth re-checking (add specific URLs here)
 
 Rules (binding, see CLAUDE.md):
-- New finds go to the Candidates DB, never straight to the main DB.
-- Dedupe against main DB by name + domain before proposing.
+- New finds go to the roster (status Surfaced), never straight to the main DB.
+  Approved candidates `roster.py promote` into the main DB as `New`.
+- Dedupe against the main DB + roster + Rejected by name + domain before proposing.
 - `Rejected` candidates are never re-proposed.
 - Last-run cursor: state/scout-last-run.json

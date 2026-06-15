@@ -25,6 +25,49 @@ are historical (its principles and browser guardrails remain binding).
 4. **Quality bar ("Never Settle"):** high quality over speed, but move fast once
    sure; if a requirement seems dumb, question it instead of implementing it.
 
+## The agent split (Jonathan, 2026-06-15)
+
+The work is divided across three specialist subagents (`.claude/agents/`), spawned by
+the orchestrating session, because one agent doing everything and grading its own work
+let failures through (Zuzanna Rogatty: three angles of one project + a website shot
+mislabeled "Instagram profile", self-reviewed and passed). One unit of work per agent:
+1. **scout** — identifies the person/studio and fills ALL metadata EXCEPT images
+   (Type, links, Capabilities, Country, Size, Work Status, employer, Autonomy, Source,
+   AI Notes, zero-states). Also maintains the studio roster. Runs on every New entry
+   and when scouting. The scraper inherits a complete metadata entry.
+2. **scraper** — captures only the work (images, video embeds, context shots) for an
+   entry the scout has filled. On-capability, depth over breadth, real context shots.
+3. **reviewer** — independent QA gate against `checklists/entry-review.md` before any
+   entry reaches Jonathan. Checks completeness/correctness, never taste. **v1** reports
+   on every entry (Jonathan calibrates it); **v2** gates (bounces failures to the
+   scraper/scout, retry cap 2; passes the rest; surfaces ~5% to Jonathan as a
+   spot-check on the reviewer, "the chef tastes a few plates"). Reviewer↔doer feedback
+   lives in `state/review-feedback/<id>.json`; calibration in
+   `state/reviewer-corrections.jsonl`.
+
+Pipeline for a New entry: scout (metadata) → scraper (work) → reviewer (gate) → Needs
+Review → Jonathan (taste + Rating). The doers leave the entry in Enriching; only the
+reviewer flips it to Needs Review.
+
+## Scouting defaults (Jonathan, 2026-06-15) — unless he says otherwise
+
+Targeting rules for the scout (who to surface). They do NOT relax the contract or the
+confidence floor:
+- Ignore budget. Ignore current availability. Ignore location / time zone.
+- Do NOT limit by capability or seniority. Autonomy 1–5, junior through creative
+  director. Within design: motion, graphic, brand, product, web, etc.
+- Want people who DO the work, not who only direct others.
+- Systematic, repeatable method. Jonathan is the arbiter of taste: you surface, he
+  decides.
+
+The scout maintains a studio roster (`scripts/roster.py`, `state/roster/`). The master
+studio list is the studios Jonathan has added to Notion, ranked by the **Rating** field
+(the studio tier). Two layers: **maintained** studios (Rating 4–5) are cycled and
+crawled for new hires; **reference** studios (rank ≤3 or unranked) sit in the roster
+only as movement endpoints so a departure has somewhere to point. A person who moves to
+a studio we do not maintain goes to New for Jonathan; if he then rates that studio 4–5
+it graduates to maintained. See PLAN.md P3.
+
 ## Schema (v3 — 25 properties)
 
 Identity: Name (title) · Type (Person/Studio/Agency/Foundry/Publication) ·
@@ -64,9 +107,16 @@ Open Questions — that's his single 📥 Review inbox. When he flips an entry t
 Verified, run `keeper.py stamp-verified` (cheap, end of any session/routine) to
 record Status Last Verified = the date he verified it.
 **Needs Review is EARNED:** an entry enters it only after a COMPLETE agent pass
-(fields enriched, images where findable). Jonathan reviews finished drafts, never
-raw or half-filled entries. Migration-flagged entries wait in Revisit (questions
-intact) until enrichment reaches them.
+(fields enriched, images where findable) AND the reviewer gate. Jonathan reviews
+finished drafts, never raw or half-filled entries. Migration-flagged entries wait in
+Revisit (questions intact) until enrichment reaches them.
+**Status meanings (Jonathan, 2026-06-15):** New = an approved candidate, name is fine,
+ready to enrich. Enriching = the scout OR the scraper is actively working it (the
+reviewer↔doer bounce loop lives here, in `state/review-feedback/`, not as a Notion
+status). Needs Review = reviewer-passed (or v1-reported), awaiting his taste call.
+Revisit = he reviewed it and wants TARGETED re-enrichment on the specific areas he
+flagged in Open Questions (it is awaiting scoped enrichment, not parked). Verified =
+he is happy (only he sets it). Rejected = permanent, never re-surfaced.
 
 ## Provenance (state/provenance/<page-id>.json)
 
@@ -218,7 +268,16 @@ Inventory:
   --from-jonathan), set-notes (relocate his body words), ask, status,
   stamp-verified (date newly-Verified entries), upload (captioned Work sections +
   embed/bookmark non-image work), body-reset, browser log. EVERY Notion write goes
-  through it; never raw API in sessions.
+  through it; never raw API in sessions. Every metadata write also mirrors into the
+  roster (roster.mirror_fields) so the roster stays in parity and its git history is
+  the change log of the blackbook's metadata.
+- roster.py — the git-versioned studio/designer roster (state/roster/*.jsonl): the
+  scouting surface, the metadata mirror, and the substrate for a future ecosystem
+  viz (who moved where, overlaps). Commands: studios [--maintained], designers, get,
+  snapshot (diff a studio's team for hires/departures), set-rating (Rating tier,
+  flips maintained at >=4), set-status, move (record a move + auto-add reference
+  studio), sync / sync-all (mirror Notion -> JSONL), promote (approved candidate ->
+  New Notion entry). Stdlib only; reuses keeper for Notion I/O.
 - ig.py — Instagram capture via a persistent, JONATHAN-logged-in Playwright profile
   (state/ig-profile/, gitignored). `login` opens a window for HIM to authenticate
   (agent NEVER types credentials); `status` checks the session; `grab` does read-only
@@ -441,9 +500,13 @@ When any access fails (extension domain block, fetch refused, paywall):
 3. NEVER mark an entry Needs Review while a known information source sits
    unexplored without a documented reason.
 
-## Self-review gate (run before EVERY Needs Review flip)
+## Review gate (the independent reviewer runs this before EVERY Needs Review flip)
 
-Re-open the entry and check, honestly:
+The authoritative, living checklist now lives in `checklists/entry-review.md` and is
+run by the **reviewer** subagent, NOT by the doer (self-review by the doer is what let
+Zuzanna through). The scout and scraper build TO that checklist; the reviewer holds the
+entry to it and only it flips the status to Needs Review. The list below is the short
+form, kept here for the doers to self-check before handing off:
 - [ ] Raw clip text re-read end-to-end; every instruction in it acted on or asked about
 - [ ] No judgment field contradicts evidence (incl. Jonathan's notes)
 - [ ] Every runbook step done OR its failure documented in AI Notes/run log

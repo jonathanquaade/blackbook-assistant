@@ -102,6 +102,17 @@ def prov_set_by(page_id, field):
     if not os.path.exists(path): return None
     return json.load(open(path))['fields'].get(field, {}).get('set_by')
 
+def roster_mirror(page_id, fields):
+    """Mirror a metadata write into the git-versioned roster (state/roster/
+    designers.jsonl) so the roster stays in parity with Notion and its git history
+    IS the change history of the blackbook's metadata. Best-effort: a roster mirror
+    must never fail a Notion write that already succeeded."""
+    try:
+        import roster
+        roster.mirror_fields(page_id, fields)
+    except Exception as e:
+        print(f'  (roster mirror skipped: {e})', file=sys.stderr)
+
 # ---- property encoding ----
 
 _schema = None
@@ -178,6 +189,7 @@ def cmd_set(page_id, payload, source_url=None, from_jonathan=False):
     api(f'pages/{page_id}', {'properties': {f: encode(f, v) for f, v in fields.items()}})
     prov_update(page_id, fields, set_by='jonathan' if from_jonathan else 'agent',
                 source_url=source_url)
+    roster_mirror(page_id, fields)
     print(f'set {list(fields)} on {page_id} ({"jonathan-stated" if from_jonathan else "agent"})')
 
 def cmd_ask(page_id, text):
@@ -185,12 +197,14 @@ def cmd_ask(page_id, text):
         'Open Questions': encode('Open Questions', text),
         'Entry Status': encode('Entry Status', 'Needs Review')}})
     prov_update(page_id, {'Open Questions': text, 'Entry Status': 'Needs Review'})
+    roster_mirror(page_id, {'Open Questions': text, 'Entry Status': 'Needs Review'})
     print(f'asked on {page_id}')
 
 def cmd_status(page_id, status):
     guard(page_id, {'Entry Status': status})
     api(f'pages/{page_id}', {'properties': {'Entry Status': encode('Entry Status', status)}})
     prov_update(page_id, {'Entry Status': status})
+    roster_mirror(page_id, {'Entry Status': status})
     print(f'{page_id} -> {status}')
 
 def upload_file(path):
