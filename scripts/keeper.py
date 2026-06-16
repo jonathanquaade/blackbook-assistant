@@ -152,19 +152,32 @@ def guard(page_id, fields):
 
 # ---- commands ----
 
-def cmd_work(kind):
+def cmd_work(kind, limit=10, offset=0, oq_filter=None):
+    """oq_filter: 'feedback' = only entries with a non-empty Open Questions
+    (Jonathan's review notes or pending agent questions); 'empty' = only
+    entries with empty Open Questions (the Phase-0 migration backlog parked in
+    Revisit awaiting first enrichment). None = all. limit<0 means no cap (--all).
+    The Revisit population is two distinct jobs (his targeted re-enrichments vs the
+    raw migration backlog); the filters let a session work one without the other."""
     if kind == 'new':
         rows = [r for r in query_all()
                 if (r['properties']['Entry Status']['select'] or {}).get('name') in (None, 'New')]
     elif kind == 'revisit':
         rows = [r for r in query_all({'property': 'Entry Status', 'select': {'equals': 'Revisit'}})]
         rows.sort(key=lambda r: (r['properties']['Status Last Verified']['date'] or {}).get('start', ''))
-        rows = rows[:10]
+        if oq_filter:
+            def has_oq(r):
+                return bool(''.join(t['plain_text'] for t in r['properties']['Open Questions']['rich_text']).strip())
+            rows = [r for r in rows if (has_oq(r) if oq_filter == 'feedback' else not has_oq(r))]
     else:
         sys.exit('work new|revisit')
+    total = len(rows)
+    if kind == 'revisit':
+        rows = rows[offset:] if limit < 0 else rows[offset:offset + limit]
     for r in rows:
         print(json.dumps(entry_dict(r), ensure_ascii=False))
-    print(f'-- {len(rows)} entries', file=sys.stderr)
+    shown = f'{offset}-{offset + len(rows)} of {total}' if kind == 'revisit' else str(len(rows))
+    print(f'-- {len(rows)} entries ({shown})', file=sys.stderr)
 
 def cmd_get(page_id):
     print(json.dumps(entry_dict(api(f'pages/{page_id}')), indent=2, ensure_ascii=False))
@@ -390,7 +403,11 @@ if __name__ == '__main__':
     a = sys.argv[1:]
     if not a: sys.exit(__doc__)
     cmd = a[0]
-    if cmd == 'work': cmd_work(a[1])
+    if cmd == 'work':
+        lim = -1 if '--all' in a else (int(a[a.index('--limit') + 1]) if '--limit' in a else 10)
+        off = int(a[a.index('--offset') + 1]) if '--offset' in a else 0
+        oqf = 'feedback' if '--feedback' in a else ('empty' if '--empty-oq' in a else None)
+        cmd_work(a[1], lim, off, oqf)
     elif cmd == 'new':
         src = a[a.index('--source') + 1] if '--source' in a else None
         body = a[2] if len(a) > 2 and not a[2].startswith('--') else '{}'
