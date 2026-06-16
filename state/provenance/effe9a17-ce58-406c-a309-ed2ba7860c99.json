@@ -21,9 +21,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:19:06",
       "set_by": "agent"
     },
     "Work With?": {
@@ -47,10 +47,34 @@
       "set_by": "agent"
     },
     "Name": {
-      "value": "Illustrators used for Intercome website\n\nEmmet Connolly on X: \"No prompt! We commissioned real-life artists to paint all of the website page headers and spot illustrations https://t.co/pTl69y2EnF\" / X",
+      "value": "Intercom website illustrators",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:40",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:40",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2024-04-11. Clipped from Emmet Connolly (Intercom VP Product Design) tweet: commissioned real-life artists to paint website page headers and spot illustrations.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:40",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Pointer entry, not a single creative: the clip is a tweet by Intercom VP Product Design Emmet Connolly noting Intercom commissioned real artists (not AI) to paint their website headers and spot illustrations. The tweet (X, now paywalled to fetch) does not name the artists; a related Inside Intercom piece credits Kelsey Wroten, Hallie Bateman, Henrique Tramontina and Laura Bohill, but that is an older blog-illustration project, not confirmed as the same 2024 web commission. No single subject to enrich to the confidence floor. Type provisionally Person; Capabilities Illustration (locked) is the only safe tag.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:40",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. This is a pointer to Intercom's commissioned website illustrators, but the tweet names none. Which illustrator(s) did you want tracked? I can then split this into proper individual entries (e.g. Kelsey Wroten, Hallie Bateman) and enrich them.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:42",
+      "set_by": "agent"
     }
   }
 }

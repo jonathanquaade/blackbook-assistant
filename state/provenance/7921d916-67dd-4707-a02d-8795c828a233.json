@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://homerjam.es/",
+      "value": "https://www.homerjam.es/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -35,21 +35,21 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "UK"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:29",
       "set_by": "agent"
     },
     "Work With?": {
@@ -67,16 +67,52 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:45:09",
       "set_by": "agent"
     },
     "Name": {
       "value": "James Homer",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://uk.linkedin.com/in/jameshomer",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-01-19",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "James Homer, London-based digital developer (frontend and backend), strategy and art direction; trades as Homer Technologies Ltd (homertech.ltd). Prolific open-source JS dev (GitHub @homerjam, ~190 repos, Vue/Nuxt/Angular, CodeIgniter backends, npm packages). Jonathan rated him 3 and noted Ecommerce. Work Status Freelance: runs his own one-person Ltd, presents as available for collaboration; LinkedIn (uk.linkedin.com/in/jameshomer) consistent. Autonomy 4 hedged: independent senior dev shipping full-stack work for clients. Personal site unreachable this pass (ECONNREFUSED); details from GitHub and web search.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:45:09",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: currently only Frontend development (web), but he also writes backends (CodeIgniter, APIs) and does art direction. Add Backend development?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:45:15",
+      "set_by": "agent"
     }
   }
 }

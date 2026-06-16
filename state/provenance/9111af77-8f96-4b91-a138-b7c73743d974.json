@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://pieratt.com/",
+      "value": "https://pieratt.com/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:19:55",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -29,8 +29,8 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:19:55",
+      "set_by": "agent"
     },
     "Open Questions": {
       "value": "1. Was 'Partner-Dream' \u2014 set Work With? yourself (and Rating if you can judge the work)",
@@ -47,15 +47,15 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "Needs Review",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:19:25",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:19:55",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -67,9 +67,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:19:55",
       "set_by": "agent"
     },
     "Name": {
@@ -77,6 +77,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:19:55",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/pieratt/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:19:55",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "ben@pieratt.com",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:19:55",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2024-04-05",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:19:55",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Ben Pieratt: solo freelance brand and product designer, NYC. Senior, 15+ years; founded Svpply (acquired by eBay 2012), plus self-initiated projects (Hessian, Lookwork). Specializes in naming, logo/identity and product design, much of it for startups and Web3 (Zora, Mirror, dYdX, ARTBLX). Charges ~$250/hr in 20-hour units or ~$5,000/engagement (his own site). Freelance: his own site explicitly sells his services and lists rates; high autonomy, runs engagements solo. Note: tagged Copywriting but his core work reads as identity/naming + product design, may warrant a Capabilities tweak (left as-is, locked). Sources: pieratt.com, web search.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:19:55",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:30:10",
+      "set_by": "agent"
     }
   }
 }

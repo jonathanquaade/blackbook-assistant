@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://www.disabledlist.org/",
+      "value": "https://www.disabledlist.org",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -34,16 +34,16 @@
     },
     "Country": {
       "value": [
-        "UK"
+        "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:51",
       "set_by": "agent"
     },
     "Work With?": {
@@ -61,16 +61,46 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:53",
       "set_by": "agent"
     },
     "Name": {
-      "value": "The Disabled List          ",
+      "value": "The Disabled List",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-03-10",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Disability-led self-advocacy and design organization founded by Liz Jackson (2017), US-based (NYC). Curates a list of disabled creatives available to consult and collaborate with brands; runs the WITH Fellowship placing disabled designers into studios, and CriticalAxis (community project analyzing disability representation in media/advertising). Type: Studio (small mission-driven collective doing hands-on consulting/advocacy, not a full-service agency). Country corrected US (prior migration value UK was wrong; Liz Jackson and the org are NYC-based). Capabilities tagged Brand strategy (locked); their work is also research/insight-heavy.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: add Insights and research? Their CriticalAxis project analyzes disability representation, and they advise brands on reaching disabled consumers (currently Brand strategy only, locked).",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:53",
+      "set_by": "agent"
     }
   }
 }

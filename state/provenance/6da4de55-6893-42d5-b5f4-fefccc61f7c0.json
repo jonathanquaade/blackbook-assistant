@@ -17,21 +17,22 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:47:51",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "Germany"
+        "Germany",
+        "UK"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:47:51",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:43:44",
       "set_by": "agent"
     },
     "Work With?": {
@@ -49,9 +50,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:47:51",
       "set_by": "agent"
     },
     "Name": {
@@ -59,6 +60,36 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:47:51",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-11-02",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:47:51",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:47:51",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "German artist/photographer (b. 1968, Remscheid), works between Berlin and London. Defined 1990s visual culture with candid images of youth, nightlife and the LGBTQ community (early work for i-D); spans portraiture, still life, landscape and abstraction. First photographer, first non-British artist to win the Turner Prize (2000); major museum retrospectives (Tate Modern, MoMA). One of the most significant living artists, fully autonomous. Country Germany confirmed (added UK for his long London base). Photography tagged; as a Turner Prize artist, Art practice clearly applies too.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:47:51",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: add Art practice? (Turner Prize winning gallery/museum artist, not commercial photography)",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:47:52",
+      "set_by": "agent"
     }
   }
 }

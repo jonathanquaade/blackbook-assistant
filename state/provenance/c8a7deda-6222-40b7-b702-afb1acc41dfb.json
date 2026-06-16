@@ -15,9 +15,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:18:43",
       "set_by": "agent"
     },
     "Work With?": {
@@ -37,6 +37,24 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Source": {
+      "value": "Web clipper, 2024-07-19",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:25",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Pointer entry, not an identifiable person or studio: the clipped Name is the generic category Figma Plugins Developers with no website, link or body. No subject to research or classify to the confidence floor, so Type and all factual fields left empty. Likely Jonathan saving a reminder to find/track Figma plugin developers rather than a specific entity.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:25",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. This entry is just the category Figma Plugins Developers with no link or subject. Did you mean a specific developer/studio? If so which, and I will enrich it. Otherwise it may be a candidate to reject.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:27",
+      "set_by": "agent"
     }
   }
 }

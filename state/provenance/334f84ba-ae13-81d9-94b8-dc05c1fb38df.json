@@ -21,9 +21,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:07:55",
       "set_by": "agent"
     },
     "Work With?": {
@@ -35,14 +35,64 @@
     "Work Status": {
       "value": "Unknown",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:08:45",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Alex Howat (film + editor)",
+      "value": "Alex Howat",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:14:36",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
+    },
+    "Capabilities": {
+      "value": [
+        "Film & video production"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
+    },
+    "Size": {
+      "value": "1",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/alex_____howat/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "3",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Clip-note Name: \"Alex Howat (film + editor)\". Web clipper, 2026-03-31.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Alex Howat, filmmaker and editor (clip note: film + editor). Has a Vimeo (vimeo.com/user13344358). CAUTION: there are several creatives named Alex Howat (a London-based videographer/director on IMDb and the-dots, plus others), and I could not confirm which one the clipped IG (@alex_____howat) belongs to (could not read the bio/grid this pass, no images captured). Discipline is solidly film and video; identity, seniority, location and employment all unconfirmed, so left empty rather than guessed. Autonomy 3 placeholder pending a confirmed work history. Capabilities from the clip note discipline only.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Confirm identity: which Alex Howat is this (London videographer/director, or another)?\n2. Country?\n3. Work Status: freelance or staff editor?\n4. Website? (only an unconfirmed Vimeo found)",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:08:45",
+      "set_by": "agent"
     }
   }
 }

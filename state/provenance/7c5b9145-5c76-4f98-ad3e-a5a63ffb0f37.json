@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://laurabrown.xyz/",
+      "value": "https://laurabrown.studio/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:29",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -28,16 +28,16 @@
     },
     "Country": {
       "value": [
-        "UK"
+        "Belgium"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:29",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:28",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:29",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,36 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:29",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:29",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "laura@laurabrown.studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:29",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-03-01",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:29",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Brussels-based independent designer/developer working across web design, design, writing, editing and research; clients span galleries, cultural institutions, small brands and academics (Artsy, Are.na, Khaite, The Nue Co, Le Grand Hornu). Freelance since 2017; previously software engineer at Artsy (2013-2016), which grounds the Frontend development (web) capability. Mid to senior, ~10 yrs across eng + design. Country corrected from migrated UK to Belgium (her own .xyz site states Brussels-based). Work Status Freelance: explicit on her site (freelance since 2017). Autonomy 4: solo practitioner delivering design + build, client-briefed. Two sites: laurabrown.studio (work) and laurabrown.xyz (writing/CV).",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:29",
+      "set_by": "agent"
     }
   }
 }

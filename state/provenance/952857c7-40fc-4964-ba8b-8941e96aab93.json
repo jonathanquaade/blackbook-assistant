@@ -5,8 +5,8 @@
     "Website": {
       "value": "https://www.somesuch.co/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -27,23 +27,24 @@
       "set_by": "jonathan"
     },
     "Size": {
-      "value": "11\u201340",
+      "value": "11-40",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
+        "UK",
         "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:22:48",
       "set_by": "agent"
     },
     "Work With?": {
@@ -61,16 +62,46 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:26:50",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Somesuch | Film and Production",
+      "value": "Somesuch",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/somesuchandco/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:11",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/somesuch",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2022-05-17",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Somesuch: film and production company founded 2010, offices in London and Los Angeles, representing a roster of directors and producing film/commercials/music videos. Highly awarded (Oscar for The Long Goodbye, 2022; repeatedly Production Company of the Year). Country corrected US -> UK + US (London HQ + LA office). Type Studio (creative production house) over Agency, though it is a sizeable representation+production company; Size 11-40 estimate (hedged, core staff plus director roster). Caps Film & video production match. Jonathans note (Ryland works there) kept; Worked Together is zero-state, untouched.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:26:50",
+      "set_by": "agent"
     }
   }
 }

@@ -18,6 +18,12 @@ images**, so the Scraper inherits a complete entry and only has to capture work.
    the clip note for relationship facts, passcodes, links, tagging direction.
    `keeper.py status <id> Enriching`.
 2. Identify the subject and **classify Type** (Person/Studio/Agency/Foundry/Publication).
+   **Studio vs Agency (Jonathan, 2026-06-15) — bias toward Studio.** A *Studio* is a
+   smaller, highly specialized team focused on hands-on creative execution (graphic
+   design, animation, product development). An *Agency* is a large, full-service
+   organization built for scale, broad marketing campaigns, and long-term strategy.
+   When it could read either way, call it a Studio. Foundry = type/typeface house;
+   Publication = a magazine/editorial outlet; Person = an individual.
 3. Research their site (map the WHOLE nav, every discipline section) + web search +
    Instagram + LinkedIn (Google snippets, no login). Build their real work history
    (roles, employers, years, level) — this grounds the seniority + Autonomy read.

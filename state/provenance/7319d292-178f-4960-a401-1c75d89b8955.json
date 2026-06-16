@@ -28,16 +28,16 @@
     },
     "Country": {
       "value": [
-        "US"
+        "UK"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:32:02",
       "set_by": "agent"
     },
     "Work With?": {
@@ -56,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:33:28",
       "set_by": "agent"
     },
     "Name": {
@@ -66,6 +66,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://www.mikeydowdle.com/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "mikey.dowdle@outlook.com",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/mikeydowdle/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-10-09",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "London-based freelance 3D designer and animator, focus on character work and storytelling; ~7-10 yrs experience, worked in several London studios before going freelance. Senior individual contributor (animation/design lead level for project-based 3D work); Autonomy 4: runs his own freelance practice and delivers finished 3D character pieces independently (inferred from self-described freelance history, not first-hand). Work Status Freelance: own site and IG bio agree, LinkedIn lists Freelance too. Country corrected to UK (site says London-based); migration baseline wrongly had US.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:33:28",
+      "set_by": "agent"
     }
   }
 }

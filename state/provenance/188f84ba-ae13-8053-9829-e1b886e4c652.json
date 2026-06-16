@@ -29,9 +29,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:24:57",
       "set_by": "agent"
     },
     "Work With?": {
@@ -44,6 +44,24 @@
       "value": "Unknown",
       "source_url": null,
       "verified_at": null,
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2025-01-27",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:01",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. This entry is completely empty: no Name, no Website, no Instagram, no page body, no clip note. There is nothing to identify it. Delete it, or can you add the name/URL you intended to clip?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:01",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Unidentifiable: the entry has no Name, no links and an empty page body (only migration zero-states for Size 2-10 and Country UK survive). Nothing to research against, so no fields could be filled at the confidence floor. Flagged for Jonathan to supply the source or delete.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:01",
       "set_by": "agent"
     }
   }

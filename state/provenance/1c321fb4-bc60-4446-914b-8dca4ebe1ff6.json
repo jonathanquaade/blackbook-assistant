@@ -3,21 +3,21 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://otk.studio/",
+      "value": "https://otk.studio",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:39:16",
       "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:39:16",
       "set_by": "agent"
     },
     "Rating": {
@@ -29,8 +29,8 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
@@ -38,19 +38,19 @@
         "Germany"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:38:45",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:39:16",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -63,9 +63,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:39:16",
       "set_by": "agent"
     },
     "Name": {
@@ -73,6 +73,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "office@otk.studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-07-20",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Add Capabilities? Currently Web design + Frontend development (web). OTK also does identity design, product/interface design and art direction single-handedly. Add Identity systems, Digital product design, Creative direction?\n2. Country: site/search do not pin a city; US and Germany are both listed. Confirm base?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Oliver Thomas Klein (OTK Studio): solo designer, developer and art director working in the digital space; runs a one-person design-and-engineering studio. Designs AND builds identities, interfaces and interactive products single-handedly for fintech and tech clients (Rain, Coins, Swan, Patreon, Programme, Rebound). Awwwards-recognised; Reggie Watts credited him with designing and building a whole app solo. Senior, full-stack designer-engineer who can ship a product end to end alone: Autonomy 5. Work Status Studio (solo practitioner running OTK, not freelancing for others). Base unclear (US and Germany both listed; site EST timestamp reads US). Also releases beat tapes (music side project). Sources: own site, Awwwards, press.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:16",
+      "set_by": "agent"
     }
   }
 }

@@ -11,13 +11,13 @@
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:21:18",
       "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:21:18",
       "set_by": "agent"
     },
     "Size": {
@@ -27,15 +27,15 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:20:50",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:21:18",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -49,7 +49,7 @@
     "Work Status": {
       "value": "Unknown",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:21:18",
       "set_by": "agent"
     },
     "Name": {
@@ -57,6 +57,30 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:21:18",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2024-12-20",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:21:18",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Could not identify this person. Only signal is the X handle @bollmann0x (the 0x suffix suggests crypto / web3) and the clip name C Bollman; X is paywalled to fetch and web search found nothing. Do you have more context (a real name, what they make, where you found them)?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:21:18",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Unidentified. Clip listed Name C Bollman with X profile x.com/bollmann0x as the only link. X is behind a login/paywall to read programmatically and web search surfaced no matching designer. The 0x handle hints at crypto / web3, consistent with the existing Product design tag, but unverified, so factual fields left empty per the confidence floor. Needs Jonathan's context to proceed.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:21:18",
+      "set_by": "agent"
     }
   }
 }

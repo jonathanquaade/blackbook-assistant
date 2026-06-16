@@ -70,7 +70,10 @@ it graduates to maintained. See PLAN.md P3.
 
 ## Schema (v3 — 25 properties)
 
-Identity: Name (title) · Type (Person/Studio/Agency/Foundry/Publication) ·
+Identity: Name (title) · Type (Person/Studio/Agency/Foundry/Publication; **Studio vs
+Agency, bias to Studio:** Studio = small specialized team doing hands-on creative
+execution; Agency = large full-service org built for scale, broad campaigns,
+long-term strategy. Foundry = type house; Publication = editorial outlet) ·
 Capabilities (multi, per TAXONOMY.md) · Country (multi — multi-office studios are
 real) · Size (1/2–10/11–40/41–100/100+; a person is 1) · Work Status
 (Freelance/Employed/Studio/Unknown) · Works At (one-way relation, same DB; NEVER

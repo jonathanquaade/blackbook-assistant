@@ -3,48 +3,47 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://view-source.com/work/",
+      "value": "https://view-source.com/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:03",
       "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:03",
       "set_by": "agent"
     },
     "Size": {
       "value": "11\u201340",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "US",
-        "France"
+        "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:01",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:03",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -57,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:44:03",
       "set_by": "agent"
     },
     "Name": {
@@ -67,6 +66,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/view-source",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-05-05",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Greenpoint, Brooklyn creative studio founded 2019 (Andrew Rutledge, Jen Yuan, Ross Vandenhoeck); ~18 people. Full-service across branding (naming, strategy, visual identity, packaging), digital (UX/UI, Shopify Plus e-commerce, full-stack dev), and content (art direction, photography, 3D, generative). Evolved from a digital studio toward full-service; kept as Studio per the studio-bias rule (small specialized team, hands-on execution). Established studio, Autonomy 5. Country corrected to US only (Brooklyn HQ; prior France appears erroneous).",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: currently Frontend development (web) + Web design. Studio also does Identity systems, Brand strategy, Photography, 3D & motion, Backend development. Add these?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:44:03",
+      "set_by": "agent"
     }
   }
 }

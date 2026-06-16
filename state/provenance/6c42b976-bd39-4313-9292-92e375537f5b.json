@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://www.vargaa.com/",
+      "value": null,
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:36:42",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Once",
@@ -33,9 +33,9 @@
       "set_by": "migration"
     },
     "Open Questions": {
-      "value": "1. Familiarity \u2014 you've worked together: (a) Met or spoken (b) Know them well\n2. How do you know them / what was working together like? One line in Notes.",
+      "value": "1. Familiarity?\n2. Website was wrong (vargaa.com is a different Adam Varga, a concept artist). His real presence is the dmvrg handle (LinkedIn/X/Medium/Dribbble). Confirm his portfolio URL? (dmvrg.com unverified)\n3. Work Status: independent (dmvrg) or employed? recent indie product work suggests freelance but unconfirmed.",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:36:42",
       "set_by": "agent"
     },
     "Country": {
@@ -43,13 +43,13 @@
         "Japan"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:36:42",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Needs Review",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:32:10",
       "set_by": "agent"
     },
     "Work With?": {
@@ -70,7 +70,7 @@
     "Work Status": {
       "value": "Unknown",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:36:42",
       "set_by": "agent"
     },
     "Name": {
@@ -78,6 +78,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:36:42",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/dmvrg/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:36:42",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": null,
+      "source_url": null,
+      "verified_at": "2026-06-15T21:36:59",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:36:42",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-10-01",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:36:42",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Tokyo-based product designer and creative technologist working in AR/VR and next-gen interfaces under the handle dmvrg; ex Snap, Meta, Magic Leap, Fantasy; 15+ patent applications, hand-tracking R&D for Oculus Quest, recently shipped indie Quest game Laser Dance. Matches Jonathan note (VR) and his existing Capabilities and Worked Together: Once. Senior product designer/creative technologist, ~12-15 yrs. Autonomy 5: leads his own AR/VR product work and ships independently (inferred from patent record and self-published products). Work Status Unknown: his dmvrg brand reads independent and he self-publishes, but recent platform employment vs freelance is unclear from snippets, so left Unknown rather than guess. IMPORTANT: the website on file (vargaa.com) is a DIFFERENT Adam Varga (a concept artist/matte painter), not this VR designer; cleared it.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:36:42",
+      "set_by": "agent"
     }
   }
 }

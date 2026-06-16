@@ -3,15 +3,15 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://x.com/productsantos",
+      "value": "https://santos.fyi/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:27:35",
       "set_by": "agent"
     },
     "Instagram": {
@@ -23,33 +23,34 @@
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:27:35",
       "set_by": "agent"
     },
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "Italy"
+        "Italy",
+        "United Kingdom"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:27:33",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:27:35",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -63,14 +64,56 @@
     "Work Status": {
       "value": "Unknown",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:27:35",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Santos (@productsantos) / X",
+      "value": "Marcos Santos",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://forma.fyi/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "contact@forma.fyi",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2024-12-23",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Work Status conflict: he is co-founder of his own studio (Studio Forma, Italy/UK) but also listed as a designer at Mobbin. Treat as running his own studio, or employed at Mobbin? Set to Unknown for now.\n2. Capabilities is the transitional Product design tag; his work is software/app product, so retag to Digital product design?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Marcos Santos (@productsantos): product designer, co-founder of Studio Forma, an independent product + brand design studio based in Italy and the UK; also listed as a designer at Mobbin. Based in Italy. Partners with founders/ventures on product and strategy; cites products used by millions (Realio, Giglio). Senior, runs his own studio, so Autonomy 4. Work Status left Unknown: self-maintained sources show him running Studio Forma while other sources list a Mobbin role, an unresolved conflict (flagged). Capabilities currently the transitional Product design tag (Jonathan-set, locked); his work reads as Digital product design, proposed via Open Question. Could not load santos.fyi (403) or read.cv (paywalled); built from web search + Studio Forma references.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:35",
+      "set_by": "agent"
     }
   }
 }

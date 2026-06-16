@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://consensys.net/",
+      "value": "https://consensys.io/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -21,23 +21,23 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "11\u201340",
+      "value": "100+",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:32:19",
       "set_by": "agent"
     },
     "Work With?": {
@@ -56,16 +56,52 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:39:46",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Blockchain Technology Solutions | Ethereum Solutions | ConsenSys",
+      "value": "ConsenSys",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:39:58",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Agency",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/consensys-software-inc/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-09-23",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "ConsenSys is a large Web3/blockchain software company (founded 2015 by Joseph Lubin) building Ethereum tooling; flagship products MetaMask and Infura/Linea. ~500-1000 employees, remote-first, US-registered. This is a tech product company rather than a creative studio, so it fits the Person/Studio/Agency/Foundry/Publication schema poorly; classified Agency as the least-wrong fit for a large org. Size 100+. Capabilities on file (Creative technology, Brand strategy) likely reflect why it was clipped (their design/brand or as a Web3 reference). Cleaned the clipped Name (was the page title). Canonical site is now consensys.io.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. ConsenSys is a 500+ person blockchain software company, not a creative studio. Keep as Agency, reclassify, or drop the entry? (it does not fit the schema cleanly)\n2. Clean Name from the full page title to ConsenSys (done) ok?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:39:46",
+      "set_by": "agent"
     }
   }
 }

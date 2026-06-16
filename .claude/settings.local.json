@@ -35,7 +35,13 @@
       "Bash(git commit -q -m 'Image policy: ~10 per entry, depth over breadth; Nadia deepened to 14 images across 5 projects *)",
       "mcp__Claude_in_Chrome__computer",
       "mcp__Claude_in_Chrome__select_browser",
-      "Bash(cat .claude/settings.local.json 2>/dev/null; echo \"---global---\"; cat ~/.claude/settings.json 2>/dev/null | head -20)"
+      "Bash(cat .claude/settings.local.json 2>/dev/null; echo \"---global---\"; cat ~/.claude/settings.json 2>/dev/null | head -20)",
+      "Bash(python3 scripts/keeper.py)",
+      "Bash(git pull *)",
+      "Bash(python3 scripts/keeper.py work new)",
+      "Bash(python3 scripts/keeper.py get 380f84ba-ae13-8168-b987-df56c3e2d5b1)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\({k:d[k] for k in ['Name','Country','Entry Status','Source','AI Notes'] if k in d}\\)\")",
+      "Bash(git commit -q -m 'Checkpoint working tree before agent model config *)"
     ]
   }
 }

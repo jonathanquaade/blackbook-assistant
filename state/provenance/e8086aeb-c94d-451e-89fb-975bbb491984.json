@@ -5,8 +5,8 @@
     "Website": {
       "value": "https://indd.adobe.com/view/0362ad83-027b-4e2b-ac4e-c149e72ba091",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:29:36",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -35,8 +35,8 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:29:36",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
@@ -47,9 +47,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:22:54",
       "set_by": "agent"
     },
     "Work With?": {
@@ -74,10 +74,34 @@
       "set_by": "agent"
     },
     "Name": {
-      "value": "Coraline Oscarn ",
+      "value": "Coraline Oscarn",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:29:36",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:29:36",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2022-05-11",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:29:36",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Identity not confidently resolved. The website is an Adobe InDesign published portfolio (indd.adobe.com) that renders as an interactive doc and could not be read by fetch tools (no text extracted), and web search returns no clear match for the exact name Coraline Oscarn. Nearby but UNCONFIRMED candidates: a Coraline Oscar (London, senior UX/UI, WPP, on YunoJuno) and a Coraline Colasse (French product designer, ex-Ornikar) - neither verified as this person, so no links/LinkedIn/IG attached (confidence floor). Country kept as Sweden (migration baseline; no evidence to override). Jonathans Rating 3 and Day Rate 475 retained. Seniority unknown until the portfolio can be opened in a browser. Caps left as the locked migration values.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:29:36",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Identity unresolved: the Adobe InDesign portfolio cannot be read by fetch tools and there is no clear web match for Coraline Oscarn. Is this the same as Coraline Oscar (London UX/UI, WPP) or someone else? A browser-rendered scraper pass may be able to open the portfolio.\n2. Country: tagged Sweden, but the nearest web matches are London / France. Confirm Sweden?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:29:38",
+      "set_by": "agent"
     }
   }
 }

@@ -3,47 +3,47 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://www.instagram.com/louisesilfversparre/?hl=en",
+      "value": "https://doubleup.studio/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:42:34",
       "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:42:34",
       "set_by": "agent"
     },
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "Sweden"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:41:59",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:42:34",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:42:34",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://doubleup.studio/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/louisesilfversparre/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-10-09",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Add Creative direction to Capabilities? Her studio Double Up handles art direction and concept development alongside 3D/animation (currently only 3D & motion).\n2. Use her own portfolio (louisesilfversparre.com) as Website instead of the studio? It was unreachable this pass; the DB had an Instagram URL in the Website field.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Louise Silfversparre, Stockholm-based 3D designer and animator; co-founder (with Lina Reidarsdotter Kallstrom) of Double Up Studio, an award-winning Stockholm 3D studio doing animation, modelling, art direction and concept development. Beckmans College of Design grad (BFA Visual Communication, ~2020); started the studio straight after graduating, so relatively early-career but already running her own studio. Known for 3D ecosystems / Technofossils grad project (It's Nice That, Next Nature features). Work Status Studio: she runs Double Up. IG @louisesilfversparre verified (bio: 3D designer, half of @doubleup.studio). Her personal site louisesilfversparre.com was unreachable (ECONNREFUSED); set Website to the studio. Autonomy 4 (studio co-founder, hands-on), inferred.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:34",
+      "set_by": "agent"
     }
   }
 }

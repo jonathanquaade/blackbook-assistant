@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://draegergillespie.com/",
+      "value": "https://www.draegergillespie.com/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,21 +23,21 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:42:32",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,16 +55,58 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Employed",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:42:35",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Draeger Gillespie NYC",
+      "value": "Draeger Gillespie",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://www.coinbase.com/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:43",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "draeger.gillespie@gmail.com",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/draegergillespie/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-06-25",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:35",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Motion designer, individual. Per his own site (highest weight) now Senior Motion Designer at Coinbase (2025-present), based Portland OR; prior Associate Motion Director at Wolff Olins NYC (2021-2025) and Senior Motion Designer there (2019-2021), earlier Violet Office NYC (2015-2018). LinkedIn snippet still lists Wolff Olins (treated as stale, site is newer). Senior / Motion-Director level, roughly 10 yrs of agency motion work, suggests he can run a motion workstream solo (Autonomy 4, inferred from trajectory). Capabilities left as Jonathan-set 3D & motion (fits). Works At Link set to Coinbase per his current site.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:42:53",
+      "set_by": "agent"
     }
   }
 }

@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://nexusstudios.com/arvr",
+      "value": "https://nexusstudios.com/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -21,29 +21,31 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "2\u201310",
+      "value": "100+",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "UK"
+        "UK",
+        "US",
+        "Australia"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:32:04",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:32:31",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -55,16 +57,52 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:32:31",
       "set_by": "agent"
     },
     "Name": {
-      "value": "AR & VR \u2014 Nexus Studios",
+      "value": "Nexus Studios (AR & VR)",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://uk.linkedin.com/company/nexus-studios",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-12-08 (clipped from the AR & VR section of Nexus Studios)",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Nexus Studios is a large, award-winning animation and immersive/experience studio founded 2000 by Charlotte Bavasso and Christopher O'Reilly; offices in London, LA and Sydney, ~180 staff (animators, TDs, coders, illustrators, makers). Work spans BAFTA/Academy-nominated film, Cannes Grand Prix commercials, and Emmy-nominated AR/VR/XR, spatial computing, gaming, installations and theme-park experiences. This entry was clipped specifically from their AR & VR / immersive section (capability tagged Creative technology). Senior, established studio; Autonomy 5. Type called Studio (hands-on creative/production house) despite large scale; could read Agency given breadth, see question. Sources: their about page + Wikipedia + LinkedIn.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Type: called Studio (animation/immersive production house, hands-on execution) but it is large and full-service (~180 staff, 3 offices); read it as Agency instead?\n2. Add Capabilities 3D & motion (animation) and Spatial & exhibition design (installations, theme-park, immersive shows)?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:32:31",
+      "set_by": "agent"
     }
   }
 }

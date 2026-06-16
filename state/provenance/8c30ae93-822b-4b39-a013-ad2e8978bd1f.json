@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://alanacompany.com/",
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "value": "https://alanacompany.com/",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -28,16 +28,18 @@
     },
     "Country": {
       "value": [
-        "Spain"
+        "Spain",
+        "United Kingdom",
+        "United States"
       ],
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:46:01",
       "set_by": "agent"
     },
     "Work With?": {
@@ -56,9 +58,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
-      "source_url": null,
-      "verified_at": null,
+      "value": "Studio",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
       "set_by": "agent"
     },
     "Name": {
@@ -66,6 +68,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Agency",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/alanacompany/",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/alana-company",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-03-01",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Alana (Alana Company / Alana Production): photo and commercial video production company founded 2016 by Alex Gonzalez and Ana Ramirez; women-led, offices in Barcelona, Madrid, London and Miami. Full-service production, project management, art buying and consulting for fashion/luxury (Louis Vuitton, Gucci, Burberry, Hermes, Vogue HK). Classified Agency for its multi-office full-service production scale. Country set Spain/UK/US (4 offices). Migration size 2-10 may understate it given 4 offices; not independently confirmed (Open Question). Senior, established production house.",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Size: they run 4 offices (Barcelona, Madrid, London, Miami). Bump from 2-10 to 11-40?",
+      "source_url": "https://alanacompany.com/",
+      "verified_at": "2026-06-15T21:46:32",
+      "set_by": "agent"
     }
   }
 }

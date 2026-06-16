@@ -3,21 +3,21 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://www.moritzpetersen.com/#process",
+      "value": "https://www.moritzpetersen.com/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:25:51",
       "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:25:51",
       "set_by": "agent"
     },
     "Notes": {
@@ -29,27 +29,27 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "Germany"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:19:36",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:25:51",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -61,16 +61,58 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Employed",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:25:51",
       "set_by": "agent"
     },
     "Name": {
       "value": "Moritz Petersen",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://workos.com/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/moritzpetersen/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2023-01-21",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Work Status: site title says Design Engineer at WorkOS (employed) but he also lists himself as a freelance high-end Webflow developer for design-driven companies. Employed at WorkOS, or freelance, or both?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Moritz Petersen: design engineer / high-end Webflow developer based in Kiel, Germany; turns Figma designs into polished Webflow sites for design-driven companies. Currently Design Engineer at WorkOS (his own site title), with recent work on WorkOS.com, Launch Week, Enterprise Ready Conf, plus Compound, Popcorn, nsave. Mid-senior front-of-web craft (design + build). Work Status set Employed: his self-maintained site explicitly states Design Engineer at WorkOS; but he also presents a freelance Webflow practice, so flagged (see Open Question). Autonomy 4 hedged: ships polished sites independently. Sources: moritzpetersen.com + Behance + Webflow profile.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:25:51",
+      "set_by": "agent"
     }
   }
 }

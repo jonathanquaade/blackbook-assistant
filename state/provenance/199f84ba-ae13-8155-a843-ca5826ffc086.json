@@ -3,33 +3,33 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://www.rubicon-world.com/web-development/",
+      "value": "https://www.rubicon-world.com/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:22:29",
       "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:22:29",
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:22:27",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:22:29",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -41,16 +41,60 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:22:29",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Web development (Made Twelvelabs in Framer)",
+      "value": "Rubicon",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Agency",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
+    },
+    "Country": {
+      "value": [
+        "Bosnia and Herzegovina"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
+    },
+    "Size": {
+      "value": "11-40",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2025-02-13. Clip note: \"Web development (Made Twelvelabs in Framer)\"",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Mismatch: the clipped site rubicon-world.com is a software-engineering / data consultancy in Sarajevo (.NET, Java, Python, cloud, UX), and I could NOT confirm any TwelveLabs-in-Framer connection. Your note says they made TwelveLabs in Framer. Is this the right company, or did you mean a different Framer web studio? I left fields based on the actual site.\n2. Capabilities: their stated work is software/UX (Backend development, Frontend development web + apps, Digital product design, Web design). Confirm which to apply?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "rubicon-world.com is a software engineering and data consultancy based in Sarajevo, Bosnia and Herzegovina, serving EU/US clients nearshore (backend in .NET/Java/Python, cloud on AWS/Azure, mobile, QA, data engineering, AI/ML, plus a UX practice). ISO 27001/9001 certified, Databricks partner. This does NOT obviously match the clip note (Made TwelveLabs in Framer), which suggests a Framer-focused web design studio; could not verify that link, so flagged as an Open Question. Size estimated mid (11-40), unverified. Autonomy 5 as an independent consultancy.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:22:29",
+      "set_by": "agent"
     }
   }
 }

@@ -7,6 +7,7 @@ writes beyond zero-states, provenance write-through).
 
 Usage:
   keeper.py work new|revisit         work list as JSON lines (revisit capped at 10)
+  keeper.py new NAME [JSON] [--source TEXT]   create a New entry (stub for scout/P1)
   keeper.py get PAGE_ID             entry as readable JSON
   keeper.py set PAGE_ID JSON [--source URL]   update fields, e.g. '{"Type":"Person"}'
   keeper.py ask PAGE_ID TEXT        set Open Questions, status -> Needs Review
@@ -106,7 +107,11 @@ def roster_mirror(page_id, fields):
     """Mirror a metadata write into the git-versioned roster (state/roster/
     designers.jsonl) so the roster stays in parity with Notion and its git history
     IS the change history of the blackbook's metadata. Best-effort: a roster mirror
-    must never fail a Notion write that already succeeded."""
+    must never fail a Notion write that already succeeded. Set KEEPER_NO_MIRROR=1
+    during bulk/parallel passes (many concurrent writers would race on the single
+    JSONL file); rebuild the roster afterwards with `roster.py sync-all`."""
+    if os.environ.get('KEEPER_NO_MIRROR') or ENV.get('KEEPER_NO_MIRROR'):
+        return
     try:
         import roster
         roster.mirror_fields(page_id, fields)
@@ -191,6 +196,34 @@ def cmd_set(page_id, payload, source_url=None, from_jonathan=False):
                 source_url=source_url)
     roster_mirror(page_id, fields)
     print(f'set {list(fields)} on {page_id} ({"jonathan-stated" if from_jonathan else "agent"})')
+
+def cmd_new(name, payload='{}', source=None):
+    """Create a New entry in the Companies DB and return its page id.
+
+    The only sanctioned creation path through the contract: scout/intake hands in
+    a Name (+ optional factual fields as JSON: Country, Website, Instagram, LinkedIn,
+    Email, AI Notes...) and how it was found (--source). Entry Status is forced to
+    New, so the next P1 pass enriches it (zero-states + capabilities land there, not
+    here — a New stub is allowed to be sparse). Judgment fields are refused via the
+    same guard as cmd_set; provenance is set_by agent; the roster mirror keeps parity.
+    Never sets Verified, never writes Notes."""
+    fields = json.loads(payload) if isinstance(payload, str) else dict(payload)
+    fields['Entry Status'] = 'New'
+    if source is not None:
+        fields['Source'] = source
+    for f, v in fields.items():
+        if f == 'Notes': sys.exit("CONTRACT: Notes is Jonathan's — never write it.")
+        if f == 'Entry Status' and v == 'Verified': sys.exit('CONTRACT: only Jonathan sets Verified.')
+        if f in JUDGMENT_ZERO and v != JUDGMENT_ZERO[f]:
+            sys.exit(f'CONTRACT: {f} is a judgment field — set its zero-state or leave it.')
+    props = {'Name': encode('Name', name)}
+    props.update({f: encode(f, v) for f, v in fields.items()})
+    page = api('pages', {'parent': {'database_id': DB}, 'properties': props}, method='POST')
+    pid = page['id']
+    prov_update(pid, {'Name': name, **fields}, set_by='agent', source_url=source)
+    roster_mirror(pid, {'Name': name, **fields})
+    print(f'created {pid} — {name} (New)')
+    return pid
 
 def cmd_ask(page_id, text):
     api(f'pages/{page_id}', {'properties': {
@@ -358,6 +391,10 @@ if __name__ == '__main__':
     if not a: sys.exit(__doc__)
     cmd = a[0]
     if cmd == 'work': cmd_work(a[1])
+    elif cmd == 'new':
+        src = a[a.index('--source') + 1] if '--source' in a else None
+        body = a[2] if len(a) > 2 and not a[2].startswith('--') else '{}'
+        cmd_new(a[1], body, src)
     elif cmd == 'get': cmd_get(a[1])
     elif cmd == 'set':
         src = a[a.index('--source') + 1] if '--source' in a else None

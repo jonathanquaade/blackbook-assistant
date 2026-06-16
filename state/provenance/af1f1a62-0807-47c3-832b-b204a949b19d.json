@@ -17,21 +17,21 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:48:21",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "US"
+        "UK"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:48:21",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:43:44",
       "set_by": "agent"
     },
     "Work With?": {
@@ -49,9 +49,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:48:21",
       "set_by": "agent"
     },
     "Name": {
@@ -59,6 +59,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:48:21",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://www.webberrepresents.com/artist/chris-rhodes",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:48:21",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-11-02",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:48:21",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:48:21",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "British fine-art and fashion photographer (b. 1986, Macclesfield; BA Photography, Manchester School of Art, 2011), based London, represented by Webber Represents. Quiet, refined documentary eye; clients incl. Bottega Veneta, Burberry, Gucci, Jil Sander, Miu Miu, Prada; photobooks Hotel Mermaid Club (2022), Murals (2025), Astoria (2025); solo shows at Webber Gallery and international fairs. Established, autonomous. Country corrected from US to UK (Macclesfield/London, all sources agree). Website set to his Webber portfolio (no standalone personal site found). IG not attached: a @chris.rhodes handle exists but I could not verify it is him (common name), so leaving empty per the confidence floor.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:48:21",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: add Art practice? (exhibiting photobook artist with gallery shows)\n2. Instagram: is @chris.rhodes him? could not verify (common name).",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:48:22",
+      "set_by": "agent"
     }
   }
 }

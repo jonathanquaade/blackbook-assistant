@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://www.instagram.com/apn.works",
+      "value": "https://www.apn.works/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:08",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -21,15 +21,15 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "1",
+      "value": "2-10",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:10",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:18:42",
       "set_by": "agent"
     },
     "Work With?": {
@@ -48,16 +48,46 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:27:08",
       "set_by": "agent"
     },
     "Name": {
-      "value": "APN (@apn.works) ",
+      "value": "APN",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:27:08",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:08",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/apn.works/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:08",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2024-07-21",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:08",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Small design and development studio (@apn.works, ~3.8k IG followers, tagline Design + Development). Offers branding, graphic design, digital production and web development, working with cultural institutions, fashion brands and independent creatives. Site/IG self-maintained. Location not confirmed to 0.8 from public sources, so Country left empty. Size set to 2-10 (studio framing) overriding the migration Size of 1. Capabilities locked by Jonathan to Frontend development (web) + Web design; their output also includes Graphic design and branding (proposed via Open Question).",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:08",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: add Graphic design (and Identity systems / Brand strategy)? They do branding and graphic design alongside web build.\n2. Where is APN based? Could not confirm a location to the confidence floor.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:27:11",
+      "set_by": "agent"
     }
   }
 }

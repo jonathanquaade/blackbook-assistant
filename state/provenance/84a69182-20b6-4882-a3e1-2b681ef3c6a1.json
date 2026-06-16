@@ -3,21 +3,21 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://openstatement.co/",
+      "value": "https://scrgb.co/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:37:22",
       "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:37:22",
       "set_by": "agent"
     },
     "Notes": {
@@ -29,27 +29,27 @@
     "Size": {
       "value": "1",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "Finland"
+        "FI"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:32:56",
       "set_by": "agent"
     },
     "Work With?": {
       "value": "Unvetted",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:37:22",
       "set_by": "agent"
     },
     "Capabilities": {
@@ -61,16 +61,52 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:37:22",
       "set_by": "agent"
     },
     "Name": {
       "value": "Oscar G\u00f3mez",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/scrgb/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://openstatement.co/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-09-20. Clipped URL was openstatement.co (the studio); his own portfolio is scrgb.co.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Helsinki-based independent graphic designer and web developer: visual communication, digital design and design-led web build (his Behance @scrgb and openstatement.co bio). He is linked to Open Statement, a design-led web development studio (clients Aalto University, Porto Rocha, Yatofu, NON-STANDARD); unclear whether he founded, leads or contracts to it, so set as Works At Link rather than employer. Self-describes as independent (\"work independently as well as collaboratively\") so Freelance: his own Behance bio + Open Statement page agree; no current LinkedIn confirmation. GitHub github.com/scrgb. Mid-level designer-developer, builds and ships sites end to end (Autonomy 4, inferred from solo design+dev portfolio).",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:37:22",
+      "set_by": "agent"
     }
   }
 }

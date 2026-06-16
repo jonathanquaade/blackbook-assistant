@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://www.thepeople.world/service/",
+      "value": "http://www.thepeople.world/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,21 +23,21 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "Germany"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Stale",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:43:19",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-15T21:46:55",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/thepeople.world/",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "ilove@thepeople.world",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2021-05-19",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Creative collective and production studio based in Berlin, Germany (clipped URL was the /service page). Self-describes as creative collective + production studio; site is sparse on specifics (disciplines/team not detailed publicly). Tagged Graphic design but the production-studio framing suggests film/video production and broader creative production may apply, unverified, see Open Questions. Small collective. Work Status Studio. Autonomy 4 (inferred, low confidence): independent collective taking its own projects. Note: thepeople.world serves a self-signed cert; verified via netlify mirror and IG. IG @thepeople.world and email ilove@thepeople.world from site.",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Confirm disciplines: site calls them a production studio (film/video?) but only Graphic design is tagged. What do they actually make?",
+      "source_url": null,
+      "verified_at": "2026-06-15T21:46:55",
+      "set_by": "agent"
     }
   }
 }
