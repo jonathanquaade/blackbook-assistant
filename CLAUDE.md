@@ -552,6 +552,41 @@ NEVER types credentials). Logged-out IG (scrape.py --render) is fine for a quick
 640px grid but is capped — use ig.py when quality/video matters. Images always land
 in assets/<page-id>/ with manifest.json recording every source URL.
 
+## Permissions & the human-gated logged-in capture loop (Jonathan, 2026-06-16)
+
+The pipeline must run UNATTENDED off Jonathan's laptop (PLAN.md Stage B: cloud
+routines + GitHub Actions). So permissions are split by login, not by tool:
+
+- **No-login tools have a standing grant** (`.claude/settings.json`, checked in, so
+  subagents and the cloud routine inherit it): keeper.py, scrape.py (static +
+  headless Playwright, NO login), roster.py, backup_db.py, WebFetch, WebSearch,
+  curl, git. These never carry a session and are safe to run autonomously. Do NOT
+  add hyper-specific exact-match command strings to the allowlist (the old
+  settings.local.json pattern) — they never match the next page-id/URL and force a
+  prompt on every call. Broad `Bash(python3 scripts/<tool>.py:*)` prefix rules are
+  the correct, auditable grant.
+- **Logged-in tools are HUMAN-GATED, never auto-run.** `ig.py` (Jonathan's
+  logged-in Instagram profile) is in the settings `ask` list: it prompts every
+  time and can never fire unattended. Any logged-in LinkedIn capture is gated the
+  same way (there is no script for it; agents use Google snippets only, never log
+  in). This is deliberate: automated logged-in traffic is exactly what gets us
+  rate-limited or blocked by Instagram/LinkedIn. A human (Jonathan) initiates every
+  logged-in run, on his Mac, with his eyes on it.
+
+**The loop for work that needs a logged-in IG or LinkedIn pass:** the scout/scraper
+do NOT attempt it. Instead:
+1. Finish everything else automatable on the entry (no-login scrape, web research,
+   metadata, context shots).
+2. Queue it: `state/ig-queue.json` for Instagram, `state/linkedin-queue.json` for
+   LinkedIn (same shape: `{page_id, name, url, reason, queued_at}`).
+3. Note "logged-in IG/LinkedIn capture queued, pending Jonathan's approval" in AI
+   Notes, and let the entry proceed to the reviewer → **Needs Review** as normal.
+4. Jonathan, in an interactive session on his Mac, approves and drains the queue
+   with `ig.py` (one gentle run per profile, caps + cooldowns above). His approval
+   IS the permission; the agent never logs in on its own.
+A queued logged-in capture is NOT a reason to hold an entry out of Needs Review —
+ship the entry with everything else done and the queue entry flagged.
+
 ## Backups & safety rails
 
 - Daily backup via GitHub Actions (08:30 UTC, .github/workflows/backup.yml) →

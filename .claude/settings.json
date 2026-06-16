@@ -1,0 +1,27 @@
+{
+  "$comment": "Shared, checked-in standing grant for the enrichment pipeline (scout/scraper/reviewer + orchestrator). These are the NO-LOGIN tools, safe to run unattended off Jonathan's laptop (PLAN.md Stage B cloud routines). Anything that carries Jonathan's logged-in session (ig.py; any logged-in LinkedIn run) is HUMAN-GATED via the ask list below and the Needs-Review loop in CLAUDE.md, so Instagram/LinkedIn never see automated logged-in traffic from us and cannot block us. Subagents inherit these rules; machine-specific extras live in settings.local.json.",
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/keeper.py:*)",
+      "Bash(python3 scripts/scrape.py:*)",
+      "Bash(python3 scripts/roster.py:*)",
+      "Bash(python3 scripts/backup_db.py:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git checkout:*)",
+      "Bash(git branch:*)",
+      "Bash(curl:*)",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "ask": [
+      "Bash(python3 scripts/ig.py:*)"
+    ],
+    "deny": []
+  }
+}
