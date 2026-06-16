@@ -1,0 +1,117 @@
+{
+  "page_id": "380f84ba-ae13-81e1-a63d-ea26837bc001",
+  "name": "Rohan Rege",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T17:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct projects represented (Davesar, Belaver, AAPI Inaugural Ball, Venture 21, Muse Group, RR Time, Pissed FM, Smile and Wave / Canstruction). No duplicate project captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple images per project attempted (e.g. venture21-01 + ph02 + ph03, rr-time + ph01 + ph02). However see blank-image FAIL below -- the interior shots are the files that failed."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Sound design represented via Apple Music bookmark (Davesar) + YouTube embed (Belaver music video) + Muse Group sonic identity. Identity systems covered (AAPI, Venture 21, Pissed FM). Type design covered (RR Time). 3D and motion covered (Smile and Wave animated short, AAPI motion embed). Graphic design present throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-08.png is labeled 'Website' and sourced from rohanrege.com, but it shows the /feed.html work-listing page, not the homepage. The homepage (rohanrege.com root) is the required context shot. No Instagram profile context shot present -- acceptable per task brief (IG handle unconfirmed, intentionally deferred). Fix: replace site-08.png with a screenshot of rohanrege.com homepage taken via scrape.py shot https://www.rohanrege.com/ --out assets/380f84ba-ae13-81e1-a63d-ea26837bc001 --caption 'Website'."
+    },
+    {
+      "id": "A.blank-images",
+      "result": "fail",
+      "evidence": "8 of 21 manifest images are blank/fully-transparent captures (render as white to the viewer). Confirmed blank via visual inspection: rr-time-ph01.png (1920x640 RGBA, 7KB), rr-time-ph02.png (800x800 RGBA, 7KB), pissed-fm-01.png (1920x1080 RGBA, 11KB), pissed-fm-02.png (800x1000 RGBA, 6KB), venture21-ph02.png (1440x1080 RGBA, 12KB), venture21-ph03.png (800x800 RGBA, 5KB), aapi-identity.png (1080x1080 RGBA, 10KB), smile-wave.png (1920x1280 RGBA, 13KB). These are valid PNG files with correct dimensions but appear to be transparent-background images whose content is white-on-white or was not captured. Fix: re-scrape each failed image from its source URL in the manifest. rohanrege.com serves images from /img/ paths -- try scrape.py with --render flag as the site may be JS-rendered. Alternatively: fetch source URLs directly (e.g. https://www.rohanrege.com/img/TIME/RR-TIME-PH01.png) to check if the originals are also blank, and if so, capture alternatives from the relevant project page."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All manifest entries have captions naming the project and a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Two YouTube embeds present (Belaver music video, AAPI Inaugural Ball motion) each with a thumbnail image. Apple Music bookmark for Davesar. Images accompany all embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence is explained by the unconfirmed handle Open Question. No unexplained gaps for a site with accessible work."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (rohanrege.com), LinkedIn (linkedin.com/in/rrege/), Email (info@rohanrege.com) all present. Instagram intentionally deferred to Open Question (handle ambiguous between @rohanrege_ and @rohanreggae). This is correct handling."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "5 capabilities tagged (3D & motion, Graphic design, Identity systems, Sound design, Type design). Matches documented work on rohanrege.com. No obvious missing or off-capability tags."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1 (correct for a Person). Work Status: Employed. AI Notes documents source resolution: COLLINS team page + LinkedIn + ZoomInfo confirm employment. Objective multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set_by agent with explicit reasoning in AI Notes: Senior Designer level, not yet Director/CD, hedged as inferred. Trajectory (2x4 intern, W+K freelance, COLLINS Senior) documented."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are valid -- no evidence in the entry that Jonathan has a relationship with Rohan Rege."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field reads 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' This is a scout-generated entry (not clipped by Jonathan), so there is no raw clip note with instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy estimate explicitly ('hedged, inferred from public signals only'). Work Status sources named. Seniority read grounded in documented trajectory. No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' Present and descriptive."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields (Name, AI Notes, Country, Entry Status, Source, Type, Capabilities, Size, Work Status, Works At Link, Autonomy, Website, LinkedIn, Email, Worked Together, Familiarity, Work With?, Open Questions, Images). All set_by agent with verified_at timestamps."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, Source. No em-dashes found. Double-hyphens used in Open Question ('--') are acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: Instagram handle disambiguation. Terse and specific. Conditional: Instagram field is empty (not already answered). Story nudge not applicable (Worked Together is Never, no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching, as required before the reviewer gate. Status flip to Needs Review is gated on this review passing -- correct."
+    }
+  ],
+  "summary": "Two FAILs block this entry. (1) 8 of 21 images are blank white -- fully-transparent PNG captures that render as empty to Jonathan. This affects interior shots from RR Time, Pissed FM, Venture 21, AAPI Inaugural Ball, and Smile and Wave -- exactly the depth-of-project shots that make this entry valuable. (2) The website context shot shows the /feed.html work-listing page, not the rohanrege.com homepage. The metadata, embeds, captions, provenance, and Open Questions are all clean. Fix both image issues and re-submit.",
+  "to": "scraper"
+}

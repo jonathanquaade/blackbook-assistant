@@ -1,0 +1,113 @@
+{
+  "page_id": "380f84ba-ae13-8184-88cc-cbb749754077",
+  "name": "Eric Park (HyungJin Park)",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T16:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct COLLINS projects captured (Freeform, Arcane, Figma, Bose, plus 2 Vimeo reels); well above the 3-project floor"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 stills per COLLINS project going inside the case studies, not just cover shots; Arcane shows 3D letterforms + motion-game-UI frames at different depth levels"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "collins-figma-03.webp is a blank black image (completely failed render, no visual content). collins-bose-01.webp and collins-bose-02.webp are both solid black (both Bose images failed to capture). collins-figma-02.webp shows a bare empty phone wireframe mockup with no motion/design content visible. These are useless as work samples. The vimeo-reel2025-thumb.jpg shows only a static type specimen (alphabet grid, A-F) which does not read as motion work at a glance. The entry ships 5 broken or content-free images out of 13 work images.",
+      "fix": "Replace collins-bose-01.webp, collins-bose-02.webp, collins-figma-03.webp with re-captured stills from wearecollins.com/work/bose and /work/figma (both pages were accessible per the scout notes; the scraper hit CDN render failures). Replace collins-figma-02.webp (blank phone wireframe) with a frame that shows actual motion/design content. For the 2025 reel thumbnail: the Vimeo oEmbed thumbnail happened to land on a type-specimen frame; re-pull the thumbnail at a different timecode (e.g. ?time=4) to get a frame that reads as motion work."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is ericpark909.com (confirmed: shows 'Eric Park / Motion Reel [25] / About' nav and project list). site-02.png is instagram.com/ericpark909 (confirmed: shows Instagram chrome, handle @ericpark909, bio 'Design at Applied Intuition, ex Motion Design Director COLLINS'). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All manifest entries carry captions and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Both Vimeo reels embedded with thumbnail preview images + linked captions. Pattern is correct. Entry also has static still images so it is not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents that Sweetgreen, Girl Scouts, SF Symphony COLLINS pages returned 403; documented in AI Notes. IG queue not invoked (site + COLLINS pages were primary source, which is correct)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (ericpark909.com), Instagram (@ericpark909, confirmed right person via bio), LinkedIn (linkedin.com/in/ep909/), Email (ericpark909@gmail.com). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion tagged. Appropriate for a Motion Design Director whose case-study work is motion identity systems. Open Question asks Jonathan about adding Graphic design as secondary, which is correctly conditional (not yet set)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. AI Notes names sources: site (ericpark909.com/ep, primary) and LinkedIn snippet both show Applied Intuition; objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes: director-level motion specialist who executes, not a studio founder. Grounded in real trajectory (Associate -> Director at COLLINS)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the clip note. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note instructions found beyond the Name field. Source field documents the scouting provenance. Nothing unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read, Autonomy reasoning, source resolution for Work Status, and notes the original scouting date vs current update. Verifiable facts (clients, awards, schools) stated plainly; inferences (Autonomy, trajectory) hedged appropriately. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found via Claude scouting, 2026-06-15...' Present and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields with verified_at timestamps and set_by: agent. source_url is null on several fields (Country, Size, etc.) which is a minor gap but not a confidence-floor failure since the values are unambiguous facts documented in AI Notes."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions, Source. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question (Capabilities: add Graphic design?). Terse, conditional (3D & motion is set but Graphic design is not), not asking for already-set fields. No story nudge needed (Worked Together is Never, no relationship to prompt)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Status flip to Needs Review is the reviewer's job on pass; withheld on this bounce."
+    }
+  ],
+  "summary": "4 broken/content-free work images out of 13 must be replaced before this entry can go to Jonathan. Both Bose stills are solid black (CDN render failure). One Figma still is solid black. One Figma still is a blank empty phone wireframe with no design content. The 2025 reel thumbnail landed on a static type grid, not a motion frame. Everything else -- metadata, links, context shots, embeds pattern, AI Notes, Open Questions, no em-dashes -- is clean.",
+  "to": "scraper"
+}

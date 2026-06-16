@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-81e7-962b-e191a79aab07",
+  "name": "Julen Saenz",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T15:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 4 distinct projects: Arcane Brand System (COLLINS), NEXT Insurance Brand System (COLLINS), Sugaar Restaurant (HIRUKI), Adolfo Dominguez Rebrand. No repeated captions or near-identical images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images each for Arcane (logo, type specimen, campaign text), NEXT Insurance (mural, poster campaign, website mockup), Sugaar (signage, storefront, brand overlay), Adolfo Dominguez (brand cover, before/after logotype, branded hanger). Goes inside projects, not only hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 4 projects are identity systems and brand design work, matching tagged Capabilities: Brand strategy, Creative direction, Graphic design, Identity systems, Web design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed as julensaenz.com (shows 'Julen Saenz / Design & Art Direction' header, hi@julensaenz.com). site-14.png confirmed as instagram.com showing @julen_sa profile with bio 'Julen Saenz, CD & Founder @hiruki.design'. Both are the correct person. Minor note: website screenshot captured a sparse loading/splash state rather than full portfolio grid, but identity is unambiguous."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 images have captions and source links in manifest. Adolfo Dominguez captions lack agency attribution (the image itself credits 'Julen Saenz & Extratype', suggesting freelance/independent rather than agency work), so the caption omission is not misleading."
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a visual brand/identity designer. No video or audio disciplines tagged; no video embeds required. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No known sources left unexplored without documentation. AI Notes notes IG handle confirmed; no throttle/block issues flagged."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; he is an individual, HIRUKI is his studio but the blackbook entry is for him."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: julensaenz.com. Instagram: instagram.com/julen_sa (verified correct person via context shot). LinkedIn: linkedin.com/in/julen-saenz-ortiz-01ab0022. Email: hi@julensaenz.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy, Creative direction, Graphic design, Identity systems, Web design all verified against TAXONOMY.md. Definitions match the work shown."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United Kingdom. Size: 1. Work Status: Studio. Objective resolution documented in AI Notes: site + Creative Boom Jan 2026 + The Brand Identity interview confirm HIRUKI as current focus; prior COLLINS/Google roles clearly past."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: runs own studio after directing at Google Creative Lab, Apple Marcom, COLLINS. Well grounded."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Work With?: Unvetted, Familiarity: Don't know them. No clip note or Jonathan text contradicts these. Entry was scouted, not clipped by Jonathan."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Found via Claude scouting 2026-06-15, via COLLINS team research.' This is an agent-scouted entry with no Jonathan clip note to parse."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes contains seniority read ('Senior creative director-level, 15+ years'), Autonomy reasoning, Work Status sources. No em-dashes. No overconfident assertions; inferences are framed as observations from named sources."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found via Claude scouting 2026-06-15, via COLLINS team research.' Present and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/380f84ba-ae13-81e7-962b-e191a79aab07.json with set_by and verified_at for all touched fields. Most source_url values are null (provenance records the Notion API write, not the research URL), which is a minor gap but not a failure of the confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Programmatic check on AI Notes found zero em-dash characters. Captions also clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. None are required: no unresolvable ambiguities, no Jonathan relationship to trigger the story nudge, no conflicting data. Correct to leave empty."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Correct pre-flip state. Will be flipped to Needs Review on pass."
+    }
+  ],
+  "notes": "Solid entry. Four distinct, on-capability brand identity projects with good interior depth. All links verified, IG handle confirmed via profile screenshot. One cosmetic observation: website context shot captured a loading/splash state (black screen, logo only) rather than the full portfolio grid; the URL and identity are unambiguous so this is not a FAIL, but a richer homepage capture would be more useful to Jonathan. Not blocking.",
+  "to": null
+}

@@ -1,0 +1,114 @@
+{
+  "page_id": "380f84ba-ae13-8181-a8c8-c8f1cdf51592",
+  "name": "Kristine Lim",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images across 3 distinct projects: NEXT Insurance, Match, Outfest Film Festival. No repeated project across image sets."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "NEXT: 4 images (logo mark, brand copy spread, desktop mockup, character mascot); Match: 3 images (app UI, logo+model, phone mockup); Outfest: 4 images (stationery system, event tickets, letterhead). Goes inside each project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design + Identity systems. All three projects are brand identity work: logos, stationery, brand applications. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-08.png is the Made Thought homepage (confirmed: 'MADE THOUGHT' masthead, D&G Light Blue hero). site-09.png is instagram.com showing @klimristine profile with bio 'Kristine Lim'. Both correctly labeled and match captions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have caption and link fields populated."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "No video/audio capability tagged; no embeddable video identified on the project pages captured. No embed requirement triggered."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Personal site (kristinelim.info) documented as down. Made Thought work not captured because projects are studio-credited with no individual attribution; both omissions are covered in the context provided."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Email field is empty. AI Notes contains no mention of searching for a public email and finding none. Provenance has no record of an email search. The runbook requires capturing public contact email during P1, and a missing link is almost always a skipped search, not an absence.",
+      "fix": "Search for a public email for Kristine Lim: check kristinelim.info (via cache/Wayback), her Behance profile contact info, and LinkedIn 'Contact info' section (Google snippet). If none found, add one line to AI Notes: 'No public email found (checked Behance, Wayback cache of kristinelim.info, LinkedIn snippet).' If found, set the Email field."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems. Both fit the COLLINS and Behance work observed."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. AI Notes records the multi-source resolution: LinkedIn current role as Design Director at Made Thought + COLLINS team page no longer lists her = two sources agreeing she has moved. Objective rule applied correctly."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: director-level, likely runs projects independently, still within a studio context. Grounded in documented trajectory."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with no clip note indicating a relationship. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field reads 'Found using Claude, 2026-06-15. Scout enriched 2026-06-16.' No clip note text indicating a relationship or instruction that went unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority + experience read present ('Approx 6-7 years experience; Design Director-level seniority, trajectory from junior to director at a top-tier studio suggests...'). Unverified inferences are hedged ('suggests high craft execution and capacity for independent project ownership'). Factual claims (AIGA 365 win, ArtCenter BFA 2019, Nike intern 2018) are grounded in public record."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Scout enriched 2026-06-16.' Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields; all set_by agent where agent-researched."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all captions reviewed; no em-dashes found. En-dashes only in ranges."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No relationship signals or ambiguous facts that require a question; no story nudge triggered (Worked Together is zero-state Never, Familiarity is zero-state Don't know them). Conditional rule satisfied: no question asked for fields already set."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching, as expected before the reviewer gate. Not prematurely flipped to Needs Review."
+    }
+  ],
+  "failed_checks": ["B.links"],
+  "to": "scout",
+  "summary": "Single failure: public email search was not performed and is not documented as absent. All image checks, context shots, capability match, metadata, and AI Notes pass. Fix the email gap and resubmit."
+}
