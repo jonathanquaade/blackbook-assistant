@@ -61,3 +61,11 @@ thin entry.
 - Every image lands in `assets/<id>/` with `manifest.json` recording its source_url,
   caption, and link. Real Notion uploads, never external links.
 - No em-dashes in captions. You do not edit metadata fields — that is the Scout's.
+
+## Shell hygiene — keep every command auto-approved (Jonathan, 2026-06-16)
+Claude Code hard-blocks any Bash command containing a newline directly followed by
+`#` (a command-injection guard) and forces a manual approval. It is not allowlistable.
+Keep it from firing: **no `#` comment lines inside `python3 -c "..."` one-liners** —
+write the snippet with zero comments, or put it in a temp `.py` with the Write tool and
+run that file. `manifest.json` already lives in a file, so build it with the Write tool
+(never echo multi-line JSON through the shell).

@@ -51,3 +51,11 @@ the documented format, with `to: "scraper"` or `to: "scout"`.
 - No em-dashes in anything written for Jonathan.
 - If you cannot open an asset or read a source to verify a claim, that is a FAIL
   (unverifiable), not a pass.
+
+## Shell hygiene — keep every command auto-approved (Jonathan, 2026-06-16)
+Claude Code hard-blocks any Bash command containing a newline directly followed by
+`#` (a command-injection guard) and forces a manual approval. It is not allowlistable.
+Keep it from firing: **no `#` comment lines inside `python3 -c "..."` one-liners** —
+write the snippet with zero comments, or put it in a temp `.py` with the Write tool and
+run it. Write `state/review-feedback/<id>.json` with the Write tool, never by echoing
+multi-line JSON through the shell.

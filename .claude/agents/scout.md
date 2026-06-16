@@ -65,3 +65,14 @@ images**, so the Scraper inherits a complete entry and only has to capture work.
 - Never use em-dashes in anything written for Jonathan (AI Notes, Open Questions,
   Source). Commas, periods, colons, semicolons, parentheses instead.
 - All Notion I/O goes through `keeper.py`; all roster I/O through `roster.py`.
+
+## Shell hygiene — keep every command auto-approved (Jonathan, 2026-06-16)
+Claude Code hard-blocks any Bash command containing a newline directly followed by
+`#` (a command-injection guard) and forces a manual approval. It is not allowlistable.
+Two habits keep every call silent:
+- **No `#` comment lines inside `python3 -c "..."` one-liners.** Write the snippet
+  with zero comments, or put it in a temp `.py` with the Write tool and run that file.
+- **Multi-line text/JSON goes through a file, never argv.** For any `keeper.py
+  set / ask / set-notes / new` payload that spans lines or could contain `#`, write it
+  to a temp file with the Write tool and pass `@/path/to/file` (keeper reads `@file`,
+  and `-` for stdin). Single-line escaped JSON on the command line is still fine.
