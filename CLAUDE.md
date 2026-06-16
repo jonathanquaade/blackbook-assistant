@@ -289,12 +289,21 @@ Inventory:
   flips maintained at >=4), set-status, move (record a move + auto-add reference
   studio), sync / sync-all (mirror Notion -> JSONL), promote (approved candidate ->
   New Notion entry). Stdlib only; reuses keeper for Notion I/O.
-- ig.py — Instagram capture via a persistent, JONATHAN-logged-in Playwright profile
-  (state/ig-profile/, gitignored). `login` opens a window for HIM to authenticate
-  (agent NEVER types credentials); `status` checks the session; `grab` does read-only
-  full-res image + video capture (--posts opens each post for the best media/video).
-  Caps: <=10 profiles/run, 2-6s waits; ANY challenge/checkpoint => stop the run and
-  report, never solve. His session, agent read-and-download only.
+- ig.py — Instagram capture via persistent, JONATHAN-logged-in Playwright profiles
+  (gitignored). MULTI-PROFILE (`--profile`, DEFAULT `scout`): `scout` = the disposable
+  scouting account (state/ig-profile-scout/); `personal` = his real account
+  (state/ig-profile/), FALLBACK only. The default is the throwaway on purpose, so an
+  accidental run never hits his personal account. `login` opens a window for HIM to
+  authenticate (agent NEVER types credentials); `status` checks the session; `grab`
+  does read-only full-res image + video capture (--posts opens each post). THROTTLE
+  GATE (state/ig-throttle.json, gitignored): self-policing from disk so even a cold
+  session can't hammer a profile. Conservative caps: <=3 grabs/day, >=20min between
+  grabs, a target not re-grabbed within 24h; jittered scroll/download timing; scrolls
+  only as far as --limit needs; EARLY-bails on avatar-only degradation and sets an
+  escalating cooldown (60min, doubling, cap 24h). grab runs HEADED by default. --force
+  waives spacing/daily caps for a SUPERVISED run but still honours a degradation
+  cooldown. ANY challenge/checkpoint => stop the run and report, never solve. His
+  sessions, agent read-and-download only.
 - scrape.py — portfolio images with per-platform strategies (Squarespace,
   Framer, Figma oEmbed, WordPress, generic), content-hash dedupe, banner traps
   documented. --probe to inspect before downloading.
