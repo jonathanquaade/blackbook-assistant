@@ -49,6 +49,14 @@ Pipeline for a New entry: scout (metadata) → scraper (work) → reviewer (gate
 Review → Jonathan (taste + Rating). The doers leave the entry in Enriching; only the
 reviewer flips it to Needs Review.
 
+**Agent models (Jonathan, 2026-06-16 — cost discipline).** All three subagents run on
+**Sonnet 4.6** (`model: sonnet` in their frontmatter), NOT Opus. Subagent-heavy Opus
+runs were 88% of one session's spend for work Sonnet does well; the orchestrating
+session (which only coordinates and reasons over the contract) stays on Opus. Keep
+subagent prompts tight and spawn independent agents in parallel (one message, multiple
+Agent calls) so a batch of New entries is not serialized. Do not promote a subagent
+back to Opus without a concrete quality reason logged here.
+
 ## Scouting defaults (Jonathan, 2026-06-15) — unless he says otherwise
 
 Targeting rules for the scout (who to surface). They do NOT relax the contract or the
