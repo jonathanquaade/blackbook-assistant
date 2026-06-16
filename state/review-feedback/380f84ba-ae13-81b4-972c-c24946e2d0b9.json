@@ -1,0 +1,114 @@
+{
+  "page_id": "380f84ba-ae13-81b4-972c-c24946e2d0b9",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T16:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 images across 3 distinct COLLINS projects: Twitch rebrand (5), Girl Scouts rebrand (4), Sweetgreen rebrand (3). No repeated project from different angles across the set."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each project: Twitch type system (Roobert typeface sheet), logo variants grid, emote card system, motion thumbnails (color palette + banner categories). Girl Scouts: campaign photography, billboard OOH, logo badge still. Sweetgreen: brand launch video stills and campaign illustration. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Brand strategy. All images are outputs of large-scale brand strategy work at COLLINS (Twitch, Girl Scouts, Sweetgreen rebrands). Framed honestly as 'at COLLINS, strategy'. No off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png confirmed as wearecollins.com homepage (COLLINS wordmark, 'Rewrite your worth.' headline visible). No personal website or Instagram exists for this person; AI Notes documents both absences. The COLLINS screenshot is the correct memory anchor given no personal site. Caption is honest ('COLLINS website (Dashiell Alison, Director Strategy)'). No mislabeling."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have caption and link fields populated with project name and wearecollins.com case study URL."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "COLLINS case study pages use Mux (private CDN), not YouTube or Vimeo; Mux videos have no public embed URL. Scraper correctly captured Mux thumbnail stills (twitch-mux-04/05, gs-mux-01, sg-mux-01/02/03) rather than attempting non-functional embeds. Entry still has images, not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states: 'No personal website or IG found; no public email found.' No unexplained thinness."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "LinkedIn present and formatted correctly. Website, Instagram, Email all absent with documented reasons in AI Notes. Works At Link set to cash.app as employer fallback."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy. Correct for a Director, Strategy role at a brand studio; matches credited work (Twitch, Girl Scouts rebrands)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "United States / 1 / Employed. Work Status sourced from LinkedIn + ZoomInfo, both showing Cash App; AI Notes names both sources and notes the COLLINS ZoomInfo entry is stale. Objective multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent. Reasoning in AI Notes: director level within studio context, not solo, current role is embedded. Grounded in actual career history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No evidence of prior relationship with Jonathan. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was found by agent scout (Source: 'Found using Claude, 2026-06-15'), not clipped by Jonathan. No clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes use 'inferred', 'estimated', 'roughly'. Seniority + experience read included (12-14 yrs, director level, career trajectory listed). Autonomy reasoning paired. No bare assertions about first-hand quality."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source field populated with discovery method, date, and corroborating links."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance/380f84ba-ae13-81b4-972c-c24946e2d0b9.json present; all touched fields recorded with set_by, verified_at. No fields written below 0.8 confidence without hedging."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned; semicolons and commas used throughout. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) keep a strategist? (2) confirm name change to Dash Lavender. Both are genuine unresolvables for the agent. Conditional: no questions for fields already set. No story-nudge triggered (Worked Together is Never, no relationship context). Terse format."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching entering this gate. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "outstanding_open_questions": [
+    "1. Keep a brand strategist (non-hands-on) in the blackbook?",
+    "2. LinkedIn now shows 'Dash Lavender' not Dashiell Alison. Same person; update Name?"
+  ],
+  "to": null
+}

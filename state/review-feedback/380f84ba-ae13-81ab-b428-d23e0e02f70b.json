@@ -1,0 +1,114 @@
+{
+  "page_id": "380f84ba-ae13-81ab-b428-d23e0e02f70b",
+  "name": "Allison Solomson",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images span 3 distinct projects: NEXT Insurance rebrand (5 images), Bose rebrand (5 images), CNET brand identity (3 images). No repeated angles or duplicate content."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside each project: logo typography (site-02), campaign ad copy (site-02), digital mockup (site-03), mascot illustration (site-04), OOH billboard (next-extra), brand film thumbnail (site-05), campaign photography (site-06, site-07), product shot (site-08), OOH billboard (bose-extra), editorial illustration (site-09), live site mockup (site-10), brand manifesto slide (site-11). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Brand strategy. All 13 images are from COLLINS case studies (NEXT Insurance, Bose, CNET) where Allison Solomson is credited as strategist. Images show the brand output she contributed strategy to, sourced from the agency case study pages she is credited on. Appropriate evidence for a strategist."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "One context shot: site-12.png, confirmed as wearecollins.com homepage (COLLINS wordmark visible, 'Rewrite your worth.' headline, AdAge awards). Caption 'COLLINS website (wearecollins.com)' is accurate. Instagram context shot absent with a documented reason (no confirmed IG handle; Open Question filed). Task brief explicitly excludes this from bounce criteria."
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions naming the project and source links pointing to wearecollins.com case study pages. No anonymous images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Allison is a brand strategist, not a video or audio creative. Mux video thumbnails from COLLINS case study pages are captured as still images (site-01.webp, site-05.webp, site-09.webp, site-10.webp), which is appropriate given the work is brand output she contributed strategy to rather than video she produced. No embed requirement applies."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in Open Questions ('No profile found under @solomson or @allisonsolomson') and the omitted IG context shot is a direct consequence of no confirmed handle. AI Notes covers Work Status sources. No unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "No personal portfolio site found (employed strategist, not a freelancer with a personal site). Works At Link set to wearecollins.com. LinkedIn present and URL-verified. Instagram: Open Question filed. No public email found, which is expected for an employed non-freelancer. All absences explained or structurally expected."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy tagged. Matches her role (Strategy Director at COLLINS, VCU Brandcenter MFA, 12-14 years in brand strategy)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US confirmed. Size 1 (Person). Work Status Employed resolved by two non-LinkedIn sources (ZoomInfo: Director, Strategy, Collins; Its Nice That press credit Oct 2024) against stale LinkedIn signal, with resolution logic documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: 'operates independently on major client engagements, owns strategy workstreams, but embedded within COLLINS structure rather than fully autonomous (hedged, based on title and project credits; no first-hand evidence of working style)'."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of Jonathan knowing her. No clip note relationship signal was present."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Entry was scout-surfaced, not clipped by Jonathan. Source says 'Found using Claude, 2026-06-15' which is the honest source for a scouted entry. No clip-note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy estimate hedged explicitly. Work Status sources named (ZoomInfo + press credit vs stale LinkedIn). Seniority read present ('12-14 years in brand strategy, Director-level'). No bare assertions of unverified inferences."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' Filled and honest."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. All touched fields (Name, AI Notes, Country, Entry Status, Source, Type, Capabilities, Size, Work Status, Works At Link, LinkedIn, Worked Together, Familiarity, Work With?, Autonomy, Open Questions, Images) have value, source_url, verified_at, set_by entries. set_by agent throughout."
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, Source, or any manifest caption."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Instagram handle. Terse, conditional (Instagram field not set), explanation included. Story nudge not triggered (Worked Together = Never, Familiarity = Don't know them). No redundant or answered-field questions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status was Enriching; will be flipped to Needs Review by this gate."
+    }
+  ],
+  "outstanding_open_questions": [
+    "1. Instagram handle? No profile found under @solomson or @allisonsolomson (X/Twitter is @solomson but no Instagram match confirmed)."
+  ],
+  "to": null
+}

@@ -1,0 +1,116 @@
+{
+  "page_id": "380f84ba-ae13-81e9-a7f2-d65bc392128b",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T19:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects present: Bose motion identity (4 images), Nike Run Club (3 images), Figma identity (3 images). Minimum 3 met. Bose-heavy (4/10 work images) but does not breach the checklist threshold. No duplicate crops of the same angle."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images go inside projects: 3D motion renders, kinetic type frames, UI screens (app + Apple Watch), and system illustration interiors. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion / Creative direction / Graphic design / Identity systems. All captured work (Bose 3D motion identity, Nike Run Club motion UI, Figma brand illustration system) maps squarely to those capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-07.png confirmed: tomasmarkevicius.com homepage showing name, COLLINS/Bose project listing. site-10.png confirmed: instagram.com/tomasmarkevicius profile, 2,098 followers, bio matches, correct person. Both context shots are correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 manifest entries have captions and source links. No needs_caption fields."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Vimeo embed present (vimeo.com/99165380, 2014 reel). Embed has caption and link. Minor gap: no thumbnail image was downloaded for this embed per CLAUDE.md pattern (thumbnail + embed pairing for video creatives). Not a checklist hard fail, but noted for the scraper to add on a future pass.",
+      "note": "Vimeo reel is from 2014 and is the oldest artifact in the entry. More recent motion work exists (the COLLINS case studies are captured as stills). A scraper follow-up could replace or supplement with a reel or thumbnail from more recent work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Personal site 503 at scouting time documented in AI Notes. IG queued in state/ig-queue.json for full-res motion pass. IG queue note NOT in AI Notes (CLAUDE.md requires this), but context brief marks it minor, not a hard fail."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: tomasmarkevicius.com. Instagram: instagram.com/tomasmarkevicius (verified correct person via profile screenshot). LinkedIn: linkedin.com/in/tomasmarkevicius. Email: hello@tomasmarkevicius.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Creative direction, Graphic design, Identity systems. Consistent with verified body of work at COLLINS."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US, Size: 1, Work Status: Employed. His own site (503 but confirmed live via cache) and COLLINS listing confirm employment. AI Notes state employment but do not explicitly name which sources were cross-checked (light on the required multi-source documentation). Work Status at 0.8+ confidence given personal site + COLLINS case study credits naming him. Minor documentation gap, not a confidence breach."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with grounded reasoning in AI Notes: leads motion direction at director level within COLLINS, sets motion vision for major programmes, but within a larger creative team (not his own studio)."
+    },
+    {
+      "id": "C.no-judgment-contradictions",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or other signal contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was scout-initiated (Source: 'Found using Claude'), not a web-clipper note. No clip instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (~14 yrs, director-level), experience trajectory (TAPE, 2x4, Hugo & Marie, COLLINS), named clients (Bose, Prada, Nike, HBO, Netflix, Met), Autonomy reasoning, IG verification method, and site 503 caveat. Facts asserted are verifiable via COLLINS case studies. No unhedged inferences beyond what provenance supports."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' Present and descriptive."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/380f84ba-ae13-81e9-a7f2-d65bc392128b.json. All touched fields have verified_at and set_by. source_url is null on most fields (common pattern; URLs are in AI Notes). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field in the entry. None are warranted: all required fields are filled, zero-states are appropriate, no story nudge triggered (Worked Together: Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching at review time; will be flipped to Needs Review by the reviewer on this pass."
+    }
+  ],
+  "minor_notes": [
+    "AI Notes omit the IG queue note; CLAUDE.md requires 'note IG capture queued in AI Notes'. Low impact as the queue entry exists; scraper should add this on any future pass.",
+    "Vimeo embed (2014 reel) has no paired thumbnail image. CLAUDE.md pattern for video creatives calls for a thumbnail download alongside the embed. A future scraper pass could pull the oEmbed thumbnail and add it to the manifest.",
+    "Work Status multi-source documentation in AI Notes names the conclusion (employed at COLLINS) but does not explicitly list which sources were cross-checked. Site was 503 at scouting time; COLLINS case study credits serve as the confirmation. Acceptable but could be more explicit."
+  ],
+  "to": "scraper"
+}

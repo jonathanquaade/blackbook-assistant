@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-81f4-8ad8-d2e952e0fe75",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T16:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct projects across 17 work images: Neutra VDL, GDA, Mango, Beats x Fragment, Copeland Studio (SENSITIVE); Muse Group, Bose, Equinox (COLLINS). No repeated-angle duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images show OOH executions, product brand stills, campaign interiors (Equinox billboard in situ, Bose earphone render close-up, Muse Group subway poster). Goes inside projects, not only covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Brand strategy + Creative direction. Images show brand campaigns and identity outputs (Equinox OOH, Bose product campaign, Muse Group brand system). Appropriate for a brand strategist/CD."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png: confirmed sensitive.work URL, captures the JS splash screen (only visible output for headless scraper on this JS-rendered site; documented constraint). site-17.png: confirmed instagram.com/sensitive.work profile grid. Both captions correct. Context shot deficiency (splash vs. homepage) is the documented JS wall, not a mislabel."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 19 manifest entries (excl. rejected site-14) have captions and source links. SENSITIVE images captioned with project names inferred from CDN filenames, flagged honestly in context note."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Cas Malo is a brand strategist, not a video/audio creative. Mux video thumbnails used as still images for COLLINS case studies are appropriate. Embed requirement most binding for video/audio/writing creatives."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents: no personal portfolio site found, no confirmed personal Instagram, SENSITIVE case-study pages JS-walled and inaccessible. All gaps explained."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "No personal Website (documented: no personal portfolio site exists). No personal Instagram (documented: no confirmed handle found). LinkedIn present. Works At Link: sensitive.work. Email: not found, not asked about (no public email surfaced). Absences are genuine, not skipped searches."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy + Creative direction. Open Question 3 correctly asks Jonathan to confirm, given career is strategy-led despite early design background."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 1. Work Status: Studio (co-founder). AI Notes names sources used (LinkedIn, LinkedIn post, The Org, RocketReach). Objective resolution applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: co-owner of own studio."
+    },
+    {
+      "id": "C.no-contradicting-judgments",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) do not contradict any clip note content. No relationship claim in the original note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Original clip note said 'Designer at COLLINS.' Scout corrected to brand strategist, documented the reclassification, updated Capabilities, preserved original in Source field."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences, names sources, includes seniority read (~15 yrs, senior co-founder level) paired with Autonomy 5 estimate. No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source field fully populated with discovery method, original scouting note, update date, and all research sources consulted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields recorded. source_url is null on several fields (provenance records the field-level source in the Source field instead). Minor gap, not a blocking issue."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "3 questions: Familiarity (zero-state, appropriate), Rating (zero-state, appropriate), Capabilities confirmation (genuine ambiguity: early design BFA vs. strategy career). All terse. No question for a field with a non-zero-state value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "notes": "One observation for calibration: the SENSITIVE website context shot (site-16.png) captures only the JS splash screen ('SENSITIVE' text on black), not the actual homepage. This is a consequence of the documented JS wall, not a labeling error or laziness. If Jonathan later wants a real homepage screenshot, it requires a render pass. Not bounced for this.",
+  "to": null
+}

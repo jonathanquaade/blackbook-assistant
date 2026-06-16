@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-8187-a33b-db407d5cc53f",
+  "name": "Dev Valladares",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-16T17:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "17 images across 7 named, distinct projects: Eviate Typeface, NYT Motion, Exploring Fractals, The Baffler, WIRED, Platonic Series, TypeChaosifier. No repeated project or near-identical shots."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 images per project for most (e.g. Eviate: brackets + symbols + asterisk glyphs; Baffler: two different editorial spreads). Goes inside projects, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion, Creative technology, Graphic design, Type design. Work shown: type specimens (Eviate), editorial motion stills (NYT), 3D generative renders (Fractals, Platonic), editorial design (Baffler, WIRED), generative type tool (TypeChaosifier Vimeo). All four capabilities represented."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opens to valladares.dev (confirmed: circular nav, project list visible). site-02.png opens to instagram.com/devethanvalladares (confirmed: Instagram UI, handle 'devethanvalladares', grid visible, bio reads 'Previously @google'). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries have a caption and a link. No needs_caption flag anywhere."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "TypeChaosifier has a Vimeo embed (vimeo.com/502487731) plus a Vimeo thumbnail preview image (typechaosifier-vimeo-thumb.jpg) captioned and linked. Pattern correct. One Vimeo embed is all that was findable; COLLINS page had no loadable images (documented in AI Notes)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states: 'The valladares.dev/collins page loaded but returned no images (Cargo lazy load or restricted section); COLLINS work not captured.' Documented, not silently thin."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: valladares.dev. Instagram: instagram.com/devethanvalladares (verified correct person via context shot). LinkedIn: linkedin.com/in/dev-valladares-35678766/. Email: devalladares@gmail.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Creative technology, Graphic design, Type design. Grounded in actual work shown and career history. Objective capability read, not title-based."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1 (individual). Work Status: Employed -- resolved by objective multi-source rule: site (July 2025 update) + LinkedIn both show Google; IG bio conflict ('Previously @google') noted and flagged in Open Questions. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent. Reasoning in AI Notes: 'senior individual contributor executing independently within large-org teams, not setting studio-wide creative direction.' Grounded in career arc (BUCK, COLLINS, OpenAI, Google Creative Lab)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "No clip note from Jonathan. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate -- no evidence contradicts them. This is a scouted entry, not a referred one."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was scout-sourced (via COLLINS team research), not from a Jonathan clip note. No clip note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the Work Status conflict explicitly ('IG bio appeared to read Previously @google which conflicts, but site is highest-trust...Conflict noted for Jonathan to confirm'). Seniority read is grounded in specific roles and years. No bare assertions of unverifiable claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Claude scouting 2026-06-15 via COLLINS team; confirmed via valladares.dev/about (updated 2025-07-14), One Club YG22 profile, LinkedIn Google snippet, Creative Boom Hotlist 2025'. Specific and verifiable."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/380f84ba-ae13-8187-a33b-db407d5cc53f.json. All touched fields have source_url, verified_at, set_by. No field appears to be below 0.8 confidence given the source quality."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes and Open Questions. No em-dashes found. Colon used after 'Autonomy 3' and 'Work Status Employed' -- correct."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Work Status conflict (IG bio vs site). Terse, specific, not asking for a field that already has a clear value -- it asks Jonathan to resolve a genuine conflict. No story nudge needed (Worked Together is Never, no history)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "notes": "Orphaned files on disk (not in manifest, correctly excluded): eviate-03 (blank pink rectangle -- a banner trap), fractals-03, nyt-03, baffler-03, typechaosifier-01-Amerpsand-Fractal.jpg, organism-01/02 (ChatGPT conversation screenshots -- correctly rejected), oneclub-yg22-31 (headshot, not work). No issues. The IG bio 'Previously @google' conflict is the one genuine open question and is correctly surfaced.",
+  "to": "scraper"
+}

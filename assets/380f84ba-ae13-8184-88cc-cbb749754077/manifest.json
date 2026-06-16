@@ -2,9 +2,10 @@
   {
     "file": "vimeo-reel2025-thumb.jpg",
     "source_url": "https://i.vimeocdn.com/video/1977369097-0d1a0cfbf17b40589ed7074f2862b61f7348e763be69452d8256b8ad65bd6c41-d_1280",
-    "caption": "Motion Reel 2025, thumbnail preview",
+    "caption": "Motion Reel 2025, poster frame (type specimen, per Vimeo owner setting)",
     "link": "https://vimeo.com/1052395705",
-    "captured_at": "2026-06-16"
+    "captured_at": "2026-06-16",
+    "note": "Vimeo CDN thumbnail is fixed to the owner-set poster frame; timecode params do not change it. Kept as poster preview for the embed below."
   },
   {
     "type": "embed",
@@ -76,31 +77,35 @@
   },
   {
     "file": "collins-figma-02.webp",
-    "source_url": "https://image.mux.com/e02tgdbDlV00etoWPBQLRunrWF8Ryk7G4x58ZIEA9xMvQ/thumbnail.webp?time=0&width=1866&height=1245",
+    "source_url": "https://wearecollins.com/work/figma",
     "caption": "Figma, motion identity at COLLINS",
     "link": "https://wearecollins.com/work/figma",
-    "captured_at": "2026-06-16"
+    "captured_at": "2026-06-16",
+    "note": "Re-captured from COLLINS Figma case study via rendered scrape; replaced blank Mux CDN time=0 frame. Shows kinetic type sequence."
   },
   {
     "file": "collins-figma-03.webp",
-    "source_url": "https://image.mux.com/88JQW02ajB00f5ET2nxN27tfqetfQZO5UhtPtprzzZKTc/thumbnail.webp?time=0&width=1866&height=1245",
+    "source_url": "https://image.mux.com/88JQW02ajB00f5ET2nxN27tfqetfQZO5UhtPtprzzZKTc/thumbnail.webp?time=5&width=1866&height=1245",
     "caption": "Figma, motion identity at COLLINS",
     "link": "https://wearecollins.com/work/figma",
-    "captured_at": "2026-06-16"
+    "captured_at": "2026-06-16",
+    "note": "Re-captured at time=5 (not time=0); replaced blank black Mux CDN frame. Shows animated Figma cursor-star on phone mockup."
   },
   {
     "file": "collins-bose-01.webp",
-    "source_url": "https://image.mux.com/9XbYL3X200SnmkINoarGm228TbECqpT028zcR9ZUz02J8c/thumbnail.webp?time=0&width=1866",
+    "source_url": "https://wearecollins.com/work/bose",
     "caption": "Bose, motion identity at COLLINS",
     "link": "https://wearecollins.com/work/bose",
-    "captured_at": "2026-06-16"
+    "captured_at": "2026-06-16",
+    "note": "Re-captured from COLLINS Bose case study via rendered scrape; replaced solid-black Mux CDN time=0 frame. Shows Bose campaign identity with typographic system."
   },
   {
     "file": "collins-bose-02.webp",
-    "source_url": "https://image.mux.com/OJN022ENzmS3XoKb3B00nQXuPCWtYcWXq5tWV52OZrf3w/thumbnail.webp?time=0&width=1866",
+    "source_url": "https://wearecollins.com/work/bose",
     "caption": "Bose, motion identity at COLLINS",
     "link": "https://wearecollins.com/work/bose",
-    "captured_at": "2026-06-16"
+    "captured_at": "2026-06-16",
+    "note": "Re-captured from COLLINS Bose case study via rendered scrape; replaced solid-black Mux CDN time=0 frame. Shows Bose campaign identity with typographic system."
   },
   {
     "file": "site-01.png",
