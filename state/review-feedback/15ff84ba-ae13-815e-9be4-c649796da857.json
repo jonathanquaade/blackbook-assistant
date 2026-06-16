@@ -1,0 +1,35 @@
+{
+  "page_id": "15ff84ba-ae13-815e-9be4-c649796da857",
+  "name": "Fernanda Ruiz",
+  "date": "2026-06-16",
+  "pass_type": "revisit-metadata-fix",
+  "feedback_from": "jonathan",
+  "feedback": "email is empty and instagram is empty",
+  "actions_taken": [
+    {
+      "field": "Instagram",
+      "value": "https://www.instagram.com/fernandaruiz.work/",
+      "source": "https://www.fernandaruiz.work/ (site links directly to handle); confirmed by web search result title 'Fernanda (@fernandaruiz.work) * Instagram photos and videos'",
+      "confidence": "0.95 — handle sourced from her own site's social links section, independently confirmed via Google"
+    },
+    {
+      "field": "Email",
+      "value": "contact@fernandaruiz.work",
+      "source": "https://www.fernandaruiz.work/ contact section / footer mailto",
+      "confidence": "0.95 — directly from her own site's contact section"
+    },
+    {
+      "field": "AI Notes",
+      "value": "Updated to include confirmed Instagram handle and email in the links summary",
+      "source": "agent"
+    },
+    {
+      "field": "Open Questions",
+      "value": "Cleared (feedback question resolved)",
+      "source": "agent"
+    }
+  ],
+  "judgment_fields_touched": false,
+  "status_change": "none — left in Enriching per instruction",
+  "unresolvables": []
+}

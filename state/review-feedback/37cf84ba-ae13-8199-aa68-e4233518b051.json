@@ -1,0 +1,19 @@
+{
+  "page_id": "37cf84ba-ae13-8199-aa68-e4233518b051",
+  "name": "Jump Jirakaweekul",
+  "date": "2026-06-16",
+  "feedback_from": "jonathan",
+  "issues_raised": [
+    "Type field was empty",
+    "No Instagram context screenshot in Work section despite IG field being set"
+  ],
+  "fixes_applied": [
+    "Type=Person was already fixed by the orchestrator before this pass",
+    "Captured Instagram profile screenshot (site-15.png) via scrape.py shot for https://www.instagram.com/jumpjirak/ -- verified as real profile (bio: Jump Jirakaweekul / gestalt looker, grid shows identity/lettering work matching @jumpjirak)",
+    "Added site-15.png to manifest.json with caption 'Instagram profile' and link to https://www.instagram.com/jumpjirak/",
+    "Re-uploaded all 12 images to Notion via keeper.py upload (11 project images + Website + Instagram profile)"
+  ],
+  "status": "resolved",
+  "entry_status_changed": false,
+  "notes": "Entry remains in Enriching per instructions. No metadata touched. Project work images unchanged."
+}

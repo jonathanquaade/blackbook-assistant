@@ -76,7 +76,9 @@
       "WebFetch(domain:www.printmag.com)",
       "WebFetch(domain:theegotist.com)",
       "WebFetch(domain:resume.krop.com)",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(md5 *)",
+      "Bash(file *.png *.jpg *.webp)"
     ]
   }
 }

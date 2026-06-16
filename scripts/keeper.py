@@ -307,7 +307,9 @@ def cmd_upload(page_id, asset_dir):
                 writing/articles/case studies
     Non-image work (sound designers, videographers, writers, strategists) lives as
     embed/bookmark entries so their actual output is in the portfolio, not just stills."""
-    manifest = json.load(open(os.path.join(asset_dir, 'manifest.json')))
+    manifest_all = json.load(open(os.path.join(asset_dir, 'manifest.json')))
+    # Skip rejected tombstones -- never re-propose what Jonathan removed
+    manifest = [e for e in manifest_all if not e.get('rejected')]
     def cap_rt(entry, suffix_link=None):
         rt = []
         if entry.get('caption'):
@@ -317,15 +319,15 @@ def cmd_upload(page_id, asset_dir):
                                 'link': {'url': suffix_link}}})
         return rt
     # upload file-backed entries (images + self-hosted video files <=20MB)
-    img_entries = [e for e in manifest if e.get('type', 'image') == 'image']
-    file_entries = [e for e in manifest if e.get('type', 'image') in ('image', 'video')]
+    img_entries = [e for e in manifest if e.get('type', 'image') == 'image' and not e.get('rejected')]
+    file_entries = [e for e in manifest if e.get('type', 'image') in ('image', 'video') and not e.get('rejected')]
     uploads = [(upload_file(os.path.join(asset_dir, e['file'])), e) for e in file_entries]
     api(f'pages/{page_id}', {'properties': {'Images': {'files': [
         {'type': 'file_upload', 'file_upload': {'id': fid}, 'name': name}
         for (fid, name), e in uploads if e.get('type', 'image') == 'image']}}})
     fid_by_file = {e['file']: (fid, name) for (fid, name), e in uploads}
     blocks = [{'type': 'heading_2', 'heading_2': {'rich_text': [{'text': {'content': 'Work'}}]}}]
-    for entry in manifest:
+    for entry in (e for e in manifest if not e.get('rejected')):
         kind = entry.get('type', 'image')
         if kind in ('embed', 'bookmark'):
             blocks.append({'type': kind, kind: {'url': entry['url'],

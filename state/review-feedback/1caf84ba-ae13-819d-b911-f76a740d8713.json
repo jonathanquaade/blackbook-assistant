@@ -1,0 +1,15 @@
+{
+  "page_id": "1caf84ba-ae13-819d-b911-f76a740d8713",
+  "name": "David Anastácio",
+  "feedback_from": "jonathan",
+  "feedback_date": "2026-06-16",
+  "issue": "the rekki example you've pulled are not correct",
+  "fix_applied": "2026-06-16",
+  "what_was_wrong": "site-05 to site-08 came from ccccache.com (a Tumblr reblog stream) that mislabeled unrelated content as REKKI. Actual images: a charcoal figure drawing, sci-fi military photography, a sci-fi weapon render, and a sci-fi machinery render. None of these are REKKI brand work.",
+  "what_was_done": "Rejected all 4 ccccache images (site-05 to site-08) as rejected:true in manifest, deleted files. Sourced confirmed REKKI brand identity work from Dinamo's own case study (abcdinamo.com/custom/typeface-rekki-diatype-london): bridge logomark (site-10), custom Diatype typeface specimen (site-12), event poster with full brand typographic system (site-13). Added Nike in-store app from Instrument case study (site-14). Removed off-topic Dinamo restaurant photography (site-09, site-11) and non-David Instrument images (site-15 Oura app, site-16 unknown app). Fixed keeper.py upload to properly skip rejected:true manifest entries (previously tool uploaded all entries regardless of rejected flag).",
+  "rekki_imagery_found": true,
+  "rekki_source": "https://abcdinamo.com/custom/typeface-rekki-diatype-london",
+  "rekki_images_added": ["site-10.jpg (REKKI bridge logomark)", "site-12.jpg (custom Diatype typeface)", "site-13.jpg (event poster / brand application)"],
+  "final_image_count": 8,
+  "final_images": ["site-01.png (Sublime.app)", "site-02.png (Moog Music context)", "site-03.jpg (Moog Music)", "site-04.jpg (Moog Music)", "site-10.jpg (REKKI logomark)", "site-12.jpg (REKKI typeface)", "site-13.jpg (REKKI poster)", "site-14.jpg (Nike NCX app at Instrument)"]
+}

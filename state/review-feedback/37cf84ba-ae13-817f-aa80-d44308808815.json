@@ -1,0 +1,14 @@
+{
+  "doer": "scraper",
+  "done": "Revisit pass complete 2026-06-16. Fixed all three issues from Jonathan review: (1) cut same-project overload -- LFW AW19 trimmed from 5 to 3 strong images, Channel 4 from 4 to 2; added 3 new projects (Intrinsic brand identity, Plenaire skincare identity, Untapped recruitment identity) each confirmed to include Jack Llewellyn in the project team; final selection is 10 work images across 5 distinct Pentagram/Hudson Powell projects. (2) Website context shot: live site has expired SSL cert so Wayback Machine snapshot (Dec 2024, web.archive.org/web/20241220022011/jackllewellyn.co.uk) used instead, captioned 'Website (Wayback snapshot, Dec 2024)'. (3) Added Jack Llewellyn to designer roster via roster.py sync. Also fixed keeper.py upload to skip rejected:true manifest tombstones.",
+  "projects_captured": [
+    "London Fashion Week Mens AW19 (pentagram.com/work/london-fashion-week-aw19/story) -- 3 images",
+    "Channel 4 masterbrand (pentagram.com/work/channel-4/story) -- 2 images",
+    "Intrinsic brand identity (pentagram.com/work/intrinsic/story) -- 2 images",
+    "Plenaire skincare identity (pentagram.com/work/plenaire/story) -- 1 image",
+    "Untapped diversity recruitment identity (pentagram.com/work/untapped/story) -- 2 images",
+    "Website context shot (Wayback Dec 2024) -- 1 image",
+    "Instagram profile context shot -- 1 image"
+  ],
+  "roster": "Added via roster.py sync 37cf84ba-ae13-817f-aa80-d44308808815 -> designer_id jack-llewellyn, status Revisit, linked to Notion page_id."
+}
