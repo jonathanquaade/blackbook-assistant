@@ -1,37 +1,92 @@
 {
   "page_id": "380f84ba-ae13-815d-b414-d46fdef330aa",
-  "migrated_at": null,
   "fields": {
-    "Name": {
-      "value": "Nuno Venturo",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.",
-      "verified_at": "2026-06-15T21:11:42",
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
       "set_by": "agent"
     },
-    "AI Notes": {
-      "value": "[Scout research, unverified] Designer at Mouthwash (Los Angeles). Currently employed.",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.",
-      "verified_at": "2026-06-15T21:11:42",
+    "Capabilities": {
+      "value": [
+        "Graphic design"
+      ],
+      "source_url": "https://mouthwashmagazine.com/about",
+      "verified_at": "2026-06-17T14:08:04.766785",
       "set_by": "agent"
     },
     "Country": {
       "value": [
         "United States"
       ],
-      "source_url": "Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.",
-      "verified_at": "2026-06-15T21:11:42",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
       "set_by": "agent"
     },
-    "Entry Status": {
-      "value": "New",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.",
-      "verified_at": "2026-06-15T21:11:42",
+    "Size": {
+      "value": "1",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Work Status": {
+      "value": "Unknown",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://mouthwash.studio/",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "2",
+      "source_url": "https://mouthwashmagazine.com/about",
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Worked Together": {
+      "value": "Never",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Familiarity": {
+      "value": "Don't know them",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Work With?": {
+      "value": "Unvetted",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
       "set_by": "agent"
     },
     "Source": {
       "value": "Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.",
-      "verified_at": "2026-06-15T21:11:42",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "agent-generated, hedged",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "name spelling, identity, work status, IG/site links",
+      "source_url": null,
+      "verified_at": "2026-06-17T14:08:04.766785",
+      "set_by": "agent"
+    },
+    "Entry Status": {
+      "value": "Needs Review",
+      "source_url": null,
+      "verified_at": "2026-06-17T15:25:22",
       "set_by": "agent"
     }
   }
