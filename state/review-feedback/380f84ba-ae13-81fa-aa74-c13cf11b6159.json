@@ -1,113 +1,115 @@
 {
   "page_id": "380f84ba-ae13-81fa-aa74-c13cf11b6159",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T00:00:00",
+  "reviewed_at": "2026-06-17T16:30:00",
   "verdict": "fail",
   "attempt": 1,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Images span Nike After Dark, North Face, Seed, Fender, Air Company across 5 distinct named projects (at least by caption). Plus 5 writing bookmarks across Substack, Mr Porter, sundaijohnson.com, and a chapbook."
+      "evidence": "5 distinct projects by caption: Nike After Dark, The North Face, Seed, Fender, Air Company. Plus 5 writing bookmarks (Substack, Mr Porter, chapbook, writing index). Diversity criterion met in intent, though captions are corrupted (see A.no-uncaptioned-images)."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "pass",
-      "evidence": "Multiple shots per project (3 Nike, 3+ North Face, 3 Seed, 3 Fender, 3 Air Company). Goes inside projects rather than hero-only. Writing side also has both a Substack index and an individual piece."
+      "result": "fail",
+      "evidence": "Cannot reliably assess depth because the image-to-caption mapping is corrupted throughout. Two images are also content-free: site-02 is a featureless pastel gradient with a single play-button dot (no project information); site-15 is a low-res entertainment video thumbnail grid unrelated to Air Company. Even correcting captions, these two images add nothing.",
+      "fix": "After fixing caption corruption, replace site-02 and site-15 with interior project images that show copy artifacts: headlines, taglines, campaign manifesto text, naming systems on creative. Aim for 2-3 images per project that show verbal work on-screen or on-print."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Copywriting. Writing bookmarks (Substack, Mr Porter article, chapbook, writing index) are the on-capability portfolio. Mouthwash brand images provide campaign context for a copywriter who does verbal identity work. Acceptable framing."
+      "evidence": "Tagged Copywriting. Writing bookmarks (Substack, Mr Porter, chapbook, writing index) are direct verbal work. Mouthwash brand project images as representatives of a verbal identity practice is the stated and correct format for a copywriter per context brief."
     },
     {
-      "id": "A.context-shots-correct",
+      "id": "A.context-shots-present-and-correct",
       "result": "pass",
-      "evidence": "site-10 opens as sundaijohnson.com homepage (name + nav visible). site-11 opens as instagram.com/@sraejo profile (handle sraejo, 933 followers visible). Both captions match reality."
+      "evidence": "site-10 (captioned Website) confirmed as sundaijohnson.com homepage: name and nav visible. site-11 (captioned Instagram profile) confirmed as instagram.com with handle @sraejo, 933 followers, correct grid. Both captions match reality."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "fail",
-      "evidence": "Every image has a caption, but multiple captions are factually wrong: site-05 (captioned 'The North Face, Mouthwash Studio') shows Mesura, a Barcelona architecture firm unrelated to The North Face or Mouthwash. site-06 (captioned 'The North Face, Mouthwash Studio') shows an Air Company billboard and fragrance. site-09 (captioned 'Seed, Mouthwash Studio') shows Air Company eau de parfum bottle. site-13 and site-14 (captioned 'Fender, Mouthwash Studio') show Literary Sport clothing brand website pages. site-16 (captioned 'Air Company, Mouthwash Studio') shows Perron Roettinger design studio website. At least 6 of 17 work images have captions that do not match the visible content.",
-      "fix": "Re-pull Mouthwash project pages for North Face, Seed, Fender, and Air Company individually and verify each downloaded image against the project page it came from before captioning. Remove site-05, site-06, site-09, site-13, site-14, site-16 and replace with images that actually match their stated project. The scraper appears to have captured images from the wrong Sanity CDN endpoints or cross-contaminated project batches."
+      "evidence": "Every image has a caption, but at least 9 of 17 work images carry captions that do not match the visible content. The Mouthwash Sanity CDN (ew1yzffi) is shared across all studio projects; the scraper pulled CDN image URLs from each project page source but the CDN served images from other projects, not the target one. Confirmed mismatches by opening each file: site-05 (The North Face) shows Mesura Barcelona architecture studio with a Knowing/Experimentation diagram; site-06 (The North Face) shows an Air Company fragrance billboard; site-07 (Seed) shows a Comme des Garcons x Converse sneaker; site-09 (Seed) shows an Air Eau de Parfum bottle; site-12 (Fender) shows a luxury interior corridor with a chair; site-13 (Fender) shows the Literary Sport website homepage; site-14 (Fender) shows a Literary Sport women's running clothing catalogue; site-15 (Air Company) shows a low-res entertainment video thumbnail grid; site-16 (Air Company) shows Perron Roettinger design studio homepage. Plausible matches confirmed: site-01 (Nike / desert name list, consistent with Nike After Dark run event); site-03 (Nike / basketball studio shoot, consistent); site-04 (The North Face / red energy question slide, plausible for North Face Power of Nature); site-08 (Seed / dancing woman, plausible for Seed lifestyle imagery); site-17 (Air Company / plane engine Fueled by AIR COMPANY, confirmed); site-18 (The North Face / close portrait, plausible); site-19 (The North Face / wildflower landscape, plausible for Power of Nature campaign).",
+      "fix": "Do NOT rely on Sanity CDN image URLs extracted from page source. Instead: screenshot each project page in the browser, then identify which images are actually rendered on that page. Download only those. Alternatively use scrape.py with --probe on each project URL to see which images the page actually renders. Remove site-05, site-06, site-07, site-09, site-12, site-13, site-14, site-15, site-16 and replace with verified images from the correct project pages. Recaption everything against the actual visible image content."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "No video/audio work present for this copywriter. Bookmarks are the correct format per CLAUDE.md. No embedded audio/video is expected here."
+      "evidence": "Copywriter. Bookmarks are the correct vehicle for verbal/written work. No video or audio embeds expected. No missed embed opportunities flagged."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes addresses that LinkedIn was blocked (999 error) and notes the Google snippet was used instead. IG is low-activity personal account (no work-relevant images), which is consistent with not queueing it."
+      "evidence": "LinkedIn 999-blocked; documented in AI Notes with Google snippet fallback. IG is a personal account with no work-relevant images; not queueing it is a defensible call and not flagged as a gap."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Person. Correct."
+      "evidence": "Type: Person. Correct."
     },
     {
-      "id": "B.links-present",
+      "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (sundaijohnson.com), Instagram (@sraejo), LinkedIn, and Email (sundai@wordhaus.studio) all present. Note: email domain is wordhaus.studio, not mouthwash.studio; AI Notes does not explain this discrepancy. This is a minor question mark but the email is findable and present."
+      "evidence": "Website, Instagram (@sraejo confirmed via own site /info), LinkedIn URL (via Google snippet), Email (sundai@wordhaus.studio) all present. Note: email domain is wordhaus.studio, not mouthwash.studio; this is not flagged as wrong (wordhaus.studio appears to be her own studio/freelance brand), but AI Notes does not mention it. Minor gap in explanation, not a blocking fail."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Copywriting is the single tag. Consistent with her site ('writing and brand storytelling'), her role (Senior Copywriter), and her portfolio (Substack, Mr Porter, chapbook)."
+      "evidence": "Copywriting. Single tag. Consistent with title, site description, and portfolio."
     },
     {
-      "id": "B.country-size-workstatus",
+      "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: United States. Size: 1. Work Status: Employed. AI Notes documents the resolution: own site + LinkedIn Google snippet both point to Mouthwash Studio. Two-source rule met."
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. Two-source rule met per AI Notes (own site + LinkedIn Google snippet, both pointing to Mouthwash Studio)."
     },
     {
-      "id": "B.autonomy",
+      "id": "B.autonomy-estimated",
       "result": "pass",
-      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes (Senior IC, trusted specialist, not partner tier). Grounded in actual role and teaching history."
+      "evidence": "Autonomy 3, set_by agent. Reasoning in AI Notes: Senior Copywriter title, UCLA Seasonal Lecturer role, not yet partner or creative direction tier. Grounded in real work history."
     },
     {
-      "id": "C.no-judgment-contradiction",
+      "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Unvetted, Never, Don't know them) are consistent with no evidence of prior relationship. Source says 'Found via Claude' which is a discovery path, not a vouch. No contradiction."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent. Source says Found via Claude, a discovery path, not a vouch. No contradiction."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clip note instructions visible in clipped.md (only archived body content, duplicated). Nothing outstanding from the raw entry."
+      "evidence": "clipped.md archived (though content appears duplicated, a process anomaly). No unacted-on instructions from Jonathan in the raw entry."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes uses 'estimated' for Autonomy, 'implied by' for experience inferences. Seniority and trajectory included. Sources named. No em-dashes. No plain assertions of unverifiable claims."
+      "evidence": "No em-dashes. Seniority read included. Autonomy marked as estimated. Work Status resolution sources named. Inferences hedged (UCLA teaching role implies 5+ year practice). No overconfident assertions."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Found via Claude, 2026-06-15. Copywriter at Mouthwash Studio (Los Angeles); currently employed.' Present and descriptive."
+      "evidence": "Source: Found via Claude, 2026-06-15. Copywriter at Mouthwash Studio (Los Angeles); currently employed. Present and descriptive."
     },
     {
       "id": "D.provenance-written",
       "result": "fail",
-      "evidence": "Provenance file exists and all fields are present, but source_url is null for every single field. The contract requires source_url in provenance so that any claim can be traced back to a primary source. Having null across all 15 fields means no claim is independently traceable.",
-      "fix": "On the next scraper pass, populate source_url for each field with the URL that was the primary source (e.g. Website field -> source_url: 'https://sundaijohnson.com', Instagram -> 'https://sundaijohnson.com/info', LinkedIn -> Google snippet URL or the LinkedIn profile URL, etc.)."
+      "evidence": "Provenance file exists with all fields present, but source_url is null for every single field (Website, Instagram, LinkedIn, Email, Capabilities, Country, Work Status, Autonomy, and all others). No claim is independently traceable to its primary source.",
+      "fix": "Populate source_url for each field on the next pass: Website from sundaijohnson.com, Instagram from sundaijohnson.com/info, LinkedIn from the Google snippet URL, Email from sundaijohnson.com/contact or /info, Work Status from both sundaijohnson.com/info and the LinkedIn Google snippet URL, Capabilities from sundaijohnson.com homepage, Country from sundaijohnson.com/info (Los Angeles stated). This is a provenance write-back only, no Notion field changes needed."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, Source, or Open Questions."
+      "evidence": "AI Notes, Source, captions, and Open Questions reviewed. No em-dashes found anywhere."
     },
     {
-      "id": "D.open-questions",
+      "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "No Open Questions set. No outstanding ambiguities that require asking (all findable fields are filled). Story nudge not triggered (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted, Notes empty). Correct."
+      "evidence": "No Open Questions set. No outstanding ambiguities requiring Jonathan input. Story nudge not triggered (all three relationship fields are at zero-state, Notes is empty)."
     },
     {
       "id": "D.status-correct",
-      "result": "pass",
-      "evidence": "Status is Enriching (reviewer has not yet flipped it). Correct at this stage."
+      "result": "fail",
+      "evidence": "Provenance shows Entry Status was set to Needs Review by the scraper at 2026-06-17T16:03:42, before passing the reviewer gate. The scraper self-reviewed and self-promoted. This is exactly the failure pattern the reviewer exists to prevent (Zuzanna Rogatty). Reviewer is resetting to Enriching as part of this bounce.",
+      "fix": "Scraper must leave Entry Status at Enriching at the end of its pass. Only the reviewer may flip to Needs Review, and only after all checks pass."
     }
   ],
-  "summary": "Two FAILs. The critical one is A.no-uncaptioned-images: at least 6 of 17 work images have captions that do not match the visible image content. The scraper appears to have cross-contaminated project image batches when pulling from the Mouthwash Sanity CDN: Air Company images appear under The North Face and Seed captions; a Barcelona architecture firm (Mesura) and a clothing brand (Literary Sport) appear under The North Face and Fender captions respectively; a Perron Roettinger studio page appears under Air Company. This is a data integrity failure that would send Jonathan misleading information about her work. The secondary fail is D.provenance-written: source_url is null for all 15 provenance fields. The entry has real strengths: writing bookmarks are well-chosen and substantive (Substack, Mr Porter, chapbook), context shots are verified correct, metadata is solid, and AI Notes are appropriately hedged. Fix the image caption corruption and add source URLs to provenance, then resubmit.",
+  "summary": "FAIL on 4 checks. The critical failure is A.no-uncaptioned-images: at least 9 of 17 work images carry captions that do not match actual image content. Root cause is that the Mouthwash Sanity CDN is shared across all studio projects; pulling image URLs from a project page source does not guarantee those images belong to that project. Confirmed wrong-project images: Mesura (architecture studio) labeled as The North Face; Air Company fragrance billboard and perfume bottle labeled as The North Face and Seed; Comme des Garcons sneaker labeled as Seed; Literary Sport clothing pages labeled as Fender; Perron Roettinger studio site labeled as Air Company. Secondary fails: provenance source_url null across all fields (D.provenance-written), and the scraper self-flipped to Needs Review without a reviewer pass (D.status-correct). All metadata checks pass: context shots correct, bookmarks well-chosen and substantive, links complete, AI Notes hedged and seniority-aware, no em-dashes. Fix image caption corruption, add provenance source_urls, leave status at Enriching, then resubmit to the reviewer.",
   "to": "scraper"
 }

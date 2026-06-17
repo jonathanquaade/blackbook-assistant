@@ -7,46 +7,40 @@
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "Active images span at least 6 distinct named projects: MW.S Reel 2025, EigenCloud, The North Face, Seed, Nike, Hims and Hers, T1 Energy, Refractions (Behance), Animated Haiku (Behance). Diversity is not the problem."
+      "result": "fail",
+      "evidence": "13 of 22 active stills (site-01 through site-13) are the wrong images with wrong captions, confirmed by opening each file. Sanity CDN URLs targeted at EigenCloud, Seed, Hims and Hers, and T1 Energy project pages returned unrelated content: site-01 (captioned 'EigenCloud brand motion system') shows a list of desert names; site-02 ('EigenCloud kinetic identity') shows a pink-purple gradient with a play icon; site-03 ('EigenCloud 3D motion exploration') shows a basketball model on an orange photo-stage; site-04 ('Seed brand motion') shows a red slide reading 'What does the future of energy look like?'; site-05 ('Seed type animation') shows a Mesura architecture firm bio from Barcelona; site-06 ('Seed brand system') shows an Air Company fragrance billboard on a building; site-07 ('Hims and Hers motion system') shows a Comme des Garcons high-top sneaker; site-08 ('Hims and Hers motion principles') shows two people in a sport-fashion pose; site-09 ('Hims and Hers motion expression') shows Air Company perfume product photography; site-11 ('T1 Energy motion typography') shows interior architecture with a lounge chair; site-12 ('T1 Energy brand system') shows a Literary Sport activewear homepage; site-13 ('T1 Energy motion identity') shows a Literary Sport womens running product grid. Correct active images are: 5 Vimeo thumbnails (reel-thumb, eigencloud-thumb, tnf-thumb, seed-thumb, nike-thumb -- all confirmed correct), site-17 and site-18 (Refractions 3D glass renders -- confirmed correct), site-19 (Animated Haiku kinetic type storyboard -- confirmed correct), site-10 (Behance profile context shot -- confirmed correct), site-15 (Mouthwash website context shot -- confirmed correct).",
+      "fix": "Mark site-01 through site-13 as rejected in the manifest with reason 'Sanity CDN served wrong-project content'. Re-scrape mouthwash.studio/project/eigencloud/, mouthwash.studio/project/seed/, mouthwash.studio/project/hims-and-hers/, and mouthwash.studio/project/t1-energy/ using scrape.py --render and open each downloaded file visually before adding it to the manifest. Aim for 2-3 on-capability motion stills per project, not hero banners."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "The Mouthwash project stills (site-01 through site-13) are the wrong images entirely and cannot be evaluated for depth. Among the images that ARE correct: Vimeo thumbnails (reel-thumb, eigencloud-thumb, tnf-thumb, seed-thumb, nike-thumb) are all title-card / hero frames only, no interiors. The Behance stills (site-17, site-18, site-19) do show interior detail. Depth is unresolvable until the Mouthwash stills are re-captured correctly.",
-      "fix": "Re-capture Mouthwash project stills from mouthwash.studio project pages. After correct capture, pull interior frames from at least 2 projects (not just title cards or poster frames). The Vimeo thumbnails are fine as video previews but should be supplemented with interior stills from the case-study pages."
-    },
-    {
-      "id": "A.captions-image-mismatch",
-      "result": "fail",
-      "evidence": "CRITICAL. 13 of the 22 active stills (site-01 through site-13) show completely wrong content vs. their captions. Verified by opening each file: site-01 (captioned 'EigenCloud brand motion system') shows a list of desert names; site-02 (captioned 'EigenCloud kinetic identity') shows an abstract pink-purple gradient with a play button; site-03 (captioned 'EigenCloud 3D motion exploration') shows a person in a basketball set on an orange stage; site-04 (captioned 'Seed brand motion') shows a red slide reading 'What does the future of energy look like?'; site-05 (captioned 'Seed type animation') shows a Mesura architecture firm statement from Barcelona; site-06 (captioned 'Seed brand system') shows an Air Company billboard on a New York building; site-07 (captioned 'Hims and Hers motion system') shows a Comme des Garcons high-top shoe; site-08 (captioned 'Hims and Hers motion principles') shows two people in a fashion/sport photo; site-09 (captioned 'Hims and Hers motion expression') shows an Air Company perfume bottle; site-11 (captioned 'T1 Energy motion typography') shows an interior architecture room with a chair; site-12 (captioned 'T1 Energy brand system') shows a Literary Sport athletic apparel website; site-13 (captioned 'T1 Energy motion identity') shows a Literary Sport product grid. The Sanity CDN URLs in the manifest returned images from unrelated Mouthwash project pages, not the EigenCloud/Seed/Hims and Hers/T1 Energy projects they are attributed to.",
-      "fix": "Re-scrape mouthwash.studio/project/eigencloud/, mouthwash.studio/project/seed/, mouthwash.studio/project/hims-and-hers/, and mouthwash.studio/project/t1-energy/ to get the correct images. Verify each downloaded file visually before adding to the manifest. The Sanity CDN URL approach pulled from the wrong project pages or the CDN returned incorrect image responses."
+      "result": "conditional-pass",
+      "evidence": "Cannot fully assess depth for the 13 wrong images. Among correct images: Vimeo thumbnails are title-card frames (acceptable as video previews). Refractions stills (site-17, site-18) show interior 3D detail. Animated Haiku (site-19) is a full storyboard grid showing interior frames. Depth is adequate for the Behance work. Mouthwash project depth cannot be assessed until re-capture.",
+      "fix": "After re-scraping Mouthwash projects, pull interior stills not just the project hero frame."
     },
     {
       "id": "A.on-capability",
       "result": "conditional-pass",
-      "evidence": "Tagged Capability is '3D & motion'. Vimeo thumbnails and Behance stills (site-17, site-18, site-19 = 'Refractions' 3D glass renders; site-19 = 'Animated Haiku' kinetic type) are on-capability. The wrong stills cannot be assessed. Pending re-capture."
+      "evidence": "Tagged Capability is '3D & motion'. The 9 correct stills and 5 Vimeo embeds are on-capability: motion brand films, 3D glass renders, kinetic typography. The 13 mislabeled images include fashion photography, architecture, and apparel e-commerce -- all off-capability -- but they are wrong images, not intentional off-capability choices. Pending re-capture."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Two context shots are present. site-15 (captioned 'Mouthwash Studio website'): confirmed correct, shows mouthwash.studio homepage with MW.S branding. site-10 (captioned 'Behance portfolio'): confirmed correct, shows Behance profile for Diego Martinez. However, there is NO personal website screenshot (correctly absent, no personal site exists) and NO Instagram profile screenshot. The Behance shot is a reasonable substitute context anchor since IG is unverified, but the entry is missing a context shot for Diego's own presence. This is a minor issue given the IG queue entry, but the Behance shot functions as the personal profile anchor. Acceptable as-is given IG is genuinely unverifiable.",
-      "fix": "No action needed on context shots specifically. The absence of a personal website or Instagram is documented and the IG queue entry covers it."
+      "result": "pass",
+      "evidence": "site-10 is behance.net/Dmmartinez20 profile page for Diego Martinez, confirmed by opening the file. site-15 is mouthwash.studio homepage, confirmed: shows MW.S wordmark and studio description. No personal website or Instagram profile to screenshot; absence is documented in AI Notes and OQ1. The Behance context shot functions as the personal presence anchor."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All active images in the manifest have captions and source links. The captions are factually wrong for 13 images (see A.captions-image-mismatch), but the field is not empty."
+      "evidence": "All 22 active images in the manifest have captions and source links. The captions are factually wrong for 13 images (the A.project-diversity failure), but the caption field itself is not empty."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Five Vimeo embeds present (MW.S Reel 2025, EigenCloud Brand Film, The North Face: Power of Nature, Seed Brand Identity Video, Nike Retail: It's All You), each with a thumbnail image and a linked caption. Pattern of thumbnail + embed correctly implemented. Entry is not embeds-only."
+      "evidence": "5 Vimeo embeds (MW.S Reel 2025, EigenCloud Brand Film, TNF Power of Nature, Seed Brand Identity Video, Nike It's All You), each paired with a matching Vimeo thumbnail image and a linked caption. Thumbnail images confirmed correct by opening: reel-thumb shows MW.S wordmark on black; eigencloud-thumb shows EigenCloud wordmark in blue; tnf-thumb shows 'Power of Nature / The North Face' forest scene; seed-thumb shows Seed probiotic canister; nike-thumb shows Nike 'It's All You' title card. Pattern correct for a motion designer. Entry is not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No personal website found; AI Notes states this explicitly ('No personal website found after searching common domain patterns'). Instagram unverified; AI Notes explains the common-name handle problem; an Open Question is raised. The entry is not silently thin."
+      "evidence": "No personal website: documented in AI Notes. Instagram unverified: common name, multiple handles, none confirmed; documented in AI Notes and OQ1. Not silently thin."
     },
     {
       "id": "B.type-classified",
@@ -56,64 +50,64 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "No personal website (genuinely none found, documented). No Instagram (documented as unverifiable, Open Question raised). LinkedIn present (linkedin.com/in/diego-martinez-79a72b290). No personal email found; AI Notes does not address email absence. Minor gap: public email search is not mentioned. Works At Link correctly set to mouthwash.studio."
+      "evidence": "No personal website found (documented). No Instagram verified (documented, OQ asked). LinkedIn present and confirmed in provenance. Works At Link set to mouthwash.studio. Email not found; AI Notes does not address this gap explicitly but acceptable for an employed junior designer with no personal site. No obvious email surface was skipped."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "'3D & motion' matches the role description and Behance work (kinetic typography, 3D abstraction, motion design per Behance Dmmartinez20 profile description in AI Notes)."
+      "evidence": "'3D & motion' matches the role (Jr. Motion Designer at Mouthwash Studio) and Behance work (kinetic typography, 3D abstraction, motion design per Dmmartinez20 profile)."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country = United States (correct, LA-based). Size = 1 (correct for a person). Work Status = Employed. AI Notes states LinkedIn and ZoomInfo agree; no conflicting signal from site or IG. Objective multi-source rule applied and sources named."
+      "evidence": "Country = United States. Size = 1. Work Status = Employed. AI Notes documents sources: LinkedIn and ZoomInfo agree; no conflicting signal. Objective multi-source rule applied."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 1. Reasoning: junior title, first post-grad studio role, structured team environment. Grounded in verifiable facts (role title, graduation year, team size from Creative Boom 2025). Appropriately hedged ('suggesting roughly 2 years of post-grad experience')."
+      "evidence": "Autonomy = 1 (set_by agent). Reasoning grounded: junior title, first post-grad studio role, structured team of roughly 20. Hedged where inferred ('suggesting roughly 2 years'). Seniority read in AI Notes: 'Entry-level seniority, early career.'"
     },
     {
       "id": "C.no-judgment-contradictions",
       "result": "pass",
-      "evidence": "No clip note relationship facts. Zero-states (Never, Don't know them, Unvetted) are appropriate. No contradictions."
+      "evidence": "No clip note relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note (from roster) stated only: 'Designer at Mouthwash (Los Angeles), currently employed.' This is a factual statement already reflected in Work Status and Works At Link. No relationship facts, passcodes, or tagging instructions present."
+      "evidence": "Clip note stated only factual role info ('Designer at Mouthwash (Los Angeles), currently employed'), already reflected in Work Status and Works At Link. No relationship facts, passcodes, or tagging instructions."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Inferences are hedged: 'suggesting roughly 2 years of post-grad experience' and 'Autonomy 1: first post-grad studio role, junior title' (reasoned, not asserted as certain). Verifiable facts (LinkedIn, ZoomInfo, Creative Boom 2025) are cited. Seniority read present: 'Entry-level seniority, early career'. No em-dashes. No unverified flat assertions."
+      "evidence": "Inferences hedged: 'suggesting roughly 2 years of post-grad experience'. Verifiable facts cited (LinkedIn, ZoomInfo, Creative Boom 2025). Seniority read present. No em-dashes. Sources named in provenance."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Found using Claude, 2026-06-15. Jr. Motion Designer at Mouthwash Studio (Los Angeles); LinkedIn snippet and ZoomInfo confirm role and September 2024 start.' Filled and specific."
+      "evidence": "Source filled and specific: 'Found using Claude, 2026-06-15. Jr. Motion Designer at Mouthwash Studio (Los Angeles); LinkedIn snippet and ZoomInfo confirm role and September 2024 start.'"
     },
     {
       "id": "D.provenance",
-      "result": "unverified",
-      "evidence": "Provenance file not checked (file not present in assets directory; provenance lives at state/provenance/). Not blocking given the image failures are the primary issue. Assumed written by scraper per standard pipeline."
+      "result": "pass",
+      "evidence": "Provenance file confirmed present at state/provenance/380f84ba-ae13-8160-b8a2-d8968e41731c.json. All touched fields have provenance entries with set_by, verified_at, and value. source_url is null for several fields; acceptable where sourced from web search rather than a single URL, given AI Notes documents the sources."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Source, and Open Questions checked programmatically. No em-dashes found."
+      "evidence": "AI Notes, Source, Open Questions, and manifest captions checked. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Three questions: (1) Instagram handle verification, (2) Familiarity, (3) Rating. All terse and conditional. No question for a field that already has a non-zero value. The story nudge does not apply (Worked Together is Never, Familiarity is Don't know them)."
+      "evidence": "3 questions: (1) Instagram handle verification (field not set, unverifiable), (2) Familiarity (at zero-state), (3) Rating (at zero-state). All terse and conditional. Story nudge does not apply (Worked Together: Never, Familiarity: Don't know them)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. It should NOT advance to Needs Review until the image mismatch is resolved. Correct to remain in Enriching."
+      "evidence": "Entry is in Enriching. Correct: it must not advance to Needs Review until the image mismatch is resolved."
     }
   ],
-  "summary": "The entry has one critical and pervasive failure that blocks Needs Review: 13 of 22 active still images are the wrong images with the wrong captions. The Sanity CDN URLs used to pull Mouthwash project stills (EigenCloud, Seed, Hims and Hers, T1 Energy) returned images from unrelated projects or unrelated sites entirely. Each image was visually verified. The metadata (Type, Capabilities, Country, Size, Work Status, Autonomy, Source, Open Questions, AI Notes, embeds, thumbnails) is solid and honest. The 'at Mouthwash' framing is appropriate and acceptable given Diego has no individual credit available; the Behance stills (Refractions, Animated Haiku) are correctly attributed personal work. The fix is surgical: re-scrape the four Mouthwash project pages and verify each downloaded file visually before adding to the manifest.",
+  "summary": "Hard FAIL on images. 13 of 22 active stills are visually confirmed wrong content with wrong captions, caused by the Sanity CDN at cdn.sanity.io/images/ew1yzffi serving images from unrelated Mouthwash client projects instead of the EigenCloud/Seed/Hims and Hers/T1 Energy pages the scraper targeted. Fix is surgical: mark site-01 through site-13 as rejected in the manifest and re-scrape the four project pages with visual verification of each downloaded file. Everything else passes: the 5 Vimeo thumbnails are correct, the 5 embeds are correct, both context shots are correct, the 3 Behance stills are correct, and all metadata (Type, Capabilities, Country, Size, Work Status, Autonomy, Source, Open Questions, AI Notes, provenance) is solid, honest, and well-documented.",
   "to": "scraper"
 }

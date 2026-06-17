@@ -216,6 +216,35 @@
     "source_url": "https://silvertooth.agency/artist/lucas-chemotti",
     "caption": "Silvertooth artist page interior, silvertooth.agency",
     "link": "https://silvertooth.agency",
-    "captured_at": "2026-06-17"
+    "captured_at": "2026-06-17",
+    "rejected": true,
+    "rejected_reason": "Full-bleed photographer portrait (Lucas Chemotti) with page UI invisible; reads as fashion photography not frontend build. site-19 already covers Silvertooth with UI visible."
+  },
+  {
+    "file": "site-27.png",
+    "source_url": "https://silvertooth.agency/roster",
+    "caption": "Silvertooth roster page, silvertooth.agency",
+    "link": "https://silvertooth.agency",
+    "captured_at": "2026-06-17",
+    "rejected": true,
+    "rejected_reason": "404 page; /roster path does not exist on silvertooth.agency"
+  },
+  {
+    "file": "site-28.png",
+    "source_url": "https://silvertooth.agency",
+    "caption": "Silvertooth agency homepage, silvertooth.agency",
+    "link": "https://silvertooth.agency",
+    "captured_at": "2026-06-17",
+    "rejected": true,
+    "rejected_reason": "Duplicate of site-19 (same Silvertooth homepage)"
+  },
+  {
+    "file": "site-29.png",
+    "source_url": "https://silvertooth.agency/artist/troy-covey",
+    "caption": "Silvertooth artist page, silvertooth.agency",
+    "link": "https://silvertooth.agency",
+    "captured_at": "2026-06-17",
+    "rejected": true,
+    "rejected_reason": "Same modal-style full-bleed artist photography as site-26; site-19 homepage already shows the UI; adds nothing new."
   }
 ]
