@@ -46,7 +46,9 @@
     "source_url": "https://i.vimeocdn.com/video/1615360559-ec1a25b6f9346cdd36daaf21d50e9ddb19f17b21157a8788d73bd80895eacf29-d_1280",
     "caption": "Bolt identity, at Koto",
     "link": "https://koto.com/projects/bolt",
-    "captured_at": "2026-06-17"
+    "captured_at": "2026-06-17",
+    "rejected": true,
+    "reject_reason": "Reviewer FAIL: image shows Industry West e-commerce screen, not Bolt identity work"
   },
   {
     "file": "site-15.jpg",
@@ -74,6 +76,24 @@
     "file": "site-13.png",
     "source_url": "https://www.instagram.com/studiokoto/",
     "caption": "Koto Instagram (no personal IG verified for Bryce Carson)",
+    "link": "https://www.instagram.com/studiokoto/",
+    "captured_at": "2026-06-17",
+    "context_shot": true,
+    "rejected": true
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://www.instagram.com/bybrycecarson/",
+    "caption": "Instagram profile (unavailable)",
+    "link": "https://www.instagram.com/bybrycecarson/",
+    "captured_at": "2026-06-17",
+    "context_shot": true,
+    "rejected": true
+  },
+  {
+    "file": "site-18.png",
+    "source_url": "https://www.instagram.com/studiokoto/",
+    "caption": "Koto Instagram (employer; personal IG @bybrycecarson unavailable)",
     "link": "https://www.instagram.com/studiokoto/",
     "captured_at": "2026-06-17",
     "context_shot": true

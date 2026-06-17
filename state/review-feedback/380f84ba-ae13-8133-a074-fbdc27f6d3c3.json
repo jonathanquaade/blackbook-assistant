@@ -1,111 +1,122 @@
 {
   "page_id": "380f84ba-ae13-8133-a074-fbdc27f6d3c3",
+  "name": "Gabriela Carnabuci",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T10:15:00",
-  "verdict": "pass",
-  "attempt": 1,
+  "reviewed_at": "2026-06-17T12:00:00",
+  "verdict": "fail",
+  "attempt": 2,
+  "note_on_attempt": "Attempt 1 review was written before the Base Design images (Chinah, FTD) were added (that pass counted 16 active images and 5 projects; current manifest has 22 active images across 6 projects including Chinah and FTD). This attempt re-reviews the current state.",
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct projects: Kunsthalle Basel, Geffen Playhouse, JFK Terminal 4, Bob Dylan Center, Netflix Tudum. No repeated projects."
+      "evidence": "22 active images span 6 distinct named projects: Kunsthalle Basel, Geffen Playhouse, JFK Terminal 4, Bob Dylan Center, Chinah, FTD. Real diversity across clients and studios."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project going inside spreads, logo construction details, environmental applications, print interiors. Not hero-only."
+      "evidence": "Goes inside projects: JFK Terminal 4 has a hallway mural + environmental wall mural + wayfinding billboard; Bob Dylan Center has OOH posters + billboard; FTD has card + boxes + tag; Chinah has cups + bag. Not hero-only."
     },
     {
       "id": "A.on-capability",
-      "result": "pass",
-      "evidence": "All 14 work images are brand identity and graphic design output (logos, stationery, environmental signage, editorial design). Matches tagged Graphic design + Identity systems."
+      "result": "fail",
+      "evidence": "Two images are not on-capability or are mislabeled. (1) site-17.png: captioned 'Chinah brand identity, Base Design' but the image visually shows orange bags branded 'DAILY YUM' -- a completely different client. Source URL is gabrielacarnabuci.com/wp-content/.../3-gabriela-carnabuci-chinah-bags.png, suggesting the scraper pulled from the Chinah project page but the wrong image was served there (or the project page contains a mixed image that is not Chinah). This is a wrong-image failure: the caption claims Chinah but the work shown is Daily Yum. (2) site-01.jpg: captioned 'Kunsthalle Basel identity, Porto Rocha' but the image is a plain exterior photograph of the Kunsthalle Basel building with no identity system, signage, or applied design visible -- it is pre-existing architecture, not Gabriela's work. With 5 other strong Kunsthalle images (logo construction grid, vertical signage on facade, stacked printed cards, full print collateral spread, programme booklets), site-01 adds nothing on-capability and dilutes the selection.",
+      "fix": "Remove site-17.png (shows 'DAILY YUM' branding, not Chinah; mark rejected in manifest with reason 'wrong brand visible: shows Daily Yum packaging, not Chinah'). Replace with a correct Chinah image from gabrielacarnabuci.com/work/chinah -- site-18 and site-19 already correctly show Chinah (cups and bag with Chinah lettering), so simply removing site-17 and leaving site-18/site-19 is sufficient. Also remove site-01.jpg (pre-existing building exterior, no design work; mark rejected in manifest with reason 'building exterior photograph, no identity design visible; 5 other Kunsthalle images cover the project adequately')."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-15.png opened and confirmed as gabrielacarnabuci.com homepage (shows her name + Porto Rocha title + project grid). site-16.png opened and confirmed as instagram.com/gabcarnabuci profile page (Instagram chrome visible, handle gabcarnabuci, bio matches)."
+      "evidence": "site-15.png: opened and confirmed as gabrielacarnabuci.com homepage (bio text 'Gabriela Carnabuci is Design Director at PORTO ROCHA' visible, project grid present). site-16.png: opened and confirmed as instagram.com/@gabcarnabuci profile (Instagram chrome, handle gabcarnabuci in bio). Both captions correct."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 manifest entries have captions and links. No needs_caption flags present."
+      "evidence": "All 22 active manifest entries have captions and source links. No needs_caption flags."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "No audio or video work in scope. Subject is a brand identity director; no embeddable project video was skipped without reason. (site-15.png context shot shows one project marked Coming Soon on her site, not embeddable.)"
+      "evidence": "Capabilities are Graphic design and Identity systems. No audio or video discipline; no embed obligation."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Good coverage across 5 projects from two sources (portorocha.com and gabrielacarnabuci.com). No unexplained thinness."
+      "evidence": "Netflix Tudum (site-12, 13, 14) rejected in manifest with reason: uncredited Porto Rocha work. Rejection is documented and the images are not in the active set."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person."
+      "evidence": "Type: Person. Correct."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (gabrielacarnabuci.com), Instagram (instagram.com/gabcarnabuci), LinkedIn (linkedin.com/in/gabriela-carnabuci-0b9123b4/), Email (gabrielacarnabuci@gmail.com). All 4 present."
+      "evidence": "Website (gabrielacarnabuci.com), Instagram (instagram.com/gabcarnabuci verified via context shot), LinkedIn, Email all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + Identity systems. Appropriate for a brand identity director with clients across cultural institutions and global brands."
+      "evidence": "Graphic design + Identity systems. Matches the work shown across all 6 projects (brand identity, editorial, environmental identity systems)."
     },
     {
-      "id": "B.country-size-work-status",
+      "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: United States (corrected from New York/London to US-only per context note). Size: 1 (person). Work Status: Employed. Multi-source resolution documented in AI Notes (site + IG bio + LinkedIn all agree)."
+      "evidence": "United States / 1 / Employed. AI Notes cites three agreeing sources (her own site bio, Porto Rocha team listing, LinkedIn). Objective multi-source rule met."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: director-level, manages team of ~7, ~9 years experience, Parsons BFA, Base Design then Porto Rocha progression."
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: director-level range inside a founder-led studio, not sole-principal, so 5 not warranted. Grounded in trajectory (~9 years post-graduation, Senior Designer to Associate DD to Design Director at Porto Rocha)."
     },
     {
-      "id": "C.no-judgment-contradiction",
+      "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are valid. Source is 'Found using Claude' with no relationship signal from Jonathan. No contradiction."
+      "evidence": "Zero-states (Unvetted, Never, Don't know them) are consistent with no Jonathan note indicating a relationship. No contradiction."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Context note said 'corrected to Design Director, NYC (US only)'. AI Notes acknowledges the title correction from Associate DD to Design Director. Country corrected to United States only. Both acted on."
+      "evidence": "Clip note stated Associate Design Director; scout correctly identified promotion to Design Director from three live sources, noted the discrepancy in AI Notes and Source. No un-acted instructions in clipped.md (body was 'Work' only)."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges Autonomy as '(agent)', cites specific sources (LinkedIn, The Org, her own site, IG bio). Seniority read and trajectory included. No bare assertions of unverified claims."
+      "evidence": "AI Notes include seniority read (~9 years post-graduation, director-level), full career trajectory, client list as stated facts, Autonomy reasoning. No unsupported bare assertions. No em-dashes."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Found using Claude, 2026-06-15. Associate Design Director at Porto Rocha (New York / London); currently employed.' Verbatim clip provenance preserved."
+      "evidence": "Source: 'Found using Claude, 2026-06-15; verified 2026-06-17. Sourced from gabrielacarnabuci.com, portorocha.com/about, LinkedIn snippet, and ZoomInfo.'"
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "state/provenance/380f84ba-ae13-8133-a074-fbdc27f6d3c3.json present with all touched fields. set_by agent on all agent-written fields."
+      "evidence": "Provenance file present with all touched fields. set_by agent on all agent-written fields. No jonathan fields overwritten."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Checked AI Notes and Source text programmatically. No em-dashes found."
+      "evidence": "Checked AI Notes, Source, captions. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions empty. No unresolvable ambiguities; no non-zero judgment field values that would trigger conditional questions. Rating and Familiarity/Work With? are Jonathan's call on review."
+      "evidence": "No Open Questions set. Correct: all resolvable fields resolved; no judgment field needs asking (no relationship signal in clip note); story nudge does not apply (Worked Together is Never / zero-state)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching at time of review. Reviewer flipping to Needs Review now."
+      "evidence": "Status is Enriching. Reviewer holds it here; the two image fixes are required before flipping to Needs Review."
     }
   ],
-  "to": null,
-  "notes": "One minor observation not rising to a FAIL: site-01.jpg (Kunsthalle Basel, Porto Rocha) is a photograph of the building exterior, not a design asset. The other two Kunsthalle images (logo construction + stationery) carry the design work adequately, so this is acceptable editorial context from the case study page."
+  "summary": "Two image failures block the pass. (1) site-17.png: captioned 'Chinah brand identity, Base Design' but visually shows 'DAILY YUM' branded bags -- wrong image, must be removed or replaced. site-18 and site-19 correctly show Chinah branding and remain. (2) site-01.jpg: captioned 'Kunsthalle Basel identity, Porto Rocha' but is a plain building exterior photograph with no design work visible; drop it (5 other Kunsthalle images cover the project well). Everything else passes cleanly: metadata, all links, context shots (both verified by opening), captions, AI Notes, provenance, zero-states.",
+  "to": "scraper",
+  "scraper_fix": {
+    "applied_at": "2026-06-17",
+    "fixes": [
+      "site-01.jpg rejected: building exterior, no applied branding visible",
+      "site-17.png rejected: showed Daily Yum bags, not Chinah branding",
+      "body-reset + re-upload with 20 active images"
+    ]
+  }
 }

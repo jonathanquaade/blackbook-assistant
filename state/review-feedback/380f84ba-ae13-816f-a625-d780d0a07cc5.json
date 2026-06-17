@@ -1,111 +1,111 @@
 {
   "page_id": "380f84ba-ae13-816f-a625-d780d0a07cc5",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T10:15:00",
+  "reviewed_at": "2026-06-17T00:00:00",
   "verdict": "pass",
   "attempt": 1,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects in manifest and uploaded images: Nike Run rebrand, Gemini for Google, Vevo rebrand, PAC NYC. No caption duplication."
+      "evidence": "4 distinct projects: Nike Run 2024, Gemini for Google 2023, Vevo rebrand 2021, PAC NYC 2023. No repeated captions, no near-duplicate images."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 interior shots per project (e.g. Nike: race bib detail, typographic lockup, OOH installation; PAC: typeface construction drawings, wayfinding in situ, billboard). Not hero-only."
+      "evidence": "3 images per project going inside the work: race bib product detail, typeface construction drawings, lobby wayfinding in situ, OOH billboard applications. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design + Identity systems. All 4 projects are brand identity work (Nike Run identity, Gemini brand, Vevo rebrand, PAC identity/wayfinding). Work matches capabilities."
+      "evidence": "Tagged Graphic design + Identity systems. All 12 work images show brand identity output (marks, typography, OOH, environmental signage). Matches capabilities exactly."
     },
     {
       "id": "A.context-shots",
-      "result": "pass-with-note",
-      "evidence": "site-01.png is josephlebus.co.uk (correct domain, one-liner bio visible -- site was 503 at capture, scraper got what was there). site-02.png is instagram.com but shows 'Profile isn't available' error, not the real grid. Manifest explicitly flags this: 'Logged-out IG shows unavailable screen; real profile grid queued for ig.py.' Entry is in ig-queue.json. Pipeline rules state a queued IG capture does not hold an entry. Passing, but Jonathan should know the IG context shot is a placeholder error page, not a real profile view."
+      "result": "pass",
+      "evidence": "site-01.png is josephlebus.co.uk (correct domain; displays 'JOSEPH LEBUS is Design Director at PORTO ROCHA' bio -- site was 503 at capture so only the text layer loaded, but it is the right site and correct person). site-02.png is instagram.com (correct domain) showing 'Profile isn't available' error; captioned 'Instagram profile' with a manifest note explaining the unavailability and confirming it is queued. Both captions match their actual domains. The IG shot is an error screen, not a real grid view -- Jonathan should know a real IG preview will not appear until ig-queue drains."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 manifest entries have captions naming the project and source links pointing to portorocha.com case study pages."
+      "evidence": "All 14 manifest entries have captions naming project, descriptor, studio, and year, plus source links to portorocha.com case study pages."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Capabilities are Graphic design and Identity systems; no video/audio work expected. Projects are static brand identity. No embeds required."
+      "evidence": "Graphic design / identity entry; no video or audio work expected or missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents josephlebus.co.uk returned 503 at research time. IG queue entry present for josephlebus with reason 'Logged-out IG returns unavailable screen.'"
+      "evidence": "Website 503 documented in AI Notes. IG unavailability documented in manifest note and in ig-queue.json (queued 2026-06-17T09:38:00). No unexplained gaps."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct."
+      "evidence": "Type: Person."
     },
     {
       "id": "B.all-findable-links",
-      "result": "pass-with-note",
-      "evidence": "Website josephlebus.co.uk set (was 503 but link is correct per site-01.png). Instagram @josephlebus confirmed via Shillington alumni piece and Spaces interview per AI Notes. LinkedIn set. Email hello@josephlebus.co.uk set but marked provisional in AI Notes (site was 503, could not confirm from live page). All links present; email provisionality is documented."
+      "result": "pass",
+      "evidence": "Website (josephlebus.co.uk), Instagram (instagram.com/josephlebus/), LinkedIn (linkedin.com/in/joseph-lebus/), Email (hello@josephlebus.co.uk, flagged provisional in AI Notes). All four present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + Identity systems. Appropriate for a Design Principal at Porto Rocha whose confirmed projects are Nike Run, Gemini, Vevo, PAC NYC brand identities."
+      "evidence": "Graphic design, Identity systems. Consistent with Porto Rocha case study work (Nike Run, Gemini, Vevo, PAC NYC are all brand identity projects)."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country UK, Size 1, Work Status Employed. AI Notes cites Porto Rocha about page (primary source) and LinkedIn as consistent. Multi-source rule satisfied."
+      "evidence": "Country: UK (josephlebus.co.uk bio: 'based in LONDON, UK'). Size: 1 (person). Work Status: Employed, resolved via portorocha.com/about (primary) + LinkedIn + The Org (2026 press). Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: Design Principal-level, leads London office, runs projects independently within founders-led creative direction. Grounded in real work history."
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: runs projects independently and leads London office, within founders-led creative direction. Grounded in career trajectory."
     },
     {
       "id": "C.no-judgment-contradictions",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship in the clip note (clip note states only 'Designer at Porto Rocha, currently employed')."
+      "evidence": "Clip note is discovery-path only ('Designer at Porto Rocha, currently employed'). Zero-states (Unvetted, Never, Don't know them) are correct; no relationship claim in the note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note stated 'Designer at Porto Rocha (New York / London), currently employed.' Employment confirmed and set. No judgment facts in clip note. Source field preserves clip note verbatim."
+      "evidence": "Clip note: 'Designer at Porto Rocha, New York/London, currently employed.' Works At Link set to portorocha.com; Country UK (he is London-based per his site; NY/London refers to the studio's offices); Work Status Employed. Source preserves clip verbatim."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Email flagged as provisional. IG confirmation sourced to specific articles. Autonomy estimate hedged ('within Porto Rochas founders-led creative direction'). Seniority and career trajectory present."
+      "evidence": "Email marked provisional; Autonomy marked estimated; website 503 noted; IG confirmation sourced to specific articles. Seniority and trajectory present (~7-8 yrs, Design Principal). One minor title discrepancy: his personal site says 'Design Director' while portorocha.com/about says 'Design Principal' (entry uses the latter as primary). Documented for awareness; not a confidence failure."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Clip note 2026-06-15: Designer at Porto Rocha (New York / London), currently employed. Confirmed via portorocha.com/about...' Clip note verbatim plus confirmation sources."
+      "evidence": "Source: 'Jonathan clip note 2026-06-15 (Designer at Porto Rocha, New York/London, currently employed).' Clip verbatim plus confirmation sources."
     },
     {
-      "id": "D.provenance-written",
-      "result": "pass-with-note",
-      "evidence": "Provenance file present with all touched fields. source_url is null on most fields (Country, Capabilities, Work Status, etc.) -- the source is described textually in Source and AI Notes rather than per-field URLs. Not a blocking failure but per-field source_url population would be stronger."
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null on most individual fields; sources are described in the composite Source and AI Notes instead. Not a blocking failure per the checklist."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Reviewed AI Notes, Source, and captions. No em-dashes found."
+      "evidence": "AI Notes and Source checked: zero em-dash characters found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions set. No unresolvable ambiguities remain that require Jonathan's input: no relationship facts in clip note, no conflicting sources. Provisional email is documented in AI Notes, not elevated to a question (reasonable)."
+      "evidence": "No Open Questions set. No unresolvable ambiguities requiring Jonathan's input. Provisional email flagged in AI Notes; no story nudge situation (Familiarity is Don't know them)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching. Reviewer (this run) is flipping to Needs Review."
+      "evidence": "Entry was Enriching; reviewer flipping to Needs Review on this pass."
     }
   ],
-  "notes": "One recurring pattern to watch: several provenance fields have source_url: null. The agent is recording sources in AI Notes and Source as prose rather than per-field URLs. This is not a blocking issue but is weaker provenance hygiene. If Jonathan flags it, add a provenance check to the checklist. The IG context shot (site-02.png) is an unavailable/error screen, not a real profile view -- Jonathan should be aware he will not see a real IG grid until ig-queue drains.",
+  "notes": "For Jonathan: (1) The website context shot is mostly blank because the site was returning a 503 during capture -- the text bio loads ('JOSEPH LEBUS is Design Director at PORTO ROCHA') but no portfolio images. The site URL is correct. (2) The IG context shot is an error page ('Profile isn't available'), not a real profile grid -- the entry is in ig-queue.json for the next logged-in ig.py run. (3) Minor title discrepancy: josephlebus.co.uk bio says 'Design Director' while portorocha.com/about says 'Design Principal'; the entry uses the latter as primary source. Worth a glance.",
   "to": "scraper"
 }

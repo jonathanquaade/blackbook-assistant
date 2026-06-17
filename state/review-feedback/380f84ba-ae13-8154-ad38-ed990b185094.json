@@ -1,111 +1,119 @@
 {
   "page_id": "380f84ba-ae13-8154-ad38-ed990b185094",
+  "name": "Eyal Chowers",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T00:00:00",
-  "verdict": "pass",
+  "reviewed_at": "2026-06-17T11:00:00",
+  "verdict": "fail",
   "attempt": 1,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct projects: W Hotels, Netflix Tudum, LUNGE, Hiro, Brazilian Homo. No repeated-project images."
+      "evidence": "12 work images across 5 distinct named projects: W Hotels, Netflix Tudum, LUNGE, Hiro, Brazilian Homo. No caption repeats across more than one project grouping."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 interior images per project (not just covers). W Hotels shows brand application, Netflix Tudum shows publication interior, LUNGE shows logo emboss and product, Hiro shows poster and identity, Brazilian Homo shows editorial spreads."
+      "evidence": "Multiple interior shots per project verified: W Hotels shows a global location list and a full typeface specimen (W Supreme Regular). Netflix Tudum shows two spread interiors. LUNGE shows embossed logo, billboard OOH, and stationery/card. Hiro shows framed poster, wordmark poster, and branded pencil closeup. Brazilian Homo shows a cover stack. Genuine project interiors, not just hero covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities: Graphic design + Identity systems. All 15 work images are brand identity and graphic design work. Correct match."
+      "evidence": "Capabilities: Graphic design + Identity systems. All 12 work images are brand identity and print/editorial design. Full match."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-16.png: eyalchowers.com personal site confirmed (footer 2024 Eyal Chowers, project list visible). site-17.png: instagram.com/@eyalch confirmed (Instagram header, handle @eyalch, name Eyal Chowers, bio with eyalchowers.com)."
+      "evidence": "site-16.png: eyalchowers.com confirmed (Cargo portfolio, project list, copyright 2024 Eyal Chowers visible). site-17.png: instagram.com confirmed (Instagram header, handle @eyalch, bio name Eyal Chowers, link eyalchowers.com). Both images are what their captions claim."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 17 manifest entries have captions. Work images captioned with project + year. Context shots captioned 'Website' and 'Instagram profile' with matching links."
+      "evidence": "All 14 manifest entries have a caption and a link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio-primary capabilities. Graphic design and identity systems are image-well-served. No embeds required."
+      "evidence": "Capabilities are Graphic design and Identity systems; no video or audio work. Images-only selection is correct."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Context says personal site was 503. Context shot (site-16.png) loaded via render, but project pages were not scrapeable. All 5 known Porto Rocha projects are captured instead. Framed correctly as 'at Porto Rocha' in captions."
+      "evidence": "Site is live (eyalchowers.com is a Cargo portfolio). 5 Porto Rocha case studies captured as the primary source. No unexplained gaps."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct for an individual designer."
+      "evidence": "Type = Person. Correct."
     },
     {
-      "id": "B.links-present",
-      "result": "pass-with-note",
-      "evidence": "Website, Instagram, LinkedIn all present and correct. Email not found. Site was 503 during scrape and email is not visible in the homepage screenshot. AI Notes do not explicitly state email was not found, but site unavailability is documented in context. Minor gap: AI Notes could have one line saying email not extractable due to site 503."
+      "id": "B.all-links-present",
+      "result": "fail",
+      "evidence": "Email field is empty. eyalch456@gmail.com is publicly listed on eyalchowers.com/info-page (the About page, one nav click from the homepage). The site is live; this was not a 503 situation. A previous review pass marked this 'pass-with-note' and attributed the miss to a site outage, but that is incorrect. The site is Cargo-hosted and fully accessible.",
+      "fix": "Set Email = eyalch456@gmail.com, source_url = https://eyalchowers.com/info-page."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + Identity systems. Matches all Porto Rocha work shown (brand rebrands, editorial design, identity systems)."
+      "evidence": "Graphic design + Identity systems verified against actual work shown (brand rebrands, editorial layout, identity collateral)."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: United States (based in NY per Porto Rocha). Size: 1 (person). Work Status: Freelance with conflicting source documented: LinkedIn says Porto Rocha but he is absent from Porto Rocha about page, plus web snippets say previously there and open to work. Two sources vs one stale LinkedIn = Freelance is justified. Open Question 1 flags this for Jonathan."
+      "evidence": "Country = United States (Porto Rocha NY context, hedged). Size = 1. Work Status = Freelance with Open Question 1 flagging the conflict. Multi-source reasoning documented in AI Notes: Porto Rocha about-page omission + web snippet consensus vs. stale LinkedIn."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 2, set_by agent. Reasoning: SVA BFA 2021, ~3-4 yrs post-grad, Associate Designer level, executing under Porto Rocha creative direction. No independently led projects evident. Grounded and hedged appropriately."
+      "evidence": "Autonomy = 2, set_by agent. Reasoning in AI Notes: SVA BFA 2021, ~4-5 yrs post-grad, Associate Designer level at Porto Rocha, executing under creative direction. No independently led projects evidenced. Grounded and hedged."
     },
     {
-      "id": "C.no-judgment-contradicts-evidence",
+      "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note with relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate defaults. No contradiction."
+      "evidence": "No clip note with relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are correct defaults and nothing contradicts them."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Found using Claude, 2026-06-15' with no clip note from Jonathan visible. No instructions to act on."
+      "evidence": "Source is 'Found using Claude'. No Jonathan clip note with instructions to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Departure date hedged as 'likely departed late 2024 or early 2025'. LinkedIn treated as stale with reasoning noted. Autonomy estimate grounded in verifiable facts. Seniority + trajectory included (BFA 2021, Associate Designer, ~3-4 yrs post-grad, junior-mid level)."
+      "evidence": "Departure date hedged as 'suggesting departure late 2024 or early 2025'. Country hedged as inferred from Porto Rocha NY office. LinkedIn stale treatment documented. Seniority read and Autonomy estimate both present and grounded."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Porto Rocha (New York / London). Porto Rocha project credits: W Hotels (2021), Design Threads (2022), Tudum Global (2023), LUNGE (2023), Hiro (2023), Brazilian Homo (2024).' Complete."
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Previously Associate Designer at Porto Rocha (New York). Porto Rocha project credits: ...' Full discovery and project history."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with all major fields covered: Name, AI Notes, Country, Entry Status, Source, Type, Capabilities, Size, Work Status, Website, Instagram, LinkedIn, Autonomy, Worked Together, Familiarity, Work With?, Open Questions, Images. All set_by agent."
+      "evidence": "Provenance file covers all touched fields with set_by, verified_at, and value. No field written without provenance."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, Source, and all manifest captions checked. No em-dashes found."
+      "evidence": "AI Notes, Open Questions, Source, and manifest captions all checked. No em-dashes."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "3 questions: (1) Work Status clarification with evidence (appropriate, not just 'Work Status?' since there is genuine conflict), (2) Rating? (no value set, correct to ask), (3) Familiarity? (zero-state set, asking Jonathan to confirm or correct). Terse and conditional."
+      "evidence": "3 questions: (1) Work Status confirmation with evidence context (appropriate, genuine conflict exists); (2) Rating? (field empty, correct to ask); (3) Familiarity? (zero-state, correct to ask). All terse. None ask for fields with existing non-zero-state values."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching state, awaiting reviewer flip to Needs Review. Correct position in state machine."
+      "evidence": "Entry is in Enriching, awaiting reviewer gate. Correct."
     }
   ],
-  "notes": "Strong entry. Personal site was 503 during scrape but the scraper correctly pivoted to Porto Rocha case studies and captured 5 distinct projects at 3 images each. Context shots both verified correct. One minor gap: AI Notes do not explicitly state email was not found/sought; acceptable given documented 503 context but worth a brief mention in a future pass. Not a blocking issue.",
-  "to": "none"
+  "summary": "One FAIL: email eyalch456@gmail.com is publicly listed on eyalchowers.com/info-page and was not captured. The site is live; the about page is one nav click from the homepage. All other checks pass. This is a single-field fix with no image or metadata rework required.",
+  "to": "scraper",
+  "scraper_fix": {
+    "applied_at": "2026-06-17",
+    "fixes": [
+      "Email set to eyalch456@gmail.com from eyalchowers.com/info-page (was skipped in prior pass)"
+    ]
+  }
 }

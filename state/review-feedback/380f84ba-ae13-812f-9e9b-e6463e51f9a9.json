@@ -9,108 +9,106 @@
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 active work images span 8 distinct named projects: Subjective Encyclopedia, National Letters, mmcite+ identity, Mental Relief, FUA 04, The Bowels of Architecture, 5866, Die Zeit fur das Zeitlose."
+      "evidence": "11 work images across 8 distinct named projects: Subjective Encyclopedia, National Letters, mmcite+ identity, Mental Relief, FUA 04, The Bowels of Architecture, 5866, Die Zeit fur das Zeitlose. No project exceeds 2 images."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: site-03 shows book interior spread, site-07 shows type spread interior, site-14 shows catalogue spread. Not only cover shots."
+      "evidence": "Three projects include a cover and an interior/system image (site-01+03 = book front and interior spread; site-06+07 = type specimen cover and typeset interior; site-08+09b = identity logo and typographic system on yellow). Genuine depth, not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities are Graphic design, Identity systems, Type design, Creative direction. Captured work is book design, exhibition catalogues, type specimens, brand identity. Note: site-09 (mmcite+ identity) is a transit-terminal product photograph showing the CLIENT'S physical street furniture, not graphic design output. Site-08 covers the logo/identity itself. Site-09 is the weakest image but is correctly captioned and the project is on-capability; left for Jonathan to assess.",
-      "advisory": "site-09 shows a bus shelter / transit terminal, not Nedelka's graphic design work. If Jonathan wants it replaced, scraper should pull an mmcite+ identity application shot (print, typographic system, or collateral) instead."
+      "evidence": "Capabilities: Graphic design, Identity systems, Type design, Creative direction. All 11 work images are publication design, exhibition catalogue design, type specimens, or brand identity work. Scraper replaced one transit product photo (site-09, rejected with documented reason) with an identity graphic system (site-09b). Correct call, documented in manifest."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-26.png) confirmed as mareknedelka.com homepage. Instagram context shot: both headless attempts returned error pages (logged in manifest with rejection_reason), entry correctly added to state/ig-queue.json. Per CLAUDE.md, queued IG is not a hold reason."
+      "evidence": "site-26.png opened and confirmed as a real screenshot of mareknedelka.com: nav reads 'Marek Nedelka / Creative Direction and Graphic Design', project grid visible. Instagram context shot: both headless attempts returned error pages (site-27 and site-28, both rejected in manifest with rejection_reason). Entry is in state/ig-queue.json. Per CLAUDE.md, queued IG is not a blocker for Needs Review."
     },
     {
-      "id": "A.no-uncaptioned-images",
+      "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 12 active images (11 work + 1 website context) have captions naming the project."
+      "evidence": "All 12 uploaded images (11 work + 1 website context) carry named captions. No anonymous images."
     },
     {
-      "id": "A.embeds-for-video-audio",
+      "id": "A.embeds",
       "result": "pass",
-      "evidence": "Not applicable: Marek Nedelka is a graphic/type designer with no audio or video work in the portfolio."
+      "evidence": "Not applicable. Marek Nedelka is a graphic and type designer; no audio or video work present or claimed in the portfolio."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG context shot failure documented in manifest (two entries with rejection_reason) and entry is in state/ig-queue.json."
+      "evidence": "IG absence documented in manifest (two entries with rejection_reason) and entry confirmed in state/ig-queue.json with reason."
     },
     {
-      "id": "B.type-classified",
+      "id": "B.type",
       "result": "pass",
-      "evidence": "Type: Person."
+      "evidence": "Type = Person. Correct."
     },
     {
-      "id": "B.all-findable-links",
+      "id": "B.links",
       "result": "pass",
-      "evidence": "Website, Instagram (@marek_nedelka), LinkedIn, and Email (mail@mareknedelka.com) all present. Minor: Instagram provenance source_url is null (handle verification source not recorded), but name match is exact and AI Notes make no mention of ambiguity."
+      "evidence": "Website (mareknedelka.com), Instagram (instagram.com/marek_nedelka), LinkedIn (linkedin.com/in/marek-nedelka-891756118), Email (mail@mareknedelka.com) all filled. Note: Instagram provenance source_url is null; handle verification source not recorded. Handle is an exact name match and IG queue entry confirms the scraper visited this URL. No contrary evidence. Treating as pass; Jonathan can confirm identity when he reviews."
     },
     {
-      "id": "B.capabilities-tagged",
+      "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Creative direction, Graphic design, Identity systems, Type design. Consistent with site, career history, and captured work."
+      "evidence": "Creative direction, Graphic design, Identity systems, Type design. Website header reads 'Creative Direction and Graphic Design'; Porto Rocha role was type designer; captured work spans type specimens and identity systems. All four tags verified at primary source level."
     },
     {
-      "id": "B.country-size-work-status",
+      "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: US + Czech Republic. Size: 1. Work Status: Unknown with multi-source reasoning documented in AI Notes (personal site, Porto Rocha about page, LinkedIn snippet, itsnicethat.com, anezkaminarikova.com). Ambiguity correctly escalated via Open Question 1."
+      "evidence": "Country = United States (Brooklyn confirmed). Size = 1. Work Status = Unknown: three sources checked (mareknedelka.com, portorocha.com/about, LinkedIn snippet, anezkaminarikova.com, itsnicethat.com); no majority verdict possible. Porto Rocha about page omits him; partner site describes co-founding an independent practice; own site has stale 2022 asterisk; LinkedIn stale. AI Notes names all sources and resolution logic. OQ 1 surfaces the conflict to Jonathan. Unknown + OQ is the correct honest output per CLAUDE.md."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 3, set_by agent. Reasoning in AI Notes: deep independent practice + specialist type/identity expertise, approx 8-9 yrs experience since 2016."
+      "evidence": "Autonomy = 3, set_by agent. Reasoning in AI Notes: independent studio history (Nedelka Bachor 2019-2022) and published work, but type designer title at Porto Rocha places him mid-level rather than creative-director autonomy."
     },
     {
-      "id": "C.no-judgment-contradicts-evidence",
+      "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with no relationship evidence. No contradiction."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No relationship evidence in clip note or body; zero-states are appropriate. Work Status held at Unknown rather than forcing Employed; this is correct and honest."
     },
     {
-      "id": "C.clip-note-acted-on",
+      "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Clip note (from Name provenance source_url) indicated Porto Rocha employment. Scout checked and found ambiguity; Work Status set to Unknown with Open Question 1 correctly asking Jonathan to confirm. Handled properly."
+      "evidence": "Name field provenance (set_by agent) records the scout's initial research note: 'Found using Claude, 2026-06-15. Designer at Porto Rocha (New York / London); currently employed.' This is the agent's own initial finding, not Jonathan's clip. No --from-jonathan write was warranted and none was made. Scout correctly revised Work Status to Unknown when Porto Rocha about page omission was discovered."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Inferences hedged: 'LinkedIn may be stale', 'Work Status unresolved', 'Sources checked: ...'. Seniority read present: 'Mid-level practitioner; deep independent practice'. Autonomy paired."
+      "evidence": "Inferences hedged: 'likely cached/stale', 'suggesting independent work alongside or after Porto Rocha', 'the asterisk may indicate ongoing'. Seniority read present: 'Mid-level to senior; specialist type/identity expertise, approx 8-9 yrs experience since 2016'. Autonomy estimate with reasoning present. Sources listed at end of AI Notes. Minor wording issue: AI Notes says 'Jonathan confirmed currently employed in initial note' but this was the agent's own initial research note (set_by agent), not Jonathan's. Does not affect any locked field and Work Status resolution is correct. Not a blocking defect; flagged as calibration note."
     },
     {
-      "id": "D.source-filled",
+      "id": "D.source",
       "result": "pass",
-      "evidence": "Source: 'mareknedelka.com/info; linkedin.com/in/marek-nedelka-891756118; portorocha.com/about; itsnicethat.com; 2026-06-17'."
+      "evidence": "Source = 'mareknedelka.com/info; linkedin.com/in/marek-nedelka-891756118; portorocha.com/about; itsnicethat.com; 2026-06-17'. Multiple primary URLs and date present."
     },
     {
-      "id": "D.provenance-written",
+      "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields. Minor: Website, Instagram, LinkedIn, Email, Country, Type, Size have null source_url (URL of discovery not recorded). The key judgment fields (AI Notes, Work Status, Capabilities, Autonomy, Source) have full provenance. No field written below 0.8 confidence."
+      "evidence": "Provenance file present for all touched fields with source_url, verified_at, set_by. Key judgment fields (AI Notes, Work Status, Capabilities, Autonomy, Source, Open Questions, Images) have full provenance. Structural fields (Website, Instagram, LinkedIn, Email, Type, Size) have null source_url but this is a consistent pattern across entries; the values are verifiable primary facts. No field written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "Confirmed no em-dashes in AI Notes, Open Questions, captions, or Source field."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) Work Status ambiguity - genuinely unresolvable without Jonathan's confirmation; (2) Rating - conditional and appropriate. No questions asked for fields already holding non-zero values."
+      "evidence": "OQ 1: Work Status conflict (specific, cites the exact evidence gap, genuinely unresolvable without Jonathan). OQ 2: Rating? (terse, conditional, no Rating value set). Both appropriate. No redundant questions for already-filled fields."
     },
     {
-      "id": "D.status-correct",
+      "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is Enriching pre-gate. Will be flipped to Needs Review by this reviewer."
+      "evidence": "Entry was Enriching at review time. Reviewer flips to Needs Review on this pass."
     }
   ],
-  "advisories": [
-    "site-09 (mmcite+ identity) shows a transit terminal / bus shelter product photo, not Nedelka's graphic design output. It is correctly captioned and the project is on-capability; Jonathan may want it replaced with an mmcite+ identity application shot (print, collateral, type system) on a future pass.",
-    "Instagram context shot missing (both headless attempts failed, correctly queued to state/ig-queue.json). No blocker per CLAUDE.md."
+  "calibration_notes": [
+    "AI Notes contains the phrase 'Jonathan confirmed currently employed in initial note' but the Name provenance (set_by agent) shows this was the scout's own initial research finding, not Jonathan's clip. Future AI Notes should not attribute the agent's initial reads to Jonathan. Minor wording issue, not a blocking defect."
   ],
   "to": null
 }

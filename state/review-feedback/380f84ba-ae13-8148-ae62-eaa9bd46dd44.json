@@ -1,112 +1,121 @@
 {
   "page_id": "380f84ba-ae13-8148-ae62-eaa9bd46dd44",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T10:15:00",
-  "verdict": "pass",
-  "attempt": 1,
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects represented: Lyft rebrand (site-01, site-02), Tripadvisor rebrand (site-07, site-08, site-09), Mews identity (site-10), Bolt identity (site-14, site-15, site-16). Captions do not repeat the same single project across all images."
+      "evidence": "4 distinct projects: Lyft (site-01, site-02), Tripadvisor (site-07, site-08, site-09), Mews (site-10), Bolt (site-14, site-15, site-16). Captions span 4 different brands."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside campaigns: site-02 is a Vimeo thumbnail close-up of Lyft typeface detail; site-08 and site-09 show Tripadvisor campaign executions (not just logo); site-15 shows Bolt typography animation still; site-16 is an in-context billboard. Not all hero shots."
+      "evidence": "Goes inside projects: typeface close-up (Lyft site-02), campaign executions and UGC framing (Tripadvisor site-08/09), bold wordmark detail (Mews site-10), typographic system + billboard in-context (Bolt site-15/16). Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design + Identity systems. All four projects (Lyft rebrand, Tripadvisor rebrand, Mews identity, Bolt identity) are brand identity and graphic design work. site-14 shows a Bolt checkout UI mockup which is contextual to the rebrand case study, not a product design detour."
+      "evidence": "Tagged Graphic design + Identity systems. All four projects are brand identity work. On-capability."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-12.png (captioned 'Koto website') is confirmed as koto.com homepage (PASS). site-13.png (captioned 'Koto Instagram (no personal IG verified for Bryce Carson)') is a browser error page -- 'Something went wrong / There's an issue and the page could not be loaded' -- NOT an instagram.com screenshot. The context shot is a failed page capture, not a real Instagram profile view.",
-      "fix": "Replace site-13.png with either: (a) a successful screenshot of instagram.com/studiokoto showing the actual profile, or (b) if instagram.com is consistently inaccessible, document the failure in AI Notes and omit the broken shot rather than shipping an error page. Do not ship a browser error page as a context shot."
+      "result": "pass",
+      "evidence": "site-12.png confirmed as koto.com homepage (Koto logo and nav visible). site-18.png confirmed as instagram.com/@studiokoto profile (Instagram header, handle, follower counts visible). Employer fallback for both is documented in AI Notes and manifest. Previous attempt-1 broken context shot (site-13.png, an error page) is correctly marked rejected=true in manifest and excluded from Notion Images. Fix from attempt 1 applied."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "pass",
-      "evidence": "All 11 manifest entries have captions. Each links to a Koto project page. No anonymous shots."
+      "result": "fail",
+      "evidence": "site-14.jpg is captioned 'Bolt identity, at Koto' in the manifest and is active in the Notion Images list. Opening the file reveals a yellow-background mobile e-commerce UI: 'Industry West / Round Storage Ottoman / $300.00 / Buy now / See 100 reviews / Shop similar'. This is not a Bolt project image. The caption is factually wrong and the image does not belong in this entry.",
+      "fix": "Remove site-14.jpg from manifest.json (mark rejected=true) and re-run keeper.py upload to rebuild the body and Images property. Optionally pull a replacement image from koto.com/projects/bolt (one more interior frame from the Bolt case study to keep 3 Bolt images, or let it be 2 and still pass the diversity check with 4 projects)."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Work is graphic/identity design; no embeddable video or audio relevant to the tagged capabilities. Vimeo thumbnails are used as still images from case study pages, which is appropriate for static brand/identity work. No skipped embeds."
+      "evidence": "Graphic/identity work. Vimeo thumbnails used as preview images for motion work within the case studies. No embeddable audio. Appropriate for the tagged capabilities."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes explicitly documents: brycecarson.com is dead (Framer 404); @bybrycecarson removed; @brycecarson and @bryce.carson confirmed as different people. Open Question 1 asks Jonathan for a current IG handle. Absence of personal site and IG are both explained and asked about."
+      "evidence": "brycecarson.com (404) and @bybrycecarson (unavailable as of 2026-06-17) both documented in AI Notes. Employer fallback rationale stated. No silent gaps."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct."
+      "evidence": "Type = Person. Correct."
     },
     {
       "id": "B.all-findable-links",
-      "result": "pass",
-      "evidence": "Website: dead (404, documented in AI Notes); Works At Link set to koto.com as fallback -- correct per schema. Instagram: documented as unverifiable (handle removed, alternatives confirmed wrong persons). LinkedIn: https://www.linkedin.com/in/bryce-carson/ present. Email: not found; no public email evident for an employed junior designer at an agency, absence is plausible and not a skipped-search failure. All reasonable searches documented."
+      "result": "fail",
+      "evidence": "Email field is empty and AI Notes contain no mention of a public email search attempt. For an employed junior at an agency a public email may genuinely not exist, but the search must be documented. Currently unverifiable either way.",
+      "fix": "Search for a public contact email (LinkedIn profile, any archived personal site, read.cv, bio pages). If none found after a genuine search, add one sentence to AI Notes: 'No public contact email found.' The field can then legitimately stay empty."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + Identity systems match the Koto case study work shown (Lyft, Tripadvisor, Mews, Bolt are all brand identity projects)."
+      "evidence": "Graphic design + Identity systems consistent with all 4 captured Koto projects."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: United States (Koto New York, confirmed). Size: 1 (Person). Work Status: Employed, resolved from two sources: Koto team page (live, primary) and LinkedIn both confirm Koto. AI Notes names both sources and notes personal site is dead. Objective multi-source rule applied."
+      "evidence": "United States, Size 1, Work Status Employed. Multi-source: Koto team page + LinkedIn + familyoffice.is all confirm Koto. Sources named in AI Notes. Objective rule applied."
     },
     {
-      "id": "B.autonomy-estimated",
+      "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 2, set_by agent. AI Notes gives reasoning: junior title on LinkedIn and The Org, early-career stage (2-4 yrs), trajectory through internships then Ogilvy then Porto Rocha then Koto. Grounded in real work history."
+      "evidence": "Autonomy 2, set_by agent. Reasoning in AI Notes: junior title, internship-to-junior trajectory, roughly 2-4 yrs post-grad experience. Grounded in verifiable work history."
     },
     {
-      "id": "C.no-contradicting-judgment",
+      "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence. No clip note implies a relationship."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence in the entry or clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Context note says 'junior designer now at Koto (moved from Porto Rocha)' -- this is reflected in AI Notes and Open Question 2 asks Jonathan to confirm. No stated facts from the clip that were missed."
+      "evidence": "Entry found by Claude (no clip note with special instructions). No stated judgment facts to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Internship history hedged with 'per snippets'. Autonomy hedged with 'inferred from'. No unsupported assertions about work quality or direct authorship of the Koto projects. Seniority read included (junior, 2-4 yrs, specific trajectory). No em-dashes found."
+      "evidence": "Seniority and trajectory present. Hedges used ('estimated', 'may reflect a recent update', 'roughly'). Sources named. No em-dashes. No unsupported quality claims."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Found using Claude, 2026-06-15. Researched 2026-06-17: junior/designer-level at Koto (New York), previously Porto Rocha and Ogilvy.' Present and informative."
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Researched 2026-06-17: Designer at Koto (New York), previously Porto Rocha and Ogilvy. Employer confirmed via Koto team page, LinkedIn, and familyoffice.is/imprint.' Present and specific."
     },
     {
       "id": "D.provenance-written",
-      "result": "pass-with-note",
-      "evidence": "Provenance file exists and records value, set_by, and verified_at for all touched fields. Most fields have source_url: null -- the specific URL evidence is in AI Notes text rather than provenance source_url fields. This is a recurring gap across the batch. Flagging for calibration: should source_url be populated per field, or is AI Notes sufficient?"
+      "result": "pass",
+      "evidence": "Provenance file present. All touched fields recorded with value, set_by, verified_at. set_by = agent throughout."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Checked AI Notes, Open Questions, captions. No em-dashes found. Semicolons and commas used throughout."
+      "evidence": "AI Notes, Source, and captions checked. No em-dashes found."
     },
     {
-      "id": "D.open-questions-terse",
+      "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) asks for current IG handle, (2) asks Jonathan to confirm the Koto move. Both terse, conditional (IG not attached, employer uncertain), no questions for fields with non-zero values."
+      "evidence": "Open Questions is empty. Rating and Familiarity left to Jonathan. No story nudge triggered (all three relationship fields at zero-state). Correct."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer (this agent) is the only one to flip to Needs Review. Status flip pending at end of this review (v1 mode: all entries proceed)."
+      "evidence": "Status is Enriching. Gate holds; reviewer does not flip until both FAILs are resolved."
     }
   ],
-  "summary": "One mechanical FAIL: the Instagram context shot (site-13.png) is a browser error page, not an instagram.com profile screenshot. This is the sole failure. All other checks pass including project diversity (4 distinct projects), on-capability work, documented absences (dead site, unverifiable IG), Scout metadata completeness, and AI Notes quality. Under v1 (calibration) mode the entry proceeds to Needs Review so Jonathan sees it alongside this report. In v2 this would be a scraper bounce: replace the broken context shot.",
-  "to": "scraper"
+  "to": "scraper",
+  "summary": "Two FAILs block this entry. (1) site-14.jpg is the wrong image: captioned 'Bolt identity, at Koto' but shows an Industry West furniture e-commerce mobile UI (yellow background, 'Buy now', $300.00 ottoman). Mark it rejected=true in manifest and re-run keeper.py upload. One or two remaining Bolt images (site-15, site-16) are correct and still satisfy project diversity. (2) Email was not searched and the omission is not noted in AI Notes: run a public email search; if nothing found, document it in one sentence. Everything else is solid: 4 distinct on-capability identity projects, attempt-1 broken context shot fixed, AI Notes hedged and complete, Work Status multi-sourced, no em-dashes, no judgment contradictions. Both fixes are mechanical and fast.",
+  "scraper_fix": {
+    "applied_at": "2026-06-17",
+    "fixes": [
+      "site-14.jpg rejected: showed Industry West e-commerce screen, not Bolt identity work",
+      "AI Notes updated: no public contact email found (documented)",
+      "body-reset + re-upload with 10 active images"
+    ]
+  }
 }

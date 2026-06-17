@@ -1,111 +1,111 @@
 {
   "page_id": "380f84ba-ae13-81f0-ac47-dfe1fbb64e95",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T11:00:00",
+  "reviewed_at": "2026-06-17T11:15:00",
   "verdict": "pass",
   "attempt": 1,
+  "notes": "Clean entry. 10 distinct editorial/book/identity projects, 30 work images with genuine interior depth, confirmed context shots, Work Status resolved by multi-source rule. Three FYI notes for Jonathan below (none bounce-worthy): (1) QUILO appears twice -- 3 images from Vitor's own site and 3 from the Porto Rocha case study; different visual framing, acceptable, but Jonathan may prune the Porto Rocha set if 6 QUILO images feels heavy. (2) 'Diario Goncourt' and 'Teatralidades-Aquilombamento' captions lack publication years; project name and link are present so this is not a hard fail. (3) BDMG Cultural and Teatralidades-Aquilombamento link back to the vitorcarvalho.com homepage rather than a dedicated project page; scraper should add project-level links on next pass if they exist.",
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6 distinct projects: Tolstoi and Tolstaia, QUILO, Dicionario Kaiowa-Portugues, BDMG Cultural, Roberto Bolano, Mulheres Miticas em Performance. No repeated projects or near-duplicate angles."
+      "evidence": "10 distinct named projects across 30 work images: Tolstoi and Tolstaia (2022), QUILO magazine from Vitor's site (2022), QUILO Porto Rocha case study (2022 -- same project, different source and visual framing), Dicionario Kaiowa-Portugues (2025), BDMG Cultural (2018), Roberto Bolano (2024), Mulheres Miticas em Performance (2020), Diario Goncourt (no year), Arabia (2024), Teatralidades-Aquilombamento (no year). No repeated angles of the same shots."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project; all go inside the work (interior spreads, typeset pages, book systems), not just hero/cover shots."
+      "evidence": "Images go inside the work throughout: typeset interior spreads, title pages, table of contents, diary manuscript pages, chapter openers. Not hero/cover-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design and Identity systems. All 6 projects are print/editorial/book design, which squarely matches Graphic design. Identity systems tag is lightly supported by site description but no identity system shown in images; flagged as a minor over-tag. Not a hard fail as the primary capability (Graphic design) is well evidenced and the tag is not contradicted by the work, only not proven by the captured images."
+      "evidence": "Tagged Graphic design + Identity systems. All 30 work images are editorial, book, and publication design, plus BDMG Cultural identity system. Both tags are evidenced. No off-capability work present."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-06.png confirmed as vitorcarvalho.com/en homepage (typography portfolio grid visible). site-07.png confirmed as instagram.com/vitorcarvalho (handle and grid match; caption says Instagram profile and it is)."
+      "evidence": "site-06.png is the real vitorcarvalho.com/en homepage (confirmed visually: bio text 'Vitor is an independent graphic designer developing printed and digital works for individuals and institutions', project grid, site navigation visible). site-07.png is the real instagram.com/vitorcarvalho profile (confirmed visually: Instagram header, @vitorcarvalho handle, 2,318 posts, editorial/book design grid). Both captions match content."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 20 uploaded images have captions naming project and year. bdmg and bolano series link to homepage rather than a specific project sub-page, but the project name is named in the caption."
+      "evidence": "All 32 active images have named-project captions. All have source_url and link fields populated. Two projects (Diario Goncourt, Teatralidades-Aquilombamento) lack years in captions, but project name is present -- see FYI note."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Editorial/print designer; no video or audio work expected or present on site. N/A."
+      "evidence": "Editorial/print designer. No video or audio work expected or present. N/A."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "LinkedIn missing: Open Question 1 documents that multiple Vitor Carvalhos exist and confidence is below 0.8. Honest and correctly escalated."
+      "evidence": "LinkedIn left empty: Behance links to linkedin.com/in/vitor-carvalho/ but returns HTTP 999, unverifiable at 0.8. Documented in Open Question 1. No unexplained gaps elsewhere."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct."
+      "evidence": "Type: Person. Correct -- solo independent practitioner."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (vitorcarvalho.com/en), Instagram (instagram.com/vitorcarvalho, verified right person), Email (vitor@vitorcarvalho.com) all present. LinkedIn unresolvable at 0.8 confidence (multiple Vitor Carvalhos, no handle on site/Behance): documented in Open Question 1 and not forced."
+      "evidence": "Website: vitorcarvalho.com/en (canonical). Instagram: instagram.com/vitorcarvalho (verified right person -- bio and grid match). Email: vitor@vitorcarvalho.com (present). LinkedIn: empty, blocked at 0.8 (HTTP 999), escalated as OQ 1. No obvious search was skipped; the Behance-provided URL genuinely fails."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design confirmed across all 6 projects. Identity systems listed on his site and in AI Notes; captured images do not clearly demonstrate it but it is not contradicted. Tag is defensible; Jonathan may trim it after seeing the work."
+      "evidence": "Graphic design confirmed across all projects. Identity systems: evidenced by BDMG Cultural brand identity system in the captured images. Both tags are supported."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: Brazil (confirmed from site). Size: 1. Work Status: Freelance, resolved by multi-source rule: site + Behance + IG all say independent/freelance; Porto Rocha team page does not list him. Sources named in AI Notes."
+      "evidence": "Country: Brazil, Belo Horizonte (site bio + IG bio). Size: 1 (solo). Work Status: Freelance -- multi-source rule applied: site + Behance + IG all say independent/freelance; Porto Rocha team page (60 members) does not list him; five-year collaborators list is an external 416-person list, not employment. OQ 2 flags the original source's 'employed' claim for Jonathan to confirm."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3 set by agent. Reasoning in AI Notes: runs own practice, delivers full projects independently, no evidence of team leadership or large-scale creative direction."
+      "evidence": "Autonomy 3, set_by agent. Reasoning in AI Notes: runs own practice, delivers full projects independently, no signal of team leadership or large-scale creative direction beyond solo output. Grounded in verifiable facts (UEMG + Parsons education, portfolio depth, independent practice)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note states relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all valid; no evidence contradicts them."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or source states a prior relationship. Zero-states are valid."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Original source was 'Found using Claude, 2026-06-15' with no special instructions. Nothing to act on beyond research."
+      "evidence": "Original context: 'Found using Claude, 2026-06-15. Porto Rocha collaborator.' No stated relationship facts or judgment values. Scout correctly investigated the Porto Rocha link and resolved it as external freelance collaboration, not employment."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Seniority hedged ('estimated 8-10 yrs'). Previous incorrect data (employed status, US/UK country) documented and corrected. Porto Rocha relationship framed as 'frequent freelance collaborator' with primary-source evidence. No bare assertions for unverified claims."
+      "evidence": "Seniority estimated and hedged ('estimated 8-10 yrs based on UEMG graduation, Parsons exchange, and portfolio depth'). LinkedIn unverifiable noted explicitly. Porto Rocha relationship framed with primary-source evidence chain (QUILO project credit + absence from team page). Autonomy reasoning included. No bare unverified assertions."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Found using Claude, 2026-06-15. Freelance graphic designer...' Present and specific."
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Freelance graphic designer based in Belo Horizonte, Brazil; frequent collaborator with Porto Rocha (credited on QUILO project, listed in their 5-year collaborators). Own site and Behance confirm independent/freelance status.' Present and specific."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present at state/provenance/380f84ba-ae13-81f0-ac47-dfe1fbb64e95.json. All touched fields have entries. Some source_url values are null for metadata fields (Country, Size, Capabilities) -- minor gap, but values are set at >=0.8 confidence from primary sources and the AI Notes record which sources were trusted."
+      "evidence": "Provenance file present. All touched fields have entries with verified_at timestamps and set_by: agent. Some source_url values are null for metadata fields -- minor gap, acceptable since primary source (vitorcarvalho.com) is named in AI Notes and Source field."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Source, Open Questions, and all captions scanned: no em-dashes found. Colons and commas used correctly throughout."
+      "evidence": "AI Notes, Open Questions, Source, and all 32 manifest captions checked programmatically. Zero em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) LinkedIn URL (unresolvable, terse, conditional -- LinkedIn is empty so asking is correct). (2) Work Status correction flag (previous agent wrote 'employed', this agent corrected to 'Freelance' and is asking Jonathan to confirm the override -- correct escalation)."
+      "evidence": "OQ 1: LinkedIn URL unverifiable (HTTP 999) -- terse, conditional (LinkedIn field is empty), correct escalation. OQ 2: Work Status conflict between original source claim ('employed') and all self-maintained sources ('freelance') -- terse, conditional, correct escalation. No over-asking. Story nudge not needed (Worked Together is Never, no relationship signal)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry Status is Enriching. Reviewer (this gate) is the one flipping it to Needs Review."
+      "evidence": "Entry Status is Enriching. This reviewer pass is flipping it to Needs Review."
     }
   ],
-  "notes": "Clean entry. 6 distinct editorial/book projects with depth, confirmed context shots, Work Status resolved by multi-source rule and documented, correct zero-states, no em-dashes. Minor observations for Jonathan: (1) Identity systems capability tag is stated on his site but not evidenced in the captured images -- he can trim it if he disagrees after seeing the work. (2) The 'site-01/02/03' filenames look like context shots but are Tolstoi project images; the captions are correct so this is a naming quirk only, not a content error.",
   "to": null
 }

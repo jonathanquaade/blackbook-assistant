@@ -2,44 +2,44 @@
   "page_id": "380f84ba-ae13-81d9-a35d-d1fbb0663642",
   "name": "Chae Park",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T11:00:00",
+  "reviewed_at": "2026-06-17T12:00:00",
   "verdict": "pass",
   "attempt": 1,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct projects across 2 studios: Veeps (3 shots), Church (3 shots), GRAU (2 shots), ChatGPT student campaign (2 shots), Twitch (2 shots). No repeated-angle duplicates."
+      "evidence": "5 distinct projects by separate source links: Veeps (3 images), Church (3 images), GRAU (2 images), ChatGPT student campaign at BNS (2 images), Twitch (2 images). No repeated-angle duplicates. Captions all distinct."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside each project: Veeps has TV UI, mobile UI, OOH; Church has exterior signage, reel overview, event print; GRAU has packaging and typeface specimen; ChatGPT has OOH billboard and print collateral; Twitch has type system and website UI."
+      "evidence": "Goes inside each project: Veeps has TV app UI, mobile live stream UI, OOH; Church has exterior signage, reel overview, event print; GRAU has packaging and typeface specimen; ChatGPT has OOH billboard and print materials; Twitch has type system and website UI. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design + Identity systems. All 12 work images are brand identity or campaign output (identity systems, OOH, UI, type). No off-capability content."
+      "evidence": "Capabilities are Graphic design + Identity systems. All 12 work images are brand identity or campaign output. No off-capability content found."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-10.png opened: confirms worksbychae.com homepage (project index, Brand New School bio). site-18.png opened: confirms instagram.com profile for @worksbychae, name Chae Park, nyc/seoul bio. Both correct and not swapped."
+      "evidence": "site-10.png opened and confirmed: worksbychae.com homepage (name header, project index, Brand New School bio). site-18.png opened and confirmed: instagram.com page showing handle worksbychae, name Chae Park, nyc/seoul bio, Instagram chrome visible. Both correctly labeled; neither is swapped or mislabeled."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 manifest entries have captions and source links. No anonymous images."
+      "evidence": "All 14 manifest entries carry captions. All 12 work images name the project and employer. Context shots labeled Website and Instagram profile."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Entry is Graphic design / Identity systems; image capture is appropriate. Website was 503 at research time (documented in AI Notes). No obvious video embed missed for this capability type."
+      "evidence": "Capability is Graphic design / Identity systems. No video/audio embed requirement. No obvious embeddable video skipped for this capability type."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents website 503 at research time; portfolio URL confirmed via search results. No unexplained thin areas."
+      "evidence": "AI Notes documents website returning 503 at research time; portfolio URL confirmed via search index. Work sourced from Porto Rocha and BNS case study pages instead. No unexplained gap."
     },
     {
       "id": "B.type-classified",
@@ -49,64 +49,64 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website worksbychae.com, Instagram @worksbychae (verified right person via screenshot), LinkedIn URL present, Email hicodus@gmail.com (confirmed via IG bio in context shot)."
+      "evidence": "Website worksbychae.com present. Instagram instagram.com/worksbychae/ confirmed right person via context shot (name Chae Park, nyc/seoul bio matches entry). LinkedIn linkedin.com/in/chae-park-08418b1a1/ present. Email hicodus@gmail.com confirmed via IG bio visible in context shot."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + Identity systems per TAXONOMY.md. Appropriate for her breadth (identity programmes at Porto Rocha and BNS, OOH campaigns, type systems)."
+      "evidence": "Graphic design + Identity systems. Appropriate for her breadth: identity programmes at Porto Rocha and BNS, OOH campaigns, type systems."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "US + South Korea (IG bio: nyc/seoul), Size 1, Employed. Work Status resolved by multi-source rule: Brand New School About page (primary) + multiple Google snippets agree. Documented in AI Notes."
+      "evidence": "Country [United States, South Korea] from IG bio (nyc/seoul, confirmed in context shot). Size 1 (Person). Work Status Employed. AI Notes names sources: BNS About page (primary) + Google snippets agree; Porto Rocha About page confirms departure. Objective multi-source rule followed."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes: mid-level Designer (not Senior/Director), 4-5 yrs post-grad, strong studio pedigree but not yet owning projects solo."
+      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes: mid-level Designer (not Senior/Director), approx 5 yrs post-grad, strong studio pedigree (Porto Rocha, Koto, BNS, Apple, Base) but trajectory upward, not yet director-level."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of Jonathan knowing her. No contradiction."
+      "evidence": "Clip note states no relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent. No contradiction."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note stated Porto Rocha; scout identified move to Brand New School, updated Works At Link and AI Notes, documented in Source. Change explained and evidenced."
+      "evidence": "Clip note said Porto Rocha + currently employed. Scout confirmed move to Brand New School, updated Works At Link, documented the change in Source and AI Notes."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Early career (Base, Apple) hedged as 'possibly' and flagged as unverifiable in Open Question 3. Work Status resolution documented. Seniority read present (mid-level, 4-5 yrs). Autonomy estimate paired with reasoning."
+      "evidence": "Seniority framed as mid-level with explicit hedge (plausibly beginning to own projects independently). Autonomy clearly marked as estimated. Work Status resolution documented by source. No unsupported plain assertions. Seniority + experience read present."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Porto Rocha...' with 2026-06-17 update note. Filled and accurate."
+      "evidence": "Source: Web clipper, 2026-06-15, with clip note verbatim and 2026-06-17 scout update note. Filled and accurate."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All 14 fields in provenance file. source_url is null on several multi-source fields; rationale documented verbally in AI Notes, which is the established pattern for multi-source decisions. No field written below 0.8 confidence (hedged inferences flagged as such)."
+      "evidence": "All touched fields have provenance records with set_by and verified_at. source_url is null on several multi-source fields; sourcing narrative is in AI Notes (established pattern). No field written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and Source all checked. No em-dashes found."
+      "evidence": "Script scan of all provenance field values returned zero em-dashes."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "3 questions: Q1 Familiarity (no value set, valid), Q2 Rating (no value set, valid), Q3 early career verification (genuinely unverifiable from primary sources). All terse and conditional."
+      "evidence": "Questions: 1. Familiarity? 2. Rating? Both terse and conditional (neither field has a non-zero value). Story nudge not applicable (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching, awaiting this reviewer flip to Needs Review. Correct pre-gate state."
+      "evidence": "Flipped to Needs Review by reviewer after all checks passed."
     }
   ],
-  "notes": "Solid entry. 5 distinct on-capability projects with real depth from Porto Rocha and Brand New School case study pages. Both context shots verified as correct. Scout correctly identified the employer move from Porto Rocha to Brand New School and documented it. One minor observation: site-05 captioned 'Church identity, client reel overview' shows a dense music video/campaign grid - this is consistent with Church being a music-industry creative studio (portorocha.com/church), not a religious institution. Caption is accurate to the source page; no error.",
+  "notes": "Clean entry. 5 distinct on-capability projects with genuine depth sourced from Porto Rocha and BNS case study pages. Both context shots visually verified as correct (not swapped, not mislabeled). Scout correctly identified the employer move from Porto Rocha to Brand New School and documented it with primary source evidence. All links confirmed. No em-dashes. No gaps.",
   "to": null
 }

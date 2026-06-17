@@ -1,111 +1,111 @@
 {
   "page_id": "380f84ba-ae13-814a-9abf-f31349e8bcc8",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-17T00:00:00",
+  "reviewed_at": "2026-06-17T06:00:00",
   "verdict": "pass",
-  "attempt": 1,
-  "note": "Identity-blocked entry. All check failures in Section A and partial failures in B are fully explained by the unresolved identity. The absence of images, links, Capabilities, and Autonomy is documented in AI Notes with specific sources checked, not silently thin. The Open Question is the correct gate for Jonathan to unblock progress.",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "No images present. Absence explained in AI Notes: identity unconfirmed, scraper correctly skipped. Not a silent omission."
+      "result": "pass-with-note",
+      "evidence": "All 5 images are from the single Porto Rocha Shop project. This is the documented ceiling: scraper checked 14+ Porto Rocha case studies and found Luis Alejandro credited on only one. AI Notes names the limitation and the sources searched. Per the task brief and the 'absence is explained' principle, this cannot be held as a FAIL when the constraint is genuine, searched, and documented. Jonathan sees this as the honest maximum."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "N/A. No images possible until identity resolved."
+      "evidence": "Images go inside the Shop project: app icon on phone mockup (site-01), product lifestyle shot (site-02), category badge system grid (site-03), product detail bracelet shot (site-04). Four distinct angles of the identity system, not four hero crops of the same image."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities withheld (correct). No off-capability capture possible without identity."
+      "evidence": "Tagged Graphic design + Identity systems. Images show app icon design, a full badge/label taxonomy grid, and product brand photography. All on-capability."
     },
     {
       "id": "A.context-shots",
-      "result": "pass",
-      "evidence": "No context shots. Absence explained: no website or IG confirmed for this person."
+      "result": "pass-with-note",
+      "evidence": "site-05 is a context screenshot of portorocha.com/shop (the case study page where the credit appears), captioned 'Shop at Porto Rocha (credited Design) - context'. It is not mislabeled as 'Instagram profile' or 'Website homepage'. No personal website exists and no Instagram was found. Both absences are documented in AI Notes. The checklist requires a website homepage screenshot and an Instagram profile screenshot: neither exists for this person. The source-of-credit context shot is the honest substitute, and the absence-explained check is met. Flagged for Jonathan's awareness but not a blocker."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "No images present. N/A."
+      "evidence": "All 5 images captioned with project name and source link (portorocha.com/shop). No anonymous shots."
     },
     {
-      "id": "A.embeds-for-video",
+      "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "N/A. No portfolio source confirmed."
+      "evidence": "Graphic/identity designer. No video or audio work in scope. No embeds skipped."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes explicitly documents: Porto Rocha team page (42 people), 8 project credits, LinkedIn snippet, The Org, ZoomInfo, web search all checked with no match."
+      "evidence": "AI Notes explicitly states: no personal website, Instagram, or LinkedIn found. Single project credit from 14+ case studies searched. IG queue not applicable (no IG exists). Documented, not silent."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Person, set_by agent. Correct."
+      "evidence": "Type = Person. Correct."
     },
     {
-      "id": "B.links-present",
-      "result": "pass",
-      "evidence": "No links attached. AI Notes documents exhaustive search with zero confirmed matches. Missing links are not a skipped search; they are an unresolvable identity gap."
+      "id": "B.all-findable-links",
+      "result": "pass-with-note",
+      "evidence": "Website, Instagram, LinkedIn, Email all absent. AI Notes documents that none were found via web search, LinkedIn Google snippets, or project credit pages. Full surname unknown makes deeper search structurally impossible. This is a genuine absence, not a skipped search."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities withheld. AI Notes explains why: cannot tag without identity confirmation. Correct per confidence floor."
+      "evidence": "Graphic design + Identity systems. Supported by the Shop project evidence: app icon, badge system, brand identity outputs. Consistent with TAXONOMY.md."
     },
     {
-      "id": "B.country-size-workstatus",
+      "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country (US + UK) and Work Status (Employed) drawn from the clip note's stated Porto Rocha affiliation. Hedged in AI Notes as 'Stated as'. Agent-set in provenance. Borderline confidence given unconfirmed identity, but appropriately hedged and the Open Question routes Jonathan's answer back to resolve."
+      "evidence": "Country: United States (Porto Rocha is NY/London; US inferred from project context, hedged). Size: 1 (person). Work Status: Unknown with documented conflict: clip note says 'currently employed' but absence from June 2026 team page (40 people) contradicts it. No third source to resolve. AI Notes names the conflict and the sources checked. Objective multi-source rule correctly applied: conflict with no majority stays Unknown."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy withheld. AI Notes: 'Autonomy and seniority cannot be assessed without identity confirmation.' Correct."
+      "evidence": "Autonomy 2 (set_by agent). Reasoned in AI Notes: credited under Design, not direction or principal roles, executed under Felipe Rocha and Leo Porto. Hedged."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the source note which gives no relationship context."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the scout-sourced entry and no Jonathan relationship evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source note said 'Designer at Porto Rocha (New York / London); currently employed.' Scout exhaustively followed that lead across all Porto Rocha sources."
+      "evidence": "Entry is scout-originated ('Found using Claude'), not web-clipper-originated. No Name-field clip note instructions to parse. Source field records the scout finding accurately. No --from-jonathan fields required."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes leads with 'Identity unconfirmed', lists every source checked, and explicitly states what cannot be assessed. No unhedged inferences."
+      "evidence": "AI Notes hedges appropriately throughout: 'may have departed', 'Autonomy 2 (hedged)', 'no evidence of project ownership'. Seniority read present ('mid-level designer, credited under Design not direction'). Sources named. No unverified assertions stated as bare fact."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Found using Claude, 2026-06-15. Designer at Porto Rocha (New York / London); currently employed.' Present and specific."
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Porto Rocha; credited on Porto Rocha Shop project (2023, alongside Nathan Fyock and Rachel Quan). Not on current Porto Rocha about page (June 2026).' Filled and specific."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by, value, and verified_at. No field below 0.8 confidence was written as fact; blocked fields were left empty."
+      "evidence": "Provenance file present with set_by, verified_at, and value for every touched field. Work Status left Unknown rather than guessed below 0.8 confidence. Provenance records the conflict accurately."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Verified programmatically. No em-dashes in AI Notes or Open Questions."
+      "evidence": "Checked AI Notes, Open Questions, captions, and Source. No em-dashes present."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question: full name, with exact evidence (42-person team page, 8 case studies checked, no match). Terse and actionable. Not asking for any already-known field."
+      "evidence": "Two terse OQs: (1) full name, agent-unresolvable without Jonathan's input; (2) current status at Porto Rocha, conflict between clip note and team page. Both are genuinely open. No fields asked about that already have non-zero values. Story nudge not applicable (no Worked Together signal)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Reviewer (this gate) is the only agent that flips to Needs Review, which happens now."
+      "evidence": "Entry Status is Enriching at review time. Reviewer flips to Needs Review now."
     }
   ],
+  "notes": "Hard case handled honestly. The single-project constraint is real and documented, not a scraper shortfall. Context shot (site-05) shows the Porto Rocha case study page rather than a personal website or Instagram because neither exists: this is the correct anchor and is not mislabeled. Jonathan sees a thin entry by necessity. The two OQs (full name, current status) are the right questions to surface. Verdict: pass. Flipping to Needs Review.",
   "to": null
 }
