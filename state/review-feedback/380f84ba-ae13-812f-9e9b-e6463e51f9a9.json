@@ -1,0 +1,116 @@
+{
+  "page_id": "380f84ba-ae13-812f-9e9b-e6463e51f9a9",
+  "name": "Marek Nedelka",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 active work images span 8 distinct named projects: Subjective Encyclopedia, National Letters, mmcite+ identity, Mental Relief, FUA 04, The Bowels of Architecture, 5866, Die Zeit fur das Zeitlose."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: site-03 shows book interior spread, site-07 shows type spread interior, site-14 shows catalogue spread. Not only cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design, Identity systems, Type design, Creative direction. Captured work is book design, exhibition catalogues, type specimens, brand identity. Note: site-09 (mmcite+ identity) is a transit-terminal product photograph showing the CLIENT'S physical street furniture, not graphic design output. Site-08 covers the logo/identity itself. Site-09 is the weakest image but is correctly captioned and the project is on-capability; left for Jonathan to assess.",
+      "advisory": "site-09 shows a bus shelter / transit terminal, not Nedelka's graphic design work. If Jonathan wants it replaced, scraper should pull an mmcite+ identity application shot (print, typographic system, or collateral) instead."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-26.png) confirmed as mareknedelka.com homepage. Instagram context shot: both headless attempts returned error pages (logged in manifest with rejection_reason), entry correctly added to state/ig-queue.json. Per CLAUDE.md, queued IG is not a hold reason."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active images (11 work + 1 website context) have captions naming the project."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Not applicable: Marek Nedelka is a graphic/type designer with no audio or video work in the portfolio."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot failure documented in manifest (two entries with rejection_reason) and entry is in state/ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram (@marek_nedelka), LinkedIn, and Email (mail@mareknedelka.com) all present. Minor: Instagram provenance source_url is null (handle verification source not recorded), but name match is exact and AI Notes make no mention of ambiguity."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative direction, Graphic design, Identity systems, Type design. Consistent with site, career history, and captured work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US + Czech Republic. Size: 1. Work Status: Unknown with multi-source reasoning documented in AI Notes (personal site, Porto Rocha about page, LinkedIn snippet, itsnicethat.com, anezkaminarikova.com). Ambiguity correctly escalated via Open Question 1."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent. Reasoning in AI Notes: deep independent practice + specialist type/identity expertise, approx 8-9 yrs experience since 2016."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with no relationship evidence. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note (from Name provenance source_url) indicated Porto Rocha employment. Scout checked and found ambiguity; Work Status set to Unknown with Open Question 1 correctly asking Jonathan to confirm. Handled properly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged: 'LinkedIn may be stale', 'Work Status unresolved', 'Sources checked: ...'. Seniority read present: 'Mid-level practitioner; deep independent practice'. Autonomy paired."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'mareknedelka.com/info; linkedin.com/in/marek-nedelka-891756118; portorocha.com/about; itsnicethat.com; 2026-06-17'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. Minor: Website, Instagram, LinkedIn, Email, Country, Type, Size have null source_url (URL of discovery not recorded). The key judgment fields (AI Notes, Work Status, Capabilities, Autonomy, Source) have full provenance. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Work Status ambiguity - genuinely unresolvable without Jonathan's confirmation; (2) Rating - conditional and appropriate. No questions asked for fields already holding non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching pre-gate. Will be flipped to Needs Review by this reviewer."
+    }
+  ],
+  "advisories": [
+    "site-09 (mmcite+ identity) shows a transit terminal / bus shelter product photo, not Nedelka's graphic design output. It is correctly captioned and the project is on-capability; Jonathan may want it replaced with an mmcite+ identity application shot (print, collateral, type system) on a future pass.",
+    "Instagram context shot missing (both headless attempts failed, correctly queued to state/ig-queue.json). No blocker per CLAUDE.md."
+  ],
+  "to": null
+}

@@ -1,0 +1,113 @@
+{
+  "page_id": "380f84ba-ae13-818d-8c23-d6980c5eb3fd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "2 distinct projects (SF Symphony x4, Cora x3). Below the 3-project target, but AI Notes documents the constraint: site is password-gated, Wolff Olins/Character do not credit individuals publicly. Per reviewer brief, do not bounce solely for this documented limitation."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "SF Symphony: signage, season poster, outdoor banner, outdoor posters (4 angles of real applied work). Cora: manifesto/verbal identity, product+packaging, cup+packaging (3 angles inside the case study). Goes inside both projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Brand strategy. Images show brand identity output (verbal identity system, packaging, signage) which is the visible artifact of strategy work. Best available given gated own site."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-14.png is a correct christinetakaichi.com homepage screenshot. No Instagram context shot is present. The manifest has no Instagram entry at all. AI Notes make no mention of whether Instagram was searched for. The checklist requires both website AND Instagram profile screenshots; absence must be explained.",
+      "fix": "Search for Christine Takaichi's Instagram (try @christinetakaichi, @ctakaichi, check her website external links and LinkedIn for a handle). If found and confirmable as her, capture a context screenshot and add it to the manifest (scrape.py shot instagram.com/<handle> --caption 'Instagram profile'). If genuinely not found after a real search, add one sentence to AI Notes: 'No Instagram found; searched <handles> and site/LinkedIn external links.'"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 images have captions with project name and source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Brand strategy work; no video/audio output expected. Two bookmarks present for the COLLINS case studies (SF Symphony, Cora). N/A for embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains password-gated own site, and lack of individual credits at Wolff Olins/Character. Documented constraint, not a silent gap."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Website, LinkedIn, and Email are all present and sourced. Instagram field is empty and AI Notes do not mention whether a search was attempted. This cannot be confirmed as a genuine absence without evidence of a search.",
+      "fix": "Same action as A.context-shots: search for her Instagram handle and either fill the Instagram field or document in AI Notes that a real search was done and nothing was found."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy. Confirmed by site ('brand strategy director'), career history, and project types."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "United States (site). Size 1 (person). Work Status Freelance: AI Notes records site + LinkedIn both show independent; sources named."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: senior practitioner, self-directed independent practice, embedded consultant model, ~7yr trajectory. Well-grounded."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with a surfaced candidate with no stated Jonathan connection."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Original clip flagged 'designer at COLLINS, currently employed'. Scout correctly identified she is a brand strategist (not designer) and left COLLINS circa 2021. OQ asks Jonathan to confirm this is the right person. Discrepancy surfaced, not buried."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority and experience read present (~7yr trajectory, senior to director level). Dates marked 'circa' where inferred. Autonomy reasoning included. Sources named. No unhedged assertions about Jonathan's personal knowledge."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Originally flagged as designer at COLLINS...' Provenance preserves clip note context."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/380f84ba-ae13-818d-8c23-d6980c5eb3fd.json. All touched fields recorded with source_url, verified_at, set_by."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes in AI Notes, Open Questions, or captions. Verified programmatically."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ: identity/keep confirmation. Terse, appropriate given the mismatch between surfaced description and research findings. Conditional: no fields already answered are asked about."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching (correct for a pre-review entry). Will flip to Needs Review after scraper resolves the Instagram gap."
+    }
+  ],
+  "to": "scraper",
+  "summary": "One fixable gap: Instagram was neither found nor documented as searched-and-not-found. The checklist requires both a website AND an Instagram context shot; the absence must be explained in AI Notes if genuinely none exists. Fix is a single search + either a context screenshot or one sentence in AI Notes. Everything else passes, including the documented 2-project limitation per reviewer brief."
+}

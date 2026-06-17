@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-81d9-a35d-d1fbb0663642",
+  "name": "Chae Park",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T11:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects across 2 studios: Veeps (3 shots), Church (3 shots), GRAU (2 shots), ChatGPT student campaign (2 shots), Twitch (2 shots). No repeated-angle duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each project: Veeps has TV UI, mobile UI, OOH; Church has exterior signage, reel overview, event print; GRAU has packaging and typeface specimen; ChatGPT has OOH billboard and print collateral; Twitch has type system and website UI."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design + Identity systems. All 12 work images are brand identity or campaign output (identity systems, OOH, UI, type). No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png opened: confirms worksbychae.com homepage (project index, Brand New School bio). site-18.png opened: confirms instagram.com profile for @worksbychae, name Chae Park, nyc/seoul bio. Both correct and not swapped."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is Graphic design / Identity systems; image capture is appropriate. Website was 503 at research time (documented in AI Notes). No obvious video embed missed for this capability type."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents website 503 at research time; portfolio URL confirmed via search results. No unexplained thin areas."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website worksbychae.com, Instagram @worksbychae (verified right person via screenshot), LinkedIn URL present, Email hicodus@gmail.com (confirmed via IG bio in context shot)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems per TAXONOMY.md. Appropriate for her breadth (identity programmes at Porto Rocha and BNS, OOH campaigns, type systems)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "US + South Korea (IG bio: nyc/seoul), Size 1, Employed. Work Status resolved by multi-source rule: Brand New School About page (primary) + multiple Google snippets agree. Documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes: mid-level Designer (not Senior/Director), 4-5 yrs post-grad, strong studio pedigree but not yet owning projects solo."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of Jonathan knowing her. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note stated Porto Rocha; scout identified move to Brand New School, updated Works At Link and AI Notes, documented in Source. Change explained and evidenced."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Early career (Base, Apple) hedged as 'possibly' and flagged as unverifiable in Open Question 3. Work Status resolution documented. Seniority read present (mid-level, 4-5 yrs). Autonomy estimate paired with reasoning."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Porto Rocha...' with 2026-06-17 update note. Filled and accurate."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All 14 fields in provenance file. source_url is null on several multi-source fields; rationale documented verbally in AI Notes, which is the established pattern for multi-source decisions. No field written below 0.8 confidence (hedged inferences flagged as such)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and Source all checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "3 questions: Q1 Familiarity (no value set, valid), Q2 Rating (no value set, valid), Q3 early career verification (genuinely unverifiable from primary sources). All terse and conditional."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, awaiting this reviewer flip to Needs Review. Correct pre-gate state."
+    }
+  ],
+  "notes": "Solid entry. 5 distinct on-capability projects with real depth from Porto Rocha and Brand New School case study pages. Both context shots verified as correct. Scout correctly identified the employer move from Porto Rocha to Brand New School and documented it. One minor observation: site-05 captioned 'Church identity, client reel overview' shows a dense music video/campaign grid - this is consistent with Church being a music-industry creative studio (portorocha.com/church), not a religious institution. Caption is accurate to the source page; no error.",
+  "to": null
+}

@@ -1,0 +1,116 @@
+{
+  "page_id": "380f84ba-ae13-81f0-8ad3-ded6b14cb907",
+  "name": "Adam Garbutt",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T10:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Work images cover only 2 distinct sources: (1) Omlet x Ragged Edge 2024 rebrand (4 images: cat packaging, chicken poster, Eglu boxes, brochure spread) and (2) personal IG stills (3 images: jelly molds, character + flower, metallic hand). The checklist requires at least 3 distinct projects. The assets directory contains additional captured images (bpo-1 logotype, bpo-4 packaging, bpo-5 poster, creativeboom-omlet-01/02, omlet-nest-archie, multiple omlet question/tone images) that were excluded from the manifest but could diversify the selection if a second client project or a named personal series were substituted. However diversity across client projects is what is needed: only one client project (Omlet) is present.",
+      "fix": "Add at least one more distinct client project or named personal series to the manifest. The 8 Omlet MP4s on disk (omlet-animation-2, -8, -9, omlet-cat-animation, omlet-chicken-animation, omlet-dog-animation, omlet-hero-animation, omlet-sizzle-reel) are direct CDN files and cannot be embedded in Notion, but their first-frame thumbnails should be extracted and included as preview images with links to the source URL so Jonathan sees the animation work. AI Notes mentions Born Ugly / Elmwood connection (HECK identity shoot) - if that work is publicly accessible, scrape it as a second client project. If not reachable, note that explicitly. A minimum of 3 distinct projects (or 2 client projects + named personal series) must be present."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "fail",
+      "evidence": "Adam is a 3D animator. There are 8 MP4 animation files on disk (omlet-animation-2.mp4, omlet-animation-8.mp4, omlet-animation-9.mp4, omlet-cat-animation.mp4, omlet-chicken-animation.mp4, omlet-dog-animation.mp4, omlet-hero-animation.mp4, omlet-sizzle-reel.mp4) plus omlet-logo-material.mp4, omlet-tone-of-voice.mp4, omlet-typography.mp4. None appear in the manifest. The scraper context states these are direct CDN files (not Vimeo/YouTube), so Notion embed is not available. But the checklist requires that video work be surfaced: the correct pattern per CLAUDE.md is to extract each video's thumbnail frame as a preview image (captioned + linked to the source page) and include it in the manifest so Jonathan sees what the animation work looks like. Currently no animation previews exist in the entry.",
+      "fix": "Extract a thumbnail/first-frame still from each of the top 3-4 Omlet animation MP4s (e.g. omlet-cat-animation, omlet-chicken-animation, omlet-sizzle-reel) using ffmpeg or similar, add them to the manifest with captions like 'Omlet rebrand, cat character animation (still), Ragged Edge x Adam Garbutt 2024' and the Ragged Edge case study as the link. This gives Jonathan a visual preview of the animation work without requiring an embed. If Vimeo/YouTube versions of any animations exist on the Ragged Edge case study page, embed those instead."
+    },
+    {
+      "id": "A.context-shots-present-and-correct",
+      "result": "pass",
+      "evidence": "site-06.png is a real instagram.com screenshot of @a_garbutt (confirmed: shows Instagram UI, handle a_garbutt, 104 posts, 5398 followers). Captioned 'Instagram profile'. site-07.png is behance.net/adamgarbutt, captioned 'Behance profile'. The personal domain is dead so a website screenshot is genuinely unavailable; AI Notes and Open Questions both document this. Behance profile is a reasonable memory anchor substitute. Context shots are correctly labeled and correctly depict what they claim."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "The 4 Omlet images go inside the project (packaging, poster, boxes, brochure spread - distinct deliverables, not just the hero). The 3 personal IG stills show distinct personal renders."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is 3D & motion. All 7 work images show 3D character illustration and animation work (Omlet 3D characters, personal 3D renders). The bpo-11 brochure spread image is a marginal case (product photography in a brochure context) but the 3D character visible in it ties it to Adam's work. No off-capability images present."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 manifest entries have captions. All work images have project names and source links. Context shots have descriptive captions."
+    },
+    {
+      "id": "A.absence-is-explained",
+      "result": "pass",
+      "evidence": "Personal site dead: documented in Open Questions (Q1) and AI Notes. IG full-res capture throttled: IG queue entry present for this page_id with reason 'personal site dead; IG (104 posts) is primary showcase'. AI Notes states 'queued for logged-in capture'. All explained."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Instagram: https://www.instagram.com/a_garbutt/ (verified: screenshot shows @a_garbutt, correct person). LinkedIn: https://www.linkedin.com/in/adgarbutt/ (present). Email: hello.garbutt@gmail.com (present). Website: all personal domains dead, documented. No website to link. No obvious skipped search: Open Questions Q1 lists 3 domain variants tried."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: [3D & motion]. Correct for a 3D animator and director."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United Kingdom. Size: 1. Work Status: Freelance. AI Notes documents the source resolution: 'LinkedIn and IG show no employer, Ragged Edge credits as freelance collaborator.' Two sources (LinkedIn + IG) agree on Freelance."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3 (set_by agent). Reasoning in AI Notes: 'delivers independently on briefs, no evidence of leading teams.' Grounded in seniority read (Senior Designer per LinkedIn, mid-senior freelancer)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "fail",
+      "evidence": "The Source field text contains 'Animator (freelance collaborator) at Ragged Edge (London); currently employed.' The phrase 'currently employed' directly contradicts Work Status = Freelance and contradicts the AI Notes which correctly describe him as a freelance collaborator. This is an internal inconsistency: the Source text appears to be a raw clip note or early draft that was never corrected. Worked Together = Never and Familiarity = Don't know them are appropriate zero-states given no clip note evidence to the contrary.",
+      "fix": "Update the Source field text to remove or correct 'currently employed' - it should read something like 'Found using Claude, 2026-06-15. Freelance 3D animator/director, Leeds; confirmed collaborator on Ragged Edge x Omlet rebrand 2024.' The current Source text would confuse Jonathan."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "The raw Source field indicates this was 'Found using Claude' (an agent-sourced entry, not a Jonathan clip). No clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences appropriately ('describes practice as', 'trajectory deepens in'). Verifiable facts are stated plainly (Ragged Edge x Omlet credit, Leeds Arts University). Seniority read included ('Senior Designer per LinkedIn, mid-senior freelancer'). Autonomy estimate paired with reasoning. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source is filled but contains contradictory text: 'currently employed' when Work Status is Freelance. The field value is 'Found using Claude, 2026-06-15. Animator (freelance collaborator) at Ragged Edge (London); currently employed.' The 'currently employed' clause is either a leftover from a scout draft or an error; it conflicts with the rest of the entry.",
+      "fix": "Same as C.no-judgment-contradiction fix above: correct the Source text to remove the contradictory clause."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists for all touched fields. All fields have set_by, verified_at. Note: source_url is null on most fields (which is a weak point - the LinkedIn/IG/Email source URLs are not recorded in provenance) but this is a minor gap, not a blocking failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions and Source field reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse-and-conditional",
+      "result": "pass",
+      "evidence": "Open Questions: '1. Website? Personal portfolio domain (adamgarbutt.com / .co.uk / .studio all unreachable). 2. Familiarity?' Both are terse. Q1 adds context (lists the tried domains). Q2 asks a field without a non-zero value. No story nudge needed (Worked Together = Never, Familiarity = Don't know them, Work With = Unvetted)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching. Correct: the reviewer has not yet passed it. Will be flipped to Needs Review only on a pass verdict."
+    }
+  ],
+  "summary": "3 FAILs block this entry from Needs Review: (1) only 2 distinct projects in the work images when 3 are required; (2) 11 Omlet animation MP4s are on disk but no thumbnail previews exist in the manifest, leaving the core animation capability invisible; (3) the Source field contains the phrase 'currently employed' which directly contradicts Work Status = Freelance. FAILs 1 and 2 are linked: extracting animation stills from the MP4s solves both the diversity and the video-work visibility problems simultaneously. FAIL 3 is a one-line text correction. The IG capture queue is correctly populated and is NOT a blocking issue per CLAUDE.md.",
+  "to": "scraper"
+}

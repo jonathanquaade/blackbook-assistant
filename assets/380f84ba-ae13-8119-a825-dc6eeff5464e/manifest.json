@@ -81,7 +81,7 @@
     "url": "https://niclasresch.com",
     "caption": "Website",
     "link": "https://niclasresch.com",
-    "note": "Site renders blank in headless Playwright (WordPress Lay theme with auth-gated /nr/wp-content/ images); bookmark provided in place of screenshot"
+    "note": "Site renders blank in all headless Playwright attempts (WordPress Lay theme; images auth-gated). Tried: direct render, Wayback generic 2024, Wayback 20241201 snapshot, /info/ subpage. All blank. Bookmark is confirmed fallback after exhausting all render and archive routes."
   },
   {
     "file": "site-08.png",

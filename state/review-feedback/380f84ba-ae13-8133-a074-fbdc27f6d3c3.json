@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-8133-a074-fbdc27f6d3c3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T10:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Kunsthalle Basel, Geffen Playhouse, JFK Terminal 4, Bob Dylan Center, Netflix Tudum. No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside spreads, logo construction details, environmental applications, print interiors. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are brand identity and graphic design output (logos, stationery, environmental signage, editorial design). Matches tagged Graphic design + Identity systems."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png opened and confirmed as gabrielacarnabuci.com homepage (shows her name + Porto Rocha title + project grid). site-16.png opened and confirmed as instagram.com/gabcarnabuci profile page (Instagram chrome visible, handle gabcarnabuci, bio matches)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 manifest entries have captions and links. No needs_caption flags present."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No audio or video work in scope. Subject is a brand identity director; no embeddable project video was skipped without reason. (site-15.png context shot shows one project marked Coming Soon on her site, not embeddable.)"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Good coverage across 5 projects from two sources (portorocha.com and gabrielacarnabuci.com). No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (gabrielacarnabuci.com), Instagram (instagram.com/gabcarnabuci), LinkedIn (linkedin.com/in/gabriela-carnabuci-0b9123b4/), Email (gabrielacarnabuci@gmail.com). All 4 present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems. Appropriate for a brand identity director with clients across cultural institutions and global brands."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States (corrected from New York/London to US-only per context note). Size: 1 (person). Work Status: Employed. Multi-source resolution documented in AI Notes (site + IG bio + LinkedIn all agree)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: director-level, manages team of ~7, ~9 years experience, Parsons BFA, Base Design then Porto Rocha progression."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are valid. Source is 'Found using Claude' with no relationship signal from Jonathan. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Context note said 'corrected to Design Director, NYC (US only)'. AI Notes acknowledges the title correction from Associate DD to Design Director. Country corrected to United States only. Both acted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy as '(agent)', cites specific sources (LinkedIn, The Org, her own site, IG bio). Seniority read and trajectory included. No bare assertions of unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Associate Design Director at Porto Rocha (New York / London); currently employed.' Verbatim clip provenance preserved."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "state/provenance/380f84ba-ae13-8133-a074-fbdc27f6d3c3.json present with all touched fields. set_by agent on all agent-written fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Source text programmatically. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. No unresolvable ambiguities; no non-zero judgment field values that would trigger conditional questions. Rating and Familiarity/Work With? are Jonathan's call on review."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching at time of review. Reviewer flipping to Needs Review now."
+    }
+  ],
+  "to": null,
+  "notes": "One minor observation not rising to a FAIL: site-01.jpg (Kunsthalle Basel, Porto Rocha) is a photograph of the building exterior, not a design asset. The other two Kunsthalle images (logo construction + stationery) carry the design work adequately, so this is acceptable editorial context from the case study page."
+}

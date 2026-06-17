@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-81c4-b35b-e256d15e5e16",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 work images spanning 4 distinct projects: Girl Scouts (site-02, site-03), Match (site-05), Freeform (site-07, site-08), Linktree (site-11, site-12). Plus 4 bookmarks, one per project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 interior shots per project rather than a single cover hero; goes inside the case-study imagery for each brand programme."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Copywriting. Images show brand programmes she wrote copy for (Girl Scouts rebrand, Freeform, Match, Linktree). Bookmarks link directly to the COLLINS case-study pages and a Communication Arts feature crediting her as writer. Context-aware: visual assets from a verbal-identity person's projects are the correct representation; no visual-design work falsely attributed to her."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png is confirmed instagram.com/okheymaddy (shows Instagram chrome, handle, 'Maddy' display name, private profile). site-16.png is the COLLINS team page (wearecollins.com/team), captioned 'COLLINS team page' not 'Website' -- honest substitution for a person with no personal website, absence explained in AI Notes. No mislabeling."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in manifest carries a caption naming the project and a link to the source case study or Communication Arts feature."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds present; 3 Mux video thumbnails were explicitly rejected (low-quality, replaced by Sanity CDN stills). Bookmarks are the correct format for a writer's work per the runbook. No video embed opportunity skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No personal website: AI Notes documents three domains checked (madeleinecarrucan.com, maddycarrucan.com, workingnotworking profile). IG is private (no posts visible) so no IG work images. Not queued for ig.py because her work lives on the agency case-study pages, which were captured instead."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Instagram: https://www.instagram.com/okheymaddy/ (sourced from COLLINS team page, confirmed right person). LinkedIn: https://au.linkedin.com/in/madeleinecarrucan. Website: empty, documented absence in AI Notes. Email: empty, no public email found. Works At Link: https://www.wearecollins.com. No obvious skip: personal email for an employed COLLINS staffer is not typically public-facing."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Copywriting, single tag. Accurate: she is a writer/ACD Story, not a visual or motion designer."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1 (person). Work Status: Employed. AI Notes names sources: COLLINS team page (primary) + LinkedIn snippet agree. Objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: ACD-level on major programmes, but embedded in COLLINS team under ECD/CD, not running own studio. Hedged as inferred from title and credits."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note or Jonathan notes on this entry. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship. Entry was found by the agent, not clipped from Jonathan's network."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source says 'Found using Claude, 2026-06-15. Designer at COLLINS' -- this is an agent-sourced entry, not a web-clipper entry with Jonathan instructions. No clip note to act on. Minor: Source says 'Designer' for a copywriter; this is cosmetic inaccuracy in the Source string and does not affect any field value."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy estimate hedged ('hedged, inferred from title, project credits, and team structure'). Work Status resolution sources named. IG verification method stated. No first-person claims about quality. Seniority + experience read present (ACD-level, ~7 yrs, career trajectory from 2018 internship). One minor: AI Notes says IG bio 'states writing @thisiscollins' but the context shot shows bio as 'entry-level optimist' with no COLLINS mention -- the handle itself is confirmed via the COLLINS team page (provenance source_url), so the verification is solid; the bio-text claim is stale or was changed. Not a confidence failure, but a small inaccuracy in the explanation."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' Verbatim in field."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file covers: Name, AI Notes, Country, Entry Status, Source, Type, Capabilities, Size, Work Status, Works At Link, Autonomy, Instagram, LinkedIn, Worked Together, Work With?, Familiarity, Images. All fields with set_by: agent and verified_at timestamps. All sourced to primary URLs."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, manifest captions, and all provenance values. Zero em-dashes found. Manifest uses double-hyphens (--) in captions, which are permitted."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions: empty. Correct: all addressable fields are filled. Story nudge: Worked Together is Never, Familiarity is Don't know them -- no story question needed per the rule (it triggers only when those flip to non-zero states)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status: Enriching -- will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "notes": "One cosmetic note logged but not a FAIL: (1) Source field says 'Designer at COLLINS' for someone tagged Copywriting -- minor label inaccuracy in the source string, no field value affected. (2) AI Notes claims IG bio states 'writing @thisiscollins' but the context screenshot shows bio as 'entry-level optimist' -- the handle is confirmed via the COLLINS team page (provenance), so verification is solid; the bio-text explanation is stale. Neither rises to a FAIL. Entry is substantively complete and honest. Verbal-identity / copywriter work format (bookmarks + representative images) is correct for this discipline.",
+  "to": null
+}

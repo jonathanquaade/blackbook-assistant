@@ -1,0 +1,118 @@
+{
+  "page_id": "380f84ba-ae13-8137-a33a-cb6516534251",
+  "name": "Ola Dobrzynska",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 work images across 4 distinct named projects: Dreams and Keys, Facebook Dating App (2020), Work Environments (2021), Monzo rebrand illustrations (Ragged Edge, 2022). Captions confirmed distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 images per project, including interior scenes (Work Environments: a cosy room, a figure at desk) and multiple illustration panels (Facebook Dating: character figure + fashion figures). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 8 work images are flat-style illustrations. Tagged Capability is Illustration. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13 captioned 'Website' is behance.net/oladobrzynska profile page (confirmed visually). site-14 captioned 'Instagram profile' is instagram.com @aleksandriusz profile page (confirmed visually: correct bio, correct grid)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 manifest entries carry a caption and a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Illustration portfolio; no video/audio work. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Entry has solid image coverage from Behance + Ragged Edge case study + Its Nice That. No unexplained gaps noted."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (behance.net/oladobrzynska), Instagram (instagram.com/aleksandriusz, verified right person via bio + grid), LinkedIn, Email all present. All four link fields populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Illustration]. Matches all captured work and source description (90 illustrations for Monzo, Facebook, Puma, Asus etc.)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = Poland (corrected from UK; Warsaw confirmed via Behance + IG bio). Size = 1 (solo). Work Status = Freelance, resolved from Behance + IG agreement per multi-source rule; sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 3 (set_by agent). Reasoning in AI Notes: delivers to brief independently across studios/brands, no directorial role evidence. Grounded, hedged."
+    },
+    {
+      "id": "B.works-at-link-incorrect",
+      "result": "fail",
+      "evidence": "Works At Link = https://raggededge.com but Ola is Freelance (Work Status confirmed). Works At Link is the employer URL fallback -- it must be empty for a freelancer. Ragged Edge is a client, not her employer. This field is mislabeled and creates a false employer-link signal for Jonathan.",
+      "fix": "Scout: clear Works At Link (set it to empty). She is freelance; Ragged Edge is referenced correctly in Source and AI Notes as a client/project credit."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note implies a prior relationship. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field preserves the discovery text verbatim. No relationship facts or judgment instructions found in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy estimate ('estimated'), Work Status reasoning cites sources, seniority framed as approximation ('roughly 8-9 yrs'). No unverified plain assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Illustrator (freelance collaborator) at Ragged Edge (London); discovered via Ragged Edge Monzo case study credit (raggededge.com/partnerships/monzo).'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with verified_at, set_by, and source_url. No fields written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Source scanned programmatically. Zero em-dash characters found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No judgment fields with non-zero values exist that would need to be asked. No story nudge triggered (Familiarity = Don't know them, Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching, which is correct -- it has not yet passed the reviewer gate."
+    }
+  ],
+  "summary": "One FAIL: Works At Link is set to https://raggededge.com for a confirmed freelancer. This creates a false employer signal. All image and metadata checks pass. Fix is one field clear by the scout, then this entry can be re-submitted.",
+  "to": "scout"
+}

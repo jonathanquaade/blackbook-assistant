@@ -1,0 +1,109 @@
+{
+  "page_id": "380f84ba-ae13-8185-a9da-f5eef9497d23",
+  "name": "Holly Szczypka",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects: New Yorker Martie, NYT Pulling the Plug, WSJ Remote Work, Guardian FAFO Parenting, Omlet rebrand, NYT Top 10 Books. No repeated projects across the 15 work images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project including interior shots. site-04/05/06 go inside the NYT Pulling the Plug project at different frames; site-09/10/11 go inside the Guardian project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 work images are 3D-rendered illustration work. Matches Capabilities: Illustration + 3D & motion."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-17.png is the hollyobj.com homepage (confirmed visually). site-18.png is the real instagram.com/holly.obj profile page showing 'holly.obj / Holly Szczypka' in the Instagram UI. Both captions and content match."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every work image has a named project caption and a Behance project link. Context shots have 'Website' and 'Instagram profile' captions with matching source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities include 3D & motion; two animated GIFs (site-09.gif Guardian, site-12.gif Omlet) represent motion work. Behance project pages do not host embeddable video; GIFs are the motion artifact on those pages. No YouTube/Vimeo skipped."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (hollyobj.com), Instagram (instagram.com/holly.obj), LinkedIn (uk.linkedin.com/in/holly-szczypka), Email (holly.obj@gmail.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion and Illustration. Consistent with her editorial 3D illustration practice."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United Kingdom. Size: 1. Work Status: Freelance. AI Notes names three self-maintained sources that agree (site + LinkedIn + Behance) per the objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set_by agent with reasoning in AI Notes: mid-career solo freelancer, no evidence of team leadership."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the Source text -- no clip note implies a personal relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is a scout-found entry ('Found using Claude'), not a web-clipper note. No clip instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Womp Art Director role is flagged as possibly past/stale. Seniority described as 'mid-career, approx. 5 years experience'. Autonomy estimate hedged with 'no evidence of leading teams or large projects'. Sources named."
+    },
+    {
+      "id": "D.source-contradicts-work-status",
+      "result": "fail",
+      "evidence": "Source field reads '...currently employed.' but Work Status = Freelance and AI Notes explicitly concludes Freelance from three sources. Jonathan sees the Source field; 'currently employed' directly contradicts the rest of the entry.",
+      "fix": "Rewrite Source to remove the contradictory 'currently employed' phrase. Accurate Source: 'Found using Claude, 2026-06-15. Freelance 3D illustrator; freelance collaborator for Ragged Edge (London).'"
+    },
+    {
+      "id": "D.works-at-link-misuse",
+      "result": "fail",
+      "evidence": "Works At Link = https://raggededge.com but AI Notes says 'Ragged Edge is a freelance collaborator relationship, not employment.' The schema reserves Works At / Works At Link for the employer relationship. A client/collaborator is not an employer; this field should be empty.",
+      "fix": "Clear Works At Link. Ragged Edge is a client, not an employer. The client relationship is already documented in AI Notes and in the Omlet rebrand image caption."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, Source, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Familiarity -- valid, Don't know them is the zero-state so asking is appropriate. (2) Womp Art Director role ambiguity -- real, unresolvable without Jonathan's input. Both are terse and conditional."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, pending this gate. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Two fixes required, both in the metadata layer (not images). The scraper or scout can apply them in a single pass: (1) rewrite Source to remove 'currently employed', (2) clear Works At Link. Images, context shots, captions, and all other metadata are clean."
+}

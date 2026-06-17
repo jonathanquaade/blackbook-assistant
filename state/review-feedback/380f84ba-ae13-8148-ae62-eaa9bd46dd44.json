@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-8148-ae62-eaa9bd46dd44",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T10:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects represented: Lyft rebrand (site-01, site-02), Tripadvisor rebrand (site-07, site-08, site-09), Mews identity (site-10), Bolt identity (site-14, site-15, site-16). Captions do not repeat the same single project across all images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside campaigns: site-02 is a Vimeo thumbnail close-up of Lyft typeface detail; site-08 and site-09 show Tripadvisor campaign executions (not just logo); site-15 shows Bolt typography animation still; site-16 is an in-context billboard. Not all hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design + Identity systems. All four projects (Lyft rebrand, Tripadvisor rebrand, Mews identity, Bolt identity) are brand identity and graphic design work. site-14 shows a Bolt checkout UI mockup which is contextual to the rebrand case study, not a product design detour."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-12.png (captioned 'Koto website') is confirmed as koto.com homepage (PASS). site-13.png (captioned 'Koto Instagram (no personal IG verified for Bryce Carson)') is a browser error page -- 'Something went wrong / There's an issue and the page could not be loaded' -- NOT an instagram.com screenshot. The context shot is a failed page capture, not a real Instagram profile view.",
+      "fix": "Replace site-13.png with either: (a) a successful screenshot of instagram.com/studiokoto showing the actual profile, or (b) if instagram.com is consistently inaccessible, document the failure in AI Notes and omit the broken shot rather than shipping an error page. Do not ship a browser error page as a context shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 manifest entries have captions. Each links to a Koto project page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Work is graphic/identity design; no embeddable video or audio relevant to the tagged capabilities. Vimeo thumbnails are used as still images from case study pages, which is appropriate for static brand/identity work. No skipped embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly documents: brycecarson.com is dead (Framer 404); @bybrycecarson removed; @brycecarson and @bryce.carson confirmed as different people. Open Question 1 asks Jonathan for a current IG handle. Absence of personal site and IG are both explained and asked about."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: dead (404, documented in AI Notes); Works At Link set to koto.com as fallback -- correct per schema. Instagram: documented as unverifiable (handle removed, alternatives confirmed wrong persons). LinkedIn: https://www.linkedin.com/in/bryce-carson/ present. Email: not found; no public email evident for an employed junior designer at an agency, absence is plausible and not a skipped-search failure. All reasonable searches documented."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems match the Koto case study work shown (Lyft, Tripadvisor, Mews, Bolt are all brand identity projects)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States (Koto New York, confirmed). Size: 1 (Person). Work Status: Employed, resolved from two sources: Koto team page (live, primary) and LinkedIn both confirm Koto. AI Notes names both sources and notes personal site is dead. Objective multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 2, set_by agent. AI Notes gives reasoning: junior title on LinkedIn and The Org, early-career stage (2-4 yrs), trajectory through internships then Ogilvy then Porto Rocha then Koto. Grounded in real work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence. No clip note implies a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Context note says 'junior designer now at Koto (moved from Porto Rocha)' -- this is reflected in AI Notes and Open Question 2 asks Jonathan to confirm. No stated facts from the clip that were missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Internship history hedged with 'per snippets'. Autonomy hedged with 'inferred from'. No unsupported assertions about work quality or direct authorship of the Koto projects. Seniority read included (junior, 2-4 yrs, specific trajectory). No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Researched 2026-06-17: junior/designer-level at Koto (New York), previously Porto Rocha and Ogilvy.' Present and informative."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass-with-note",
+      "evidence": "Provenance file exists and records value, set_by, and verified_at for all touched fields. Most fields have source_url: null -- the specific URL evidence is in AI Notes text rather than provenance source_url fields. This is a recurring gap across the batch. Flagging for calibration: should source_url be populated per field, or is AI Notes sufficient?"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, captions. No em-dashes found. Semicolons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: (1) asks for current IG handle, (2) asks Jonathan to confirm the Koto move. Both terse, conditional (IG not attached, employer uncertain), no questions for fields with non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer (this agent) is the only one to flip to Needs Review. Status flip pending at end of this review (v1 mode: all entries proceed)."
+    }
+  ],
+  "summary": "One mechanical FAIL: the Instagram context shot (site-13.png) is a browser error page, not an instagram.com profile screenshot. This is the sole failure. All other checks pass including project diversity (4 distinct projects), on-capability work, documented absences (dead site, unverifiable IG), Scout metadata completeness, and AI Notes quality. Under v1 (calibration) mode the entry proceeds to Needs Review so Jonathan sees it alongside this report. In v2 this would be a scraper bounce: replace the broken context shot.",
+  "to": "scraper"
+}

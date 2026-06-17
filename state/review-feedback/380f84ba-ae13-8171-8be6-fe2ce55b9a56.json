@@ -1,0 +1,114 @@
+{
+  "page_id": "380f84ba-ae13-8171-8be6-fe2ce55b9a56",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Monzo (site-01/02/03), Wise (site-04/05/06/site-18), Omlet (site-07/08/09/site-20.gif), Marshmallow (site-10/11), Kili (site-12/13). Clear spread."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "Marshmallow: site-10 (pink bg, 'We insure difference' text only) and site-11 (same color bg, 'We insure difference TEXT' -- near-duplicate typographic hero card). Kili: site-12 (purple bg, headline text + mascot logo) and site-13 are both single-frame title cards with no interior brand system work. These two projects contribute 4 images that are all hero/opening-slide level, not spreads or design system interiors. Monzo site-02 (app UI) and Wise site-06 (card render) do go inside the work. Overall the Marshmallow and Kili selections pull the entry toward breadth-only for those two projects.",
+      "fix": "For Marshmallow: pull 1-2 interior images from raggededge.com/partnerships/marshmallow (brand system, colour palette pages, motion stills, or application mock-ups) to replace or supplement the two identical text-card hero shots. For Kili: same -- go inside the raggededge.com/partnerships/kili case study for a brand system or application spread, not just the opening title card. One good interior shot per project beats two near-duplicate heroes."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative direction, Graphic design, Identity systems. All 5 projects are brand identity rebrands (Monzo, Wise, Omlet, Marshmallow, Kili). Work matches capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png: confirmed cafejbw.com homepage (shows 'JESSICA BONG-WOON' name + Ragged Edge reference). site-15.png: confirmed instagram.com/jewoona profile page with Instagram chrome visible, bio shows 'Creative Director @ragged_edge', name matches 'Jessica Bong-Woon'. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries (non-rejected) have captions naming the project and a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are graphic design / identity / creative direction (not motion, video or sound). No embedded video/audio work expected. site-20.gif is an animated GIF from Omlet -- appropriate lightweight motion capture."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states personal site is a holding page; work correctly sourced from Ragged Edge case studies. IG is private (confirmed in site-15.png screenshot -- 'This profile is private'). AI Notes does not explicitly mention the private IG as a reason for not capturing IG work, but the context shot proves the scraper confirmed it was private and no ig-queue entry would be appropriate here as no work content was visible."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website (cafejbw.com), Instagram (instagram.com/jewoona -- confirmed correct person via bio + name in site-15.png), LinkedIn (linkedin.com/in/jbong), Email (bongchoi1194@gmail.com). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative direction, Graphic design, Identity systems. Consistent with confirmed role (Creative Director) and project work (brand identity rebrands). Tags are objective capabilities, not titles."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United Kingdom. Size: 1 (person). Work Status: Employed. AI Notes cites Ragged Edge team page as primary source plus cafejbw.com confirming active Ragged Edge role. Two sources agree -- meets the objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: Creative Director at well-regarded 40-person agency, clear leadership track, named client roster, but not founder/independent principal. Grounded in real career trajectory (Senior Designer -> Design Director -> ACD -> CD at Ragged Edge, plus prior Saffron years)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "fail",
+      "evidence": "The personal site screenshot (site-14.png, cafejbw.com) shows Jessica describing herself as 'Associate Creative Director and beading enthusiast living in London. She spends her weekdays at Ragged Edge.' The AI Notes assert 'Creative Director (current)' citing the Ragged Edge live team page. These two primary sources conflict: her own controlled site says ACD; the employer team page says CD. This conflict is not acknowledged in AI Notes and no Open Question was raised for Jonathan. The confidence floor is not met for the current title without resolving which source is more current. Personal sites can lag a promotion; equally the employer page could be ahead of a confirmed title change. The entry presents a resolved fact where there is actually a discrepancy.",
+      "fix": "Add to Open Questions (terse): '1. Title: her site says Associate Creative Director, Ragged Edge team page says Creative Director -- which is current?' Update AI Notes to flag the discrepancy rather than asserting resolution. If the Ragged Edge page is definitively more current (e.g. recently updated), document that reasoning explicitly in AI Notes so the confidence floor is met."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note / raw Name was 'Jessica Bong' (clipped.md confirms). Name was expanded to Jessica Bong-Woon from Ragged Edge team page. No additional instructions in the clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority and trajectory documented (10+ yrs, full career arc). Autonomy 4 with reasoning present. Work Status resolution sources named. IG handle verification noted. No em-dashes detected in the text. Minor: the ACD vs CD title conflict (see C.no-judgment-contradicts-evidence) makes the 'Creative Director (current)' assertion slightly over-confident, but the rest of the notes are well hedged."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source reads: 'Found using Claude, 2026-06-15. Design Director at Ragged Edge (London); currently employed.' The title 'Design Director' is stale -- the scout or scraper updated her title to Creative Director during enrichment but did not update the Source field to match. This is a minor but honest inaccuracy that Jonathan will read.",
+      "fix": "Update Source to: 'Found using Claude, 2026-06-15. Creative Director at Ragged Edge (London); currently employed.' One keeper.py set call."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields documented, source_url, verified_at and set_by on every entry. No field appears below 0.8 confidence based on documented sources."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field reviewed. No em-dashes found. Arrows (->) used in career trajectory are not em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions currently set. Zero-states are valid (no evidence contradicting them). Story nudge not triggered (Worked Together: Never, no indication of a prior relationship in clip note). This check passes as-is, but see C.no-judgment-contradicts-evidence -- a title question should be added."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching. Reviewer gate has not yet passed it; status flip to Needs Review is the reviewer's responsibility on pass. Correct."
+    }
+  ],
+  "to": "scraper",
+  "summary": "3 FAILs: (1) Depth -- Marshmallow and Kili images are hero-only title cards; need 1-2 interior case-study shots per project. (2) Title conflict -- her own site says ACD, Ragged Edge team page says CD; not acknowledged in AI Notes, not asked in Open Questions. Add a terse title question and hedge the AI Notes assertion. (3) Source field still says 'Design Director' after title was updated to Creative Director -- one-line fix. All other checks pass: context shots confirmed correct, project diversity good across 5 named projects, capabilities match work, all links present and verified, no em-dashes, provenance complete."
+}

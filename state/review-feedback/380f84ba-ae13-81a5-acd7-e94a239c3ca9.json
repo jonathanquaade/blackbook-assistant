@@ -1,0 +1,115 @@
+{
+  "page_id": "380f84ba-ae13-81a5-acd7-e94a239c3ca9",
+  "name": "Natalee Ranii-Dropcho",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 work images across 3 distinct projects (GRAU, PAC NYC, Nike Run) plus 4 bookmarks across those same 3 projects plus an interview. No caption duplication across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project (not just hero covers). Goes inside each case study. Nike Run shows box, spray stencil, and race bib, which are distinct project deliverables."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-01 (captioned 'GRAU brand strategy and verbal identity') shows an unidentified building exterior -- an editorial/architectural image from the GRAU case study with no connection to verbal identity or brand strategy work. site-03 (captioned 'GRAU brand strategy and verbal identity') shows a full character set for a typeface called 'Antarctica' -- this is a type specimen, not verbal/strategy work, and the caption does not acknowledge it is the typeface used on the project. These two images represent the visual design side of the case study, not Natalee's verbal/strategy contribution.",
+      "fix": "Replace site-01 and site-03 with images that connect to the verbal/strategy output of the GRAU project: e.g. a page from the brand voice guide, the GRAU copy in context on a product, or a spread showing headline/body copy in use. If no better GRAU image is available, reduce the GRAU image set to site-02 only (packaging with brand name applied) and add an image from a fourth project or from her earlier work (Outdoor Voices, Kin Euphorics) that shows copy or naming in context."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10 is confirmed instagram.com/trialanderrorr, bio reads 'Natalee Ranii-Dropcho', correct person. site-11 is a Wayback Machine archive of nataleeraniidropcho.com, clearly the right site (name displayed prominently). Caption says 'Website' and source_url in manifest discloses the Wayback origin -- acceptable given live site was down."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 images have captions and link fields in the manifest. No image is anonymous."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "4 bookmarks present for Porto Rocha case study pages and an interview. No video/audio embeds flagged as missed. Capabilities are Brand strategy and Copywriting -- no audio/video expected. Bookmarks are the appropriate format for written case studies."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "The website context shot is from the Wayback Machine (manifest source_url discloses this), but AI Notes does not mention that the live site nataleeraniidropcho.com was down or that Wayback was used. A reader of AI Notes has no way to know the portfolio site is inaccessible, which is decision-relevant (Jonathan cannot visit it for more context).",
+      "fix": "Add one sentence to AI Notes: 'Personal site was unreachable at time of capture (2026-06-16); Wayback archive used for context shot. Live site may be down or offline.'"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email field is empty and there is no mention in AI Notes or provenance that a public email was searched and not found. The checklist and CLAUDE.md both require capturing public contact email during P1, or documenting its absence. Her personal site (though currently down) and her interview at The Brand Identity may have disclosed an email; the Wayback archive of her site was accessed and may contain contact info.",
+      "fix": "Search for a public email via her Wayback-archived site contact page, The Brand Identity interview, and her LinkedIn public profile. If none found, add one sentence to AI Notes: 'No public email found via site, interview sources, or LinkedIn snippet.' Do not leave it silent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy and Copywriting. Both confirmed by her own title (Strategy and Copy Director), The Brand Identity interview, and The Subtext interview. Consistent with TAXONOMY.md definitions."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States (confirmed via Porto Rocha about page and interview, which places her in New York). Size: 1 (individual, correct). Work Status: Employed (three sources agree: Porto Rocha about page, LinkedIn, The Subtext interview Dec 2024). Multi-source rule satisfied, sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: 'leads the discipline at a respected studio, works somewhat autonomously, but within an employer structure.' Grounded in documented work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship. No clip note states otherwise."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was sourced by the scout (not from a Jonathan clip note). No raw Name-field instructions to act on. Source field records the discovery context."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes distinguishes confirmed facts (Porto Rocha title, career history from LinkedIn/interview) from estimates (Autonomy 4 explained as reasoned estimate). Seniority read present: 'Senior / Director-level, estimated 10+ years.' Discipline caveat flagged honestly. No bare assertions for unverifiable claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Verbal/strategy at Porto Rocha (New York / London); currently employed. Confirmed via Porto Rocha about page, LinkedIn, and The Subtext interview (December 2024).' Specific and traceable."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields with source_url, verified_at, and set_by. All set_by agent or jonathan as appropriate. No field appears below the 0.8 confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, Source, and captions reviewed. No em-dashes found; separators are semicolons and periods throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question: 'Her discipline is verbal identity and brand strategy (not hands-on visual design). Keep her in the blackbook?' Conditional and non-redundant. No field with a non-zero-state value is asked about. The discipline flag is appropriate given this is a genuine ambiguity Jonathan must resolve."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching, which is correct -- the entry has not yet passed the reviewer gate. Reviewer will flip to Needs Review only on a clean pass."
+    }
+  ],
+  "summary": "3 FAILs: (1) Two images (site-01, site-03) in the GRAU set are visual design artifacts (building exterior, type specimen) with no connection to Natalee's verbal/strategy capability -- they show what Porto Rocha's designers did, not what she did. Fix: replace or drop those two images. (2) The live website being down is not mentioned in AI Notes -- a reader cannot know the site is inaccessible. Fix: one sentence in AI Notes. (3) Email was never searched or documented as absent. Fix: search Wayback-archived contact page and interview sources; document result in AI Notes.",
+  "to": "scraper"
+}

@@ -1,0 +1,120 @@
+{
+  "page_id": "380f84ba-ae13-8119-a825-dc6eeff5464e",
+  "name": "Niclas Resch",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images span 4 distinct projects: Hiro (3), VEEPS (3), Nike Run (2), OM (3). No project-overlap or near-duplicate across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Hiro: poster + color palette + typographic lockup. VEEPS: TV app UI + mobile streaming UI + wild-posting. Nike Run: ground stencil activation + finisher ribbon. OM: 3 distinct packaging shots (stacked jars, box+jar, eye cream tube). Interior depth present across all four."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Identity systems, Web design, Digital product design. Images show brand identity (Hiro, OM), digital product UI (VEEPS TV + mobile), and campaign identity (Nike Run). All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Instagram profile shot (site-08.png) confirmed correct: instagram.com/niclasresch, handle matches, bio reads 'Nr. / Offline'. Website context shot is MISSING -- manifest has a bookmark entry for niclasresch.com in its place, with a note that headless Playwright returns 401 on image paths. A bookmark is not a screenshot; the checklist requires a website homepage screenshot as a memory anchor.",
+      "fix": "Attempt a scrape.py shot of niclasresch.com with --render (force full Playwright render rather than static fetch); if the page still renders blank, capture the closest available representation (e.g. a cached version via web.archive.org, or a Google cache screenshot) and caption it clearly. If genuinely impossible, document that in AI Notes (not just in the manifest note) and add an ig-queue or flag for Jonathan. Do not ship a bookmark as a substitute for a screenshot without escalating."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio capability tagged; all captured work is static. No Vimeo/YouTube found on the Porto Rocha case-study pages per scraper note. N/A for this entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "niclasresch.com failure documented in manifest note and in AI Notes (WordPress Lay theme, auth-gated /nr/wp-content/ paths, 401 headless). Reason is on record."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "fail",
+      "evidence": "Website, Instagram, LinkedIn all present and plausible. Email is absent and there is no note in AI Notes or provenance that email was searched and not found. CLAUDE.md requires a public contact email search on every P1 entry ('Always capture during P1: public contact email'). The scraper left the field blank without documenting the search.",
+      "fix": "Search for a public email: check niclasresch.com contact page (even if images are gated, a /contact or mailto: link may be accessible), check his Instagram bio (site-08.png shows bio text 'Nr. / Offline' -- no email visible there), check his LinkedIn About snippet via Google. If genuinely not public, state 'No public email found via site, IG bio, LinkedIn snippet' in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Identity systems, Web design, Digital product design. All supported by evidence: OM/Hiro (identity), VEEPS/niclasresch.com (web/digital product). Consistent with work history."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 1 (correct for Person). Work Status: Freelance. AI Notes names the sources (site + LinkedIn both read self-employed; Porto Rocha About page does not list him; 2024 engagements at Koto/MAD/Polyteia). Multi-source objective rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3 (set_by agent). AI Notes reads 'hands-on individual contributor, takes independent freelance engagements but no evidence of directing teams or leading projects.' Hedged, grounded in work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship evidence in the clip note or elsewhere."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Original scout note ('Designer at Porto Rocha (New York / London); currently employed') was a discovery note, not a relationship claim. Scout correctly updated Work Status to Freelance with supporting evidence and raised an OQ to confirm. No relationship facts were stated in the clip."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Career trajectory documented with approximate dates and explicit hedges ('approx.'). Autonomy explicitly hedged ('Autonomy 3 (hedged)'). Seniority read included ('mid-level executor, approx. 4-5 yrs'). No unverified assertions stated as fact. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Porto Rocha (New York / London); currently employed.' Not a verbatim clip note but appropriate for a scouted entry. Note: the trailing 'currently employed' is the pre-correction scout assumption -- not the current fact -- but Source is a discovery record, not a live fact field. Minor staleness, not a blocking issue."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and populated for all touched fields: Name, AI Notes, Country, Entry Status, Source, Type, Size, Work Status, Website, Instagram, LinkedIn, Capabilities, Autonomy, Works At Link, Work With?, Worked Together, Familiarity, Open Questions, Images. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions text confirmed free of em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ: Work Status confirmation, asking Jonathan to confirm the scout's freelance read given the conflict with the original note. Terse and specific. No redundant questions. Story nudge N/A (no relationship present)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is currently Enriching. Reviewer has not yet flipped it. Flip to Needs Review is conditional on resolving the two FAILs above."
+    },
+    {
+      "id": "SCHEMA.works-at-link",
+      "result": "note",
+      "evidence": "Works At Link is set to niclasresch.com (his own site). Per schema, Works At / Works At Link is the employer URL, not the person's own site. For a freelance Person, both Works At and Works At Link should be empty (no employer). This field should be cleared. Low-risk but structurally incorrect.",
+      "fix": "Clear Works At Link via keeper.py set (set it to empty). His website is already stored in the Website field."
+    }
+  ],
+  "summary": "Two hard FAILs: (1) website context screenshot missing -- a bookmark was substituted without escalating or attempting a Wayback/cached fallback; (2) public email search was skipped with no documentation. One structural note: Works At Link incorrectly set to the person's own site rather than an employer URL. All other checks pass: project diversity and depth are solid across 4 distinct projects, capabilities match tagged work, IG context shot is confirmed correct, AI Notes are hedged and complete, OQ is terse and appropriate.",
+  "to": "scraper"
+}

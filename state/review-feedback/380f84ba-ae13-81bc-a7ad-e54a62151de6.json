@@ -1,0 +1,114 @@
+{
+  "page_id": "380f84ba-ae13-81bc-a7ad-e54a62151de6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T10:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Hommegirls Vol. 14, Hommegirls x Chanel mini-zine, Crown Affair, Simple Sundries, Eighth House Night zine. No duplicate angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: spreads, packaging, zine interiors, concept/layout images. Not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Identity systems. Work captured is print/editorial layout (Hommegirls), packaging (Crown Affair), identity system (Simple Sundries), zine design (Eighth House Night). On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Website context shot (site-09.png) is present and confirmed as rachelquan.us. Instagram context shot is ABSENT. The ig-queue.json correctly records the block, but the AI Notes do NOT state 'IG capture queued' as required by CLAUDE.md. Jonathan has no in-entry signal that the IG shot is pending.",
+      "fix": "Add 'IG context screenshot queued (ig.py blocked logged-out; queued to state/ig-queue.json 2026-06-17)' to AI Notes. The queue entry itself is already correct."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "fail",
+      "evidence": "crown-affair-sketches.jpg is captioned 'Crown Affair, design sketches and concept direction, 2024' but the image shows a finished brand mood board / campaign collage layout, not design sketches. Caption is factually inaccurate.",
+      "fix": "Correct caption to match what the image actually shows, e.g. 'Crown Affair, campaign mood board and layout, 2024' or similar accurate description."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio embeds needed; no evidence of embeddable video on project pages for this entry. All work is print/graphic."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "Absence of IG context shot is not explained in AI Notes (see A.context-shots above). This is the same underlying failure.",
+      "fix": "Same fix as A.context-shots: add the IG queue note to AI Notes."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website (rachelquan.us), Instagram (instagram.com/realmavisbeacon, sourced from her own site), LinkedIn, Email all present. Handle verified as her own via self-linked."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design and Identity systems. Consistent with portfolio evidence."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Unknown with documented source conflict (site independent, LinkedIn shows Hommegirls as employer) and Open Question filed. Multi-source rule correctly applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent. Reasoning in AI Notes: handles major brand work independently, no evidence of team leadership. Grounded in work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are correct. No clip note or evidence contradicts them. No relationship context in the source note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is Porto Rocha team roster surfaced 2026-06-15, not a clip note with personal instructions. Nothing to act on beyond standard pipeline."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('roughly', 'treated as departed', 'no clear evidence'). Seniority and Autonomy reads present and grounded. No em-dashes. Sources named."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Porto Rocha team roster (surfaced 2026-06-15). Research: rachelquan.us, itsnicethat.com, portorocha.com/about, LinkedIn public snippet.' Complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by, source_url, verified_at for all touched fields. Confidence floor met."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: Work Status conflict (real ambiguity, sources cited) and Rating (standard). Terse, conditional, no fields asked that already have non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching. Status was not prematurely flipped to Needs Review."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Two fixes needed before Needs Review. Both are scraper-side and fast: (1) add one sentence to AI Notes noting the IG context shot is queued; (2) correct the caption on crown-affair-sketches.jpg. Everything else is solid."
+}

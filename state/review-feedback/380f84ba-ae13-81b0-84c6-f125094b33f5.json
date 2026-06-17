@@ -1,0 +1,117 @@
+{
+  "page_id": "380f84ba-ae13-81b0-84c6-f125094b33f5",
+  "name": "Marcos Rodrigues",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Robinhood (site-01/02/03), MASP (site-04/05/06), Gemini (site-07/08/09), Twitch (site-10/11/12). No repeated project in consecutive slots beyond the intended 3-per-project grouping."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 3 images going inside the system: Robinhood has campaign OOH poster + concept renders; MASP has exterior architecture shot + interior gallery + signage; Gemini has OOH ads + UI/phone mockup; Twitch has type specimen + web hero + billboard campaign."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Identity systems + Web design. All 4 projects are brand identity and digital system work from portorocha.com case studies. Matches capabilities cleanly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed marcosrp.co (shows 'MARCOS RODRIGUES' header + Robinhood project thumbnail). site-14.png: confirmed instagram.com showing handle 'marcos___rp', name 'Marcos Rodrigues', bio 'Interactive Design Director @porto_rocha'. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 images captioned. Work images include project name + portorocha.com project link. Context shots captioned 'Website' and 'Instagram profile' with matching source URLs."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio capabilities tagged. Identity systems + Web design do not require embeds. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "marcosrp.co 503 documented in AI Notes: 'Personal site (marcosrp.co) intermittently returns 503 but briefly loaded during scrape session; context screenshot captured.' Context shot confirms the brief load was real."
+    },
+    {
+      "id": "A.image-content-note",
+      "result": "info",
+      "evidence": "site-01.jpg (blue sphere) and site-03.jpg (compass/drawing tool) have no visible Robinhood branding. Plausible as Porto Rocha case study concept imagery. Captions are honest ('Robinhood identity and digital system, Porto Rocha'). Not a mislabeling FAIL but Jonathan should know these two are atmospheric/concept shots, not brand-system screenshots."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass-with-note",
+      "evidence": "Website, Instagram (verified: bio confirms @marcos___rp = Interactive Design Director at Porto Rocha), LinkedIn all present. Email absent with no explanation in AI Notes. For an employed studio director a public personal email is rarely listed, but the runbook requires capture or documented absence. Minor gap: AI Notes should state 'No public email found'."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Identity systems + Web design per TAXONOMY.md. Grounded in Porto Rocha project work (brand systems + digital platforms). Objective match."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = Portugal (Lisbon per Porto Rocha team page + Aprender Design article). Size = 1 (person). Work Status = Employed, confirmed by 4 agreeing sources (Porto Rocha team page, The Org, Aprender Design article, LinkedIn snippet). Multi-source rule satisfied. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 3, set_by agent. Reasoning in AI Notes: 'director-level executor within a structured studio, not independently operating.' Grounded in career trajectory (Huge intern to Director, always inside studios)."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no evidence contradicting them. Entry was found by agent research, not a clip note with relationship context."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No web-clipper origin; entry was scout-generated. Source field records 'Found using Claude'. No clip note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy marked 'estimated'. Career trajectory sourced to Porto Rocha team page + LinkedIn snippet + Aprender Design. No bare unverifiable assertions. Seniority read present: '13-14 years in the discipline; director-level'. No em-dashes in AI Notes text."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Designer at Porto Rocha (New York / London); currently employed.' Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/380f84ba-ae13-81b0-84c6-f125094b33f5.json. All touched fields have value, source_url, verified_at, set_by entries. No fields written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Source, captions all checked. No em-dashes found. Colons and semicolons used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. No unresolvables remaining. Judgment fields left to Jonathan (Rating, Familiarity, Work With?). Story nudge not triggered (Notes is empty but Familiarity is Don't know them, so no relationship to ask about yet)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching at review time. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Clean entry. One minor process gap: Email absence not documented in AI Notes (should read 'No public email found'). Two Robinhood images (site-01, site-03) are unbranded concept/atmospheric shots from the case study -- captions are honest but Jonathan should know they are not brand-system screenshots. Neither issue warrants a bounce; surfacing for calibration.",
+  "to": "jonathan"
+}

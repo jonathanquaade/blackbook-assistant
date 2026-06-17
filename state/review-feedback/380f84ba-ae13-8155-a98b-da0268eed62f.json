@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-8155-a98b-da0268eed62f",
+  "name": "Maya Flood",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 3 distinct projects: Robinhood rebrand (site-01 to 04), MASP identity (site-05 to 08), Google Gemini (site-09 to 12). No cross-project duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "4 images per project. Robinhood includes product UI on device and OOH advertising execution; MASP includes device mockup and physical print; Gemini includes brand mark and OOH campaign. Not pure hero/cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Identity systems + Web design. Work shown is brand identity and interactive/digital design output from Porto Rocha case studies she is credited on. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed portorocha.com homepage (correct given her personal site is 404; caption reads 'Porto Rocha website', which is accurate and explains the substitution). site-14.png: confirmed instagram.com/@maya_flood, bio reads 'Interactive Designer', correct person."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Tagged capabilities are Identity systems and Web design; no audio/video discipline. Porto Rocha case study pages may have motion, but the entry is not a video/audio/motion entry. No embed obligation triggered."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Personal site mayaflood.com is 404; AI Notes documents this. Work sourced from Porto Rocha case studies instead. No IG hi-res needed given sufficient CDN images from agency site. IG context shot captured via logged-out grab."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Instagram: https://www.instagram.com/maya_flood/ (verified via context shot, correct person). LinkedIn: https://www.linkedin.com/in/mayaflood/ (present). Email: mayaflood16@gmail.com (from publicly posted resume PDFs). Website: absent because mayaflood.com is 404; AI Notes explains this. Works At Link set to portorocha.com as employer fallback. No obvious findable link was skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Identity systems and Web design match her credited role (Interactive Designer) and the work shown (Robinhood brand, MASP digital identity, Gemini brand)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States (Brooklyn). Size: 1. Work Status: Employed. AI Notes names sources: IG bio says Porto Rocha, Porto Rocha project credits confirm her, LinkedIn confirms Brooklyn. Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 2, set_by agent, with reasoning in AI Notes: early-mid career executing within a structured studio team, not independently directing. Grounded in career timeline (~4-5 years, 3+ at Porto Rocha as IC)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all set_by agent and no clip note contradicts them. No Jonathan note on this entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field contains the clip note text verbatim. No relationship or judgment facts stated in the clip note that required --from-jonathan treatment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Promotion to Senior hedged ('one source mentions... though her IG bio still reads Interactive Designer'). Work Status sources named. Seniority and Autonomy read present with trajectory. No unhedged inferences found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Porto Rocha (New York / London); currently employed.' Present and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. All set_by: agent. No field set below the confidence floor: Work Status backed by two sources, LinkedIn present, email from public resume PDFs."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes text checked programmatically; no em-dash character found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. Appropriate: no unresolvable gaps remain, and no story nudge is due (Worked Together is Never, Familiarity is Don't know them). One noted ambiguity (possible promotion to Senior) is hedged in AI Notes rather than asked as a question, which is correct since it cannot be confirmed from public sources and Jonathan's Rating pass will resolve it contextually."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently in Enriching. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "reviewer_notes": "One flag worth Jonathan's attention: the context shot labeled 'Porto Rocha website' is the employer's site, not a personal portfolio, because mayaflood.com is 404. This is correct and explained in AI Notes, but Jonathan should be aware he is seeing Porto Rocha's homepage rather than her own. Also: AI Notes mentions a possible promotion to Senior Interactive Designer (LinkedIn post ~Aug 2025); if Jonathan wants to confirm current title before Rating, that is worth a quick check.",
+  "to": null
+}

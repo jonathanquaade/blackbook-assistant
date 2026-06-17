@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-8186-879a-e90f1f3e43f0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Robinhood identity (site-01/02/03), LUNGE brand identity (site-04/05/06), Hiro brand identity (site-07/08/09), Nike au Centre Pompidou (site-10/11). No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images going inside the work: Robinhood shows the orb motif, a poster mockup, and a compass prop; LUNGE shows wordmark embossed, campaign lifestyle shots; Hiro shows typographic poster and branded pencil; Nike shows installation from two angles. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Identity systems. All 11 work images show identity/graphic design execution (wordmarks, brand systems, campaigns). No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png opened and confirmed as yedo.studio (portfolio homepage showing name, email, @yedo.studio handle). site-13.png opened and confirmed as instagram.com showing @yedo.studio with bio 'Sr. Designer @porto_rocha' and NYC + Seoul location. Both shots are correctly labeled and show the right pages."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions. Work images captioned with project name and year; context shots captioned 'Website' and 'Instagram profile'. All have source links."
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Identity systems; no audio/video discipline tagged. No embed requirement. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is well-documented; no gaps requiring explanation. Not applicable."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (https://yedo.studio), Instagram (https://www.instagram.com/yedo.studio/ - verified correct person via IG screenshot), LinkedIn (https://www.linkedin.com/in/yedohan/), Email (email@yedo.studio) all present. Works At Link set to portorocha.com (Porto Rocha has no Notion entry so relation field is not applicable; link fallback is correct)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design and Identity systems match demonstrated work (Robinhood, LUNGE, Hiro brand systems). Brand strategy tag was explicitly removed per AI Notes reasoning (Porto Rocha owns strategy; Yedo executes). Tagging is objective and accurate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US + South Korea (Porto Rocha about page NYC flag + KR flag for Yedo; IG bio 'NYC + Seoul'). Size: 1 (individual). Work Status: Employed. Sources named in AI Notes and provenance (Porto Rocha team page, IG bio, LinkedIn snippet, The Org). Multi-source rule satisfied: Porto Rocha team page and IG bio both confirm employed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent. Reasoning in AI Notes: Senior Designer level, rapid progression (intern to Senior in under 3 years), executes under creative direction of Leo Porto and Felipe Rocha. Grounded in real career trajectory."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No evidence in source or notes that Jonathan has a relationship with Yedo Han. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry sourced via roster scout (not a web-clipper entry). No clip note to parse. N/A."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (clients, role, dates, career progression) from named sources. Autonomy estimate is hedged with explicit reasoning. Seniority read present: Senior level, rapid progression from intern, approximately 3.5 years at Porto Rocha. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found via roster scout, 2026-06-15. Porto Rocha team page + The Org + LinkedIn. Senior Designer at Porto Rocha since Oct 2022.' Complete and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "state/provenance/380f84ba-ae13-8186-879a-e90f1f3e43f0.json exists with entries for all touched fields including Name, AI Notes, Country, Type, Size, Work Status, Website, Instagram, LinkedIn, Email, Works At Link, Autonomy, Capabilities, Work With?, Worked Together, Familiarity, Images, Entry Status, Source."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Programmatically confirmed: no em-dash character in AI Notes or Source. En-dashes also absent (none needed)."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions filed. No unresolvable gaps found. No story nudge situation (Familiarity is Don't know them; Worked Together is Never). Correct to leave empty."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, awaiting this gate. Reviewer will flip to Needs Review on passing verdict."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. 4 distinct identity/graphic design projects captured with depth, context shots verified correct, metadata complete, provenance written, no em-dashes. Flipping to Needs Review."
+}

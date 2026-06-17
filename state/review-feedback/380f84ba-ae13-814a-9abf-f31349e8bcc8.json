@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-814a-9abf-f31349e8bcc8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "note": "Identity-blocked entry. All check failures in Section A and partial failures in B are fully explained by the unresolved identity. The absence of images, links, Capabilities, and Autonomy is documented in AI Notes with specific sources checked, not silently thin. The Open Question is the correct gate for Jonathan to unblock progress.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No images present. Absence explained in AI Notes: identity unconfirmed, scraper correctly skipped. Not a silent omission."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A. No images possible until identity resolved."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities withheld (correct). No off-capability capture possible without identity."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No context shots. Absence explained: no website or IG confirmed for this person."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images present. N/A."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "N/A. No portfolio source confirmed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly documents: Porto Rocha team page (42 people), 8 project credits, LinkedIn snippet, The Org, ZoomInfo, web search all checked with no match."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "No links attached. AI Notes documents exhaustive search with zero confirmed matches. Missing links are not a skipped search; they are an unresolvable identity gap."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities withheld. AI Notes explains why: cannot tag without identity confirmation. Correct per confidence floor."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country (US + UK) and Work Status (Employed) drawn from the clip note's stated Porto Rocha affiliation. Hedged in AI Notes as 'Stated as'. Agent-set in provenance. Borderline confidence given unconfirmed identity, but appropriately hedged and the Open Question routes Jonathan's answer back to resolve."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy withheld. AI Notes: 'Autonomy and seniority cannot be assessed without identity confirmation.' Correct."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the source note which gives no relationship context."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source note said 'Designer at Porto Rocha (New York / London); currently employed.' Scout exhaustively followed that lead across all Porto Rocha sources."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes leads with 'Identity unconfirmed', lists every source checked, and explicitly states what cannot be assessed. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Designer at Porto Rocha (New York / London); currently employed.' Present and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by, value, and verified_at. No field below 0.8 confidence was written as fact; blocked fields were left empty."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically. No em-dashes in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: full name, with exact evidence (42-person team page, 8 case studies checked, no match). Terse and actionable. Not asking for any already-known field."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer (this gate) is the only agent that flips to Needs Review, which happens now."
+    }
+  ],
+  "to": null
+}
