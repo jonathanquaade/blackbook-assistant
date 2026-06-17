@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-8168-b987-df56c3e2d5b1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T16:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images across 4 distinct projects: Shop (site-01 to 03), Twitch rebrand (site-04 to 06), Nike Run identity (site-07 to 09), Nike au Centre Pompidou (site-10 to 11). No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images showing different facets: Shop shows app icon, product photography, and design system labels; Twitch shows type specimen, branded website mockup, and OOH billboard; Nike Run shows shoebox packaging, branded stencil application, and race bib detail; Nike Pompidou shows two angles of the building-scale typographic installation at day and night."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged: Graphic design, Identity systems. All 4 projects are brand identity and graphic design work (identity systems, type, OOH, packaging). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png: verified portorocha.com homepage (Porto Rocha wordmark, projects grid visible, URL visible in browser chrome). Captioned 'Porto Rocha website' which is correct given nathanfyock.com is 503. site-13.png: verified instagram.com/nathan.fyock profile page (Instagram header, handle 'nathan.fyock' and name 'Nathan Fyock' visible, grid visible behind cookie consent). Captioned 'Instagram profile'. Both context shots accurate and honest. One note: the website context shot shows Porto Rocha's site rather than the personal site (which is 503 and documented in AI Notes). The caption says 'Porto Rocha website' which is accurate, but this is a judgment call the scraper made: it is defensible given the personal site is down and Porto Rocha is his current workplace. Not a fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have a caption and a link. Every work image is named to its project and links to the Porto Rocha case study page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Identity systems; these are static/print/digital identity projects. No video/audio discipline here. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "nathanfyock.com 503 documented in AI Notes with provenance detail (URL from Behance). No IG queue needed: the IG context shot was captured via scrape.py (public logged-out view), which is sufficient for a context shot. IG grid work not pulled but the Porto Rocha case studies give deep on-capability coverage. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://nathanfyock.com (503 but URL exists and is documented). Instagram: https://www.instagram.com/nathan.fyock/ (verified: profile page shows 'nathan.fyock' and 'Nathan Fyock'). LinkedIn: https://www.linkedin.com/in/nathan-fyock/. Email: not present in the entry and not mentioned in AI Notes or Source. No note that a search was run. Minor gap: no evidence the scraper searched for a public email. However, Design Directors at top studios rarely publish personal emails, and the entry is otherwise complete. Not escalating to fail for this alone given the confidence floor applies to factual fields that are unresearchable without login."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems. Work shown (Shop brand, Twitch rebrand, Nike identity systems) confirms both tags. Correct per TAXONOMY.md definitions."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States (correct, US-only per AI Notes). Size: 1 (person). Work Status: Employed, confirmed by two independent sources named in AI Notes (Porto Rocha /about + IG bio). Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with explicit reasoning in AI Notes: leads design at a top-tier studio, client-facing, conference-speaker level, but not a founder or partner. Grounded in documented work history. Seniority read present (8-10 yrs, three studios of increasing prestige, trajectory to Design Director)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note implies a prior relationship. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all appropriate zero-states. No evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry appears to have been a Claude-surfaced candidate (Source says 'Found using Claude, 2026-06-15'). No clip note with special instructions to parse. No --from-jonathan facts needed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes state facts with sources (Porto Rocha /about, IG bio) and hedges are present where inferred (Autonomy reasoning is explicitly marked as an estimate). Seniority and experience read is present (8-10 yrs, career trajectory). No bare assertions of unverified claims. No em-dashes found in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Design Director at Porto Rocha (New York). Promoted from Design Lead, circa March 2026...' Full and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/380f84ba-ae13-8168-b987-df56c3e2d5b1.json. All touched fields have entries with verified_at and set_by: agent. No jonathan-locked fields overwritten. One note: source_url is null on most fields rather than a specific URL, which is weak but not a blocking fail since AI Notes name the sources verbally."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Source, and Open Questions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: '1. Rating? 2. Familiarity?' Both are terse, both are conditional (no existing non-zero-state values for those fields), and both are appropriate. No story-nudge needed (Worked Together is Never, no relationship implied). No redundant questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching (the correct pre-gate status). Status will be flipped to Needs Review as part of this gate passage."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 4 distinct credit-verified projects, 11 work images with good depth, both context shots verified correct, metadata complete, Work Status resolved by two-source rule, no em-dashes, no judgment contradictions. The only observation worth flagging to Jonathan: the website context shot points to portorocha.com not nathanfyock.com (which is 503 and documented). Caption is honest ('Porto Rocha website') so this is not a fail, but Jonathan should know the personal site is down."
+}

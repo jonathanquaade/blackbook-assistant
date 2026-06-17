@@ -1,0 +1,122 @@
+{
+  "page_id": "380f84ba-ae13-8115-9ceb-f682f9f1139e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T17:00:00",
+  "verdict": "fail",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Active images span 5 distinct projects: OEM (site-12), Literary Sport (site-13), SAMEOLD (site-14, site-25), Silvertooth Agency (site-19, site-26), Springy Jeans (site-20). Well above the 3-project floor."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "site-25 captures the SAMEOLD catalog interior (product grid, different from the homepage). site-26 captures a Silvertooth artist sub-page. Two projects have interior shots. Acceptable for a static-screenshot constraint on JS-heavy Shopify/Sanity sites."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web) and Web design. All 9 active images are screenshots of live websites Logan built (confirmed per Mouthwash credits and Garden Variety client list). Off-capability product photography correctly rejected (site-03 through site-11)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01: gardenvariety.co -- text reads 'Garden Variety / Development Studio Based in Brooklyn, NY'. Correct website context shot. site-15: instagram.com/logansparlin -- Instagram wordmark visible, handle 'logansparlin', bio shows @gardenvariety. Correct identity, correct platform."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images have captions naming the project and a source link in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Frontend developer entry. No video or audio work in scope."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "gardenvariety.co says 'Portfolio available upon request'. AI Notes records this. Scraper correctly went to client sites for work images."
+    },
+    {
+      "id": "A.site26-content-concern",
+      "result": "warn",
+      "evidence": "site-26 (captioned 'Silvertooth artist page interior') shows a full-bleed portrait of Lucas Chemotti with his name and discipline. The UI is not the focal subject -- a newcomer scanning the entry sees a fashion portrait, not a frontend build. Jonathan's brief accepts live-site screenshots as the work for a developer, so this is not a hard fail; flagged as a calibration note. A screenshot of the Silvertooth homepage nav or a non-portrait interior page would be more legible as Logan's UI work."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (gardenvariety.co), Instagram (instagram.com/logansparlin, verified correct person), LinkedIn (linkedin.com/in/logan-sparlin-0ba65b73), Email (logan@gardenvariety.co). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) and Web design. Matches Sanity + Shopify Hydrogen builds observed."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Freelance, sourced from Sanity.io community profile ('Available for work') and Dribbble ('Available for new projects'), with LinkedIn lag noted in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3 (set_by agent). Reasoning in AI Notes: runs own studio, independent client builds, no evidence of large team lead."
+    },
+    {
+      "id": "B.works-at-link-schema-violation",
+      "result": "fail",
+      "evidence": "Works At Link is set to https://gardenvariety.co, which is identical to Website. CLAUDE.md schema: 'Works At Link (URL fallback when employer not in DB; never both)'. For a freelancer whose studio IS his personal website, Website alone is correct. Works At Link must be cleared. This was flagged in the attempt-1 review and was not fixed.",
+      "fix": "Clear the Works At Link field (set it to empty). Website stays as https://gardenvariety.co."
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with evidence. No clip note states a relationship. Correct."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note said 'Designer at Mouthwash (Los Angeles)'. Corrected to freelance developer / Brooklyn based on research. Discrepancy flagged in Open Question 3 for Jonathan. Source preserves the original clip note verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Salt and Stone CD claim hedged ('below 0.8 confidence'). Seniority hedged ('likely 5-8 yrs'). Autonomy reasoning present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Developer (Garden Variety, Brooklyn NY) who collaborates with Mouthwash Studio on frontend build work.' Specific and filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "warn",
+      "evidence": "source_url is null for every field in provenance (Website, Instagram, LinkedIn, Work Status, etc.). The specific URLs that verified Work Status (Sanity.io profile, Dribbble) are mentioned in AI Notes but not recorded in provenance.source_url. Not a blocking fail in v1 but a recurring gap."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, Source, captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Four questions: 1 (Familiarity, terse conditional), 2 (Rating, terse conditional), 3 (Mouthwash LA vs freelance Brooklyn confirmation), 4 (Salt and Stone CD role below 0.8). All necessary, none redundant."
+    },
+    {
+      "id": "D.status-process-note",
+      "result": "warn",
+      "evidence": "Entry status was flipped to Needs Review by the scraper (provenance timestamp 16:03) before this reviewer ran (16:10 in attempt 1). The reviewer is the only agent that should flip to Needs Review per the pipeline contract. Noted for v1 calibration; no corrective action needed on the entry itself."
+    }
+  ],
+  "summary": "One hard fail: Works At Link duplicates Website (both set to gardenvariety.co) in violation of the schema rule 'never both'. The scraper must clear Works At Link. Everything else passes: 5 distinct projects, correct context shots (verified visually), on-capability shots, terse Open Questions, hedged AI Notes, no em-dashes. Two warns logged for calibration (site-26 portrait legibility, provenance source_url gaps).",
+  "to": "scraper"
+}

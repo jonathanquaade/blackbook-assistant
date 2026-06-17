@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-8156-aaa3-e0ef32823347",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T16:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 distinct project links across 7+ named projects: Seed, Fender, Nike Basketball (Behance), Nike Training Apparel (DIA), Adidas 3ST (DIA), Coinbase Onchain Summer (DIA), NYT illustration series, and 26a1 type foundry (2 typefaces). No repeated angles of the same project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going into interior work: Seed shows product + brand details; Fender shows strategy visual, X-diagram, musical notation; Nike Apparel shows printed textile close-up; Adidas shows typographic system applied to a skater portrait; type foundry shows specimen sheets. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Creative technology, Graphic design, Type design, Web design. Work shows generative identity systems (Nike, Adidas, Coinbase), custom variable type (Seed), type foundry specimens (26a1), editorial generative illustration (NYT). All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-23.png visually confirmed as wenzeldaniel.com (his name, DIA/MOUTHWASH references visible). site-24.png visually confirmed as instagram.com with handle wnzldnl and username 'daniel wenzel'. Both labeled correctly."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 26 active images in the manifest have captions naming the project and a source link. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "DIA project pages used CDN mp4 files (not Vimeo/YouTube iframes), so no embeddable video was available. The scraper captured still-image equivalents from the same projects and marked the mp4 attempts as rejected. No YouTube/Vimeo/SoundCloud URLs were skipped. Acceptable for a graphic/type/creative-tech designer whose primary work is image-based."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin areas. AI Notes covers work history. IG queue not needed (logged-out grid sufficient for context shot; no IG-only work dependency)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual creative."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: wenzeldaniel.com. Instagram: instagram.com/wnzldnl (verified from screenshot - correct person, bio confirms 'ct director @mouthwash.studio'). LinkedIn: linkedin.com/in/wnzldnl. Email: dw@wenzeldaniel.com (from personal site). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology, Graphic design, Type design, Web design. Grounded in his actual output: generative type systems, identity design, his 26a1 type foundry, and his CT Director role."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. Sources named in AI Notes: site + LinkedIn + IG bio all confirm MOUTHWASH Studio with no conflicting signal. Meets the multi-source objective rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: director-level with hands-on execution, ~9 years experience, runs creative technology at studio; not fully independent (within studio structure). Grounded in public work history."
+    },
+    {
+      "id": "C.no-contradicting-judgments",
+      "result": "pass",
+      "evidence": "Scout-discovered entry with no clip note. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are valid with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note. This is a scout-discovered entry (Source: Found using Claude). Discovery context recorded in Name provenance source_url. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (clients, titles, dates, institutions) and hedge inferences. Seniority read included ('Senior director level: ~9 years professional experience'). Autonomy estimate paired with reasoning. Sources cited. No bare assertions about quality or working style."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Confirmed via wenzeldaniel.com (primary), LinkedIn (MOUTHWASH Studio), IG bio (@wnzldnl: ct director @mouthwash.studio).' Fully filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file has correct {page_id, fields} wrapper (not the flat format noted as a Batch 2 risk). All touched fields present: Name, Type, Website, Instagram, LinkedIn, Email, Country, Size, Work Status, Works At Link, Autonomy, Capabilities, Source, AI Notes, Entry Status, Worked Together, Familiarity, Work With?, Images. All set_by: agent. No field missing source_url except Entry Status and Images (structural). Confidence floor met on all factual fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Source, and all manifest captions. No em-dashes found anywhere."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. Appropriate: no unresolvable ambiguities, no judgment fields with non-zero values that need confirming, no story-nudge trigger (Worked Together stays Never, no known relationship)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Will be flipped to Needs Review on pass."
+    }
+  ],
+  "notes": "Clean entry. 26 images across 9 distinct project sources, well-matched to capabilities. Provenance structure is correct (the Batch 2 flat-format risk did not materialise here). One observation for Jonathan's calibration only (not a gate failure): the three Fender images (site-04/05/06) are strategy and framework diagrams rather than polished identity outputs; they are genuine project interiors from the Mouthwash case study but lean abstract. Taste call, not a completeness failure.",
+  "to": "scraper"
+}

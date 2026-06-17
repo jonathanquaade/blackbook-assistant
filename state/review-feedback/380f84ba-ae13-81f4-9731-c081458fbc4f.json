@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-81f4-9731-c081458fbc4f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Place des Arts, CISM Radio, Corridor Culturel, SCALE AI, Kunsthalle Basel. No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside each: identity spreads, logo construction sheet (site-15.jpg), environmental applications, motion stills. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 5 projects are branding and identity work, matching tagged Capabilities (Graphic design, Identity systems). site-14.jpg is an architectural exterior from the Porto Rocha Kunsthalle Basel case study included as project context; the identity work (K monogram, logo construction) is present in the same set."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png is etiennemurphy.com (verified: shows E. Murphy bio and Kunsthalle Basel hero). site-17.png is instagram.com with @etiennemu handle and Etienne Murphy name in bio. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 work images have captions naming project and source links. Both context shots captioned."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio work tagged; graphic/identity designer. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents etiennemurphy.com 503. Work sourced from Behance and Porto Rocha case studies instead. No unexplained thin sections."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email is empty and no Open Question was raised. The captured website screenshot (site-16.png) visibly shows 'mail: etiennemurphy@gmail.com' in the bio column of etiennemurphy.com. The address was findable from a source already in hand and was not set.",
+      "fix": "Read site-16.png (or re-fetch etiennemurphy.com if the 503 has cleared) to confirm the address, then set Email to etiennemurphy@gmail.com in keeper.py with provenance source_url etiennemurphy.com."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design, Identity systems, Web design match observed Behance and Porto Rocha work. Web design mentioned in bio; no web project captured but tagging is supportable."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Employed. Multi-source reasoning present in AI Notes: Porto Rocha about page (primary) + The Org + Behance all agree; no conflicting signal."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent. Reasoning in AI Notes: Senior Designer under Leo Porto and Felipe Rocha at a structured studio, capable of project-level ownership within that framework."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No clip note suggesting a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was sourced by the agent (not a clip note with instructions). Source field reflects this correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (10+ years, trajectory from Montreal junior roles to AD-level to NYC Senior Designer), Autonomy reasoning, Work Status source list, and Country sourcing. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Confirmed Senior Designer at Porto Rocha via Porto Rocha about page (direct team listing), The Org, Behance, LinkedIn snippet.'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at on all touched fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Source, captions, or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions warranted; all resolvable fields are resolved. Rating and Familiarity are Jonathan's to set at review."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching. Correct: the reviewer holds it here pending the fix."
+    }
+  ],
+  "to": "scraper"
+}

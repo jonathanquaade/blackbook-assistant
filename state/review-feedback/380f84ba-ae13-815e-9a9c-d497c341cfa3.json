@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-815e-9a9c-d497c341cfa3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "n/a",
+      "evidence": "No work captured; identity unresolvable without Jonathan input. Absence is the correct output, not a failure."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "n/a",
+      "evidence": "Same as above."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "n/a",
+      "evidence": "Capabilities intentionally blank pending Jonathan input (OQ #2). Cannot assess without a confirmed portfolio."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No confirmed personal website or Instagram exists for Rose Rich (designer at Mouthwash). Nothing to screenshot. Absence explained in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images present; none uncaptioned."
+    },
+    {
+      "id": "A.embeds",
+      "result": "n/a",
+      "evidence": "No work to embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly documents the search failure: no portfolio, LinkedIn, or Instagram found; two mismatched Rose Rich profiles (stylist, CX professional) identified and ruled out; Mouthwash does not list team publicly."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all searched and documented as not found for a Rose Rich matching this profile. Works At Link set to mouthwash.studio (the employer, correctly used as fallback). Two impostor profiles ruled out and named in AI Notes."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Left blank intentionally; cannot tag without portfolio. OQ #2 asks Jonathan what she designs."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = United States (Mouthwash is LA-based, set_by agent). Size = 1 (person). Work Status = Employed, sourced to Jonathan's stated context. AI Notes notes the sourcing."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Cannot estimate without portfolio or work history. AI Notes explicitly states this and explains why."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with Source, which records Jonathan's factual confirmation of employment only, no relationship claim."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Jonathan's confirmation (designer at Mouthwash, currently employed) is preserved verbatim in Source and acted on: Work Status = Employed, Works At Link = mouthwash.studio."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status hedge present ('set to Employed on Jonathan stated context'). Seniority/Autonomy gap documented rather than guessed. No unverified assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Surfaced by agent scout, 2026-06-15. Jonathan confirmed: designer at Mouthwash Studio, Los Angeles, currently employed.'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by and verified_at. source_url is null on several fields where the source is Jonathan's verbal/clip confirmation (not a URL); this is acceptable. Minor: Name.source_url contains text that belongs in a notes field, not a URL slot, but it does not misrepresent the data."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two OQs present. OQ #1 addresses the identity gap and asks for a portfolio URL or social handle. OQ #2 asks what she designs (Capabilities). Both are conditional: neither asks for a field that already has a non-zero value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status flipped to Needs Review by reviewer after this gate."
+    }
+  ],
+  "notes": "This is a structurally honest 'unidentified, pending Jonathan' entry. The incompleteness is the correct output given zero public online presence for a Rose Rich at Mouthwash. No unverified social was attached. The OQs route it to Jonathan's inbox for the two pieces only he can provide (portfolio URL and discipline). Passing and flipping to Needs Review.",
+  "to": null
+}

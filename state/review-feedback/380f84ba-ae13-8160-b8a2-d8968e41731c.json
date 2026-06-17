@@ -1,0 +1,119 @@
+{
+  "page_id": "380f84ba-ae13-8160-b8a2-d8968e41731c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Active images span at least 6 distinct named projects: MW.S Reel 2025, EigenCloud, The North Face, Seed, Nike, Hims and Hers, T1 Energy, Refractions (Behance), Animated Haiku (Behance). Diversity is not the problem."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "The Mouthwash project stills (site-01 through site-13) are the wrong images entirely and cannot be evaluated for depth. Among the images that ARE correct: Vimeo thumbnails (reel-thumb, eigencloud-thumb, tnf-thumb, seed-thumb, nike-thumb) are all title-card / hero frames only, no interiors. The Behance stills (site-17, site-18, site-19) do show interior detail. Depth is unresolvable until the Mouthwash stills are re-captured correctly.",
+      "fix": "Re-capture Mouthwash project stills from mouthwash.studio project pages. After correct capture, pull interior frames from at least 2 projects (not just title cards or poster frames). The Vimeo thumbnails are fine as video previews but should be supplemented with interior stills from the case-study pages."
+    },
+    {
+      "id": "A.captions-image-mismatch",
+      "result": "fail",
+      "evidence": "CRITICAL. 13 of the 22 active stills (site-01 through site-13) show completely wrong content vs. their captions. Verified by opening each file: site-01 (captioned 'EigenCloud brand motion system') shows a list of desert names; site-02 (captioned 'EigenCloud kinetic identity') shows an abstract pink-purple gradient with a play button; site-03 (captioned 'EigenCloud 3D motion exploration') shows a person in a basketball set on an orange stage; site-04 (captioned 'Seed brand motion') shows a red slide reading 'What does the future of energy look like?'; site-05 (captioned 'Seed type animation') shows a Mesura architecture firm statement from Barcelona; site-06 (captioned 'Seed brand system') shows an Air Company billboard on a New York building; site-07 (captioned 'Hims and Hers motion system') shows a Comme des Garcons high-top shoe; site-08 (captioned 'Hims and Hers motion principles') shows two people in a fashion/sport photo; site-09 (captioned 'Hims and Hers motion expression') shows an Air Company perfume bottle; site-11 (captioned 'T1 Energy motion typography') shows an interior architecture room with a chair; site-12 (captioned 'T1 Energy brand system') shows a Literary Sport athletic apparel website; site-13 (captioned 'T1 Energy motion identity') shows a Literary Sport product grid. The Sanity CDN URLs in the manifest returned images from unrelated Mouthwash project pages, not the EigenCloud/Seed/Hims and Hers/T1 Energy projects they are attributed to.",
+      "fix": "Re-scrape mouthwash.studio/project/eigencloud/, mouthwash.studio/project/seed/, mouthwash.studio/project/hims-and-hers/, and mouthwash.studio/project/t1-energy/ to get the correct images. Verify each downloaded file visually before adding to the manifest. The Sanity CDN URL approach pulled from the wrong project pages or the CDN returned incorrect image responses."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "conditional-pass",
+      "evidence": "Tagged Capability is '3D & motion'. Vimeo thumbnails and Behance stills (site-17, site-18, site-19 = 'Refractions' 3D glass renders; site-19 = 'Animated Haiku' kinetic type) are on-capability. The wrong stills cannot be assessed. Pending re-capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Two context shots are present. site-15 (captioned 'Mouthwash Studio website'): confirmed correct, shows mouthwash.studio homepage with MW.S branding. site-10 (captioned 'Behance portfolio'): confirmed correct, shows Behance profile for Diego Martinez. However, there is NO personal website screenshot (correctly absent, no personal site exists) and NO Instagram profile screenshot. The Behance shot is a reasonable substitute context anchor since IG is unverified, but the entry is missing a context shot for Diego's own presence. This is a minor issue given the IG queue entry, but the Behance shot functions as the personal profile anchor. Acceptable as-is given IG is genuinely unverifiable.",
+      "fix": "No action needed on context shots specifically. The absence of a personal website or Instagram is documented and the IG queue entry covers it."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All active images in the manifest have captions and source links. The captions are factually wrong for 13 images (see A.captions-image-mismatch), but the field is not empty."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Five Vimeo embeds present (MW.S Reel 2025, EigenCloud Brand Film, The North Face: Power of Nature, Seed Brand Identity Video, Nike Retail: It's All You), each with a thumbnail image and a linked caption. Pattern of thumbnail + embed correctly implemented. Entry is not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No personal website found; AI Notes states this explicitly ('No personal website found after searching common domain patterns'). Instagram unverified; AI Notes explains the common-name handle problem; an Open Question is raised. The entry is not silently thin."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "No personal website (genuinely none found, documented). No Instagram (documented as unverifiable, Open Question raised). LinkedIn present (linkedin.com/in/diego-martinez-79a72b290). No personal email found; AI Notes does not address email absence. Minor gap: public email search is not mentioned. Works At Link correctly set to mouthwash.studio."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "'3D & motion' matches the role description and Behance work (kinetic typography, 3D abstraction, motion design per Behance Dmmartinez20 profile description in AI Notes)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = United States (correct, LA-based). Size = 1 (correct for a person). Work Status = Employed. AI Notes states LinkedIn and ZoomInfo agree; no conflicting signal from site or IG. Objective multi-source rule applied and sources named."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 1. Reasoning: junior title, first post-grad studio role, structured team environment. Grounded in verifiable facts (role title, graduation year, team size from Creative Boom 2025). Appropriately hedged ('suggesting roughly 2 years of post-grad experience')."
+    },
+    {
+      "id": "C.no-judgment-contradictions",
+      "result": "pass",
+      "evidence": "No clip note relationship facts. Zero-states (Never, Don't know them, Unvetted) are appropriate. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note (from roster) stated only: 'Designer at Mouthwash (Los Angeles), currently employed.' This is a factual statement already reflected in Work Status and Works At Link. No relationship facts, passcodes, or tagging instructions present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences are hedged: 'suggesting roughly 2 years of post-grad experience' and 'Autonomy 1: first post-grad studio role, junior title' (reasoned, not asserted as certain). Verifiable facts (LinkedIn, ZoomInfo, Creative Boom 2025) are cited. Seniority read present: 'Entry-level seniority, early career'. No em-dashes. No unverified flat assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Jr. Motion Designer at Mouthwash Studio (Los Angeles); LinkedIn snippet and ZoomInfo confirm role and September 2024 start.' Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "unverified",
+      "evidence": "Provenance file not checked (file not present in assets directory; provenance lives at state/provenance/). Not blocking given the image failures are the primary issue. Assumed written by scraper per standard pipeline."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Source, and Open Questions checked programmatically. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: (1) Instagram handle verification, (2) Familiarity, (3) Rating. All terse and conditional. No question for a field that already has a non-zero value. The story nudge does not apply (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. It should NOT advance to Needs Review until the image mismatch is resolved. Correct to remain in Enriching."
+    }
+  ],
+  "summary": "The entry has one critical and pervasive failure that blocks Needs Review: 13 of 22 active still images are the wrong images with the wrong captions. The Sanity CDN URLs used to pull Mouthwash project stills (EigenCloud, Seed, Hims and Hers, T1 Energy) returned images from unrelated projects or unrelated sites entirely. Each image was visually verified. The metadata (Type, Capabilities, Country, Size, Work Status, Autonomy, Source, Open Questions, AI Notes, embeds, thumbnails) is solid and honest. The 'at Mouthwash' framing is appropriate and acceptable given Diego has no individual credit available; the Behance stills (Refractions, Animated Haiku) are correctly attributed personal work. The fix is surgical: re-scrape the four Mouthwash project pages and verify each downloaded file visually before adding to the manifest.",
+  "to": "scraper"
+}

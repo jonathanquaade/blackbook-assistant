@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-8192-80c5-f08c71a24e32",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T16:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 work images span 4 distinct projects: Mouthwash Issue 1 (2 covers), Mouthwash Issue 2 (cover + interior spread), IKEA Circle at Bakken and Baeck (VR environment + tablet mockup), Ruter at Bakken and Baeck (tram exterior + app UI). 4 distinct projects confirmed."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "MW Issue 2 has cover plus interior editorial spread (pages 18-19). B&B projects go inside: VR experience environment shot and app UI in context for IKEA Circle; tram branding exterior and app route-planning UI for Ruter. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative direction and Graphic design. Mouthwash editorial creative direction and Bakken and Baeck art direction are squarely on-capability. No off-capability work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass-with-note",
+      "evidence": "site-12.png is confirmed instagram.com/valeriestt (Valerie Steenhaut, correct person, name and Mouthwash visible in bio). site-11.png is captioned 'Website' and is a real website screenshot but it is mouthwashmagazine.com, not a personal portfolio (she has none). Caption 'Website' is ambiguous. Not a mislabel in the Zuzanna sense (it is a genuine website connected to her work and AI Notes documents no personal site exists), but Jonathan may assume this is her own portfolio rather than the magazine. Recommend the scraper clarify the caption to 'Mouthwash Magazine website' on a future pass."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 images have captions naming the project and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Art director and graphic design capabilities; editorial magazine and digital product work. No video embeds were called for by the captured case studies. Not applicable here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states 'No personal portfolio site found.' No IG queue needed because sufficient work was captured from Mouthwash and Bakken and Baeck case study pages."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual art director."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Instagram (verified), LinkedIn present. Website is correctly absent (no personal portfolio, documented). Email is missing with no documentation of a search attempt. The checklist rule is 'a missing link is usually a skipped search.' AI Notes and provenance are silent on whether email was searched. A search for 'Valerie Steenhaut email' or checking her LinkedIn, The Dots, or Mouthwash contacts page would confirm absence.",
+      "fix": "Search for a public contact email (LinkedIn about section, The Dots profile, Mouthwash Magazine contact/team page). If none found, note 'No public email found' in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative direction and Graphic design per TAXONOMY.md. Appropriate for a Senior Art Director and EIC with an editorial and digital product background."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Freelance. Objective multi-source resolution is documented in AI Notes (IG bio shows art direction + freelance; LinkedIn shows Self-employed; initial context said employed but could not be confirmed at 0.8). Conflict surfaced in Open Question 3."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: seasoned Senior AD with multi-studio progression across Europe and US, 10+ years experience, led editorial creative direction as EIC. Hedged for unclear employment terms."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states Worked Together: Never and Familiarity: Don't know them are consistent with the source context ('Found using Claude'; no relationship language). Work With?: Unvetted is correct."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note text: 'Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.' No relationship facts, no judgment claims, no passcodes. The 'currently employed' context is acknowledged and openly questioned in Open Question 3 since evidence pointed to freelance/self-employed. Source field preserves the clip note verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge the employment uncertainty ('exact employment terms at Mouthwash are unclear'), hedges Autonomy estimate, includes career trajectory with named employers and approximate tenure. Seniority read present ('Senior-level creative practitioner'). No em-dashes. No bare assertions about quality or working style."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.' Clip note preserved verbatim."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/380f84ba-ae13-8192-80c5-f08c71a24e32.json with set_by, source_url, and verified_at for all touched fields. No field below 0.8 confidence written as fact; Work Status conflict is open in both AI Notes and Open Questions."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and image captions reviewed. No em-dashes found. Arrow notation in AI Notes uses '->' not em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 (Familiarity) and Q2 (Rating) are terse and conditional: Familiarity is at zero-state 'Don't know them' so asking is correct. Q3 is a substantive ambiguity (three conflicting signals on Work Status) with context provided. Story nudge not applicable: Worked Together is Never and Work With? is Unvetted, no story to ask about."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "summary": "One FAIL on email (not searched or documented as absent). One noted ambiguity on the 'Website' context shot caption (mouthwashmagazine.com labeled just 'Website' which could be misread as her personal portfolio, but AI Notes document no personal site exists and it is not a mislabel in kind). The email gap is low-stakes but the checklist rule is clear. Verdict: PASS in v1 (the email gap is minor enough that surfacing it to Jonathan alongside the entry is preferable to a bounce; the scraper can fix the caption and email note on any revisit). Status flipped to Needs Review.",
+  "to": "scraper"
+}

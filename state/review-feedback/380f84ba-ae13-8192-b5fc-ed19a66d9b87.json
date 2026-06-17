@@ -1,0 +1,121 @@
+{
+  "page_id": "380f84ba-ae13-8192-b5fc-ed19a66d9b87",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Images span 3 distinct projects: Fender (site-01 to 03), Mouthwash Magazine Issue 1 (site-04 to 06), Seed (site-07). Three projects is sufficient for diversity."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project; magazine covers show interior editorial look; not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Jason Annas is tagged Brand strategy + Copywriting, but every image is a visual campaign photograph or editorial cover image. None of these images demonstrate strategy or copy work: a Converse collab shoe closeup (site-02), fashion/campaign photography (site-01, site-03, site-04, site-05, site-06), a typographic poster (site-07). The 2 bookmarks are the actual on-capability artifacts (Fender project page, Mouthwash Magazine). The images are illustrative of the projects, but they represent the VISUAL output of those projects, not Jason's copywriting or strategy contribution. This is not necessarily wrong for a verbal person (CLAUDE.md says grab representative images + embed/bookmark for verbal creatives), but the caption framing should be honest: these images should be captioned as 'project context' rather than implying Jason made them. The current setup is borderline acceptable but the mislabeled/wrong images (see below) make this a harder call.",
+      "fix": "Keep the 2 bookmarks as the primary portfolio artifacts. Recaption the images to make clear they are project context ('Fender campaign context, Mouthwash 2025') rather than Jason's output. If the intent is correct per CLAUDE.md pattern for verbal creatives, no image change is needed, just caption honesty."
+    },
+    {
+      "id": "A.context-shots-present-correct",
+      "result": "fail",
+      "evidence": "Two context shots exist: site-10.png (Mouthwash Studio site, correctly shows mouthwash.studio with MWS logo and nav) and site-11.png (Mouthwash Magazine site, correctly shows mouthwashmagazine.com with the MM cover). The CLAUDE.md requirement is 'a screenshot of their WEBSITE homepage and their INSTAGRAM profile.' Jason has no personal website, and the scraper correctly documented no confirmed Instagram. However: (1) no Instagram context shot at all; the instructions say 'add a screenshot... of their INSTAGRAM profile' and the absence is not explicitly documented in the manifest as 'no Instagram found' (the AI Notes do document this, which partially covers it); (2) site-10 is correctly labeled as the employer site, not a personal site, so that substitution should be explicitly called out. The AI Notes do cover the absence, so this is a marginal PASS on absence documentation, but the context-shot set is incomplete vs the standard.",
+      "fix": "Minor: add a note in the manifest for site-10 and site-11 making explicit these are employer/publication context shots substituting for a missing personal site. The IG absence is documented in AI Notes and OQ1 which is acceptable."
+    },
+    {
+      "id": "A.mislabeled-images",
+      "result": "fail",
+      "evidence": "site-08.png is captioned 'Seed, Mouthwash Studio' in the manifest but the image shows a Mesura (Barcelona architecture studio) text slide reading 'Mesura is a model for creativity. We meet durable creative solutions first by stepping into the unknown..., Barcelona, SP +34 934 672 190'. This is not a Seed project image. site-09.png is also captioned 'Seed, Mouthwash Studio' but shows an Air Company outdoor billboard ('The future of fragrance is transformative, AIR COMPANY'). Air Company appears in the AI Notes as a separate Mouthwash client Jason attended an event for. Both images are captioned as belonging to Seed when they visually belong to different projects (or are wrong images entirely). The Mesura image has no connection to Mouthwash or Jason Annas at all.",
+      "fix": "Remove site-08.png (Mesura content, completely wrong, no evident connection to Mouthwash or Jason). For site-09.png: if the Air Company billboard is from a Mouthwash project Jason worked on, recaption it as 'Air Company, Mouthwash Studio' with the correct project link. If not, remove it. Re-run keeper.py body-reset and upload after fixing the manifest."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All manifest entries have captions and links. The mislabeling issue is separate from being uncaptioned."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio work applies here (Brand strategy + Copywriting). Two bookmarks provided for the written/strategy portfolio artifacts. Appropriate for the discipline."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No personal site: AI Notes say 'No personal portfolio site or verified Instagram found.' IG absence: AI Notes document both checked handles (@annasjason, @jasonannas) are wrong people. OQ1 asks Jonathan directly. IG queue not needed as the absence is confirmed not throttled."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: none (personal site absent, documented); Works At Link: mouthwash.studio (correct fallback); Instagram: none found, two handles verified wrong (documented in AI Notes + OQ); LinkedIn: /in/jason-annas-78ab54113/ (populated); Email: not listed, no provenance field. Email absence is a potential gap but not flagged as found-and-missing; for a staff contributor at a studio this is acceptable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy + Copywriting. Grounded in confirmed credits (Fender Strategy, Mouthwash Magazine Copy Editor)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "fail",
+      "evidence": "Work Status = Employed. Sources: AI Notes say 'current role at Mouthwash inferred from credits and Jonathan context.' The provenance source_url for Work Status is null (no URL recorded). The objective multi-source rule requires naming which sources were checked and which were trusted. AI Notes note the LinkedIn title is stale (Exhibitions Assistant) but do not state which sources were checked to confirm Employed at Mouthwash. 'Jonathan context' is not a named source with a URL. This is below the confidence documentation standard even if the conclusion is likely correct.",
+      "fix": "In AI Notes, name the sources checked for Work Status: e.g. 'Employed: inferred from confirmed project credits on mouthwash.studio/project/fender (Strategy credit) and mouthwashmagazine.com (Copy Editor credit); LinkedIn shows stale title; no personal site or IG to cross-check; conclusion held at 0.8 based on two named Mouthwash project credits.' Also set source_url in provenance for the Work Status field."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 2, set_by agent. Reasoning in AI Notes: 'contributor-level project role, not independent creative lead; insufficient evidence to raise above 2 without portfolio or title confirmation.' Grounded, hedged, present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with nothing in the clip note suggesting a relationship. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source says 'Found using Claude, 2026-06-15' suggesting this was a scout-originated entry, not a web clipper entry with a clip note. No clip note text to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Fender Strategy credit hedged as 'circa 2024' and 'inferred from credits'; LinkedIn stale acknowledged; seniority reads 'early career, likely junior to mid-level' (hedged); Autonomy reasoning explicit. Seniority + experience included per requirement."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source is detailed: credits, LinkedIn match, BFA.com attendance. Well-documented."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "fail",
+      "evidence": "Several field provenance entries have source_url = null: Country, Type, Size, Capabilities, Work Status, Works At Link, LinkedIn, Autonomy, Worked Together, Familiarity, Work With?. The CLAUDE.md contract requires source_url in provenance for every touched field. Work Status in particular (a judgment requiring the multi-source rule) has no source URL recorded. This is a systemic provenance gap.",
+      "fix": "For each field with source_url null, back-fill the source URL (e.g. mouthwash.studio/project/fender for Capabilities and Work Status; linkedin.com URL for LinkedIn; mouthwash.studio for Works At Link; a source for Country/Size). Fields where the source is truly multi-URL or inferred can note that in AI Notes, but the provenance record should not be blank."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions, Source. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "OQ1 (Instagram) and OQ2 (current title): both terse, conditional (Instagram not found, title not confirmed), appropriate. OQ2 correctly asks for his current Mouthwash title since LinkedIn shows only a stale role."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching, awaiting this gate. Correct; the reviewer will flip it on pass."
+    }
+  ],
+  "summary": "3 FAILs block this entry. The most urgent: site-08.png is a Mesura (Barcelona architecture firm) image, completely unrelated to Jason Annas or Mouthwash, mislabeled as 'Seed, Mouthwash Studio'. site-09.png shows Air Company content also mislabeled as Seed. The provenance source_url fields are null across nearly all fields (systemic gap). Work Status lacks documented source resolution per the objective multi-source rule. The on-capability framing of images is a softer concern, noted but not a hard block given CLAUDE.md's guidance for verbal creatives.",
+  "to": "scraper"
+}

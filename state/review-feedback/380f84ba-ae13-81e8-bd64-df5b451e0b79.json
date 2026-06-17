@@ -1,0 +1,125 @@
+{
+  "page_id": "380f84ba-ae13-81e8-bd64-df5b451e0b79",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images span 4 distinct projects: Quilo (3), Sundance (3), Fellow (3), Seed (3) plus Astro typeface (1). Projects are genuinely different."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each project: Quilo shows cover + spine + detail; Seed shows product + microbe visual + capsule; Fellow shows logo + spec + icon detail."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-05.jpg is captioned 'Sundance Film Festival identity, 2023 (at Porto Rocha)' but the image shows a historical Grand Jury Prize winners table -- editorial website content, not design or identity work. This is a wrong image pulled from inside the case study page. Capabilities tagged include Identity systems and Graphic design; a data table of past prize winners does not demonstrate either.",
+      "fix": "Replace site-05.jpg with an on-capability image from the portorocha.com/sundance case study: the actual Sundance 2023 identity system (wordmark, motion, print, digital applications). There are multiple on-brand images on that case study page."
+    },
+    {
+      "id": "A.context-shots-present-and-correct",
+      "result": "fail",
+      "evidence": "Two issues. (1) site-14.png is captioned 'Website' (source_url: natalia.earth) but the image shows only a narrow text-only fragment -- a bio line about Natalia at the top and a Mouthwash Magazine article excerpt below. It is not a recognizable full-page homepage screenshot of natalia.earth and would not function as a memory anchor for Jonathan. (2) site-15.png is captioned 'Instagram profile' and correctly shows instagram.com/nat.wrk with Natalia Oledzka confirmed in the bio -- this one passes.",
+      "fix": "Re-shoot site-14.png as a proper full-page or viewport screenshot of natalia.earth/the homepage so it reads as a portfolio homepage at a glance. Use scrape.py shot https://natalia.earth --out assets/380f84ba-ae13-81e8-bd64-df5b451e0b79 --caption 'Website'."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio capabilities tagged; no embed requirement triggered. Type design and identity/graphic work is image-based."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents that natalia.earth returned a 503 at research time; IG grab not required (scrape.py grid sufficient for context); no unexplained thinness."
+    },
+    {
+      "id": "A.mislabeled-image",
+      "result": "fail",
+      "evidence": "fellow-02.jpg is captioned 'Fellow identity, 2025 (at MOUTHWASH Studio)' but shows a vintage typeface alphabet specimen on graph paper. This image has no visible connection to the Fellow coffee brand identity. It appears to be a reference or inspirational image embedded in the MOUTHWASH case study page that was grabbed indiscriminately. fellow-03.jpg (icon set on white) is plausible as Fellow identity system icons but has no visible Fellow branding in the frame to confirm it.",
+      "fix": "Open mouthwash.studio/project/fellow/ and replace fellow-02.jpg with an image that shows the Fellow brand identity (wordmark in context, packaging, color system, etc.). Verify fellow-03.jpg is genuinely from the Fellow project page and not another project's assets."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Website, Instagram, LinkedIn are all present and correct. Email is absent from the entry with no mention in AI Notes of a search attempt. Her Instagram bio (visible in site-15.png) shows 'life: @cabbage.email' which appears to be an email address hint (cabbage.email domain). This is a findable lead that was not acted on.",
+      "fix": "Check @cabbage.email as a possible public contact email. If confirmed as her contact address, add it to the Email field. If it resolves to a personal/private address, note in AI Notes that no public professional email was found."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design, Identity systems, Type design, Web design. All confirmed from work evidence in AI Notes. Reasonable and grounded."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. Multi-source resolution documented in AI Notes (LinkedIn + ZoomInfo both show MOUTHWASH; site was 503). Objective rule applied correctly."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). Reasoning in AI Notes: director-level at MOUTHWASH, Porto Rocha pedigree, not a founder so 4 not 5. Grounded in real work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "No clip note states a relationship with Jonathan. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all appropriate given no evidence to the contrary."
+    },
+    {
+      "id": "C.clip-note-fully-acted-on",
+      "result": "pass",
+      "evidence": "Entry was found via scout (not clipped by Jonathan). Source field records 'Found using Claude, 2026-06-15'. No clip note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read ('senior-to-director trajectory, likely early-to-mid AD level'), career history with specific employers and dates, capability confirmation from work evidence, Work Status multi-source resolution, and Autonomy reasoning. No em-dashes present. Appropriately hedged ('likely', 'roughly')."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Associate Design Director at MOUTHWASH Studio (Los Angeles). Verified via LinkedIn (title: Associate Design Director at MOUTHWASH Studio) and ZoomInfo. Work account @nat.wrk confirmed via Behance bio.' Complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with set_by and verified_at for every touched field. No field written below 0.8 confidence per AI Notes."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Source, captions. No em-dashes found anywhere written for Jonathan."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No judgment fields already have non-zero values that would require questions. No story nudge triggered (Worked Together is Never). No unresolvables left open without documentation."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching status, as expected before the reviewer gate. Status will be flipped to Needs Review only on a full pass."
+    }
+  ],
+  "fail_summary": [
+    "A.on-capability: site-05.jpg (Sundance) is a Grand Jury Prize data table, not identity/design work -- replace with an on-capability image from the Porto Rocha Sundance case study.",
+    "A.context-shots: site-14.png (website) is a thin text fragment, not a recognizable homepage screenshot -- re-shoot natalia.earth as a proper viewport/full-page screenshot.",
+    "A.mislabeled-image: fellow-02.jpg (captioned 'Fellow identity') is a vintage typeface alphabet on graph paper, clearly not Fellow brand identity -- replace with an on-project image from mouthwash.studio/project/fellow/.",
+    "B.all-findable-links: Email absent; IG bio shows 'life: @cabbage.email' as a findable lead that was not acted on."
+  ],
+  "to": "scraper"
+}

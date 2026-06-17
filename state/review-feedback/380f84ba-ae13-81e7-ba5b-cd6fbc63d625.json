@@ -1,0 +1,113 @@
+{
+  "page_id": "380f84ba-ae13-81e7-ba5b-cd6fbc63d625",
+  "name": "Hans Kleinschmidt",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images across 5 named series: A Leave of Absence (3 images), Graziano and Gutierrez (3), Rhyme and Punishment (3), Shan Goshorn (3), Breakup (2). All are visually distinct photography projects with different subjects, locations, and visual registers. Confirmed by opening representative images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior images per series for four of the five projects. Goes inside each series rather than one hero frame per project. Depth is strong."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Art practice and Photography. All 14 work images are fine-art photography series from hanskleinschmidt.com. No operations, production, or brand work included. Clean capability match."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: visually confirmed hanskleinschmidt.com homepage (Hans Kleinschmidt name/wordmark, nav, photo grid visible). site-14.png: visually confirmed instagram.com/hanskleinschmidt profile (Instagram chrome, @hanskleinschmidt handle, 2,831 followers, photo grid). Both captions match the actual screenshots. No mislabeled context shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 manifest entries carry named captions and source links. Project images each link to their specific series page on hanskleinschmidt.com."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Photography and art practice. No video or audio embeds expected or needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "16 images present including 14 work images and 2 context shots. No thin or unexplained gap."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Website (hanskleinschmidt.com), Instagram (instagram.com/hanskleinschmidt), and LinkedIn all present. Email field is empty. AI Notes and provenance contain no record of searching for a public email (no statement such as 'no public email found'). The P1 runbook explicitly requires capturing public contact email. hanskleinschmidt.com has a contact page that was not documented as checked.",
+      "fix": "Check hanskleinschmidt.com/contact and the IG bio for a public email address. If none is found, add a note in AI Notes stating 'no public email found on site or IG bio' so the absence is documented rather than silent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Art practice and Photography match the personal site content: photography-based artistic series covering portraiture, documentary, and fine-art subjects."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. AI Notes records three-source agreement (personal site, LinkedIn, IG bio) on Employed at Mouthwash. Multi-source objective rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent. Reasoning in AI Notes: senior ops/producer, ~8 yrs creative production experience, not a hands-on creative director. Grounded in real work history with named employers and clients."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship in the clip note or anywhere else. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note text ('Designer at Mouthwash (Los Angeles); currently employed.') preserved verbatim in Source. Role discrepancy (clip says Designer, all sources say Head of Operations) correctly surfaced as Open Question 1 rather than silently resolved. No judgment facts in the note requiring --from-jonathan treatment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge the role uncertainty ('awaiting clarification'), name the three sources for Work Status, include seniority read ('~8 yrs in creative production') with named clients as context, and pair seniority prose with the Autonomy field value. No bare unverified assertions. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at Mouthwash (Los Angeles); currently employed.' Clip note verbatim."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/380f84ba-ae13-81e7-ba5b-cd6fbc63d625.json. All touched fields have entries with set_by: agent and verified_at timestamps. No field appears below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, Source, and manifest captions programmatically. Zero em-dash characters found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: the Designer/Operations role mismatch. Terse, specific, and unresolvable at agent level. No questions duplicate fields that already carry values. Story nudge not triggered (no relationship signal present)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Needs Review. Correct: the scraper completed its pass and the status was set. In v1 this is where it should land."
+    }
+  ],
+  "notes": "One FAIL: email search not documented (B.all-findable-links). This is a minor process gap, not a content defect. The role-mismatch Open Question is correctly handled. Work capture is strong: 5 distinct fine-art photography series, 14 images, accurate context shots verified by opening both files. In v1 mode the entry passes to Jonathan's queue with the email gap flagged to the scout for a quick follow-up. The ops-role question (Q1) is the correct call for Jonathan, not a defect.",
+  "to": "scout"
+}

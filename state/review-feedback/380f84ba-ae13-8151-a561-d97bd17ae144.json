@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-8151-a561-d97bd17ae144",
+  "name": "Leah Choi",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "note": "Pending-Jonathan's-decision entry. No creative design portfolio exists anywhere (ops role at Mouthwash confirmed by 3 independent sources). Absence of images, Capabilities, and Autonomy is intentional and documented. Two OQs route the genuine unknowns to Jonathan. Nothing misleading.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "n/a",
+      "evidence": "No creative work exists to capture; absence documented in AI Notes. Inapplicable."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "n/a",
+      "evidence": "No portfolio. Inapplicable."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "n/a",
+      "evidence": "Capabilities intentionally blank (role is ops, not creative). Nothing was captured off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "n/a",
+      "evidence": "No website or confirmed IG to screenshot. Scout attempted to confirm IG handle but could not without login; routed to Jonathan via OQ #2. Acceptable given the identity ambiguity."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "n/a",
+      "evidence": "No images in entry."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "n/a",
+      "evidence": "No embeddable creative work found. Inapplicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states: no creative design portfolio found, role confirmed as ops across LinkedIn/ZoomInfo/RocketReach, Capabilities and Autonomy left blank pending Jonathan clarification."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "LinkedIn present. No personal website exists (Mouthwash URL captured as Works At Link, appropriate). Instagram handle @lleahchoii surfaced in search but bio could not be confirmed without login; OQ #2 asks Jonathan to confirm. Email absent - no public email found for an ops-role employee, plausible."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Blank with documented reason: role is studio management (ops), not confirmed creative. OQ #1 asks Jonathan to clarify whether this is intentional or a mix-up. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = United States, Size = 1, Work Status = Employed. Sources named: LinkedIn, ZoomInfo, RocketReach (all agree). Objective multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Blank with documented reason: no creative role confirmed, so no meaningful Autonomy estimate is possible. Correct."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no contradicting evidence. Nothing in the entry implies Jonathan knows her."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Scouting brief described her as Designer; scout correctly flagged the conflict (ops role found) in OQ #1 rather than accepting the brief's framing at face value."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "All inferences hedged. No seniority or Autonomy asserted (appropriate for an unconfirmed creative role). Sources named throughout. No bare assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Jonathan scouting brief, 2026-06-17. Role confirmed Studio Manager (ops) at MOUTHWASH Studio via LinkedIn, ZoomInfo, RocketReach. Brief described her as designer but sources do not corroborate a creative design role.'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "provenance JSON present with verified_at and set_by for all touched fields. All agent-set."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, Source: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions covering genuine unknowns: (1) ops role vs. designer identity question, (2) IG handle confirmation. Both terse and actionable. Not asking for fields that already have values. Minor: OQ #2 could include the basis for the handle guess (appeared in search alongside her X account) but this does not block."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching; will be flipped to Needs Review by this gate."
+    }
+  ],
+  "to": "jonathan"
+}

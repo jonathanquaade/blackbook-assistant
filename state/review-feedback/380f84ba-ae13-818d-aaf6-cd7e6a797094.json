@@ -1,0 +1,115 @@
+{
+  "page_id": "380f84ba-ae13-818d-aaf6-cd7e6a797094",
+  "name": "Martin Azambuja",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-17T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects across manifest: Twitch, MASP, BPM Music, Sundance (Porto Rocha), Rosa and Magnolia (Behance). Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "Two MASP slots (site-04, site-05) are non-design images: site-04 is an aerial architectural photo of the MASP building exterior in Sao Paulo (no design work visible), site-05 is an interior fine-art-gallery shot showing paintings on pedestals (also no design work). Both are captioned 'MASP identity, Porto Rocha, 2024' but neither shows identity design. BPM slot bpm_direct_02 is a lifestyle photo of a person at a music production desk, not design work; the caption 'BPM Music identity' is misleading. Sundance has only a plain black card (sundance_direct_01) and a data table (sundance_direct_02) -- no system-level identity images.",
+      "fix": "Replace site-04 and site-05 with actual MASP identity system images (logo applications, typography, color palette, signage, collateral -- visible design work from the portorocha.com/masp case study). Replace bpm_direct_02 with a design-forward BPM image (logo lockup, type specimen, brand application) from the portorocha.com/bpm case study. For Sundance, add at least one image showing the visual identity applied (poster, motion frame, or collateral) beyond the plain text card."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Illustration capability is confirmed by Rosa (editorial illustration, Behance), Magnolia (identity illustration, Behance), and Mundo Flora (illustration series, Behance) -- all clearly hand-drawn illustrative work. Identity systems and graphic design are shown by Twitch (type specimen + brand application), BPM (app icon), Sundance (typographic identity). No off-capability material spotted."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-20.png is a real screenshot of martinazambuja.com showing the live site with content (thumbnails, sidebar CV). site-21.png is a real instagram.com/@martinazambuja profile page (handle, 54.9k followers, 'Associate Design Director @porto_rocha' bio, posts grid visible). Both captions match what the images show."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 18 manifest entries have captions and source links. No uncaptioned images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are graphic design, illustration, identity systems, creative direction. No video/audio work expected; no embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "The website screenshot shows martinazambuja.com is live with content. AI Notes do not claim it is 503; the site was apparently accessible at capture time. No undocumented gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email field is empty. The live martinazambuja.com site shows 'Get in touch: Email, Instagram' in the sidebar -- a contact email is likely reachable from the site (clicking the Email link or via contact form). The scraper should have checked and either captured the email address or documented that it is hidden behind a form.",
+      "fix": "Check martinazambuja.com for a public contact email (or mailto: link from the 'Email' contact link). If it is a direct mailto, add it. If it is a web form with no exposed address, note 'contact form only, no public email' in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative direction, Graphic design, Identity systems, Illustration -- all supported by the work captured and the career trajectory (Pentagram Team Bierut, Porto Rocha ADD level)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country US, Size 1 (person), Work Status Employed. AI Notes names three confirming sources (Porto Rocha team page, LinkedIn, The Org). Objective multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: ADD-level at Porto Rocha with prior Pentagram experience, hedged as needing CD alignment on major calls. Grounded and hedged correctly."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With Unvetted) are consistent with no stated relationship in the entry or clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field shows the entry was found by the agent, not via web clipper with a clip note. No clip-note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy estimate ('hedged'). Seniority and trajectory are documented (Pentagram Team Bierut -> Porto Rocha ADD, ~8 yr career). Work Status resolution is sourced. No unhedged inferences spotted."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Associate Design Director at Porto Rocha (New York / London); currently employed.' Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "fail",
+      "evidence": "All provenance entries have source_url: null. The confidence floor requires sources recorded in provenance for every field. Key fields like Website, Instagram, LinkedIn, Capabilities, Work Status have no source URL recorded. The AI Notes name Porto Rocha team page and LinkedIn as sources for Work Status but the provenance JSON records nothing for source_url on any field.",
+      "fix": "Populate source_url in provenance for at minimum: Website (martinazambuja.com self-referential), Instagram (verified via IG profile screenshot), LinkedIn (linkedin.com/in/martinazambuja), Work Status (portorocha.com/team or equivalent), Capabilities (portorocha.com case studies + Behance). This is a scraper-side fix."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Source, and all manifest captions. No em-dashes found. Hyphens and en-dashes in ranges only."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No standing questions needed: all factual fields are filled at confidence, zero-states are appropriate, no relationship ambiguity, story nudge not triggered (Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching. Correct -- it has not yet passed the reviewer gate."
+    }
+  ],
+  "fail_summary": "3 FAILs: (1) Two MASP images are non-design architectural/gallery photography mislabeled as identity work; BPM lifestyle photo is not design work. Replace with actual identity system images from the case study pages. (2) Email field empty despite a contact email link being visible on the live website. (3) All provenance source_url fields are null -- sources are named in AI Notes but not recorded in the provenance JSON.",
+  "to": "scraper"
+}
