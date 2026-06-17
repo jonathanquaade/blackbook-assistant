@@ -72,7 +72,12 @@ Claude Code hard-blocks any Bash command containing a newline directly followed 
 Two habits keep every call silent:
 - **No `#` comment lines inside `python3 -c "..."` one-liners.** Write the snippet
   with zero comments, or put it in a temp `.py` with the Write tool and run that file.
-- **Multi-line text/JSON goes through a file, never argv.** For any `keeper.py
-  set / ask / set-notes / new` payload that spans lines or could contain `#`, write it
-  to a temp file with the Write tool and pass `@/path/to/file` (keeper reads `@file`,
-  and `-` for stdin). Single-line escaped JSON on the command line is still fine.
+- **EVERY `keeper.py set / new / ask / set-notes` payload goes through a file, never
+  argv.** Write the payload to a temp file with the Write tool and pass
+  `@/path/to/file` (keeper reads `@file`, and `-` for stdin). This is mandatory for ALL
+  JSON payloads, even a single line: inline JSON contains `{` next to a quote, which
+  trips Claude Code's "brace with quote character (expansion obfuscation)" approval
+  guard and forces Jonathan to hand-approve every metadata write. The `@file` route is
+  the ONLY way `set` should ever be called. (Same family as the newline-`#` guard; both
+  are hardcoded in the harness and cannot be allowlisted — keep braces, quotes, and
+  newlines off argv entirely.)
