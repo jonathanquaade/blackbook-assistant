@@ -1,29 +1,29 @@
 {
   "page_id": "380f84ba-ae13-81ba-ba54-f89d4efd5416",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-18T23:40:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-19T09:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Three distinct projects: Robinhood (site-01/02/03), Crane (site-04/05), SF Symphony (site-06/07/08). No duplicate project across captions."
+      "evidence": "Three distinct projects: Robinhood (site-01/02/03), Crane (site-04/05), SF Symphony (site-06/07/08). Visually confirmed: site-01 is Robinhood illustrated brand world, site-04 is Crane personalized monogram tool. No duplicate project across captions."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: Robinhood app UI + custom R letterform + illustrated brand world; Crane product e-commerce screen + monogram tool; SF Symphony type specimen + Instagram story brand application + concert poster."
+      "evidence": "Goes inside each project: Robinhood illustrated city world + custom R letterform + brand application; Crane monogram tool + product screen; SF Symphony variable type system + brand in use + concert poster."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Brand strategy is non-visual. Images show output of three branding projects she led strategy on. Embeds are her own strategy talks (D&AD, Brand New Conference). Bookmark is a profile interview about her strategy practice. All on-capability."
+      "evidence": "Brand strategy. Work shows output of three COLLINS branding projects she led strategy on. Two embeds are her own strategy talks (D&AD Still Learning Live 2021, Brand New Conference 2023). Bookmark is The Creative Factor interview on her strategy practice. All on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "No personal website or Instagram exists (documented in AI Notes). site-09.png is the COLLINS homepage (employer, correct substitute). site-10.png is The Creative Factor article profile page. Both verified by visual inspection. site-07.webp shows SF Symphony Instagram story as brand-in-use evidence, correctly captioned, not mislabeled as her own Instagram profile."
+      "evidence": "No personal website or Instagram exists (documented in AI Notes). site-09.png is the COLLINS homepage, visually confirmed (COLLINS wordmark, 'Rewrite your worth' headline). site-10.png is The Creative Factor article, visually confirmed (Taamy Amaize CSO COLLINS portrait and title). No mislabeling. Absence of personal site and IG is documented."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,81 +33,78 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Two YouTube/Vimeo embeds present with thumbnail preview images (thumb-yt-daad.jpg, thumb-vimeo-bnconf.jpg) and linked captions. Thumbnail images confirmed by visual inspection: D&AD Still Learning Live (Taamrat speaking) and Brand New Conference 2023 (Taamrat presenting). Images also present alongside embeds."
+      "evidence": "Two embeds (YouTube D&AD talk, Vimeo Brand New Conference 2023) with thumbnail preview images (thumb-yt-daad.jpg, thumb-vimeo-bnconf.jpg). Thumbnails visually confirmed as correct talks with Taamrat presenting. Images present alongside embeds."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes explicitly states: 'No personal website or public Instagram found.' No IG queue needed (no capturable hi-res content exists). Absence is honest and documented."
+      "evidence": "AI Notes states: 'No personal website or public Instagram found.' No IG queue needed. Documented honestly."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Person, confirmed in provenance (set_by: agent, source: COLLINS team page + LinkedIn)."
+      "evidence": "Type = Person."
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "Email field is empty and AI Notes makes no mention of searching for a public email or confirming none exists. Website and Instagram absence are documented, but email is silently skipped. LinkedIn is present and verified.",
-      "fix": "Scout: search for a public contact email (site about page, LinkedIn, press contacts). If none found, add one sentence to AI Notes: 'No public email found.' The Email field may remain empty, but the absence must be documented."
+      "result": "pass",
+      "evidence": "No personal Website (documented in AI Notes). No Instagram (documented). LinkedIn present and verified (linkedin.com/in/taamrat-amaize-73b0914). Email: AI Notes now explicitly states 'No public email found: COLLINS site lists only info@wearecollins.com (studio-level); no personal address on any primary source (no personal site, no bio page with contact); data-broker results excluded as non-primary.' Attempt 1 gap is remediated."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Brand strategy tagged, consistent with CSO role and all evidence (COLLINS case studies, talks, profile article). TAXONOMY.md-aligned."
+      "evidence": "Brand strategy tagged. Consistent with CSO role at COLLINS confirmed by team page, LinkedIn and multiple press sources."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: United States (COLLINS NYC/SF). Size: 1 (person). Work Status: Employed, resolved by two agreeing sources (COLLINS team page + LinkedIn + press), documented in AI Notes with source names."
+      "evidence": "Country: United States. Size: 1. Work Status: Employed, resolved by COLLINS team page + LinkedIn + press (all agree). Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5 estimated (set_by: agent). Reasoning in AI Notes: CSO role, leads full strategy function at COLLINS, brief once and owns outcome. Grounded in real work history."
+      "evidence": "Autonomy 5 (set_by agent). Reasoning in AI Notes: CSO role, leads full strategy function at COLLINS, brief once and owns outcome. Grounded in documented role history."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with no evidence of a relationship. No clip note stated any relationship fact."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no evidence of a relationship. Clip note had no relationship facts."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source preserves clip note verbatim ('Designer at COLLINS (New York / San Francisco); currently employed.'). Discrepancy between 'Designer' and actual CSO role is surfaced in Open Question 1. No relationship facts or judgment instructions were in the clip note."
+      "evidence": "Source preserves clip note verbatim. Discrepancy between 'Designer' label and actual CSO/strategist role surfaced in Open Question 1."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Career dates marked 'approx'. Autonomy marked '(estimate)'. Only verifiable facts (COLLINS CSO listing, confirmed employer, press credits) asserted plainly. Seniority read ('C-suite executive-level, ~18+ years') is grounded in documented role history. No em-dashes."
+      "evidence": "Career dates marked 'approx'. Autonomy marked '(estimate)'. Seniority read grounded in documented role history. No em-dashes. Seniority + experience read present."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' Verbatim clip note preserved."
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' Clip note preserved verbatim."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with source_url and set_by for all touched fields. All fields set at 0.8+ confidence from primary sources (COLLINS team page, LinkedIn, press)."
+      "evidence": "Passed attempt 1. Scout-cleanup pass only updated AI Notes (no new field writes requiring new provenance entries)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, captions and Source field inspected. No em-dashes found. En-dash used only in year ranges (not present here)."
+      "evidence": "AI Notes, Open Questions, Source and captions inspected. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse Open Question asking Jonathan to confirm DB fit (she is a strategist, not a designer, and the clip note called her 'Designer at COLLINS'). No questions for fields already holding non-zero-state values. No story nudge needed (Worked Together is Never with no contrary evidence)."
+      "evidence": "One terse OQ asking Jonathan to confirm DB fit (she is a strategist, not a graphic designer). Conditional: no questions for fields already holding values. No story nudge needed (Worked Together: Never, no contrary evidence)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching (reviewer has not yet passed it). Correct gate behavior."
+      "evidence": "Entry was Enriching. Flipped to Needs Review as part of this gate pass."
     }
   ],
-  "failing_checks": ["B.links"],
-  "to": "scout",
-  "fix_summary": "One gap: public email was not searched or documented as absent. Scout should search for a public contact email for Taamrat Amaize (COLLINS site, LinkedIn, press contacts). If none exists, add one line to AI Notes confirming this. No other issues. Entry is otherwise complete and well-formed."
+  "to": "scout"
 }

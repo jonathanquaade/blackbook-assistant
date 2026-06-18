@@ -1,86 +1,89 @@
 {
   "page_id": "380f84ba-ae13-81cb-ad15-ecbe29abc3e4",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-18T23:45:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-19T00:30:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "comet-01.png (storyblok CDN still, captioned 'brand identity and visual direction') is near-identical to comet-vimeo-thumb.jpg (Vimeo thumbnail for the embed): both show the same space/starfield scene with the Comet wordmark at the same scale and composition. The thumbnail was placed correctly as the embed preview; comet-01.png adds no distinct visual from the Comet project.",
-      "fix": "Replace comet-01.png with a different interior shot from the Perplexity Comet case study at studiofreight.com/work/perplexity-comet (e.g. the product UI mockup, the brand colour/type system, or motion frames that are distinct from the launch film title card)."
+      "result": "pass",
+      "evidence": "comet-01.png is now the Comet app FAQ/UI screen (mobile product interface, light background, serif 'FAQ' heading, accordion items). Visually completely distinct from comet-vimeo-thumb.jpg (dark space/starfield with Comet wordmark). Images now span 5 distinct projects: Brex (3), La Marzocco (3), Perplexity Comet (thumb + embed + 2 UI shots), Esther (2), Studio Freight rebrand (3). Fix confirmed."
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "LinkedIn and public Email are absent from the entry and not documented as unfindable in AI Notes. Studio Freight is a well-known NYC studio with Awwwards recognition and press coverage; their LinkedIn company page is findable via a standard search.",
-      "fix": "Scout: search '<Studio Freight linkedin>' and '<studiofreight.com contact email>' to retrieve the LinkedIn company URL and any public contact address. Document both in the entry and in provenance. If genuinely unavailable after search, record that in AI Notes."
+      "result": "pass",
+      "evidence": "LinkedIn: https://www.linkedin.com/company/studio-freight present in Notion and provenance (set_by agent, verified 2026-06-19). Email: hello@studiofreight.com present in Notion and provenance, confirmed via studiofreight.com/contact per AI Notes. Both recorded in provenance at 2026-06-19T00:15:51. Fix confirmed."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is the studiofreight.com homepage (nav shows Work, Info, News; footer shows 'Studio Freight'). site-02.png is instagram.com/studio.freight (Instagram chrome, handle 'studio.freight', 11.6K followers, bio 'Studio Freight', 'A global creative studio moving missions forward.')."
+      "evidence": "site-01.png: studiofreight.com homepage (nav shows Work_, Info_, News; tagline 'Moving Missions Forward'; Studio Freight footer). site-02.png: instagram.com/studio.freight profile (Instagram chrome, handle 'studio.freight', 11.6K followers, bio 'A global creative studio moving missions forward.'). Both correct and verified by image inspection."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project across 5 projects. La Marzocco shows internal playbook spreads (interior pages, research doc). Esther shows mobile UI and cocktail recipe web interface. Brex goes inside with card design, social system, and OOH. SF Rebrand shows event activation, logotype on screen, and merch applied identity."
+      "evidence": "3 images per project across 5 projects. La Marzocco: playbook spreads, editorial, research doc. Brex: card design, social system, OOH. Comet: Vimeo embed + thumb + app FAQ UI + product identity screen. Esther: mobile UI, cocktail recipe interface. SF Rebrand: event activation, logotype, merch applied identity."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Work covers brand identity (Brex, Comet), brand strategy (La Marzocco), web/UI design (Esther), and identity systems (SF Rebrand). All match tagged Capabilities: Brand strategy, Creative technology, Frontend development (web), Identity systems, Web design."
+      "evidence": "Work covers brand identity (Brex, Comet), brand strategy (La Marzocco), web/UI design (Esther), identity systems (SF Rebrand), creative technology (Lenis library referenced in AI Notes). All match tagged Capabilities: Brand strategy, Creative technology, Frontend development (web), Identity systems, Web design."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 images have captions naming the project and a source link in the manifest."
+      "evidence": "All 16 images in manifest have captions naming the project and a source link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Vimeo embed present for Perplexity Comet launch film with a thumbnail preview image (comet-vimeo-thumb.jpg) and link caption. Entry is not embeds-only; 14 project/context images also present."
+      "evidence": "Vimeo embed for Perplexity Comet launch film with thumbnail preview (comet-vimeo-thumb.jpg) and link to case study. Entry also has 14 project/context images; not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained gaps; work captured from studiofreight.com case studies directly."
+      "evidence": "No unexplained gaps; all work captured from studiofreight.com case studies."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type = Studio, appropriate for a small specialized hands-on creative team."
+      "evidence": "Type = Studio; appropriate for a small specialized hands-on creative execution team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://studiofreight.com/. Instagram: https://www.instagram.com/studio.freight/ (verified: profile shows correct handle, bio, and follower count). LinkedIn: https://www.linkedin.com/company/studio-freight. Email: hello@studiofreight.com. All four link types present."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Brand strategy, Creative technology, Frontend development (web), Identity systems, Web design; all supported by the Lenis library, Awwwards record, and case study evidence cited in AI Notes."
+      "evidence": "Brand strategy, Creative technology, Frontend development (web), Identity systems, Web design. Supported by Lenis library, Awwwards record, and case study evidence in AI Notes."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "United States, 11-40, Studio. AI Notes support with 'distributed team ~14 to 25', NYC + Columbus OH."
+      "evidence": "United States, 11-40, Studio. AI Notes: 'distributed team ~14 to 25, NYC + Columbus OH'. Work Status objective rule met: primary site and all sources consistent, no employment conflict noted."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 5, set_by agent, with reasoning in AI Notes ('Studio-level autonomy: runs full programmes end to end')."
+      "evidence": "Autonomy = 5, set_by agent, with reasoning in AI Notes ('Studio-level autonomy (5): runs full programmes end to end')."
     },
     {
       "id": "C.judgment-honesty",
       "result": "pass",
-      "evidence": "Zero-states valid: Work With? Unvetted, Worked Together Never, Familiarity Don't know them. No contradiction with any evidence or clip note."
+      "evidence": "Zero-states valid: Work With? Unvetted, Worked Together Never, Familiarity Don't know them. No evidence or clip note contradicts any of these."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2026-06-15'; no relationship facts or judgment in the clip note to act on."
+      "evidence": "Source = 'Web clipper, 2026-06-15'. No relationship facts, judgment, or special instructions in the clip note to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Team size is hedged ('~14 to 25'). Sources cited ('from their Info page plus award/library record'). No em-dashes. Factual claims (clients, library, Awwwards) are verifiable and not over-asserted."
+      "evidence": "Team size hedged ('~14 to 25'). Sources cited ('from their Info page plus award/library record'). Factual claims (clients, Lenis library, Awwwards) are verifiable. LinkedIn and Email sources cited inline. No em-dashes present."
     },
     {
       "id": "D.source",
@@ -90,25 +93,24 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present at state/provenance/380f84ba-ae13-81cb-ad15-ecbe29abc3e4.json with all touched fields recorded."
+      "evidence": "Provenance at state/provenance/380f84ba-ae13-81cb-ad15-ecbe29abc3e4.json records all touched fields including LinkedIn and Email added 2026-06-19T00:15:51, set_by agent."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, image captions, and Source checked; no em-dashes found."
+      "evidence": "AI Notes, image captions, and Source checked. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No open questions visible in the entry; appropriate since all judgment fields carry zero-states and no judgment was stated in the clip note."
+      "evidence": "No open questions; all judgment fields carry zero-states, no judgment stated in clip note, no ambiguity requiring a question."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains in Enriching; reviewer has not flipped status, consistent with a fail verdict."
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review on this pass."
     }
   ],
-  "failing_checks": ["A.project-diversity", "B.links"],
-  "to": "scraper",
-  "summary": "Two failures: (1) comet-01.png duplicates the Vimeo thumbnail visually; replace with a distinct Comet interior shot (scraper). (2) LinkedIn and Email are absent without any documented search attempt or explanation in AI Notes (scout). Both must be resolved before the entry is ready for Jonathan."
+  "to": null,
+  "summary": "Both attempt-1 failures resolved. comet-01.png is now a distinct Comet app UI/FAQ screen (not a duplicate of the Vimeo thumbnail). LinkedIn and Email are present in both Notion and provenance. All 21 checks pass. Entry ready for Jonathan."
 }

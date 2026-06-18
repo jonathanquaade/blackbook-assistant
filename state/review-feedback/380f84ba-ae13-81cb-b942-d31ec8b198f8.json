@@ -1,0 +1,116 @@
+{
+  "page_id": "380f84ba-ae13-81cb-b942-d31ec8b198f8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Bimmi, GBGT Box, Frank Penny, Coop, Dante/Audinate, Candour. No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project showing packaging/identity details, not just cover shots. Bimmi lid detail, Coop SKU range, Dante logo + mark + application all present."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "frank-penny-02.jpg (uploaded to Images property, captioned 'Frank Penny visual identity, Bedow, 2024') is a dark empty conference auditorium with a presentation slide on screen ('Independent Review & Governance 19.05.2024'). This is event/lifestyle photography, not identity or graphic design work. All other images are on-capability packaging and brand identity.",
+      "fix": "Remove frank-penny-02.jpg from the Images property and manifest. Replace with an actual Frank Penny identity shot (e.g. a second logotype application, brand colour system, or print collateral) from bedow.se/work/frank-penny/ or the bpando.org press coverage already used as a source."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-20.png confirmed as bedow.se homepage screenshot (correct URL, Bedow branding visible). site-22.png confirmed as instagram.com/@bedowdesign profile page (correct URL, Bedow name and grid visible). Both captioned honestly as studio context, not mislabeled as personal. Absence of personal site and personal IG is documented in AI Notes and flagged in Open Questions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in the manifest has a caption naming the project + a link to the source page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Creative direction, Graphic design, Identity systems. No video/audio work expected; no embeds needed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states no personal portfolio site found (martinbergstrom.com is a different person) and that personal IG could not be confirmed at 0.8. Studio context shots used as substitutes with honest captions."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "fail",
+      "evidence": "Email is absent from the entry and there is no note in AI Notes indicating it was searched for. The P1 runbook mandates capturing public contact email on every entry. A search for Martin Bergstrom's email via Bedow's contact page or press/interview bylines was not documented as attempted.",
+      "fix": "Scout: search for a public contact email via bedow.se/contact, Bedow press pages, and any published interview bylines. If none is findable, document 'no public email found' in AI Notes so the absence is deliberate, not skipped. Also fix Open Question 1 wording (see D.open-questions below).",
+      "to": "scout"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative direction, Graphic design, Identity systems. Matches observed work (packaging identity, brand systems, visual identity). Per TAXONOMY.md scope."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Sweden. Size: 1 (person). Work Status: Employed. AI Notes names sources: LinkedIn and Bedow news pages 2023-2025 agree. Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: Partner at Bedow, leads projects and studio direction, but within studio context. Grounded in career trajectory (Design Director at Happy F&B, then Partner at Bedow)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note indicating a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was found by agent (Source: 'Found using Claude, 2026-06-15'). No clip note with instructions to act on. Source filled correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the IG handle ('cannot confirm at 0.8'), hedges Partner role autonomy ('suggests significant autonomy'), includes seniority read (Director-level, approx 13 yrs) paired with Autonomy field. No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Design Director and Partner at Bedow (bedow.se); confirmed via LinkedIn, The Org, and Bedow news items 2023-2025 (Guldagget 2025 jury chair).' Filled and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists and records set_by, source_url, verified_at for all touched fields. No field below 0.8 confidence written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Source, Open Questions, and captions checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "Open Question 1 reads: 'Is @studiomartinbergstrom your personal account?' The word 'your' addresses Martin directly, but Jonathan is the one reading and answering this field. Jonathan cannot answer whether it is Martin's own account from his own knowledge. The question must be rephrased so Jonathan understands what to confirm or do (e.g. 'Confirm: is @studiomartinbergstrom Martin Bergstrom the Bedow designer, not the textile artist?').",
+      "fix": "Scout: rephrase Open Question 1 to address Jonathan, not Martin. Suggested: '1. Instagram: @studiomartinbergstrom surfaces in searches but a textile/fashion artist shares the name. Can you confirm this handle belongs to the Bedow designer?'",
+      "to": "scout"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching. Correct for a gate-fail; not flipping to Needs Review."
+    }
+  ],
+  "summary": "Two image issues and two scout metadata issues. Primary: frank-penny-02.jpg is a conference auditorium photo, not identity design work; must be replaced by the scraper. Secondary: Email was never searched for (undocumented absence) and Open Question 1 is addressed to Martin rather than Jonathan, making it unanswerable; both require a scout fix.",
+  "to": "scraper"
+}

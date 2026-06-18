@@ -1,0 +1,110 @@
+{
+  "page_id": "380f84ba-ae13-81d5-839d-d66aeae8f5f3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 uploaded images span 3 distinct projects: GBGT Box (site-02,03,04,05,07,09), Swee Kombucha (site-10,11,12), Candour Wine (site-13,14,15). No caption repeats a single project across the whole set."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "GBGT Box: hero stack, detail close-up of foil finish, flat unfolded system, open seed kit interior, single box face, teal unboxed interior. Swee Kombucha: full bottle label, Feijoa-Ginger variant, ingredient sculpture. Candour Wine: three-can lineup, lifestyle flatlay, single-can portrait. Goes well inside each project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design + Identity systems. All 12 work images are packaging and brand identity from Bedow case studies. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-21.png is petterdybvig.com (name 'Petter Dybvig' + nav + 'Art Direction and Design' + 'Selected Work' + cities visible), captioned 'Website'. No Instagram context shot present, but no confirmed Instagram exists: @petter.design verified as wrong person (manifest site-20 rejected, reason documented). Absence explained in AI Notes and Open Questions. A context shot cannot be required for an unconfirmed account."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 uploaded images have caption + link in manifest. No caption reads 'unknown' or is blank."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Identity systems (not video or audio). No embeds required; none expected."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IMA project: manifest site-01 rejected (Bedow 404 SVG, not IMA work), gap documented. @petter.design: wrong person, documented in manifest site-20 rejection and in AI Notes and Open Question 1. Personal site is login-gated: documented in AI Notes."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (petterdybvig.com), LinkedIn (se.linkedin.com/in/petter-dybvig-b50409b2), Email (mail@petterd.com) all present. Instagram not confirmed; search was done, handle found was wrong person, documented in AI Notes + Open Question. Absence is substantiated, not a skipped search."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems match Bedow brand identity and packaging work shown in images and confirmed by D&AD credits."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Sweden, Size = 1, Work Status = Employed. Sources named in AI Notes: LinkedIn title + D&AD 2024 credit both confirm active Bedow employment; no freelance signals. Multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 3, set_by agent. Reasoning in AI Notes: senior practitioner within Bedow's established creative framework, execution-level credits, not strategic direction. Grounded in work history and D&AD credits."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note or Jonathan-stated facts exist that contradict these. Entry was scout-generated, not clipped."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry originated from Claude scout (Source field confirms), not a Jonathan clip note. No clip instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Uses 'suggest', 'estimated', 'likely', 'based on available credits' for inferences. Verifiable facts (D&AD credits, LinkedIn title, employer) stated plainly. Seniority read included (Senior Designer, ~8-9 yrs) paired with Autonomy estimate."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Designer/strategist at Bedow (Stockholm); currently employed.' Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance/380f84ba-ae13-81d5-839d-d66aeae8f5f3.json covers all touched fields with source_url, verified_at, and set_by. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, commas, and colons throughout. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question (Instagram, with context that @petter.design could not be confirmed as him). Terse. Conditional: no IG on entry. No story nudge triggered (Familiarity and Worked Together are zero-states, not elevated)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will be flipped to Needs Review by this gate passing."
+    }
+  ],
+  "to": null
+}

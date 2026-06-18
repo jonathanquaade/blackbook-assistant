@@ -1,29 +1,29 @@
 {
   "page_id": "380f84ba-ae13-8152-a23e-c8687e623120",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-18T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-19T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "3 distinct projects active: Frank Penny (site-03), Polar Music Prize (site-05, site-06), Audinate/Dante (site-08, site-10), plus 2 context shots. No single-project repetition."
+      "evidence": "3 distinct active projects: Frank Penny (site-03), Polar Music Prize (site-05, site-06), Audinate/Dante (site-08, site-10). Plus 2 context shots. No single-project repetition."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Images go inside projects: Frank Penny shows brand graphic, Polar Music Prize shows digital product mockup and live ceremony application, Audinate shows logo mark and wordmark in context. Reasonable depth for studio case-study sourcing."
+      "evidence": "Images go inside projects: Frank Penny shows brand graphic interior, Polar Music Prize shows digital product mockup and live brand application, Audinate shows logomark and wordmark in atmospheric context. Reasonable case-study depth."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Brand strategy. All active project images (Frank Penny brand identity, Polar Music Prize rebrand, Audinate brand system) are brand strategy outputs. On-capability."
+      "evidence": "Tagged Brand strategy. All active project images are brand strategy outputs from Bedow case studies. On-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01 is a real instagram.com screenshot showing @magnuswalsten with display name Magnus Walsten, confirmed correct. site-13 is the Bedow Thinking and Making page showing Magnus Walsten as TM-02 speaker. No personal website exists (documented in AI Notes); the talks-page screenshot is the appropriate substitute."
+      "evidence": "site-01 is a real instagram.com screenshot, @magnuswalsten with display name Magnus Walsten confirmed. site-13 is the Bedow Thinking and Making page (bedow.se) showing Magnus Walsten as TM-02 speaker. No personal website exists (documented in AI Notes); talks-page screenshot is the appropriate substitute."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,12 +33,12 @@
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Subject is a brand strategist, not a video or audio creative. Two bookmarks provided for the talks content. No embedded video/audio required by capability."
+      "evidence": "Subject is a brand strategist, not a video or audio creative. Two bookmarks provided for talks content. No embedded video/audio required by capability."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No personal portfolio site documented in AI Notes. IG-only capture gap not applicable (IG context shot captured, full handle confirmed)."
+      "evidence": "No personal portfolio site documented in AI Notes. IG capture gap not applicable; handle confirmed and context shot captured."
     },
     {
       "id": "B.type-classified",
@@ -48,48 +48,47 @@
     {
       "id": "B.findable-links",
       "result": "pass",
-      "evidence": "Instagram set and confirmed (@magnuswalsten). LinkedIn set. No personal Website (documented). Email not found; no evidence of a public email address for a board-chairman consultant at this seniority level; scout AI Notes do not flag it as skipped. Treating as genuinely unfindable."
+      "evidence": "Instagram confirmed (@magnuswalsten, bio + grid match, context shot verified). LinkedIn set. No personal Website (documented in AI Notes as genuinely absent). Public email not found for board-chairman consultant at this seniority level; AI Notes do not flag it as skipped search."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Brand strategy per TAXONOMY.md. Matches his documented role as Brand Impact Strategist."
+      "evidence": "Brand strategy per TAXONOMY.md. Matches documented role as Brand Impact Strategist."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country = Sweden, Size = 1, Work Status = Studio. Sources named in AI Notes: LinkedIn + Swedish company registry. Multi-source rule followed."
+      "evidence": "Country = Sweden, Size = 1, Work Status = Studio. Sources named in AI Notes: LinkedIn + Swedish company registry. Multi-source objective rule followed."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 5 with reasoning (operates without oversight, sets direction; board chairman + own entity). Grounded in real work history. set_by agent."
+      "evidence": "Autonomy = 5 with reasoning (board chairman + own entity, operates without oversight). Grounded in real work history. set_by agent."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never / Don't know them / Unvetted) are appropriate. Clip note said 'currently employed' at Bedow; Open Question 2 surfaces the conflict with the registry finding. No contradiction suppressed."
+      "evidence": "Zero-states (Never / Don't know them / Unvetted) are appropriate. Clip note employment ambiguity is surfaced in Open Question 1. No contradiction suppressed."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note stated 'Designer/strategist at Bedow (Stockholm); currently employed.' Work Status is set to Studio with Open Question 2 surfacing the employment ambiguity. Handled correctly."
+      "evidence": "Clip note stated 'currently employed' at Bedow. Work Status set to Studio with Open Question surfacing the employment vs consulting ambiguity. Handled correctly."
     },
     {
       "id": "C.ai-notes-hedged",
-      "result": "fail",
-      "evidence": "AI Notes still say 'Instagram handle @magnuswalsten identified but bio could not be confirmed (limited public view).' The scraper confirmed the handle (bio + grid match) and site-01 shows the confirmed real account. The AI Notes are stale and inaccurate on this point.",
-      "fix": "Update AI Notes to reflect that @magnuswalsten is confirmed (scraper verified bio + grid match, context screenshot site-01 confirms the real account). Remove the uncertainty hedge on Instagram."
+      "result": "pass",
+      "evidence": "AI Notes updated by scout cleanup pass: 'Instagram @magnuswalsten confirmed (scraper verified bio and grid match; context screenshot site-01 shows the real account).' Stale uncertainty hedge removed. Seniority and Autonomy reasoning present. Sources named. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source field filled with scout research detail including named sources."
+      "evidence": "Source field filled with scout research detail including named sources (Bedow team list, LinkedIn post, Swedish company registry)."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file covers all touched fields with source_url, verified_at, set_by."
+      "evidence": "Provenance file exists at state/provenance/380f84ba-ae13-8152-a23e-c8687e623120.json covering touched fields."
     },
     {
       "id": "D.no-em-dashes",
@@ -98,17 +97,15 @@
     },
     {
       "id": "D.open-questions",
-      "result": "fail",
-      "evidence": "Open Question 1 asks to confirm Instagram @magnuswalsten. The Instagram field is already set to https://www.instagram.com/magnuswalsten/ and the scraper confirmed bio + grid match. Per CLAUDE.md: never ask for a field that already has a non-zero value; fully answered = clear. This question is stale and must be removed.",
-      "fix": "Clear Open Question 1 (Instagram confirmation). Retain only Open Question 2 (employment status at Bedow). Rewrite the Open Questions field with only question 2."
+      "result": "pass",
+      "evidence": "Scout cleanup pass cleared the stale IG confirmation question. One question remains: employment vs consulting at Bedow (genuine ambiguity, not askable from available sources). Terse, conditional, no redundant asks."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching. Correct at this stage (reviewer is gating, not passing)."
+      "evidence": "Status is Enriching. Will be flipped to Needs Review on this pass gate."
     }
   ],
-  "failing_checks": ["C.ai-notes-hedged", "D.open-questions"],
-  "to": "scout",
-  "summary": "Two metadata cleanup items, both scout-side. (1) Open Question 1 asking to confirm @magnuswalsten is stale: the Instagram field is already attached and the scraper confirmed the handle. It must be cleared. (2) AI Notes still say the Instagram bio could not be confirmed, which is now inaccurate. The scout must update AI Notes to reflect confirmation and rewrite Open Questions retaining only question 2. All work images pass (3 distinct Bedow projects, on-capability, correctly captioned, honest attribution framing). Entry stays in Enriching."
+  "to": "jonathan",
+  "summary": "All 20 checks pass on attempt 2. The two failing checks from attempt 1 (stale AI Notes hedge on Instagram and redundant Open Question) were resolved by the scout cleanup pass. Entry is complete: 3 distinct Bedow brand strategy projects, on-capability, correctly captioned, honest attribution framing, confirmed Instagram context shot, one genuine Open Question on employment status. Flipping to Needs Review."
 }
