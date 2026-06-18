@@ -96,5 +96,26 @@
     "ig_url": "https://www.instagram.com/benjamingaupset/",
     "reason": "IG context screenshot failed: Instagram blocked headless Playwright with blank page and error page. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-18"
+  },
+  {
+    "page_id": "380f84ba-ae13-8111-8bdb-f8ef7ded24cf",
+    "name": "Sophia Brinkgerd",
+    "ig_url": "https://www.instagram.com/sophiabrinkgerd/",
+    "reason": "Instagram context screenshot failed: headless Playwright returned error page. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-18"
+  },
+  {
+    "page_id": "380f84ba-ae13-81db-91cb-faed45faec10",
+    "name": "Kevin Hoegger",
+    "ig_url": "https://www.instagram.com/kevinhoegger/",
+    "reason": "IG context screenshot failed: Instagram blocked headless Playwright with error page. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-18"
+  },
+  {
+    "page_id": "380f84ba-ae13-81eb-b4ac-d2dac33c3f66",
+    "name": "Sasyk Mihal",
+    "ig_url": "https://www.instagram.com/sasykmihal/",
+    "reason": "Instagram context shot blocked by logged-out challenge; profile exists and is confirmed (handle in AI Notes). IG grab needed for context shot and recent work.",
+    "queued_at": "2026-06-18"
   }
 ]
