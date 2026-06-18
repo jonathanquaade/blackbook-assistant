@@ -2,3 +2,8 @@
 
 Koto, an international creative agency building impactful brands
 
+# Archived page body (2026-06-18)
+
+We make ambitious ideas for ambitious brands. Five offices, one studio, united by optimism, collaboration, and craft. Find us in Los Angeles, New York, London, Berlin and Sydney.
+
+APAC is rewriting global branding, says Koto’s Damian Borchok The future of global branding isn’t being shaped in London or New York. In this sharp take, Koto’s APAC MD Damian Borchok breaks down why the real creative edge now sits in Asia and what that means for brand leaders today. If you’re still applying Western playbooks, you’re already behind.

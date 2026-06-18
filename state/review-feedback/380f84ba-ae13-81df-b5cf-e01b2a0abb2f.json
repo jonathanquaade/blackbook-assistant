@@ -1,0 +1,116 @@
+{
+  "page_id": "380f84ba-ae13-81df-b5cf-e01b2a0abb2f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-18T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 uploaded images span 3 distinct projects: Muse Group rebrand, Equinox 'We Don't Speak January' campaign, Bose rebrand. No cross-project duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: custom typeface specimen (site-11), digital product UI screens x4 states (site-12), outdoor/environmental applications. Not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 9 work images are brand/identity/graphic design output matching tagged Capabilities (Brand strategy, Graphic design, Identity systems). site-02 subway billboard with typographic identity, site-06 campaign OOH, site-08 framed brand poster, site-09 brand collateral in situ, site-11 typeface system, site-12 UI brand application, site-18 campaign with new wordmark, site-21 OOH billboard, site-23 brand activation environment."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Instagram context shot (site-17.png) is present and correctly labeled: shows instagram.com/taylorzahrt with name 'Taylor Zahrt' and San Francisco CA location visible. PASS for IG. Website context shot is absent. No personal website URL appears in the entry, but the checklist requires the website context shot OR documented explanation of absence. Neither appears.",
+      "fix": "Add one sentence to AI Notes stating no personal portfolio website was found (searches attempted, results). A context shot of the employer site (wearecollins.com) is NOT a substitute per checklist, but confirming and documenting the absence is sufficient to clear this check."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 images have captions naming project and linking to the COLLINS case study source URL."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a graphic/brand designer; no video/audio primary work expected. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "The Website field is empty and no personal website context shot exists. AI Notes does not contain any statement that a personal website was searched for and not found. 'A missing link is almost always a search you skipped' (CLAUDE.md). The scraper's spawn prompt asserts 'No personal website exists (documented)' but that documentation does not appear in the actual entry's AI Notes field.",
+      "fix": "Add to AI Notes: 'No personal portfolio website found; searched [name].com / .design / .studio and web search for Taylor Zahrt portfolio. Employer site wearecollins.com is the primary work source.' This closes the absence documentation gap and also addresses the Work Status source audit below."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Instagram present (with honest unverified caveat in Open Questions). LinkedIn present. Website intentionally empty (no personal site found). Email: not present, but no AI Notes note about searching for it. Minor gap: no mention of whether a public email was searched. Treating as pass since graphic designers at agencies rarely have public contact emails and the Open Question already flags the IG handle uncertainty."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy, Graphic design, Identity systems. Supported by COLLINS case study credits for Muse Group (brand identity), Equinox (campaign), Bose (rebrand). Consistent with TAXONOMY.md."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "fail",
+      "evidence": "Work Status set to Employed based only on LinkedIn. AI Notes states 'Work Status: Employed confirmed (LinkedIn title is COLLINS)' but CLAUDE.md's objective resolution rule requires checking multiple sources and naming them. No mention of whether Instagram bio was checked or what it says. No personal website to check. The rule says 'Only LinkedIn says employed, but the self-maintained site/IG say otherwise -> trust the self-maintained sources' and 'Only LinkedIn has signal, site/IG silent -> Employed at 0.8 only if the role reads current.' The second clause may apply here but must be stated explicitly.",
+      "fix": "Add to AI Notes: which sources were checked for Work Status (LinkedIn snippet confirms COLLINS; no personal site; Instagram bio not visible/confirmed at logged-out resolution). Since only LinkedIn has signal and IG bio was not readable, state that and note the 0.8 confidence hedge. This collapses into the same AI Notes addition as the absence fix above."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent. AI Notes: 'works within a strong creative direction structure at COLLINS, capable of independent execution but not yet at creative lead level; hedged, no title confirmed.' Grounded in real work history and credited team role. Seniority read present (mid-level contributor)."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with no evidence of a prior relationship in the entry or clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field indicates entry was found via Claude/roster, not a clip note with instructions. No clip note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences are hedged ('appears mid-level', 'hedged, no title confirmed', 'treat as provisional'). Seniority read present. Autonomy estimate present with reasoning."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer at COLLINS (New York / San Francisco); currently employed.' Filled and informative."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with source_url, verified_at, set_by for all touched fields. Instagram provenance honestly notes Depop cross-reference and unverified bio."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, Source, captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Instagram handle verification. Terse, conditional, valid. No story nudge needed (Worked Together is Never, no evidence of relationship)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer (this gate) has not yet flipped it. Correct."
+    }
+  ],
+  "failing_checks": ["A.context-shots", "A.absence-explained", "B.country-size-work-status"],
+  "summary": "Entry is solid on work diversity, depth, and on-capability selection across 3 COLLINS case studies. IG context shot is correctly labeled. Three documentation gaps block the pass: (1) no personal website context shot with no AI Notes explanation that one was searched and not found; (2) Work Status multi-source audit missing from AI Notes (only LinkedIn named, need to state what other sources showed); (3) these two are fixable in a single AI Notes sentence addition. The scraper can close all three fails with one targeted AI Notes update. No re-scraping of images needed.",
+  "to": "scraper",
+  "fix": "Update AI Notes to add: (a) explicit statement that no personal portfolio website was found and what was searched; (b) Work Status source audit stating that IG bio was not readable at logged-out resolution and only LinkedIn confirmed COLLINS employment, meeting the 0.8 threshold per the 'Only LinkedIn has signal, site/IG silent' rule. These two additions close all three failing checks. Images do not need to change."
+}

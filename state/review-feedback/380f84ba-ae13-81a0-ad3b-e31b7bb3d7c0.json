@@ -1,0 +1,114 @@
+{
+  "page_id": "380f84ba-ae13-81a0-ad3b-e31b7bb3d7c0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-18T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Weekday, Konstnarnamnden, Stockholm Design Lab 1998-2019, Indio Cinema. No duplicate-angle problem."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project showing interior views: Weekday (signage, printed matter, grid system); KNN (printed matter run, poster series, business cards); SDL (cover, interior spread, colorful interior spread); Indio (matches, menu)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 4 projects are graphic design or identity system work matching tagged Capabilities. weekday-04 is applied signage (on-capability). No off-capability images found."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as christopherwest.se homepage (Studio Christopher West header visible). No Instagram context shot present but no verified IG exists; covered by A.absence-explained."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link field pointing to the project page. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Entry is graphic design and identity; no video or audio work in scope."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "Instagram field is absent and AI Notes contain zero mention of the IG investigation. The spawn summary notes that @chriswestgraphicdesign was confirmed wrong-person, and @cwestofficial/@studio.west.design were unverifiable and not attached. None of this is recorded in the entry (AI Notes, provenance, or anywhere else readable). The checklist requires the entry to document why a source was not captured, not just leave it silent.",
+      "fix": "Add a sentence to AI Notes documenting the Instagram investigation: which handles were checked, which was confirmed wrong-person, which were unverifiable, and that no IG was attached as a result. Example: 'Instagram: @chriswestgraphicdesign confirmed wrong person (different individual); @cwestofficial and @studio.west.design unverifiable (could not confirm match); no IG attached.'"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, correct for an individual designer running his own studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, and Email all present. Instagram absence is a documented outcome of a genuine search (pending fix in A.absence-explained to record that documentation in the entry itself)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design and Identity systems match the work portfolio shown."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Sweden, Size: 1, Work Status: Studio. AI Notes explain the multi-source resolution (site primary, Bedow treated as collaborator not employer)."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "fail",
+      "evidence": "The Autonomy Notion field is not set. The value and reasoning ('Autonomy: 4 - runs his own studio, 15+ years experience...') appear only as inline text inside the AI Notes field, not as the schema property. keeper.py get returns no Autonomy key. CLAUDE.md and the scout runbook both require Autonomy to be set as a Notion field (set_by agent), not buried in prose.",
+      "fix": "Set the Autonomy field to 4 via keeper.py set with set_by agent. The reasoning already exists in AI Notes so no additional research is needed."
+    },
+    {
+      "id": "C.no-judgment-contradict",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the Bedow-scouting origin; no evidence in the entry contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Bedow scouting, 2026-06-15'; Name is clean 'Christopher West'. No clip note instructions appear outstanding."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge the Bedow relationship ('appears to be a long-term collaborator/client, not employer; primary sources do not support employed status'). Seniority read present with career trajectory. Minor: 'Has also worked as part of the Bedow creative team' is stated as fact; a light hedge ('appears to have collaborated with Bedow') would be tighter, but the surrounding context makes clear it is inferred."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Bedow scouting, 2026-06-15; confirmed via christopherwest.se, IASPIS archive (konstnarsnamnden.se), LinkedIn snippet, Slanted Magazine profile'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "state/provenance/380f84ba-ae13-81a0-ad3b-e31b7bb3d7c0.json present and covers all touched fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Source, captions, or any other agent-written field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions set; none required given all judgment fields are at valid zero-states and no genuine ambiguity is unresolved."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, as required before the gate passes it."
+    }
+  ],
+  "failing_checks": ["A.absence-explained", "B.autonomy-estimated"],
+  "to": "scraper",
+  "summary": "Two fixes needed before this entry is ready: (1) Add Instagram investigation note to AI Notes (3 handles checked, outcomes documented, no IG attached). (2) Set the Autonomy Notion field to 4 via keeper.py set. Both fixes require no new research. Work, metadata, and provenance are otherwise solid."
+}

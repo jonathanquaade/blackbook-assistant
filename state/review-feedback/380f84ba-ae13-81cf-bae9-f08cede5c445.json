@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-81cf-bae9-f08cede5c445",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-18T23:50:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Elastic Love (3D film), Armie Hammer/Longing for Earth (3D theater), Burning Points (3D installation), A Lovely Atmosphere/GBGT Box at Bedow (packaging), ASKET store illustration + DID I GO (illustration). The 3 ala images cover depth inside one project system, not repetition."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images inside A Lovely Atmosphere packaging system (nested box set, Thermosphere box, Mesosphere unfolded). Vimeo embeds go inside the 3D films. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion, Graphic design, Illustration. All three covered: Elastic Love/Armie Hammer/Burning Points are 3D rendered film/installation; GBGT Box is graphic/packaging; ASKET window graphics + DID I GO are illustration. No off-capability drift."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-05.png is mooncakestudios.com homepage (nav visible, projects listed). site-06.png is instagram.com/lillfinger showing Oskar Hannu bio with berlin/stockholm and mooncakestudios.com link. Both verified by opening images."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project. All 10 active images captioned; 4 rejected entries have rejection reasons recorded."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "3 Vimeo embeds present (Elastic Love, Armie Hammer, Burning Points). Each preceded in the manifest by a thumbnail image with caption + link to the Vimeo URL, per the Notion no-poster-preview pattern. Entry has 10 images (not embeds-only)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states mooncakestudios.com returned 503 (site down). Oskar Hannu is in ig-queue.json (index 18) with reason: 503 site down and 640px grid only, full-res queued. Gap is documented, not silent."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: mooncakestudios.com. Instagram: instagram.com/lillfinger (verified via context shot bio). Email: oskar@mooncakestudios.com. Personal LinkedIn URL absent but documented in AI Notes as blocked; employer linked via Works At Link (bedow.se)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D & motion, Graphic design, Illustration -- all substantiated by captured work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Sweden. Size: 1. Work Status: Employed. Conflict between site (independent studio) and LinkedIn (Bedow employee) documented in AI Notes and surfaced as Open Question 3. Objective multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 2, set_by agent. Reasoning in AI Notes: graduated Beckmans 2023, early-career, executing within studio structure. Grounded and hedged."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "No clip note with relationship facts. Zero-states (Never/Don't know them/Unvetted) are appropriate with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry sourced via Claude (agent-found), no clip note with Jonathan-stated facts or instructions requiring --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status conflict hedged. Autonomy hedged. Seniority read present (graduated 2023, early-career). IG handle confirmation sourced to Beckmans Facebook + portfolio listing. No bare assertions of unverified claims."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Designer/strategist at Bedow (Stockholm); currently employed. Bedow is a Stockholm brand-identity/packaging design studio (bedow.se).'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/380f84ba-ae13-81cf-bae9-f08cede5c445.json with all fields covered, source_url, verified_at, set_by."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and manifest captions checked. No em-dashes found. Double hyphens used in embed captions are acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "3 questions: Rating (terse), Familiarity (terse), Work Status conflict (with context). All conditional. Story nudge not triggered (Worked Together: Never, Familiarity: Don't know them). Correct."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review by this reviewer."
+    }
+  ],
+  "notes": "503 workaround accepted: project work sourced from Vimeo, European Design Blog, and IG (640px logged-out). IG queue entry confirmed in state/ig-queue.json with documented reason. Burning Points thumbnail is a title-sequence frame (not a blank title card), acceptable. Entry is complete and honest.",
+  "to": null
+}

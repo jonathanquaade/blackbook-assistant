@@ -1,0 +1,113 @@
+{
+  "page_id": "380f84ba-ae13-815d-b414-d46fdef330aa",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-18T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: OAC/On Running (oac-01/02/03), Inter Milan IM2STARS (inter-full-01/02/03), Dekmantel Festival (dekmantel-01/02/03), Palm Angels Monogram (palm-01/02 + site-09). No cross-contamination confirmed by visual inspection."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "OAC: 3 interior views of the bullseye mark and identity system. Dekmantel: poster interior + billboard in-situ + typographic poster. Palm Angels: monogram study + garment application + retail window. Inter Milan is thinner (logo mark + 2 in-use stadium/parade shots) but the project appears to be a limited campaign identity, and 3 images across 4 projects is the correct depth pattern per runbook."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design + Identity systems. All 12 project images show brand identity work: logo marks, typographic identity systems, applied branding on garments and in environments. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png: venturv.com homepage confirmed (nav Projects/Info/Contact, footer 'Nuno Ventura 2025'). site-11.png: instagram.com with handle ventur.v, display name 'Nuno Ventura', bio 'Design and Art Direction', private account header visible. Both captions match content. IG private account is acceptable as a memory anchor; header confirms identity."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 images in Notion have captions. Project images carry project name + source link. Context shots carry 'Website' and 'Instagram profile' captions with correct links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Identity systems, not video/audio. No video embeds required. No embeddable video was noted as skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes notes IG is private (no grid visible). No IG queue entry needed since the work was captured fully from venturv.com. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: venturv.com. Instagram: instagram.com/ventur.v (confirmed correct person via display name 'Nuno Ventura' in context shot). LinkedIn: linkedin.com/in/venturv. Email: nunoventurv@gmail.com. All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems. Work shown is brand identity / graphic systems. Matches TAXONOMY intent."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Portugal. Size: 1 (individual). Work Status: Freelance, resolved by objective rule: venturv.com + LinkedIn agree freelance as of 2025; Contra shows Bureau Borsche (treated as stale, two-source majority wins). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 2, set_by agent. Reasoning in AI Notes: junior/mid-level designer, always had senior designers above him (Borsche studio, magazine directors). Grounded in documented work history."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note indicating a relationship. No contradiction present."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Nuno Venturo' (misspelling only, no instructions). Name corrected to Nuno Ventura with source confirmation. Nothing else in the clip to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the Mouthwash Studio connection ('appears based on this credit', 'No evidence of LA residency'). Seniority read present and grounded. Autonomy estimate paired with reasoning. No bare assertions of unverified facts."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Contributed as Designer on Mouthwash Magazine inaugural issue. Portfolio: venturv.com.' Filled and non-empty."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file present and complete for all touched fields. All set_by values are 'agent' where appropriate. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, Source, captions. Double hyphens (--) used in AI Notes in one place but no em-dashes (Unicode U+2014) detected anywhere."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "Open Question #1 reads 'Name: entry says Venturo; all primary sources... spell it Ventura. Entry has been corrected to Nuno Ventura.' This is a resolved action item, not a live question for Jonathan. It should have been cleared after the name was fixed. Jonathan reads Open Questions as live asks directed at him; a resolved agent note sitting there is confusing and misleading. Question #2 (Mouthwash connection) is a valid live question and should remain.",
+      "fix": "Clear Open Question #1 entirely (it is already resolved). Keep Open Question #2 as-is ('Mouthwash connection: ...') and renumber it to #1. Use keeper.py ask to overwrite Open Questions with only the live Mouthwash question."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review only on pass. Correct."
+    }
+  ],
+  "summary": "One FAIL: Open Questions contains a resolved agent action item (name correction) as if it were a live question for Jonathan. This will confuse him. The fix is trivial: clear Question #1, keep and renumber Question #2 (Mouthwash employment vs. freelance contribution). All other checks pass. Images are on-capability, non-contaminated, span 4 distinct projects. Context shots are correctly labeled. Metadata is complete.",
+  "to": "scout",
+  "failing_checks": ["D.open-questions"]
+}

@@ -1,0 +1,114 @@
+{
+  "page_id": "380f84ba-ae13-81cb-ad15-ecbe29abc3e4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-18T23:45:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "comet-01.png (storyblok CDN still, captioned 'brand identity and visual direction') is near-identical to comet-vimeo-thumb.jpg (Vimeo thumbnail for the embed): both show the same space/starfield scene with the Comet wordmark at the same scale and composition. The thumbnail was placed correctly as the embed preview; comet-01.png adds no distinct visual from the Comet project.",
+      "fix": "Replace comet-01.png with a different interior shot from the Perplexity Comet case study at studiofreight.com/work/perplexity-comet (e.g. the product UI mockup, the brand colour/type system, or motion frames that are distinct from the launch film title card)."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "LinkedIn and public Email are absent from the entry and not documented as unfindable in AI Notes. Studio Freight is a well-known NYC studio with Awwwards recognition and press coverage; their LinkedIn company page is findable via a standard search.",
+      "fix": "Scout: search '<Studio Freight linkedin>' and '<studiofreight.com contact email>' to retrieve the LinkedIn company URL and any public contact address. Document both in the entry and in provenance. If genuinely unavailable after search, record that in AI Notes."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is the studiofreight.com homepage (nav shows Work, Info, News; footer shows 'Studio Freight'). site-02.png is instagram.com/studio.freight (Instagram chrome, handle 'studio.freight', 11.6K followers, bio 'Studio Freight', 'A global creative studio moving missions forward.')."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project across 5 projects. La Marzocco shows internal playbook spreads (interior pages, research doc). Esther shows mobile UI and cocktail recipe web interface. Brex goes inside with card design, social system, and OOH. SF Rebrand shows event activation, logotype on screen, and merch applied identity."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work covers brand identity (Brex, Comet), brand strategy (La Marzocco), web/UI design (Esther), and identity systems (SF Rebrand). All match tagged Capabilities: Brand strategy, Creative technology, Frontend development (web), Identity systems, Web design."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 images have captions naming the project and a source link in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Vimeo embed present for Perplexity Comet launch film with a thumbnail preview image (comet-vimeo-thumb.jpg) and link caption. Entry is not embeds-only; 14 project/context images also present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps; work captured from studiofreight.com case studies directly."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio, appropriate for a small specialized hands-on creative team."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy, Creative technology, Frontend development (web), Identity systems, Web design; all supported by the Lenis library, Awwwards record, and case study evidence cited in AI Notes."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "United States, 11-40, Studio. AI Notes support with 'distributed team ~14 to 25', NYC + Columbus OH."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5, set_by agent, with reasoning in AI Notes ('Studio-level autonomy: runs full programmes end to end')."
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states valid: Work With? Unvetted, Worked Together Never, Familiarity Don't know them. No contradiction with any evidence or clip note."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-15'; no relationship facts or judgment in the clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Team size is hedged ('~14 to 25'). Sources cited ('from their Info page plus award/library record'). No em-dashes. Factual claims (clients, library, Awwwards) are verifiable and not over-asserted."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-15'; filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/380f84ba-ae13-81cb-ad15-ecbe29abc3e4.json with all touched fields recorded."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, image captions, and Source checked; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions visible in the entry; appropriate since all judgment fields carry zero-states and no judgment was stated in the clip note."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching; reviewer has not flipped status, consistent with a fail verdict."
+    }
+  ],
+  "failing_checks": ["A.project-diversity", "B.links"],
+  "to": "scraper",
+  "summary": "Two failures: (1) comet-01.png duplicates the Vimeo thumbnail visually; replace with a distinct Comet interior shot (scraper). (2) LinkedIn and Email are absent without any documented search attempt or explanation in AI Notes (scout). Both must be resolved before the entry is ready for Jonathan."
+}

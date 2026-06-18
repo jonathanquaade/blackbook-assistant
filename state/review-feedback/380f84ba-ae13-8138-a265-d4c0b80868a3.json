@@ -1,0 +1,123 @@
+{
+  "page_id": "380f84ba-ae13-8138-a265-d4c0b80868a3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-18T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 project images across 4 distinct projects (Lyft, Amazon, Tripadvisor, WhatsApp). No repeated thumbnails or near-identical shots."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each project: typeface specimen (Lyft), sub-brand lockup system (Lyft), campaign grid and van livery (Amazon), UI redesign and OOH applications (Tripadvisor, WhatsApp). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Capabilities include '3D & motion' but zero motion/video work was captured or embedded. Koto has a public Vimeo channel and motion is a primary service; the gap is real. The WhatsApp and Tripadvisor projects are brand/identity, not motion. No reel or video embed present.",
+      "fix": "Search koto.com Vimeo channel and/or the case study pages for embeddable Vimeo/YouTube. Embed at least one motion/3D piece with a thumbnail image + linked caption, OR document in AI Notes with source URL that no embeddable video was findable (e.g. all motion is inline autoplay video with no public Vimeo/YouTube URL). If motion genuinely cannot be embedded, pull a strong still frame from an existing case study (3D render, motion frame) as an image."
+    },
+    {
+      "id": "A.context-shots-present-and-correct",
+      "result": "pass",
+      "evidence": "site-01.png is koto.com homepage (Koto nav, 'We're Koto / The Creative Company' confirmed). site-02.png is instagram.com/studiokoto (Instagram wordmark and studiokoto handle visible despite cookie overlay). Both are correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 images have captions and source links in manifest.json."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "fail",
+      "evidence": "3D & motion is a tagged Capability. No video embed present. AI Notes does not document why. Koto's Vimeo presence is public and findable; this is not a dead-source situation.",
+      "fix": "Search Vimeo for 'Koto studio' or check koto.com case study pages for Vimeo/YouTube embeds. Add at least one embed with thumbnail image. If all motion video is site-only autoplay (no public URL), document that explicitly in AI Notes with the URLs checked."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "The 3D & motion gap is not explained anywhere in AI Notes. The scraper's rationale (JS-rendered site) was not written into the entry's AI Notes, so Jonathan has no visibility into what was skipped and why.",
+      "fix": "Add one sentence to AI Notes noting what was attempted for motion capture and why it was not included, or include the actual motion work."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. AI Notes explains the reasoning (100+ staff, five offices, full-service scale)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn is empty. Koto is a 100+ person agency with an obvious public LinkedIn company page; this is a skipped search, not an absence. Email is also empty, though a public contact email for an agency of this size may exist on the site.",
+      "fix": "Search 'Koto studio LinkedIn' and set the LinkedIn company page URL. Check koto.com/contact for a public email and set if present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy, Identity systems, 3D & motion, Web design are all supported by the case study evidence. Note: provenance shows 'Creative direction' was in the original set but is absent from the live entry; this appears to have been dropped during a write and may warrant review, but the remaining tags are accurate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK/US/Germany/Australia (five offices confirmed by clipped.md and AI Notes). Size: 100+. Work Status: Studio (appropriate for an agency entity under the available options). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5, set_by agent, reasoning in AI Notes ('studio-level autonomy'). Appropriate for a full-service independent agency."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never / Don't know them / Unvetted) are consistent with the clip note, which contains no relationship or judgment facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note said 'an international creative agency building impactful brands'. Used verbatim in Source. No relationship facts or judgment stated in the note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "fail",
+      "evidence": "AI Notes states '@koto_studio should be confirmed against grid' but the Instagram field is set to studiokoto (not koto_studio) and site-02.png confirms studiokoto. The note references a wrong handle and claims confirmation is pending when it is already done. This is an unresolved internal inconsistency that will confuse Jonathan.",
+      "fix": "Update AI Notes to remove the '@koto_studio' handle reference and the 'should be confirmed' hedge -- studiokoto is confirmed. Also add the seniority/experience read the checklist requires: AI Notes must include a seniority + trajectory note for the org (founding year, founders, growth arc, notable hires or leadership if findable)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found via clip note: [verbatim]. Web clipper, 2026-06-15.' Present and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields recorded. All set_by agent. No sub-0.8 fields detected."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Source, captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. No judgment fields with non-zero-state values contradict this; no story nudge is triggered (Worked Together = Never). Nothing in the clip note requires an unresolved ask."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. It will only enter Needs Review if this gate passes."
+    }
+  ],
+  "failing_checks": [
+    "A.on-capability",
+    "A.embeds-for-video-audio",
+    "A.absence-explained",
+    "B.all-findable-links",
+    "C.ai-notes-hedged"
+  ],
+  "to": "scraper",
+  "summary": "5 checks fail. Core issue: 3D & motion is a tagged Capability but no motion/video work was captured or attempted from Koto's Vimeo presence, and the gap is not documented in AI Notes. LinkedIn is missing for a 100+ person agency (skipped search). AI Notes contains a wrong Instagram handle reference and an unresolved hedge that the screenshot already resolves. Fix the motion gap first (embed or documented explanation), add LinkedIn, and clean AI Notes before re-submitting."
+}
