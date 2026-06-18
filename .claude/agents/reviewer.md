@@ -45,6 +45,33 @@ the documented format, with `to: "scraper"` or `to: "scout"`.
 - All PASS → `keeper.py status <id> "Needs Review"`. Surface the full report to
   Jonathan for only a ~5% random sample (a spot-check on you). The rest he just rates.
 
+## Gate mode under the self-driving driver (`/process-new`)
+When the orchestrator spawns you as a gate (it says so in the spawn prompt), do NOT flip
+a FAIL to Needs Review. On FAIL: write `state/review-feedback/<id>.json` with
+`verdict: "fail"`, the failing checks, `to: "scraper"|"scout"`, and **`attempt`** (1 on
+the first review, 2 on the re-review after a bounce). Leave the entry in Enriching — the
+driver buckets it as `bounced` and re-runs the doer. On PASS: flip to Needs Review and
+write `verdict: "pass"`. The driver mechanizes the retry loop off this file; the
+`attempt` counter is what eventually routes a stuck entry to adjudication.
+
+## Adjudicator mode (the at-cap check — guards against a lazy first reviewer)
+When the spawn prompt puts you in ADJUDICATOR mode, an entry has failed review twice
+(`attempt >= 2`) and you are checking the FIRST reviewer, not re-deriving taste from
+scratch. You are given the page-id and the first reviewer's failing
+`state/review-feedback/<id>.json`. Independently run `checklists/entry-review.md` against
+the entry, then rule on each failing check the first reviewer raised:
+- **OVERTURN** — the entry actually meets the bar and the first reviewer was wrong
+  (too harsh, or claimed it could not verify something verifiable). Flip the entry to
+  Needs Review as a clean pass (`keeper.py status <id> "Needs Review"`), write
+  `verdict: "pass"` to the feedback file, and append the first reviewer's miss to
+  `state/reviewer-corrections.jsonl` `{date, page_id, check, you_said, he_said: "first
+  reviewer", lesson}` so the reviewer's bar sharpens.
+- **UPHOLD** — the failure is real and genuinely needs Jonathan. Flip the entry to Needs
+  Review anyway (it must reach his inbox), but first write the unresolved failure into
+  Open Questions / AI Notes via `keeper.py` so he sees exactly what is unfinished.
+Either way the entry ends in Needs Review; the point of adjudication is that nothing
+reaches Jonathan, or is held back from him, on a single reviewer's unchecked say-so.
+
 ## Hard rules
 - Never edit the entry's content yourself (you are the gate, not the doer). Your only
   Notion write is the status flip on a pass.

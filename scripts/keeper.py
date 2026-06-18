@@ -7,6 +7,11 @@ writes beyond zero-states, provenance write-through).
 
 Usage:
   keeper.py work new|revisit         work list as JSON lines (revisit capped at 10)
+  keeper.py work pipeline [--scope ID,ID] [--timeout MIN]
+      the self-driving P1 driver's "what's next": JSON buckets (new/needs_scraper/
+      needs_review/bounced/at_cap/stalled/in_flight/done) derived from durable state
+  keeper.py lease set|clear|list ID [--phase P] [--agent A] [--run-id R]
+      per-entry lease (state/pipeline-run/) so ticks never double-spawn; stale = retry
   keeper.py new NAME [JSON] [--source TEXT]   create a New entry (stub for scout/P1)
   keeper.py get PAGE_ID             entry as readable JSON
   keeper.py set PAGE_ID JSON [--source URL]   update fields, e.g. '{"Type":"Person"}'
@@ -178,6 +183,126 @@ def cmd_work(kind, limit=10, offset=0, oq_filter=None):
         print(json.dumps(entry_dict(r), ensure_ascii=False))
     shown = f'{offset}-{offset + len(rows)} of {total}' if kind == 'revisit' else str(len(rows))
     print(f'-- {len(rows)} entries ({shown})', file=sys.stderr)
+
+# ---- pipeline state (the self-driving driver's single source of "what's next") ----
+#
+# The /process-new orchestrator must NOT drive on subagent completion notifications
+# (they arrive mislabeled, or not at all, and a passive "I'll wait" stalls the whole
+# run until a human pokes it — Jonathan, 2026-06-18). Instead it ticks: each wake it
+# asks THIS command "what is the next action for every in-flight entry?" and acts on
+# durable state — Notion status + provenance (did the scout fill metadata) + the
+# assets/<id>/manifest.json (did the scraper materialise work) + review-feedback
+# (the gate verdict). Notifications become a mere "maybe wake now" hint; state is truth.
+#
+# A per-entry LEASE (state/pipeline-run/<id>.json) is the mutex + self-heal: an entry
+# with a FRESH lease is in_flight (skip, don't double-spawn); a STALE lease (older than
+# the timeout, i.e. the agent died mid-flight) drops the entry back into an actionable
+# bucket so the next tick retries it. This is what makes the loop safe to run unattended
+# in the cloud (overlapping cron ticks can't grab the same entry) and self-healing.
+
+LEASE_DIR = os.path.join(REPO, 'state', 'pipeline-run')
+LEASE_TIMEOUT_MIN = int(ENV.get('KEEPER_LEASE_TIMEOUT_MIN', '30'))  # > longest agent runtime (~25m)
+
+def lease_path(page_id):
+    return os.path.join(LEASE_DIR, f'{page_id}.json')
+
+def read_lease(page_id):
+    p = lease_path(page_id)
+    if not os.path.exists(p): return None
+    try: return json.load(open(p))
+    except Exception: return None
+
+def lease_is_fresh(lease, timeout_min=LEASE_TIMEOUT_MIN):
+    if not lease: return False
+    started = lease.get('started_at')
+    if not started: return False
+    try: dt = datetime.fromisoformat(started)
+    except Exception: return False
+    return (datetime.now() - dt).total_seconds() <= timeout_min * 60
+
+def manifest_exists(page_id):
+    return os.path.exists(os.path.join(REPO, 'assets', page_id, 'manifest.json'))
+
+def read_feedback(page_id):
+    p = os.path.join(REPO, 'state', 'review-feedback', f'{page_id}.json')
+    if not os.path.exists(p): return None
+    try: return json.load(open(p))
+    except Exception: return None
+
+def scout_done(page_id):
+    """True once the scout has written its metadata pass to provenance. AI Notes is
+    scout-owned and always written, so its presence is the reliable signal; Type+Source
+    together are the fallback for an older provenance file."""
+    p = prov_path(page_id)
+    if not os.path.exists(p): return False
+    fields = json.load(open(p)).get('fields', {})
+    return 'AI Notes' in fields or ('Type' in fields and 'Source' in fields)
+
+def cmd_pipeline(scope=None, timeout_min=LEASE_TIMEOUT_MIN):
+    """Emit, as JSON buckets, the next action for every entry in the P1 loop. The
+    driver acts on the actionable buckets (new/needs_scraper/needs_review/bounced/
+    at_cap/stalled) and stops when they are all empty. `scope` (list of page-ids)
+    restricts the report to the entries a given run owns."""
+    scope_set = set(scope) if scope else None
+    buckets = {k: [] for k in ('new', 'needs_scraper', 'needs_review', 'bounced',
+                               'at_cap', 'stalled', 'in_flight', 'done')}
+    for r in query_all():
+        pid = r['id']
+        if scope_set and pid not in scope_set: continue
+        status = (r['properties']['Entry Status']['select'] or {}).get('name')
+        item = {'page_id': pid, 'name': plain(r['properties'].get('Name')) or ''}
+        if status in (None, 'New'):
+            buckets['new'].append(item); continue
+        if status == 'Needs Review':
+            buckets['done'].append(item); continue
+        if status != 'Enriching':
+            continue  # Verified / Revisit / Rejected are not part of the P1 loop
+        # An entry an agent is actively working (fresh lease) is skipped: do not double-spawn.
+        lease = read_lease(pid)
+        if lease_is_fresh(lease, timeout_min):
+            item['phase'] = lease.get('phase')
+            buckets['in_flight'].append(item); continue
+        fb = read_feedback(pid)
+        if fb and fb.get('verdict') == 'fail':
+            item['attempt'] = fb.get('attempt', 1)
+            item['to'] = fb.get('to', 'scraper')
+            (buckets['at_cap'] if item['attempt'] >= 2 else buckets['bounced']).append(item)
+            continue
+        if manifest_exists(pid):
+            buckets['needs_review'].append(item)      # scraper done, awaiting the gate
+        elif scout_done(pid):
+            buckets['needs_scraper'].append(item)      # scout done, no work captured yet
+        else:
+            buckets['stalled'].append(item)            # scout never finished, no live lease -> retry
+    print(json.dumps(buckets, ensure_ascii=False, indent=2))
+    counts = {k: len(v) for k, v in buckets.items()}
+    actionable = sum(counts[k] for k in ('new', 'needs_scraper', 'needs_review',
+                                         'bounced', 'at_cap', 'stalled'))
+    print(f'-- pipeline {counts} | actionable={actionable}', file=sys.stderr)
+
+def cmd_lease(action, page_id, phase=None, agent=None, run_id=None):
+    """Per-entry lease so the driver (and overlapping cloud ticks) never double-spawn.
+    `set` stamps started_at=now; `clear` removes it; `list` dumps all live leases."""
+    if action == 'set':
+        os.makedirs(LEASE_DIR, exist_ok=True)
+        rec = {'page_id': page_id, 'phase': phase, 'agent': agent, 'run_id': run_id,
+               'started_at': datetime.now().isoformat(timespec='seconds')}
+        with open(lease_path(page_id), 'w') as f:
+            json.dump(rec, f, indent=2)
+        print(json.dumps(rec, ensure_ascii=False))
+    elif action == 'clear':
+        p = lease_path(page_id)
+        if os.path.exists(p): os.remove(p)
+        print(f'lease cleared: {page_id}')
+    elif action == 'list':
+        if not os.path.isdir(LEASE_DIR): return
+        for fn in sorted(os.listdir(LEASE_DIR)):
+            if fn.endswith('.json'):
+                lease = json.load(open(os.path.join(LEASE_DIR, fn)))
+                lease['fresh'] = lease_is_fresh(lease)
+                print(json.dumps(lease, ensure_ascii=False))
+    else:
+        sys.exit('lease set|clear|list')
 
 def cmd_get(page_id):
     print(json.dumps(entry_dict(api(f'pages/{page_id}')), indent=2, ensure_ascii=False))
@@ -416,11 +541,20 @@ if __name__ == '__main__':
         if s == '-': return sys.stdin.read()
         return s
     a = [deref(x) if i >= 2 else x for i, x in enumerate(a)]
-    if cmd == 'work':
+    if cmd == 'work' and len(a) > 1 and a[1] == 'pipeline':
+        scope = a[a.index('--scope') + 1].split(',') if '--scope' in a else None
+        tmo = int(a[a.index('--timeout') + 1]) if '--timeout' in a else LEASE_TIMEOUT_MIN
+        cmd_pipeline(scope, tmo)
+    elif cmd == 'work':
         lim = -1 if '--all' in a else (int(a[a.index('--limit') + 1]) if '--limit' in a else 10)
         off = int(a[a.index('--offset') + 1]) if '--offset' in a else 0
         oqf = 'feedback' if '--feedback' in a else ('empty' if '--empty-oq' in a else None)
         cmd_work(a[1], lim, off, oqf)
+    elif cmd == 'lease':
+        ph = a[a.index('--phase') + 1] if '--phase' in a else (a[3] if len(a) > 3 and not a[3].startswith('--') else None)
+        ag = a[a.index('--agent') + 1] if '--agent' in a else None
+        rid = a[a.index('--run-id') + 1] if '--run-id' in a else None
+        cmd_lease(a[1], a[2] if len(a) > 2 else None, ph, ag, rid)
     elif cmd == 'new':
         src = a[a.index('--source') + 1] if '--source' in a else None
         body = a[2] if len(a) > 2 and not a[2].startswith('--') else '{}'

@@ -9,3 +9,6 @@ state/passcodes.json
 state/ig-profile/
 state/ig-profile-*/
 state/ig-throttle.json
+
+# pipeline driver leases (ephemeral, per-run)
+state/pipeline-run/
