@@ -1,0 +1,110 @@
+{
+  "page_id": "334f84ba-ae13-81d9-94b8-dc05c1fb38df",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:50:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct projects across documentary, commercial, music video and arts contexts: DYNASTY, Brixton BID, Illuminated River, Heart of London Club, Work Me/Loveless, Jaya for Penelope Chilvers, Foundling Museum, Refugee Action Kingston. No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "One representative thumbnail per film plus a playable Vimeo embed for each. For a film/video-production entry, thumbnail + embed is the correct depth unit; the embed IS the work. 7 of 8 thumbnails show real film content (one, DYNASTY, is a title-card still - minor, not a fail)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 8 films are video production work matching the tagged capability Film & video production. Mix of documentary, music video, commercial and arts/cultural film."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is instagram.com/alex_____howat (confirmed visually: Instagram header, @alex_____howat handle). site-02.png is vimeo.com/user13344358 (confirmed visually: Vimeo profile 'Alex Howat, VIDEOGRAPHER, Based in North London'). No personal website exists (documented); Vimeo is the portfolio and is an appropriate substitute for the website context shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 thumbnail images and 2 context shots have captions and source links in manifest.json."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "8 Vimeo embeds present, each paired with a thumbnail image as a preview. Caption and link on every embed. Pattern follows the CLAUDE.md 'thumbnail gallery + playable embeds below' instruction for video creatives."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No personal website documented in AI Notes and Open Questions #3. IG login-wall documented in AI Notes. No IG queue needed as the public scrape provided a context screenshot and the work is captured from Vimeo."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Instagram present and verified. No LinkedIn found (different person at /in/alexhowat documented, two searches done - documented in AI Notes). No public email found (documented). No personal website (documented in Open Questions #3, Website field holds migration IG URL). Absences are documented, not skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production, matching clip note 'film + editor' and Vimeo profile self-description 'VIDEOGRAPHER'."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United Kingdom. Size: 1. Work Status: Unknown with sources named in AI Notes (Vimeo and IG both checked, neither conclusive). Objective multi-source rule applied and documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent, hedged in AI Notes with reasoning: no confirmed career history found, placed at mid-range pending identity confirmation."
+    },
+    {
+      "id": "C.no-contradicting-judgments",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with clip note, which contains no relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Alex Howat (film + editor)': Name cleaned to 'Alex Howat', capability film+editor mapped to Film & video production, clip note preserved verbatim in Source."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedging throughout ('Vimeo confirms', 'identity via IG remains unconfirmed independently', 'Autonomy 3 (mid-range, hedged)', 'seniority is uncertain'). Seniority read present and paired with Autonomy estimate."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Clip-note Name: \"Alex Howat (film + editor)\". Web clipper, 2026-03-31.' Clip note verbatim, date present."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "state/provenance/334f84ba-ae13-81d9-94b8-dc05c1fb38df.json present with all touched fields including set_by, verified_at."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions and Source. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "3 questions: identity confirmation, Work Status, and website. All are unresolvable by the agent without Jonathan input. Terse and appropriate. Story nudge not triggered (Worked Together: Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will be flipped to Needs Review by this gate."
+    }
+  ],
+  "to": null
+}

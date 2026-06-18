@@ -1,0 +1,111 @@
+{
+  "page_id": "342f84ba-ae13-81e2-9ddf-cec7dd272e09",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T08:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 interior screens across 5 distinct projects: Amble (3), Official/Bumble Inc (3), Motorway (3), Bee/Bumble Inc (2), Firefly/Bumble Inc (1). Card thumbnails correctly rejected in favor of interior screens. Note: Zodia (6th project visible on homepage) not captured, but 5 of 6 with depth clears the bar."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "All 12 non-context images are interior product screens (flows, dashboards, feature states), not hero cards or covers. amble-01/02/03 show distinct app flows; official-01/02/03 show hero screens, colour system, and design system components; motorway-01/02/03 show dealer dashboard, payment summary, mobile seller flow."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged Product design; all 12 images are product UI screens for consumer apps and marketplaces. Confirmed on inspection: Amble language-learning app screens, Bumble Inc product variants (Official relationship app, Bee dating app, Firefly app), Motorway dealer dashboard. All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-07.png confirmed as olivermayes.tech homepage (verified visually: shows 'Hi, I'm Olly, a founding product designer...' with project cards). No Instagram context shot, but no IG exists for this person -- AI Notes documents exhaustive search (@olivermayes, @omayes, @ollymayes, @olly.mayes all checked, none matched). Absence is a genuine absence, not a missed capture."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 work images have project name + source link in manifest captions. Context shot captioned 'Website' with link. No uncaptioned images in the uploaded set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Product design entry; no video/audio work applies. No YouTube/Vimeo/SoundCloud present on case study pages per scraper's portfolio-level capture. N/A for this capability."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No IG: AI Notes documents 4 handle variants checked, @oliverinamayes confirmed wrong person (theater director Portland/LA), no design IG found. No email: email button on site copies to clipboard with address not visible in page source, documented. Work Status Unknown: Amble shutdown confirmed, LinkedIn 999 login wall, no new employer signal. All absences documented."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual product designer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://olivermayes.tech/ (set). LinkedIn: https://uk.linkedin.com/in/omayes (set). Instagram: documented not found after exhaustive search (4 handle variants). Email: documented not accessible (clipboard-only button, address hidden in source). No obvious links skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Product design. Correct per TAXONOMY.md for a product designer building consumer apps. Open Question 1 asks Jonathan whether to re-tag to Digital product design, which is an appropriate terse question for a judgment-adjacent taxonomy call."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United Kingdom (set). Size: 1 (person). Work Status: Unknown with multi-source documentation in AI Notes: site stale (amble.app shut down June 2026), LinkedIn returned 999 (unreadable), amble.app official shutdown announcement confirmed. Objective rule applied: no two sources agree on a current status, so Unknown is correct. Not a vibe call."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: founding designer role, owned product design end to end at a startup. Hedged ('estimated from career trajectory and role scope'). Grounded in real work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note is 'Olly Mayes: Founding Product Designer' -- descriptive only, no relationship or judgment stated. Zero-states are appropriate and not contradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note text 'Olly Mayes: Founding Product Designer' acted on: Name cleaned to 'Oliver Mayes', clip note preserved verbatim in Source field, founding designer role used to inform AI Notes and Autonomy estimate. No instructions left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('estimated from career trajectory and role scope, hedged'), Work Status ('pending his own update'), LinkedIn access ('returned 999, login wall, unreadable'). Seniority read present ('Mid-to-senior level'). Verifiable facts (Bumble, Motorway, Amble) stated plainly. No em-dashes. No over-assertion of relationship or taste."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Clip-note Name: \"Olly Mayes: Founding Product Designer\". Web clipper, 2026-04-14.' Verbatim clip note preserved, creation date included. Complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/342f84ba-ae13-81e2-9ddf-cec7dd272e09.json. Fields covered: Website, Worked Together, Familiarity, Entry Status, Work With?, Capabilities, Work Status, Name, Type, Country, Size, Works At Link, LinkedIn, Autonomy, Source, AI Notes, Open Questions, Images. All fields touched by the agent are recorded. set_by values are agent (except Capabilities: jonathan, reflecting locked clipper/migration base)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, Source, and captions programmatically. No em-dashes (U+2014) found anywhere."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: capability re-tag (Product design -> Digital product design). Terse and conditional (no pre-existing non-zero-state value). No story nudge needed (Worked Together Never, Familiarity Don't know them, Work With? Unvetted -- all zero-states, no trigger). No stacked or nag questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching in provenance; this is the correct pre-gate state. Flip to Needs Review is this reviewer's action on pass."
+    }
+  ],
+  "notes": "Clean entry. 5 distinct projects with genuine interior depth. Only observation: Zodia (6th project on portfolio homepage) was not captured, but 5 projects with 12 interior screens more than satisfies the bar. Work Status Unknown and the Capabilities re-tag question are legitimately open Jonathan decisions, not gate failures.",
+  "to": null
+}

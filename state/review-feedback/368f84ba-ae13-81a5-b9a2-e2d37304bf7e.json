@@ -1,0 +1,110 @@
+{
+  "page_id": "368f84ba-ae13-81a5-b9a2-e2d37304bf7e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: OpenAI, Shields, PartyDAO, Uniswap, Sky. No duplicate project captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images showing interior depth: OpenAI has lockup + variations sheet + character system; Shields has 3D machine + output grid + EmblemWeaver UI; PartyDAO has mascot + Kazoo platform interface + Party Cards spread."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are identity systems, generative design, 3D renders, or product interfaces -- matching tagged caps (Creative technology, Identity systems, 3D & motion, Digital product design)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as area.tech homepage. Instagram context shot absent but legitimately so: studio lists no IG handle; AI Notes documents absence with reasoning."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a named project caption and a source link to the area.tech project page."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Project videos are self-hosted R2 MP4s, not YouTube/Vimeo; not embeddable in Notion. Documented by scraper; captions link to project pages. Legitimate limitation, not a skip."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence explained in AI Notes: studio /info lists only Twitter handles; no IG handle confirmed at 0.8 confidence. LinkedIn absence also explained: area-technology LinkedIn is a different Russian firm."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct -- small specialist execution studio, not an agency."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: area.tech. Email: contact@area.tech. Instagram: documented absent with reasoning. LinkedIn: documented absent (different company at that handle). All absences explained at 0.8+ confidence."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "5 caps all defensible from visible work: generative/creative-tech systems, identity, brand, 3D motion renders, product UI."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country empty + Open Question (legitimate: no studio-level confirmation). Size 2-10 appropriate for 2-founder studio. Work Status: Studio with multi-source evidence in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set with reasoning in AI Notes: founder-led specialist studio, full creative control."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states appropriate. Clip note contains no relationship language. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Shields - Area Technology' parsed: Name cleaned, clip note verbatim in Source field."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged (country 'suggesting US, but not confirmed'). Verifiable facts asserted (clients, founders, email). Seniority read and Autonomy reasoning included."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Clip-note Name: Shields - Area Technology. Web clipper, 2026-05-22.' Present and complete."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields with set_by, verified_at, and value."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions. Double hyphens in captions are ASCII hyphens, not em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question: Country? Country field is empty so asking is valid. No superfluous questions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching, ready to flip to Needs Review on gate pass."
+    }
+  ],
+  "to": null
+}
