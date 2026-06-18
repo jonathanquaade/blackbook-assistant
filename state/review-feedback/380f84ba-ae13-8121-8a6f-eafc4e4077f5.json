@@ -1,0 +1,110 @@
+{
+  "page_id": "380f84ba-ae13-8121-8a6f-eafc4e4077f5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects: AG1, 100 Thieves, Grailed, LOL Worlds 2024, Nike Super Bowl LX, Utah Jazz, Durango Casino. All clearly different clients."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "AG1: 3 images covering brand system + product + campaign spread. Durango: 3 identity system images going into the system. Utah Jazz: 2 brand images + motion still + embed. Grailed: 2 images + film still + 2 embeds. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Brand strategy, Creative direction, Graphic design, Identity systems, 3D & motion, Film & video production, Photography. All captured work is brand identity, motion, and film production matching those tags exactly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: manifest source_url is thenewcompany.com, caption 'Website', image shows thenewcompany.com homepage (hero project image). site-02.png: shows instagram.com profile for @thenewcompany, caption 'Instagram profile'. Both correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 20 manifest file entries have captions and source links. All 6 embeds have captions and project links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo embeds present across Grailed (2), LOL Worlds (2), Nike Super Bowl (1), Utah Jazz (1). Each video project has a thumbnail still image as preview plus an embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No gaps requiring explanation. 20 images + 6 embeds across 7 projects is comprehensive. Email absence documented in AI Notes."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Consistent with the AI Notes rationale (broad full-service offer, ~24 people, branding + strategy + film + photography)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all filled. Email not found; AI Notes explicitly documents the search failure ('no /contact page and no email listed on site or in search results')."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "7 capabilities drawn from their site service filters: Brand strategy, Creative direction, Graphic design, Identity systems, 3D & motion, Film & video production, Photography. Consistent with the portfolio."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 11-40 (AI Notes: ~24 people from LinkedIn/Crunchbase). Work Status: Studio (correct for an independent org entity; AI Notes documents source check: thenewcompany.com + LinkedIn confirm active independent operation)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent, with reasoning: 'Senior pedigree at the top; autonomy set to 5 (studio-level independence)' and history cited (ex-COLLINS co-founder/CCO, ex-Airbnb design lead)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note is a discovery path only ('found it because one of the formers guys from collins founded it'). Zero-states do not contradict evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note fully processed: Matt Luckhurst + COLLINS context documented in AI Notes; name cleaned from 'The New Company (branding agency) found it because...' to 'The New Company'; clipped.md archived. No rating or relationship facts in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Uncertain claims hedged: 'Approximately 24 people', 'Clients reportedly Nike, Dropbox, Mailchimp, Instagram'. Seniority read present with verifiable history (Matt Luckhurst ex-COLLINS co-founder/CCO, ex-Airbnb). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found via clip note: \"found it because one of the formers guys from collins founded it matt luckhurst\". Web clipper, 2026-06-15.' Clip note preserved verbatim."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all fields recorded, all set_by agent. No confidence flags."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Source, captions all checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "No Open Questions present. All judgment fields are at zero-state; clip note contains no relationship or judgment claims that would require asking. Story nudge not triggered (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching as required before reviewer gate. Will be flipped to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

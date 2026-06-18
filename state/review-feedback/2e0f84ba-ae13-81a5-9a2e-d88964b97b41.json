@@ -1,0 +1,30 @@
+{
+  "page_id": "2e0f84ba-ae13-81a5-9a2e-d88964b97b41",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:50:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "9 distinct named projects: Showreel, GRAU music video, Primadonna or Nothing, GUCCI Solaris, Oatly commercial, Infinite Breakroom, Falling in Space, Adidas x Juventus x NASA, How To Fly, Milky Chance Colorado"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Gucci Solaris 2 stills + embed, Adidas Juventus 3 stills, How To Fly 3 stills, Colorado 2 stills; goes inside films with multiple frames per project"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All captured work is cinematography stills and film embeds; Capabilities are Film & video production and Photography; nothing off-capability"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png opens as gansc.how homepage; site-03.png opens as instagram.com/sebastianganschow with correct handle visible; site-02.png is marked rejected in manifest and absent from Images property"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "Every manifest entry has a caption naming the project and source link; all 19 Images property entries correspond to captioned manifest items"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "7 Vimeo embeds present, each paired with a thumbnail preview image; entry also has stills so not embeds-only"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No unexplained gaps; IG context shot present; AI Notes documents all sources checked"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type = Person"},
+    {"id": "B.links-present", "result": "pass", "evidence": "Website (gansc.how), Instagram (confirmed via screenshot of @sebastianganschow profile), LinkedIn (from Google snippet, Freiberuflich), Email (from /about page, jotes-creations.de entity) all present"},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Film & video production, Photography match site sections Cinematography, Photo, Glitch; Glitch is a personal style descriptor not a taxonomy tag"},
+    {"id": "B.country-size-work-status", "result": "pass", "evidence": "Germany, Size 1 (Person), Freelance with multi-source resolution documented in AI Notes (own site + IG + LinkedIn all agree Freiberuflich)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: shoots and lights own projects, freelance hire on bigger productions"},
+    {"id": "C.no-contradicting-judgment", "result": "pass", "evidence": "Clip note has no relationship signal; zero-states Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all valid"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note parsed: name cleaned, capabilities informed by note, source preserves clip note verbatim"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Hedged language used throughout; seniority read present (mid-level to rising DP); Autonomy estimate with reasoning; Work Status source resolution documented; no em-dashes"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source = 'Clip-note Name: GANSCHOW (photography and video). Web clipper, 2026-01-06.'"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "Provenance file present, all touched fields recorded with set_by agent and verified_at timestamps"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "Scanned AI Notes, captions, Source field: no em-dashes found"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No outstanding open questions; no story-nudge trigger applies (Worked Together: Never, Familiarity: Don't know them)"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Status is Enriching before reviewer flip; correct for gate mode"}
+  ],
+  "to": null
+}

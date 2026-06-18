@@ -1,0 +1,110 @@
+{
+  "page_id": "368f84ba-ae13-8159-bad4-cb8ddabcdd4b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: SKIMS Valentine's Day campaign (site-01), DS REPS Portfolio 1 editorial portraits (site-02 to site-06), Supreme x Salem campaign (site-07 to site-10), Psychocandy HVW8 Gallery art exhibition (site-12 to site-14, site-17). Note: 5 images share the dsreps Portfolio 1 link but show clearly different subjects and shoots."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior shots per project: 5 portrait variants from DS REPS editorial, 4 shots inside the Supreme x Salem campaign, 4 exhibition/installation views from Psychocandy. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Photography: SKIMS campaign, Supreme x Salem campaign, DS REPS editorial portraits. Art practice: Psychocandy gallery installation (HVW8, 2021) with neon sculpture, print installation, and screen-test photographs. Both tagged Capabilities represented."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png visually confirmed as sandykim.com homepage (SANDY KIM nav + SKIMS image). site-16.png visually confirmed as instagram.com/sandycandykim profile (219k followers, bio reads Sandy Kim, grid visible). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 uploaded images have captions naming the project and a source link. site-11.jpg correctly excluded (rejected in manifest with documented reason)."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Sandy Kim is a photographer and visual artist. No embeddable video was identified as missed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "site-11.jpg (exterior gallery building shot) rejected with reason documented in manifest. No other unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: sandykim.com. Instagram: instagram.com/sandycandykim (confirmed via clip note + own site). LinkedIn: in/sandy-kim-a2206a73. Email: sandykimstudios@gmail.com (public contact page). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography and Art practice. Supported by commercial client list (SKIMS, Supreme) and gallery exhibition practice (Psychocandy, HVW8)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Freelance. AI Notes names sources: sandykim.com portfolio site + IG bio agree on independent practice; LinkedIn confirms geography/education, no employer listed. Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: runs her own commissions, likely repped for bookings (DS REPS representation). Grounded in public evidence."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Clip note is 'Sandy Candy Kim' only, no relationship facts stated. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all valid zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Sandy Candy Kim' recorded verbatim in Source. Name cleaned to Sandy Kim. No other instructions in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Hedges present: 'likely repped for bookings', 'Autonomy 4: runs her own commissions' (reasoned, not asserted). Seniority read present: 'Established mid-to-senior shooter'. Client/exhibition facts asserted without hedging are verifiable (SKIMS, Supreme, HVW8 Psychocandy)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Clip-note Name: \"Sandy Candy Kim\". Web clipper, 2026-05-22.' Present and correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields, set_by and verified_at recorded. source_url is null throughout (not pulled into provenance from CDN), which is a mild gap but not a confidence violation."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes checked: no em-dashes found. Captions and Source also clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions present. Rating and Familiarity are zero-state or empty; the checklist does not require asking for them if the doer judged them non-blocking. No story nudge triggered (Worked Together = Never, no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching. Being flipped to Needs Review by this reviewer on pass, per gate protocol."
+    }
+  ],
+  "to": null
+}

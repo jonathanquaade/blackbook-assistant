@@ -1,0 +1,110 @@
+{
+  "page_id": "368f84ba-ae13-81c5-87cb-d94e886172e7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:50:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects confirmed by image content: rhode Glazing Mist, Haus Labs Europe, NARS The Multiple, TUMI 50th, Set Active TV ReRun, Summer Fridays Winter Outdoor. Plus 3 additional GIFs from 3 more projects (West Coast Modern Hideaway House, TUMI 50th GIF, rhode Summer Shelf). No repeated angles of one project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Thumbnails are stills from inside the videos (product details, set pieces, talent shots), not generic cover art. GIFs show product detail (gold TUMI hardware, rhode shelf arrangement). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 images + 6 Vimeo embeds are film/video production and photography work matching tagged capabilities: Film & video production, Photography, Social media content, Creative direction. No off-capability content found."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png shows melwalker.ca media kit homepage (her own site, fallback from melwalker.ca TLS issue which is documented). site-02.png is confirmed instagram.com/melwalkerrr profile page showing name MEL WALKER, 132k followers, IG handle consistent with entry. Both captions accurate."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 images have project name + source link in manifest. Thumbnails link to specific Vimeo URLs. GIFs link to media.melwalker.ca (root of media kit; most specific URL available for a single-page portfolio site). Context shots captioned Website and Instagram profile with matching source URLs."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo embeds present, each paired with a thumbnail preview image (captioned with project + link to Vimeo URL). Entry is not embeds-only: 11 images including thumbnails and GIFs accompany the embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents that melwalker.ca had a TLS cert issue; media.melwalker.ca (her own media kit Cargo site) was used as fallback. No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance creative."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://melwalker.ca/ (canonical). Instagram: https://www.instagram.com/melwalkerrr/ (confirmed from profile screenshot matches handle, name, and bio). LinkedIn: https://ca.linkedin.com/in/melwalkerrr. Email: mel@melwalker.ca (confirmed from her own media kit contact page). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production, Photography, Social media content, Creative direction. Matches her actual work output and self-description (video production, photo, editor, creator, creative direction per her own site)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Canada, Size 1 (individual), Freelance. AI Notes documents multi-source resolution: own site shows self-employed, IG bio consistent with independent work, LinkedIn shows no employer. Three sources agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent. AI Notes: operates independently across full production pipeline, books own commercial clients. Reasoning grounded in observable facts (commercial client roster, self-employed, concept-to-execution duo)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are zero-states. Clip note was just the name 'Mel Walker' with no relationship context. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note Name was 'Mel Walker' with no special instructions or relationship facts. Source field records this verbatim. Nothing unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Hedged inferences present ('prefers in-camera over post', 'consistent with', 'positioned as mid-level'). Seniority read included (mid-level commercial creative). Autonomy reasoning paired. Work Status sources named explicitly. No bare assertions of unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Clip-note Name: \"Mel Walker\". Web clipper, 2026-05-22.' Includes clip note verbatim and web clipper date."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields: Website, Worked Together, Familiarity, Entry Status, Work With?, Work Status, Name, Type, Capabilities, Country, Size, Instagram, LinkedIn, Autonomy, Source, AI Notes, Email, Images. All set_by agent where appropriate (Name set_by migration is correct). No field below 0.8 confidence was written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field contain zero em-dashes (verified by string scan)."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. No unresolvables exist: all findable fields filled. Zero-states are correct. No story nudge needed (Worked Together: Never, Familiarity: Don't know them are both baseline)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

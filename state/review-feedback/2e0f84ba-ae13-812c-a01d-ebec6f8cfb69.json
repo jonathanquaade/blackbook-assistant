@@ -1,0 +1,110 @@
+{
+  "page_id": "2e0f84ba-ae13-812c-a01d-ebec6f8cfb69",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T08:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 work images across 7 distinct clients: Vogue Paris, Charlotte Chesnais, Givenchy Beauty, Bottega Veneta, Kinto, Rira Objects, CEP, Myriam Bonaglia (Imminent Fantasma). Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Myriam Bonaglia project receives 3 interior shots from the same series. Other clients get 1 representative shot each. For a still-life photographer, individual photos are the deliverable; these are not hero crops but distinct compositional stills."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 10 work images are still-life or product photography (beauty/cosmetics, jewelry, glassware, campaign shoes). Capability tagged: Photography. Match confirmed on every image."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: bastiengomez.com homepage (single-image portfolio layout, product photo visible -- correct website). site-02.png: instagram.com showing @bastiengomez_ profile with username, bio 'Bastien Gomez / Photographer, Paris / bastiengomez.com' -- confirmed correct person."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 manifest entries carry captions naming the client or project. Myriam Bonaglia images share one caption but it names the project (Imminent Fantasma, 2024)."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Not applicable. Bastien Gomez is a still photographer; no video/audio work expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "TLS cert issue on HTTPS documented in AI Notes; HTTP used as fallback. No other notable sources blocked or unexplored."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: http://bastiengomez.com/ (present). Instagram: https://www.instagram.com/bastiengomez_/ (present, confirmed via IG screenshot and Eyes on Talents cross-reference). LinkedIn: absent but AI Notes documents two failed searches with specific reason (multiple Bastien Gomez profiles, none matching ECAL/photography). Email: absent; AI Notes documents TLS cert barrier and no secondary source. Both absences are explained, not silently dropped."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography. Matches all captured work. Tagged from TAXONOMY.md."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 1. Work Status: Freelance. AI Notes records site and IG both show freelance, no staff role found; two sources agree per the objective resolution rule. LinkedIn not found."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: ECAL Master (Lausanne), teaching at HEAD Geneva and SVA NY exchange, operates independently as freelancer, mid-senior level. Grounded in verifiable education and career facts."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Clip note 'Bastien Gomez - Photographer' states no relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note says 'Bastien Gomez - Photographer'. Name cleaned to 'Bastien Gomez'; clip note archived to clipped.md; 'Photographer' used to confirm Photography capability. Source field records the clip note verbatim. No instructions left unactioned."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority hedged ('roughly 5 to 10 years experience, so mid-level and well-trained'). Art practice tag kept pending ('suggesting both commissioned and exhibited/art work, kept Photography tag pending confirmation'). LinkedIn/email search limitations disclosed. Client facts (Vogue Paris, Givenchy, Charlotte Chesnais etc.) stated as factual. Seniority + Autonomy pair present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Clip-note Name: Bastien Gomez - Photographer. Web clipper, 2026-01-06.' Verbatim clip note plus creation date."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file covers all 14 touched fields (Website, Worked Together, Familiarity, Entry Status, Work With?, Work Status, Name, Type, Capabilities, Country, Size, Instagram, Autonomy, Source, AI Notes, Open Questions, Images). All set_by: agent. No field written without a provenance entry."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and manifest captions. Zero em-dash characters found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse questions: (1) Art practice tag, conditional on unconfirmed PhMuseum gallery practice -- agent genuinely cannot confirm this. (2) Representation status via Eyes on Talents -- listing found but confirmation requires Jonathan or direct inquiry. Both are conditional and not askable from first-party sources alone."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null
+}

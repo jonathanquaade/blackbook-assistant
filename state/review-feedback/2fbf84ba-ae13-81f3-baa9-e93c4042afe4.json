@@ -1,0 +1,111 @@
+{
+  "page_id": "2fbf84ba-ae13-81f3-baa9-e93c4042afe4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Four near-duplicate landscape/portrait crop pairs were left active (site-02/site-03, site-07/site-08, site-10/site-11, site-13/site-14). Each pair is the same source frame served at two aspect ratios: site-02 and site-03 share the same CDN filename (zegna_secondskin_still_05.jpg); site-07 and site-08 are the same Camaleonda sofa arrangement from overhead vs front; site-10 and site-11 are the same Zenith watch, landscape vs portrait; site-13 and site-14 are the same Montblanc pen, landscape vs portrait. The scraper already flagged and rejected site-05 for exactly this reason ('portrait crop vs landscape, same watch still') but did not apply the same logic to these four other pairs.",
+      "fix": "Mark the portrait crop of each pair rejected in manifest.json (site-03, site-08, site-11, site-14 -- or the landscape, your call, keep the stronger composition). Replace those four slots with four distinct stills from other FRAME projects: the manifested Kvadrat, Montana, Alustre, or B&B Tufty-Time projects each have no stills captured despite having Vimeo embeds -- pull one frame/still per those projects to round out the gallery."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "site-09 (top-down Camaleonda), site-12 (close tourbillon interior Zenith), site-15 (Montblanc writing scene with handwriting) show genuine interior depth. Not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All stills are CGI/3D product renders (leather, watches, furniture, pen). Embeds are Vimeo product films. Fully matches 3D & motion + Film & video production."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png confirmed as frame.dk homepage (FRAME wordmark + newsletter popup visible). site-17.png confirmed as instagram.com showing @frame_cph account (handle, follower count, Copenhagen bio, brand grid visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a named project caption and a link to the source project page or Vimeo URL."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo embeds (Kvadrat, Zegna, Zenith, B&B Tufty-Time, Montana, Alustre), each paired with a distinct thumbnail image. Images also present (not embeds-only)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Entry is well-populated; no unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. AI Notes explains the Studio vs Agency call (hands-on specialist team, not a large full-service agency)."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: frame.dk. Instagram: instagram.com/frame_cph (verified in context shot). LinkedIn: linkedin.com/company/frame-cph. Email: info@frame.dk. All present and populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Film & video production, Creative direction -- all directly evidenced by their project work and self-description on frame.dk."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Denmark. Size: 11-40. Work Status: Studio. Sources named in AI Notes (frame.dk + LinkedIn company page). Objective rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: directs and produces end to end as an independent studio."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any evidence in the clip note or entry body."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Frame (3D Agency)': name cleaned to FRAME, Agency label overridden to Studio with documented reasoning. Source preserves the original clip note verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes. Founding year hedged as sourced from public info. Seniority framed as studio-level (20+ years). No unverified personal claims. Sources cited."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Clip-note Name: \"Frame (3D Agency)\". Web clipper, 2026-02-02.' Present and uses the correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and complete for all touched fields. source_url is null across fields (sources documented in AI Notes instead), consistent with other entries."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, captions, and Source. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. None required: no judgment fields need asking (zero-states valid, no relationship signals from clip note, no missing links, no ambiguous Work Status)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching; correctly held pending this gate review."
+    }
+  ],
+  "to": "scraper"
+}
