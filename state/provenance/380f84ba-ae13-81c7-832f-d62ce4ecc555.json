@@ -1,37 +1,92 @@
 {
   "page_id": "380f84ba-ae13-81c7-832f-d62ce4ecc555",
-  "migrated_at": null,
+  "enriched_at": "2026-06-18",
   "fields": {
-    "Name": {
-      "value": "Ivette Manent",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Hey Studio (Barcelona); currently employed.",
-      "verified_at": "2026-06-15T21:11:22",
+    "Type": {
+      "value": "Person",
+      "source_url": "https://heystudio.es/contact/",
+      "verified_at": "2026-06-18",
       "set_by": "agent"
     },
-    "AI Notes": {
-      "value": "[Scout research, unverified] Designer at Hey Studio (Barcelona). Currently employed. Modernist identity/illustration house.",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Hey Studio (Barcelona); currently employed.",
-      "verified_at": "2026-06-15T21:11:22",
-      "set_by": "agent"
+    "Capabilities": {
+      "value": [
+        "Graphic design",
+        "Identity systems"
+      ],
+      "source_url": "https://heystudio.es/work",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Inferred from Hey Studio output (branding, editorial, identity, illustration); no personal portfolio to verify directly"
     },
     "Country": {
       "value": [
         "Spain"
       ],
-      "source_url": "Found using Claude, 2026-06-15. Designer at Hey Studio (Barcelona); currently employed.",
-      "verified_at": "2026-06-15T21:11:22",
+      "source_url": "https://heystudio.es/contact/",
+      "verified_at": "2026-06-18",
       "set_by": "agent"
     },
-    "Entry Status": {
-      "value": "New",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Hey Studio (Barcelona); currently employed.",
-      "verified_at": "2026-06-15T21:11:22",
+    "Size": {
+      "value": "1",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "Work Status": {
+      "value": "Employed",
+      "source_url": "https://heystudio.es/contact/",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Listed as Designer on Hey Studio contact (references 2026); also on Vera Tamayo about (joined 2023). Conflict unresolved, Open Question raised."
+    },
+    "Works At Link": {
+      "value": "https://heystudio.es/",
+      "source_url": "https://heystudio.es/contact/",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Set to Hey Studio as most recently-updated page; pending employer confirmation"
+    },
+    "Autonomy": {
+      "value": "2",
+      "source_url": "https://heystudio.es/contact/",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Designer level (not lead/director); working under Veronica Fuerte creative direction; no personal portfolio to refine"
+    },
+    "Worked Together": {
+      "value": "Never",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "Familiarity": {
+      "value": "Don't know them",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "Work With?": {
+      "value": "Unvetted",
+      "source_url": null,
+      "verified_at": "2026-06-18",
       "set_by": "agent"
     },
     "Source": {
-      "value": "Found using Claude, 2026-06-15. Designer at Hey Studio (Barcelona); currently employed.",
-      "source_url": "Found using Claude, 2026-06-15. Designer at Hey Studio (Barcelona); currently employed.",
-      "verified_at": "2026-06-15T21:11:22",
+      "value": "Found using Claude, 2026-06-15. Designer at Hey Studio (Barcelona).",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Designer at Hey Studio (Barcelona). Employer conflict noted; Open Question raised.",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "Entry Status": {
+      "value": "Enriching",
+      "source_url": null,
+      "verified_at": "2026-06-18T10:15:11",
       "set_by": "agent"
     }
   }

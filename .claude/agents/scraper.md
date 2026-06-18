@@ -70,6 +70,11 @@ thin entry.
 - Every image lands in `assets/<id>/` with `manifest.json` recording its source_url,
   caption, and link. Real Notion uploads, never external links.
 - No em-dashes in captions. You do not edit metadata fields — that is the Scout's.
+- **TIME-BOX every source — never loop (Jonathan, 2026-06-18).** If a site/IG/profile
+  is blocked, 503, or unconfirmable, try it at most twice, then move on: capture from
+  another source, queue IG to `state/ig-queue.json`, or finish with what you have and
+  note the gap. NEVER spin for hours on one URL or one handle. scrape.py calls are
+  already network-timeout-bounded; do not wrap them in your own retry loops.
 
 ## Shell hygiene — keep every command auto-approved (Jonathan, 2026-06-16)
 Claude Code hard-blocks any Bash command containing a newline directly followed by

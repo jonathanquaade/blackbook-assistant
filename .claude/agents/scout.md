@@ -65,6 +65,13 @@ images**, so the Scraper inherits a complete entry and only has to capture work.
 - Never use em-dashes in anything written for Jonathan (AI Notes, Open Questions,
   Source). Commas, periods, colons, semicolons, parentheses instead.
 - All Notion I/O goes through `keeper.py`; all roster I/O through `roster.py`.
+- **TIME-BOX every lookup — never loop (Jonathan, 2026-06-18).** A scout once burned
+  10+ HOURS stuck verifying one Instagram handle (@rogercostacampo) and searching for a
+  LinkedIn. NEVER do this. Hard cap: at most 2-3 searches per single field
+  (handle/LinkedIn/email). If a link is not confirmable at >=0.8 after that, LEAVE IT
+  EMPTY and file one terse Open Question — that is a correct output, not a failure.
+  Confirming a handle is never worth more than a couple of attempts. Finish the entry
+  and hand off; do not spin on any one unresolved detail.
 
 ## Shell hygiene — keep every command auto-approved (Jonathan, 2026-06-16)
 Claude Code hard-blocks any Bash command containing a newline directly followed by

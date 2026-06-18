@@ -1,37 +1,139 @@
 {
   "page_id": "380f84ba-ae13-81a1-a686-e92f4a93a409",
-  "migrated_at": null,
+  "enriched_at": "2026-06-18",
   "fields": {
-    "Name": {
-      "value": "Stian Bjorhovde",
-      "source_url": "Found using Claude, 2026-06-15. Self-described independent freelance designer (SBDS), Oslo. Pedigree unverified.",
-      "verified_at": "2026-06-15T21:11:18",
+    "Type": {
+      "value": "Person",
+      "source_url": "https://www.sb-ds.no/about",
+      "verified_at": "2026-06-18",
       "set_by": "agent"
+    },
+    "Capabilities": {
+      "value": [
+        "Identity systems",
+        "Web design"
+      ],
+      "source_url": "https://www.sb-ds.no/about",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "About page lists Brand Identity (logo, design systems, guidelines, art direction) and Digital Solutions (UI/UX, Webflow dev); Identity systems + Web design per TAXONOMY"
     },
     "Country": {
       "value": [
         "Norway"
       ],
-      "source_url": "Found using Claude, 2026-06-15. Self-described independent freelance designer (SBDS), Oslo. Pedigree unverified.",
-      "verified_at": "2026-06-15T21:11:18",
+      "source_url": "https://www.sb-ds.no",
+      "verified_at": "2026-06-18",
       "set_by": "agent"
     },
-    "AI Notes": {
-      "value": "[Scout research, unverified] Oslo; self-described 'independent Freelance Designer' (SBDS). Seniority and studio pedigree unverified. Treat as a lead, not a confirmed find. (Native spelling Stian Bjorhovde / Bjorhovde.)",
-      "source_url": "Found using Claude, 2026-06-15. Self-described independent freelance designer (SBDS), Oslo. Pedigree unverified.",
-      "verified_at": "2026-06-15T21:11:18",
+    "Size": {
+      "value": "1",
+      "source_url": "https://www.sb-ds.no/about",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Sole practitioner; no team members mentioned"
+    },
+    "Work Status": {
+      "value": "Freelance",
+      "source_url": "https://www.sb-ds.no/about",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Site + self-description both say independent freelance designer; Q1/2026 booking open; no employer listed"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": "https://www.sb-ds.no/about",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Runs own client practice, sets creative direction; ~11+ yrs experience; capped at 4 absent notable awards/press"
+    },
+    "Website": {
+      "value": "https://www.sb-ds.no",
+      "source_url": "https://www.sb-ds.no",
+      "verified_at": "2026-06-18",
       "set_by": "agent"
     },
-    "Entry Status": {
-      "value": "New",
-      "source_url": "Found using Claude, 2026-06-15. Self-described independent freelance designer (SBDS), Oslo. Pedigree unverified.",
-      "verified_at": "2026-06-15T21:11:18",
+    "Instagram": {
+      "value": "https://www.instagram.com/sbdsoslo/",
+      "source_url": "https://www.sb-ds.no/about",
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "Handle @sbdsoslo listed on About page of sb-ds.no"
+    },
+    "Email": {
+      "value": "mail@sb-ds.no",
+      "source_url": "https://www.sb-ds.no",
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": null,
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent",
+      "note": "No personal LinkedIn found; only company page for SBDS AS"
+    },
+    "Worked Together": {
+      "value": "Never",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "Familiarity": {
+      "value": "Don't know them",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "Work With?": {
+      "value": "Unvetted",
+      "source_url": null,
+      "verified_at": "2026-06-18",
       "set_by": "agent"
     },
     "Source": {
-      "value": "Found using Claude, 2026-06-15. Self-described independent freelance designer (SBDS), Oslo. Pedigree unverified.",
-      "source_url": "Found using Claude, 2026-06-15. Self-described independent freelance designer (SBDS), Oslo. Pedigree unverified.",
-      "verified_at": "2026-06-15T21:11:18",
+      "value": "Web clipper, 2026-06-15. Self-described independent freelance designer, SBDS (Stian Bjorhovde Design Studio), Oslo. Site sb-ds.no confirmed active with Q1/2026 booking availability.",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Sole-practitioner studio owner, Oslo. Runs SBDS since 2015. Career: Involve!Oslo (Senior Designer, 2011-2015), Kari Traa (Senior Designer + Art Director, 2017-2020), Geelmuyden Kise (Senior Designer freelance, 2019), Make Reign (Creative Director, 2022-2023). Fully independent post-2023. Autonomy 4, Work Status Freelance confirmed by site + self-description.",
+      "source_url": null,
+      "verified_at": "2026-06-18",
+      "set_by": "agent"
+    },
+    "Entry Status": {
+      "value": "Enriching",
+      "source_url": null,
+      "verified_at": "2026-06-18T10:13:10",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Familiarity?\n2. Rating?\n3. LinkedIn personal profile not found via search; only a company page for SBDS AS appears. Is there a personal LinkedIn URL you have?",
+      "source_url": null,
+      "verified_at": "2026-06-18T10:13:42",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-01.jpg",
+        "site-02.jpg",
+        "site-03.jpg",
+        "site-05.jpg",
+        "kebony-brand-xl.jpg",
+        "kebony-web-xl.jpg",
+        "site-07.jpg",
+        "site-08.jpg",
+        "site-09.jpg",
+        "site-10.jpg",
+        "hummelfilm-web-02.jpg",
+        "site-12.jpg",
+        "site-13.png",
+        "site-14.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-18T10:28:32",
       "set_by": "agent"
     }
   }

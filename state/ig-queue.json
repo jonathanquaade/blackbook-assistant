@@ -82,5 +82,12 @@
     "ig_url": "https://www.instagram.com/pedro.destefani/",
     "reason": "Instagram context screenshot failed: headless Playwright blocked by Instagram. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-18"
+  },
+  {
+    "page_id": "380f84ba-ae13-81f8-b65a-eeff8530dd17",
+    "name": "Eleanor Ohlsen",
+    "ig_url": "https://www.instagram.com/elohldesign/",
+    "reason": "IG context screenshot failed (Instagram blocked headless Playwright). Also: 640px grid images from logged-out render were captured for Provisions, ODEON, Muck In! projects but logged-in ig.py would give full-res versions of those posts too.",
+    "queued_at": "2026-06-18"
   }
 ]
