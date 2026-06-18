@@ -1,5 +1,96 @@
 [
   {
+    "file": "bg-site-00-devold-typeface.jpg",
+    "source_url": "https://benjamingaupset.com/assets/images/00-sq.jpg",
+    "caption": "Devold of Norway, custom typeface scanned from D2 magazine, at Kurppa Hosk",
+    "link": "https://benjamingaupset.com",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "devold-01-typespec.jpg",
+    "source_url": "https://cdn.sanity.io/images/ydtnjczu/production/643a6bb76bbc50a786e4c9f9268434187669e936-2250x3000.jpg",
+    "caption": "O.A. Devold identity, monogram label, at Heydays",
+    "link": "https://heydays.no/projects/o-a-devold",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "devold-03-brand.jpg",
+    "source_url": "https://cdn.sanity.io/images/ydtnjczu/production/b72729209334e032b8b40c94011da21dfac4f7c7-3000x2250.jpg",
+    "caption": "O.A. Devold brand collateral, custom typeface in system, at Heydays",
+    "link": "https://heydays.no/projects/o-a-devold",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "devold-02-identity.jpg",
+    "source_url": "https://cdn.sanity.io/images/ydtnjczu/production/667ed97963f08bfa6fc4d9b6c8550f85fd5ee32d-2250x3000.jpg",
+    "caption": "O.A. Devold web and digital identity, at Heydays",
+    "link": "https://heydays.no/projects/o-a-devold",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "bg-site-15-vestre-journal3-cover.jpg",
+    "source_url": "https://benjamingaupset.com/assets/images/15-w.jpg",
+    "caption": "Vestre Journal 3, On Materials, cover, at Heydays",
+    "link": "https://benjamingaupset.com",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "bg-site-16-vestre-journal3-spread.jpg",
+    "source_url": "https://benjamingaupset.com/assets/images/16-w.jpg",
+    "caption": "Vestre Journal 3, editorial spread, at Heydays",
+    "link": "https://benjamingaupset.com",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "bg-site-17-vestre-journal3.jpg",
+    "source_url": "https://benjamingaupset.com/assets/images/17-t.jpg",
+    "caption": "Vestre Journal 3, all issues together, at Heydays",
+    "link": "https://benjamingaupset.com",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "bg-site-11-vestre-journal1-cover.jpg",
+    "source_url": "https://benjamingaupset.com/assets/images/11-t.jpg",
+    "caption": "Vestre Journal 1, On Social Meeting Places, cover, at Heydays",
+    "link": "https://benjamingaupset.com",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "bg-site-10-alotta-typeface.jpg",
+    "source_url": "https://benjamingaupset.com/assets/images/10-w.jpg",
+    "caption": "Alotta, custom typeface for renewable energy startup, at Heydays",
+    "link": "https://heydays.no/projects/alotta",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "bg-site-18-variable-identity.jpg",
+    "source_url": "https://benjamingaupset.com/assets/images/18-w.jpg",
+    "caption": "Variable identity refresh, seed bag collateral, at Heydays",
+    "link": "https://benjamingaupset.com",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "heckler-01.webp",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e620a8143645483.627e10dd6646c.jpg",
+    "caption": "Heckler identity, embossed business card, at Heydays",
+    "link": "https://www.behance.net/gallery/143645483/Heckler",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "heckler-02.webp",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3f2c6c143645483.627e10dd6463b.png",
+    "caption": "Heckler identity, custom grotesque typeface specimen, at Heydays",
+    "link": "https://www.behance.net/gallery/143645483/Heckler",
+    "captured_at": "2026-06-18"
+  },
+  {
+    "file": "heckler-03.webp",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/857191143645483.627e10dd5d223.jpg",
+    "caption": "Heckler identity, billboard in Phoenix AZ, at Heydays",
+    "link": "https://www.behance.net/gallery/143645483/Heckler",
+    "captured_at": "2026-06-18"
+  },
+  {
     "file": "site-01.png",
     "source_url": "https://benjamingaupset.com",
     "caption": "Website",
@@ -13,7 +104,9 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/benjamingaupset/",
     "captured_at": "2026-06-18",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Instagram returned blank white page (login wall) for headless browser; queued for ig.py"
   },
   {
     "file": "site-03.png",
@@ -21,6 +114,8 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/benjamingaupset/",
     "captured_at": "2026-06-18",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Instagram returned error page (Something went wrong) for headless browser; queued for ig.py"
   }
 ]

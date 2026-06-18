@@ -89,5 +89,12 @@
     "ig_url": "https://www.instagram.com/elohldesign/",
     "reason": "IG context screenshot failed (Instagram blocked headless Playwright). Also: 640px grid images from logged-out render were captured for Provisions, ODEON, Muck In! projects but logged-in ig.py would give full-res versions of those posts too.",
     "queued_at": "2026-06-18"
+  },
+  {
+    "page_id": "380f84ba-ae13-812c-9c18-de005837eadf",
+    "name": "Benjamin Gaupset",
+    "ig_url": "https://www.instagram.com/benjamingaupset/",
+    "reason": "IG context screenshot failed: Instagram blocked headless Playwright with blank page and error page. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-18"
   }
 ]
