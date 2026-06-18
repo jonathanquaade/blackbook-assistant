@@ -1,0 +1,111 @@
+{
+  "page_id": "383f84ba-ae13-8120-b12d-ce1969ac5514",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-18T18:30:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 uploaded images span 4 distinct projects: Coinbase AI support (3 screens), Grab order manager (3 screens), Grab menu editor (2 screens), Careem large orders (1 screen), plus website context shot."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Coinbase and Grab order manager each have 3 interior UI screens showing different states, not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Digital product design; all images are UI/product screens matching that capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. site-11.png confirmed as pranusarna.com homepage (Pranu Sarna, Product Design Lead, About + Work sections visible). Absent Instagram now documented in manifest as a typed absent entry: {context_shot: true, type: 'absent', caption: 'Instagram profile', reason: 'No confirmed public Instagram found...'}. Manifest is self-contained."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 uploaded images have project-name captions and source links per manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Portfolio is screen-based product design; no video or audio work identified as skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence documented in manifest absent entry and in AI Notes. Open Question Q2 asks Jonathan."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person, correct for an individual designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website pranusarna.com and LinkedIn https://www.linkedin.com/in/pranu-sarna present. Instagram absent with documented reason and OQ. No public contact email found."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Digital product design matches all captured work and the site bio."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UAE, Size 1, Work Status Employed. LinkedIn and ZoomInfo cited in AI Notes as sources."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: Lead-level, end-to-end ownership, ~10 yrs across major tech platforms."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the Fuse deck being read as a pitch artefact, not a relationship. Open Question Q1 asks how Jonathan knows Pranu."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Name cleaned, Figma deck investigated, PW saved, Source preserves clip note verbatim including Figma URL and PW."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes. Hedged language used ('most likely a pitch or interview deck', 'Self-described'). Seniority trajectory and Autonomy reasoning included."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source field contains full clip note verbatim."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file written for all touched fields. Open Questions updated at 18:14:15 post-fix."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. Open Questions Q1 now uses a comma after '\"Pranu Sarna <> Fuse\"' with no em-dash. AI Notes confirmed clean. Source em-dash is Jonathan's verbatim clip note text, which is acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. Q1 rewritten without em-dash. Both questions terse, conditional, and appropriate: Q1 asks Familiarity (at zero-state), Q2 asks about Instagram (absent)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review by reviewer on pass."
+    }
+  ],
+  "to": null,
+  "summary": "Both attempt-1 failures resolved. (1) D.no-em-dashes + D.open-questions: Open Questions Q1 parenthetical now uses a comma in place of the em-dash; confirmed clean by unicode scan. (2) A.context-shots: manifest now carries a typed absent entry for the Instagram context shot with reason documented. Website context shot (site-11.png) verified as pranusarna.com. All 19 checks pass. Entry flipped to Needs Review."
+}

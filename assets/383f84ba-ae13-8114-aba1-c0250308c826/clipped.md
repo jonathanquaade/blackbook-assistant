@@ -15,3 +15,6 @@ Pedro's CV + Portfolio – Figma
 
 Linkedin here: https://www.linkedin.com/in/pedro-et-ab1219aa/
 
+# Archived page body (2026-06-18)
+
+Work

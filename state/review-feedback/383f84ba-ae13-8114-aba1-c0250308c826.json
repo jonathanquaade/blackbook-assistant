@@ -1,0 +1,124 @@
+{
+  "page_id": "383f84ba-ae13-8114-aba1-c0250308c826",
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-18T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 images across 5 distinct projects: Status (5 images), Snapshot (1), Invopop (1), Darika (1), Dia (2). Genuine diversity confirmed."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Status: mobile wallet, token detail, browser extension, desktop chat, community analytics -- goes well inside the product. Dia: app screens + design system components."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Digital product design, Web design, Identity systems. All images are product UI screens and design systems. Confirmed on opening images."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "pedro-et-cv.png marked context_shot:true, captioned 'Portfolio (Figma CV)', links to the Figma URL which IS his website. Image confirmed: shows Pedro's name, photo, full project + experience overview. Manifest note documents why headless screenshot 403'd. Instagram context shot entry present in manifest as rejected:true with documented reason: CV shows Telegram and Discord icons only, no Instagram handle; @pedroet/@pedro.et/@pedro_et variants searched, none confirmed. Correct pattern for genuinely absent platform."
+    },
+    {
+      "id": "A.snapshot-room-authenticity",
+      "result": "pass",
+      "evidence": "snapshot-room.png is marked rejected:true in manifest with correct reason (self-referential demo frame). It is absent from the live Notion Images property. Snapshot project is still represented by snapshot-overview.png (real Snapshot DAO governance UI). Fix confirmed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 manifest images have captions with project name and source link. No blanks."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio/writing capability tags. Product design work appropriately captured as images."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence documented in AI Notes ('no Instagram found, searched @pedroet, @pedro.et, @pedro_et variants and fado.xyz domain; no confirmed account') and in manifest rejected entry with reason. pedro-et-cv.png confirms: CV social icons are globe, Telegram, Discord -- no Instagram icon present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (Figma CV URL), LinkedIn, Email present. Instagram searched with documented negative result. No obvious search skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Digital product design, Web design, Identity systems. Consistent with portfolio evidence."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Portugal/1/Freelance. AI Notes now explicitly names sources: Figma CV (primary) showing two simultaneous part-time contracts (Darika Design Lead Mar 2026 ongoing + Invopop Senior PD May 2026 part-time); explains LinkedIn was login-walled and Instagram absent; states why single-source determination is sufficient given the self-reported concurrent-contract structure is unambiguous. Sourcing is auditable."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy 4, reasoning in AI Notes: solo delivery at senior/lead level across crypto, health, fintech products. Grounded in role history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states consistent with cold entry. No clip note relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was Figma CV + LinkedIn URL. Both used. Name cleaned. Source: 'Clip note, 2026-06-15'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('About 10 years experience', gap noted as unexplained). Seniority and Autonomy addressed. No em-dashes. Sources cited."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Clip note, 2026-06-15'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with set_by, source_url, verified_at per field."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed -- no em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "4 terse conditional questions: Familiarity, Rating, the unexplained 2022-2025 gap, Darika URL. All appropriate and non-duplicative."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status flipped to Needs Review by this gate on pass."
+    }
+  ],
+  "prior_failures_resolved": {
+    "A.context-shots": "RESOLVED -- pedro-et-cv.png promoted to context_shot:true, captioned Portfolio (Figma CV); Instagram documented absent in manifest + AI Notes with handle variants searched.",
+    "A.snapshot-room-authenticity": "RESOLVED -- snapshot-room.png marked rejected:true in manifest; absent from live Notion Images property. Snapshot project still covered by snapshot-overview.png.",
+    "A.absence-explained": "RESOLVED -- AI Notes names Instagram search attempts and confirms none found; CV social icons confirmed as Telegram/Discord only.",
+    "B.all-findable-links": "RESOLVED -- Instagram search documented in AI Notes and manifest. No other obvious link skipped.",
+    "B.country-size-workstatus": "RESOLVED -- AI Notes now explicitly names sources, explains LinkedIn login-wall, and states why single-source determination at 0.85 confidence is warranted given explicit concurrent-contract structure."
+  },
+  "live-vs-manifest-sync": "CONFIRMED -- live Notion Images property lists exactly the 11 non-rejected manifest entries. snapshot-room.png is absent from live Images. Body-reset + upload ran correctly. No drift.",
+  "to": null,
+  "summary": "All 5 prior failures resolved. Full 20-check pass. Entry flipped to Needs Review."
+}

@@ -1,9 +1,11 @@
 [
   {
     "file": "pedro-et-cv.png",
-    "caption": "Portfolio overview, 2024",
-    "link": "https://www.figma.com/design/NN80DNUhyojTYzTxDsQu1p/Pedro-s-CV---Portfolio",
-    "source_url": "https://api.figma.com/v1/images/NN80DNUhyojTYzTxDsQu1p (node 2086:14393)"
+    "context_shot": true,
+    "caption": "Portfolio (Figma CV)",
+    "link": "https://www.figma.com/design/NN80DNUhyojTYzTxDsQu1p/Pedro-s-CV---Portfolio?node-id=2086-14616&t=c0fsRnYGNdQte8mu-0",
+    "source_url": "https://api.figma.com/v1/images/NN80DNUhyojTYzTxDsQu1p (node 2086:14393)",
+    "note": "Figma headless screenshot (site-04.png) returned CloudFront 403; this REST API export of the full portfolio overview serves as the website/portfolio context shot instead."
   },
   {
     "file": "status-mobile-wallet-home.png",
@@ -42,12 +44,6 @@
     "source_url": "https://api.figma.com/v1/images/NN80DNUhyojTYzTxDsQu1p (node 4120:24868)"
   },
   {
-    "file": "snapshot-room.png",
-    "caption": "gm.io, crypto social chat mobile, 2023-2024",
-    "link": "https://www.figma.com/design/NN80DNUhyojTYzTxDsQu1p/Pedro-s-CV---Portfolio",
-    "source_url": "https://api.figma.com/v1/images/NN80DNUhyojTYzTxDsQu1p (node 4120:26451)"
-  },
-  {
     "file": "invopop-console.png",
     "caption": "Invopop, invoice console, 2025-2026",
     "link": "https://www.invopop.com",
@@ -72,6 +68,23 @@
     "source_url": "https://a.storyblok.com/f/198185/1934x1202/6acbc61f5a/image-9.jpeg"
   },
   {
+    "rejected": true,
+    "context_shot": true,
+    "type": "absent",
+    "caption": "Instagram profile",
+    "reason": "No public Instagram confirmed for Pedro ET; CV lists Telegram and Discord only, no IG handle. Variants @pedroet, @pedro.et, @pedro_et searched -- none confirmed as this person. If scout confirms a handle, a shot should be queued next pass."
+  },
+  {
+    "file": "site-04.png",
+    "rejected": true,
+    "reason": "Figma headless screenshot returned CloudFront 403 error page, not a usable context shot. pedro-et-cv.png used as portfolio context shot instead."
+  },
+  {
+    "file": "snapshot-room.png",
+    "rejected": true,
+    "reason": "Self-referential Figma demo frame: chat room named 'Pedro ET' with placeholder dialogue 'Hello there! My name is Pedro and I am a designer!' -- not a real gm.io product screenshot. gm.io returns a minimal/offline page with no real product imagery available. Removed to avoid presenting a demo frame as shipped work."
+  },
+  {
     "file": "site-01.jpg",
     "rejected": true,
     "reason": "Low-res thumbnail, duplicate of site-02"
@@ -89,7 +102,7 @@
   {
     "file": "snapshot-new-post.png",
     "rejected": true,
-    "reason": "gm.io create-post mobile screen, covered by snapshot-room.png"
+    "reason": "gm.io create-post mobile screen; snapshot-room.png was the paired image but both are now rejected as demo frames"
   },
   {
     "file": "invopop-pricing.png",
