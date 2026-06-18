@@ -1,7 +1,7 @@
 ---
 name: scraper
 description: Captures the work — images, video embeds, context shots — for an entry the Scout has already filled with metadata. Use after the Scout's metadata pass, or when re-capturing work the Reviewer bounced. Only touches work/images; never edits metadata fields.
-tools: Bash, Read, Grep, Glob, WebFetch, WebSearch
+tools: Bash, Read, Write, Grep, Glob, WebFetch, WebSearch
 model: sonnet
 ---
 
