@@ -229,14 +229,15 @@ def read_feedback(page_id):
     try: return json.load(open(p))
     except Exception: return None
 
-def scout_done(page_id):
-    """True once the scout has written its metadata pass to provenance. AI Notes is
-    scout-owned and always written, so its presence is the reliable signal; Type+Source
-    together are the fallback for an older provenance file."""
-    p = prov_path(page_id)
-    if not os.path.exists(p): return False
-    fields = json.load(open(p)).get('fields', {})
-    return 'AI Notes' in fields or ('Type' in fields and 'Source' in fields)
+def scraper_ready(row):
+    """True once the scout has given the scraper what it needs to capture ON-capability
+    work: a Type and at least one Capability (the work-matching key) on the LIVE entry.
+    Checking the live row, not provenance, is deliberate — older/migrated entries carry
+    Capabilities in Notion without a provenance line, and an entry with AI Notes but no
+    Capabilities is an INCOMPLETE scout (no capability to match work to), which must go
+    back to the scout, not waste a scraper run (Jonathan, 2026-06-18 backlog spot-check)."""
+    props = row['properties']
+    return bool(plain(props.get('Type')) and plain(props.get('Capabilities')))
 
 def cmd_pipeline(scope=None, timeout_min=LEASE_TIMEOUT_MIN):
     """Emit, as JSON buckets, the next action for every entry in the P1 loop. The
@@ -270,10 +271,10 @@ def cmd_pipeline(scope=None, timeout_min=LEASE_TIMEOUT_MIN):
             continue
         if manifest_exists(pid):
             buckets['needs_review'].append(item)      # scraper done, awaiting the gate
-        elif scout_done(pid):
+        elif scraper_ready(r):
             buckets['needs_scraper'].append(item)      # scout done, no work captured yet
         else:
-            buckets['stalled'].append(item)            # scout never finished, no live lease -> retry
+            buckets['stalled'].append(item)            # incomplete/dead scout, no live lease -> (re)scout
     print(json.dumps(buckets, ensure_ascii=False, indent=2))
     counts = {k: len(v) for k, v in buckets.items()}
     actionable = sum(counts[k] for k in ('new', 'needs_scraper', 'needs_review',
