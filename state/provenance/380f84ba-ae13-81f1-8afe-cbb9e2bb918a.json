@@ -1,38 +1,117 @@
 {
   "page_id": "380f84ba-ae13-81f1-8afe-cbb9e2bb918a",
-  "migrated_at": null,
+  "enriched_at": "2026-06-17T22:32:28",
   "fields": {
     "Name": {
-      "value": "Johan Hammarstrom",
-      "source_url": "Found using Claude, 2026-06-15. Motion Design Director at Heydays (Oslo); currently employed.",
-      "verified_at": "2026-06-15T21:11:26",
+      "value": "Johan Hammarstr\u00f6m",
+      "source_url": "https://heydays.no/contact",
+      "verified_at": "2026-06-17T22:32:28",
       "set_by": "agent"
     },
-    "AI Notes": {
-      "value": "[Scout research, unverified] Motion Design Director at Heydays (Oslo). Currently employed.",
-      "source_url": "Found using Claude, 2026-06-15. Motion Design Director at Heydays (Oslo); currently employed.",
-      "verified_at": "2026-06-15T21:11:26",
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Capabilities": {
+      "value": [
+        "3D & motion"
+      ],
+      "source_url": "https://heydays.no/contact",
+      "verified_at": "2026-06-17T22:32:28",
       "set_by": "agent"
     },
     "Country": {
       "value": [
         "Norway"
       ],
-      "source_url": "Found using Claude, 2026-06-15. Motion Design Director at Heydays (Oslo); currently employed.",
-      "verified_at": "2026-06-15T21:11:26",
+      "source_url": "https://heydays.no/contact",
+      "verified_at": "2026-06-17T22:32:28",
       "set_by": "agent"
     },
-    "Entry Status": {
-      "value": "New",
-      "source_url": "Found using Claude, 2026-06-15. Motion Design Director at Heydays (Oslo); currently employed.",
-      "verified_at": "2026-06-15T21:11:26",
+    "Size": {
+      "value": "1",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Work Status": {
+      "value": "Employed",
+      "source_url": "https://heydays.no/contact",
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://heydays.no/contact",
+      "source_url": "https://heydays.no/contact",
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "http://johanhammarstrom.com/",
+      "source_url": "http://johanhammarstrom.com/",
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/jhammarstrom/",
+      "source_url": "https://www.linkedin.com/in/jhammarstrom/",
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "johan.hammarstrom@heydays.no",
+      "source_url": "https://heydays.no/contact",
+      "verified_at": "2026-06-17T22:32:28",
       "set_by": "agent"
     },
     "Source": {
-      "value": "Found using Claude, 2026-06-15. Motion Design Director at Heydays (Oslo); currently employed.",
-      "source_url": "Found using Claude, 2026-06-15. Motion Design Director at Heydays (Oslo); currently employed.",
-      "verified_at": "2026-06-15T21:11:26",
+      "value": "Found using Claude, 2026-06-15. Motion Design Director at Heydays (now Kurppa Hosk, Oslo). Email from heydays.no/contact.",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Worked Together": {
+      "value": "Never",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Familiarity": {
+      "value": "Don't know them",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Work With?": {
+      "value": "Unvetted",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "see Notion",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
+      "set_by": "agent"
+    },
+    "Entry Status": {
+      "value": "Enriching",
+      "source_url": null,
+      "verified_at": "2026-06-17T22:32:28",
       "set_by": "agent"
     }
-  }
+  },
+  "work_status_sources_checked": [
+    "heydays.no/contact (lists as Motion Design Director - self-maintained studio page, current)",
+    "linkedin.com/in/jhammarstrom (lists Kurppa Hosk, present - confirmed current via merger)",
+    "johanhammarstrom.com (says Kurppa Hosk but stale title - Graphic Designer, pre-director)"
+  ]
 }

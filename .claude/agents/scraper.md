@@ -33,6 +33,15 @@ tagged for.
    of one project padded out as "diversity".
 4. Tools: `scrape.py <url> --probe` then `scrape.py <project-url> --out assets/<id>
    --caption "Project, year" --limit 3`. Framer/JS → `--render`. Passcoded → check
+   **Sanity/Next.js case-study sites (e.g. mouthwash.studio) — CONTAMINATION TRAP
+   (2026-06-17):** these prefetch EVERY project's images into the global DOM, so
+   `--render` (which collects the whole DOM) returns images from OTHER projects with
+   the wrong captions. This silently shipped 6–13 wrong images per entry across a whole
+   Mouthwash batch. FIX: for these sites pull each project page via `WebFetch` (it
+   returns only that page's own `<img src>` initial-payload tags, not the JS prefetch),
+   take the project-specific Sanity image IDs from there, and download those CDN URLs
+   directly. ALWAYS open and eyeball each downloaded file against the project before
+   captioning; drop (`"rejected": true`) anything that doesn't match.
    `state/passcodes.json`, `--render --passcode CODE` (a rejected code = stop, save
    it, ask Jonathan — do not burn attempts). Figma → REST API with FIGMA_API_KEY, not
    the browser. Instagram full-res images + video → `ig.py grab` (Jonathan's logged-in
