@@ -10,3 +10,12 @@ APAC is rewriting global branding, says Koto’s Damian Borchok The future of gl
 # Archived page body (2026-06-19)
 
 Work
+# Archived page body (2026-06-19)
+
+Work
+
+Koto Reel 2026 — vimeo.com
+
+Koto OFF Brand: logo animations, 2025 — vimeo.com
+
+Koto OFF Brand: digital OOH motion, 2025 — vimeo.com
