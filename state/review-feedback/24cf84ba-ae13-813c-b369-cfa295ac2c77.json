@@ -1,0 +1,31 @@
+{
+  "page_id": "24cf84ba-ae13-813c-b369-cfa295ac2c77",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:38:30",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "8 distinct client sites: Fucking Awesome, Violet, Virgil Abloh Archive, Garrett Leight, New York Sunshine, Base/Coinbase, 52 Walker, Sneeze Magazine; all visually confirmed distinct"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "For a frontend dev whose deliverable is the live site, a homepage screenshot per client is the correct depth; 8 distinct clients covered"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Frontend development (web) + Web design; all 8 work shots are live client site screenshots, on-capability"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01 confirmed as stefanbowerman.com; site-02 confirmed as instagram.com/misternaf (bio reads Stefan Bowerman, GUN FOR HIRE)"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "Every active image has a caption naming the project and a source link in the manifest"},
+    {"id": "A.embeds", "result": "pass", "evidence": "No video/audio projects; not applicable for this discipline"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "4 rejected shots (Sci-Fi Fantasy x2, Undefeated, GitHub Shop) each carry documented rejection reasons in the manifest"},
+    {"id": "B.type", "result": "pass", "evidence": "Person"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram (verified correct person from screenshot bio), LinkedIn, Email all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Frontend development (web) + Web design; appropriate for someone who architects and builds design-led sites"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "United States / 1 / Freelance; AI Notes documents multi-source resolution: own site (explicit) + LinkedIn snippet both confirm independent"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes grounded in 15-yr trajectory and independent end-to-end delivery"},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Clip note only says Developer; no relationship facts stated; zero-states appropriate"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note hint Developer acted on via Frontend development (web) tagging"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Seniority read present, Autonomy reasoning grounded, Work Status sources named, no unhedged inferences, no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2025-08-11. Clip note hint: Developer."},
+    {"id": "D.provenance", "result": "pass", "evidence": "Every touched field has a provenance entry; source_url is null throughout (no per-field source URLs), consistent with batch pattern, not a blocker"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One question correctly raised about the duplicate entry (1ebf84ba); story nudge does not apply (all zero-states, no relationship facts)"},
+    {"id": "D.status", "result": "pass", "evidence": "Currently Enriching; reviewer flips to Needs Review on this pass"}
+  ],
+  "notes": "Possible duplicate of entry 1ebf84ba-ae13-8155-8788-f7a073af72be already raised in Open Questions. Jonathan's call to merge or delete.",
+  "to": null
+}

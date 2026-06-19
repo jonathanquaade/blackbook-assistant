@@ -1,0 +1,115 @@
+{
+  "page_id": "380f84ba-ae13-81c4-8e0d-f4d508e374f8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:44:25",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Manifest contains 1 image total (an Instagram context shot). Zero project images captured. Cannot assess diversity.",
+      "fix": "Capture at least 3 distinct named projects from Bedow case studies or any portfolio source for Matilda Gysing. Aim for ~10 images depth-first (spreads/interiors, not just covers)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "No project images at all. Cannot evaluate depth.",
+      "fix": "Go inside Bedow case study pages she worked on; pull interior spreads and screens, not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Tagged Brand strategy, Graphic design, Identity systems but zero work images were captured to represent any of these.",
+      "fix": "Capture on-capability work: identity systems, brand rollouts, graphic design samples from her projects at Bedow."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Only one context shot present (Instagram profile, correctly labeled and correctly showing instagram.com/gysing). Website context shot is entirely absent. No website homepage screenshot at all.",
+      "fix": "Add a screenshot of the website homepage (bedow.se or her own portfolio site if one exists) via scrape.py shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "The single present image has a caption. No uncaptioned images."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "No work images present and AI Notes does not explain why (no mention of a dead site, gated content, or any sourcing attempt for work). The entry is silently thin.",
+      "fix": "Either capture work from Bedow case studies, or document in AI Notes exactly what was tried and why no work was retrievable."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Website field is empty (only Works At Link = bedow.se, which is her employer, not her personal site). Instagram URL is not stored in the Instagram field (manifest has it but the Notion property is missing). LinkedIn is missing. Email is missing. These are almost certainly findable via a basic search.",
+      "fix": "Scout must: (1) search for Matilda Gysing personal portfolio/site; (2) confirm and set Instagram = https://www.instagram.com/gysing/; (3) search 'Matilda Gysing designer linkedin' and capture the URL; (4) check her site or bedow.se for a public contact email."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy, Graphic design, Identity systems are plausible for a Bedow designer/strategist. Tagging is defensible pending work verification."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "fail",
+      "evidence": "Work Status = Employed but AI Notes does not name which sources were checked or which agreed. The objective multi-source rule requires naming the sources (site, IG, LinkedIn) and recording any conflicts.",
+      "fix": "AI Notes must state which sources were checked and which agreed on Employed (e.g. 'Employed: bedow.se team page + LinkedIn agree; IG bio silent')."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "fail",
+      "evidence": "Autonomy = 3 is set but AI Notes contains no reasoning, no work history, no seniority read. CLAUDE.md requires reasoning grounded in actual work history.",
+      "fix": "AI Notes must include a seniority + experience read (roles, tenure, trajectory) with the Autonomy 3 reasoning explicitly stated."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No judgment fields (Rating, Work With, Worked Together, Familiarity) are set; zero-states appear appropriate. No clip note evidence of a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source indicates this was a scout-found entry (not a clip note with instructions). No instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "fail",
+      "evidence": "AI Notes reads: '[Scout research, unverified] Designer/strategist at Bedow (Stockholm). Currently employed.' This is a single line with no seniority read, no experience trajectory, no Autonomy reasoning, and no sourcing of Work Status. CLAUDE.md requires seniority + experience read paired with the Autonomy estimate.",
+      "fix": "Expand AI Notes to include: seniority read (years, trajectory, role level), Autonomy 3 reasoning, and which sources confirmed Work Status as Employed."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Found using Claude, 2026-06-15. Designer/strategist at Bedow (Stockholm); currently employed.' Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Cannot directly inspect provenance file in this check, but fields that are set have plausible sourcing from the scout run."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field visible in output; none expected given no relationship signal and judgment fields absent."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer does not flip to Needs Review on a fail."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Entry has zero project work images and is missing the website context shot, Website link, Instagram property, LinkedIn, Email, Work Status sourcing, and any AI Notes seniority/Autonomy reasoning. The scraper must capture on-capability work (Brand strategy / Identity systems) from Bedow case studies and the scout must fill the missing links and expand AI Notes before re-review."
+}

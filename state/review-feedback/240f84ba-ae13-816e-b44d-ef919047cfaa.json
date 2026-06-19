@@ -1,0 +1,30 @@
+{
+  "page_id": "240f84ba-ae13-816e-b44d-ef919047cfaa",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:39:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "11 work images across 4 distinct named projects: LFW AW18 (x4), LFW SS18 (x2), LFW AW19 (x3), Untapped (x2). Visually distinct."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Goes inside each project: invites, venue wayfinding, mural, poster, billboard, schedule board, environmental typography, digital UI application. Not hero-only."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Identity systems; all captured work is identity and graphic design (LFW seasonal identities, Untapped brand system). On-capability."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png confirmed as joyceyamy.com (logo, About/Instagram/Shop nav, illustration visible). context-ig.png confirmed as instagram.com/ymaj (IG UI, handle ymaj, bio shows 'amy she/her', illustration/branding description)."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 13 images captioned. Work images include project name + Pentagram source link. Context shots captioned Website and Instagram profile with links."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Identity designer; no video/audio work to embed. N/A."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Site is gated ('portfolio on demand', confirmed in clipped.md body). Work correctly sourced from Pentagram case studies instead."},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Person."},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "Website (joyceyamy.com), Instagram (@ymaj, verified bio + grid match), LinkedIn, Email all present."},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Identity systems set (jonathan). Open Question asks about adding Graphic design + Illustration, appropriate given the work shown."},
+    {"id": "B.country-size-work-status", "result": "pass", "evidence": "UK / 1 / Freelance. AI Notes names sources: site + LinkedIn + The Dots all agree. Multi-source rule followed."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: independent freelance, ex-Pentagram, client-facing, runs own practice."},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Clip note is a capability hint only, no relationship facts. Zero-states (Never/Don't know them/Unvetted) are not contradicted by any evidence."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note 'Amy Joycey (Brand Design)': Name cleaned, hint used for capabilities context, verbatim in Source."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Career trajectory attributed to 'Behance + Pentagram project credits'. Seniority read grounded in work history. Autonomy estimate paired. No em-dashes."},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: 'Web clipper, 2025-07-30. Clip note hint: Brand Design.'"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "All agent-touched fields have set_by, verified_at entries in provenance. Capabilities set_by jonathan (not agent's to verify)."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes, Open Questions, captions checked. No em-dashes found."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about expanding Capabilities. Not asking for anything already answered."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Currently Enriching; will flip to Needs Review on this gate pass."}
+  ],
+  "to": null
+}

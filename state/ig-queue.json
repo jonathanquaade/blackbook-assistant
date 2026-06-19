@@ -222,5 +222,12 @@
     "ig_url": "https://www.instagram.com/huuuuudui/",
     "reason": "IG context screenshot failed: headless Playwright returned Instagram cookie consent modal (blocking all profile content). Need logged-in ig.py grab for profile context shot (@huuuuudui).",
     "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "229f84ba-ae13-8152-827f-f5defac7442b",
+    "name": "Subtle Studio",
+    "ig_url": "https://www.instagram.com/be.subtle/",
+    "reason": "IG handle unconfirmed (below 0.8; scout noted @be.subtle as candidate but could not verify bio/grid match). @sforsubtle (LinkedIn handle) returned 'Profile isn't available'. Jonathan needs to confirm the correct IG handle before an IG context shot can be captured.",
+    "queued_at": "2026-06-20"
   }
 ]

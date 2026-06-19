@@ -1,0 +1,111 @@
+{
+  "page_id": "240f84ba-ae13-8158-865f-d6e234261111",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:38:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images across 4 distinct projects: FACT Issue 6 (site-01 to 03), Paco Rabanne identity (site-04 to 06), Herve Telemaque/Serpentine (site-07 to 09), Future Shock/FACT (site-10 to 11). No duplicate-angle clustering."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each project: FACT shows covers grid, stacked spines, and open spreads; Serpentine shows book spine, title spread, and interior essay page; Future Shock shows exterior signage and interior display panel."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Identity systems + Graphic design. All four projects are graphic/identity work: editorial identity (FACT), brand identity (Paco Rabanne), exhibition catalogue (Serpentine), exhibition graphic identity (Future Shock). Paco Rabanne images show campaign/applied brand rather than the core logotype, but campaign photography is within scope for an identity project at Zak Group. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png verified as aseltambay.com homepage (shows email AT@ASELTAMBAY.COM and London studio address). site-13.png verified as instagram.com/aseltambay (shows Asel Tambay handle, bio 'Big fan of the alphabet', aseltambay.com link, graphic-design grid). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions naming project and source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capabilities are Identity systems + Graphic design; no video/audio work expected. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. AI Notes records: no LinkedIn found after two searches; IG verified logged-out; Work Status sourced from Zak Group site + It's Nice That."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (aseltambay.com), Instagram (instagram.com/aseltambay), Email (at@aseltambay.com) all present. LinkedIn: AI Notes explicitly states not found after two searches, which is credible given her low public profile. Works At Link set to zak.group (no Notion entry for Zak Group to use Works At relation)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Identity systems + Graphic design, set_by jonathan per provenance. Matches observed work (FACT editorial, Paco Rabanne brand identity, Serpentine catalogue, Future Shock exhibition graphics)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United Kingdom (London, confirmed from site). Size: 1 (person). Work Status: Employed, resolved by objective rule documented in AI Notes (Zak Group site primary + It's Nice That secondary, both agree)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: AD level at a prestigious studio, ~8 yrs experience, capable of leading projects independently in a studio context. Hedged appropriately."
+    },
+    {
+      "id": "C.no-judgment-field-contradiction",
+      "result": "pass",
+      "evidence": "Clip note says 'ex Partner-Dream' only; no relationship claim or rating stated. Worked Together: Never and Familiarity: Don't know them are valid zero-states. Work With?: Unvetted is correct. Note: Rating field shows '5' in the entry but is not recorded in provenance -- most likely set by Jonathan directly in Notion (his right). No agent rating write evidenced in provenance or AI Notes. Not flagging as a FAIL but noting for Jonathan's awareness."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'ex Partner-Dream' is preserved verbatim in Source and raised as Open Question 2 (Partner-Dream: former employer or colleague context?). No stated facts or judgment values were in the clip note, so no --from-jonathan writes needed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (Art Director, ~8 yrs), Autonomy 4 reasoning marked hedged, Work Status sources named explicitly, LinkedIn absence documented, IG handle verification noted. No unsupported assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-07-30. Jonathan note (kept in Open Questions): ex Partner-Dream.' Complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all agent-written fields: Website, Instagram, Country, Type, Email, Work Status, Works At Link, Autonomy, Source, AI Notes, Images, Open Questions, Entry Status, Work With?, Familiarity, Worked Together. No field below 0.8 confidence written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions, Source all checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse questions: (1) Work With? -- field is Unvetted so the question is valid. (2) Partner-Dream context -- needed because the clip note reference is ambiguous and the field is underdetermined. Both conditional and appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "notes": "Rating field shows '5' in Notion but has no provenance record. Most probable cause: Jonathan set it directly in Notion. No evidence the agent set it (it is not mentioned in AI Notes or Source). Not treated as a FAIL, flagged here for Jonathan's awareness in case it was a scraper error.",
+  "to": null
+}

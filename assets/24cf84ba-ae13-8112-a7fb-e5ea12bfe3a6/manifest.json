@@ -47,7 +47,9 @@
     "caption": "Website",
     "link": "https://www.yihuihu.com",
     "captured_at": "2026-06-19",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "replaced with fresh capture from www.yihuihu.com; site is hosted as an Are.na channel"
   },
   {
     "file": "site-07.webp",
@@ -125,5 +127,13 @@
     "context_shot": true,
     "rejected": true,
     "reject_reason": "Instagram cookie consent modal blocked the profile; logged-out Playwright cannot render the real profile page; queued for logged-in ig.py grab"
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://www.yihuihu.com",
+    "caption": "Website: yihuihu.com (portfolio hosted as an Are.na channel)",
+    "link": "https://www.yihuihu.com",
+    "captured_at": "2026-06-20",
+    "context_shot": true
   }
 ]

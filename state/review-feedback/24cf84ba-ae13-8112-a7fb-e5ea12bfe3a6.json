@@ -1,0 +1,111 @@
+{
+  "page_id": "24cf84ba-ae13-8112-a7fb-e5ea12bfe3a6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:45:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active images span 4 distinct projects: Arena iOS app (site-02, site-04), Henesys bookmarking app (site-07, site-08), Pidgin Chrome extension (site-11, site-12), Misc design experiments (site-13, site-14, site-15), plus website context shot (site-17)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Arena: iOS app screens + user feedback research material; Henesys: landing page + community feed interior; Pidgin: launch tweet with video thumbnail + live Chrome extension popup UI in use. Goes inside projects, not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Product design (Jonathan). Images show digital product UI (Arena iOS, Henesys web app, Pidgin Chrome extension) plus misc graphic/type/print work. All within design engineer scope."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-17.png opened and visually confirmed: shows the Are.na channel board served at yihuihu.com, with 'Are.na / Yihui / my last few websites' visible in the nav and Yihui H.'s channels in the sidebar. Caption reads 'Website: yihuihu.com (portfolio hosted as an Are.na channel)' which is accurate. Old site-06 marked rejected with correct reason ('replaced with fresh capture from www.yihuihu.com; site is hosted as an Are.na channel'). IG context shot (site-16.png) rejected + documented + queued to ig-queue.json: sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active images have captions naming the project and a link to the source page in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No Vimeo/YouTube embeds on the project case study pages. The Pidgin tweet (site-11) contains a video thumbnail but the tweet itself is the primary launch announcement artifact. No embeddable video opportunities were skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and site-16.png reject_reason. Entry queued in state/ig-queue.json. No public email: noted in AI Notes. All sources accounted for."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (yihuihu.com), Instagram (@huuuuudui confirmed via Google snippet per AI Notes), LinkedIn (linkedin.com/in/yihuihu) all present. No public email found; documented in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Product design set by Jonathan. Open Question 1 asks about re-sorting to Digital product design + Frontend development (web). Correctly defers to Jonathan on a field he set."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. Multi-source resolution documented in AI Notes: LinkedIn lists Azuki (potentially stale), ZoomInfo and GitHub org membership point to Are.na. Employer conflict surfaces in Open Question 2."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent. Reasoning in AI Notes: junior-to-mid, recent grad (class of 2025), works independently in code but early-career, hedged."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note relationship facts found. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all appropriate; no evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note instructions beyond discovery context ('Found via Are.na'). Source field records this verbatim as a discovery path, not a recommendation. Familiarity correctly left as Don't know them."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges employer uncertainty, hedges seniority, records Work Status sourcing chain. Seniority + Autonomy read present and paired. No unsupported assertions found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-08-11. Found via Are.na (discovery path, not a recommendation).' Present and complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields with set_by and verified_at. Images provenance updated at 2026-06-20T00:41:36 reflecting the new site-17 upload."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions, Source. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two conditional questions: (1) Capabilities re-sort (Jonathan set Product design, agent proposes addition), (2) Current employer conflict. Terse, relevant, not duplicating answered fields. Story nudge not applicable (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "resolution_note": "Attempt-1 fail was: website context shot (site-06.png) visually showed Are.na, not yihuihu.com. The orchestrator re-shot https://www.yihuihu.com directly; the resulting site-17.png was opened and visually confirmed to be the Are.na channel board served at that URL. The caption 'Website: yihuihu.com (portfolio hosted as an Are.na channel)' is accurate and honest. Old site-06 correctly marked rejected. This resolves the sole failing check from attempt 1; all 20 checks now pass.",
+  "to": "scraper"
+}

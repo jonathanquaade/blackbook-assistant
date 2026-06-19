@@ -1,0 +1,111 @@
+{
+  "page_id": "240f84ba-ae13-81ee-b33c-cba08e84830f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:50:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "adjudication": "attempt-1 fail OVERTURNED. The reviewer independently fetched pentagram.com/work/cohere via scrape.py --render: the live Pentagram case study serves the 'NEW NATURE' image as its first/hero asset. The Cohere logo icon (rounded pebbles, same typeface) is visible in both site-02.png and cohere-logo.jpg, confirming they are from the same project. 'New Nature' is the conceptual framework of the Cohere identity, not a separate project. The attempt-1 diagnosis was wrong.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects confirmed by visual inspection: Cohere identity system (cohere-logo.jpg, site-02.png, site-05.png, cohere-brochure.png all confirmed as Cohere deliverables from pentagram.com/work/cohere), 'What is the Future of Art' protest poster (trend-01.jpg), Megaprospectus editorial (trend-02.png). Projects are visually and thematically distinct."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Cohere: 4 images going into the system (logo, 'New Nature' brand expression, custom typeface specimen, brochure mockup). Not hero-only. Trend List entries show actual print work interiors."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design + Identity systems. Captured work: Cohere brand system (identity), editorial posters, editorial publication. All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is a website screenshot of the parked louhisbergue.com (blank page with a small dash), correctly captioned. No IG screenshot: unconfirmed handle (not a throttle case), documented in AI Notes and Open Questions. Honest absence, correct handling."
+    },
+    {
+      "id": "A.captions",
+      "result": "pass",
+      "evidence": "site-02.png captioned 'Cohere identity, New Nature brand expression, Pentagram 2023'. Caption is factually correct: 'New Nature' is the conceptual framework of the Cohere identity (confirmed by live Pentagram case study page). All other images have project + source link captions."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Graphic design and identity work. No video/audio on the Cohere case study page that would require embeds. Image-only capture is appropriate."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Parked site documented in AI Notes and site-01.png. IG unconfirmed identity documented in AI Notes and Open Questions. No silent thinness."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual graphic designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, Email all set. Instagram: handle unconfirmed, honest absence with open question. No obvious skipped search gap."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems, set_by jonathan. Matches observed work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK, Size 1, Work Status Freelance. Sources named in AI Notes (Trend List, LinkedIn snippet, personal site domain). Multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (multi-studio senior pedigree, independent freelance). Hedged correctly."
+    },
+    {
+      "id": "C.judgment-no-contradiction",
+      "result": "pass",
+      "evidence": "No judgment field contradicts evidence. Zero-states (Never, Don't know them, Unvetted) appropriate: no relationship signal in clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body archived to clipped.md. No relationship facts or judgment in clip note. Name cleaned. Source filled."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged. Seniority read present with trajectory. Sources named. No bare assertions of unverified facts. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-07-30.' Correctly filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. set_by values correct. No sub-0.8 confidence field written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions reviewed: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question (Instagram handle confirmation). Terse, conditional, not duplicating set fields. Story nudge not applicable."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching, pending this gate. Flip to Needs Review is gated correctly on reviewer verdict."
+    }
+  ],
+  "to": null
+}
