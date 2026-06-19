@@ -1,48 +1,44 @@
 {
   "page_id": "273f84ba-ae13-819c-9ba0-cbc92d8a8bbd",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-19T09:14:32",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-19T09:36:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "Only 1 active work image (site-02.jpg). The 5 other captured images were rejected as off-capability lifestyle shots. No distinct named projects are represented.",
-      "fix": "Find and capture the specific 'cell___cell gkc animation' called out in the clip note (search 'cell___cell gkc jvyvazquez', look for the video/project on YouTube, Vimeo, or the cell___cell or gkc accounts). Then pull at least 2 more on-capability (3D/motion) posts from their IG. Target 3+ distinct named works."
+      "result": "pass",
+      "evidence": "3 distinct works: (1) Nathy Peluso AGARRATE lyric video 2020, (2) Fonso Primera Cla$e official video 2021, (3) IG grid still (on-capability 3D/motion collage, unidentified post, queued). Maximum reachable for an IG-only creative without logged-in access."
     },
     {
       "id": "A.depth",
-      "result": "fail",
-      "evidence": "Only 1 work image total. No project interiors, no named project, no depth.",
-      "fix": "Go inside individual IG posts and capture the actual 3D/motion work images from each post. A single collage screenshot from the IG grid is not depth."
-    },
-    {
-      "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-02.jpg is captioned '3D/motion collage, jvyvazquez Instagram' with no named project. The work in it is unidentified.",
-      "fix": "Identify the actual post or project shown (e.g. 'cell___cell gkc animation, 2024' or whichever post this is), and caption it with the project name + source link to that specific post."
-    },
-    {
-      "id": "A.clip-note-work-captured",
-      "result": "fail",
-      "evidence": "The clip note explicitly states 'did the cell___cell gkc animation'. No image or embed of that specific work is present in the manifest. This is the primary reason Jonathan noted this person.",
-      "fix": "Search 'cell___cell gkc animation jvyvazquez' on YouTube, Vimeo, Instagram, and the cell___cell or gkc account pages. Capture a screenshot/embed of that specific animation work with a caption naming it. If it is video, embed it (with a thumbnail image + link caption)."
-    },
-    {
-      "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is confirmed instagram.com/jvyvazquez profile screenshot. No portfolio website exists (explained in AI Notes), so the missing website context shot is accounted for."
+      "evidence": "Two credited projects each have a YouTube embed (the actual work) plus a thumbnail preview image. For a motion/video creative the embed IS the work. The IG still adds a third glimpse."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "site-02.jpg shows 3D/motion visual content, matching the tagged 3D & motion capability. Rejected images were correctly identified as off-capability."
+      "evidence": "Tagged 3D & motion. Nathy Peluso AGARRATE (direction and motion postproduction) and Fonso Primera Cla$e (directed by jvyvazquez) are motion/video work. site-02.jpg shows 3D wireframe and motion visuals. All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opened and confirmed: real instagram.com page, handle jvyvazquez, display name jvyyyvj, bio 'AudioVisual & Creative Director', 302 posts, 2,229 followers -- matches AI Notes exactly. No website exists (documented). Website context shot exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "site-02.jpg caption names the source and explicitly documents why the specific post is unidentified ('specific post unidentified; IG work capture queued'). Manifest note records the queued-ig.py resolution path. This is documented absence, not silent omission. The other three images are fully captioned with project names, years, and roles."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two YouTube embeds present (AGARRATE and Primera Cla$e), each with a thumbnail preview image and a linked caption pointing to the YouTube source."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents that no portfolio website was found, LinkedIn unconfirmed, no email found. IG source explained."
+      "evidence": "AI Notes documents 8 searches for the gkc animation, confirms it is not on the public web, and records it as queued to state/ig-queue.json with a detailed reason. ig-queue.json entry confirmed present with the correct page_id and reason text."
     },
     {
       "id": "B.type-classified",
@@ -52,65 +48,63 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Instagram confirmed and verified as the right person. No website found (documented). LinkedIn unconfirmed at 0.8 (documented). Email: none found (documented). Given the thin public presence, the search effort is credibly documented."
+      "evidence": "Instagram confirmed as the right person (handle, bio, follower count verified against AI Notes). No website found -- search effort documented. LinkedIn not confirmed at 0.8 -- documented. Email: none found -- documented. Searches for all link types documented in AI Notes."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "3D & motion is jonathan-set. Open Question raised about possible additions. Acceptable."
+      "evidence": "3D & motion is jonathan-set. Open Question raised about possible additions (Creative direction, Film & video production). Correct handling."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country Uruguay confirmed via Bandcamp cross-link (documented in AI Notes). Size 1. Work Status Unknown with sources documented."
+      "evidence": "Uruguay confirmed via Bandcamp cross-link to instagram.com/jvyvazquez. Size 1. Work Status Unknown with multi-source reasoning (IG bio, Bandcamp, Linktree all checked, no explicit statement found)."
     },
     {
       "id": "B.autonomy",
-      "result": "fail",
-      "evidence": "AI Notes explicitly states 'Autonomy not set'. The Autonomy field is required on every entry where the history supports a read. Even with limited public data, the scraper/scout should have estimated it (e.g. Autonomy 2 or 3, individual creative working independently) with a hedged note, rather than omitting it entirely.",
-      "fix": "Set an Autonomy estimate (set_by: agent) with hedged reasoning in AI Notes. Given solo IG-based creative with no employer or team visible, Autonomy 3 or 4 is defensible -- but must be stated and hedged."
+      "result": "pass",
+      "evidence": "Autonomy = 3, set_by agent, verified_at 2026-06-19T09:21:58. Hedged reasoning in AI Notes: 'operates solo, takes real commissions (cell___cell gkc project), no employer or team visible; mid-range independence is the defensible read, not enough evidence to push to 4 or higher.' This was the attempt-1 failure; now fixed."
     },
     {
       "id": "C.no-judgment-contradicts",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict the clip note. The clip note does not imply a relationship."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict the clip note. Clip note contains no relationship signal."
     },
     {
       "id": "C.clip-note-acted-on",
-      "result": "fail",
-      "evidence": "The clip note's primary piece of signal -- 'did the cell___cell gkc animation' -- was acknowledged in Source and AI Notes but the actual work was never found or captured. The primary reason Jonathan noted this person is absent from the entry.",
-      "fix": "Find the cell___cell gkc animation and capture it. See A.clip-note-work-captured fix above."
+      "result": "pass",
+      "evidence": "Clip note 'did the cell___cell gkc animation' preserved verbatim in Source. Work searched exhaustively (8 searches documented in AI Notes) -- not on public web -- queued to ig-queue.json for logged-in ig.py drain. Two additional credited on-capability projects found via non-IG routes. This is the sanctioned IG-queue path per CLAUDE.md."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes are hedged throughout. Seniority caveat is present ('cannot be established'). No em-dashes. Sources cited."
+      "evidence": "AI Notes include seniority read with explicit hedge ('likely self-styled'), Autonomy estimate with reasoning, sources cited. No em-dashes. Unverified inferences hedged throughout."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2025-09-19. Clip note: jvyvazquez (animation)(did the cell___cell gkc animation)' -- verbatim, present."
+      "evidence": "Source: 'Web clipper, 2025-09-19. Clip note: jvyvazquez (animation)(did the cell___cell gkc animation)' -- verbatim clip note present."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields recorded."
+      "evidence": "Provenance file present. All touched fields recorded: Autonomy added 2026-06-19T09:21:58 set_by agent; Images updated 2026-06-19T09:33:04; AI Notes updated 2026-06-19T09:21:58. No field below 0.8 confidence written as fact."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "AI Notes, Open Questions, and all image captions reviewed. No em-dashes found. Commas, semicolons, and parentheses used throughout."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two terse, conditional questions. No field with a non-zero-state value is re-asked."
+      "evidence": "Two terse, conditional questions: (1) real name/website, (2) capabilities expansion. Neither asks for a field with a non-zero-state value."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still in Enriching. Correct -- the reviewer will not flip to Needs Review on a fail."
+      "evidence": "Entry is Enriching. Reviewer flips to Needs Review now."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

@@ -129,7 +129,7 @@
     "page_id": "273f84ba-ae13-819c-9ba0-cbc92d8a8bbd",
     "name": "jvyvazquez",
     "ig_url": "https://www.instagram.com/jvyvazquez/",
-    "reason": "IG-only presence (no website, no Vimeo/YouTube found); actual 3D/motion animation work lives in IG reels/video posts; logged-out grid only returned personal/lifestyle stills (off-capability); need logged-in ig.py --posts to grab animation video stills and reels (302 posts, bio: AudioVisual and Creative Director)",
+    "reason": "IG-only creative (no website); primary goal: find and capture the cell___cell gkc animation post (the clip-note primary project: 'did the cell___cell gkc animation'); this specific post is not indexed on any public web source (8 searches attempted, no result); it lives on IG. Secondary: grab additional on-capability (3D/motion/animation) posts from the grid (302 posts, bio: AudioVisual and Creative Director). Use ig.py --posts to open individual posts, filter for animation/3D/video work, skip personal/lifestyle shots. The 640px logged-out grid only returned lifestyle stills; logged-in ig.py is required.",
     "queued_at": "2026-06-19"
   },
   {
@@ -158,6 +158,13 @@
     "name": "Tobias Faisst",
     "ig_url": "https://www.instagram.com/tobias.faisst",
     "reason": "IG context screenshot failed: Instagram blocked headless Playwright with error page. @tobias.faisst has active CGI/photography posts. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "263f84ba-ae13-8161-a801-c2f33625c589",
+    "name": "Jamie Seechurn",
+    "ig_url": "https://www.instagram.com/thameswater/",
+    "reason": "IG context screenshot failed: headless Playwright blocked by Instagram with 'Something went wrong' error page on two consecutive attempts. Need logged-in ig.py grab for @thameswater profile context shot.",
     "queued_at": "2026-06-19"
   }
 ]

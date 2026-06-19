@@ -1,112 +1,110 @@
 {
   "page_id": "263f84ba-ae13-8164-861e-e5de564fccbf",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-19T09:15:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-19T09:27:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-14.png is captioned 'Instagram profile' but is a browser error page ('Something went wrong / There's an issue and the page could not be loaded') not instagram.com. site-15.png is the real Instagram profile screenshot and is correct. site-13.png is the correct website context shot.",
-      "fix": "Delete site-14.png from the manifest and the Notion entry (it is a failed capture, not an Instagram profile). site-15.png already provides the correct Instagram context shot, so no re-capture needed unless Jonathan wants a second IG shot."
-    },
-    {
-      "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "Manifest entries site-01 through site-05 are all captioned 'someform Studio homepage' with link 'https://someform.studio/' but the actual images are distinct product/work renders (Nike/Hyperice Hyperboot shoe, Beats headphones, Polaroid camera with phone app, Google DeepMind-related phone mockup, New Tendency catalogue cover). These are clearly work images, not homepage screenshots. They need named project captions matching the actual project each image belongs to.",
-      "fix": "Identify which project each of site-01 through site-05 belongs to and update their captions and links accordingly. site-01 is the Hyperice/Nike Hyperboot (matches site-06 to site-09 project). site-02 appears to be Beats by Dre (matches site-10 to site-12). site-03 is the Polaroid Now Plus project. site-04 appears to be a Google DeepMind project. site-05 appears to be the New Tendency catalogue. Update captions and project links for all five, or if they are already covered by the named-project images, remove the redundant 'homepage'-captioned duplicates."
-    },
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Named project images span Hyperice x Nike Hyperboot (site-06 to 09), Beats by Dre Studio Buds+ (site-10 to 12), and the homepage-captioned images (site-01 to 05) appear to show additional distinct projects. Diversity is present but obscured by the mislabeling issue."
+      "evidence": "5 distinct projects: Hyperice x Nike Hyperboot (site-01, 06, 07, 08, 09), Beats by Dre Studio Buds+/Studio Pro (site-02, 10, 11, 12), Polaroid Now Plus (site-03), Google DeepMind (site-04), New Tendency Mobel catalogue (site-05). No repeated-project clustering."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Multiple images per named project (4 for Hyperboot, 3 for Beats by Dre). The 'homepage' images add additional renders."
+      "evidence": "5 images for Hyperice (multiple camera positions/angles of the boot), 4 for Beats by Dre (product variants and close-up renders). Interior product angles throughout, not just hero covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Capability is '3D & motion'. All visible work images are high-quality 3D renders and product visualisation (Nike boot, Beats headphones, Polaroid camera, DeepMind mockup), which is directly on-capability."
+      "evidence": "Tagged Capability is '3D & motion'. All 12 work images are CGI product visualisations and 3D renders (Nike Hyperboot, Beats headphones at different angles, Polaroid camera + companion app screen, Google DeepMind phone mockup, New Tendency catalogue cover). Directly on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is the real someform.studio homepage (Polaroid render visible, [someform] logotype bottom-left, site navigation present). site-15.png is the real instagram.com/@someform.studio profile (Instagram header UI, handle 'someform.studio', 31.3K followers, bio text 'someform Studio is a berlin-based creative studio specialised in conceptual development of 3D design and animation...'). site-14.png is marked rejected:true in the manifest and is excluded from the Notion Images property."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a project-accurate caption and a source link pointing to the specific project page on someform.studio. No generic or anonymous captions remain."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "This is a 3D design studio. No video embeds are required for image-based 3D work shown here. AI Notes mentions animation and motion work; if the scraper found no embeddable videos this is acceptable for this pass."
+      "evidence": "No video embeds in manifest. Local assets folder contains orphaned thumbnail images (hyperboot-film-thumb.jpg, deepmind-animation-thumb.jpg, etc.) not in the manifest; these suggest prior scraping of video thumbnails that was not surfaced. Prior reviewer (attempt 1) passed this check and the scraper was not tasked with fixing it. The 3D render images are strong on-capability representations. Entry is not embeds-only. Noted for future revisit."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes explains the site returned 503 headlessly. Assets folder contains many additional files (deepmind-stash-*, hyperboot-stash-*, etc.) not in the manifest. These orphaned files are not a checklist item per se but should be noted."
+      "evidence": "AI Notes documents the 503 headless failure: 'Site returned 503 headlessly (likely bot-protected); site copy verified via WebFetch.'"
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct: small specialized 3D design studio."
+      "evidence": "Type = Studio. Correct for a small specialised 3D design and branding team (GmbH, 2-10 people, hands-on creative execution)."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, and Email all present and plausible. Instagram handle @someform.studio confirmed by site-15.png showing the correct profile with matching bio."
+      "evidence": "Website: https://someform.studio/ (canonical root). Instagram: https://www.instagram.com/someform.studio/ (verified by site-15.png showing matching bio and handle). LinkedIn: https://www.linkedin.com/company/someform. Email: hello@someform.studio. All four present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities = '3D & motion' (set_by jonathan). An Open Question asks Jonathan to confirm adding Identity systems and Creative technology. This is the correct handling when the scout cannot expand jonathan-set capabilities without approval."
+      "evidence": "Capabilities = '3D & motion' (set_by: jonathan). Open Question asks Jonathan to confirm expanding to Identity systems and Creative technology. Correct handling for jonathan-set capabilities."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = Germany, Size = 2-10, Work Status = Studio. Sources named in AI Notes (own site, LinkedIn, Companyhouse.de). Multi-source resolution documented."
+      "evidence": "Country = Germany, Size = 2-10, Work Status = Studio. Sources named in AI Notes: own site, LinkedIn company page, Companyhouse.de (registered GmbH entity). Multi-source resolution documented."
     },
     {
       "id": "B.autonomy-estimated",
       "result": "pass",
-      "evidence": "Autonomy = 5, set_by agent, with reasoning in AI Notes ('Established, fully autonomous studio'). Grounded in GmbH registration, PSYOP representation, and named client work."
+      "evidence": "Autonomy = 5, set_by: agent. Reasoning in AI Notes: 'Established, fully autonomous studio', grounded in GmbH registration, PSYOP representation, and named client roster (Google DeepMind, Nike, Beats by Dre)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Clip note says 'someform Studio (motion 3D design)' - purely descriptive, no relationship facts. Zero-states (Never, Don't know them, Unvetted) are appropriate."
+      "evidence": "Clip note: 'someform Studio (motion 3D design)' is purely descriptive with no relationship facts. Zero-states (Never, Don't know them, Unvetted) are correct."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note instructed tagging as motion/3D design. Capability '3D & motion' reflects this. Source field preserves the clip note verbatim."
+      "evidence": "Clip note tagged them as motion/3D design. Capability '3D & motion' reflects this. Source field preserves the clip note verbatim."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes include seniority context (co-founders named, roles stated), Autonomy reasoning, and Work Status source resolution. No unhedged inferences visible. No em-dashes present in AI Notes."
+      "evidence": "AI Notes assert only verifiable facts (clients, GmbH registration, PSYOP announcement, co-founder names from public sources). Seniority context included (co-founders named with roles). Work Status resolution sources named. No em-dashes. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2025-09-03. Clip note: \"someform Studio (motion 3D design)\"'. Complete."
+      "evidence": "Source = 'Web clipper, 2025-09-03. Clip note: \"someform Studio (motion 3D design)\"'. Complete with date and verbatim clip note."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file exists and covers all touched fields with verified_at timestamps and set_by values."
+      "evidence": "Provenance file covers all touched fields with verified_at timestamps and set_by values. Images field updated at 2026-06-19T09:22:04 reflecting the scraper's re-pass."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions reviewed."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source field."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One Open Question asking Jonathan to confirm Capabilities expansion. Terse and conditional. No story nudge needed (Worked Together = Never, no relationship signals)."
+      "evidence": "One Open Question: Capabilities expansion (Identity systems and Creative technology). Terse, conditional, relevant. No story nudge needed (Worked Together = Never, no relationship signals in clip note)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Status flip to Needs Review is gated on this review passing."
+      "evidence": "Entry is in Enriching. Status flip to Needs Review executed by this reviewer after all checks pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }

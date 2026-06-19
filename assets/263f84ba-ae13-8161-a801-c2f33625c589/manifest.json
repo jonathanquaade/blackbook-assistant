@@ -160,6 +160,18 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/thameswater/",
     "captured_at": "2026-06-19",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Instagram blocked headless Playwright: returned 'Something went wrong' error page, not real profile"
+  },
+  {
+    "file": "site-12.png",
+    "source_url": "https://www.instagram.com/thameswater/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/thameswater/",
+    "captured_at": "2026-06-19",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Retry also returned Instagram error page; IG context shot queued to ig-queue.json for logged-in ig.py grab"
   }
 ]

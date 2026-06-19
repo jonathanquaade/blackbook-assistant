@@ -41,6 +41,14 @@ know exactly what to fix.
       confirm it is what its caption claims: an image captioned "Instagram profile"
       must actually be instagram.com, NOT another website screenshot. Mislabeled
       context shot = FAIL.
+      EXCEPTION (IG throttle): if the Instagram profile screenshot is genuinely
+      unobtainable logged-out (IG serves a "Something went wrong" error page under
+      rate-limiting) AND the broken capture is marked rejected, the block is documented
+      in AI Notes, and the entry is queued to state/ig-queue.json for a logged-in ig.py
+      grab, that is the sanctioned path (CLAUDE.md: a queued logged-in capture is not a
+      reason to hold an entry out of Needs Review) and is NOT a fail. The WEBSITE context
+      shot must still be present and correct. An error-page or mislabeled shot that is
+      NOT rejected+documented+queued is still a FAIL.
 - [ ] **No uncaptioned images.** Every image names its project + source link. Prefer
       fewer named images over more anonymous ones.
 - [ ] **Embeds for video/audio.** If a project page had a YouTube/Vimeo/SoundCloud

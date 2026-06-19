@@ -1,111 +1,30 @@
 {
   "page_id": "263f84ba-ae13-8161-a801-c2f33625c589",
-  "reviewer_version": "v1",
-  "reviewed_at": "2026-06-19T09:15:30",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewer_version": "v2",
+  "reviewed_at": "2026-06-19T09:29:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
-    {
-      "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "7 distinct project thumbnails (Disney x Charlotte Tilbury, OTTOLINGER x PUMA, BUOY STUDIO, BAPE x adidas Originals, YEEZY GAP x Balenciaga, Louis Vuitton x Yayoi Kusama, Adidas Store Installation) plus still images from at least 3 distinct projects. Passes."
-    },
-    {
-      "id": "A.depth-over-breadth",
-      "result": "pass",
-      "evidence": "Still images go inside projects (multiple shots per project from cargo.site CDN), paired with Vimeo embeds. Reasonable depth for a motion/CGI artist whose primary deliverable is video."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "pass",
-      "evidence": "Tagged 3D & motion; all captured work is CGI films, motion films, and VFX stills. On-capability."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-11.png is captioned 'Instagram profile' (source instagram.com/thameswater) but the image shows a browser error page: 'Something went wrong / There is an issue and the page could not be loaded.' It is not a real Instagram profile screenshot.",
-      "fix": "Re-capture a working screenshot of instagram.com/thameswater and replace site-11.png. Use scrape.py shot or ig.py grab. If the profile is inaccessible, note that in AI Notes and add to the IG queue instead."
-    },
-    {
-      "id": "A.no-uncaptioned-images",
-      "result": "pass",
-      "evidence": "Every manifest entry has a caption and a link. No anonymous images."
-    },
-    {
-      "id": "A.embeds-for-video",
-      "result": "pass",
-      "evidence": "Seven Vimeo embeds present, each paired with a thumbnail preview image and a link to the source project page. Pattern followed correctly."
-    },
-    {
-      "id": "A.absence-explained",
-      "result": "pass",
-      "evidence": "AI Notes states 'No public email found.' Work coverage is substantial. No unexplained gaps."
-    },
-    {
-      "id": "B.type-classified",
-      "result": "pass",
-      "evidence": "Type: Person. Correct for a solo practitioner."
-    },
-    {
-      "id": "B.all-findable-links",
-      "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn all present and plausible. Email documented as not publicly found in AI Notes. No obvious search was skipped."
-    },
-    {
-      "id": "B.capabilities-tagged",
-      "result": "pass",
-      "evidence": "3D & motion tagged (Jonathan-set per provenance). Open Question asks about Creative direction and Creative technology additions. Scout correctly did not overwrite the Jonathan-set tag."
-    },
-    {
-      "id": "B.country-size-workstatus",
-      "result": "pass",
-      "evidence": "Country: United Kingdom, Size: 1 (solo), Work Status: Studio. AI Notes names sources (site + LinkedIn) and notes LinkedIn corroborates. Passes multi-source rule."
-    },
-    {
-      "id": "B.autonomy-estimated",
-      "result": "pass",
-      "evidence": "Autonomy: 5 (set_by agent), reasoning in AI Notes: 'fully autonomous, running and art-directing his own commissions.' Grounded in described practice."
-    },
-    {
-      "id": "C.no-judgment-contradiction",
-      "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with clip note 'Jamie Seechurn (@thameswater) 3D', which states no relationship."
-    },
-    {
-      "id": "C.clip-note-acted-on",
-      "result": "pass",
-      "evidence": "Clip note extracted: name cleaned to Jamie Seechurn, @thameswater used as Instagram handle, '3D' maps to 3D & motion capability, Source preserves the note verbatim."
-    },
-    {
-      "id": "C.ai-notes-hedged",
-      "result": "pass",
-      "evidence": "AI Notes includes seniority read ('Mid-senior solo art director'), Autonomy rationale, and names sources. No unhedged assertions about first-hand experience or taste. No em-dashes found."
-    },
-    {
-      "id": "D.source-filled",
-      "result": "pass",
-      "evidence": "Source: 'Web clipper, 2025-09-03. Clip note: \"Jamie Seechurn (@thameswater) 3D\"'. Verbatim clip note preserved."
-    },
-    {
-      "id": "D.provenance-written",
-      "result": "pass",
-      "evidence": "Provenance file present for all touched fields with set_by, verified_at values."
-    },
-    {
-      "id": "D.no-em-dashes",
-      "result": "pass",
-      "evidence": "Reviewed AI Notes and Open Questions; no em-dashes found."
-    },
-    {
-      "id": "D.open-questions",
-      "result": "pass",
-      "evidence": "One terse Open Question about Capabilities expansion. Conditional: not asking for fields already set. Story nudge not triggered (no Worked Together signal in clip note)."
-    },
-    {
-      "id": "D.status-correct",
-      "result": "pass",
-      "evidence": "Entry remains in Enriching; reviewer is withholding Needs Review flip due to the context-shot fail."
-    }
+    {"id": "A.project-diversity", "result": "pass", "evidence": "7 distinct named projects: Disney x Charlotte Tilbury, OTTOLINGER x PUMA, BUOY STUDIO, BAPE x adidas Originals, YEEZY GAP x Balenciaga, Louis Vuitton x Yayoi Kusama, Adidas Store Installation"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "3 YEEZY GAP stills, 3 LV x Kusama stills, BAPE installation interior -- goes inside projects, not only hero shots"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged 3D & motion; all captured work is CGI/motion film thumbnails and stills. On-capability."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-10.png is the real thameswater.studio homepage (verified visually: THAMESWATER header, project list, social icons). site-11.png and site-12.png are Instagram error pages (verified: 'Something went wrong' screen), both marked rejected:true in manifest, both absent from Notion Images property. Block documented in AI Notes. Entry queued in state/ig-queue.json. IG-throttle exception satisfied."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 24 manifest entries have caption + link. No anonymous images."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "7 Vimeo embeds, each paired with a thumbnail preview image + link to source project page"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "IG block documented in AI Notes; ig-queue.json entry present with reason"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Person"},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "Website, Instagram (handle matches clip note @thameswater), LinkedIn all present; no public email found, documented in AI Notes"},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "3D & motion set (jonathan-set); Open Question asks Jonathan to confirm Creative direction + Creative technology additions"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, Size 1, Work Status Studio; two sources (site + LinkedIn) cited in AI Notes"},
+    {"id": "B.autonomy-estimated", "result": "pass", "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes ('running and art-directing his own commissions')"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states consistent with clip note -- no relationship facts stated by Jonathan"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Name cleaned, @thameswater handle used to find Instagram, 3D used as capability basis, Source preserves clip note verbatim"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Seniority read, Autonomy reasoning, Work Status sources, IG queue all documented; no unhedged inferences; no em-dashes"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Web clipper, 2025-09-03 with clip note verbatim"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "Provenance file covers all touched fields with set_by and verified_at"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes in AI Notes or Open Questions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about Capabilities expansion; no redundant asks"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Flipping to Needs Review"}
   ],
-  "to": "scraper"
+  "to": null
 }
