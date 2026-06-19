@@ -1,0 +1,115 @@
+{
+  "page_id": "23ff84ba-ae13-8185-8063-fba79126e559",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:51:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 work images across 7+ distinct named projects: Nike Vomero 18, Nike Therma-FIT ADV, Better Off Studio, General Admission, Giulia B / Ufficio Display, Vibram, ALT Picaro, NC typeface personal, NC self-promo. No caption repeats."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Nike has two separate shots from different campaigns; type treatment projects show full design layouts; ALT Picaro shows a typeface specimen at depth; not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion + Graphic design. All images are motion design frames or graphic/type treatment work. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is nikoschristopoulos.com homepage (confirmed). site-02.png is instagram.com/nikos__christopoulos with EU cookie overlay; profile and handle visible behind overlay per spawn guidance, accepted."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 11 images in manifest carry project name captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Site is Tumblr-based with native video (no Vimeo); motion work represented by frame stills per spawn context, which is the honest best-available. AI Notes mention 'Vimeo linked from site' as a scout note pre-dating the scraper run; scraper found no embeddable Vimeo URLs, so frame stills are correct."
+    },
+    {
+      "id": "A.vibram-frame-marginal",
+      "result": "pass",
+      "evidence": "vibram-frame.jpg shows a film-anatomy HUD with two pale-green panels - minimal but is a genuine design artifact from the Vibram motion project, not a solid-color or black frame. Borderline; passed given Tumblr frame-still context."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No silent gaps; all rejected frames documented in manifest with reasons."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all set. Instagram handle verified (name + grid match per AI Notes)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Graphic design. Match work history (motion design frames, type treatment, graphic layouts)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Greece, 1, Freelance. Sourced from nikoschristopoulos.com/info per AI Notes (site is primary self-maintained source)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent, with hedged reasoning in AI Notes (mid-level, ~4-5 years, two studio stints then freelance)."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Clip note stated only 'Motion Designer' (tagging hint, no relationship facts). Zero-states correct. No judgment field contradicts evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip name 'Nikos Christopoulos Motion Designer' cleaned to Name; hint preserved verbatim in Source."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'approximately', 'hedged', 'mid-level' hedges throughout. Seniority + experience read present. One stale clause ('Vimeo linked, worth capturing') remains after scraper ran; minor but not a fail."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-07-29. Clip note hint: Motion Designer.' Present and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields in provenance file; set_by agent throughout except judgment zero-states."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty (not returned in keeper.py get). Correct: no unresolvables, no story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

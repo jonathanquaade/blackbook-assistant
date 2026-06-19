@@ -1,0 +1,30 @@
+{
+  "page_id": "229f84ba-ae13-8152-827f-f5defac7442b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:50:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "6 visually distinct projects: Cult Creative (job dashboard), Wannascan (QR loyalty app), Trade Wizard (trading platform), Richiamo Coffee (food ordering app), GuruLab (edtech classroom), OX White (ecommerce fashion site). No repeated angles or duplicate project captions."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Each image shows interior UI screens (dashboard, app screens, pricing page, live classroom, ecommerce product grid), not hero-only covers."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Digital product design, Web design, Graphic design, Insights & research. All 6 projects are digital product or web UI. No off-capability capture."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-04.png is the Subtle Studio Netlify staging homepage (logo, nav, hero copy confirmed visually). Caption correctly documents offline main domain. IG shot (site-05.png) is rejected, documented with reason in manifest and AI Notes, queued in ig-queue.json. Checklist IG-throttle exception applies."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 7 manifest entries carry named project captions. No anonymous shots."},
+    {"id": "A.embeds-video-audio", "result": "pass", "evidence": "No video/audio capability tagged; not applicable."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Both primary domains offline documented in AI Notes; Netlify staging used and documented. IG queued with reason."},
+    {"id": "B.type", "result": "pass", "evidence": "Type = Studio. Correct: registered company delivering client projects."},
+    {"id": "B.links", "result": "pass", "evidence": "Website set (canonical besubtle.work). LinkedIn confirmed. IG handle unconfirmed below 0.8, asked in Open Questions and queued. Email site-offline, asked. All gaps are genuinely unresolvable with the primary domain offline."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Digital product design, Graphic design, Insights & research, Web design match the work portfolio shown."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Malaysia, 2-10, Studio. Work Status sourcing explained in AI Notes (entity type, registered company, no freelancer or employment signal)."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 3, set_by agent, hedged reasoning in AI Notes."},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "No clip note relationship facts. Zero-states (Never, Don't know them, Unvetted) valid for a studio clipped without personal context."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note 'Malaysia Design Studio' used for Country=Malaysia and Type=Studio; preserved verbatim in Source."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Size, IG handle, email, Autonomy all explicitly hedged. Seniority prose N/A for studio (entity, not individual); Autonomy field set at studio level with reasoning."},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: 'Web clipper, 2025-07-07. Clip note hint: Malaysia Design Studio.'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields in provenance file with set_by and verified_at. No sub-0.8 facts asserted."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes, Open Questions, and captions checked. No em-dashes found."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "2 questions: IG handle (genuinely unresolvable) and contact email (site offline). Terse, conditional, no field already answered asked twice."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Entry in Enriching; will flip to Needs Review on this pass."}
+  ],
+  "to": null
+}
