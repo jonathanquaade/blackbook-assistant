@@ -166,5 +166,61 @@
     "ig_url": "https://www.instagram.com/thameswater/",
     "reason": "IG context screenshot failed: headless Playwright blocked by Instagram with 'Something went wrong' error page on two consecutive attempts. Need logged-in ig.py grab for @thameswater profile context shot.",
     "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "25ef84ba-ae13-811d-b28f-f30880dc1b2e",
+    "name": "Louie Gavin",
+    "ig_url": "https://www.instagram.com/louiegavin/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for profile context shot (@louiegavin). Also: IG likely has recent design work posts worth capturing.",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "257f84ba-ae13-81f7-a6bd-f873c1d2ab20",
+    "name": "Derek Yarra",
+    "ig_url": "https://www.instagram.com/derekyarra/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for profile context shot (@derekyarra).",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "252f84ba-ae13-816a-90fa-f87ecdab4214",
+    "name": "Emily Farebrother",
+    "ig_url": "https://www.instagram.com/emfarebrother/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for profile context shot (@emfarebrother). Recent social campaign work may also be on her IG grid.",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "24ff84ba-ae13-8127-aa9e-d18081934598",
+    "name": "Matt Tucker",
+    "ig_url": "https://www.instagram.com/matt.tucker.studio/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for profile context shot (@matt.tucker.studio). IG also likely shows recent On creative direction work.",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "254f84ba-ae13-8170-9472-e2f5fb03c0a0",
+    "name": "Luke Dupont",
+    "ig_url": "https://www.instagram.com/lukedupont/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for profile context shot (@lukedupont).",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "255f84ba-ae13-81a1-b3b2-e8b740721d1d",
+    "name": "Blonde Inc.",
+    "ig_url": "https://www.instagram.com/blonde___inc/",
+    "reason": "IG context screenshot not attempted: IG confirmed rate-limited in this session (multiple prior attempts across batch returned error pages). Need logged-in ig.py grab for @blonde___inc profile context shot.",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "24ff84ba-ae13-811d-8a85-d63a4649d4bc",
+    "name": "yuzu (byeyuzu)",
+    "ig_url": "https://www.instagram.com/byeyuzu/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). byeyuzu.com is also currently disconnected from Cargo CMS (DNS parking page). IG is the primary public showcase for this artist's recent CGI/motion work. Need logged-in ig.py grab for profile context shot and recent work.",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "24cf84ba-ae13-8112-a7fb-e5ea12bfe3a6",
+    "name": "Yihui Hu",
+    "ig_url": "https://www.instagram.com/huuuuudui/",
+    "reason": "IG context screenshot failed: headless Playwright returned Instagram cookie consent modal (blocking all profile content). Need logged-in ig.py grab for profile context shot (@huuuuudui).",
+    "queued_at": "2026-06-19"
   }
 ]

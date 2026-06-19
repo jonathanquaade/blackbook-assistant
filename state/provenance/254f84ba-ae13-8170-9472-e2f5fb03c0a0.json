@@ -21,9 +21,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:13:22",
+      "verified_at": "2026-06-19T18:32:40",
       "set_by": "agent"
     },
     "Work With?": {
@@ -35,7 +35,7 @@
     "Work Status": {
       "value": "Employed",
       "source_url": null,
-      "verified_at": "2026-06-15T21:14:03",
+      "verified_at": "2026-06-19T09:59:42",
       "set_by": "agent"
     },
     "Name": {
@@ -74,9 +74,9 @@
       "set_by": "agent"
     },
     "Works At Link": {
-      "value": "https://www.shopify.com/",
+      "value": "https://daydream.ing/",
       "source_url": null,
-      "verified_at": "2026-06-15T21:14:03",
+      "verified_at": "2026-06-19T09:59:42",
       "set_by": "agent"
     },
     "Instagram": {
@@ -104,15 +104,30 @@
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Capabilities: propose Digital product design (interfaces/software) and Web design; possibly Brand strategy too (he lists brand development). Confirm?",
+      "value": "",
       "source_url": null,
-      "verified_at": "2026-06-15T21:14:03",
+      "verified_at": "2026-06-19T09:38:55",
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "NYC-based digital product designer focusing on interfaces, product and brand development. Currently Principal / Senior Staff Designer at Shopify (titles vary across sources, both point to Shopify). Senior track record, ~15+ yrs: Spotify (Innovation Labs Staff PD, interim Manager Product Design, Spotify for Artists Senior PD), Meta, Dropbox; started at studio The Decoder Ring and at CP+B (Volkswagen, Amex), plus co-founder of Marquee and founding partner at Policus. Very senior IC / lead-level, Autonomy 4 (could run product work unsupervised, but operates inside a large org rather than as a studio). Work Status Employed (Shopify): LinkedIn and Behance/about agree, ZoomInfo lists a shopify.com email. Employer set as Works At Link to shopify.com. Note: his own site lukedupont.com threw a self-signed-cert error headlessly, so details are from LinkedIn/Behance/search. Sources: LinkedIn, Behance, about.me, search.",
+      "value": "NYC-based digital product designer. As of early 2026, Head of Design at Daydream (AI fashion shopping platform, daydream.ing, launched June 2025). Moved on from Shopify (Principal Designer). Career trajectory: Spotify Innovation Labs Staff PD 2021-2022, interim Manager Product Design; Spotify for Artists Senior PD 2017-2021; Meta; Dropbox; started at The Decoder Ring and CP+B (Volkswagen, Amex); co-founder of Marquee and founding partner at Policus. Autonomy 4 (runs product work end-to-end as IC leader inside large orgs). Sources checked: LinkedIn Google snippet confirmed Daydream Head of Design role (~Feb 2026, snippet noted him posting a Principal PD hiring role two weeks after joining); ZoomInfo shows Shopify Principal Designer (treated as stale aggregator data); lukedupont.com blocked by self-signed cert; IG grab queued (headless returned error page). Two sources conflict: LinkedIn (Daydream, current) vs ZoomInfo (Shopify, stale aggregator). Trusted LinkedIn over ZoomInfo per the objective rule; no contrary signal from self-maintained sources. Work Status: Employed at Daydream at 0.8. Work captured from Spotify for Artists official blog (2019 mobile redesign, 2020 Teams launch) and Daydream press coverage (2025 iPhone app launch). IG capture queued: headless Playwright returned error page.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:14:03",
+      "verified_at": "2026-06-19T09:59:42",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-01.jpg",
+        "site-02.jpg",
+        "site-03.jpg",
+        "site-05.gif",
+        "site-06.gif",
+        "site-07.png",
+        "site-08.png",
+        "site-09.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-19T09:56:18",
       "set_by": "agent"
     }
   }

@@ -2,3 +2,6 @@
 
 Luke Dupont (Product Designer)
 
+# Archived page body (2026-06-19)
+
+Luke Dupont is a New York based Designer focusing on interfaces, product, and brand development.

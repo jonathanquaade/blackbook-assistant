@@ -1,0 +1,110 @@
+{
+  "page_id": "25ef84ba-ae13-811d-b28f-f30880dc1b2e",
+  "reviewer_version": "v2-gate",
+  "reviewed_at": "2026-06-19T18:31:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct named project sources confirmed visually: Tame OS (5 UI screens, site-01 to site-05), Naiv Studio (4 named works: Biennale Venice, BBB Munich, PE-Seat, H1-Leuchte), Aeos smart lamp (3 images: product in context, prototype on robotic arm, base interface detail). Attempt-1 failure resolved."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Tame OS shows 5 distinct UI states (home, ideation, voice note, conversations, 2D file map). Naiv Studio shows 4 different named outputs. Aeos shows product in context, prototype on robotic arm, and base interface detail."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged as Product design. Work spans digital product (Tame OS), industrial product (Aeos, Naiv objects), studio spatial output (Biennale). All on-capability for a product/industrial designer."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-09.png confirmed as louiegavin.com homepage (name + at Apple in footer, arc of project thumbnails). site-10.png rejected + reject_reason documents IG throttle + queued to ig-queue.json. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 uploaded images have named captions and source links in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video-primary projects in the captured set; no skipped embeds identified."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest reject_reason and in ig-queue.json with reason noting both context shot and recent work capture pending."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Product design tagged (jonathan baseline). Open Question asks Jonathan to confirm proposed expansions to Digital product design, Industrial design, Creative technology."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US, Size: 1, Work Status: Employed. AI Notes documents multi-source check: site New Chapter post + LinkedIn agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes referencing solo founder background + current Apple IC role."
+    },
+    {
+      "id": "C.no-contradicting-judgments",
+      "result": "pass",
+      "evidence": "Clip note contains no relationship or judgment facts. Zero-states are correct and uncontradicted."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note parsed: name cleaned, Tame Labs context used in AI Notes and work capture, clip text preserved verbatim in Source."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Sources named, inferences hedged with qualifying language, seniority read present, Autonomy reasoning paired, no em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2025-08-29 with clip note verbatim."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with verified_at and set_by. Capabilities correctly set_by jonathan (migration)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question on Capabilities expansion. Appropriate given jonathan-set baseline tag."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipping to Needs Review."
+    }
+  ],
+  "to": null
+}

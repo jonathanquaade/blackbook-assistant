@@ -1,0 +1,113 @@
+{
+  "page_id": "252f84ba-ae13-816a-90fa-f87ecdab4214",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T18:38:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "adjudicated": true,
+  "adjudication_outcome": "OVERTURN",
+  "adjudication_reason": "The sole failing check (A.embeds: 'false provenance' on burberry-ss21-digital-vimeo-thumb.jpg) is incorrect. Vimeo oEmbed for https://vimeo.com/529083717 returns thumbnail_url containing hash 1094912148, which matches the manifest source_url exactly. The video title is 'The Face, Burberry SS21 Homepage Takeover (Mobile)' and the description states 'We teamed up with @thefacemagazine for a Burberry digital homepage takeover'. The video is a screen-recording of The Face website with Burberry overlays; its thumbnail legitimately shows that content. Visually confirmed: the image shows 'THE FACE' mobile site with Burberry shark graphic overlay and 'CLOSE' button, consistent with a homepage takeover. No false provenance exists. All other checks confirmed PASS: 3 distinct campaigns (SS21 In Bloom, TB Summer Monogram, Burberry x Minecraft), 3 images each, embed present, website context shot honest, IG queued and documented, metadata complete.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct named Burberry campaigns: SS21 In Bloom, TB Summer Monogram, Burberry x Minecraft. Visually distinct (fashion photography, Naomi Campbell portrait, 3D Minecraft world). 3 images each."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3 images per campaign from editorial/press CDNs; goes inside each campaign with multiple shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All work is fashion campaign/social creative content matching tagged Capabilities: Creative direction + Social media content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png source_url is https://emilyfarebrother.com/, caption is 'Website: emilyfarebrother.com (homepage opens with her showreel)'. IG shot rejected, documented with reject_reason, queued in ig-queue.json per sanctioned exception."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link to the source page."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "OVERTURN of prior FAIL. Vimeo oEmbed confirms thumbnail_url hash 1094912148 matches manifest source_url. Video is a screen-recording of The Face homepage Burberry takeover; thumbnail showing that page is correct and expected. Embed present for SS21 digital campaign with thumbnail preview image + linked caption."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and site-02.png rejected with reject_reason. Entry is in ig-queue.json."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Creative direction + Social media content match her documented role as Social Art Director at Burberry and independent CD positioning."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, 1, Freelance. Sources named in AI Notes: own site + LinkedIn agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states not contradicted by clip note '[art director]', which is a tag hint only."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note '[art director]' archived in clipped.md, used as context, preserved in Source field."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge unverified inferences. Seniority read and Autonomy estimate present with reasoning. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2025-08-17. Clip note hint: [art director]'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions needed; no unresolvables."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review by adjudicator."
+    }
+  ],
+  "to": null
+}

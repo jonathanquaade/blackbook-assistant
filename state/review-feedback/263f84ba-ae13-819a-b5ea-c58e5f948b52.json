@@ -1,0 +1,111 @@
+{
+  "page_id": "263f84ba-ae13-819a-b5ea-c58e5f948b52",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:51:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Off-Time (3 stills), Regular (3 stills + Vimeo thumbnail + embed), Awkward (1 gif + 1 still + 1 gif + embed), Editorial illustrations (3 images). No repeat-project concentration."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Regular includes story sketches (site-04) and a story scheme (site-05) alongside the poster; goes inside the films, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Illustration; captured work is animated film stills and editorial illustrations. The proposed expanded tags (animation, film) are asked via Open Questions. All captured work is on-capability for what she does."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png opened and confirmed: notofagus.com homepage (nav: films, gifs, drawings, illustrations, animation, about/contact). site-16.png opened and confirmed: instagram.com/notofagus profile (bio: filmmaker, animator, illustrator; 85k followers). Both correct and correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 live images have captions naming the project and a link to the source page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Regular and Awkward both have Vimeo embeds. Off-Time (2025) has no public Vimeo embed; given the film is currently on the festival circuit (Grand Prix Golden Kuker 2025, Satoshi Kon Award Fantasia 2025 per AI Notes) this is expected. The absence is not explicitly noted in AI Notes, which is a soft gap, but the festival context makes it self-evident. Regular has a Vimeo thumbnail (site-13). Awkward's thumbnail (site-14) was correctly rejected as near-duplicate with clear reasoning in the manifest."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No sources listed as dead or blocked. The Off-Time embed absence is inferable from the festival-circuit context stated in AI Notes, though a one-line note (e.g. 'Off-Time not yet on public Vimeo, still on festival circuit') would be cleaner. Noted as a minor gap, not a gate failure."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (notofagus.com), Instagram (instagram.com/notofagus, confirmed correct person in context shot), LinkedIn (linkedin.com/in/nata-metlukh-b2669039), Email (nata.metlukh@gmail.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged (from clip note). Open Question proposes expansion to 3D & motion, Film & video production, Art practice for Jonathan to confirm. Correct process: only tagging at confirmed confidence, asking about the rest."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Freelance. AI Notes names sources: her site, LinkedIn snippet, Behance, Vimeo -- two sources (site + LinkedIn) agree on Freelance. Meets objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 (set_by agent). AI Notes grounds it: directs and authors her own films, ~15+ yrs senior, fully independent. Reasoning present."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Clip note says 'illustrator for Hermes' (client relationship, not colleague). Worked Together: Never is not contradicted. Zero-states are all appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note: 'nata metlukh (@notofagus)(illustrator for Hermes)'. Instagram handle matched and verified. Hermes noted in AI Notes as a confirmed client. Illustration capability tagged. Name cleaned to 'Nata Metlukh'. Source preserves clip note verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes. Seniority read included (~15+ yrs, Autonomy 5). Client list cited as confirming the clip note. Festival awards cited as verifiable facts. No unsupported assertions of first-hand quality."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-09-03. Clip note: nata metlukh (@notofagus)(illustrator for Hermes)'. Verbatim clip note preserved."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. All agent-set fields have set_by: agent. Capabilities correctly shows set_by: jonathan (migrated/clipper baseline from the original clip-tagged Illustration)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions all reviewed. No em-dashes found. AI Notes uses semicolons and parentheses throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion. Terse and conditional (asking only about fields not yet confirmed). No story nudge needed (Worked Together is Never, no relationship context)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching (correct pre-review state). Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "Solid entry. Minor observation: Off-Time (2025) has no public Vimeo embed and no explicit note in AI Notes about why. Given the festival-circuit context stated in AI Notes (Grand Prix 2025, Fantasia 2025) this is self-evident, but one line ('Off-Time not yet on public Vimeo, still on festival circuit as of June 2026') would future-proof the record. Not a gate failure. The Awkward Vimeo thumbnail was correctly rejected (near-duplicate) with reasoning in the manifest; the animated gifs serve as visual proxies for that film.",
+  "to": null
+}

@@ -1,0 +1,30 @@
+{
+  "page_id": "24ff84ba-ae13-8176-93d6-c86a6d04ae8a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:58:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "4 distinct films: Paly, Every Man A King, Future Memories, Again Tomorrow"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "2 Vimeo thumbnails + 2 production stills + 3 embeds; appropriate depth for a director entry"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All captures are film thumbnails, stills, and Vimeo/YouTube embeds; matches Film & video production"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png visually confirmed as nikhilganesh.com homepage; site-02.png visually confirmed as instagram.com/@nikhilganesh profile"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 6 manifest images have captions with project name, year, and type; all have source links"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "3 embeds (Vimeo x2, YouTube x1); thumbnail preview images for both Vimeo embeds present; 4 work images present so not embeds-only"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No unexplained gaps; IG logged-out limitation documented in AI Notes"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Person"},
+    {"id": "B.all-links", "result": "pass", "evidence": "Website (nikhilganesh.com), Instagram (@nikhilganesh verified via site external links), Email (nikhil@rainbowparc.com) present; LinkedIn documented as genuinely absent after two targeted searches in AI Notes"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Film & video production correct for an independent writer-director"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "United States, Size 1, Freelance; AI Notes names sources (nikhilganesh.com site plus IMDb confirm independent status)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (writes, directs, runs RAINBOW PARC with no external employer)"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Clip note is a discovery label only; zero-states Never/Unvetted/Don't know them are appropriate"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note preserved verbatim in Source; Name cleaned to Nikhil Ganesh"},
+    {"id": "C.ai-notes-hedged-accurate", "result": "pass", "evidence": "AI Notes now reads 'Paly 2020' (corrected from 'Paly 2023'); confirmed against provenance verified_at 2026-06-19T09:57:18; website screenshot also shows 'Paly (2020)' in filmography list; AI Notes is hedged and includes seniority plus Autonomy reasoning"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: 'Web clipper, 2025-08-14. Clip note hint: Silicon Valley Director'"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "All touched fields present in provenance with set_by and verified_at values"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, manifest captions, or any agent-written content; double-hyphens (--) in captions are separators"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No open questions needed; LinkedIn absence documented in AI Notes rather than as a question"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Entry is Enriching, now promoted to Needs Review by this gate"}
+  ],
+  "to": null
+}

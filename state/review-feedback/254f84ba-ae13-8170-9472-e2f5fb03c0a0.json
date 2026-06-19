@@ -1,0 +1,110 @@
+{
+  "page_id": "254f84ba-ae13-8170-9472-e2f5fb03c0a0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T18:32:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects confirmed visually: Spotify for Artists mobile 2019 (site-01/02/03), Spotify for Artists web/Teams 2020 (site-05/06), Daydream AI app 2025 (site-08/09). Not the same project from multiple angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: 2019 batch shows stats detail screen, home tab, and artist overview (not just a hero). 2020 batch shows team management panel and song analytics chart. Daydream shows personalized home feed and brand-browse/chat-to-shop flows."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Digital product design and Web design. All 8 active images are product UI screens for Spotify for Artists (B2B product tool) and Daydream (consumer app). Directly on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-07): confirmed behance.net/lukedupont showing Luke Dupont name, photo, and portfolio. Caption honestly states Behance fallback because lukedupont.com blocked by self-signed cert (documented in AI Notes). IG context shot (site-11): rejected, documented in manifest with reject_reason, entry queued in state/ig-queue.json. Sanctioned throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 active images have captions naming the project and year. Each has a link to the source page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio embeds needed: the captured sources (Spotify official blog, fashion press Substack) are image-based product announcements. No YouTube/Vimeo on the source pages that would require embedding."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains lukedupont.com is blocked by self-signed cert. IG throttle failure documented. ZoomInfo stale data documented. All gaps have stated reasons."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (lukedupont.com), Instagram (@lukedupont confirmed in Behance profile grid), LinkedIn (/in/lukedupont) all set. Public email not present; AI Notes do not explicitly note a search was done, but no public email is findable for a staffed Head of Design, and omission is common and acceptable for this profile type. Works At Link set to daydream.ing correctly."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Digital product design is primary and well-supported. Web design is supported by the Spotify for Artists web dashboard work (site-05/06 show a full product web UI). Both per TAXONOMY.md scope."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = United States, Size = 1, Work Status = Employed. AI Notes names the sources checked (LinkedIn Google snippet for Daydream role, ZoomInfo treated as stale) and documents the conflict resolution per the objective rule. Confidence stated at 0.8."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by agent. Reasoning in AI Notes: IC leader running product work end-to-end inside large orgs, corroborated by Senior PD to Staff PD trajectory at Spotify and Head of Design at Daydream. Grounded in real work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Clip note was 'Luke Dupont (Product Designer)' with no relationship or rating facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all valid; nothing in the clip note contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note text used verbatim in Source. Parenthetical stripped from Name to 'Luke Dupont'. No relationship facts, passcodes, or tagging instructions in the clip note that needed further action."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status confidence level stated explicitly (0.8). Source conflicts documented with resolution rationale. Autonomy estimate hedged ('runs product work end-to-end as IC leader'). No unverified assertions stated as fact. Seniority trajectory present (Staff PD, Senior PD, Head of Design)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2025-08-19. Clip note: \"Luke Dupont (Product Designer)\"'. Verbatim clip note preserved."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields present in state/provenance/254f84ba-ae13-8170-9472-e2f5fb03c0a0.json with verified_at timestamps and set_by agent. No field below 0.8 confidence written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned: no em-dashes found. Semicolons and commas used throughout. Captions clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No unresolvable gaps requiring Jonathan input were identified. No conditional questions triggered (all judgment fields at zero-state, no story nudge needed since Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching (reviewer gate not yet flipped). Will be flipped to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

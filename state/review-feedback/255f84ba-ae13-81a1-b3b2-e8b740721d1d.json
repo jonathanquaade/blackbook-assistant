@@ -1,0 +1,31 @@
+{
+  "page_id": "255f84ba-ae13-81a1-b3b2-e8b740721d1d",
+  "reviewer_version": "v2-gate",
+  "reviewed_at": "2026-06-19T18:38:30",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "6 distinct named projects confirmed visually: Reduced (visual identity), Creed Media (identity), Canada Goose Chilliwack (campaign film), Prada Beauty (film), Academy Group (identity), Bang and Olufsen (film)."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "2-3 interior shots per project plus embed and thumbnail for the three film projects; not hero-only."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Identity images (Reduced, Creed, Academy) match Identity systems and Graphic design tags; film stills plus 3 Vimeo embeds (Canada Goose, Prada, B&O) match Film & video production, Creative direction, and Photography tags."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-19.png confirmed as blonde.inc homepage (studio description visible in screenshot). IG throttle exception fully satisfied: no error-page upload in manifest, AI Notes documents the rate-limit block with explicit ig-queue.json reference, and ig-queue.json entry confirmed for this page_id."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 19 uploaded images have captions and source links. Two rejected entries (site-02, site-05) are marked rejected with reasons and excluded from upload."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "3 Vimeo embeds present (1145263452, 1032330672, 1128862177) each with a thumbnail preview image and linked caption pointing to blonde.inc case study."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "IG throttle documented in AI Notes with explicit ig-queue.json reference; queue entry present and correct. No other unexplained gaps."},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type = Studio. Open Question flags Agency ambiguity for Jonathan."},
+    {"id": "B.all-links", "result": "pass", "evidence": "Website (blonde.inc), Instagram (@blonde___inc), LinkedIn (company/blondeinc), Email (ah@blonde.inc) all present."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "6 capabilities tagged and verifiable from site: Creative direction, Film & video production, Graphic design, Identity systems, Photography, Web design."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Denmark/Sweden/United States (three offices confirmed), Size 11-40, Work Status Studio. Sources named in AI Notes: own site, LinkedIn, The Hub."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5, set_by agent; reasoning in AI Notes as a production house running creative end to end across three offices."},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "No judgment field contradicts evidence. Clip note contains no relationship facts; zero-states are appropriate."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note verbatim in Source; Name cleaned to Blonde Inc.; clipped.md archived at assets/255f84ba-ae13-81a1-b3b2-e8b740721d1d/clipped.md."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Type/Agency ambiguity hedged and flagged. Seniority context present (named leadership: Adam Holm, Emma Creed, Alfred Lauritzen). No unsupported assertions. No em-dashes. IG queue sentence present and accurate."},
+    {"id": "D.source", "result": "pass", "evidence": "Source = 'Web clipper, 2025-08-20. Clip note: Blonde Inc. (Art Direction, Video Production)'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields have provenance entries with set_by agent and verified_at timestamps."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "Programmatic scan of AI Notes and Open Questions: no em-dash character found."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question on Type/Agency ambiguity only. No fields asked about that already have values."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Entry was Enriching; flipping to Needs Review as part of this gate pass."}
+  ],
+  "to": null,
+  "note": "Attempt-1 fail (IG throttle block not documented in AI Notes) is resolved. AI Notes now contains explicit rate-limit sentence and ig-queue.json reference. All 19 checks pass."
+}

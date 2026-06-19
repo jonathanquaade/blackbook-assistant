@@ -1,0 +1,110 @@
+{
+  "page_id": "257f84ba-ae13-81f7-a6bd-f873c1d2ab20",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T10:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct stills shoots (Pas Normal Studios, Turo, MAAP Adapt, Rapha x Mikes Bikes) + 4 distinct Vimeo films (Quince FW25, Nike Renegade, Reef FW23, MAAP Pro Air 3); no repeated project across captions"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 shots per stills shoot going inside each project; not hero-only covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 stills are commercial sport/lifestyle/fashion photography; all 4 embeds are directed film/video; matches tagged capabilities Photography + Film & video production"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as derekyarra.com homepage. site-02.png (IG) is rejected=true with documented IG throttle reason and entry queued to ig-queue.json; sanctioned exception applies per checklist"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a named project caption and a source link; no anonymous images"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present, each paired with a 1280px thumbnail image; not embeds-only"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence explained in manifest rejection_reason and AI Notes references the ig-queue"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person, correct for a solo commercial photographer and filmmaker"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (derekyarra.com), Instagram (instagram.com/derekyarra), LinkedIn, and Email (studio@derekyarra.com) all present"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography + Film & video production; matches observed stills and directed film work"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Freelance; Work Status resolved via site + LinkedIn both showing freelance, sources named in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set_by agent; reasoning in AI Notes: runs own studio practice and directs own shoots"
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Clip note states Mercury as a client (not a relationship claim); Worked Together: Never and Familiarity: Don't know them are valid zero-states with no contradicting evidence"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw Name archived to clipped.md; Mercury referenced in AI Notes as a client; Name cleaned to Derek Yarra; Source preserves verbatim clip note text"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority and experience read present; Autonomy estimate paired with reasoning; no em-dashes confirmed; inferences appropriately hedged"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-08-22. Clip note: Derek Yarra // Still + Moving Pictures (Took photos for Mercury)' verbatim"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with verified_at timestamps and set_by: agent; no field below 0.8 confidence written as fact"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes confirmed em-dash free"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions needed; no story nudge required (Worked Together: Never, Notes empty)"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching before this gate; flipped to Needs Review on pass"
+    }
+  ],
+  "to": null
+}

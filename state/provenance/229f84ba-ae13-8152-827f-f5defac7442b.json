@@ -52,12 +52,13 @@
     },
     "Capabilities": {
       "value": [
-        "Web design",
         "Digital product design",
-        "Graphic design"
+        "Graphic design",
+        "Insights & research",
+        "Web design"
       ],
       "source_url": null,
-      "verified_at": "2026-06-15T21:11:54",
+      "verified_at": "2026-06-19T18:41:11",
       "set_by": "agent"
     },
     "Country": {
@@ -87,15 +88,21 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Small Malaysia-based design studio (Selangor; company incorporated October 2023, reg 003538774M), so young/early-stage. Services per their site and listings: UI/UX design, web design and branding, with a stated listen-first, research-led process (e.g. redesigned the Vyne e-commerce store). Size estimated 2-10 (recent boutique studio; exact headcount not confirmed). Autonomy 3 hedged estimate for a young studio that delivers client projects end-to-end. Work Status Studio. BLOCKER: their site besubtle.work refused automated connections (ECONNREFUSED) on every attempt, so services/team/contact are from search snippets and the Malaysian business registry, not first-hand; Instagram and email not yet confirmed. Capabilities (Web design, Digital product design, Graphic design) inferred from listed services, to verify against actual work in the scraper pass.",
+      "value": "Small Malaysia-based design studio (Selangor; company incorporated October 2023, reg 003538774M), so young and early-stage. Services per search snippets and their staging site: UI/UX design, web design, branding, and explicitly UX research (discovery, validation, user needs). Stated process is listen-first and research-led. Size estimated 2-10 (boutique studio, headcount not confirmed from primary source). Work Status Studio. Autonomy 3 (hedged estimate for a young studio that delivers client projects end-to-end). LinkedIn confirmed as linkedin.com/company/wearesubtle (appears in multiple search results alongside besubtle.work). Instagram: handle @be.subtle appeared in search alongside besubtle.work but bio and grid could not be confirmed (below 0.8); not set. Email: primary site still ECONNREFUSED, so hello@besubtle.work not confirmed from primary source and left empty. Work Status sourcing: Studio classification set by nature of the entity (registered company, delivers client projects); no individual freelancer or employment signal to resolve.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:11:54",
+      "verified_at": "2026-06-19T18:41:11",
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Instagram / contact email for Subtle Studio? (site besubtle.work refused automated fetch; could not confirm socials.)",
+      "value": "1. Can you confirm the Instagram handle for Subtle Studio? (candidate @be.subtle, could not verify bio/grid match) 2. Contact email? (site besubtle.work still ECONNREFUSED; hello@besubtle.work is likely but unconfirmed)",
       "source_url": null,
-      "verified_at": "2026-06-15T21:11:54",
+      "verified_at": "2026-06-19T18:41:11",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/wearesubtle",
+      "source_url": null,
+      "verified_at": "2026-06-19T18:41:11",
       "set_by": "agent"
     }
   }
