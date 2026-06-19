@@ -1,0 +1,30 @@
+{
+  "page_id": "2e0f84ba-ae13-814b-8a69-fb60e5e4e789",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:14:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "8+ distinct named projects: Stranger Things/Magenta TV x Netflix, Westwing x Eva Lys, O2 Paystop, Karcher FC8, Grau, H&M x Highsnobiety, Digital Detox short film, Karcher FCseries film"},
+    {"id": "A.depth", "result": "pass", "evidence": "3 shots per campaign (Stranger Things, Westwing, O2), plus film stills and interiors; goes inside projects not just hero covers"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Photography + Film & video production; images are advertising stills and film stills; Vimeo embeds present for the film/directing work"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png is rubenriermeier.com homepage (confirmed); site-02.png is instagram.com/rubenriermeier with correct handle visible"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 21 images captioned; stills-325 caption is generic ('Film stills, Ruben Riermeier (director), 2024') but still names subject and year; marginal but not a hard fail"},
+    {"id": "A.embeds", "result": "pass", "evidence": "3 Vimeo embeds present (Karcher FCseries, Digital Detox, Karcher FC8), each paired with a thumbnail image and link"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "LinkedIn absence documented in AI Notes (two searches returned no profile); no other source gaps"},
+    {"id": "B.type", "result": "pass", "evidence": "Type: Person"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, Email all present and verified; LinkedIn not found, documented in AI Notes"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Photography + Film & video production per TAXONOMY; appropriate for a photographer/director"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Germany / 1 / Freelance; multi-source resolution in AI Notes: site + GoSee agree, no contradicting signal"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: senior commercial roster (Apple, Adidas, Porsche, etc.) with major agency credits"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Clip note is 'Ruben Riermeier photographer' only; zero-states (Never, Don't know them, Unvetted) are not contradicted by any evidence"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip note acted on: name cleaned to 'Ruben Riermeier', 'photographer' informed Capabilities tagging, verbatim in Source"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Seniority read present ('reads senior and well-established'), Autonomy paired with AI Notes reasoning; hedged language used ('reads', 'confirm')"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: 'Clip-note Name: Ruben Riermeier photographer. Web clipper, 2026-01-06.'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields in provenance with set_by and verified_at; source_url null across fields is consistent with scraper practice"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, captions, or Source"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No open questions needed; no unresolvables; no story nudge conditions triggered (Worked Together = Never)"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry is in Enriching, correct state before gate pass"}
+  ],
+  "to": null
+}

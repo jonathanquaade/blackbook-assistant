@@ -1,0 +1,30 @@
+{
+  "page_id": "2e0f84ba-ae13-81bb-843d-fbae7afb2aed",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:14:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "19 work images across 10+ distinct named projects: Madame/Forde, Thread by Thread, Butter/Gentlewoman, A Like Wise/Fantastic Man, Lambswool/Paul Smith, Sunny Egg, Wu Motion, Buffalo Zine x IKEA, Nexpo/Plaza, Gold, Shamo Pink, Inner Light, and multiple portrait subjects"},
+    {"id": "A.depth", "result": "pass", "evidence": "Goes inside editorial spreads (Thread by Thread spread pages, Butter editorial pages, Fantastic Man pages), not just cover/hero shots"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Photography; all 19 work images are her photographs across fashion, editorial, and personal series"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-21.png is correct mathildeagius.com homepage; site-22.png is correct instagram.com/mathildeagius profile with 4,837 followers and her name confirmed"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All images captioned; site-05 is weakly captioned 'Editorial, 2023' without a publication name but is one of 19 and the site may not have named it"},
+    {"id": "A.embeds", "result": "pass", "evidence": "Photographer; no video embeds required"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Work is present and full; no queue entry needed"},
+    {"id": "B.type", "result": "pass", "evidence": "Person"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, LinkedIn, Email all present and verified per AI Notes"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Photography, correct for a fashion and editorial photographer"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Switzerland + Germany, Size 1, Freelance; AI Notes documents 3-source agreement (site + IG + Iconoclast listing)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: runs projects independently as freelance, repped by Iconoclast"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Clip note contains no relationship facts; zero-states (Never/Don't know them/Unvetted) are correct"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip note IG handle used to confirm Instagram URL; Name cleaned; Source preserves clip note verbatim"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Seniority read present (mid-to-senior), Autonomy reasoning documented, Work Status sources named; no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: 'Clip-note Name: Mathilde Agius (@mathildeagius) photographer. Web clipper, 2026-01-06.'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "Provenance file covers all touched fields; image source_urls tracked in manifest.json"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Source, captions, or Open Questions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No unresolvable gaps; no Open Questions needed"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching, awaiting this gate before flip to Needs Review"}
+  ],
+  "to": null
+}

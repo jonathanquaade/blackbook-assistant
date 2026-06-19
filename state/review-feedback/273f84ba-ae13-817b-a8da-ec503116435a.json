@@ -1,0 +1,30 @@
+{
+  "page_id": "273f84ba-ae13-817b-a8da-ec503116435a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5 distinct projects across active images: Eadem skincare, Graza olive oil, In Common With lighting, Baggu bags, Gelee desserts; plus 3 live site screenshots (Graza, In Common With, Baggu)"},
+    {"id": "A.depth", "result": "pass", "evidence": "Each project has a hero image plus a full-page UI scroll screenshot (e.g. site-03 Eadem product page, site-06 Graza, site-09 In Common With site UI, site-12 Baggu shop grid, site-15 Gelee product pages)"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Capability is Frontend development (web); all captured work is from Baggy's e-commerce site builds; UI screenshots confirm web interface work"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-16 opened and confirmed as baggy.studio homepage; site-17 opened and confirmed as instagram.com showing @baggy__studio profile with bio and grid"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 15 active (non-rejected) manifest images have captions and source links"},
+    {"id": "A.embeds-video-audio", "result": "pass", "evidence": "Not applicable; web development studio, no audio/video work to embed"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No unexplained absence; IG queue not needed (context shot captured via scrape.py)"},
+    {"id": "B.type", "result": "pass", "evidence": "Type: Studio; correct for a small specialized web development team"},
+    {"id": "B.links", "result": "pass", "evidence": "Website (baggy.studio), Instagram (confirmed from site footer link), LinkedIn (company/baggy-studio via Google snippet), Email (info@baggy.studio from /contact) all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Frontend development (web) is accurate and per TAXONOMY.md for a Shopify/CMS frontend studio"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country (4: US, UK, Spain, Canada per distributed team), Size (2-10), Work Status (Studio); sources named in AI Notes (own site + LinkedIn corroborate)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5 with reasoning in AI Notes: 'fully autonomous studio that runs projects end to end'"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Clip note contains no relationship facts; zero-states (Never, Don't know them, Unvetted) are all appropriate and not contradicted by evidence"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note 'Baggy (Web Developers)' acted on: Name cleaned to Baggy, Type hint used to confirm Studio classification, clip note preserved verbatim in Source"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes hedges relationship ('no first-hand evidence of working with them'), names sources for Work Status, includes seniority read (Autonomy 5, established studio), no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: 'Web clipper, 2025-09-19. Clip note: Baggy (Web Developers)' - verbatim and complete"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields present in provenance JSON with set_by, verified_at, source_url where applicable"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes, captions, and Source reviewed; no em-dashes found anywhere"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No Open Questions needed; all objective fields filled, no ambiguous data, no relationship facts to ask about"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching; flipping to Needs Review on this pass"}
+  ],
+  "to": null
+}

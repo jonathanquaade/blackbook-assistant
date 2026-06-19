@@ -1,0 +1,111 @@
+{
+  "page_id": "268f84ba-ae13-815c-9e2a-c08f2e97d6b6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:15:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects: What Do Objects Want? (STIR, 2022), Daydreamers / Raw Mango (2024), MM6 Maison Margiela x Timex (2024)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images from inside What Do Objects Want? (counterform objects, counterform plates, 3D render) show genuine project depth"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images and the Vimeo embed are 3D renders or 3D animation, matching the tagged 3D & motion / Graphic design capabilities"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Website context shot (site-06.png) is present and correct (shows sundeepyaya.com). Instagram context shot is entirely absent; no instagram.com/sun__yaya screenshot in the manifest or assets folder.",
+      "fix": "Run `scrape.py shot https://www.instagram.com/sun__yaya/ --out assets/268f84ba-ae13-815c-9e2a-c08f2e97d6b6 --caption 'Instagram profile'`, add the resulting file to manifest.json with context_shot: true, and re-run `keeper.py upload`."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 6 manifest entries have captions and source links"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Vimeo embed present for MM6 x Timex animation, paired with thumbnail preview image mm6-timex-thumb.jpg"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes document the site 503 at capture time; work sourced from press (STIR) and client sites instead"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email are all present"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Graphic design, Identity systems, Type design; consistent with practice described in AI Notes and visible in captured work"
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "UK, Size 1, Work Status Unknown with multi-source reasoning (site + LinkedIn) documented in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with hedged seniority reasoning in AI Notes"
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Clip note had no relationship facts; zero-states (Never, Don't know them, Unvetted) are appropriate"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Sundeep Yaya (3D Animatio)' is preserved verbatim in Source; name cleaned; the truncated tag acknowledged and expanded in AI Notes"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy and Work Status both hedged; seniority read included; email source qualified as 'confirmed via search index'"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2025-09-08. Clip note: Sundeep Yaya (3D Animatio)'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries; source_url is null throughout (site was 503) but confidence caveats are in AI Notes"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse Work Status question; conditional (not asked for fields already set); no story nudge needed"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching pending this gate"
+    }
+  ],
+  "to": "scraper"
+}

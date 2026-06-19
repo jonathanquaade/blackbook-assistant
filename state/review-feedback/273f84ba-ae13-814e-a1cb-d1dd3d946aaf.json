@@ -1,0 +1,30 @@
+{
+  "page_id": "273f84ba-ae13-814e-a1cb-d1dd3d946aaf",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:14:30",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "Active images span 6+ distinct projects: Best Kept Secret Festival, LU.RE Take Me Up, Spicy Lychees, Total Hip Replacement, Un Caldo/Novos Cinemas, plus 3 video thumbnails from separate works"},
+    {"id": "A.depth", "result": "pass", "evidence": "Goes inside projects: 3 animation stills from LU.RE, 3 from Un Caldo, 2 from Total Hip Replacement; not hero-only"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Illustration + 3D & motion; images show illustration covers (Spicy Lychees, BKS key visual) and animation stills (LU.RE, Un Caldo, Total Hip Replacement); 3 video embeds for animation work"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-15.png confirmed as rapapawn.com homepage (correct). Instagram screenshots (site-16, site-20) are error pages, correctly marked rejected; entry queued in ig-queue.json with reason documented; AI Notes notes IG capture queued"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 15 active images have captions naming the project and a source link"},
+    {"id": "A.embeds", "result": "pass", "evidence": "3 embeds present (YouTube + 2 Vimeo) with thumbnail preview images; images also present (not embeds-only)"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "IG blocked state documented in manifest (reject_reason on site-16/site-20), AI Notes mentions queued, ig-queue.json entry present"},
+    {"id": "B.type", "result": "pass", "evidence": "Type = Person, correct for an individual co-founder"},
+    {"id": "B.links", "result": "pass", "evidence": "Works At Link = rapapawn.com (studio URL, not in DB), Instagram = https://www.instagram.com/oscaranha/ confirmed, Email = rapapawn@gmail.com, LinkedIn documented as not found after two searches"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Illustration + 3D & motion; matches observed work and clip note hint"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country Spain, Size 1, Work Status Studio; AI Notes documents sources: rapapawn.com + tumblr CV confirm studio operation"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent; AI Notes grounds it: runs own studio, ~8+ yrs practice, independent commissions"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Clip note has no relationship facts; zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) are correct defaults"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip note 'Oscar Rana (Illustration)' fully acted on: Name cleaned, Illustration tag applied, Source field records clip note verbatim"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Seniority + experience read present; client list and awards are verifiable facts (asserted); Work Status reasoning documented with sources; no em-dashes; no unhedged inferences"},
+    {"id": "D.source", "result": "pass", "evidence": "Source = 'Clip-note Name: Oskar Rana (Illustration). Web clipper, 2025-09-19.'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "Provenance file present; all touched fields recorded with set_by agent and verified_at timestamps"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "Scanned AI Notes, Open Questions, and all manifest captions: no em-dashes found"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about Art practice tag; no questions for already-set fields"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching before this gate; correct"}
+  ],
+  "to": "scraper"
+}

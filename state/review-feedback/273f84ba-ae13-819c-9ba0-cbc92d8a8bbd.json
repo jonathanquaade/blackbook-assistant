@@ -1,0 +1,116 @@
+{
+  "page_id": "273f84ba-ae13-819c-9ba0-cbc92d8a8bbd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:14:32",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Only 1 active work image (site-02.jpg). The 5 other captured images were rejected as off-capability lifestyle shots. No distinct named projects are represented.",
+      "fix": "Find and capture the specific 'cell___cell gkc animation' called out in the clip note (search 'cell___cell gkc jvyvazquez', look for the video/project on YouTube, Vimeo, or the cell___cell or gkc accounts). Then pull at least 2 more on-capability (3D/motion) posts from their IG. Target 3+ distinct named works."
+    },
+    {
+      "id": "A.depth",
+      "result": "fail",
+      "evidence": "Only 1 work image total. No project interiors, no named project, no depth.",
+      "fix": "Go inside individual IG posts and capture the actual 3D/motion work images from each post. A single collage screenshot from the IG grid is not depth."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-02.jpg is captioned '3D/motion collage, jvyvazquez Instagram' with no named project. The work in it is unidentified.",
+      "fix": "Identify the actual post or project shown (e.g. 'cell___cell gkc animation, 2024' or whichever post this is), and caption it with the project name + source link to that specific post."
+    },
+    {
+      "id": "A.clip-note-work-captured",
+      "result": "fail",
+      "evidence": "The clip note explicitly states 'did the cell___cell gkc animation'. No image or embed of that specific work is present in the manifest. This is the primary reason Jonathan noted this person.",
+      "fix": "Search 'cell___cell gkc animation jvyvazquez' on YouTube, Vimeo, Instagram, and the cell___cell or gkc account pages. Capture a screenshot/embed of that specific animation work with a caption naming it. If it is video, embed it (with a thumbnail image + link caption)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed instagram.com/jvyvazquez profile screenshot. No portfolio website exists (explained in AI Notes), so the missing website context shot is accounted for."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "site-02.jpg shows 3D/motion visual content, matching the tagged 3D & motion capability. Rejected images were correctly identified as off-capability."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents that no portfolio website was found, LinkedIn unconfirmed, no email found. IG source explained."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Instagram confirmed and verified as the right person. No website found (documented). LinkedIn unconfirmed at 0.8 (documented). Email: none found (documented). Given the thin public presence, the search effort is credibly documented."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion is jonathan-set. Open Question raised about possible additions. Acceptable."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country Uruguay confirmed via Bandcamp cross-link (documented in AI Notes). Size 1. Work Status Unknown with sources documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "fail",
+      "evidence": "AI Notes explicitly states 'Autonomy not set'. The Autonomy field is required on every entry where the history supports a read. Even with limited public data, the scraper/scout should have estimated it (e.g. Autonomy 2 or 3, individual creative working independently) with a hedged note, rather than omitting it entirely.",
+      "fix": "Set an Autonomy estimate (set_by: agent) with hedged reasoning in AI Notes. Given solo IG-based creative with no employer or team visible, Autonomy 3 or 4 is defensible -- but must be stated and hedged."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict the clip note. The clip note does not imply a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "fail",
+      "evidence": "The clip note's primary piece of signal -- 'did the cell___cell gkc animation' -- was acknowledged in Source and AI Notes but the actual work was never found or captured. The primary reason Jonathan noted this person is absent from the entry.",
+      "fix": "Find the cell___cell gkc animation and capture it. See A.clip-note-work-captured fix above."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are hedged throughout. Seniority caveat is present ('cannot be established'). No em-dashes. Sources cited."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-09-19. Clip note: jvyvazquez (animation)(did the cell___cell gkc animation)' -- verbatim, present."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, conditional questions. No field with a non-zero-state value is re-asked."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is still in Enriching. Correct -- the reviewer will not flip to Needs Review on a fail."
+    }
+  ],
+  "to": "scraper"
+}

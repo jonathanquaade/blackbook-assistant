@@ -1,0 +1,111 @@
+{
+  "page_id": "273f84ba-ae13-8115-b1bd-d191937f05f4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:14:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects across active images: META-morphosis (Times Square, 2019), Lucid Dreaming (Coachella, 2018), Pisces Pool (Electric Forest, 2017), Glitch Art (2017), Efflux audiovisual performance (2017), Concertmate 680 music video + TDSW tutorial. Well spread."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior shots per project for the major installations (e.g. multiple angles of Pisces Pool and Lucid Dreaming installations), not only hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion, Art practice, Creative technology, Sound design. Images show real-time generative visuals and interactive installations; Bandcamp embed covers sound/music; YouTube embeds cover performance and tutorial work. All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-16.png (the Instagram context shot) renders as a 'Something went wrong / page could not be loaded' error screen, not an instagram.com profile. It was correctly marked rejected in the manifest and excluded from active Images, but NO replacement Instagram context shot was captured. The entry ships with only the website context shot (site-15.png, confirmed correct simonaa.media homepage); the required instagram.com/polyhop profile screenshot is absent.",
+      "fix": "Capture a fresh screenshot of https://www.instagram.com/polyhop/ and add it to the manifest as a context_shot (caption: 'Instagram profile') and upload it. The current site-16.png must stay rejected and must not be re-proposed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All active manifest entries have captions and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Two YouTube embeds (Concertmate 680 music video, TDSW generative art session) each paired with a thumbnail image. Bandcamp embed for Hectic EP (sound). Pattern is thumbnail images + playable embeds as specified."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains Instagram context shot situation is not explicitly mentioned, but the ig-queue and work capture are otherwise complete. No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual artist."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: simonaa.media (confirmed). Instagram: https://www.instagram.com/polyhop/ (confirmed in AI Notes as directly linked from simonaa.media). LinkedIn: https://www.linkedin.com/in/simonalexanderadams/ (confirmed via Google snippet). Email: simon@simonaa.media (confirmed from site /about)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Art practice, Creative technology, Sound design. Consistent with TouchDesigner generative art, interactive installations, audiovisual performance, and music composition."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Freelance. AI Notes documents multi-source resolution: site and IG present independent practice; LinkedIn Polyhop LLC + ARTECHOUSE treated as collaboration not sole employer. Objective rule applied."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes states 'Fully autonomous (5)' with reasoning: runs own Polyhop LLC, 10+ years, senior independent artist-technologist."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with clip note which contains no relationship facts, only discipline description."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note: 'Simon Alexander-Adams (Touch Designer, Generative Artist)'. Name cleaned. Discipline used to inform Capabilities. No stated facts or relationship cues in the note that required --from-jonathan treatment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes reads as hedged and grounded: specific venues, confirmed platform (TouchDesigner), confirmed IG follower count, work history named. Seniority read present ('Senior independent artist-technologist, ~10+ yrs'). No unhedged inferences visible. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-09-19. Clip note: Simon Alexander-Adams (Touch Designer, Generative Artist)'. Complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all fields written; set_by: agent throughout; verified_at timestamps present."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: no em-dashes found. Captions reviewed: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions in entry. AI Notes states 'No public Open Questions.' Appropriate since no unresolvables remain and no fields are ambiguous."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching. Correct: it should stay Enriching until this gate passes (it has not, due to A.context-shots fail)."
+    }
+  ],
+  "to": "scraper"
+}

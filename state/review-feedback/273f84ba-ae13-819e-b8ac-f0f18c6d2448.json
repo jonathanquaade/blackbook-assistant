@@ -1,0 +1,111 @@
+{
+  "page_id": "273f84ba-ae13-819e-b8ac-f0f18c6d2448",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-19T09:15:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Bulgari, Byredo, Jacquemus, Mercedes, Nike x Ambush. Visually confirmed as separate clients and separate work."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Interior shots present: watch movement detail (bulgari-03), mascara render (byredo-02), double bag detail (jacquemus-02), cocoon sculpture close-up (mercedes-02)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion, Photography, Creative direction. Images show CGI product renders and product photography. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-01.png (website) confirmed correct: tobiasfaisst.com homepage visible. site-02.png (captioned Instagram profile) is an Instagram error page showing 'Something went wrong / There's an issue and the page could not be loaded' -- not a real instagram.com profile. The file is marked rejected in the manifest but is still physically present on disk. No real IG profile screenshot exists for this entry.",
+      "fix": "Drain the ig-queue entry for this page (273f84ba-ae13-819e-b8ac-f0f18c6d2448) using ig.py grab to capture a real screenshot of https://www.instagram.com/tobias.faisst, add it to the manifest as context_shot: true with caption 'Instagram profile', then re-upload via keeper.py upload."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 non-rejected images have named project captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Still-image CGI and photography entry; no video/audio embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "The rejected IG context shot is documented in the manifest with rejection_reason and the ig-queue entry confirms the queue was used correctly."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and plausible."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Creative direction, Photography. All match his craft as documented in AI Notes."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Germany, Size 1, Work Status Studio. AI Notes names the sources: tobiasfaisst.com and LinkedIn both confirm PALAM co-founding."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: CD-level running his own studio since 2023."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. Clip note contains no relationship facts."
+    },
+    {
+      "id": "C.clip-note-fully-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Tobias Faisst / Palam Studio (3D / CGI Designer)': Name cleaned, PALAM context in AI Notes, Source preserves clip note verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual where verifiable, include seniority read and Autonomy reasoning. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-09-19. Clip note: ...' -- verbatim clip note preserved."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null on fields (confidence rationale lives in AI Notes text)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or image captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions needed. Zero-state judgment fields (Familiarity, Work With?) are scout-level defaults; no relationship evidence to prompt a story nudge. Rating is Jonathan's alone."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; has not been prematurely flipped to Needs Review."
+    }
+  ],
+  "to": "scraper"
+}
