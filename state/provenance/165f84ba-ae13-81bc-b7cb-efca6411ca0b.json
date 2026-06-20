@@ -15,10 +15,10 @@
       "set_by": "agent"
     },
     "Instagram": {
-      "value": "https://read.cv/product.santos",
+      "value": null,
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-20T01:14:07",
+      "set_by": "agent"
     },
     "Familiarity": {
       "value": "Don't know them",
@@ -92,9 +92,9 @@
       "set_by": "agent"
     },
     "Autonomy": {
-      "value": "4",
+      "value": "3",
       "source_url": null,
-      "verified_at": "2026-06-15T21:27:35",
+      "verified_at": "2026-06-20T01:14:07",
       "set_by": "agent"
     },
     "Source": {
@@ -104,15 +104,21 @@
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Work Status conflict: he is co-founder of his own studio (Studio Forma, Italy/UK) but also listed as a designer at Mobbin. Treat as running his own studio, or employed at Mobbin? Set to Unknown for now.\n2. Capabilities is the transitional Product design tag; his work is software/app product, so retag to Digital product design?",
+      "value": "1. Work Status: co-founder of Studio Forma (Italy/UK) but also listed as designer at Mobbin. Running own studio, employed at Mobbin, or both?\n2. Capabilities: current tag is transitional Product design; work reads as Digital product design. Retag?\n3. Instagram: @_prodsantos appears in search alongside santos.fyi but bio/grid unconfirmed. Is this his handle?",
       "source_url": null,
-      "verified_at": "2026-06-15T21:27:35",
+      "verified_at": "2026-06-20T01:14:07",
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Marcos Santos (@productsantos): product designer, co-founder of Studio Forma, an independent product + brand design studio based in Italy and the UK; also listed as a designer at Mobbin. Based in Italy. Partners with founders/ventures on product and strategy; cites products used by millions (Realio, Giglio). Senior, runs his own studio, so Autonomy 4. Work Status left Unknown: self-maintained sources show him running Studio Forma while other sources list a Mobbin role, an unresolved conflict (flagged). Capabilities currently the transitional Product design tag (Jonathan-set, locked); his work reads as Digital product design, proposed via Open Question. Could not load santos.fyi (403) or read.cv (paywalled); built from web search + Studio Forma references.",
+      "value": "Marcos Santos (@productsantos on X): product designer, co-founder of Studio Forma (independent product and brand design studio, Italy and UK), also listed as designer at Mobbin. Based in Bolzano, Italy. Clients include Realio, Giglio; claims products used by millions. Work Status Unknown: self-maintained sources show him running Studio Forma; Mobbin role also cited but relationship (employed vs. contracted) unconfirmed. LinkedIn snippet (/in/productsantos/) describes him as a junior UX/UI designer seeking mentorship, which conflicts with the co-founder framing; could be a LinkedIn self-description gap or early-career profile. Autonomy set to 3 (hedged given the junior/co-founder conflict; runs own studio but experience level unclear). Instagram: field previously held read.cv URL (not Instagram); corrected to empty. Searched @_prodsantos (appears alongside santos.fyi in search) but could not confirm bio/grid match at 0.8; handle not set. LinkedIn /in/productsantos/ confirmed by handle parity, location (Bolzano, Italy), and discipline match. santos.fyi returned 403; forma.fyi returned 403; read.cv behind paywall; built from web search snippets.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:27:35",
+      "verified_at": "2026-06-20T01:14:07",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/productsantos/",
+      "source_url": null,
+      "verified_at": "2026-06-20T01:14:07",
       "set_by": "agent"
     }
   }
