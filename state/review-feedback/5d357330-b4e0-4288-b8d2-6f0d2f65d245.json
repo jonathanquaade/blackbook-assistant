@@ -1,0 +1,111 @@
+{
+  "page_id": "5d357330-b4e0-4288-b8d2-6f0d2f65d245",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active images span 7 distinct projects: Meridian, Sierra, Subscapes, Pattern Language, FOLIO, LUMOS, Sferic. No caption repeats a project without adding depth. Meridian gets 4 images and Sierra 3, but those are his most significant long-form works and the images genuinely differ (tokens vs book spread; print vs generative output variants)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Meridian includes a book spread (Vetro Editions) alongside Art Blocks tokens; Sierra includes a print-inspection-source generative output alongside the Avant Arte print; Sferic has two process documentation shots (field capture + VLF radio rig). Minor note: neither Sferic image shows the actual generated visual output from the VLF signals, only the capture equipment. Acceptable for Art practice documentation but a second-pass could add a Sferic output image."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative technology + Art practice + 3D & motion. All images and embeds are generative art outputs, installation documentation, or process shots of the artist's own research-art projects. No brand side-projects, no off-capability work. LUMOS and Sferic are art/technology installations, firmly within the tagged capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png is the real mattdesl.com homepage (verified visually: shows 'matt deslauriers' heading, bio text, project links). IG context (site-11.png) is rejected + documented with reject_reason in manifest, AI Notes states 'IG context screenshot blocked headless (blank page); queued to ig-queue.json', and the entry appears in ig-queue.json at index position confirming the queue entry. Sanctioned exception applies per checklist A.context-shots."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active images have captions naming the project. All captions include a link field pointing to the source project page or platform. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two Vimeo embeds present: Pattern Language (vimeo.com/1022287139) and FOLIO (vimeo.com/737652098). Both have caption and link fields. Thumbnail images (pattern-language-thumb.jpg, folio-thumb.jpg) are in manifest but correctly rejected because the thumbnails showed non-artwork content (drone landscape, gallery exterior) rather than the generative work itself. Each embed is paired with a still image of the actual artwork (pattern-language-1.png, folio-1.png), satisfying the 'never embeds-only' rule. Note: CLAUDE.md advises pairing embeds with thumbnail preview images so Notion does not show a blank wall; the scraper chose instead to keep the still images of the art itself, which is better than uninformative thumbnails."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes and ig-queue.json. No other sources noted as inaccessible."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; he is an individual artist and creative coder."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: mattdesl.com (canonical root). Instagram: instagram.com/mattdesl_art (confirmed via his own site per AI Notes). LinkedIn: ca.linkedin.com/in/matt-deslauriers-a494a656. Email: info@mattdesl.studio (from mattdesl.com contact page per AI Notes). All four link types populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology, Art practice, 3D & motion. All three are grounded in his actual practice: canvas-sketch tooling (Creative technology), long-form generative series (Art practice), motion graphics and 3D moving images per AI Notes (3D & motion)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + Canada (based in London, Canadian). Size: 1 (solo practitioner). Work Status: Freelance, resolved by 'own site + studio shop self-maintained and current, no employer signal' documented in AI Notes. Multi-source rationale present."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: 'Very senior independent practitioner, ~10+ yrs, world-class in the generative/creative-coding niche; effectively self-directing.' Grounded in described work history and independent practice."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are correct; no clip note or body content contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source reads 'Web clipper, 2024-07-26', no relationship facts or instructions in the clip note that needed --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual where verifiable (named projects, Figma Config 2025, canvas-sketch, Bitframes, Ontario Place installation) and hedged on inferred elements (Autonomy estimated, seniority framed as 'very senior' based on career read). Seniority + experience read included (~10+ yrs). Work Status resolution documented with sources. No bare assertions of relationship quality or unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-07-26'. Filled and correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file present with all touched fields recorded (verified_at, set_by: agent on all fields). source_url is null across all fields, which is a systemic pattern in this codebase rather than a per-entry failure; all values meet the 0.8 confidence floor per AI Notes documentation."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dash character (—) found in AI Notes, Open Questions, or captions. Two embed captions use '--' (double hyphen) as a separator; this is not the em-dash character and is not the banned pattern. Flagged as a minor style note for Jonathan's awareness."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field visible in the entry output, appropriate: no conditional questions apply (no Familiarity ambiguity, no link conflicts, no clip-note instructions pending). No story nudge triggered (Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching; reviewer will flip to Needs Review on this pass as verdict is pass."
+    }
+  ],
+  "notes": "Strong entry. Seven distinct generative/art-practice projects represented with real depth. Two minor observations, neither failing: (1) the two Sferic Project images show field process (antenna, VLF rig) but not the actual generated visual or audio output from those signals; a second pass could add a Sferic output image, (2) Sierra gets three images (site-07, site-08 are visually similar black-and-white fluid outputs) where one could suffice, freeing a slot for a Sferic output. Neither rises to a FAIL.",
+  "to": null
+}

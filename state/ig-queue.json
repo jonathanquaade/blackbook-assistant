@@ -495,5 +495,26 @@
     "ig_url": "https://www.instagram.com/mattdesl_art/",
     "reason": "IG context screenshot failed: headless Playwright returned blank white page (Instagram blocked). @mattdesl_art confirmed handle (linked from mattdesl.com). Need logged-in ig.py grab for profile context shot. Also: recent generative art posts likely show newer work beyond what was captured.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "d4ab88fc-e771-4b6b-aa20-7a5a2f968329",
+    "name": "All Caps Type",
+    "ig_url": "https://www.instagram.com/allcapstype/",
+    "reason": "IG context screenshot failed: headless Playwright returned blank white page (Instagram blocked logged-out access). @allcapstype is the confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "9111af77-8f96-4b91-a138-b7c73743d974",
+    "name": "Pieratt (Ben Pieratt)",
+    "ig_url": "https://www.instagram.com/pieratt/",
+    "reason": "IG context screenshot failed: logged-out Playwright returned cookie consent modal obscuring profile grid. @pieratt / Ben Pieratt confirmed in page header. Need logged-in ig.py grab for clean profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "9a615df8-4a37-4643-979b-1bd3187dffb2",
+    "name": "Maxitype",
+    "ig_url": "https://www.instagram.com/maxitype_com/",
+    "reason": "IG context screenshot (site-02.png) shows cookie consent modal blocking profile grid; @maxitype_com handle and name visible but grid obscured. Need logged-in ig.py grab for clean profile context shot.",
+    "queued_at": "2026-06-21"
   }
 ]
