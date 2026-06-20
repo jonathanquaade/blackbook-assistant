@@ -1,0 +1,111 @@
+{
+  "page_id": "9a615df8-4a37-4643-979b-1bd3187dffb2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 specimen images across 4 distinct typefaces: Maligne, Signs, Teletext, Cornbread. No caption repeats across families."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each typeface gets 3 images: cover/product shot, then interior spread(s) showing letterforms, weight variety, or contextual use. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Type design. All 12 specimen images are Maxitype typeface specimens from maxitype.com wp-content CDN. No historical inspiration images leaked: the Cornbread specimen images (cornbread-01/02/03) are Maxitype's own published product images from their site (sourced from maxitype.com/wp-content/uploads/2025/04/), not raw archival material. The newspaper and graffiti imagery in them is the design concept of the Cornbread specimen book itself, as shipped by Maxitype."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as maxitype.com (Maxitype logo, Typefaces nav, CHF pricing visible). IG context shot (site-02.png) is rejected in manifest with documented reason (cookie consent modal blocking logged-out headless Playwright), queued in state/ig-queue.json, and documented in AI Notes. Meets the sanctioned IG-throttle exception: rejected+documented+queued."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 specimen images carry captions naming the typeface, designer(s), year, and a link to the product page. site-01.png captioned 'Website' with link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Type foundry; capability is Type design. No video/audio work expected or present on their product pages. Images are the appropriate medium."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes and manifest. LinkedIn absence documented in AI Notes (foundry about page lists only IG and email; no LinkedIn found)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type set to Foundry, correct for a type house selling font licenses."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://maxitype.com/ (set). Instagram: https://www.instagram.com/maxitype_com/ (set). Email: info@maxitype.com (set). LinkedIn: absent, documented in AI Notes as confirmed absent from their own about page. No link is a skipped search."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Type design is correct and the only applicable capability. Provenance shows set_by jonathan (migration), which is appropriate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Switzerland. Size: 11-40. Work Status: Studio (correct for an independent foundry collective). Sources named in AI Notes (their own site about-us)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Independent foundry operating fully on their own terms with no external employer. Reasoning is implicit in AI Notes context (Maxitype Sarl, independent, Geneva)."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note. Clip note is 'Maxitype | Selecta (Foundry)' -- a plain identification, no relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Maxitype | Selecta (Foundry)' parsed: name cleaned to Maxitype, Type set to Foundry, Selecta noted in AI Notes as the clipped typeface. All instructions acted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority/experience read (founded 2020, ~12+ collaborators, research-driven). Inferences hedged appropriately. Sources named. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-04-05'. Date matches clip note provenance."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. set_by values are correct (agent for most, jonathan for Capabilities which was a migration value)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and all agent-written text checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. None required: no unresolvable factual gaps. Rating, Familiarity, and Work With? are Jonathan's to fill at review; the story nudge does not apply (Worked Together is Never, Familiarity is Don't know them, Work With? is Unvetted -- all zero-states)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "One minor observation for Jonathan: site-01.png captures the typefaces listing page (showing 'System') rather than the maxitype.com root homepage. The foundry logo and nav are fully visible and it is unambiguously maxitype.com, so this is not a gate failure. The Teletext caption credits 'Adrian Frutiger and Maximage' -- Frutiger died in 2015 so this is a revival/interpretation; Maxitype's own product page uses this attribution, so the caption is honest to the source.",
+  "to": "scraper"
+}

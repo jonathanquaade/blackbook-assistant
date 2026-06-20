@@ -227,7 +227,7 @@
     "page_id": "19af84ba-ae13-8197-911b-f8cf19d97bb7",
     "name": "Hugo & Marie",
     "ig_url": "https://www.instagram.com/hugoandmarie/",
-    "reason": "IG context screenshot returned 'Profile isn't available' error page when logged out (headless Playwright). @hugoandmarie has 38K followers and is confirmed active. Need logged-in ig.py grab for profile context shot.",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page when logged out (headless Playwright blocked). @hugoandmarie has 38K followers and is confirmed active. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-20"
   },
   {
@@ -522,6 +522,27 @@
     "name": "Chelsea",
     "ig_url": "https://www.instagram.com/chelsea.us.uk/",
     "reason": "IG profile returned 'Profile isn't available' when logged out (not rate-limiting; may be removed/renamed). Confirm if @chelsea.us.uk exists; if not, find their current handle. Logged-in ig.py needed to verify.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "9d493df7-1b7d-4aa0-9aff-c21fc3a0b693",
+    "name": "Identity Print",
+    "ig_url": "https://www.instagram.com/identityprint/",
+    "reason": "work images are 640px logged-out IG grabs; site interior pages 500-error; hi-res pass needed",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "4780dc79-e5ab-45b8-b4f4-c53d8cb07ea4",
+    "name": "Twoo",
+    "ig_url": "https://www.instagram.com/wearetwoooo/",
+    "reason": "IG context shot returned blank white page headless; logged-in ig.py grab needed for profile screenshot",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "7de29c25-11f4-4ef4-8a2c-ea7cd5796a08",
+    "name": "Reed Words",
+    "ig_url": "https://www.instagram.com/reedwords/",
+    "reason": "IG headless blocked (Something went wrong error); studio copywriting/verbal identity work on IG would supplement case studies",
     "queued_at": "2026-06-21"
   }
 ]
