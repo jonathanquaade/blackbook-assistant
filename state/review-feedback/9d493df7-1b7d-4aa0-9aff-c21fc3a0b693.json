@@ -1,0 +1,111 @@
+{
+  "page_id": "9d493df7-1b7d-4aa0-9aff-c21fc3a0b693",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 work images span 3 distinct named projects: Google stationery, silver-foil case binding (unidentified client), Fife Arms Hotel collateral (postcards, folder, trunk). No duplicate angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside products: letterpress close-up (Google), stacked foil covers (binding project), postcard scatter + folder interior + trunk exterior (Fife Arms). Not hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Print production. All 5 work images show physical print artifacts: letterpress deboss, hot-foil blocking, litho postcards, case-bound collateral, luxury trunk. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is identityprint.co.uk homepage (dark background, diagonal printed sheets, IDENTITY/2/15 footer confirmed). site-02.png is instagram.com/identityprint with Instagram UI, handle, bio, and grid thumbnails all visible and correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 5 work images have descriptive captions naming the project and technique. Context shots captioned Website and Instagram profile. All entries include a link field."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Print production is a physical goods capability. No embeddable video/audio expected or missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "AI Notes documents the site 500-error and names IG as the source, but the 5 work images are 640px logged-out IG grid grabs. CLAUDE.md requires that when hi-res IG work is needed but the session is throttled/unavailable, the entry is appended to state/ig-queue.json and AI Notes explicitly says 'IG capture queued'. Neither condition is met: state/ig-queue.json contains no entry for this page_id, and AI Notes does not say the capture is queued.",
+      "fix": "Add an entry to state/ig-queue.json for this page_id ({page_id, name, ig_url: 'https://www.instagram.com/identityprint/', reason: 'work images are 640px logged-out IG grabs; site interior 500-errors; hi-res pass needed', queued_at: <today>}). Update AI Notes to append: 'Hi-res IG capture queued for a logged-in ig.py pass (state/ig-queue.json); current images are 640px logged-out grabs.'"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Identity Print is a small specialist print production shop doing hands-on execution. Schema Foundry = type house (type design), not applicable here. Studio is the correct classification."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all populated and verified against the actual pages."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Print production: correct single capability matching the physical print vendor nature of the business."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK, Work Status Studio both correct. Size field is 11-40 (correct schema band for a LinkedIn-stated 11-50 headcount). NOTE: AI Notes says 'Size 11-50 confirmed via LinkedIn' but the schema band is 11-40; AI Notes should read '11-40 (nearest band; LinkedIn lists 11-50 employees)' to avoid confusion. Not a hard fail but fix in the same pass."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy is a person-level field (1-5 Storonsky scale). Identity Print is a Studio org entry; Autonomy does not apply."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) are consistent with a web-clipped entry with no stated relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note is a plain web-clipper entry dated 2024-04-22 with no relationship instructions. Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list hedged 'per LinkedIn and IG'. Size hedged with source. No unverified assertions stated as fact. No seniority read needed (org entry, not a person)."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-04-22'. Filled and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. source_url is null across all fields (LinkedIn and IG verified but URLs not recorded in provenance); not ideal but within acceptable range for a vendor entry where the field values are not in dispute."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-authored text."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. No unresolvable ambiguities for a vendor org entry. Judgment fields are zero-stated correctly."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Not prematurely flipped."
+    }
+  ],
+  "to": "scraper"
+}

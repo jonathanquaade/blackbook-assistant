@@ -1,0 +1,111 @@
+{
+  "page_id": "9111af77-8f96-4b91-a138-b7c73743d974",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 work images span 3 distinct named projects: Pronoun, Electric Objects, Dead Bookstore. No duplicate angles of a single project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: process slides (pros/cons analysis, domains/trademark clearance for Pronoun; brand foundation copy and positioning line for Electric Objects; brand mark and tagline slide for Dead Bookstore), not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Copywriting. All captured slides show naming rationale, brand voice copy, and tagline work. Website context shot shows his portfolio nav (Names 31, Logos 34, Products 27, Pre-Brands 18) confirming naming is his core output. Two essay bookmarks on naming methodology are on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-07.png) confirmed as pieratt.com. IG context shot (site-08.png) confirmed as instagram.com/pieratt with cookie consent modal blocking grid; marked rejected:true in manifest, rejection reason documented, queued in state/ig-queue.json. Sanctioned throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-01.png is captioned 'Pronoun naming, pros and cons analysis slide' but the image footer reads 'Internetland - Vook renaming'. site-03.png is captioned 'Pronoun naming, domains and trademark clearance slide' but the image footer also reads 'Internetland - Vook renaming'. Both images are from a different project (an Internetland/Vook renaming engagement) and are mislabeled as Pronoun work. This is a factual caption error, not a taste issue.",
+      "fix": "Fix captions for site-01.png and site-03.png: caption them as 'Internetland (Vook renaming), pros and cons analysis slide' and 'Internetland (Vook renaming), domains and trademark clearance slide' with link set to pieratt.com/internetland (or the correct project URL). Confirm the source_url in manifest.json matches the actual project page, not /pronoun. If these slides are genuinely from pieratt.com/pronoun but the footer labeling is confusing, verify by visiting that URL and confirming."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Pieratt's work is text/naming slides, not video/audio. Two essay bookmarks with captions and links provided for writing work. No video/audio missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and ig-queue.json. LinkedIn blocked logged-out (returns 999) documented in AI Notes. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: pieratt.com. Instagram: instagram.com/pieratt (identity confirmed in site-08.png header: 'pieratt / Ben Pieratt'). Email: ben@pieratt.com. LinkedIn: documented as genuinely not findable (site lists only Twitter/X and Tumblr; WebFetch to linkedin.com returns 999). LinkedIn absence is not a skipped search, it is a documented block."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Copywriting tagged, set_by: jonathan per provenance. Appropriate for naming/brand-voice work shown."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 1. Work Status: Freelance, resolved from his own site (explicitly sells services with listed rates). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by: agent). Reasoning in AI Notes: solo operator, runs engagements alone, founded Svpply. Grounded in real work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Notes says 'Naming also worked with germany guy who helped recruit me'. Zero-states (Worked Together: Never, Familiarity: Don't know them) are set on Pieratt himself, not the germany contact. Notes does not say Jonathan worked WITH Pieratt, only that someone helped recruit him. Zero-states for Pieratt hold. Open Questions asks Work With? and Rating, leaving judgment to Jonathan."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2024-04-05'; no explicit instruction text in the Name field beyond the name itself. Source set correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedged appropriately: rates noted as 'his own site' sourced. Seniority read present ('Senior, 15+ years'). No bare assertions without grounding. No em-dashes in AI Notes (confirmed by reading the full text)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-04-05'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/9111af77-8f96-4b91-a138-b7c73743d974.json with set_by and verified_at for all touched fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions (live entry), and captions reviewed: no em-dashes found in fields written for Jonathan. Provenance Open Questions field contains an em-dash in an older draft value but the live Notion field does not."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions: '1. Work With? 2. Rating? (ex Partner-Dream)'. Terse, conditional (no fields already set), context added for Rating question. Story nudge: Notes has content, but it does not indicate Jonathan worked with Pieratt personally, so the story nudge does not trigger."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching as expected pre-gate. Reviewer holds flip to Needs Review pending scraper fix."
+    }
+  ],
+  "to": "scraper"
+}

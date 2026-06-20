@@ -1,0 +1,111 @@
+{
+  "page_id": "65ca7247-d2dd-42fe-8e0d-9b9479700c3a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:40:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "notes_for_jonathan": "Duplicate entry flag: a second 'Sandwich' entry (ed66969a, tagged Brand strategy) exists in the database. These two entries should be merged or one rejected. Not a blocker for this entry reaching review, but flagged here so Jonathan can act on it.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct client films: Perplexity, Brex, Slack, Descript, Board, Gamma, Meticulous. All different projects with different thumbnails."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has a playable embed plus a full-res thumbnail still from inside the film. Not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Film & video production + Creative direction. All 7 captures are commercial films. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed sandwich.co homepage ('Hello. We're Sandwich.'). site-02.png: confirmed instagram.com/sandwichvideo profile page (9k+ followers, correct handle and grid visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image file has a caption and a link in the manifest. All 7 thumbnails are captioned with client name, film title, and source link. Minor note: the Slack embed's link points to sandwich.co (homepage) rather than a dedicated Slack case study page, while the Slack thumbnail correctly links to the YouTube video. Acceptable if no dedicated case study page exists."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "7 embeds present (3 YouTube, 4 Wistia), each paired with a thumbnail preview still. Entry is not embeds-only: 9 image files uploaded including context shots and 7 thumbnail stills."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin areas. Studio has a rich public portfolio. AI Notes documents source verification."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct; LA-based production company with named team members."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://sandwich.co/, Instagram: https://www.instagram.com/sandwichvideo/ (verified in AI Notes via site footer + IG confirmation), LinkedIn: https://www.linkedin.com/company/sandwichvideo, Email: hello@sandwich.co. All four present and verified."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production + Creative direction. Accurate per their actual work (commercial films with full creative ownership)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 11-40 (AI Notes: about page lists 13 named team members). Work Status: Studio. Multi-source check documented in AI Notes (sandwich.co active studio, not freelance/employed individual)."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy field not set. For a Studio entity this is appropriate; Autonomy is a personal Storonsky-scale estimate for individuals, not studios. AI Notes documents the studio's founding, scale, client roster, and working style instead. No concern here."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the Web clipper source with no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2024-07-31'; no relationship or instruction text in the clip. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual and grounded (founding year, team count, known clients, branding history). No unhedged inferences. No em-dashes. Seniority read is present in studio form (founded 2010 by Adam Lisagor, active 2026, 13 named staff)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-07-31'. Present and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/65ca7247-d2dd-42fe-8e0d-9b9479700c3a.json. All touched fields have set_by, verified_at entries. All set_by: agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and all provenance values. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions not set. Appropriate: no unresolved fields, no judgment fields with ambiguous evidence, no story nudge triggered (Worked Together still Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "to": null
+}
