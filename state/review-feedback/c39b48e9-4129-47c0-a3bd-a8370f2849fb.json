@@ -1,0 +1,110 @@
+{
+  "page_id": "c39b48e9-4129-47c0-a3bd-a8370f2849fb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 images across 6 named projects: Kankurang of Gambia/World of Interiors (2), Homecoming/Windrush (3), Mr Porter x Dunhill SS24 (3), Campbell Addy for SSENSE (3), WePresent Black Male Hair (3), Rachel Chinouriri for Boots (2). Six distinct shoots, visually confirmed different subjects and settings."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each project: 2-3 images per project showing different frames/subjects within the shoot (not just a single cover shot). Homecoming has an interior portrait, a silhouetted figure, and a studio portrait. WePresent shows 3 distinct sitters."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 16 project images are photographs (portrait, documentary, fashion, editorial). No off-capability content. Matches tagged Capability: Photography."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-18.png is a real screenshot of christiancassiel.com (Format platform, shows his name and project grid). IG shot (site-19.png) is rejected in manifest with reject_reason documenting Instagram rate-limit, entry is queued to state/ig-queue.json, and AI Notes states 'IG context shot queued'. This meets the sanctioned exception documented in the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in manifest has a caption naming the project and a link to the source project URL on christiancassiel.com."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capability is Photography; no video/audio work expected. No Vimeo/YouTube embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes and in manifest reject_reason. LinkedIn absence documented ('No LinkedIn found: searched Christian Cassiel photographer linkedin; The Dots and Cherrydeck profiles exist but no LinkedIn'). No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: christiancassiel.com (set). Instagram: instagram.com/christiancassiel (set). LinkedIn: searched and documented absent. Email: info@christiancassiel.com (set). All findable links either present or absence documented."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Photography. Provenance shows set_by jonathan (from original clip). Work images confirm photography is the correct single tag."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Freelance. AI Notes names sources: site + bio language ('London-based freelance') support Freelance. Provenance set_by agent."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes grounds it: 'Established freelance image-maker, approx 8 yrs'; clients include Mr Porter, SSENSE, WeTransfer, Nike. Plausible for an independently operating photographer with editorial and commercial range."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all zero-states. No clip note indicates a relationship. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note instructions beyond the name. Source is set to 'Web clipper, 2024-04-14'. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferred facts (approx 8 yrs, Autonomy 4). Verifiable facts (clients, employer representation, email) are stated plainly. Seniority and experience are addressed. No bare assertions about working style or quality."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-04-14'. Filled correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists and covers all touched fields with verified_at timestamps and set_by values. No field below 0.8 confidence written as fact; LinkedIn absence documented in AI Notes rather than left silently empty."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. All unresolvables documented in AI Notes (LinkedIn, IG queue). No story nudge needed: Worked Together is Never and Familiarity is Don't know them."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will be flipped to Needs Review by this reviewer on pass, per v1 protocol."
+    }
+  ],
+  "to": null
+}

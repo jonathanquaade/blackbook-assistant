@@ -1,0 +1,110 @@
+{
+  "page_id": "d03adce0-a5c6-4044-865f-a75d6e12cca9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 work images span 5 distinct named projects: Harper's Bazaar France (4 images), Loewe (3), Holiday Magazine (3), Service Magazine (3), POP Magazine (3). No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project go inside each shoot: Loewe includes a close-up product shot (sandals), a film-grain editorial portrait and a shoe detail; Service Magazine includes a street portrait, an interior fashion shot and a footwear close-up. Not just hero/cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 16 work images are fashion and editorial photography (portrait, still life, fashion product). Tagged Capability is Photography. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-25.png (Website) confirmed: shows cristaleonard.net homepage with nav 'CRISTA LEONARD / ABOUT' visible, POP cover as hero. Correct. IG context shot (site-26.png) is rejected+documented+queued per checklist exception: error page from headless rate-limit, rejected in manifest, documented in AI Notes, queued in state/ig-queue.json for ig.py grab."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 active work images have project captions ('Harper's Bazaar France, Cadence', 'Loewe, Cadence', etc.) plus a source link. Website context shot is captioned 'Website'. No anonymous images in active set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capability is Photography (stills). No video or audio work expected; no embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes and queued. 8 rejected images are marked with reject_reason in manifest (generic portfolio shots, unidentified Wix homepage images, error-page IG shot). Nothing silently thin."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: cristaleonard.net. Instagram: instagram.com/crista_leonard (confirmed via her own site). LinkedIn: linkedin.com/in/crista-leonard-ba345762. Email: info@cristaleonard.net. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Photography. Set by jonathan per provenance. Correct for a fashion/editorial photographer."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK (agent-set). Size: 1 (individual). Work Status: Freelance. AI Notes records the multi-source check: personal portfolio site and LinkedIn both list freelance photographer (consistent). Minor note: AI Notes describes her as Andorran/British but Country field lists only UK; this is a soft gap but within the 0.8 confidence floor for a person with UK-based practice. Work Status resolution is documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes states 'Senior freelance photographer, high autonomy (own shoots)'. Grounded in 10+ years of commercial work, Cadence representation, and self-directed editorial practice. Reasonable hedge."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2022-01-10'. No relationship facts or judgment instructions present in clip note. Nothing to write via --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read ('Senior freelance photographer, high autonomy') paired with Autonomy 4. No em-dashes (confirmed by string check). Inferences about experience are grounded in client list and Cadence representation. Work Status sources named explicitly."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-01-10'. Present and in correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. All set_by agent fields have verified_at timestamps. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes checked programmatically: 0 em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field present in the entry (none needed: no ambiguous fields, no relationship signals, no story nudge trigger)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer flipping to Needs Review after this gate."
+    }
+  ],
+  "to": "scraper"
+}

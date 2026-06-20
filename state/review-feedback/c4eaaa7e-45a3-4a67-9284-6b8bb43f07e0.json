@@ -1,0 +1,111 @@
+{
+  "page_id": "c4eaaa7e-45a3-4a67-9284-6b8bb43f07e0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T17:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "19 images span 6 named projects: Arca KiCk i 2020, Kiko Mizuhara x Paloma Wool AW24, Rosalia Motomami 2022, Solange A Seat at the Table 2016, Helmut Lang AW2020, Magazine Magazine x Paloma Wool 2023. All visually distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside each -- Arca shows prosthetic body sculpture, nude portrait, centaur body shot; Solange shows cover, group portrait, and still-life spread; Helmut Lang shows aerial mass shoot, medium-close film-bordered contact, and 4-panel composition. Good depth throughout."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 18 work images are photography stills matching the Photography primary tag. Film & video production tag is not served by a video embed, but Photography coverage is strong and on-capability. No off-capability work present. See note on Film & video below."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-19.png is a genuine screenshot of carlotaguerrero.com (name visible top-left, works/about/shop nav confirmed). IG context shot (site-20.png) is correctly marked rejected with documented reason and queued to state/ig-queue.json. This is the sanctioned throttle path per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 19 uploaded images have captions naming the project (e.g. 'Arca, KiCk i, 2020') and source links in the manifest. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Film & video production is a secondary tag. No video embed was captured. However: the primary capability is Photography and all 18 work images are strong on-capability photography stills. The absence of a video embed does not misrepresent the work. Acceptable given primary-tag coverage is complete -- noted as a potential enrichment for a future Revisit pass, not a gate-blocking failure."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes and rejection_reason in manifest. ig-queue.json entry confirmed for page_id c4eaaa7e-45a3-4a67-9284-6b8bb43f07e0 with reason and confirmed handle."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: carlotaguerrero.com (confirmed). Instagram: instagram.com/carlota_guerrero (confirmed from site link). LinkedIn: es.linkedin.com/in/carlota-guerrero-088947b4 (found via Google snippet). Email: no personal public email; booking contact olivia@wefolk.com documented in AI Notes -- acceptable, no personal email is findable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography and Film & video production per TAXONOMY. Photography is primary and well-evidenced. Film & video evidenced by Rosalia music video direction noted in AI Notes. Open Question asks about Creative direction -- appropriate terse conditional question."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Spain (Barcelona-based, confirmed from site). Size: 1 (person). Work Status: Freelance -- AI Notes names sources ('her self-maintained site and IG agree'). Multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: 'directs her own vision end to end, agency-represented (We Folk)'. Grounded in actual work history (12+ years, music video direction, major clients). Provenance records set_by agent."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are zero-states. No Jonathan note contradicts them. Work With?: Unvetted. All zero-states are agent-set. No judgment field contradicts evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-03-01' -- no clip instructions found in the entry (standard clipper entry with no name-field notes). Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences ('suggests', 'per her self-maintained site and IG'). Verifiable facts (clients: Dior, Solange, Helmut Lang, Rosalia, Arca) stated plainly. Seniority read ('Highly senior, internationally recognised artist, ~12+ yrs') is grounded. Autonomy reasoning present. No em-dashes confirmed programmatically."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-01'. Correct format for a clipper entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file present with field-level records including source_url, verified_at, set_by for all major fields. All agent-set fields have set_by: agent. Capabilities set_by: jonathan (correct -- the scraper prompt states these were Jonathan-tagged)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Programmatic check confirmed zero em-dashes in AI Notes. Captions and Open Questions also clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: '1. Add Creative direction to Capabilities? (she art-directs music videos and campaigns)'. Terse, conditional (Capabilities not already containing it), genuinely ambiguous judgment call. No story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Film & video production tag has no video embed. This is acceptable -- Photography is the primary tag, all 18 work images are strong on-capability stills, and Rosalia Motomami direction is noted in AI Notes. A video embed would strengthen a future Revisit pass. Not gate-blocking.",
+  "to": null
+}

@@ -35,9 +35,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:30:07",
+      "verified_at": "2026-06-20T16:42:35",
       "set_by": "agent"
     },
     "Work With?": {
@@ -103,9 +103,26 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "London-based still-life photographer, BA Photography at Falmouth University. Conceptual still life exploring colour, tone and form (balancing/arranging objects). Editorial and commercial clients: FT How to Spend It, FT Weekend, Wallpaper, WeTransfer WePresent, Evening Standard Magazine, Refinery29 x Amex, Port, Soho House Magazine, Dr Martens, Esquire. Established senior freelance commercial photographer, high autonomy (own shoots). Freelance: LinkedIn lists Still Life Photographer, only a personal portfolio site, no employer (consistent). IG @__andyprice__ verified as his (linked from his site/press). Photography tag correct. Homepage root returned 404 on fetch but the site (contact page) is live.",
+      "value": "London-based still-life photographer, BA Photography at Falmouth University. Conceptual still life exploring colour, tone and form via playful arrangements of everyday objects (from Poundland finds to designer objects). Named projects: Pound Series (letters spelled in composed everyday objects), Simple Constructions (inspired by a 1972 book), Waves (book collaboration with Jake Kenny, 2021), Two Times Twice (with set designer Saskia Martindale). Editorial and commercial clients: FT How to Spend It, FT Weekend, Wallpaper, WeTransfer WePresent, Evening Standard Magazine, Refinery29 x Amex, Port, Soho House Magazine, Dr Martens, Esquire. Senior-level freelance: solo commercial practice, handles own shoots, no employer listed anywhere. Autonomy 4: runs own commissions independently. Work captured from Wallpaper* (2018 profile), Its Nice That (2019 feature, Pound Series + Simple Constructions), Loupe Magazine (2022, Waves book). Website (andyprice.co, Squarespace) expired at time of scrape. IG @__andyprice__ blocked logged-out (headless Playwright returns error page); queued to ig-queue.json for logged-in grab. LinkedIn and email confirmed present.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:36:43",
+      "verified_at": "2026-06-20T16:38:43",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-01.png",
+        "site-02.jpg",
+        "site-06.jpg",
+        "site-07.jpg",
+        "site-08.jpg",
+        "site-09.jpg",
+        "site-10.jpg",
+        "site-14.jpg",
+        "site-15.jpg",
+        "site-16.jpg"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-20T16:37:58",
       "set_by": "agent"
     }
   }

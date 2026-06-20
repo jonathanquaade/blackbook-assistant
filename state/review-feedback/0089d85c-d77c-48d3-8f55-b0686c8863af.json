@@ -1,0 +1,111 @@
+{
+  "page_id": "0089d85c-d77c-48d3-8f55-b0686c8863af",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T17:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects across 10 active images: pretty much? (Schon 2022), Imprints (Boys By Girls 2023), Portrait of Britain Vol. 8 (2025), Lapse founders portrait (2024). All 4 are genuinely different commissions with different subjects and contexts. MD5 hashes confirmed no duplicate files."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "pretty much? has 4 interior editorial spread shots (not just the cover); Imprints has 3 images going inside the intimate portrait series. Portrait of Britain and Lapse are single credited press images by nature (award shortlist shot + PR commission) so 1 each is appropriate and honest."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Photography. All 9 work images are photographs: fashion editorial (pretty much?, Schon 2022), portrait series (Imprints, Boys By Girls 2023), award portrait (Portrait of Britain Vol. 8), commissioned portrait (Lapse founders). Photographer credit 'photography. megan jordan' visible in site-01.jpeg spread header. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot present: site-12.png opens to megjordan.co.uk with her name in pink and portfolio nav visible. IG context shot (site-13.png) was blocked by headless Playwright rate-limit, correctly marked rejected in manifest with reject_reason documented, and queued to state/ig-queue.json (entry confirmed present with correct page_id and reason). This is the sanctioned EXCEPTION path per the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image in the manifest has a caption and a link field. Website context shot captioned 'Website' with link to megjordan.co.uk. All work images name project and publication/client. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Photography (stills). No video/audio work expected. No embedded video content on the captured editorial pages. Not applicable."
+    },
+    {
+      "id": "A.absence-is-explained",
+      "result": "pass",
+      "evidence": "IG throttle is documented in AI Notes ('IG context shot blocked (headless Playwright); queued to ig-queue.json for logged-in ig.py grab'). IG work images (site-05/06/07) rejected with documented reason (low-res 640px, no named project). Site 503 intermittency noted in AI Notes. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct: Meg Jordan is an individual freelance photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: megjordan.co.uk (set). Instagram: instagram.com/meganljordan/ (set). LinkedIn: linkedin.com/in/megan-jordan-32385864/ (set, already present on migration). Email: studio@megjordan.co.uk (set). All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Photography]. Consistent with her site ('fashion and portrait photographer'), her clients (editorial publications, fashion brands), the captured work, and Jonathan's original clip note ('Lapse photographer'). Provenance shows set_by: jonathan (migrated tag, locked). No conflict."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = United Kingdom (London-based per site bio). Size = 1 (individual person). Work Status = Freelance. AI Notes documents the objective source resolution: ASOS employed Nov 2020 - Jan 2023, then freelance at own studio. Site and LinkedIn both indicate post-ASOS independent studio operation. Multi-source basis noted."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by: agent. Reasoning in AI Notes: established commissioned photographer running her own studio, 10+ yrs, clients include British Vogue and Tom Ford, Portrait of Britain Vol. 8 award winner. Grounded in verifiable work history. Appropriately hedged (inferred from public record, not first-hand)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together = Never; Familiarity = Don't know them; Work With? = Unvetted. Jonathan's clip note is 'Lapse photographer' (a discovery note, not a relationship claim). Zero-states do not contradict any evidence. No story nudge triggered (Worked Together is Never, Familiarity is Don't know them, Work With? is Unvetted)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Meg Jordan Photography [Lapse photographer]' fully acted on: Name cleaned to 'Meg Jordan'; 'Lapse photographer' preserved verbatim in Source field; confirmed by scraper (lapse-founders-01.jpg with PR Newswire photo credit 'Megan Jordan'). Source = 'Web clipper, 2024-01-03. Jonathan note: Lapse photographer'. No instructions unacted-upon."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (client list from her own site bio, Lapse founders commission from PR Newswire with credit, Portrait of Britain Vol. 8 from PetaPixel coverage, ASOS employment dates). Seniority read ('Senior, editorial and commercial') is grounded in 10+ yr trajectory and named employer/client evidence, not a vibe. Autonomy reasoning present. Minor note: Work Status resolution sources could be slightly more explicit in AI Notes (site bio says 'based in London' but does not say 'freelance' verbatim; however AI Notes does document the ASOS departure timeline which supports Freelance at high confidence)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-01-03. Jonathan note: Lapse photographer'. Includes created date and preserves his clip note verbatim."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/0089d85c-d77c-48d3-8f55-b0686c8863af.json. All touched fields have set_by recorded. No field written without a set_by value. Confidence floor appears met on all set fields: Website (migration baseline, live screenshot confirms), IG (handle verified by Boys By Girls feature page linking to meganljordan), LinkedIn (set_by agent), Email (search-verified per AI Notes)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Source, captions, and Open Questions. No em-dashes found. Commas and semicolons used for separation throughout. Clipped body contained em-dashes in the original site copy but that text is archived to clipped.md, not written to Notion."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions = (none). No judgment fields need asking: Work With? is already at zero-state Unvetted (correct), Worked Together is Never (correct for no-relationship clip note), Familiarity is Don't know them (correct). No story nudge triggered. No unresolvable factual gaps remain that require a question."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching at time of review. Awaiting reviewer flip to Needs Review. Correct entry point for the gate."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Solid entry. Photography credit in the spread header (site-01.jpeg: 'photography. megan jordan') gives direct authorship confirmation on the primary editorial. Four distinct projects across 2 multi-image editorials and 2 single credited press images meets the depth bar for a photographer whose best independent work lives at publication sites. IG context shot absence is properly handled via the sanctioned queue path. The two single-image projects (Portrait of Britain at 102K from PetaPixel, Lapse founders at 26K from PR Newswire) are press-resolution but the captions and source links are honest about that. No items requiring bounce."
+}

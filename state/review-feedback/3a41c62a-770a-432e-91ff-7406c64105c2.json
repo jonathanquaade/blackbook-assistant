@@ -1,0 +1,111 @@
+{
+  "page_id": "3a41c62a-770a-432e-91ff-7406c64105c2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 editorial images across 7 distinct named published editorials: Eternal Sunshine/Vogue US 2023, Maillots de Bain/Vogue France 2024, Moment of Clarity/British Vogue 2020, Kith and Kin/WSJ 2020, Rouge Fashion Book 2019, Tia Sinclair/Tallawah 2020, Cuba Project 2019. Genuine spread. Two editorials got 3-4 frames each (appropriate depth for a fashion photographer's spread). No captions repeat the same project across all images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple frames per editorial (2-4) show genuine spread coverage rather than only hero/cover shots. For a fashion photographer, distinct editorial frames ARE the interior work. Site-12 (Cuba Project: group of suited men on a beach, banana leaves) and site-11 (Tallawah: girl with dramatic natural hair) show depth into diverse personal/art projects beyond big-name editorials. Note: Vogue France batch (4 images) and Eternal Sunshine (3 images) are both blue-backdrop or tropical-single-setting shoots; Jonathan may want to trim to 1-2 per editorial to improve spread, but this is a taste call, not a completeness failure."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography. All 11 editorial images are fashion and portrait photography. The Cuba Project and Tallawah portrait show her fine-art/personal work. No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed screenshot of nadineijewere.co.uk, showing WORK/BOOK/CONTACT nav and her photography; caption 'Website' is correct. site-18.png: confirmed screenshot of instagram.com showing handle 'nadineijewere', verified blue tick, 94 posts, 148K followers, fashion image grid; caption 'Instagram profile' is correct. Both are correctly labeled and verified by visual inspection."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 editorial images have named project captions with source links. Context shots captioned 'Website' and 'Instagram profile' with matching links. No blank captions in the non-rejected manifest entries."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Photography entry; no video/audio work expected. No video embeds needed. Images are the correct format for this Capability."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents that her own site is thin, work sourced from publication CDNs; LinkedIn absence documented as consistent with agency-repped tier. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.nadineijewere.co.uk (confirmed real, screenshot present). Instagram: https://www.instagram.com/nadineijewere/ (confirmed real by screenshot, 148K, verified). Email: studio@nadineijewere.co.uk set. LinkedIn: AI Notes documents search conducted, no public profile found; this is credible for a top-tier represented photographer and is documented, not silently skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Photography. Matches her work output; set_by jonathan per provenance, which is the correct authority for this migration entry."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1 (person). Work Status: Freelance. AI Notes documents the reasoning: represented commercial/editorial photographer (CLM Agency), consistent with Freelance."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 5 set_by agent. AI Notes provides reasoning: BoF 500, globally commissioned, CLM Agency represented, independent. Grounded in verifiable facts."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the Web clipper origin; no clip note indicates a relationship with Jonathan."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-03-08' with no clip note instructions present. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read ('Highly senior, established artist photographer'), Autonomy reasoning, Work Status sources, LinkedIn search documentation, and career context (BoF 500, CLM, campaign clients). All factual claims grounded in published/verifiable sources. No unhedged speculation. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-08'. Correct format per CLAUDE.md."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/3a41c62a-770a-432e-91ff-7406c64105c2.json. All key fields recorded (Website, Instagram, Autonomy, Work Status, Email, AI Notes, Images, Source, Type, Country, Size, Capabilities, Familiarity, Work With?, Worked Together). No sub-0.8 confidence field written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically: no em-dash (—) found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No outstanding unresolvables; no conditional triggers met (no relationship fields set above zero-state). Correct."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently in Enriching; reviewer is flipping to Needs Review on this pass. Correct flow."
+    }
+  ],
+  "to": "scraper",
+  "reviewer_notes": "Clean pass. 7 distinct published editorials across top-tier publications; context shots both verified visually as correct; 4 rejected images correctly excluded from Notion upload; no em-dashes; provenance complete. One non-blocking observation: Vogue France has 4 frames and Eternal Sunshine has 3 frames on similar backdrops, so Jonathan may want to trim to 1-2 per editorial when he reviews -- but this is a taste call, not a completeness failure and does not block the entry."
+}

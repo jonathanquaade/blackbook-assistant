@@ -1,0 +1,111 @@
+{
+  "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 live images span 4 distinct named projects: Tahitian Milk Coffee Shots/Dominique Ansel (Wallpaper* 2018), Simple Constructions (It's Nice That 2019), Pound Series (It's Nice That 2019), Waves book (Loupe Magazine 2022). No repeated projects or duplicate angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Pound Series: 2 interior letter shots (P and U); Simple Constructions: 2 interior still-life shots (shelf tower, padlock-with-corks); Waves: 3 interior book spreads plus cover; not hero-only selections."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 9 work images are still-life or constructed-object photography, matching the Photography capability tag. Waves book spread (site-10) includes an aerial street photo as part of a joint book by Andy Price and Jake Kenny; the caption accurately notes the joint authorship and the Waves project is documented as his named work."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: verified as andyprice.co showing a Squarespace 'Website Expired' page, correctly captioned 'Website'. The expired page is the true current state of the site; AI Notes documents this explicitly. site-17.png (Instagram context shot) is marked rejected with reject_reason explaining the 'Profile isn't available' error page from logged-out headless Playwright. Entry is in ig-queue.json (confirmed). This matches the documented EXCEPTION in the checklist for IG throttle. No mislabeled context shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 live images have captions naming project, source publication, and year. All captions have a corresponding link field pointing to the source article or profile."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Andy Price is a still-life photographer. No video/audio/writing work exists in his practice that would require embeds. N/A for this entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Website expired: documented in AI Notes ('Website (andyprice.co, Squarespace) expired at time of scrape'). IG blocked: documented in AI Notes and site-17.png rejected with specific reason, queued to ig-queue.json. No silent thinning."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a solo freelance photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.andyprice.co/ (expired but is the real domain). Instagram: https://www.instagram.com/__andyprice__/ (set, not yet verified visually since IG is blocked logged-out, but handle sourced from their own site/editorial credits). LinkedIn: https://uk.linkedin.com/in/andy-price-45a30745 (present). Email: andy@andyprice.co (present). All four link types filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Photography (set_by: jonathan per provenance). Matches the work captured: conceptual still-life and editorial photography."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK; Size: 1; Work Status: Freelance. All set. Note: AI Notes says 'solo commercial practice, handles own shoots, no employer listed anywhere' but does not explicitly name which sources (website/IG/LinkedIn) were checked for Work Status per the objective multi-source rule. Minor documentation gap in AI Notes, but the conclusion (Freelance) is consistent with all available evidence and the website clearly presented him as a solo practice."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by: agent). AI Notes reasoning: 'runs own commissions independently'. Grounded in solo commercial practice observation. Hedged correctly as an agent estimate."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never; Familiarity: Don't know them; Work With?: Unvetted. No clip note suggests a relationship. Zero-states are appropriate and not contradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No instructions or relationship facts in the clip note; Source recorded as 'Web clipper, 2022-01-10'. Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Clients listed (Wallpaper, FT, etc.) are verifiable editorial credits, not unhedged claims. Autonomy 4 framed as the agent's read. Seniority read present ('Senior-level freelance'). No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-01-10'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/79c39b4b-88ab-42c0-b753-f638e7c28e25.json. All touched fields (Website, Instagram, LinkedIn, Email, Country, Size, Type, Work Status, Autonomy, AI Notes, Images, Source, Entry Status, zero-states) have entries. source_url is null on all fields, which is acceptable given work was sourced from editorial CDNs documented in manifest.json rather than provenance."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any field written for Jonathan."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No unresolvable questions were flagged; all findable facts were filled. Correct: nothing to ask."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer now flips to Needs Review."
+    }
+  ],
+  "notes": "Contamination check passed. All 9 work images are genuine Andy Price still-life/photography work matching their captions. The 7 rejected images (architectural interior, fashion portrait, furniture shot, documentary camo photo, Loupe magazine cover, duplicate, IG error page) are correctly identified and excluded. The Waves book spread (site-10) includes an aerial street photo as part of a joint book project -- acceptable since the caption names the book and the Waves collaboration is a documented Andy Price project. Minor: AI Notes does not explicitly name which sources confirmed Work Status:Freelance (omits the objective source-resolution log required by CLAUDE.md). Not a fail in v1 but worth Jonathan knowing.",
+  "to": "scraper"
+}
