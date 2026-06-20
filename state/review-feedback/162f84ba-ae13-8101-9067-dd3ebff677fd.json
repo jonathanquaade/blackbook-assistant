@@ -1,0 +1,111 @@
+{
+  "page_id": "162f84ba-ae13-8101-9067-dd3ebff677fd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T02:10:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Only 1 public project exists (Picker on todays.design). Absence is fully documented in AI Notes (bollmann.co is a pure animated-logo placeholder; Polywork 502; LinkedIn 999; no client case studies found). Documented genuine thinness, not a lazy capture. Spawn instruction confirms: do not bounce on project count."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Two distinct views of the only available project (site-01.webp = isolated widget, site-05.png = todays.design project page with attribution). Depth exhausted given one public project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Picker is a UI widget/app design exploration. Capability is Product design. Match is clean."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png is bollmann.co (black screen with 'B' animated logo, source_url confirmed). IG context shot (site-04.png) rejected + documented (IG served error page under headless rate limiting) + queued in state/ig-queue.json. Checklist exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All three manifest images have captions and source links. Rejected IG shot not uploaded."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Bookmark entry present for todays.design Picker page. No video or audio on this project."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly documents: bollmann.co is a pure animated-logo placeholder; only one public project found; Polywork 502; LinkedIn 999; no public client case studies. IG queued."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Instagram URL is NOT set in the Instagram field. AI Notes and ig-queue both confirm @bollo_85 is verified (instagram.com/bollo_85/ title tag reads 'Christian Bollmann'; 1,078 followers). The URL is known; it just was never written to the Notion field.",
+      "fix": "Set Instagram field to https://www.instagram.com/bollo_85/ via keeper.py set. The handle is confirmed; this is a one-line write."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Product design tagged; Open Question asks about reclassifying to Digital product design. Appropriate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany, Size 1, Work Status Studio. Sources named in AI Notes (LinkedIn headline + Polywork)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning present in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) consistent with no clip-note relationship signal."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2024-12-20'. AI Notes records clipper origin was X.com. No stated facts or judgments in the clip note requiring --from-jonathan writes."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('Career appears largely independent... no prior employment history surfaced publicly'). Seniority read and Autonomy both present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-12-20'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One conditional question (Capabilities reclassification). Terse and appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will flip to Needs Review only on a clean pass."
+    }
+  ],
+  "to": "scraper"
+}

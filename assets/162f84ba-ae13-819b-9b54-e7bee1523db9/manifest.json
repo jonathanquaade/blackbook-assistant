@@ -8,9 +8,19 @@
     "context_shot": true
   },
   {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/alta1r/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/alta1r/",
+    "captured_at": "2026-06-20",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "IG rate-limited; headless Playwright returned 'Something went wrong' error page. Queued to ig-queue.json for logged-in ig.py grab."
+  },
+  {
     "file": "img-01.png",
     "source_url": "https://framerusercontent.com/images/vmHpxnEMNlO4GkaDi4JQy7KFsY.png",
-    "caption": "Joi, planner app",
+    "caption": "Joi, planner app UI",
     "link": "https://joi.software",
     "captured_at": "2026-06-20"
   },
@@ -19,13 +29,73 @@
     "source_url": "https://framerusercontent.com/images/xjdEapiYNmW853RRBH7QgoKL05w.png",
     "caption": "Joi, planner app",
     "link": "https://joi.software",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Promotional hand-holding-phone image with no visible UI; does not represent the product design."
   },
   {
     "file": "img-03.png",
     "source_url": "https://framerusercontent.com/images/nZpFrlCZNDhiZiIuMbMu0bNtMnk.png",
     "caption": "Joi, planner app",
     "link": "https://joi.software",
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Blank red phone mockup placeholder; no UI content."
+  },
+  {
+    "file": "img-04.png",
+    "source_url": "https://cdn.dribbble.com/userupload/4083120/file/original-307685cda8d8e111b9ac0fe95d6cb5a1.png",
+    "caption": "Coffee, macOS time tracker app",
+    "link": "https://dribbble.com/asekachov",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "img-05.png",
+    "source_url": "https://cdn.dribbble.com/userupload/29870955/file/original-d00d6c3e6b1b5b3346a71df1666531d4.png",
+    "caption": "Spotify for Big Sur, macOS redesign concept",
+    "link": "https://dribbble.com/asekachov",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "img-06.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9e601168949449.5b6f224b07a4a.jpg",
+    "caption": "Must 2, iOS app",
+    "link": "https://www.behance.net/gallery/68949449/Must-2",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "img-07.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1d3a8a68949449.5b6f224b0a05a.png",
+    "caption": "Must 2, iOS app detail screens",
+    "link": "https://www.behance.net/gallery/68949449/Must-2",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "img-08.png",
+    "source_url": "https://cdn.dribbble.com/userupload/41863946/file/original-fcad56d928c76435575ebba4cfadc87b.png",
+    "caption": "Must Awards 2016, web product",
+    "link": "https://dribbble.com/asekachov",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "img-09.png",
+    "source_url": "https://cdn.dribbble.com/userupload/41809061/file/original-8f15d8da80a54c1851a3c60b09b9bfaf.png",
+    "caption": "Ayyo Movies, iOS app",
+    "link": "https://dribbble.com/asekachov",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "img-10.png",
+    "source_url": "https://cdn.dribbble.com/userupload/20435459/file/original-1e4eb91a9ed80cc770b9c3e3c726a57e",
+    "caption": "Fines, iOS app",
+    "link": "https://dribbble.com/asekachov",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "img-11.gif",
+    "source_url": "https://cdn.dribbble.com/userupload/22818280/file/still-f56d4679a235f996299e6ebf022d5a23.gif",
+    "caption": "Must, iOS app timeline",
+    "link": "https://dribbble.com/asekachov",
     "captured_at": "2026-06-20"
   }
 ]

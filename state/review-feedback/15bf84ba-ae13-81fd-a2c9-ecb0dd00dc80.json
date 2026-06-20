@@ -1,0 +1,110 @@
+{
+  "page_id": "15bf84ba-ae13-81fd-a2c9-ecb0dd00dc80",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T02:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 images across 4 distinct projects: rams.ai (2 shots), SOHO, Cache, Void"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Interior product screens throughout: rams.ai features grid, SOHO palette+recommendations UI, Cache fintech dashboard, Void app simulator"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All work images are product/app UI screens matching Product design + Web design capabilities; no off-capability material"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed elirousso.com homepage (Eli Rousso, New York City, his copy). No IG context shot; IG absence is documented in AI Notes (@elirousso_ confirmed wrong person, @evrousso unverifiable) -- this is a genuine no-handle situation, not a throttle block, so no queue entry is needed and the omission is honest"
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "pass",
+      "evidence": "All 6 manifest entries have named project captions and source links"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Product designer/engineer, no video/audio work; no embed requirement applies"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence documented in AI Notes with two attempted handles and outcome for each"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, Email all present. Instagram: no verified handle found; documented absence not a skipped search"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities set_by jonathan (migration); Open Question asks him to re-sort to Digital product design + Frontend development; agent correctly did not overwrite"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, 1, Freelance. Dual-source resolution documented in AI Notes: site shows Booking August + independent engagement copy; LinkedIn shows no employer, only rams.ai project"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning present in AI Notes: ships product solo end to end, designs and codes"
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with a plain clipper entry; no clip note signals a relationship"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is plain Web clipper entry with no embedded instructions; nothing to act on beyond standard enrichment"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list asserted as verifiable (from his site); Work Status dual-sourced and documented; seniority read present (Block Product Design Principal 2017-2021); Autonomy paired; no unhedged inferences found"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2024-12-13"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries; source_url null across fields but AI Notes documents sourcing narrative in prose"
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Capabilities re-sort, appropriate since Capabilities are set_by jonathan and agent cannot unilaterally change them"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer will flip to Needs Review"
+    }
+  ],
+  "to": null
+}

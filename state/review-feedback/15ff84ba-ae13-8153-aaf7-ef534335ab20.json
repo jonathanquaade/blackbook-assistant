@@ -1,0 +1,110 @@
+{
+  "page_id": "15ff84ba-ae13-8153-aaf7-ef534335ab20",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T02:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects: [untitled] (site-02, site-05, site-08), Universe (site-03, site-06, site-09), Typo (site-04, site-07). No duplicate project across images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside each app: site-08 shows 6 [untitled] screens, site-09 shows 8 Universe screens. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities = Product design. All 9 work images are mobile product UI screens for [untitled], Universe, and Typo apps. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01 is itsdpark.com portfolio homepage (correct website context). site-10 is studioembed.com (correct Studio Embed context). No IG context shot, but no IG handle confirmed at >=0.8 confidence after two searches; documented in AI Notes as confirmed absence, not a throttle issue. IG queue not applicable."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 manifest entries have named captions with source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Product design discipline; no video/audio embeds expected or applicable here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence documented in AI Notes: variants @itsdpark and @danparkz tried, neither confirmed at >=0.8 confidence. Explained, not silently thin."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (studioembed.com), LinkedIn, Email all set. Instagram not set because no handle confirmed; documented. No obvious skipped search."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Product design tagged. Open Question 2 asks Jonathan whether to re-sort to a more specific tag. Appropriate to surface rather than over-tag."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Freelance. Sources named in AI Notes: studioembed.com (jam sessions, independent practice), itsdpark.com, LinkedIn snippet. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 with grounded reasoning: solo practice, founding-designer track record at [untitled] and Typo, co-founder at Otherkind. Hedged where inferred."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them. Jonathan's Notes is a taste comment, not a claim of working together. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'D Park (Studio Embed)', a name and context only. Jonathan's body call-notes archived to clipped.md. Jonathan's Notes field (set_by jonathan) left intact and not overwritten. Day Rate and Rating carried from jonathan provenance."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority read included (~9 yrs, senior-to-founder). Inferences hedged ('appears to be a co-founded venture'). Work Status sources named. No em-dashes. No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-12-17'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by, verified_at. Rating and Day Rate correctly set_by jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse questions: Work With? (zero-state, appropriate to surface) and Capabilities re-sort (genuine ambiguity in TAXONOMY). Neither asks for a field with a non-zero-state value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently in Enriching; reviewer flipping to Needs Review now."
+    }
+  ],
+  "to": null
+}

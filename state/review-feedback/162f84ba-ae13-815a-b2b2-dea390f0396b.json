@@ -1,0 +1,115 @@
+{
+  "page_id": "162f84ba-ae13-815a-b2b2-dea390f0396b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T02:10:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Memory Machines (site-01 to 04), Terraforms (site-05 to 07), Dreamer (site-08 to 11), Emotchi (site-14, site-15). Spans multiple years and clients."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3-4 images per project going inside each (device open/closed views on Memory Machines, multiple angles on Dreamer). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 4 projects are industrial design and 3D product work, matching tagged Capability (Product design, with Open Question to re-sort to Industrial design + 3D). No off-capability captures."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png visually confirmed as betuel.co homepage (shows 'echoes in eternity' heading, Memory Machines / OS Phone / Infinite Machine grid). site-13.png visually confirmed as instagram.com/betuelbenitez (handle, name Betuel Benitez, bio 'industrial design @opal__electronics', grid visible behind login modal). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 manifest entries have captions naming the project and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video or audio work present; all captured work is 3D industrial design renders. Embeds not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "betuel.co 503 during scout pass documented in AI Notes. IG is logged-out modal but profile visible and correct. No unexplained gaps."
+    },
+    {
+      "id": "A.terraforms-attribution",
+      "result": "pass",
+      "evidence": "Attempt-1 failure resolved. Captions for site-05, site-06, site-07 now read 'Terraforms desk landscape, 2022 (Team: Betuel Benitez + Chris Ference; credited on chrisference.com/terraforms).' Collaboration and Betuel's credited role are documented in the caption and source link. Orchestrator confirmed the credit via WebFetch on chrisference.com/terraforms."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: betuel.co. Instagram: instagram.com/betuelbenitez (verified by handle and bio in context shot). LinkedIn: linkedin.com/in/betuelbenitez. Email: hello@betuel.co. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Product design tagged (set_by jonathan). Open Question raised to re-sort to Industrial design + 3D. Correct handling of a jonathan-locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed (LinkedIn + RocketReach agree on Opal Electronics; AI Notes documents sources and treats betuel.co as stale). Multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: mid-to-senior IC, conceptual and product craft, grounded in employment history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or body text."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note signal acted on. 'rabbit' vs 'Opal' conflict resolved by two-source agreement (LinkedIn + RocketReach) and documented in AI Notes. Source field uses clip provenance date."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges stale site, notes 503, attributes sources, includes seniority read and Autonomy reasoning. No unverified assertions stated as fact. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-12-20'. Correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with source URLs and set_by values. No field obviously below 0.8 confidence written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question on Capabilities re-sort. Terse, conditional, not asking for fields that already have values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

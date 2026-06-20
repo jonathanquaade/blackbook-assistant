@@ -243,5 +243,26 @@
     "ig_url": "https://www.instagram.com/sandraautukaite/",
     "reason": "@sandraautukaite IG account is private (0 posts visible logged out). Context screenshot captured but shows private profile only. Need logged-in ig.py grab to see if she follows Jonathan's account or if there is work content visible to followers.",
     "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "162f84ba-ae13-8101-9067-dd3ebff677fd",
+    "name": "C Bollman (Christian Bollmann)",
+    "ig_url": "https://www.instagram.com/bollo_85/",
+    "reason": "IG @bollo_85 confirmed as Christian Bollmann (title tag match). Personal account with 16 posts. Context screenshot failed: Instagram blocked headless Playwright with 'Something went wrong' error page. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "162f84ba-ae13-819b-9b54-e7bee1523db9",
+    "name": "Alexey Sekachov",
+    "ig_url": "https://www.instagram.com/alta1r/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited). Need logged-in ig.py grab for profile context shot (@alta1r). IG confirmed active and linked directly from asekachov.com.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "15ff84ba-ae13-8155-b81a-f122bbcd0ccd",
+    "name": "Philipp Polder",
+    "ig_url": "https://www.instagram.com/philipppolder/",
+    "reason": "Instagram context screenshot failed: headless Playwright returned 'Something went wrong' error page (rate-limited). Need logged-in ig.py grab for @philipppolder profile context shot.",
+    "queued_at": "2026-06-20"
   }
 ]

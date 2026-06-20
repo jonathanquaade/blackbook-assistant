@@ -1,9 +1,9 @@
 {
   "page_id": "f8720db8-096a-4edc-972c-2df30574a03b",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-20T01:51:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-20T02:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,22 +13,22 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "work-09 shows the moncler.com UI system annotated layout (interior detail), work-07 shows platform overview with mobile and 3D city view (inside the experience), work-10 shows multi-device responsive Solace London build. Goes inside the work, not just hero shots."
+      "evidence": "work-09 shows moncler.com UI system annotated layout (interior detail), work-07 shows platform overview with mobile and 3D city view (inside the experience), work-10 shows multi-device responsive Solace London build. Goes inside the work, not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities tagged Web design (set_by jonathan). All captured work is responsive/interactive web and digital platform design (Solace London e-commerce, Moncler City of Genius digital platform, moncler.com redesign). Fully on-capability."
+      "evidence": "Capabilities = Web design (set_by jonathan). All captured work is responsive/interactive web and digital platform design. Fully on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png confirmed: real instagram.com page for @sandraautukaite, name 'Sandra Autukaite' visible, private profile correctly shown. site-02.png confirmed: SuperHi 404 for sandraautukaite.com, caption honestly states site is down. IG private account (not a throttle error page) is correctly documented and queued in ig-queue.json."
+      "evidence": "site-01.png visually confirmed: real instagram.com page, handle 'sandraautukaite', name 'Sandra Autukaite', private profile correctly shown. site-02.png visually confirmed: SuperHi 404 for sandraautukaite.com, caption correctly states site is down. Private IG profile is a genuine private-account page (not a throttle error); account queued in ig-queue.json for logged-in grab. Both shots correct."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 9 active images have captions naming the project and a source link. Rejected images (work-02, work-03, work-05) are correctly excluded."
+      "evidence": "All 9 active images have captions naming the project and a source link. Rejected images (work-02, work-03, work-05) excluded from active set."
     },
     {
       "id": "A.embeds-for-video",
@@ -43,43 +43,42 @@
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type = Person, set_by agent. Correct."
+      "evidence": "Type = Person. Correct."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website, Instagram (verified correct person via screenshot), LinkedIn all present. Email absent with AI Notes explanation. No findable public email, absence documented."
+      "evidence": "Website, Instagram (verified correct person via screenshot), LinkedIn all present. No public email found; absence documented in AI Notes."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Capabilities = Web design, set_by jonathan. Open Question #2 proposes expansion. Correctly deferred to Jonathan."
+      "evidence": "Capabilities = Web design (set_by jonathan). Open Question 2 proposes expansion to Digital product design and Creative direction; correctly deferred to Jonathan."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = UK, Size = 1, Work Status = Freelance. AI Notes cites Companies House + multiple sources + Jonathan's own note (Pentagram offer fell through) as corroborating evidence. Multi-source objective resolution documented."
+      "evidence": "Country = UK, Size = 1, Work Status = Freelance. AI Notes cites Companies House, multiple independent sources, and Jonathan's own note (Pentagram offer fell through) as corroborating evidence. Multi-source objective resolution documented."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 4, set_by agent. Reasoning in AI Notes: own studio since ~2018, 8+ yrs, credited Senior Visual Designer on major BIA-winning project. Grounded in work history."
+      "evidence": "Autonomy = 4 (set_by agent). Reasoning in AI Notes: own studio since ~2018, 8+ yrs, credited Senior Visual Designer on BIA-winning project. Grounded in work history."
     },
     {
       "id": "C.no-contradicting-judgment",
-      "result": "fail",
-      "evidence": "Familiarity = 'Don't know them' (set_by agent) directly contradicts Worked Together = 'Repeatedly' (set_by jonathan). CLAUDE.md is explicit: never write a zero-state that evidence contradicts. Worked Together = Repeatedly is clear evidence that Familiarity cannot be 'Don't know them'. The agent should have left Familiarity EMPTY and asked.",
-      "fix": "Clear Familiarity to empty (leave blank). Do NOT write any zero-state value. Open Question #1 ('Familiarity?') is already present and correctly asks Jonathan to set it; no new question needed."
+      "result": "pass",
+      "evidence": "Familiarity is now EMPTY (confirmed live from API). The attempt-1 fail (zero-state 'Don't know them' contradicting Worked Together = Repeatedly) has been resolved. Open Question 1 asks Jonathan to set Familiarity, framed with the Worked Together context. Worked Together = Repeatedly (set_by jonathan) preserved."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip source is 'Web clipper, 2024-12-20'; no instructions found in Name or clip body beyond the name itself. Jonathan's Notes (set_by jonathan) are preserved untouched. Pentagram note consistent with Work Status = Freelance."
+      "evidence": "Source = 'Web clipper, 2024-12-20'. Jonathan's Notes (set_by jonathan) preserved untouched. Pentagram note consistent with Work Status = Freelance."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedge inferences ('~8+ yrs', 'suggests they should deliver'), assert only verifiable facts (BIA credit, Companies House, featured on Mindsparkle/Hoverstat). Includes seniority read and Autonomy reasoning. Sources named."
+      "evidence": "AI Notes hedge inferences ('~8+ yrs'), assert only verifiable facts (BIA credit, Companies House, featured on Mindsparkle/Hoverstat). Includes seniority read and Autonomy reasoning. Sources named. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present for all touched fields with set_by, verified_at, and source_url where applicable."
+      "evidence": "Provenance file present with set_by, verified_at, and source_url for all touched fields."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,13 +98,13 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Q1 asks Familiarity (correctly conditional: notes Worked Together = Repeatedly). Q2 asks about expanding Capabilities beyond Web design (Capabilities is set_by jonathan so question is correct). Both terse and appropriate."
+      "evidence": "Q1: Familiarity? (with Worked Together context). Q2: Capabilities expansion proposal. Both terse, conditional, and appropriate."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still Enriching. Reviewer has not yet flipped it, as required."
+      "evidence": "Entry flipped to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }
