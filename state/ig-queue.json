@@ -91,6 +91,20 @@
     "queued_at": "2026-06-18"
   },
   {
+    "page_id": "380f84ba-ae13-8111-8bdb-f8ef7ded24cf",
+    "name": "Sophia Brinkgerd",
+    "ig_url": "https://www.instagram.com/sophiabrinkgerd/",
+    "reason": "Instagram context screenshot failed: headless Playwright returned error page. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-18"
+  },
+  {
+    "page_id": "380f84ba-ae13-81db-91cb-faed45faec10",
+    "name": "Kevin Hoegger",
+    "ig_url": "https://www.instagram.com/kevinhoegger/",
+    "reason": "IG context screenshot failed: Instagram blocked headless Playwright with error page. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-18"
+  },
+  {
     "page_id": "380f84ba-ae13-81cf-bae9-f08cede5c445",
     "name": "Oskar Hannu",
     "ig_url": "https://www.instagram.com/lillfinger/",
@@ -109,20 +123,6 @@
     "name": "Benjamin Gaupset",
     "ig_url": "https://www.instagram.com/benjamingaupset/",
     "reason": "IG context screenshot failed: Instagram blocked headless Playwright with blank page and error page. Need logged-in ig.py grab for profile context shot.",
-    "queued_at": "2026-06-18"
-  },
-  {
-    "page_id": "380f84ba-ae13-8111-8bdb-f8ef7ded24cf",
-    "name": "Sophia Brinkgerd",
-    "ig_url": "https://www.instagram.com/sophiabrinkgerd/",
-    "reason": "Instagram context screenshot failed: headless Playwright returned error page. Need logged-in ig.py grab for profile context shot.",
-    "queued_at": "2026-06-18"
-  },
-  {
-    "page_id": "380f84ba-ae13-81db-91cb-faed45faec10",
-    "name": "Kevin Hoegger",
-    "ig_url": "https://www.instagram.com/kevinhoegger/",
-    "reason": "IG context screenshot failed: Instagram blocked headless Playwright with error page. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-18"
   },
   {
@@ -291,6 +291,27 @@
     "name": "Zuzanna Rogatty",
     "ig_url": "https://www.instagram.com/zrogatty/",
     "reason": "Instagram context screenshot failed: logged-out headless Playwright returns 'Something went wrong' error page. site-04.png rejected. Need logged-in ig.py grab for @zrogatty profile context shot.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "8ec95748-950f-4c60-8777-c615d495e73c",
+    "name": "Viviane Sassen",
+    "ig_url": "https://www.instagram.com/vivianesassen/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for @vivianesassen profile context shot.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "6da4de55-6893-42d5-b5f4-fefccc61f7c0",
+    "name": "Wolfgang Tillmans",
+    "ig_url": "https://www.instagram.com/wolfgang_tillmans/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited). @wolfgang_tillmans confirmed handle (418K followers). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "cd3d6e9b-89e8-42ba-b078-be4abdcab6cf",
+    "name": "Michal Pudelka",
+    "ig_url": "https://www.instagram.com/michal_pudelka/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). @michal_pudelka confirmed handle (92K followers, fashion photographer). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-20"
   }
 ]
