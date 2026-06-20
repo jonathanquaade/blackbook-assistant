@@ -274,3 +274,6 @@ def main():
     report.update({'saved': saved, 'skipped_dupes_or_tiny': skipped,
                    'needs_caption': [m['file'] for m in manifest if not m.get('caption')]})
     print(json.dumps(report, indent=1))
+
+if __name__ == "__main__":
+    main()
