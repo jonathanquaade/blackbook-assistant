@@ -1,0 +1,111 @@
+{
+  "page_id": "6bd9c3f2-79ed-4b34-af66-4f06ea4a8c46",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T17:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Interludes (Collins 2023), Visual Setlist (2025), The Premise/FX (2021), Medium in Conversation (2021), Google Smart Display (no year), Avatars/Hobbes (2020). No repeated project across thumbnail + still sets."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Interludes has 4 assets (thumbnail + cover + UI GIF + detail), Visual Setlist has 4 (thumbnail + cover + 2 frames), Medium has 3 (thumbnail + type still + title card GIF). Goes inside projects, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 6 projects are motion design or animation work: game UI motion (Interludes), generative visual music system (Visual Setlist), kinetic typography (The Premise), motion branding (Medium), device animation (Google), icon animation system (Avatars). Capability tagged 3D & motion. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-03.png confirmed as jadekuzak.work homepage (shows her name, portfolio grid, contact). IG context shot (site-04.png) is the Instagram error page, correctly marked rejected in manifest, documented in AI Notes, queued to state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 18 uploaded images carry project name captions. Every caption also carries a source link to jadekuzak.work project page. site-01.png captioned 'Avatars, 2020', site-03.png captioned 'Website'. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds present (Interludes, Visual Setlist, The Premise, Medium in Conversation, Avatars), each with caption AND link to source project page. 5 matching thumbnail preview images downloaded (thumb-*.jpg from Vimeo CDN) so Notion's no-poster-preview gap is covered. Entry is NOT embeds-only: 18 images uploaded."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG capture failure documented in AI Notes with specific cause (headless Playwright error page, rate-limited). Entry queued to state/ig-queue.json. No other unexplained absences."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual motion designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://jadekuzak.work/ (confirmed live). Instagram: https://www.instagram.com/jadekuzak/ (set, IG context shot attempted and queued). LinkedIn: https://www.linkedin.com/in/jade-kuzak-1b325995. Email: jadekuzak@gmail.com. All four link fields populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: [3D & motion]. Verified correct against observed work (motion graphics, animation, generative systems). Set_by: jonathan per provenance, consistent with the work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 1 (person). Work Status: Employed. AI Notes names sources: LinkedIn + Vimeo place her at Collins; site says 'open to collaborations' treated as side availability, not departure. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). Reasoning in AI Notes: executes solo within large studio systems, strong craft ownership from named project credits. Grounded in work history (COLLINS Senior Motion Designer, BUCK, Hobbes)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are set_by agent. Jonathan's note ('did some cool stuff at collins') is admiration of work, not a relationship claim. No contradiction. Work With?: Unvetted (appropriate zero-state). Notes field preserved verbatim."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'did some cool stuff at collins' treated as qualitative signal, not a relationship claim. Collins work (Interludes) is prominently captured. Jonathan's note moved to Notes field (set_by jonathan per provenance). Open Questions ask Work With? and Rating as required."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Work Status ('site says open to collaborations, treated as freelance-adjacent side availability, not a full departure'). Seniority read present: 'Senior/mid-to-senior level, ~5+ years across brand-led studios'. No bare unverified assertions. No em-dashes confirmed by scan."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-02-06'. Matches the created_time-based format required when no clip note provides alternate provenance text."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields recorded. set_by values are correct: agent for researched fields, jonathan for Notes and Capabilities. No field appears below 0.8 confidence (Work Status multi-sourced, Instagram handle exact match)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned: no em-dash found. Live Open Questions value ('1. Work With?\\n2. Rating? (ex Partner-Dream)') is clean. Source field clean. Provenance has an old stale OQ value with an em-dash but that field was overwritten; the live Notion value is what matters."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: Work With? (unvetted, conditional) and Rating? (conditional, with context '(ex Partner-Dream)'). Both are fields Jonathan sets. Neither asks for a field that already has a non-zero-state value. Terse format observed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Ready to flip to Needs Review on this gate passing."
+    }
+  ],
+  "to": null,
+  "notes": "Strong entry for a motion designer. 6 distinct projects, 5 Vimeo embeds with preview thumbnails, depth inside key projects, correct capability match. IG throttle exception properly handled. All metadata fields populated with documented sources."
+}

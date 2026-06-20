@@ -1,0 +1,112 @@
+{
+  "page_id": "e9a21d91-86be-4bf0-a214-ac96be139f9d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Google Design Edit 2022, Oak Meditation 2017, Skateistan: Her Story 2016, Microsoft Editor/Outlook 2020, Fangor Tribute 2015 (plus Impossible Foods embed). No duplicate project angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Oak Meditation has 3 stills (animation frames + storyboard sheet); Skateistan has 3 stills from STASH; not just hero shots. Goes inside projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion. All images and embeds are motion/animation work: 3D renders (Google DeepMind), 2D animation films, motion branding. Nothing off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png opens to dominikgrejc.com with 'Dominik Grejc / Work / About' nav and 3D render visible. site-05.png opens to instagram.com showing handle 'dominikgrejc', 2,391 followers, bio 'Dominik Grejc / Design + Keyframes', motion work grid. Both correct and distinct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest image has a caption naming the project and a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "fail",
+      "evidence": "5 Vimeo embeds are present and paired with thumbnail preview images for 4 of 5 projects (Google Design Edit, Oak Meditation, Skateistan, Microsoft Editor all have thumbnails). However the Impossible Foods Branding Exploration embed (vimeo.com/202378600) has NO usable thumbnail: its only candidate (thumb-impossible-foods.jpg) was correctly rejected as a mid-animation white-background frame, and no replacement still was found. That embed will render in Notion with no preview image, violating the 'thumbnail per embed' pattern.",
+      "fix": "Find a better Vimeo thumbnail frame for Impossible Foods Branding Exploration (vimeo.com/202378600) via the oEmbed API or Behance gallery for that project, and add it to the manifest. Alternatively capture a representative still from the Behance project page if one exists."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site 503 on fetch documented in AI Notes with fallback confirmed (Behance, Vimeo, cargocollective). Three rejected thumbnails documented in manifest with reasons. IG throttle path not needed (scraper captured IG context shot logged-out)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance motion designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: dominikgrejc.com. Instagram: instagram.com/dominikgrejc (verified as his, bio + grid match). LinkedIn: linkedin.com/in/grejc. Email: dgrejc@gmail.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: [3D & motion]. Work is motion design and 3D animation. Consistent with TAXONOMY.md."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (Berlin-based, corrected from migration's Switzerland). Size: 1. Work Status: Freelance. AI Notes names sources: cargocollective about page + Behance bio agree on freelance Berlin; LinkedIn not contradicting. Objective resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes grounds it: mid-to-senior freelance, Sehsucht pedigree, delivers independently for studios/brands. Reasoning present."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states: Work With? Unvetted, Worked Together Never, Familiarity Don't know them. No clip note contains relationship facts. Rating empty (Jonathan's). No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw Name was 'Dominik Grejc Portfolio' (no instructions). No relationship facts, passcodes, or tagging directions in clip note. Body was clipped site copy from f°am Studio (archived to clipped.md). All handled."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read ('mid-to-senior freelance'), trajectory (Nice & Serious -> Sehsucht -> freelance), hedged inference ('appears wrong' for Switzerland), confirmed facts (Rozewicz win, ustwo work). No em-dashes. Sources named."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-01-04'. Matches the created_time convention."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file expected at state/provenance/. Not independently checked here, but all fields have a clear research basis and AI Notes names sources used. No sub-0.8 facts written."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned: no em-dash character found. Captions scanned: none. Open Questions: empty."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions absent (empty). Correct: no unresolvable ambiguities exist, no story nudge triggered (Worked Together = Never, no change from zero-state)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching at review time. Will be flipped to Needs Review by this reviewer per v1 protocol."
+    }
+  ],
+  "notes": "One genuine gap (A.embeds-for-video): Impossible Foods embed has no thumbnail. All other checks pass. In v1 mode, entry is flipped to Needs Review regardless; Jonathan should note the missing Impossible Foods thumbnail. Rejected thumbnails (thumb-impossible-foods, thumb-new-vision-education, thumb-reel-2020) correctly excluded from Images property. Context shots verified correct. oak-med-still stills are low-res (STASH 640px) but no higher-res source available for that 2016 short, acceptable.",
+  "to": "scraper"
+}

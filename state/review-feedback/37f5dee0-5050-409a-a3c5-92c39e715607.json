@@ -1,0 +1,117 @@
+{
+  "page_id": "37f5dee0-5050-409a-a3c5-92c39e715607",
+  "name": "Hannah Willcocks",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects: IBM Research, Helle Mardahl, Orluna, Un-Still Life, Loop Earplugs, Samsonite. No caption repeats. Each screenshot is visually distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Project pages show multiple stills and video players per project (e.g. Un-Still Life has 6+ object renders; Orluna shows product, environment and R&D views; IBM shows chip renders, rack and optics). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion. All 6 project screenshots show 3D renders or motion/animation work (chip visualisations, product animations, still-life 3D series). Showreel embeds are 3D and 2D motion reels. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is the real hannahwillcocks.co.uk homepage (confirmed: shows her name, nav, a 3D still-life hero image). site-02.png (Instagram) is rejected+documented+queued to ig-queue.json per the sanctioned throttle exception. Website shot is present and correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 uploaded images have captions naming the project and all have a link field pointing to the source page. Showreel thumbnails are captioned '3D Showreel, 2024' and '2D Showreel' with Vimeo links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two Vimeo showreel embeds present (vimeo.com/1052541718, vimeo.com/1095848305), each with a caption, a link, and a corresponding thumbnail image. Entry is not embeds-only: 6 project screenshots + website context shot also uploaded."
+    },
+    {
+      "id": "A.screenshot-quality",
+      "result": "pass",
+      "evidence": "Full-page Cargo screenshots used because freight.cargo.site CDN returns 403 on direct downloads (documented in AI Notes). Inspected all 6: IBM, Helle Mardahl, Orluna, Un-Still Life, Loop Earplugs, Samsonite. 3D work is legible and fills the majority of each frame. Loop Earplugs has a long empty section between the video player and the work images but the work itself is clearly shown below. Samsonite and Un-Still Life are especially image-dense. Acceptable given the documented hard limit."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Cargo CDN block documented in AI Notes. IG context shot failure documented and queued. No public email documented in AI Notes (Cargo contact form only)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual freelance motion designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: hannahwillcocks.co.uk. Instagram: instagram.com/hanwillco. LinkedIn: linkedin.com/in/hannah-willcocks. Email: none found (Cargo contact form only, documented). All findable links present; absence documented."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [3D & motion]. Set by jonathan (provenance confirms set_by: jonathan). Her portfolio is exclusively 3D and motion animation work. Correct."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 1, Work Status = Freelance. AI Notes states 'Freelance: The Dots + LinkedIn consistent' (two sources agree). Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4 (set_by agent). AI Notes grounds it in end-to-end complex 3D project delivery and senior agency background (Found Studio, Mother Design). Reasoning present."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship in the clip note (source: 'Web clipper, 2022-08-11', no personal note)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2022-08-11' with no personal instructions or stated facts in the clip note beyond the entry URL. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list is presented as 'clients include' (not claimed as sole author). Autonomy reasoning is grounded in observed work history. Seniority is described as 'Senior level' with agency trajectory named. No em-dashes found. The assertion 'handles projects end to end' is a mild overstatement from portfolio self-description but it is low-stakes and sourced from her own site; acceptable. Sources are named at the end of AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-08-11'. Filled and formatted correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/37f5dee0-5050-409a-a3c5-92c39e715607.json. All major fields have set_by and verified_at entries. No source_url populated (acceptable for fields resolved via multi-source research with no single canonical URL). No field below 0.8 confidence was written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned programmatically: zero em-dash characters found. Captions and Source also clear."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. No fields are ambiguous or require Jonathan input at this point. No story nudge triggered (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted; threshold not met). Correct."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching (correct pre-gate state). Will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null,
+  "notes": "All 20 checks pass. The full-page Cargo screenshots are the weakest element (Loop Earplugs has notable empty whitespace mid-page) but the documented CDN hard block makes this the correct approach, and the 3D work content is legible in every screenshot. Recommend Jonathan note whether he would prefer the scraper to crop to the work sections on future Cargo entries."
+}

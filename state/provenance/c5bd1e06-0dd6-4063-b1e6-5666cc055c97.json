@@ -21,9 +21,9 @@
       "set_by": "agent"
     },
     "Familiarity": {
-      "value": "Don't know them",
+      "value": null,
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-20T17:41:08",
       "set_by": "agent"
     },
     "Notes": {
@@ -53,9 +53,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:22:37",
+      "verified_at": "2026-06-20T17:40:19",
       "set_by": "agent"
     },
     "Work With?": {
@@ -110,9 +110,33 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Berlin-based freelance 3D / Houdini artist and technical director (ideal-flaw.com). Senior technical-artist level: ~10 years at Zeitguised and f.am Studio as TD/generalist before going freelance early 2022; tools Houdini, C4D, Unreal, Python; creative coding, design-system implementation, brand-identity contributions. Work Status Freelance: his own site frames it as solo freelance practice. Jonathans note (Cohere Tool, Zeitgeished) and Worked Together Once (set by him) tie him to the Zeitguised work. Caps (Creative technology, 3D & motion) match. NOTE: the Instagram field held a Twitter URL (mobile.twitter.com/idealflaw); replaced with his verified personal IG (juliussteinhauser, bio + 3D grid confirm). No public LinkedIn found.",
+      "value": "Berlin-based freelance 3D/Houdini artist and technical director (ideal-flaw.com). Senior technical-artist level, ~10 yrs: at Zeitguised (TD/generalist, generative systems) and f.am Studio before going freelance early 2022; tools Houdini, C4D, Unreal Engine 5, Python. Work Status Freelance: own site frames it as solo freelance practice; IG bio consistent. Jonathan note (Cohere Tool, Zeitguised) and Worked Together Once (set by him) tie him to those projects. Capabilities (Creative technology, 3D + motion) confirmed: site shows DeepMind Creative App (UE5 tool, creative coding), Cohere identity (C4D Python tool for 3D pebble system, at Pentagram), BCG Design System 3D, Rumpelgraph (generative NFT bot, creative coding at Zeitguised), Art Cars RnD. No LinkedIn profile found (multiple searches). Email: hello@ideal-flaw.com (from site nav). Instagram @juliussteinhauser confirmed (bio + 3D grid). IG context shot blocked logged-out (error page); queued to ig-queue.json for logged-in ig.py grab.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:24:18",
+      "verified_at": "2026-06-20T17:35:31",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "hello@ideal-flaw.com",
+      "source_url": null,
+      "verified_at": "2026-06-20T17:32:39",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-01.jpeg",
+        "site-02.jpeg",
+        "site-04.png",
+        "site-05.png",
+        "site-07.jpg",
+        "site-08.jpg",
+        "site-09.png",
+        "site-11.jpg",
+        "site-12.jpg",
+        "rumpelgraph_0134_thumb.jpg",
+        "site-03.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-20T17:36:19",
       "set_by": "agent"
     }
   }

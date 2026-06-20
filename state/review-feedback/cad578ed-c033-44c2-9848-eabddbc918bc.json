@@ -1,0 +1,110 @@
+{
+  "page_id": "cad578ed-c033-44c2-9848-eabddbc918bc",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T18:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: VOTE 2018, Film Independent Spirit Awards 2019, The Atlantic March 2023, MSCHF Mag Vol. 4, A24 Zine: American Hustlers. No repeated-angle or duplicate-project issue."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2+ assets (embed + thumb + interior still/GIF for VOTE and Spirit Awards; 2 images for Atlantic, MSCHF, A24). Capture goes inside projects, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "3D & motion covered by VOTE 2018 (animated 3D type GIFs + Vimeo motion embed) and Spirit Awards 2019 (3D motion graphics + Vimeo embed). Illustration covered by The Atlantic 2023 (3D illustration spot), MSCHF Mag Vol. 4 (editorial illustration/design), and A24 Zine (editorial illustration). Both tagged capabilities represented."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed shira-inbar.com homepage (visually verified). site-02.png is the Instagram error page (IG rate-limit), correctly marked rejected in manifest. AI Notes documents the block; ig-queue.json contains the queued entry for @shira_no_filter. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active image entries and 2 embed entries carry captions and source links. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two Vimeo embeds present (VOTE 2018: vimeo.com/293939403; Spirit Awards 2019: vimeo.com/349199494), each with a thumbnail preview image and a linked caption. Entry is not embeds-only (11 images uploaded alongside)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in AI Notes with specific reason (headless Playwright rate-limit error) and queued to state/ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: shira-inbar.com. Instagram: instagram.com/shira_no_filter. LinkedIn: linkedin.com/in/shira-inbar. Email: hello@shira-inbar.me. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion + Illustration, set_by jonathan. Consistent with the work captured."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Freelance. AI Notes names sources: self-described independent on own site + IG @shira_no_filter; multi-source rule documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: established solo designer-director delivering finished work for top-tier clients (A24, MSCHF, NYT, Pentagram, The Atlantic). Senior read (~12+ yrs) paired with Autonomy estimate."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note or evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field set to 'Web clipper, 2022-03-20'. No relationship facts or instructions in clip note beyond the name."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual claims grounded in named clients and awards visible on her site. Seniority read and Autonomy estimate present. Work Status resolution documented with sources. No unsupported assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-20'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/cad578ed-c033-44c2-9848-eabddbc918bc.json. All touched fields have entries; set_by values are correct (agent for enriched fields, jonathan for Capabilities)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or any manifest captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question: whether to add Graphic design capability. Not asking for fields already set. Story nudge not applicable (Worked Together: Never, no relationship to nudge)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review now that this gate passes."
+    }
+  ],
+  "to": null
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "e7cb7233-049d-4dba-a4aa-9e40110e448c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T18:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Images span 4 distinct named projects: YDH Reel 2023 (thumbnail), Reel 2020 Adidas (thumbnail), Elyo personal 2020 (thumbnail), ON Running Helion 3D (3 stills), Collective Individuation (2 stills). Plus 2 showreel embeds (2018) covering Johnston and Murphy, OnePlus, Nokia etc. Minimum 3-project threshold met with margin."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "ON Running Helion has 3 inside-project stills (foam sim sphere, close-up with diamonds, diamond scatter). Collective Individuation has 2 stills (hands, bust). Not pure hero shots; goes inside the projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is 3D / Houdini / motion: organic 3D forms, shoe CGI splash (Adidas reel), pebble sim (Elyo), foam sim (ON Helion), 3D sculptures (Collective Individuation). No brand side-projects or off-capability material included (rejected items correctly excluded: OM Animation logo, text-only title cards)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-06.png confirmed: real yonnidehaar.com homepage (YDH nav, black video background, loading spinner visible). IG shot (site-07.png) is an Instagram 'Something went wrong' error page, correctly marked rejected:true in manifest. IG queued to state/ig-queue.json with reason documented. AI Notes states 'IG context shot blocked headless; @yonnidehaar queued to state/ig-queue.json'. Sanctioned exception applies per checklists/entry-review.md."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 non-rejected Images entries have captions (e.g. 'YDH Reel, 2023', 'ON Running Helion foam 3D, 2019', 'Collective Individuation, personal project, 2019', 'Website'). All captions also carry a link field pointing to the source. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds present in manifest (813592007, 416371486, 487210133, 289284404, 304382889), each with caption and link. 3 of 5 have thumbnail preview images in the Images property. Showreel 2018 and ON Running Speedboard lack thumbnails (title-card-only thumbnail and live-action thumbnail respectively, both correctly rejected). Entry has 9 image files in Images property so not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes. Rejected manifest items each carry an explanatory caption (e.g. 'text only', 'live action, not 3D', 'duplicate', 'off-capability'). No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person (correct, individual freelance artist)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: yonnidehaar.com (confirmed real site). Instagram: instagram.com/yonnidehaar (full URL, person verified via AI Notes). LinkedIn: es.linkedin.com/in/yonnidehaar. Email: hello@yonnidehaar.com. All 4 link fields populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: [3D & motion]. Matches observed work (Houdini simulations, CGI product animation, motion reels). Single tag is accurate and not over-broad."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Hong Kong (site-stated, AI Notes notes prior Spain was corrected). Size: 1 (individual). Work Status: Freelance (multi-source: site about page states 'Freelance 3D Artist', LinkedIn consistent per AI Notes). Objective rule applied and sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes provides reasoning: 7+ years freelance, studio collaborations with Field, W+K, DesignStudio, Builders Club, clients Nike, Adidas, Google, NYT, OnePlus. Mid-to-senior read is grounded in work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Once (set_by jonathan). Familiarity: Don't know them (set_by agent, zero-state). Notes says 'Worked with us on univers' which implies contact, so Familiarity is a reasonable open question. Work With?: Unvetted (zero-state). No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip name was 'Yonni de Haar - 3D Artist'. Name cleaned to 'Yonni de Haar'. Clip suffix '-3D Artist' informed Capabilities tag. No relationship facts or judgment in the clip note itself (those came from Notes field already in Notion). Worked Together Once and Notes ('Worked with us on univers') are set_by jonathan per provenance. Open Questions asks Familiarity as required."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (client list, collaborators, location) with hedging where appropriate ('~7+ years freelance, mid-to-senior'). Seniority and Autonomy read present. Work Status sources named. No bare unhedged claims about creative ability or Jonathan's relationship. No em-dashes in the live Open Questions or captions (provenance draft had em-dashes but live Notion shows '1. Familiarity?' which is clean)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-05-25'. Populated."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "state/provenance/e7cb7233-049d-4dba-a4aa-9e40110e448c.json exists with set_by and verified_at for all touched fields. Judgment fields (Worked Together, Notes) correctly marked set_by: jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Live Open Questions: '1. Familiarity?' (no em-dash). Live AI Notes text uses commas and parentheses throughout. Image captions use commas. No em-dashes found in any agent-written field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: '1. Familiarity?' Terse, conditional (Familiarity is still zero-state Don't know them, and Worked Together=Once implies contact, making it genuinely askable). Story nudge: Notes is already non-empty ('Worked with us on univers') so the 'how was working together?' nudge correctly does NOT fire. No redundant or non-conditional questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching going into this gate. Will flip to Needs Review on passing verdict."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean pass. Showreel 2018 and ON Running Speedboard embeds lack thumbnail preview images; those rejections are documented with reasons in the manifest. Not a fail because the entry is not embeds-only (9 images present) and the rejected thumbnails were genuinely poor (text-only card and live-action content for a 3D-tagged entry). IG shot blocked and queued correctly. All checks pass."
+}

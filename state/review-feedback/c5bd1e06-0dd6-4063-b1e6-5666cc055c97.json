@@ -1,0 +1,112 @@
+{
+  "page_id": "c5bd1e06-0dd6-4063-b1e6-5666cc055c97",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects confirmed visually: Art Cars RnD (site-01, site-02), Cohere/Pentagram (site-04, site-05), Google DeepMind/someform (site-07, site-08, site-09), BCG/someform (site-11, site-12), Rumpelgraph/Zeitguised (rumpelgraph thumb + Vimeo embed). No repeated project flooding the set."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple images per project for three projects (2x Art Cars, 2x Cohere, 3x DeepMind, 2x BCG). DeepMind includes an app UI shot (site-09) alongside render imagery. Rumpelgraph has thumbnail and video embed."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are 3D & motion and Creative technology. All captured work is 3D rendering (Art Cars, Cohere pebbles, BCG objects, Rumpelgraph generative bot) and/or creative coding/tool-building (DeepMind UE5 creative app, DeepMind app UI). No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-03.png, source_url ideal-flaw.com, context_shot: true) is confirmed: shows ideal-flaw.com homepage with Julius Steinhauser project listings and bio text. IG context shot (site-10.png) is marked rejected in manifest and queued to state/ig-queue.json with documented reason (headless Playwright returned error page under rate-limiting). Per checklist exception, this is the sanctioned path and is not a fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected manifest entry has a caption naming the project and a link to the source. Context shot captioned 'Website'. Vimeo embed has caption 'Rumpelgraph explainer, Zeitguised, 2022' and link."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Vimeo embed present for Rumpelgraph explainer (vimeo.com/712954857), with Vimeo thumbnail image (rumpelgraph_0134_thumb.jpg) as preview. Entry is not embeds-only: 10 images uploaded alongside the embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG capture failure documented in AI Notes and queued. No other unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelancer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://ideal-flaw.com/ (confirmed). Instagram: https://www.instagram.com/juliussteinhauser/ (confirmed in AI Notes, bio + grid match). LinkedIn: null, documented in AI Notes as not found after multiple searches (acceptable absent = documented). Email: hello@ideal-flaw.com (from site nav)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology and 3D & motion. Both confirmed by site projects (UE5 tool, Python tool, generative NFT systems, Houdini/C4D 3D renders). Provenance shows set_by: jonathan, so these are his own tags to lock."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 1. Work Status: Freelance. AI Notes documents multi-source resolution: own site frames solo freelance practice, IG bio consistent. Objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes grounds it in ~10 yrs experience, TD/generalist at Zeitguised, f.am Studio, then freelance from 2022. Reasoning present and hedged."
+    },
+    {
+      "id": "C.judgment-no-contradiction",
+      "result": "fail",
+      "evidence": "Familiarity is 'Don't know them' (set_by: agent) while Worked Together is 'Once' (set_by: jonathan). Per CLAUDE.md, zero-states must not contradict evidence. Having worked together once means Jonathan does know him; 'Don't know them' is a knowingly false zero-state. The field should have been left empty and the open question asked, not filled with a contradicting default.",
+      "fix": "Clear Familiarity ('Don't know them' -> empty/null). The existing '1. Familiarity?' open question already covers this correctly; just remove the false zero-state. No other fix needed."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Cohere Tool, Zeitgeished' in Notes (jonathan). Jonathan's Worked Together: Once is locked (set_by: jonathan). AI Notes references both. No instruction in the clip note appears unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read ('Senior technical-artist level, ~10 yrs') with career trajectory (Zeitguised, f.am, freelance 2022), tools listed. Work Status sourced from site + IG. Unverified read hedged by 'inferred from' framing. Capability explanations reference specific projects."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-06-15'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields with set_by, verified_at, and value. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Live Notion fields verified: Open Questions is '1. Familiarity?' (no em-dash), AI Notes contains no em-dashes. Provenance stores a stale draft OQ value with an em-dash but that was never written to Notion -- the live field is clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "'1. Familiarity?' is terse, conditional (Familiarity has a contradicting zero-state, so question is warranted). Story nudge not required because Notes is not empty ('Cohere Tool, Zeitgeished'). No fields with existing non-zero-state values are re-asked."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flip to Needs Review is the next step (pending this report)."
+    }
+  ],
+  "notes": "One soft FAIL: Familiarity is set to 'Don't know them' while Worked Together is 'Once' (jonathan). This is a false zero-state. In v1 mode the entry passes to Needs Review, but Jonathan should correct Familiarity. The open question '1. Familiarity?' already invites him to do so. Otherwise the entry is strong: 5 clearly distinct projects, on-capability 3D and creative-tech work, Vimeo embed with thumbnail, website context shot confirmed real, rejected IG shot properly queued, captions all named and linked, AI Notes thorough and hedged.",
+  "to": "scraper"
+}
