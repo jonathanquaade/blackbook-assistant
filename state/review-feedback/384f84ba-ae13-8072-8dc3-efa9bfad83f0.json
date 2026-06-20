@@ -1,0 +1,111 @@
+{
+  "page_id": "384f84ba-ae13-8072-8dc3-efa9bfad83f0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:23:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "18 work images across 6 distinct named projects: Twitch, MASP, Kunsthalle Basel, PAC NYC, Sundance Film Festival, Google Gemini. No repeated project."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3 images per project going inside the work: typeface specimen, OOH application, brand installation (Twitch); wordmark, print/wayfinding, brand application spread (MASP); K monogram, material spread, brand messaging (Kunsthalle); wordmark, environmental signage, stationery (PAC NYC); typographic system, environmental signage, printed collateral (Sundance); wordmark+mark, OOH, device application (Gemini)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 18 work images are brand identity and graphic design work, matching tagged Capabilities: Identity systems, Brand strategy, Graphic design, Spatial & exhibition design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opens to portorocha.com homepage (Porto Rocha logo + project grid visible). site-02.png opens to instagram.com profile for porto_rocha (handle 'porto_rocha', 99.8K followers, PORTO ROCHA bio confirmed)."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has caption + link. Minor: kunsthalle-11 caption says 'type and layout system' but the image shows a brand messaging line ('Host for artists. Art for all.'). Still from the Kunsthalle project and on-capability; caption is imprecise but not misleading."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Identity systems work; no video embeds needed or flagged as missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Not applicable; 18 work images present across 6 projects."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small-to-mid specialized brand identity studio, not Agency (not large full-service scale org)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (portorocha.com), Instagram (instagram.com/porto_rocha), LinkedIn (linkedin.com/company/porto-rocha), Email (business@portorocha.com). All four findable links present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy, Graphic design, Identity systems, Spatial & exhibition design, Type design, Web design. Grounded in portfolio evidence."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US + UK (Brooklyn HQ + London office 2026). Size: 41-100 (stated 50+ in AI Notes, hedged). Work Status: Studio. AI Notes names sources: portorocha.com/about, LinkedIn company page, web search."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy field is a 1-5 individual-person scale and not applicable here. AI Notes covers seniority at the studio level: 'Senior/director-level founders; studio operates as an autonomous creative entity.'"
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a Jonathan relationship. No clip note contradicts any field."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No formal clip note. Original Name was 'Porto Porcha' (typo); corrected to Porto Rocha with research documented in Source field."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list is verifiable from public portfolio (no hedging needed). Size 'estimated 50+' is hedged. Sources named. No unverified inferences asserted as fact. No em-dashes confirmed."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Name field in Notion read as Porto Porcha; verified as Porto Rocha (portorocha.com) via web research. No clip note or URL in entry.' Filled and honest."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with set_by (agent or jonathan) and verified_at timestamps. No field below 0.8 confidence written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Confirmed no em-dashes (U+2014) in AI Notes or any agent-written content."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. None required: all findable facts resolved, no unresolvables, no story nudge triggered (Worked Together = Never)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer now flips to Needs Review."
+    }
+  ],
+  "to": null,
+  "notes": "Prismic contamination check: scraper pulled project-specific image IDs (filenames carry project names, e.g. PORTOROCHA_Twitch_01.jpg, PORTOROCHA_MASP_08.jpg) and verified images eyeballed match captions. All 6 projects visually confirmed distinct and on-capability."
+}

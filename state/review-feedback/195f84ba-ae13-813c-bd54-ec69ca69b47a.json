@@ -1,0 +1,110 @@
+{
+  "page_id": "195f84ba-ae13-813c-bd54-ec69ca69b47a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:24:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects in active manifest entries: Emoji is all we have, Dance Tonite, Touch for Luck, Paperstorm, Painted Earth, Do Not Touch. No caption repeats."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Touch for Luck has 2 interior shots (facade + sprite sheet); Painted Earth has 2 GPS-drawing renders (Buikslotermeer + Chinatown). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Creative technology, Web design, 3D & motion. All 6 projects are interactive/participatory digital work. site-16.jpg (Do Not Touch) shows a production scene from the music video shoot, not the browser UI, but is correctly attributed to that project and is a scene from the actual work. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-18.png opened: studiomoniker.com homepage confirmed (Moniker 2012-2023 header, nav present). site-21.png opened: instagram.com/studiomoniker profile confirmed (Studio Moniker bio, follower count, IG chrome visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active manifest entries have captions naming the project and a link field. Zero anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 YouTube embeds present with thumbnail previews: yt-thumb-tfl.jpg + embed for Touch for Luck; yt-thumb-dnt.jpg + embed for Do Not Touch. Both have caption and link fields."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site is live and yielded work. No unexplained thin sections. IG not queued (logged-out screenshot obtained for context shot; no IG-only work dependency here)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per CLAUDE.md definition (small specialized team, hands-on creative execution)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: studiomoniker.com. Instagram: instagram.com/studiomoniker. LinkedIn: linkedin.com/company/moniker. Email: mail@designingfriction.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology, Web design, 3D & motion. These match the studio's participatory web projects, VR work (Dance Tonite), and motion-based installations."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Netherlands. Size: 2-10. Work Status: Studio (with AI Notes explaining closed status and Open Question to Jonathan). AI Notes names LinkedIn snippet and About page as sources."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set_by agent, reasoning in AI Notes ('independent studio'). Appropriate for a fully autonomous studio over 11 years."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states a relationship. Zero-states are valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2025-02-09' with no relational or judgment instructions. Source field reflects this verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (project names, dates, founders, About page claim). The one inference ('LinkedIn company page confirmed via snippet') is noted as a snippet, not a full visit. No em-dashes. Seniority note is minimal for a Studio entry (11-year run implies seniority; founders named)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-02-09'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields. source_url is null across the board, which is a minor gap, but verified_at and set_by are present for every field. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions and all captions checked: zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One open question about closed studio status is appropriate and correctly deferred to Jonathan. Not asking for fields that already have values. Story nudge N/A (studio entry, no personal relationship)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching at time of review. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null
+}

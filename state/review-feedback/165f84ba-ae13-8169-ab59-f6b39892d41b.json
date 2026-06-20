@@ -1,0 +1,111 @@
+{
+  "page_id": "165f84ba-ae13-8169-ab59-f6b39892d41b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:27:30",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects: Top Challenger (site-01, site-02, site-08, site-09), Motion (site-04, site-05), Jack (site-11, site-12)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: leaderboard screen (site-09), onboarding flows (site-05, site-12), home/dashboard screens (site-01, site-02, site-11)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged Digital product design; all active images are mobile/desktop product UI or product gamification assets. site-08 (badge icons) is a borderline call - gamification icon sets are a product design deliverable, not off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is cjpux.com (confirmed: shows Cam Jordan name, Senior Product Designer title, client list). No Instagram exists to screenshot - search conducted, no handle found, AI Notes documents it. This is not a throttle case; no IG profile exists to capture."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images have caption + link. Rejected images (site-03, site-06, site-07, site-10) correctly marked with reject_reason."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio capability tagged; Digital product design only. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states no Instagram found after two searches (handle variants camjxrdan, cjpux tried). Not queued to ig-queue because no profile exists to grab - correct handling."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (cjpux.com), LinkedIn (linkedin.com/in/camjxrdan), Email (info@cjpux.com) all present. Instagram genuinely not found (documented in AI Notes after two search attempts)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Digital product design per TAXONOMY.md; matches captured work (product UI for mobile apps)"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United Kingdom; Size: 1; Work Status: Freelance. AI Notes names sources: own site (cjpux.com) presents independent client practice + Layers.to states freelance availability. Two sources agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 (set_by agent) with reasoning: runs product work end-to-end solo per portfolio framing, hedged as no first-hand evidence"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are valid; no clip note suggests a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is Web clipper 2024-12-23; no instruction text in the clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy claim hedged ('no first-hand evidence'). Seniority read present: Senior / Design Lead level, ~8 yrs. Sources named inline."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-12-23'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields. Note: source_url is null across all fields - acceptable for a scrape/research pass where no single URL per field was recorded, but worth watching."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dash characters found in AI Notes or any agent-written content."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No outstanding unresolvable questions requiring Open Questions. Fields that can be asked are judgment fields reserved for Jonathan."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null,
+  "notes": "Entry is clean. 3 distinct product projects (Top Challenger, Motion, Jack) all on-capability product UI. Website context shot confirmed correct. IG absence correctly documented in AI Notes as searched-not-found, not a throttle issue. Rejected icon/wordmark images correctly marked rejected. No em-dashes. All metadata fields filled and sourced."
+}

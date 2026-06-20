@@ -1,0 +1,111 @@
+{
+  "page_id": "172f84ba-ae13-813e-b36b-e2d482b84f9d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:20:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects: Deeplocal interactive activations (Google Pixelroom + Netflix + Microsoft Epic Games), Climate Cents / Blue Sky LA map platform, StoryGraph redesign. No repeated-project images."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Climate Cents: 6 images (problem, moodboard, mid-fi map, hi-fi screens, brand system, header). StoryGraph: 4 images (product illustration, research, design system/layouts, existing UI breakdown). Deeplocal: 2 images from 2 sub-activations. Goes inside projects, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Creative technology. All active images show interactive exhibit UI (Google Pixelroom print kiosk), activation concept renders (Microsoft x Epic Games), interactive map platform (Climate Cents), book app redesign (StoryGraph). Work matches capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-08.png opened and confirmed as yejis.world homepage (nav, illustrations, project thumbnails visible). site-09.png opened and confirmed as instagram.com with handle @seoyemilk and Instagram logo visible."
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "pass",
+      "evidence": "All 14 active (non-rejected) work images have captions naming the project and a link to the source project page."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Entry is tagged Web design / Creative technology, not video/audio. No embed entries in manifest. Deeplocal activations could have video on the project page but stills of UI work are on-capability. No clear miss."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "14 active images across 3 projects; entry is not thin. No unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a USC student / individual designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (yejis.world), Instagram (instagram.com/seoyemilk, verified correct person via site about page), LinkedIn (linkedin.com/in/faithyejiseo), Email (faithyejiseo@gmail.com) all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Creative technology match her portfolio (interactive installations UI, Next.js portfolio, map platform, app redesign). Product design / Art direction could be argued but are not clear omissions given current tagging."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US, Size: 1, Work Status: Freelance. AI Notes documents multi-source resolution: site + LinkedIn both show multiple concurrent project roles with no single employer; two sources agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent. Reasoning in AI Notes: capable of solo project ownership (4M-user app, Cannes-awarded branding) but still a student developing seniority."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with clip note showing no personal relationship, only Jonathan's interest in her portfolio."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note ('hire maybe for workflow. her portfolio was super cute') contains no stated factual fields requiring --from-jonathan; it is Jonathan's interest/opinion only. Source field preserves it verbatim. No instructions left unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges project claims ('some solo-owner project claims noted'), includes seniority read (Junior/student), Autonomy reasoning, Work Status sources, Instagram verification method, and LinkedIn URL. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-01-05. Clip note (Jonathan): ...' - verbatim clip note preserved."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded and set_by values. source_url is null throughout (no CDN URLs recorded) but all values are independently verifiable from her public portfolio."
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. No unresolvable gaps; zero-states are correctly applied; no story nudge needed (Worked Together remains Never with no contrary evidence)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "One minor observation: deeplocal-epic.webp shows a watercolor-style interior room sketch captioned 'Microsoft x Epic Games Showcase concept'. This reads as a concept storyboard/render for the activation, which is plausible for creative tech work. Not a fail but noted for context. Rejected images (site-01, site-03, deeplocal-header, deeplocal-netflix/cloud, storygraph-research) correctly marked with clear reasons."
+}
