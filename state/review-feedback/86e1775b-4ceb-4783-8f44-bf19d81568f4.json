@@ -1,0 +1,116 @@
+{
+  "page_id": "86e1775b-4ceb-4783-8f44-bf19d81568f4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T17:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects captured: McQ/Alexander McQueen 2024, Nothing x ENTEI, Nothing Ear product, Polomi, Yada Villaret 2017, Interview x Charles Jeffrey. No repeated project across all 11 work images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "McQ: 3 images (model + product + model seated), ENTEI: 3 images (3 poses), Polomi: 3 images (3 distinct setups: outdoor bag, black-and-white handbag, car interior with bag). Charles Jeffrey: 3 environment variations with the same subject. Nothing Ear and Yada Villaret at 1 image each. Goes inside projects rather than hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All work is fashion/luxury/editorial/product photography or photographer-led AI-hybrid imagery. AI Notes honestly discloses his practice now includes algorithmic collaboration. The Charles Jeffrey caption accurately says 'AI-Photography collaboration'. On-capability for Photography."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png: confirmed raf.studio homepage showing 'raf stahelin' header and nav (home / about / latent notes / interview charles jeffrey). site-05.png: confirmed instagram.com/rafstahelin profile showing 'Raf Stahelin' bio with 15.5K followers, Photography + Art direction + Digital naturalism bio. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 images have captions naming their project. All project images have a link field, though 10 of 11 non-context project images link to the raf.studio homepage rather than a specific project page. The Charles Jeffrey images correctly link to /interview-charles-jeffrey. Homepage links are weak but captions name the project. Not a hard fail.",
+      "note": "Minor: scraper could improve by linking to individual project pages where they exist on the site (e.g. the ENTEI or McQ pages if they have dedicated URLs). Flagged for Jonathan's awareness."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Not applicable. Raf Stahelin is a photographer. No embedded video/audio work required. The entry has images throughout."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "16 images captured. No unexplained gaps. Clipped.md note about video-not-available was archived; AI Notes explains his current practice."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.raf.studio/ (verified). Instagram: https://www.instagram.com/rafstahelin/ (verified, right person confirmed via profile screenshot). LinkedIn: https://www.linkedin.com/in/raf-stahelin-8576841a0/ (present). Email: raf@raf.studio (present, sourced from raf.studio contact). All four links present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography tagged, set_by jonathan per provenance. Consistent with the work captured."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Freelance. AI Notes names the sources: raf.studio + LinkedIn + The Org. Multi-source rationale present (LinkedIn says Freelance; LALALAND GROUP representation is typical for commercial freelance photographers). Objective resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). AI Notes: 'Autonomy 5 hedged: established freelance image-maker who self-directs.' Grounded in LALALAND GROUP representation since 2013 (13 years)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note (clipped.md) contains no relationship claims from Jonathan. Zero-states are not contradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was minimal: a brief description of his 3D environment/fashion photography practice. No relationship facts, no instructions, no passcodes. Archived to clipped.md. No unacted items."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('hedged'), states sources, includes experience signal (LALALAND GROUP since 2013, editorial/advertising). Seniority read is present but thin: 'Experienced editorial/advertising shooter' with 13-year implied career. No explicit year count or trajectory listed. Meets the minimum bar but seniority section is bare-minimum rather than rich."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'. Filled and dated."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present. All agent-touched fields have set_by: agent and verified_at timestamps. Capabilities has set_by: jonathan (correct, Jonathan tagged it). No fields written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all captions checked. No em-dashes (chr(8212)) found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No unresolvables remained. Zero-states are correctly applied (never, don't know them, unvetted). No story nudge required (Worked Together is Never). Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will be flipped to Needs Review by this reviewer on overall pass."
+    }
+  ],
+  "notes_for_jonathan": [
+    "The 'Interview x Charles Jeffrey' project (site-01, site-02, site-03) is a legitimate photographer-led AI collaboration: real photographs of Charles Jeffrey composited with AI/3D-generated environments. Caption is honest ('AI-Photography collaboration'). On-capability.",
+    "The nothing-sh250-01.jpg image shows earbuds in a yellow case. The caption says 'Nothing Ear (2) product campaign' but the filename references SH250 (Nothing's headphone line). The image content looks more like a Ear (1) or Ear (2) earbuds edition (product is earbuds, not headphones). Possible sub-model caption inaccuracy but correct brand and campaign type.",
+    "10 of 11 project image links point to the raf.studio homepage rather than individual project pages. Jonathan cannot navigate directly from the entry to a specific project. Minor usability issue for a future revisit pass."
+  ],
+  "to": "scraper"
+}

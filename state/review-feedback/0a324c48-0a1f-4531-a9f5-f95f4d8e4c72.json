@@ -1,0 +1,111 @@
+{
+  "page_id": "0a324c48-0a1f-4531-a9f5-f95f4d8e4c72",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images across 5 distinct named publications: POP (x3), Dazed (x3), WSJ Magazine (x3), M le Monde (x2), Lot Papers (x2). No repeated project captions across different editorials."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "POP includes cover + interior spreads; WSJ interiors show jewellery still-life collage spreads; M le Monde has cover + Kodak Portra contact-sheet interiors; Lot Papers shows editorial interior + proof sheet. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 13 images are fashion and portrait photography from named editorial shoots. Capability tagged Photography; work matches exactly. Several images carry his printed credit (POP cover: 'Photography PABLO DI PRIMA'; Lot Papers spread: 'LOT by PABLO DI PRIMA'; M le Monde: 'Pablo di Prima' handwritten on spread)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png confirmed as pablodiprima.com homepage (shows nav 'PABLO DI PRIMA / Photographer / Director' with POP cover). IG shot (site-15.png) is rejected + documented in manifest (rejection_reason: rate-limit error page) + queued to state/ig-queue.json. Sanctioned exception met per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries (including context shot) have a caption and a link field. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Not applicable: Capability is Photography only. No video/audio work claimed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence: documented in manifest rejection_reason and in AI Notes ('IG context shot queued: headless Playwright blocked by Instagram rate-limiting; queued to state/ig-queue.json'). LinkedIn absence: documented in AI Notes ('LinkedIn: no profile found for this Pablo Di Prima; only an unrelated Juan Pablo Di Prima appears; treated as absent')."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website pablodiprima.com set. Instagram https://www.instagram.com/pablodiprima/ set and verified (37K, bio confirmed in AI Notes). Email studio@pablodiprima.com set. LinkedIn documented absent in AI Notes with specific reason (only unrelated person found). All links accounted for."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography. Set_by jonathan (migration). Matches the editorial work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country Spain + UK (Barcelona origin, London base). Size 1. Work Status Freelance. AI Notes names sources: site, IG bio (both show freelance/represented, not employed). Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent. AI Notes grounds it: 'autonomous freelance' with strong commercial client list (Chloe, Fendi, Jacquemus, etc.). Reasoning present and hedged appropriately."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with no evidence of prior relationship in the clip note. Notes field 'Fashion' is Jonathan's and is preserved, not overwritten."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Jonathan's clip note 'Fashion' preserved in Notes field (set_by jonathan). Source set as 'Web clipper, 2020-11-02'. AI Notes confirms 'Jonathan note Fashion preserved'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Unverified inferences hedged ('Rising/emerging but with strong commercial client list'; 'film work could later warrant Film and video production'). Seniority read present. Autonomy estimate paired with reasoning. No bare assertions about character or working style."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-02'. Filled and accurate."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. Note: source_url is null on all field-level records (source URLs live in manifest.json instead). Not a blocking gap for v1 as set_by and verified_at are correct throughout."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions needed: all findable information is present or documented absent. Story nudge not triggered (Worked Together is Never, not Once/Repeatedly). Judgment fields (Rating, Familiarity, Work With?) are appropriately left for Jonathan."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching; ready to be flipped to Needs Review by this gate pass."
+    }
+  ],
+  "reviewer_notes": "One minor observation for Jonathan: site-09.jpg (WSJ Magazine 2025) shows two near-identical portrait framings of the same subject as a matched editorial diptych. This is the spread's own format, not a duplicate capture error. No action needed. Overall: 13 on-capability editorial photography images across 5 distinct named publications, all credited, well inside depth-over-breadth standard. IG context shot queued correctly. LinkedIn absence documented. Entry is complete.",
+  "to": null
+}

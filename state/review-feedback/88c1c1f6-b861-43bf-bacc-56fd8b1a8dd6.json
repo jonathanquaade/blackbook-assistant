@@ -1,0 +1,111 @@
+{
+  "page_id": "88c1c1f6-b861-43bf-bacc-56fd8b1a8dd6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T18:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 live images across 5 named bodies of work: i,other (3 images), mare monstrum (4), in the wake (4), bodies of water (3), new suns (2). Rejected images (site-04 Burrow_Sunflood ambiguous, site-05 duplicate, site-17 through site-23 redundant installation shots) correctly excluded and documented in manifest."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Three series (i,other / mare monstrum / in the wake) show the actual photographs at full display resolution with distinctly different subjects and styles -- desert portraiture, red-sea conceptual work, post-fire landscape, earth-burial, macro botanicals. Noted concern: 'bodies of water' (site-14/15/16) and 'new suns' (site-24/25) are exhibition installation shots showing prints hung in gallery spaces rather than the print images themselves. This is the best available from those project pages given the CDN block (format.creatorcdn.com returns 403 without authenticated session). Installation shots at a named museum (Memphis Brooks) and gallery (Sheriff Gallery Paris) do carry contextual value for an exhibited fine-art photographer. Not a hard fail, but Jonathan should know 5 of 16 images are installation documentation rather than the photographs directly."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 16 live images are fine-art photography: conceptual portraiture (i,other), dramatic ocean/sea work (mare monstrum), post-wildfire landscape (in the wake), museum prints / exhibition views. No off-capability content. site-03.jpg (wax/sculptural face) is a photographic artwork within the i,other self-portrait series, not product or graphic design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-26.png) opened and confirmed as daviduzochukwu.com homepage (nav reads 'DAVID UZOCHUKWU', grid of works visible). Instagram error page (site-27.png) confirmed as a 'Something went wrong' error page (not a mislabeled site screenshot), marked rejected in manifest, block documented in reject_reason, entry queued to state/ig-queue.json as page_id 88c1c1f6-b861-43bf-bacc-56fd8b1a8dd6. Checklist exception for IG throttle applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 16 live images have a caption naming the series and a link to the source project page on daviduzochukwu.com."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "David Uzochukwu is a photographer; primary deliverable is still images. No YouTube/Vimeo embeds present on the project pages he has (his site is a gallery format). No video work was missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "CDN block (format.creatorcdn.com 403 without authenticated session cookie) documented in scraper notes and acknowledged in spawn prompt. IG queue entry confirmed present in state/ig-queue.json."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://www.daviduzochukwu.com/ (live, confirmed). Instagram: https://www.instagram.com/daviduzochukwu/ (set_by agent, AI Notes says @daviduzochukwu 94K verified as him). LinkedIn: https://www.linkedin.com/in/david-uzochukwu-8491419a/ (set_by agent, verified_at 2026-06-20). Email: studio@daviduzochukwu.com (set_by agent). All four links present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography. Set_by jonathan (migrated). Work confirms fine-art photography practice across multiple series."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (site /about, Berlin-based, set_by agent). Size: 1 (individual, set_by migration). Work Status: Freelance (AI Notes: 'site + Wikipedia agree, no employer; Galerie Gomis handles print sales only'). Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: 'fully autonomous solo practice despite being young, hence Autonomy 5 (inferred from client roster and self-run studio)'. Hedged appropriately as inference from client roster (Dior, Hermes, Nike x FKA twigs) and exhibited solo shows."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "No Jonathan clip notes beyond 'Web clipper, 2021-07-15'. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate defaults with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was a plain web-clipper entry (no instructions, no relationship facts). Source reflects 'Web clipper, 2021-07-15'. Nothing in the clip text was unacted upon."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes: verifiable facts stated plainly (exhibitions at Fotografiska/Saatchi, ICP Infinity nominee 2019, BJP One to Watch 2020, named brand clients). Autonomy and Work Status calls are hedged with source reasoning. Seniority read included ('Senior, fully autonomous solo practice'). No unverified claims stated as fact. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-15'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/88c1c1f6-b861-43bf-bacc-56fd8b1a8dd6.json. All written fields have entries: Website (migration), Worked Together/Familiarity/Work With? (agent zero-states), Size (migration), Country/Work Status/Type/Autonomy/Instagram/Email/Source/AI Notes/LinkedIn/Images all agent-set with verified_at timestamps. No field written without provenance."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all agent-written fields reviewed. No em-dashes found. Parentheses and semicolons used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field present. All metadata determinable from public sources; no ambiguities requiring Jonathan's input. Story nudge not triggered (Worked Together remains Never, Familiarity remains Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "One item flagged for Jonathan's awareness (not a fail, not a bounce): 5 of 16 live images are exhibition installation shots (site-14/15/16 for 'bodies of water' at Memphis Brooks Museum 2026; site-24/25 for 'new suns' at Sheriff Gallery Paris 2024). The actual prints appear small within the gallery documentation. This is the ceiling of what is available from those project pages given the CDN block. The other 11 images (i,other / mare monstrum / in the wake) show the actual photographs clearly and at good resolution. Jonathan can judge whether the installation shots are adequate or whether the ig-queue drain should include requests for individual print images from IG.",
+  "to": "scraper"
+}

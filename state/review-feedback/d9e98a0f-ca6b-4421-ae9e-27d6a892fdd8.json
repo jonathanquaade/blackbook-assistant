@@ -1,0 +1,118 @@
+{
+  "page_id": "d9e98a0f-ca6b-4421-ae9e-27d6a892fdd8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "notes": "v1 calibration mode: flipping to Needs Review despite two soft flags below. Neither rises to a gate-blocking FAIL under v1 rules, but both are surfaced for Jonathan to calibrate the bar.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects across fine-art (Cob Gallery 2019, VIRGO/DEUSS 2024), commercial (Magniberg, Dries van Noten AW 2021-22) and editorial (AnOther SS2020, Beauty Papers 2019, Vanity Fair 2020). The 5 Cob Gallery images are visually distinct works within the same series, not re-crops of one photograph."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside gallery exhibitions (individual prints from One Two Three Four series, not just a show poster), inside editorial shoots (individual frames from Vanity Fair / Beauty Papers / AnOther), and inside a brand collaboration (Magniberg product photography). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 17 uploaded images are photographs (fine-art prints, fashion photography, editorial). VIRGO images are video frame grabs printed as fine-art photographs, confirmed on-capability. No off-capability work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png confirmed as real caspersejersen.com (nav bar reads 'Casper Sejersen / Stills / Film / Overview / Contact'). Instagram context shot (site-17.png) rejected with documented reason ('Something went wrong' error page, headless Playwright rate-limited), queued to state/ig-queue.json. Exception path in checklist is met."
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "flag",
+      "evidence": "VIRGO captions (site-07, 08, 09) are accurate for project/venue but do not note the video-frame-grab nature of the prints. Caption reads 'VIRGO, DEUSS Gallery Antwerp, 2024' which is correct. Minor omission, not a factual error. However site-13, 14, 15 carry a harder flag: all three are captioned 'Dries van Noten Women AW 2021-22, photography by Casper Sejersen' but CDN filenames in the source URLs include '20260506_DRIESVANNOTEN_LOOK_19_0770_V2_4x5' (May 2026) and 'Still2026-04-06163207' (April 2026). These dates suggest the images are from a 2026 collection, not AW 2021-22. The attribution 'photography by Casper Sejersen' may be wrong for current-season imagery. The scraper pulled from the current live collection page rather than verifying an archival AW 2021-22 page.",
+      "fix": "Verify the Dries van Noten AW 2021-22 campaign attribution. The three images in the manifest (site-13/14/15) were pulled from the live Dries van Noten site but their CDN filenames contain 2026 dates, not 2021-22. Either find the actual AW 2021-22 archive images confirmed shot by Sejersen, or remove these three and replace with confirmed Sejersen-shot Dries van Noten work (e.g. from press coverage of the AW 2021-22 campaign). Do not caption any image 'photography by Casper Sejersen' unless attribution is confirmed."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Casper Sejersen is a still photographer. No YouTube/Vimeo embeds are expected or required. VIRGO is a fine-art photographic work (not a video to embed). Not applicable."
+    },
+    {
+      "id": "A.absence",
+      "result": "pass",
+      "evidence": "AI Notes explains IG throttle, LinkedIn disambiguation failure, and absence of personal public email. All documented, nothing silently skipped."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links",
+      "result": "flag",
+      "evidence": "Website (caspersejersen.com) and Instagram (@caspersejersenstudio) are present. LinkedIn absent with documented reason (same-name PhD student; no photographer LinkedIn found). Email is agent-only via MAP Ltd (julia@mapltd.com) with no personal public email, documented in AI Notes. No LinkedIn and no Email fields are set in Notion. This is acceptable given documentation. However: Open Questions field is empty. Familiarity is at zero-state 'Don't know them' and Rating is empty. Per checklist D.open-questions and CLAUDE.md, 'Familiarity?' and 'Rating?' should be asked. Neither is present.",
+      "fix": "Add Open Questions: '1. Familiarity? 2. Rating?' via keeper.py ask."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography. Matches the work captured and Jonathan's own tagging (set_by: jonathan in provenance)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Denmark (corrected from erroneous Norway, documented in AI Notes). Size 1 (individual). Work Status Freelance (represented photographer, documented in AI Notes as objective read: his own site and agency representation confirm freelance status)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: 'top-tier independent photographer, 25+ yrs'. Grounded in career history (Dior, LV, Burberry campaigns; solo gallery shows; own representation)."
+    },
+    {
+      "id": "C.judgment",
+      "result": "pass",
+      "evidence": "No judgment field contradicts evidence. Zero-states (Never, Don't know them, Unvetted) are appropriate; no clip note states a relationship. Work With? Unvetted is correct."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2021-03-06' with no instructions or relationship facts. Source field matches. No --from-jonathan writes needed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences (represented status inferred from MAP Ltd; Autonomy hedged as estimate). Seniority read is present: '25+ yrs, Very senior established artist/photographer'. Autonomy 5 paired with reasoning. No em-dashes. No unhedged claims about working style or output quality without evidence."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-06'. Present and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/d9e98a0f-ca6b-4421-ae9e-27d6a892fdd8.json. All touched fields recorded. Images field updated 2026-06-20. Capabilities set_by jonathan (correct, from migrated tagging). No sub-0.8 confidence fields written as fact."
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source contain no em-dashes. Ranges use en-dashes (2021-22). Clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "No Open Questions set. Familiarity is zero-state ('Don't know them') and Rating is empty. Both require terse questions per CLAUDE.md.",
+      "fix": "keeper.py ask d9e98a0f-ca6b-4421-ae9e-27d6a892fdd8 with payload '1. Familiarity? 2. Rating?'"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, which is correct pre-review. Reviewer flips to Needs Review."
+    }
+  ],
+  "to": "scraper",
+  "v1_flags_for_jonathan": [
+    "Dries van Noten images (site-13, 14, 15): captioned AW 2021-22 but CDN filenames contain 2026 dates. Attribution 'photography by Casper Sejersen' may be wrong for current-season imagery. Jonathan should verify or ask the scraper to replace these with confirmed archival shots.",
+    "Open Questions not set: Familiarity? and Rating? are both needed and absent. Scraper or scout should add them before the entry reaches Jonathan ideally, but it can be done in this same session."
+  ]
+}

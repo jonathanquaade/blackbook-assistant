@@ -1,0 +1,117 @@
+{
+  "page_id": "112c623f-7408-4909-902a-f8f9c71b3f56",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T17:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 live images across 5 distinct series: Eternity 2022 (3 images via Xtra), Towards Earth 2021 + Tarkwa 2018 (2 images, Olga Korper), Dent and Deyla triptych 2023 (1 image, Olga Korper), Colour and Feel 2024 (4 images across Olga Korper and Patel Brown), Fond Traces 2026 (4 images, Smokestack). Well above the 3-project floor."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside individual artworks: close-up of Dent and Deyla triptych (site-01.jpg), close-up of Colour and Feel seated-woman triptych (site-03.jpg) and guitarist diptych (site-04.jpg), plus three individual Fond Traces prints. Not just hero/cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are her photographic work (fine-art photographs and screenprints made from her photographs). No brand/design side projects, no off-capability content. Screenprints from her photographic base material are legitimately on-capability for a fine-art photographer."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-09.png opened: shows isabelokoro.com text navigation (her name, normatopia/Eternity references, site sections). Honest capture of the real site rendered text-only due to JS/503 issues; not blank and not mislabeled. site-10.png opened: genuine instagram.com/isabelokoro page showing 11.6k followers, @isabelokoro handle, profile grid. Both context shots are correct and honestly captured."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every live image in the manifest has a caption naming the work and a source link. All rejected images also have captions and reject_reason. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Isabel Okoro is a still photographer; no video/audio embeds expected. Site nav lists a Film section but scraper worked from gallery/press sources due to 503. No embedded video was skipped without cause. No embed-only situation."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states her site was unavailable (referenced in spawn prompt; browser log confirms 503). Gallery/press source strategy is documented in browser log. No silently thin entry."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass-with-note",
+      "evidence": "Website set (isabelokoro.com). Instagram set and verified (@isabelokoro, confirmed in context shot). Email set (isabelokoro@gmail.com). LinkedIn: browser log records two searches with no result; fine-art photographers commonly have no LinkedIn presence. NOTE: LinkedIn absence is documented in the browser log but NOT in AI Notes. CLAUDE.md requires source resolution documented in AI Notes. Minor gap, not a hard fail for this entry type, but AI Notes should say 'LinkedIn: not found after two searches'."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography tagged, correct. Open Question 1 asks Jonathan about adding Art practice tag, which is appropriate given gallery representation at AGO/Olga Korper/Patel Brown. Correct not to add without his say."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass-with-note",
+      "evidence": "Size: 1 (person, correct). Work Status: Freelance (independent artist, own studio, correct). Country: Canada only. Her own site says 'Nigerian visual artist currently based in Toronto, ON'; she was born in Lagos and is Nigerian-Canadian. Nigeria is arguably correct as a second Country entry. This is a borderline case; leaving it as a note rather than a hard fail since Toronto is her primary base. Work Status sources are partially named in AI Notes (studio ownership, IG confirmation) but the multi-source rule documentation is incomplete: LinkedIn absence not mentioned there."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent, with hedged reasoning in AI Notes ('Young but already exhibiting and running a studio, so a strong independent autonomy: Autonomy 4 (hedged on commercial-direction experience)'). Grounded in verifiable facts (gallery representation, studio co-founding)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states: Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note contains relationship facts. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was a web clipper entry from 2021; no special instructions in the clip text beyond the URL. Source field correctly records 'Web clipper, 2021-07-15'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged ('hedged on commercial-direction experience'). Gallery representation and press features are verifiable facts and stated as such. Seniority read included (young, born 2001, but already gallery-represented and running a studio). No unhedged inferences found. No em-dashes anywhere in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-15'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists and covers all touched fields with set_by and verified_at. source_url is null for most fields (no single URL captures all metadata), which is acceptable when AI Notes names the sources. No fields below 0.8 confidence were written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Open Questions programmatically: no em-dashes found. All image captions also clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional Open Question about Art practice capability. Familiarity and Rating not asked (not needed until Jonathan engages the entry). No story nudge needed (Worked Together: Never). Question is appropriate and not redundant."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pending-flip",
+      "evidence": "Status is Enriching; will be flipped to Needs Review as part of this review pass."
+    }
+  ],
+  "notes": [
+    "Minor: LinkedIn absence documented in browser log only, not in AI Notes. Recommend AI Notes add 'LinkedIn: not found after two searches' on next pass.",
+    "Minor: Country is Canada only; her site self-describes her as Nigerian. Nigeria as a second Country entry is arguable. Not blocking.",
+    "Colour and Feel series has 4 of 14 images (2 individual works + 2 installation views from 2 different venues of same show). Heavy but not a mechanical diversity failure given 5 total series represented.",
+    "Website context shot is text-only due to 503/JS rendering failure but is honest: shows her real site nav and bio text. Not blank, not mislabeled.",
+    "Rejected images are correctly marked in manifest (portrait, wall text, redundant installation views, duplicate crop). No rejected image leaked into the live set."
+  ],
+  "to": "scraper"
+}

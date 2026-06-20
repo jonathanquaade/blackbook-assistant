@@ -1,0 +1,111 @@
+{
+  "page_id": "12a5f9d8-a347-48d3-9b50-f7fc9b01b9d7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images across 5 named, visually distinct series: Resonance, Fleur, Shadows, Claudia, Stillness/Barbican. Each series shows different subjects, locations, and lighting. No repeated project from different angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per series for Resonance/Fleur/Shadows (differing compositions within each shoot, not just cover + two crops), 2 each for Claudia and Stillness. Resonance goes from single portrait to two-subject to prop/reflective-orb image -- genuine interior depth."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 work images are fashion and portrait photography. Stillness/Barbican series is architectural photography, which is a stretch but still within Photography capability and consistent with his site's breadth. No brand/design/sound work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed tivanzarkand.com homepage ('Fashion & Portrait Photography', nav matches). site-02.png: confirmed instagram.com, handle @vanzarkand, bio 'Mauro Sardo', links to www.tivanzarkand.com -- same person confirmed. Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 manifest entries have captions and links. Work images cite named series + specific project page URL per image. Context shots have caption and link."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capability is Photography; no video/audio embeds expected. AI Notes mention he also directs/edits film but the capability is not yet tagged (it is an Open Question), so no embed obligation at this stage."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "14 work images present; no thinness. AI Notes document Work Status sources. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.tivanzarkand.com. Instagram: https://www.instagram.com/vanzarkand/ (verified same person via bio link). LinkedIn: https://www.linkedin.com/in/tivan-zarkand/. Email: tivanzarkand@gmail.com. All four found and set."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography tagged. Provenance shows set_by: jonathan (from the original clip), so this is his classification. The Open Question about Film & video production is the correct handling for an uncertain add."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1 (person). Work Status: Freelance. AI Notes document resolution: 'own portfolio plus freelancer-directory listings agree' (two-source rule met). The named sources are Cherrydeck and The Dots plus his own site -- the AI Notes do not name which two of these agreed, which is a minor gap but the conclusion meets the multi-source rule."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by: agent. Reasoning in AI Notes: 'commissioned shooter who runs his own shoots, inferred'. Hedged."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted -- all zero-states. No clip note signals a prior relationship (Source is 'Web clipper, 2021-04-14', no personal note). Zero-states are correct and uncontradicted."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note is a bare web-clipper entry with no additional instructions beyond the URL. Nothing was left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged: '~7+ yrs (inferred)', 'Autonomy 4 (... inferred)'. Seniority read present: 'Mid-level freelance commercial shooter, ~7+ yrs'. Sources named for Work Status. No bare assertions of unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-04-14'. Correct format for a backfill/clipper entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and complete. All touched fields have set_by and verified_at. source_url is null across all fields -- no specific source URL recorded per field, which is a minor tracking gap but not a confidence failure (the agent documented sources in AI Notes instead)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, and all captions programmatically. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "One question: whether to add Film & video production capability. Terse, conditional (Photography is set, this asks about an addition). No questions for fields that already have non-zero values. Story nudge not applicable (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching (pre-review). Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "One minor observation not raised as a FAIL: provenance source_url is null on all fields. This means you cannot trace an individual field back to the exact URL it came from. The agent recorded the sourcing logic in AI Notes (Cherrydeck, The Dots) but did not wire it into provenance. Not a gate-stopper in v1 -- the confidence floor is met -- but worth calibrating on: should source_url be required per field for a clean pass in v2?",
+  "to": "scraper"
+}
