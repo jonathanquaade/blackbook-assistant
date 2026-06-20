@@ -264,5 +264,26 @@
     "ig_url": "https://www.instagram.com/philipppolder/",
     "reason": "Instagram context screenshot failed: headless Playwright returned 'Something went wrong' error page (rate-limited). Need logged-in ig.py grab for @philipppolder profile context shot.",
     "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "24ff84ba-ae13-811d-8a85-d63a4649d4bc",
+    "name": "yuzu (byeyuzu)",
+    "ig_url": "https://www.instagram.com/byeyuzu/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). byeyuzu.com is also currently disconnected from Cargo CMS (DNS parking page). IG is the primary public showcase for this artist's recent CGI/motion work. Need logged-in ig.py grab for profile context shot and recent work.",
+    "queued_at": "2026-06-19"
+  },
+  {
+    "page_id": "162f84ba-ae13-8169-a311-e3079ac8de87",
+    "name": "Gardener",
+    "ig_url": "https://www.instagram.com/gardener.nyc/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for @gardener.nyc profile context shot.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "380f84ba-ae13-81eb-b4ac-d2dac33c3f66",
+    "name": "Sasyk Mihal",
+    "ig_url": "https://www.instagram.com/sasykmihal/",
+    "reason": "Jonathan: need more examples from Instagram; logged-out IG capture hit challenge",
+    "queued_at": "2026-06-20"
   }
 ]

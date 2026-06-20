@@ -1,0 +1,96 @@
+[
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.gardener.nyc/",
+    "caption": "Website",
+    "link": "https://www.gardener.nyc/",
+    "captured_at": "2026-06-20",
+    "context_shot": true
+  },
+  {
+    "rejected": true,
+    "file": "site-03.png",
+    "source_url": "https://www.instagram.com/gardener.nyc/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/gardener.nyc/",
+    "captured_at": "2026-06-20",
+    "context_shot": true,
+    "reason": "IG rate-limited: page returned 'Something went wrong' error"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://www.benirugs.com/",
+    "caption": "Beni Rugs, headless Shopify build (Gardener)",
+    "link": "https://www.benirugs.com/",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://www.benirugs.com/",
+    "caption": "Beni Rugs, product section (Gardener)",
+    "link": "https://www.benirugs.com/",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://www.dsanddurga.com/",
+    "caption": "D.S. and Durga, ecommerce platform (Gardener)",
+    "link": "https://www.dsanddurga.com/",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "rejected": true,
+    "file": "site-07.png",
+    "source_url": "https://www.dsanddurga.com/",
+    "caption": "D.S. and Durga, product carousels",
+    "link": "https://www.dsanddurga.com/",
+    "captured_at": "2026-06-20",
+    "reason": "Email signup modal obscures the page content"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://sprout.store/",
+    "caption": "Sprout, Next/Sanity/Shopify boilerplate by Gardener",
+    "link": "https://sprout.store/",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://sprout.store/",
+    "caption": "Sprout, client roster (Beni, DS&D, Cards Against Humanity, Kernel, Genexa)",
+    "link": "https://sprout.store/",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "rejected": true,
+    "file": "site-10.png",
+    "source_url": "https://www.dsanddurga.com/",
+    "caption": "D.S. and Durga, product section",
+    "link": "https://www.dsanddurga.com/",
+    "captured_at": "2026-06-20",
+    "reason": "Cookie consent bar and email modal both visible; site-11 is clean"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://www.dsanddurga.com/",
+    "caption": "D.S. and Durga, product collections (Gardener)",
+    "link": "https://www.dsanddurga.com/",
+    "captured_at": "2026-06-20"
+  },
+  {
+    "rejected": true,
+    "file": "site-12.png",
+    "source_url": "https://www.louisaballou.com/",
+    "caption": "Louisa Ballou, ecommerce",
+    "link": "https://www.louisaballou.com/",
+    "captured_at": "2026-06-20",
+    "reason": "Site returned Netlify 404 'Site not found'"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://www.cardsagainsthumanity.com/",
+    "caption": "Cards Against Humanity, ecommerce site (Gardener client)",
+    "link": "https://www.cardsagainsthumanity.com/",
+    "captured_at": "2026-06-20"
+  }
+]

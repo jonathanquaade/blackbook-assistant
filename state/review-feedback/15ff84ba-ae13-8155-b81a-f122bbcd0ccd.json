@@ -1,0 +1,110 @@
+{
+  "page_id": "15ff84ba-ae13-8155-b81a-f122bbcd0ccd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T02:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Active images span 4 distinct client builds: Back of the House (site-11), Paume (site-12), One Hundred Berlin (site-13, site-05), SQUAMA Recordings (site-16, site-07, site-08, site-09), plus ppolder.com portfolio mockups (site-06, site-10)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "SQUAMA covered at 3 depths: catalog grid, release detail, album page (Enji - Ulaan). Client sites shown as live interfaces, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All active images are website interfaces or device mockups of built sites. Christophe Coenon photography shots (img-01, img-02, img-03) correctly rejected as off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as ppolder.com homepage (phone mockup with ppolder.com branding and 'Development for BACK OF THE HOUSE' credit visible). IG profile (site-14.png) blocked logged-out, correctly marked rejected with documented reason, entry queued to state/ig-queue.json. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active images have captions and link fields. Minor note: site-10.jpg caption says 'ppolder.com portfolio, phone mockup of minimal portfolio site build' but does not name the client (Marius Uhlig, visible on the phone screen). Not a hard fail given the image is sourced from ppolder.com portfolio, but naming the client would be sharper."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Polder's tagged capability is Frontend development (web); website screenshots are the correct medium. Embed rule applies to video/audio/writing creatives; does not apply here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes ('IG context shot blocked logged-out; queued for ig.py grab') and queued to state/ig-queue.json. LinkedIn absence documented ('LinkedIn: no profile found (two searches)')."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a solo independent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (ppolder.com), Instagram (@philipppolder, confirmed right person via web search), Email (mail@philipppolder.com from site footer) all present. LinkedIn documented as not found after two searches."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) tagged. Open Question 3 correctly asks whether to add Web design, since scraper observed design work too. Not a fail; the question surfaces it for Jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (Munich address from site footer). Size: 1. Work Status: Freelance with sources named in AI Notes (site + gallery profiles). Meets multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 estimated (set_by: agent), hedged in AI Notes: 'executes full-stack solo, works alongside creative directors on larger builds. Autonomy 4 estimate (designs and builds independently, hedged).'"
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Notes says 'Worked with David Broner' (Polder's collaboration, not Jonathan's relationship to Polder). Familiarity: Don't know them and Worked Together: Never are valid zero-states here. Scout correctly did not assume Familiarity via the Broner connection."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Notes field (set_by: jonathan) preserved verbatim. AI Notes acknowledges 'Jonathan's note references working with David Broner.' No judgment instructions in the clip note were missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('Autonomy 4 estimate (designs and builds independently, hedged)'). Factual claims grounded in named sources (ppolder.com footer, Siteinspire, web search). Seniority read present: 'Senior independent: executes full-stack solo.'"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-12-17'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. set_by values correct (agent for enriched fields, jonathan for Notes and Capabilities which were set pre-migration)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions and captions scanned; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: Work With? (not yet set), Rating? (not yet set), Capabilities clarification. All conditional and terse."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review as the gate passes."
+    }
+  ],
+  "to": "scraper"
+}

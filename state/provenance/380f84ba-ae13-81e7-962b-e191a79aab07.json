@@ -25,7 +25,7 @@
     "Entry Status": {
       "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-16T18:08:56",
+      "verified_at": "2026-06-20T10:46:58",
       "set_by": "agent"
     },
     "Source": {
@@ -137,6 +137,12 @@
       ],
       "source_url": null,
       "verified_at": "2026-06-16T15:29:25",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "Work Status for solo founder-creatives (your question). Three options:\n\nA) Treat solo operators as Freelance. A 1-person studio whose principal still does the work is functionally a freelancer; reserve \"Studio\" for teams of 2+. Simplest, no schema change. Julen (solo, still creates) becomes Freelance.\n\nB) Keep \"Studio\" but use Autonomy + AI Notes to flag hands-on vs directs-only. Studio stays the label for anyone who founded/runs a practice; the does-he-still-make question lives in the note.\n\nC) Add a new option (e.g. \"Founder\") to split the maker-founder from the manages-only founder. Needs a Notion option add.\n\nMy recommendation: A. It captures your point (Julen is basically a freelancer), keeps the schema clean, puts the founder framing in AI Notes, and catches a director-who-doesn't-make via Work With? + Autonomy rather than Work Status. If you pick A, I will set him to Freelance and apply the rule DB-wide (solo = Freelance, Studio = 2+ team). Which option?\n",
+      "source_url": null,
+      "verified_at": "2026-06-20T10:46:58",
       "set_by": "agent"
     }
   }

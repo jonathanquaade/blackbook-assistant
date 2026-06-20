@@ -1,0 +1,111 @@
+{
+  "page_id": "162f84ba-ae13-819b-9b54-e7bee1523db9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T02:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 work images span 6+ distinct projects: Joi planner, Coffee macOS tracker, Spotify Big Sur concept, Must 2 iOS, Must Awards web, Ayyo Movies iOS, Fines iOS, Must timeline GIF. No repeated-angles problem."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Must 2 has two shots (overview + detail screens); Joi shows interior task-list UI, not just a hero. Not cover-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Product design; all captured images are mobile/desktop app UI screens matching that capability exactly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as asekachov.com homepage (name, bio, experience visible). site-02.png IG shot is rejected with documented throttle reason, queued to ig-queue.json with page_id + ig_url + reason. Sanctioned exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every non-rejected manifest entry has a caption naming the project and a link to source. No anonymous images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Source pages are Dribbble shots and Framer site, neither of which had embeddable YouTube/Vimeo on the specific project pages used. GIF animation captured. No embed opportunity missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "WeTransfer work absence is implicitly accounted for (NDA context for a Sr PD role is standard). IG throttle documented in manifest reject_reason + ig-queue.json. AI Notes states no public email found."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (asekachov.com), Instagram (@alta1r, confirmed via direct link from his site), LinkedIn (linkedin.com/in/asekachov) all present. Email absence documented in AI Notes as searched and not found."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Product design set by Jonathan (provenance set_by jonathan). Open Question asks about re-sorting to Digital product design. Correct handling of a locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands (site + Awwwards, Behance stale documented), Size 1, Work Status Freelance. Multi-source resolution documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes: founder running own products end to end. Grounded in work history."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "No clip note states a relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are safe defaults with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Original clip was a bare URL entry; no instructions to act on beyond enrichment. Source reflects clip date 2024-12-20."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority read present (~13 yrs, very senior). Autonomy reasoning stated. Country source conflict documented. IG handle verification documented. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-12-20'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with set_by values. Capabilities correctly set_by jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed; no em-dashes found. En-dashes in date ranges only."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question on Capabilities re-sort. Terse. Not asking for already-set fields. No story nudge trigger (relationships all at zero-state)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching pre-gate, which is correct. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. IG context shot sanctioned-exception path followed correctly: rejected in manifest with reason, queued to ig-queue.json, AI Notes documents it. Clipped.md shows older 'Haptic' branding but scraper correctly used current site state (Joi Software, Ask Computer). All checks pass."
+}
