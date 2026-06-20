@@ -1,0 +1,111 @@
+{
+  "page_id": "bd9b58c3-5905-458c-b55e-f9a3692e4fae",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:55:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 specimen images span 4 distinct named typefaces: Basilar (3), Ramboia (3), Montris (3), Staff Wide (3). No repeated project or near-duplicate angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each typeface: Basilar shows Regular/Bold Italic, the multiplexed weight overlay diagram, and Light/Medium; Ramboia shows three distinct display applications; Montris shows the optical-size concept, a letterform close-up, and a text-setting specimen; Staff Wide shows Bold application, an extended-weight warning specimen, and a Q letterform quirk callout."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Entry is tagged Type design; all 12 work images are type specimens from r-typography.com. No historical-reference or third-party inspiration images detected. Type-foundry trap clear."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed r-typography.com homepage with nav bar (TYPEFACES / STORIES / ABOUT / CUSTOM). site-02.png: confirmed instagram.com page showing r_typography handle and grid behind a cookie-consent modal; the Instagram chrome and handle are clearly visible. Both captions match the actual pages."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions naming the typeface and a source link to the relevant r-typography.com font page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Type foundry: no video/audio work expected. No embedded video needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is fully present from the foundry site. No source was blocked or left unexplored without documentation."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Foundry. Correct per CLAUDE.md definition (type house)."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.r-typography.com/ (set). Instagram: https://www.instagram.com/r_typography/ (set, handle confirmed against site-02.png). LinkedIn: absent, documented in AI Notes ('No LinkedIn company page found; foundry only lists Instagram and BlueSky on their contact page'). Email: info@r-typography.com (set)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Type design]. Correct and sufficient for a type foundry."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Portugal (correct, Porto confirmed in AI Notes). Size = 2-10 (two named founders: Rui Abreu + Catarina Vaz). Work Status = Studio (independent foundry, multi-source consistent). AI Notes names sources: r-typography.com/about, r-typography.com/contact, Fontstand, Fonts In Use."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5 (set_by agent). Founder-run independent foundry, 15+ years, correct ceiling. Reasoning implicit in AI Notes seniority read."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? = Unvetted, Worked Together = Never, Familiarity = Don't know them) are consistent with no relationship signal in the clip note or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-02-23'. No relationship facts or special instructions detected in clip note. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert only verifiable facts (founding year, founders' names, typeface names, awards, email, contact page). Seniority read ('Senior/founder-level') is grounded in 15+ yr track record. Autonomy = 5 with agent set_by. No unhedged inferences detected. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-02-23'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/bd9b58c3-5905-458c-b55e-f9a3692e4fae.json with all touched fields recorded. All set_by values are 'agent' (appropriate: no jonathan-locked fields overwritten). No field below 0.8 confidence detected."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field scanned: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. Appropriate: no unresolvable ambiguities remain, and conditional rule is met (Rating and Familiarity have non-zero-state defaults that Jonathan sets; nothing to ask that evidence cannot already answer)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is now flipping to Needs Review as gate passes."
+    }
+  ],
+  "to": null,
+  "notes": "Type-foundry trap verified clear: all 12 work images are R-Typography's own specimens from named typefaces. Instagram context shot (site-02.png) has a cookie-consent modal overlaid but the instagram.com chrome and r_typography handle are legible behind it; this is a logged-out IG render artifact, not a mislabeling. Entry is complete and honest."
+}

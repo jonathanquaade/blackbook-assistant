@@ -1,0 +1,112 @@
+{
+  "page_id": "7d082f31-ba64-4ec1-a527-5dd834860ea1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 images span 4 distinct ad-film campaigns (thumbnails) + 3 Kander photography series + 3 Tomanova series. No duplicate projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Kander: 2 images each from Yangtze, God's Country, Dark Line. Tomanova: 3 series images + portrait. Goes inside series, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production + Photography. 4 Vimeo ad-film embeds + thumbnails are on-capability; Kander and Tomanova stills are photography. All match."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed real chelsea.com (CHELSEA. logo, nav visible). site-02.png is real instagram.com error page (Profile not available), marked rejected in manifest with rejection_reason, and queued to ig-queue. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 images have captions. tomanova-portrait.jpg caption is thin ('Marie Tomanova: photography, Chelsea roster') but names photographer + links to chelsea.com/roster/marie-tomanova. Borderline acceptable."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present, each paired with a thumbnail image. Entry has 15 images total; not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes and entry exists in ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency with reasoned explanation in AI Notes (rep/production co, not hands-on studio)."
+    },
+    {
+      "id": "B.all-links",
+      "result": "pass",
+      "evidence": "Website, Instagram (candidate handle, unverified, queued), LinkedIn, Email all populated. IG unverifiability is documented and queued per sanctioned path."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Film & video production + Photography match the roster work shown."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US+UK (multi-office, hedged). Size 11-40 (estimated). Work Status Studio (org is the producing entity). AI Notes names sources for Work Status."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "fail",
+      "evidence": "Autonomy field is absent from the entry and AI Notes do not include an estimate or an explicit note that Autonomy is inapplicable for this org type. For an owner-run production company, an Autonomy read (e.g. 5, fully independent) should be set_by agent with reasoning, or AI Notes should explicitly state why it is skipped.",
+      "fix": "Set Autonomy (suggest 5: owner-run by Lisa Mehling, no parent company) with set_by agent, and add one sentence of reasoning to AI Notes."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "No clip note states relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No instruction text in clip note beyond entity identity. Source set correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size, Type and IG handle all hedged. Seniority read present (Lisa Mehling, owner-run). Autonomy reasoning is the gap but is captured under B.autonomy."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-04-22'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "fail",
+      "evidence": "All provenance records have source_url: null. Facts including Email (lisa@chelsea.com), LinkedIn, Country, Size and Work Status have no traceable source URL recorded. A future session cannot re-verify without knowing where these values came from.",
+      "fix": "Populate source_url in each provenance field with the URL where that fact was confirmed (e.g. chelsea.com for Email/Country, linkedin.com/company/chelsea-pictures/ for LinkedIn, a web source for Size)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No unresolved fields requiring Open Questions. IG status routed correctly to ig-queue and AI Notes, not as an Open Question."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching; awaiting gate. No premature Needs Review flip."
+    }
+  ],
+  "to": "scraper"
+}

@@ -2,24 +2,23 @@
   "page_id": "d4ab88fc-e771-4b6b-aa20-7a5a2f968329",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 uploaded images span 5 distinct typefaces: Modern Gothic (site-01, 02, 03), Youth (site-05, 07), Rhetorik Sans (site-09, 10), Society (site-11, 13), Rhetorik Serif (site-18). Good spread across the catalog."
+      "evidence": "11 uploaded images span 5 distinct typefaces: Modern Gothic (site-01, 02, 03), Youth (site-05, 07), Rhetorik Sans (site-10, site-19), Society (site-11, site-20), Rhetorik Serif (site-18). Good spread across the catalog."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Entry goes inside typefaces: includes proof sheets (site-01), letterform construction diagrams (site-02, site-07, site-11), in-use/promotional specimens (site-03, site-05, site-18). Not just hero covers."
+      "evidence": "Entry goes inside typefaces: proof sheets (site-01), letterform construction diagrams (site-02, site-07, site-10, site-19, site-20), in-use/promotional specimens (site-03, site-05, site-11, site-18). Not just hero covers."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Two uploaded images are historical reference material rather than All Caps Type specimens. site-09.png (captioned 'Rhetorik Sans') shows historical type specimen cards with handwritten annotations and Scandinavian ligatures (næncen, HAEHOCH) -- this is a historical printing reference from the Rhetorik inspiration section, not an All Caps Rhetorik Sans specimen. site-13.jpg (captioned 'Society') shows three vintage Typografia magazine covers from 1962 and 1973 -- this is Czech historical typography reference from the Society inspiration section, not an All Caps Society specimen. The scraper correctly rejected 4 other reference/cartoon images (site-04, site-06, site-08, site-12, site-16) but missed these two. Both need to be rejected in the manifest and removed from the Notion upload.",
-      "fix": "In manifest.json: mark site-09.png and site-13.jpg as rejected with reason 'Historical type reference/inspiration material from the foundry page, not an All Caps Type specimen'. Remove them from the Notion Images property. Replace with actual Rhetorik Sans and Society specimens from the same typeface pages (the foundry's own usage examples, not the historical references they drew inspiration from). Verify the replacement images show the foundry's own type, not source material."
+      "result": "pass",
+      "evidence": "Attempt-1 fail resolved. site-09 (vintage Scandinavian specimen cards) and site-13 (Typografia magazine covers 1962/73) are both marked rejected in manifest.json with documented reasons and are absent from the Notion Images property. Replacements verified by opening the actual files: site-19.png is a Rhetorik Sans letterform construction diagram (g, e, b, c, s on a grid overlay, from allcaps.imgix.net/technical/Rhetorik04a.png) and site-20.png is a Society letterform comparison grid (r, n, y forms across 4 style variants, from allcaps.imgix.net/society/06/05_society_img_new.png). Both are the foundry's own type design work. All 11 uploaded images are genuine All Caps Type specimens matching the Type design capability."
     },
     {
       "id": "A.context-shots",
@@ -34,7 +33,7 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Type foundry; no video/audio work expected. No embeds needed."
+      "evidence": "Type foundry; no video or audio work expected. No embeds needed."
     },
     {
       "id": "A.absence-explained",
@@ -49,7 +48,7 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (https://www.allcapstype.com/), Instagram (https://www.instagram.com/allcapstype/), Email (mail@allcapstype.com) all set. LinkedIn documented as absent (not listed on their information page; search unavailable at capture time). AI Notes mentions this; acceptable for a small foundry with no LinkedIn presence."
+      "evidence": "Website (https://www.allcapstype.com/), Instagram (https://www.instagram.com/allcapstype/), Email (mail@allcapstype.com) all set. LinkedIn documented as absent in AI Notes (not on their information page; acceptable for a small foundry)."
     },
     {
       "id": "B.capabilities-tagged",
@@ -59,27 +58,27 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = Czech Republic; Size = 2-10; Work Status = Studio. AI Notes mentions Prague and Berlin offices; Germany being absent from Country is a minor gap but not a clear FAIL without confirmation of a permanent Berlin office vs one founder's location. Work Status resolution sources cited in AI Notes."
+      "evidence": "Country = Czech Republic; Size = 2-10; Work Status = Studio. Sources cited in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 5 (set_by agent). Reasoning in AI Notes: founder-led studio, they own and run the practice. Appropriate for a foundry owned and operated by its founders."
+      "evidence": "Autonomy = 5 (set_by agent). Reasoning in AI Notes: founder-led studio, they own and run the practice."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No evidence in the entry contradicts these zero-states."
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No evidence contradicts these zero-states."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was minimal (Web clipper, 2024-03-06). No special instructions in the name field. Nothing to act on beyond standard enrichment."
+      "evidence": "Clip note was minimal (Web clipper, 2024-03-06). No special instructions to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes include award claims sourced to named awards (Swiss Design Awards, Morisawa, Brno Biennale) and cite sources. Founder names stated as fact (verifiable from their site). Seniority/Autonomy read included. No unsupported assertions. No em-dashes."
+      "evidence": "Award claims sourced to named awards. Founder names verifiable from their site. Seniority and Autonomy read included. No unsupported assertions. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present at state/provenance/d4ab88fc-e771-4b6b-aa20-7a5a2f968329.json. All touched fields recorded with set_by and verified_at."
+      "evidence": "Provenance file present at state/provenance/d4ab88fc-e771-4b6b-aa20-7a5a2f968329.json."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,12 +98,12 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions is empty. No unresolved conditional questions needed: judgment fields are at zero-states with no contradicting evidence, and there is no relationship signal triggering the story nudge."
+      "evidence": "Open Questions empty. No unresolved conditional questions needed."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is currently Enriching. Status will be set by this reviewer only on pass. Held at Enriching pending the two reference-image fixes."
+      "evidence": "Flipped to Needs Review on this pass."
     }
   ],
   "to": "scraper"

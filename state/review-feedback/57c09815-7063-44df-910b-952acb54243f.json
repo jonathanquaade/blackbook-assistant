@@ -1,0 +1,111 @@
+{
+  "page_id": "57c09815-7063-44df-910b-952acb54243f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T09:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects: Candy Factory, Chanel Next Prize, Nine Orchard, Lenny Steinberg, George Lois, Chanel La Pausa (film), Artists I (photography). No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Nine Orchard has a city exterior thumb + a hotel interior still (genuine depth). Artists I has cover + two spread interiors. Candy Factory has thumb + still that are near-identical (same building exterior, same angle, one with The New Yorker watermark and one without) - borderline but not a hard fail given the watermarked version serves an editorial-context purpose."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "6 Vimeo/YouTube embeds with thumbnails cover Film and video production. Artists I photography book spreads cover Photography. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed cottage8films.com homepage (nav shows COTTAGE EIGHT FILMS, Candy Factory + Lenny Steinberg on grid). site-02.png: confirmed Instagram.com profile for @cottage8films showing Cory Jacobs bio and matching grid."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest images have captions naming the project and a link to the project page on cottage8films.com."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 embeds (1 YouTube for Candy Factory, 5 Vimeo for Chanel Next Prize, Nine Orchard, Lenny Steinberg, George Lois, Chanel La Pausa). Each embed is preceded by a thumbnail image and has both caption and link. Entry has 13 images total, not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No source is flagged as unavailable; the work captured is substantive."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small partner-led production company."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn is absent and there is NO documentation anywhere (AI Notes, provenance, Open Questions) that it was searched and genuinely not found. The spawn prompt described it as 'LinkedIn documented absent' but the AI Notes make no mention of LinkedIn. For a NYC studio founded 2015 with commercial clients (Chanel, The New Yorker), a LinkedIn company page almost certainly exists. A missing-link is a FAIL unless the search is shown.",
+      "fix": "Search 'Cottage 8 Films linkedin' and 'cottage8films linkedin' to find the company LinkedIn page (or either partner's page). If genuinely absent after that search, add one sentence to AI Notes: 'LinkedIn: no company page found; Cory Jacobs and Jason Schmidt have personal pages at [URLs] / no pages found.' Then the field can remain empty with documented evidence."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film and video production + Photography per TAXONOMY.md; both are demonstrated in the captured work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "US, 2-10, Studio. Sources cited in AI Notes (about page, web search, Wallpaper). Multi-source logic documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes (partner-led boutique, senior principals, concept-through-post capability)."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; clip note had no relationship facts or instructions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a plain website body dump of project names only (archived to clipped.md). No instructions or relationship facts present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (founded 2015, partners named, Wallpaper credit). Autonomy inference is hedged ('partner-led boutique, so high autonomy'). Seniority read is present. No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-03-07'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by and verified_at. source_url is null on most fields (general sources in AI Notes rather than per-field URLs) but this is common for studio-level research and not a hard block."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes confirmed em-dash free programmatically."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No outstanding terse questions needed beyond the LinkedIn gap (addressed under B.all-findable-links)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching pending this review gate. Reviewer has not yet flipped it."
+    }
+  ],
+  "to": "scraper"
+}

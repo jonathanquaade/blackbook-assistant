@@ -2,34 +2,33 @@
   "page_id": "9111af77-8f96-4b91-a138-b7c73743d974",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 work images span 3 distinct named projects: Pronoun, Electric Objects, Dead Bookstore. No duplicate angles of a single project."
+      "evidence": "8 work images span 3 distinct named projects: Pronoun/Vook renaming, Electric Objects, Dead Bookstore. No duplicate angles of a single project."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: process slides (pros/cons analysis, domains/trademark clearance for Pronoun; brand foundation copy and positioning line for Electric Objects; brand mark and tagline slide for Dead Bookstore), not just hero covers."
+      "evidence": "Goes inside projects: process slides (pros/cons analysis, domains/trademark clearance for Pronoun/Vook; brand foundation copy and positioning line for Electric Objects; brand mark and tagline slide for Dead Bookstore), not just hero covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities: Copywriting. All captured slides show naming rationale, brand voice copy, and tagline work. Website context shot shows his portfolio nav (Names 31, Logos 34, Products 27, Pre-Brands 18) confirming naming is his core output. Two essay bookmarks on naming methodology are on-capability."
+      "evidence": "Capabilities: Copywriting. All captured slides show naming rationale, brand voice copy, and tagline work. Two essay bookmarks on naming methodology are on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-07.png) confirmed as pieratt.com. IG context shot (site-08.png) confirmed as instagram.com/pieratt with cookie consent modal blocking grid; marked rejected:true in manifest, rejection reason documented, queued in state/ig-queue.json. Sanctioned throttle exception applies."
+      "evidence": "Website context shot (site-07.png) confirmed as pieratt.com. IG context shot (site-08.png) marked rejected:true, rejection reason documented (cookie consent modal), queued in state/ig-queue.json. Sanctioned throttle exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-01.png is captioned 'Pronoun naming, pros and cons analysis slide' but the image footer reads 'Internetland - Vook renaming'. site-03.png is captioned 'Pronoun naming, domains and trademark clearance slide' but the image footer also reads 'Internetland - Vook renaming'. Both images are from a different project (an Internetland/Vook renaming engagement) and are mislabeled as Pronoun work. This is a factual caption error, not a taste issue.",
-      "fix": "Fix captions for site-01.png and site-03.png: caption them as 'Internetland (Vook renaming), pros and cons analysis slide' and 'Internetland (Vook renaming), domains and trademark clearance slide' with link set to pieratt.com/internetland (or the correct project URL). Confirm the source_url in manifest.json matches the actual project page, not /pronoun. If these slides are genuinely from pieratt.com/pronoun but the footer labeling is confusing, verify by visiting that URL and confirming."
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. site-01.png opened: footer reads 'Internetland - Vook renaming', content is Advantages/Disadvantages for the name candidate 'Pronoun'. Caption now reads 'Pronoun (Vook renaming), pros and cons analysis for Pronoun name candidate' — correct, Pronoun was the name being evaluated in a Vook/Internetland engagement. site-02.png: shows 'Pronoun / Power to the Authors' slide; caption 'Pronoun (Vook renaming), final name reveal: Power to the Authors' — matches exactly. site-03.png opened: footer reads 'Internetland - Vook renaming', content is Domains and Trademark for pronoun.com/.me/.am; caption 'Pronoun (Vook renaming), domains and trademark clearance for Pronoun' — correct. All three captions now accurately identify the project. No uncaptioned or mislabeled images remain."
     },
     {
       "id": "A.embeds-for-video-audio",
@@ -49,7 +48,7 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website: pieratt.com. Instagram: instagram.com/pieratt (identity confirmed in site-08.png header: 'pieratt / Ben Pieratt'). Email: ben@pieratt.com. LinkedIn: documented as genuinely not findable (site lists only Twitter/X and Tumblr; WebFetch to linkedin.com returns 999). LinkedIn absence is not a skipped search, it is a documented block."
+      "evidence": "Website: pieratt.com. Instagram: instagram.com/pieratt (confirmed). Email: ben@pieratt.com. LinkedIn: documented as genuinely not findable (site lists only Twitter/X and Tumblr; WebFetch to linkedin.com returns 999)."
     },
     {
       "id": "B.capabilities-tagged",
@@ -69,17 +68,17 @@
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Notes says 'Naming also worked with germany guy who helped recruit me'. Zero-states (Worked Together: Never, Familiarity: Don't know them) are set on Pieratt himself, not the germany contact. Notes does not say Jonathan worked WITH Pieratt, only that someone helped recruit him. Zero-states for Pieratt hold. Open Questions asks Work With? and Rating, leaving judgment to Jonathan."
+      "evidence": "Notes says 'Naming also worked with germany guy who helped recruit me'. Zero-states (Worked Together: Never, Familiarity: Don't know them) apply to Pieratt himself, not the germany contact. Notes does not indicate Jonathan worked WITH Pieratt. Zero-states hold."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was 'Web clipper, 2024-04-05'; no explicit instruction text in the Name field beyond the name itself. Source set correctly."
+      "evidence": "Source: 'Web clipper, 2024-04-05'; no explicit instruction text beyond the name. Source set correctly."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedged appropriately: rates noted as 'his own site' sourced. Seniority read present ('Senior, 15+ years'). No bare assertions without grounding. No em-dashes in AI Notes (confirmed by reading the full text)."
+      "evidence": "AI Notes hedged appropriately: rates noted as sourced from 'his own site'. Seniority read present ('Senior, 15+ years'). No bare assertions without grounding. No em-dashes in AI Notes."
     },
     {
       "id": "D.source-filled",
@@ -94,17 +93,17 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions (live entry), and captions reviewed: no em-dashes found in fields written for Jonathan. Provenance Open Questions field contains an em-dash in an older draft value but the live Notion field does not."
+      "evidence": "AI Notes, Open Questions, and captions reviewed: no em-dashes found in fields written for Jonathan."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions: '1. Work With? 2. Rating? (ex Partner-Dream)'. Terse, conditional (no fields already set), context added for Rating question. Story nudge: Notes has content, but it does not indicate Jonathan worked with Pieratt personally, so the story nudge does not trigger."
+      "evidence": "Open Questions: '1. Work With? 2. Rating? (ex Partner-Dream)'. Terse, conditional, context added for Rating. Story nudge does not trigger (Notes does not indicate Jonathan worked with Pieratt personally)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching as expected pre-gate. Reviewer holds flip to Needs Review pending scraper fix."
+      "evidence": "Entry in Enriching pre-gate; reviewer flips to Needs Review on this pass."
     }
   ],
   "to": "scraper"

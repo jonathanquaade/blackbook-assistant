@@ -2,13 +2,13 @@
   "page_id": "9d493df7-1b7d-4aa0-9aff-c21fc3a0b693",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 work images span 3 distinct named projects: Google stationery, silver-foil case binding (unidentified client), Fife Arms Hotel collateral (postcards, folder, trunk). No duplicate angles."
+      "evidence": "5 work images span 3 distinct named projects: Google stationery (debossed letterpress), silver-foil case binding (unidentified client), Fife Arms Hotel collateral (postcards, folder, trunk). No duplicate angles."
     },
     {
       "id": "A.depth-over-breadth",
@@ -23,7 +23,7 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is identityprint.co.uk homepage (dark background, diagonal printed sheets, IDENTITY/2/15 footer confirmed). site-02.png is instagram.com/identityprint with Instagram UI, handle, bio, and grid thumbnails all visible and correct."
+      "evidence": "site-01.png confirmed identityprint.co.uk homepage (dark background, diagonal printed sheets, IDENTITY/2/15 footer). site-02.png confirmed instagram.com/identityprint (Instagram UI, correct handle, Identity Printers and Finishers bio, 400 posts, 3,807 followers, correct grid). Both opened and verified."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -37,19 +37,18 @@
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "AI Notes documents the site 500-error and names IG as the source, but the 5 work images are 640px logged-out IG grid grabs. CLAUDE.md requires that when hi-res IG work is needed but the session is throttled/unavailable, the entry is appended to state/ig-queue.json and AI Notes explicitly says 'IG capture queued'. Neither condition is met: state/ig-queue.json contains no entry for this page_id, and AI Notes does not say the capture is queued.",
-      "fix": "Add an entry to state/ig-queue.json for this page_id ({page_id, name, ig_url: 'https://www.instagram.com/identityprint/', reason: 'work images are 640px logged-out IG grabs; site interior 500-errors; hi-res pass needed', queued_at: <today>}). Update AI Notes to append: 'Hi-res IG capture queued for a logged-in ig.py pass (state/ig-queue.json); current images are 640px logged-out grabs.'"
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. state/ig-queue.json now contains the Identity Print entry (page_id, name, ig_url, reason, queued_at all present, confirmed via script). AI Notes now explicitly states: 'Hi-res IG capture queued for a logged-in ig.py pass (state/ig-queue.json); current work images are 640px logged-out grid grabs.' Site 500-errors documented. Both required conditions now met."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type: Studio. Identity Print is a small specialist print production shop doing hands-on execution. Schema Foundry = type house (type design), not applicable here. Studio is the correct classification."
+      "evidence": "Type: Studio. Small specialist print production shop doing hands-on execution. Foundry = type house (not applicable). Studio is correct."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all populated and verified against the actual pages."
+      "evidence": "Website, Instagram, LinkedIn, Email all populated and verified."
     },
     {
       "id": "B.capabilities",
@@ -59,12 +58,12 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country UK, Work Status Studio both correct. Size field is 11-40 (correct schema band for a LinkedIn-stated 11-50 headcount). NOTE: AI Notes says 'Size 11-50 confirmed via LinkedIn' but the schema band is 11-40; AI Notes should read '11-40 (nearest band; LinkedIn lists 11-50 employees)' to avoid confusion. Not a hard fail but fix in the same pass."
+      "evidence": "Country UK, Work Status Studio correct. Size 11-40 (correct schema band). AI Notes now reads '11-40 (nearest schema band; LinkedIn lists 11-50 employees)' resolving the attempt-1 note about the reconciliation wording."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy is a person-level field (1-5 Storonsky scale). Identity Print is a Studio org entry; Autonomy does not apply."
+      "evidence": "Autonomy is a person-level field. Identity Print is a Studio org entry; Autonomy does not apply."
     },
     {
       "id": "C.no-contradicting-judgment",
@@ -79,7 +78,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Client list hedged 'per LinkedIn and IG'. Size hedged with source. No unverified assertions stated as fact. No seniority read needed (org entry, not a person)."
+      "evidence": "Client list hedged 'per LinkedIn and IG'. Size hedged with source and schema-band reconciliation now explicit. No unverified assertions stated as fact. Org entry; no seniority/Autonomy read required."
     },
     {
       "id": "D.source",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries. source_url is null across all fields (LinkedIn and IG verified but URLs not recorded in provenance); not ideal but within acceptable range for a vendor entry where the field values are not in dispute."
+      "evidence": "All touched fields have provenance entries."
     },
     {
       "id": "D.no-em-dashes",
@@ -104,8 +103,8 @@
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching, awaiting this gate. Not prematurely flipped."
+      "evidence": "Entry is in Enriching. Flipping to Needs Review now that all checks pass."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

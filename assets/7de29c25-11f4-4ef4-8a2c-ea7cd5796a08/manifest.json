@@ -13,7 +13,9 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/reedwords/",
     "captured_at": "2026-06-21",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "IG headless blocked (Something went wrong error page); queued to state/ig-queue.json for logged-in ig.py grab"
   },
   {
     "file": "site-03.jpg",
@@ -76,7 +78,9 @@
     "source_url": "https://www.reedwords.com/_next/image",
     "caption": "Penhaligons tone of voice and product copy, Reed Words",
     "link": "https://www.reedwords.com/work/a-bit-on-the-nose",
-    "captured_at": "2026-06-21"
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "File content is SVG/XML (corrupted download), not a valid image"
   },
   {
     "file": "site-12.jpg",
@@ -109,8 +113,26 @@
   {
     "file": "site-16.jpg",
     "source_url": "https://www.reedwords.com/_next/image",
-    "caption": "KHOY naming (Finnish sofa brand), Reed Words",
+    "caption": "KHOY naming: before (KOTA) and after (KHOY), Reed Words",
     "link": "https://www.reedwords.com/work/khoy",
     "captured_at": "2026-06-21"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://www.reedwords.com/work/formula-1",
+    "caption": "Formula 1 brand voice case study, Reed Words",
+    "link": "https://www.reedwords.com/work/formula-1"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://www.reedwords.com/work/this-plant-based",
+    "caption": "THIS plant-based tone of voice case study, Reed Words",
+    "link": "https://www.reedwords.com/work/this-plant-based"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://www.reedwords.com/work/a-bit-on-the-nose",
+    "caption": "Penhaligons tone of voice case study, Reed Words",
+    "link": "https://www.reedwords.com/work/a-bit-on-the-nose"
   }
 ]

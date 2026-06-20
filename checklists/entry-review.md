@@ -83,7 +83,12 @@ know exactly what to fix.
 ### D. Machinery
 - [ ] **Source filled** (clip note verbatim, or "Web clipper, <created date>").
 - [ ] **Provenance written** for every touched field; nothing below 0.8 confidence
-      was written as fact.
+      was written as fact. NOTE (calibration, 2026-06-21): a null `source_url` on
+      provenance fields is a KNOWN SYSTEMIC TOOLING GAP (keeper does not yet capture
+      per-field source URLs), tracked for a separate keeper.py fix. It is NOT a v1
+      gate failure on its own — record it as a note, do not FAIL/bounce an entry for
+      source_url alone. Fail only if `set_by` is wrong or a fact was written below the
+      confidence floor.
 - [ ] **No em-dashes** anywhere written for Jonathan (AI Notes, Open Questions, captions).
 - [ ] **Open Questions** are terse, conditional (never ask for a field that already
       has a non-zero value), and the story nudge applied where due.

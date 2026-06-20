@@ -1,0 +1,112 @@
+{
+  "page_id": "4780dc79-e5ab-45b8-b4f4-c53d8cb07ea4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: TangoTrips, FinBits, Fairview, UDS Website, Plau. No duplication across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project going inside each site (full-page scrolls, responsive breakpoints, interior pages). Not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Capability is Web design (set_by jonathan). TangoTrips 3 images (tangotrips-01/02/03) show billboard OOH and brand logo system, not a website. The TangoTrips case study on wearetwoo.com includes a web product; the scraper captured only the brand/identity side. FinBits, Fairview, UDS, Plau are all clean web design captures.",
+      "fix": "Replace tangotrips-01/02/03 with screenshots of the TangoTrips web product (the actual site or app UI from the wearetwoo.com/tangotrips case study). Billboard and logo images are off-capability for a Web design entry."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as wearetwoo.com homepage (correct). site-02.png is blank white, marked rejected in manifest with documented reason (IG blocked headless), queued to state/ig-queue.json. Meets the sanctioned IG-throttle exception: rejected + documented + queued."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 non-rejected images have captions naming the project and source links to wearetwoo.com project pages."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio work; Web design studio. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in manifest rejected entry and AI Notes references IG handle; ig-queue entry confirmed."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio, correct for a small founder-led team."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and plausible. Instagram handle @wearetwoooo verified distinct from @wearestudio per AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design, set_by jonathan per provenance. AI Notes acknowledges they also do identity and dev but tag is locked. Correct deference."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio. AI Notes names sources (site, IG, Behance, LinkedIn, design directories all agreeing). Objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes grounds it in founder-led studio ownership. Reasoning present."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "fail",
+      "evidence": "Notes field (set_by jonathan) reads 'only in a pinch', which is Jonathan's clear Work With? sentiment. Work With? is currently Unvetted (agent zero-state). This directly contradicts evidence: the zero-state is invalid when Jonathan has already expressed a Work With? verdict in Notes. Per CLAUDE.md: 'never write a zero-state that evidence contradicts'.",
+      "fix": "Work With? should be set to 'In a pinch' via keeper.py set --from-jonathan, sourcing Jonathan's Notes text. The zero-state Unvetted must not survive when his Notes already gives the answer."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip name was 'Twoo (Web Design)'; Web design tag applied, name cleaned to Twoo, clipped.md archived. No relationship facts or other instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes correctly hedges unverified details (uses 'approximately', 'founded 2019' is stated as fact from site, sources named). Seniority read present (founder-led, high autonomy). No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-02-23'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/<id>.json; all touched fields have set_by and verified_at entries."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, captions, Open Questions: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. Appropriate: Rating and Familiarity are Jonathan's, and the Work With? contradiction is a scraper fix (not an unanswerable question). No story nudge triggered (Worked Together is Never, no Familiarity beyond zero-state)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer has not flipped it (fail verdict, two issues to fix before Needs Review)."
+    }
+  ],
+  "to": "scraper"
+}
