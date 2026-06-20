@@ -1,0 +1,30 @@
+{
+  "page_id": "195f84ba-ae13-81a8-9f8a-e09a3d9cefb4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:42:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "6 distinct projects across Cadbury, Toblerone, White Claw, Oreo, Tecate, Tate and Lyle; 3 images each, no duplicate projects"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Each project shows spread/grid/interior shots (split views, packaging grids, campaign spreads, mobile screens) rather than single hero covers"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Capabilities: Brand strategy, Identity systems, Graphic design, Web design. Work: packaging identity systems (5 projects) + Oreo.com web design. All on-capability"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png confirmed: wearebulletproof.com homepage with BULLETPROOF logo and nav. site-02.png confirmed: instagram.com/@bulletproofintl profile with correct handle, bio, and follower count visible"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 20 manifest entries have named project captions and source links to the specific case study page"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Brand/packaging agency; work is visual. No video skipped in manifest; no embed opportunities noted"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "18 work images across 6 projects; entry not thin"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Agency; correct (353 employees, 8 global offices, full-service brand agency)"},
+    {"id": "B.links-present", "result": "pass", "evidence": "Website, Instagram (verified correct via screenshot), LinkedIn, Email all present"},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Brand strategy, Creative direction, Graphic design, Identity systems, Web design; all supported by actual work captured"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "7 countries matching 8 offices; Size 100+ (353 employees confirmed); Work Status Studio appropriate for org entity; AI Notes names sources"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5 with reasoning; AI Notes acknowledges field is person-focused but retains 5 as appropriate for a fully autonomous org entity"},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Clip note was pure title text with no relationship claims; zero-states do not contradict any evidence"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip Name was agency tagline only; cleaned to Bulletproof; archived to clipped.md"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Self-description flagged as such; employee count hedged with date; no unverified assertions; no em-dashes"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: Web clipper, 2025-02-09"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields have provenance with set_by and verified_at"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes and all captions checked; no em-dashes found"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No Open Questions needed; agency entry with no relationship facts; all findable metadata present"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Currently Enriching; flipping to Needs Review as part of this gate pass"}
+  ],
+  "to": null
+}

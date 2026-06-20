@@ -1,0 +1,110 @@
+{
+  "page_id": "195f84ba-ae13-8163-9446-c6624963c2b4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:41:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Nike Football Trial Zone, International Rugby Experience, Liquid I.V. Global Campaign, Man City Arndale Store; 3 images each."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "IRE shows immersive projection room interior and exhibition corridor; Liquid I.V. shows 3D wireframe render process and billboard placements; Man City shows store interior, LED retro wall, and digital kiosk; Nike shows inside the interactive LED tunnel."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: 3D & motion, Creative technology, Spatial & exhibition design, Web design. All four projects are immersive spatial/digital experiences that directly match these tags."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as weareomm.com homepage (OMM logo visible). site-03.png confirmed as instagram.com/weareommagency logged-out profile page (handle visible). site-02.png correctly marked rejected (blank throttled attempt, superseded by site-03)."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a named caption with year and detail, plus a link to the project page on weareomm.com."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Entry is image-based spatial/3D/experiential work; images substantively represent the capabilities. No embed absence is apparent from the captured work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "site-02 rejected attempt is documented in the manifest caption. site-03 is a successful IG context shot; the entry is not IG-absent and no queue entry is needed."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per CLAUDE.md definition (small specialized team, hands-on creative/technical execution)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present and populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Creative technology, Spatial & exhibition design, Web design match the portfolio work shown."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + Netherlands (multi-office confirmed via LinkedIn and Wix archive per AI Notes). Size: 11-40 hedged as estimated. Work Status: Studio with named sources in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes: fully independent studio."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "No clip note relationship facts; zero-states (Never, Don't know them, Unvetted) consistent with cold discovery."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was the page title only (no instructions, no relationship facts). Name cleaned to OMM, Source set to Web clipper date."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size hedged as estimated/unverified. Sources named for Work Status. No em-dashes. Autonomy reasoning present. Studio-level seniority read is appropriate (not a Person entry)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2025-02-09."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all fields covered; set_by agent throughout. source_url is null across all fields (a minor gap common to the batch, not a new bar without Jonathan confirmation)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and captions checked; colons, commas, semicolons only."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open ambiguities requiring questions; all resolvable fields resolved from public sources. No story nudge triggered."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching; will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper"
+}

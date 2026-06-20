@@ -1,85 +1,84 @@
 {
   "page_id": "165f84ba-ae13-814b-888f-d7047fabfb3d",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-20T01:30:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-20T01:42:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "9 active images across 4 distinct products: Nave, Atelo, Reflet (interfaces.supply templates), charts.supply, Aesthetron AI Figma plugin, Interfaces DS. All distinct."
+      "evidence": "9 active images across 5 distinct products: Nave template, Atelo template, Reflet template, charts.supply, Aesthetron AI Figma plugin, Interfaces DS. No repeated projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Two angles on Nave (full interior + live preview), product UI for charts, plugin UI for Aesthetron, design system homepage for Interfaces DS. Goes inside the products."
+      "evidence": "Nave has two views (hero + live site preview). charts.supply has two (bar chart component + dashboard). Aesthetron shows actual plugin UI. Interfaces DS shows homepage hero. Goes inside products, not only covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities: Digital product design, Frontend development (web), Web design. All images show Framer templates, chart component, Figma plugin UI, design system. On-capability throughout."
+      "evidence": "Capabilities: Digital product design, Frontend development (web), Web design. All images show Framer templates, chart component library, AI Figma plugin, shadcn design system. Fully on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-08.png) confirmed as v2space.net. Instagram absent: @_joshuaguo could not be confirmed as the right person (bio/grid not verified per AI Notes); no IG screenshot attempted, absence documented. Correct behavior per CLAUDE.md (do not attach an unverified handle). No queue entry needed because the handle itself is unconfirmed, not a throttle issue."
+      "evidence": "site-08.png confirmed as v2space.net footer: shows V2SPACE logo, product list, and hello@v2space.net contact. Correctly captioned 'Website'. Instagram absent with documented reason (handle @_joshuaguo unverified; @jshguo is X, not IG). No unverified IG shot attempted."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "Every active image has a named project caption and a source link."
+      "evidence": "Every active manifest entry has a named caption and a source link."
     },
     {
       "id": "A.embeds-video",
       "result": "pass",
-      "evidence": "No video/audio work applicable for this product designer entry."
+      "evidence": "No YouTube/Vimeo on this product designer's entry. No video embeds applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes explains LinkedIn (name too common, no confirmed match) and IG (handle unverified). Acceptable."
+      "evidence": "AI Notes explains LinkedIn (name too common, no confirmed match) and Instagram (handle unverified). Absence documented."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type: Person. Correct; V2SPACE is his brand, not a multi-person studio."
+      "evidence": "Type: Person. V2SPACE is his solo product brand; no multi-person studio evidence."
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "Email field is empty and AI Notes claims 'site has a contact email but it is Cloudflare-protected and not readable as plaintext.' The website context shot already in the manifest (site-08.png) shows 'hello@v2space.net' as plain readable text in the footer. The email was findable from the captured screenshot itself and was not written to the Email field.",
-      "fix": "Set Email field to hello@v2space.net (visible as plain text on v2space.net footer, confirmed in site-08.png). Update AI Notes to remove the 'Cloudflare-protected' claim and note the email was captured from the site footer."
+      "result": "pass",
+      "evidence": "Email now set to hello@v2space.net, confirmed visible as plain text in site-08.png (v2space.net footer). AI Notes no longer claims Cloudflare-protected; correctly notes email captured from site footer. Website set (https://v2space.net/). LinkedIn and Instagram absent with documented reasons in AI Notes."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Digital product design, Frontend development (web), Web design. All verifiable from the work output."
+      "evidence": "Digital product design, Frontend development (web), Web design. All verifiable from shipped products."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK (Contra profile), Size 1, Freelance. Sources named in AI Notes."
+      "evidence": "UK (from Contra profile), Size 1, Freelance (independent, listed on Contra, sells own products, no employer stated). Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, hedged in AI Notes with reasoning."
+      "evidence": "Autonomy 4, set_by agent, hedged in AI Notes: ships own products end-to-end, no first-hand evidence. Seniority read included (5+ yrs estimated from project history)."
     },
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "Zero-states consistent with evidence; no relationship facts in clip note."
+      "evidence": "Zero-states consistent with evidence. Clip note was name-only, no relationship facts."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Clip note was name-only (Joshua Guo | V2SPACE and Joshua Guo (V2SPACE)). No instructions missed."
+      "evidence": "Clip note: 'Joshua Guo | V2SPACE' and 'Joshua Guo (V2SPACE)'. Name-only; no instructions or judgment missed."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Autonomy hedged, seniority read included (5+ yrs estimated), sources noted. One inaccuracy (email claim) is caught under B.links."
+      "evidence": "Inferences hedged (Autonomy, seniority). Verifiable facts stated plainly (Contra, products listed). No Cloudflare false claim. Sources in AI Notes. Seniority and Autonomy paired."
     },
     {
       "id": "D.source",
@@ -89,23 +88,23 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by values. No field written below 0.8 confidence."
+      "evidence": "Provenance file present. Fields have set_by values. No field written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, captions, and Source checked. No em-dashes found."
+      "evidence": "AI Notes, captions, Source reviewed. No em-dashes present."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions empty. All judgment fields at zero-states with no relationship evidence to prompt questions."
+      "evidence": "Open Questions empty. All judgment fields at zero-states; no relationship evidence triggers story nudge."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is Enriching, correct for this gate stage."
+      "evidence": "Entry is Enriching; reviewer is flipping to Needs Review on pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }

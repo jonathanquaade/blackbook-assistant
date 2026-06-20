@@ -1,84 +1,84 @@
 {
   "page_id": "165f84ba-ae13-81bc-b7cb-efca6411ca0b",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-20T01:37:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-20T01:42:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 images across 3 distinct projects: Qoves (2 images), Silencio (3 images), Offtop (2 images) + 1 website context shot. No repeated project angles."
+      "evidence": "8 active images across 3 distinct projects: Qoves (2 UI images), Silencio (3 app screenshots), Offtop (2 app screenshots), plus 1 website context shot. No repeated angles of one project."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside each app: Qoves shows the report viewer UI and feature scoring panel; Silencio shows measurement, map/explore, and user profile views; Offtop shows library and record/lyrics views. Not just hero shots."
+      "evidence": "Goes inside each app: Qoves shows the PDF report viewer UI and feature scoring panel; Silencio shows measurement, map/explore, and user profile/stats views; Offtop shows library and record/lyrics views. Not hero-only shots."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Product design. All 7 work images are mobile/web product UI screenshots. Qoves report viewer and feature scoring, Silencio noise measurement and map screens, Offtop music studio screens - all on-capability digital product UI."
+      "evidence": "Tagged Product design. All 7 active work images are mobile/web product UI screenshots (App Store + Qoves product interface). Face-portrait shots from Qoves CDN correctly rejected in manifest."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is confirmed santos.fyi (shows 'Marcos Santos / Co-Founder Studio Forma' and the full text portfolio). No Instagram handle confirmed at 0.8 confidence (Open Question 3 asks Jonathan to confirm), so no IG context shot is expected - documented absence, not a blocked grab."
+      "evidence": "site-01.png confirmed as santos.fyi homepage (shows 'Marcos Santos / Co-Founder Studio Forma' and 'Based in Italy and Qatar'). No Instagram handle confirmed at 0.8 confidence; absence documented in AI Notes and Open Question 3. No IG context shot expected -- sanctioned path."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 8 active manifest entries have captions naming project and source links. Rejected images also captioned. No anonymous images."
+      "evidence": "All 8 active manifest entries have captions naming project and source links. Rejected entries also captioned with reject reason."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video embeds needed; product design entry with static UI screenshots is appropriate. App Store screenshots do not have video embed equivalents to add."
+      "evidence": "Product design entry using static App Store and CDN screenshots; no video embeds on source pages that were skipped."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents santos.fyi 403, forma.fyi 403, read.cv paywall. Work sourced from App Store CDN and Qoves CDN - honest, documented. Not silently thin: 7 real work images delivered."
+      "evidence": "AI Notes documents santos.fyi 403, forma.fyi 403, read.cv paywall. Work sourced from App Store CDN and Qoves CDN with honest documentation. 7 real work images delivered."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct - individual co-founder, not tagging the studio itself."
+      "evidence": "Type: Person. Correct for individual co-founder."
     },
     {
       "id": "B.findable-links",
-      "result": "fail",
-      "evidence": "Country mismatch found from the scraper's own website context shot. site-01.png (santos.fyi Playwright render) clearly reads 'Based in Italy and Qatar.' The Country field has ['Italy', 'United Kingdom'] and AI Notes say 'Italy and UK.' United Kingdom is incorrect per the most recent source - the site now says Qatar, not UK. The scraper set the wrong country and its own context screenshot contradicts it. Fix: update Country to ['Italy', 'Qatar'] (or ask Jonathan if both are right) and correct AI Notes accordingly."
+      "result": "pass",
+      "evidence": "FIXED from attempt 1: Country now ['Italy', 'Qatar'] matching site-01.png ('Based in Italy and Qatar'). AI Notes corrected to 'Italy and Qatar'. Website, LinkedIn, Email all present. Instagram empty with documented reason and open question."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Product design is the correct capability per TAXONOMY.md. Work captured is all digital product UI. Open Question 2 asks about retagging to 'Digital product design' - reasonable terse question."
+      "evidence": "Product design is correct per TAXONOMY.md. Open Question 2 asks about retagging to Digital product design -- appropriate terse question."
     },
     {
       "id": "B.country-size-workstatus",
-      "result": "fail",
-      "evidence": "Country is wrong (see B.findable-links). Italy is correct; United Kingdom should be Qatar per the live santos.fyi screenshot. Size 1 (person) and Work Status Unknown are defensible and correctly documented."
+      "result": "pass",
+      "evidence": "Country ['Italy', 'Qatar'] confirmed against site-01.png. Size 1 (person). Work Status Unknown correctly documented with multi-source reasoning (Studio Forma co-founder vs. Mobbin role conflict)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3 estimated with hedged reasoning: junior LinkedIn vs. co-founder framing conflict documented. Set_by agent."
+      "evidence": "Autonomy 3, set_by agent, hedged reasoning in AI Notes (junior LinkedIn vs. co-founder framing conflict). Seniority read included."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note stated relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate where evidence does not contradict."
+      "evidence": "No clip note stated relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was 'Web clipper, 2024-12-23' with no relationship or judgment text. No instructions missed."
+      "evidence": "Clip note was plain 'Web clipper, 2024-12-23' with no relationship instructions or judgment statements."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges: 'Mobbin role unconfirmed', 'Autonomy set to 3 (hedged given the junior/co-founder conflict)', 'could not confirm bio/grid match at 0.8'. Seniority read included. No em-dashes found. Sources named."
+      "evidence": "All inferences hedged ('Mobbin role unconfirmed', 'Autonomy set to 3 (hedged)', 'could not confirm bio/grid match at 0.8'). Seniority read included. No em-dashes found."
     },
     {
       "id": "D.source-filled",
@@ -88,25 +88,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with all fields. All set_by agent (except Capabilities which is set_by jonathan - correct, from migration). No field below 0.8 confidence written as fact."
+      "evidence": "All fields have provenance entries. Country updated 2026-06-20T01:39:18, AI Notes updated same timestamp. No field below 0.8 confidence written as fact."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Scanned AI Notes, Open Questions, captions - no em-dashes found."
+      "evidence": "Scanned AI Notes, Open Questions, captions -- no em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "3 terse questions: Work Status ambiguity (Mobbin vs. Studio Forma), Capability retag question, Instagram handle confirmation. None ask for fields already at non-zero values. Conditional and necessary."
+      "evidence": "3 terse questions: Work Status ambiguity (Mobbin vs. Studio Forma), Capability retag, Instagram handle confirmation. None ask for fields already at non-zero values."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching, pending this gate. Status flip is the reviewer's job on pass."
+      "evidence": "Entry was Enriching; flipped to Needs Review by this gate pass."
     }
   ],
-  "failing_checks": ["B.findable-links", "B.country-size-workstatus"],
-  "fix_required": "Country field says ['Italy', 'United Kingdom'] but the scraper's own santos.fyi context screenshot (site-01.png) shows 'Based in Italy and Qatar.' Update Country to ['Italy', 'Qatar'] and correct AI Notes from 'Italy and UK' to 'Italy and Qatar'. If there is any ambiguity (e.g. he may have moved from UK to Qatar), add an Open Question asking Jonathan to confirm. This is a factual error the scraper introduced that its own captured source contradicts.",
-  "to": "scraper"
+  "to": null
 }
