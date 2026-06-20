@@ -1,0 +1,111 @@
+{
+  "page_id": "4e7b4d00-62f7-4b63-aec2-3eead657f562",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images across 6 named projects: Pure Beauty 2026 (3), Vogue Singapore 2026 (2), Polynating 2018 (3), Modern Artifacts 2020 (2), Jo Malone 2019 (2), Loewe 2025 (1). All six visually distinct subject matter, colour palette, and era. No caption repetition flags a contamination problem."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple images inside the Polynating, Pure Beauty, Modern Artifacts, and Jo Malone projects go well beyond hero/cover. Loewe is represented by one shot but that is acceptable given the overall spread."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Photography. All 13 work images are still-life and product photography. No off-capability material (no brand identity, no motion graphics, no sound work)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png shows jessbonham.co.uk homepage (JESS BONHAM title, yellow floral still-life, WORK / PROFILE / SHOP nav) confirmed correct. IG context shot (site-02.png) is marked rejected, rejection reason documents the 'Something went wrong' rate-limit error, and the entry is queued to state/ig-queue.json. This is the sanctioned IG-throttle exception per checklist A.context-shots."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link to the source project page on jessbonham.co.uk. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Photography (still-life), not video or audio. AI Notes mentions a Motion site section but no video embeds were expected for a photographer entry. No missed embeds flagged."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes ('IG capture queued') and in the manifest rejection_reason. ig-queue.json entry confirmed present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual freelance photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: jessbonham.co.uk (canonical). Instagram: instagram.com/jessbonham (verified via site + agency per AI Notes). LinkedIn: linkedin.com/in/jess-bonham-b9b77072 present. Email: not present in the entry. No public email visible on the site from this review; AI Notes does not mention one and no Open Question was raised. This is an acceptable gap for an agency-represented photographer whose contact goes through LGA Management (Works At Link set). Not a fail."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography only. Consistent with her site's work sections (Commercial, Editorial, Personal) and the images captured. Provenance shows set_by: jonathan, so this is his tag, not an agent guess."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Freelance. AI Notes cites 'own portfolio site plus agency representation, no employer (consistent signals)' as the multi-source rationale. Sources are named as required."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes reads 'Established senior commercial photographer, high autonomy (directs her own shoots, agency-represented)'. Reasoning is grounded in observable facts (agency rep, high-end client list, personal project work). Appropriately hedged as inference."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states any relationship, so zero-states are correct and do not contradict evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2022-01-10' indicating no instruction text in the clip note. No --from-jonathan fields were warranted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes states verifiable facts (client list, agency rep, site sections) and hedges the seniority read as observed inference. Includes seniority read and Autonomy reasoning as required by CLAUDE.md. No em-dashes detected."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-01-10'. Present and in the correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/4e7b4d00-62f7-4b63-aec2-3eead657f562.json. All touched fields recorded with set_by, verified_at, and value. source_url is null on several fields; for a personal portfolio site with no single canonical URL per field this is not a blocking issue, but noting it for calibration."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions both checked programmatically. No em-dash character found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. Appropriate: no unresolvable gaps remain (Work Status resolved, links accounted for, capabilities set by Jonathan). Rating and Familiarity are Jonathan's and are correctly left unasked since no clip-note context triggers a conditional."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching at time of review. Will flip to Needs Review on verdict pass."
+    }
+  ],
+  "to": null,
+  "notes": "WordPress contamination trap specifically checked: manifest source_url filenames for vs-01 and vs-02 embed 'VogueSingapore-JBonham-YZone', confirming correct project attribution. All 13 work images opened and visually confirmed to match their captions. No cross-project contamination detected."
+}

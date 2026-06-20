@@ -1,0 +1,111 @@
+{
+  "page_id": "12a9cee6-c525-4b21-96b5-ef93b5835afb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 4 named, genuinely distinct projects: The Nutmeg Trail (book, SE Asian food), Pierogi (Polish dumpling cookbook), Kuda (cocktail spirits brand), Oddbox Crunch Time (veg recipe book). No repeated project or near-identical angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project, all showing interior spreads (specific dishes, serve styling, tabletop details), not hero/cover shots. Kuda images include a moody table scene, a drinks-on-marble scene, and a branded cocktail glass shot, varying in angle and subject."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 work images are food, drink and still-life photography, matching the tagged Photography capability. No graphic design, interiors or off-capability work included."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as olaosmit.com homepage (nav bar reads 'Ola O. Smit', grid shows her food photography). IG context shot attempted twice (site-02.png, site-03.png), both rejected with reason documented (Instagram blocked headless Playwright). Entry queued to state/ig-queue.json (confirmed entry present: page_id 12a9cee6-c525-4b21-96b5-ef93b5835afb). AI Notes states 'IG capture queued'. Sanctioned exception applies per checklists/entry-review.md."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry carries both a caption (project name + year) and a source link. No image has a blank or generic caption. Rejected IG shots are excluded from the Images property upload."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Ola is a photographer; no video/audio work expected. No Vimeo or YouTube present on her portfolio to embed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG capture failure documented in AI Notes and queued. No other dead or gated sources noted. Entry is not silently thin: 12 images from 4 projects is solid depth."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct: individual freelance photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.olaosmit.com/ (canonical). Instagram: https://www.instagram.com/olaosmit/ (verified via site link per AI Notes). LinkedIn: https://www.linkedin.com/in/ola-ostaszewska-smit/ present. Email: ola@olaosmit.com present. All four link types filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography only. Correct: she is a photographer. AI Notes acknowledge she co-runs a magazine (editorial role) but tagging Photography is appropriate for what she 'does' as a hired creative. No disputed tag."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK. Size = 1. Work Status = Freelance. AI Notes documents the objective source resolution: 'Freelance: her own site and IG bio both state London-based freelance photographer (agree); LinkedIn consistent.' Two-source agreement. Sources named."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by agent. Reasoning in AI Notes: '14+ years experience, runs own shoots, co-runs a magazine. Established senior photographer, high autonomy.' Grounded in verifiable facts. Seniority read present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the clip note, which contained no relationship information. The raw clipped Name was 'Ola O Smit Photography', a plain name with no relationship signal. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Ola O Smit Photography', a name-only entry with no instructions, stated facts or relationship context. Name cleaned to 'Ola O Smit', original archived to clipped.md. Nothing missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes assert verifiable facts (BA Fine Art Photography, University of Westminster; co-founder of Table magazine since 2017; work sections listed). Autonomy and seniority estimated but grounded in years of experience and solo practice. No unverified claims stated as fact. Seniority + Autonomy read both present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-01-10'. Date matches created_time in provenance. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/12a9cee6-c525-4b21-96b5-ef93b5835afb.json. All touched fields have set_by, verified_at, and value. No source_url fields populated (acceptable: these are scraped facts from the site, URL could be more explicit, but the AI Notes name the sources). No field appears written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes confirmed free of em-dashes (checked programmatically). No Open Questions written. Captions reviewed: none contain em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. Correct: all judgment fields are at zero-states (appropriate, no evidence to override them), and there are no outstanding unresolvables. Story nudge not triggered (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, as required before the reviewer gate. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. 4 distinct projects, strong depth, all on-capability food/drink photography. Metadata complete. IG context shot properly queued and documented. Ready for Jonathan."
+}

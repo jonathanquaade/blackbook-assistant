@@ -31,3 +31,21 @@ Every browser session appends: timestamp, entries processed, pages visited, file
 - 2026-06-17T09:42:17 — Scraper: Bryce Carson (380f84ba-ae13-8148-ae62-eaa9bd46dd44) — work capture complete. 9 identity/graphic design images from 4 distinct Koto projects (Lyft x2, Tripadvisor x3, Mews x1, Bolt x3) + 2 context shots (Koto website + Koto IG). No personal site (brycecarson.com 404) and no verified personal IG — used Koto employer site + studio IG as context anchors. All work framed as 'at Koto', no individual attribution possible (Koto case studies carry no per-designer credits). Entry left in Enriching for reviewer.
 - 2026-06-18T09:52:49 — Johan Hammarstrom 380f84ba: scraper started work capture pass 2026-06-18
 - 2026-06-18T09:54:25 — Johan Hammarstrom 380f84ba: scraper work capture complete. 9 images + 3 Vimeo embeds (Reklima logo animation 2019, Carrot animated icons 2022, KK Wind Solution brand animation 2015). Projects: Reklima, Carrot, Alotta, Plateful. Context shots: johanhammarstrom.com + heydays.no. No IG (unverified handle, not captured). old.heydays.no password-protected (HTTP 401). No direct motion video confirmed for Alotta but thumbnail from heydays Vimeo channel confirmed shows Alotta counting animation.
+
+## 2026-06-20 — Kensington Leverne (0c2e9992-451c-49ee-b94d-feaaf5617634)
+Pages visited: kensingtonleverne.com/ (probe, shot), /portraits/ (render, 4 images), /interiors/ (render, 4 images), /advertising/ (render, 4 images), instagram.com/kensingtonleverne/ (shot, error page). Downloads: 13 images uploaded to Notion (12 work + 1 website context shot). IG context shot blocked (rate-limited); queued to ig-queue.json. No anomalies beyond IG rate-limit (expected, documented).
+
+## 2026-06-20 Jess Bonham (4e7b4d00-62f7-4b63-aec2-3eead657f562)
+- Pages visited: jessbonham.co.uk (homepage, /work, /work/pure-beauty, /work/vogue-singapore, /work/polynating, /work/modern-artifacts, /work/jo-malone, /work/loewe, /work/marbles-lost, /work/hermes-crazy-carre, /work/paul-smith, /work/gucci, /work/textures-2), instagram.com/jessbonham (blocked)
+- Downloads: 13 full-res JPGs from WP CDN (5 projects), 1 website screenshot
+- IG context shot: blocked by Instagram rate-limit; site-02.png rejected, queued to ig-queue.json
+- WordPress contamination trap: initial scrape.py runs pulled thumbnails from OTHER projects (global DOM); fixed by fetching direct CDN URLs via WebFetch and downloading individually
+- Anomalies: none
+
+## 2026-06-20 — Emily Maye (b3df727c-fb5e-47b8-9edb-598eaced0bdc)
+Pages visited: emilymaye.com (homepage, photographs-overview, photography-projects, /rapha, /tracksmith-spring-summer, /district-vision, /usawaterpolo, /athletes). 15 full-res images downloaded from Squarespace CDN (?format=2500w): 3 each from Rapha, Tracksmith Spring/Summer, District Vision, USA Water Polo, Athletes. Website context shot captured. IG context shot (site-02.png) rejected: headless Playwright served blank loading spinner; @emilymaye queued to state/ig-queue.json. 16 items uploaded to Notion. Entry left in Enriching for reviewer.
+
+2026-06-20 | Jack Orton (c3affe69) | sites: jackorton.co.uk, itsnicethat.com (Anima + Whispering Blooms), companion.fyi (British GQ Sanity CDN) | 14 images uploaded (4 series: Brecon 2026, Anima 2023, Whispering Blooms 2017, British GQ 2023) + website context shot | IG @jackorton__ blocked logged-out, queued to ig-queue.json
+2026-06-20 | Jake Stangel (efb5ecac) | scraper | Pages: jakestangel.com (homepage, Google-org-Impact-Challenge, Rapha-Anthology, Greenhouse, OpenAI), instagram.com/jakestangel | Downloaded: 14 files (12 project images across 4 projects + 2 context shots) | CDN: freight.cargo.site w/750 (max allowed; w/1000+ returns 403) | No anomalies
+
+2026-06-20 | Ola O Smit (12a9cee6) | scraper | Pages: olaosmit.com (homepage, /food_1, /drinks, /restaurants, /books, /people, /makers, /interior) | Downloaded: 13 files (12 project images from 4 projects + 1 website context shot) | CDN: Squarespace ?format=2500w | Projects: The Nutmeg Trail 2021 (3), Pierogi 2021 (3), Kuda 2021 (3), Oddbox Crunch Time 2022 (3) | IG @olaosmit: headless Playwright blocked twice (Something went wrong); queued to ig-queue.json

@@ -1,0 +1,111 @@
+{
+  "page_id": "b3df727c-fb5e-47b8-9edb-598eaced0bdc",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects (Rapha, Tracksmith Spring/Summer, District Vision, USA Water Polo, Athletes) confirmed by opening every image. athletes-01.jpg shows USA-capped swimmers but the Athletes project page is /athletes (editorial, multiple sports) vs /usawaterpolo -- confirmed distinct by athletes-02 (gymnast) and athletes-03 (basketball locker room)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project, each from inside the project (different angles, subjects, moments) -- not just hero covers. Rapha: changing-room interior, desert road, backlit silhouette. Tracksmith: empty track, trail water stop, runner portrait. District Vision: title card, close-up rider portrait, b/w cycling shot."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 work images are sport and lifestyle photography matching the tagged Capability: Photography. No off-capability work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed emilymaye.com homepage (shows film/project titles matching clipped.md body). site-02.png is the blank IG spinner, correctly marked rejected in manifest with documented reason, and Emily Maye is confirmed in state/ig-queue.json (queued_at 2026-06-20). Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 15 work images have caption and link in manifest.json (e.g. caption: 'Rapha', link: 'https://www.emilymaye.com/rapha')."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Tagged Capability is Photography; photography projects do not require video embeds. Her film directing work is separately noted in AI Notes as a locked second capability. No embed requirement triggered for this entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest (rejected, rejection_reason) and in ig-queue.json with reason. AI Notes mention 'IG capture queued' is flagged in the queue entry."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "warn",
+      "evidence": "Website (emilymaye.com) and Instagram (instagram.com/emilymaye) are present. LinkedIn is absent with no note in AI Notes stating it was searched and not found (or found). Email is absent with no note. CLAUDE.md P1 step 4 requires 'public contact email and LinkedIn' and says 'a missing link is almost always a search you skipped'. Her rep pages (Imperial Woodpecker, Rogue Films) typically carry contact emails; her LinkedIn would be findable by name search. Neither field is documented as searched-and-absent. In v1 this is recorded as a warn rather than a hard fail, for Jonathan to calibrate: is the absence of LinkedIn/Email documentation a bounce-worthy fail or a low-priority gap for a senior commercial photographer?"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography tag matches all captured work and her own site positioning."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Freelance. AI Notes explain the rep model (Imperial Woodpecker, Rogue Films, Scouts Honour) as the basis for Freelance. Sources named."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set_by agent. AI Notes: 'books through reps, high autonomy on set'. 10+ year career at senior level grounds the estimate."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No Jonathan note contradicts any field."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Raw Name 'Emily Maye | Director & Photographer' contained no relationship facts or special instructions. Cleaned to 'Emily Maye'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes are grounded in verifiable facts (named clients, reps, schools). Seniority read present ('Senior, 10+ year career'). Autonomy estimate paired. No em-dashes. Minor: source_url fields in provenance are null (sources named in AI Notes text but not in structured provenance URLs). Not a hard fail but a quality gap."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-02-22'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "provenance file present at state/provenance/b3df727c-fb5e-47b8-9edb-598eaced0bdc.json with all touched fields. source_url null throughout (a minor gap, not a confidence violation since the 0.8 bar was met from named sources in AI Notes)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned: no em-dashes. Commas, colons, semicolons used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No spurious Open Questions. Judgment fields (Rating, Familiarity, Work With?) correctly left for Jonathan. LinkedIn/Email absence not raised as an Open Question -- covered under B.links warn."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, as expected before this gate."
+    }
+  ],
+  "to": "scraper",
+  "notes": "v1 calibration flag for Jonathan: B.links is a warn, not a hard fail, because the gap (no LinkedIn, no Email, no documented search) is real but the entry is otherwise complete and well-executed. In v2 I would bounce this to the scraper to add LinkedIn + Email (or document their absence). Jonathan: should missing LinkedIn/Email without an 'absent, searched' note in AI Notes be a bounce-worthy fail? Logging here so you can calibrate the bar."
+}

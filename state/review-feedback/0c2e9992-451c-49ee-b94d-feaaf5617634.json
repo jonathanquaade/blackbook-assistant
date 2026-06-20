@@ -1,0 +1,110 @@
+{
+  "page_id": "0c2e9992-451c-49ee-b94d-feaaf5617634",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 images across 3 distinct named series: Portraits (site-01 to site-04), Interiors (site-05 to site-08), Advertising (site-09 to site-12). Each group is a different subject, location and photographic context. Unchanged from attempt 1."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "4 images per series; goes inside each body of work. Interiors spans Studio Ashby (x3) and Rosewood. Advertising covers Logitech x2, Dyson, Begg x Co. Not hero-only. Unchanged from attempt 1."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography; every image is a photograph (portraiture, interiors, commercial advertising). No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is confirmed kensingtonleverne.com homepage. site-14.png is a genuine IG error page, correctly marked rejected with reject_reason, documented in AI Notes, queued in ig-queue.json. Satisfies the checklist IG-throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 work images have captions naming the series and client, plus source links. site-03 flagged in attempt 1 for URL-vs-caption mismatch (filename contains 'Interiors' but caption says 'Portraits, Maybourne Hotels London'). Opened the actual image: it is a woman seated in a hotel bar interior -- unmistakably a portrait with location backdrop, not an interiors shot. The file lives under /portraits/ on the site. Caption is correct; filename is a CDN artifact."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Photography (stills). No video/audio embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes and ig-queue.json. No other sources flagged as unavailable."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for a sole-trader photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "LinkedIn: https://uk.linkedin.com/in/kensingtonleverne (now present). Email: kensington.leverne@gmail.com (now present). Website and Instagram were already correct. All four findable links confirmed in the live entry."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography is the sole tag, set_by jonathan (provenance). Appropriate given her portrait, interiors and commercial advertising photography."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK, Size: 1, Work Status: Freelance. AI Notes records the objective evidence: self-maintained portfolio with contact-for-commissions structure; Common Era as commercial rep, no employer listed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes grounds it in a sustained editorial and commercial client roster and AD Top 100 2025 recognition. Seniority read present ('established freelance image-maker')."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Work With?: Unvetted, Familiarity: Don't know them. Clip note contains no relationship facts. Zero-states are honest."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'KENSINGTON LEVERNE (Photography)'. Name cleaned; Capability Photography honoured. No other instructions present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes verifiable client list, Autonomy reasoning, Work Status source rationale, LinkedIn note, and IG queue note. No bare assertions about skill or outcomes. LinkedIn URL now referenced correctly in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-04-22'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file covers all touched fields with set_by values."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and captions scanned; no em-dashes found. Colons and semicolons used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. Appropriate given zero-state fields and no relationship evidence. Story nudge not triggered (Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review as part of this passing verdict."
+    }
+  ],
+  "to": "scraper"
+}

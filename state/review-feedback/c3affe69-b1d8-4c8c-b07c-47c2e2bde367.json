@@ -1,0 +1,112 @@
+{
+  "page_id": "c3affe69-b1d8-4c8c-b07c-47c2e2bde367",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "notes": "One soft gap (LinkedIn not documented) flagged for Jonathan calibration. All other checks pass. Images are genuine, distinct, on-capability documentary/editorial photography.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Brecon 2026 (2 landscape shots from his Format site), Anima 2023 (4 images, Portland stone quarry documentary via It's Nice That), Whispering Blooms 2017 (4 images, Poundbury portrait series via It's Nice That), British GQ 2023 (3 editorial portraits via Companion/Sanity CDN). No caption repeats across projects; visually confirmed distinct subject matter and locations."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "All four projects have multiple images going inside the work: quarry interiors and on-site portraits for Anima, domestic interiors and neighbourhood scenes for Whispering Blooms, two different editorial subjects for GQ, two distinct landscape shots for Brecon. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography. All 13 work images are photographic stills: documentary landscapes, environmental portraits, editorial portraits. No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-11.png opened and confirmed: jackorton.co.uk homepage showing 'Jack Orton' wordmark and nav (Home/About). Correct. Instagram shot (site-12.png) is rejected=true with rejection_reason documenting the 'Something went wrong' headless block, and entry is confirmed present in state/ig-queue.json for @jackorton__ with logged-in ig.py grab. Satisfies the IG-throttle EXCEPTION clause in the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 work images have captions naming the project and year, and all have source links. site-11.png captioned 'Website' with link to jackorton.co.uk. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Photography (stills). No video embeds are expected or missing. The Open Question about Film & video production capability is correctly deferred to Jonathan before adding video embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and rejection_reason; ig-queue entry confirmed. No other sources appear to be missing or unexplained."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual freelance photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Website (jackorton.co.uk), Instagram (@jackorton__), Email (jack@jackorton.co.uk) are all set. LinkedIn is absent and NOT documented as searched-and-not-found in AI Notes or provenance. The checklist requires: either the link is present, or AI Notes explicitly says it was searched and not found. For a commercially represented photographer with 8+ years of career, a LinkedIn profile is plausible and the search appears to have been skipped rather than attempted.",
+      "fix": "Scout should search 'Jack Orton photographer linkedin' and either add the URL or add one line to AI Notes confirming it was searched and is genuinely absent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography tagged (set_by: jonathan per provenance). Matches all captured work. Open Question 1 appropriately asks about adding Film & video production given his commercial direction work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country=UK, Size=1, Work Status=Freelance. AI Notes documents: 'Freelance confirmed by own site (represented for commercial work), self-maintained.' Objective multi-source rule satisfied by own site signal."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=4, set_by agent. AI Notes gives reasoning: 'Mid-to-senior freelance image-maker, ~8+ yrs' with named clients (Hermes, Dior, Nike, Vogue Japan, British GQ) and commercial representation via Companion. Grounded in verifiable career evidence."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together=Never, Familiarity=Don't know them, Work With?=Unvetted) are appropriate: no clip note states a relationship. No contradictions with evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note (Source: 'Web clipper, 2024-06-04') appears to have been a plain clip with no special instructions beyond the URL. No unacted-on relationship facts or judgments detected in the entry."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list and Autonomy estimate are hedged appropriately ('~8+ yrs'). No plain assertions of unverified capability claims. Seniority read present ('Mid-to-senior freelance image-maker'). No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-06-04'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all major fields populated. All agent-set fields have set_by=agent. Capabilities correctly carries set_by=jonathan. No fields written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all manifest captions. Zero em-dashes found. Autonomy reasoning uses parentheses and commas only."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question: 'Capabilities: add Film & video production?' with context. Not asking for any already-set field. No story nudge needed (Worked Together=Never, relationship is zero-state)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": "scout"
+}

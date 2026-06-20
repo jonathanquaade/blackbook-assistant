@@ -1,0 +1,110 @@
+{
+  "page_id": "efb5ecac-ac0c-4fda-b247-6582a8113f9f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Google.org Impact Challenge 2020, Rapha Anthology 2013, Greenhouse 2025, OpenAI 2022. No repeated project across images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project across all 4 projects. Shots go inside the projects (environmental portraits, interiors, workspace scenes) rather than hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 work images are photography (editorial and commercial portraits, outdoor, interiors) matching the Photography capability tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png confirmed as real jakestangel.com homepage (name and photography grid visible). site-17.png (IG error page) is now marked rejected: true with rejection_reason documenting the headless-Playwright block. AI Notes state 'IG context shot queued: headless Playwright blocked by Instagram rate-limit; @jakestangel queued to ig-queue.json.' Entry confirmed in state/ig-queue.json. All three conditions of the sanctioned IG throttle exception are met."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 presented work images have project name + source link captions. Website context shot is labelled. Rejected images carry rejected_reason."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Photographer entry; no video/audio work pages evident on jakestangel.com. Still images are the correct format."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Rejected low-res thumbnails explained. IG block documented in AI Notes and queued."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website and Instagram present and verified. LinkedIn: AI Notes now document 'No LinkedIn found: searched Jake Stangel photographer linkedin; LinkedIn directory shows 5 profiles with that name but none resolvable to this photographer without login (LinkedIn returns 999 to unauthenticated requests).' Search was run, result honestly documented. Email absent; acceptable for a rep-agency-represented photographer with no public direct email noted."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography only, set_by jonathan. Correct and well-evidenced."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US, Size: 1, Work Status: Freelance. AI Notes cite Giant Artists representation plus web search. Meets the multi-source resolution rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes explain: represented by Giant Artists (standard freelance-rep model), 15+ year career, blue-chip clients. Reasoning is grounded."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a URL (jakestangel.com/OpenAI). The OpenAI project is captured (site-13, 14, 15). No overlooked instructions."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (15+ year career, senior commercial photographer), Autonomy reasoning (rep model), verifiable client list, source citation, 503 at scout time documented, and IG queue note. Factual where verifiable, hedged on inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-03-12'. Filled and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for touched fields. LinkedIn search result documented in AI Notes."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all written fields reviewed: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. All judgment fields are zero-states; no clip-note ambiguities were present."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Flipping to Needs Review as part of this gate pass."
+    }
+  ],
+  "to": "jonathan"
+}
