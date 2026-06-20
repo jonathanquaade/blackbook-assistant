@@ -1,0 +1,111 @@
+{
+  "page_id": "165f84ba-ae13-814b-888f-d7047fabfb3d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:30:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 active images across 4 distinct products: Nave, Atelo, Reflet (interfaces.supply templates), charts.supply, Aesthetron AI Figma plugin, Interfaces DS. All distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Two angles on Nave (full interior + live preview), product UI for charts, plugin UI for Aesthetron, design system homepage for Interfaces DS. Goes inside the products."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Digital product design, Frontend development (web), Web design. All images show Framer templates, chart component, Figma plugin UI, design system. On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-08.png) confirmed as v2space.net. Instagram absent: @_joshuaguo could not be confirmed as the right person (bio/grid not verified per AI Notes); no IG screenshot attempted, absence documented. Correct behavior per CLAUDE.md (do not attach an unverified handle). No queue entry needed because the handle itself is unconfirmed, not a throttle issue."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every active image has a named project caption and a source link."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "No video/audio work applicable for this product designer entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains LinkedIn (name too common, no confirmed match) and IG (handle unverified). Acceptable."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; V2SPACE is his brand, not a multi-person studio."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Email field is empty and AI Notes claims 'site has a contact email but it is Cloudflare-protected and not readable as plaintext.' The website context shot already in the manifest (site-08.png) shows 'hello@v2space.net' as plain readable text in the footer. The email was findable from the captured screenshot itself and was not written to the Email field.",
+      "fix": "Set Email field to hello@v2space.net (visible as plain text on v2space.net footer, confirmed in site-08.png). Update AI Notes to remove the 'Cloudflare-protected' claim and note the email was captured from the site footer."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Digital product design, Frontend development (web), Web design. All verifiable from the work output."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK (Contra profile), Size 1, Freelance. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, hedged in AI Notes with reasoning."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states consistent with evidence; no relationship facts in clip note."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was name-only (Joshua Guo | V2SPACE and Joshua Guo (V2SPACE)). No instructions missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged, seniority read included (5+ yrs estimated), sources noted. One inaccuracy (email claim) is caught under B.links."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-12-23'. Present and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. All judgment fields at zero-states with no relationship evidence to prompt questions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching, correct for this gate stage."
+    }
+  ],
+  "to": "scraper"
+}

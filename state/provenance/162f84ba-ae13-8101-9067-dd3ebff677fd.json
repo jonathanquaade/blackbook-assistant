@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://x.com/bollmann0x",
+      "value": "https://bollmann.co/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-20T01:38:02",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -47,9 +47,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": "2026-06-15T21:21:18",
+      "verified_at": "2026-06-20T01:38:02",
       "set_by": "agent"
     },
     "Name": {
@@ -71,15 +71,35 @@
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Could not identify this person. Only signal is the X handle @bollmann0x (the 0x suffix suggests crypto / web3) and the clip name C Bollman; X is paywalled to fetch and web search found nothing. Do you have more context (a real name, what they make, where you found them)?",
+      "value": "1. Capabilities: current tag is \"Product design\" (transitional per taxonomy). Evidence points to Digital product design (software/apps, no physical products). OK to reclassify?",
       "source_url": null,
-      "verified_at": "2026-06-15T21:21:18",
+      "verified_at": "2026-06-20T01:38:02",
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Unidentified. Clip listed Name C Bollman with X profile x.com/bollmann0x as the only link. X is behind a login/paywall to read programmatically and web search surfaced no matching designer. The 0x handle hints at crypto / web3, consistent with the existing Product design tag, but unverified, so factual fields left empty per the confidence floor. Needs Jonathan's context to proceed.",
+      "value": "Christian Bollmann, Berlin-based product designer running Studio Bollmann (bollmann.co, also called STUDIO : B on LinkedIn). Solo independent studio focused on design + engineering, ships software end-to-end and works directly with founders. LinkedIn headline confirms: \"Designer, running a software studio, design + engineering.\" Polywork lists him as a freelancer specialising in product/UI/UX/web/design systems. Work Status: Studio. No prior employment history surfaced publicly; career appears to have been largely independent or at early-stage startups. Seniority: mid-to-senior independent operator, sufficient experience to run his own client-facing studio; Autonomy 4 (studio owner, works unsupervised with founders). Instagram: searched @bollmann_, @chris.bollmann, @bollo_85, @christopherbollmann; none confirmed as matching this person. No public contact email found. LinkedIn: confirmed via Google snippet at linkedin.com/in/christian-bollmann/.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:21:18",
+      "verified_at": "2026-06-20T01:38:22",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/christian-bollmann/",
+      "source_url": null,
+      "verified_at": "2026-06-20T01:38:02",
+      "set_by": "agent"
+    },
+    "Country": {
+      "value": [
+        "Germany"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-20T01:38:02",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-20T01:38:02",
       "set_by": "agent"
     }
   }

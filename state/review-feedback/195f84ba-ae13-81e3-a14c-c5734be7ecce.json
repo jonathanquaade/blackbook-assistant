@@ -1,0 +1,110 @@
+{
+  "page_id": "195f84ba-ae13-81e3-a14c-c5734be7ecce",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:29:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active images span 5 distinct campaigns: Noli AI, Philipstown WireCar, Harley-Davidson Answer The Call, British Army You Belong Here, Qiddiya Play Life, NFL Beyond the Goalposts"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Philipstown has 3 distinct shots (dusk silhouette, cast portrait, hero composite); Qiddiya has OOH still + film thumbnail; HD has 2 different angles; campaign interiors not just covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are campaign/brand creative work, matching tagged Capabilities: Brand strategy, Creative direction, Digital product design, Insights & research, Social media content"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-11.png confirmed as accenture.com Song index page (purple nav, 'We are Song' headline visible); site-12.png confirmed as instagram.com/accenturesong profile (44.4K followers, bio matches)"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 12 active images have captions naming the campaign plus a source link"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 YouTube embeds present (Qiddiya film, NFL film), each paired with a thumbnail image and a caption+link"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps; work is present and well documented"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency, correct for a large full-service global creative network"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present and verified. Email absence documented in AI Notes (contact is form-only via accenture.com)"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy, Creative direction, Digital product design, Insights & research, Social media content; aligned with agency service lines"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = US/UK/Ireland (partial; breadth queried in Open Questions). Size = 100+. Work Status = Studio (org-level entity; sourcing documented in AI Notes)"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5 (org-level independent creative network), set_by agent, reasoning in AI Notes"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted; no clip note evidence of a personal relationship"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained no instruction text; Source set to 'Web clipper, 2025-02-09'"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cite confirmed sources (own site, LinkedIn), document sourcing rationale for Work Status and Country, note that no individual seniority read is applicable for an org"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2025-02-09'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with verified_at timestamps and set_by agent"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question on Country breadth; not asking for already-answered fields"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently in Enriching, being flipped to Needs Review by this gate"
+    }
+  ],
+  "to": null
+}

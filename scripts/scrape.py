@@ -24,15 +24,18 @@ Platform lessons encoded:
   at depth=2 to list pages and top-level sections, (2) query each section
   with /files/{key}/nodes to find FRAME children (375x812 = mobile, 1440x900
   = desktop), (3) export those frames via /images/{key}?ids=...&scale=2.
-  Frames can sit at any depth inside sections — traverse until you find FRAME
+  Frames can sit at any depth inside sections -- traverse until you find FRAME
   nodes; do not assume a fixed nesting level. The oEmbed thumbnail is one
-  low-res canvas overview — useful as a single context image, not the primary
+  low-res canvas overview -- useful as a single context image, not the primary
   source. Figma CDN blocks headless Playwright
   (CloudFront 403); use the REST API with FIGMA_API_KEY in .env instead.
   FIGMA_API_KEY is a personal access token (Figma Settings > Security), stored
   in .env, read-only access to files the account can see.
 - WordPress: images under wp-content/uploads in plain src.
 - Generic: og:image first, then largest <img>.
+- Self-signed / invalid SSL certs: static fetch() throws SSLCertVerificationError;
+  Playwright throws ERR_CERT_AUTHORITY_INVALID. Fix: use new_context(ignore_https_errors=True)
+  instead of new_page() in all Playwright paths (2026-06-20, sandraautukaite.com).
 Self-checks: content-hash dedupe (catches the same-banner-N-times failure),
 tiny-file filter (logos/icons), report instead of silently uploading junk.
 
@@ -88,11 +91,19 @@ def candidates(url, html, platform):
     return out
 
 def rendered_candidates(url, passcode=None, text_out=None):
-    """Playwright path: real DOM after JS render and optional passcode entry."""
+    """Playwright path: real DOM after JS render and optional passcode entry.
+
+    Uses new_context(ignore_https_errors=True) so sites with self-signed certs
+    (e.g. sandraautukaite.com, 2026-06-20) load instead of failing with
+    ERR_CERT_AUTHORITY_INVALID. Always use new_context() not new_page() in
+    Playwright so context-level options (like ignore_https_errors) take effect.
+    """
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         b = p.chromium.launch()
-        page = b.new_page(viewport={'width': 1440, 'height': 2400})
+        ctx = b.new_context(viewport={'width': 1440, 'height': 2400},
+                            ignore_https_errors=True)
+        page = ctx.new_page()
         # domcontentloaded + fixed settle, NOT networkidle: media-heavy portfolios
         # (3D, video, autoplay) keep the network busy forever and networkidle times
         # out (vmragona.com, 2026-06-13). Lesson: never wait for networkidle here.
@@ -130,10 +141,14 @@ def shot(url, out_dir, caption, full=False):
     """Screenshot a page (website homepage or IG profile) as a memory anchor.
 
     Jonathan (2026-06-13): every entry should carry a screenshot of the person's
-    website AND their Instagram profile in the body — it helps him remember who
+    website AND their Instagram profile in the body -- it helps him remember who
     they are and what their work looks like at a glance. Viewport shot by default
     (the hero/grid), --full for the whole page. Saved as the next site-NN, appended
-    to manifest with the caption + link back to the page."""
+    to manifest with the caption + link back to the page.
+
+    Uses new_context(ignore_https_errors=True) so self-signed-cert sites render
+    instead of failing (lesson: sandraautukaite.com, 2026-06-20).
+    """
     from playwright.sync_api import sync_playwright
     import hashlib
     os.makedirs(out_dir, exist_ok=True)
@@ -146,7 +161,9 @@ def shot(url, out_dir, caption, full=False):
     n = max(idxs) if idxs else 0
     with sync_playwright() as p:
         b = p.chromium.launch()
-        page = b.new_page(viewport={'width': 1440, 'height': 900})
+        bctx = b.new_context(viewport={'width': 1440, 'height': 900},
+                             ignore_https_errors=True)
+        page = bctx.new_page()
         page.goto(url, wait_until='domcontentloaded', timeout=45000)
         page.wait_for_timeout(3500)
         # ALWAYS clear the cookie/consent banner + login modal BEFORE the shot, then
@@ -257,6 +274,3 @@ def main():
     report.update({'saved': saved, 'skipped_dupes_or_tiny': skipped,
                    'needs_caption': [m['file'] for m in manifest if not m.get('caption')]})
     print(json.dumps(report, indent=1))
-
-if __name__ == '__main__':
-    main()
