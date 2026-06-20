@@ -1,0 +1,111 @@
+{
+  "page_id": "f8720db8-096a-4edc-972c-2df30574a03b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:51:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects in active images: Solace London (work-01, work-04, work-10), Moncler City of Genius (work-06, work-07), moncler.com redesign (work-08, work-09). Meets the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "work-09 shows the moncler.com UI system annotated layout (interior detail), work-07 shows platform overview with mobile and 3D city view (inside the experience), work-10 shows multi-device responsive Solace London build. Goes inside the work, not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Web design (set_by jonathan). All captured work is responsive/interactive web and digital platform design (Solace London e-commerce, Moncler City of Genius digital platform, moncler.com redesign). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed: real instagram.com page for @sandraautukaite, name 'Sandra Autukaite' visible, private profile correctly shown. site-02.png confirmed: SuperHi 404 for sandraautukaite.com, caption honestly states site is down. IG private account (not a throttle error page) is correctly documented and queued in ig-queue.json."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images have captions naming the project and a source link. Rejected images (work-02, work-03, work-05) are correctly excluded."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Entry is Web design; captured work is visual/UI stills from case study pages. No skipped embeddable video found on the specific pages used."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents: portfolio site down (SuperHi 404), IG private (0 posts logged out, queued for ig.py), no public email found. All gaps accounted for."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram (verified correct person via screenshot), LinkedIn all present. Email absent with AI Notes explanation. No findable public email, absence documented."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities = Web design, set_by jonathan. Open Question #2 proposes expansion. Correctly deferred to Jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 1, Work Status = Freelance. AI Notes cites Companies House + multiple sources + Jonathan's own note (Pentagram offer fell through) as corroborating evidence. Multi-source objective resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by agent. Reasoning in AI Notes: own studio since ~2018, 8+ yrs, credited Senior Visual Designer on major BIA-winning project. Grounded in work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "fail",
+      "evidence": "Familiarity = 'Don't know them' (set_by agent) directly contradicts Worked Together = 'Repeatedly' (set_by jonathan). CLAUDE.md is explicit: never write a zero-state that evidence contradicts. Worked Together = Repeatedly is clear evidence that Familiarity cannot be 'Don't know them'. The agent should have left Familiarity EMPTY and asked.",
+      "fix": "Clear Familiarity to empty (leave blank). Do NOT write any zero-state value. Open Question #1 ('Familiarity?') is already present and correctly asks Jonathan to set it; no new question needed."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip source is 'Web clipper, 2024-12-20'; no instructions found in Name or clip body beyond the name itself. Jonathan's Notes (set_by jonathan) are preserved untouched. Pentagram note consistent with Work Status = Freelance."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge inferences ('~8+ yrs', 'suggests they should deliver'), assert only verifiable facts (BIA credit, Companies House, featured on Mindsparkle/Hoverstat). Includes seniority read and Autonomy reasoning. Sources named."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-12-20'. Present and in correct format."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields with set_by, verified_at, and source_url where applicable."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 asks Familiarity (correctly conditional: notes Worked Together = Repeatedly). Q2 asks about expanding Capabilities beyond Web design (Capabilities is set_by jonathan so question is correct). Both terse and appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is still Enriching. Reviewer has not yet flipped it, as required."
+    }
+  ],
+  "to": "scraper"
+}

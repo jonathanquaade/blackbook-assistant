@@ -1,0 +1,111 @@
+{
+  "page_id": "162f84ba-ae13-811c-b59a-edd1357e6218",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T02:05:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images across 6 distinct projects: Metadrop (m1-m3), WalletConnect (w1-w3), Zora (z1-z3), Kaala (k1-k2), Status (s1-s2), Opera (f1-f2). No repeated project angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 interior screens: product UI, onboarding flows, wallet/messaging internals. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Product design. All images show product/app UI, 3D art direction for web3 products, browser redesign. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed maciej.co homepage (name, tagline, project list visible). No Instagram context shot present, but absence is correctly documented: AI Notes states both checked handles (@calynaczarno = vocalist, @maciej.zadykowicz = beauty marketer) are wrong people, no confirmed handle exists. This is documented absence, not a throttle block, no IG queue entry needed. Per checklist, documented absence with no confirmed handle is not a fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 images have captions naming the project, year range, and a source link. Minor observation: k1.jpg and k2.jpg show a payment app with a stylized V-logo and placeholder names (Emily Appleseed); no visible 'Kaala' wordmark in frame. Both sourced from maciej.co/assets (his own portfolio site), so self-attested as his work. Caption is plausible."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No embedded video/audio work flagged as missed. Entry is Product design, not a video/audio creative; image-only capture is appropriate."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence documented in AI Notes with specific handle checks. No other sources flagged as blocked or gated."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website (maciej.co), LinkedIn, Email (hi@maciej.co) all present. Instagram: no confirmed handle, documented in AI Notes with specific verification of two wrong-person handles. Absence is honest and explained."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = Product design, set_by jonathan (migration). Agent correctly flagged for re-sort via Open Question 3 rather than overriding a jonathan-locked field. Honest handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Poland. Size: 1. Work Status: Freelance. AI Notes cites two-source agreement: maciej.co presents independent studio, LinkedIn title is Freelance."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. AI Notes grounds it: Design Lead Opera, Lead Designer Status, Product Designer Zora, Head of Design WalletConnect, Lead Designer Metadrop; ~10+ yrs; design-lead/director level. Reasoning is specific and grounded."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note indicating a prior relationship. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is Web clipper, 2024-12-20 with no relationship facts in clip. Open Questions ask the judgment fields Jonathan must supply (Work With?, Rating, Capabilities re-sort). Name typo (Zadykowic -> Zadykowicz) corrected and noted in AI Notes."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority and trajectory read is grounded in named roles and years. Work Status sourcing named. Instagram handle checks documented specifically. No bare assertions of taste or unverified claims. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-12-20'. Present and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. set_by values correct: jonathan for Capabilities (migration), agent for scout-written fields, migration for Size. No sub-0.8 confidence fields written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "3 terse questions: Work With? (zero-state, conditional), Rating? (zero-state, with context 'ex Partner-Dream'), Capabilities re-sort proposal. All conditional on fields without non-zero values or on a locked field that needs Jonathan's approval. No story nudge needed (Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, will be flipped to Needs Review by this reviewer on pass verdict."
+    }
+  ],
+  "notes": "Solid entry. 6 projects, depth inside each, on-capability product UI. Kaala images (k1-k2) show a 'V'-logo payment app with placeholder names and no visible 'Kaala' wordmark, but both sourced from maciej.co/assets (his own portfolio), so self-attested. Capabilities field correctly left as jonathan-set 'Product design' with an Open Question for re-sort approval. Instagram absence properly documented with specific handle verification.",
+  "to": null
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "160f84ba-ae13-8128-aedd-f61981eddc84",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:51:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects: ION Solar, Few and Far, Lickability, TaxExact, The Playground, Quantum Squares, FraudFindr (site-02 through site-08)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each case study screenshot shows the case study headline, client quote, and a preview of the copy/site produced; appropriate depth for a copywriter"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Copywriting; all 7 case study images show conversion copywriting work plus a portfolio bookmark; no off-capability content"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01 confirmed as anniemaguire.com homepage. No Instagram context shot, but absence is documented: 5 handles searched, none confirmed as hers, her site lists only LinkedIn as social; documented-absence is not a throttle fail and does not require the queue path"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 images have captions naming the project and source URLs"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Copywriter entry; no video/audio work expected; a portfolio bookmark is present"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence documented in AI Notes with 5 specific handles tried"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, and Email all present; Instagram documented as not found after 5 handle searches"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Copywriting, set_by jonathan; Open Question asks about adding Insights and research"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Freelance; sources named in AI Notes (site + LinkedIn agree)"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent; reasoning in AI Notes (solo operator, 100+ brand engagements, teaches other freelancers)"
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with the clip note which contains no relationship signal"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No instructions in the clip note beyond the name; Source field set to Web clipper date"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Appropriately hedged (approx markers, flags Jonathan's fields); seniority read plus Autonomy estimate present; no em-dashes"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2024-12-18"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries; source_url null throughout but reasoning recorded in AI Notes"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One conditional question about adding Insights and research tag; not duplicating an already-answered field"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this gate pass"
+    }
+  ],
+  "notes": "test.png found in assets directory, duplicate of site-01.png (the website context shot), not in manifest and not uploaded to Notion; inert leftover from scraper testing, not a gate failure",
+  "to": null
+}

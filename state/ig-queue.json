@@ -84,7 +84,7 @@
     "queued_at": "2026-06-18"
   },
   {
-    "page_id": "380f84ba-ae13-81eb-b4ac-d2dac33c3f66",
+    "page_id": "380f84ba-ae13-81db-91cb-faed45faec10",
     "name": "Sasyk Mihal",
     "ig_url": "https://www.instagram.com/sasykmihal/",
     "reason": "Instagram context shot blocked by logged-out challenge; profile exists and is confirmed (handle in AI Notes). IG grab needed for context shot and recent work.",
@@ -235,6 +235,13 @@
     "name": "Office of Applied Strategy",
     "ig_url": "https://www.instagram.com/officeofappliedstrategy/",
     "reason": "IG context screenshot returned blank white page (Instagram blocked headless Playwright; rate-limited). Need logged-in ig.py grab for @officeofappliedstrategy profile context shot.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "f8720db8-096a-4edc-972c-2df30574a03b",
+    "name": "Sandra Autukaite",
+    "ig_url": "https://www.instagram.com/sandraautukaite/",
+    "reason": "@sandraautukaite IG account is private (0 posts visible logged out). Context screenshot captured but shows private profile only. Need logged-in ig.py grab to see if she follows Jonathan's account or if there is work content visible to followers.",
     "queued_at": "2026-06-20"
   }
 ]

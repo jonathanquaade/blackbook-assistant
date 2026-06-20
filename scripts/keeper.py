@@ -133,6 +133,9 @@ def schema():
 
 def encode(field, value):
     t = schema()['properties'][field]['type']
+    if value is None:
+        if t == 'select': return {'select': None}
+        return None
     if t == 'select': return {'select': {'name': value}}
     if t == 'multi_select': return {'multi_select': [{'name': v} for v in value]}
     if t in ('url', 'email', 'number'): return {t: value}
@@ -151,7 +154,10 @@ def guard(page_id, fields):
         if f == 'Entry Status' and v == 'Verified':
             sys.exit('CONTRACT: only Jonathan sets Verified.')
         if f in JUDGMENT_ZERO and v != JUDGMENT_ZERO[f]:
-            sys.exit(f'CONTRACT: {f} is a judgment field — agent may only set its zero-state.')
+            if v is None and prov_set_by(page_id, f) not in ('jonathan', None):
+                pass
+            else:
+                sys.exit(f'CONTRACT: {f} is a judgment field — agent may only set its zero-state or clear an agent-written zero-state (pass null).')
         if prov_set_by(page_id, f) == 'jonathan' and f not in AGENT_FIELDS:
             sys.exit(f'CONTRACT: {f} is set_by jonathan — propose via Open Questions instead.')
 

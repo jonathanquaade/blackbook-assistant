@@ -1,0 +1,110 @@
+{
+  "page_id": "162f84ba-ae13-81fb-a901-feaf44a9eb98",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:43:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects confirmed: Trant Wallet, Temple Web3 Creator Economy, Rumble Kong League, QDEX Crypto Trading App. No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project going inside: color system and NFT discovery screens for Trant, mobile cards + landing + profile UI for Temple, team roster UI for RKL, crypto list + analytics + trading flow screens for QDEX."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 work images are product UI screens for Web3 apps. Matches tagged capability Product design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png visually confirmed as andreirybin.com website. No Instagram context shot - AI Notes documents exhaustive search: person links only X, Telegram, and LinkedIn from own site and Behance; three search-surfaced handles could not be confirmed from any primary source. Documented absence, not a throttle skip. Not queued (no IG handle to queue). This is not the throttle exception scenario but a genuine absent account."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions naming project and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Product/UI designer with no video embeds on project pages expected. No embedded video skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram absence documented in AI Notes with named alternatives checked (@asrybin, @_andreyrybin_, @rybinand - all unconfirmable from primary source)."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (andreirybin.com), LinkedIn (am.linkedin.com/in/andreyrybin), Email (hello@andreirybin.com) all present. Instagram documented as unconfirmable. No obvious search miss."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Product design tagged. Open Question asks Jonathan whether to expand to 3D & motion and Creative direction, appropriate since those require his judgment on restructuring an existing jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Armenia, Size 1, Work Status Employed. AI Notes attributes sources: Behance and LinkedIn both list Fasset as current."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent, grounded in ~7 yrs tech / ~5 in product design, senior IC at Fasset, ex-Cuberto/THRC/Fantasy."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted consistent with no relationship stated in clip note or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a bare web clipper entry with no relationship facts or instructions. Nothing to action beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read, Autonomy reasoning, Work Status source attribution, and Instagram absence documentation. Inferences appropriately framed."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-12-20'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields with set_by values (agent/migration/jonathan as appropriate)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Programmatically verified: no em-dash characters in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question about Capabilities re-sort; conditional and justified (capability field exists but restructuring requires Jonathan's call)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}
