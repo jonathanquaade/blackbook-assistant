@@ -210,13 +210,6 @@
     "queued_at": "2026-06-19"
   },
   {
-    "page_id": "24ff84ba-ae13-811d-8a85-d63a4649d4bc",
-    "name": "yuzu (byeyuzu)",
-    "ig_url": "https://www.instagram.com/byeyuzu/",
-    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). byeyuzu.com is also currently disconnected from Cargo CMS (DNS parking page). IG is the primary public showcase for this artist's recent CGI/motion work. Need logged-in ig.py grab for profile context shot and recent work.",
-    "queued_at": "2026-06-19"
-  },
-  {
     "page_id": "24cf84ba-ae13-8112-a7fb-e5ea12bfe3a6",
     "name": "Yihui Hu",
     "ig_url": "https://www.instagram.com/huuuuudui/",
@@ -228,6 +221,13 @@
     "name": "Subtle Studio",
     "ig_url": "https://www.instagram.com/be.subtle/",
     "reason": "IG handle unconfirmed (below 0.8; scout noted @be.subtle as candidate but could not verify bio/grid match). @sforsubtle (LinkedIn handle) returned 'Profile isn't available'. Jonathan needs to confirm the correct IG handle before an IG context shot can be captured.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "19af84ba-ae13-8197-911b-f8cf19d97bb7",
+    "name": "Hugo & Marie",
+    "ig_url": "https://www.instagram.com/hugoandmarie/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page when logged out (headless Playwright). @hugoandmarie has 38K followers and is confirmed active. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-20"
   }
 ]

@@ -1,111 +1,30 @@
 {
   "page_id": "1caf84ba-ae13-818e-a6a6-ec0ea626a9cd",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-20T01:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-20T01:11:30",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
-    {
-      "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "3 distinct projects: Twitch (site-01/02/03), Hiro (site-04/05/06), Nike Run (site-07/08/09). No repeat captions."
-    },
-    {
-      "id": "A.depth-over-breadth",
-      "result": "pass",
-      "evidence": "Each project shows interior deliverables: Twitch has typeface specimen + screen UI + OOH billboard; Hiro has framed poster + typographic campaign poster + branded pencil; Nike Run has shoebox packaging + street stencil activation + race bib."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "pass",
-      "evidence": "Tagged Identity systems; all 9 work images show brand identity deliverables (type systems, brand in-context, packaging, collateral). Correct match."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "pass",
-      "evidence": "site-10.png visually confirms portorocha.com (PORTO ROCHA header visible), captioned honestly as employer site with explanation that personal site is down. site-11.png is a real instagram.com page showing handle @nathan.fyock with bio 'Design Director @porto_rocha'. Both correct."
-    },
-    {
-      "id": "A.no-uncaptioned-images",
-      "result": "pass",
-      "evidence": "All 11 manifest entries have caption and link fields populated."
-    },
-    {
-      "id": "A.embeds-for-video",
-      "result": "pass",
-      "evidence": "Identity systems work; no video embeds expected or missed."
-    },
-    {
-      "id": "A.absence-explained",
-      "result": "pass",
-      "evidence": "nathanfyock.com down is documented in AI Notes and the context shot caption. No IG queue needed (IG context shot obtained logged-out)."
-    },
-    {
-      "id": "B.type",
-      "result": "pass",
-      "evidence": "Type: Person. Correct."
-    },
-    {
-      "id": "B.links",
-      "result": "fail",
-      "evidence": "Website field contains 'https://www.instagram.com/nathan.fyock/' (the Instagram URL), identical to the Instagram field. Personal site nathanfyock.com is confirmed down, so Website should be empty. Works At Link already holds portorocha.com as the employer fallback. Duplicating the IG URL in Website is a schema error.",
-      "fix": "Clear the Website field (set to empty). Personal site is down, Works At Link already covers the employer URL. Do not populate Website with an IG URL."
-    },
-    {
-      "id": "B.capabilities",
-      "result": "pass",
-      "evidence": "Identity systems, set_by jonathan per provenance. Preserved correctly, not overwritten."
-    },
-    {
-      "id": "B.country-size-workstatus",
-      "result": "pass",
-      "evidence": "US / 1 / Employed. Multi-source resolution documented in AI Notes (Porto Rocha about page + TheOrg + ZoomInfo agree; Behance stale)."
-    },
-    {
-      "id": "B.autonomy",
-      "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (leads work inside respected studio, not running own practice)."
-    },
-    {
-      "id": "C.no-contradiction",
-      "result": "pass",
-      "evidence": "Zero-states (Never / Don't know them / Unvetted) do not contradict any evidence in clip note or AI Notes."
-    },
-    {
-      "id": "C.clip-note",
-      "result": "pass",
-      "evidence": "Clip note was 'Nathan Fyock (@nathan.fyock)'. Handle used to find IG, name cleaned to Nathan Fyock, no instructions unacted on."
-    },
-    {
-      "id": "C.ai-notes-hedged",
-      "result": "pass",
-      "evidence": "Clients listed as contextual ('clients include'), seniority hedged as 'roughly 8-10 yrs', Autonomy reasoning stated, source note for nathanfyock.com down included. No unhedged inferences."
-    },
-    {
-      "id": "D.source",
-      "result": "pass",
-      "evidence": "Source: 'Web clipper, 2025-04-03'. Filled."
-    },
-    {
-      "id": "D.provenance",
-      "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by values. No sub-0.8 guesses detected."
-    },
-    {
-      "id": "D.no-em-dashes",
-      "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, or Open Questions."
-    },
-    {
-      "id": "D.open-questions",
-      "result": "pass",
-      "evidence": "No Open Questions needed: zero-states are set, no contradicting evidence, no unresolvable ambiguity. Email absence documented in AI Notes."
-    },
-    {
-      "id": "D.status",
-      "result": "pass",
-      "evidence": "Entry Status is Enriching, correct pre-gate state."
-    }
+    {"id": "A.project-diversity", "result": "pass", "evidence": "9 work images across 3 distinct projects: Twitch rebrand, Hiro brand identity, Nike Run brand identity (3 images each)"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Interior shots (type specimen, poster, packaging) not just hero covers"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Identity systems; all 9 work images are brand identity / visual identity work from Porto Rocha case studies"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-10.png is portorocha.com homepage (correctly captioned as employer fallback, personal site down noted); site-11.png is instagram.com/@nathan.fyock profile with bio 'Design Director / @porto_rocha' visible"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 11 images have captions naming project and include source links"},
+    {"id": "A.embeds", "result": "pass", "evidence": "No video or audio work; not applicable for identity designer"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Personal site nathanfyock.com down documented in AI Notes and context-shot caption; IG profile present"},
+    {"id": "B.type", "result": "pass", "evidence": "Type: Person"},
+    {"id": "B.links", "result": "pass", "evidence": "Website field is now null (provenance confirmed: value null, set_by agent, verified 2026-06-20T01:10:18). Attempt-1 failure resolved. Instagram @nathan.fyock confirmed via profile bio; LinkedIn /in/nathan-fyock/ present; Works At Link holds portorocha.com; email absence documented in AI Notes"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Identity systems, set_by jonathan (Jonathan's tag, preserved)"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "US, Size 1, Employed; Work Status sourced from Porto Rocha about page + TheOrg + ZoomInfo (three-source agreement documented in AI Notes)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: leads design inside a respected studio but not running own practice"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states (Never, Don't know them, Unvetted) not contradicted by clip note (which was only a handle, no relationship facts)"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip note 'Nathan Fyock (@nathan.fyock)' handled: Name cleaned, handle used to confirm Instagram URL, no --from-jonathan facts needed"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Inferences hedged ('roughly 8-10 yrs'); verifiable facts (clients, employer, role) asserted; seniority + Autonomy read present; no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: 'Web clipper, 2025-04-03'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "Provenance file has entries for all touched fields including Website null (verified 2026-06-20)"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, captions, or any agent-written content"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No unresolvable facts requiring questions; no story nudge triggered (Worked Together = Never)"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching pre-gate; will flip to Needs Review on this pass"}
   ],
-  "to": "scout"
+  "to": null
 }

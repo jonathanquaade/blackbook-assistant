@@ -1,0 +1,30 @@
+{
+  "page_id": "198f84ba-ae13-812a-9daf-f2f40ad9c450",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:12:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "4 distinct source contexts: studio opening, Creative Technologist Conference 2025, Fund I portfolio overview, Assembling the Future report. Rejected duplicates (site-02, site-05) properly marked in manifest."},
+    {"id": "A.depth", "result": "pass", "evidence": "Assembling the Future report covered with 4 internal spreads (cover, TOC, spectrum diagram, chapter spread); conference covered with 2 views plus collage."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Creative technology; images show the collective's identity/brand, conference, research publication, and fund portfolio -- honest representation of what Baukunst actually produces as a VC-collective, not off-capability."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-09.png confirmed as baukunst.co homepage (dark background, Baukunst wordmark visible). site-10.png confirmed as instagram.com/_baukunst/ profile (Instagram UI, @_baukunst handle, 181 posts, 4977 followers)."},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 15 active manifest entries carry named captions and source link fields."},
+    {"id": "A.embeds", "result": "pass", "evidence": "No video/audio work products from this entity; embeds not applicable to a fund/collective."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "AI Notes explicitly states this is not a creative-services-for-hire studio; Open Question raises the keep/reject question so Jonathan decides."},
+    {"id": "B.type", "result": "pass", "evidence": "Studio -- appropriate for a collective org."},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram (verified @_baukunst in screenshot), LinkedIn, and Email all present."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Creative technology -- matches their own framing; AI Notes flags it is imprecise."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "United States / 2-10 / Studio; AI Notes names baukunst.co (primary) and LinkedIn company page as sources."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (fully self-directed org)."},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states (Never / Don't know them / Unvetted) do not contradict the clip note, which has no relationship facts."},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip note 'Baukunst: The Art of Building (Creative technology)' acted on: Name cleaned, Creative technology tag applied, clipped.md archived."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes hedges size estimate ('likely 2-10'), flags capability tag as imprecise. No unverified assertions stated as fact."},
+    {"id": "D.source", "result": "pass", "evidence": "Source set to 'Web clipper, 2025-02-12'."},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields recorded in provenance with set_by and verified_at."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, or image captions."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse question about keep/reject as VC fund -- correct: it is genuinely unresolvable without Jonathan's call and is not asking for a field that already has a value."},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching; reviewer flips to Needs Review on this pass."}
+  ],
+  "to": null
+}

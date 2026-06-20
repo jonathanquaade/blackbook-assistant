@@ -1,0 +1,110 @@
+{
+  "page_id": "1caf84ba-ae13-818b-8e14-fc8f94d4a0d3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:05:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects: X Museum rebrand (student 2022), A24 identity and type system (student 2022), PRINT NVA 2024 (at COLLINS). Confirmed visually. X Museum has 7 active images vs A24 (1) and NVA (3) - imbalanced but the 3-project floor is met."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "X Museum goes inside the project: individual poster (site-02), multi-poster grid (site-03), 4-up grid (site-05), typeface specimen alphabet (xmuseum-sva-2), poster spread (xmuseum-sva-4), environmental signage (xmuseum-sva-5), wordmark isolated (oneclub-xmuseum). NVA shows cover, logo mark, and poster series. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged: Identity systems. All captured work is identity/type: custom typeface specimen, exhibition identity systems, film studio type system, brand identity posters. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01.png): confirmed jaeyouchung.com homepage showing his name, COLLINS credit, and project grid. Instagram context shot (site-06.png): confirmed instagram.com/jaeyou.c with cookie modal visible over the profile grid - real IG URL, right person (handle matches). Both are correctly labeled and are genuinely what their captions claim."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 active images have captions naming the project. Source links present in manifest for all entries."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Identity systems / typography discipline; no video embeds are expected or required. No video projects identified for this entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site returned 503 at scrape time (noted in spawn context); screenshots were captured successfully. No unexplained gaps; work is present from ItsNiceThat, sva.design, oneclub.org, and printmag.com."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: jaeyouchung.com (present). Instagram: instagram.com/jaeyou.c (present, verified correct person - bio visible in context shot). LinkedIn: linkedin.com/in/jaeyou-chung/ (present). Email: jaeyou.chung@gmail.com (present, sourced from his own site per AI Notes ItsNiceThat press page)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Identity systems tagged. Provenance shows set_by: jonathan (he tagged it at clip time). Open Question 1 asks whether Graphic design and Type design should also be added - appropriate conditional question given the heavy typography in the portfolio."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States (NY-based, confirmed). Size: 1 (person). Work Status: Employed. AI Notes documents objective multi-source resolution: his own site, LinkedIn and TheOrg all show COLLINS - three sources agree. No conflict."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by: agent. Reasoning in AI Notes: 'capable executing designer inside a strong studio, not yet leading solo.' Grounded in 3-5 yr trajectory and Designer/Associate-Senior title range."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note indicating a prior relationship. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2025-04-03' with no additional instructions embedded in the Name field. Source records this verbatim. No relationship facts or judgment stated in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges seniority ('roughly 3-5 yrs, titled Designer/Associate-to-Senior across sources') and Autonomy read ('not yet leading solo'). Verifiable facts (clients, awards, employer) are stated plainly. Seniority and experience read is present. No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-04-03'. Present."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. All fields have verified_at and set_by. One note: source_url is null for all fields - acceptable, the agent set values from web research and provenance tracks the fact of the research rather than a single canonical URL per field."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed. Semicolons and commas used throughout. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question: Capabilities expansion (Graphic design + Type design). Conditional - Capabilities already has a value (set by jonathan) so this is correctly framed as an expansion question, not a blank ask. No story nudge required (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching awaiting this reviewer gate. Status will be flipped to Needs Review on pass, as required."
+    }
+  ],
+  "to": "scraper"
+}

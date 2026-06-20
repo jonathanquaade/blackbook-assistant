@@ -1,0 +1,111 @@
+{
+  "page_id": "19af84ba-ae13-8197-911b-f8cf19d97bb7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:11:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects active in manifest: Equinox Hotels (4 images), John Chamberlain Estate (2), Tom Ford (2), FFORME (2), Clinique (3 including Vimeo thumbnail) plus a 2017 reel thumbnail. Well over 3 distinct projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Equinox includes hotel interior and campaign film frames; Chamberlain has identity collateral; Tom Ford has 3D film stills; FFORME shows brand system; Clinique has campaign stills + film embed. Goes inside projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged: Brand strategy, Creative direction, Film & video production, Identity systems, Photography, Web design. All captured work maps to at least one of those tags. No off-capability material found."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-03.png): confirms Studio & Marie site, clearly branded, usable memory anchor. IG context shot (site-02.png): is real instagram.com error page, marked rejected + documented + queued to ig-queue.json. Sanctioned throttle exception met exactly."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 active manifest entries have captions and links. Two rejected entries also captioned. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Clinique Vimeo embed present with thumbnail image (clinique-vimeo-thumb.jpg). 2017 Reel Vimeo embed present with thumbnail (reel-2017-thumb.jpg). Pattern: thumbnail image + playable embed followed for both video entries."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes ('Instagram confirmed @hugoandmarie (38K followers, bio and grid match)' plus the queue entry explains the gap). ig-queue.json entry confirmed for this page_id."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Correct for a full-service org with Creative Studio + Artist Bureau arms, 11-40 staff, founded 2008."
+    },
+    {
+      "id": "B.all-links",
+      "result": "pass",
+      "evidence": "Website (hugoandmarie.com), Instagram (@hugoandmarie, AI Notes confirms 38K followers + grid match), LinkedIn (company page), Email (hello@studioandmarie.com from contact page). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "6 tags: Brand strategy, Creative direction, Film & video production, Identity systems, Photography, Web design. All supported by observed client work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 11-40 (three sources cited with variance noted). Work Status: Studio (independent org, correct). Sources documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by: agent. Reasoning in AI Notes: established independent agency with full creative scope and own artist roster."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "No clip note contains relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are agent-set with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was bare web-clipper entry (2025-02-14) with no instructions or relationship facts. Source filled correctly verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size hedged with three conflicting source values noted. Instagram verified explicitly. Founding year, client list, and rebrand status stated as verifiable facts. Seniority read present (founded 2008, long-running full-service scope). No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-02-14'. Present and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by and verified_at. source_url null across all fields is consistent with a multi-source research entry rather than a single canonical URL per field."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about rebrand (Name + Website update to Studio & Marie). Conditional: not asking for fields with existing non-zero values. Correct per instructions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry currently in Enriching. Reviewer to flip to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Website context shot uses creative page (studioandmarie.com/creative) rather than homepage, because the homepage is a near-black splash with minimal content. Scraper documented this choice. The creative page shows the Studio & Marie brand clearly and serves the memory-anchor purpose better. Not a fail."
+}

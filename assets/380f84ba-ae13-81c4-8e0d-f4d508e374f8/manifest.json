@@ -5,7 +5,9 @@
     "caption": "Instagram gysing profile check",
     "link": "https://www.instagram.com/gysing/",
     "captured_at": "2026-06-17",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Unconfirmed handle - @gysing appears personal/family, not her professional design portfolio; cannot confirm at 0.8 confidence"
   },
   {
     "file": "site-02.jpg",
@@ -47,7 +49,9 @@
     "source_url": "https://img2.storyblok.com/1000x0/filters:quality(85):format(webp)/f/69091/1920x1986/e3e0698cb5/bedow-bimmi-packaging-08.jpg",
     "caption": "Bimmi, Bedow 2024",
     "link": "https://bedow.se/work/bimmi/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Food product photography (bowls of food); does not show packaging/graphic design work"
   },
   {
     "file": "site-08.jpg",
@@ -61,21 +65,36 @@
     "source_url": "https://img2.storyblok.com/2400x1600/filters:quality(85):format(webp)/f/69091/3200x1800/26b97fffed/bedow-frank-penny-visual-identity-00.jpg",
     "caption": "Frank Penny, Bedow 2024",
     "link": "https://bedow.se/work/frank-penny/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Abstract blurred coin background texture; not design system work"
   },
   {
     "file": "site-10.jpg",
     "source_url": "https://img2.storyblok.com/1000x0/filters:quality(85):format(webp)/f/69091/2160x1440/32c7fc6cc1/bedow-frank-penny-visual-identity-11.jpg",
     "caption": "Frank Penny, Bedow 2024",
     "link": "https://bedow.se/work/frank-penny/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Event/people photography; not design work"
   },
   {
     "file": "site-11.jpg",
     "source_url": "https://img2.storyblok.com/1600x0/filters:quality(85):format(webp)/f/69091/2880x1920/8c7ed5b5cc/bedow-frank-penny-visual-identity-04.jpg",
     "caption": "Frank Penny, Bedow 2024",
     "link": "https://bedow.se/work/frank-penny/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Tablet mockup; too small/obscured to show identity design system"
+  },
+  {
+    "file": "site-12.jpg",
+    "source_url": "https://img2.storyblok.com/f/69091/3200x1800/26b97fffed/bedow-frank-penny-visual-identity-00.jpg",
+    "caption": "Frank Penny, Bedow 2024",
+    "link": "https://bedow.se/work/frank-penny/",
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Same abstract blurred coin background as site-09; full-res CDN version of same image - still not identity work"
   },
   {
     "file": "site-13.jpg",
@@ -89,7 +108,9 @@
     "source_url": "https://img2.storyblok.com/1600x1067/filters:quality(85):format(webp)/f/69091/2880x1920/1457690bfe/bedow-coop-packaging-design-44.jpg",
     "caption": "Coop packaging, Bedow 2024",
     "link": "https://bedow.se/work/coop-packaging-design/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Three muesli bags similar angle to site-15; too close to same shot"
   },
   {
     "file": "site-15.jpg",
@@ -103,42 +124,54 @@
     "source_url": "https://img2.storyblok.com/2400x1600/filters:quality(85):format(webp)/f/69091/3000x1828/56bf8851ce/bedow-inventure-visual-identity-01.jpg",
     "caption": "Inventure, Bedow 2025",
     "link": "https://bedow.se/work/inventure/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Portrait photography with brand crop overlay; not identity system design work"
   },
   {
     "file": "site-17.jpg",
     "source_url": "https://img2.storyblok.com/1000x0/filters:quality(85):format(webp)/f/69091/1562x1920/5331b39001/bedow-inventure-visual-identity-03.jpg",
     "caption": "Inventure, Bedow 2025",
     "link": "https://bedow.se/work/inventure/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Portrait photography with brand statement; not design system work"
   },
   {
     "file": "site-18.jpg",
     "source_url": "https://img2.storyblok.com/1600x0/filters:quality(85):format(webp)/f/69091/2880x1920/787f366106/bedow-inventure-visual-identity-04.jpg",
     "caption": "Inventure, Bedow 2025",
     "link": "https://bedow.se/work/inventure/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Tablet website mockup; too small to show identity work"
   },
   {
     "file": "site-19.jpg",
     "source_url": "https://img2.storyblok.com/2400x1600/filters:quality(85):format(webp)/f/69091/2880x1980/468a1a3776/bedow-dante-visual-identity-01.jpg",
     "caption": "Dante, Bedow 2024",
     "link": "https://bedow.se/work/dante/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Event photography showing brand on large screen; not close enough to show identity design"
   },
   {
     "file": "site-20.jpg",
     "source_url": "https://img2.storyblok.com/600x0/filters:quality(85):format(webp)/f/69091/1440x1920/63389bccd5/bedow-dante-visual-identity-03.jpg",
     "caption": "Dante, Bedow 2024",
     "link": "https://bedow.se/work/dante/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Portrait of person at microphone; not design work"
   },
   {
     "file": "site-21.jpg",
     "source_url": "https://img2.storyblok.com/1000x0/filters:quality(85):format(webp)/f/69091/1440x1920/9e56893db2/bedow-dante-visual-identity-04.jpg",
     "caption": "Dante, Bedow 2024",
     "link": "https://bedow.se/work/dante/",
-    "captured_at": "2026-06-20"
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Portrait of person in recording studio; not design work"
   },
   {
     "file": "site-22.jpg",
@@ -167,7 +200,9 @@
     "caption": "Website (Cargo Collective portfolio)",
     "link": "https://cargocollective.com/Matildagysing",
     "captured_at": "2026-06-20",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Page is empty/dead - only shows Swedish text redirecting to new URL which is also offline; not a usable context shot"
   },
   {
     "file": "site-26.png",
