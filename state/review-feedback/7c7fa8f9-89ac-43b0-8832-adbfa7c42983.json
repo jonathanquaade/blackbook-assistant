@@ -1,0 +1,110 @@
+{
+  "page_id": "7c7fa8f9-89ac-43b0-8832-adbfa7c42983",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 images across 4 distinct clients: Restream, Finta (2 screens), Mindcloud, Clerk (2 pages), plus website context shot. 4 distinct projects clears the 3+ bar."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Finta has 2 interior product screens (Filters and dashboard); Clerk has 2 different page types (careers, marketing). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is product UI and marketing website UI, matching Product design capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opened and confirmed as wireframe.co homepage (headline: Intentional design. Precise engineering. No shortcuts.). No Instagram context shot; AI Notes documents exhaustive search with no handle found -- genuine documented absence."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 7 manifest entries carry captions naming project and source link."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Product design entry; no YouTube/Vimeo embeds expected or skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents: no Instagram handle found across wireframe.co, Contra, Layers, Dribbble, X snippets."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Attempt-1 FAIL on email now resolved. wirefrme@gmail.com is the verbatim mailto on wireframe.co (AI Notes: 'the missing a is James own deliberate handle, not a transcription error, verified 2026-06-21'). Website, LinkedIn, and Email all present. Instagram: none findable, documented."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Product design, set_by: jonathan. Open Question asks about re-sort to Digital product design + Web design -- correct handling."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country UK, Size 1, Work Status Employed. AI Notes names sources (site lists Lovable, web sources agree). Multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (senior product/web designer, Clerk early team, Tailwind Labs)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never consistent with Jonathan's Notes ('I haven't worked with him yet'). Familiarity left at Don't know them pending Open Question on Ben Leonard."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'James McDonald (Wireframe)' cleaned to Name only; Jonathan's Notes preserved set_by: jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority read and Autonomy estimate present with grounded work history. Email quirk now documented. No bare unhedged assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-08-28'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at on all touched fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed; no em-dashes present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two conditional terse questions: Familiarity (Ben Leonard context) and Capabilities re-sort. Neither asks for a field already holding a non-zero-state value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching pending this gate. Status flipped to Needs Review on this pass."
+    }
+  ],
+  "to": "jonathan"
+}

@@ -460,5 +460,40 @@
     "ig_url": "https://www.instagram.com/hanwillco/",
     "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for @hanwillco profile context shot.",
     "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "fd8d0211-d8e0-4d17-af77-33f00e7374f8",
+    "name": "Variable",
+    "ig_url": "https://www.instagram.com/variable_io/",
+    "reason": "IG context screenshot captured but cookie consent popup obscures profile grid; @variable_io handle is visible. Logged-in ig.py grab needed for clean profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "1cd9ee8d-b11f-4298-868e-69b4ef149907",
+    "name": "APN",
+    "ig_url": "https://www.instagram.com/apn.works/",
+    "reason": "IG context screenshot failed: headless Playwright returned blank white page (Instagram blocked). Need logged-in ig.py grab for @apn.works profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "1ebf84ba-ae13-8155-8788-f7a073af72be",
+    "name": "Stefan Bowerman",
+    "ig_url": "https://www.instagram.com/misternaf/",
+    "reason": "IG context shot (site-02.png) captured but cookie consent modal partially obscures profile grid; handle confirmed via page title (Stefan Bowerman @misternaf). Need logged-in ig.py grab for clean full-res profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "6a1f19d9-0330-40b5-9ca8-0503a3c2f0a1",
+    "name": "Magda Reyman (Reyman&Co)",
+    "ig_url": "https://www.instagram.com/reymanandco/",
+    "reason": "IG context screenshot failed: headless Playwright returned blank white page (Instagram blocked logged-out access). Need logged-in ig.py grab for @reymanandco profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "5d357330-b4e0-4288-b8d2-6f0d2f65d245",
+    "name": "Matt DesLauriers",
+    "ig_url": "https://www.instagram.com/mattdesl_art/",
+    "reason": "IG context screenshot failed: headless Playwright returned blank white page (Instagram blocked). @mattdesl_art confirmed handle (linked from mattdesl.com). Need logged-in ig.py grab for profile context shot. Also: recent generative art posts likely show newer work beyond what was captured.",
+    "queued_at": "2026-06-21"
   }
 ]

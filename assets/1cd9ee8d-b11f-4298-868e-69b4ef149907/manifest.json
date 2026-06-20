@@ -1,0 +1,142 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://www.apn.works/",
+    "caption": "Website",
+    "link": "https://www.apn.works/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/apn.works/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/apn.works/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Blank white page: Instagram blocked headless Playwright. Queued to state/ig-queue.json for logged-in ig.py grab."
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://www.apn.works/",
+    "caption": "Website",
+    "link": "https://www.apn.works/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Duplicate of site-01.png"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://footnotemag.com/",
+    "caption": "Footnote Magazine, built by APN",
+    "link": "https://footnotemag.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://nr.world/",
+    "caption": "NR Magazine, built by APN",
+    "link": "https://nr.world/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://affxwrks.com/",
+    "caption": "AFFXWRKS menswear e-commerce, built by APN",
+    "link": "https://affxwrks.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://soradora.fr/",
+    "caption": "Sora Dora fragrance brand, built by APN",
+    "link": "https://soradora.fr/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://laker.studio/",
+    "caption": "Laker furniture brand, built by APN",
+    "link": "https://laker.studio/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://rebecascouting.com/",
+    "caption": "Rebeca Scouting modeling agency, built by APN",
+    "link": "https://rebecascouting.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://www.museothyssen.org/webdocs/conectathyssen/cartas-amor-ciudades/",
+    "caption": "Thyssen-Bornemisza Museum interactive documentary, built by APN",
+    "link": "https://www.museothyssen.org/webdocs/conectathyssen/cartas-amor-ciudades/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://archiveforspace.com/",
+    "caption": "Archive For Space design practice, built by APN",
+    "link": "https://archiveforspace.com/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "Newsletter popup dominates the screenshot, obscuring the site design."
+  },
+  {
+    "file": "site-12.png",
+    "source_url": "https://www.apn.works/wp-content/uploads/2025/01/Captura-de-pantalla-2025-01-24-a-las-15.50.05-263x300.png",
+    "caption": "APN website portfolio",
+    "link": "https://www.apn.works/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "Appears to be Camper shoe brand product listing page, not a clear APN design project showcase."
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://www.apn.works/wp-content/uploads/2024/09/IMG_5011-300x139.png",
+    "caption": "APN website portfolio",
+    "link": "https://www.apn.works/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "Thumbnail showing NR Magazine article text at low resolution, not useful."
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://www.apn.works/wp-content/uploads/2024/03/Captura-de-pantalla-2023-09-07-a-las-15.46.43-min-300x188.png",
+    "caption": "APN website portfolio",
+    "link": "https://www.apn.works/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "ETC Agency page screenshot from APN thumbnail, unclear which project this represents."
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://www.apn.works/wp-content/uploads/2024/03/Captura-de-pantalla-2023-09-07-a-las-15.49.41-min-300x188.png",
+    "caption": "APN website portfolio",
+    "link": "https://www.apn.works/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "Content unclear from APN thumbnail scrape, cannot verify project attribution."
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://www.apn.works/",
+    "caption": "APN Website",
+    "link": "https://www.apn.works/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "Duplicate of site-01.png"
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://nr.world/",
+    "caption": "NR Magazine website, built by APN",
+    "link": "https://nr.world/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "Duplicate of site-05.png (non-render version, same content)"
+  }
+]

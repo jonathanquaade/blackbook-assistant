@@ -1,0 +1,112 @@
+{
+  "page_id": "fd8d0211-d8e0-4d17-af77-33f00e7374f8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:30:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: H&M Infinite Dreams, IBM Technology Garden, GSK Visualising Advanced Technology, MRI of the Earth (Google Arts & Culture), Centersquare Data at the Center"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior shots per project (3 H&M theme variants, 3 GSK renders, 3 globe states for MRI of the Earth, 2 IBM stills + GIF, 2 Centersquare generative tool states)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are generative/data-driven art installations, 3D data visualisation, or creative-tech tools; matches tagged Capabilities (Creative technology, 3D & motion, Graphic design)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png is variable.io homepage (confirmed dark studio site); site-16.png is instagram.com with @variable_io handle visible under a cookie consent popup (not an error page, handle confirmed, domain confirmed). Partial obscuration noted and queued in manifest note. Not a mislabeled shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 18 image files and 2 embeds carry caption + link in manifest. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 Vimeo embeds present (H&M Infinite Dreams reel, IBM Technology Garden video), each paired with a thumbnail preview image and a link to the project page"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No thinness; 16 work images + 2 context shots + 2 embeds"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (variable.io), Instagram (@variable_io), LinkedIn (linkedin.com/company/variable-io), Email (hello@variable.io) all present"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology, 3D & motion, Graphic design; consistent with portfolio evidence"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10, Work Status = Studio; all consistent with observed studio site and roster"
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "fail",
+      "evidence": "Autonomy field is not set in Notion and not in provenance. AI Notes mentions 'senior, research-led technical practice' in prose but the actual Autonomy 1-5 field was never written. CLAUDE.md and checklist B both require the field to be set (set_by agent) with reasoning on every entry where history supports a read. This studio has named founders with documented client history (Google, IBM, H&M, GSK), so a read is clearly possible.",
+      "fix": "Set Autonomy field (1-5, set_by agent). Variable is a small specialist studio founded by two senior creative coders with a 10+ year track record of complex data-art commissions for major clients. Suggest Autonomy 4: they operate as a self-directed studio with their own R&D agenda; they are not sole-practitioner (not 5) but they run their own practice end-to-end. Add the reasoning to AI Notes alongside the seniority prose."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the clip note which contains no relationship signal"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Variable - new ways of experiencing data | https://variable.io': plain discovery, no instructions or relationship facts, nothing to act on beyond name cleanup and URL"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Founders described as 'est' and 'unconfirmed at 0.8 so left out of fields'; capabilities noted as 'inferred from portfolio'. Seniority prose present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-05-01'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at on all fields. source_url is null throughout (studio with a clear website); values are correct and verifiable. Not a blocking issue."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or Open Questions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "Open Questions field is empty. Familiarity is at its zero-state (Don't know them) and Rating is empty; both warrant a terse question per CLAUDE.md. Standard questions 'Familiarity?' and 'Rating?' are missing.",
+      "fix": "Add two terse Open Questions: '1. Familiarity?' and '2. Rating?'"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching as expected; reviewer gate not yet run"
+    }
+  ],
+  "to": "scout"
+}

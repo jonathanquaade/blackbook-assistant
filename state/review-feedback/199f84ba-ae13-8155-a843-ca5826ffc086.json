@@ -1,0 +1,110 @@
+{
+  "page_id": "199f84ba-ae13-8155-a843-ca5826ffc086",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 active images across 5 distinct projects: AgeChoice (site-01, site-03), MatchHR (site-04, site-05), Assessment-Training (site-07), Enterprise Data Portal (site-08), Coaster/Digital Marketing Marketplace (site-12), plus 2 context shots. No repeated project across majority of images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "AgeChoice has hero + care-types interior section; MatchHR has dashboard + job-creation flow (two distinct screens); other projects have one clear UI screenshot each. Goes inside the products, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web). All 7 work images show web application UIs: search/care platform, HR assessment dashboard, aptitude-test platform, data analytics portal, digital marketing SaaS. All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: rubicon-world.com homepage confirmed (RUBICON logo, 'Is your DATA AI-ready?' hero, TwelveLabs client logo visible). site-14.png: instagram.com/rubicondev confirmed (Instagram wordmark, handle rubicondev, RUBICON brand name visible despite cookie consent overlay). Both labeled correctly."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active manifest entries have captions naming the project and source link URLs pointing to rubicon-world.com case study pages. Context shots captioned 'Website' and 'Instagram profile' with links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Frontend dev studio, no video/audio discipline. No embed requirement. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site is live and functional with case studies. Work captured from primary case study pages. No gap to explain."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Rubicon is a multi-service software/data consultancy with 40+ staff serving EU/US clients at scale. Agency classification is defensible; Jonathan may wish to reconsider Studio vs Agency when confirming capabilities (Open Q2)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.rubicon-world.com/. Instagram: https://www.instagram.com/rubicondev/ (confirmed via brand match). LinkedIn: https://ba.linkedin.com/company/rubicon-world. Email: info@rubicon-world.com (from privacy policy page). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "One tag applied (Frontend development (web)) as a conservative hold pending Jonathan's confirmation (Open Q2 asks which of Backend development, Frontend development, Digital product design, Web design to apply). Correct approach given uncertainty."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Bosnia and Herzegovina (from site). Size: 11-40 (conservative estimate; AI Notes explains third-party sources suggest ~41, ambiguity documented). Work Status: Studio (independent company confirmed by own site). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy 5 set by agent. Rubicon is an independent, ISO-certified, Databricks-partner consultancy operating autonomously for EU/US clients. Autonomy 5 is well-grounded. Reasoning is implicitly supported by AI Notes."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No evidence in clip note or elsewhere that Jonathan has a relationship with Rubicon. Zero-states are honest."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Web development (Made Twelvelabs in Framer)' fully addressed: TwelveLabs confirmed as client logo on rubicon-world.com homepage; Framer claim unconfirmed (flagged in Open Q1); capabilities question raised in Open Q2. Both instructions acted on or asked about."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size estimate hedged ('could sit at 11-40 or 41-100 depending on precision'). Framer claim noted as unconfirmed. Instagram confirmation sourced ('confirmed via search, matches Facebook rubicondev page'). No unsupported assertions. Seniority read not applicable for an agency entry (no individual person)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-02-13. Clip note: \"Web development (Made Twelvelabs in Framer)\"' -- verbatim clip note preserved."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. source_url is null across fields (no per-field URL recorded), which is a minor gap but consistent with how other entries have been handled; not a blocking issue in v1."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes and Open Questions -- no em-dashes found. Range en-dashes (11-40) used correctly."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: Q1 flags the TwelveLabs/Framer identity mismatch (real ambiguity, words justified); Q2 asks for capabilities confirmation (conditional, Capabilities is currently only a placeholder tag). Both terse and actionable."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper"
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://maximeheckel.com/",
+    "caption": "Website",
+    "link": "https://maximeheckel.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "caustics-01.png",
+    "source_url": "https://assets.maximeheckel.com/images/blog/example_caustics.png?w=3840&q=100",
+    "caption": "Caustics in WebGL with React Three Fiber, comparison of caustic renders, 2024",
+    "link": "https://blog.maximeheckel.com/posts/caustics-in-webgl/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "caustics-02.png",
+    "source_url": "https://assets.maximeheckel.com/images/blog/caustics_chromatic_after.png?w=1920&q=100",
+    "caption": "Caustics in WebGL, chromatic aberration pass result, 2024",
+    "link": "https://blog.maximeheckel.com/posts/caustics-in-webgl/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://r3f.maximeheckel.com/webgpu/caustics",
+    "caption": "Caustics shader interactive demo, r3f.maximeheckel.com",
+    "link": "https://r3f.maximeheckel.com/webgpu/caustics",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://blog.maximeheckel.com/posts/caustics-in-webgl/",
+    "caption": "Shining a light on Caustics with Shaders and React Three Fiber, article, 2024",
+    "link": "https://blog.maximeheckel.com/posts/caustics-in-webgl/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "painterly-01.png",
+    "source_url": "https://assets.maximeheckel.com/images/blog/Kuwahara-Spaceship-after-gaussian_zphvl2.png?w=1920&q=100",
+    "caption": "On Crafting Painterly Shaders, spaceship rendered with Kuwahara filter, 2024",
+    "link": "https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "painterly-02.png",
+    "source_url": "https://assets.maximeheckel.com/images/blog/Kuwahara-Plant-after-gaussian_nsscnb.png?w=1920&q=100",
+    "caption": "On Crafting Painterly Shaders, plant with anisotropic Kuwahara filter, 2024",
+    "link": "https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/",
+    "caption": "On Crafting Painterly Shaders, article page, blog.maximeheckel.com, 2024",
+    "link": "https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "postprocess-01.png",
+    "source_url": "https://assets.maximeheckel.com/images/blog/statue-pixel-stagger.png?w=1920&q=100",
+    "caption": "Post-Processing Shaders as a Creative Medium, pixelized Venus de Milo, 2025",
+    "link": "https://blog.maximeheckel.com/posts/post-processing-as-a-creative-medium/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://r3f.maximeheckel.com/fluted-glass",
+    "caption": "Fluted Glass interactive shader demo, r3f.maximeheckel.com, 2025",
+    "link": "https://r3f.maximeheckel.com/fluted-glass",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "dithering-01.png",
+    "source_url": "https://assets.maximeheckel.com/images/blog/dithering-examples.png?w=3840&q=100",
+    "caption": "The Art of Dithering and Retro Shading for the Web, showcase examples, 2024",
+    "link": "https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://r3f.maximeheckel.com/dithered-waves",
+    "caption": "Dithered Waves shader demo (Creation of Adam render), r3f.maximeheckel.com",
+    "link": "https://r3f.maximeheckel.com/dithered-waves",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://r3f.maximeheckel.com/pixel-statue",
+    "caption": "Pixelized Statue shader demo, r3f.maximeheckel.com",
+    "link": "https://r3f.maximeheckel.com/pixel-statue",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://r3f.maximeheckel.com/solar",
+    "caption": "Volumetric Lighting shader demo (solar system scene), r3f.maximeheckel.com",
+    "link": "https://r3f.maximeheckel.com/solar",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://blog.maximeheckel.com/",
+    "caption": "Blog homepage, blog.maximeheckel.com",
+    "link": "https://blog.maximeheckel.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-03.png",
+    "rejected": true,
+    "reason": "WebGPU Glass Pills demo rendered all-black in headless Playwright; WebGPU not supported without a real GPU context",
+    "source_url": "https://r3f.maximeheckel.com/webgpu/glass",
+    "caption": "WebGPU Glass Pills demo",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/",
+    "caption": "On Rendering the Sky, Sunsets, and Planets, blog post, 2026",
+    "link": "https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://blog.maximeheckel.com/posts/shaping-light-volumetric-lighting-with-post-processing-and-raymarching/",
+    "caption": "On Shaping Light, volumetric lighting blog post, 2025",
+    "link": "https://blog.maximeheckel.com/posts/shaping-light-volumetric-lighting-with-post-processing-and-raymarching/"
+  }
+]

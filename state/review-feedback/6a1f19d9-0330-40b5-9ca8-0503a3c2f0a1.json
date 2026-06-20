@@ -1,0 +1,117 @@
+{
+  "page_id": "6a1f19d9-0330-40b5-9ca8-0503a3c2f0a1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Manifest has exactly 1 entry: the website context shot (site-01.png). Three project images exist on disk (proj-02-fullpage.png, proj-03-fullpage.png, proj-04-fullpage.png) but are entirely absent from manifest.json -- they have no captions, no source URLs, no registration, and were never uploaded. Zero distinct named projects are in the deliverable.",
+      "fix": "Add proj-03 (Reyman&ZBX crypto-exchange UI) and proj-04 (Reyman&Fotografiska campaign) to the manifest with project name + source link captions and upload. proj-02 is a broken black render -- reject it and capture a replacement. Target at least 3 distinct named projects with interior screens (not just cover shots)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "No project interiors are manifested or captioned. The only registered image is a homepage context shot.",
+      "fix": "Go inside each project page on magdareyman.com and capture 2-3 interior screens per project (flows, UI states, system details) before the cover shot."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Cannot evaluate because no work images are in the manifest. The orphaned proj-03 (ZBX exchange UI) and proj-04 (Fotografiska campaign phone mockup) appear on-capability for Product design, but they are unregistered and uncaptioned.",
+      "fix": "Once manifest is populated with captioned project images, confirm all are product/UI/digital -- not brand side-projects or lifestyle shots."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Website context shot (site-01.png) is correct: magdareyman.com homepage confirmed. Instagram context shot is entirely absent. The entry is not in state/ig-queue.json and AI Notes do not document why the IG context shot was skipped or throttled.",
+      "fix": "Capture an Instagram context shot of instagram.com/reymanandco. If headless Playwright returns an error page, reject the failed shot, add the entry to state/ig-queue.json with the reason, document the block in AI Notes, and proceed -- the IG queue path is the sanctioned fallback per the checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "proj-02-fullpage.png, proj-03-fullpage.png, and proj-04-fullpage.png sit on disk with no manifest entries, no captions, and no source URLs.",
+      "fix": "Either register each image in manifest.json with caption + source_url + link, or mark as rejected: true with a reason. Nothing should be orphaned on disk outside the manifest."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "No explanation in AI Notes for why three project images are unregistered, why there is no Instagram context shot, and why the IG queue was not used.",
+      "fix": "Document any blocked sources in AI Notes and queue IG if blocked."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Product designer; no video embeds required based on available information."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email field is empty. The website homepage screenshot (site-01.png) plainly shows CONTACT@MAGDAREYMAN.COM. This is a directly findable public email that was missed.",
+      "fix": "Set Email to contact@magdareyman.com (source: magdareyman.com homepage, visible in site-01.png)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Product design tagged, set_by jonathan, with an Open Question asking about a re-sort. Correct handling."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Sweden / 1 / Freelance; multi-source reasoning (Behance, The Dots, own brand) documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (senior IC, 8-9 yrs, Spotify client work)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no contradicting evidence in the clip note or AI Notes."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was only the name 'Reyman&Co', archived to clipped.md. No instructions or judgment facts to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include hedged inferences, seniority read, work status sources named, Autonomy reasoning present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-08-28'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "state/provenance/6a1f19d9-0330-40b5-9ca8-0503a3c2f0a1.json exists with all touched fields recorded."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Capabilities re-sort. Conditional and appropriate -- the field has a locked jonathan value that may warrant revision."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "fail",
+      "evidence": "Entry must remain Enriching until all above FAILs are resolved."
+    }
+  ],
+  "to": "scraper"
+}

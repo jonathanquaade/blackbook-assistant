@@ -1,0 +1,112 @@
+{
+  "page_id": "a911a6ad-5b76-443e-a625-5a1467d39753",
+  "name": "Maxime Heckel",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Images span 6+ distinct projects: Caustics (caustics-01, caustics-02, site-09, site-02), Painterly Shaders (painterly-01, painterly-02, site-08), Post-Processing (postprocess-01), Dithering (dithering-01, site-05, site-06), Fluted Glass demo (site-04), Volumetric/Solar demo (site-07), plus blog context (site-10). No caption repetition, no near-identical images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside articles (article page screenshots site-09, site-08) plus extracted CDN render images showing actual shader output. Interactive demo screenshots (site-02, site-04, site-05, site-06, site-07) show the work running, not just a cover card."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 images are WebGL/shader/3D frontend work matching tagged Capabilities (Frontend development (web) + 3D & motion). No off-capability material present. Verified each image visually."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is maximeheckel.com homepage (confirmed: shows 'THE ONLINE HOME OF MAXIME'S CRAFT' with 3D glass object). No Instagram context shot present because Maxime has no Instagram account (uses X/Bluesky only); this is explicitly documented in AI Notes: 'No Instagram found: he uses Twitter/X (@MaximeHeckel) and Bluesky only.' Nothing to queue; not a throttle failure. IG context shot is genuinely N/A."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry carries a caption naming the project and a link to the source. site-10 is captioned 'Blog homepage, blog.maximeheckel.com' (a context shot of the blog index, legitimate). No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Work is interactive WebGL demos and technical blog posts, not video or audio. Two bookmarks carry the key written articles with captions and links. No video/audio embeds were skipped. The interactive demos are represented as screenshots with source links, which is appropriate for non-video, non-audio interactive work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Rejected site-03.png (WebGPU Glass Pills, all-black render) is in manifest with rejected:true and a documented reason. AI Notes also mentions WebGPU headless failure. No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (maximeheckel.com), LinkedIn (linkedin.com/in/heckelmaxime/), Email (hello@maximeheckel.com) all present. Instagram: documented absent (X/Bluesky only). No Instagram field populated, no stub left. Works At Link: linear.app (correct employer URL fallback, no Works At relation created for an entity not in DB)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) + 3D & motion per TAXONOMY.md. Provenance shows set_by: jonathan, so this was confirmed by him. Images and work match both tags exactly."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US. Size: 1 (person). Work Status: Employed. AI Notes records the multi-source resolution: 'LinkedIn lists Linear as current and reads current; his own site is silent on employer, so Work Status leans on LinkedIn here.' Single-source LinkedIn-only is weak, but the AI Notes documents the reasoning and the entry hedges it correctly. Meets the documented rule for 'Only LinkedIn has signal, site/IG silent'."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by: agent. AI Notes: 'Senior IC, ~8+ yrs, strong autonomy in his niche (Autonomy 4).' Grounded in work history (Tango, Linear, Figma Config 2025 speaker)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them. Jonathan's clip note says 'ex Partner-Dream; 3D WEBGL Pro' -- no stated relationship fact, just a context label. Open Questions ask him to set Work With? and Rating himself. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note parsed: 'ex Partner-Dream' noted in Source verbatim, surfaced in Open Questions as context ('ex Partner-Dream'); '3D WEBGL Pro' captured in Notes (jonathan's own field). No stated judgment facts were present to write via --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status reasoning hedged ('leans on LinkedIn here'). No Instagram stated as fact ('No Instagram found: he uses Twitter/X'). Autonomy estimate flagged as estimate with grounding. Seniority read present: 'Senior IC, ~8+ yrs.' No unhedged inferences found. No em-dashes in AI Notes text."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-06-13. Jonathan note: ex Partner-Dream; 3D WEBGL Pro.' Verbatim clip note preserved."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/a911a6ad-5b76-443e-a625-5a1467d39753.json with all touched fields recorded including set_by values. No field appears below 0.8 confidence threshold."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions, and Source field all checked. No em-dashes found in any content written for Jonathan. (Provenance internal record had one in an older Open Questions draft but the live Notion Open Questions field is clean.)"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse questions: '1. Work With?' (field is Unvetted, appropriate to ask) and '2. Rating? (ex Partner-Dream)' (field is empty). Both conditional: no question duplicates a field that already has a non-zero value. Story nudge not triggered (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching (correct pre-gate state). Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "One orphaned file (postprocess-02.png) exists in the asset directory but is absent from the manifest and not uploaded. It is valid on-capability shader work (post-processing demo). Not a gate failure -- the 15 uploaded images are already strong -- but the scraper may want to either add it to the manifest or document why it was excluded.",
+  "to": null
+}

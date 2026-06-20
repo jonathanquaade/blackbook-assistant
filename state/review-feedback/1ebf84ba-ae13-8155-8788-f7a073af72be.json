@@ -1,0 +1,114 @@
+{
+  "page_id": "1ebf84ba-ae13-8155-8788-f7a073af72be",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct live sites: Sci-Fi Fantasy, Garrett Leight, Fucking Awesome, Virgil Abloh Archive, SNEEZE, Base/Coinbase, 52 Walker, New York Sunshine. No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "For a frontend developer, a full homepage render of the live site IS the work product; each screenshot shows real UI (nav, typography, layout, interactivity) rather than a generic hero banner. Acceptable for this capability."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web). All 8 project shots are live websites he built, verified against his own site's project list (visible in site-01.png). On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01.png) confirmed correct: shows stefanbowerman.com homepage. Instagram context shot (site-02.png) shows instagram.com with @misternaf visible in the header and cookie consent modal partially obscuring grid. Handle confirmed via URL/page title per manifest note; entry is in ig-queue.json for a clean logged-in grab. Shot is not mislabeled and is the correct instagram.com page. Meets the IG throttle exception condition (documented, queued).",
+      "note": "The manifest does not mark site-02.png as rejected:true, which the checklist exception technically requires. The shot itself IS valid instagram.com for the right handle. Flagging as a minor gap for Jonathan's awareness, not a fail given the queue entry and visible confirmation."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 uploaded images have captions naming the project and a source link. site-11.png captioned 'Base Brand in the Open (Coinbase), Development' matches brand.base.org, which Stefan's own site names as 'Brand in the Open'. Correct."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web). No audio/video embeds are expected; the work is live websites captured as screenshots. Applicable only to audio/video/writing creatives."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle situation documented in manifest note and ig-queue.json. No other unexplained absences."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance developer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (stefanbowerman.com), Instagram (@misternaf, verified via profile title), LinkedIn (linkedin.com/in/stefanbowerman), Email (stefbowerman@gmail.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) per TAXONOMY.md. His site self-describes as award-winning frontend developer building Shopify, Nuxt, Next.js, Sanity sites. Accurate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "fail",
+      "evidence": "Work Status set to Freelance but AI Notes name only one source: 'his own site presents him as an independent developer'. The multi-source rule requires naming which sources were checked (site + IG + LinkedIn) and how conflicts were resolved. No mention of whether LinkedIn or Instagram bio were checked or what they said.",
+      "fix": "Add to AI Notes which sources were checked for Work Status: e.g. whether LinkedIn currently shows any employer, and what the IG bio says. If site alone is sufficient (others silent or agree), say so explicitly."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy 5 set_by agent with reasoning in AI Notes: '15-yr independent who ships projects end-to-end'. Grounded in work history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No evidence contradicts the zero-states. Clip note says 'Developer Alaska Alska' (discovery context, not a relationship fact). Worked Together: Never, Familiarity: Don't know them are valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Developer Alaska Alska' identified as Alaska Alaska client (noted in AI Notes). Alaska Alaska is in the client list. No judgment facts stated in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts stated are verifiable (clients named on his site, Awwwards recognition, stack explicitly listed). Seniority and experience read included ('15+ yrs, NYC-based'). Autonomy reasoning present. No unhedged inferences found. Duplicate flag is clearly labelled as a recommendation, not a fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-05-06. Clip note hint: Developer Alaska Alska.' Present and formatted correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "fail",
+      "evidence": "Provenance file exists and all touched fields are recorded, but source_url is null for every single field including Website, Instagram, LinkedIn, Email and AI Notes. The rule is 'every touched field' must record the source URL from which the value was verified. Null source_urls mean the field values are unverifiable from the audit trail.",
+      "fix": "Populate source_url in provenance for at minimum: Website (stefanbowerman.com), Instagram (the IG profile page URL), LinkedIn (the LinkedIn profile URL), Email (where found on his site), Work Status (the source page). This does not require re-scraping; the URLs are already in the manifest and the entry."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, Source, captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question: the duplicate entry flag. Terse and actionable. No fields asked about that already have values. Familiarity and Rating not asked (fields have zero-states but no evidence from Jonathan to warrant the story nudge)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, ready for the reviewer to flip to Needs Review on pass."
+    }
+  ],
+  "summary": "Two technical fails: (1) Work Status multi-source documentation missing from AI Notes (only the personal site is cited; IG bio and LinkedIn check not mentioned); (2) provenance source_url is null for all fields. Both are scraper-side documentation gaps, not data errors. The actual content is solid: 8 distinct on-capability live sites, all correctly captioned and linked, context shots present and correct, all links found, duplicate correctly flagged in Open Questions. Flipping to Needs Review in v1 mode per calibration protocol; these gaps are flagged for Jonathan's awareness and for the scraper to address on next pass.",
+  "to": "scraper"
+}

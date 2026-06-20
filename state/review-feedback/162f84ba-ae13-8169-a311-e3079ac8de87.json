@@ -1,0 +1,111 @@
+{
+  "page_id": "162f84ba-ae13-8169-a311-e3079ac8de87",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct client sites captured: Beni Rugs, D.S. and Durga, Sprout (Gardener's own boilerplate product), Cards Against Humanity. Exceeds the 3-project minimum. site-08 and site-09 are two shots of the same Sprout marketing page but the 4-client spread is still sufficient."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Beni Rugs has a hero (site-04) and a product interior 'Introducing Rif' (site-05); DS&D has a hero (site-06) and product collections grid (site-11). Not purely cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web). All captured work is live ecommerce and marketing websites Gardener built. Fully on-capability; no off-capability side work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-02) confirmed: shows gardener.nyc homepage with 'GARDENER / Growing the world wide web' header and site nav. Instagram context shot (site-03) is the IG error page, correctly marked rejected in manifest with documented reason (rate-limited). Entry queued in state/ig-queue.json. AI Notes document the block. Sanctioned exception path fully followed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected image has a caption naming the client/project and a link to the source URL. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Gardener is a frontend/web studio; the work is websites, not video or audio. No embeddable video work expected or skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Louisa Ballou (site-12) returned a Netlify 404, marked rejected with reason. DS&D site-07 and site-10 rejected for modal/cookie bar obstruction with reasons. All rejections documented."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small specialized team (founder-led, 2-10 people) doing hands-on ecommerce web development."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.gardener.nyc/ (confirmed via site-02 screenshot). Instagram: https://www.instagram.com/gardener.nyc/ (handle verified per AI Notes). LinkedIn: https://www.linkedin.com/company/gardener-nyc (company page). Email: ian@gardener.nyc. All four links present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) is set_by jonathan (locked). Scraper correctly asked Jonathan in Open Question 3 whether to add Backend development and Web design rather than overwriting a jonathan-set field. Protocol followed correctly."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US (migration, consistent with NYC location). Size: 2-10 (matches self-described human-sized studio). Work Status: Studio, with sources named in AI Notes (studio website + self-description, no conflicting sources). Objective resolution rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: independent founder-led studio. Appropriate for a studio operating fully on its own."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all agent-set. Jonathan's Notes field says 'Sanity, Shopify, Ecommerce Developer' which is factual context, not a relationship fact. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Jonathan's Notes ('Sanity, Shopfiy, Ecommerce Developer') is factual context that informed AI Notes and tagging. Source set to 'Web clipper, 2024-12-20'. No relationship facts in the clip note requiring --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (founder-led, established practice), named clients (verifiable from their site), autonomy reasoning. No bare assertions about personal qualities. No em-dashes in agent-authored text."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-12-20'. Filled and matches the expected format for a migrated entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields recorded, set_by values correct (agent/jonathan/migration as appropriate). source_url is null across all fields (no per-field source URLs logged) but fields are within 0.8 confidence and verified_at timestamps are present."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions, Source all reviewed. No em-dashes found in agent-authored text."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 (Work With?) and Q2 (Rating?) are terse and correct for an Unvetted/unrated entry. Q3 asks about expanding Capabilities (correct: jonathan-set field, can only propose). Q4 flags a suspected copy-paste artifact from another entry. All conditional and appropriately scoped. No story nudge needed (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry was in Enriching; flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "Soft observation for Jonathan: site-08 and site-09 both show the Sprout boilerplate marketing page (same URL, sprout.store). Two angles of one page rather than two distinct projects; the 4-client spread is still sufficient. Replacing one Sprout shot with a screenshot inside a different client build (Kernel or Genexa, both in the client roster) would strengthen the selection. Also site-05 has a partially visible email signup modal on the right edge; legible and not a blocker but not fully clean.",
+  "to": null
+}

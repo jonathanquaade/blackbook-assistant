@@ -1,0 +1,110 @@
+{
+  "page_id": "99c8fce2-5c39-439b-b05c-acc250dc26c6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Looped/Poly.AI, ProSupps, Bad Omens, VITURE Luma, Ibicash. No repeated project across captions. Source URLs confirm project-level directory scoping (_polyai-case-image-, _prosupps-case-image-, _badomens-case-image-)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Looped: 3 images (hero, in-game screen, top-down level map). ProSupps: 3 images (laptop mockup, 3D logo close-up, mobile mockup). Bad Omens: 2 images (merch shop grid, product card). VITURE Luma: 1 image (hero shot of live site). Ibicash: 2 images (hero + interior scroll). VITURE Luma is only one shot but it is a live-product site and the single image shows the actual built deliverable; not a blocking fail."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web). All 5 projects are live web builds or interactive web experiences, which is exactly the capability. Looped is a browser game/interactive experience; ProSupps and Bad Omens are branded ecommerce sites; VITURE Luma and Ibicash are product/marketing sites. No off-capability drift."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: darkroom.engineering homepage (red/black CRT aesthetic, 'WHERE THINGS GET DEVELOPED' headline, correct domain visible in title bar area). site-02.png: instagram.com logged-out profile for @darkroom.engineering (Instagram wordmark top-left, handle and follower count visible, grid shown with recognizable darkroom content including Bad Omens post). Both context shots confirmed correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have caption and link set. Context shots have caption 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web) for a studio; no audio/video discipline requiring embeds. Work is screenshotted site builds, which is appropriate. No video embeds missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "11 work images across 5 projects; no thin or unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small specialized hands-on creative-development team (~4 people), not an agency."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://darkroom.engineering/ (canonical root). Instagram: https://www.instagram.com/darkroom.engineering/ (verified: profile page confirms handle is darkroom.engineering, bio matches studio). LinkedIn: https://www.linkedin.com/company/darkroom-engineering. Email: hi@darkroom.engineering. All four link categories populated."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) set_by jonathan (locked). Scraper correctly did not overwrite; proposed additions (Creative technology, 3D & motion, Web design) are in Open Questions. Handling is correct."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Argentina (agent, 0.8 from team list, migration US value corrected and documented in AI Notes). Size: 2-10 (core team ~4). Work Status: Studio (they are a studio, not freelance/employed). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio; Autonomy is a per-person field (Storonsky scale for individuals). Not applicable to a studio entry. Correct to omit."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them. Jonathan's note says 'ex Partner-Dream', meaning they were a prior partner studio, not that Jonathan personally worked with them. Open Question 1 defers Work With? to Jonathan. Zero-states are not contradicted by evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'ex Partner-Dream' preserved verbatim in Source. Open Question 1 asks Jonathan to set Work With? himself. No relationship facts stated as facts that should be locked; the deference to Jonathan is correct."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge the Country correction ('set to Argentina at 0.8 from the team list'), are clear about what is locked by Jonathan vs proposed, and document seniority/experience ('Senior, award-level technical craft'). No unverified claims stated as facts. No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-06-06. Jonathan note: ex Partner-Dream'. Clip note verbatim, date present."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. LinkedIn, Instagram, Email all verified_at 2026-06-21 (scraper run). Images verified_at 2026-06-21. No fields below 0.8 confidence written as facts."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes and Open Questions: no em-dashes found. Slashes and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Work With? deferred to Jonathan (correct, since 'ex Partner-Dream' implies prior relationship but not a clear rating); (2) Capabilities expansion proposed. Both are conditional and terse. No question asks for a field that already has a non-zero-state value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching at time of review. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": "scraper"
+}

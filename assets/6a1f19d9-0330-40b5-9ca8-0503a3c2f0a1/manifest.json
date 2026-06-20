@@ -6,5 +6,98 @@
     "link": "https://magdareyman.com/",
     "captured_at": "2026-06-20",
     "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/reymanandco/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/reymanandco/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Blank white page: headless Playwright blocked by Instagram (logged-out). Queued to state/ig-queue.json for logged-in ig.py grab."
+  },
+  {
+    "file": "proj-02-fullpage.png",
+    "source_url": "https://magdareyman.com/majority",
+    "caption": "Reyman and Majority, app UI",
+    "link": "https://magdareyman.com/majority",
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Broken black render: Readymag SPA video player placeholder, no visible content. Replaced by direct CDN downloads."
+  },
+  {
+    "file": "proj-03-fullpage.png",
+    "source_url": "https://magdareyman.com/zbx",
+    "caption": "Reyman and ZBX, crypto exchange UI",
+    "link": "https://magdareyman.com/zbx",
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Low-resolution SPA fullpage screenshot. Superseded by higher-quality CDN downloads (zbx-01 through zbx-03)."
+  },
+  {
+    "file": "proj-04-fullpage.png",
+    "source_url": "https://magdareyman.com/fotografiska",
+    "caption": "Reyman and Fotografiska, campaign site",
+    "link": "https://magdareyman.com/fotografiska",
+    "captured_at": "2026-06-20",
+    "rejected": true,
+    "reject_reason": "Low-resolution SPA fullpage screenshot. Superseded by higher-quality CDN downloads (fotografiska-01)."
+  },
+  {
+    "file": "zbx-01.png",
+    "source_url": "https://d2kq0urxkarztv.cloudfront.net/5a717d62b7e6a8007e4068aa/2689522/upload-569d6920-db0b-46e0-a968-7a95706902fe.png",
+    "caption": "Reyman and ZBX, desktop trading interface with charts and order book",
+    "link": "https://magdareyman.com/zbx",
+    "captured_at": "2026-06-21",
+    "project": "Reyman and ZBX"
+  },
+  {
+    "file": "zbx-02.png",
+    "source_url": "https://d2kq0urxkarztv.cloudfront.net/5a717d62b7e6a8007e4068aa/2689522/upload-8a9e814a-f3e6-4ba8-9086-7dd1f8d58887.png",
+    "caption": "Reyman and ZBX, mobile trading screens (ADA/USDT pair and order book)",
+    "link": "https://magdareyman.com/zbx",
+    "captured_at": "2026-06-21",
+    "project": "Reyman and ZBX"
+  },
+  {
+    "file": "zbx-03.png",
+    "source_url": "https://d2kq0urxkarztv.cloudfront.net/5a717d62b7e6a8007e4068aa/2689522/upload-c8983259-1567-4cac-951a-98ea0378ea9e.png",
+    "caption": "Reyman and ZBX, welcome screen and market pairs list",
+    "link": "https://magdareyman.com/zbx",
+    "captured_at": "2026-06-21",
+    "project": "Reyman and ZBX"
+  },
+  {
+    "file": "majority-01.png",
+    "source_url": "https://d2kq0urxkarztv.cloudfront.net/5a717d62b7e6a8007e4068aa/2689522/upload-55f0ea08-a636-4746-aa0f-0fc851bc7af4.png",
+    "caption": "Reyman and Majority, wallet home and international money transfer flow",
+    "link": "https://magdareyman.com/majority",
+    "captured_at": "2026-06-21",
+    "project": "Reyman and Majority"
+  },
+  {
+    "file": "majority-02.png",
+    "source_url": "https://d2kq0urxkarztv.cloudfront.net/5a717d62b7e6a8007e4068aa/2689522/upload-767dd10b-0f7e-416a-b15c-65fa0e294c9c.png",
+    "caption": "Reyman and Majority, transaction detail screen",
+    "link": "https://magdareyman.com/majority",
+    "captured_at": "2026-06-21",
+    "project": "Reyman and Majority"
+  },
+  {
+    "file": "majority-03.png",
+    "source_url": "https://d2kq0urxkarztv.cloudfront.net/5a717d62b7e6a8007e4068aa/2689522/upload-89447988-20d8-4794-97d7-930bb502bf77.png",
+    "caption": "Reyman and Majority, events feature screen (Wizkid concert)",
+    "link": "https://magdareyman.com/majority",
+    "captured_at": "2026-06-21",
+    "project": "Reyman and Majority"
+  },
+  {
+    "file": "fotografiska-01.png",
+    "source_url": "https://d2kq0urxkarztv.cloudfront.net/5a717d62b7e6a8007e4068aa/2689522/upload-3d5897ff-a6a5-4faa-a800-bdf6230d3eb9.png",
+    "caption": "Reyman and Fotografiska (Essity x Fotografiska), campaign microsite design",
+    "link": "https://magdareyman.com/fotografiska",
+    "captured_at": "2026-06-21",
+    "project": "Reyman and Fotografiska"
   }
 ]

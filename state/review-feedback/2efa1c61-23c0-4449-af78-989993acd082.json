@@ -1,0 +1,111 @@
+{
+  "page_id": "2efa1c61-23c0-4449-af78-989993acd082",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T09:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Oliver Millar portfolio site, GREATEST by GOAT editorial site, Micaiah Carter monograph launch site, sub interactive portfolio, Waterworks Expo 2025 installation. 3 images each (2 for Waterworks)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images go inside each project: oliver-millar shows scattered mosaic layout + film hero sequence + interior stills; micaiah-carter shows the 3D book-flip UI; sub shows filtered grid and nav overlay; waterworks shows the interactive map at two zoom levels."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 5 projects are interactive websites or digital installations. Oliver Millar shots show the web UI Arvin built (scattered image layout, overlay project labels), not Oliver Millar's photography per se. Capabilities are Web design + Frontend development (web). Work matches."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is arvinleeuwis.com (portfolio grid layout, URL source confirmed in manifest). site-02.png is instagram.com showing IG logo, handle 'arvinleeuwis', name 'Arvin Leeuwis', 15 posts / 1,763 followers. Both captions match content."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 work images have captions naming the project and a link to arvinleeuwis.com/[project]. Context shots captioned 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Arvin is a web designer; the deliverables are websites. Static screenshots of interactive sites are the correct capture format here. No YouTube/Vimeo embeds were present in the project pages as primary deliverables. No embed gap."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work was successfully captured from DatoCMS CDN. No gaps or thin sections to explain."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person. Correct: solo freelance designer-developer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: arvinleeuwis.com. Instagram: instagram.com/arvinleeuwis (confirmed by bio in context shot). LinkedIn: linkedin.com/in/arvin-leeuwis-8578458b. Email: studio@arvinleeuwis.com (confirmed from site mailto). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) per Jonathan (set_by jonathan in provenance). Open Question 3 proposes adding Creative technology and 3D & motion, correctly flagging to Jonathan rather than self-applying."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands / 1 / Freelance. AI Notes names sources: site, Behance and LinkedIn all describe freelance/studio-of-one. Meets multi-source objective rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: designs and ships solo, FWA wins, ~3+ yrs freelance. Grounded in verifiable signals."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With?: Unvetted, Worked Together: Never, Familiarity: Don't know them) are consistent with a standard web-clipper entry; no clip note states otherwise."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipper entry with no special instructions in the Name field. Source correctly records 'Web clipper, 2024-08-06'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "FWA wins cited as verifiable fact; seniority read ('Senior independent creative dev') grounded in years of freelance practice and FWA recognition; '~3+ yrs freelance' appropriately hedged with tilde. Seniority + Autonomy both present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-08-06'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/2efa1c61-23c0-4449-af78-989993acd082.json. All touched fields recorded. set_by values correct: agent for agent-set fields; jonathan for Capabilities (his tag). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned programmatically. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: (1) Work With? (2) Rating? (3) Capabilities expansion proposal. All terse. None ask for fields already holding non-zero values. Story nudge not triggered (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review as part of this gate pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 5 distinct web projects, 14 work images + 2 confirmed context shots, all metadata fields complete. Minor observation not rising to a fail: the Waterworks project has 2 images instead of 3 (both show the same interactive map at different zoom levels); acceptable given 5 projects total and the interactive-map nature of the work."
+}
