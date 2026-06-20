@@ -1,0 +1,110 @@
+{
+  "page_id": "1fcf84ba-ae13-8118-95c2-de2ae9ff0711",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T01:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects confirmed visually: Nike Run (site-01 to site-04, nike-run-10, nike-run-yt-thumb), PAC NYC (pac-04, pac-05, pac-009), Kin Euphorics (kin-01, kin-03)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Nike Run: shoebox packaging, street stencil, race tape detail, OOH billboard, Boston Metro OOH, YouTube thumbnail; PAC NYC: street banner, custom typeface spec sheet, environmental wayfinding sign; Kin: packaging flatlay and outdoor billboard"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Brand strategy; work shown is brand identity, OOH copy (BOYLSTON OR BUST., NO CITY IS MORE QUALIFIED.), brand packaging, outdoor campaigns. On-capability for brand strategy/copy/CD"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-08.png: confirmed instagram.com with @trialanderrorr handle and Natalee Ranii-Dropcho username visible. site-09.png: Porto Rocha fallback captioned honestly ('nataleeraniidropcho.com unresponsive; Porto Rocha Nike Run case study shown'), documented in AI Notes"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 active manifest entries have captions and source links"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "YouTube embed present for Nike Run video; thumbnail preview image nike-run-yt-thumb.jpg captured; 2 bookmarks for interview and D&AD award"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Portfolio site unresponsive documented in AI Notes; IG context shot captured logged-out successfully; no IG queue needed"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all set. Email absence documented in AI Notes (trialanderrorr.com suspended, only scraped ZoomInfo work address not public)"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy tagged (Jonathan's from clipper provenance). Open Question asks about adding Copywriting and Creative direction; correct to ask rather than overwrite a jonathan-set field"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Freelance. Sources named in AI Notes: own site + Brand Identity Freelancers interview vs ZoomInfo (treated as stale engagement title)"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (senior freelancer leading strategy and messaging on major brand campaigns)"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Clip note says 'worked on Nike Run Campaign' = discovery note about her work, not a Jonathan relationship note. Worked Together: Never is correct (no evidence Jonathan worked with her)"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Strategy Copywriting. worked on Nike Run Campaign' archived in clipped.md, preserved verbatim in Source, informed capabilities research"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Hedges present throughout ('treated as engagement title', 'confirmed by account name match'). Seniority read (senior CD-level freelancer, trajectory from Copy Director to CD). Autonomy reasoning paired"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2025-05-23. Jonathan clip note: Strategy Copywriting. worked on Nike Run Campaign.'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by and verified_at"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions and Source use semicolons, commas, and parentheses throughout; no em-dashes found"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about Capabilities; not asking for fields that already have non-zero values"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching pre-gate, will be flipped to Needs Review by this reviewer"
+    }
+  ],
+  "to": null
+}

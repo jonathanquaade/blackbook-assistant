@@ -1,0 +1,110 @@
+{
+  "page_id": "226f84ba-ae13-81e1-844c-e175604905c7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-20T00:54:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects confirmed visually: SloMo (NHS mental health app), QardioBase (smart scale), Paper Phone (Google Digital Wellbeing), UK Passport concept (speculative redesign), QardioArm (blood pressure monitor), Eco Lenses (sustainable food ordering). Each is a different object/project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project showing device details, in-use shots, and interior spreads (passport open spread, app screens, scale held/touched). Goes inside the work, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Digital product design, Industrial design, Creative technology, Insights & research, Brand strategy. All 6 projects match: physical products (QardioBase, QardioArm), digital UX (SloMo, Paper Phone, Eco Lenses), speculative product design (UK Passport)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-03.png confirmed as specialprojects.studio homepage (nav reads Projects/About/Services/Talks/Journal/Contact, studio name visible). site-02.png confirmed as instagram.com showing @special_proj / Special Projects with Instagram chrome present; handle matches the Instagram field. Cookie modal present but page is definitively instagram.com, not another site."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming project and client. QardioArm captions omit year but name the project and client. Eco Lenses thumbnail is captioned. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Eco Lenses Vimeo showcase embed present in manifest with thumbnail preview image and linked caption. No other project pages had video that was skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sections. AI Notes documents source resolution and what was used."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialized team doing hands-on creative execution, run by founders."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram (@special_proj confirmed from studio footer), LinkedIn (company page, corrected slug verified), Email (hello@specialprojects.studio) all set."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "5 tags mapped from site's listed disciplines. Consistent with the portfolio breadth across physical product, digital product, technology concepts, research, and strategy."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10 (corrected from 11-40; AI Notes documents 7 named staff on /about + LinkedIn 2-10), Work Status = Studio; AI Notes records source resolution (studio self-described on site, corroborated by LinkedIn company profile)."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy = 5, set_by agent. Reasoning in AI Notes: sets vision, runs invention projects end-to-end as a studio led by its founders."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Clip note was 'Special Projects | Home' (page title only, no relationship facts). Zero-states Never / Don't know them / Unvetted are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip name 'Special Projects | Home' had no instructions beyond the page title. Cleaned to 'Special Projects'. Source records the clip date. Nothing actionable was left unaddressed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual claims sourced (founded 2014, B Corp, named clients, size correction, Work Status sources named). Capabilities traced to site disciplines. Seniority grounded in the studio's own description. No em-dashes found in AI Notes or captions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2025-07-04.' Present and formatted correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with verified_at timestamps and set_by: agent. No fields below 0.8 confidence were written as fact."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned: no em-dashes. Captions scanned: none. Open Questions: none present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions needed: no judgment fields contradict evidence, no unresolvable gaps, and the conditional rule bars asking for fields already at their zero-states with no contradicting evidence."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry was in Enriching at review time. Reviewer flips to Needs Review on pass, as required."
+    }
+  ],
+  "to": null
+}

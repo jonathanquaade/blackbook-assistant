@@ -1,20 +1,19 @@
 {
   "page_id": "217f84ba-ae13-813e-b7a1-da537efc514f",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-20T00:51:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-20T01:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects: Acne Studios, Svenskt Tenn, Marshall, Glossier. No repeated project across captions."
+      "evidence": "4 distinct projects confirmed: Acne Studios (site-01, site-02, site-03-new), Svenskt Tenn (site-04, site-05, site-06), Marshall (site-07, site-08, site-09), Glossier (site-10, site-11)."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "site-03.png (captioned 'Acne Studios, web redesign') is a corrupted render: the image contains only hash-character outlines on a white background with no visible design content. It is not rejected in the manifest and is counted as an active deliverable image.",
-      "fix": "Mark site-03 as rejected in manifest.json (add 'rejected': true, 'reject_reason': 'corrupted render, hash characters only') and replace it with a real interior image from the Acne Studios project page (barkas.com/projects/acne-studios/). The Acne Studios project still has site-01 and site-02 as valid images so two remain; a third real interior would restore depth."
+      "result": "pass",
+      "evidence": "Attempt-1 fail resolved. site-03.png correctly marked rejected (corrupted render). site-03-new.png verified: shows 4 Acne Studios mobile screens (bag category, new arrivals, product grid, product detail) with Acne Studios wordmark; real design content, captioned and linked to project page."
     },
     {
       "id": "A.on-capability",
@@ -24,27 +23,27 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13 is the confirmed instagram.com/barkas profile (bio: 'Independent Creative Company Copenhagen, Stockholm, NYC', grid matches). site-14 is the confirmed barkas.com projects page. site-12 (failed homepage) is correctly marked rejected with documented reason and replaced."
+      "evidence": "site-13 verified as real instagram.com/barkas profile (bio: Independent Creative Company Copenhagen, Stockholm, NYC; grid matches). site-14 verified as real barkas.com projects page (Barkas wordmark and project grid visible). site-12 (blank homepage) correctly rejected and documented."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every manifest entry carries caption + link."
+      "evidence": "Every active manifest entry carries caption and link. Rejected entries (site-03, site-12) are excluded from active deliverables."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "Brand/identity/web agency; no video work evident in portfolio. No embeds expected."
+      "evidence": "Brand/identity/web agency; no video work present in portfolio. No embeds expected."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Blank homepage capture is documented in manifest (site-12 rejected) and replaced by site-14."
+      "evidence": "Blank homepage capture documented in manifest (site-12 rejected with reason) and replaced by site-14 (projects page)."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Agency. Reasoning documented in AI Notes (30 people, 3 offices, full-service scope)."
+      "evidence": "Agency. Reasoning in AI Notes: ~30 people, 3 offices, full-service scope (identity, campaigns, strategy, digital)."
     },
     {
       "id": "B.links",
@@ -59,12 +58,12 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Denmark/Sweden/Norway, 11-40, Studio. Sources named in AI Notes (own About page + IG bio)."
+      "evidence": "Denmark/Sweden/Norway, 11-40, Studio. Sources named in AI Notes (own About page and IG bio)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes."
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes (established multi-office firm, sets strategy, runs programmes end-to-end)."
     },
     {
       "id": "C.no-contradiction",
@@ -89,23 +88,23 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present; all touched fields have set_by and verified_at."
+      "evidence": "Provenance file present; all touched fields have set_by and verified_at populated."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, Source, or Open Questions."
+      "evidence": "No em-dashes in AI Notes, captions, Source, or Open Questions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No open questions needed; no resolvable ambiguity remains and no story nudge triggered."
+      "evidence": "No open questions needed; no resolvable ambiguity and no story nudge triggered."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry correctly in Enriching; gate not yet passed."
+      "evidence": "Entry in Enriching; flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }
