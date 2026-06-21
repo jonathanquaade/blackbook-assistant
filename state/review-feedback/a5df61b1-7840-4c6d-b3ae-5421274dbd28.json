@@ -1,45 +1,44 @@
 {
   "page_id": "a5df61b1-7840-4c6d-b3ae-5421274dbd28",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-21T00:45:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-21T08:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 accepted images span 3 distinct named projects (Amazon Roster 2021, Amazon Roster AI 2021-23, Acorns 2018-20). No repeated-angle duplicates."
+      "evidence": "12 accepted images span 3 distinct named projects: Amazon Roster 2021, Amazon Roster AI 2021-23, Acorns banking 2018-20. Plus one website context shot. No repeated-angle duplicates."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Multiple interior screens per project: Amazon Roster has dashboard view + exploration board + AI variant; Acorns has onboarding course screen + multi-app spread + performance chart + banking cards grid."
+      "evidence": "Multiple interior screens per project: Amazon Roster has dashboard view (site-12), press coverage shot (site-13), product wireframes showing two layout states (site-27, site-28); Acorns has onboarding course screen (site-22), multi-app UI spread (site-23), performance chart (site-24), banking card grid (site-25), card component UI detail (site-29). Goes inside projects, not hero-only."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Two accepted images are off-capability illustrations, not product UI: (1) site-14.gif (captioned 'Amazon Roster, 2021') is a pencil sketch of stacked chevron/book shapes -- a decorative illustration from the project page, not a product screen. (2) site-21.jpg (captioned 'Acorns banking design, 2018-2020') is a flat marketing illustration of a hand holding a green card -- the same category as site-03 through site-11 which were correctly rejected. Both must be rejected in the manifest and removed from the Images property.",
-      "fix": "Reject site-14.gif and site-21.jpg in manifest (rejected: true, reject_reason documenting why). Replace with genuine product UI from the Amazon Roster and Acorns project pages (actual screens, not decorative artwork). If no additional screens are available from those pages, reduce count rather than keep off-capability images."
+      "result": "pass",
+      "evidence": "Attempt-1 fail is resolved. site-14.gif (pencil sketch illustration) and site-21.jpg (flat marketing illustration of hand/card) are both flagged rejected:true in manifest AND are absent from the Notion Images property (confirmed via keeper.py get). Replacements site-27 and site-28 are genuine Amazon Roster product wireframes (two-panel hiring dashboard, labeled functional zones, clear UI layout). site-29 is Acorns banking card component UI (Visa debit card, balance, deposit CTAs). All 12 live images are product UI or a website context shot. No off-capability illustrations remain."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-26.png is a genuine bradleyziffer.com homepage screenshot. No Instagram exists for this person (documented in AI Notes: site footer lists Twitter, Are.na, Read.cv only; no IG found via search). Genuine absence is not a checklist failure."
+      "evidence": "site-26.png is a bradleyziffer.com homepage screenshot (confirmed present, context_shot:true in manifest). No Instagram exists for this person (documented in AI Notes: Twitter, Are.na, Read.cv only; no IG handle found via search or on any profile). Genuine absence, not a gap."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 11 accepted images carry captions with project name and source link. No anonymous shots."
+      "evidence": "All 12 accepted images carry captions naming the project and a source link. No anonymous shots."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio content identified for this entry. Product design work is image-based; no YouTube or Vimeo on the project pages was flagged as missed."
+      "evidence": "No video or audio content identified for this entry. Product design work is image-based; no YouTube or Vimeo on the project pages was flagged as missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No Instagram documented in AI Notes with specific sources checked (Twitter, Are.na, Read.cv, no IG handle found). No public email documented with specific explanation (cal.com booking only). Both absences are explained, not silent gaps."
+      "evidence": "No Instagram: documented in AI Notes with specific sources checked. No public email: documented (cal.com booking only). Both absences explained, not silent gaps."
     },
     {
       "id": "B.type-classified",
@@ -49,32 +48,32 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website: bradleyziffer.com (present). Instagram: none found, documented. LinkedIn: linkedin.com/in/bradleyziffer (present). Email: no public email found, cal.com booking documented. No obvious missed searches."
+      "evidence": "Website: bradleyziffer.com (present). Instagram: none found, documented. LinkedIn: linkedin.com/in/bradleyziffer (present). Email: no public email, cal.com booking documented."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Product design tagged (set_by: jonathan, locked). Open Question 1 asks for a re-tag to Digital product design -- correct approach since the field is locked. Capabilities match the work shown."
+      "evidence": "Product design tagged (set_by: jonathan, locked). Open Question 1 asks for re-tag to Digital product design. Correct approach; matches the work shown."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: US. Size: 1. Work Status: Unknown with multi-source conflict documented in AI Notes (LinkedIn says Ramp, ZoomInfo says Antimetal, site says neither). Objective resolution rule applied correctly."
+      "evidence": "Country: US. Size: 1. Work Status: Unknown with multi-source conflict documented in AI Notes (LinkedIn says Ramp, ZoomInfo says Antimetal, site names neither). Objective resolution rule applied correctly."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5 (set_by agent). Grounded in Lead Product Designer at Acorns + Design Research Lead at Amazon + Principal-level trajectory, ~10 yrs. Reasoning in AI Notes."
+      "evidence": "Autonomy: 5 (set_by agent). Grounded in Lead Product Designer at Acorns + Design Research Lead at Amazon + Principal-level trajectory ~10 yrs. Reasoning in AI Notes."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Work With? = In a pinch (set_by: jonathan, matches his clip note 'only in a pinch'). Zero-states for Worked Together (Never) and Familiarity (Don't know them) are consistent with no relationship evidence in the clip note."
+      "evidence": "Work With? = In a pinch (set_by: jonathan, matches clip note 'only in a pinch'). Zero-states for Worked Together (Never) and Familiarity (Don't know them) are consistent with no relationship evidence in the clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note 'Bradley Ziffer (UI designer)' -- parenthetical treated as context, Name cleaned to 'Bradley Ziffer', 'UI designer' informed Capabilities framing. 'Only in a pinch' written via --from-jonathan to Work With? and preserved verbatim in Source."
+      "evidence": "Clip note 'only in a pinch' written via --from-jonathan to Work With? and preserved verbatim in Source. Name cleaned from any parenthetical to 'Bradley Ziffer'."
     },
     {
       "id": "C.ai-notes-hedged",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present for all touched fields. set_by values correct: Capabilities and Work With? are jonathan; all agent-written fields are agent."
+      "evidence": "Provenance file present for all touched fields. set_by values correct. Note: null source_url on provenance fields is a known systemic tooling gap per checklist calibration note 2026-06-21, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,13 +98,13 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two terse questions: (1) Capabilities re-tag (correct -- field is jonathan-locked), (2) current employer conflict. Both conditional and necessary. No story nudge needed (Worked Together is Never, Work With? is not Unvetted but no Notes story prompt applies here)."
+      "evidence": "Two terse conditional questions: (1) Capabilities re-tag (field is jonathan-locked, correct to ask), (2) current employer conflict (sources genuinely disagree). No story nudge needed (Worked Together is Never)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains Enriching (not flipped to Needs Review prematurely). Correct -- this is the reviewer's gate."
+      "evidence": "Entry was in Enriching during review; flipping to Needs Review now as this gate passes."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

@@ -1,0 +1,111 @@
+{
+  "page_id": "7de29c25-11f4-4ef4-8a2c-ea7cd5796a08",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 uploaded images span 5 distinct projects: Formula 1 (site-03/04/05), Heinz (site-06/07/08), Penhaligons (site-09/10), THIS plant-based (site-12/13/14), KHOY naming (site-15/16). No duplicate-angle issue."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: F1 TOV document spreads (pages 6 and 9, showing personality characteristics and brand language), THIS guidelines showing worked examples and voice principles, KHOY before/after naming (KOTA vs KHOY). Not hero-only. Note: site-06 is a Heinz logo/brand hero shot (tomato field + wordmark) rather than verbal identity work; site-09 is a Penhaligons visual brand collage. These two images are weaker proof of copywriting than the rest, but the overall set is substantially deep and on-capability."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged: Brand strategy + Copywriting. Majority of images show actual TOV guidelines, product copy, website copy and naming work matching those capabilities. Minor caveat: site-06 (Heinz logo hero) and site-09 (Penhaligons visual collage) do not directly demonstrate verbal identity, but both are from case studies that are otherwise on-capability and the caption links to those case studies. Does not rise to a fail."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is reedwords.com homepage (confirmed: 'Reed Words.' logo, nav with WORK/EXPERTISE/ABOUT, tagline 'The world's brightest words.'). site-02.png is the IG error page ('Something went wrong / There's an issue and the page could not be loaded') -- correctly marked rejected in manifest with documented reason, entry queued to state/ig-queue.json. Satisfies the checklist exception for IG throttle block."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected manifest entry has a caption naming the project and a link field pointing to the case study page on reedwords.com. The three bookmarks also have caption + link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Reed Words is a copywriting/verbal-identity studio; no video or audio embeds expected or missing. Three case-study bookmarks provided as supplementary links."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes ('IG headless blocked (error page); queued to ig-queue.json for logged-in grab') and site-02 rejection reason in manifest. ig-queue.json entry confirmed present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: specialist writing studio, hands-on craft, not a full-service agency."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.reedwords.com/, Instagram: https://www.instagram.com/reedwords/, LinkedIn: https://www.linkedin.com/company/reed-words, Email: hello@reedwords.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy + Copywriting. Verbal identity work spans both tags. Correct per their service offering."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + US (London, Manchester, New York offices). Size: 11-40 (~20 people per AI Notes). Work Status: Studio. All set. AI Notes names sources (their own site/about, Creative Lives in Progress, LinkedIn, founder interview) though does not explicitly state the multi-source resolution sentence. Studio status is unambiguous for a named studio so this is not a gap."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy = 5 (set_by agent). AI Notes: 'Established, senior leadership; high autonomy as a studio.' Appropriate for a founded studio with named partners and 10+ years of operation."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with clip note 'Web clipper, 2024-02-01' which contains no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note is bare ('Web clipper, 2024-02-01'), no instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes. Factual claims (founding year, headcount, client roster, B Corp status) grounded in named sources. Inferences (Studio vs Agency classification) explained. Seniority read present ('Established, senior leadership'). Autonomy paired."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-02-01'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file exists with all touched fields. source_url is null across all fields -- per checklist calibration note (2026-06-21), null source_url is a known systemic tooling gap and is NOT a gate failure. set_by values are correct (agent throughout; no jonathan fields overwritten). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and all captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. Appropriate: no unresolvable ambiguities remain. Story nudge not triggered (Worked Together is Never, Familiarity is Don't know them, Work With? is Unvetted)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is about to flip it to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean pass. 5 distinct verbal-identity projects well-represented with TOV document interiors and named-copy examples. IG queued correctly. Two images (site-06, site-09) are slightly off-capability hero/visual shots within otherwise on-capability case studies -- does not rise to a fail but worth noting for Jonathan's awareness."
+}

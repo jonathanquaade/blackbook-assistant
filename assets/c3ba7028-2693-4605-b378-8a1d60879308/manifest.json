@@ -1,0 +1,115 @@
+[
+  {
+    "file": "site-website-top.png",
+    "source_url": "https://timroussilhe.com/",
+    "caption": "Website",
+    "link": "https://timroussilhe.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://www.instagram.com/timroussilhe",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/timroussilhe",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "IG returned error page (throttled logged-out). Queued to ig-queue.json for logged-in ig.py grab."
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://timroussilhe.com/",
+    "caption": "Website (loading animation)",
+    "link": "https://timroussilhe.com/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "rejection_reason": "Captured during loading animation before site renders; replaced by site-website-top.png."
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://sessions-2024.vercel.app/",
+    "caption": "Stripe Sessions 2024",
+    "link": "https://sessions-2024.vercel.app/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "rejection_reason": "Blank white image; Vercel preview URL returned 401 unauthorized. Project still represented by vid-sessions.png captured from Tim's portfolio."
+  },
+  {
+    "file": "vid-stripe_2026.png",
+    "source_url": "https://timroussilhe.com/assets/videos/stripe_2026.mp4",
+    "caption": "Stripe.com Redesign 2026, Lead Design Engineer",
+    "link": "https://stripe.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-01.png",
+    "source_url": "https://stripe.com/",
+    "caption": "Stripe.com Redesign 2026, live site",
+    "link": "https://stripe.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "vid-sessions.png",
+    "source_url": "https://timroussilhe.com/assets/videos/stripe_sessions_2024.mp4",
+    "caption": "Stripe Sessions 2024, annual conference site",
+    "link": "https://sessions-2024.vercel.app/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "vid-sarah.png",
+    "source_url": "https://timroussilhe.com/assets/videos/Sarah_Bassett-Sizzle_V3.mp4",
+    "caption": "Sarah Bassett Portfolio, designed and developed by Tim Roussilhe",
+    "link": "https://www.sarah-bassett.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://www.sarah-bassett.com/",
+    "caption": "Sarah Bassett Portfolio, interactive project view",
+    "link": "https://www.sarah-bassett.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "vid-dwb.png",
+    "source_url": "https://timroussilhe.com/assets/videos/david_baum_flow_folio_2023.mp4",
+    "caption": "David William Baum 2023, photography portfolio redesign",
+    "link": "https://david-william-baum-2023.vercel.app/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "vid-sqsp.png",
+    "source_url": "https://timroussilhe.com/assets/videos/squarespace_home_2019.mp4",
+    "caption": "Squarespace Homepage 2019, Lead Developer",
+    "link": "https://sqsp-homepage-2019.netlify.app/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://sqsp-homepage-2019.netlify.app/",
+    "caption": "Squarespace Homepage 2019, alternate view",
+    "link": "https://sqsp-homepage-2019.netlify.app/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "vid-jack-v2.png",
+    "source_url": "https://timroussilhe.com/assets/videos/jack.mp4",
+    "caption": "Jack Davison Photographer Portfolio, interactive image navigator",
+    "link": "https://www.jackdavison.co.uk/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "vid-spotify.png",
+    "source_url": "https://timroussilhe.com/assets/videos/spotify_pitchfork.mp4",
+    "caption": "Spotify: Inside Discovery at Pitchfork, Lead Developer and UX Designer",
+    "link": "http://insidediscovery.pitchfork.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "vid-parks.png",
+    "source_url": "https://timroussilhe.com/assets/videos/parks.mp4",
+    "caption": "Google Hidden Worlds of the National Parks",
+    "link": "https://artsandculture.withgoogle.com/en-us/national-parks-service",
+    "captured_at": "2026-06-21"
+  }
+]
