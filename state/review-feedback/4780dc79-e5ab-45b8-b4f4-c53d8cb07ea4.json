@@ -2,8 +2,8 @@
   "page_id": "4780dc79-e5ab-45b8-b4f4-c53d8cb07ea4",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -17,19 +17,18 @@
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Capability is Web design (set_by jonathan). TangoTrips 3 images (tangotrips-01/02/03) show billboard OOH and brand logo system, not a website. The TangoTrips case study on wearetwoo.com includes a web product; the scraper captured only the brand/identity side. FinBits, Fairview, UDS, Plau are all clean web design captures.",
-      "fix": "Replace tangotrips-01/02/03 with screenshots of the TangoTrips web product (the actual site or app UI from the wearetwoo.com/tangotrips case study). Billboard and logo images are off-capability for a Web design entry."
+      "result": "pass",
+      "evidence": "Attempt-1 failure resolved. New tangotrips-01.jpg is a phone mockup of tangotrips.co mobile web UI (browser URL bar visible, site UI legible). tangotrips-02.png is the full-scroll homepage of tangotrips.co. tangotrips-03.png is the pricing page of tangotrips.co with plan cards. All three are web UI, on-capability for Web design. The three old billboard/logo images are rejected in manifest with reasons. FinBits, Fairview, UDS, Plau all confirmed web design captures."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png confirmed as wearetwoo.com homepage (correct). site-02.png is blank white, marked rejected in manifest with documented reason (IG blocked headless), queued to state/ig-queue.json. Meets the sanctioned IG-throttle exception: rejected + documented + queued."
+      "evidence": "site-01.png confirmed wearetwoo.com homepage. site-02.png rejected+documented+queued (IG blocked headless, queued to ig-queue.json). Sanctioned IG-throttle exception met."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 non-rejected images have captions naming the project and source links to wearetwoo.com project pages."
+      "evidence": "All 14 active (non-rejected) images have project name captions and source links."
     },
     {
       "id": "A.embeds-for-video",
@@ -39,48 +38,47 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG block documented in manifest rejected entry and AI Notes references IG handle; ig-queue entry confirmed."
+      "evidence": "IG block documented in manifest and AI Notes; ig-queue entry confirmed."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio, correct for a small founder-led team."
+      "evidence": "Type: Studio. Correct for a small founder-led team."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present and plausible. Instagram handle @wearetwoooo verified distinct from @wearestudio per AI Notes."
+      "evidence": "Website, Instagram, LinkedIn, Email all present. Instagram handle @wearetwoooo (four o-s) noted as distinct from @wearestudio in AI Notes."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Web design, set_by jonathan per provenance. AI Notes acknowledges they also do identity and dev but tag is locked. Correct deference."
+      "evidence": "Web design, set_by jonathan. AI Notes acknowledges identity and dev work but tag is locked. Correct deference."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio. AI Notes names sources (site, IG, Behance, LinkedIn, design directories all agreeing). Objective rule met."
+      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio. Sources named in AI Notes (site, IG, Behance, LinkedIn, design directories all agreeing)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5, set_by agent. AI Notes grounds it in founder-led studio ownership. Reasoning present."
+      "evidence": "Autonomy: 5, set_by agent. Grounded in founder-led studio ownership. Reasoning in AI Notes."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
-      "result": "fail",
-      "evidence": "Notes field (set_by jonathan) reads 'only in a pinch', which is Jonathan's clear Work With? sentiment. Work With? is currently Unvetted (agent zero-state). This directly contradicts evidence: the zero-state is invalid when Jonathan has already expressed a Work With? verdict in Notes. Per CLAUDE.md: 'never write a zero-state that evidence contradicts'.",
-      "fix": "Work With? should be set to 'In a pinch' via keeper.py set --from-jonathan, sourcing Jonathan's Notes text. The zero-state Unvetted must not survive when his Notes already gives the answer."
+      "result": "pass",
+      "evidence": "Attempt-1 failure resolved. Work With? is now 'In a pinch', set_by jonathan (provenance verified_at 2026-06-21T01:02:22). Consistent with Notes 'only in a pinch'. No contradiction."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip name was 'Twoo (Web Design)'; Web design tag applied, name cleaned to Twoo, clipped.md archived. No relationship facts or other instructions in clip note."
+      "evidence": "Clip name 'Twoo (Web Design)' fully acted on: Web design tag applied, name cleaned to Twoo, clipped.md archived."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes correctly hedges unverified details (uses 'approximately', 'founded 2019' is stated as fact from site, sources named). Seniority read present (founder-led, high autonomy). No em-dashes found."
+      "evidence": "AI Notes hedge unverified details, name sources, include seniority read (founder-led, high autonomy). No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -90,23 +88,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present at state/provenance/<id>.json; all touched fields have set_by and verified_at entries."
+      "evidence": "Provenance file present; all touched fields have set_by and verified_at. source_url nulls are a known systemic tooling gap, not a gate failure per checklist note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Scanned AI Notes, captions, Open Questions: no em-dashes found."
+      "evidence": "No em-dashes found in AI Notes, captions, or Open Questions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions empty. Appropriate: Rating and Familiarity are Jonathan's, and the Work With? contradiction is a scraper fix (not an unanswerable question). No story nudge triggered (Worked Together is Never, no Familiarity beyond zero-state)."
+      "evidence": "Open Questions empty. Appropriate: no unresolvable unknowns remain. Work With? and Notes are now consistent so no question needed there."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching; reviewer has not flipped it (fail verdict, two issues to fix before Needs Review)."
+      "evidence": "Entry in Enriching; flipping to Needs Review as part of this pass-2 gate."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

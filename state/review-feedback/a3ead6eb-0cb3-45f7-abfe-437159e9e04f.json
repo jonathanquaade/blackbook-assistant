@@ -1,0 +1,111 @@
+{
+  "page_id": "a3ead6eb-0cb3-45f7-abfe-437159e9e04f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 images across 4 distinct named client projects (Evooq, Danelec, Anthill, Veo), 3 images each, all from case-study pages on oimachi.co. No repeated projects or near-duplicate shots."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3 images per project sourced from case-study pages (not hero landing pages). Source URLs are unique per image within each project, indicating interior content rather than a single repeated hero."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Web design + Frontend development (web). All 4 projects are website and brand platform builds (Evooq wealthtech site, Danelec maritime digital brand platform, Anthill pharma site, Veo Webflow component system). Squarely on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png verified visually: shows the real oimachi.co homepage ('Branding, Website & AI Visibility. Innovation Studio.'). No Instagram context shot: AI Notes document 'No verified studio Instagram found (not attached).' For a 2-person studio this is a plausible genuine absence, not a silent skip. No mislabeled shot present."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions naming the project and a link to the source project page. Zero uncaptioned images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video embeds in manifest. Oimachi is an image-led web design studio; case study pages for this type of work typically do not carry embeddable video. No flag raised by scraper."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No IG documented in AI Notes ('No verified studio Instagram found (not attached)'). Noted as a deliberate search outcome, not a silent gap."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a 2-person founder-led creative execution team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website present (oimachi.co). Email present (hello@oimachi.co). Instagram: absent with documented reason. LinkedIn: absent; spawn prompt states 'founders have individual profiles, no company LinkedIn documented.' Both absences are explained. Not a skipped search."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web), set_by: jonathan per provenance. Correctly reflects what the studio does."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Denmark / 2-10 / Studio all set. AI Notes name sources: 'their own site, LinkedIn (Daniel Bech Hansen), web search.' Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by: agent. Grounded in 'Two-person founder-led studio, hands-on design and development, high autonomy' in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Jonathan's Notes field says 'Webflow' -- consistent with AI Notes describing Webflow-specialised work. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; clip note contained no relationship signal."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Raw clip text was 'Oimachi - Digital Design Duo' -- purely descriptive label, no hidden instructions or stated facts. Archived to clipped.md. Acted on correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (clients on their site, founders named, Webflow products). Autonomy reasoning grounded in founder-led structure. Seniority read present. No unsupported first-hand claims. No em-dashes found."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-30'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. source_url is null throughout -- known systemic tooling gap (calibration note 2026-06-21), not a gate failure. set_by values are correct: Capabilities and Notes are jonathan, all others are agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all agent-written fields checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. Appropriate: all zero-state fields are correct defaults with no contradicting evidence, and no ambiguity requiring a question."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching pending this gate. Reviewer flips to Needs Review on pass."
+    }
+  ],
+  "notes": "Clean entry. Website context shot verified correct. 4 distinct client projects, all on-capability Webflow web design work. IG absence documented in AI Notes as a genuine search failure, not a silent skip. LinkedIn absence explained (founders have individual profiles only, no company page). source_url null across all provenance fields is the known systemic gap, not raised as a failure per checklist calibration note.",
+  "to": null
+}

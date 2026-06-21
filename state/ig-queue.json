@@ -565,5 +565,12 @@
     "ig_url": "https://www.instagram.com/timroussilhe",
     "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited logged out). @timroussilhe confirmed from timroussilhe.com footer. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "3e820d8a-c45a-4a4b-8666-a40c4f1771ac",
+    "name": "Studio Junction",
+    "ig_url": "https://www.instagram.com/studio.junction/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited logged out). Note: @studio.junction has 0 posts per web search result, so IG grab may return an empty grid. Queue for verification and context shot.",
+    "queued_at": "2026-06-21"
   }
 ]

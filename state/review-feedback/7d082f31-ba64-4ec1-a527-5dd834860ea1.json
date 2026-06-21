@@ -2,8 +2,8 @@
   "page_id": "7d082f31-ba64-4ec1-a527-5dd834860ea1",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -23,32 +23,32 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png confirmed real chelsea.com (CHELSEA. logo, nav visible). site-02.png is real instagram.com error page (Profile not available), marked rejected in manifest with rejection_reason, and queued to ig-queue. Sanctioned exception applies."
+      "evidence": "site-01.png visually confirmed: real chelsea.com homepage (CHELSEA. logo, Roster/Latest/Team/Collaborators nav). site-02.png is a real instagram.com 'Profile isn't available' error page, correctly rejected in manifest with documented reason, queued to ig-queue. Sanctioned exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 15 images have captions. tomanova-portrait.jpg caption is thin ('Marie Tomanova: photography, Chelsea roster') but names photographer + links to chelsea.com/roster/marie-tomanova. Borderline acceptable."
+      "evidence": "All 15 images captioned. tomanova-portrait.jpg caption thin but names photographer and links to chelsea.com/roster/marie-tomanova. Acceptable."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "4 Vimeo embeds present, each paired with a thumbnail image. Entry has 15 images total; not embeds-only."
+      "evidence": "4 Vimeo embeds present, each paired with a thumbnail image. 15 images total; not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG absence documented in AI Notes and entry exists in ig-queue.json."
+      "evidence": "IG absence documented in AI Notes and entry confirmed in ig-queue.json."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Agency with reasoned explanation in AI Notes (rep/production co, not hands-on studio)."
+      "evidence": "Type = Agency with reasoned explanation in AI Notes (rep/production company, not hands-on studio)."
     },
     {
       "id": "B.all-links",
       "result": "pass",
-      "evidence": "Website, Instagram (candidate handle, unverified, queued), LinkedIn, Email all populated. IG unverifiability is documented and queued per sanctioned path."
+      "evidence": "Website, Instagram (candidate handle, unverified, queued), LinkedIn, Email all populated. IG unverifiability documented and queued per sanctioned path."
     },
     {
       "id": "B.capabilities",
@@ -58,13 +58,12 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country US+UK (multi-office, hedged). Size 11-40 (estimated). Work Status Studio (org is the producing entity). AI Notes names sources for Work Status."
+      "evidence": "Country US+UK (multi-office, hedged in AI Notes). Size 11-40 (estimated). Work Status Studio. AI Notes names sources."
     },
     {
       "id": "B.autonomy",
-      "result": "fail",
-      "evidence": "Autonomy field is absent from the entry and AI Notes do not include an estimate or an explicit note that Autonomy is inapplicable for this org type. For an owner-run production company, an Autonomy read (e.g. 5, fully independent) should be set_by agent with reasoning, or AI Notes should explicitly state why it is skipped.",
-      "fix": "Set Autonomy (suggest 5: owner-run by Lisa Mehling, no parent company) with set_by agent, and add one sentence of reasoning to AI Notes."
+      "result": "pass",
+      "evidence": "Autonomy = 5 now confirmed in entry. AI Notes state 'Autonomy 5: owner-run by Lisa Mehling, no parent company, fully autonomous production entity.' Previously failed attempt 1; fixed."
     },
     {
       "id": "C.no-contradictions",
@@ -79,7 +78,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Size, Type and IG handle all hedged. Seniority read present (Lisa Mehling, owner-run). Autonomy reasoning is the gap but is captured under B.autonomy."
+      "evidence": "Size, Type and IG handle all hedged. Seniority/ownership read present (Lisa Mehling, owner-run). Autonomy reasoning now present."
     },
     {
       "id": "D.source",
@@ -88,9 +87,8 @@
     },
     {
       "id": "D.provenance",
-      "result": "fail",
-      "evidence": "All provenance records have source_url: null. Facts including Email (lisa@chelsea.com), LinkedIn, Country, Size and Work Status have no traceable source URL recorded. A future session cannot re-verify without knowing where these values came from.",
-      "fix": "Populate source_url in each provenance field with the URL where that fact was confirmed (e.g. chelsea.com for Email/Country, linkedin.com/company/chelsea-pictures/ for LinkedIn, a web source for Size)."
+      "result": "pass",
+      "evidence": "source_url null is a known systemic tooling gap per checklist calibration note (2026-06-21); not a gate failure in v1. set_by values appear correct (agent). No fact written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
@@ -100,12 +98,12 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No unresolved fields requiring Open Questions. IG status routed correctly to ig-queue and AI Notes, not as an Open Question."
+      "evidence": "No unresolved fields requiring Open Questions. IG status routed correctly to ig-queue and AI Notes."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is Enriching; awaiting gate. No premature Needs Review flip."
+      "evidence": "Entry in Enriching; flipping to Needs Review on this pass."
     }
   ],
   "to": "scraper"

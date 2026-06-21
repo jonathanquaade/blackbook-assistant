@@ -1,44 +1,44 @@
 {
   "page_id": "57c09815-7063-44df-910b-952acb54243f",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-21T09:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-21T10:30:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 distinct projects: Candy Factory, Chanel Next Prize, Nine Orchard, Lenny Steinberg, George Lois, Chanel La Pausa (film), Artists I (photography). No caption repeats across projects."
+      "evidence": "7 distinct named projects: The Candy Factory, Chanel Next Prize, Nine Orchard, Lenny Steinberg, George Lois, Chanel La Pausa (film), Artists I (photography). No caption repeats across projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Nine Orchard has a city exterior thumb + a hotel interior still (genuine depth). Artists I has cover + two spread interiors. Candy Factory has thumb + still that are near-identical (same building exterior, same angle, one with The New Yorker watermark and one without) - borderline but not a hard fail given the watermarked version serves an editorial-context purpose."
+      "evidence": "Each film project has a thumbnail + still or interior. Nine Orchard has exterior thumb + hotel interior still. Artists I has cover + two spread interiors."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "6 Vimeo/YouTube embeds with thumbnails cover Film and video production. Artists I photography book spreads cover Photography. No off-capability material."
+      "evidence": "6 video embeds with thumbnail previews cover Film and video production. Artists I photography book spreads cover Photography. No off-capability material."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png: confirmed cottage8films.com homepage (nav shows COTTAGE EIGHT FILMS, Candy Factory + Lenny Steinberg on grid). site-02.png: confirmed Instagram.com profile for @cottage8films showing Cory Jacobs bio and matching grid."
+      "evidence": "site-01.png: confirmed cottage8films.com homepage (COTTAGE EIGHT FILMS nav header, Candy Factory + Lenny Steinberg on grid). site-02.png: confirmed instagram.com/cottage8films profile (Cory Jacobs bio, @cottage8films handle, matching grid)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 13 manifest images have captions naming the project and a link to the project page on cottage8films.com."
+      "evidence": "All 19 manifest entries have captions naming the project and a link to the cottage8films.com project page."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "6 embeds (1 YouTube for Candy Factory, 5 Vimeo for Chanel Next Prize, Nine Orchard, Lenny Steinberg, George Lois, Chanel La Pausa). Each embed is preceded by a thumbnail image and has both caption and link. Entry has 13 images total, not embeds-only."
+      "evidence": "6 embeds (1 YouTube for The Candy Factory, 5 Vimeo for Chanel Next Prize, Nine Orchard, Lenny Steinberg, George Lois, Chanel La Pausa). Each preceded by a thumbnail image; all carry caption + link. 19 images total: not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No source is flagged as unavailable; the work captured is substantive."
+      "evidence": "No flagged unavailability. Work is substantive across 7 projects."
     },
     {
       "id": "B.type-classified",
@@ -47,19 +47,18 @@
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "LinkedIn is absent and there is NO documentation anywhere (AI Notes, provenance, Open Questions) that it was searched and genuinely not found. The spawn prompt described it as 'LinkedIn documented absent' but the AI Notes make no mention of LinkedIn. For a NYC studio founded 2015 with commercial clients (Chanel, The New Yorker), a LinkedIn company page almost certainly exists. A missing-link is a FAIL unless the search is shown.",
-      "fix": "Search 'Cottage 8 Films linkedin' and 'cottage8films linkedin' to find the company LinkedIn page (or either partner's page). If genuinely absent after that search, add one sentence to AI Notes: 'LinkedIn: no company page found; Cory Jacobs and Jason Schmidt have personal pages at [URLs] / no pages found.' Then the field can remain empty with documented evidence."
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. AI Notes now explicitly documents: 'LinkedIn: no company page found (linkedin.com/company/cottage-8-films and /company/cottage8films both return 404); no personal pages for Cory Jacobs or Jason Schmidt surfaced via web search.' Website, Instagram, and Email all present and verified."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Film and video production + Photography per TAXONOMY.md; both are demonstrated in the captured work."
+      "evidence": "Film and video production + Photography per TAXONOMY.md; both demonstrated in captured work."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "US, 2-10, Studio. Sources cited in AI Notes (about page, web search, Wallpaper). Multi-source logic documented."
+      "evidence": "US / 2-10 / Studio. Sources named in AI Notes (about page, web search, Wallpaper)."
     },
     {
       "id": "B.autonomy",
@@ -69,17 +68,17 @@
     {
       "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; clip note had no relationship facts or instructions."
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; clip note had no relationship facts."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was a plain website body dump of project names only (archived to clipped.md). No instructions or relationship facts present."
+      "evidence": "Clip note was a plain website body dump of project names only, archived to clipped.md. No instructions or relationship facts present."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes asserts verifiable facts (founded 2015, partners named, Wallpaper credit). Autonomy inference is hedged ('partner-led boutique, so high autonomy'). Seniority read is present. No em-dashes found."
+      "evidence": "Verifiable facts asserted (founded 2015, partners named, Wallpaper credit). Autonomy inference hedged. Seniority read present. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,23 +88,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by and verified_at. source_url is null on most fields (general sources in AI Notes rather than per-field URLs) but this is common for studio-level research and not a hard block."
+      "evidence": "Fields have set_by and verified_at. Null source_url is the known systemic tooling gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes confirmed em-dash free programmatically."
+      "evidence": "AI Notes confirmed em-dash free."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions is empty. No outstanding terse questions needed beyond the LinkedIn gap (addressed under B.all-findable-links)."
+      "evidence": "Open Questions empty. No outstanding questions needed."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching pending this review gate. Reviewer has not yet flipped it."
+      "evidence": "Flipped to Needs Review by reviewer on this pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }

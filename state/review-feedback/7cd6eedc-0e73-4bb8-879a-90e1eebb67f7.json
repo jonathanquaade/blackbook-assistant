@@ -1,0 +1,112 @@
+{
+  "page_id": "7cd6eedc-0e73-4bb8-879a-90e1eebb67f7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T09:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 images across 9 distinct client sites (Lemon Squeezy, Wispr Flow, Baseten, HeyGen, Anthropic claude.com, Venus Aerospace, Superorganism, Redesign Health, Roam Robotics) plus 1 website context shot. No duplicates among the active images. site-08 and site-09 (both Konvoy VC, both blank) are correctly marked rejected in the manifest."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "All active client shots are homepage captures. For a web design/frontend studio, a homepage IS the primary designed artifact, so hero-only is defensible here. 9 distinct clients at hero-level is a reasonable spread. Note for Jonathan: none go to interior pages (sub-pages, case studies); a future pass could add depth on 1-2 clients if he wants it.",
+      "note": "borderline; not failing because hero capture is appropriate for a web studio portfolio"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged: Frontend development (web) + Web design. All 9 captured client sites are live websites these disciplines produced. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is the kineticstudio.com homepage (verified: KINETIC logo, 'Captivating Websites That Tell Compelling Stories', Webflow Expert Partner, Webby/Awwwards/SXSW badges). Website context shot correct. Instagram context shot is absent because neither candidate handle (@kineticstudio_ / @kinetic_studio_) could be confirmed without authenticated access; this is documented in AI Notes and Open Question 1 asks Jonathan to confirm the correct handle. Sanctioned path: no IG screenshot yet, question is live, not a fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image in the manifest has a caption naming the client and a link to the source URL. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "This is a web design/frontend studio. No video/audio work to embed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Konvoy VC rejection (blank JS lazy-load) is documented in the manifest. IG context shot absence is documented in AI Notes. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per CLAUDE.md definition (small specialized team, hands-on creative execution)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.kineticstudio.com/ (confirmed correct). LinkedIn: https://www.linkedin.com/company/kinetic-studio-design (present). Email: hunter@kineticstudio.com (present). Instagram: unconfirmed; Open Question 1 covers it. This is an honest OQ, not a skipped search."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) + Web design. Matches observed client work (Webflow builds, full-stack web design). Appropriate per TAXONOMY.md."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US (Austin TX, confirmed on their site). Size: 2-10 (hedged; AI Notes explains one source said 1 employee, size question is Open Question 2). Work Status: Studio (correct for a studio entity). Sources named in AI Notes: their own site, LinkedIn, Webflow profile, web search."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5. Founder-led studio, award-winning (Webby, Awwwards SOTD, SXSW), strong independent client roster. High autonomy is well-supported. Set_by: agent."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) all consistent with no clip-note relationship signals."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No special clip-note instructions beyond the web clipper baseline. Source correctly set to 'Web clipper, 2024-01-30'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the size estimate ('Likely solo-to-very-small... so Size 2-10 is a hedge'). Includes seniority/experience read (founder-led, Autonomy 5 reasoning). Sources named. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-30'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. source_url is null on all fields; per the calibration note in entry-review.md, null source_url is a known systemic tooling gap and is NOT a gate failure in v1. All set_by values are 'agent' (correct for this entry). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and captions. No em-dashes found. En-dashes in '2-10' range notation use a hyphen (acceptable)."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "Two OQs: (1) Instagram handle disambiguation (cannot resolve without human confirmation), (2) Size clarification (genuinely ambiguous). Both are fields without a confirmed value. Terse and non-redundant. No story nudge triggered (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching awaiting this gate. Will flip to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. The only non-trivial observation is that all client work shots are homepage/hero-only captures. For a web design+frontend studio, the homepage is the primary designed artifact, so this is defensible at v1. A follow-up pass could go deeper into 1-2 client sites (interior pages, case studies) if Jonathan wants more depth. The Anthropic capture is a solutions sub-page (claude.com/solutions/code-modernization) rather than the main homepage, which is slightly unusual but honest and still on-capability."
+}

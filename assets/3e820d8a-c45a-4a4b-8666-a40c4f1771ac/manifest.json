@@ -1,0 +1,20 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://studiojunction.io/",
+    "caption": "Website",
+    "link": "https://studiojunction.io/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/studio.junction/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/studio.junction/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Headless Playwright returned 'Something went wrong' error page (Instagram rate-limited logged out). Account has 0 posts per web search. Queued to ig-queue.json for logged-in ig.py verification."
+  }
+]

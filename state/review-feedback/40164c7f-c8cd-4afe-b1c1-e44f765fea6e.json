@@ -1,0 +1,111 @@
+{
+  "page_id": "40164c7f-c8cd-4afe-b1c1-e44f765fea6e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct client projects in active images: J.Lindeberg (site-01, site-03, site-15), Peak Performance (site-08), Bjorn Borg (site-16), Filippa K (site-17), Osprey London (site-24)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "site-01 shows the interactive J.L. product finder UI interior; site-03 shows category nav; site-24 shows Osprey bag finder filter component. 3 of 8 active shots go inside UI features, not just hero covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development (web). All 8 active images show web UI or live e-commerce sites Grebban built. 14 off-capability branding/lifestyle/print shots correctly rejected in manifest"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14 confirmed as grebban.com homepage (correct). IG context shot (site-18) is rejected + documented ('IG @grebban confirmed from homepage footer. Headless Playwright returned Instagram error page') + queued in ig-queue.json. Sanctioned exception applies"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 active images have captions naming the client project and source links to grebban.com/work/* or the live client site"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Grebban is a web design/frontend agency; no audio or video work to embed. Image-only selection is appropriate"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest and ig-queue.json. AI Notes covers it. No other known sources left unexplored"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Agency. AI Notes explains Studio vs Agency reasoning (scale, 110 staff, multi-office, full-service breadth)"
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: grebban.com; Instagram: instagram.com/grebban; LinkedIn: linkedin.com/company/grebban; Email: anton@grebban.com. All four present"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) tagged. Open Question asks Jonathan about adding Brand strategy + Digital product design; appropriate given locked Capabilities set_by jonathan"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK, Denmark, Sweden, Norway (multi-office); Size: 100+; Work Status: Studio. AI Notes names sources: site about page + LinkedIn agree on size"
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy field not applicable to an Agency org entry; schema applies this to persons. Not a gap"
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Jonathan's Notes ('e-commerce design & headless agency. No1 Centra agency in the world!') is consistent with all metadata. Zero-states (Worked Together: Never, Familiarity: Don't know them) show no contradicting evidence"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2024-01-30'; no special instructions in clip note beyond the URL and basic identity"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges size ('~110 staff per LinkedIn/theorg'), cites sources for country and size, explains Agency classification reasoning. No em-dashes. No unverified assertions stated as fact"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-30'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by for all fields. Null source_urls are a known systemic tooling gap (per checklist note 2026-06-21), not a gate fail"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions and Source field checked; no em-dashes found"
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "One question on Capabilities expansion, conditional on Capabilities being locked set_by jonathan. Not asking for already-set fields"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer on pass"
+    }
+  ],
+  "notes": "site-15, site-16, site-17 are live-site homepage hero screenshots of jlindeberg.com, bjornborg.com, filippa-k.com. They show editorial hero banners more than UI craft. This is a taste question (are hero-dominant live-site proof shots valuable?), not a completeness or honesty failure. The actual UI-depth shots (site-01, site-03, site-08, site-24) do go inside product features. Flagged here for Jonathan's calibration feedback.",
+  "to": null
+}

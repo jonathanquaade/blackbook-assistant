@@ -1,0 +1,110 @@
+{
+  "page_id": "f043d495-12c9-4ba5-a5e2-09e7666677d3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T09:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct clients across 16 active images: Monarch Money (2 ads + 3 stills), Keepsake Frames (1 embed + 3 stills), Mixbook (1 embed + thumbnail), 1-800-Flowers (3 stills), Angi (2 stills). Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside campaigns: Monarch has UI explainer ad + testimonial couple ad + Sankey chart iPad still + lifestyle ad frame. Keepsake has testimonial hero + app UI shot + app launch shot. Not just cover heroes."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production. All 16 active images are TV/CTV ad stills, video thumbnails, or production frames from named campaigns. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png is the real filmkraft.tv homepage (confirmed visually: nav shows Work/Services/About/Guides/Contact, headline 'Modern TV campaigns built to perform'). IG shot (site-13.png) is rejected+documented+queued to ig-queue.json per the sanctioned throttle exception in the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 active manifest entries carry a caption naming the client/project and a link to the source case study. The website context shot is captioned 'Website'."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present: Monarch Money explainer (1173339169), Monarch testimonial couple (1147721682), Keepsake Frames Marquita (1182068068), Mixbook Story Mode (1202205448). Each has caption + source link + a corresponding thumbnail image. Entry is never embeds-only: 12 still images accompany the embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. Rejected thumbnails (Keynes blank gradient, Monarch/Keynes logo-only title cards) are documented in the manifest with rejection reasons."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. AI Notes notes Filmkraft self-labels as agency but is classified Studio per the Studio-bias rule (small hands-on production team)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.filmkraft.tv/ (confirmed). Instagram: https://www.instagram.com/filmkraft.tv/ (confirmed linked from site, handle verified in ig-queue entry). LinkedIn: https://www.linkedin.com/company/filmkraft. Email: hello@filmkraft.tv. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production. Matches the studio's output (TV/CTV ad production). Single tag is appropriate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 11-40 (~19 people per AI Notes). Work Status: Studio. AI Notes names the sources: their own site/about, LinkedIn, company databases."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes grounds it: 'Founder-led, established 10+ yr operation, high autonomy.' Reasoning is hedged but grounded in verifiable facts (founded 2016, founder-led)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in clip note or AI Notes."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2024-02-20' with no relationship facts or instructions. Source field preserves this verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges size ('~19 people'), classification ('Self-labels an agency but reads as...'), and sources all factual claims (site/about, LinkedIn, databases). Seniority read is present (Founder-led, established 10+ yr). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-02-20'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. All set_by values are 'agent' as expected. source_url is null across all fields; this is the known systemic tooling gap (not a v1 gate failure per checklist note, recorded here as informational)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and all agent-authored text reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present on the entry. None are required: no unresolvable ambiguities, no story-nudge trigger (Worked Together: Never), and judgment fields are all zero-states awaiting Jonathan."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "notes": "source_url is null on all provenance fields (known systemic keeper tooling gap, not a gate failure). Thumbnail for site-09 (Keepsake, 'app launch scene from TV spot') shows the app splash screen held by a man, which is on-capability as TV production source material but is lighter than the other interior shots. Not a fail. Strong entry overall: 5 distinct clients, embed+thumbnail pattern executed correctly, IG throttle exception handled correctly."
+}

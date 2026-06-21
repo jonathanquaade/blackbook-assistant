@@ -1,0 +1,115 @@
+{
+  "page_id": "c3ba7028-2693-4605-b378-8a1d60879308",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct named projects: Stripe.com redesign, Stripe Sessions 2024, Sarah Bassett, David William Baum, Squarespace Homepage 2019, Jack Davison, Spotify/Pitchfork Inside Discovery, Google National Parks. Multi-shot projects (Stripe x2, Sarah Bassett x2, Squarespace x2) are depth pairs, not duplicate angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Stripe has a portfolio .mp4 frame + live site screenshot. Sarah Bassett has .mp4 frame + interior project view. Squarespace has hero frame + modal overlay state. Goes inside each project, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 8 projects are interactive/web work matching the tagged capabilities (Frontend development (web), Creative technology, Web design). No off-capability captures."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-website-top.png) confirmed as timroussilhe.com with name + 'Design Engineer' visible. IG context shot (site-08.png) rejected+documented+queued per sanctioned exception: throttled logged-out, entry in state/ig-queue.json with reason, AI Notes reference present."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active manifest entries have a caption and link. Rejected entries (site-08.png, site-07.png, site-02.png) are correctly excluded from the active set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Tim's work is interactive web (not a videographer/audio creator) so embed-type manifest entries are not required. Portfolio .mp4s are internal to his site, not YouTube/Vimeo embeds. Frames from those .mp4s are the correct capture method here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest rejection_reason and ig-queue.json. Loading-frame blank (site-07.png) documented and replaced. Vercel 401 (site-02.png) documented and replaced by vid-sessions.png from portfolio .mp4."
+    },
+    {
+      "id": "A.frame-quality-flag",
+      "result": "flag",
+      "evidence": "vid-sarah.png has a large black letterbox covering roughly the top 35-40% of the image (pre-render area from the .mp4). Content is visible in the lower portion, so it is not a fully black frame, but the black band is prominent. Not a hard FAIL (content is readable), but Jonathan may find it visually weak. Consider a retake at a later timestamp if the .mp4 has a fully-rendered state."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (timroussilhe.com), Instagram (instagram.com/timroussilhe), LinkedIn, and Email all present. Instagram handle confirmed via timroussilhe.com footer per ig-queue reason note."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web), Creative technology, Web design. Matches his role as Design Engineer with Awwwards SOTD-level interactive/WebGL work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. AI Notes states 'LinkedIn + ZoomInfo agree, treated current' for Stripe role. Two independent sources cited, meeting the objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes: 'long senior solo-execution track record' with ~10 yrs career history listed (Stink Studios, Squarespace, Compass, Stripe). Reasoning is grounded in real work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together: Never, Familiarity: Don't know them) are appropriate. No clip note evidence of a prior relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2024-01-24' indicating a plain clip with no relationship instructions. No --from-jonathan fields required."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status source noted ('LinkedIn + ZoomInfo agree, treated current'). Seniority read included with specific years and employers. Autonomy reasoning included. No bare assertions of unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-24'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by: agent. source_url is null across all fields, which is the known systemic tooling gap, not a gate failure per checklist calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: no em-dashes found. Colons and semicolons used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. Appropriate: all findable fields are filled; judgment zero-states are correctly left for Jonathan; no conditional story nudge triggers (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on pass."
+    }
+  ],
+  "to": "scraper"
+}
