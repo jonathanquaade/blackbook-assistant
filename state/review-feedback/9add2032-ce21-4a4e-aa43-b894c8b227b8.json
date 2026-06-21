@@ -1,0 +1,111 @@
+{
+  "page_id": "9add2032-ce21-4a4e-aa43-b894c8b227b8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T22:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Polaroid (3 shots), OTTO Motors (3 shots), Euphemia (3 shots), Altr (2 shots). No repeated project dominates the set."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: OTTO website screen (otto-04), Euphemia colour palette and typography system interior (euphemia-02), Altr website on device (altr-01). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development. otto-04 is a live website screen; altr-01 is the Altr marketplace on device; euphemia-02 shows the ToolKit digital brand system. Polaroid brand research and altr-02 outdoor posters are brand-adjacent but within documented case studies for an agency doing brand+web together. Denada shots (packaging/outdoor, off-capability) correctly rejected in manifest. Selection is defensible for a Web design agency."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png visually confirmed as loveandmoney.com homepage (Love+Money branding, work grid visible). site-02.png is a 'Something went wrong' Instagram error page, correctly marked rejected in manifest with note and queued to state/ig-queue.json. Sanctioned IG throttle exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 uploaded images have captions naming the project and a source link pointing to the case study page on loveandmoney.com."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is tagged Web design + Frontend development, not video/audio. No video embeds required. No video-heavy project pages apparent from the case studies captured."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG screenshot absence documented in AI Notes and site-02 rejection_note. ig-queue.json entry confirmed present for this page_id."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. Appropriate: multi-team, multi-office, 11-40 staff, full-service brand+tech offering."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: loveandmoney.com (set). Instagram: https://www.instagram.com/loveandmoney.agency/ (set, confirmed from homepage footer per AI Notes). LinkedIn: https://au.linkedin.com/company/love-money (set). Email: hello@loveandmoney.com (set). All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) -- confirmed by case studies (OTTO site, Altr marketplace, Euphemia ToolKit). Provenance shows set_by: jonathan on Capabilities, meaning these were Jonathan's original tags, which the scraper confirmed with evidence."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Australia/New Zealand/UK/Canada (multi-office confirmed). Size: 11-40 (LinkedIn 11-50, hedged). Work Status: Studio -- note this reads oddly for an Agency-typed entry (they self-describe as a 'Brand Technology Company'); agent has documented this in AI Notes context. Not below the confidence floor, but Jonathan may want to adjust to 'Studio' or clarify. AI Notes records LinkedIn + site as sources."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy field is optional for org-type entries (Agency). Not required per checklist calibration note."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note evidence of a relationship. Zero-states appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2023-02-10'. No relationship facts or special instructions in the clip note evident. Name cleaned to 'Love + Money'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged language ('self-described', 'est. 11-40 staff (LinkedIn: 11-50)', 'confirmed from homepage footer'). Clients listed as factual (verifiable from their site). No em-dashes. Seniority read not applicable for an org entry; instead AI Notes covers team structure and positioning."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2023-02-10' -- filled per convention."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null across all fields -- known systemic tooling gap, not a gate failure per checklist calibration note. set_by values are agent (agent-written fields) and jonathan (Capabilities, which were his original tags). No field appears written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source all inspected. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. None required: zero-state fields are correctly set, no ambiguous relationship facts, no unresolvable gaps that need Jonathan's input."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is flipping to Needs Review as the gate pass."
+    }
+  ],
+  "notes": "One minor observation for Jonathan: Work Status is set to 'Studio' for an Agency-typed entry. Love + Money self-describes as a 'Brand Technology Company' which blurs the line; the agent documented this but did not flag it as an Open Question. Not a gate failure (it is set_by agent and within the confidence floor given their positioning), but Jonathan may want to adjust.",
+  "to": null
+}

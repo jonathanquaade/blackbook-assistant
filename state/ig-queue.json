@@ -747,5 +747,33 @@
     "ig_url": "https://www.instagram.com/richard_macvicar/",
     "reason": "IG context screenshot returned Something went wrong error page (Instagram rate-limited logged out). @richard_macvicar confirmed via Behance profile. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "f10fd82a-aded-483d-9356-efebf5fffed4",
+    "name": "Jakub Reis",
+    "ig_url": "https://www.instagram.com/jakubreis/",
+    "reason": "IG headless returned error page (Something went wrong); need logged-in ig.py grab for Instagram profile context shot",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "ea85ca28-c3d4-4e95-8f6f-63d3fd80ac56",
+    "name": "Adam Heslop (Pixels in Progress)",
+    "ig_url": "https://www.instagram.com/pixelsinprogress/",
+    "reason": "IG blocked headless (Something went wrong error page); recent motion/3D work likely on IG; logged-in grab needed for full-res",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "76058a90-707d-411b-9c65-3feb876ac8b6",
+    "name": "Etter Studio",
+    "ig_url": "https://www.instagram.com/etterstudio/",
+    "reason": "IG blocked headless (returned error page); studio has active work there; logged-in capture needed",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "952857c7-40fc-4964-ba8b-8941e96aab93",
+    "name": "Somesuch",
+    "ig_url": "https://www.instagram.com/somesuchandco/",
+    "reason": "IG context screenshot (site-09.png) returned Something went wrong error page (Instagram blocked headless Playwright). Need logged-in ig.py grab for @somesuchandco profile context shot.",
+    "queued_at": "2026-06-21"
   }
 ]

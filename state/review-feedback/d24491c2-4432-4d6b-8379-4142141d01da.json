@@ -1,0 +1,111 @@
+{
+  "page_id": "d24491c2-4432-4d6b-8379-4142141d01da",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T22:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 live images across 4 distinct named projects: ADI WC26 (x3), Colors and the Kids (x2), BRICK/Dreamtype (x3), Dreamtype product (x2), Concrete Rep (x1), plus website context shot. Rejected images correctly marked and excluded."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside projects: typeface construction grid visible in site-09, live app mockups in site-04 and site-13, Dreamtype licensing UI in site-11/12. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Creative technology + Frontend development (web). Work shown: custom typeface engineering (adidas WC26), digital platform builds (CATK, Concrete Rep), AI font product (Dreamtype). All on-capability. Minor note: site-03 is an event/football-pitch photo from the adidas case study, not a design artefact; weakest image but correctly attributed to the case study post and is one of three for that project. Not a gate fail.",
+      "note": "Consider swapping site-03 (event crowd shot) for a closer typography/design artefact from the adidas WC26 post on a revisit."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-16.png) is the real maas.engineering homepage with correct nav. Instagram context shot (site-17.png) is rejected with documented reason (headless block, 'Profile isn't available') and entry is queued to state/ig-queue.json. Sanctioned IG-throttle exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 12 live images carry a caption naming the project and a link field pointing to the source post or product URL."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video/audio embed obligation for Creative technology + Frontend development (web) capability type. Not a video or audio creative. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "LinkedIn absence documented in AI Notes ('not found, small remote studio, no public page'). Email absence documented ('contact form only'). IG context block documented and queued."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per schema (small specialized team doing hands-on creative/technical execution)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: maas.engineering set. Instagram: maas.engineering/maas.engineering set, handle confirmed via the studio's own site per AI Notes. LinkedIn: none found, documented. Email: none public, documented."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Creative technology + Frontend development (web) set. Open Question 2 correctly surfaces potential Type design addition (Dreamtype, adidas WC26 custom typeface) for Jonathan to decide."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK (hedged in Open Question 1 with rationale). Size 2-10 (8-person team named in AI Notes). Work Status: Studio. Sources cited in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio-type entry. Autonomy is optional for org-type entries per checklist calibration (2026-06-21). Not required here."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with Source 'Web clipper, 2023-02-10'. No relationship signal from Jonathan in the clip note."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note contained no special instructions beyond the studio name and URL. All acted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Country hedged ('UK assumed, not publicly stated'). LinkedIn absence reasoned. IG block documented. Studio-level seniority read included ('small, senior, code-and-design hybrid team'). Appropriate for a Studio entry."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-02-10'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by: agent with verified_at timestamps. source_url is null on all fields; per checklist calibration note (2026-06-21) this is a known systemic tooling gap, not a gate fail. No field written below confidence floor or with wrong set_by."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all captions checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, conditional questions: (1) Country confirmation for an unverified assumption; (2) Type design capability addition. Neither asks for a field already holding a confirmed value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer flips to Needs Review."
+    }
+  ],
+  "to": null
+}

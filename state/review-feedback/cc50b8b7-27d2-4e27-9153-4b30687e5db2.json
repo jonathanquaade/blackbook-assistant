@@ -1,0 +1,110 @@
+{
+  "page_id": "cc50b8b7-27d2-4e27-9153-4b30687e5db2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T22:35:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 uploaded images across 7+ distinct projects: WorkOS.com, Launch Week Summer/Fall/Spring 2025, Enterprise Ready Conf, Popcorn, nsave, Compound, WorkOS Guides. No repeated-project clustering."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "For a frontend dev, the rendered live site IS the product; hero-level screenshots of 7+ distinct built sites are appropriate depth. Minor note: site-08.png has garbled ASCII art at top (font rendering failure during screenshot) but project is still identifiable and caption is correct."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web). All images show live built web products (WorkOS.com, launch week pages, nsave, Popcorn, Compound, Guides). No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-05.png is moritzpetersen.com website (correct). site-13.png is instagram.com showing handle @moritzpetersen.design, name Moritz Petersen, link moritz-petersen.de/en (correct person confirmed). Grid is empty due to logged-out throttle but profile identity is unambiguous."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 uploaded images have captions naming the project and a source link in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capability is frontend dev, not video. No embed requirement. Launch week recap videos visible in screenshots but embedding them is optional here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is well-documented; no unexplained thin areas."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (moritzpetersen.com), Instagram (instagram.com/moritzpetersen.design, verified right person), LinkedIn (linkedin.com/in/moritz-petersen), Email (hello@moritzpetersen.com). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web), set_by jonathan. Matches the built-site work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany; Size: 1; Work Status: Employed. AI Notes names the sources (moritzpetersen.com title 'Design Engineer at WorkOS') and documents the freelance ambiguity with an Open Question."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes: 'ships polished sites independently' (hedged). Grounded in project list and self-stated role."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never; Familiarity: Don't know them; Work With?: Unvetted. No clip note or evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Jonathan's Notes field says 'Webflow'. Entry is enriched accordingly (Webflow dev framing in AI Notes). Source captures web clipper date."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged ('Autonomy 4 hedged'), Work Status ambiguity documented, seniority read included ('Mid-senior front-of-web craft'). No bare unverified assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-01-21'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All agent-written fields have set_by: agent; jonathan fields (Notes, Capabilities) have set_by: jonathan. source_url is null throughout but this is the known systemic tooling gap (not a v1 gate fail per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question about Work Status (employed vs freelance ambiguity). Terse, non-redundant, conditional on a genuine data conflict. No other unresolved ambiguity needing a question."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

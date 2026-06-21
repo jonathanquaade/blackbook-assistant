@@ -1,0 +1,111 @@
+{
+  "page_id": "2a2dc7a6-7b66-41b0-93dd-7d2f40537cba",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 live work images span 10 distinct projects: Microsoft Account, Apple Podcasts, Upstream, 7UP, Warner Music, Bao and Bing, Homecooks, JLR/8INC, Zing Zing, Chelsea FC. No caption repeats, no near-identical images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Site has no sub-pages (Framer single-scroll portfolio, confirmed by scraper). Cover-level shots are the only available depth; scraper documented this. JLR image is a spatial interior; Warner Music is a full brand system grid; packaging shots show product close-ups rather than hero banners. Best achievable given site structure."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design (set by Jonathan). All 10 images show brand identity, packaging, environmental graphics, UI campaign, signage - all graphic design work. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website shot (site-16.png): confirmed macvicar.co homepage with 'RICHARD MACVICAR' nav and 'OVERVIEW 2012-2025' title. IG shot (site-17.png): error page 'Something went wrong' - but marked rejected:true in manifest, entry queued in state/ig-queue.json (confirmed), and AI Notes documents 'IG context shot queued (throttled)'. Checklist exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 work images and the website context shot carry named captions with project + agency/studio framing. No anonymous images. 6 rejected images also have captions in manifest."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design / brand identity entry; no video/audio work in scope. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and queued. No other source gaps. Portfolio is live and fully scraped."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer/director."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://macvicar.co/ (canonical). Instagram: https://www.instagram.com/richard_macvicar/ (verified via Behance, documented in AI Notes). LinkedIn: https://www.linkedin.com/in/richardmacvicar/ (present). Email: info@macvicar.co (confirmed via YunoJuno, documented)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: [Graphic design], set_by: jonathan per provenance. Agent appropriately did not override Jonathan's tag."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Freelance. AI Notes documents the multi-source resolution: YunoJuno lists him as senior freelance designer, runs Matinee Studio. Sources named: macvicar.co + LinkedIn + YunoJuno + Behance."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes: 'design-director level, runs own studio, collaborates inside agencies' - hedged with '(hedged)'. Seniority read: '13+ yrs multidisciplinary...Senior, design-director level.' Both seniority prose and Autonomy field present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never / Don't know them / Unvetted) are correct: no clip note or evidence contradicts them. No Jonathan relationship text in the source."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2022-09-16' - a bare clipper entry with no instructions in the Name/clip text beyond the name itself. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('hedged'), hedges Work Status resolution by naming sources. Seniority is framed as a read ('Senior, design-director level') grounded in '13+ yrs' work history. No bare assertions of unverified facts. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-09-16'. Correct format for a bare clipper entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance/2a2dc7a6...json exists with all touched fields recorded. source_url is null across the board - this is the known systemic tooling gap (per checklist note), not a gate failure. set_by values are correct (agent for researched fields, jonathan for Capabilities)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes: zero em-dashes confirmed by string scan. Manifest captions: zero em-dashes confirmed by string scan."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present in Notion. Appropriate: no unresolvable gaps remain, and story nudge does not apply (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching (correct for doer handoff). Reviewer will flip to Needs Review."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 10 distinct projects, all on-capability graphic design. Website context shot confirmed real. IG context shot is an error-page, correctly rejected+queued+documented per the sanctioned throttle exception. All links found and documented. AI Notes hedged and complete. source_url nulls are a known tooling gap, not a gate issue."
+}
