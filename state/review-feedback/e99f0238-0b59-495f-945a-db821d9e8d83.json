@@ -1,0 +1,111 @@
+{
+  "page_id": "e99f0238-0b59-495f-945a-db821d9e8d83",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects confirmed visually: LV FW26, Aesop eremia, Georg Jensen SS25, Nanushka London store, Nanushka Resort (different subject, distinct visual), Maya Magal rebrand, Zara Home stills, Loewe fragrance. No duplicate angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple shots go inside projects: Aesop has both the video installation and the architectural interior; Maya Magal has the branding layout spread and the close-up product shot; Georg Jensen and LV each show two distinct campaign frames. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Brand strategy + Creative direction. All 12 images show campaign creative (LV, Georg Jensen, Nanushka Resort, Zara Home), fragrance art direction (Aesop, Loewe), spatial image curation (Nanushka London store interior), and brand identity system (Maya Magal). No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png visually confirmed as gracemargetsonstudio.com homepage (correct). site-02.png is the IG 'Something went wrong' error page, correctly marked rejected in manifest with reject_reason, documented in AI Notes, and queued in state/ig-queue.json. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 12 non-rejected images carry descriptive captions naming the client and work type. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio is Brand strategy + Creative direction, not a video/audio discipline. No embeds required. Aesop's video installation is appropriately shown as a still."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes; entry queued to ig-queue.json with reason field."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Consistent with registered Ltd, 2-person team, broad service list."
+    },
+    {
+      "id": "B.all-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn and Email all populated. All link to gracemargetsonstudio.com domain / matching handles."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy + Creative direction set. Open Question 1 asks Jonathan about adding further capabilities they list (spatial, copy, graphic, web). Correct approach for ambiguous additions."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, 2-10, Studio. Sources named in AI Notes (site, registered Ltd structure)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio-type entry; Autonomy is optional per calibration note 2026-06-21. AI Notes includes seniority read ('Senior, Creative Director-level'). Sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with web-clipper origin and no relationship signal in clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip body contained only 'Creative Direction, Design & Brand Consultancy' (site copy). Archived to clipped.md, mined for AI Notes. No relationship instructions or special directives were present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts asserted (clients, founded date, registered Ltd, team size); uncertain classification hedged ('though it reads close to a solo CD-led practice; flag if...'). Seniority read included. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields present in provenance with correct set_by values. source_url is null throughout; this is the documented systemic tooling gap, not a gate fail per checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions inspected. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse questions: (1) additional capabilities, (2) studio vs person track. Both conditional (fields not already set with answers). No story nudge needed (Worked Together is Never, Familiarity is zero-state)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry status is Enriching pre-gate. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "loewe-fragrance-01.jpg shows a Loewe fragrance ad using a Karl Blossfeldt archival photograph (1932). This is a known Loewe creative strategy and the image is on-capability for art direction work. No concern. All 20 checks pass.",
+  "to": null
+}

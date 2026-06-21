@@ -2,8 +2,8 @@
   "page_id": "d456407d-e8ab-41ee-b9d3-680e9af75258",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -18,17 +18,17 @@
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Web design + Frontend development. All 10 work images show website/digital UI from named client projects. No off-capability content."
+      "evidence": "Tagged Web design + Frontend development. All 10 work images show website/digital UI from named client projects. Verified opendoor-4.png (Opendoor nav UI) and radiolab-6.jpg (Radiolab card system) visually. No off-capability content."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is fictivekin.com homepage (confirmed visually: dark layout, 'Fictive Kin is pound for pound the best digital agency on the planet.'). site-02.png is instagram.com/fictivekin profile (confirmed: Instagram chrome visible, handle @fictivekin, bio text, post grid)."
+      "evidence": "site-01.png: fictivekin.com homepage confirmed visually (dark layout, 'Fictive Kin is pound for pound the best digital agency on the planet.'). site-02.png: instagram.com/fictivekin profile confirmed visually (Instagram chrome, handle @fictivekin, 1,837 followers, bio, post grid)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 10 work images carry descriptive captions naming the project plus a link to fictivekin.com/work/<project>/. Rejected images in the manifest have their own reasons noted."
+      "evidence": "All 10 active work images carry descriptive captions naming the project and a link to fictivekin.com/work/<project>/. Rejected images in manifest have reject reasons noted."
     },
     {
       "id": "A.embeds-for-video-audio",
@@ -43,7 +43,7 @@
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Agency. Reasoning documented in AI Notes (scale, CEO structure, self-described as agency)."
+      "evidence": "Type: Agency. Reasoning documented in AI Notes (scale, CEO structure, self-described as agency with flag for Jonathan if he prefers Studio)."
     },
     {
       "id": "B.all-findable-links",
@@ -53,33 +53,32 @@
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Web design + Frontend development (web). Open Question Q2 asks Jonathan about adding Identity systems and Digital product design, which is appropriate -- the current tags are defensible and the expansion is tabled for his call."
+      "evidence": "Web design + Frontend development (web). Open Question Q2 asks Jonathan about adding Identity systems and Digital product design. Current tags are defensible; expansion tabled for his call."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: United States; Size: 11-40 (~32, sourced July 2025); Work Status: Studio (org-type value). AI Notes records sourcing."
+      "evidence": "Country: United States; Size: 11-40 (~32, sourced July 2025); Work Status: Studio (correct org-type value). AI Notes records sourcing."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry type is Agency. Per checklist calibration (2026-06-21): Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes names CEO Gillian Rode and founding year 2008."
+      "evidence": "Entry type is Agency. Per checklist calibration (2026-06-21): Autonomy is optional for org-type entries. AI Notes names CEO Gillian Rode and founding year 2008 as the leadership read."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
-      "result": "fail",
-      "evidence": "Familiarity is set to 'Don't know them' (set_by: agent), but Jonathan's own Notes field (set_by: jonathan) reads 'Worked with on Hebbia.ai / They're lovely people', and Worked Together is already 'Repeatedly' (set_by: jonathan). Writing 'Don't know them' contradicts evidence that active collaboration occurred. CLAUDE.md is explicit: 'never write a zero-state that evidence contradicts; empty-pending-answer is honest; a false default is not.'",
-      "fix": "Clear the Familiarity field value so it is empty (leave Q1 in Open Questions, which is already correctly asking for it). Do NOT write a guess; leave the field empty so Jonathan fills it."
+      "result": "pass",
+      "evidence": "FIXED in attempt 2. Familiarity field is now empty (confirmed: keeper.py get does not return Familiarity at all). The false 'Don't know them' zero-state that contradicted Jonathan's Notes ('Worked with on Hebbia.ai') and Worked Together: Repeatedly has been cleared. Open Question Q1 asks Jonathan to fill Familiarity with context noting his Notes imply active collaboration."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Worked Together: Repeatedly is set_by: jonathan. Source records 'Web clipper, 2023-08-24'. Open Questions Q1 asks Familiarity with the correct context note."
+      "evidence": "Worked Together: Repeatedly is set_by: jonathan. Source records 'Web clipper, 2023-08-24'. Open Questions Q1 asks Familiarity with correct context note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges the Agency/Studio classification ('flag if you would rather it read Studio'), notes the Familiarity contradiction, and attributes facts to their sources. No unhedged inferences. No em-dashes."
+      "evidence": "AI Notes hedges the Agency/Studio classification, names the CEO and team size source, and attributes clients to their own site. No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "source_url is null across fields -- known systemic tooling gap per checklist calibration (2026-06-21), not a gate failure. set_by values are correct: jonathan for Worked Together, Notes, Capabilities; agent for all agent-set fields; migration for Name."
+      "evidence": "source_url is null across fields: known systemic tooling gap per checklist calibration (2026-06-21), not a gate failure. set_by values are correct throughout."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,14 +98,13 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Q1 asks Familiarity (with correct context that Notes implies active collaboration -- appropriately conditional since Familiarity is at a zero-state). Q2 asks about Capabilities expansion. Both terse and conditional."
+      "evidence": "Q1 asks Familiarity with correct context (Notes imply active collaboration, so not 'Don't know them'). Q2 asks about Capabilities expansion. Both terse and conditional. No question asks for a field that already has a non-zero value."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still Enriching. Status flip withheld pending this gate, correct."
+      "evidence": "Entry is in Enriching. Flipping to Needs Review now as part of this gate pass."
     }
   ],
-  "failing_checks": ["C.no-judgment-contradicts-evidence"],
-  "to": "scraper"
+  "to": "jonathan"
 }

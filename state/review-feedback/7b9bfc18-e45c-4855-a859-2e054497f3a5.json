@@ -1,0 +1,111 @@
+{
+  "page_id": "7b9bfc18-e45c-4855-a859-2e054497f3a5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct photo projects (Bottega Veneta, Diesel x Karol G, LV FW26, Loro Piana, Gucci FW25) and 5 distinct video projects (LV Paradise, Lacoste, Kenzo, Calvin Klein, Moncler). No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per photo project, each going inside the shoot (editorial stills, not hero-only). Video thumbnails are film frames, not cover cards."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are fashion/luxury stills (Photography capability) and all embeds are fashion films (Film & video production capability). No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-17.png (captioned 'Website') is the KITTEN contact/footer page: blank white with 'INFO@KITTENPRODUCTION.COM / @KITTEN_PRODUCTION' and logo only. This is not the homepage. It provides no visual memory of who KITTEN is or what their work looks like. The Instagram context shot (site-18.png) is correctly rejected, documented, and queued to ig-queue.json -- the IG exception applies and is a pass.",
+      "fix": "Re-run scrape.py shot https://www.kittenproduction.com/ --out assets/7b9bfc18-e45c-4855-a859-2e054497f3a5 --caption 'Website' and replace site-17.png with the actual homepage screenshot. The homepage loads their work grid/reel and is the correct anchor. Then re-upload via keeper.py upload."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming project and photographer/director. All 21 active images in the Notion Images property match captioned manifest entries."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds present (LV, Lacoste, Kenzo, Calvin Klein, Moncler), each with a paired thumbnail image and a link field. Not embeds-only: 16 photography stills also present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot failure documented in manifest rejection_reason and ig-queue.json entry confirmed present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Correct -- multi-office, 41-100 staff, full-service production house. Reasoning in AI Notes."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present. IG handle @kitten_production confirmed from clipped.md (original clip was the IG page)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production, Photography, Creative direction -- set_by jonathan per provenance. Matches the actual output visible in the work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France, Spain, Italy (offices Paris, Barcelona, Milan). Size: 41-100 (~61 on LinkedIn). Work Status: Studio (production company that operates as a studio entity). Sources noted in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Agency). Autonomy is optional per checklist calibration 2026-06-21. AI Notes includes seniority/leadership read (Founded by Boyer and Blanquet-Ferrero, acquired by The Independents 2024). Not required for this type."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clipped.md shows no Jonathan relationship language -- clip was just the IG page title. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip was 'KITTEN (@kitten_production) Instagram photos and videos' -- no instructions, no relationship facts, no stated judgments. Nothing to act on beyond sourcing the entry."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes states '~61 staff (LinkedIn)' (hedged with source), 'Acquired by The Independents Sept 2024' (verifiable fact), 'Reads as a full-service multi-office production agency' (hedged as a read). No unverified assertions stated as fact. Includes seniority/leadership read for org. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07' -- correct format, date matches provenance migrated_at context."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by for all touched fields. source_url is null throughout -- known systemic tooling gap, not a gate failure per checklist note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source all reviewed -- no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set on the entry. Appropriate: no unresolvables exist and no judgment fields have non-zero values that would trigger a story nudge."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is still Enriching pending this gate. Status flip withheld until context shot is fixed."
+    }
+  ],
+  "to": "scraper"
+}

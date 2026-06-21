@@ -1,0 +1,111 @@
+{
+  "page_id": "ec80da8b-7cca-4739-9156-57dc1fbb9760",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects confirmed: Schon Magazine Les Bains (sites 1-4), Goossens FW23/Chanel Metiers d'Art (sites 5-7), Zalando Winter Sport AW18/19 (sites 8-10), aaaviary Concert Series visual identity (sites 11-13). No duplicate projects or near-identical images."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3-4 images per project going inside each: editorial stills and video frames for Les Bains, product/jewelry shots for Goossens, campaign model shots for Zalando, print identity materials for aaaviary. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative direction. All captured work is art direction or creative direction: fashion editorial AD (Les Bains), product campaign AD (Goossens FW23, Zalando), visual identity (aaaviary). No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png confirmed as real knoops.fr homepage (Studio Laura Knoops header visible). IG shot (site-15.png) is rejected + rejection_reason documents the throttle block + queued in state/ig-queue.json. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 14 active images have captions naming the project and a link field pointing to the project page on knoops.fr."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Les Bains appears to include video output (site-02 shows a cinematic-frame still). Stills adequately represent the art direction work for this capability. No clearly embeddable YouTube/Vimeo found linked from the manifest entries; stills are sufficient here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sections. IG throttle block is documented with queued entry."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance art director."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (knoops.fr), Instagram (instagram.com/knoops), LinkedIn (fr.linkedin.com/in/laura-knoops), Email (contact@knoops.fr) all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities set_by: jonathan (pre-existing locked field). Agent correctly left it and raised Open Question 1 asking Jonathan to expand or confirm scope. Appropriate handling of a jonathan-locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany + France; Size: 1; Work Status: Freelance. AI Notes names sources: knoops.fr (independent studio presentation) + LinkedIn agree on freelance, Chanel role noted as freelance engagement. Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by: agent. AI Notes: 'Autonomy 4 hedged: long independent client list suggests she runs projects solo, no first-hand evidence.' Grounded in career trajectory (10+ yrs, Chanel/Cartier/Versace clients)."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) consistent with clip note containing no relationship signal. Clip note was simply 'Knoops' with no instructions."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was 'Knoops' (bare name only). Name cleaned to Laura Knoops. No other instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy inference explicitly. Seniority read present ('Senior, 10+ yrs'). Verifiable facts (client list, Chanel freelance role) asserted; inferences flagged. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with entries for every touched field. source_url is null throughout; this is the known systemic tooling gap (not a v1 gate fail per checklist note 2026-06-21). set_by values correct: Capabilities is set_by: jonathan (locked pre-existing value), all agent-written fields are set_by: agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question about Capabilities expansion: terse, conditional (only because Capabilities is a jonathan-locked field that cannot be overridden). No story nudge needed (Worked Together: Never, no relationship signals)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Will flip to Needs Review on this pass verdict."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. One minor observation flagged but not gate-level: Les Bains project appears to involve video output (cinematic frame stills captured); if the project page had an embeddable Vimeo/YouTube, embedding it would improve the entry on a future revisit. Not a fail for Creative direction capability where still captures adequately represent the art direction work."
+}

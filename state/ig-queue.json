@@ -670,5 +670,33 @@
     "ig_url": "https://www.instagram.com/kitten_production/",
     "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited logged out). @kitten_production is confirmed handle. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "2d0b8e97-13ee-4a18-9c90-621cc29ccfa7",
+    "name": "Studio Mathieu Meyer",
+    "ig_url": "https://www.instagram.com/mathieu.meyer/",
+    "reason": "IG context screenshot returned 'Something went wrong' error page (Instagram blocked headless Playwright). @mathieu.meyer confirmed handle (from entry). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "f8141ff1-64b9-4acc-9d55-1bcc568bc9e6",
+    "name": "Benjamin Grillon",
+    "ig_url": "https://www.instagram.com/benjamingrillon/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited). @benjamingrillon confirmed handle (linked from benjamingrillon.com). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "8b852e04-0da6-432e-bb46-1a01d49f43d4",
+    "name": "The Forge",
+    "ig_url": "https://www.instagram.com/theforge.co/",
+    "reason": "Instagram context screenshot returned blank page (headless Playwright blocked; profile content did not load). @theforge.co confirmed handle (linked from theforge.co footer). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
+    "name": "Andy Price",
+    "ig_url": "https://www.instagram.com/__andyprice__/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
+    "queued_at": "2026-06-20"
   }
 ]

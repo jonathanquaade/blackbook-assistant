@@ -1,0 +1,137 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://theforge.co/",
+    "caption": "Website",
+    "link": "https://theforge.co/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/theforge.co/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/theforge.co/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Headless Playwright blocked by Instagram; screenshot shows blank page with login prompt only. Queued to state/ig-queue.json for logged-in ig.py grab."
+  },
+  {
+    "file": "gordon-macphail-01.jpg",
+    "caption": "Gordon and Macphail single malt film, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/ViewCreative_6761-Gordons-Macphail_CONFORM_Supers.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/gordon-macphail/"
+  },
+  {
+    "file": "dewars-01.jpg",
+    "caption": "Dewars 12 Year whisky film, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/Dewars-12-Years.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/dewars-12-year/"
+  },
+  {
+    "file": "creed-oud-teaser.jpg",
+    "caption": "Creed Oud Zarian by Sam Hofman, teaser film still, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/CreedOud_TeaserFilm.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/2112/"
+  },
+  {
+    "file": "creed-oud-01.jpg",
+    "caption": "Creed Oud Zarian by Sam Hofman, film still, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/CreedOud_Film-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/2112/"
+  },
+  {
+    "file": "creed-oud-02.jpg",
+    "caption": "Creed Oud Zarian by Sam Hofman, product film still, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/SamHofman_CREED_OUD_ZARIAN_SH01.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/2112/"
+  },
+  {
+    "file": "fraser-tomford-01.jpg",
+    "caption": "Fraser Chatham for Tom Ford, film still, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/FraserChatham_TomFord-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/fraser-chatham-tom-ford/"
+  },
+  {
+    "file": "fraser-tomford-02.png",
+    "caption": "Fraser Chatham for Tom Ford, film still, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/Screenshot-2024-11-04-at-13.49.26.png?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/fraser-chatham-tom-ford/",
+    "rejected": true,
+    "rejected_reason": "Origin ambiguous: file named Screenshot-2024-11-04-at-13.49.26.png; shows a blue cocktail glass still, uncertain whether Tom Ford or Tanqueray project. Dropped to avoid contamination."
+  },
+  {
+    "file": "tanqueray-01.png",
+    "caption": "Tanqueray Gin x Whale Amsterdam, full production, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/TANQUERAYxThe-Forge.png?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/tanqueray-gin-x-whale/"
+  },
+  {
+    "file": "byredo-01.jpg",
+    "caption": "Byredo Hands, stills production, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/BYREDO_06_F3-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/byredo-hands/"
+  },
+  {
+    "file": "byredo-02.jpg",
+    "caption": "Byredo Hands, stills production, 2024",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/BYREDO_04_F3-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/byredo-hands/"
+  },
+  {
+    "file": "fitasy-01.png",
+    "caption": "Fitasy Campaign 2025, CGI and motion production, 2025",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/Fitasy-Rotation-Film-scaled.png?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/fitasy-campaign-2025/"
+  },
+  {
+    "file": "fitasy-02.jpg",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/FITASY-PICKUP4132-1-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/fitasy-campaign-2025/",
+    "rejected": true,
+    "rejected_reason": "Small file (55KB), plain white background; less representative than fitasy-01.png. Dropped to avoid redundancy."
+  },
+  {
+    "file": "fitasy-03.jpg",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/FITASY-PICKUP4136-1_BLACK_F1-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/fitasy-campaign-2025/",
+    "rejected": true,
+    "rejected_reason": "Redundant with fitasy-01 for this entry."
+  },
+  {
+    "file": "fitasy-04.jpg",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/Fitasy_July2025_Shoe_Silhouette_02-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/fitasy-campaign-2025/",
+    "rejected": true,
+    "rejected_reason": "Redundant with fitasy-01 for this entry."
+  },
+  {
+    "file": "fitasy-05.jpg",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/FITASY-PICKUP0069-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/fitasy-campaign-2025/",
+    "rejected": true,
+    "rejected_reason": "Redundant with fitasy-01 for this entry."
+  },
+  {
+    "file": "byredo-03.jpg",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/BYREDO_03_F3-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/byredo-hands/",
+    "rejected": true,
+    "rejected_reason": "Third Byredo image; two suffice without over-weighting one project."
+  },
+  {
+    "file": "creed-oud-03.jpg",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/SamHofman_CREED_OUD_ZARIAN_SH03.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/2112/",
+    "rejected": true,
+    "rejected_reason": "Fourth Creed image; three suffice."
+  },
+  {
+    "file": "creed-oud-04.jpg",
+    "source_url": "https://i0.wp.com/theforge.co/wp-content/uploads/SamHofman_CREED_OUD_ZARIAN_SH02-scaled.jpg?w=2000&ssl=1",
+    "link": "https://theforge.co/projects/2112/",
+    "rejected": true,
+    "rejected_reason": "Fourth Creed image; three suffice."
+  }
+]
