@@ -21,9 +21,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:25:02",
+      "verified_at": "2026-06-21T15:37:55",
       "set_by": "agent"
     },
     "Work With?": {
@@ -94,9 +94,21 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Small Brooklyn (NYC) creative studio working between film and emerging tech: creative ideation, titles & credits, generative-AI consulting, mixed-media graphics, nonfiction shorts (blends analog methods with new tech). Jonathans note: they made the Runway Studio edit (Runway = the AI video company). Capabilities: film/video, motion, creative technology (gen-AI), graphic/title design. Size 2-10 (small team, inferred). sixtyforty.tv was unreachable on this pass (ECONNREFUSED); details from web search + IG @sixtyforty.tv (matches domain). Founder name not surfaced; team reads senior/specialist.",
+      "value": "Small Brooklyn (NYC) creative studio working between film and emerging tech: creative ideation, titles and credits, generative-AI consulting, mixed-media graphics, nonfiction shorts (blends analog methods with new tech). Jonathan's note: they made the Runway Studio edit (Runway = the AI video company). Capabilities: film/video, motion, creative technology (gen-AI), graphic/title design. Size 2-10 (small team, inferred). SCRAPE PASS 2026-06-21: sixtyforty.tv is NXDOMAIN (domain not resolving, tried static + Playwright render); no cached version found (archive.ph 429, archive.org 429). IG @sixtyforty.tv returned throttled error page logged-out; rejected and queued to state/ig-queue.json for logged-in ig.py grab. No external press, interviews, or case studies surfaced by web search referencing specific project names or Vimeo/YouTube links. Founder name not surfaced. The Runway edit referenced by Jonathan is the clearest known project but no public URL or credit found. Website context shot is blocked (NXDOMAIN); IG capture queued. Entry needs: logged-in IG grab (IG is the only remaining live source) and any URL Jonathan can share for the Runway edit or other work.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:25:04",
+      "verified_at": "2026-06-21T15:36:12",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "{\"Open Questions\": \"1. The site (sixtyforty.tv) is offline (domain not resolving). Do you have a URL for the Runway edit or any other specific project from them (Vimeo, YouTube, etc.)? Their IG is queued for a logged-in grab but any direct links would help capture the work faster.\"}\n",
+      "source_url": null,
+      "verified_at": "2026-06-21T15:36:25",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [],
+      "source_url": null,
+      "verified_at": "2026-06-21T15:36:48",
       "set_by": "agent"
     }
   }

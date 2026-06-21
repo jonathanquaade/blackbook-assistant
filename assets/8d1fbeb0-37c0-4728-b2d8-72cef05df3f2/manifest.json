@@ -1,0 +1,139 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://www.paullacour.com/",
+    "caption": "Website",
+    "link": "https://www.paullacour.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://ss23campaign.amiparis.com/",
+    "caption": "Ami Paris SS23 Campaign website",
+    "link": "https://ss23campaign.amiparis.com/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reason": "splash screen only (AMI logo + click to enter); no visual content loaded"
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://www.assensbarletta.com/",
+    "caption": "Assens Barletta website (Paul Lacour Design + Code)",
+    "link": "https://www.assensbarletta.com/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reason": "blank: JS-rendered images not loaded by static screenshot"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://www.toki-times.com/",
+    "caption": "Toki Amsterdam, homepage",
+    "link": "https://www.toki-times.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://www.harel-ocante.com/",
+    "caption": "Harel+Ocante homepage (Paul Lacour Design + Code)",
+    "link": "https://www.harel-ocante.com/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reason": "blank: JS-rendered images not loaded; work grid (site-09) covers this project better"
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://www.notenote.eu/",
+    "caption": "Note Note Editions, homepage",
+    "link": "https://www.notenote.eu/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://www.bureauperret.fr/",
+    "caption": "Bureau Perret, homepage",
+    "link": "https://www.bureauperret.fr/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://www.toki-times.com/toki-mart",
+    "caption": "Toki Amsterdam, Toki Mart page",
+    "link": "https://www.toki-times.com/toki-mart",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://www.harel-ocante.com/work",
+    "caption": "Harel+Ocante, Work grid (Paul Lacour Design + Code)",
+    "link": "https://www.harel-ocante.com/work",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://ss22campaign.amiparis.com/",
+    "caption": "Ami Paris SS22 Campaign, homepage",
+    "link": "https://ss22campaign.amiparis.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://www.bureauperret.fr/realisations",
+    "caption": "Bureau Perret, Realisations page",
+    "link": "https://www.bureauperret.fr/realisations",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-12.png",
+    "source_url": "https://www.notenote.eu/products/french-fries",
+    "caption": "Note Note Editions, French Fries product page",
+    "link": "https://www.notenote.eu/products/french-fries",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://www.harel-ocante.com/work/slow-coffee",
+    "caption": "Harel+Ocante, Slow Coffee project page (Paul Lacour Design + Code)",
+    "link": "https://www.harel-ocante.com/work/slow-coffee",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://www.harel-ocante.com/work/art-de-vivre",
+    "caption": "Harel+Ocante, Art de vivre project page (Paul Lacour Design + Code)",
+    "link": "https://www.harel-ocante.com/work/art-de-vivre",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://www.paullacour.com/",
+    "caption": "Website (duplicate)",
+    "link": "https://www.paullacour.com/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reason": "duplicate of site-01"
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://www.instagram.com/paul.lacour/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/paul.lacour/",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reason": "IG login gate: headless Playwright returned Instagram login page, not the profile; queued to state/ig-queue.json for logged-in ig.py grab; handle @paul.lacour is unconfirmed (bio says 'I make things online', plausible match but needs visual verification)"
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://time.paullacour.com/",
+    "caption": "Paul Lacour, Time experiment (personal project)",
+    "link": "https://time.paullacour.com/",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-18.png",
+    "source_url": "https://mode.paullacour.com/",
+    "caption": "Paul Lacour, Mode experiment (personal project)",
+    "link": "https://mode.paullacour.com/",
+    "captured_at": "2026-06-21"
+  }
+]

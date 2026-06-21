@@ -1,0 +1,142 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://antinomy.studio/",
+    "caption": "Website",
+    "link": "https://antinomy.studio/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/antinomystudio/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/antinomystudio/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "IG error page (rate-limited headless) - queued to state/ig-queue.json for logged-in ig.py grab"
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://waabi.ai",
+    "caption": "Waabi, 2026 - homepage",
+    "link": "https://waabi.ai",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://www.ferrari-movie.com/",
+    "caption": "Ferrari Movie, 2024 - current site (now a blog)",
+    "link": "https://www.ferrari-movie.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": false,
+    "rejected": true,
+    "reject_reason": "campaign site changed to a generic blog post-release - replaced by Wayback Machine capture (site-16)"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://metamask.io/",
+    "caption": "MetaMask, 2025 - homepage",
+    "link": "https://metamask.io/",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://jitter.video/",
+    "caption": "Jitter, 2025 - homepage",
+    "link": "https://jitter.video/",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://giopatocoombes.com",
+    "caption": "Giopato and Coombes, 2023 - homepage",
+    "link": "https://giopatocoombes.com",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://vastspace.com",
+    "caption": "Vast, 2026 - homepage",
+    "link": "https://vastspace.com",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://waabi.ai/safety",
+    "caption": "Waabi safety page, 2026 - interior",
+    "link": "https://waabi.ai/safety",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://vastspace.com/stations",
+    "caption": "Vast Stations page",
+    "link": "https://vastspace.com/stations",
+    "captured_at": "2026-06-21",
+    "context_shot": false,
+    "rejected": true,
+    "reject_reason": "404 page - URL does not exist"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://giopatocoombes.com/collections",
+    "caption": "Giopato and Coombes Collections page",
+    "link": "https://giopatocoombes.com/collections",
+    "captured_at": "2026-06-21",
+    "context_shot": false,
+    "rejected": true,
+    "reject_reason": "duplicate of site-07 homepage - JS required to render inner content"
+  },
+  {
+    "file": "site-12.png",
+    "source_url": "https://giopatocoombes.com/luce-liquida",
+    "caption": "Giopato and Coombes product detail",
+    "link": "https://giopatocoombes.com/luce-liquida",
+    "captured_at": "2026-06-21",
+    "context_shot": false,
+    "rejected": true,
+    "reject_reason": "same rendering as homepage without --render - no distinct product content visible"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://giopatocoombes.com/collection/bruma",
+    "caption": "Giopato and Coombes, Bruma collection, 2023 - interior",
+    "link": "https://giopatocoombes.com/collection/bruma",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://jitter.video/templates",
+    "caption": "Jitter templates, 2025 - interior",
+    "link": "https://jitter.video/templates",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://web.archive.org/web/20240126000000*/https://www.ferrari-movie.com/",
+    "caption": "Ferrari Movie 2024 - Wayback calendar",
+    "link": "https://web.archive.org/web/20240126000000*/https://www.ferrari-movie.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": false,
+    "rejected": true,
+    "reject_reason": "Wayback Machine calendar UI not the actual campaign site"
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://web.archive.org/web/20240130120000/https://www.ferrari-movie.com/",
+    "caption": "Ferrari Movie, 2024 - original campaign site (archived Jan 2024)",
+    "link": "https://www.ferrari-movie.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": false
+  }
+]

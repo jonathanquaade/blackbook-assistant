@@ -572,5 +572,61 @@
     "ig_url": "https://www.instagram.com/studio.junction/",
     "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited logged out). Note: @studio.junction has 0 posts per web search result, so IG grab may return an empty grid. Queue for verification and context shot.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "baabb9ce-d4d4-4384-bce9-ba4658f395d4",
+    "name": "Luke Hoban",
+    "ig_url": "https://www.instagram.com/lukehoban.co.nz/",
+    "reason": "IG throttled headless (Something went wrong error); context shot rejected; logged-in grab needed for profile shot",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "8f086c9c-4b10-43cc-9e13-d316d89730c4",
+    "name": "Antinomy Studio",
+    "ig_url": "https://www.instagram.com/antinomystudio/",
+    "reason": "IG served error page (rate-limited headless); studio context shot needed",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "13a43a4a-d527-44e0-9873-96747b660125",
+    "name": "Jeroen Braspenning",
+    "ig_url": "https://www.instagram.com/jeroenbraspenning/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for Instagram profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "83b57692-db1d-428a-9a25-ff860d7b2b1f",
+    "name": "Boxhead",
+    "ig_url": "https://www.instagram.com/worldofboxhead/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page on two consecutive attempts (logged-out rate-limited). Need logged-in ig.py grab for @worldofboxhead profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "355bbf68-1b8d-4699-96fd-6e7790093dbb",
+    "name": "SixtyForty",
+    "ig_url": "https://www.instagram.com/sixtyforty.tv/",
+    "reason": "website NXDOMAIN (dead domain); IG is primary remaining source of work; logged-out IG throttled (Something went wrong error)",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "8d1fbeb0-37c0-4728-b2d8-72cef05df3f2",
+    "name": "Paul Lacour",
+    "ig_url": "https://www.instagram.com/paul.lacour/",
+    "reason": "IG @paul.lacour unconfirmed (bio says 'I make things online', plausible but needs visual verification). Headless Playwright returned login gate. Need logged-in ig.py grab to confirm handle is the right Paul Lacour and capture profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "6929405d-1f7a-418b-9ddf-9f185635e162",
+    "name": "Sanctuary Computer",
+    "ig_url": "https://www.instagram.com/sanctucompu/",
+    "reason": "IG context screenshot returned login page (headless Playwright blocked by Instagram). @sanctucompu confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "7aae8dd5-8779-4b2d-9adf-8022d2427178",
+    "name": "Six Eastern",
+    "ig_url": "https://www.instagram.com/sixeastern/",
+    "reason": "IG served login wall headless; PR agency context shot needed for Notion anchor",
+    "queued_at": "2026-06-21"
   }
 ]
