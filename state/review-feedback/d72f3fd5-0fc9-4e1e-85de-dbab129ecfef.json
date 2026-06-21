@@ -1,0 +1,111 @@
+{
+  "page_id": "d72f3fd5-0fc9-4e1e-85de-dbab129ecfef",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T09:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct client projects confirmed visually: Tord Boontje (site-01), Giuseppe Penone (site-02, site-09), Gagosian Shop (site-03), Caruso St John (site-04, site-08, site-10), FUEL (site-05), Gagosian Viewing Room (site-06, site-12), Marc Newson (site-07, site-11). No duplicate projects or near-identical crops."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple images go inside projects: Caruso St John has projects index + Newport Street Gallery interior page; Penone has works archive (two views, different year ranges); Marc Newson has a project detail + projects grid; Gagosian Viewing Room has an exhibition view + fairs section."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged: Web design, Frontend development (web), Graphic design, Identity systems, Brand strategy. All 12 work images show client websites Wiedner built or designed (Tord Boontje site, giuseppepenone.com, gagosianshop.com, carusostjohn.com, fuel-design.com, gagosianviewingroom.com, marc-newson.com). Correct discipline, no off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png: opens to wiedner.studio, heading reads 'Wiedner Studio is a London-based independent practice' with Gagosian Shop project in carousel. Confirmed real homepage. site-16.png: shows instagram.com header, handle 'wiedner_studio', bio 'Wiedner Studio / A London-based independent studio...', link wiedner.studio. Confirmed real Instagram profile, correct account."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active manifest entries have both caption and link. Rejected entries (site-13, site-14) are marked rejected with documented reasons (blank loading state; 404 page)."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio does web and graphic design; no audio or video work expected. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Two rejected shots (site-13, site-14: Tord Boontje site, JS-heavy blank + 404) have documented reject_reason in manifest. No unexplained thin coverage."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per schema (small specialized team, hands-on creative execution, not a large full-service agency)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://wiedner.studio/ (canonical). Instagram: https://www.instagram.com/wiedner_studio/ (verified correct account). LinkedIn: https://linkedin.com/company/wiedner. Email: hello@wiedner.studio. All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design, Frontend development (web), Graphic design, Identity systems, Brand strategy. Matches the portfolio evidence (client sites, identities, cultural sector digital work)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United Kingdom. Size: 2-10 (inferred, noted as such in AI Notes). Work Status: Studio (independent studio, appropriate status type). AI Notes names the sources: site portfolio + studio self-description."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio-type entry; Autonomy (Storonsky scale) is a personal capability measure. Not applicable to a Studio entity. Scraper correctly left the field unset. AI Notes records founder seniority context ('Founder is senior, 15+ yrs running the studio') which is the appropriate substitute for a studio."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) not contradicted by any clip note or evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2024-01-24'. No additional instruction text in the clip note that required action."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size 2-10 is flagged as 'inferred'. Work history is grounded in site portfolio and studio self-description. Minor: 'Founder is senior, 15+ yrs running the studio' reads as a light assertion rather than a hedged inference (founded 2008 is the basis), but the AI Notes overall character is factual rather than speculative and the specific claim is derivable from the founding year. Not a gate-level issue."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-24'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. set_by values are correct (migration for Name/Website, agent for all enriched fields). source_url null throughout -- known systemic gap per checklist D calibration note; not a gate fail."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field contain no em-dashes. En-dashes used correctly in size range '2-10'."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. None are required: judgment fields are at valid zero-states with no ambiguity and no contradicting evidence that would prompt a required question."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Clean pass. 7 distinct named client projects, both context shots verified correct (real wiedner.studio homepage, real instagram.com/wiedner_studio profile), all links present, on-capability web/design work throughout. No mechanical failures found.",
+  "to": null
+}

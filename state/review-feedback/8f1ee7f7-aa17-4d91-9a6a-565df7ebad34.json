@@ -1,0 +1,111 @@
+{
+  "page_id": "8f1ee7f7-aa17-4d91-9a6a-565df7ebad34",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: iDoctus (2 images), Opticalia (2 images), Upgrade (2 images), Arengu (3 images). No duplicate projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: iDoctus shows a clinical-case app screen + identity splash; Opticalia shows mobile e-commerce hero + interior content screen; Upgrade shows desktop hero + a mobile card component; Arengu shows auth-flow screen composition + form component close-up + full design system sheet (components, colors, iconography). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Product design. All 4 projects are digital product and web interface work (mobile apps, e-commerce web, SaaS platform, design systems). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: mendesaltaren.com homepage confirmed (nav bar shows logo + About / Projects / Handbook / Contact). site-02.png: instagram.com @mendesaltaren confirmed (handle, 6,109 followers, bio grid visible). Both captions match reality."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 project images carry a named caption and a link field to the relevant case study page. Context shots also have link fields."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Web design + Product design (not video/motion). Case study pages do serve video (clipped.md confirms HTML5 video tags), but still images are the primary deliverable for these capabilities. No embed omission rises to a gate fail here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thinness. All images sourced from named CDN case study assets."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: boutique hands-on execution team per self-description and clipped content."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present and populated. Context shot confirms Instagram handle is @mendesaltaren and matches the entry."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Product design, set_by jonathan per provenance. Open Question 1 proposes expanding the set; Jonathan will decide."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Spain, 41-100, Studio. AI Notes notes size is a prior baseline supported by team-page breadth. Work Status: Studio is correct for a studio entity."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "N/A: Autonomy is a 1-5 personal autonomy scale; not applicable to a studio entry."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note evidence of any relationship. Zero-states (Never / Unvetted / Don't know them) are consistent with no known connection."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was purely a web-clipper baseline (no Jonathan instructions embedded). Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass-with-note",
+      "evidence": "Hedging is present: 'self-described', 'prior baseline; team-page breadth supports'. No unhedged assertions. HOWEVER: the verifiable client list from clipped.md (Inditex, Repsol, UEFA, Bankia, Movistar, Prosegur, Komunidad de Madrid, El Confidencial) and the Modulor Ventures affiliation are omitted from AI Notes despite being directly in the archived page body. 'Established, senior-led' is asserted without any grounding in those facts. Flagged for Jonathan to calibrate whether this warrants a bounce vs. a one-line AI Notes update."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-24'. Present and filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance written for all touched fields. set_by values correct. source_url null throughout -- per calibration note (2026-06-21) this is a known systemic tooling gap, not a gate fail."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or image captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: proposes expanding Capabilities. Terse, conditional, does not ask for a field that already has a final value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; this gate will flip it to Needs Review on pass."
+    }
+  ],
+  "notes": "Run was reported as hitting a usage limit. Manifest has 11 entries: 9 project images across 4 named projects + 2 context shots. All images verified open and correct. No truncation visible in the manifest or asset folder -- all referenced files are present. Entry is structurally complete. The one substantive gap flagged above (client list absent from AI Notes) is a quality note, not a structural failure. Passing to Jonathan with the note.",
+  "to": "jonathan"
+}

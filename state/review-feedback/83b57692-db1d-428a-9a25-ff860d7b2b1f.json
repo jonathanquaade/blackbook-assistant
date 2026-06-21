@@ -1,0 +1,144 @@
+{
+  "page_id": "83b57692-db1d-428a-9a25-ff860d7b2b1f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.context-shots-website",
+      "result": "fail",
+      "evidence": "site-16.png captioned 'Website' is a street-poster campaign photo (Newday ND19 festival imagery with the Boxhead logo in the corner), NOT a screenshot of boxhead.io homepage.",
+      "fix": "Retake the website context shot: scrape.py shot https://www.boxhead.io/ --out assets/83b57692-db1d-428a-9a25-ff860d7b2b1f --caption 'Website'. Replace site-16.png."
+    },
+    {
+      "id": "A.context-shots-instagram",
+      "result": "fail",
+      "evidence": "site-17.png captioned 'Instagram profile' is an Instagram 'Something went wrong / page could not be loaded' error page. It is not marked rejected in the manifest, not documented in AI Notes, and the entry is not in state/ig-queue.json. The sanctioned exception (rejected+documented+queued) does not apply.",
+      "fix": "Either (a) retake the IG context shot logged-out via scrape.py shot https://www.instagram.com/worldofboxhead/ and verify it shows the real profile grid, or (b) mark the manifest entry rejected:true, document the throttle block in AI Notes, and add the entry to state/ig-queue.json, then retake at minimum the website context shot. Option (b) is acceptable per CLAUDE.md; option (a) is preferred if not throttled."
+    },
+    {
+      "id": "A.project-diversity-wrong-images",
+      "result": "fail",
+      "evidence": "site-01.webp captioned 'Born Ugly website, Boxhead' is a generic Unsplash-style stock photo of two people in a meeting (hands gesturing over a laptop). It has zero relation to a Born Ugly website or any web/brand work. The source URL (boxhead.io/imager/...) suggests the scraper grabbed a hero stock image embedded in the case-study page rather than the actual website design screenshots.",
+      "fix": "Open https://www.boxhead.io/work/born-ugly-website-design-build and capture the actual website design (browser mockups, screenshots of bornugly.com, etc.). Remove site-01.webp from manifest and replace with an on-capability image."
+    },
+    {
+      "id": "A.duplicate-images",
+      "result": "fail",
+      "evidence": "site-07.webp and site-08.webp are both captioned 'Gemini Worktops brand and website' and show the identical kitchen counter/barstool photograph from the same angle. The source URLs differ by a suffix (_353fe... vs _6c0c...) suggesting two thumbnail sizes of the same image -- the content-hash deduplication did not catch them.",
+      "fix": "Remove one of site-07/site-08 from the manifest. If the Gemini project has other images (brand guidelines sheet, website screenshots, logo system), capture one of those as the replacement."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "The entry is tagged Web design + Frontend development (web). site-04.webp and site-05.webp (WMP project) show a neon sign reading 'Context is Everything' in a photographic studio setting -- physical brand photography, not web or digital work. site-06.webp (also WMP) shows a close-up of a neon tube. None of these demonstrate web design or frontend capability. site-01.webp (Born Ugly, stock meeting photo) is similarly off-capability.",
+      "fix": "For WMP, capture the actual WMP website design or digital brand system from the Boxhead case study (https://www.boxhead.io/work/wmp-rebrand-2021). For Born Ugly, capture the website mockups. Physical brand photography alone is insufficient evidence for Web design capability."
+    },
+    {
+      "id": "A.orphan-files",
+      "result": "fail",
+      "evidence": "site-12.webp, site-13.webp, site-14.webp, and site-15.webp exist on disk but are absent from manifest.json. Visually: site-12 and site-13 show a 'Music + Sound with Vision' interface (recording studio images with lorem-ipsum placeholder text) and a client list (Accor, Adidas, Airbnb...) that does not match Boxhead's known client roster -- these appear to be scraped from a different site entirely. site-14 shows WMP social media mockups (phones). site-15 shows a 'Music + Sound with Vision / People / Studio / Play / Sonic / Us / Commission' navigation grid. The scraper appears to have wandered to a wrong URL (possibly WMP is a music company, not the worktops brand) and saved these before truncation cut off the manifest update.",
+      "fix": "Delete site-12.webp, site-13.webp, and site-15.webp -- they are from the wrong site (a music/sound entity, not Boxhead or the WMP worktops rebrand). Evaluate site-14.webp (WMP IG mockups): if the WMP case study at boxhead.io included these social mockups, it can stay with a correct caption + link; otherwise delete it too. Reconcile the manifest so no files exist on disk without a manifest entry."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "fail",
+      "evidence": "Autonomy field is empty (None). AI Notes name David Sorley as Creative Director but provide no Autonomy estimate with reasoning. Required for every entry where work history supports a read.",
+      "fix": "Estimate Autonomy for the studio (typically 4-5 for a founded studio with a named CD, or frame it as N/A-studio and note that in AI Notes). Set the field via keeper.py set with set_by:agent and record reasoning."
+    },
+    {
+      "id": "C.ai-notes-sources",
+      "result": "fail",
+      "evidence": "AI Notes state 'Small specialized team (Size 11-40 from prior baseline, plausible)' and 'Work Status: Studio' but do not name which sources were checked or which were trusted for Work Status resolution per CLAUDE.md multi-source rule. No seniority/experience read for David Sorley.",
+      "fix": "Add one sentence naming sources checked for Work Status (e.g. 'Studio: own site confirms studio structure; LinkedIn corroborates'). Add a brief seniority read for David Sorley: role, approx years, prior experience if findable."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "The manifest covers 4 named projects (Born Ugly, WMP, Gemini Worktops, Newday Festival) across 11 work images. Diversity is nominally present at the project level, though the quality failures above reduce the effective distinct and on-capability images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple images per project in the manifest (3 per project) and site-09.webp shows a Gemini brand guideline sheet with typography, colour palette and usage examples -- genuine depth."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions and links. The 4 orphan files (site-12 to site-15) are not in the manifest so technically not uploaded, but they require deletion (see A.orphan-files)."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No evidence of embeddable video on the Boxhead case study pages; the studio does web design + frontend, not video. No embed requirement applies."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work images are present from the portfolio site. IG absence is a fail under A.context-shots-instagram above."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small specialized Leeds team doing hands-on web/brand execution."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email are all present and plausible."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) tagged per TAXONOMY. Provenance marks Capabilities set_by:jonathan, consistent with the migration baseline."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 11-40, Work Status = Studio. All set. Sources noted partially in AI Notes (see C.ai-notes-sources fail for the gap)."
+    },
+    {
+      "id": "C.judgment-vs-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) are consistent with Notes 'only in a pinch'. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Notes field 'only in a pinch' is preserved. No other clip instructions visible."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge Size ('plausible for a decade-old Leeds studio') and are otherwise factual. Minor style note: 'Jonathans Note' should be 'Jonathan's Note' but not a gate-level fail."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-01-24'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. source_url is null across fields -- this is the known systemic tooling gap, not a gate fail per the calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or Source fields."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. The entry has enough unknowns (Autonomy) but those are agent-addressable without a question to Jonathan."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. This review will determine whether it flips to Needs Review (it does not pass)."
+    }
+  ],
+  "to": "scraper",
+  "summary": "6 gate failures. The two context shots are both wrong: the website shot shows a campaign poster, the IG shot shows an error page (not queued or documented). site-01.webp is a generic stock meeting photo, not website design work. site-07 and site-08 are duplicate kitchen photos. The WMP images show only physical neon sign photography with no web/digital work visible. Four orphan files (site-12 to site-15) on disk but absent from manifest appear to be from a wrong site (a music/sound entity). Autonomy field is empty. The scraper must: (1) retake the website context shot; (2) handle the IG context shot via the sanctioned queued path or a fresh attempt; (3) replace site-01 with an actual Born Ugly website design image; (4) deduplicate site-07/08; (5) add web-facing images for the WMP project; (6) delete the orphan files and reconcile the manifest; (7) set Autonomy with reasoning."
+}
