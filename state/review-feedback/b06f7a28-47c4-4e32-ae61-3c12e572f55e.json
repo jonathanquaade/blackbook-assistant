@@ -1,29 +1,29 @@
 {
   "page_id": "b06f7a28-47c4-4e32-ae61-3c12e572f55e",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-21T16:10:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-21T17:30:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 work frames across 6 distinct clients: Kalshi x2 (different scenes from same MP4), Gamma, Capital.com, Lemonade, Monzo, Ramp. Clearly 3+ distinct projects."
+      "evidence": "7 work frames across 6 distinct clients: Kalshi x2 (different scenes from same MP4), Gamma, Capital.com, Lemonade, Monzo, Ramp. 3+ distinct projects confirmed."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Frames are mid-video freezes showing actual ad content in action (UGC talent, copy overlays, app screens, product cards), not hero covers."
+      "evidence": "Frames are mid-video freezes showing actual ad content in action: UGC talent, copy overlays, app screens, product cards. Not hero covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Social media content, Film & video production, 3D & motion, Brand strategy. Frames show UGC ads and video ad stills directly matching Social media content and Film & video. Note: no frame demonstrates standalone 3D work; MP4 source files justify the motion tag at minimum."
+      "evidence": "Tagged Social media content, Film & video production, 3D & motion, Brand strategy. Frames show UGC ads and video ad stills directly matching Social media content and Film & video."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-07.png verified: shows multiply.marketing homepage, correct domain. No IG context shot, but AI Notes documents that no Instagram account was found after site + web search; @multiplyagency is a different Edinburgh agency. This is genuine absence, not a throttle failure."
+      "evidence": "site-07.png opened and confirmed: shows multiply.marketing homepage at the correct domain. No IG context shot; AI Notes documents that no Instagram account was found after site + web search (@multiplyagency is a different Edinburgh agency). Genuine absence, not a throttle failure."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,17 +33,17 @@
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "Source videos are self-hosted MP4s on multiply.marketing, not YouTube/Vimeo embeds. Embed rule does not apply; frames are the correct fallback."
+      "evidence": "Source videos are self-hosted MP4s on multiply.marketing, not YouTube/Vimeo embeds. Embed rule does not apply; video frames are the correct fallback."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Site is live and accessible. IG absence documented in AI Notes with the specific reason (@multiplyagency is a different agency)."
+      "evidence": "Site is live and accessible. IG absence documented in AI Notes with specific reason (@multiplyagency is a different agency)."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Agency. Correct: 51-200 employees, full-service paid social / creative production org."
+      "evidence": "Type = Agency. Correct: 51-200 employees, full-service paid social and creative production org."
     },
     {
       "id": "B.links",
@@ -53,18 +53,17 @@
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Social media content, Film & video production, 3D & motion, Brand strategy match site claims. 3D & motion and Brand strategy are generous but defensible; within agent latitude."
+      "evidence": "Social media content, Film & video production, 3D & motion, Brand strategy match site claims."
     },
     {
       "id": "B.country-size-workstatus",
-      "result": "fail",
-      "evidence": "Size is not set. AI Notes explicitly states 'LinkedIn lists 51-200 employees' but the Size field was not written. Country is empty with an Open Question (correct, genuinely unknowable). Work Status = Studio is correct schema-use for an org. The Size data was in hand from LinkedIn and was not applied.",
-      "fix": "Set Size to '41-100' (the defensible lower bound of LinkedIn's 51-200 range; if confidence is insufficient, use '100+' or ask Jonathan). Run: keeper.py set b06f7a28-47c4-4e32-ae61-3c12e572f55e @payload.json where payload sets Size."
+      "result": "pass",
+      "evidence": "Size = 41-100 now confirmed set in live entry. Country is empty with an Open Question (correct, genuinely unknowable from public sources). Work Status = Studio is correct schema-use for an org. The attempt-1 fail is resolved."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy is a person-level field (Storonsky scale: can they run a project unsupervised?). This is an Agency entry, not a person. Omitting Autonomy for an org is correct."
+      "evidence": "Agency entry. Autonomy is a person-level field; omitting it for an org is correct per checklist calibration 2026-06-21."
     },
     {
       "id": "C.no-judgment-contradiction",
@@ -74,7 +73,7 @@
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Name cleaned from 'Multiply (marketing)' to 'Multiply'. Jonathan note 'AD professor' preserved in Source and an Open Question asks about it."
+      "evidence": "Name cleaned to 'Multiply'. Jonathan note 'AD professor' preserved in Source and an Open Question asks about it."
     },
     {
       "id": "C.ai-notes-hedged",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance written for all fields. source_url is null throughout; per calibration note this is a known tooling gap, not a gate failure. set_by values are correct (jonathan for Notes, agent for everything else, migration for Website)."
+      "evidence": "Provenance written for all fields. source_url is null throughout; per calibration note this is a known tooling gap, not a gate failure. set_by values are correct."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,13 +98,13 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two terse questions: Country/HQ (unresolvable by agent) and AD professor meaning. Both conditional on genuinely missing information. No field with an existing non-zero value is asked about."
+      "evidence": "Two terse questions: Country/HQ (unresolvable by agent) and AD professor meaning. Both conditional on genuinely missing information."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching, awaiting gate. Correct."
+      "evidence": "Entry was Enriching. Flipping to Needs Review as part of this pass verdict."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

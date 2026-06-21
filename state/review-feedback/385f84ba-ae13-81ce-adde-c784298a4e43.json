@@ -1,0 +1,111 @@
+{
+  "page_id": "385f84ba-ae13-81ce-adde-c784298a4e43",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Three distinct projects: Proof (site-01/02/03), Concreit (site-05 through 09), Creatives.wiki (site-10/11). site-04 correctly marked rejected (blank gradient, no content)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior screens per project: Proof shows job detail, document center, serves list; Concreit shows home, browse/detail, investment flow, summary/confirm, property card; Creatives.wiki shows homepage and overlay detail. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Digital product design. All 10 active images are product UI (web apps and mobile apps). Capability match confirmed by visual inspection."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No website context screenshot present. The assets directory contains only site-01 through site-11 (work images); no homepage screenshot of shaun.design exists. No Instagram context shot is expected (subject uses X, not Instagram, documented in spawn note). The WEBSITE shot is mandatory and absent.",
+      "fix": "Run scrape.py shot https://shaun.design/ --out assets/385f84ba-ae13-81ce-adde-c784298a4e43 --caption 'Website' and add the resulting file to the manifest, then re-run keeper.py upload."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 non-rejected manifest entries carry captions naming project and source link. Captions are specific and descriptive."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video or audio work; product design discipline. Embeds not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No Instagram: subject uses X, documented. No other unexplained absences."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (shaun.design), LinkedIn, Email all present. No Instagram because subject uses X (not Instagram). Works At Link set to Hebbia per clip, employer uncertainty surfaced in Open Questions."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Digital product design. Matches his entire portfolio (mobile apps, web apps, B2B SaaS)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Employed. Sources named in AI Notes (site bio + LinkedIn). Three conflicting employers surfaced via Open Question rather than guessed. Objective multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: end-to-end solo design at Concreit, Lead level at Hebbia, hedged on CD-level independence."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states are valid: clip note carries no relationship signal. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all correct."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note ('Shaun Tan hebbia prodyct desiigner') fully acted on: name corrected, Hebbia recorded as Works At Link, employer ambiguity flagged in Open Questions."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged throughout ('per his site bio at clip time', 'a search snippet suggests', 'not yet clear'). Seniority read included. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: clip note preserved verbatim including original typos."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by and verified_at. source_url null throughout (known systemic tooling gap, not a gate failure per checklist calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Open Questions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, conditional on genuine ambiguity (three conflicting employer signals across site, LinkedIn, and search snippet). No story nudge needed."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer is the only one who may flip it. Held pending resolution of the FAIL above."
+    }
+  ],
+  "to": "scraper"
+}

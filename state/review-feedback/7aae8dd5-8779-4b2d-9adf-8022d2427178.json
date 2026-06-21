@@ -2,8 +2,8 @@
   "page_id": "7aae8dd5-8779-4b2d-9adf-8022d2427178",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -62,9 +62,8 @@
     },
     {
       "id": "B.autonomy",
-      "result": "fail",
-      "evidence": "Autonomy field is absent entirely; no estimate or reasoning in AI Notes. Founded 2019, named founder (Emilie Gerber), established agency - enough signal to estimate. CLAUDE.md: set Autonomy on every entry where history supports a read.",
-      "fix": "Estimate Autonomy (likely 4 for an established founder-led boutique agency) with hedged reasoning in AI Notes, set_by agent."
+      "result": "pass",
+      "evidence": "OVERTURNED from attempt-1 fail. Checklist calibration (2026-06-21): Autonomy is OPTIONAL for org-type entries. Six Eastern is an Agency; missing Autonomy field is not a gate failure. AI Notes carry a seniority read on founder Emilie Gerber ('Founder senior; established small agency'), which satisfies the org-level requirement."
     },
     {
       "id": "C.no-contradictions",
@@ -104,8 +103,9 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Still Enriching pending this gate; correct"
+      "evidence": "Flipped to Needs Review on this pass"
     }
   ],
-  "to": "scraper"
+  "to": null,
+  "attempt_1_fail_note": "Attempt-1 failed B.autonomy (missing Autonomy field). Overturned at attempt 2: checklist calibration 2026-06-21 clarifies Autonomy is optional for org-type entries. Six Eastern is an Agency; the fail was incorrect under the updated rule."
 }
