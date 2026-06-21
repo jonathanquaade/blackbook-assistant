@@ -1,14 +1,14 @@
 {
   "page_id": "257f84ba-ae13-81bb-a94f-f538fdd071f8",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-21T22:15:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-21T22:45:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6 distinct projects confirmed: Flux Gen identity (88Rising x Steve Aoki), Gila Domain Expansion vinyl + singles, Equinox 3D textures, Too Close album art (Nosaj Thing + Jacques Greene), Oxygen EP (Brendan Angelides), Atmos Vol.08 On the Clock zine. No repeated-angle duplicates."
+      "evidence": "6 distinct projects: Flux Gen identity (88Rising x Steve Aoki), Gila Domain Expansion vinyl + singles, Equinox 3D textures, Too Close album art (Nosaj Thing + Jacques Greene), Oxygen EP (Brendan Angelides), Atmos Vol.08 On the Clock zine. No repeated-angle duplicates."
     },
     {
       "id": "A.depth",
@@ -18,28 +18,27 @@
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities are 3D & motion, Creative direction, Graphic design, Identity systems. Images cover identity systems (Flux Gen), album art + graphic design (Gila, Nosaj Thing, Oxygen EP), 3D (Equinox textures), publication design (Atmos), stage visuals/motion (Kaytranada embeds). All on-capability."
+      "evidence": "Capabilities are 3D & motion, Creative direction, Graphic design, Identity systems. Images cover identity systems (Flux Gen), album art + graphic design (Gila, Nosaj Thing, Oxygen EP), 3D (Equinox textures), publication design (Atmos), stage visuals/motion (Kaytranada previews + embeds). All on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-03.png opens to joshuaabejo.com homepage (confirmed). site-04.png opens to instagram.com showing handle joshuaabejo, correct person (grid and bio visible). Both correctly labeled."
+      "evidence": "site-03.png confirmed: joshuaabejo.com homepage (name visible top-left, bio, client list). site-04.png confirmed: instagram.com showing handle 'joshuaabejo' in profile header with grid visible. Both correctly labeled."
     },
     {
       "id": "A.uncaptioned",
       "result": "pass",
-      "evidence": "Every manifest entry has a caption. site-01/site-02 are Gila vinyl images (naming is confusing but captions correctly identify them as Domain Expansion vinyl package front/back, not context shots)."
+      "evidence": "Every manifest entry has a caption. site-01/site-02 correctly caption Gila vinyl package front/back, not context shots. Preview images captioned '(video preview)'."
     },
     {
       "id": "A.embeds-for-video",
-      "result": "fail",
-      "evidence": "The two Kaytranada stage visual entries are self-hosted MP4s (joshuaabejo.com/wp-content/uploads/...mp4). Notion does not preview self-hosted MP4 embeds inline. The checklist requires a thumbnail preview image for each video entry so Jonathan can see the work at a glance. No thumbnail/still image exists for either Kaytranada embed in the manifest or Images property. The Kaytranada project is entirely invisible to Jonathan on the Notion page.",
-      "fix": "Capture at least one still frame or representative screenshot from each Kaytranada video and add it to the manifest/Images as a preview image, captioned 'Kaytranada stage visuals, Coachella 2023 (video preview)' and 'Kaytranada stage visuals, Coachella 2024 (video preview)', each with a link to joshuaabejo.com. A scrape.py shot of the joshuaabejo.com project page showing the Kaytranada video thumbnails would also work."
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. kaytranada-coachella-2023-preview.png opened: pink/purple LED-grid stage display with bold black rounded letterforms, clearly on-capability motion/stage visual work. kaytranada-coachella-2024-preview.png opened: glowing concentric circle on soft purple field, 3D/motion graphic. Both placed before their embeds in the manifest with caption '(video preview)' and link to joshuaabejo.com. Notion will show the previews; the embeds remain playable below."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Rejected entries in manifest all have documented reasons (blank images, duplicates, mislabeled file). Nothing silently thin."
+      "evidence": "Rejected entries in manifest all have documented reasons. Nothing silently thin."
     },
     {
       "id": "B.type",
@@ -54,22 +53,22 @@
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "3D & motion, Creative direction, Graphic design, Identity systems -- all confirmed from joshuaabejo.com primary source per AI Notes."
+      "evidence": "3D & motion, Creative direction, Graphic design, Identity systems. All confirmed from joshuaabejo.com primary source per AI Notes."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Canada / 1 / Freelance. Work Status sourced to own site as primary; SignalHire Nike in-house conflict documented and resolved in AI Notes per objective rule (own site wins). Sources named."
+      "evidence": "Canada / 1 / Freelance. Work Status sourced to own site as primary; SignalHire Nike in-house conflict documented and resolved in AI Notes per objective rule. Sources named."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3, set_by agent, with hedged reasoning in AI Notes (executes high-quality work but primarily within collaborators' creative frameworks)."
+      "evidence": "Autonomy 3, set_by agent, with hedged reasoning in AI Notes."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Clip note 'visuals with Eric Hu' correctly identified as a discovery path, not a relationship. Worked Together: Never is consistent with no first-hand working relationship claimed. Zero-states do not contradict any evidence."
+      "evidence": "Clip note 'visuals with Eric Hu' correctly treated as discovery path, not a relationship. Worked Together: Never consistent with no first-hand working relationship claimed."
     },
     {
       "id": "C.clip-note-acted-on",
@@ -79,33 +78,33 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "SignalHire Nike role flagged and hedged as stale/inaccurate. Autonomy marked as hedged. Seniority read present (early-to-mid career, approx 3-4 yrs post-school, Emily Carr 2022). No bare unverified assertions."
+      "evidence": "SignalHire Nike role flagged and hedged as stale/inaccurate. Autonomy marked hedged. Seniority read present (early-to-mid career, approx 3-4 yrs post-school, Emily Carr 2022). No bare unverified assertions. No em-dashes."
     },
     {
       "id": "D.source",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2025-08-22. Clip note: \"(@joshuaabejo) Instagram (graphic design, visuals with Eric Hu)\"' -- filled and verbatim."
+      "evidence": "Source filled verbatim from clip note with created date."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All fields have provenance entries, set_by agent throughout. source_url null is the known systemic tooling gap (not a gate fail in v1 per checklist note). No field written below 0.8 confidence."
+      "evidence": "All fields have provenance entries, set_by agent throughout. source_url null is the known systemic tooling gap (not a gate fail per checklist note)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes uses '--' (double hyphen) once, not an em-dash. No em-dashes found in AI Notes, captions, or Open Questions."
+      "evidence": "No em-dashes in AI Notes, captions, or Open Questions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions empty (cleared). No fields missing that require a question. Story nudge not applicable (all judgment fields at zero-state)."
+      "evidence": "Open Questions empty. No fields missing that require a question. Story nudge not applicable."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching, correct pre-gate state. Will flip to Needs Review on pass."
+      "evidence": "Entry was in Enriching. Flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

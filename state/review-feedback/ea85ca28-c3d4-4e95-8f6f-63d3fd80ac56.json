@@ -1,0 +1,111 @@
+{
+  "page_id": "ea85ca28-c3d4-4e95-8f6f-63d3fd80ac56",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Hidden Order (UVA x Casa Batllo), Massive Attack World Tour 2024-25 (UVA), Strange Attractions (UVA x Kunsthalle Praha), NEST (Jason Bruges Studio), Feather Light (Jason Bruges Studio). No repeated-project images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project with interior installation views, not just covers. Hidden Order has 3 angles including projection-on-facade and illustration detail. Strange Attractions shows gallery interior with viewer. NEST and Feather Light show the installations in environment."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is projection mapping, generative visual systems, light installations and motion -- squarely within tagged Capabilities (3D & motion, Creative technology). No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-11.png is confirmed pixelsinprogress.com homepage (visually verified). site-12.png is an IG 'Something went wrong' error page, correctly marked rejected in manifest with rejection_reason documented, and entry is present in state/ig-queue.json (queued_at 2026-06-21). IG throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest images (excluding rejected site-12.png) carry captions naming project, client and year, plus a link field pointing to the source project page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "3 video embeds present: 2x YouTube (Hidden Order BTS, Hidden Order 4K mapping) and 1x Vimeo (Feather Light). Each embed has a thumbnail image paired with it (thumb-hidden-order-bts.jpg, thumb-hidden-order-4k.jpg, thumb-feather-light.jpg). Captions include project name, year and link to source page."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Instagram throttle documented in AI Notes and ig-queue.json. LinkedIn blocked (999 error) documented in AI Notes. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person -- correct, solo freelance practitioner."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: pixelsinprogress.com present. Instagram: instagram.com/pixelsinprogress present. Email: hi@pixelsinprogress.com present. LinkedIn: searched, found candidate URL, not set because LinkedIn 999 blocked confirmation at 0.8 -- documented in AI Notes with the candidate URL. This is the correct handling per confidence floor."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion and Creative technology match the documented work (C4D 3D renders, openFrameworks and TouchDesigner generative systems, projection mapping). Capabilities are set_by jonathan per provenance -- not the agent's call to override."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, 1, Freelance. AI Notes documents the multi-source basis: site contact page says 'available for freelance projects'. Correct handling."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes grounds it in ~10 yrs freelance, Industrial Design degree, senior-independent client relationships (UVA, Jason Bruges Studio). Reasoning present and hedged."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Familiarity is 'Don't know them' (zero-state, set_by agent) while Worked Together is 'Once' (set_by jonathan). This combination is handled: the agent did NOT assert Familiarity knowing there is a relationship -- it left the zero-state and asked Q1 (Familiarity?). Per contract, the story nudge question and Familiarity question are the correct response to Worked Together: Once."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Pixels in progress, Adam Heslop, Motion Designer'. Name cleaned to 'Adam Heslop (Pixels in Progress)'. Worked Together: Once set_by jonathan (source in provenance). No other instructions in clip note were unactioned."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "LinkedIn flagged as unconfirmed. Instagram queued. Seniority read includes experience grounding (~10 yrs, degree, named clients). No unhedged inferences found. Double-dashes (--) used as separators in AI Notes are not em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-06-15' -- present. The 2022 date is the Notion created_time of the original clip, which is honest."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields. source_url null is the known systemic tooling gap, not a gate fail per checklist note. set_by values are correct (jonathan for Worked Together, Notes, Capabilities; agent for all other fields)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Notion Open Questions field reads '1. Familiarity?' -- no em-dash. AI Notes uses double-dashes (--), not em-dashes. Provenance has an old draft value with an em-dash but it was not written to Notion."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "Story nudge is missing. Worked Together is 'Once' (set_by jonathan) and Notes contains only 'Cohere tool' -- a tool artifact, not Jonathan's personal commentary on this person. The contract requires ONE Open Question 'Notes: how was working together?' when Worked Together becomes Once/Repeatedly and Notes is effectively empty. Notion currently has only '1. Familiarity?' -- the story nudge question is absent.",
+      "fix": "Add '2. Notes: how was working together?' to Open Questions via keeper.py ask. Do not rewrite Q1."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, awaiting this gate. Status flip to Needs Review is conditional on pass."
+    }
+  ],
+  "to": "scraper"
+}

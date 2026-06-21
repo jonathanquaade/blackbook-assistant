@@ -47,9 +47,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:22:54",
+      "verified_at": "2026-06-21T22:59:17",
       "set_by": "agent"
     },
     "Work With?": {
@@ -92,15 +92,21 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Identity not confidently resolved. The website is an Adobe InDesign published portfolio (indd.adobe.com) that renders as an interactive doc and could not be read by fetch tools (no text extracted), and web search returns no clear match for the exact name Coraline Oscarn. Nearby but UNCONFIRMED candidates: a Coraline Oscar (London, senior UX/UI, WPP, on YunoJuno) and a Coraline Colasse (French product designer, ex-Ornikar) - neither verified as this person, so no links/LinkedIn/IG attached (confidence floor). Country kept as Sweden (migration baseline; no evidence to override). Jonathans Rating 3 and Day Rate 475 retained. Seniority unknown until the portfolio can be opened in a browser. Caps left as the locked migration values.",
+      "value": "Identity likely Coraline Oscar (not Oscarn; typo suspected in clip): Senior UX/UI Designer, London, Sorbonne-educated, ~10-14 years experience, freelance 4+ years across Europe; clients include Nike, IKEA, Zalando, LVMH per Worksome profile; currently listed at WPP on LinkedIn. Autonomy: estimated 4 (senior-level, leads UX/UI independently, long freelance track record with major brands). Work Status: Freelance (Worksome + YunoJuno both list as freelance/available; WPP on LinkedIn may be stale or a current placement). SOURCES CHECKED: LinkedIn (google snippet only; login wall blocks profile), YunoJuno (gated), Worksome (no portfolio images), Medium (1 article + reading lists, no project case studies). ALL PRIMARY WORK SOURCES DEAD: InDesign portfolio (indd.adobe.com/view/0362ad83) returns 404 Document Not Found; @coralineoscar IG returns Profile isn't available; @coraline.oscar also unavailable; no personal website found. Zero work images captured. Entry queued in ig-queue.json. FIX NEEDED: Jonathan to confirm identity (is this Coraline Oscar?) and supply a working portfolio URL or current IG handle. Country Sweden (migration baseline) not confirmed by any source; London is the primary location found. One-line fix: confirm name as Coraline Oscar + supply current portfolio link or IG handle.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:29:36",
+      "verified_at": "2026-06-21T22:58:24",
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Identity unresolved: the Adobe InDesign portfolio cannot be read by fetch tools and there is no clear web match for Coraline Oscarn. Is this the same as Coraline Oscar (London UX/UI, WPP) or someone else? A browser-rendered scraper pass may be able to open the portfolio.\n2. Country: tagged Sweden, but the nearest web matches are London / France. Confirm Sweden?",
+      "value": "1. Identity: Is this Coraline Oscar (London UX/UI, ex-WPP, Sorbonne)? The name Oscarn appears to be a typo. If yes, please supply a current portfolio URL or working IG handle: the InDesign doc (the only linked portfolio) returns 404, @coralineoscar is gone, and @coraline.oscar is also unavailable. No work images can be captured without a working source.\n2. Country: Sweden is the migration baseline but all web sources point to London. Confirm?",
       "source_url": null,
-      "verified_at": "2026-06-15T21:29:38",
+      "verified_at": "2026-06-21T22:56:34",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [],
+      "source_url": null,
+      "verified_at": "2026-06-21T22:57:10",
       "set_by": "agent"
     }
   }

@@ -1,0 +1,110 @@
+[
+  {
+    "file": "site-01.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/841122231256297.68861bb38081c.jpg",
+    "caption": "Cohere, Pentagram, 2025",
+    "link": "https://www.behance.net/gallery/231256297/Cohere",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-02.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/52eb65231256297.68861bb3848ba.jpg",
+    "caption": "Cohere, Pentagram, 2025",
+    "link": "https://www.behance.net/gallery/231256297/Cohere",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-03.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f6b8a2231256297.68861bb380d1c.jpg",
+    "caption": "Cohere, Pentagram, 2025",
+    "link": "https://www.behance.net/gallery/231256297/Cohere",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-04.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7ef763203746633.669cfce1c625a.jpg",
+    "caption": "Equipmii, Design Machine, 2024",
+    "link": "https://www.behance.net/gallery/203746633/Equipmii",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-05.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7ef763203746633.669cfce1c625a.jpg",
+    "caption": "Equipmii, Design Machine, 2024",
+    "link": "https://www.behance.net/gallery/203746633/Equipmii",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "near-duplicate of site-04 (same hero screen, different CDN variant)"
+  },
+  {
+    "file": "site-06.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0f003c203746633.669cfce1c3c91.jpg",
+    "caption": "Equipmii, Design Machine, 2024",
+    "link": "https://www.behance.net/gallery/203746633/Equipmii",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/12f071201903387.667c9770e9309.png",
+    "caption": "Kili, ON, 2024",
+    "link": "https://www.behance.net/gallery/201903387/Kili",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/12f071201903387.667c9770e9309.png",
+    "caption": "Kili, ON, 2024",
+    "link": "https://www.behance.net/gallery/201903387/Kili",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "near-duplicate of site-07 (same hero screen, different CDN variant)"
+  },
+  {
+    "file": "site-09.jpeg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2fa9c5201903387.667c9770e8b0c.jpeg",
+    "caption": "Kili, ON, 2024",
+    "link": "https://www.behance.net/gallery/201903387/Kili",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-10.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e3dc60100259183.5f050930b8931.jpg",
+    "caption": "Financial Times, Red Badger, 2016",
+    "link": "https://www.behance.net/gallery/100259183/Financial-Times",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-11.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e3dc60100259183.5f050930b8931.jpg",
+    "caption": "Financial Times, Red Badger, 2016",
+    "link": "https://www.behance.net/gallery/100259183/Financial-Times",
+    "captured_at": "2026-06-21",
+    "rejected": true,
+    "reject_reason": "near-duplicate of site-10 (same paywall screen, different CDN variant)"
+  },
+  {
+    "file": "site-12.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/299e9a100259183.5f050930b7d2b.jpg",
+    "caption": "Financial Times, Red Badger, 2016",
+    "link": "https://www.behance.net/gallery/100259183/Financial-Times",
+    "captured_at": "2026-06-21"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://www.elif-gurbuz.com/",
+    "caption": "Website",
+    "link": "https://www.elif-gurbuz.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://www.instagram.com/e__lifgurbuz/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/e__lifgurbuz/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "headless IG returned error page (Something went wrong); queued to ig-queue.json for logged-in ig.py grab"
+  }
+]

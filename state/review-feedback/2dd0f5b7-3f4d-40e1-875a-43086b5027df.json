@@ -1,0 +1,110 @@
+{
+  "page_id": "2dd0f5b7-3f4d-40e1-875a-43086b5027df",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects in active images: Peripetics (2009), Jitterbuggin (2024), Anoomaly/Alicia Keys (2024), emancipath/KVADRAT (2017), Comme des Garcons (2006), AUTO NOM (2023). No project repeated as a vanity cover."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "emancipath gets 3 distinct stills (fabric close-up, landscape, macro form); Comme des Garcons gets 3 distinct stills (triptych compositions); Peripetics gets 2 distinct scene stills. Entry goes inside multiple projects, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 project images and 1 video thumbnail are 3D CGI or motion art renders. Tagged capability is '3D & motion'. No off-capability content present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-17.png: verified zeitguised.com homepage (logo 'zeitguised', nav HOME/INSTALLATIONS/BACKARCHIVE/CLIENTS, copyright ZEITGUISED GmbH). site-18.png: verified instagram.com/zeitguised (Instagram wordmark, handle 'zeitguised', 88.4K followers, visual grid visible). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image in the manifest has a named project caption and a source link. No anonymous images in the uploaded set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 video embeds present: emancipath Vimeo, AUTO NOM Vimeo, Alicia Keys Gem Forest Vimeo, Peripetics YouTube. Each has a caption and a link. Still images also present (entry is not embeds-only). thumb-autonom.jpg provides a preview thumbnail for AUTO NOM. Minor: AUTO NOM embed link points to vimeo.com rather than the zeitguised.com project page, but it is navigable and not a gate issue."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No silently thin sections. Rejected manifest entries have documented reasons (logo SVGs, near-identical angles, unusable aspect ratio, low-res letterboxed thumbnail)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small specialist creative execution team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://zeitguised.com/. Instagram: https://www.instagram.com/zeitguised/ (verified correct account, 88.4K followers, handle matches). LinkedIn: https://www.linkedin.com/company/zeitguised. Email: hello@zeitguised.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = '3D & motion'. Open Question 1 asks Jonathan about adding Art practice for gallery/installation work. Correct to ask rather than assert."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Germany (AI Notes: corrected from Netherlands, confirmed Berlin/Germany across all sources). Size = 2-10 (hedged in AI Notes, headcount not published). Work Status = Studio. Sources referenced in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per checklist. AI Notes names the founder (Henrik Mauler) and notes the studio-level context. No Autonomy field required."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) are consistent with the clip note (plain URL clip, no relationship signal from Jonathan)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2022-05-24'. Clip note contained no instruction text beyond the URL; no instructions deferred or missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size hedged ('hedged; exact headcount not published'). Clients (Comme des Garcons, Mercedes-Benz, Nike) are verifiable from their own site. Founding year and founder name stated as fact (consistent with primary sources). Seniority read present (founding architect, 2001, studio-level). No unsupported quality assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-05-24'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by on every field. source_url is null throughout, but this is the documented systemic tooling gap (not a gate fail per checklist note dated 2026-06-21). No field written below 0.8 confidence; hedged fields are flagged in AI Notes."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: 'Capabilities: add Art practice? (gallery / installation / Sedition edition work alongside commercial 3D & motion)'. Terse, conditional (Capabilities has no Art practice value, so asking is valid). Story nudge not applicable (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

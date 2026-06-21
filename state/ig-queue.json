@@ -775,5 +775,33 @@
     "ig_url": "https://www.instagram.com/somesuchandco/",
     "reason": "IG context screenshot (site-09.png) returned Something went wrong error page (Instagram blocked headless Playwright). Need logged-in ig.py grab for @somesuchandco profile context shot.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "0584e5ff-cc9d-4c35-a6bf-42965d6dcf20",
+    "name": "Marwan Kaabour",
+    "ig_url": "https://www.instagram.com/ustaz_marwan/",
+    "reason": "IG blocks headless browser (Something went wrong error); context shot needed",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
+    "name": "Andy Price",
+    "ig_url": "https://www.instagram.com/__andyprice__/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "e04d81a6-e15b-4b6e-84fa-57649571e128",
+    "name": "Chris Corby",
+    "ig_url": "https://www.instagram.com/chriscorby/",
+    "reason": "IG context shot errored headless (Something went wrong rate-limit); handle confirmed from his own site",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "e8086aeb-c94d-451e-89fb-975bbb491984",
+    "name": "Coraline Oscarn (likely Coraline Oscar)",
+    "ig_url": "https://www.instagram.com/coralineoscar/",
+    "reason": "IDENTITY UNRESOLVED: entry name Coraline Oscarn is likely a typo for Coraline Oscar (London UX/UI designer, WPP, Sorbonne). @coralineoscar returns Profile isn not available logged-out (removed or renamed). @coraline.oscar also unavailable. InDesign portfolio 404 dead. No personal website found. No web-accessible case studies found. Need Jonathan to confirm identity and provide current portfolio link or IG handle before work capture is possible.",
+    "queued_at": "2026-06-21"
   }
 ]

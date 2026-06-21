@@ -1,0 +1,110 @@
+{
+  "page_id": "f10fd82a-aded-483d-9356-efebf5fffed4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Le Modello, Pay with Four, Vertebrae, Hey Carson. No repeated project across images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 interior screens (e.g. Le Modello: editorial article + shop grid; Pay with Four: homepage + UI components + mobile checkout; Hey Carson: homepage + feature views). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design; all 14 live images show web UI (e-commerce stores, fintech flows, AR product UI, Shopify tooling). Work matches the tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png confirmed as jakubreis.com homepage. IG context shot (site-15.png) rejected in manifest with documented error-page reason, queued to state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have captions naming their project and a source link in the manifest."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "No video project pages identified in the manifest; no embed opportunity called out or skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest rejection_reason and entry queued to ig-queue.json. AI Notes notes the cap."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram (jakubreis.com nav confirms @jakubreis handle), LinkedIn, Email all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design set (set_by jonathan per provenance). Open Question raised about adding Digital product design / Creative direction."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Czech Republic, Size 1, Freelance. Sources named in AI Notes: site + Dribbble/Behance agree on freelance; LinkedIn treated as stale."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent. Reasoning in AI Notes: mid-to-senior, ~9 yrs, clients Nike/LV/Marvel/DNB via MetaLab/Fantasy/Accept and Proceed/Platform."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Rating 2 and Notes set_by jonathan. Zero-states (Worked Together: Never, Familiarity: Don't know them) not contradicted by clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is plain web-clipper entry (2022-05-23); no embedded instructions in clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged (read as independent, Caps locked at Web design with question open). Seniority read and Autonomy estimate both present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2022-05-23."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url null throughout is the known systemic tooling gap (not a v1 gate fail per checklist note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about Capabilities. No judgment fields queried. No field with a non-zero value asked about."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipped to Needs Review by this gate."
+    }
+  ],
+  "to": null
+}

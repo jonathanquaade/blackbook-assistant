@@ -1,0 +1,112 @@
+{
+  "page_id": "84f67789-6794-4f11-9c66-6498a58e9c61",
+  "entry_name": "Pith",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T22:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active work images span 5 distinct projects: section-sewn binding process, Yuzu Notebook (debossed cover + grid pages + lay-flat binding detail), Notpla seaweed paper collection (stacked + Lumia spec card), Polar Skate Co Deck Book 2024 (Pontus Alv illustration spread), Tidekettle x Pith 2024 (pulp vat + indigo cover detail + covers soaking), LDF24 (printed notebook + materials card + notebooks laid out). Zero repeated-angle duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside: binding spine detail (site-01, site-05), 3 images inside the Tidekettle process, 3 images inside LDF24 showing different facets of the commissioned notebook. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 active work images show physical paper goods, binding, paper-making and print finishing. Direct match to tagged capabilities Print production + Paper & materials. No off-capability images present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-18.png: real pithsupply.com homepage (Pith logo, nav bar, seaweed hero confirmed visually). site-19.png: real instagram.com/pithsupply profile (handle pithsupply, 20.6K followers, Pith circle avatar confirmed visually). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images (12 work + 2 context) carry a caption and a link. Rejected manifest entries (site-02, site-03, site-08, site-09, site-13) are not uploaded. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capabilities are Print production + Paper & materials; no video or audio work is in scope. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is well-represented; no thin-entry situation. N/A."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small hands-on maker team, not an agency or foundry."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website pithsupply.com present. Instagram instagram.com/pithsupply present and confirmed correct studio (profile screenshot matches). LinkedIn uk.linkedin.com/company/pith present. Email dontbeshy@pithsupply.com present. All four link categories covered."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Print production + Paper & materials. Accurate to what Pith does. Open Question 1 asks Jonathan whether Fabrication should be added, which is the right handling for an uncertain additional tag."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country UK, Size 2-10 (hedged in AI Notes as unverified headcount), Work Status Studio. AI Notes names the sources and flags the hedge on Size. Objective rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type Studio (org). Autonomy is optional for org-type entries per checklist calibration note. AI Notes names the co-founders (Andrew Hardie, Liam Goward) which is the required seniority/leadership read for an org. Field not required; not set. Correct."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together Never, Familiarity Don't know them, Work With? Unvetted. Clip note contains no relationship facts or Jonathan commentary. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip name was descriptive tagline only ('Pith - Planet-friendly Sketchbooks, Notebooks, Planners & Pads'). No instructions, passcodes or relationship facts. Name cleaned to Pith. clipped.md archived. Body was only a cookie consent line (no Jonathan commentary to relocate)."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size and exact team flagged as unverified. Capabilities hedge present ('arguably also a maker/manufacturer'). No em-dashes. Founders named from public sources. No unsupported assertions. Seniority/founding read included (co-founders, founded 2020)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-05-24'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields recorded. null source_url is the known systemic tooling gap, not a gate fail. set_by values: agent for agent-set fields; 'jonathan' on Capabilities reflects the clipper/migration origin and the field values are factually accurate. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions and all manifest captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: whether Fabrication/Industrial design should be added to Capabilities. Terse, conditional (Capabilities already has values so the question is about an addition, not asking for something already set), well-formed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. 5 distinct named projects, deep process shots, both context shots verified against the actual pages. Scout metadata complete for a Studio org. One open question about Fabrication tag is the right move."
+}

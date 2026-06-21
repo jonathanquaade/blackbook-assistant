@@ -1,0 +1,111 @@
+{
+  "page_id": "76058a90-707d-411b-9c65-3feb876ac8b6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active images span 7 distinct named projects: Il Filo Conduttore, Drei, Sihlcity, Slow Screen/MuDA (2 shots), Hermes 8Ties (2 shots), Breaking Bad AMC (2 shots), Plug and Play (1 gif), Female Entrepreneur Index / Economist (3 shots). No caption repeats across unrelated projects; Slow Screen pair and Hermes pair are legitimate multi-image-per-project depth."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Entry goes inside projects: Hermes 8Ties has both the interaction-state UI and the 3D animated tie. Breaking Bad has both the campaign mask prop and the landing-screen UI. Economist has overview, criteria, and compare views. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged 3D & motion + Creative technology + Brand strategy. Verified images: 3D rendered objects (Il Filo Conduttore, Drei, Hermes 8Ties tie animation), kinetic pixel installation (Slow Screen), hardware prototype (Sihlcity), interactive campaign UI (Breaking Bad, Hermes), data visualisation (Economist). No off-capability work detected. 10 contaminated images were correctly rejected with documented reasons."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot site-16.png visually confirmed as real etterstudio.com homepage (purple background, 3D donut and characters, 'Etter Studio' wordmark). IG shot site-17.png rejected (documented: headless IG returned error page, not real instagram.com profile), queued to state/ig-queue.json, and entry is in the IG queue with page_id confirmed present. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active images carry captions naming the project and a source link to etterstudio.com project pages. No anonymous shots in the active set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "YouTube embed present for Plug and Play game walkthrough (youtube.com/watch?v=nmINiv498w8), linked to etterstudio.com/plugandplay/. Images also present in the entry (embed is not the only content)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No silently thin sourcing. All rejected images have documented reasons in manifest. IG throttle block documented in manifest and ig-queue.json. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Small specialist creative-technology studio; classification consistent with CLAUDE.md Studio definition (small team, hands-on execution)."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://etterstudio.com/ (canonical root, confirmed real). Instagram: https://www.instagram.com/etterstudio/ (set, handle matches studio name, IG entry in ig-queue for verified grab). LinkedIn: https://www.linkedin.com/company/etterstudio (set). Email: z@etterstudio.com (set). All four link fields populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion + Creative technology + Brand strategy. Set_by jonathan per provenance (migrated from original clipper tags). Consistent with the algorithmic/interactive/3D work visible across the projects. AI Notes also flags Industrial design as plausible; scraper left this as a hedged note rather than over-tagging, which is correct."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Switzerland (Zurich studio, confirmed by site). Size = 2-10 (hedged in AI Notes, appropriate). Work Status = Studio (correct: it is a named studio entity, not a freelancer or employed individual). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "This is a Studio/org entry. Per checklist calibration note (2026-06-21), Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes includes a seniority read on the founder (senior, ex-AD Saatchi Milan, ex-Director Unit9 ~10 yrs, co-founded MuDA). No Autonomy field required for the org."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) do not contradict any evidence. No relationship notes in the clip or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source set as 'Web clipper, 2022-05-24'. No instruction text found in the clip note beyond the URL; no stated facts requiring --from-jonathan treatment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Size ('hedged'), hedges Industrial design capability ('also plausible'), and includes verifiable facts (founding year 2008, named clients, founder roles/employers). Seniority read present (senior-level founder, ~10 yrs at Unit9). No unhedged inferences detected. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-05-24'. Set_by agent. Matches required format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/76058a90-707d-411b-9c65-3feb876ac8b6.json. All touched fields have set_by values (agent or jonathan for Capabilities). source_url is null throughout; per checklist calibration note (2026-06-21) this is a known systemic tooling gap, not a gate failure. No field was written below the confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source reviewed. No em-dashes found anywhere."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field populated in the entry (none returned by keeper.py get). Story nudge not triggered (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted; no relationships exist to trigger the nudge). No terse questions outstanding that the agent could not answer."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Status flip to Needs Review is the reviewer's action on a pass, not the scraper's. Correct."
+    }
+  ],
+  "to": null,
+  "notes": "Cross-project contamination check: 10 images rejected in manifest, all with specific documented reasons (wrong-project contamination, black/unusable gif, BTS photo, awards audience photo, aerial location photo, watermarked YouTube thumbnail). Active 14-image set examined individually, no leaked cross-project images detected. Entry is complete, honest, and on-capability."
+}

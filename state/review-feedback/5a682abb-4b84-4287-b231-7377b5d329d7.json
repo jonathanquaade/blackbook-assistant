@@ -1,0 +1,117 @@
+{
+  "page_id": "5a682abb-4b84-4287-b231-7377b5d329d7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active images span 3 distinct projects: Bimba y Lola (2 images), Galeria Canalejas (4 images), OFFF Festival website + app (2 images), plus 2 context shots. No repeat-angle duplication."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Bimba y Lola: desktop UI grid + mobile UI grid. Canalejas: content pages, laptop mockup, mobile screens, editorial page. OFFF: full website + app interior screens. Goes inside projects, not just hero covers. crowd-canalejas-04 is a photography collage overlaid with web UI text, borderline, but the other 3 Canalejas images cover the UI adequately."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Web design. All 8 work images show web/UI screens: e-commerce desktop+mobile (Bimba y Lola), website content pages+laptop+mobile (Canalejas), website+app (OFFF). No off-capability material in active images."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png: confirmed cargocollective.com/carlesmore showing Carles More portfolio page. site-03.png: confirmed instagram.com/carlesmore showing @carlesmore profile with 0 posts and Reformation bio. Both correctly labeled, both real pages for the right person."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 10 active manifest entries have captions naming the project and link fields. No anonymous images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Web design entry; images are the appropriate medium. No video/audio embeds required. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states portfolio is gated at cargocollective.com (request only). IG has 0 posts (confirmed in screenshot). Sourced from Crowd Digital case studies and a third-party press article. Absence of gated portfolio work is documented."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual creative director."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: cargocollective.com/carlesmore (set). Instagram: instagram.com/carlesmore/ (set, screenshot confirms right person). LinkedIn: linkedin.com/in/carles-more-45984340/ (set). Email: hello@carlesmore.com (set). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design tagged. Open Question asks Jonathan about adding Creative direction / Graphic design. Appropriate handling of a broader-scope person where confidence on additional tags is below the floor."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Spain. Size: 1. Work Status: Employed. IG bio shows current role at Reformation (Employed). AI Notes flags that Works At employer has shifted to Reformation; the Work Status determination itself is correct. NOTE for Jonathan: Works At field should be updated to Reformation (or Works At Link if not in DB). This is a data-freshness flag, not a gate failure."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes grounds it: co-founder of Crowd Digital, Head of Art & Digital at Massimo Dutti (Inditex), Head of Digital Design Experiences at Aritzia, now CD at Reformation. Director-level trajectory, autonomy 4 is defensible."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Notes says 'Considered for Cohere' which does not contradict any zero-state. No conflicts."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2022-06-08. No special instructions in the clip note that appear unactioned."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Employer signal attributed to IG bio with date ('per IG bio as of June 2026'). Work Status flagged as 'update recommended'. Clients from their own Cargo Collective site (verifiable). Seniority read grounded in documented job history. No bare assertions beyond verifiable facts."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-06-08'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url is null throughout: known systemic tooling gap per checklist calibration note (2026-06-21), not a v1 gate fail. Confidence floor appears met: links verified via screenshots, work history from public bios and site."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities scope. Terse and conditional (only asks about fields not yet set beyond the current Web design tag). No story nudge needed (Worked Together = Never, Familiarity = Don't know them). No redundant or unconditional questions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, will be flipped to Needs Review on this pass verdict."
+    }
+  ],
+  "flags": [
+    {
+      "id": "employer-update",
+      "severity": "note",
+      "description": "Works At field is empty. IG bio (confirmed in context shot) shows current role as 'Creative Director - Brand & Digital | @reformation'. AI Notes flags this. Reviewer surfaces it for Jonathan: if Reformation is in the DB, Works At should point there; if not, Works At Link should be set to reformation.com. Not a gate fail as the scraper documented it in AI Notes."
+    }
+  ],
+  "to": null
+}
