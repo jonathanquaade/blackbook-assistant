@@ -3,7 +3,7 @@
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -23,8 +23,8 @@
     {
       "id": "A.context-shots",
       "result": "fail",
-      "evidence": "site-17.png (captioned 'Website') is the KITTEN contact/footer page: blank white with 'INFO@KITTENPRODUCTION.COM / @KITTEN_PRODUCTION' and logo only. This is not the homepage. It provides no visual memory of who KITTEN is or what their work looks like. The Instagram context shot (site-18.png) is correctly rejected, documented, and queued to ig-queue.json -- the IG exception applies and is a pass.",
-      "fix": "Re-run scrape.py shot https://www.kittenproduction.com/ --out assets/7b9bfc18-e45c-4855-a859-2e054497f3a5 --caption 'Website' and replace site-17.png with the actual homepage screenshot. The homepage loads their work grid/reel and is the correct anchor. Then re-upload via keeper.py upload."
+      "evidence": "site-22.png is captioned 'Website (work)' and sourced from https://www.kittenproduction.com/work, but the image itself shows two full-bleed fashion editorial images (a vintage portrait left, a LOVE magazine cover with Gigi Hadid right) with NO visible site chrome, navigation bar, project grid, or KITTEN branding. It is visually indistinguishable from any other work image in the entry. Jonathan cannot use it as a memory anchor for the KITTEN site. A website context shot must show the site as a site, not a zoomed-in viewport landing on the first hero image pair. The Instagram context shot (site-18.png) is correctly rejected, documented, and queued -- the IG exception applies and is a pass.",
+      "fix": "Re-run scrape.py shot on https://www.kittenproduction.com/work with a viewport wide enough (or zoom-out) to show the project grid layout with multiple thumbnails and the KITTEN site chrome visible. The goal is a recognisable screenshot of the site itself, not a crop of one campaign image. Alternately, shoot the /about or /agency page if it shows their identity more clearly. Mark the current site-22.png as rejected in the manifest with rejection_reason 'viewport crops to hero image only, no grid or chrome visible'. Then re-upload."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -39,7 +39,7 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG context shot failure documented in manifest rejection_reason and ig-queue.json entry confirmed present."
+      "evidence": "IG context shot failure documented in manifest rejection_reason and ig-queue.json entry confirmed present with correct page_id, handle, and reason."
     },
     {
       "id": "B.type-classified",
@@ -59,17 +59,17 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: France, Spain, Italy (offices Paris, Barcelona, Milan). Size: 41-100 (~61 on LinkedIn). Work Status: Studio (production company that operates as a studio entity). Sources noted in AI Notes."
+      "evidence": "Country: France, Spain, Italy (offices Paris, Barcelona, Milan). Size: 41-100 (~61 on LinkedIn). Work Status: Studio. Sources noted in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Org-type entry (Agency). Autonomy is optional per checklist calibration 2026-06-21. AI Notes includes seniority/leadership read (Founded by Boyer and Blanquet-Ferrero, acquired by The Independents 2024). Not required for this type."
+      "evidence": "Org-type entry (Agency). Autonomy is optional per checklist calibration 2026-06-21. AI Notes includes seniority/leadership read (founded by Boyer and Blanquet-Ferrero, acquired by The Independents 2024)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clipped.md shows no Jonathan relationship language -- clip was just the IG page title. Zero-states are appropriate."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip was just the IG page title -- no Jonathan relationship language. Zero-states are appropriate."
     },
     {
       "id": "C.clip-note-acted-on",
@@ -79,12 +79,12 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes states '~61 staff (LinkedIn)' (hedged with source), 'Acquired by The Independents Sept 2024' (verifiable fact), 'Reads as a full-service multi-office production agency' (hedged as a read). No unverified assertions stated as fact. Includes seniority/leadership read for org. No em-dashes."
+      "evidence": "AI Notes hedges staff count with '~61 staff (LinkedIn)', states acquisition as verifiable fact, reads agency classification as 'Reads as'. No unverified assertions. No em-dashes. Includes org-level leadership read."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2023-04-07' -- correct format, date matches provenance migrated_at context."
+      "evidence": "Source: 'Web clipper, 2023-04-07' -- correct format."
     },
     {
       "id": "D.provenance-written",
@@ -99,12 +99,12 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions set on the entry. Appropriate: no unresolvables exist and no judgment fields have non-zero values that would trigger a story nudge."
+      "evidence": "No Open Questions set. Appropriate: no unresolvables exist and no judgment fields have non-zero values that would trigger the story nudge."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still Enriching pending this gate. Status flip withheld until context shot is fixed."
+      "evidence": "Entry remains Enriching. Status flip withheld until context shot is fixed."
     }
   ],
   "to": "scraper"

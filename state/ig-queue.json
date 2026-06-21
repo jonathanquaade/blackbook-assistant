@@ -719,5 +719,33 @@
     "ig_url": "https://www.instagram.com/aranquinn/",
     "reason": "IG blocked headless (Something went wrong error); context shot for profile grid needed",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "9add2032-ce21-4a4e-aa43-b894c8b227b8",
+    "name": "Love + Money",
+    "ig_url": "https://www.instagram.com/loveandmoney.agency/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited logged out). @loveandmoney.agency confirmed (from homepage footer). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "3a0607f2-b3d2-4142-9ff2-741a071e270a",
+    "name": "Studio Essence",
+    "ig_url": "https://www.instagram.com/__studioessence/",
+    "reason": "handle unconfirmed (cannot verify without login); IG throttled logged-out; studioessence.com domain leads to wrong AU entity; site down SSL error; need logged-in verification of handle",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "d24491c2-4432-4d6b-8379-4142141d01da",
+    "name": "Magic as a Service",
+    "ig_url": "https://www.instagram.com/maas.engineering/",
+    "reason": "IG context screenshot returned Profile isn't available error page (headless Playwright blocked logged-out). maas.engineering confirmed handle (linked from maas.engineering site). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "2a2dc7a6-7b66-41b0-93dd-7d2f40537cba",
+    "name": "Richard MacVicar",
+    "ig_url": "https://www.instagram.com/richard_macvicar/",
+    "reason": "IG context screenshot returned Something went wrong error page (Instagram rate-limited logged out). @richard_macvicar confirmed via Behance profile. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
   }
 ]

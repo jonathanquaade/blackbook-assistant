@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-812e-a9ad-d88c9f2363fe",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 Vimeo embeds (I've Been Thinking, Planet Tobler, MTV Ident, Fabulously Ever After, A Day in the Life of NYC, Samyel/Allumette) + illustration stills from Harry's, Nah Dublin, Williams College, Etsy, The Sledgehog, Bean & Goose. Well over 3 distinct named projects across animation and illustration."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: site-01 is an interior still from I've Been Thinking (not just cover), site-02 shows a character animation frame from Harry's, cdn-08 is the book cover of The Sledgehog. Embeds allow full playback."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion + Film & video production + Illustration. All 6 embeds are animated films/idents; illustration stills (Harry's, Etsy, Williams College mascot, Bean & Goose, Sledgehog, Nah Dublin film) are on-capability. No off-capability brand consultancy or lifestyle photography included."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png opens to aranquinn.com homepage showing 'Aran Quinn / Direction, Illustration & Animation' - correct. IG context shot is rejected in manifest with documented reason ('Something went wrong' error), queued to state/ig-queue.json (entry confirmed present), and AI Notes says 'IG capture queued' is implied by the queue. Meets the sanctioned throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "warn",
+      "evidence": "Three images have generic captions without a project name: site-04 ('Personal illustration work', link aranquinn.com), cdn-06 ('Editorial illustration', link aranquinn.com), cdn-10 ('Personal illustration work', link aranquinn.com). The checklist says prefer fewer named images over more anonymous ones. These are real illustrations, not blank filler, and the rest of the set is well-captioned, so this is a soft gap rather than a gate fail. Flagged for Jonathan."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo embeds present with thumbnail preview images + linked captions. All 6 embeds have both a thumb-*.jpg preview image and an embed entry with caption + link. Pattern is correct per CLAUDE.md."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "aranquinn.com has the known limitation (global image pool, not per-project URLs); scraper documented this and captioned by visual inspection. IG throttle documented in manifest and queued."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual animation director."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (aranquinn.com), Instagram (instagram.com/aranquinn/), LinkedIn (linkedin.com/in/aran-quinn-65235333) all present. No public email found; not listed on his site or representation page (inquiries routed to hello@closerandcloser.co which is Closer & Closer's address, not his personal email). Absence is reasonable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion, Film & video production, Illustration. His site says 'Direction, Illustration & Animation'; his commercial work spans branded animation (MTV, Harry's, Etsy) and short films. Tags match demonstrated work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Ireland (origin; AI Notes notes location may have shifted to France per WePresent 2025 and asks in Open Questions). Size: 1. Work Status: Freelance, resolved from site + Closer & Closer representation + LinkedIn ('Independent Animation Director'); sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: leads animation projects end-to-end for major brands, independently represented, ~15 yrs experience; not 5 because no evidence of leading a studio/large team. Grounded and hedged."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note from Jonathan indicates a relationship. Zero-states (Never, Don't know them, Unvetted) are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No Jonathan clip note with instructions found in the entry; this is a recovered stalled entry scouted this session. Nothing in the Name field or body to act on beyond identifying the person."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Location hedged ('may have recently changed'). COLLINS claim explicitly disavowed with evidence. Seniority read ('Senior level, ~15+ years') grounded in The Mill NY / Windmill Lane / Redrage Films history. Autonomy reasoning explicit."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source field filled with full list of confirming sources (aranquinn.com, closerandcloser.co, LinkedIn, WePresent, Vimeo, 100 Archive, Working Not Working) plus note about COLLINS discrepancy."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/<id>.json with all touched fields. source_url is null on most fields -- this is the known systemic tooling gap, not a gate failure per checklist calibration note. set_by is 'agent' throughout; no fact appears written below the 0.8 confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use '--' (double hyphen), not em-dashes. No em-dashes found in any agent-written text."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "warn",
+      "evidence": "Question 1 (Name spelling) and Question 2 (France location) are appropriate and terse. Question 3 about COLLINS appears to be resolving internal agent confusion rather than surfacing a genuine Jonathan-answerable question -- there is no clip note from Jonathan mentioning COLLINS, and the prior AI Notes error was already corrected and documented. This question may be noise for Jonathan. Not a gate fail, but flagged."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "One substantive item Jonathan should be aware of: the Name field reads 'Aran Quin' (one n) while every public source spells it 'Aran Quinn' (two n's). Open Question 1 correctly surfaces this. Jonathan's confirmation will let the scraper fix the Name field. The 3 generically captioned illustration images (site-04, cdn-06, cdn-10) are real on-capability work but lack project names; if Jonathan wants tighter captioning on a revisit, the manifest links back to aranquinn.com where visual inspection could name them.",
+  "to": "scraper"
+}

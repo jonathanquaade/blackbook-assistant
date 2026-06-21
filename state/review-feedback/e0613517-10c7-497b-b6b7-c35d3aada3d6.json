@@ -1,0 +1,111 @@
+{
+  "page_id": "e0613517-10c7-497b-b6b7-c35d3aada3d6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: British Vogue (3 stills), More or Less (1 still + embed + thumb), Vyrao (3 stills + embed + thumb), Tory Burch (3 stills + embed + thumb), Bally (2 stills). No caption repetition across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: editorial spreads (site-01/02/03 for Vogue), product/fragrance imagery (site-04/05/06 for Vyrao), campaign stills and aerial brand shot (Tory Burch), illustrated brand poster (Bally). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged: Creative direction. All 5 projects are creative direction outputs: editorial creative direction (British Vogue, More or Less magazine), brand campaign creative direction (Vyrao, Tory Burch, Bally). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website shot (site-14.png) confirmed as jaimeperlman.com: browser chrome shows jaimeperlman.com URL, nav reads 'Projects / Case Studies', captioned 'Website'. IG shot (site-15.png) is an error page, but correctly rejected in manifest with documented reason ('IG served error page under headless throttle'), queued in state/ig-queue.json. Meets the sanctioned throttle exception in the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 uploaded images carry project-named captions and source links. site-13.svg (logo) is marked rejected and excluded from upload. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "3 Vimeo embeds present: More or Less Issue 07 Mythic Creatures (vimeo.com/874033318), Vyrao Oh Georgette campaign (vimeo.com/570209001), Tory Burch Fall 2024 (vimeo.com/1027329256). Each has a thumbnail preview image, caption, and link to source. Pattern is gallery-of-thumbs + embeds below, as specified."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest rejection_reason and in ig-queue.json. AI Notes states IG was verified (@jaimeperlman). Email not public is documented per spawn-prompt context. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual creative director."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: jaimeperlman.com (set). Instagram: instagram.com/jaimeperlman (set, verified per AI Notes). LinkedIn: linkedin.com/in/jaime-perlman-81ab1bb1 (set). Email: not public, documented in AI Notes. No obvious missing link."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Creative direction. Confirmed by her work history (British Vogue CD, studio founder, brand campaigns) and set_by jonathan per provenance."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + United States (dual-base confirmed by AI Notes: London-based since 2005, New Yorker). Size: 1 (Person). Work Status: Unknown with a genuine Open Question (IG bio simultaneously shows studio founder and VP Global Brand Image at Tory Burch). Multi-source reasoning documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: 'former magazine CD, runs her own studio'. Well-grounded in 20+ yr career trajectory including CD of British Vogue."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No clip note or other evidence that Jonathan knows her. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2023-04-07'. No clip instructions visible in the entry that were left unaddressed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority + experience documented (20+ yrs, Art Director then CD at British Vogue 2010-2017, prior US Vogue + Harper's Bazaar). Work Status ambiguity hedged correctly with 'genuinely ambiguous'. Autonomy reasoning grounded in verifiable career facts. No un-hedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have set_by populated correctly. source_url is null throughout; this is the documented systemic tooling gap (not a v1 gate failure per the checklist note added 2026-06-21). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Work Status ambiguity (studio vs employed at Tory Burch). Terse, specific, and the only genuine unresolvable. No questions asked for fields already answered. No story nudge needed (Worked Together is Never, no occasion for it)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; flipping to Needs Review now as part of this gate pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 5 distinct on-capability projects, 3 Vimeo embeds with thumbnails, website context shot confirmed correct, IG throttle exception correctly followed (rejected + queued). One Open Question about Work Status is appropriate and genuine. source_url null throughout is the known tooling gap, not actionable here."
+}

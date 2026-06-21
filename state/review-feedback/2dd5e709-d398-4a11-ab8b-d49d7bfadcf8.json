@@ -1,0 +1,116 @@
+{
+  "page_id": "2dd5e709-d398-4a11-ab8b-d49d7bfadcf8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 active images across 3 distinct named projects: Noon SS14 (4 images), Studio Nicholson Pre-Fall 22 (3 images), After Noon issue 01 (2 images), plus 2 context shots. No repeated project dominates beyond 4 images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Noon SS14 includes cover + credits page spread + two interior spreads (going inside the publication). SN Pre-Fall 22 includes three distinct looks (Look 1 outdoor, Look 3 studio, Look 7 backlit park). After Noon includes two distinct editorial images."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capabilities: Brand strategy + Creative direction. Noon SS14 = publication creative direction. SN Pre-Fall 22 lookbook = fashion brand creative direction. After Noon 01 = editorial creative direction. All three projects match the capability tags directly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png: ARPA homepage (a-r-p-a.com), correctly shows ARPA logotype. site-11.png: instagram.com/@arpa_studio profile page confirmed (Instagram UI visible, handle arpa_studio in bio). Both context shots real and correctly labeled."
+    },
+    {
+      "id": "A.no-contaminated-images",
+      "result": "pass",
+      "evidence": "Contaminated images (site-12: SU26 campaign, site-13: Dec 2025 shoot, site-14: duplicate LOOK_1) are all marked rejected in manifest with documented reasons. No contaminated image appears in the active Images set. site-06 (duplicate lower-res) and site-07 (Dazed sidebar Dazed cover, not After Noon) also correctly rejected."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active images have captions naming the project plus a link to the source page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio work identified for this brand strategy / creative direction studio. Print and lookbook work shown as images. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "a-r-p-a.com is minimal by design (noted in AI Notes). Work sourced from formagramma (Noon SS14), studionicholson.com (PF22), and dazeddigital.com (After Noon 01). Methodology documented in manifest source URLs."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. AI Notes explains the Studio vs Agency decision: small specialist team, hands-on design-led execution. Correct per CLAUDE.md definition."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://a-r-p-a.com/. Instagram: https://www.instagram.com/arpa_studio/ (confirmed correct handle in context shot). LinkedIn: https://uk.linkedin.com/in/jasmine-raznahan-65450168 (founder's personal, noted in AI Notes as no separate company page found). Email: studio@a-r-p-a.com."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy + Creative direction. Set by jonathan (provenance set_by: jonathan, migration origin). Correct and appropriate for this studio's output."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10 (hedged in AI Notes: size not disclosed, treated as 2-10). Work Status: Studio. Sources noted in AI Notes (a-r-p-a.com + LinkedIn + press). Minor: AI Notes names sources but does not spell out the multi-source resolution protocol explicitly; not a gate fail."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio. Per checklist (2026-06-21 calibration), Autonomy is optional for org-type entries. No Autonomy field needed here. AI Notes includes seniority/trajectory read (RCA grad, ex Victoria Beckham/POP Magazine/Topshop Creative, founded 2011). Sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No evidence in clip note or body of a prior relationship. Zero-states are valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was web clipper only (no special instructions from Jonathan in the Name field). Clipped body archived to clipped.md. No stated facts requiring --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges size estimate ('size not disclosed, treated as 2-10'). Client list and background drawn from clipped.md site copy and press. Seniority/trajectory included (RCA, ex-employers, founding year). No unhedged inferences detected."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields recorded. source_url is null throughout; this is the known systemic tooling gap, not a gate fail per checklist note (2026-06-21). set_by values are correct (agent for agent-set fields, jonathan for Capabilities migrated from his original entry)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source all checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No unresolvables surfaced during enrichment. Story nudge not triggered (all relationship fields at zero-state with no contradicting evidence). No terse questions needed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "Contamination risk specifically called out in spawn prompt was verified: site-12 (SU26), site-13 (Dec 2025), site-14 (LOOK_1 duplicate) are all rejected in manifest and absent from the active Images property. No contaminated image leaked through. The 4 Noon SS14 images include the cover (a hero shot) and a credits page (minimal editorial content) alongside two genuine interior spreads; this is borderline on depth but the interior spreads carry the selection and the project total of 3 is met. No action required.",
+  "to": "scraper"
+}

@@ -41,9 +41,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:19:31",
+      "verified_at": "2026-06-21T22:15:58",
       "set_by": "agent"
     },
     "Work With?": {
@@ -85,9 +85,23 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Studio Essence: Copenhagen-based digital design and Webflow agency (Jonathan's Notes field already says Webflow). Small specialist team building marketing/portfolio sites on Webflow, so Frontend development (web) + web design territory; treated as a Studio (small hands-on build team) over Agency. Size not disclosed, small Webflow shop, treated as 2-10. Could not load the live site (connection refused at fetch time); classified from web search + Land-book listing. Seniority/experience not establishable from public sources; leaving Autonomy empty. Sources: Land-book listing + web search (site unreachable this pass).",
+      "value": "Studio Essence: Copenhagen-based digital design and Webflow agency run by Patrick Gonzalez (full-stack designer, 4+ yrs experience with agencies, non-profits, SaaS companies, primarily USA). Small studio (2-10), no outsourcing, max 3 concurrent clients at a time. Targets SaaS startups and tech companies for Webflow site builds. Work Status: Studio (confirmed from multiple search sources). CAPTURE STATUS: Website is down as of 2026-06-21 with SSL handshake failure (net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH) on both static fetch and Playwright; no cache accessible. Website context shot sourced from Land-book CDN (captures homepage as it appeared when last indexed). No project-level work accessible from any public source (no Webflow Showcase listing, no Behance/Dribbble, no Clutch case studies found). Instagram: @studioessence is wrong entity (links to Australian facebook.com/studioessence.au); @__studioessence could not be verified (IG throttled logged-out); queued to ig-queue.json for logged-in handle verification. No confirmed LinkedIn or email found; site is down so those fields remain unresearchable. Seniority: Patrick Gonzalez as sole lead, 4+ yrs; junior-mid designer running own small studio. Sources: Land-book listing, web search (site unreachable this pass).",
       "source_url": null,
-      "verified_at": "2026-06-15T21:24:35",
+      "verified_at": "2026-06-21T22:13:33",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-homepage-desktop.webp"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-21T22:14:59",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. studioessence.design is DOWN (SSL/cert error) \u2014 defunct or temporarily broken? No portfolio reachable; only a cached homepage screenshot captured.\n2. Instagram: @studioessence is a different (Australian) entity; @__studioessence unconfirmed (needs a logged-in ig.py check). Which is the right account, if any?\n3. No confirmed LinkedIn/email for the Copenhagen studio. Do you have a direct contact or example work?\n",
+      "source_url": null,
+      "verified_at": "2026-06-21T22:15:57",
       "set_by": "agent"
     }
   }
