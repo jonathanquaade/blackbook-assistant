@@ -1,0 +1,111 @@
+{
+  "page_id": "9f9f2360-fd68-4bf1-b8d9-50a4742a3360",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 active work images span 5 distinct projects: Nothing.tech (2 shots), Pierre Augustin Rose (2 shots), Maison Margiela (1 shot), Joy BC (2 shots), Zukunft (1 shot), Builders Club (1 shot)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Nothing.tech has homepage + product detail page (site-17, site-23). Pierre Augustin Rose has homepage + collections grid (site-16, site-24). Joy BC has homepage + Precious Tears series page (site-19, site-28). Three of five projects have interior shots beyond the hero. Marginal on Maison Margiela (homepage only) and Builders Club (homepage only), but the overall selection meets the bar for a web designer where page-type variation is the valid depth signal."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design. All 9 active work images are screenshots of live client websites Elodie is credited with (her portfolio site visible in the website context shot shows Nothing.tech and mobile app UI among her listed projects). Images show nav, layout, typography, and e-commerce UI across luxury/fashion e-commerce sites consistent with the tagged capability. Note: several hero screenshots are visually dominated by client product photography rather than isolated UI chrome, which is inherent to fashion e-commerce web design; the design system is evident in layout, type, and navigation. Not an off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02 (caption 'Website'): visually confirmed elodiefabbri.com homepage with her name, nav, and portfolio preview visible. site-03 (caption 'Instagram profile'): visually confirmed instagram.com showing handle @elodiefabbri, name 'Elodie Fabbri', bio 'VisualArt Director / Art direction & design for the online world', matching the entry. Both context shots are correct and real."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active images (2 context shots + 9 work shots) carry captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Entry is Web design; screenshots are the appropriate primary deliverable. No audio or video capability tagged. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Chanel project (site-22) captured an Access Denied error page; marked rejected with reason 'Chanel.com geo-blocks headless requests' and documented in the manifest. Documented in AI Notes via the client roster mention. Sanctioned gap."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (elodiefabbri.com), Instagram (instagram.com/elodiefabbri, verified via context shot and bio match), LinkedIn (linkedin.com/in/elodiefabbri), Email (hello@elodiefabbri.com). All four present. AI Notes documents all links sourced from her own site."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design tagged (set_by jonathan per provenance, from migration). Open Question 3 proposes adding Creative direction and Digital product design for Jonathan to confirm. Correct handling of a jonathan-owned field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "France / 1 / Freelance. AI Notes: 'Work Status Freelance: stated on her own site, consistent with her jury/independent profile.' Multi-source rationale documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes: 'Autonomy 4 (hedged): seasoned solo art director leading the digital design on high-end client projects, though she partners with dev studios for build.' Reasoning grounded in client roster and jury roles."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never (set_by agent, zero-state). Clipped.md body contained only 'a' with no relationship claim. Work With?: Unvetted. Familiarity: Don't know them. No contradiction with any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Archived body was trivially 'a' with no instructions or stated facts requiring action."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('hedged'), states Work Status evidence source, includes seniority read ('Senior, Art Director-level') grounded in client roster and jury work. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-08-24'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists for all touched fields. source_url is null throughout, which is the known systemic tooling gap (not a v1 gate failure per checklist calibration note). set_by values are correct: Capabilities is 'jonathan' consistent with a migrated entry where Jonathan set capabilities; all agent-written fields are 'agent'."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions scanned: no em-dashes found. En-dashes in ranges only."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "Three questions: (1) Work With? (Unvetted is a zero-state, asking is correct), (2) Rating? with context '(ex Partner-Dream)', (3) Capabilities expansion proposal. All terse. No question asks for a field that already has a non-zero-state value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "notes": "Flag for Jonathan: the work images are live client site screenshots rather than screenshots from Elodie's own portfolio case studies. Attribution to her is sourced from AI Notes/client roster, not from a case-study page with explicit credit. Her portfolio site (visible in the context shot) shows these projects in the preview, which is corroborating evidence, but no isolated project pages were captured from her own site. This is consistent with CLAUDE.md's 'go to where the work lives' principle and the projects are named with source links, so it is not a gate failure. Jonathan may wish to note whether he can independently confirm her authorship of each site.",
+  "to": "scraper"
+}

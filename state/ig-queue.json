@@ -628,5 +628,26 @@
     "ig_url": "https://www.instagram.com/sixeastern/",
     "reason": "IG served login wall headless; PR agency context shot needed for Notion anchor",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "bacc9134-31a8-4fd1-9bba-6a02f21d40b3",
+    "name": "Matt Lee",
+    "ig_url": "https://www.instagram.com/bymattlee/",
+    "reason": "IG context screenshot (site-02.png) shows cookie consent modal partially obscuring profile grid; @bymattlee handle confirmed from site links. Need logged-in ig.py grab for clean profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "850b3d84-f8fa-4820-91b9-a36f7a39f983",
+    "name": "Office of SPGD",
+    "ig_url": "https://www.instagram.com/studiospgd/",
+    "reason": "IG context shot returned 'Something went wrong' error headless; profile exists and is active; logged-in grab needed for real context shot",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "e73af52f-c16a-4ba8-bb3f-42e5d4bb34fa",
+    "name": "Beskar Labs (Hayden Bleasel)",
+    "ig_url": "https://www.instagram.com/hayden.bleasel/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page on both static and render attempts. @hayden.bleasel confirmed as his handle (search result). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
   }
 ]

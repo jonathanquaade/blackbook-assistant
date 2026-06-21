@@ -1,0 +1,111 @@
+{
+  "page_id": "a06def72-3471-48cd-8bd1-c99a41576da3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects across 8 images: Club Quarantane (site-02, site-03, cq-03), Digital Detox (dd-01), Boockup (boockup-01), Kolbe Ausser Haus (kolbe-01), NEW NOW Festival (newnow-01). No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Club Quarantane: 3 distinct screens (3D dancefloor environment, bar/fundraiser UI, bathroom cubicle queue). boockup-01 shows the live interactive tool interior. kolbe-01 shows the Mapbox interactive map interior with route panel open. dd-01 shows the extension UI active in-browser. Minor note: newnow-01 captures the About/Team roster page rather than the festival homepage or programme design, which is a weaker interior, but it is inside the site rather than a hero/cover shot."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability: Frontend development (web). All 5 projects are built interactive web products (virtual club, browser extension, 3D book generator, interactive map, festival site). No off-capability brand or print work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png is marco.land (shows 'Marco Land / mail@marco.land / Links button', last updated 3/3/25) - confirmed real personal site homepage. No IG context shot present: both candidate handles investigated (@marcoland2 bio mismatch documented in manifest; @marcoland confirmed Catania psychologist, different person). Both rejected with evidence. No confirmed handle exists, so no IG screenshot is possible; Open Question 2/AI Notes document this for Jonathan to resolve. The IG throttle exception does not apply (this is a missing-identity situation, not a rate-limit block). Accepted as correctly handled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 live images carry captions with project name + year and source links to ungroup.group project pages or marco.land directly. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "3 live-project bookmarks present: Digital Detox (digitaldetox.marco.land), Boockup (boockup.marco.land), CCamera (ccamera.marco.land). These are interactive tools, not video/audio, so bookmark is the correct format. No YouTube/Vimeo on project pages was skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence fully documented in AI Notes and manifest (both handles investigated, both rejected as wrong person with specific evidence). LinkedIn absence noted in AI Notes ('no profile found across multiple searches'). No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer-developer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://marco.land/ (present). Email: mail@marco.land (present). Instagram: no confirmed handle, documented and questioned. LinkedIn: not found, documented in AI Notes. Missing links are explained, not silently absent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) set (provenance: set_by jonathan). Open Question 5 asks Jonathan about expanding to Web design, Graphic design, Frontend development (apps). Agent correctly cannot override a jonathan-set field; asking is the right move."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (Berlin, changed from France in original record; flagged in OQ4). Size: 1 (solo person). Work Status: Freelance, sourced from It's Nice That and maxibestof per AI Notes (two sources), with the ungroup co-founder ambiguity queried in OQ3. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). Reasoning in AI Notes: 'solo designer-developer who conceives and ships complete products end to end.' Grounded in documented project history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states a relationship. Zero-states are appropriate and do not contradict evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'ex-Partner at Dream' surfaced in OQ2 (Rating? with context). Source set to 'Web clipper, 2023-08-25'. No unacted instruction found in the original note text."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status explicitly hedged '(0.8): It's Nice That and maxibestof both list him as freelance/available'. Autonomy explicitly hedged '(hedged): solo designer-developer...'. Seniority read present: 'Senior, ~10+ yrs'. Unverified affiliations noted as queried. No bare assertions on non-verifiable facts."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-08-25'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null throughout - this is the known systemic tooling gap (per checklist note 2026-06-21), not a gate failure. set_by values are correct (agent for agent-researched fields, jonathan for Capabilities which Jonathan set). No field written below 0.8 confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "5 questions present. Q1 (Work With?) and Q2 (Rating?) are terse with only necessary context. Q3 (affiliation ambiguity) and Q4 (country change) and Q5 (capabilities expansion) carry words only where genuine ambiguity exists. All are conditional: none ask for a field that already has a non-zero-state value (Work With? is Unvetted, Rating is empty). Story nudge not applicable (Worked Together is Never, no prior collaboration)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is about to flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean pass. One minor observation for Jonathan: newnow-01 shows the NEW NOW festival About/Team roster page rather than the visual design of the programme or homepage; the visual identity work would make a stronger interior shot if he wants a replacement. Not a gate failure. The IG situation (no confirmed handle) is correctly escalated to him via Open Question."
+}

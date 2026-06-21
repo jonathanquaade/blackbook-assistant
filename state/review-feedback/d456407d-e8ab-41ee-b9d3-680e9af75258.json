@@ -1,0 +1,112 @@
+{
+  "page_id": "d456407d-e8ab-41ee-b9d3-680e9af75258",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 work images across 4 distinct projects: Opendoor (3), Oregon Symphony (3), National Geographic (2), Radiolab (2). No repeated-project contamination."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Opendoor shows nav UI, mobile card component, and a homepage section; Oregon Symphony shows iPad mockup, responsive layout grid, and events/ticket UI; NatGeo shows explorer story page and explorer profile listing; Radiolab shows card system and homepage. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development. All 10 work images show website/digital UI from named client projects. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is fictivekin.com homepage (confirmed visually: dark layout, 'Fictive Kin is pound for pound the best digital agency on the planet.'). site-02.png is instagram.com/fictivekin profile (confirmed: Instagram chrome visible, handle @fictivekin, bio text, post grid)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 work images carry descriptive captions naming the project plus a link to fictivekin.com/work/<project>/. Rejected images in the manifest have their own reasons noted."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Not applicable: entry is a Web design + Frontend development agency. No audio/video capability tagged."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present and complete; no gaps requiring explanation."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Reasoning documented in AI Notes (scale, CEO structure, self-described as agency)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: fictivekin.com; Instagram: instagram.com/fictivekin; LinkedIn: linkedin.com/company/fictive-kin; Email: hello@fictivekin.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web). Open Question Q2 asks Jonathan about adding Identity systems and Digital product design, which is appropriate -- the current tags are defensible and the expansion is tabled for his call."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States; Size: 11-40 (~32, sourced July 2025); Work Status: Studio (org-type value). AI Notes records sourcing."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry type is Agency. Per checklist calibration (2026-06-21): Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes names CEO Gillian Rode and founding year 2008."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "fail",
+      "evidence": "Familiarity is set to 'Don't know them' (set_by: agent), but Jonathan's own Notes field (set_by: jonathan) reads 'Worked with on Hebbia.ai / They're lovely people', and Worked Together is already 'Repeatedly' (set_by: jonathan). Writing 'Don't know them' contradicts evidence that active collaboration occurred. CLAUDE.md is explicit: 'never write a zero-state that evidence contradicts; empty-pending-answer is honest; a false default is not.'",
+      "fix": "Clear the Familiarity field value so it is empty (leave Q1 in Open Questions, which is already correctly asking for it). Do NOT write a guess; leave the field empty so Jonathan fills it."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Worked Together: Repeatedly is set_by: jonathan. Source records 'Web clipper, 2023-08-24'. Open Questions Q1 asks Familiarity with the correct context note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the Agency/Studio classification ('flag if you would rather it read Studio'), notes the Familiarity contradiction, and attributes facts to their sources. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-08-24'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "source_url is null across fields -- known systemic tooling gap per checklist calibration (2026-06-21), not a gate failure. set_by values are correct: jonathan for Worked Together, Notes, Capabilities; agent for all agent-set fields; migration for Name."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 asks Familiarity (with correct context that Notes implies active collaboration -- appropriately conditional since Familiarity is at a zero-state). Q2 asks about Capabilities expansion. Both terse and conditional."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is still Enriching. Status flip withheld pending this gate, correct."
+    }
+  ],
+  "failing_checks": ["C.no-judgment-contradicts-evidence"],
+  "to": "scraper"
+}

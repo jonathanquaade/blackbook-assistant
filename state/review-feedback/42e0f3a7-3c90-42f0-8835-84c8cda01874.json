@@ -2,8 +2,8 @@
   "page_id": "42e0f3a7-3c90-42f0-8835-84c8cda01874",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -23,7 +23,7 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png: confirmed supercontinente.com homepage (SUPERCONTINENTE header visible). site-02.png: confirmed instagram.com with @supercontinente_ profile, 3930 followers, bio reading 'SUPERCONTINENTE / type offering platform / Fonts, Custom Fonts, Artifacts'."
+      "evidence": "site-01.png: confirmed supercontinente.com homepage (SUPERCONTINENTE header, glyph cards for each typeface visible). site-02.png: confirmed instagram.com with @supercontinente_ profile, 3930 followers, bio reading 'SUPERCONTINENTE / type offering platform / Fonts, Custom Fonts, Artifacts / Costa Rica'. Both verified visually."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -47,9 +47,8 @@
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "LinkedIn field is empty and AI Notes make no mention of LinkedIn being searched, absent, or undiscoverable. The scout's AI Notes mention Fabiola Mejia trained at Type@Cooper and TypeMedia and works with Dinamo — a public LinkedIn profile very likely exists for a designer with that career trajectory and should have been searched.",
-      "fix": "Search 'Fabiola Mejia type designer linkedin' (Google snippet). If a profile is found, add the LinkedIn URL. If genuinely none exists, add one sentence to AI Notes: 'LinkedIn: no public profile found.' Either way document the outcome."
+      "result": "pass",
+      "evidence": "Website, Instagram, and Email all present. LinkedIn absence now documented in AI Notes: 'LinkedIn: searched Fabiola Mejia type designer linkedin TypeMedia TypeCooper and Fabiola Mejia site:linkedin.com; no matching profile found. Her site and IG link to no LinkedIn. She likely does not maintain one.' Attempt-1 fail resolved."
     },
     {
       "id": "B.capabilities",
@@ -63,9 +62,8 @@
     },
     {
       "id": "B.autonomy",
-      "result": "fail",
-      "evidence": "Autonomy field is not set and no estimate appears in AI Notes. The seniority read is present (Type@Cooper 2017, TypeMedia MA 2019, Dinamo) but it was never translated into an Autonomy score as required by CLAUDE.md ('set Autonomy on every entry where the history supports a read').",
-      "fix": "Set Autonomy (1-5, set_by agent) with reasoning in AI Notes. Given TypeMedia MA, 7+ years of independent practice, and a published multi-face catalog, Autonomy 4-5 is supportable. Write the estimate with reasoning and set the field."
+      "result": "pass",
+      "evidence": "Autonomy = 5 confirmed in live entry. AI Notes: 'Autonomy 5: fully independent practice, runs her own foundry, 7+ years post-formal-training, publishes and sells typefaces autonomously, no sign of a day-job employer.' Reasoning grounded in verifiable work history. Attempt-1 fail resolved. Per checklist calibration: Autonomy optional for orgs but appropriate for a solo foundry founder."
     },
     {
       "id": "C.no-judgment-contradiction",
@@ -75,12 +73,12 @@
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note said 'Type Foundry' — Type = Foundry is set. Note preserved verbatim in Source."
+      "evidence": "Clip note said 'Type Foundry' -- Type = Foundry is set. Note preserved verbatim in Source."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Notes cover seniority trajectory with named credentials. One minor unhedged claim ('also works remotely with Dinamo') but this is plausibly verifiable from public bio and is low-stakes. No blocking issues."
+      "evidence": "Notes cover seniority trajectory with named credentials and LinkedIn search outcome. Inferences hedged. No unhedged assertions about first-hand experience."
     },
     {
       "id": "D.source-filled",
@@ -90,12 +88,12 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file written for all touched fields; set_by = agent throughout (correct). source_url null on all fields — known systemic tooling gap per calibration note, not a gate failure."
+      "evidence": "Provenance file written for all touched fields; set_by = agent throughout (correct). source_url null on all fields -- known systemic tooling gap per calibration note, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Captions use double-dash (--) as separator, not em-dash. AI Notes use commas and periods. No em-dashes found."
+      "evidence": "AI Notes and captions use commas, periods, double-dash separators. No em-dashes found anywhere in the entry."
     },
     {
       "id": "D.open-questions",
@@ -105,8 +103,8 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Currently Enriching as expected; reviewer holds the flip to Needs Review pending verdict."
+      "evidence": "Flipped to Needs Review after this gate pass."
     }
   ],
-  "to": "scout"
+  "to": "jonathan"
 }
