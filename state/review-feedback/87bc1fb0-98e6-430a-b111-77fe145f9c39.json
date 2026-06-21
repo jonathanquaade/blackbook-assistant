@@ -1,0 +1,111 @@
+{
+  "page_id": "87bc1fb0-98e6-430a-b111-77fe145f9c39",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct client sites: This is Pacifica, KH Type, Doconomy, Alcoholic Vodka, Polars, Cerve, HIRUKI. Each a separate project with a different client."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each capture is the site homepage or a functional page (age gate, typeface grid). Honest hero shots for a frontend dev showing live sites. Note: site-08 shows only the Alcoholic Vodka age-gate modal and site-05 shows the HIRUKI splash/loading screen rather than site interiors; both are on-capability frontend UI elements and the captions are accurate, but neither shows the actual interior of the site. Taste call for Jonathan; not a correctness fail."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged is Frontend development (web). All 7 work images are live client websites Harry built. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is harryjatkins.com homepage (confirmed). site-10.png is instagram.com/harryatkins (confirmed: handle harryatkins, name Harry Atkins, 804 followers, logged-out view). Both context shots are correct and match their captions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images have captions naming the project plus a link. Rejected images (site-06, site-09, site-12) are correctly excluded from the active set."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Harry is a frontend web developer; work is websites, not video/audio. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. 9 images present. IG logged-out capture obtained (site-10). No IG-queue needed."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual freelance developer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: harryjatkins.com. Instagram: instagram.com/harryatkins (verified correct person). LinkedIn: linkedin.com/in/harry-atkins-23a20437. Email: hello@harryjatkins.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) tagged. Provenance shows set_by: jonathan (clipped from his original entry). OQ #4 asks whether to add Web design - appropriate escalation rather than overwriting a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Size 1 (correct for solo). Work Status Freelance: AI Notes documents agreement between his own site and LinkedIn. Country set Sweden (scout value) with OQ #5 flagging the Brighton UK discrepancy from his own site - correctly escalated rather than silently overwriting."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set, set_by agent. AI Notes provides hedged reasoning: solo dev who owns the build end to end but typically executing others' designs."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note (clipped.md) is just Harry's own title, no relationship facts from Jonathan. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Harry J. Atkins - Front-end Web Designer & Developer'. Name cleaned, title used as signal for Capabilities tagging and Web design OQ. No relationship facts or instructions in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes 'Awwwards SOTD Oct 2024' (verifiable), 'sought-after implementation partner' (contextual, hedged by 'senior specialist' framing), Autonomy 4 marked as hedged, Work Status sourced to two channels. Seniority read present. No bare assertions about subjective quality."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2023-04-08'. Matches the expected format for a clipper entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout - this is the known systemic tooling gap, not a gate failure per checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and Open Questions in full. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "5 questions: Work With, Rating, Familiarity (all terse and conditional - none of these have a non-zero-state value), Capabilities expansion (legitimate ambiguity), Country discrepancy (unresolvable by agent alone). All appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will be flipped to Needs Review as part of this pass."
+    }
+  ],
+  "notes": "One cosmetic observation for Jonathan: site-08 shows the Alcoholic Vodka age-gate screen only (no interior), and site-05 shows the HIRUKI pre-loader/splash only (no interior content). Both are technically on-capability frontend UI but give limited visibility into the site craftsmanship. If Jonathan wants interior shots, the scraper can revisit.",
+  "to": "scraper"
+}

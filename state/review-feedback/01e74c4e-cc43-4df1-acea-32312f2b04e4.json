@@ -1,0 +1,111 @@
+{
+  "page_id": "01e74c4e-cc43-4df1-acea-32312f2b04e4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T21:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 active images cover 3 distinct projects: Agentation (5 shots from agentation.com and Product Hunt), cmdk (OG marketing image), Threads (live site screenshot). Context shots are the 2 remaining."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Agentation has 5 shots going inside the product: annotation UI, smart element identification, computed styles popup, interface overview, features/toolbar modes. cmdk and Threads are single-shot due to sourcing constraints (text-only personal site, live social app)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Web design and Frontend development (web). All work shown is software UI/web product: Agentation browser tool, cmdk command menu component, Threads social app. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is dennisjin.com (confirmed: name, Brooklyn NY, bio). site-02.png is instagram.com/dennis.jin (confirmed: Instagram chrome, correct handle, verified badge, 'nyc @threads' bio, 'This profile is private'). Both correct platform and person."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 9 active images have project-named captions and source links. Two rejected entries (site-04, site-05) are correctly marked rejected with reasons."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Entry is UI/web product design, not video or audio. No YouTube or Vimeo embeds were present or needed on the source pages."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "site-01.png confirms dennisjin.com is text-only (no images). Work sourced from live project sites and Product Hunt. Text-only site situation understood and the sourcing strategy is appropriate."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (dennisjin.com), Instagram (instagram.com/dennis.jin, verified via his own site link), LinkedIn (linkedin.com/in/dennis-jin-13788110b), Email (mail@dennisjin.com). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) per TAXONOMY.md. Open Question 4 asks about adding Digital product design and Frontend development (apps), appropriate and terse."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Employed. AI Notes cites his own site as authoritative source for Employed status ('building and designing Threads' at Meta Platforms Inc). Objective rule met: self-maintained primary source."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with hedged reasoning in AI Notes: hybrid designer-engineer, ships polished product and has co-founded tools, but currently inside a large org."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note implies a relationship. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2023-06-14'. No additional instructions in clip note beyond the entry itself."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy is explicitly hedged. Seniority read present with employer history grounded in public sources. Work Status assertion sourced to self-maintained site."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-06-14'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with correct set_by values. source_url null throughout but this is the known systemic tooling gap (not a v1 gate fail per checklist note). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all captions checked. No em-dashes present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 Work With?, Q2 Rating?, Q3 Familiarity? are terse and conditional (fields are at zero-state). Q4 Capabilities proposal is appropriate and adds necessary context. No redundant or non-conditional questions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching before this gate, ready to flip to Needs Review on pass."
+    }
+  ],
+  "reviewer_notes": "One non-blocking observation: site-06.png (Threads) shows third-party user content in the feed rather than a design detail by Dennis. This is unavoidable for a live social app and is on-capability. Not a gate fail. Entry is complete and honest.",
+  "to": null
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "56c7f50f-cfa3-4fb2-9d91-336652c349d0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct client projects: Native, Black Hole Experience, CNN Turkey, CNN Worlds Fair, DNEG, One Canada Square, Idea Machine. Each sourced from separate Contentful CDN asset keys; no repeated-angle issue."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has a Contentful CDN hero shot plus a live-site interior screenshot (native.inc interior, blackholeexperience.com starfield UI, CNN World Expo grid interior, dneg.com interior, viewlikenoother.com 3D building panel, theideamachine.org splash). Depth appropriate for a web/interactive studio where the interior IS the live build."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Studio tagged Web design + Frontend development (web) + Creative technology. Every image shows a web or interactive digital build. No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed midnight.agency homepage ('WE BUILD FOR THE WEB' hero, client logos). site-05.png: confirmed instagram.com/@midnight_agency_ profile (handle midnight_agency_, name Midnight, bio 'Design-led developers for creatives'). Both captions match actual content."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 manifest entries carry caption + link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Web design / Frontend dev / Creative technology, not video or audio. Interactive builds (WebGL, 3D) are correctly represented by screenshots of the live sites. No YouTube/Vimeo project embed was identified as skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Substantive work captured from confirmed client projects. No thin sourcing or unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Appropriate: small hands-on team doing web execution, not a full-service campaign agency."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (midnight.agency), Instagram (instagram.com/midnight_agency_ - verified profile matches), LinkedIn (uk.linkedin.com/company/midnight-agency-1), Email (info@midnight.agency). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design, Frontend development (web), Creative technology. Consistent with self-description and all captured work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = United Kingdom; Size = 11-40 (hedged in AI Notes as 'banded 11-40' per LinkedIn); Work Status = Studio (correct structural value for a studio org). Multi-source reasoning noted in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy is optional per checklist calibration 2026-06-21. No single named founder identified. Studio-level operational read present in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Jonathan's Notes 'only in a pinch' -> Work With? = In a pinch (set_by jonathan, provenance source confirmed). Worked Together = Never, Familiarity = Don't know them. No evidence contradicts any zero-state."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2023-08-23'. No clip-note instructions beyond the website URL. Nothing unacted-on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('~11-50 per LinkedIn', 'self-describes as', 'Jonathan rates them'). Founded 2018 / London / Midnight Technology Group are attributable factual claims. Seniority prose not required for Studio-type entries."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2023-08-23'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have correct set_by values (jonathan for Work With? and Notes; agent for everything else). source_url is null across all fields - noted as known systemic tooling gap (checklist calibration 2026-06-21), not a gate fail."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions and all agent-written text scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No unresolved questions. Jonathan has set Work With? and Notes directly. Story nudge not triggered (Worked Together = Never, Familiarity = Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass on all 20 checks. 7 distinct client projects, all on-capability web builds; both context shots verified correct; metadata complete; no em-dashes; provenance set_by correct throughout."
+}

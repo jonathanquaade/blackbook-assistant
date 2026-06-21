@@ -1,0 +1,111 @@
+{
+  "page_id": "850b3d84-f8fa-4820-91b9-a36f7a39f983",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active images across 9 distinct named projects: Kieron Gait Architects, Heaf, DOMM Architecture, Eclat, CMPLX, Hectors Deli, La Lune, Otsuka, Nama Architects, RAW Product Design. No repeated project or near-identical shots. site-05 (One Charles) correctly rejected as a placeholder green rectangle."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images go inside projects: stationery spreads (Kieron Gait), packaging detail (Hectors Deli cans, close crop), business card interiors (DOMM, Nama), a takeaway bag (Otsuka). Not hero covers only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 10 work images show brand identity, custom logotype, packaging, and print collateral. No off-capability material. The website context shot (site-10) is the sp-gd.com project list page, which also confirms their graphic design / identity scope."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website shot (site-10.png) is confirmed as the real sp-gd.com homepage/project index. IG shot (site-11.png) was blocked headless (error page), correctly rejected, documented in AI Notes, and the entry is present in state/ig-queue.json with the correct reason. Sanctioned exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active images have a caption naming the client/project and a link to the source project page on sp-gd.com. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio is graphic design / identity. No video or audio work found on site; no embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes; entry queued in ig-queue.json. No other source gaps silently left."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per CLAUDE.md definition (small hands-on team, not large full-service agency)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.sp-gd.com/ confirmed. Instagram: https://www.instagram.com/studiospgd/ verified from their own site. LinkedIn: https://au.linkedin.com/company/studio-sp-gd confirmed. Email: office@sp-gd.com confirmed from /information page."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set (Jonathan's migrated tag, provenance set_by: jonathan). An Open Question asks whether to expand to Identity systems, Web design, Type design, Brand strategy. Correct handling: the agent cannot widen jonathan-locked capabilities unilaterally; asking is right."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Australia. Size: 2-10. Work Status: Studio. AI Notes names sources (site /information page, project archive). Multi-source rule not applicable to a Studio type (no conflicting employment signals needed)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry Type is Studio. Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. AI Notes provides a seniority/leadership read (led by Creative Director Surya Prasetya, 10+ yrs running, established small studio). No fail."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2023-05-18' with no relationship facts or stated judgments. Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges size as estimated (~10 yrs running), confirms sources inline (site /information, LinkedIn), and documents the IG block. No bare assertions beyond verifiable facts (named clients, email, LinkedIn URL). Seniority read present (Creative Director, established studio)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-05-18'. Set."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by recorded for all touched fields. source_url is null throughout but per checklist calibration (2026-06-21) that is a known systemic tooling gap, not a gate failure. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question about expanding Capabilities. Terse, conditional (Capabilities is currently only one tag, the question is legitimate). No fields asked about that already have non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 10 images across 9 distinct identity/branding projects, all on-capability, all captioned with project name and source link. Website context shot confirmed real (sp-gd.com project index). IG context shot blocked headless, correctly rejected+documented+queued per the sanctioned exception. Metadata complete. One open question on Capabilities expansion is appropriate (jonathan-locked field). No em-dashes. No judgment fields contradicted by evidence."
+}

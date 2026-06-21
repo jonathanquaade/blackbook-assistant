@@ -2,8 +2,8 @@
   "page_id": "385f84ba-ae13-81ce-adde-c784298a4e43",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -18,18 +18,17 @@
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Digital product design. All 10 active images are product UI (web apps and mobile apps). Capability match confirmed by visual inspection."
+      "evidence": "Tagged Digital product design. All 10 active work images are product UI (web apps and mobile apps). Capability match confirmed."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "No website context screenshot present. The assets directory contains only site-01 through site-11 (work images); no homepage screenshot of shaun.design exists. No Instagram context shot is expected (subject uses X, not Instagram, documented in spawn note). The WEBSITE shot is mandatory and absent.",
-      "fix": "Run scrape.py shot https://shaun.design/ --out assets/385f84ba-ae13-81ce-adde-c784298a4e43 --caption 'Website' and add the resulting file to the manifest, then re-run keeper.py upload."
+      "result": "pass",
+      "evidence": "site-12.png is a real screenshot of shaun.design homepage: 'Shaun Tan | Portfolio' nav, 'Shaun is a product designer based in San Francisco, CA.' body text, X/LinkedIn/GitHub/Email links top-right. Visually confirmed. No Instagram context shot required: subject uses X, documented in AI Notes. FAIL from attempt 1 resolved."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 10 non-rejected manifest entries carry captions naming project and source link. Captions are specific and descriptive."
+      "evidence": "All 11 non-rejected manifest entries carry captions naming project and source link. site-12.png captioned 'Website' with link to shaun.design/."
     },
     {
       "id": "A.embeds",
@@ -39,7 +38,7 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No Instagram: subject uses X, documented. No other unexplained absences."
+      "evidence": "No Instagram: subject uses X, documented in AI Notes. No other unexplained absences."
     },
     {
       "id": "B.type",
@@ -49,12 +48,12 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website (shaun.design), LinkedIn, Email all present. No Instagram because subject uses X (not Instagram). Works At Link set to Hebbia per clip, employer uncertainty surfaced in Open Questions."
+      "evidence": "Website (shaun.design), LinkedIn, Email all present. No Instagram because subject uses X. Works At Link set to Hebbia per clip; employer uncertainty surfaced in Open Questions."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Digital product design. Matches his entire portfolio (mobile apps, web apps, B2B SaaS)."
+      "evidence": "Digital product design. Matches entire portfolio (mobile apps, web apps, B2B SaaS)."
     },
     {
       "id": "B.country-size-workstatus",
@@ -69,7 +68,7 @@
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "Zero-states are valid: clip note carries no relationship signal. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all correct."
+      "evidence": "Zero-states valid: clip note carries no relationship signal. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all correct."
     },
     {
       "id": "C.clip-note-acted-on",
@@ -94,7 +93,7 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Checked AI Notes and Open Questions. No em-dashes found."
+      "evidence": "AI Notes and Open Questions checked. No em-dashes found."
     },
     {
       "id": "D.open-questions",
@@ -104,8 +103,8 @@
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is Enriching; reviewer is the only one who may flip it. Held pending resolution of the FAIL above."
+      "evidence": "Flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

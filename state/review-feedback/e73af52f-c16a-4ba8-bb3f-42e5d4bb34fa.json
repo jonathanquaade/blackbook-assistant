@@ -1,0 +1,133 @@
+{
+  "page_id": "e73af52f-c16a-4ba8-bb3f-42e5d4bb34fa",
+  "entry_name": "Beskar Labs (Hayden Bleasel)",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "flags_for_jonathan": [
+    {
+      "id": "dead-website",
+      "severity": "action-required",
+      "note": "Website field is beskar.co which returns NXDOMAIN (domain expired or dropped). His live site is haydenbleasel.com. Scout should update the Website field to https://haydenbleasel.com/. Documented in AI Notes by the scraper."
+    },
+    {
+      "id": "capabilities-undertagged",
+      "severity": "open-question-raised",
+      "note": "Only Frontend development (web) is tagged, but Hayden is demonstrably also a product designer and full-stack TypeScript developer. Open Question 4 raises this. Jonathan should confirm whether to add Digital product design and/or Backend development."
+    },
+    {
+      "id": "person-vs-studio-name",
+      "severity": "open-question-raised",
+      "note": "Entry is named Beskar Labs (Hayden Bleasel). Type is Person. Open Question 5 asks whether to track as the person alone. Jonathan should confirm."
+    },
+    {
+      "id": "ig-context-shot-queued",
+      "severity": "info",
+      "note": "Instagram profile context shot could not be captured (headless Playwright returns error page). Two attempts rejected in manifest. Entry is in state/ig-queue.json for a logged-in ig.py grab. This is the sanctioned path; not a gate fail."
+    }
+  ],
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 non-rejected images across 5+ distinct OSS projects: Kibo UI, Ultracite, Ghost, Eververse, next-forge, plus OSS portfolio overview and website context shot."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Kibo UI has 5 images including component interiors (Gantt, Kanban, Dropzone preview, QR Code preview, component gallery). Eververse has 2 interior UI shots (feedback triage, AI backlog editor). Goes inside the products, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Frontend development (web). Every captured project is software/frontend work: Kibo UI component library, Ultracite linter/formatter, next-forge Next.js monorepo template, Ghost game server platform, Eververse PM platform. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01.png) is haydenbleasel.com homepage, confirmed correct (shows name + role). IG: two attempts returned error pages, both marked rejected in manifest with reason documented, entry in state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 non-rejected images have a caption naming the project and a link to the source URL. Bookmarks also carry captions and links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is OSS tooling / frontend dev. No video or audio work present in the projects captured. GitHub bookmarks used for OSS repos (Ultracite, Kibo, Eververse). Appropriate for this discipline."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes ('IG context shot queued (headless blocked by Instagram)') and in ig-queue.json entry with full reason."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct given Hayden Bleasel is a solo individual; Beskar Labs is his personal OSS lab."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: beskar.co (set; DEAD -- see flag, needs update to haydenbleasel.com). Instagram: https://www.instagram.com/hayden.bleasel/ (confirmed). LinkedIn: https://www.linkedin.com/in/haydenbleasel/ (set). Email: not found; not noted as searched. For a current OpenAI MTS this is a low-probability findable; acceptable gap absent evidence of a public email."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) is tagged (set_by jonathan from clipper baseline). Open Question 4 raises the gap (product design + backend). Jonathan must confirm additions. Question is conditional and appropriate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US + Australia (dual). Size: 1. Work Status: Employed. AI Notes cite LinkedIn showing OpenAI as current role; haydenbleasel.com also confirms 'Member of Technical Staff at OpenAI'. Two sources agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: founder/CPO-level, conceives and builds complete products end to end. Hedged. Grounded in verifiable career history (CPO, agency founder, Vercel DX acquihire)."
+    },
+    {
+      "id": "C.no-judgment-contradictions",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence of a Jonathan relationship. Zero-states are accurate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2023-06-28'. No relationship or judgment instructions in the clip note. Open Questions cover all unresolved judgment fields."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy explicitly hedged. Seniority read present with career evidence. Dead domain noted with date. No unverified assertions as fact. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-06-28'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null throughout -- known systemic tooling gap, not a gate fail per calibration note. set_by values correct (agent for agent-set fields; jonathan for Capabilities inherited from clipper)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions inspected. No em-dashes found. En-dashes in ranges only (e.g. 'acquihired')."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "5 questions: Work With?, Rating?, Familiarity? (standard terse judgment), Capabilities gap (conditional, needed), Person vs studio name (needed). All conditional and non-redundant."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer flipping to Needs Review on pass."
+    }
+  ],
+  "to": null
+}

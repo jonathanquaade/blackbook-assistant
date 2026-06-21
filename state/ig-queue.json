@@ -649,5 +649,26 @@
     "ig_url": "https://www.instagram.com/hayden.bleasel/",
     "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page on both static and render attempts. @hayden.bleasel confirmed as his handle (search result). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "ec80da8b-7cca-4739-9156-57dc1fbb9760",
+    "name": "Laura Knoops",
+    "ig_url": "https://www.instagram.com/knoops/",
+    "reason": "IG headless blocked (Something went wrong error page); context shot needed for profile view",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "e99f0238-0b59-495f-945a-db821d9e8d83",
+    "name": "Grace Margetson Studio",
+    "ig_url": "https://www.instagram.com/gracemargetsonstudio/",
+    "reason": "IG blocked headless (Something went wrong error page); studio has active IG with campaign work; logged-in grab for context shot",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "7b9bfc18-e45c-4855-a859-2e054497f3a5",
+    "name": "KITTEN",
+    "ig_url": "https://www.instagram.com/kitten_production/",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited logged out). @kitten_production is confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
   }
 ]

@@ -1,0 +1,111 @@
+{
+  "page_id": "bacc9134-31a8-4fd1-9bba-6a02f21d40b3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 active (non-rejected) work images across 5 distinct projects: Nike Studio:NYC (site-05, site-06), Converse All Stars (site-08, site-09), Alicia Keys (site-11, site-12), Made In America Festival (site-14, site-15), Beatport News (site-17). Easily 5 distinct projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2 images going inside the UI: Nike has the entry screen + 3D virtual lobby; Converse has the homepage grid + live video experience interior; Alicia Keys has the hero + full content grid layout; MiA Festival has the countdown screen + full site with lineup+TIDAL integration; Beatport News has the news feed platform view. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 9 active work images show web UI/interactive platforms, matching Capabilities: Web design, Frontend development (web), Creative technology. The 5 rejected images (site-03 redundant hero, site-04/site-07/site-10/site-13/site-16 editorial campaign photos) are correctly marked rejected with documented reasons. The scraper explicitly avoided off-capability editorial shots and the active images confirm this."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed bymattlee.com homepage (nav: WORK / SERVICES / ABOUT / SHOPIFY, hero text 'I build interactive web experiences'). PASS. site-02.png: confirmed instagram.com page with handle 'bymattlee' / name 'Matt Lee' visible in profile header behind cookie modal. URL is instagram.com. site-18.png (error page) is rejected+documented. IG queued to ig-queue.json. This satisfies the IG throttle exception in the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active manifest entries carry a caption. Work images all include a link back to the specific case study page on bymattlee.com. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Matt Lee is a Web designer / Frontend developer / Creative technologist; the work is interactive websites, not video/audio/writing. No YouTube/Vimeo embeds are needed or expected. Images of the web UIs are the correct capture medium."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle situation fully documented: AI Notes, manifest note on site-02, rejected site-18, queued in ig-queue.json. No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a solo freelance consultant."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://bymattlee.com/ (confirmed). Instagram: https://www.instagram.com/bymattlee (confirmed from site social links, AI Notes documents verification). LinkedIn: https://www.linkedin.com/in/bymattlee (present). Email: hello@bymattlee.com (present). All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design, Frontend development (web), Creative technology. Accurate to a solo consultant who does design + code end-to-end for interactive web experiences."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Freelance. AI Notes names the resolution: 'his own site states it and his consistent independent-consultant presence (GitHub/Dribbble/LinkedIn all @bymattlee) agrees.' Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes: 'Autonomy 4 (hedged): solo consultant who takes projects strategy-through-launch.' Grounded in work history. Required for Person entries."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "No clip note signals a prior relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate defaults. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2023-08-23' with no relationship or judgment text. Source field reflects this verbatim. Nothing left unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('hedged'), states Work Status resolution sources explicitly, notes IG queue situation. Seniority read present ('Senior, ~10 yrs, a one-person design-and-build consultancy'). No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-08-23'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded, set_by: agent throughout. source_url: null on all fields is a known systemic tooling gap (per checklist calibration note 2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, captions, Source: no em-dashes found. Ranges use en-dashes appropriately."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. All resolvable fields were resolved; no unresolvable ambiguities remain that warrant a question. Story nudge not applicable (Worked Together is Never / Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, awaiting this gate. Will be flipped to Needs Review on pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean entry. All 20 checks pass. The IG context shot (site-02) shows a cookie modal partially obscuring the profile grid, which is the documented throttle-exception path: rejected error-page shot (site-18) exists, queued to ig-queue.json, AI Notes documents it. This is the sanctioned path per the checklist exception clause."
+}
