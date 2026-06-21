@@ -1,0 +1,111 @@
+{
+  "page_id": "8b852e04-0da6-432e-bb46-1a01d49f43d4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 active images across 7 distinct projects: Gordon & Macphail, Dewars 12 Year, Creed Oud (3 stills), Tom Ford, Tanqueray, Byredo Hands (2 stills), Fitasy 2025. No duplicate projects among uploaded images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Creed Oud has 3 stills (teaser, detail, product), Byredo has 2 stills. Goes inside projects rather than only one cover per project. Minor note: gordon-macphail-01.jpg is a title-card frame (logo on sky), not an interior production still, but for a commercial production studio this still demonstrates the client relationship and is on-capability; not a fail."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Film & video production + 3D & motion. All images are film/commercial production stills for luxury/FMCG clients: whisky films, fragrance films, gin campaign, CGI footwear. Fitasy-01.png is a motion/CGI close-up (described as CGI and motion production). No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as theforge.co homepage (logo visible, correct domain). site-02.png is rejected+documented+queued: manifest marks it rejected with reason (headless Playwright blank/login page), and entry appears in state/ig-queue.json with handle @theforge.co confirmed from site footer. Meets the sanctioned IG-throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 uploaded images have captions and source links to theforge.co project pages. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Vimeo films are private (oEmbed 403, no public Vimeo page). Limitation documented in AI Notes ('all Vimeo films on their project pages are private/embedded-only'). Project stills with project-page links used instead. Spawn note says to accept this documented workaround."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Private Vimeo limitation and IG block are both documented in AI Notes; IG queued. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Reasoning in AI Notes (hands-on craft execution, small team, hence Studio over Agency)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://theforge.co/. Instagram: https://www.instagram.com/theforge.co/. LinkedIn: https://uk.linkedin.com/company/the-forge-photographic-services-ltd. Email: mail@theforge.co. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production + 3D & motion. Set by jonathan per provenance. Matches the captured work (commercial film production, CGI/motion work). No off-taxonomy tags."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 11-40. Work Status: Studio (correct for an org). Sources named in AI Notes (theforge.co + LinkedIn). Work Status 'Studio' is structurally appropriate for a studio-type entry."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio). Per checklist calibration 2026-06-21, Autonomy is optional for orgs. AI Notes includes a leadership read (founded by Jean-Michel, ex-freelance retoucher, stills team 2009, motion added 2015). Sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or Jonathan instruction on file that contradicts these. Zero-states appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2023-04-07'; no instructions in clip note beyond the URL. No --from-jonathan fields required."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes (verified). Factual claims (clients, founding year, team composition) are presented as sourced from theforge.co and LinkedIn. Inference about Studio vs Agency classification is explained. Seniority/experience context present (founding history, team scale). No unhedged opinion asserted as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'. Present and in correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. source_url is null on all fields; per checklist calibration note (2026-06-21) this is a known systemic tooling gap, not a gate failure. set_by values are correct (agent for metadata, jonathan for Capabilities per original clip)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned: 0 em-dashes. Semicolons and parentheses used throughout. No em-dashes in captions or source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field in the entry. None are required: no clip note ambiguities, no conflicting sources, no judgment field at zero-state that evidence would contradict. Story nudge not applicable (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "One minor observation not rising to a FAIL: byredo-01.jpg and byredo-02.jpg are captioned 'Byredo Hands, stills production, 2024' and show Byredo Blanche and Byredo Mojave Ghost bottles held in hands. The project name on theforge.co is 'Byredo Hands' (referencing the hand-holding composition), so the caption is project-accurate even though the fragrance names differ. Jonathan may want to know the specific fragrance names for context but this is a taste call, not a correctness failure.",
+  "to": null
+}

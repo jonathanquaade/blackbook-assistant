@@ -1,0 +1,110 @@
+{
+  "page_id": "f8141ff1-64b9-4acc-9d55-1bcc568bc9e6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects confirmed visually: Nanushka Magazine (editorial landscape/nature), Hermes Brand Magazine (library interior), Icicle Campaign (fashion portrait), Zara Home x Picasso (product still life), SS Daley (fashion editorial with logotype), Dior Lady Dior Art (gallery installation). All clearly different subjects and visual languages."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project showing interiors and different frames within each project, not just covers. Hermes 3 shots show different angles of the same editorial world; Nanushka 3 shots include landscape, and interior campaign frames."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Brand strategy + Creative direction. All 6 projects are campaign creative direction and editorial art direction for fashion/luxury clients (Hermes, Dior, SS Daley, Zara, Icicle, Nanushka). Work matches capabilities cleanly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opens to benjamingrillon.com and shows the live homepage (a large editorial campaign image with visible caption text 'Benjamin Grillon Studio / Creative Direction' and 'Hermes / La Symphonie des Gestes'). It is a real homepage screenshot of the correct domain. site-02.png is the IG error page, correctly marked rejected in manifest with rejection_reason documented, entry queued to state/ig-queue.json. Follows the sanctioned IG throttle exception path."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 work images have named project captions. site-01.png captioned 'Website'. All manifest entries have caption and link fields present. Note: all project links point to the homepage root (benjamingrillon.com) rather than individual project sub-pages; this appears to reflect the site's single-page architecture where projects do not have distinct deep-link URLs. Not a gate failure since captions do name each project."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capabilities are Brand strategy + Creative direction, not video/audio. No video embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absence. IG throttle documented in AI Notes and manifest. Site work fully captured."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; he is an individual creative director who runs his own studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: benjamingrillon.com (present). Instagram: instagram.com/benjamingrillon (present, handle confirmed from site). LinkedIn: linkedin.com/in/benjamingrillon (present). Email: info@benjamingrillon.com (present). All four links accounted for."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy + Creative direction. Set by jonathan in provenance. Consistent with portfolio evidence (fashion campaign creative direction, brand strategy for luxury clients)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: France. Size: 1. Work Status: Studio. AI Notes documents resolution: 'site + LinkedIn agree'. Objective multi-source rule applied and sources named."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoned in AI Notes: 'established sole principal'. Seniority read also present: 'Senior / studio-principal level, 17 yrs in London'. Grounded in work history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no contradicting evidence in the clipped note or anywhere else. Clipped.md contains only 'Zara Home, Picasso Collection' (site copy fragment, not a relationship note)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md contains 'Zara Home, Picasso Collection' which is archived site copy confirming one of the captured projects. No instructions, relationship facts, or judgment signals in the clip note. Zara Home x Picasso project is included in images."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge Autonomy ('Autonomy 5 hedged: established sole principal') and name sources ('Sources: benjamingrillon.com + LinkedIn'). Seniority read present ('Senior / studio-principal level'). Client list is factual (verifiable from site). No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'. Filled correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields recorded. source_url is null across fields, which is the known systemic tooling gap (not a gate failure per checklist note added 2026-06-21). set_by values are correct: agent for all agent-researched fields, jonathan for Capabilities. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes use '/' and ':' as separators. No em-dashes found in any field written for Jonathan."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. Correct: no judgment fields with non-zero values to query, and no unresolvable factual gaps. Story nudge not triggered (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is flipping to Needs Review as part of this gate pass."
+    }
+  ],
+  "to": "scraper"
+}

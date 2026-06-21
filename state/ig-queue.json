@@ -698,5 +698,26 @@
     "ig_url": "https://www.instagram.com/__andyprice__/",
     "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
     "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "35b01846-b6cb-4dce-8161-576e3324ff91",
+    "name": "Arnaud Milliquet (ATMA World)",
+    "ig_url": "https://www.instagram.com/atma_world/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error (Instagram rate-limited). @atma_world confirmed. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "e0613517-10c7-497b-b6b7-c35d3aada3d6",
+    "name": "Jaime Perlman",
+    "ig_url": "https://www.instagram.com/jaimeperlman/",
+    "reason": "IG context shot failed (error page under headless throttle); her IG shows recent creative direction work; logged-in grab needed for full-res profile screenshot",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "380f84ba-ae13-812e-a9ad-d88c9f2363fe",
+    "name": "Aran Quinn",
+    "ig_url": "https://www.instagram.com/aranquinn/",
+    "reason": "IG blocked headless (Something went wrong error); context shot for profile grid needed",
+    "queued_at": "2026-06-21"
   }
 ]

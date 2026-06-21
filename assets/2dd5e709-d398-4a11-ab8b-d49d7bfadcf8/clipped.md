@@ -1,0 +1,5 @@
+# Archived page body (2026-06-21)
+
+ARPA is a London-based creative direction agency and brand consultancy founded in 2011 by Jasmine Raznahan. Multi-disciplinary and forward-thinking, the agency works at the intersection of print and digital media to create innovative, authentic and cohesive worlds for clients, from fashion brands to cultural institutions. ARPA has created campaigns, lookbooks, brand identities, packaging, printed publications, websites and social media strategies, for a client list including Céline, Chloé, Victoria Beckham, Missoni, Stella McCartney, John Lobb, Hayward Gallery and Tate Publishing.
+
+ARPA also creatively directs  Noon, a biannual magazine exploring art and commerce in contemporary culture, which was founded by Raznahan in 2014. Placing creative collaboration front and centre, each themed issue draws on a network of the industry’s foremost photographers, fashion editors, artists and writers to consider the human condition today, in an innovative, subversive and always experimental publication. In turn, this global network of contributors continues to enrich ARPA’s output.

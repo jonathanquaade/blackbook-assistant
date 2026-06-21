@@ -1,0 +1,113 @@
+{
+  "page_id": "35b01846-b6cb-4dce-8161-576e3324ff91",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active images span 3 distinct named projects: Tommy Hilfiger rebrand (3 images), adidas x Bagel editorial (3 images), BAGEL magazine Issues 0-3 (6 images across 4 distinct issues). No duplicate angles of one project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Tommy Hilfiger includes packaging system, garments flatlay and knitwear detail; adidas x Bagel shows editorial portraits from the shoot; BAGEL shows cover plus interior editorial spreads (Australian Open, Frances Tiafoe layout)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work captured (packaging design, editorial art direction, magazine covers and spreads) matches Arnaud's actual practice (graphic design, branding, art direction). Capabilities field is tagged 'Photography' by Jonathan (set_by jonathan, locked) but scraper correctly raised this mismatch in Open Questions and cannot change a jonathan-locked field. Open Question 1 asks Jonathan to re-tag. Scraper handled this correctly; the concern is Jonathan's to resolve."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Website context shot is absent. Three headless Playwright attempts (site-06, site-07, site-37) all captured a Next.js application error page and were correctly rejected. No website context shot is present in any form. The IG context shot (site-08) is correctly rejected and queued to ig-queue.json per the sanctioned exception. The checklist exception covers only IG throttle; no sanctioned exception exists for a blocked website screenshot. The website IS reachable as HTML (confirmed via WebFetch) but the visual app requires JS execution that headless Playwright fails on.",
+      "fix": "Capture a real screenshot of atma.world in a non-headless browser session (the site loads correctly in a real browser per AI Notes). Use 'python3 scripts/scrape.py shot https://atma.world/ --out assets/35b01846-b6cb-4dce-8161-576e3324ff91 --caption \"Website\"' from a session where Playwright is not blocked, or ask Jonathan to manually screenshot it. Then re-upload via keeper.py body-reset and upload."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 12 active images carry a project caption and a source link. None are anonymous."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video/audio work expected for this entry's actual capabilities (graphic design, art direction). No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Website screenshot blocking documented in AI Notes (Next.js client-side exception, 4 attempts). IG context shot documented as rate-limited and queued to ig-queue.json."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for Arnaud Milliquet as individual creative director."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (atma.world), Instagram (@atma_world, verified by name + handle match), LinkedIn (uk.linkedin.com/in/arnaud-milliquet-45b49a22a/) all present. Email: not found in the atma.world HTML source (JS-rendered site, contact email not in static HTML). Absence not explicitly noted in AI Notes -- minor gap, but not a gate fail given the site's rendering constraints."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography tag is jonathan-locked. Open Question correctly flags the mismatch and proposes re-tagging to Graphic design + Identity systems + Creative direction."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Studio. AI Notes cite site + LinkedIn agreement for Studio. Objective multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). Reasoning in AI Notes: led major global rebrand (Tommy Hilfiger), runs own practice. Hedged. Seniority read present (mid-senior, design-lead level)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with no evidence of prior relationship in the clip note (clip note was 'Arnaud Milliquet | ATMA World', no relationship context)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a bare name ('Arnaud Milliquet | ATMA World'). No relationship facts, no instructions, no passcodes. Body contained clipped text from a different person (Benjamin Tietge, likely a web clipper error); archived to clipped.md. No instructions were omitted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge Autonomy ('hedged'), note Photography tag likely wrong, document sources for Work Status, flag website/IG capture failures. Seniority + experience read present. No unhedged inferences."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. source_url is null throughout -- known systemic tooling gap per checklist note (not a v1 gate fail). No fields written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities re-tag proposal. Terse, conditional (Capabilities is locked by Jonathan so this correctly surfaces as a question). No fields asked about that already have non-zero values by Jonathan."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer has not flipped to Needs Review -- held pending this review."
+    }
+  ],
+  "failing_checks": ["A.context-shots"],
+  "notes": "One hard fail: website context shot is absent. Three attempts produced Next.js error pages (correctly rejected). The IG context shot is properly queued. The website screenshot must be taken in a real (non-headless) browser session and re-uploaded before this entry is ready. Everything else is solid: 3 distinct named projects with depth, all captions and links present, no em-dashes, Open Question on Capabilities mismatch correctly raised and jonathan-locked field not overwritten. Once the website screenshot is added, this entry is gate-ready.",
+  "to": "scraper"
+}

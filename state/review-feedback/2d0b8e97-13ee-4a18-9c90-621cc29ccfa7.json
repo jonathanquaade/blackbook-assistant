@@ -1,0 +1,111 @@
+{
+  "page_id": "2d0b8e97-13ee-4a18-9c90-621cc29ccfa7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 work images across 8 named, distinct projects: Wales Bonner, INVENTAIRE, Dries Van Noten, District Vision, Panconesi, Atlas of Echoes (Sarah Van Rij), Byredo, Travel Almanac. No repeated angles of one project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: editorial spreads (svr-01/02/04 show open book interiors), product stills (dvn-01/02/03), shoe/jewelry product shots (wb-01/02/03), spatial installation interior (site-02/Byredo), type specimen (inventaire-01). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Creative direction. All 8 projects are visual identity, image direction, editorial design or art direction. No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website shot (site-05.png) confirmed: shows studiomathieumeyer.com with INVENTAIRE work visible in browser chrome. IG shot (site-06.png) is marked rejected in manifest with reason ('Something went wrong' error page), entry is in ig-queue.json (queued 2026-06-21), and rejection_reason documents the block. Sanctioned exception per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 active images have captions naming the project and source links. One note: panconesi-01.png shows only the PANCONESI wordmark on a black background -- a minimal brand output but correctly captioned 'Panconesi, Brand Identity' with a project link. Not a fail; wordmarks are a legitimate brand identity deliverable and panconesi-04.jpg provides visual depth."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design / art direction practice; no audio or video work expected or present. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin areas. IG capture queued and documented."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type set to Person. Note: entry name is 'Studio Mathieu Meyer' (a solo-founder studio, Size 1). Person vs Studio is a close call here; the scout chose Person on the basis of Size 1. This is not a gate fail -- Jonathan can correct on review. Flagged for his attention."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: studiomathieumeyer.com. Instagram: instagram.com/mathieu.meyer/. LinkedIn: fr.linkedin.com/in/studio-mathieu-meyer/. Email: mail@mathieumeyer.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design, Creative direction -- set_by jonathan in provenance. Matches the work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 1. Work Status: Studio. AI Notes documents sources: 'site + LinkedIn agree'. Objective multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes: 'Autonomy 5 hedged: sole principal of an established studio'. Grounded in 15-yr career trajectory and studio ownership."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate -- no clip note relationship signals present."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2023-04-07'. No clip note instructions were present beyond the URL. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('hedged: sole principal'), names sources ('studiomathieumeyer.com + LinkedIn'), includes seniority read ('Senior / studio-principal level, ~15 yrs') with trajectory (ECAL, David James Associates, Bibliotheque, M/M Paris)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-04-07'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. source_url is null throughout -- known systemic tooling gap (per checklist calibration note 2026-06-21), not a gate failure. set_by values are correct (agent for all agent-set fields; jonathan for Capabilities which were tagged by him)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: no em-dashes found. Semicolons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. No unresolvables remain; zero-states are appropriate; standard terse questions (Familiarity, Rating) are Jonathan's to answer on review without being prompted."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "notes": "One watchable item for Jonathan: panconesi-01.png is a pure wordmark card (white text on black). Not a gate fail but adds little beside the campaign shot (panconesi-04). He can delete it if unwanted. Also: Type=Person vs Studio is a judgment call for a solo-founder named studio -- flagged for his resolution.",
+  "to": null
+}

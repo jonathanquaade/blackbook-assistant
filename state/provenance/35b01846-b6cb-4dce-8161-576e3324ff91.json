@@ -35,9 +35,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:19:24",
+      "verified_at": "2026-06-21T21:51:49",
       "set_by": "agent"
     },
     "Work With?": {
@@ -97,15 +97,34 @@
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Capabilities: currently tagged Photography only, but his work is graphic design, branding, art/creative direction (3D & motion for social/web), not photography. Re-tag to Graphic design + Identity systems + Creative direction (and drop Photography)? (locked field, needs your call)",
+      "value": "1. Capabilities: re-tag from Photography to Graphic design + Identity systems + Creative direction? (his actual practice; Photography is the locked field)\n2. Website context shot missing: atma.world is a Next.js SPA that errors in headless Playwright (3 attempts failed). Needs a manual screenshot or a non-headless capture. Also: the web-clipper body had the wrong person's text (Benjamin Tietge, German photographer) attached, now archived/cleared.\n",
       "source_url": null,
-      "verified_at": "2026-06-15T21:22:26",
+      "verified_at": "2026-06-21T21:51:47",
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Arnaud Milliquet: designer / creative director running ATMA World, a London-based studio. Lead designer on the global Tommy Hilfiger + Tommy Jeans rebrand (year-long, with design director Olya Troitskaya). Focus: graphic design, branding/identity systems, creative strategy, plus 3D/motion for social and web; leans sustainable/ethical design. The Photography tag on the entry looks wrong (see Open Question). Mid-senior, design-lead level. Work Status Studio: runs own named studio (site + LinkedIn agree). Autonomy 4 hedged: led a major rebrand and runs his own practice. IG @atma_world verified (bio matches). Sources: atma.world + LinkedIn.",
+      "value": "Arnaud Milliquet: creative director running ATMA World (London). Lead designer on Tommy Hilfiger global rebrand (year-long, with design director Olya Troitskaya). Creative director of BAGEL tennis magazine (all issues). Work also includes adidas x Bagel editorial art direction. Focus: graphic design, branding, art/creative direction; Photography tag likely wrong (see Open Questions). Mid-senior, design-lead level. Autonomy 4 (hedged): led major global rebrand, runs own practice. Work Status Studio: confirmed by site + LinkedIn. IG @atma_world confirmed. Website screenshot blocked: atma.world throws Next.js client-side exception in headless Playwright on every attempt; real-browser screenshot needed. IG context shot queued (ig-queue.json): headless returns rate-limit error page.",
       "source_url": null,
-      "verified_at": "2026-06-15T21:22:26",
+      "verified_at": "2026-06-21T21:45:58",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-01.jpg",
+        "site-02.jpg",
+        "th-03.jpg",
+        "site-09.jpg",
+        "site-10.jpg",
+        "adidas-extra.jpg",
+        "site-03.png",
+        "bagel3-01.png",
+        "bagel3-02.png",
+        "site-13.png",
+        "site-31.jpeg",
+        "site-16.jpg"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-21T21:47:04",
       "set_by": "agent"
     }
   }

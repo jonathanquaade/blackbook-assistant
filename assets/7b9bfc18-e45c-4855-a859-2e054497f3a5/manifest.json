@@ -183,7 +183,9 @@
     "caption": "Website",
     "link": "https://www.kittenproduction.com/",
     "captured_at": "2026-06-21",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Root URL renders blank contact/footer page (email + logo only). Replaced by site-22.png from /work."
   },
   {
     "file": "site-18.png",
@@ -194,5 +196,53 @@
     "context_shot": true,
     "rejected": true,
     "rejection_reason": "Instagram served error page headless (rate-limited/blocked); queued to ig-queue.json for logged-in ig.py grab"
+  },
+  {
+    "file": "site-19.png",
+    "source_url": "https://www.kittenproduction.com/",
+    "caption": "Website",
+    "link": "https://www.kittenproduction.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Same blank contact page as site-17; retry without --render, still wrong page."
+  },
+  {
+    "file": "site-20.png",
+    "source_url": "https://www.kittenproduction.com/",
+    "caption": "Website",
+    "link": "https://www.kittenproduction.com/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Same blank contact page with --render; root URL always resolves to contact section regardless of render mode."
+  },
+  {
+    "file": "site-21.png",
+    "source_url": "https://www.kittenproduction.com/films",
+    "caption": "Website (work)",
+    "link": "https://www.kittenproduction.com/films",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "/films returns HTTP 404."
+  },
+  {
+    "file": "site-22.png",
+    "source_url": "https://www.kittenproduction.com/work",
+    "caption": "Website (work)",
+    "link": "https://www.kittenproduction.com/work",
+    "captured_at": "2026-06-21",
+    "context_shot": true
+  },
+  {
+    "file": "site-23.png",
+    "source_url": "https://www.kittenproduction.com/work",
+    "caption": "Website (work)",
+    "link": "https://www.kittenproduction.com/work",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Full-page scroll dump; too tall and narrow to serve as a memory anchor. site-22.png (viewport shot) is the active context shot."
   }
 ]
