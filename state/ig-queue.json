@@ -551,5 +551,19 @@
     "ig_url": "https://www.instagram.com/filmkraft.tv/",
     "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (rate-limited). @filmkraft.tv confirmed handle (linked from filmkraft.tv). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "40164c7f-c8cd-4afe-b1c1-e44f765fea6e",
+    "name": "Grebban",
+    "ig_url": "https://www.instagram.com/grebban/",
+    "reason": "IG @grebban confirmed from homepage footer. Headless Playwright returned Instagram error page (rate-limited logged-out). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
+  },
+  {
+    "page_id": "c3ba7028-2693-4605-b378-8a1d60879308",
+    "name": "Tim Roussilhe",
+    "ig_url": "https://www.instagram.com/timroussilhe",
+    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited logged out). @timroussilhe confirmed from timroussilhe.com footer. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-21"
   }
 ]
