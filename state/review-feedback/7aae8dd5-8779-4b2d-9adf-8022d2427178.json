@@ -1,0 +1,111 @@
+{
+  "page_id": "7aae8dd5-8779-4b2d-9adf-8022d2427178",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct client case studies (Ramp, OpenStore, Cleo, PearPop); Ramp has 3 images but they are genuinely different assets (campaign poster, card product shot, founder portrait)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside campaigns: press assets, product UI (OpenStore offer screen), brand narrative campaign imagery, not only cover heroes"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Brand strategy (nearest tag for PR/comms); images show PR campaign creative, press assets and brand narrative case studies consistent with that capability"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed sixeastern.com homepage. IG (site-02.png) rejected+documented+queued per sanctioned throttle path: manifest rejected:true, reject_reason set, entry present in state/ig-queue.json. site-03.png is a bonus prior Webflow site context shot, not a mislabeled IG."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 live images carry named-project captions and source links"
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "PR agency; no video/audio work to embed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG login-wall documented in AI Notes and queued in ig-queue.json"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency - correct for a distributed PR/comms shop at scale"
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and sourced from own site"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy is the nearest available taxonomy tag for PR/comms; AI Notes document the taxonomy gap honestly"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "United States, 11-40, Studio (agency entity) - all set with agent provenance and plausible from site"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "fail",
+      "evidence": "Autonomy field is absent entirely; no estimate or reasoning in AI Notes. Founded 2019, named founder (Emilie Gerber), established agency - enough signal to estimate. CLAUDE.md: set Autonomy on every entry where history supports a read.",
+      "fix": "Estimate Autonomy (likely 4 for an established founder-led boutique agency) with hedged reasoning in AI Notes, set_by agent."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are consistent with no clip note relationship signal"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source 'Web clipper, 2024-01-17' indicates bare URL clip with no relationship instructions; nothing outstanding"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Uses hedged language (~14 people, Clients incl.); taxonomy gap documented; no overreaching assertions"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-17'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present; set_by values correct; source_url null is known systemic gap, not a gate fail"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions or Open Questions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No pending questions needed; no unresolvable judgment fields"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Still Enriching pending this gate; correct"
+    }
+  ],
+  "to": "scraper"
+}

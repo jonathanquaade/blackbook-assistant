@@ -1,0 +1,111 @@
+{
+  "page_id": "6929405d-1f7a-418b-9ddf-9f185635e162",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 work images span 4 distinct projects: Stripe Apps (3), Brooklyn Museum (3), Harvey (1), Uniswap (2). Captions do not repeat a single project across all images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: bm-03 is a collection-search interior, bm-02 is an Explore section interior, stripe-03 is a design-system spec sheet, uniswap-01 shows the Tailwind config and color token internals of the design system. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Frontend development (web) and Web design. All 4 projects are digital product builds (marketplace UI, museum website, AI legal platform, DeFi design system). On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "website.png is confirmed sanctuary.computer homepage. ig-login.png is marked rejected=true with documented reason (headless IG login gate), entry is present in state/ig-queue.json, and AI Notes acknowledges the IG handle. Meets the sanctioned IG-throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 manifest entries have captions and link fields. Minor: uniswap-02 is captioned 'Uniswap design system' but shows the Uniswap blog mobile view (a content page, not the design system itself). Caption is not wrong (it belongs to the same Uniswap project) but is slightly imprecise. Not a gate fail."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is tagged Frontend development and Web design; no audio/video creative work expected. No YouTube/Vimeo embeds present on the case-study pages for these projects based on scraper report. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG screenshot absence is documented in the manifest (rejected entry with reason) and ig-queue.json. No other gaps identified."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio, set_by agent. Correct: small specialized hands-on creative/dev team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.sanctuary.computer/ (confirmed as homepage context shot). Instagram: https://www.instagram.com/sanctucompu/ (handle confirmed in ig-queue). LinkedIn: https://www.linkedin.com/company/sanctuary-computer-inc (set_by agent). Email: hello@sanctuary.computer (set_by agent). All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Frontend development (web) and Web design. set_by jonathan (migration baseline). An Open Question asks Jonathan to confirm expanded capabilities (Digital product design, Backend development, Creative technology, Identity systems). Appropriate: agent is not overwriting a jonathan-set field, just asking."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States (set_by agent, verified). Size: 11-40 (set_by migration, AI Notes acknowledges it as a prior baseline). Work Status: Studio (definitionally consistent with Type = Studio). AI Notes does not name explicit sources for Work Status; however for a Type=Studio entity the classification is self-evident. Marginal but acceptable."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy is not set. Entry is Type=Studio, not a Person. Autonomy is a person-level field; not applicable here."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them. No evidence in the entry that Jonathan knows Sanctuary Computer. Zero-states are valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2024-01-23'. No relationship facts or clip instructions apparent in the clip note. No action missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes contain verifiable client facts (Mozilla, Google, Stripe, Nike, Figma, Brooklyn Museum) rather than taste claims. Size flagged as 'prior baseline.' IG handle noted as verified. No unhedged inferences found. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2024-01-23'. Present and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists and covers all touched fields. source_url is null across all fields; this is the known systemic tooling gap (noted in checklist, not a gate fail). set_by values are consistent: migration fields correctly marked migration, agent-written fields marked agent, jonathan-set Capabilities marked jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes and Open Questions. No em-dashes found. En-dashes in size range (11-40) are acceptable."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One question: capability expansion proposal. Terse, specific, conditional (Capabilities already has a non-zero value set by jonathan, so asking rather than overwriting is correct). No redundant questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "Scraper correctly rejected 2 contaminated Harvey images and kept only harvey-01.jpg, which is confirmed as the genuine Harvey project (AI legal platform). All 10 live images verified by inspection. IG context shot absence handled correctly via the sanctioned queue path. Entry is complete and honest.",
+  "to": "scraper"
+}

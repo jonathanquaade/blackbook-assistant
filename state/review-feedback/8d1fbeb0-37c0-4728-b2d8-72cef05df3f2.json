@@ -1,0 +1,111 @@
+{
+  "page_id": "8d1fbeb0-37c0-4728-b2d8-72cef05df3f2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T16:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects across 13 accepted images: Bureau Perret (2), Harel+Ocante (3 interiors), Toki Amsterdam (2), Note Note Editions (2), Ami Paris SS22 (1), personal experiments Time + Mode (2). No repeated angles of one project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Toki Mart sub-page (site-08), Bureau Perret Realisations listing (site-11), Note Note product page (site-12), Harel+Ocante Slow Coffee interior (site-13), Art de vivre interior (site-14). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web) + Web design. Every accepted image is a built website Paul Lacour designed and coded. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01) present and correct: shows paullacour.com splash with his name and tagline 'graphic design + digital creation'. IG (site-16) rejected+documented+queued to state/ig-queue.json per sanctioned throttle exception; handle @paul.lacour noted as unconfirmed pending logged-in ig.py grab. AI Notes documents both absences."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 accepted images carry a project name and source link in manifest. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio capabilities tagged; Paul Lacour is Frontend dev + Web design. Embed check not applicable. Images suffice."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Rejected captures (site-02 AMI SS23 splash, site-03 blank Assens Barletta, site-05 blank Harel+Ocante homepage, site-15 duplicate, site-16 IG login gate) all carry documented reasons in manifest. IG queued. Email absence documented in AI Notes ('site says please send me an email but provides none')."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelancer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website and LinkedIn present. Email: genuinely absent (site invites contact but provides no address; documented). Instagram: handle @paul.lacour plausible but unconfirmed; queued for logged-in verification rather than attaching an unverified handle. Absence of a confirmed IG URL is honest given the throttle gate."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) + Web design match the portfolio of built client sites. Open Question 2 appropriately asks whether to add Graphic design and Creative direction given his self-described positioning."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 1. Work Status: Freelance. AI Notes records 'his own site and LinkedIn both state freelance (agree)' — meets the two-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent, reasoning in AI Notes ('self-directing solo freelancer delivering full design+build, but a collaborator rather than a team lead'). Hedged appropriately."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Rating: 4 is set_by jonathan (pre-existing). Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all set_by agent and no evidence in the clip note or entry contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2023-08-25'; no relationship facts or stated judgments found in the clip note beyond the name and URL. Open Question 1 correctly asks Work With? given the ex Partner-Dream context."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('hedged'), names Work Status sources (site + LinkedIn), notes IG unconfirmed, documents email absence. Seniority and experience read included ('Senior: ~10+ yrs in full-time roles before going freelance'). No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-08-25'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields with set_by values. source_url nulls are the known systemic tooling gap (not a v1 gate fail per checklist calibration note 2026-06-21). No field written below 0.8 confidence; set_by values are correct (jonathan for Rating and Capabilities which were migrated/set by him)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and Open Questions: no em-dashes found. Hyphens in 'Harel+Ocante' and 'design+build' are not em-dashes."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "Two questions: (1) Work With? conditional on Unvetted zero-state; (2) Capabilities expansion with supporting evidence. Neither asks for a field already holding a non-zero value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "One cosmetic note for Jonathan: site-01 (website context shot) captures paullacour.com at its JS loading state, showing only the name and tagline on a black field. The URL is correct and the label is honest, but the shot is thin. The 12 other images carry the visual weight of the entry. The IG context shot is pending logged-in ig.py confirmation of handle @paul.lacour; the queue entry is in place.",
+  "to": null
+}

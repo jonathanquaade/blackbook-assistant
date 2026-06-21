@@ -1,0 +1,111 @@
+{
+  "page_id": "baabb9ce-d4d4-4384-bce9-ba4658f395d4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T16:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: KOPPEN (oral health brand site), Baina (bathing brand site), Ne Geurra (vintage furniture dealer site), Handcrafted Modern (craft marketplace). No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project spanning different page types: KOPPEN shows About, mobile PDP, desktop PDP; Baina shows homepage hero, product PDP, About/care page; Ne Geurra shows collection index and product detail page; Handcrafted Modern shows PDP, Makers index, cart overlay. Interiors captured, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design. All 12 work images are screenshots of live websites Luke designed (e-commerce and editorial). No off-capability brand or print work slipped in."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png visually confirmed as lukehoban.co.nz homepage (name, nav, freelance detail visible). IG shot (site-02.png) correctly marked rejected with rejection_reason documenting the headless throttle error; entry is in state/ig-queue.json for logged-in grab. Sanctioned exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have caption and link fields. Four project captions include project name and year. Website context shot captioned 'Website' with link."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Tagged Web design; no audio or video creative work. No embeds needed or expected."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG unavailability documented in AI Notes and ig-queue.json. No other source gaps identified."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a sole freelance designer."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website (lukehoban.co.nz), Instagram (instagram.com/lukehoban.co.nz), LinkedIn (linkedin.com/in/luke-hoban-53363a310), Email (hello@lukehoban.co.nz) all present. All four link types filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design set (jonathan, locked). Open Question 2 asks about expanding to Graphic design, Identity systems, 3D & motion; conditional and appropriate given the lock."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United Kingdom; Size: 1; Work Status: Freelance. AI Notes names the sources: own site states 'Available for contract/freelance work, Freelancer/Contractor June 2023-Present' (high trust primary source)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes: experienced solo contractor trusted by strong studios (1/1, Moniker, Mouthwash, Socio Design), ~9 yrs experience."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Notes (jonathan) says 'web designer' with a clear appreciation. Work With? = Unvetted, Worked Together = Never, Familiarity = Don't know them are consistent: Jonathan's Notes express aspiration, not a prior working relationship. Rating: 4 is jonathan-set. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Jonathan's Note mentions 'ex Partner-Dream' context; Open Question 1 asks Work With? with that context flagged. No stated facts requiring --from-jonathan writes were missed. Jonathan's Notes were not disturbed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include ~9 yrs (hedged), trajectory grounded in named employers and dates, Autonomy estimate with stated rationale, seniority read as mid-senior. Aesthetic characterisation noted as matching Jonathan's own note. No bare assertions of unverified quality claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-12'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url is null throughout: per calibration note in checklist (2026-06-21), this is a known systemic tooling gap and is not a v1 gate failure. set_by values are correct: jonathan for Notes/Rating/Capabilities, agent for all agent-researched fields, migration for Website."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned. No em-dashes found. Colons and semicolons used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Work With? with context note, (2) Capabilities expansion proposal with supporting rationale. Both conditional (Work With? has no value; Capabilities is jonathan-locked so a proposal is appropriate). Terse, no redundant asks."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "One minor observation not gate-worthy: the Handcrafted Modern images include a Makers index page and a cart overlay UI rather than deeper editorial or collection pages. Acceptable given the project is a marketplace and these are genuine page types. Jonathan can judge the selection quality. All mechanical checks pass.",
+  "to": null
+}

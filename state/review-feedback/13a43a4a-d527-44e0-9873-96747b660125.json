@@ -1,0 +1,110 @@
+{
+  "page_id": "13a43a4a-d527-44e0-9873-96747b660125",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 distinct built sites across Eindhoven Design District, Dutch Design Awards, Ververs.app, Zenk One, PONT, Brainport City Map, George+Harrison, Hal2, NowShow, Lichtstad Architecten, Make Eindhoven. No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "One hero screenshot per site. For a creative developer whose work IS the built site, this is the expected and defensible presentation (spawn note: breadth of 11 live sites is appropriate for this capability). No interior page shots, but that is a taste call for Jonathan, not a correctness failure."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Frontend development (web), Web design, Creative technology. All 11 work images are live sites Jeroen built or co-designed. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is jeroenbraspenning.nl homepage (correct). site-02.png is the IG error page, marked rejected=true in manifest, reason documented, entry queued to state/ig-queue.json. Satisfies the sanctioned IG-throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected image has a named caption and a source link in manifest. All 11 project images name the project."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio capabilities tagged; not applicable. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in manifest and ig-queue.json. No other absence to explain."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (jeroenbraspenning.nl), Instagram (instagram.com/jeroenbraspenning), LinkedIn (linkedin.com/in/jeroenbraspenning), Email (mail@jeroenbraspenning.nl) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web), Web design, Creative technology. Matches his self-description and the projects captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands, Size 1, Work Status Freelance. AI Notes hedge: 'reads freelance, no conflicting source'. Thin on naming specific sources checked (site, IG, LinkedIn) but the confidence floor appears met given the project-list-based portfolio with no employer listed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: experienced solo dev/designer delivering client sites end to end, mid-senior."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Work With?: Unvetted, Familiarity: Don't know them. Clip note is just the raw Name (title), no relationship facts stated. Zero-states are correct."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw Name was 'Jeroen Braspenning - Creative Developer & Interactive Designer'. No instructions or relationship facts in the clip. Name cleaned to just the name."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedged on work status inference. Seniority read included (mid-senior). Autonomy reasoned. No em-dashes. Minor note: AI Notes do not explicitly name which sources (site/IG/LinkedIn) were compared for Work Status, but the overall read is defensible."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2023-11-15'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with set_by values for all touched fields. source_url is null throughout (known systemic tooling gap per checklist note, not a v1 gate failure)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all captions checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. Appropriate: no unresolvable ambiguity in the entry; all discoverable fields are filled."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flipping to Needs Review now."
+    }
+  ],
+  "to": "scraper"
+}

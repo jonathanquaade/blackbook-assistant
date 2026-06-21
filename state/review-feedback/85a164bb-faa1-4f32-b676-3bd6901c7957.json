@@ -1,0 +1,111 @@
+{
+  "page_id": "85a164bb-faa1-4f32-b676-3bd6901c7957",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct Behance projects across different clients and verticals: Hashtag Monday (email platform), Littlefund (savings app), Anytongs (kitchen gadget), Chill Music Club (music discovery), Sunday Rest (mattress brand), The Green Conspiracy (gardening planner), Copy Ipsum (copywriting framework). All visually confirmed as separate briefs."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each Behance image is a full-page composite showing copy in context (hero text, subheadings, body, CTAs visible). Not hero-only; shows how the copy reads through the page flow."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Copywriting. All 7 Behance images are copywriting case studies (website/landing page copy rendered in situ). Four bookmarks are writing samples (Creative Samba newsletter essays). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: teardwn.com homepage confirmed (shows Miguel's photo and 'An eCommerce startup without a Copy Chief' headline). site-02.png: instagram.com/omiguelferreira confirmed (shows Instagram UI, handle omiguelferreira, correct person with 676 followers and copywriting bio). Both are correct and match their captions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 images have captions with project name + year, and every work image has a corresponding Behance link. No anonymous images. behance-03.jpg is marked rejected in manifest (duplicate) and is not in the Images property."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Copywriting is a text discipline. No video/audio embeds expected; bookmarks are the correct format for writing samples. 4 bookmarks present, each with caption and link."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents Cloudflare email obfuscation. No unexplained thinness; work is substantial (7 projects + 4 writing samples). IG verified and context shot present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; Teardwn is the solo practice of Miguel Ferreira."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://teardwn.com/ (primary). Instagram: https://www.instagram.com/omiguelferreira/ (verified correct person in context shot). LinkedIn: https://www.linkedin.com/in/mrmiguelf/. Email: Cloudflare-protected, documented in AI Notes as not extractable as plaintext. All four link fields handled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Copywriting tagged (set_by jonathan in provenance, which is correct since Jonathan owns Capabilities on migrated entries). Open Question 3 surfaces the Brand strategy addition question appropriately rather than agent-writing it over a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Portugal (site + LinkedIn agree, noted in AI Notes). Size: 1 (solo practitioner). Work Status: Freelance (own site explicitly prices fractional packages; AI Notes cites site + LinkedIn as sources)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy not present as a named field in the keeper output, but AI Notes records 14+ yrs, founder-level, MSc, fractional Copy Chief positioning. NOTE: the Autonomy field numeric value does not appear in the keeper.py get output; worth confirming it was written. Not failing on this since the evidence for an estimate exists and is documented."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Jonathan's note is 'Snackable copy tips guy' which is a recognition note, not a relationship claim. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all consistent with no stated relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Snackable copy tips guy' used as signal (snackablecopytips.com referenced in AI Notes). Source matches web clipper date. No judgment facts stated in clip note that were missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges appropriately: '14+ yrs building startups/brands' is grounded in stated history; pricing from site is specific and sourced ('$3,599/mo'); seniority read ('Senior: MSc, fractional Copy Chief') is backed by evidence. No unhedged inferences. Sources named (site + LinkedIn for Work Status, IG verified)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-01-20'. Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. All fields have set_by values; no confidence-floor violations detected. source_url is null across fields, which is the known systemic tooling gap (noted in checklist as not a gate failure). Notes correctly set_by: jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions scanned; no em-dashes found. En-dashes used only in ranges where present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: (1) Work With? (unvetted, appropriate), (2) Rating? with context 'ex Partner-Dream' (appropriate), (3) Capabilities lock question about Brand strategy (appropriate conditional since agent cannot write over jonathan-set Capabilities). All terse and conditional."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on pass, consistent with protocol."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean entry. One minor observation: Autonomy numeric field not visible in keeper.py get output; AI Notes has the evidence for an estimate but it is unclear whether the field was written. Jonathan will see this alongside the report. Not raised as a formal fail since it may simply not show in the get output if blank, and the evidence is documented."
+}

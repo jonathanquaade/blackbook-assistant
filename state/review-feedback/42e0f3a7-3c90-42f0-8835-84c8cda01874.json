@@ -1,0 +1,112 @@
+{
+  "page_id": "42e0f3a7-3c90-42f0-8835-84c8cda01874",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct typefaces (Actual, Anacoreta, RYM, Montiac, Segueta), each with 2-3 interior specimen spreads. No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each typeface: character sets (rym-p2-chars), text-body settings (actual-p4-text), size ranges (anacoreta-p3-sizes), display settings (montiac-p2-setting). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 specimen images are type design work from official spec PDFs. Foundry capabilities = Type design + Graphic design; all captures match. Single-glyph product icons correctly rejected."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed supercontinente.com homepage (SUPERCONTINENTE header visible). site-02.png: confirmed instagram.com with @supercontinente_ profile, 3930 followers, bio reading 'SUPERCONTINENTE / type offering platform / Fonts, Custom Fonts, Artifacts'."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active images captioned with typeface name, year, and spread description. All have source links to supercontinente.com typeface pages."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Foundry with type specimens; no video/audio work exists. N/A. Images present for all entries."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No absent sources requiring explanation; site and IG both accessible and captured."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Foundry. Correct: Supercontinente is a small independent type house selling font licenses."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "LinkedIn field is empty and AI Notes make no mention of LinkedIn being searched, absent, or undiscoverable. The scout's AI Notes mention Fabiola Mejia trained at Type@Cooper and TypeMedia and works with Dinamo — a public LinkedIn profile very likely exists for a designer with that career trajectory and should have been searched.",
+      "fix": "Search 'Fabiola Mejia type designer linkedin' (Google snippet). If a profile is found, add the LinkedIn URL. If genuinely none exists, add one sentence to AI Notes: 'LinkedIn: no public profile found.' Either way document the outcome."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Type design + Graphic design. Matches the foundry's typefaces (primary) and design artifacts/explorations (secondary). Correct per TAXONOMY.md."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Costa Rica (confirmed San Jose on specimen footers). Size = 1 (one-designer foundry). Work Status = Studio (she runs her own label). All consistent with evidence."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "fail",
+      "evidence": "Autonomy field is not set and no estimate appears in AI Notes. The seniority read is present (Type@Cooper 2017, TypeMedia MA 2019, Dinamo) but it was never translated into an Autonomy score as required by CLAUDE.md ('set Autonomy on every entry where the history supports a read').",
+      "fix": "Set Autonomy (1-5, set_by agent) with reasoning in AI Notes. Given TypeMedia MA, 7+ years of independent practice, and a published multi-face catalog, Autonomy 4-5 is supportable. Write the estimate with reasoning and set the field."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate. No Jonathan note contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note said 'Type Foundry' — Type = Foundry is set. Note preserved verbatim in Source."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes cover seniority trajectory with named credentials. One minor unhedged claim ('also works remotely with Dinamo') but this is plausibly verifiable from public bio and is low-stakes. No blocking issues."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-10-19. Jonathan note: Type Foundry'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file written for all touched fields; set_by = agent throughout (correct). source_url null on all fields — known systemic tooling gap per calibration note, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Captions use double-dash (--) as separator, not em-dash. AI Notes use commas and periods. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. No unresolvables that required asking. Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching as expected; reviewer holds the flip to Needs Review pending verdict."
+    }
+  ],
+  "to": "scout"
+}

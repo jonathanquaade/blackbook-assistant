@@ -1,0 +1,115 @@
+{
+  "page_id": "8f086c9c-4b10-43cc-9e13-d316d89730c4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T16:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active images across 6 distinct client projects: Waabi, MetaMask, Jitter, Giopato and Coombes, Vast, Ferrari Movie (archived). No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Waabi: homepage (site-03) + safety interior (site-09). Jitter: homepage (site-06) + templates interior (site-14). Giopato: homepage (site-07) + Bruma collection interior (site-13). Goes inside projects on three clients."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development (web). All active images are live client websites Antinomy built (confirmed from site branding in each screenshot). On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01) confirmed as antinomy.studio homepage. IG shot (site-02) rejected with documented reason (headless rate-limit error page), entry present in state/ig-queue.json, and block noted in AI Notes. Checklist IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active images have captions naming the project and source links. Rejected images also captioned."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is tagged Web design + Frontend dev (not video/audio/writing). No embed requirement triggered."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Own site 403 under headless documented in AI Notes. IG throttle documented in AI Notes and manifest, queued to ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Appropriate for a small specialized creative execution team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: antinomy.studio. Instagram: instagram.com/antinomystudio. LinkedIn: linkedin.com/company/antinomy-studio. Email: hi@antinomy.studio. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) set by Jonathan (provenance set_by: jonathan). Open Question asks about expanding to Creative technology, Brand strategy, 3D & motion - correct handling of capabilities beyond the confidence floor."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Netherlands, Germany, United States (three offices). Size: 11-40. Work Status: Studio. All set_by agent at plausible confidence."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Entry is a Studio type; Autonomy is person-centric and not applicable here. No field to set."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all zero-states. No evidence in the entry contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is Web clipper, 2023-08-30. No clip-note instructions found that were left unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts only: founding year, office locations, named clients, award wins. No unhedged inferences. Seniority note: studio-level standing communicated via Awwwards/Cannes wins and client roster, appropriate for an org entry."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2023-08-30'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by populated. source_url is null throughout - known systemic tooling gap (noted in checklist 2026-06-21), not a v1 gate failure. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all captions use hyphens and commas only. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "Single Open Question about Capabilities expansion. Conditional (asks only because current tag is narrow and evidence of broader work exists). No question for already-filled non-zero fields."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this review on pass."
+    }
+  ],
+  "notes": [
+    "site-16 (Ferrari Movie) is a Wayback Machine archived screenshot. The Wayback chrome is visible at top but the underlying campaign content (Ferrari title splash) is the actual subject. Caption accurately states 'original campaign site (archived Jan 2024)'. Honest and acceptable for a defunct campaign site.",
+    "Jitter appears in two shots (homepage site-06, templates page site-14). Both are genuinely different pages of the same client site; the templates page shows product UI content. Mild breadth note but not a failure given 6 distinct clients total.",
+    "source_url null across all provenance fields - systemic tooling gap, not a gate failure per checklist calibration note 2026-06-21."
+  ],
+  "to": null
+}

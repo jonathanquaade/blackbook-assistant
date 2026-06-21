@@ -68,7 +68,13 @@ know exactly what to fix.
 - [ ] **Country / Size / Work Status** set, with Work Status resolved by the
       objective multi-source rule (not a vibe), and the sources named in AI Notes.
 - [ ] **Autonomy** estimated (set_by agent) with reasoning, grounded in real work
-      history.
+      history. CALIBRATION (2026-06-21): Autonomy is a PERSON-level Storonsky judgment
+      ("can they run a project unsupervised?"). REQUIRED for Person entries. For
+      org-type entries (Studio/Agency/Foundry/Publication) it is OPTIONAL — do NOT
+      FAIL/bounce an org for a missing Autonomy field; a seniority/leadership read in
+      AI Notes is sufficient (set the field only when a single founder clearly embodies
+      the org, e.g. a solo foundry). Reviewers had been inconsistent here; this
+      resolves it. Flagged for Jonathan to confirm.
 
 ### C. Judgment & honesty
 - [ ] **No judgment field contradicts evidence.** Zero-states are valid only where
