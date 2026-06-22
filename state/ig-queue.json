@@ -136,7 +136,7 @@
     "page_id": "273f84ba-ae13-8115-b1bd-d191937f05f4",
     "name": "Simon Alexander-Adams",
     "ig_url": "https://www.instagram.com/polyhop/",
-    "reason": "Instagram context screenshot failed: headless Playwright blocked by Instagram with error page. @polyhop has 125K followers and daily generative art posts (6+ year practice). Need logged-in ig.py grab for profile context shot and recent generative art work stills.",
+    "reason": "Instagram context screenshot failed: logged-out headless Playwright blocks by Instagram with error page. @polyhop has 125K followers and daily generative art posts (6+ year practice). Need logged-in ig.py grab for profile context shot and recent generative art work stills.",
     "queued_at": "2026-06-19"
   },
   {
@@ -227,7 +227,7 @@
     "page_id": "19af84ba-ae13-8197-911b-f8cf19d97bb7",
     "name": "Hugo & Marie",
     "ig_url": "https://www.instagram.com/hugoandmarie/",
-    "reason": "IG context screenshot returned 'Profile isn't available' error page when logged out (headless Playwright blocked). @hugoandmarie has 38K followers and is confirmed active. Need logged-in ig.py grab for profile context shot.",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page when logged out (not rate-limiting; may be removed/renamed). @hugoandmarie has 38K followers and is confirmed active. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-20"
   },
   {
@@ -413,13 +413,6 @@
     "queued_at": "2026-06-20"
   },
   {
-    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
-    "name": "Andy Price",
-    "ig_url": "https://www.instagram.com/__andyprice__/",
-    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
-    "queued_at": "2026-06-20"
-  },
-  {
     "page_id": "6bd9c3f2-79ed-4b34-af66-4f06ea4a8c46",
     "name": "Jade Kuzak",
     "ig_url": "https://www.instagram.com/jadekuzak/",
@@ -445,13 +438,6 @@
     "name": "Julius Steinhauser",
     "ig_url": "https://www.instagram.com/juliussteinhauser/",
     "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for @juliussteinhauser profile context shot.",
-    "queued_at": "2026-06-20"
-  },
-  {
-    "page_id": "4e7b4d00-62f7-4b63-aec2-3eead657f562",
-    "name": "Jess Bonham",
-    "ig_url": "https://www.instagram.com/jessbonham/",
-    "reason": "IG context screenshot failed: headless Playwright returned 'Something went wrong' error page (Instagram rate-limited). Need logged-in ig.py grab for @jessbonham profile context shot.",
     "queued_at": "2026-06-20"
   },
   {
@@ -693,13 +679,6 @@
     "queued_at": "2026-06-21"
   },
   {
-    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
-    "name": "Andy Price",
-    "ig_url": "https://www.instagram.com/__andyprice__/",
-    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
-    "queued_at": "2026-06-20"
-  },
-  {
     "page_id": "35b01846-b6cb-4dce-8161-576e3324ff91",
     "name": "Arnaud Milliquet (ATMA World)",
     "ig_url": "https://www.instagram.com/atma_world/",
@@ -784,34 +763,6 @@
     "queued_at": "2026-06-21"
   },
   {
-    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
-    "name": "Andy Price",
-    "ig_url": "https://www.instagram.com/__andyprice__/",
-    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
-    "queued_at": "2026-06-20"
-  },
-  {
-    "page_id": "e04d81a6-e15b-4b6e-84fa-57649571e128",
-    "name": "Chris Corby",
-    "ig_url": "https://www.instagram.com/chriscorby/",
-    "reason": "IG context shot errored headless (Something went wrong rate-limit); handle confirmed from his own site",
-    "queued_at": "2026-06-21"
-  },
-  {
-    "page_id": "e8086aeb-c94d-451e-89fb-975bbb491984",
-    "name": "Coraline Oscarn (likely Coraline Oscar)",
-    "ig_url": "https://www.instagram.com/coralineoscar/",
-    "reason": "IDENTITY UNRESOLVED: entry name Coraline Oscarn is likely a typo for Coraline Oscar (London UX/UI designer, WPP, Sorbonne). @coralineoscar returns Profile isn not available logged-out (removed or renamed). @coraline.oscar also unavailable. InDesign portfolio 404 dead. No personal website found. No web-accessible case studies found. Need Jonathan to confirm identity and provide current portfolio link or IG handle before work capture is possible.",
-    "queued_at": "2026-06-21"
-  },
-  {
-    "page_id": "2a638b70-9ca0-43e0-8118-abfae44a1c1d",
-    "name": "Elif G\u00fcrb\u00fcz",
-    "ig_url": "https://www.instagram.com/e__lifgurbuz/",
-    "reason": "IG context shot blocked headless; logged-in ig.py grab needed",
-    "queued_at": "2026-06-22"
-  },
-  {
     "page_id": "4f66cef4-b310-498a-b31e-e0d2b8978db9",
     "name": "Oscar Rana",
     "ig_url": "https://www.instagram.com/oscaranha/",
@@ -823,6 +774,13 @@
     "name": "Mac Collins",
     "ig_url": "https://www.instagram.com/maccollins__/",
     "reason": "IG profile screenshot blocked headless (scrape.py shot returned no files); logged-in grab needed for context shot",
+    "queued_at": "2026-06-23"
+  },
+  {
+    "page_id": "75455041-1092-4d4f-bc8c-39479e17ca93",
+    "name": "Eli Block",
+    "ig_url": "https://www.instagram.com/eli.block/",
+    "reason": "Headless Playwright returned cookie consent modal obscuring profile grid. @eli.block confirmed as his handle (linked from eli-block.com about page and from entry). Need logged-in ig.py grab for clean Instagram profile context shot.",
     "queued_at": "2026-06-23"
   }
 ]

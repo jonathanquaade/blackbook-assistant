@@ -1,0 +1,111 @@
+{
+  "page_id": "b8666109-5e61-45c8-8b0b-483ea0574929",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Epic Games Store/ArtStation, FAB marketplace, Google Shopping, Thorne. No repeated project in captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project; goes inside each: Google Shopping shows tools UI + product viewer screen, Thorne shows metabolism score screen + health card UI + content panels, Epic Games shows ArtStation marketplace grid + Epic universe promo + Store redesign."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Product design. All 12 work images show digital product and web UI screens (Google Shopping, Epic Games Store, Thorne health app, FAB marketplace UI). Note: fab-01 and fab-03 are billboard/poster campaign visuals, which is brand campaign territory; honest captions label them as such. Not a capability mismatch given the FAB project also includes mobile UI (fab-02) and the work is all from his Instrument digital product portfolio."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed vvichael.com homepage (shows 'Michael Lo is an Associate Design Director' header and project grid). site-02.png: confirmed instagram.com/vvichael profile page (Instagram chrome visible, handle 'vvichael', Brooklyn/Vancouver bio, 21 posts). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 work images have project name + source link in manifest. Both context shots captioned 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio capability tagged; no embeds required. Entry is Web design + Product design."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "One image rejected in manifest (on-borrowed-time-01.jpg, marked rejected: true). No unexplained gaps; 12 work images from 4 named projects is solid coverage."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.vvichael.com/ (canonical). Instagram: https://www.instagram.com/vvichael (confirmed correct person via context shot: handle and bio match). LinkedIn: https://www.linkedin.com/in/michael-lo-642941135/. Email: vvichael@gmail.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Product design, set_by jonathan (migration). Matches observed work. Open Question 2 flags a valid taxonomy question about 'Digital product design' vs 'Product design' for Jonathan to weigh in on."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US, Size: 1. Work Status: Employed. AI Notes documents resolution: Jonathan's Note (Dec 2024, 'full-time at Instrument') + LinkedIn agree. Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes grounds it in trajectory: IBM -> Fictive Kin -> Instrument Senior Designer -> Associate Design Director, ~8-9 yrs. Hedge present ('inferred from director title and trajectory')."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Rating: 4 (set_by jonathan). Work With?: Unvetted (zero-state, no contradicting evidence). Worked Together: Never (zero-state, no evidence of collaboration in notes). Familiarity: Don't know them (zero-state, Jonathan's note is factual only, not a relationship claim). No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Jonathan's note 'Dec 2024: He's full-time at Instrument' is in Notes (set_by jonathan) and Work Status = Employed reflects it. Source set to 'Web clipper, 2022-03-22'. No other instructions in clip text."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (employer, trajectory dates, title). Autonomy inference is explicitly hedged ('inferred from director title and trajectory'). Seniority read present ('Design-Director-level, ~8-9 yrs'). No bare claims about work quality or Jonathan's relationship."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-22'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url null on all fields is the known systemic tooling gap (per checklist note, not a gate fail). set_by values correct: jonathan for Notes/Rating/Capabilities (migration); agent for Status, Autonomy, Work Status, etc."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned: no em-dashes present. Uses commas, colons, parentheses, semicolons."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Work With? with ex-Partner-Dream context (field is Unvetted, appropriate to ask); (2) taxonomy question on Product design vs Digital product design. Both terse and conditional. Story nudge not triggered (all relationship fields still at zero-state)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer flips to Needs Review on pass per protocol."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. One observation for Jonathan: fab-01 and fab-03 are billboard/outdoor campaign visuals for FAB marketplace, which sits more in brand campaign territory than product/web UI. Honest captions label them as such and the project is still within his Instrument digital portfolio; not a gate failure but Jonathan may prefer pure UI screens if re-sorting images."
+}

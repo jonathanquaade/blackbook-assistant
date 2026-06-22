@@ -1,0 +1,110 @@
+{
+  "page_id": "1014d5aa-b8b1-4f50-b290-c50d97da8fbd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T09:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Qesta (4 images), Frontier (3 images), Cantant Design System (3 images), Union Bank mobile redesign (3 images). Verified visually - all genuinely different products."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside each project: Qesta shows explore/dashboard/tooltip/onboarding; Frontier shows admin overview/mobile home/rider profile; Cantant shows component library/brand tokens/dialog annotations; Union Bank shows PIN screen/home screen/before-after comparison."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design; all captured work is product/UX-UI (SaaS dashboards, mobile apps, design system). Open Question 1 flags Digital product design as possible addition - that is a tagging question for Jonathan, not an off-capability capture. Work matches the tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png confirmed as joshsomtowork.framer.website homepage (shows Joshua Product Designer hero). No Instagram found to screenshot - absence documented in AI Notes (several same-name profiles, none confirmed to 0.8). No mislabeled shot; no incorrect substitute."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have named-project captions with source links. site-03 correctly marked rejected in manifest and not uploaded."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video/audio embeds required: portfolio is static Framer case studies, no YouTube/Vimeo on project pages to embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly documents: no verified LinkedIn found, no verified IG found, Country unconfirmed. All absences explained with reason."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website present (Framer site). Email present. LinkedIn and Instagram absent - AI Notes states search attempted but multiple same-name profiles found, none confirmed to 0.8. Meets confidence floor; not a skipped search."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design tagged (jonathan-set in provenance, correctly preserved). Open Question 1 proposes Digital product design addition rather than overwriting a jonathan-set field - correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Size 1 correct. Work Status Freelance sourced from self-maintained portfolio ('open to work / open to collaborating'). Country US flagged as unconfirmed with Open Question 2 - appropriate given conflicting signal pointing to Nigeria."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set_by agent. Reasoning in AI Notes: capable of owning product flows, relatively early-career (~4 yrs), inferred. Seniority read present: mid-level/mid-weight."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) are not contradicted by any clip note or evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is Web clipper 2022-03-23; no special instructions in clip note were left unaddressed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Country inference hedged ('some signals point to Nigeria, could not verify to 0.8'). Autonomy hedged ('inferred'). LinkedIn/IG absence hedged ('several same-name profiles, none confirmed'). Seniority + Autonomy read both present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-23'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields present in provenance. source_url null throughout - known systemic tooling gap per checklist calibration note, not a v1 gate failure. set_by values correct: agent for agent-set fields, jonathan for Capabilities (migration), migration for Country and Name."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: capability addition (Q1, valid - proposing an add to a jonathan-set field) and country confirmation (Q2, valid - conflicting signal). Both terse. No story nudge needed (all zero-state relationship fields, no relationship evidence)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry was in Enriching; reviewer flipping to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper"
+}

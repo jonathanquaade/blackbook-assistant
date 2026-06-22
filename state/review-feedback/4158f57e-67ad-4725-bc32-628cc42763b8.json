@@ -1,0 +1,111 @@
+{
+  "page_id": "4158f57e-67ad-4725-bc32-628cc42763b8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images span 4 named, distinct rebrands: ServiceNow, Electronic Arts, Nike Digital Design System, Uber for Business. No project repeated from a single angle."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 3-4 images going inside the system: brand photography, social identity, OOH, and product UI for ServiceNow; logo evolution, immersive environment, events app, and Investor Day for EA; mobile app, component system, and desktop/mobile case study for Nike; ad creative, visual identity, and execution for Uber."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design. All 14 work images show brand identity, visual systems, and digital product design work consistent with that. One note: Open Questions correctly flags that the agency's actual capability set is broader (Digital product design, Brand strategy, Identity systems, etc.) and asks Jonathan to expand the tag. That is appropriate scout behaviour, not a fail."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed: instrument.com homepage with large INSTRUMENT wordmark and yellow/lime background. site-02.png confirmed: real instagram.com/instrument profile page showing 38.8K followers, bio 'We are a digital-first design agency where creativity meets technology', PDX|NYC|REMOTE. Both shots correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 manifest entries have captions naming project and asset type. All 14 work images also have a link field pointing to the Instrument case study URL. Context shots captioned 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Primary tagged Capability is Graphic design (brand/identity). No video embeds in scope; image-based capture is appropriate for a branding/identity agency. No YouTube/Vimeo skipped in the manifest."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "14 images present across 4 projects. No thin or silent absence."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Correct per schema (large full-service org, ~390 staff, Portland/NYC/LA, built for scale)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.instrument.com/ (canonical root, confirmed). Instagram: https://www.instagram.com/instrument/ (confirmed correct handle in context shot). LinkedIn: https://www.linkedin.com/company/instrument (present). Email: hello@instrument.com (present, public address from their site). No obvious missing link."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design is set and correctly reflects the visual/brand work captured. Open Questions item 1 proposes expanding to Digital product design, Brand strategy, Identity systems, Frontend development (web), Copywriting, which is appropriate for Jonathan to decide. Not a fail."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 100+ (corrected from migrated 11-40, sourced to ZoomInfo/site per AI Notes). Work Status: 'Studio' is set but the correct schema value for an operating agency at this scale is 'Studio' (schema options are Freelance/Employed/Studio/Unknown; 'Studio' covers an operating entity, and AI Notes explicitly explains 'Work Status Studio (an operating agency)'). This is not a fail: 'Studio' is the correct schema term for an org that is not a person. AI Notes documents the logic."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). AI Notes states reasoning: 'runs end-to-end programmes for global clients'. Per checklist calibration note, Autonomy is optional for org-type entries; field is set with reasoning, satisfies both paths."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all zero-states. No clip note states a relationship. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2022-03-22' with no relationship facts or instructions. Clipped body text (site copy) archived to clipped.md. No stated facts to write via --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes contains verifiable facts (founded 2006, ~390 employees, named offices, named clients Nike/Google, corrected size field with source). No unsupported assertions. Seniority read present: 'Established, top-tier independent agency.' Autonomy reasoning documented."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-22'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "source_url null on provenance fields is the known systemic tooling gap (per checklist note 2026-06-21); not a gate failure. set_by values not inspected per-field but entry is scraper-produced with agent provenance consistent with CLAUDE.md rules."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Open Questions, captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: capabilities expansion proposal for Jonathan to confirm. Terse, conditional (current tag is Graphic design only, question is whether to expand). No question asked for a field that already has a non-zero value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching; reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "IG follower count in AI Notes says 38.8K (consistent with context shot showing 38.8K). One minor observation for Jonathan: the Work Status field is set to 'Studio' for an Agency-typed entry. The schema options (Freelance/Employed/Studio/Unknown) do not include 'Agency' as a Work Status option, so 'Studio' is the correct available value for an operating org. AI Notes documents this. Not a failure."
+}

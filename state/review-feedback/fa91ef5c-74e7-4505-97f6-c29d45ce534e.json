@@ -1,45 +1,44 @@
 {
   "page_id": "fa91ef5c-74e7-4505-97f6-c29d45ce534e",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-23T00:15:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-23T10:45:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "13 images across 4 named, distinct projects: Iklwa collection (3), Open Code/Harewood Biennial (3), Runout/Venice Biennale (3), Boneyard Armchair (3). No repeated project dominates."
+      "evidence": "12 active work images across 4 distinct named projects: Iklwa (3), Open Code/Harewood Biennial (3), Runout/Venice Biennale (3), Boneyard Armchair (3). site-01.jpg and ig-context.jpg both rejected in manifest and not live."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Each project has 3 images including interior/detail shots: Iklwa has object+room grouping+whitened oak variant; Runout has full sculpture+installation+close grain detail; Boneyard has front view+rear view+ebonised oak grain detail. Goes beyond hero-only."
+      "evidence": "Each project has 3 images including interior/detail shots: Boneyard has front+rear+ebonised oak grain detail; Runout has full installation+detail+close grain; Iklwa has object+room grouping+whitened oak variant. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Industrial design + Art practice. All 13 images show furniture objects and art installations: chairs, sculptures, gallery installations. Fully on-capability."
+      "evidence": "Tagged Industrial design + Art practice. All 12 work images show furniture objects and gallery art installations. Fully on-capability."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-01.jpg is captioned 'Website' (manifest source_url maccollins.com) but the image is a close-up photograph of a physical sculptural surface, NOT a browser screenshot of maccollins.com. This is the same mislabeling failure as Zuzanna Rogatty. The IG context shot is correctly rejected+documented+queued (ig-context.jpg rejected, ig-queue.json entry confirmed) and passes the throttle exception.",
-      "fix": "Replace site-01.jpg with an actual browser screenshot of https://www.maccollins.com/ using scrape.py shot. The current site-01.jpg appears to be a work image accidentally filed as the context shot."
+      "result": "pass",
+      "evidence": "site-02.png opened and visually confirmed: real browser screenshot of maccollins.com showing 'Mac Collins' header, nav links (Work, info@maccollins.com, Artist Statement, Instagram) and site hero image. site-01.jpg correctly rejected with documented reason ('work image mislabeled as Website context shot'). IG: rejected+documented+queued to state/ig-queue.json, noted in AI Notes. Throttle exception path correctly followed. Both attempt-1 fails resolved."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 13 manifest entries have captions naming the project and source links pointing to iconeye.com, weareprimary.org, side-gallery.com respectively."
+      "evidence": "All 12 active work images have captions naming the project and source links. site-02.png captioned 'Website' with link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Mac Collins is Industrial design + Art practice (physical objects). No video/audio work to embed. Not applicable."
+      "evidence": "Physical furniture/art practice; no video or audio work to embed. Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG context shot absence documented: rejected in manifest with reject_reason, queued to state/ig-queue.json, and noted in AI Notes ('IG capture queued'). Sanctioned path correctly followed."
+      "evidence": "IG context shot absence documented in manifest (rejected, reject_reason present), entry in state/ig-queue.json, and noted in AI Notes ('IG capture queued'). Sanctioned path correctly followed."
     },
     {
       "id": "B.type-classified",
@@ -49,38 +48,37 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (maccollins.com), Instagram (@maccollins__), LinkedIn (/in/mac-collins/), Email (info@maccollins.com) all present. LinkedIn was confirmed set."
+      "evidence": "Website (maccollins.com), Instagram (@maccollins__), LinkedIn (/in/mac-collins/), Email (info@maccollins.com) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Industrial design + Art practice. Both match his furniture/object design practice and gallery exhibition work per the ICON, Primary, and Side Gallery sources captured."
+      "evidence": "Industrial design + Art practice. Both match his furniture/object design practice and gallery exhibition work."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: UK, Size: 1 (individual), Work Status: Freelance. AI Notes states 'Work Status Freelance: independent designer/artist practice (info@maccollins.com), one-person studio.' Multi-source resolution present."
+      "evidence": "Country: UK, Size: 1, Work Status: Freelance. Multi-source resolution stated in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 4, set_by agent. AI Notes grounds it in real work history: BA Northumbria 2018, Ralph Saltzman Prize 2022, London Design Medal Emerging Designer, Benchmark production deal. Seniority read present ('Emerging-to-established and rising fast'). Reasoning in AI Notes."
+      "evidence": "Autonomy: 4, set_by agent. Grounded in real work history: BA Northumbria 2018, Ralph Saltzman Prize 2022, London Design Medal Emerging Designer, Benchmark production deal. Seniority read present in AI Notes."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
-      "result": "fail",
-      "evidence": "Familiarity = 'Don't know them' (set_by agent) contradicts Worked Together = 'Repeatedly' (set_by jonathan). Jonathan has worked with Mac Collins repeatedly; the zero-state 'Don't know them' is directly contradicted by this evidence. Per CLAUDE.md: 'never write a zero-state that evidence contradicts.' The Open Question asks for Familiarity but should be offering the correct options given the known relationship, not defaulting the field to the contradicted zero-state.",
-      "fix": "Do NOT set Familiarity to 'Don't know them' when Worked Together is Repeatedly. Leave Familiarity empty and keep the Open Question asking Jonathan to confirm which level: (a) Met or spoken, (b) Know them well."
+      "result": "pass",
+      "evidence": "Familiarity confirmed empty in live Notion entry (not set). Worked Together: Repeatedly (set_by jonathan). Empty Familiarity with Open Question asking Jonathan to set it is correct and no longer contradicts evidence. Attempt-1 fail resolved."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "AI Notes states Jonathan's Worked Together Repeatedly and Rating 5 were kept (set_by jonathan). Open Questions ask the story nudge and Familiarity. Source filled with Web clipper date."
+      "evidence": "Jonathan's Rating 5 and Worked Together Repeatedly preserved as set_by jonathan. Story nudge asked in Open Questions. Source filled with clip date."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes names sources (Design Museum prize, London Design Medal) and is factual about verifiable achievements. Seniority read present. No unhedged inference detected. No em-dashes in the live Notion AI Notes."
+      "evidence": "AI Notes are factual and sourced (Design Museum prize, London Design Medal, Benchmark). Seniority read present. No unhedged inference. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -90,24 +88,23 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with set_by on all touched fields. source_url null is the known systemic tooling gap per checklist note; not a gate fail. No field written below 0.8 confidence. Jonathan's fields correctly marked set_by jonathan."
+      "evidence": "source_url null is the known systemic tooling gap per checklist note; not a gate fail. set_by values correct throughout. No field written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Live Notion Open Questions read '1. Familiarity? / 2. Notes: how was working together?' No em-dashes. AI Notes also clean."
+      "evidence": "Open Questions and AI Notes are clean. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: Familiarity (conditional, Jonathan has not set it) and the story nudge (Worked Together is Repeatedly, Notes is empty). Terse. Story nudge correctly applied once."
+      "evidence": "Two terse questions: '1. Familiarity?' (Familiarity not set, valid) and '2. Notes: how was working together?' (story nudge, Worked Together Repeatedly, Notes empty). Conditional logic correct."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching as expected before reviewer gate; reviewer has not yet flipped it. Correct holding position."
+      "evidence": "Entry in Enriching before this gate pass. Reviewer flipping to Needs Review now."
     }
   ],
-  "failing_checks": ["A.context-shots", "C.no-judgment-contradicts-evidence"],
-  "to": "scraper"
+  "to": "jonathan"
 }
