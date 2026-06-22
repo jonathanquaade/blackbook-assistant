@@ -1,0 +1,110 @@
+{
+  "page_id": "e04d81a6-e15b-4b6e-84fa-57649571e128",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-21T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 images across 6 distinct projects: Tate Draw, Glyphs, Scenario, Sid Gentle Films, Pelli Clarke and Partners, As You Change So Do I. No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 1-2 shots: live-site views and portfolio project-page interiors, not only homepage hero shots. Tate Draw and Glyphs each show UI detail; Pelli Clarke gets both a portfolio shot and a Pentagram case study interior."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web). Every image shows a built website (Tate Draw interactive app, Glyphs site, Scenario, Sid Gentle, Pelli Clarke, As You Change So Do I). Zero off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is the real chris-corby.com homepage (bio text, Brighton UK, availability line confirmed visually). IG context shot (site-11.png) is marked rejected in manifest with documented rate-limit reason, and entry is in ig-queue.json. Sanctioned exception path met."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 12 manifest entries (11 uploaded + 1 rejected) have captions naming the project and source links."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Chris Corby is a web developer; the work is websites. No YouTube/Vimeo project-page embeds were present on the captured project pages that were skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "LinkedIn HTTP 999 block, Cloudflare email obfuscation, and IG throttle all documented in AI Notes. IG queued to ig-queue.json."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an independent freelance developer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website and Instagram set and verified. LinkedIn genuinely blocked (HTTP 999), documented. Email genuinely obfuscated (Cloudflare), documented. No skipped obvious search."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) set by jonathan in provenance, confirmed accurate by the work shown."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, Size 1, Freelance. Work Status resolved from primary source (his own site: self-employed, open for summer/autumn 2026). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: ~10 yrs, 14+ projects, works independently with top studios. Grounded in real history."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are appropriate; clip note has no relationship claims to contradict them."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note is a bare web clip (no instruction text in the Name field). Nothing actionable was missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual claims are grounded in documented projects. Access failures hedged explicitly. Seniority read grounded in years and project count. No em-dashes. No unsupported quality assertions."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2022-05-12."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by populated correctly. source_url null throughout (known systemic tooling gap, not a gate-fail per checklist note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all written content use commas, slashes, and periods. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions needed; all blocks are documented in AI Notes. Story nudge does not apply (all fields at zero-state, no history with Jonathan)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer flipping to Needs Review."
+    }
+  ],
+  "to": null
+}

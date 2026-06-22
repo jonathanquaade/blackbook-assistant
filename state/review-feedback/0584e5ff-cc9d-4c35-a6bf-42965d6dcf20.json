@@ -1,0 +1,111 @@
+{
+  "page_id": "0584e5ff-cc9d-4c35-a6bf-42965d6dcf20",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-22T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: The Rihanna Book, Art Basel identity, V&A Disobedient Objects, Somerset House Kubrick, The Queer Arab Glossary. No caption repeats across groups."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project gets 3 images (except TQAG which gets cover + 2 interior spreads). Rihanna-03 shows interior spread; TQAG interiors show typeset pages; Kubrick shows poster in situ + outdoor application. Genuine depth within each project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 work images show graphic design output: book design (Rihanna, TQAG), identity application (Art Basel, Disobedient Objects, Kubrick). Tagged Capability is Graphic design. Match is correct."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as marwankaabour.com homepage (Marwan Kaabour nav visible, Rihanna book hero). site-02.png is the Instagram error page (Something went wrong), marked rejected:true in manifest with rejected_reason documented, queued to ig-queue.json. Sanctioned exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries (including site-01 and the rejected site-02) carry caption and link fields. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio embedded on this entry's project pages (book design / identity work). Not applicable; no embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence explained in AI Notes and manifest rejected_reason; queued to ig-queue.json. No other gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website marwankaabour.com, Instagram @ustaz_marwan (verified in AI Notes: bio + posts match), LinkedIn confirmed, Email info@marwankaabour.com. All four present and verified."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set (set_by: jonathan per provenance). Open Question 1 asks Jonathan whether to add Copywriting / Identity systems. Correct deferral given jonathan owns the original tag."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK, Size: 1, Work Status: Freelance. AI Notes documents resolution: own info page states independent practice since 2020 (primary source, authoritative)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by: agent). AI Notes grounds it: MA Graphic Design LCC, ~7 years at Barnbrook rising to Senior Designer, own practice since 2020, authored a published book, founded Takweer. Seniority read present and grounded."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "No clip note states a relationship; zero-states (Never / Don't know them / Unvetted) do not contradict any evidence. Rating left empty (Jonathan's)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2022-05-12' with no special instructions beyond the URL. No stated relationships or directives to act on. clipped.md archived and body reset."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes distinguishes verified facts (clients, LCC degree, Barnbrook tenure, book published by Saqi 2024) from agent reads. Seniority and Autonomy reasoning included. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-05-12'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance/0584e5ff-cc9d-4c35-a6bf-42965d6dcf20.json present; all touched fields have set_by. source_url null across all fields is a known systemic tooling gap (not a gate failure per checklist note). No field written below 0.8 confidence; no wrong set_by values detected."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions checked; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question about Capabilities. Correctly defers since Capabilities is already set (jonathan-owned). Story nudge: N/A (Worked Together = Never, no relationship to ask about)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching; will be flipped to Needs Review by this reviewer on pass verdict."
+    }
+  ],
+  "notes": "Solid entry. One observation for Jonathan: the Art Basel images are environmental/in-situ photography of the identity in application (billboards, signage, interior wayfinding), not the graphic system itself. This is an honest representation of identity design in practice and is on-capability; flagging for awareness, not a failure. The Queer Arab Glossary images include interior spreads which nicely show the bilingual Arabic/English typographic design. IG context shot is queued; everything else is complete.",
+  "to": null
+}
