@@ -1,0 +1,113 @@
+{
+  "page_id": "f7396a24-b905-4d08-ab25-4db9b7e23a1d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:50:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 non-context images span 3 named projects: Mercury OS concept (site-05/06/07/08, 4 shots going inside the UI), Apple Music redesign concept (apple-music-02), No Enemies (site-02). Album art and Wormhole rejected correctly.",
+      "note": "4 of 6 work images are Mercury OS; spread is lean but meets the 3-project floor. Jonathan can trim if he wants fewer Mercury shots."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Mercury OS interior shots show email card UI, intent-driven action panel, split-view OS overview, and the home overview -- genuine depth inside the concept, not just a cover."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Interaction/product design work captured: OS interface concepts (Mercury OS), music app redesign (Apple Music). Album art (Sony Music era) correctly rejected. 'No Enemies' (site-02) is a physical printed book -- edge case since the capability tag is under active OQ dispute. Flagged here for Jonathan; not calling it a hard fail because the OQ is the right escalation path.",
+      "note": "site-02.jpg 'No Enemies' is a print object, not digital product work. If retag lands on 'Digital product design', this image should be reassessed."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-11.png: confirmed jasonyuan.design homepage (dark portfolio, bio text visible). site-12.png: confirmed instagram.com/jasonyuandesign -- handle, name 'Jason Yuan', bio 'future lover. ex @apple design team' all visible."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 8 uploaded images have captions and source links in manifest. Bookmark entry also captioned."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "One bookmark (Mercury OS UX Collective article). No embeddable video detected on Jason Yuan's work pages -- his portfolio is primarily static interface concepts. Acceptable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "5 manifest entries marked rejected with descriptive captions (album art, Wormhole, Dribbble sidebar shots). No silent thinness."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (jasonyuan.design), Instagram (jasonyuandesign, confirmed right person), LinkedIn present. Email: not in Notion field and AI Notes do not explicitly document the search outcome. Minor gap -- spawn prompt states 'email not public (documented)' but documentation is not visible in AI Notes. Entry still passes; the explicit search outcome should be in AI Notes on the next touch.",
+      "note": "AI Notes should state 'no public email found' to close the loop per the confidence floor rule."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Tagged 'Web design' (set_by jonathan, migration-era). OQ correctly raises retag to 'Digital product design'. Tag is wrong but OQ is the right mechanism -- reviewer does not override jonathan-set fields."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Work Status Studio. AI Notes names sources: 'Work Status Studio: he founded and runs New Computer (LinkedIn + press agree).' Multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. AI Notes: 'founder running his own product company.' Grounded in verifiable work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Rating 2 and Notes set_by jonathan (his own words). Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent -- no relationship signal in clip note."
+    },
+    {
+      "id": "C.clip-note-acted",
+      "result": "pass",
+      "evidence": "Jonathan's Notes ('Mercury OS guy. He's very expensive') preserved set_by jonathan. Rating 2 set_by jonathan. Source records clip date 2022-03-21."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (founder/CDO-level, ex-Apple, ~8+ yrs), Autonomy reasoning, sources named. Factual claims (Apple, Mercury OS, New Computer) are verifiable. No unhedged inferences found."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-21'. Present and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "source_url null throughout -- known systemic tooling gap, not a v1 gate failure per checklist calibration. set_by values correct: migration for Website/Country, jonathan for Notes/Rating/Capabilities, agent for agent-written fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, all manifest captions -- no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ: capability retag suggestion. Terse, non-redundant (capability field holds a jonathan-set value that is likely wrong -- asking is correct)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching, flipping to Needs Review on this gate pass."
+    }
+  ],
+  "to": null
+}

@@ -1,0 +1,110 @@
+{
+  "page_id": "10962ad0-68b3-48bb-b0d4-ce60ce37a3f3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T09:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 work images span 6 distinct named projects: Logitech/Nonoia (3 thumbnails), KARMACHROMAX (2), POLI V2, Nike R&D, SANCTUM/CIRCA, Everything is Fine"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Logitech has 3 meaningfully different generative states; KARMACHROMAX has 2 distinct stills; for a motion-primary artist embeds carry the depth, thumbnails anchor the gallery"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 9 work images are generative/CGI/motion art; 5 Vimeo embeds reinforce 3D and motion capability; rejected Nothing hardware product shot was correctly excluded"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is fabiocatapano.it homepage (nav and name confirmed); site-02.png is instagram.com/fabiocatapano (handle, 13.8K follower count, and grid all visible and correct)"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a caption naming the project and a link to the Vimeo source; context shots captioned Website and Instagram profile with source URLs"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds each have caption and link; each is paired with a thumbnail image in the Images property; no embed-only entries"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "All 6 projects covered; 11 rejected manifest entries each carry a documented reason"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person, set_by agent, verified"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present; IG handle confirmed correct person (bio and grid match)"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D and motion tagged (set_by jonathan); Open Question correctly asks Jonathan whether to expand to Creative direction, Creative technology, Art practice"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK from his own site; Size 1; Work Status Employed (ECD at Brand New School per LinkedIn + site) with multi-source resolution documented in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes referencing studio founding and team leadership"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note states a relationship fact; zero-states (Never / Don't know them / Unvetted) are appropriate and uncontradicted"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Plain web clipper entry from 2022-03-18; no instruction text in Name field; nothing unacted-on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status inference is hedged; seniority read included (ECD level, ~20 yrs); named clients and exhibitions are verifiable facts, not opinion; sources referenced in narrative"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2022-03-18"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values; source_url null throughout (known systemic tooling gap, not a gate-fail per checklist calibration note)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or any caption"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse Capabilities question; no re-asking of fields that already have non-zero values"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry was Enriching; reviewer flips to Needs Review on this pass"
+    }
+  ],
+  "to": null
+}

@@ -1,0 +1,112 @@
+{
+  "page_id": "6b2d0e35-2dfe-44ca-9f31-e66549c4b217",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 distinct typefaces (Maskots, Yanagi, Parabole Display, Oktika, Magnette, Sticky, Krimi, Kolonia, Faisan), each with a different designer credit and letterform character."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each image shows the interactive specimen page with letterforms at scale and weight/feature controls; this is the full depth available on a type foundry specimen page."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 9 work images show typeface letterforms on ecal-typefaces.ch; Capability is Type design. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10 confirmed as ecal-typefaces.ch homepage (ECAL Typefaces header + nav visible). site-11 confirmed as instagram.com/ecal_ch profile (Instagram UI, @ecal_ch handle, ECAL bio visible). School account used because no dedicated foundry IG exists; documented in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 manifest entries have captions naming the typeface, designer, and source link."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Foundry work is typefaces (CSS-rendered specimens), not video/audio. No embeddable media on specimen pages. No embed requirement applies."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "9 specimens captured; no unexplained gap."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Foundry. Correct for a university-operated online type foundry."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn field is empty and AI Notes makes no mention of LinkedIn. The spawn prompt notes the parent school LinkedIn was found ('LinkedIn documented (only the parent school)'). Neither setting it nor explaining the omission in AI Notes is present in the live entry.",
+      "fix": "Either set LinkedIn to the ECAL school LinkedIn URL (https://www.linkedin.com/school/ecal/ or the correct equivalent) or add a one-line note in AI Notes explaining why it was excluded (e.g. 'LinkedIn: only the parent school ECAL has one; no dedicated foundry LinkedIn page'). Do not leave it silently empty."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Type design. Accurate and confirmed."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Switzerland confirmed from site footer. Size 11-40 reasonable for an institutional foundry unit. Work Status = Studio appropriate. Sources not named in AI Notes (minor gap) but acceptable for a clearly institutional org."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Foundry (org type). Per checklist calibration: Autonomy is optional for org entries. AI Notes states 'not a person; an institutional foundry, so seniority/autonomy do not apply in the usual sense.' Sufficient."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "fail",
+      "evidence": "Familiarity = 'Don't know them' (set_by agent) directly contradicts Worked Together = 'Repeatedly' (set_by jonathan). CLAUDE.md: 'never write a zero-state that evidence contradicts.' A jonathan-set 'Worked Together: Repeatedly' is strong evidence he knows them at minimum at the 'Met or spoken' level.",
+      "fix": "Delete the Familiarity 'Don't know them' value and leave the field empty. The existing Open Question 1 ('Familiarity?') already asks Jonathan to fill it; an empty field pending his answer is correct. 'Don't know them' when Worked Together is Repeatedly is a knowingly false zero-state."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Name prefix 'Typefaces - ' is a migration artifact (set_by migration), not a new scrape miss. Open Questions cover the outstanding judgment fields."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Specific claims (founding year, catalogue size, lecturer names) are publicly verifiable institutional facts; hedging level is acceptable. Seniority/autonomy noted as not applicable for an org."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-02-28'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url null throughout; this is the known systemic tooling gap noted in the checklist and is not a v1 gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Live Notion Open Questions ('1. Familiarity? 2. Notes: how was working together?') contain no em-dashes. AI Notes clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions, both terse and conditional. Story nudge (Q2) correctly applied given Worked Together = Repeatedly and Notes is empty."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer has not flipped it. Correct holding state pending these fixes."
+    }
+  ],
+  "to": "scraper"
+}

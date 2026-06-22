@@ -1,0 +1,111 @@
+{
+  "page_id": "929cbf84-81ac-4a5e-91cf-1db5c02f6767",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T10:15:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images span 6 distinct named projects: Loewe x Paula's Ibiza, NYT, The New Yorker (x2 years), Justine Clenquet, A24 Love Lies Bleeding, Time magazine. No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Loewe has 3 interior illustration frames; NYT and New Yorker each have 2 distinct pieces; projects go inside the work, not only hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 work images are digital illustrations: airbrush-style figurative and still-life work. Capability tagged Illustration; images confirm it across all 6 projects."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-06.png: confirmed jiayi-li.com homepage (pink gradient, client list text visible). site-07.png: confirmed instagram.com/jiayillu profile page (handle @jiayillu, 61.5K followers, illustrated grid visible). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 work images have named project captions with source links. Context shots captioned 'Website' and 'Instagram profile' with links. 5 rejected low-res thumbnails correctly marked rejected in manifest."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Illustration is a still-image discipline; no video/audio embeds expected or required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "All active projects appear reachable from jiayi-li.com; no gated or dead sources noted."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a solo illustrator."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "LinkedIn field is absent and AI Notes does not document that it was searched or explain why no confirmed match was found. The checklist requires that a missing link be explained in AI Notes (a missing link is usually a skipped search). 'Common name' is a valid reason but must appear in the entry, not only in a session handoff note.",
+      "fix": "Search LinkedIn for 'Jiayi Li illustrator Paris'. If no confirmed match (likely given the common name), add one sentence to AI Notes: e.g. 'LinkedIn not attached: searched Jiayi Li illustrator Paris; no confirmed profile found (common name, several unrelated results).' That satisfies the documentation requirement."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Illustration (set_by jonathan in provenance). Images confirm illustration work. TAXONOMY match confirmed."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France; Size: 1; Work Status: Freelance. AI Notes states 'Freelance: independent commissioned illustrator (own site jiayi-li.com + IG @jiayillu, 61K, verified as her)' -- two sources (site + IG) agree, objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes: 'solo illustrator delivering finished commissions, inferred.' Seniority read present: '~5 yrs as illustrator (longer as designer)', established client list. Person entry, field required and present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted all consistent with no relationship evidence. Clip note was 'Jiayi LI emoji' (no relationship claim)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip Name 'Jiayi LI peach-emoji' archived to clipped.md. No instructions or relationship facts in the clip note beyond the emoji; no --from-jonathan write required."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged: 'Autonomy 4: solo illustrator delivering finished commissions, inferred.' Seniority stated as approximate ('~5 yrs'). Verifiable facts (named clients, platforms) asserted directly. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-20'. Correct format."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields recorded with set_by. source_url is null across all fields -- noted as a known systemic tooling gap per checklist calibration note (2026-06-21), not a gate failure. No field appears written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field reviewed; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field present in the entry. No unanswered questions warranting it; story nudge not triggered (Worked Together is Never, no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching pending this gate. Will flip to Needs Review on pass; bouncing to scout on this fail."
+    }
+  ],
+  "to": "scout"
+}

@@ -1,0 +1,112 @@
+{
+  "page_id": "44ba498f-ada0-44a5-8045-f70574c4dddb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "note": "One soft flag raised below (C.judgment-contradiction) but this is a v1 calibration entry; the agent already asked Familiarity as Open Question 1, which partially mitigates. Surfacing to Jonathan with flag visible so he can calibrate the bar.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Nike A-Z of London, Atlantic Records 75th Anniversary, Kali Uchis Red Moon In Venus, Sudan Archives NBPQ, Paul Smith Ginza. No repeated project captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images going inside the work: type construction sheets, hand-drawn logo explorations, gatefold interiors, back cover typography, architectural illustration systems. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 5 projects are graphic design / identity / packaging / type work. Nike bespoke typeface, Atlantic identity exploration, Kali Uchis vinyl packaging, Sudan Archives vinyl packaging, Paul Smith graphic system. On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is chachaanteng.biz homepage (confirmed visually). site-02.png is instagram.com/888.cct profile (confirmed: handle 888.cct, username ChaChaanTeng!, grid visible). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 images have captions naming the project, deliverable detail, year, and a link to the source project page on chachaanteng.biz."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds expected; CCT is a graphic design / packaging studio. AI Notes mentions music-video direction but no project pages with embeddable video were captured. Acceptable for a graphic design entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "14 project images present across 5 projects; no thin or unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialized team doing hands-on creative execution."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present. Instagram handle @888.cct confirmed correct (bio says ChaChaanTeng!, email hello@chachaanteng.biz matches Email field)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by: jonathan per provenance). Open Question 3 asks whether to add Identity systems and Film & video production, which is the correct handling when expanding jonathan-set capabilities."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10, Work Status = Studio. AI Notes documents sources (itsnicethat article for four-day week / size estimate). Work Status = Studio is correct for an independent named studio."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type = Studio; Autonomy field is optional for org-type entries per checklist calibration note. AI Notes provides a seniority/leadership read: 'Established, reputable small studio; high autonomy as an independent practice.'"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "flag",
+      "evidence": "Worked Together = Repeatedly (set_by: jonathan). Familiarity = Don't know them (set_by: agent, zero-state). Working together repeatedly contradicts Don't know them. Per CLAUDE.md: 'never write a zero-state that evidence contradicts.' The correct action was to leave Familiarity empty and ask, which is what the agent did in Open Questions item 1 -- but the field was also set to the zero-state rather than left blank. The question IS present, so Jonathan will correct it, but the field value as stored is misleading.",
+      "fix": "Leave Familiarity empty (rather than setting Don't know them) when Worked Together = Repeatedly is already on the record. Jonathan will answer via Open Question 1."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-01-12'. No clip note instructions evident beyond the entry name. Worked Together = Repeatedly is set_by: jonathan, indicating it was handled from his input."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size marked as 'estimated'; itsnicethat named as source. No unsupported plain assertions. Seniority read present ('Established, reputable small studio'). No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-01-12'. Filled and correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present. source_url null on most fields -- noted but not a v1 gate failure per checklist calibration note (systemic tooling gap). set_by values appear correct throughout."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Open Questions, and all 16 captions. No em-dashes found. Forward slash used in 'music-video / album art direction' is acceptable."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "3 questions: Familiarity (terse), story nudge (Worked Together = Repeatedly + Notes empty triggers it, correct), Capabilities expansion question with specific context. None ask for fields with non-zero-state values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer will flip to Needs Review as part of this v1 pass."
+    }
+  ],
+  "to": "scraper"
+}

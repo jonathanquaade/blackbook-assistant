@@ -1,0 +1,114 @@
+{
+  "page_id": "7c4bebb2-9068-48f2-84f2-52e5119f612f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T10:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "milk-bath-1.jpg and milk-bath-2.jpg are near-identical stills from the same scene of the same film: same two characters, same heart prop, same background gradient, trivially different crop. Source files are PB2024_SophieKokoGate_1.jpg and _2.jpg from Pictoplasma; they read as sequential frames not meaningfully distinct views. milk-bath-4.png is genuinely different (green 3D head, psychedelic palette) and should be kept. Drop milk-bath-2.jpg and replace with a distinct Milk Bath still showing a different scene or moment.",
+      "fix": "Remove milk-bath-2.jpg from the manifest (mark rejected) and capture one distinct Milk Bath still that shows a different scene or character from the Pictoplasma page (PB2024_SophieKokoGate_4.png or similar distinct frame)."
+    },
+    {
+      "id": "A.uncaptioned-images",
+      "result": "fail",
+      "evidence": "style-frame.jpg is captioned 'Style frame, illustration work' with no named project. The checklist requires every image to name its project. The source link goes to shedrewthat.com/sophie-koko-gate which is a directory/profile page, not a named project page. 'Style frame' is a production term, not a project name.",
+      "fix": "Identify which project this style frame belongs to (check shedrewthat.com interview for the project name) and update the caption to name that project, or drop this image in favour of a named-project still."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn field is absent. AI Notes does not state that LinkedIn was searched and not found. For a mid-career director signed to Blinkink with SXSW/Sundance credits, a LinkedIn profile is very likely findable via '<name> linkedin' search. This is a skipped search, not a confirmed absence.",
+      "fix": "Search 'Sophie Koko Gate linkedin' (Google snippet, no login needed), capture the URL if found and set the LinkedIn field, or note explicitly in AI Notes that no LinkedIn profile was located."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png shows sophiekoko.com homepage with 'Sophie Koko Gate' name and nav (confirmed real site, not casino spam). site-03.png shows instagram.com/sophiekoko profile page with username 'sophiekoko', Sophie Koko handle, 19.2K followers, and her character illustration grid. Both shots are correct and labeled correctly."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "8 distinct projects represented: Slug Life, Hotel Kalura, Milk Bath, Adult Swim Darcy A/S/L, Camden Hells, Nike Kids Bra, MTV Ident, Airbnb Stories. Multiple stills per film plus Vimeo embeds. Goes inside projects not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 non-context work images show animation/illustration character work consistent with tagged Capability (Illustration). Embeds are all animated films she directed. No off-capability content present."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds present (Slug Life, Hotel Kalura, Adult Swim, MTV, Airbnb), each with a thumbnail image, caption, and link field. Pattern correctly followed: thumbnails up top, playable embeds below."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Rejected images documented in manifest with reasons (low-res duplicates, unusable Google Pixel 2 collage). No unexplained thin sections."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged (set_by: jonathan). Scraper correctly raised the animation director gap as an Open Question rather than overwriting a jonathan-set field. Appropriate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK, Size: 1, Work Status: Freelance. AI Notes cites independent director model with Blinkink as production rep, which supports Freelance. Sourcing rationale present in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by: agent). Reasoning in AI Notes: 'directs and authors her own films and commissioned animation, inferred'. Hedged with 'inferred'. Appropriate for a signed animation director."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match clip note which contains no relationship signal. Clip note was just 'Sophie Koko' with no instructions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip name was 'Sophie Koko' (no instructions beyond the name). Name was cleaned to 'Sophie Koko Gate' (full name found via research). clipped.md archived. No clip instructions missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority read present ('Established mid-career animation director'). Autonomy reasoning hedged with 'inferred'. No em-dashes. Clients cited are verifiable (Airbnb, MTV, Google). No unsupported assertions about working style."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-20'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. source_url null throughout but that is a known tooling gap per checklist note, not a gate fail. set_by values are correct (agent for factual fields, jonathan for Capabilities which he set)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed: no em-dashes found. 'weird-and-wonderful' uses hyphens, not em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question about adding Capabilities (3D and motion, Film and video production). Terse and conditional. No questions for fields that already have values."
+    },
+    {
+      "id": "D.website-field-corrected",
+      "result": "pass",
+      "evidence": "Website field reads 'https://www.sophiekoko.com/' (set_by: agent, verified_at: 2026-06-23). The casino-spam domain sophiekokogate.com is not present. Context shot confirms sophiekoko.com is the real site."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Three fixes needed before this entry is ready. (1) milk-bath-2.jpg is a near-duplicate of milk-bath-1.jpg; replace with a distinct Milk Bath still. (2) style-frame.jpg has no named project in its caption; identify the project or drop the image. (3) LinkedIn was not searched or its absence not documented; run the search and either add the URL or note in AI Notes that none was found. Everything else is solid: 8 distinct projects, 5 Vimeo embeds all with thumbnails and links, both context shots confirmed correct (including the corrected sophiekoko.com website shot), on-capability illustration/animation work throughout, no em-dashes, provenance clean."
+}

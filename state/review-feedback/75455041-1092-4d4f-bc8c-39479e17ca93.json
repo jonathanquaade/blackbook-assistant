@@ -1,0 +1,110 @@
+{
+  "page_id": "75455041-1092-4d4f-bc8c-39479e17ca93",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "17 images span 5 distinct projects: Phone Mode/Pixel (4), Most Searched in History (4), Pattern Radio Whale Songs (3), Notable Women (3), Year in Search 2019 (3). No single project dominates."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Phone Mode shows 4 interaction states (standby, dialing, ringing, active call); Most Searched shows landing + editorial spreads; Pattern Radio shows interactive sound-map UI; Notable Women shows landing + dollar-bill detail; YIS shows data experience screens. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Product design. All 5 projects are Google digital product/web experiences. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-18.png is eli-block.com homepage (verified visually). site-19.png is the Instagram cookie-consent modal (instagram.com visible in header), correctly marked rejected in manifest with reason, and queued to state/ig-queue.json. Checklist exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every uploaded image has a caption naming the project and a link field to the case study page. No anonymous images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Web design + Product design entry; work is shown as UI screenshots, which is appropriate. No YouTube/Vimeo on the case study pages that was skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest reject_reason and state/ig-queue.json entry. AI Notes records @eli.block handle."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present. IG handle @eli.block confirmed via his own About page (per ig-queue reason field)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Product design, set_by jonathan. Open Question 2 asks about expanding to Digital product design, Type design, Industrial design. Appropriate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US / Size 1 / Employed. AI Notes names sources: Jonathan's Notes ('He's full time at Airbnb') and LinkedIn/RocketReach both agree. Objective multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: 'leads experience design and self-directed side projects, inferred'. Seniority read present: 'Senior, Lead-level, ~8 yrs, strong pedigree'."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Rating 5 set_by jonathan consistent with entry quality. Notes 'He's full time at Airbnb' consistent with Work Status Employed. Zero-states (Worked Together: Never, Familiarity: Don't know them) not contradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Web clipper entry. No unacted-on instructions in clip note. Open Questions cover remaining ambiguities."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority and trajectory recorded. Autonomy hedged as inferred. Work Status sources named. No em-dashes. 'Jonathan rates him 5' is a provenance statement about an existing locked field, not an unverified inference."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-18'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values (jonathan for Rating/Notes/Capabilities, migration for Name/Website/Country, agent for all agent-written fields). source_url nulls are the known systemic tooling gap, not a v1 gate failure per checklist note."
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions and all captions scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse conditional questions: Work With? (no existing value) and Capabilities expansion (genuine ambiguity). No story nudge triggered (no relationship signals present)."
+    },
+    {
+      "id": "D.rejected-not-leaked",
+      "result": "pass",
+      "evidence": "10 rejected manifest entries (site-12/13/14, site-19, yis-intro-1/2/3, yis-bts, yis-landing-2, yis-video-playing) are all absent from the Notion Images property. No iframe loading states or cookie-consent shots leaked into the upload."
+    }
+  ],
+  "to": null
+}

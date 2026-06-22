@@ -1,0 +1,110 @@
+{
+  "page_id": "c66292bb-0d65-4cf5-9018-e0ecead6347a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T09:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 work images span 8 distinct named projects: Mr Porter, Cubitts NYC (2 images: final + draft process), NYT Book Review, Bulletin Magazine (cover + inside spread), So Young Magazine issue 53, The Atlantic x Grammarly, City Culture Festival Taipei, Oasis Reunion/So Young. No caption repeats a project more than twice, and those two are deliberate depth shots (final + draft)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Cubitts NYC has both the finished cover (cubitts-hires.jpg) and a draft process sheet (behance-cubitts-02.jpg). Bulletin Magazine has the cover (site-06.jpg) and the inside spread at-use (site-08.jpg). Goes inside projects, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 10 work images are finished illustration commissions (editorial, magazine covers, key visuals). No brand side-projects, no photography, no article screenshots in the live set. Rejected set correctly excluded a student critical report doc, student animation stills, and an article text page."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed panpoan.com homepage showing her illustration grid with nav and email. site-14.png: confirmed instagram.com page for @poan.pan (bio reads 'Designer illustrator / Currently based in Taiwan', grid shows her work, 379 posts, 3,099 followers). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 live manifest entries carry a named caption and a source link. No 'Portfolio, panpoan.com' generic captions remain in the live set (those were rejected)."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Poan Pan is an illustrator; no video/audio work expected. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No known blocked or thin source. IG context shot obtained logged-out. No IG queue entry needed."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for a solo freelance illustrator."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://panpoan.com/ (live Cargo site). Instagram: https://www.instagram.com/poan.pan/ (verified in context shot: bio and grid match). LinkedIn: https://www.linkedin.com/in/poanpan/. Email: panpoan@outlook.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Illustration], set_by jonathan per provenance. Consistent with all captured work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Taiwan, Size = 1, Work Status = Freelance. AI Notes documents multi-source resolution: site and IG bio both state Taiwan-based freelance illustrator, LinkedIn consistent. Objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 3 (set_by agent) with hedged reasoning in AI Notes: 'delivers editorial commissions independently but junior'. Grounded in CSM grad 2021 timeline (~5 yrs career). Seniority read present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? = Unvetted, Worked Together = Never, Familiarity = Don't know them) are consistent with the clip note 'Web clipper, 2022-02-06', which contains no relationship facts. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a web-clipper entry with no embedded instructions beyond the URL. Name was corrected from 'Pam pam' (IG handle mishearing) to 'Poan Pan'. No stated facts or relationship signals were present to act on via --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('~3 hedged'), names specific verifiable clients (NYT, The Atlantic, Mr Porter, Grammarly), explains the clip-name correction, documents the Work Status source resolution, and includes a seniority read (CSM 2021, early career ~5 yrs). No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-02-06'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null across fields; per checklist calibration note (2026-06-21) this is a known systemic tooling gap and is not a gate failure. set_by values are correct: agent for all factual fields, jonathan for Capabilities (correctly locked). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: uses commas, colons, and parentheses only. No em-dashes found in any agent-written field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field visible in the entry. None are outstanding. The story nudge does not apply (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted). Correct to have no questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching pre-review, as expected. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null
+}
