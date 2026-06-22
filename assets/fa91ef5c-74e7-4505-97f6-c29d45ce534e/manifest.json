@@ -4,7 +4,9 @@
     "source_url": "https://www.maccollins.com/",
     "caption": "Website",
     "link": "https://www.maccollins.com/",
-    "captured_at": "2026-06-23"
+    "captured_at": "2026-06-23",
+    "rejected": true,
+    "reject_reason": "work image mislabeled as Website context shot"
   },
   {
     "file": "ig-context.jpg",
@@ -14,6 +16,14 @@
     "captured_at": "2026-06-23",
     "rejected": true,
     "reject_reason": "IG profile screenshot blocked headless; queued to state/ig-queue.json for logged-in ig.py grab"
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.maccollins.com/",
+    "caption": "Website",
+    "link": "https://www.maccollins.com/",
+    "captured_at": "2026-06-23",
+    "context_shot": true
   },
   {
     "file": "iklwa-01.jpg",

@@ -1,0 +1,111 @@
+{
+  "page_id": "621c0b26-1f8c-4759-a28a-08675fe7435d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T10:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects across 9 active images: Material Design UIKit, Google Street Art VR, Google Inbox, Onefootball, SoundCloud. Two projects have 2 images each (UIKit: Collapsing Toolbar + Fixed App Bar; Google Inbox: list view + conversation view) which counts as depth, not duplicate angles. Rejected entries (site-05, site-06) properly marked in manifest."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Google Inbox has two interior views (list + conversation). UIKit has two distinct screen states. SoundCloud and Onefootball each have one image; Google Street Art VR one. Not hero-only for any project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Product design. All 7 work images (excluding 2 context shots) show product/UI/interaction design: Android material UI kit, mobile app interaction concepts, app goal notification. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: notion.so login gate for Arnaud's folio, captioned 'Portfolio (Notion folio, login-gated)' - correctly represents the website (the folio IS the website; gated state is honest). site-10.png: instagram.com/arnaudlrx with handle arnaudlrx visible, 0 posts confirmed, correctly captioned 'Instagram profile'. Both context shots verified by opening the images."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active manifest entries have caption + link. Every work image names its project and links to the Dribbble source."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio projects in scope. All Dribbble shots are GIFs or still images. No embeddable video found or skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Notion folio login-gate documented in AI Notes and shown as context shot. Instagram 0 posts documented in manifest note and AI Notes. Older work (2015-17 Dribbble) is the only public portfolio source; this limitation is stated in AI Notes."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: Notion folio URL set. Instagram: https://www.instagram.com/arnaudlrx/ set and verified correct (handle confirmed in manifest, bio visible in screenshot). Email: lerouxarnaud@icloud.com set (jonathan-sourced). LinkedIn: unconfirmed at 0.8 confidence, documented in Open Question #3 with reason (multiple Arnaud Le Roux profiles, none clearly identified). Not a missing-search fail - the search was done, result is genuinely ambiguous."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Product design, set_by jonathan. Appropriate for a UX/UI product designer. Open Question #2 asks Jonathan about reclassifying to Digital product design - correct to ask rather than override a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 1. Work Status: Employed. AI Notes cites ADPList mentor profile confirming Lead Product Designer at Scaleway, consistent with Jonathan's note (Dec 24: full time at startup). Multi-source check documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: runs product work independently in lean teams, inferred; Jonathan Rating 5 supports. Hedged as inferred. Seniority read present (7+ years, Lead PD level)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them both set_by agent as zero-states. Jonathan's note is a factual observation about employment ('full time at startup now') with no relationship claim. Work With? Unvetted - correct, Open Question #1 asks Jonathan to decide. Rating 5 and Day Rate 600 are jonathan-set and untouched."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry is from web clipper 2022 with no special instruction in the clip note. No instruction left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('inferred', 'consistent with'). Verifiable facts asserted (ADPList, Scaleway, Dribbble projects, Malt handle). Seniority + Autonomy paired. One minor self-reference: 'Ex Partner at Dream studio per Jonathan's Open Question note' is circular but the OQ surfaces it to Jonathan; not a gate fail. No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-29'. Correctly filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url nulls are the known systemic tooling gap (not a gate fail per checklist note). set_by values correct: jonathan-set fields (Email, Rating, Day Rate, Capabilities, Notes) all marked jonathan; agent-researched fields marked agent; migration fields marked migration."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "3 questions: (1) Work With? - Work With? is Unvetted so conditional is met; (2) Capability reclassification - appropriate given jonathan-owned field; (3) LinkedIn - unresolvable at 0.8 confidence, documented with reason. All terse and actionable."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching pre-review. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "Older work (2015-17 Dribbble) is the only publicly available portfolio; newer work is behind a login-gated Notion folio. This is an inherent limitation honestly documented, not a scraper failure. The entry is complete given the available public sources. Jonathan should be aware the work shown is circa 2015-17.",
+  "to": null
+}

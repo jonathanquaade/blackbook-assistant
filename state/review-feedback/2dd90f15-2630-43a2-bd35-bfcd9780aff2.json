@@ -1,0 +1,110 @@
+{
+  "page_id": "2dd90f15-2630-43a2-bd35-bfcd9780aff2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images span 4 distinct projects: Naomi Paul Studio (3), Elicyon (3), Luminous Spaces I-II (3), The Liminal Points Project (3). No caption repeats across different projects; no near-identical frames."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Elicyon set goes inside the project: still-life detail (site-04), living room interior (site-05), bedroom interior (site-06). Not hero-only. Naomi Paul Studio likewise shows room interiors including close detail. Liminal Points shows three distinct nocturnal scenes within the series."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged Photography. All 12 work images are photographs: interior/architecture (Naomi Paul Studio, Elicyon), exterior architecture at night (Luminous Spaces I-II), moody nocturnal landscape series (The Liminal Points Project). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is rochowski.net homepage (minimalist wordmark, correct domain). site-14.png is instagram.com showing @studio_rochowski profile page with handle, bio, follower count and grid visible. Both captions match actual content."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have caption and link fields filled. Every work image names its project and links to the project page on rochowski.net."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Photography (stills). No video embeds expected. The open question about Film & video production is correctly deferred to Jonathan rather than embedding speculatively."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. 12 on-capability images present. IG not used as the primary work source (Cargo site served sufficient depth)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct: Nick Rochowski is an individual photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: rochowski.net (set). Instagram: instagram.com/studio_rochowski (set, confirmed via context shot showing correct handle and bio). LinkedIn: linkedin.com/in/nickrochowski (set). Email: studio@rochowski.net (set). All four link categories populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography tagged (set_by jonathan per provenance). Consistent with all captured work. Open Question raised for Film & video production (correct conditional deferral, Jonathan has not yet confirmed)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Freelance, with AI Notes citing 'self-maintained site is the source'. Minor note: only one source explicitly named in AI Notes; the multi-source rule prefers two agreeing sources be documented. Site is the highest-trust source and explicitly states independent/freelance operation, so confidence floor is met. Not a gate fail."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 (set_by agent). Reasoning in AI Notes: sole principal, commissions and delivers shoots, scales team himself. Grounded in site description. Hedged as 'inferred from site'."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With?: Unvetted, Worked Together: Never, Familiarity: Don't know them) do not contradict any clip note evidence. Source is 'Web clipper, 2022-04-20' with no relationship notes."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was bare (web clipper, no relationship or instruction text). Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy as 'inferred from site'. Factual claims (LCC graduate, Association of Photographers member, lectures at universities, East London base) are verifiable from his site. Seniority read present ('Senior, established independent photographer running his own studio')."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-04-20'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null across all fields: known systemic tooling gap per checklist calibration note (2026-06-21), not a v1 gate fail. set_by values are correct (agent for agent-set fields, migration for migrated fields, jonathan for Capabilities which he tagged)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found. Semicolons and periods used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One open question: 'Add Capability Film & video production?' Terse, conditional (not asking for a field already set), correctly asking about an unresolved capability. No story nudge needed (Familiarity and Worked Together are at zero-state and Notes is empty)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer on pass. Correct pipeline position."
+    }
+  ],
+  "to": null
+}

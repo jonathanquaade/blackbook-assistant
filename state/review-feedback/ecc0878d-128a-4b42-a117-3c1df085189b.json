@@ -1,0 +1,111 @@
+{
+  "page_id": "ecc0878d-128a-4b42-a117-3c1df085189b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects in Notion Images: Altin Gun single covers, Best Kept Secret Festival identity, Electronica en Abril / La Casa Encendida, Lego Brick Slam via Blinkink. No repeated project from multiple angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside the work (individual cover variants for Altin Gun; graphic details + installation for BKS; poster + risograph stills for EEA; animation frames for Lego). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Illustration. All 11 non-context images show illustration / frame-by-frame animation work: record covers, festival visual identity, event poster/risograph artwork, animated Lego commission. Note: bks-02 and bks-05 are applied/installed shots (people visible) rather than clean artwork scans; they do show the illustration clearly and are within normal bounds for applied illustration documentation. Taste call deferred to Jonathan."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opened and confirmed as rapapawn.com (correct website, nav shows Works / About / Shop). site-02.png opened and confirmed as instagram.com showing handle @zyn_vaites with bio name 'Cynthia Alfonso'. Both captions match the real pages."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 Notion-uploaded images carry captions naming the project and include a link field in the manifest. No caption-free images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Primary capability is Illustration (static + GIF animation). The Lego project is captured via GIF frames (animation stills), which are the appropriate format. No embeddable video was skipped; the BKS and EEA GIFs that exceeded 20 MB are correctly rejected and replaced by static equivalents with the rejection reason documented."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Rejected files (bks-01.jpg crowd photo, bks-03.gif 28 MB, eea-01.gif 27 MB, eea-03.gif 32 MB) all marked rejected in manifest with specific reasons. None leaked into Notion Images. AI Notes documents the connection-refused solo site cynthialfonso.com and absence of LinkedIn."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual co-founder."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website rapapawn.com set. Instagram https://www.instagram.com/zyn_vaites/ set and verified (bio confirms Cynthia Alfonso). Email zyn.vaites@hotmail.com set (from IG bio). LinkedIn: AI Notes states none found, accepted given her low online footprint. No obvious skipped search."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged per TAXONOMY.md. Open Question 1 raises 3D & Motion as a candidate addition, appropriately deferred to Jonathan given Rapapawn is an animation studio. One captured capability is correct as the base."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country Spain, Size 1, Work Status Studio all set. AI Notes names sources: site + CV confirm studio principal at Rapapawn. Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set (set_by agent). Reasoning in AI Notes: delivers finished commissioned work across editorial and commercial clients, self-directed, studio co-founder since 2017. Hedged as inferred."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Work With?: Unvetted, Familiarity: Don't know them. No clip note states a relationship. Zero-states are honest."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No specific instruction found in clip note beyond identity. Source set to 'Web clipper, 2022-04-20'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('inferred'), cynthialfonso.com ('may be a shop/merch site, not a portfolio'), client list framed as 'incl.' not exhaustive. Seniority + experience read present: 'Senior/mid-career level, studio founded 2017, approx. 8 yrs professional practice'. No unverified assertion stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-04-20'. Filled and consistent with provenance created date."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by on all fields. source_url null across the board: noted as known systemic tooling gap, not a gate failure per checklist note (2026-06-21). set_by values are correct (agent for agent-researched fields, migration for clipped baseline, jonathan for Capabilities which were his original tag)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes and Open Questions: no em-dashes found. Ranges use en-dashes correctly (e.g. '8 yrs')."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Motion/3D capability addition. Terse, conditional (Capabilities currently only Illustration), not asking for fields already set. No story nudge needed (Worked Together is Never, no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching at review time; will be flipped to Needs Review on this pass verdict."
+    }
+  ],
+  "notes": "bks-02 (crowd at illustrated festival pillars) and bks-05 (people installing illustrated banner) are applied-illustration-in-context shots rather than clean artwork scans. The illustration is clearly visible and dominant in both. bks-01 was correctly rejected (crowd photo, illustration barely visible). The bks-02/05 distinction is a taste call for Jonathan, not a completeness failure.",
+  "to": "scraper"
+}

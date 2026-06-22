@@ -1,0 +1,111 @@
+{
+  "page_id": "4f66cef4-b310-498a-b31e-e0d2b8978db9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: NYT On Tech, Animario Festival, WePresent, Altin Gun, Escombro. No repeated project angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: book spreads (Escombro), interior poster shots (Animario), animation frames (NYT On Tech), album covers (Altin Gun)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 10 portfolio images are illustration or animation-frame work. Fashion campaign images (site-10, site-11) correctly rejected. EU footer logo (site-06) correctly rejected. No contamination leaked into active set."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14 confirmed rapapawn.com homepage (nav: rapapawn / works / about / shop visible). site-15 confirmed instagram.com/oscaranha profile (handle @oscaranha, name Oscar Rana, 23.1k followers, illustration grid visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active images have captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is tagged Illustration; animation frames captured as stills are acceptable. No skipped embeds evidenced from the manifest."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG queue entry present for full-res logged-in grab. Logged-out context shot (site-15) is valid per checklist exception."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email oscaranha@gmail.com is visible in the captured IG context shot (site-15 bio reads 'Contact: oscaranha@gmail.com') and was not extracted into the Email field. This was findable during the current pass and was not captured.",
+      "fix": "Read the Email field from the IG bio visible in site-15 and set Email to oscaranha@gmail.com via keeper.py set. Also document in AI Notes whether LinkedIn was searched and not found, or not searched."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged. Open Question asks Jonathan about adding 3D & motion given Rapapawn animation work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Spain / 1 / Unknown. Work Status Unknown explained in AI Notes with multi-source rationale (IG + Tumblr as personal portfolios, no explicit freelance/employed statement)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set, reasoning in AI Notes: solo artist delivering commissioned and gallery work unsupervised."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship evidence in the clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2022-04-20' with no embedded instructions beyond the entry itself."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge Work Status and Autonomy as inferred. Seniority read present ('mid-career, runs own practice'). No bare assertions of unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-04-20'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. source_url null is a known systemic tooling gap per checklist note, not a gate fail."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One conditional question about 3D & motion capability. Terse and specific."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains Enriching pending this gate. Will flip to Needs Review on pass."
+    }
+  ],
+  "to": "scraper"
+}

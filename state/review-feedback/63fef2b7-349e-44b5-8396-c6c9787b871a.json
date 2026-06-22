@@ -1,0 +1,111 @@
+{
+  "page_id": "63fef2b7-349e-44b5-8396-c6c9787b871a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct client sites: Studio DRAMA, Ensu, Art Basel Art Market Report, GRAS, Sylvan Hillebrand, BP&O, BBH. No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "For Web design + Frontend dev the live built site IS the deliverable; homepage screenshots are the appropriate primary view. The olbrown.com site is WebGL with no downloadable assets, so client-site captures are the correct substitute. Acceptable given the capability."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development (web). All 7 client captures are built web projects. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01 is olbrown.com homepage (black bg, lists clients and services). site-02 is instagram.com/olbrown, handle 'olbrown', name 'Oliver Brown', bio 'Designer and Developer'. Both correct and correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images have captions naming the client project plus a source link."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capabilities are Web design + Frontend dev only; no audio/video embed requirement."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "olbrown.com WebGL nature noted in manifest approach; client sites used as the work surface. AI Notes records the studio structure."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small two-principal design+build studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Instagram field (the Notion property) is not set. Handle @olbrown is confirmed correct from the context screenshot (site-02 shows instagram.com/olbrown, 'Oliver Brown', 'Designer and Developer'), but the URL was never written to the Instagram property. Website (denken.studio), LinkedIn and Email are all set.",
+      "fix": "Set Instagram to https://www.instagram.com/olbrown (already verified in site-02)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) set. Broader capabilities (Identity systems, Graphic design, Type design, apps) are correctly raised as Open Question 1 for Jonathan to approve before expanding tags."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country UK, Size 2-10, Work Status Studio. AI Notes records Edinburgh location and two-principal structure. Sources (olbrown.com capabilities list + Selected Projects) support the read."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio); Autonomy is optional per checklist calibration note. Autonomy 5 is set with reasoning ('independent studio delivering full projects unsupervised, inferred from client work and self-run structure'). Acceptable."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; no clip note implies a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2022-03-27' with no relationship facts or instructions beyond the URL. Source field uses this verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list is prefaced 'Client roster via Olivers practice'; Autonomy inference is marked 'inferred from client work and self-run structure'. Seniority read present ('senior, design-and-build capable end to end'). No em-dashes. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-03-27'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by. source_url is null throughout, which is a known systemic tooling gap, not a gate failure per checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions and captions reviewed; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question asking Jonathan to approve expanding Capabilities. Terse, conditional (current tags are narrower than the studio's documented scope, so the question is warranted). No story nudge needed (no relationship)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching; this report gates the flip to Needs Review."
+    }
+  ],
+  "to": "scraper"
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "f785b3ad-fb49-4497-a129-9fc716e1c966",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:15:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 4 distinct named projects: Aware (iOS health app), Superlist (macOS task manager), BLOK (fitness mobile app), SwiftUI Field Guide (interactive documentation UI). No duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior screens per project; Aware shows biomarker data views, Superlist shows inbox and task detail, BLOK shows login + home + filter screens, SwiftUI Field Guide shows topic grid, interactive demo, and code panel."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 work images are product/digital UI: iOS and macOS app screens and an interactive web doc tool. site-02 and site-03 are illustration assets from the Aware project (in-app icons), still within product design scope. Capability tagged: Product design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed nicholaschristowitz.com homepage (tagline, project nav visible). site-14.png: confirmed instagram.com/nicholaschristowitz profile (bio 'Design for glowing rectangles', grid visible, logged-out view). Both are correct and distinct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions and source links. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio work in the tagged Capability (Product design). No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present and complete. LinkedIn absence is documented in AI Notes ('no LinkedIn by choice')."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: nicholaschristowitz.com. Instagram: instagram.com/nicholaschristowitz (verified correct person via profile bio). LinkedIn: documented absent by choice in AI Notes. Email: hello@nicholaschristowitz.com."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Product design per TAXONOMY.md. An Open Question proposes reclassifying to 'Digital product design'; left for Jonathan. Tagging is defensible as-is."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 1. Work Status: Freelance, resolved via self-positioning on site + interview title ('Freelance Product Designer'), no LinkedIn conflict. AI Notes names the sources."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent), reasoning in AI Notes: 'scoped-task freelancer per Jonathans note, delivers independently.'"
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "fail",
+      "evidence": "Familiarity is set to 'Don't know them' (set_by: agent) despite Jonathan's Notes stating 'I worked with him on Intercom product. 2-3 days a week.' and including personal characterisations ('a bit grumpy', 'hates bad UX'). CLAUDE.md is explicit: never write a zero-state that evidence contradicts. This field must be left empty pending Jonathan's answer, not filled with a knowingly-false zero-state. The scraper did ask the correct Open Question (Q1 asks Familiarity), but also wrote the contradicting value, which is the error.",
+      "fix": "Clear Familiarity to empty (do not write any value). Leave Open Question 1 as-is; it correctly flags the ambiguity for Jonathan. Provenance: remove the agent-set 'Don't know them' entry or mark as retracted."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Worked Together: Once set_by jonathan. Day Rate: 660 set_by jonathan. Rating: 4 set_by jonathan. Open Questions covers Familiarity and the Capability reclassification question."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences ('interview titles him Freelance Product Designer'). Seniority read present ('Senior product designer, strong UX focus'). Work status sources named. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-04-07'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url nulls are a known systemic tooling gap and not a gate fail per checklist note (2026-06-21). set_by values are correct throughout."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse questions: Q1 Familiarity (conditional on the evidence from Notes, correct); Q2 Capability reclassification (genuine ambiguity). Neither asks for a field already holding a non-zero-state value that was set by Jonathan."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will be flipped to Needs Review only on a clean pass."
+    }
+  ],
+  "to": "scraper"
+}

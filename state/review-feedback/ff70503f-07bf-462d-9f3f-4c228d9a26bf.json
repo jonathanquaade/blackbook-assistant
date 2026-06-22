@@ -1,0 +1,114 @@
+{
+  "page_id": "ff70503f-07bf-462d-9f3f-4c228d9a26bf",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T09:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: The New York Times (site-04 to 07), The New Yorker (site-08 to 10), Open Spaces (site-11, 12), Kinfolk Travel (site-14 to 16). No repeated-project duplicates among the 12 work images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "NYT has 4 interior editorial illustrations, New Yorker 3, Open Spaces 2 (different compositions), Kinfolk 3 including an animated gif of map detail. Goes inside projects, not only covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 non-context images are illustration. Three off-cap items (LTC brand identity and stationery) are correctly rejected in manifest with documented reasons. Minor note: site-15 and site-16 are Kinfolk magazine spread shots where the map illustration occupies roughly the right-hand quarter of a two-page editorial spread; the map IS visible and credited, but these shots are dominated by editorial photography. Not a capability fail; the work is identifiably his illustration. Flagged as a taste note for Jonathan."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-17.png opened: lourencoprovidencia.com homepage confirmed (name in top-left, Illustration/Art navigation, portfolio image visible). site-18.png opened: instagram.com showing handle @lourencoprovidencia, 145 posts, 9,047 followers, illustration grid confirmed. Both captions and sources match the actual pages."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have captions with project name and source link. No anonymous or uncaptioned entries in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "N/A: Lourenco is an illustrator; no video or audio work in scope. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Email absence documented in AI Notes: site returns 503, no primary source confirms an address. No known unchecked sources remain."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent. Correct for a solo illustrator."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: lourencoprovidencia.com (set). Instagram: instagram.com/lourencoprovidencia (set, verified correct person by profile inspection). LinkedIn: set. Email: absent, documented in AI Notes (site 503). No obvious search was skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged; set_by: jonathan (migration baseline). Open Question asks Jonathan whether to add Art practice given gallery representation, which is appropriate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US (NYC base). Size: 1. Work Status: Freelance. Multi-source reasoning in AI Notes: LinkedIn self-describes as freelance illustrator/designer, consistent with editorial and gallery client pattern. Note: Portugal birthplace documented in AI Notes but Country records current base (US). Defensible; Jonathan may want to add Portugal if he prefers origin-inclusive tagging, but not a gate fail."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: solo illustrator delivering finished commissions and selling autonomous gallery work, inferred. Seniority read present: mid-career, ~10 yrs, strong editorial reputation."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them. Source is a 2022 web clipper with no stated relationship. No contradiction with any evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is plain web clipper entry (2022-04-07). No instruction text in the clip note. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Gallery representation stated as verifiable fact (Uprise Art, Paper Collective, Artsy are named). Work Status reasoning documents sources. Autonomy hedged as inferred. Seniority prose included (~10 yrs, strong editorial reputation). No bare assertions of taste or uncredited inference found. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-04-07' -- present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null throughout -- noted as known systemic tooling gap, not a v1 gate fail per checklist. set_by values are correct (agent for researched fields, migration for baseline Website/Country, jonathan for Capabilities which Jonathan set). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found. Semicolons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question: whether to add Art practice Capability given gallery representation. Conditional: Capabilities currently only has Illustration, so the question is not redundant. No story nudge needed (Worked Together remains Never, Familiarity remains Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": [
+    "Kinfolk map shots (site-15, site-16) show full magazine spreads where the map illustration is in the right-hand quarter of the image; editorial photography dominates the frame. The illustration is present and credited, so not a capability fail, but Jonathan may prefer tighter crops of the map itself on a revisit.",
+    "Country field records US (current NYC base) but Lourenco is Portuguese. AI Notes documents the discrepancy. Jonathan may want to add PT if he tracks origin as well as base."
+  ],
+  "to": null
+}

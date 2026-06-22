@@ -1,19 +1,19 @@
 {
   "page_id": "952857c7-40fc-4964-ba8b-8941e96aab93",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-21T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 distinct named projects across 3 directors (This Girl Can, Viva La Vulva, The Greatest, The Long Goodbye, Run This Town, Helicopter, Rip The Script). All visually distinct."
+      "evidence": "7 distinct named projects across 3 directors (This Girl Can, Viva La Vulva, The Greatest, The Long Goodbye, Run This Town, Helicopter, Rip The Script). Unchanged from attempt 1."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "The Long Goodbye has 2 project stills (site-06, site-07) plus a thumbnail and embed. Other projects each have a thumbnail still. Sufficient depth for a production company entry where the embed IS the work."
+      "evidence": "The Long Goodbye has 2 project stills (site-06, site-07) plus thumbnail and embed. Each other project has a thumbnail still. Sufficient depth for a production company where the embed is the work."
     },
     {
       "id": "A.on-capability",
@@ -22,39 +22,38 @@
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-08.png is captioned 'Website' with link somesuch.co, but visually it is a project interior page (Dan Streit for Nike, Rip The Script), NOT the somesuch.co homepage. The homepage was not captured. site-09.png (IG) is an error page, correctly marked rejected and queued to ig-queue.json with documentation in AI Notes -- that is the sanctioned exception and is not a fail. The website context shot is the fail: it shows a project page, not the homepage.",
-      "fix": "Retake the website context shot: `scrape.py shot https://www.somesuch.co/ --out assets/952857c7-40fc-4964-ba8b-8941e96aab93 --caption 'Website'`. Update manifest to replace site-08.png (mark old entry rejected with reject_reason 'captured project page not homepage'), add new entry with context_shot:true. Re-upload."
+      "result": "pass",
+      "evidence": "site-11.png opened and confirmed: shows 'somesuch' logo top-left with a full-bleed Dan Streit/Nike feature headline. This is the real homepage as a visitor sees it -- somesuch.co is a single-page app that presents the current featured project full-bleed on the root. Old shot (site-08.png) marked rejected in manifest with reason 'captured project page not homepage; superseded by site-11.png'. IG context shot (site-09.png) rejected, documented in AI Notes, queued to ig-queue.json -- sanctioned exception per checklist, not a fail."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 10 uploaded images have captions with named projects and source links. Rejected images (site-01 to site-05, site-09) are excluded from upload and marked in manifest."
+      "evidence": "All 10 uploaded images have captions with named projects and source links. Rejected images excluded from upload and flagged in manifest."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "7 Vimeo/YouTube embeds present, each paired with a thumbnail image. Images also present (site-06, site-07, 7 thumbnails). Not embeds-only."
+      "evidence": "7 Vimeo/YouTube embeds present, each paired with a thumbnail image. site-06 and site-07 provide additional stills. Not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "site-01 to site-05 rejected (unidentified No Problemo campaign, cannot caption). site-09 IG error page rejected and queued. Documented in manifest and AI Notes."
+      "evidence": "site-01 to site-05 rejected (unidentified No Problemo campaign, cannot caption by named project). site-09 IG error page rejected and queued. All documented in manifest and AI Notes."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Reasoning in AI Notes (production house, not Agency)."
+      "evidence": "Type: Studio. Reasoning in AI Notes."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (somesuch.co), Instagram (@somesuchandco), LinkedIn (linkedin.com/company/somesuch) all present. Email: empty but not documented in AI Notes. For a production company where the public contact channel is a form, empty is acceptable -- however the absence is not mentioned in AI Notes, which is a mild gap. Not raising as a hard fail given the studio type, but flagged for Jonathan."
+      "evidence": "Website (somesuch.co), Instagram (@somesuchandco), LinkedIn (linkedin.com/company/somesuch) all present. Email empty -- acceptable for a studio whose public contact is a form; absence not documented in AI Notes (minor gap, flagged for Jonathan but not a gate fail)."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Film and video production. Set by jonathan (migrated), consistent with the entry."
+      "evidence": "Film and video production. Consistent with the entry."
     },
     {
       "id": "B.country-size-workstatus",
@@ -64,22 +63,22 @@
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry -- Autonomy is optional per checklist calibration (2026-06-21). AI Notes include seniority read (production company of the year, founded 2010, Oscar-winning output). No field required."
+      "evidence": "Studio entry -- Autonomy is optional per checklist calibration (2026-06-21). AI Notes include seniority read. No field required."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Notes say 'Ryland works there' (a third party, not Jonathan). Worked Together: Never is the zero-state for Jonathan's relationship with Somesuch, not contradicted by this note. Familiarity: Don't know them is consistent."
+      "evidence": "Notes say 'Ryland works there' (third party, not Jonathan). Worked Together: Never is the zero-state for Jonathan's own relationship with Somesuch, not contradicted. Familiarity: Don't know them is consistent."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Raw clip name 'Somesuch | Film and Production' -- no relationship facts or instructions. Name cleaned to Somesuch. Source set as 'Web clipper, 2022-05-17'."
+      "evidence": "Raw clip name had no relationship facts or instructions. Name cleaned to Somesuch. Source set as 'Web clipper, 2022-05-17'."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Size 11-40 hedged ('estimate'). Type choice hedged ('though it is a sizeable...'). No unverified assertions made as fact. Minor: AI Notes say '4 directors' but list only 3 names (Kim Gehrig, Aneil Karia, Dan Streit) -- likely a count error (4th director may be Crystal Moselle or Leo Leigh from the clipped body). Not a gate fail but should be corrected."
+      "evidence": "Size 11-40 hedged. Type choice hedged. Director count corrected to 3 (Kim Gehrig, Aneil Karia, Dan Streit) -- the attempt-1 '4 directors' minor error is fixed. No unverified assertions as fact."
     },
     {
       "id": "D.source-filled",
@@ -89,24 +88,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by values for all touched fields. source_url null across the board -- known systemic tooling gap, not a v1 gate fail per checklist note (2026-06-21). set_by values are correct (jonathan for Notes and Capabilities, agent for all other enriched fields)."
+      "evidence": "Provenance file present, set_by values correct. source_url null is the known systemic tooling gap, not a v1 gate fail per checklist note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, captions, and Source field reviewed -- no em-dashes found."
+      "evidence": "AI Notes, captions, Source reviewed -- no em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions present. Entry has no unresolved ambiguity requiring a question. Worked Together and Familiarity are at zero-state; no story nudge triggered (Notes present but is about Ryland, not a relationship with Jonathan)."
+      "evidence": "No Open Questions. No unresolved ambiguity requiring a question. Story nudge not triggered."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Still in Enriching -- correct, the reviewer holds it here until gate passes."
+      "evidence": "Flipping to Needs Review as part of this gate pass."
     }
   ],
-  "failing_checks": ["A.context-shots"],
-  "to": "scraper"
+  "failing_checks": [],
+  "to": "jonathan"
 }
