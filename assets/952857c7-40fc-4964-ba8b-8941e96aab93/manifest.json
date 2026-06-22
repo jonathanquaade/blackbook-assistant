@@ -64,7 +64,9 @@
     "caption": "Website",
     "link": "https://www.somesuch.co/",
     "captured_at": "2026-06-21",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "captured project page not homepage (reviewer flag); superseded by site-11.png"
   },
   {
     "file": "site-09.png",
@@ -75,6 +77,33 @@
     "context_shot": true,
     "rejected": true,
     "reject_reason": "Instagram blocked headless Playwright with Something went wrong error page; queued to ig-queue.json for logged-in ig.py grab"
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://www.somesuch.co/",
+    "caption": "Website",
+    "link": "https://www.somesuch.co/",
+    "captured_at": "2026-06-21",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "duplicate homepage shot; superseded by site-11.png"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://www.somesuch.co/",
+    "caption": "Website",
+    "link": "https://www.somesuch.co/",
+    "captured_at": "2026-06-22",
+    "context_shot": true
+  },
+  {
+    "file": "site-12.jpg",
+    "source_url": "https://assets.yesstud.io/somesuchandco/cache/somesuchandco-6848-b75-q80-rz3-sm0-w1024.jpg",
+    "caption": "Website",
+    "link": "https://www.somesuch.co/",
+    "captured_at": "2026-06-22",
+    "rejected": true,
+    "reject_reason": "shop merchandise item (vinyl record), not work content"
   },
   {
     "file": "thumb-this-girl-can.jpg",
@@ -166,13 +195,5 @@
     "url": "https://vimeo.com/1198837563",
     "caption": "Nike, Rip The Script (2026 World Cup film), dir. Dan Streit, 2026",
     "link": "https://somesuch.co/directors/danstreit"
-  },
-  {
-    "file": "site-10.png",
-    "source_url": "https://www.somesuch.co/",
-    "caption": "Website",
-    "link": "https://www.somesuch.co/",
-    "captured_at": "2026-06-21",
-    "context_shot": true
   }
 ]

@@ -42,3 +42,20 @@ Apple Music, Run This Town (Rihanna Super Bowl halftime), dir. Kim Gehrig, 2023 
 A$AP Rocky, Helicopter, dir. Dan Streit, 2026 — somesuch.co · video
 
 Nike, Rip The Script (2026 World Cup film), dir. Dan Streit, 2026 — somesuch.co · video
+# Archived page body (2026-06-22)
+
+Work
+
+Sport England, This Girl Can, dir. Kim Gehrig, 2015 — somesuch.co · video
+
+Libresse, Viva La Vulva, dir. Kim Gehrig, 2018 — somesuch.co · video
+
+Apple, The Greatest, dir. Kim Gehrig, 2022 — somesuch.co · video
+
+The Long Goodbye, dir. Aneil Karia, 2022 (Oscar, Best Live Action Short) — somesuch.co · video
+
+Apple Music, Run This Town (Rihanna Super Bowl halftime), dir. Kim Gehrig, 2023 — somesuch.co · video
+
+A$AP Rocky, Helicopter, dir. Dan Streit, 2026 — somesuch.co · video
+
+Nike, Rip The Script (2026 World Cup film), dir. Dan Streit, 2026 — somesuch.co · video

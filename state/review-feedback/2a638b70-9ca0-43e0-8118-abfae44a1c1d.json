@@ -1,0 +1,111 @@
+{
+  "page_id": "2a638b70-9ca0-43e0-8118-abfae44a1c1d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-22T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Cohere/Pentagram, Equipmii/Design Machine, Kili/ON, Financial Times/Red Badger. No repeated project across captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project showing different screens and views (hero + interior for Equipmii and Kili; multiple social/brand tiles for Cohere; paywall + editorial screens for FT)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Web design. Equipmii (UI/web), Kili (UI/web), FT (web UX) are clearly on-capability. Cohere/Pentagram (brand identity rebrand) is adjacent but off strict Web design; however the scraper documented the ambiguity in AI Notes and raised an Open Question to expand Capabilities. Not bouncing for this: the OQ is the correct channel and the majority of images are on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Website context shot (site-13.png) confirmed correct: elif-gurbuz.com homepage. IG context shot (site-14.png) is correctly rejected in the manifest (confirmed 'Something went wrong' error page), documented in AI Notes as queued. BUT the IG queue entry is MISSING from state/ig-queue.json. The manifest reject_reason and AI Notes both state 'queued to ig-queue.json' yet no entry for page_id 2a638b70-9ca0-43e0-8118-abfae44a1c1d exists in that file. The sanctioned exception (checklist A.context-shots) requires the entry to actually be queued; it is not.",
+      "fix": "Add the missing entry to state/ig-queue.json: {page_id: '2a638b70-9ca0-43e0-8118-abfae44a1c1d', name: 'Elif Gürbüz', ig_url: 'https://www.instagram.com/e__lifgurbuz/', reason: 'IG context shot blocked headless (Something went wrong error page); need logged-in ig.py grab for @e__lifgurbuz profile context shot', queued_at: '2026-06-21'}. No other work changes needed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every uploaded image has a caption naming the project and a source link to the Behance case study or the website."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Web/digital designer; no audio or video embeds required or expected."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site /design section returned 401 (documented). IG headless blocked and documented in AI Notes and manifest. Sanctioned path followed except for the missing queue entry (caught above)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance designer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: elif-gurbuz.com. Instagram: instagram.com/e__lifgurbuz (confirmed via Behance profile, noted in AI Notes). LinkedIn: uk.linkedin.com/in/elif--gurbuz. Email: hello@elif-gurbuz.com from her site. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design tagged. Open Question asks Jonathan whether to expand to Digital product design, Creative direction, Creative technology. Appropriate given her multi-disciplinary work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Freelance. AI Notes name the sources (own site + Behance both state freelance digital design director; LinkedIn consistent)."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: director-level, runs her own studio (Design Machine), 12-14 years, ex-Pentagram/AKQA/W+K/R/GA."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or body text contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source shows Web clipper, 2022-05-11. No instruction text was in the clip note beyond the URL."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read, career trajectory, work status sources, Autonomy reasoning, and IG confirmation path. No unverified plain assertions; factual claims (clients, employers) are drawn from public sources."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-05-11'. Filled and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present. source_url nulls are the known systemic tooling gap (not a v1 gate failure per checklist note). set_by values correct: agent for research fields, jonathan for Capabilities and Rating."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question about expanding Capabilities. Not asking about fields that already have non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, as expected before this gate. Will flip to Needs Review only on pass."
+    }
+  ],
+  "to": "scraper"
+}
