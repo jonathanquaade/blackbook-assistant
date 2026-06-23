@@ -1,112 +1,31 @@
 {
   "page_id": "7b8464c9-bc25-4e72-98ac-263fac6dfff1",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:20:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
-    {
-      "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "5 distinct projects: GXS Brand Stories, Savitri (Epigram Books), Dream Island (Epigram Books), Risograph Inspired Illustrations, Sanctuary. No repeated project captions."
-    },
-    {
-      "id": "A.depth-over-breadth",
-      "result": "pass",
-      "evidence": "Savitri and Dream Island each have cover + 2 interior spreads. Personal series shown with 3 prints each. Not hero-only."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "pass",
-      "evidence": "Capabilities tagged Illustration (jonathan-set from migration). All 12 work images are illustrations. Open Question 1 correctly asks Jonathan about adding 3D & motion and Graphic design."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "pass",
-      "evidence": "site-16.png confirmed as laihuili.myportfolio.com (colourful illustration grid, lai huili logo). site-17.png confirmed as real instagram.com/laihuili (Huili Lai bio, Art director/illustrator, illustration grid)."
-    },
-    {
-      "id": "A.no-uncaptioned",
-      "result": "pass",
-      "evidence": "All 14 non-rejected manifest entries have project-named captions and source links."
-    },
-    {
-      "id": "A.embeds-for-video",
-      "result": "pass",
-      "evidence": "Illustrator; portfolio is image-only projects. No video embeds to embed."
-    },
-    {
-      "id": "A.absence-explained",
-      "result": "pass",
-      "evidence": "No throttle or gating issues. IG context shot captured successfully. No unexplained thin sections."
-    },
-    {
-      "id": "B.type",
-      "result": "pass",
-      "evidence": "Type: Person. Correct."
-    },
-    {
-      "id": "B.links",
-      "result": "fail",
-      "evidence": "Email field is empty and AI Notes does not document whether a public email was searched. CLAUDE.md requires capturing public contact email during P1. Her portfolio site (Adobe Portfolio) may use a contact form rather than a direct email, but that must be stated explicitly. Her IG bio has a Linktree-style info link that may expose one.",
-      "fix": "Check laihuili.myportfolio.com/contact (or equivalent) and her IG Linktree link for a public email. If none found, add one sentence to AI Notes: 'No public email found: contact form only on portfolio site, no email in IG bio link.' If found, set it via keeper.py set."
-    },
-    {
-      "id": "B.capabilities",
-      "result": "pass",
-      "evidence": "Tag is jonathan-origin from migration (set_by: jonathan). Open Question 1 asks about additions. Cannot overwrite unilaterally; asking is correct."
-    },
-    {
-      "id": "B.country-size-workstatus",
-      "result": "pass",
-      "evidence": "Country: Singapore (confirmed on portfolio + IG bio). Size: 1. Work Status: Employed (CraveFX); AI Notes records site + LinkedIn agree."
-    },
-    {
-      "id": "B.autonomy",
-      "result": "pass",
-      "evidence": "Autonomy: 3, set_by: agent. Hedged: skilled maker, employed in-house, no evidence of solo project leadership. Reasoning in AI Notes."
-    },
-    {
-      "id": "C.no-judgment-contradiction",
-      "result": "pass",
-      "evidence": "No judgment fields contradict evidence. Zero-states (Never/Don't know them/Unvetted) are appropriate: no relationship claim in the clip note."
-    },
-    {
-      "id": "C.clip-note-acted-on",
-      "result": "pass",
-      "evidence": "No clip note instructions found (no clipped.md; body was empty or already cleared). Nothing to act on."
-    },
-    {
-      "id": "C.ai-notes-hedged",
-      "result": "pass",
-      "evidence": "AI Notes hedges Autonomy estimate explicitly. Verifiable facts (CraveFX employer, Singapore location, portfolio URL, graduation year) are asserted. Seniority and trajectory present. No em-dashes."
-    },
-    {
-      "id": "D.source",
-      "result": "pass",
-      "evidence": "Source: Web clipper, 2021-11-29. Filled."
-    },
-    {
-      "id": "D.provenance",
-      "result": "pass",
-      "evidence": "Provenance file present with correct set_by values for all touched fields. source_url null throughout (known systemic tooling gap, not a gate failure per calibration note 2026-06-21)."
-    },
-    {
-      "id": "D.no-em-dashes",
-      "result": "pass",
-      "evidence": "No em-dashes in AI Notes or Open Questions."
-    },
-    {
-      "id": "D.open-questions",
-      "result": "pass",
-      "evidence": "One question, terse, conditional on jonathan-set Capabilities. No story nudge needed."
-    },
-    {
-      "id": "D.status",
-      "result": "pass",
-      "evidence": "Entry is in Enriching. Gate running before flip to Needs Review, correct."
-    }
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5 distinct projects: GXS Brand Stories, Savitri (Epigram Books), Dream Island (Epigram Books), Risograph Inspired Illustrations, Sanctuary."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Savitri and Dream Island each have cover + 2 interior spreads; personal series shown with 3 prints each. Not hero-only."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All 12 work images are illustrations matching the Illustration capability tag."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-16.png confirmed laihuili.myportfolio.com (illustration grid, lai huili logo). site-17.png confirmed instagram.com/laihuili (Huili Lai bio, art director/illustrator, illustration grid)."},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 14 non-rejected manifest entries have project-named captions and source links."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Portfolio is image-only illustration projects. No video embeds needed."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No throttle or gating issues. IG context shot captured successfully."},
+    {"id": "B.type", "result": "pass", "evidence": "Type: Person. Correct."},
+    {"id": "B.links", "result": "pass", "evidence": "Email now set to laihuili.94@gmail.com (from mailto in myportfolio footer). Website, Instagram, LinkedIn all present. Prior FAIL resolved."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Illustration tag is jonathan-origin from migration. Open Question 1 asks about adding 3D & motion and Graphic design."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country: Singapore. Size: 1. Work Status: Employed (CraveFX); AI Notes records site + LinkedIn agree."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy: 3, set_by: agent. Hedged in AI Notes with reasoning."},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states appropriate; no relationship claim in clip note."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "No clip note instructions. Nothing to act on."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes hedges Autonomy. Verifiable facts asserted. Seniority and trajectory present. No em-dashes."},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-11-29."},
+    {"id": "D.provenance", "result": "pass", "evidence": "Provenance present with correct set_by values. Null source_url is the known systemic gap, not a gate failure."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes in AI Notes or Open Questions."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse, conditional question on Capabilities. Appropriate."},
+    {"id": "D.status", "result": "pass", "evidence": "Flipped to Needs Review on this gate pass."}
   ],
-  "summary": "Single FAIL: Email field is empty with no documentation in AI Notes of whether a public email was searched. All 19 other checks pass. Quick fix: check portfolio contact page and IG Linktree link; either set the email or add one sentence to AI Notes documenting the absence.",
-  "to": "scout"
+  "summary": "All 20 checks pass. The sole attempt-1 FAIL (Email empty/undocumented) is resolved: Email is set to laihuili.94@gmail.com from the mailto link in her myportfolio footer.",
+  "to": null
 }

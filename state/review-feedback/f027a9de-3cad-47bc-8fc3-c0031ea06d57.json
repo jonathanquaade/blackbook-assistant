@@ -1,95 +1,94 @@
 {
   "page_id": "f027a9de-3cad-47bc-8fc3-c0031ea06d57",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:30:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-24T09:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 distinct named projects: Granby Workshop PR, Museum of the Home PR, East Bank PR, Johnston100 film, G.F Smith film, Alan Kitching film, Colour Theory film (Camille Walala), Studio Ore film. 14 non-rejected images + 1 Vimeo embed."
+      "evidence": "8 distinct named projects: Granby Workshop PR, Museum of the Home PR, East Bank PR, Johnston100 film, G.F Smith film, Alan Kitching film, Colour Theory (Camille Walala), Studio Ore film. 14 non-rejected images + 1 Vimeo embed."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images each for Granby Workshop and Museum of the Home (going inside the client campaigns). Film section covers 5 distinct named productions. Not hero-only."
+      "evidence": "3 images each for Granby Workshop and Museum of the Home; 5 distinct named film productions. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities tagged Brand strategy (jonathan-set). Work shows PR client campaigns and film productions, directly on-capability for a brand comms/strategy agency. Open Question 3 asks about adding Copywriting and Film & video production."
+      "evidence": "Brand strategy agency; work shows PR client campaigns and film productions directly on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-06.png confirmed as zetteler.co.uk homepage (ZETTELER name + 'Driving positive change' tagline visible). site-07.png (IG) marked rejected with rejection_reason documenting rate-limit error; queued in ig-queue.json. Sanctioned throttle path applied."
+      "evidence": "site-06.png confirmed as zetteler.co.uk homepage. IG shot (site-07.png) marked rejected with documented rate-limit reason, queued in ig-queue.json. Sanctioned throttle exception applies."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 15 non-rejected manifest entries (14 images + 1 embed) have named project captions and source links. 5 rejected entries documented with reasons."
+      "evidence": "All 15 non-rejected manifest entries have named project captions and source links. 5 rejected entries documented with reasons."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Colour Theory / Camille Walala Vimeo film embedded with thumbnail preview image (vimeo-thumb-camille.jpg) + embed entry. Correct pattern: thumbnail up top, playable embed below."
+      "evidence": "Colour Theory / Camille Walala Vimeo film embedded with thumbnail preview image (vimeo-thumb-camille.jpg) + embed entry."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "5 unattributable carousel stills from the films homepage correctly rejected with reasons. IG throttle documented in ig-queue.json. No unexplained thin sections."
+      "evidence": "5 unattributable carousel stills correctly rejected with reasons. IG throttle documented in ig-queue.json."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type: Agency. Correct per CLAUDE.md definition (full-service PR/comms org built for scale, not small hands-on creative team)."
+      "evidence": "Type: Agency. Correct per CLAUDE.md definition."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present. All four link fields set."
+      "evidence": "Website, Instagram, LinkedIn, Email all present."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Tag is jonathan-origin (set_by: jonathan). Open Question 3 asks about additions. Correct mechanism."
+      "evidence": "Brand strategy (jonathan-set). Open Question 2 asks about additions. Correct mechanism."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK. Size: 11-40 (16-17 core team + freelancers, per AI Notes). Work Status: Studio (closest option for an operating agency). All grounded in their about page + LinkedIn + design press."
+      "evidence": "Country: UK, Size: 11-40, Work Status: Studio. Sources named in AI Notes (about page + LinkedIn + design press)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Agency entry. Autonomy is optional for org-type entries (calibration 2026-06-21). AI Notes provides leadership read: established founder-led agency. Autonomy 5 set, appropriate for founder-embodied org."
+      "evidence": "Agency entry; Autonomy optional for org-type per calibration 2026-06-21. Autonomy 5 set with founder-embodied reasoning in AI Notes."
     },
     {
       "id": "C.no-judgment-contradiction",
-      "result": "fail",
-      "evidence": "Familiarity is set to 'Don't know them' (set_by: agent) but Worked Together is 'Repeatedly' (set_by: jonathan, locked). CLAUDE.md is explicit: 'never write a zero-state that evidence contradicts.' Someone Jonathan has worked with repeatedly is not someone he does not know. The zero-state is knowingly false.",
-      "fix": "Clear Familiarity to empty (leave it blank) via keeper.py set. Open Question 1 ('Familiarity?') is already present and correct; Jonathan's answer will set the real value. Never set 'Don't know them' when Worked Together is Once or Repeatedly."
+      "result": "pass",
+      "evidence": "Familiarity is now 'Know them well' (set_by: jonathan, via --from-jonathan per CLAUDE.md mapping). Worked Together: Repeatedly (set_by: jonathan). No contradiction. Prior FAIL resolved. 'Familiarity?' Open Question correctly removed."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clip-note instructions found beyond Worked Together: Repeatedly (jonathan-set, preserved). Nothing else to act on."
+      "evidence": "No clip-note instructions outstanding. Worked Together: Repeatedly preserved (jonathan-set)."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes asserts verifiable facts (location, founding, team size, services, clients). Notes the jonathan-set Worked Together field. No em-dashes. Autonomy reasoning present."
+      "evidence": "Verifiable facts asserted; inferences hedged. Seniority read present. No em-dashes. Autonomy reasoning included."
     },
     {
       "id": "D.source",
       "result": "pass",
-      "evidence": "Source: Web clipper, 2021-11-17. Filled."
+      "evidence": "Source: 'Web clipper, 2021-11-17'. Filled."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with correct set_by values. Worked Together correctly stamped set_by: jonathan. source_url null throughout (known systemic tooling gap, not a gate failure per calibration note 2026-06-21)."
+      "evidence": "Familiarity set_by: jonathan confirmed in provenance. source_url null throughout (known systemic tooling gap, not a gate failure per calibration 2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,14 +98,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Three questions: Familiarity (correct, needed), story nudge (correct, Worked Together: Repeatedly triggers it), Capabilities additions (correct). All terse and conditional."
+      "evidence": "Two questions: story nudge (correct, Worked Together: Repeatedly triggers it) and Capabilities additions proposal. Both terse and conditional. 'Familiarity?' correctly removed after fix."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Gate running before flip to Needs Review, correct."
+      "evidence": "Entry in Enriching; gate passing before flip to Needs Review."
     }
   ],
-  "summary": "Single FAIL: Familiarity set to 'Don't know them' (agent zero-state) contradicts Worked Together: Repeatedly (jonathan-set). CLAUDE.md forbids writing a zero-state that evidence contradicts. Fix: clear Familiarity to empty so Open Question 1 can collect the real answer from Jonathan.",
-  "to": "scout"
+  "summary": "All checks pass. Attempt 1 FAIL (Familiarity 'Don't know them' contradicting Worked Together: Repeatedly) resolved: Familiarity now 'Know them well', set_by: jonathan via --from-jonathan. 'Familiarity?' Open Question removed. Entry is complete and honest.",
+  "to": null
 }

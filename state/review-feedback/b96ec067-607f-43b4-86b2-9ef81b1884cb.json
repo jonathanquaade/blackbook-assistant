@@ -1,39 +1,39 @@
 {
   "page_id": "b96ec067-607f-43b4-86b2-9ef81b1884cb",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:25:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-24T08:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 distinct projects across the manifest (Nike CNY 2025, 2024, 2023; Decade exhibition; Lunar Lotus packaging; Coach Play Macao; Macao Design Awards 2023 Tokyo). 14 non-rejected images."
+      "evidence": "7 distinct projects: Nike CNY 2025, 2024, 2023; Decade exhibition; Lunar Lotus packaging; Coach Play Macao; Macao Design Awards 2023 Tokyo. 14 non-rejected images."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: 3 campaign images for Nike CNY 2023, cover + detail shot for Lunar Lotus packaging, identity system + poster for Decade exhibition, poster + print collateral for Macao Design Awards. Not hero-only."
+      "evidence": "Goes inside projects: 3 campaign shots for Nike CNY 2023, cover + detail for Lunar Lotus, identity system + poster for Decade, poster + print collateral for Macao Design Awards."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities tagged Graphic design (jonathan-set from migration). All work images are graphic design: campaign illustration, exhibition identity, packaging, retail spatial graphics. On-capability. Open Question 1 asks Jonathan about adding Identity systems, Illustration, and Spatial & exhibition design."
+      "evidence": "Capabilities: Graphic design (jonathan-set). All work is graphic design: campaign illustration, exhibition identity, packaging, retail spatial graphics. On-capability. Open Question 1 asks about adding Identity systems, Illustration, Spatial & exhibition design."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-16.png confirmed as indegodesign.com homepage (project grid, Indego Design branding visible). site-17.png (IG @indego.mo) marked rejected with rejection_reason documenting the rate-limit error; queued in state/ig-queue.json. Sanctioned throttle path applied. AI Notes documents the queue."
+      "evidence": "site-16.png confirmed as indegodesign.com homepage (project grid, Indego Design nav visible). site-17.png (IG @indego.mo) rejected + rejection_reason documents headless rate-limit error; queued in state/ig-queue.json. Sanctioned throttle path applied per checklist exception."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 14 non-rejected manifest entries have project-named captions and source links. 3 rejected entries (Nike sneaker product shot, Nike swoosh logo, IG error page) correctly excluded."
+      "evidence": "All 14 non-rejected manifest entries have project-named captions and source links."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Graphic design studio; no video embeds required. Coach Play GIF captured as image. No accessible video pages missed."
+      "evidence": "Graphic design studio; no video embeds required. Coach Play GIF captured as image."
     },
     {
       "id": "A.absence-explained",
@@ -43,43 +43,42 @@
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type: Studio. Correct (small specialized team, hands-on execution in Macao)."
+      "evidence": "Type: Studio. Correct for a small specialized team doing hands-on execution in Macao."
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "LinkedIn field is absent from the entry and AI Notes does not document whether a company LinkedIn page was searched. CLAUDE.md requires capturing LinkedIn (company pages for studios) during P1. A Macao studio founded 2021 may not have a LinkedIn page, but that must be stated.",
-      "fix": "Search 'Indego Design Macao linkedin' to check for a company page. If found, set it via keeper.py set. If none exists, add one sentence to AI Notes: 'No LinkedIn company page found for Indego Design.'"
+      "result": "pass",
+      "evidence": "Website, Instagram, Email all set. LinkedIn: AI Notes now explicitly states 'Company LinkedIn searched (Indego Design Macao linkedin); only result was INDEGO GmbH (unrelated European firm), no Indego Design Macao company page found.' Absence documented. This was the attempt-1 FAIL; now resolved."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Tag is jonathan-origin from migration (set_by: jonathan). Open Question 1 asks about additions. Correct mechanism."
+      "evidence": "jonathan-set from migration. Open Question 1 proposes additions. Correct mechanism."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: China (Macao SAR). Size: 2-10 (7 staff, corrected from 11-40, noted in AI Notes). Work Status: Studio. All grounded in site/about + Macao News profile per AI Notes."
+      "evidence": "Country: China. Size: 2-10 (7 staff, corrected in AI Notes). Work Status: Studio. Grounded in site/about + Macao News profile."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry. Autonomy is optional for org-type entries (calibration 2026-06-21). AI Notes provides leadership read: founder-led, established creative voice. Autonomy 5 set is fine for a founder-embodied studio."
+      "evidence": "Studio (org) entry; Autonomy optional per calibration 2026-06-21. Autonomy 5 set for founder-embodied studio with reasoning in AI Notes."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states appropriate. No relationship claim in the original clip note. No contradictions."
+      "evidence": "Zero-states appropriate. No relationship claim in clip note. No contradictions."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clip-note instructions found beyond the basic entry. Nothing to act on."
+      "evidence": "No clip-note instructions beyond the basic entry. Nothing to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes asserts verifiable facts (founding year, staff count, clients, office-share). Sources named. No em-dashes. Autonomy reasoning present."
+      "evidence": "AI Notes asserts verifiable facts (founding year, staff count, clients, office-share). Sources named. No em-dashes. Autonomy reasoning present. Seniority/experience read included (founder-led, established creative voice)."
     },
     {
       "id": "D.source",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with correct set_by values. source_url null throughout (known systemic tooling gap, not a gate failure per calibration note 2026-06-21)."
+      "evidence": "Provenance present with correct set_by values. source_url null (known systemic tooling gap, not a gate failure per calibration 2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,14 +98,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question, terse, conditional on jonathan-set Capabilities. No story nudge needed."
+      "evidence": "One terse conditional question about Capabilities additions. No story nudge needed."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Gate running before flip to Needs Review, correct."
+      "evidence": "Flipping to Needs Review now."
     }
   ],
-  "summary": "Single FAIL: LinkedIn field absent with no documentation in AI Notes that it was searched. All 19 other checks pass. Quick fix: search for a LinkedIn company page; set it if found, or add one sentence to AI Notes documenting the absence.",
-  "to": "scout"
+  "summary": "All 20 checks pass. Prior fail (B.links) resolved: LinkedIn absence now explicitly documented in AI Notes with the search query used and the finding (only INDEGO GmbH found, no Indego Design Macao page). Entry is complete and ready for Jonathan.",
+  "to": null
 }

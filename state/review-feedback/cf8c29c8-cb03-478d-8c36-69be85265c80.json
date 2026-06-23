@@ -1,19 +1,19 @@
 {
   "page_id": "cf8c29c8-cb03-478d-8c36-69be85265c80",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:10:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-24T00:30:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "3 distinct projects: Blitz Club Munich posters (4 shots, multiple years), Ilian Tape record sleeves (2 shots, 2 releases), PARA x 20Seconds Magazine Issue 6 (3 shots including 2 interior spreads)"
+      "evidence": "3 distinct projects confirmed visually: Blitz Club Munich posters, Ilian Tape record sleeves, PARA x 20Seconds Magazine Issue 6"
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Blitz spans Jan 2019, Dec 2019, Mar 2025, Aug 2025; Ilian Tape has ITDP001 and ITLP05 (two separate releases); 20Seconds has cover plus 2 interior spreads"
+      "evidence": "Blitz spans Jan 2019, Dec 2019, Mar 2025, Aug 2025. Ilian Tape has ITDP001 and ITLP05 (two separate releases). 20Seconds has cover plus 2 interior spreads"
     },
     {
       "id": "A.on-capability",
@@ -23,7 +23,7 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-07.png confirmed as anjalekavski.de homepage (Anja Lekavski name visible). site-08.png is the Instagram error page, marked rejected in manifest with reject_reason citing rate-limiting, queued in state/ig-queue.json with correct page_id and reason, and documented in AI Notes. Sanctioned throttle path followed"
+      "evidence": "site-07.png opened and confirmed: shows anjalekavski.de homepage with her name and nav. site-08.png is the IG error page, marked rejected in manifest with documented reason, queued in state/ig-queue.json (confirmed entry present, correct page_id and ig_url), and documented in AI Notes. Sanctioned throttle path followed per checklist exception"
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,12 +33,12 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Graphic design entry; no YouTube/Vimeo on her poster or record-sleeve project pages requiring embedding"
+      "evidence": "Graphic design entry; no embeddable video on her poster or record-sleeve project pages"
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents IG error and queue; no other absent sources"
+      "evidence": "AI Notes documents IG error and queue. No other absent sources"
     },
     {
       "id": "B.type",
@@ -47,9 +47,8 @@
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "LinkedIn and Email are both empty. AI Notes contain no mention of a LinkedIn search attempt or a confirmed absence. CLAUDE.md requires 'ALWAYS search <name> <discipline> linkedin' and 'Genuinely none -> say so in AI Notes'. Neither the field nor the notes document the search.",
-      "fix": "Search 'Anja Lekavski graphic design linkedin' (Google snippet, no login) and 'Anja Lekavski contact email'. If LinkedIn found, fill the field. If genuinely absent after search, write 'LinkedIn: none found after search; Email: none found after search' into AI Notes. Then re-submit."
+      "result": "pass",
+      "evidence": "Website and Instagram present and verified. LinkedIn absent: AI Notes documents two search variants attempted ('Anja Lekavski graphic design linkedin', 'Anja Lekavski Munich linkedin'), no matching profile found. Email absent: AI Notes documents contact page checked directly (links only to Instagram) and snippet suggestion anja@lekavski.de below 0.8 confidence and not set. Both absences documented as required"
     },
     {
       "id": "B.capabilities",
@@ -59,27 +58,27 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Germany, Size: 1, Work Status: Freelance. AI Notes cite site, IG bio and MCBW speaker page as consistent sources for Freelance"
+      "evidence": "Country: Germany, Size: 1, Work Status: Freelance. AI Notes cite site, IG bio, and MCBW speaker page as consistent sources"
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 4, set_by agent, with hedged reasoning in AI Notes: 'runs own practice, curates exhibitions and publications, directs club visual identities end to end'"
+      "evidence": "Autonomy = 4, set_by agent, with hedged reasoning in AI Notes"
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with a web-clipper entry. No relationship claims in the clip note"
+      "evidence": "Zero-states consistent with web-clipper entry. No relationship claims in clip note"
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was Instagram page title 'Anja Lekavski Sarmabot (@anja.lekavski)'. No instructions or relationship facts in it; all acted on (handle verified, name cleaned)"
+      "evidence": "Clip note was Instagram page title 'Anja Lekavski Sarmabot (@anja.lekavski)'. No instructions or relationship facts; handle verified, name cleaned"
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Unverified inferences hedged (Autonomy 4 is hedged, year estimates use '~', 'hard to pin exact start year from public sources'). Seniority read included (mid-career). No em-dashes"
+      "evidence": "Unverified inferences hedged (Autonomy 4 hedged, year estimates qualified, seniority read included). No em-dashes"
     },
     {
       "id": "D.source",
@@ -89,24 +88,24 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present. source_url null across all fields; per calibration note (2026-06-21) this is a known systemic tooling gap, not a gate failure. set_by values are correct (agent for agent-researched fields, jonathan for Capabilities which was migrated as his)"
+      "evidence": "Provenance file present. source_url null is known systemic tooling gap (calibration 2026-06-21), not a gate failure. set_by values correct"
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions"
+      "evidence": "No em-dashes in AI Notes or Open Questions"
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "4 questions, all terse and conditional: Work With? (unvetted, valid), Rating? (empty, valid), Familiarity? (zero-state, valid), Capabilities clarification (substantive ambiguity about multidisciplinary practice)"
+      "evidence": "4 questions: Work With? (unvetted), Rating? (empty), Familiarity? (zero-state), Capabilities clarification (genuine multidisciplinary ambiguity). All terse and conditional"
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer is the gate before Needs Review"
+      "evidence": "Flipping to Needs Review now"
     }
   ],
-  "to": "scout",
-  "summary": "Single failure: LinkedIn and Email were not searched and are undocumented. All image and metadata work is solid. Fix is a one-step search and AI Notes update."
+  "to": null,
+  "summary": "All checks pass on attempt 2. Prior fail (LinkedIn and Email undocumented) resolved: AI Notes now explicitly records both searches and their outcomes. Website context shot confirmed correct. IG queued per sanctioned throttle path."
 }
