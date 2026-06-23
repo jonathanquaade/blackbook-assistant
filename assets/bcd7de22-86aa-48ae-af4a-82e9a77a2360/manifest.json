@@ -119,7 +119,7 @@
     "captured_at": "2026-06-24",
     "context_shot": true,
     "rejected": true,
-    "rejected_reason": "homepage shows Minicircle hero only, not identifiable as Tina Smith portfolio at a glance; replaced by About page shot"
+    "rejected_reason": "homepage shows Minicircle project hero; not identifiable as Tina Smith portfolio; replaced by About page shot"
   },
   {
     "file": "site-02.png",
@@ -137,7 +137,7 @@
     "captured_at": "2026-06-24",
     "context_shot": true,
     "rejected": true,
-    "rejected_reason": "duplicate retake of homepage, still shows Minicircle hero; superseded by About page shot"
+    "rejected_reason": "duplicate homepage retake, still shows Minicircle; replaced by About page shot"
   },
   {
     "file": "site-04.png",
@@ -147,7 +147,7 @@
     "captured_at": "2026-06-24",
     "context_shot": true,
     "rejected": true,
-    "rejected_reason": "work page shows Kids Table hero, still not immediately identifiable as her portfolio; superseded by About page shot"
+    "rejected_reason": "work page shows Kids Table hero, still not identifiable; replaced by About page shot"
   },
   {
     "file": "site-05.png",
@@ -156,5 +156,15 @@
     "link": "https://www.tinasmithdesign.com/about",
     "captured_at": "2026-06-24",
     "context_shot": true
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://www.tinasmithdesign.com/",
+    "caption": "Website",
+    "link": "https://www.tinasmithdesign.com/",
+    "captured_at": "2026-06-24",
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "black screenshot, page had not loaded; site-05.png (About page) is the active website context shot"
   }
 ]

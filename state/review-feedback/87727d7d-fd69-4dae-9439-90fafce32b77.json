@@ -1,0 +1,111 @@
+{
+  "page_id": "87727d7d-fd69-4dae-9439-90fafce32b77",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects: Kaytranada Need It, Post Malone Cooped Up, Audemars Piguet Syncing Sounds, Nike Holiday, Lexus x GQ, Petit Louis"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "AP Syncing Sounds has 3 distinct interior stills; other projects use video thumbnails appropriate for a film director"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is film/video (music videos, commercials, short film, docu-series); matches Film & video production and 3D & motion tags"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opened and confirmed as andre-bato.com homepage (black-and-white film still, nav visible). site-02.png is an IG error page correctly marked rejected:true in manifest, IG block documented in AI Notes, entry confirmed in state/ig-queue.json. Sanctioned throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected image has a named project caption and a source link"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo/YouTube embeds, each paired with a thumbnail preview image captioned and linked to the video. Pattern: thumbnail image then playable embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot blocked by headless rate-limit; documented in AI Notes and confirmed queued to ig-queue.json"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio, set_by agent, consistent with founder-led creative/production company"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Email search now documented in AI Notes: contact page 404, Directors Library listing checked, web search done; no public email found. Absence is documented, not silent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production and 3D & motion set; Open Question asks about adding Creative direction, Photography, Industrial design -- appropriate and conditional"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US + France, Size 2-10 (hedged), Work Status Studio; sources cited in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy 5 set by agent for solo founder. Consistent with checklist calibration note (optional for orgs, appropriate here as single founder embodies the org)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Familiarity: Don't know them and Worked Together: Never are zero-states; clip note contains no relationship signal"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw Name was 'ANDRE BATO CORP'; clipped.md shows only site marketing copy archived. No instructions or relationship facts in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Founding year and career length tied to named sources; Size 2-10 explicitly hedged; IG queue status and email search result both documented"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-11-04"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists; all written fields have set_by entries; source_url null is known systemic tooling gap, not a gate failure per checklist calibration note"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question about Capabilities; no fields with existing non-zero values queried"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review by reviewer on this pass"
+    }
+  ],
+  "summary": "All checks pass. Attempt-1 fail (email absent and undocumented) is resolved: AI Notes now explicitly records the search (contact page 404, Directors Library, web search) and confirmed absence. Website context shot verified visually as andre-bato.com. IG throttle exception correctly in place. 6 named film projects, 6 paired embed+thumbnail sets, no em-dashes, provenance complete.",
+  "to": null
+}

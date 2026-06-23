@@ -1,0 +1,120 @@
+{
+  "page_id": "db47252d-f43d-472f-b40b-03708e26eb7e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Berliner Philharmoniker images (site-05 to site-08) are sourced from oliverhelfrich.com, a different designer's portfolio entirely. site-05 is a concert hall photograph (not design work). site-01 is a historic photo of Carl Nielsen the composer (editorial context, not Jonathan Nielsen's graphic design). UAL images (site-09, 10, 11) show a 3D code render and a robot arm installation photo, not identity design output. Only Carl Nielsen Museet posters (site-02 to site-04) are clearly on-attribution graphic design work.",
+      "fix": "Replace oliverhelfrich.com images with Jonathan Nielsen's own documented work on the Berliner Philharmoniker project (find via his studio site or interviews). Confirm he actually worked on that project before including it. For UAL, pull actual identity/graphic design deliverables from that project, not installation photography. Drop the composer photo and concert hall photo."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-05 (concert hall photo) and site-01 (historic pianist photo) are not graphic or motion design work. site-09 (3D code cylinder render), site-10 (stone/grid sculpture render), and site-11 (industrial robot arm photo) do not read as identity or graphic design output for a UAL branding project. Capabilities are Graphic design + 3D & motion; these images do not demonstrate either.",
+      "fix": "For UAL Narrative Environments: find and capture actual identity/visual design outputs (logos, posters, type specimens, branded materials) rather than installation photography. For Berliner Philharmoniker: confirm Jonathan Nielsen's role and source work from his portfolio or his actual case study, not Oliver Helfrich's page."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-13.png captioned 'Instagram profile' is an Instagram 'Something went wrong' error page, not the actual @jonathanmnielsen profile. It is NOT marked rejected in manifest.json, NOT present in state/ig-queue.json, and AI Notes does not document the throttle/failure. The sanctioned exception (rejected + documented + queued) is not met.",
+      "fix": "Mark site-13 as rejected:true in manifest.json. Add entry to state/ig-queue.json with reason 'IG error page on logged-out grab'. Document the throttle block in AI Notes. The website context shot (site-12) is present and correct."
+    },
+    {
+      "id": "A.manifest-orphan",
+      "result": "fail",
+      "evidence": "File site-14.jpg exists in assets/db47252d-f43d-472f-b40b-03708e26eb7e/ but is absent from manifest.json. This image shows typographic lettering spelling 'REALITY' in a distressed style and has no caption, project attribution, or source URL.",
+      "fix": "Either add site-14.jpg to manifest.json with correct caption, project, source URL and link, or delete it. No uncaptioned orphan files."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions. site-14 orphan is addressed separately above."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images from Carl Nielsen Museet (posters, in-situ signage), 4 from Berliner Philharmoniker case study, 3 from UAL. Depth attempted, though attribution problems undercut it."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design + 3D & motion; no video embeds present but no evidence a project page with embeddable video was skipped. No FAIL triggered without specific evidence."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents the .studio site 503. IG throttle block is NOT documented (covered under A.context-shots fail)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a solo practitioner."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email not found; AI Notes does not document a search attempt for public email. However no clear public email was verifiable from the entry data, so this is a note rather than a hard fail."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + 3D & motion. An Open Question asks about Identity systems. Reasonable."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, Size 1, Freelance. AI Notes names sources and hedges (site 503). Multi-source reasoning documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoned in AI Notes as solo practitioner with strong client list."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note relationship facts; zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-10-26'; no instructions evident in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status hedged (site 503). Autonomy marked inferred. Seniority read included. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-26'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present, set_by values correct. Null source_urls are a known systemic gap, not a gate failure per checklist note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question on Identity systems capability. Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer has not flipped to Needs Review (correct for a fail verdict)."
+    }
+  ],
+  "summary": "Three hard fails: (1) Berliner Philharmoniker images are from a different designer's portfolio (oliverhelfrich.com) and include non-design photography; UAL images show installation photos rather than identity design output. (2) Instagram context shot is an error page, not rejected+queued per the sanctioned exception path. (3) site-14.jpg is an orphan file absent from manifest.json with no caption or attribution.",
+  "to": "scraper"
+}

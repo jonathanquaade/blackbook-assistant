@@ -1,0 +1,112 @@
+{
+  "page_id": "24e247ca-6efd-41ab-9543-6656e5ddd72e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: TYPEONE Issue 10 (3 images), TYPEONE Issue 9 (3 images), Art&Graft rebrand TOV (3 images), Burnaby Lake copywriting (3 images). Plus website context shot and It's Nice That bookmark."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project including spreads (site-02 shows interior spread, site-04 shows cover detail, site-06 shows open interior, site-11 shows brand book spreads). Goes inside projects, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-08.jpg and site-09.png are captioned 'Art&Graft rebrand, tone of voice by Harold Bennett, 2023' but the images show Art&Graft's Instagram posts: a 'We are hiring a junior animator' post and internship open-call posts (site-08), and an Art&Graft social media grid with animation/character posts (site-09). These are Art&Graft's operational IG content, not the brand rebrand verbal identity deliverable. site-07.jpg shows a 3D Art&Graft brand mark object (visual design, not copy). None of the 3 Art&Graft images show the actual tone-of-voice copy or messaging system Harold wrote. For a Copywriting + Brand strategy entry, showing the TOV deliverable (the actual words, messaging framework, or brand voice examples) is the on-capability requirement.",
+      "fix": "Replace site-08.jpg and site-09.png with images that show the actual verbal identity output from the Art&Graft rebrand: the TOV document, messaging examples, or copy applied in context (headlines, taglines, written brand voice specimens). The regularpractice.co.uk/projects/a-g case study page may have better options; also check Art&Graft's own site or Harold's portfolio site for the copy deliverable. If no copy-specific visuals exist, replace with images from a different project where the written work is visible (e.g. Grilli Type GT Standard copy page, or Tails.com at Mother Design)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is haroldbennett.co.uk and visually confirms it (shows 'Harold Bennett' header, London freelance writer, client list, Writing Selects section). Website context shot is correct. IG context shot (site-14.png) is rejected + documented + queued: manifest marks rejected with reason 'Headless IG rate-limit: screenshot shows Something went wrong error page'; IG URL is written to the Instagram property (https://www.instagram.com/harold__bennett/); entry is in state/ig-queue.json with correct page_id and ig_url. Sanctioned throttle path followed correctly."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 uploaded images have captions naming the project and carry a source link. Bookmark also has a caption."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio projects in this entry's captured work. It's Nice That bookmark is correctly a bookmark type (editorial writing). No embedded video skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes ('IG context shot queued (headless rate-limit on instagram.com/harold__bennett/)') and in manifest reject_reason."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://haroldbennett.co.uk/ (verified, loads). Instagram: https://www.instagram.com/harold__bennett/ (set_by agent, URL written to property). LinkedIn: https://uk.linkedin.com/in/harold-bennett-7326bbab. Email: hb@haroldbennett.co.uk. All four links present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Copywriting + Brand strategy. Set_by jonathan per provenance. Open Question asks about adding Graphic design/Identity systems/Creative direction. Correct not to override jonathan-set Capabilities; question is appropriate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1 (person). Work Status: Freelance. AI Notes states 'his own site + IG bio both say freelance, so Work Status Freelance is solid' — two sources agree, meets objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes: 'Autonomy 4 (senior freelance, client-facing), inferred.' Grounded in actual work history (Studio Ground Floor co-director, regular commissioned writer since 2020, ~5+ years). Meets the REQUIRED bar for Person entries."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are both zero-states set_by agent. Source is 'Web clipper, 2021-11-03' with no relationship facts in the clip note. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note appears to be a plain web-clipper entry with no relationship facts or special instructions. Source logged correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy flagged as 'inferred'. Seniority read ('Senior, ~5+ yrs') grounded in Winchester School of Art + work history. Client claims grounded in named projects. No unhedged speculation."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-11-03'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by for every field. source_url is null throughout — per checklist calibration note (2026-06-21), this is a known systemic tooling gap and not a v1 gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question on Capabilities expansion. Terse, conditional (Capabilities is already set_by jonathan so asking about additions is appropriate). No story nudge needed (Worked Together: Never, no relationship to nudge)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will only move to Needs Review if this gate passes. Currently held at Enriching per FAIL verdict."
+    }
+  ],
+  "to": "scraper",
+  "summary": "One FAIL: site-08.jpg and site-09.png in the Art&Graft set show Art&Graft's operational Instagram posts (job hiring, internship calls) and social media grid content, not the tone-of-voice rebrand deliverable Harold wrote. For a Copywriting + Brand strategy entry, the on-capability requirement is to show the actual words and verbal identity output, not the animation studio's social posts. These two images need replacement."
+}
