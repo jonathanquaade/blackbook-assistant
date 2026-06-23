@@ -1,0 +1,110 @@
+{
+  "page_id": "6b51df77-0ed2-43cd-9fee-22cc7771ee42",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T09:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Jean Paul Gaultier, Yse Paris, Nina Ricci, NV Gallery, Eric Bompard. No repeated project across image filenames or captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images (campaign cover from case study + Mux video thumbnail of live running site + live site screenshot for 3 of 5 projects). The Mux thumbnails and live-site screenshots show actual built frontends, not only hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web). Video thumbnails and live-site screenshots show the actual Shopify/headless frontends built (JPG Shopify, Yse headless, Nina Ricci product grid, NV Gallery, Bompard). Campaign cover images are project-identifying hero shots from Unlikely's own case study pages, consistent with how commerce dev studios present work. On-capability content is present for every project."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed unlikely.technology homepage (dark hero, 'Full-service partner for building unified commerce'). site-09.png: confirmed instagram.com with handle @unlikely.technology, 'Unlikely Technology', 167 followers, 6 following, bio reads 'Unlikely is a technology studio creating bespoke digital experiences for brands.' Both correctly labeled, neither mislabeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active images in manifest have captions naming the project plus a link to the source page or live site. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Case study pages embed Mux video players (not YouTube/Vimeo). Mux cannot be embedded natively in Notion. The scraper correctly captured Mux thumbnails as images linked to case study pages. No YouTube or Vimeo embeds were missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "14 images uploaded; no silently thin section. All 5 case study projects are represented."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. AI Notes documents reasoning: small specialized hands-on commerce engineering team rather than broad full-service Agency."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://unlikely.technology/. Instagram: https://www.instagram.com/unlikely.technology/ (verified @unlikely.technology, 167 followers, correct entity). LinkedIn: https://fr.linkedin.com/company/unlikelytechnology. Email: contact@unlikely.technology. All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) set. Provenance shows set_by: jonathan (migration baseline). Open Question 1 proposes adding Backend development given the platform integration work, appropriately deferred to Jonathan rather than overwriting."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Work Status: Studio (correct for a studio-type entry). Size: 2-10 (migration baseline; uncertainty flagged in Open Question 2 and AI Notes, which is the correct handling). Source resolution noted in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry. Per checklist calibration, Autonomy is OPTIONAL for org entries. AI Notes includes a seniority/leadership read ('high autonomy as an independent shop'). No field required."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are zero-states. Jonathan's note ('Considered them for tractable') does not imply a working relationship or prior familiarity beyond awareness. Zero-states are not contradicted."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note ('Considered them for tractable') is referenced verbatim in AI Notes. No instructions were left unacted upon."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Size uncertainty ('uncertain (no public headcount; a 50+ client commerce shop may be larger, possibly 11-40)'). Seniority read present (named leaders: Maxime Berthelot, Simon Corompt). Studio history and client list are verifiable facts. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-12-09'. Filled correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields. source_url null throughout: known systemic tooling gap, not a gate fail per checklist note (2026-06-21). set_by values correct throughout (agent for agent-researched fields, jonathan for Notes and Capabilities from migration baseline)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions, Source. No em-dashes found. Slashes and commas used appropriately."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, conditional questions. Q1 proposes a Capabilities expansion (the current tag has a value but the question proposes adding a new tag, which is appropriate). Q2 asks about Size where the existing value is flagged as uncertain. Neither asks for a field already answered at the jonathan level without ambiguity."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching pending this review gate. Will be flipped to Needs Review on pass."
+    }
+  ],
+  "notes": "Campaign cover images (jpgaultier-cover.jpg, yse-cover.jpeg, nina-ricci-cover.jpg, nvgallery-cover.webp, eric-bompard-cover.jpg) are fashion/lifestyle hero shots from Unlikely's own case study pages, not screenshots of built frontends. They are on-brand for a commerce dev studio portfolio but are not themselves demonstrations of frontend capability. Jonathan may prefer more UI/frontend screenshots over brand imagery; that is a taste call for him, not a gate issue. Every project also has a Mux thumbnail and/or live-site screenshot showing the actual built frontend, so on-capability work is demonstrably present."
+}
