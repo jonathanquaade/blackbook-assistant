@@ -1,0 +1,111 @@
+{
+  "page_id": "e1245bbe-5c34-47fd-a6e6-50db3fe59a65",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T09:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects across images and embeds: Porsche Dream Machine, Choo Choo World, Spaace NFT Marketplace, Meta Spatial Fusion, Synthetic Human, My Little Storybook. Each is a separate commission or product. Plus Reel 2023 and Lusion Labs as studio-level entries. No repeated angles of the same project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has a case-study screenshot from the lusion.co project page plus a Vimeo embed (where video exists) plus a full-res thumbnail. Not hero-only: site-01/05/06/04/03/07 all land inside individual project pages showing the actual interactive work. For a WebGL studio whose site cannot be static-scraped, project-page screenshots are the correct depth artifact."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative technology (and Brand strategy, which is questioned in Open Questions). All captured work is WebGL, 3D interactive web, and real-time experiences: CG film, WebGL mini-game, immersive NFT site, WebXR, AI campaign site, interactive story. On-capability for Creative technology throughout. No off-discipline material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-09.png: confirmed lusion.co/projects, shows PROJECTS heading and Lusion nav bar. Correct website context shot. site-08.png: confirmed instagram.com page showing handle @lusionltd, 811 posts, 6,810 followers, bio visible. Correct Instagram profile screenshot. The original site-02.png (loading spinner) is marked rejected with reason documented. No mislabeled shots."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry carries a caption naming the project, year where known, and a link. Both context shots captioned 'Website' and 'Instagram profile' with matching links. Reel 2023 and Lusion Labs thumbnails captioned as studio-level entries. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds present for Porsche Dream Machine, Choo Choo World, Spaace, Reel 2023, Lusion Labs. Each embed has a paired full-res thumbnail image and a link to the canonical Vimeo URL. Entry is not embeds-only: 8 project/context screenshot images alongside the embeds. Vimeo embeds do not show a poster in Notion, so the thumbnail-first pattern is correctly applied."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "site-02.png rejected with documented reason (WebGL spinner). No unexplained gaps; the WebGL constraint (no static HTML images on the main site) is handled by project-page screenshots and Vimeo embeds rather than left silent."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small specialist team doing hands-on creative execution, not a large full-service agency."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://lusion.co/ (canonical root). Instagram: https://www.instagram.com/lusionltd/ (confirmed matching @lusionltd bio in context shot). LinkedIn: https://uk.linkedin.com/company/lusionltd. Email: hello@lusion.co. All four findable links present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Creative technology is clearly accurate. Brand strategy is flagged as questionable in Open Questions Q1, inviting Jonathan to confirm or remove it. Flagging via Open Question is the correct action when set_by is jonathan (cannot overwrite without his confirmation); the question is appropriately conditional and actionable."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK (Bristol-based, referenced in AI Notes). Size: 2-10 (estimated, hedged in AI Notes as 'no public headcount'). Work Status: Studio. All three set. AI Notes names the sourcing basis."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio, so Autonomy is optional per checklist calibration note. AI Notes provides the seniority/leadership read ('high autonomy as an independent practice'). No field required."
+    },
+    {
+      "id": "C.judgment-no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states: Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or other evidence contradicts these. No relationship facts in the source material."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-12-22' with no inline instructions beyond the URL. No relationship facts, passcodes, or tagging direction to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Founded year (2017) and founder name (Edan Kwan) presented as facts; Size '2-10, estimated; no public headcount' is properly hedged. Brand strategy tag flagged as 'reads questionable' rather than asserted. Seniority read included ('small elite studio, very high craft, high autonomy'). Awards and client names are verifiable public facts. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-12-22'. Filled correctly; creation date format matches the standard."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for every touched field. source_url is null throughout, which is the known systemic tooling gap (not a gate failure per checklist note). No field written by agent reads below 0.8 confidence. Capabilities set_by: jonathan, consistent with a migrated entry."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions, and Source. No em-dashes found. En-dash in '2-10' is a hyphen (acceptable)."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, properly conditional: asks about Capabilities that are already set (set_by: jonathan) so the question is appropriate (cannot overwrite without his input). Terse and specific. No nag repetition. Story nudge not triggered (no Worked Together change, no relationship fact)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, which is the correct holding state before the reviewer gate. Status will be flipped to Needs Review as the gate outcome of this pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean pass. The context-shot workaround for the WebGL spinner (site-02 rejected, lusion.co/projects used instead) is legitimate and documented. The Brand strategy capability question is the right call given it is set_by jonathan. No action needed before Jonathan reviews."
+}

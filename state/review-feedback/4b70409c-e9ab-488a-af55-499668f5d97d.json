@@ -1,0 +1,111 @@
+{
+  "page_id": "4b70409c-e9ab-488a-af55-499668f5d97d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 named projects confirmed distinct: Kindred Black (beauty brand), Sandor (fashion brand), Aplos Commissions Book (editorial/book design), Porta (retail identity). No caption repeats, no look-alike images across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 3 images going inside the work: Kindred Black shows monogram mark, script wordmark, and product application; Aplos shows cover + two interior spreads; Porta shows logotype card, storefront exterior, and embossed collateral. Minor note: porta-01 is a logotype-only card (very hero), but the other two Porta shots provide genuine depth. Not a gate fail."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capabilities: Graphic design, Creative direction. All 4 projects are brand identity and art direction work (identity systems, packaging, book design, retail identity). On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: shows aniaetlucie.com with studio name in header and projects grid, confirmed correct website. site-02.png: shows instagram.com page for @aniaetlucie with 8,043 followers and grid visible, confirmed correct Instagram profile. Both captions accurate."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions naming the project and a link to the source project page. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio is Graphic design + Creative direction; no video/audio/writing work expected. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "12 project images across 4 projects present; no thin or unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small founder-led creative studio (Ania Nowak + Lucie Gris), hands-on execution, not a large agency."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website (aniaetlucie.com), Instagram (instagram.com/aniaetlucie, confirmed @aniaetlucie in context shot bio), LinkedIn (linkedin.com/company/aniaetlucie), Email (info@aniaetlucie.com) all present. IG handle verified by context shot showing correct name and grid."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Creative direction are set (provenance: set_by jonathan). Open Question 1 asks Jonathan about expanding to Identity systems, Illustration, Photography, Web design, which is appropriate given site claims. Terse and conditional."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US + FR (NY + Bordeaux per their about, sourced from site). Size: 2-10. Work Status: Studio. AI Notes records the multi-source basis (their own site + It's Nice That profile). Objective rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per checklist for orgs. Field is set to 5 with reasoning in AI Notes (principals running their own studio, hedged on team size). Correctly handled either way."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with a 2021 clipper entry with no relationship note. No contradicting evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-12-09. No relationship facts, passcodes, or special instructions evident. Entry predates the current pipeline so no clip note instructions to parse."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge team size (hedged: team size not confirmed). Client list reads as factual (verifiable from their site). Seniority read present (Senior, founder-led studio, ~5+ yrs as A&L). Autonomy estimate paired with reasoning. No em-dashes. No unhedged inferences asserting first-hand experience."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-12-09. Set by agent, matches the creation date format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all fields. source_url is null throughout, which is the known systemic tooling gap, not a gate fail per checklist note. All set_by values are correct (agent for researched fields, jonathan for Capabilities, migration for Name)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Open Questions, and captions. No em-dashes found. En-dash in Size range (2-10) is acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question about expanding Capabilities. Terse, conditional (asks because site lists more than current tags), numbered. Capabilities is already set so this is asking about an expansion, not a missing field. Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Strong entry. 4 distinct brand identity projects with real depth inside each. Both context shots confirmed correct. The Sandor shots lean campaign-photography-adjacent but the packaging shot grounds it as identity work. Porta-01 is a logotype card but the other two Porta shots carry depth. No gate issues found.",
+  "to": null
+}
