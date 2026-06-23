@@ -1,0 +1,111 @@
+{
+  "page_id": "655678c8-1cd7-4c71-8404-27dc78db17ea",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: RAW London (site-06, site-17, site-09), Smith and Willis (site-08, site-10), Palladian Media (site-16), Greggs (site-13), Ditta (site-15). RAW London appears in 3 shots but across two distinct domains (raw.london and ditta.studio/work/raw) at different pages; this is depth within one client, not the same angle repeated. 5 distinct clients exceed the 3-project floor."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside projects: raw.london/work interior (site-17), smithandwillis.london/places interior (site-10), ditta.studio/work/raw case study (site-09). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 9 live images are rendered web UI screenshots. Capability is Frontend development (web). site-16 (Palladian Media) shows a cinematic hero with browser chrome/nav visible; it is a live site render, not stock photography. Greggs (site-13) shows a full e-commerce homepage with nav and content. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot: site-01 is michaelpumo.com showing his portrait and hero headline 'Crafted experiences, designed to be beautiful and built to last.' - correct. IG context shot: no valid handle found. site-02 (viewed) confirms @michaelpumo is a real IG account for a private Vercelli-based person born 02/06/2001, not the London developer. site-03 (@mike_pumo) and site-04 (@michael_pumo) also rejected as wrong people. All 3 rejected in manifest with documented reject_reason. AI Notes records the exhaustive search. This is a correct absence-explained case, not a throttle case, so no IG queue entry is required."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 9 live manifest entries carry a caption naming the project and a link field pointing to the source URL."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web); work is captured as live-site screenshots, appropriate for the discipline. No audio or video embeds are required or applicable here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in manifest (3 handles checked and rejected with specific reasons) and in AI Notes. No confirmed handle exists; absence is honest."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual freelance developer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: michaelpumo.com present. Instagram: no valid handle confirmed after exhaustive search; documented. LinkedIn: linkedin.com/in/michaelpumo/ present. Email: hello@michaelpumo.com present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) tagged, set_by jonathan per provenance. Open Question 1 asks whether Web design should also be added; that is the correct handling for an unresolved capability question."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 1, Work Status = Freelance, all set_by agent at >= 0.8 confidence. Minor advisory: AI Notes says 'confirmed freelance and studio-founder' but does not explicitly name which sources were cross-checked (site + LinkedIn). The objective multi-source rule asks sources to be named. Evidence in AI Notes is sufficient to infer the confidence floor was met, so this is not a gate fail; flagged as a note for Jonathan.",
+      "note": "AI Notes should explicitly name sources used for Work Status resolution (e.g. 'site + LinkedIn agree Freelance') per the objective rule in CLAUDE.md. Not a gate fail in v1."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by agent. Reasoning in AI Notes: confirmed freelance sole-trader and studio co-founder, 18+ years, ships complex production frontends independently. Grounded in verifiable facts."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted) do not contradict any evidence. Notes field contains Jonathan's own text ('Nuxt.js Deveoper'), set_by jonathan, untouched."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was 'Nuxt.js Deveoper' (Jonathan's typo), relocated into Notes field (set_by jonathan). Source records 'Web clipper, 2022-01-12'. Clipped site copy archived to assets/clipped.md. No further instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (co-founder of Ditta, client list from michaelpumo.com, stack from site). Seniority read ('Senior independent practitioner, 18+ years') is grounded in site history. Autonomy estimate included with reasoning. IG non-finding documented. No unhedged subjective claims."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2022-01-12'. Filled and correctly formatted."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. All touched fields have entries with set_by. source_url null is a known systemic tooling gap per checklist note (2026-06-21); not a gate fail in v1."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Open Questions reviewed; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: 'Capabilities: add Web design?' Terse, conditional (Web design not yet set), valid. No story nudge needed (Worked Together = Never, Familiarity = Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will be flipped to Needs Review now that gate passes."
+    }
+  ],
+  "to": null
+}
