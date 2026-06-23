@@ -1,0 +1,111 @@
+{
+  "page_id": "481bd89b-cb03-4566-a778-576868c53a19",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images span 5 named projects: FABA+, Yarn, Hackbot, Ursor, Maidas. No project repeats across the 5 groups."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 3 images going inside it: FABA shows lifestyle + 3D render + back-detail; Yarn shows full kit + labelled asset system + app UI flow; Hackbot shows brand hero + logo system + poster campaign; Ursor shows home + kids browse + parent dashboard; Maidas shows three distinct generative artefact outputs."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Creative technology. All 5 projects are squarely on-capability: AI-powered tangible products (FABA, Yarn), AI brand/tech platform (Hackbot), child-safe browser product (Ursor), AI generative artefacts for Royal Mint (Maidas). No off-capability drift."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is finh.cc homepage (FINH wordmark, nav, tagline visible). site-02.png is instagram.com with handle 'finh.cc' and 'FINH' profile header visible behind a cookie consent dialog; domain is instagram.com, not a different site. Cookie dialog is a normal logged-out IG state, not a mislabel. Both context shots are real and correctly captioned."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries have a caption and a link field. Work images name the project and the source case-study URL on finh.cc."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio is tagged Creative technology (not video/audio/writing). No video embeds were required; still-image capture is appropriate for product design and brand work. No embed opportunities skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present and substantive; no thin-entry concern. No documented IG throttle or blocked source requiring an absence note."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Appropriate: small specialized team doing hands-on creative execution, not a large full-service agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (https://www.finh.cc/), Instagram (https://www.instagram.com/finh.cc/), LinkedIn (https://uk.linkedin.com/company/finh-cc) all present. Email absent; AI Notes does not explicitly document the absence but the entry prompt confirms 'no public email (documented, ok for studio)' and the studio type makes a public email genuinely hard to find. Not a fail."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology is set (set_by: jonathan per provenance). Open Question 1 asks Jonathan whether to add Digital product design, Frontend development (web), Brand strategy. Correct approach: do not add without his approval when the base tag is already his."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10, Work Status = Studio. AI Notes grounds the size estimate ('estimated; no public headcount'). Work Status = Studio is correct for an independent practice. Multi-source resolution not documented verbatim in AI Notes but the studio type is self-evident from their own site."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is a Studio (org-type). Per checklist calibration 2026-06-21: Autonomy is optional for org-type entries. AI Notes describes 'high autonomy as an independent practice' which is sufficient. No Autonomy field required."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted are zero-states with no clip-note evidence to contradict them. Clip note (clipped.md) contains only archived site copy, no relationship facts from Jonathan."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md is archived site copy (project titles, taglines). No Jonathan instructions or relationship facts in it. All clipped content was mined for AI Notes and body was reset."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges size ('estimated; no public headcount') and additional Capabilities ('likely also'). Notable work (FABA iF Design Award, Yarn, Royal Mint) are verifiable from their own site. Seniority/experience read is present for an org ('small independent studio, high autonomy as an independent practice'). No unhedged inferences detected."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-12-23'. Correct format; date matches the creation timestamp."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/481bd89b-cb03-4566-a778-576868c53a19.json. All touched fields have set_by values. source_url is null throughout; per checklist calibration 2026-06-21 this is a known systemic tooling gap, not a gate failure. set_by values are correct (agent for researched fields, jonathan for Capabilities which was set by clipper/jonathan per provenance)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found. En-dash in '2-10' size range uses a hyphen, acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion (conditional on Jonathan not having already set additional tags). Terse and conditional. No story nudge needed (Worked Together = Never, Familiarity = Don't know them, Notes is empty)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. This reviewer will flip it to Needs Review on verdict pass."
+    }
+  ],
+  "notes": "The Instagram context shot (site-02.png) shows the real instagram.com page for finh.cc behind a cookie consent dialog. The profile header ('finh.cc', 'FINH') is visible above the dialog and the grid is partially visible below it. This is the standard logged-out IG state under GDPR cookie prompts, not a mislabel or wrong domain. The three Maidas images are distinct generative AI artefact renders (amorphous blob, torus ring, flowing abstract) rather than the same render from different angles. Entry is substantive, on-capability, all 5 projects named and linked. No deferred findable items detected.",
+  "to": null
+}

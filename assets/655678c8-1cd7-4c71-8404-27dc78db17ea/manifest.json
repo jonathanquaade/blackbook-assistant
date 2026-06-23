@@ -13,7 +13,9 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/michaelpumo/",
     "captured_at": "2026-06-23",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Wrong person: @michaelpumo is a private account based in Vercelli, not the London developer. No confirmed IG handle found for Michael Pumo the developer."
   },
   {
     "file": "site-03.png",
@@ -21,7 +23,9 @@
     "caption": "Instagram profile check",
     "link": "https://www.instagram.com/mike_pumo/",
     "captured_at": "2026-06-23",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Wrong person: @mike_pumo grid shows personal photos unrelated to web development."
   },
   {
     "file": "site-04.png",
@@ -29,102 +33,109 @@
     "caption": "Instagram profile check 2",
     "link": "https://www.instagram.com/michael_pumo/",
     "captured_at": "2026-06-23",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Wrong person: @michael_pumo shows different individual, not the London developer."
   },
   {
     "file": "site-05.png",
     "source_url": "https://luca.restaurant",
-    "caption": "Luca restaurant, web build via Ditta",
+    "caption": "Luca restaurant loading splash",
     "link": "https://luca.restaurant",
     "captured_at": "2026-06-23",
-    "context_shot": true
-  },
-  {
-    "file": "site-06.png",
-    "source_url": "https://raw.london",
-    "caption": "RAW London, web build via Ditta",
-    "link": "https://raw.london",
-    "captured_at": "2026-06-23",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Site shows animated loading splash only (logo on green), no page content rendered."
   },
   {
     "file": "site-07.png",
     "source_url": "https://luca.restaurant/menus",
-    "caption": "Luca restaurant menus page, web build via Ditta",
+    "caption": "Luca restaurant menus page loading splash",
     "link": "https://luca.restaurant/menus",
     "captured_at": "2026-06-23",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Same loading splash as homepage, page content did not render in headless capture."
+  },
+  {
+    "file": "luca-01.jpg",
+    "source_url": "https://a2.storyblok.com/f/284609/1200x800/a8d7a4d3fd/luca-24.jpg",
+    "caption": "Luca restaurant photography",
+    "link": "https://ditta.studio/work/luca",
+    "captured_at": "2026-06-23",
+    "rejected": true,
+    "reject_reason": "Editorial restaurant photography, not a frontend UI screenshot. Does not show web development work."
+  },
+  {
+    "file": "luca-02.jpg",
+    "source_url": "https://a2.storyblok.com/f/284609/2000x3000/6d7d50b6d9/luca-23.jpg",
+    "caption": "Luca Zegna magazine editorial",
+    "link": "https://ditta.studio/work/luca",
+    "captured_at": "2026-06-23",
+    "rejected": true,
+    "reject_reason": "Editorial photo (person reading magazine), not a web UI. Off-capability for Frontend development."
+  },
+  {
+    "file": "luca-03.png",
+    "source_url": "https://a2.storyblok.com/f/284609/3600x2500/ae3b4480d1/luca-27.png",
+    "caption": "Luca logo on green",
+    "link": "https://ditta.studio/work/luca",
+    "captured_at": "2026-06-23",
+    "rejected": true,
+    "reject_reason": "Brand identity logo only, not a web UI screenshot."
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://raw.london",
+    "caption": "RAW London, homepage build via Ditta",
+    "link": "https://raw.london",
+    "captured_at": "2026-06-23"
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://raw.london/work",
+    "caption": "RAW London, work page interior build via Ditta",
+    "link": "https://raw.london/work",
+    "captured_at": "2026-06-23"
   },
   {
     "file": "site-08.png",
     "source_url": "https://smithandwillis.london",
-    "caption": "Smith and Willis, web build via Ditta",
+    "caption": "Smith and Willis, homepage build via Ditta",
     "link": "https://smithandwillis.london",
-    "captured_at": "2026-06-23",
-    "context_shot": true
-  },
-  {
-    "file": "site-09.png",
-    "source_url": "https://ditta.studio/work/raw",
-    "caption": "RAW case study, ditta.studio",
-    "link": "https://ditta.studio/work/raw",
-    "captured_at": "2026-06-23",
-    "context_shot": true
+    "captured_at": "2026-06-23"
   },
   {
     "file": "site-10.png",
     "source_url": "https://smithandwillis.london/places",
-    "caption": "Smith and Willis places page, web build via Ditta",
+    "caption": "Smith and Willis, places page interior build via Ditta",
     "link": "https://smithandwillis.london/places",
-    "captured_at": "2026-06-23",
-    "context_shot": true
-  },
-  {
-    "file": "site-11.png",
-    "source_url": "https://ditta.studio/work/smith-willis",
-    "caption": "Smith and Willis case study, ditta.studio",
-    "link": "https://ditta.studio/work/smith-willis",
-    "captured_at": "2026-06-23",
-    "context_shot": true
-  },
-  {
-    "file": "site-12.png",
-    "source_url": "https://ditta.studio/work/luca",
-    "caption": "Luca case study, ditta.studio",
-    "link": "https://ditta.studio/work/luca",
-    "captured_at": "2026-06-23",
-    "context_shot": true
-  },
-  {
-    "file": "site-13.png",
-    "source_url": "https://www.greggs.com",
-    "caption": "Greggs website, frontend build by Michael Pumo",
-    "link": "https://www.greggs.com",
-    "captured_at": "2026-06-23",
-    "context_shot": true
-  },
-  {
-    "file": "site-14.png",
-    "source_url": "https://ditta.studio/work/palladian",
-    "caption": "Palladian case study, ditta.studio",
-    "link": "https://ditta.studio/work/palladian",
-    "captured_at": "2026-06-23",
-    "context_shot": true
-  },
-  {
-    "file": "site-15.png",
-    "source_url": "https://ditta.studio",
-    "caption": "Ditta studio website, co-founded by Michael Pumo",
-    "link": "https://ditta.studio",
-    "captured_at": "2026-06-23",
-    "context_shot": true
+    "captured_at": "2026-06-23"
   },
   {
     "file": "site-16.png",
     "source_url": "https://palladianmedia.com",
     "caption": "Palladian Media, web build via Ditta",
     "link": "https://palladianmedia.com",
-    "captured_at": "2026-06-23",
-    "context_shot": true
+    "captured_at": "2026-06-23"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://www.greggs.com",
+    "caption": "Greggs, frontend build by Michael Pumo (listed on michaelpumo.com)",
+    "link": "https://www.greggs.com",
+    "captured_at": "2026-06-23"
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://ditta.studio",
+    "caption": "ditta.studio, co-founded and built by Michael Pumo",
+    "link": "https://ditta.studio",
+    "captured_at": "2026-06-23"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://ditta.studio/work/raw",
+    "caption": "RAW London case study on ditta.studio",
+    "link": "https://ditta.studio/work/raw",
+    "captured_at": "2026-06-23"
   }
 ]

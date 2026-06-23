@@ -1,0 +1,115 @@
+{
+  "page_id": "8b93af89-2a65-44bb-90a1-fa43427907d5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct project series across manifest: Motion (MKRedo/FermGlasses/Ripples/Poppies), Pigments, Glass/Helmut Lang, Metals Study, Liquids. No repeated-angle duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 images per series across Pigments, Glass, Metals Study, Liquids; motion section has 3 thumbnails + 1 Vimeo embed. Interior/macro shots throughout, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tag is 3D & motion (migration, set_by jonathan). Work spans: 3D CGI renders (Pigments), macro/motion film stills (Motion series), Vimeo motion embed (Poppies). Capability OQ already filed (retag to Photography); per spawn instructions, this check is deferred to Jonathan and is not a gate fail."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed samarmstrong.co.uk homepage (SAM ARMSTRONG header, nav bar, product shots). site-02.png: confirmed instagram.com logged-out profile for @samarmstrongstudio (Instagram header, correct handle and name Sam Armstrong visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries carry a caption and a link. One minor note: caption 'Motion, MKRedo, 2021' image visually shows a Keiko Mecheri perfume box; MKRedo is plausibly the motion project name (internal naming) and the caption still names a project. Not anonymous."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Vimeo embed present for Poppies FCPX (vimeo.com/363350577) with thumbnail preview image (motion-vimeo-poppies-thumb.jpg) and link. Self-hosted MP4s correctly handled with still thumbnails as documented in spawn note."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present across 5 projects; no unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (samarmstrong.co.uk), Instagram (@samarmstrongstudio, confirmed right person via context shot), LinkedIn (uk.linkedin.com/in/sam-armstrong-4aaa768), Email (studio@samarmstrong.co.uk) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion (migration tag, set_by jonathan). Capability OQ filed for retag to Photography. No override of a jonathan-set field by agent."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK; Size: 1; Work Status: Freelance. AI Notes records 'Freelance: site + IG agree; represented by Mily Kadz' consistent with multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes includes seniority read ('Established freelance, agency-represented, high autonomy') with reasoning."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are consistent with no relationship signal in the clip note or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a URL-only clip (no instructions or relationship facts). Source field records 'Web clipper, 2022-01-10' correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges IG bio ('bio not confirmed logged-out (hedged)'). Seniority and Autonomy reasoning present. No bare unverified assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2022-01-10'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url null throughout: known systemic tooling gap, not a v1 gate fail per checklist note. set_by values correct (Capabilities: jonathan for migration tag; all agent-set fields: agent)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions scanned: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse OQs: (1) duplicate merge question, (2) capabilities retag question. Both conditional and actionable. No redundant asks."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "notes": [
+    "Orphaned file on disk not in manifest: assets/8b93af89.../motion-thumb_Screenshot2021-04-06at14.49.07.jpg. Not uploaded to Notion; no action required from scraper, but the file can be cleaned up.",
+    "Duplicate entry fcb92b2b already flagged in OQ for Jonathan to resolve; not a gate concern for this entry.",
+    "Capability tag ambiguity (3D & motion vs Photography) deferred to Jonathan via OQ as instructed."
+  ],
+  "to": "scraper"
+}
