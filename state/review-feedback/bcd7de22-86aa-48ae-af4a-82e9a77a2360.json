@@ -2,111 +2,109 @@
   "page_id": "bcd7de22-86aa-48ae-af4a-82e9a77a2360",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "16 work images span 6 distinct named projects: NYT Magazine (3), Fizia Typeface (3), Porphyry Typeface (3), Jade Purple Brown Identity (2), Feste (3), The Kids Table cookbook (2). No duplication."
+      "evidence": "16 work images across 6 named projects: NYT Magazine (3), Fizia Typeface (3), Porphyry Typeface (3), Jade Purple Brown Identity (2), Feste (3), The Kids Table (2). All distinct."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: editorial spreads for NYT, character sets and in-use specimens for Fizia/Porphyry, brand system internals for Jade Purple Brown, cookbook interior spread for Kids Table."
+      "evidence": "Each project has 2-3 interior shots: editorial spreads, type specimens in use, character sets, brand collateral, cookbook interior. No hero-only coverage."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities are Graphic design, Type design, Creative direction. All 6 captured projects are directly on-capability: editorial typography (NYT), original typefaces (Fizia, Porphyry), brand identity (Jade Purple Brown, Feste), editorial book design (Kids Table). Confirmed by visual inspection."
+      "evidence": "Capabilities: Graphic design, Type design, Creative direction. Work shows editorial typography (NYT), original typefaces (Fizia, Porphyry), brand identities (Jade, Feste), book design (Kids Table). All match."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-01.png is captioned 'Website' with source_url https://www.tinasmithdesign.com/ but the image shows a site displaying 'Minicircle' with a portrait of a model — definitively NOT tinasmithdesign.com. A fresh shot of tinasmithdesign.com taken during review shows her typography-focused portfolio. site-02.png is confirmed correct (instagram.com/tinasmithdesign, shows the right handle, bio, and grid).",
-      "fix": "Retake the website context shot for https://www.tinasmithdesign.com/ using scrape.py shot, verify the output shows Tina Smith's portfolio before uploading, and replace site-01.png in the manifest and Notion upload."
+      "result": "pass",
+      "evidence": "site-05.png (active): tinasmithdesign.com/about, visually confirmed showing name 'Tina Smith' and bio. site-02.png (active): instagram.com/@tinasmithdesign, handle and grid visible. Prior bad shots (site-01, site-03, site-04, site-06) correctly marked rejected with documented reasons. The specific prior fail (Minicircle homepage) is resolved."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 18 manifest entries have captions naming project and a link to the source project page."
+      "evidence": "All 16 work images have project-name captions and source links in manifest. Context shots captioned 'Website' and 'Instagram profile'."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio/writing work evident in this capture; entry is image-based design. No embeds needed."
+      "evidence": "No video/audio capabilities tagged; graphic/type/CD work is image-based. No embeds needed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Zero Acre and Reishi & Ginger were passcode-protected; scraper prompt states this is documented as acceptable. AI Notes confirm Work Status sourcing."
+      "evidence": "18 active images present across 6 projects. No unexplained gaps."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct."
+      "evidence": "Type: Person."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (tinasmithdesign.com), Instagram (@tinasmithdesign, verified correct person from the IG context shot), LinkedIn (linkedin.com/in/tinasmithdesign/), Email (hello@tinasmith.studio). All four present."
+      "evidence": "Website (tinasmithdesign.com), Instagram (@tinasmithdesign, verified by context shot grid and handle), LinkedIn (linkedin.com/in/tinasmithdesign/), Email (hello@tinasmith.studio) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design, Type design, Creative direction — all confirmed against TAXONOMY.md and her actual work. Open Question 1 asks about adding Identity systems, which is appropriately conditional."
+      "evidence": "Graphic design, Type design, Creative direction confirmed by About page text and captured work. Open Question asks about Identity systems addition, appropriate and conditional."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "US, Size 1, Freelance. AI Notes names sources: her About page states independent, LinkedIn lists Tina Smith Studio — both consistent with Freelance. Objective rule met."
+      "evidence": "Country US, Size 1, Work Status Freelance. AI Notes documents sources: site About states independent, LinkedIn lists Tina Smith Studio; both agree."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5 set by agent with reasoning in AI Notes: independent CD running her own studio, directing her own client work. Grounded in real work history."
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes: independent CD directing her own client work, solo studio, Young Guns 19, named clients. Grounded in verifiable facts."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never and Familiarity: Don't know them. No clip note or other signal contradicts these. Provenance shows both set_by agent. Consistent."
+      "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With Unvetted) consistent with no clip-note relationship signal."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip text archived to clipped.md. Source is 'Web clipper, 2021-11-04'. No relationship facts or judgment signals in the clip note to act on."
+      "evidence": "No relationship facts or judgment in clip note. Source set to 'Web clipper, 2021-11-04'."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes includes seniority read ('Mid-to-senior'), Autonomy reasoning, Work Status source attribution, and IG verification. Capabilities confirmed against work. No unhedged inferences found. No em-dashes."
+      "evidence": "AI Notes include seniority read, Autonomy reasoning, verifiable client list, awards, Work Status sourcing. No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-11-04'. Correct format."
+      "evidence": "Source: 'Web clipper, 2021-11-04'."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields. source_url is null throughout — known systemic tooling gap per checklist calibration note, not a gate failure."
+      "evidence": "Manifest records source_url and captured_at per image. Known systemic gap (null source_url on property provenance) is not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and captions inspected. No em-dashes found."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse question: '1. Add Capability Identity systems given the brand-programme work?' Conditional and reasonable — Identity systems not yet set. No redundant questions."
+      "evidence": "One question: adding Identity systems capability. Terse, conditional on a genuine ambiguity. No questions for already-filled fields."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching (correct pre-gate state). Not flipped to Needs Review yet."
+      "evidence": "Currently Enriching; flipped to Needs Review by this gate pass."
     }
   ],
-  "summary": "One FAIL: the website context shot (site-01.png) shows the 'Minicircle' website, not tinasmithdesign.com. The source_url in the manifest points to tinasmithdesign.com but the captured image is definitively a different site. All other checks pass including project diversity (6 distinct projects), on-capability work (typography, type design, brand identity), correct Instagram context shot, all metadata fields, and no em-dashes.",
-  "to": "scraper"
+  "to": null
 }

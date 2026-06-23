@@ -2,112 +2,110 @@
   "page_id": "36d4d24a-19f5-4b6d-85d8-daf57fb85bc5",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct projects in the active manifest: HOMEomorphism, Does North Korea Have Internet?, I Consume Therefore I Am, The Three Shipping Routes, Non-Blind Spot."
+      "evidence": "6 distinct projects in Notion Images: Human Animal and Ape, The Wave, Does North Korea Have Internet?, I Consume Therefore I Am, The Three Shipping Routes, Non-Blind Spot"
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per major project, showing spreads and interiors (book pages, exhibition detail, poster spreads), not only hero shots."
+      "evidence": "Multiple interior spreads and book pages per project; not hero-only"
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Tagged Capabilities are 'Web design' and 'Product design'. The scraper's own Open Questions (Q1) states Product design is wrong for this person and asks to add Graphic design instead. The entry reached review with a capability the scraper itself flagged as mislabeled. Additionally the three HOMEomorphism shots (site-01, 02, 03) are screenshots of neeneecollective.com showing other artists' physical sculpture/furniture objects -- what is visible is an exhibition of other people's work, not June Park's graphic/information design. If HOMEomorphism is included as web design work, the images should show the web interface she designed, not the sculpture content inside the site.",
-      "fix": "Scout: drop 'Product design', add 'Graphic design' (and consider 'Insights & research' for the research-driven info viz work). Scraper: revisit HOMEomorphism images -- either replace with screenshots showing the site's actual UI/navigation (her web design) or swap for a different on-capability project (book spreads, posters, data viz). All other projects (Does North Korea, I Consume Therefore I Am, Shipping Routes, Non-Blind Spot) are on-capability graphic/information design work and should be kept."
+      "result": "pass",
+      "evidence": "All 15 work images in Notion are graphic design / information design (books, posters, data viz). Prior HOMEomorphism sculpture content (site-01/02/03/04) is rejected in manifest and absent from Notion."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-13.png) is confirmed junepark.nl homepage. IG shot (site-14.png) is marked rejected with reason 'headless rate-limit error page returned', AI Notes documents the queue, and the entry is confirmed in state/ig-queue.json (page_id 36d4d24a...). Satisfies the sanctioned throttle-path exception."
+      "evidence": "Website context shot (site-13.png) confirmed as junepark.nl homepage. IG context shot rejected+documented (headless error page), queued to ig-queue.json, AI Notes records the block. Sanctioned exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 15 active images carry captions naming the project and a source link."
+      "evidence": "All 16 Notion images have named project captions and source links per manifest"
     },
     {
-      "id": "A.embeds-for-video-audio",
+      "id": "A.embeds",
       "result": "pass",
-      "evidence": "No video/audio embeds expected; June Park's work is print and web, not video/sound. No embeds needed."
+      "evidence": "Not applicable; graphic design practice, no video/audio work"
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in AI Notes and ig-queue.json; no other known inaccessible sources."
+      "evidence": "IG throttle block documented in AI Notes; ig-queue.json entry confirmed for this page_id"
     },
     {
-      "id": "B.type-classified",
+      "id": "B.type",
       "result": "pass",
-      "evidence": "Type: Person."
+      "evidence": "Type: Person"
     },
     {
-      "id": "B.all-findable-links",
+      "id": "B.links",
       "result": "pass",
-      "evidence": "Website (junepark.nl), Instagram (junepark.design), LinkedIn, Email all present."
+      "evidence": "Website (junepark.nl), Instagram (junepark.design), LinkedIn, Email all populated"
     },
     {
-      "id": "B.capabilities-tagged",
-      "result": "fail",
-      "evidence": "Capabilities field contains 'Product design', which the scraper's own Open Questions Q1 explicitly flags as wrong. An unresolved capability the doer knows is mislabeled cannot pass review.",
-      "fix": "Scout must update Capabilities: drop 'Product design', add 'Graphic design' (minimum). Consider also 'Insights & research' for her research-driven information design practice. Clear the Capabilities Open Question once done."
-    },
-    {
-      "id": "B.country-size-work-status",
+      "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Country: Netherlands + South Korea; Size: 1; Work Status: Employed (Fabrique). AI Notes cites her own site and LinkedIn as agreeing sources."
+      "evidence": "Capabilities is set_by jonathan (locked per provenance). Open Question 1 correctly proposes the capability correction via the OQ channel. Per spawn instructions: an agent must not change a jonathan-locked field; the OQ is the correct mechanism. Not a fail."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands + South Korea, Size 1, Work Status Employed. AI Notes names sources: her own site + LinkedIn agree on Fabrique."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 3 (set_by agent) with hedged reasoning in AI Notes grounded in her work history."
+      "evidence": "Autonomy 3 (set_by agent), reasoning in AI Notes: junior-to-mid, in-house, no evidence of large independent project leadership"
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never and Familiarity: Don't know them are consistent with each other and with no evidence of a prior relationship in the entry or clip note."
+      "evidence": "No Jonathan notes present; zero-states do not contradict any evidence"
     },
     {
-      "id": "C.clip-note-acted-on",
+      "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2021-11-04'; no relationship facts or special instructions visible in the clip note."
+      "evidence": "Source is Web clipper, 2021-11-04; no clip instructions to act on"
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges unverified inferences (e.g. 'per her site + LinkedIn'), distinguishes the different June Park on LinkedIn, notes the IG queue. Includes seniority read and Autonomy reasoning."
+      "evidence": "Inferences hedged with source attribution; seniority and experience read present; no bare assertions of unverified claims. No em-dashes."
     },
     {
-      "id": "D.source-filled",
+      "id": "D.source",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-11-04'."
+      "evidence": "Source: 'Web clipper, 2021-11-04'"
     },
     {
-      "id": "D.provenance-written",
+      "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present and covers all touched fields. source_url nulls are the known systemic tooling gap per calibration note (not a gate failure)."
+      "evidence": "Provenance file present; Capabilities correctly set_by jonathan. Source_url nulls are a known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes found in AI Notes or Open Questions"
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One open question, terse, conditional, and targeted (capabilities re-sort). No fields asked about that already have non-zero values."
+      "evidence": "One terse OQ proposing capability correction; conditional and correctly scoped"
     },
     {
-      "id": "D.status-correct",
+      "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer has not flipped it because this is a FAIL."
+      "evidence": "Entry in Enriching; reviewer flipping to Needs Review now"
     }
   ],
-  "summary": "Two linked failures: (1) 'Product design' remains in Capabilities even though the scraper's own Open Questions Q1 explicitly flags it as wrong -- an entry cannot reach Jonathan with a capability the doer knows is mislabeled; (2) the three HOMEomorphism images (site-01/02/03) show neeneecollective.com displaying other artists' physical sculpture work, not June Park's own web design interface -- if HOMEomorphism is included as web design evidence the shots need to show the site UI she built, not the exhibition content inside it. All other checks pass. Fix is scout-side (Capabilities) then scraper-side (HOMEomorphism images).",
-  "to": "scout"
+  "notes": "Manifest integrity note (not a gate failure): site-15.png (Design Anthology logo/banner trap), site-16.jpg (unrelated Singapore interior photo), and site-17.png (other artists sculpture) are active in the manifest but were never uploaded to Notion. Jonathan sees none of these. Scraper should mark them rejected on next touch.",
+  "to": null
 }

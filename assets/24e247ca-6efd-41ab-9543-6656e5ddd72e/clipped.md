@@ -47,3 +47,8 @@ Part of the design team at Studio Lowrie in the identity design for eco-friendly
 Middle Ground is an investigation into the ever-changing relationship between nature and culture with a focus on asking the reader to consider what lies between these two contexts, the inter-section; the middle ground. Middle Ground can be read from whatever way it is picked up to reflect the necessary accessibility of the content and the aims is wishes to discuss, with the two sides of the book running in parallel to one another.
 
 A two part publication that contextualises the contemporary "age of noise" with the Morris Worm Virus incident in 1988 that brought the internet down for 72 hours. The books aimed to encourage people to slow and take more time for consideration and reflection. This is achieved through quiet, careful typographic treatment, referencing a slower era, in situ with other thematically relevant content. The books were printed on a risograph and on a fax machine, printing techniques which fade with time, meaning the book will get visually quieter over time until it is silent.
+# Archived page body (2026-06-24)
+
+Work
+
+Harry Bennett, It's Nice That contributor (225+ articles, since 2020) — www.itsnicethat.com

@@ -1,29 +1,29 @@
 {
   "page_id": "13bf3e19-e146-43f5-801e-5de045b397ef",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T08:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects confirmed: Rose Theatre (3 images), Bristol Cathedral (3 images), Lyric Stage Boston (3 images), John Hansard Gallery (1 active image). No near-duplicate cross-project shots."
+      "evidence": "4 distinct projects: Rose Theatre (3 images), Bristol Cathedral (3 images), Lyric Stage Boston (3 images), John Hansard Gallery (1 active image, site-10.jpg rejected as exterior photo). No near-duplicate cross-project shots."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside each project. Rose Theatre shows billboard, brand guidelines spread, signage. Bristol Cathedral shows mobile UI, multi-screen composition, exterior with UI overlay. Lyric Stage Boston shows laptop hero, section grid interior, mobile mockup."
+      "evidence": "Goes inside each project: Rose Theatre shows billboard, brand guidelines spread, signage. Bristol Cathedral shows mobile UI mockup, multi-screen composition, exterior overlay. Lyric Stage Boston shows laptop hero, section interior, mobile mockup. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Frontend development (web); all captured work is web/digital brand work for arts clients via Chaptr case studies. Rose Theatre brand identity images are part of a rebrand-and-website project, captioned correctly. Borderline but acceptable."
+      "evidence": "Tagged Frontend development (web); all captured work is web/digital brand for arts clients via Chaptr case studies. Rose Theatre brand images are part of a rebrand-and-website project, captioned correctly."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "matthewluke.studio is ECONNREFUSED (documented in AI Notes, two passes). Chaptr context shot (site-12.png) is accurately labeled 'Chaptr Studio website (Matthew Luke Creative Director)' and is not mislabeled as the subject's own site. IG context shot rejected, documented, queued to state/ig-queue.json per the sanctioned exception. No mislabeling found."
+      "evidence": "site-12.png is the Chaptr Studio homepage, visually confirmed, labeled accurately. matthewluke.studio is ECONNREFUSED (documented in AI Notes). IG context shot (site-13.png) rejected, documented, queued to state/ig-queue.json per the sanctioned exception. No mislabeling."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,7 +33,7 @@
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Work is web design; no audio or video work to embed. Not applicable."
+      "evidence": "Work is web design; no video/audio to embed. Not applicable."
     },
     {
       "id": "A.absence-explained",
@@ -43,28 +43,27 @@
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person, set_by agent."
+      "evidence": "Type: Person."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email field is absent and AI Notes contain no mention of having searched for a public email address. matthewluke.studio being down removes the most obvious source, but Chaptr (chaptr.studio) lists a contact page, and a web search for 'Matthew Luke matthew.luke studio email' or checking his LinkedIn snippet may surface a public address. The checklist requires a search to be done and the result documented either way.",
-      "fix": "Search for a public contact email via chaptr.studio contact page, web search, and his LinkedIn snippet. If genuinely not findable, add one line to AI Notes: 'No public email found (site down, Chaptr contact form only, LinkedIn no email listed).' If found, set the Email field."
+      "result": "pass",
+      "evidence": "Email hello@matthewluke.studio now set (on-domain address surfaced via search snippets; fix from attempt 1). Website, Instagram, LinkedIn all present. Prior FAIL resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities set_by jonathan (migration, locked). Open Question #2 correctly proposes additions without overwriting."
+      "evidence": "Capabilities set_by jonathan (migration, locked). Open Question 2 correctly proposes additions without overwriting."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country UK, Size 1, Work Status Unknown with ambiguity documented and Open Question #1 raised. Multi-source conflict documented in AI Notes."
+      "evidence": "Country UK, Size 1, Work Status Unknown with ambiguity documented and Open Question 1 raised. Multi-source conflict in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes referencing CD role at Chaptr. Hedged."
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes referencing CD role at Chaptr, hedged."
     },
     {
       "id": "C.no-judgment-contradiction",
@@ -79,7 +78,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedge Autonomy ('inferred from public profiles and Chaptr CD role, hedged'), Work Status ('may be employed or long-term partner, sources do not resolve'), and site downtime. Seniority read included ('Mid-to-senior, design + build, CD-level confirmed')."
+      "evidence": "AI Notes hedge Autonomy and Work Status. Seniority read included ('Mid-to-senior, design + build, CD-level confirmed'). No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present; set_by values correct; source_url null is the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance present; set_by values correct; source_url null is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,14 +98,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two terse questions: Work Status ambiguity (Q1) and Capabilities extension proposal (Q2). Both conditional and valid."
+      "evidence": "Two terse conditional questions: Work Status ambiguity (Q1) and Capabilities extension proposal (Q2)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains Enriching pending this gate. Status flip to Needs Review is the reviewer's action on pass."
+      "evidence": "Entry remains Enriching pending this gate; reviewer flips to Needs Review on pass."
     }
   ],
-  "summary": "One FAIL: Email field missing with no documented search. Everything else passes. The fix is a single targeted check: search for a public email via Chaptr contact page and web search; set it if found, or document in AI Notes that none exists.",
-  "to": "scraper"
+  "summary": "Attempt 1 FAIL (Email missing, no documented search) is resolved: Email now set to hello@matthewluke.studio. All other checks passed on attempt 1 and pass again here. Entry is complete and ready for Jonathan.",
+  "to": null
 }
