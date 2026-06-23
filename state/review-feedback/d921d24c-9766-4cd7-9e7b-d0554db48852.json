@@ -1,0 +1,111 @@
+{
+  "page_id": "d921d24c-9766-4cd7-9e7b-d0554db48852",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct projects: Spotify Podcasts (5 images), Spotify Daily Mix (3 images), Spotify x Stranger Things (2 GIFs). No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each project: strategy decks, user research slides, listener journey mapping, field research photos, ML playlist UI screens, competitive analysis. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tag is stale (set_by: jonathan from migration, open question already raised). Captured work is product design which matches her actual practice. Re-tag pending Jonathan's answer to Open Question 1."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png confirmed as andrealimjo.co website homepage. site-11.png (IG) marked rejected, reject_reason documents rate-limit, queued in state/ig-queue.json. Sanctioned throttle path applied."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 11 non-rejected manifest entries have captions naming the project and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No YouTube/Vimeo on accessible project pages. Password-protected case studies not attempted (no passcode supplied, documented). GIFs captured as images correctly."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents password-protected case studies and IG throttle. Both absences explained with ig-queue entry present."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram (https://www.instagram.com/andrealimjoco/), LinkedIn, Email all present. Instagram was missing on attempt 1; scraper set it before re-review."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Tag is jonathan-origin from migration. Open Question 1 correctly asks about re-tagging. Cannot overwrite jonathan-set field unilaterally."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + US (London/NYC confirmed on site). Size: 1. Work Status: Employed (Meta); site + LinkedIn agree per AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by: agent. Grounded in Principal/Director-level trajectory at Meta, Airbnb (Staff), Spotify (lead), Sidewalk Labs (lead)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Notes: Full time at Airbnb describes subject employment, not a Jonathan relationship claim. Worked Together: Never does not contradict it."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was an employment fact about the subject. AI Notes flags it as stale (she moved to Meta). No relationship facts in note requiring --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts only verifiable facts. Stale Notes field flagged. Seniority and Autonomy reasoning present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-12-01. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with correct set_by values. source_url null throughout (known systemic tooling gap, not a gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, conditional on jonathan-origin Capabilities field. No story nudge needed."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review after all checks passed on re-review."
+    }
+  ],
+  "summary": "All 20 checks pass. Attempt 1 failed on B.links (Instagram Notion property not written); scraper fixed it. Entry flipped to Needs Review.",
+  "to": null
+}

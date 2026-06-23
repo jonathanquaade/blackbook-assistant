@@ -1,0 +1,30 @@
+{
+  "page_id": "4aa6a1d5-4b5a-487f-8f3e-1c60cd37361c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5 distinct AR/XR/VR projects in active images: Headspace XR, Eternals AR, Blumhouse Enhanced Cinema, Civilisations XR, StoryTrails AR"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "3 interior stills per project plus Vimeo embed plus thumbnail; case-study interiors, not just hero covers"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All captured work is AR/XR/VR immersive; matches tagged Capability: Creative technology"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-16.png is a real nexusstudios.com homepage screenshot. site-17.png (IG error page) is marked rejected: true in manifest with rejected_reason; AI Notes documents the rate-limit failure and states '@nexusstories queued to state/ig-queue.json for logged-in ig.py grab'; ig-queue.json entry confirmed present with page_id, ig_url and reason. Sanctioned throttle exception fully satisfied per checklist A.context-shots EXCEPTION clause."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "Every active image has a caption naming its project and a link to the source project page"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "5 Vimeo embeds (Headspace XR, Eternals AR, Blumhouse Enhanced Cinema, Civilisations XR, StoryTrails AR), each paired with a thumbnail preview image and linked caption"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Work sources are the studio's own case-study pages; no unexplained gaps; IG absence documented and queued"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Studio; open question asks Jonathan whether Agency is more appropriate given scale"},
+    {"id": "B.links-present", "result": "pass", "evidence": "Website and LinkedIn present; Instagram handle @nexusstories in manifest and ig-queue; no public email found, not flagged as skipped search"},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Creative technology tagged; open questions ask about adding 3D & motion and Spatial & exhibition design"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country: UK/US/Australia; Size: 100+; Work Status: Studio; sources named in AI Notes (about page, Wikipedia, LinkedIn)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Org entry; Autonomy: 5 set_by agent with seniority read in AI Notes; OPTIONAL for org-type per calibration note"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match no contradicting evidence in clip or body"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note specified the AR & VR section of Nexus Studios; source field reflects this verbatim"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes cites sources (about page, Wikipedia, LinkedIn); verifiable facts asserted; inferences labelled; seniority and experience read included; IG queue documented"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: 'Web clipper, 2021-12-08 (clipped from the AR & VR section of Nexus Studios)'"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "Provenance file present; set_by correct; null source_url is known systemic tooling gap, not a gate failure per calibration note"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes in AI Notes, Open Questions, or captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Two terse questions: Type ambiguity and Capabilities expansion; both genuinely unresolvable by the agent; neither asks for a field already set"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Entry is in Enriching; flippping to Needs Review now on this pass verdict"}
+  ],
+  "summary": "Attempt 1 fail (IG error page not rejected/documented/queued) is now fully remediated: site-17.png marked rejected with reason, AI Notes documents the failure, ig-queue.json entry confirmed. Website context shot (site-16.png) is the real nexusstudios.com homepage. All 20 checks pass."
+}

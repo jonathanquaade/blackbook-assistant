@@ -1,0 +1,111 @@
+{
+  "page_id": "ed66969a-c69e-423c-9409-e0384d73120d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 live images across 5 distinct named projects (Perplexity HoQ, Perplexity Know-It-Alls, Slack, Brex, ezCater) plus website context shot."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior stills for Perplexity HoQ; thumbnails for all other projects. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Captured work (commercials, product films) reflects what Sandwich actually does. Tag mismatch is surfaced as an Open Question for Jonathan."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-04.png) confirmed sandwich.co. IG shot rejected+documented+queued per sanctioned exception: manifest marks it rejected with reason, ig-queue.json entry confirmed, AI Notes notes queued capture."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 live manifest images have captions with project name and source link."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 YouTube embeds, each paired with a thumbnail preview image and link to sandwich.co project page."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in manifest rejection_reason, ig-queue.json entry present, AI Notes notes queued capture."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn present. No public email on a contact-form-only studio site; not a hard gate failure."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities is jonathan-locked (Brand strategy). The mismatch is now in Open Questions: 'Capabilities: currently Brand strategy, but Sandwich core work is commercials and product films (Film and video production). Retag?' Jonathan has the question in his actionable inbox. Reviewer does not retag a jonathan-locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, 11-40, Studio. Sources named in AI Notes (site, Wikipedia, Crunchbase, interviews)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent) with reasoning in AI Notes. Studio entry so field is optional per calibration note."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them. No evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was page title only. Name cleaned to Sandwich."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size hedged; tag mismatch hedged; seniority/experience read present (founder-led, founded 2010, rebranded 2019)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-03-07'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present, all touched fields recorded. Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Open Question present asking Jonathan to confirm/retag Capabilities. Terse and conditional."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry already in Needs Review. Formally endorsed by reviewer on this pass."
+    }
+  ],
+  "summary": "Attempt 2 re-gate: the sole prior failure (capability mismatch not in Open Questions) is resolved. Scout added a numbered Open Question asking Jonathan to confirm or retag from Brand strategy to Film and video production. All 20 checks pass. Entry is ready for Jonathan.",
+  "to": null
+}

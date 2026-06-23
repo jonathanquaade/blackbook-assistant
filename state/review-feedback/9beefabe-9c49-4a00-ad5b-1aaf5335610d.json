@@ -1,0 +1,112 @@
+{
+  "page_id": "9beefabe-9c49-4a00-ad5b-1aaf5335610d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Clovers Network, Chen Chen & Kai Williams e-store, The Downer Berlin, Patrick Groth portfolio"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Clovers covered from 3 interior views (homepage, garden, albums); Patrick Groth has homepage + inner works image"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities is Frontend development (web); all 4 captured projects are websites Everett built"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01 is verified everettwilliams.info homepage; site-02 is verified instagram.com/refilled_aesop_bottle profile page"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active manifest entries have captions and source links"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Entry is a frontend web developer; no video/audio work to embed; screenshots of live web builds are the correct format"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explain why LinkedIn and alternate IG handles were not attached (confidence floor)"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person, correct for an individual designer/developer"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website and Instagram present and verified. LinkedIn surfaced but could not be confirmed (documented in AI Notes). Email: site has a contact button; no public email visible in clipped body text; absence is not explicitly documented in AI Notes but site content does not surface one. Minor documentation gap only.",
+      "note": "Site clipped body shows a Message button with no email text - likely a contact form. AI Notes should confirm no public email found, but given the evidence this is a light gap, not a hard FAIL."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) set by jonathan. Open Question 1 correctly asks about adding Web design and Creative technology."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany / 1 / Studio. Work Status sourced from his site (highest trust per CLAUDE.md). AI Notes cite the source."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: runs his own builds, works inside a studio"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Notes says (worked with Noplans) - read as subject's work history, not a Jonathan relationship claim. Worked Together: Never and Familiarity: Don't know them are consistent with that reading. Defensible."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note preserved verbatim in Notes (set_by jonathan in provenance). Rating 4 in AI Notes attributed to Jonathan's note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Hedged language throughout (likely mid-senior, per his own site). Seniority + experience read present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-12-08"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url null is the known systemic gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, and all image captions: no em-dashes found"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 asks about expanding Capabilities (correct, conditional on jonathan's existing value). Q2 asks about confirming IG/LinkedIn identity. Both are terse and relevant."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on pass"
+    }
+  ],
+  "to": null,
+  "notes": "One light documentation gap: AI Notes do not explicitly state that no public email was found. Site clipped content shows only a contact button with no email address, so absence is plausible - but should be documented in AI Notes on the next pass. Not a gate failure in v1."
+}

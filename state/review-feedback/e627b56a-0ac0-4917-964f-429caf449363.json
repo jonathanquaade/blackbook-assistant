@@ -1,0 +1,110 @@
+{
+  "page_id": "e627b56a-0ac0-4917-964f-429caf449363",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "summary": "All three checks that failed on attempt 1 are confirmed fixed. Entry is complete and honest; status correctly in Needs Review.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct active work projects: Departure Neuaubing (site-03/04/05/06/07), Clovers Network (site-08), Harberger Ads (site-11), New Models (site-12). Exceeds the 3-project minimum."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Email field = studio@n-kort.net (present and filled). Website present. No Instagram confirmed absent, documented in AI Notes. LinkedIn unconfirmed but an Open Question is filed for Jonathan."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions = ['LinkedIn: linkedin.com/in/nicolas-kort-19713556 - correct profile?']. Terse, conditional, correct."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is n-kort.net website homepage. No Instagram exists; documented in AI Notes. No ig-queue entry needed."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Departure Neuaubing goes inside with 4 archival content images plus homepage."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities = Frontend development (web). All work images show Vue SPAs and a Vue dApp. On-capability."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All active images have captions and source links."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Frontend developer; projects are web apps not video/audio. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No Instagram documented. pool.ac offline: site-09 rejected with reason in manifest. bin.am offline documented in AI Notes."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) matches the Vue SPA and dApp work shown."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany / 1 / Unknown. Work Status Unknown with documented reasoning in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent, hedged reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states do not contradict the clip note."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "'Vue Developer' clip note drove Capabilities tagging and Notes field."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedging language throughout and includes seniority and Autonomy read. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-12-08'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url nulls are the known systemic gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written text."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Needs Review, consistent with a confirmed-pass re-review."
+    }
+  ]
+}

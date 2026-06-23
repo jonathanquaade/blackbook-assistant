@@ -1,0 +1,110 @@
+{
+  "page_id": "1c3a7bef-f9bb-4711-b685-1d913400eb4b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-23T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects across active images: Brand in the Open (Coinbase/Base), GitHub Shop, Fucking Awesome, Sci-Fi Fantasy, New York Sunshine, Virgil Abloh Archive, 52 Walker"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "One viewport screenshot per site. For a frontend developer whose work IS the rendered live site, homepage viewport shots are the appropriate on-capability capture. No interior pages, but the homepage IS the deliverable for this discipline. Borderline; accepted."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web). All 7 project shots show live ecommerce or brand sites he built. On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01 is stefanbowerman.com homepage (confirmed). site-02 shows instagram.com with handle misternaf / Stefan Bowerman confirmed behind cookie modal. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images have captions and links in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Frontend developer; no video/audio creative discipline requiring embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "7 projects captured; no unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) set_by jonathan. Open Question asks about adding Creative technology."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, 1, Freelance. AI Notes records source resolution (site + LinkedIn consistent; no conflicting signal)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, grounded in 15+ yrs independent consultant read with named reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are appropriate; no clip note suggests a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is Web clipper 2022-07-22; no additional instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "15+ years attributed to his site explicitly. Work Status reasoning documented. Seniority + Autonomy paired. No bare assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2022-07-22."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url null is the known systemic tooling gap (not a gate failure per checklist calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes uses semicolons and parentheses; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about adding Creative technology capability. Conditional and appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review after all checks passed."
+    }
+  ],
+  "to": null
+}

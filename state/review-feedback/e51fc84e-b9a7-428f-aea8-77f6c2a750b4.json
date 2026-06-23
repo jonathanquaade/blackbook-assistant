@@ -1,0 +1,111 @@
+{
+  "page_id": "e51fc84e-b9a7-428f-aea8-77f6c2a750b4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Tesco Groceries, Habito, Shell Energy, What3words, Vortic XR, Allica Bank. No repeated angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images inside each case study covering components, UX flows, personas, research sessions, and app screens."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is product/UX (app screens, design systems, UX flows, persona research). Matches Jay's actual discipline. Capability tag mismatch (Web design vs Digital product design) is flagged in Open Questions for Jonathan, not an off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed as jay-clark.co.uk Wayback snapshot showing name and Senior Product Designer tagline. site-03.png confirmed as instagram.com showing @jayclark___ profile with bio Senior Design Manager at Monzo. Both captions accurate."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 uploaded images have project-named captions and source links in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Not applicable. Product/UX case study portfolio; no video or audio work present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Vortic XR (site-05, site-06) and Allica Bank (site-07, site-08) now captured from Wayback and included in manifest. AI Notes documents the Wayback source. All 6 projects on the archived site are accounted for."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Instagram property now set to https://www.instagram.com/jayclark___/ and confirmed correct via context shot. Website and LinkedIn present. Email absent with documented search in AI Notes (site offline, LinkedIn login-gated, Dribbble none, no Google snippet)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design tag present; re-tag to Digital product design raised in Open Questions for Jonathan to confirm."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK, Size 1, Work Status Employed. Single-source (LinkedIn) hedge explicit in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, grounded in senior design management role and portfolio trajectory."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Rating 2 and Notes Meh are Jonathan's, untouched. Zero-states not contradicted by any clip note or evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body was site copy, archived to clipped.md. No judgment instructions in clip note; nothing missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status single-source hedge present. Seniority and Autonomy read grounded in LinkedIn and portfolio. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-12-01."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Touched fields have provenance with correct set_by values. Null source_url is the known systemic tooling gap, not a gate failure per 2026-06-21 calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question: Capability re-tag from Web design to Digital product design."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review on this pass."
+    }
+  ],
+  "summary": "Both attempt-1 failures resolved. Instagram URL now written to Notion property (confirmed via keeper.py get). Vortic XR and Allica Bank case studies captured from Wayback (2 images each, site-05 through site-08), documented in AI Notes. All 20 checks pass.",
+  "to": null
+}

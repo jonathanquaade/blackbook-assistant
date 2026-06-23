@@ -1,0 +1,111 @@
+{
+  "page_id": "cda1f1df-4ee1-408d-a56f-2304c930bceb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 active images across 9 distinct projects (Michiel Schuurman, Fuse.kiwi, Neuralink/Metalab, Tripadvisor/Metalab, Syndicate, Domo Display, Huis van het Boek, Poet at Work, Provenance of Six, Expo, Fuse.kiwi UI). No repeated-project padding."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Publication interiors present (Huis van het Boek spreads, Provenance of Six bench shot). Tripadvisor has two distinct onboarding screens. Type specimen interior for Domo Display. Goes inside projects, not only covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development (web). Work spans UI/product (Neuralink accessibility, Tripadvisor onboarding, Fuse.kiwi product) and publication/web (Michiel Schuurman site, Huis van het Boek, Poet at Work). Open Question asks about adding Digital product design and Identity systems. All captured work matches documented practice on grindler.design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png confirmed as grindler.design homepage (Jonah Grindler name visible top-left, About nav top-right). IG: site-18.png marked rejected in manifest with documented reason '@jonahgrindler does not exist on Instagram'; absence documented in AI Notes. Handle non-existence is not a throttle issue so no IG queue entry is needed; correct handling."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 active manifest entries have captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Web/product/publication designer. No YouTube/Vimeo embeds on project pages identified as needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence (handle does not exist) documented in AI Notes and manifest. Work Status single-source hedge documented."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website grindler.design present. Email jonahgrindler@gmail.com present. IG: handle does not exist, documented. LinkedIn: AI Notes now states 'LinkedIn searched (Jonah Grindler product designer linkedin) -- not found; no profile exists under that name.' Two-query search documented. Prior fail resolved."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) and Web design set (set_by jonathan). Open Question correctly proposes Digital product design and Identity systems additions without overwriting jonathan-set field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Belgium + Canada / Size 1 / Freelance. Single-source hedge documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: ships product and code solo for serious clients (Neuralink, Crypto.com), ex-Metalab agency stint."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "No Jonathan relationship signal in clip. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body was marketing copy (clients list, services pitch). No relationship facts or instructions. Archived to clipped.md."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status hedged ('hedged, no second source confirming'). Autonomy grounded in work history. Seniority read present. No bare assertions of unverified inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-12-01'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present. source_url null is a known systemic tooling gap, not a gate failure per calibration note. set_by values correct."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes uses '--' (double hyphen) not em-dash. Open Questions and captions clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional Capabilities question. No fields already having non-zero values are asked about."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review after this gate passed."
+    }
+  ],
+  "to": null,
+  "summary": "All checks pass on attempt 2. The sole prior fail (B.findable-links: LinkedIn not documented as searched) is resolved: AI Notes now explicitly states LinkedIn was searched with the query 'Jonah Grindler product designer linkedin' and no profile was found. Entry is complete and ready for Jonathan."
+}

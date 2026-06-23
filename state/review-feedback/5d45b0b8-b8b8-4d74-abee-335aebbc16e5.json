@@ -1,0 +1,31 @@
+{
+  "page_id": "5d45b0b8-b8b8-4d74-abee-335aebbc16e5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:15:00",
+  "verdict": "pass",
+  "attempt": 3,
+  "to": null,
+  "summary": "All checks pass. The sole failure from attempt 2 (missing ig-queue entry) is resolved: state/ig-queue.json now contains the entry (page_id 5d45b0b8-b8b8-4d74-abee-335aebbc16e5, queued_at 2026-06-24T00:05:35). A.context-shots exception fully satisfied: site-18.png is rejected+documented+queued; site-17.png (Cargo website homepage) is present and correct. 12 active images + 1 YouTube embed across 5 named projects. Status flipped to Needs Review.",
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "12 active images span 5 named projects: Futher up futher in (alpine prints), An Island (North Norfolk glacier series), Going out is going in (short film), Outer Regions (endurance running), Ecstacy where is it (RSA bookmark). No repeated angles."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Multiple film stills from Going out is going in; two RSA prints from Futher up futher in; performance body shot from An Island. Not hero-only."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Photography; all captured work is fine-art photography and film. Q4 flags Film and Video Production and Art practice as possible additions; Jonathan's call."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-17.png is a correct Cargo website homepage screenshot. site-18.png (IG error page) is rejected:true with documented reason and entry confirmed present in state/ig-queue.json. Sanctioned IG throttle exception is satisfied."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 12 active images have captions naming project, year, and source link."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Going out is going in has a YouTube embed plus thumbnail preview image (yt-going-out-thumb.jpg)."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Ecstacy where is it documented as RSA bookmark with explanation in AI Notes and manifest. IG throttle documented in AI Notes with queue reference."},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Person."},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "LinkedIn searched; no personal profile found, only RSA institutional mention. Absence documented in AI Notes. Website and Instagram present."},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Photography tagged. Q4 flags broader ambiguity for Jonathan."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country: United Kingdom, Size: 1, Work Status: Freelance. Sources named in AI Notes."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy: 3, set_by agent, with hedged reasoning in AI Notes."},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states consistent with no relationship evidence in clip note."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Plain web-clipper entry, no special instructions. Source set to 'Web clipper, 2023-08-11'."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Inferences hedged. Seniority read present. Verifiable facts asserted. No em-dashes."},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: 'Web clipper, 2023-08-11'."},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "Provenance file present. Null source_url is known systemic tooling gap per calibration note; not a gate failure."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes in AI Notes, Open Questions, or captions."},
+    {"id": "D.open-questions-terse", "result": "pass", "evidence": "Q1-3 are terse judgment asks. Q4 flags Capabilities ambiguity with context. All conditional."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Status flipped to Needs Review on this pass."}
+  ]
+}

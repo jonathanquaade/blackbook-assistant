@@ -782,5 +782,47 @@
     "ig_url": "https://www.instagram.com/eli.block/",
     "reason": "Headless Playwright returned cookie consent modal obscuring profile grid. @eli.block confirmed as his handle (linked from eli-block.com about page and from entry). Need logged-in ig.py grab for clean Instagram profile context shot.",
     "queued_at": "2026-06-23"
+  },
+  {
+    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
+    "name": "Andy Price",
+    "ig_url": "https://www.instagram.com/__andyprice__/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "ed66969a-c69e-423c-9409-e0384d73120d",
+    "name": "Sandwich",
+    "ig_url": "https://www.instagram.com/sandwichvideo/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (rate-limited logged out). Need logged-in ig.py grab for @sandwichvideo profile context shot.",
+    "queued_at": "2026-06-23"
+  },
+  {
+    "page_id": "d921d24c-9766-4cd7-9e7b-d0554db48852",
+    "name": "Andrea Limjoco",
+    "ig_url": "https://www.instagram.com/andrealimjoco/",
+    "reason": "IG logged-out render returned error page (rate-limited); context shot needed",
+    "queued_at": "2026-06-23"
+  },
+  {
+    "page_id": "cf8c29c8-cb03-478d-8c36-69be85265c80",
+    "name": "Anja Lekavski",
+    "ig_url": "https://www.instagram.com/anja.lekavski/",
+    "reason": "IG context screenshot (site-08.png) returned 'Something went wrong' error page (headless Playwright rate-limited by Instagram). @anja.lekavski is the confirmed primary online presence. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-23"
+  },
+  {
+    "page_id": "4aa6a1d5-4b5a-487f-8f3e-1c60cd37361c",
+    "name": "Nexus Studios (AR & VR)",
+    "ig_url": "https://www.instagram.com/nexusstories/",
+    "reason": "Instagram context screenshot (site-17.png) returned error page: headless Playwright blocked by Instagram (rate-limited). Need logged-in ig.py grab for @nexusstories profile context shot.",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "5d45b0b8-b8b8-4d74-abee-335aebbc16e5",
+    "name": "Decca Faire",
+    "ig_url": "https://www.instagram.com/decca.faire/",
+    "reason": "Instagram context screenshot returned error page (headless Playwright rate-limited). Need logged-in ig.py grab for profile shot + recent work.",
+    "queued_at": "2026-06-24T00:05:35"
   }
 ]
