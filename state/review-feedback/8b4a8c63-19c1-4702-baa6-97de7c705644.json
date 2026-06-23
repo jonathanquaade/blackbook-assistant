@@ -1,0 +1,111 @@
+{
+  "page_id": "8b4a8c63-19c1-4702-baa6-97de7c705644",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Black Panther (Perception), Godless (Method/Netflix), HIDDEN (personal short film), Star Wars: The Last Stand (personal CGI), Afterpay 3D Brand System (Block/Cash App)"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 interior stills plus animated GIFs showing actual frame sequences, not just hero covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 5 projects are title design, motion, or 3D CGI work; matches tagged capability '3D & motion'"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png confirmed as sekanimotiondesign.com. site-16.png is an IG error page, marked rejected:true, documented in AI Notes, queued in ig-queue.json; sanctioned throttle path per checklist exception"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and link; no anonymous images"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "4 video embeds (Black Panther YT, Godless YT, HIDDEN Vimeo, Star Wars YT), each paired with thumbnail preview image + caption + link. Images present for all projects including Afterpay (stills only, no video on that project page)"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and ig-queue.json; no other source silently skipped"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all set. Email sekanimd@gmail.com found on /about page, resolving the attempt-1 fail"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "'3D & motion' matches all captured work"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US / 1 / Employed. AI Notes names sources: site About + LinkedIn agree on Block; objective multi-source rule satisfied"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set_by agent, reasoning in AI Notes: department head/CD level, inferred from history"
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Familiarity 'Don't know them' / Worked Together 'Never'; no clip note or evidence contradicts either"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-11-04'; no instruction text in clip note to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged as 'inferred from history'; Work Status sources named; seniority trajectory present (~15 yrs, career path listed); title corrected to Principal Designer"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-11-04'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by and verified_at; source_url null throughout -- known systemic tooling gap, not a gate failure per calibration note 2026-06-21"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, or Source"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One conditional question on adding Creative direction to Capabilities; not asking for a field already set"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review on this pass"
+    }
+  ],
+  "summary": "Attempt-1 fail resolved: Email set to sekanimd@gmail.com (found on /about page). All other checks carry through clean: 5 distinct on-capability motion projects with embeds + thumbnail previews, website context shot confirmed, IG throttle path correctly handled (rejected + documented + queued), seniority/Autonomy read present, no em-dashes, no judgment contradictions.",
+  "to": null
+}

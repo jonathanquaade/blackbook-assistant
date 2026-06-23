@@ -1,0 +1,111 @@
+{
+  "page_id": "f56bc127-c536-4967-8767-6759a6a5d2fe",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:55:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct bodies of work: Soft Strobe series (ravaz, racines, transplant), Dama la Nob (standalone painting), Digital paintings via Booooooom spotlight (4 images), Mortal Breakup Inferno grad film (thumbnail + embed)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple pieces within each series; not only hero shots; Mortal Breakup Inferno covered by both thumbnail and embedded playable video"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Illustration (set_by jonathan from migration). Captured work is illustration and animation, matching the tag. Open Question correctly surfaces re-tag to Jonathan without overriding his original tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as debora-cheyenne.tumblr.com (blog title 'WSH', meta description names Debora Cheyenne Cruchon). site-02.png is a genuine instagram.com error page ('Profile isn't available'), correctly marked rejected:true in manifest, IG block documented in AI Notes, entry queued to state/ig-queue.json. Sanctioned throttle path met per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All images have captions and source links. 'Digital painting, 2019' captions on Booooooom images lack formal project titles, but these are personal artworks without project names; the Booooooom article link is present on each."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "YouTube embed present for Mortal Breakup Inferno with matching thumbnail image (mortal_breakup_inferno_thumb.jpg) and link to the video. Entry has images alongside the embed (not embeds-only)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG capture failure documented in AI Notes and queued to ig-queue.json. No other unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (debora-cheyenne.tumblr.com), Instagram (https://www.instagram.com/debora_cheyenne/ written to property), LinkedIn, Email all present. Note: Instagram URL was written to the property even though the headless screenshot failed."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration retained from Jonathan's migration tag. Re-tag question raised in Open Questions for his decision."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country France/US (corrected from Italy), Size 1, Work Status Employed (Buck). Sources named in AI Notes: LinkedIn + One Club ADC judge profile agree on Buck employment."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 (set_by agent), reasoning in AI Notes: directs work inside Buck plus self-directed personal films and art. Seniority read included (mid-senior, art-director level at top motion studio)."
+    },
+    {
+      "id": "C.no-judgment-contradictions",
+      "result": "pass",
+      "evidence": "Familiarity 'Don't know them' and Worked Together 'Never' are zero-states. No clip note or evidence contradicts them. Source is web clipper with no relationship text."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-11-04'; no instructions detected in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Sources cited (LinkedIn, One Club, Mighty Oak credits). Inferences hedged. Seniority + Autonomy read present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-11-04'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields. source_url nulls are the known systemic tooling gap (not a gate failure per calibration note 2026-06-21). set_by values are correct: Capabilities remain jonathan, agent fields are agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions checked; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question on Capabilities re-tag. Not asking for fields that already have non-zero values (Capabilities has a Jonathan value but the question is a proposal to change, not a missing-field question)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "to": null,
+  "notes": "All checks pass. One minor note: booooooom images captioned 'Digital painting, 2019' lack formal project names because these are untitled personal artworks; source links are present and the Booooooom article identifies them. Not a gate failure."
+}

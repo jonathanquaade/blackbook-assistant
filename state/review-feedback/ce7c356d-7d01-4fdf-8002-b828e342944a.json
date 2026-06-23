@@ -1,0 +1,110 @@
+{
+  "page_id": "ce7c356d-7d01-4fdf-8002-b828e342944a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:55:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: The Roger Hub (On x Federer), Prada Employees, WOW Concept, AvroKO, Om Swami. No repeated project across captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project showing interior UI states (product grid, nav, content sections), not only hero/cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are live web UIs (interactive product grid, e-commerce homepage, CMS site, hospitality website, editorial site). Matches Frontend development (web) + Web design tags. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png: confirmed niccolomiranda.com homepage (MIRANDA large type, nav, project cards). site-16.png: confirmed instagram.com/niccolomiranda (profile with bio, grid, follower count). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 images carry captions naming project and year; 14 work images also carry source links to niccolomiranda.com project pages."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Scraper notes no video players on project pages; no embeds expected. Images-only is appropriate here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No known gated or missing sources; 5 projects captured from a live portfolio. AI Notes does not flag any blocked source."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance creative developer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: niccolomiranda.com. Instagram: instagram.com/niccolomiranda (verified from context shot). LinkedIn: nl.linkedin.com/in/niccolomiranda (hedged in AI Notes as inferred namespace, acceptable at 0.8). Email: info@niccolomiranda.com."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) + Web design. Open Question 1 asks Jonathan about adding Creative technology + Creative direction, which is the correct channel for a capabilities expansion proposal. Current tags are supported by the captured work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Netherlands. Size: 1. Work Status: Freelance. AI Notes records sources: own site + about page both state independent/freelance. Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). AI Notes gives reasoning: independent founder/CD, Awwwards Ambassador/instructor, FWA/Webby judge, Cannes Lions, 5+ yrs. Grounded in verifiable public record."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together: Never + Familiarity: Don't know them. No clip note asserts a relationship. Zero-states are honest."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is Web clipper 2021-10-28 (no relationship or instruction text in clip note). Nothing deferred."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "LinkedIn is hedged ('inferred from consistent namespace, hedged'). Autonomy estimate marked 'inferred from history'. Seniority + experience read included (~5+ yrs, awards, clients). No unhedged inferences found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-28'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url null throughout (known systemic tooling gap per calibration note, not a gate failure). set_by values correct: agent for all agent-set fields; jonathan for Capabilities (pre-existing tag). No field written below 0.8 confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions and Source checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question (Capabilities expansion). Terse, conditional (current Capabilities have no Creative technology or Creative direction, so the question is not redundant). No story nudge needed (Worked Together: Never, no reason to ask)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

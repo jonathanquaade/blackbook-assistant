@@ -845,5 +845,47 @@
     "ig_url": null,
     "reason": "No confirmed IG handle found. Scout noted no IG on site or in search. @matwhill (Pinterest-derived guess) returned Profile not available (handle does not exist). @matthillart (search result) is a different person (night photographer). IG property left empty. If Jonathan knows his handle, logged-in ig.py grab needed for profile context shot.",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "36d4d24a-19f5-4b6d-85d8-daf57fb85bc5",
+    "name": "June Park",
+    "ig_url": "https://www.instagram.com/junepark.design/",
+    "reason": "headless IG shot returned error page; handle junepark.design found via search, confirms graphic/info design work; logged-in grab needed to confirm and get hi-res",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "8b4a8c63-19c1-4702-baa6-97de7c705644",
+    "name": "Sekani Motion Design",
+    "ig_url": "https://www.instagram.com/sekanisolomon/",
+    "reason": "Headless IG shot returned error page; logged-in ig.py needed for context shot of @sekanisolomon profile",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "f56bc127-c536-4967-8767-6759a6a5d2fe",
+    "name": "Debora Cheyenne Cruchon",
+    "ig_url": "https://www.instagram.com/debora_cheyenne/",
+    "reason": "IG profile returned error page under headless rate-limiting; high-res illustration work likely on IG",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "24e247ca-6efd-41ab-9543-6656e5ddd72e",
+    "name": "Harold Bennett",
+    "ig_url": "https://www.instagram.com/harold__bennett/",
+    "reason": "IG context shot errored (headless rate-limit); profile shows Somethingwent wrong error page; good project images captured from type-01.com and vanderbrand.com, IG context shot still needed",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "87727d7d-fd69-4dae-9439-90fafce32b77",
+    "name": "Andre Bato Corp",
+    "ig_url": "https://www.instagram.com/andrebato/",
+    "reason": "IG context screenshot returned 'Something went wrong' error page (headless Playwright rate-limited). Need logged-in ig.py grab for @andrebato profile context shot.",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "13bf3e19-e146-43f5-801e-5de045b397ef",
+    "name": "Matthew Luke",
+    "ig_url": "https://www.instagram.com/matthewlukestudio/",
+    "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited). @matthewlukestudio confirmed handle. matthewluke.studio also down (ECONNREFUSED). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-24"
   }
 ]
