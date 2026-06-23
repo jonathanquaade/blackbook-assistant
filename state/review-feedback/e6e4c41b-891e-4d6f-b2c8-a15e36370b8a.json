@@ -1,0 +1,112 @@
+{
+  "page_id": "e6e4c41b-891e-4d6f-b2c8-a15e36370b8a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:35:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct named projects: NHM Generator, Mechasobi, BIS Suit, Disconnected, The Banhammer, Feline Align, Cyberfloriography, Almost Light. 18 non-rejected images + 3 embeds."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "NHM Generator has 4 images + Vimeo embed. BIS Suit has 3 render passes (beauty, clay, wireframe). Mechasobi has 3 installation images + Vimeo embed. Goes well inside the work."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Creative technology + Frontend development (jonathan-set). All work is creative technology: generative design tools, interactive installations, mixed-reality sets, browser games. On-capability throughout. Open Question 3 asks about adding Art practice and Creative direction/3D."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png confirmed as mat-hill.xyz homepage (mat(at)mat-hill.xyz tagline, NHM Generator project listed). IG context shot (site-15.png) rejected correctly: handle @matwhill does not exist, documented in manifest reject_reason and AI Notes, queued in ig-queue.json for Jonathan to confirm handle. This is a genuine absence, not a throttle issue; sanctioned path applied."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 18 non-rejected images and 3 embeds have named project captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Three video embeds: NHM Generator Vimeo + thumbnail, Mechasobi Vimeo + thumbnail, Banhammer YouTube + thumbnail. Correct pattern: thumbnail image for glance, playable embed below."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No IG handle confirmed: documented in AI Notes and manifest. LinkedIn not found: documented in AI Notes. No unexplained thin sections."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website and Email present. Instagram: genuinely unknown handle, absence documented in AI Notes ('no IG found: @matwhill does not exist; @matthillart is a different person') and queued. LinkedIn: not found per AI Notes. Both absences documented. No skipped searches."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Tags are jonathan-origin (set_by: jonathan). Open Question 3 asks about additions. Correct mechanism."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK (North London, confirmed on his site). Size: 1. Work Status: Freelance (hedged, single source: his own site -- correctly flagged in AI Notes). Autonomy 5 grounded in evidence."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by: agent. Reasoning in AI Notes: conceives and builds own tools and installations end to end. Grounded in NHM Generator, Mechasobi, BIS Suit, personal framework (Puffins)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "fail",
+      "evidence": "Familiarity is set to 'Don't know them' (set_by: agent) but Worked Together is 'Repeatedly' (set_by: jonathan) and Rating is '5' (set_by: jonathan). CLAUDE.md forbids writing a zero-state that evidence contradicts. Someone Jonathan has rated 5 and worked with repeatedly is not someone he does not know. The Familiarity zero-state is knowingly false.",
+      "fix": "Clear Familiarity to empty via keeper.py set. Open Question 1 ('Familiarity?') is already present and will collect the real answer. This is the same pattern as Zetteler: never set 'Don't know them' when Worked Together is Once or Repeatedly."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip-note instructions beyond Worked Together: Repeatedly and Rating: 5 (both jonathan-set, preserved). Nothing else to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Work Status (single source flagged). Verifiable facts asserted (clients, projects, North London location). Seniority and Autonomy reasoning present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-11-08. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. Worked Together and Rating correctly stamped set_by: jonathan. source_url null throughout (known systemic tooling gap, not a gate failure per calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: Familiarity (correct), story nudge (correct, Worked Together: Repeatedly triggers it), Capabilities additions (correct). All terse and conditional."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Gate running before flip to Needs Review, correct."
+    }
+  ],
+  "summary": "Single FAIL: Familiarity set to 'Don't know them' (agent zero-state) contradicts jonathan-set Worked Together: Repeatedly and Rating: 5. Fix: clear Familiarity to empty so Open Question 1 collects the real answer. Same pattern as Zetteler (f027a9de). This appears to be a systemic scout bug: the zero-state rule must check Worked Together before writing Familiarity.",
+  "to": "scout"
+}

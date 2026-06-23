@@ -1,46 +1,44 @@
 {
   "page_id": "fcb92b2b-5074-4888-80de-710d75109302",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-23T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "12 work images across 6 named projects: Pigments (2), Glass (2), The Modern House (2), Retail Therapy (2), Product photography (2), Motion/film stills (2). Distinct enough."
+      "evidence": "12 work images across 6 distinct named projects: Pigments (2), Glass (2), The Modern House (2), Retail Therapy (2), Product photography (2), Motion/film stills (2)."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Two images per project, going inside each project rather than hero-only."
+      "evidence": "Two images per project, going inside each rather than hero/cover only."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Capabilities field is '3D & motion' (set_by: jonathan per provenance). The captured work is still-life photography and product photography, not 3D or motion. The scout flagged the mismatch in Open Question 1 and AI Notes, but the entry cannot ship to Jonathan with a capability tag that contradicts all 12 work images. Jonathan must resolve OQ1 (retag to Photography) before the work selection can be verified as on-capability. Until then the tag and the work are in direct conflict.",
-      "fix": "Resolve with Jonathan first: if he confirms Photography as the correct tag, the current image selection is fine and the entry can pass. If he keeps 3D & motion, the scraper must replace images with CGI/motion work. Do not flip to Needs Review while the capability field contradicts every image. The scout should flag OQ1 as blocking and escalate to Jonathan directly, or the orchestrator should surface it."
+      "result": "pass",
+      "evidence": "Capabilities tag '3D & motion' is set_by jonathan. The conflict with all-photography work is surfaced as OQ1 (clear, blocking question for Jonathan to resolve). Per CLAUDE.md, a jonathan-set tag that contradicts the work is an Open Question + Needs Review, not a reviewer gate block. OQ1 is present and specific."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png is samarmstrong.co.uk homepage (confirmed: 'SAM ARMSTRONG' header, nav OVERVIEW/PRODUCT/PROJECTS/MOTION/CONTACT). site-14.png is instagram.com/samarmstrongstudio (confirmed: Instagram chrome, handle @samarmstrongstudio, bio 'Photographer, London/Paris/NYC'). Both correct."
+      "evidence": "site-13.png confirmed visually as samarmstrong.co.uk homepage (SAM ARMSTRONG header, OVERVIEW/PRODUCT/PROJECTS/MOTION/CONTACT nav). site-14.png confirmed visually as instagram.com/samarmstrongstudio (Instagram chrome, @samarmstrongstudio handle, Sam Armstrong name, Photographer bio, London/Paris/NYC). Both correct."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-05 and site-06 are captioned 'The Modern House, commercial' but the images show abstract macro pigment/paint shots and an abstract cropped red circle, not interior property photography consistent with The Modern House estate agency. The source CDN (rackcdn.com) also differs from the photofolio CDN used for all other named projects. These captions are not verifiably correct: the images could belong to a different project (Farrow & Ball is listed as a client; they make paint). Mislabeled captions are a check-A failure per the Zuzanna precedent.",
-      "fix": "Scraper must verify site-05 and site-06 actually come from the samarmstrong.co.uk/Projects/The Modern House/ page. If they do, update captions to describe what is shown (e.g. 'The Modern House, paint macro commercial'). If they are from a different project (e.g. Farrow & Ball), relabel correctly. The rackcdn CDN discrepancy needs an explanation."
+      "result": "pass",
+      "evidence": "Prior fail resolved. site-05 now captioned 'The Modern House, paint/material macro study, 2022'; site-06 'The Modern House, abstract colour form, 2022'. Both link to samarmstrong.co.uk/Projects/The Modern House/ and scraper confirmed rackcdn filenames SS_TMH_08_02_22-_0207/_0212 come from that project page. Captions accurately describe what is shown."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "He has a Motion section. site-11 and site-12 are film stills (screenshots). No embed was provided. However he is primarily a photographer/director and stills from his motion work are acceptable; there is no strong evidence a Vimeo/YouTube embed was skipped on the project page. Acceptable."
+      "evidence": "Motion section represented by film stills (site-11, site-12). No skipped Vimeo/YouTube embed evidenced on the project page. Acceptable for a photographer/director with a secondary motion section."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No silent gaps. AI Notes explains the IG confirmation was hedged (logged-out). The IG context shot was captured successfully and shows the correct profile."
+      "evidence": "No silent gaps. AI Notes explains IG confirmation was hedged. IG context shot captured correctly."
     },
     {
       "id": "B.type-classified",
@@ -50,38 +48,37 @@
     {
       "id": "B.all-links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present and plausible. IG handle @samarmstrongstudio confirmed via context shot."
+      "evidence": "Website (samarmstrong.co.uk), Instagram (@samarmstrongstudio confirmed via context shot), LinkedIn (uk.linkedin.com/in/sam-armstrong-4aaa768), Email (studio@samarmstrong.co.uk) all present."
     },
     {
       "id": "B.capabilities-tagged",
-      "result": "fail",
-      "evidence": "Capabilities: '3D & motion' (set_by: jonathan). Scout AI Notes and OQ1 both flag this as likely wrong. This is the same failure as A.on-capability: the tag and the captured work contradict each other. Logged here separately because the fix may come from the scout (raising it as a blocking question) rather than the scraper.",
-      "fix": "Escalate OQ1 to Jonathan as a blocking question before the entry reaches Needs Review. The scout set_by on Capabilities is 'jonathan', meaning Jonathan originally tagged it. He may have tagged incorrectly at clip time. The question is already in Open Questions; it just needs to be surfaced as a reason the entry is held."
+      "result": "pass",
+      "evidence": "Tag is jonathan-set. Conflict raised as OQ1 for him to resolve. Not a gate failure."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK, Size 1, Freelance. AI Notes documents sources: agency representation plus own site, no employer. Consistent."
+      "evidence": "UK, Size 1, Freelance. AI Notes documents agency representation plus own site with no employer. Sources consistent."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: 'directs his own shoots', agency-represented. Grounded and hedged."
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: directs own shoots, agency-represented. Grounded and hedged."
     },
     {
       "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the clip note."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no stated relationship in clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2022-01-10'. No special instructions in the clip note beyond the URL. Nothing left unacted."
+      "evidence": "Source is 'Web clipper, 2022-01-10'. No special instructions in clip note. Nothing left unacted."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "IG handle confirmed with hedge ('bio not directly confirmed logged-out'). Capabilities mismatch flagged. Duplicate entry flagged. Seniority read present ('established freelance commercial photographer'). No bare assertions of unverifiable claims."
+      "evidence": "IG handle confirmed with hedge. Capabilities mismatch and duplicate entry flagged. Seniority read present. No bare assertions of unverifiable claims. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -91,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present and covers all touched fields. source_url null throughout but this is the known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
+      "evidence": "Provenance present for all touched fields. source_url null throughout but this is the known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
@@ -101,15 +98,14 @@
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "Two questions, both conditional and relevant. OQ2 (duplicate) is a legitimate unresolvable for the agent."
+      "evidence": "OQ1 is specific and actionable (capability retag question). OQ2 (duplicate entry) is a legitimate unresolvable for the agent. Both terse and conditional."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching. Has not been prematurely flipped to Needs Review."
+      "evidence": "Flipped to Needs Review this pass."
     }
   ],
-  "failing_checks": ["A.on-capability", "A.no-uncaptioned-images", "B.capabilities-tagged"],
-  "summary": "Two related failures. First: site-05 and site-06 are captioned 'The Modern House, commercial' but the images show abstract pigment/paint macro shots inconsistent with that project name, and sourced from a different CDN than all other project images. Captions must be verified and corrected. Second: the active Capabilities tag is '3D & motion' (jonathan-set) but every image captured shows still-life photography. The scout correctly flagged this in OQ1 but the entry cannot ship with a tag that contradicts all 12 work images. OQ1 must be escalated to Jonathan as a blocking question before the entry reaches Needs Review.",
-  "to": "scraper"
+  "summary": "Both prior failures resolved. site-05/06 captions now accurately describe the images shown and are confirmed to come from the The Modern House project page. The Capabilities conflict (3D & motion vs photography) is correctly surfaced as OQ1 for Jonathan to resolve; per CLAUDE.md a jonathan-set tag that contradicts the work goes to Jonathan via Open Questions, not a reviewer gate. All other checks pass. Entry is complete.",
+  "to": null
 }

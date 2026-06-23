@@ -824,5 +824,26 @@
     "ig_url": "https://www.instagram.com/decca.faire/",
     "reason": "Instagram context screenshot returned error page (headless Playwright rate-limited). Need logged-in ig.py grab for profile shot + recent work.",
     "queued_at": "2026-06-24T00:05:35"
+  },
+  {
+    "page_id": "b96ec067-607f-43b4-86b2-9ef81b1884cb",
+    "name": "Indego Design",
+    "ig_url": "https://www.instagram.com/indego.mo/",
+    "reason": "IG context shot returned 'Something went wrong' error under headless rate-limit; site work captured, IG grid needed for context shot",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "f027a9de-3cad-47bc-8fc3-c0031ea06d57",
+    "name": "Zetteler",
+    "ig_url": "https://www.instagram.com/_zetteler_/",
+    "reason": "IG returned error page under headless rate-limiting; context shot needed",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "e6e4c41b-891e-4d6f-b2c8-a15e36370b8a",
+    "name": "Mat Hill",
+    "ig_url": null,
+    "reason": "No confirmed IG handle found. Scout noted no IG on site or in search. @matwhill (Pinterest-derived guess) returned Profile not available (handle does not exist). @matthillart (search result) is a different person (night photographer). IG property left empty. If Jonathan knows his handle, logged-in ig.py grab needed for profile context shot.",
+    "queued_at": "2026-06-24"
   }
 ]
