@@ -2,8 +2,8 @@
   "page_id": "8281b5d5-9aab-47ad-b422-a1ef4b27d4f5",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -23,17 +23,17 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-04.png confirmed as douglasalberts.com homepage; IG (site-05.png) rejected + documented as headless rate-limit + queued to ig-queue.json; sanctioned throttle path followed"
+      "evidence": "site-04.png visually confirmed as douglasalberts.com homepage (Doug Alberts nav, 3D animation work visible); IG (site-05.png) is an error page, correctly rejected + documented + queued to ig-queue.json; sanctioned throttle path followed"
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 15 active images have project name + source link captions"
+      "evidence": "All 15 active images have project name + source link captions in manifest"
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Hulu Vimeo embed with thumbnail; Ripe Vimeo embed with thumbnail; both have caption + link"
+      "evidence": "Hulu Vimeo embed with thumbnail (hulu-thumb.jpg); Ripe Vimeo embed with thumbnail (ripe-thumb.jpg); both have caption + link"
     },
     {
       "id": "A.absence-explained",
@@ -47,14 +47,13 @@
     },
     {
       "id": "B.links-present",
-      "result": "fail",
-      "evidence": "LinkedIn field is empty and AI Notes makes no mention of searching for or failing to find a LinkedIn profile. Douglas Alberts is an established motion designer with 10+ years and his own studio; a LinkedIn almost certainly exists. The scout checklist requires searching '<name> <discipline> linkedin' and documenting the outcome.",
-      "fix": "Search 'Douglas Alberts motion designer linkedin' (Google snippet, no login). If found, add the URL. If genuinely absent, note 'No LinkedIn found via search' in AI Notes."
+      "result": "pass",
+      "evidence": "LinkedIn now set: https://www.linkedin.com/in/douglas-alberts-64807a129 (Owner + Creative Director, Noodle, confirmed per spawn prompt). Website, Instagram also present. No public email found but not a hard fail given the research done."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "3D & motion tagged (Jonathan's original tag per provenance); Open Questions 1 appropriately asks him about adding Creative direction and Film & video production"
+      "evidence": "3D & motion tagged; Open Questions 1 appropriately asks Jonathan about adding Creative direction and Film & video production"
     },
     {
       "id": "B.country-size-workstatus",
@@ -94,20 +93,18 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Zero em-dashes found in AI Notes or Open Questions text"
+      "evidence": "Zero em-dashes found in AI Notes, Open Questions, or captions"
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two terse conditional questions; neither asks for a field that already has a value"
+      "evidence": "Two terse conditional questions; neither asks for a field that already has a non-zero value"
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching; reviewer correctly holds it here pending this FAIL"
+      "evidence": "Entry is Enriching; flipping to Needs Review now as gate passes"
     }
   ],
-  "to": "scout",
-  "summary": "One failing check: LinkedIn not searched or documented. Website, Instagram, Capabilities, Country, Work Status, Autonomy, context shots, work images and embeds all pass. Fix the LinkedIn gap and this entry is ready.",
-  "fix": "Search 'Douglas Alberts motion designer linkedin' via Google snippet (no login). Add LinkedIn URL if found. If not found, add one line to AI Notes: 'No LinkedIn found via web search.' Then re-submit for review."
+  "summary": "All checks pass on attempt 2. LinkedIn fixed (confirmed Owner + Creative Director, Noodle). 7 distinct 3D/motion projects with depth, on-capability, Vimeo embeds with thumbnails, website context shot confirmed, IG queued correctly."
 }
