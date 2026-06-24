@@ -28,11 +28,11 @@
     },
     "Country": {
       "value": [
-        "UK"
+        "United States"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-24T19:17:01",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -97,15 +97,39 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "American animator, director, illustrator known online as vewn (1.5M+ YouTube subs); makes auteur 2D animated shorts and has directed for industry (Netflix We the People, Adult Swim, Fox). California native, ~10 yrs; writes, directs and animates her own work. Autonomy 5: self-directing auteur who conceives and ships complete films solo (inferred from independent body of work and director credits). Work Status independent creator/freelance (self-maintained channels vewn.online and YouTube plus press agree). No clear personal LinkedIn found (common Victoria Vincent profiles are different people), so none attached. Currently tagged Illustration only; her core is animation/directing.",
+      "value": "American animator, director, illustrator known online as vewn (1.57M+ YouTube subs, 94.6M views as of Feb 2026); makes auteur 2D animated shorts and has directed for industry (Netflix We the People ep3, Adult Swim Smalls: Mask Dog/Bobo the Monkey/Snooze Quest, Fox Dirt Girls writer-EP, cancelled). California-based, active since 2015, approx 10 yrs. Writes, directs and animates her own work; also makes mixed-media paintings and illustrations (vewn.online/pages/artwork). Autonomy 5: self-directing auteur who conceives and ships complete films solo. Work Status: Freelance (self-maintained site and YouTube and press agree). Country: corrected from UK (migration baseline) to United States per her own site, press, and YouTube bio. Email vewnemailer@gmail.com from vewn.online/policies/contact-information (public business address). No LinkedIn found (common name, unverifiable). IG context shot queued (headless Playwright rate-limited; @vewn_ confirmed from vewn.online). Tagged Illustration only; core is animation/directing (Open Question raised).",
       "source_url": null,
-      "verified_at": "2026-06-15T21:34:09",
+      "verified_at": "2026-06-24T19:17:20",
       "set_by": "agent"
     },
     "Open Questions": {
       "value": "1. Capabilities: add 3D & motion and Film & video production? (she is primarily a 2D animator and director, not only illustration)",
       "source_url": null,
       "verified_at": "2026-06-15T21:33:29",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "catopolis-thumb.jpg",
+        "stupid-dinner-thumb.jpg",
+        "snooze-quest-thumb.jpg",
+        "kittykat96-thumb.jpg",
+        "twins-in-paradise-thumb.jpg",
+        "dead-end-thumb.jpg",
+        "site-02.jpg",
+        "site-03.jpg",
+        "site-04.jpg",
+        "artwork-saddest-shower.jpg",
+        "site-05.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-24T19:11:38",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "vewnemailer@gmail.com",
+      "source_url": null,
+      "verified_at": "2026-06-24T19:17:01",
       "set_by": "agent"
     }
   }

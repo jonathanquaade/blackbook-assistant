@@ -1,0 +1,113 @@
+{
+  "page_id": "867db236-1ffb-44f7-a3da-20f20b2804aa",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "to": "scout",
+  "summary": "Two metadata gaps: (1) Country field says UK (migration value) but AI Notes says California-based American — conflict unresolved, no Open Question raised. (2) Email search not documented: no email field, no mention in AI Notes that it was searched and not found. Work and images are solid.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct animation films (Catopolis, Stupid Dinner, Snooze Quest, kittykat96, Twins in Paradise, Dead End) plus 4 distinct mixed-media artworks. No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each film has a thumbnail still plus a playable embed — going inside the work. Artworks are individual pieces from the /artwork page."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities = Illustration (jonathan-locked). Captured work is 2D animation stills and mixed-media paintings/illustrations, both on-capability. Scraper correctly raised Open Question about adding animation/directing tags."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website shot (site-05.png) verified as vewn.online homepage. IG shot rejected (Something went wrong error page, rate-limited headless), documented in manifest rejected_reason and AI Notes, queued to state/ig-queue.json. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest items (including rejected ones) have captions and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 YouTube embeds, each paired with a thumbnail preview image and a link. Pattern matches CLAUDE.md requirement."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG rate-limit documented in AI Notes and manifest rejected_reason; entry present in state/ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email field absent and no AI Notes entry confirming it was searched (e.g. 'no public email found'). LinkedIn correctly documented as not found ('common name, unverifiable'). Website and Instagram present and verified.",
+      "fix": "Search for a public contact email (vewn.online contact page, YouTube about tab, press kit). If none found, document 'no public email found' in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged, set_by jonathan (locked). Open Question raised to add animation/directing tags."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "fail",
+      "evidence": "Country field = UK (migration value, set_by migration). AI Notes says 'California-based, American' — a direct factual conflict that was not resolved. The scraper wrote the correct geography into AI Notes but did not update the Country field or raise an Open Question about the discrepancy.",
+      "fix": "Update Country from UK to US (Victoria Vincent / vewn is American, California-based — confirmed in AI Notes and widely documented). Use keeper.py set to write Country: [US], set_by agent."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5, set_by agent, with reasoning in AI Notes ('self-directing auteur who conceives and ships complete films solo'). Seniority and experience read present ('approx 10 yrs, active since 2015')."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them. No clip note implies otherwise."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-10-09' with no special instructions in the clip text requiring action."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Stats hedged with 'as of Feb 2026', experience is 'approx 10 yrs', Autonomy estimate reasoned. No bare assertions beyond verifiable public facts."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-10-09'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present; set_by values correct (agent/migration). Null source_urls are the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all manifest captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse Open Question about Capabilities. Conditional (no question for fields already set by jonathan). Story nudge not triggered (Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer has not flipped it (correct for a fail verdict)."
+    }
+  ]
+}

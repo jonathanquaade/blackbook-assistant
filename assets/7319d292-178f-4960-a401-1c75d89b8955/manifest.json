@@ -24,7 +24,7 @@
     "link": "https://vimeo.com/641987915",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "reject_reason": "Vimeo returned his logo/brand mark as the thumbnail, not a showreel still. Embed carries the work."
+    "reject_reason": "Vimeo oEmbed thumbnail is his personal logo mark, not a showreel still. No alternate frame available from oEmbed API. Showreel converted to bookmark so it renders as a titled link instead of a blank embed block."
   },
   {
     "file": "site-16.jpg",
@@ -34,7 +34,7 @@
     "captured_at": "2026-06-24"
   },
   {
-    "type": "embed",
+    "type": "bookmark",
     "url": "https://vimeo.com/641987915",
     "caption": "Mikey Dowdle Showreel Vol.1",
     "link": "https://vimeo.com/641987915"
