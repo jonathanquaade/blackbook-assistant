@@ -11,14 +11,18 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/original/9e453b220328415.Y3JvcCw1MDgwLDM5NzMsMTQ1OCwyNjQ.jpg",
     "caption": "Indian Wells, Pause, album art, 2017",
     "link": "https://www.behance.net/gallery/54515039/Indian-Wells-Pause",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Behance profile-DOM contamination: image is MBK Global business cards, not Indian Wells Pause project"
   },
   {
     "file": "site-03.jpg",
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/original/eb012c242402943.Y3JvcCwxMjAwLDkzOCwwLDEzNg.jpg",
     "caption": "Indian Wells, Pause, album art, 2017",
     "link": "https://www.behance.net/gallery/54515039/Indian-Wells-Pause",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Behance profile-DOM contamination: image is Kika album cover, not Indian Wells Pause project"
   },
   {
     "file": "site-04.jpg",
@@ -32,7 +36,9 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ee93bd54514441.595e5caf3560c.jpg",
     "caption": "Alek Fin, An Mynda, album packaging, 2017",
     "link": "https://www.behance.net/gallery/54514441/Alek-Fin-An-Mynda",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Duplicate of site-04.jpg (same image, webp variant)"
   },
   {
     "file": "site-06.jpg",
@@ -53,7 +59,9 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0c0bca54513435.595e550433555.jpg",
     "caption": "Kali Mutsa, Souvenance Remixes, album art, 2017",
     "link": "https://www.behance.net/gallery/54513435/Kali-Mutsa-Souvenance-Remixes",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Duplicate of site-07.jpg (same image, webp variant)"
   },
   {
     "file": "site-09.jpg",
@@ -65,7 +73,7 @@
   {
     "file": "site-10.png",
     "source_url": "https://www.behance.net/jonmarsh",
-    "caption": "Behance profile",
+    "caption": "Website",
     "link": "https://www.behance.net/jonmarsh",
     "captured_at": "2026-06-24",
     "context_shot": true
@@ -76,6 +84,48 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/jonmarsh/",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Headless Playwright blocked by Instagram (Something went wrong error page). Queued to ig-queue.json for logged-in ig.py grab."
+  },
+  {
+    "file": "site-12.png",
+    "source_url": "https://jonmarsh.co/",
+    "caption": "Website",
+    "link": "https://jonmarsh.co/",
+    "captured_at": "2026-06-24",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "jonmarsh.co is passcode-gated. No passcode on file. Behance profile (site-10.png) used as website context shot."
+  },
+  {
+    "file": "site-13.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c79e5a54515039.595e5f5d8a676.jpg",
+    "caption": "Indian Wells, Pause, album art, 2017",
+    "link": "https://www.behance.net/gallery/54515039/Indian-Wells-Pause",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Duplicate of site-01.jpg (same image, webp variant)"
+  },
+  {
+    "file": "site-14.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/81e2b154515039.595e5f5d8ba62.jpg",
+    "caption": "Indian Wells, Pause, album art, 2017",
+    "link": "https://www.behance.net/gallery/54515039/Indian-Wells-Pause",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-15.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/abf10e54515039.595e5f5d8c17d.jpg",
+    "caption": "Indian Wells, Pause, album art, 2017",
+    "link": "https://www.behance.net/gallery/54515039/Indian-Wells-Pause",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-16.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4f83f954515039.595e5f5d8b6dc.jpg",
+    "caption": "Indian Wells, Pause, album art, 2017",
+    "link": "https://www.behance.net/gallery/54515039/Indian-Wells-Pause",
+    "captured_at": "2026-06-24"
   }
 ]

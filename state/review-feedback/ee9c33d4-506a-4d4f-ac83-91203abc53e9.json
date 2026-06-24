@@ -2,86 +2,83 @@
   "page_id": "ee9c33d4-506a-4d4f-ac83-91203abc53e9",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
-  "to": "scout",
-  "summary": "Two scout-level metadata failures: Website field points to a dead URL (czelmatyas.com, confirmed redirecting to Instagram per AI Notes), and Email is absent with no documented search attempt. Everything else is solid.",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "17 images across 5 named projects: Verso, Vergil AI, trppn, POV Budapest, Job's Not Finished/UNITO. No duplicate projects."
+      "evidence": "17 images across 5 named projects: Verso, Job's Not Finished, UNITO, Vergil AI, trppn, POV Budapest. No duplicate projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Verso has 4 images going inside the app (features screen, membership flow, icon system, phone mockup). Vergil AI has 3 (illustration system, Dante typographic concept, colour system). trppn has 3 interior UI shots. POV Budapest has 3 (poster, wall mural, digital UI components). Depth is present across the main projects."
+      "evidence": "Verso: 4 images (app phone mockup, features screen, membership flow, icon system). Vergil AI: 3 images (illustration system, Dante typographic concept, colour system). trppn: 3 interior UI shots. POV Budapest: 3 (poster, wall mural confirmed on building, digital UI components). Depth present across projects."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Capabilities: Creative technology, Graphic design. Work captured: brand identity systems, app UI/UX, conference identity, icon systems, typographic systems. All on-capability."
+      "evidence": "Capabilities: Creative technology, Graphic design. Work captured: brand identity systems, app UI/UX, conference identity, icon and typographic systems. All on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-18.png) confirmed as cm.supply (CM logo, 'Design as direction' tagline, Verso project listing). IG context shot (site-19.png) correctly rejected (returns error page), documented in AI Notes, queued to ig-queue.json. Sanctioned IG-throttle exception applies."
+      "evidence": "site-18.png visually confirmed as cm.supply homepage (CM wave logo, 'Design as direction' tagline, Verso project listed). IG shot (site-19.png) correctly rejected, documented in AI Notes, queued to ig-queue.json. Sanctioned IG-throttle exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 17 uploaded images have named project captions with source links. Rejected images (site-05.jpg portrait, site-19.png IG error) are excluded from the upload set."
+      "evidence": "All 17 uploaded images have named project captions with source links. Rejected images (site-05.jpg portrait, site-19.png IG error) excluded from upload set."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Capabilities are Graphic design and Creative technology; no audio/video discipline tagged. No embed requirement triggered."
+      "evidence": "No audio/video discipline tagged; no embed requirement triggered."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in AI Notes, queued entry confirmed in ig-queue.json with correct page_id and reason."
+      "evidence": "IG throttle documented in AI Notes, queued entry present in ig-queue.json."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct; Matyas Czel is an individual, CM.SUPPLY is his studio (a separate potential entry, not this one)."
+      "evidence": "Type: Person. Correct."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Website field is set to https://czelmatyas.com/ which AI Notes confirms redirects to Instagram (not a live portfolio). The canonical active site https://cm.supply/ is known and referenced throughout AI Notes and all image source URLs, but is NOT set in the Website field. Works At Link has the same stale URL. Email field is empty with no AI Notes documentation of a search attempt; the archived clipped.md bio explicitly says 'Please feel free to send an email', strongly implying a contact email exists on cm.supply.",
-      "fix": "1. Update Website field to https://cm.supply/ (the active studio site). Update Works At Link to https://cm.supply/ or raise as an Open Question for Jonathan since the scraper also flagged this. 2. Search cm.supply for a contact email (check the contact/about page). If not publicly listed, document 'no public email found on cm.supply' in AI Notes."
+      "result": "pass",
+      "evidence": "Website: https://cm.supply/ (confirmed live, matches context shot). Works At Link: https://cm.supply/. Email: talk@cm.supply (set from cm.supply contact page). Instagram, LinkedIn present. Both prior fail items resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Creative technology and Graphic design set by jonathan in provenance. An Open Question asks about adding Identity systems and Creative direction, which is appropriate and terse."
+      "evidence": "Creative technology and Graphic design set. Open Question asks about adding Identity systems and Creative direction; terse and appropriate."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Hungary. Size: 1 (person). Work Status: Studio. AI Notes documents source agreement: 'his site and press agree'. Work Status resolution is documented in AI Notes."
+      "evidence": "Country: Hungary. Size: 1. Work Status: Studio. Sources documented in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5, set_by agent, grounded in founder/CD role. Reasoning in AI Notes: 'founder and creative director running his own studio (grounded in founder role and lead history)'. Seniority read present: 'Senior CD level, ~12 yrs'."
+      "evidence": "Autonomy: 5, set_by agent, grounded in founder/CD role. Reasoning in AI Notes. Seniority read present: Senior CD level, ~12 yrs."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note contains no relationship facts. Zero-states do not contradict evidence."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict clip note or any evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was 'Web clipper, 2021-10-01' (no relationship instructions or passcodes). clipped.md is archived. No instructions left unacted."
+      "evidence": "Clip note was bare source reference, no instructions. clipped.md archived."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "No em-dashes. Prior employment claims are grounded in the archived bio. Autonomy estimate is hedged ('grounded in founder role and lead history'). Seniority read present. No unhedged inferences."
+      "evidence": "No em-dashes. Prior employment claims grounded in archived bio. Autonomy estimate hedged. Seniority read present."
     },
     {
       "id": "D.source-filled",
@@ -91,22 +88,22 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present for all touched fields. source_url is null throughout (known systemic tooling gap per calibration note, not a gate failure). set_by values are correct: agent for researched fields, jonathan for Capabilities (retained from migration). No field written below 0.8 confidence."
+      "evidence": "Provenance file present. source_url null is the known systemic tooling gap, not a gate failure. set_by values correct."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question: Capabilities expansion. Terse, conditional (Capabilities currently set but jonathan-flagged as potentially narrow). Story nudge not triggered (Worked Together: Never)."
+      "evidence": "One question on Capabilities expansion. Terse, conditional. Story nudge not triggered."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Status will remain Enriching pending scout fix."
+      "evidence": "Entry in Enriching; being flipped to Needs Review by reviewer as this pass completes."
     }
   ]
 }

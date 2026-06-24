@@ -2,51 +2,48 @@
   "page_id": "6c42b976-bd39-4313-9292-92e375537f5b",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
-  "to": "scout",
-  "summary": "One hard failure: Familiarity is set to 'Don't know them' (agent zero-state) while Worked Together is 'Once' (set_by jonathan). Working together once makes 'Don't know them' a false zero-state. Scout must clear Familiarity to empty so it is honest-pending. The existing Open Question 1 ('Familiarity?') already covers the ask — no new question needed, just clear the field value.",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "C.no-judgment-contradiction",
-      "result": "fail",
-      "evidence": "Worked Together: Once (set_by jonathan, provenance confirmed). Familiarity: 'Don't know them' (set_by agent, zero-state). These contradict each other: someone you worked with once is not someone you 'Don't know'. The zero-state is knowingly false given the evidence.",
-      "fix": "Scout: clear Familiarity field to empty via keeper.py (leave it blank, not a zero-state). Keep Open Question 1 ('Familiarity?') exactly as is — it already asks Jonathan to supply the correct value. Do not write a new zero-state."
+      "result": "pass",
+      "evidence": "Familiarity is now 'Met or spoken' (set_by jonathan via --from-jonathan). Worked Together is 'Once' (set_by jonathan). No contradiction. The prior fail is resolved."
     },
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Active images span 5+ distinct projects: Quest Pro hand-tracking AR UI (80.lv article), M5Stack AR UI concepts (2025 X posts), spatial Netflix VR streaming concept (2023), VRM avatar metaverse interoperability (2021), Google Maps voxel visualization (2022), WebXR Snap Spectacles demos (4 variants, GitHub repo). Well above the 3-project floor."
+      "evidence": "12 active images across 5+ distinct projects: Quest Pro hand-tracking AR UI (80.lv article), M5Stack AR UI tests (2025 X posts), spatial Netflix VR streaming concept (2023), VRM avatar metaverse interoperability (2021), Google Maps voxel visualization (2022), WebXR Snap Spectacles demos (4 variants from GitHub repo). Well above the 3-project floor."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "80.lv image is a 4-panel composite showing widget interiors; WebXR repo has 4 distinct demo screens (pinch, chair, burger, sneaker). Goes inside the projects."
+      "evidence": "site-02.jpg is a 4-panel composite showing widget interiors; webxr-frame-0 through -3 show 4 distinct interaction demos from the same repo. Goes inside the projects."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All active images are AR/VR/creative technology work matching tagged Capabilities. No off-capability content in the active set. 'Brand strategy' tag is set_by jonathan and outside the reviewer's scope."
+      "evidence": "All active images verified visually as AR/VR/creative technology work (hand-tracking UI, spatial video, WebXR prototypes). Matches tagged Capabilities. No off-capability content in active set."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-11.png is confirmed as x.com/dmvrg (X/Twitter profile, @dmvrg, 'AR/VR creative technology interaction design' bio visible) — this is the person's primary online presence, correctly captioned. site-15.png (Instagram) is an IG error page, correctly marked rejected, documented in manifest reject_reason, and queued in state/ig-queue.json. Throttle exception applies. IMPORTANT NOTE: the IG handle @dmvrg is unconfirmed per the queue entry; ig-queue.json flags this explicitly. That uncertainty is acceptable at this stage — it is documented."
+      "evidence": "site-11.png opened and confirmed: x.com/dmvrg profile page, bio reads 'AR/VR creative technology interaction design', 16K followers. Correctly captioned as 'Website (X/Twitter profile, @dmvrg)'. IG error page (site-15.png) correctly marked rejected, documented in manifest, queued in ig-queue.json. Throttle exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 12 active images have captions naming the project and a source link. No anonymous shots."
+      "evidence": "All 12 active images have captions naming the project and a source link."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Work is image/prototype-based; no YouTube/Vimeo on project pages found. Twitter video thumbnails captured as still frames with links — acceptable substitute."
+      "evidence": "Work is prototype/image-based. Twitter video thumbnails captured as stills with source links. No YouTube/Vimeo on project pages that was skipped."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No canonical website exists (vargaa.com is a different person, cleared and documented in AI Notes). X profile used as the primary web presence context shot — documented. IG throttle documented and queued."
+      "evidence": "No canonical personal website (vargaa.com is a different person, documented in AI Notes). X profile used as primary web presence context shot with explanation. IG throttle documented and queued."
     },
     {
       "id": "B.type-classified",
@@ -56,32 +53,32 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "LinkedIn: https://www.linkedin.com/in/dmvrg/ (set). Website: null, documented as cleared (wrong person) and no confirmed alternative. Instagram: null, unconfirmed handle queued. Email: not found, not documented in AI Notes as searched. NOTE: AI Notes does not confirm an email search was attempted — minor gap, not a hard fail given the pseudonymous public presence."
+      "evidence": "LinkedIn set. Website null with documented reason. Instagram null with unconfirmed handle queued. Email not found; this person operates pseudonymously under a handle with no public contact email surfaced."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Creative technology is correct for AR/VR work. Brand strategy is set_by jonathan — reviewer does not challenge it."
+      "evidence": "Creative technology correct for AR/VR work. Brand strategy is set_by jonathan, outside reviewer scope."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: Japan (agent, plausible from Tokyo bio). Size: 1 (Person). Work Status: Unknown with reasoning documented in AI Notes (site reads independent but employment status unconfirmed). Open Question 3 asks Jonathan."
+      "evidence": "Country: Japan. Size: 1. Work Status: Unknown with multi-source reasoning in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: patent record, self-published products. Seniority read present: '~12-15 yrs, Senior product designer/creative technologist'."
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: 15+ patents, self-published WebXR demos, independent shipping record."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note 'VR' is in Notes (jonathan). Worked Together: Once matches the clip note context. AI Notes confirms it matched."
+      "evidence": "Clip note 'VR' present in Notes (jonathan). Worked Together: Once consistent with clip context."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Inferences hedged: 'inferred from patent record and self-published products', 'unclear from snippets, so left Unknown rather than guess'. No unhedged assertions."
+      "evidence": "Inferences hedged throughout. Seniority read present: 12-15 yrs senior creative technologist. Autonomy estimate paired."
     },
     {
       "id": "D.source-filled",
@@ -91,22 +88,22 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by for all touched fields. source_url nulls are the known systemic tooling gap (not a gate failure per checklist calibration note)."
+      "evidence": "Provenance file present. set_by correct throughout. source_url nulls are the known systemic tooling gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Checked AI Notes and Open Questions text. No em-dashes found."
+      "evidence": "AI Notes and Open Questions checked. No em-dashes."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Three questions: 1. Familiarity (conditional on the field being cleared — correct to keep). 2. Website confirmation. 3. Work Status. All terse and appropriate."
+      "evidence": "Two remaining questions: website confirmation and Work Status. Familiarity question correctly absent (field now has a non-zero-state value set by jonathan). Terse and conditional."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching — correct for an entry that has not yet passed the review gate."
+      "evidence": "Entry was Enriching. Flipping to Needs Review as part of this pass verdict."
     }
   ]
 }
