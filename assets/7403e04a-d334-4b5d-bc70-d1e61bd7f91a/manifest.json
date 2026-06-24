@@ -11,16 +11,18 @@
   {
     "file": "site-02.webp",
     "source_url": "https://image.mux.com/02pTJBH5f12k01bjzWlW1iAXdEmgdnrBSXu1q9gHYnjhc/thumbnail.webp",
-    "caption": "Carhartt WIP North America storefront, Shopify Hydrogen",
+    "caption": "Carhartt WIP North America storefront homepage, Shopify Hydrogen",
     "link": "https://commerce-ui.com/work/carhartt-wip-shopify-hydrogen-sanity-case-study",
     "captured_at": "2026-06-24"
   },
   {
     "file": "site-03.webp",
     "source_url": "https://image.mux.com/qtSEGDqtxVeizfUg8aNFPZJ3juJEEyHZOMbMsmnnZ5s/thumbnail.webp",
-    "caption": "Carhartt WIP homepage UI, Shopify Hydrogen headless build",
+    "caption": "Carhartt WIP North America storefront, Shopify Hydrogen",
     "link": "https://commerce-ui.com/work/carhartt-wip-shopify-hydrogen-sanity-case-study",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejected_reason": "Second homepage view; replaced by interior PLPs site-20 and site-22 and search UI site-23"
   },
   {
     "file": "site-04.png",
@@ -80,7 +82,7 @@
   {
     "file": "site-11.webp",
     "source_url": "https://image.mux.com/EZqkKXQXtNKMs007O1rf5lq00K8DWSuBOj0268hysWGMy00/thumbnail.webp",
-    "caption": "Nour Hammour luxury storefront, Shopify Hydrogen",
+    "caption": "Nour Hammour luxury storefront homepage, Shopify Hydrogen",
     "link": "https://commerce-ui.com/work/nour-hammour-hydrogen-shopify",
     "captured_at": "2026-06-24"
   },
@@ -107,7 +109,7 @@
     "link": "https://commerce-ui.com/work/carhartt-wip-shopify-hydrogen-sanity-case-study",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "rejected_reason": "Case study hero thumbnail only, redundant with site-02 and site-03 which show more detail"
+    "rejected_reason": "Case study hero thumbnail only, redundant with other Carhartt images"
   },
   {
     "file": "site-15.png",
@@ -116,7 +118,7 @@
     "link": "https://commerce-ui.com/work/official-lady-gaga-shopify-hydrogen-website",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "rejected_reason": "Case study hero thumbnail only, redundant with site-05 and site-06 which show more detail"
+    "rejected_reason": "Case study hero thumbnail only, redundant with site-05 and site-06"
   },
   {
     "file": "site-16.webp",
@@ -148,6 +150,86 @@
     "source_url": "https://commerce-ui.com/work/aether-apparel-website",
     "caption": "Aether Apparel storefront, headless Shopify by Commerce UI",
     "link": "https://commerce-ui.com/work/aether-apparel-website",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejected_reason": "Screenshot of Commerce UI case study listing page, not the actual Aether Apparel storefront; replaced by site-25"
+  },
+  {
+    "file": "site-20.webp",
+    "source_url": "https://image.mux.com/iTEl7LdA9tNGrxFjCRZPkgekYgmMn17Ik9YP2lJmGc00/thumbnail.webp",
+    "caption": "Carhartt WIP product listing page, Men's Jackets and Vests collection grid",
+    "link": "https://commerce-ui.com/work/carhartt-wip-shopify-hydrogen-sanity-case-study",
     "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-21.webp",
+    "source_url": "https://image.mux.com/jjNPzgLXGT1IQy5nn1GUixs005olb7qhHI9mVpO01hqqs/thumbnail.webp",
+    "caption": "Carhartt WIP mobile homepage, editorial campaign hero",
+    "link": "https://commerce-ui.com/work/carhartt-wip-shopify-hydrogen-sanity-case-study",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejected_reason": "Mobile homepage hero, same homepage view as site-02; site-20 and site-22 (PLPs) are stronger interior shots"
+  },
+  {
+    "file": "site-22.webp",
+    "source_url": "https://image.mux.com/eSrQTLf7FxPzxAmfO01jV01j5702lDBfnhqfcnecuAbX01o/thumbnail.webp",
+    "caption": "Carhartt WIP mobile new arrivals PLP, product grid with filter and colour swatches",
+    "link": "https://commerce-ui.com/work/carhartt-wip-shopify-hydrogen-sanity-case-study",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-23.webp",
+    "source_url": "https://image.mux.com/6nRV00WfVC00MXpuh029hxJTWnWQcgLX01QmapFlM9XDWwc/thumbnail.webp",
+    "caption": "Carhartt WIP search UI, real-time product recommendations with editorial tab",
+    "link": "https://commerce-ui.com/work/carhartt-wip-shopify-hydrogen-sanity-case-study",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-24.jpg",
+    "source_url": "https://cdn.sanity.io/images/jtds2dzp/production/41acb82d21490bcd1cd6cc4b6ccbd9d986684d54-8192x5461.jpg",
+    "caption": "Aether Apparel headless Shopify storefront, Commerce UI",
+    "link": "https://commerce-ui.com/work/aether-apparel-website",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejected_reason": "Lifestyle motocross editorial photo, no web UI visible"
+  },
+  {
+    "file": "site-25.webp",
+    "source_url": "https://image.mux.com/ijfKfTxDxNQffyr9hPaQmnuSyUB00TeQiOTiPQ97p1dY/thumbnail.webp",
+    "caption": "Aether Apparel homepage, headless Shopify storefront by Commerce UI",
+    "link": "https://commerce-ui.com/work/aether-apparel-website",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-26.webp",
+    "source_url": "https://image.mux.com/oNKx9RirDJDjSTQAXAJVcb1tCTlLP3Kgh4uDVoYkuaQ/thumbnail.webp",
+    "caption": "Aether Apparel editorial product section, headless Shopify storefront",
+    "link": "https://commerce-ui.com/work/aether-apparel-website",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-27.png",
+    "source_url": "https://cdn.sanity.io/images/jtds2dzp/production/30616eb7f440ad78a23dcb725e1410a51e63acf5-3601x2252.png",
+    "caption": "Nour Hammour, Shopify Hydrogen",
+    "link": "https://commerce-ui.com/work/nour-hammour-hydrogen-shopify",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejected_reason": "Sanity Studio CMS admin interface screenshot, not the public-facing storefront"
+  },
+  {
+    "file": "site-28.webp",
+    "source_url": "https://image.mux.com/YjMEarP9YvDBSwFsbwTOJRJSZ01xIZl01jLrAMNLSWB1s/thumbnail.webp",
+    "caption": "Nour Hammour collection page, editorial product grid with luxury brand nav",
+    "link": "https://commerce-ui.com/work/nour-hammour-hydrogen-shopify",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "site-29.webp",
+    "source_url": "https://image.mux.com/ZsGJimFWJYUxVdNM9koKdTFdENMMgeEW67f8rf4aBAE/thumbnail.webp",
+    "caption": "Nour Hammour luxury storefront, Shopify Hydrogen",
+    "link": "https://commerce-ui.com/work/nour-hammour-hydrogen-shopify",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejected_reason": "Mobile homepage fashion hero, no clear nav or UI chrome visible; site-11 and site-28 are stronger"
   }
 ]

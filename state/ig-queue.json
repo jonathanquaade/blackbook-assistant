@@ -887,5 +887,33 @@
     "ig_url": "https://www.instagram.com/matthewlukestudio/",
     "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited). @matthewlukestudio confirmed handle. matthewluke.studio also down (ECONNREFUSED). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "db47252d-f43d-472f-b40b-03708e26eb7e",
+    "name": "Jonathan Nielsen",
+    "ig_url": "https://www.instagram.com/jonathanmnielsen/",
+    "reason": "Own site is 503; IG @jonathanmnielsen has 660 posts of graphic/motion work including UAL, SPYSCAPE, DYFA, Art Fund projects not accessible elsewhere. Logged-in grab needed for full-res project images.",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "edfebbae-15ce-4e65-98ba-9e27c8db99f8",
+    "name": "TypeMates",
+    "ig_url": "https://www.instagram.com/typemates/",
+    "reason": "IG context screenshot returned 'Something went wrong' error page (headless Playwright rate-limited). Context shot site-02.png rejected. Need logged-in ig.py grab for @typemates profile context shot.",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "8281b5d5-9aab-47ad-b422-a1ef4b27d4f5",
+    "name": "Douglas Alberts",
+    "ig_url": "https://www.instagram.com/dougamotion/",
+    "reason": "IG context shot errored (headless rate-limit: Something went wrong page); logged-in grab needed for profile screenshot",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "8c64b0a9-476f-4184-9a39-f376eb426d3d",
+    "name": "Sharp Type",
+    "ig_url": "https://www.instagram.com/sharp_type/",
+    "reason": "headless rate-limit: screenshot returned Instagram 'Something went wrong' error page, not the real profile; logged-in ig.py grab needed for Instagram context shot",
+    "queued_at": "2026-06-24"
   }
 ]

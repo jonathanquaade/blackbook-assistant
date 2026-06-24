@@ -1,0 +1,114 @@
+{
+  "page_id": "7403e04a-d334-4b5d-bc70-d1e61bd7f91a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 images span 6 named projects (Carhartt WIP NA, Lady Gaga, Magda Butrym, Nour Hammour, Stereolabs, Aether Apparel) plus 2 context shots. Clear diversity across distinct clients."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "9 of 11 project images are homepage or hero shots. Only site-06 (Lady Gaga music/album page interior) and site-09 (Magda Butrym collection page) show any interior depth. Carhartt WIP has 2 hero shots (site-02 and site-03 both show the same homepage at two states); Nour Hammour and Aether have 1 image each, both hero/landing views. A storefront dev studio should show product pages, collection grids, cart flows, typography systems, checkout screens, not just homepage heroes.",
+      "fix": "For at least 3 of the 6 projects, go inside: pull a product detail page, collection page, cart or checkout screen, or a Sanity-driven content page. For Carhartt WIP, replace site-03 (a second homepage hero) with an interior page. For Aether Apparel, go to the actual aether-apparel.com storefront and capture an interior screen, not the Commerce UI case-study landing page (see also caption issue below)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 uploaded images show web pages with visible nav chrome and storefront UI elements (site-02, site-03 Carhartt; site-05, site-06 Lady Gaga; site-08, site-09 Magda Butrym; site-11 Nour Hammour; site-18 Stereolabs; site-19 Aether). The 8 rejected files were correctly excluded (editorial product shots, no UI visible). On-capability for Frontend development (web)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png is a real commerce-ui.com homepage screenshot (confirmed visually: shows dark header, COMMERCE-UI logo, Carhartt WIP preview). site-13.png is a real instagram.com/commerce_ui/ profile page (confirmed visually: shows @commerce_ui handle, 63 posts, 2676 followers, Magda Butrym/Aether/Lift Foils story rings, and a grid of their work posts)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-19.png is captioned 'Aether Apparel storefront, headless Shopify by Commerce UI' but the image is actually a screenshot of commerce-ui.com's own case-study listing page (shows the COMMERCE-UI logo, Work nav item highlighted, and 'How We Brought an In-Store Experience Into the Digital Realm' case study tile). The actual Aether Apparel storefront (aether-apparel.com) is never shown. Caption claims a destination that was never captured.",
+      "fix": "Capture the real Aether Apparel storefront at aether-apparel.com -- homepage and at least one interior page (collection or product). Replace site-19 with that capture."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Commerce UI is a dev studio, not a video/audio/writing creative. No embeds are required; images are the correct format. The mux thumbnail images (site-02, site-03, site-05, site-06, site-08, site-09, site-11) are video thumbnails from the case study pages, which is an acceptable substitute for the actual storefront video content."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No obvious gaps left unexplained. IG context shot present; site accessible."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Reasoning in AI Notes (specialist hands-on execution, small team)."
+    },
+    {
+      "id": "B.links-complete",
+      "result": "fail",
+      "evidence": "LinkedIn field is empty and AI Notes makes no mention of searching for it or finding it absent. Commerce UI is a 5+ year-old Shopify Plus agency with a public web presence; a LinkedIn company page would be findable via a search for 'Commerce UI linkedin'. Email is present (hello@commerce-ui.com). Instagram present. Website present.",
+      "fix": "Search 'Commerce UI Shopify linkedin' and add the LinkedIn company page URL if found. If genuinely absent, note that in AI Notes ('No LinkedIn company page found')."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) is set_by jonathan per provenance. Open Question 1 correctly asks whether Web design and Backend development should be added. Not a fail -- the agent is not permitted to override a jonathan-set Capability without his answer."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Poland (from site), Work Status = Studio (correct zero-state for a studio entity), Size = 11-40 (carried from prior data, flagged in Open Question 2 as unverified). All three present; uncertainty is documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type = Studio. Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. Not a fail."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together = Never and Familiarity = Don't know them are agent-set zero-states. No clip note or evidence contradicts them. Work With? = Unvetted. All valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2021-10-25' with no special instructions. Source field matches. No relationship facts or judgment stated in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes states verified facts (clients, award, stack) with appropriate hedging on Size ('flagged to verify'). Studio classification reasoning is included. Seniority read present ('small yet senior team'). No em-dashes. Passes for an org entry."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-10-25'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null across the board -- per the calibration note (2026-06-21) this is a known systemic tooling gap and is not a gate failure. set_by values are correct (agent for agent-set fields, jonathan for Capabilities, migration for Name)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed: no em-dashes found. Hyphens and periods only."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "2 terse, conditional questions: (1) Capabilities expansion -- valid since the current tag is jonathan-set; (2) Size confirmation -- valid since 11-40 is flagged as unverified. Neither asks for a field that already has a non-zero-state value set by Jonathan."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching (reviewer has not yet passed it). Status flip to Needs Review is held pending this gate -- correct."
+    }
+  ],
+  "to": "scraper",
+  "summary": "3 fails: (1) A.depth-over-breadth: 9 of 11 images are homepage/hero shots with no interior pages; (2) A.no-uncaptioned-images: site-19 is captioned 'Aether Apparel storefront' but actually shows Commerce UI's own case study listing page -- the Aether storefront was never captured; (3) B.links-complete: LinkedIn is missing and not documented as absent."
+}

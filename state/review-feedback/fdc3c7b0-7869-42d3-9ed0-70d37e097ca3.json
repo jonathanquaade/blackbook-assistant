@@ -1,0 +1,112 @@
+{
+  "page_id": "fdc3c7b0-7869-42d3-9ed0-70d37e097ca3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "to": "scout",
+  "summary": "One check fails: public email not found, not searched, and absence not documented in AI Notes. All other checks pass cleanly.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Rippling, Backlinko, Descope, Deliverect, Charm Industrial. No duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 shots per project showing internal UI screens, not only hero/cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 13 images are web product/site screenshots matching tagged capability Frontend development (web)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png is real bejamas.com homepage. site-15.png is instagram.com showing Profile isn't available; correctly marked rejected with reason account deleted, documented in AI Notes as confirmed-dead account (not throttle), not queued. Meets the spirit of the checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 uploaded images have captions naming the project and source links in manifest."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio is a web dev shop, not a video/audio creative; no embed requirement applies."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes with reason (account deleted/removed, not a rate-limit)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. AI Notes explains Studio-over-Agency reasoning."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email is absent and AI Notes contains no mention of searching for it or explaining its absence. CLAUDE.md P1 step 4 explicitly requires capturing public contact email during P1. bejamas.com is a live commercial studio site; a contact email (e.g. hello@bejamas.com) is very likely findable on their site or via search.",
+      "fix": "Check bejamas.com/contact or footer for a public email address. If genuinely absent from the site, note that in AI Notes (e.g. contact-form-only, no public email listed)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) set by jonathan. Open Questions correctly proposes Backend development and Web design additions rather than overwriting."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Poland (corrected from US, sources named in AI Notes), Size 11-40 (OQ asks for headcount confirmation), Work Status Studio. All set with agent attribution."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio; Autonomy is optional per checklist calibration note (2026-06-21). AI Notes includes seniority read (CEO/co-founder Denis Kostrzewa, 7 yrs). No FAIL."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them. Clip note (clipped.md) is site copy only with no relationship signal from Jonathan. Zero-states are valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only site marketing copy, archived correctly. No instructions or relationship facts from Jonathan were present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts stated plainly (award, clients, ISO cert, CEO name). No unverified inferences asserted as fact. Seniority/leadership read present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-10-25."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All agent-written fields have set_by: agent. Capabilities correctly retains set_by: jonathan (migration). source_url null throughout but that is the documented systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions contain no em-dashes."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: Capabilities expansion proposal (legitimate since current value is jonathan-set and agent is proposing additions), Size headcount confirmation. Both are genuine unresolvables; neither asks for a field already holding a non-zero value set by the agent."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains Enriching, as expected pre-gate."
+    }
+  ]
+}

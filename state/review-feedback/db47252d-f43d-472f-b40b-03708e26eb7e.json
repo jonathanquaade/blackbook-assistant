@@ -1,53 +1,51 @@
 {
   "page_id": "db47252d-f43d-472f-b40b-03708e26eb7e",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:00:00",
+  "reviewed_at": "2026-06-24T10:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "fail",
-      "evidence": "Berliner Philharmoniker images (site-05 to site-08) are sourced from oliverhelfrich.com, a different designer's portfolio entirely. site-05 is a concert hall photograph (not design work). site-01 is a historic photo of Carl Nielsen the composer (editorial context, not Jonathan Nielsen's graphic design). UAL images (site-09, 10, 11) show a 3D code render and a robot arm installation photo, not identity design output. Only Carl Nielsen Museet posters (site-02 to site-04) are clearly on-attribution graphic design work.",
-      "fix": "Replace oliverhelfrich.com images with Jonathan Nielsen's own documented work on the Berliner Philharmoniker project (find via his studio site or interviews). Confirm he actually worked on that project before including it. For UAL, pull actual identity/graphic design deliverables from that project, not installation photography. Drop the composer photo and concert hall photo."
+      "evidence": "Active work images span only 2 distinct projects: Carl Nielsen Museet (site-02, 03, 04, 17, 18, 19 -- 6 images) and Nottingham Light Night 2022 (site-14 thumbnail + embed). The Berliner Philharmoniker project was dropped entirely: all 3 BPH images (site-06, 07, 08) were rejected in the manifest because they are static poster designs by Studio Oliver Helfrich and Jonathan's credited role was motion design only. No replacement BPH motion work was found. Checklist requires 3+ distinct projects.",
+      "fix": "Either (a) find and capture actual motion design output from the Berliner Philharmoniker project (video stills, motion frames, animated GIF exports -- these may exist on oliverhelfrich.com or Jonathan's own IG), (b) find a third distinct project from his IG (@jonathanmnielsen has 660 posts and likely shows more projects), or (c) acknowledge the BPH project cannot be verified and substitute another confirmed Jonathan Nielsen project from his IG or portfolio."
+    },
+    {
+      "id": "A.notion-sync",
+      "result": "fail",
+      "evidence": "keeper.py upload was not run after the manifest was updated. The Notion Images property (from keeper.py get) shows 9 images including the rejected BPH posters site-06, site-07, site-08, and excludes the new active Carl Nielsen Museet images site-17, site-18, site-19. Jonathan would see the wrong images in Notion.",
+      "fix": "Run keeper.py body-reset and keeper.py upload db47252d-f43d-472f-b40b-03708e26eb7e assets/db47252d-f43d-472f-b40b-03708e26eb7e to sync the manifest to Notion. This must be done AFTER resolving the project-diversity fail so the final image set is correct before uploading."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "site-05 (concert hall photo) and site-01 (historic pianist photo) are not graphic or motion design work. site-09 (3D code cylinder render), site-10 (stone/grid sculpture render), and site-11 (industrial robot arm photo) do not read as identity or graphic design output for a UAL branding project. Capabilities are Graphic design + 3D & motion; these images do not demonstrate either.",
-      "fix": "For UAL Narrative Environments: find and capture actual identity/visual design outputs (logos, posters, type specimens, branded materials) rather than installation photography. For Berliner Philharmoniker: confirm Jonathan Nielsen's role and source work from his portfolio or his actual case study, not Oliver Helfrich's page."
+      "result": "pass",
+      "evidence": "Active work images are all credibly on-capability graphic and motion design: Carl Nielsen Museet identity system (posters, type, brand materials from FUHR Studio case study) and Nottingham Light Night 2022 motion type piece (YouTube embed + thumbnail). UAL images correctly rejected. BPH concert hall photo correctly rejected."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-13.png captioned 'Instagram profile' is an Instagram 'Something went wrong' error page, not the actual @jonathanmnielsen profile. It is NOT marked rejected in manifest.json, NOT present in state/ig-queue.json, and AI Notes does not document the throttle/failure. The sanctioned exception (rejected + documented + queued) is not met.",
-      "fix": "Mark site-13 as rejected:true in manifest.json. Add entry to state/ig-queue.json with reason 'IG error page on logged-out grab'. Document the throttle block in AI Notes. The website context shot (site-12) is present and correct."
-    },
-    {
-      "id": "A.manifest-orphan",
-      "result": "fail",
-      "evidence": "File site-14.jpg exists in assets/db47252d-f43d-472f-b40b-03708e26eb7e/ but is absent from manifest.json. This image shows typographic lettering spelling 'REALITY' in a distressed style and has no caption, project attribution, or source URL.",
-      "fix": "Either add site-14.jpg to manifest.json with correct caption, project, source URL and link, or delete it. No uncaptioned orphan files."
-    },
-    {
-      "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 13 manifest entries have captions. site-14 orphan is addressed separately above."
+      "evidence": "site-12.png is a real jonathannielsen.studio homepage screenshot (confirmed: shows 'Work / Profile / jonathannielsen.studio (Graphic & Motion Design)'). site-15.png is the real @jonathanmnielsen Instagram profile (confirmed: shows 'jonathanmnielsen / Jonathan Nielsen / 660 posts, 1,067 followers / Nottingham-based Graphic & Motion Designer'). The IG error shot site-13.png is correctly marked rejected. The sanctioned exception is met and the scraper went further and obtained a real logged-out IG profile screenshot, fully resolving the prior IG fail."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images from Carl Nielsen Museet (posters, in-situ signage), 4 from Berliner Philharmoniker case study, 3 from UAL. Depth attempted, though attribution problems undercut it."
+      "evidence": "Within Carl Nielsen Museet: posters in-situ (site-02), publication covers (site-03), logo development process sheet (site-04), branded poster close-up (site-17), graphic pattern tile (site-18), dark-on-dark pattern variant (site-19). Goes inside the identity system, not just hero shots."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All active manifest entries have captions, source URLs, and links. No orphan files: site-17, 18, 19 are in the manifest with full metadata (the first review's orphan bug was a script error -- they were present all along)."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Capabilities are Graphic design + 3D & motion; no video embeds present but no evidence a project page with embeddable video was skipped. No FAIL triggered without specific evidence."
+      "evidence": "Nottingham Light Night 2022 YouTube embed present plus a thumbnail image (site-14). Correct pattern per CLAUDE.md (thumbnail preview + playable embed)."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents the .studio site 503. IG throttle block is NOT documented (covered under A.context-shots fail)."
+      "evidence": "AI Notes documents site 503, the BPH image rejection reasoning, and UAL image drop. No silently thin sources."
     },
     {
       "id": "B.type-classified",
@@ -57,64 +55,64 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn all present. Email not found; AI Notes does not document a search attempt for public email. However no clear public email was verifiable from the entry data, so this is a note rather than a hard fail."
+      "evidence": "Website (jonathannielsen.studio), Instagram (@jonathanmnielsen, verified correct person from site-15 bio), LinkedIn (/jonathan-m-nielsen) all present. No public email found; AI Notes does not explicitly document a search attempt but site links to Email nav item (no public address exposed)."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + 3D & motion. An Open Question asks about Identity systems. Reasonable."
+      "evidence": "Graphic design + 3D & motion. Open Question asks about Identity systems. Appropriate."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK, Size 1, Freelance. AI Notes names sources and hedges (site 503). Multi-source reasoning documented."
+      "evidence": "UK, Size 1, Freelance. Sources named in AI Notes. Multi-source resolution documented (site 503 noted as caveat; IG bio confirms Nottingham-based freelance)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoned in AI Notes as solo practitioner with strong client list."
+      "evidence": "Autonomy 4, set_by agent, reasoned as solo practitioner with strong client list. Seniority read (mid-to-senior) included in AI Notes."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note relationship facts; zero-states are appropriate."
+      "evidence": "No clip note relationship facts; zero-states (Worked Together Never, Familiarity Don't know them, Work With Unvetted) are appropriate and not contradicted by evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2021-10-26'; no instructions evident in clip note."
+      "evidence": "Source is 'Web clipper, 2021-10-26'; no special instructions in clip note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Work Status hedged (site 503). Autonomy marked inferred. Seniority read included. No em-dashes in AI Notes."
+      "evidence": "Autonomy marked inferred. Seniority hedged as 'mid-to-senior'. Work Status sources named. No em-dashes found in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-10-26'."
+      "evidence": "Source: 'Web clipper, 2021-10-26'. Filled."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present, set_by values correct. Null source_urls are a known systemic gap, not a gate failure per checklist note 2026-06-21."
+      "evidence": "Provenance file present, set_by values correct. Null source_urls are a known systemic gap per checklist note 2026-06-21, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions (verified programmatically)."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question on Identity systems capability. Appropriate."
+      "evidence": "One terse conditional question on Identity systems capability. Appropriate and not redundant."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching; reviewer has not flipped to Needs Review (correct for a fail verdict)."
+      "evidence": "Entry is Enriching; reviewer correctly leaves it there on a fail verdict."
     }
   ],
-  "summary": "Three hard fails: (1) Berliner Philharmoniker images are from a different designer's portfolio (oliverhelfrich.com) and include non-design photography; UAL images show installation photos rather than identity design output. (2) Instagram context shot is an error page, not rejected+queued per the sanctioned exception path. (3) site-14.jpg is an orphan file absent from manifest.json with no caption or attribution.",
+  "summary": "Two fails on attempt 2. (1) Only 2 distinct projects in the active image set -- Berliner Philharmoniker was dropped entirely (all BPH images rejected as off-attribution static poster work, Jonathan's role was motion only) and no third project was substituted. Checklist requires 3+. (2) keeper.py upload was not run after the manifest update: Notion still holds the rejected BPH posters (site-06, 07, 08) and is missing the new Carl Nielsen Museet images (site-17, 18, 19). Prior failures from attempt 1 are resolved: IG error shot is properly rejected and a real @jonathanmnielsen profile screenshot (site-15) was obtained; site-14 orphan was a script error, it was in the manifest all along; UAL and BPH editorial photos correctly rejected.",
   "to": "scraper"
 }

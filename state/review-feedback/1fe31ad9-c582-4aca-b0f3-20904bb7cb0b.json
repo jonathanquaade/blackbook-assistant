@@ -1,0 +1,111 @@
+{
+  "page_id": "1fe31ad9-c582-4aca-b0f3-20904bb7cb0b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Crowd Control, Reality Crossing, Phage, Blindspot, Gameworkers and Guildworkers, GIGCO. No repeated project across majority of images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project (e.g. 3 Reality Crossing shots, 3 Blindspot, 3 Gameworkers). Goes inside projects, not only covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative technology. All images are game/VR/AR/interactive work (video game stills, AR exhibition shot, wireframe renders, pixel-art game screens). No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png: confirmed spek.work homepage (SpekWork logo, nav: Home/Projects/News/Contact). site-15.png: confirmed instagram.com page showing @spekwork handle, 'SpekWork Games & Prints' bio, 151 posts. Both shots are correct and match their captions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 images have project captions and source links. site-02.png (funder logo) is marked rejected: true and excluded from upload."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "GIGCO YouTube trailer embedded (https://www.youtube.com/watch?v=JL-WgnaYGwY) with caption + link. Thumbnail image (site-18.jpg) captured as preview. Pattern followed correctly."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No significant source gap. IG context shot captured logged-out (sufficient for a context shot). Studio now closed so limited live sources."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small two-person (originally three) artist collective doing hands-on creative execution."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass-with-note",
+      "evidence": "Website (https://spek.work/) and Instagram (https://www.instagram.com/spekwork/) present and correct. LinkedIn and Email are absent with no documented search in AI Notes. For a defunct two-person Canadian digital art collective, company LinkedIn is plausibly nonexistent; however the AI Notes do not confirm a search was attempted. Not failing at v1 given the defunct-collective context, but scraper should document the gap."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology set (set_by: jonathan, locked). Open Question 2 appropriately asks about adding Art practice. Capability matches the work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass-with-note",
+      "evidence": "Country: Canada (corrected from US, noted in AI Notes). Size: 2-10. Work Status: Studio. AI Notes mention country sourcing but do not explicitly name which sources resolved Work Status per the multi-source rule. Minor gap; not gate-blocking."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type: Studio (org). Per calibration note in checklist, Autonomy is OPTIONAL for orgs. AI Notes give seniority/leadership context (two founders, closed collective). No FAIL."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Clip note was 'SpekWork | games & labour' (no relationship fact stated). Worked Together: Never and Familiarity: Don't know them are valid zero-states. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip name archived to clipped.md. Name cleaned to 'SpekWork Studio'. Body archived. No relationship facts or instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass-with-note",
+      "evidence": "AI Notes are factual and hedged where appropriate (notes closure, notes Work Status caveat). However, clipped.md names a third member (Ben McCarthy, per 2021 clip) not mentioned in AI Notes. The current site does not list him as an ongoing member, so this is likely a former member. The discrepancy is minor given the clipped body is 2021 vintage vs. the 2024 closure, but the AI Notes could note the earlier three-person composition."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-21'. Filled correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url null fields are the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "2 terse, conditional questions: (1) fate of the closed studio entry, (2) adding Art practice capability. Neither asks for a field already answered. No story nudge needed (Worked Together: Never, no relationship signals)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, to be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "notes": "Strong entry overall. Two minor soft gaps noted but not gate-blocking at v1: (1) LinkedIn and Email absence not documented in AI Notes; (2) Ben McCarthy (third member per 2021 clip) not mentioned in AI Notes. Neither prevents Jonathan from reviewing this entry usefully.",
+  "to": null
+}
