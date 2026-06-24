@@ -950,5 +950,19 @@
     "ig_url": "https://www.instagram.com/sabato.studio/",
     "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (rate-limited). @sabato.studio is the confirmed studio/portfolio account. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "4f7c63ab-859f-4754-a011-a70ed6a8af60",
+    "name": "Keijiro Takahashi",
+    "ig_url": "https://www.instagram.com/takahashikeijiro/",
+    "reason": "IG throttled (error page); handle takahashikeijiro not confirmed from his own site links - confirm it is him before attaching",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "ee9c33d4-506a-4d4f-ac83-91203abc53e9",
+    "name": "Matyas Czel",
+    "ig_url": "https://www.instagram.com/czelmatyas/",
+    "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited). @czelmatyas confirmed handle (czelmatyas.com redirects to it). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-24"
   }
 ]

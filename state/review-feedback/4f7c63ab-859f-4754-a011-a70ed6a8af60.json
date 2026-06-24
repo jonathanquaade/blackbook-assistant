@@ -1,0 +1,111 @@
+{
+  "page_id": "4f7c63ab-859f-4754-a011-a70ed6a8af60",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects across manifest: Skinner, Kvant Deformer, Akvj, Wind VFX Graph, GlitchFx, SplatVFX (2 shots), AICommand. No repeated captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "SplatVFX has 2 GIFs (render + node graph view). Vimeo embeds show actual motion output. Appropriate depth for open-source tooling where the repo is the artifact."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative technology. All 11 images and 5 embeds are Unity VFX, generative/AV, creative coding tools. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed keijiro.tokyo homepage. site-02.png confirmed X/Twitter @_kzr profile. site-03.png is IG error page, rejected+documented+queued to ig-queue.json per sanctioned throttle exception. site-04.png confirmed github.com/keijiro."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active manifest images carry project name and source link in caption."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds each paired with a thumbnail preview image plus captioned link. Pattern: thumbnail image in Images property, embed below in body."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes (handle not confirmed from primary source keijiro.tokyo, headless throttled) and entry present in ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website keijiro.tokyo, LinkedIn jp.linkedin.com/in/keijiro-takahashi-2535a72b0, Email keijiro@gmail.com all present. Instagram blank: handle not confirmed from his own site links, error page under headless, queued for confirmation - correct cautious handling per CLAUDE.md."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology per TAXONOMY.md; consistent with Unity VFX, creative coding, generative AV work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Japan, Size 1, Employed. AI Notes names sources: LinkedIn (Developer at Unity) and press both confirm; objective multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set_by agent. Reasoning in AI Notes: self-directing toolmaker who conceives and ships own libraries and AV work, grounded in public repos. Seniority read also present (20+ yrs)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Notes says 'Unity Expeert' (Jonathan's descriptor, not a relationship fact). Familiarity 'Don't know them' / Worked Together 'Never' are consistent with no evidence of a personal relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Unity Expeert' is a role descriptor. Acted on: Capabilities = Creative technology, AI Notes reference it. No relationship facts to extract."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No unhedged inferences. Work Status sources named. IG uncertainty documented. Seniority + Autonomy read present and grounded in public repos and career history."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-09-28'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "set_by values are correct throughout. Null source_url is the known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. All resolvable fields are filled. Story nudge not triggered (Worked Together Never, Familiarity Don't know them, Work With Unvetted)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Was Enriching; reviewer flipping to Needs Review."
+    }
+  ],
+  "notes": "aicommand-og.png is in the assets directory but absent from the manifest and Images property. It appears to be an intermediate download artifact; the aicommand-demo.gif was included instead. Not a gate issue.",
+  "to": null
+}

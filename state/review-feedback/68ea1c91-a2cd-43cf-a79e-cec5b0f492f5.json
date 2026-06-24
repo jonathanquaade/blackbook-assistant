@@ -1,0 +1,112 @@
+{
+  "page_id": "68ea1c91-a2cd-43cf-a79e-cec5b0f492f5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "to": "scraper",
+  "summary": "One clear FAIL: Work Status is set to Employed with Works At Link pointing to jadu.ar (a 2021-2023 role), but AI Notes itself documents that the current role appears to be Raw Materials (2025). This contradiction sits in the entry unresolved, with no Open Question surfacing it to Jonathan. The scraper must add an Open Question about current employer/Work Status, and update Works At Link or flip Work Status to Unknown pending confirmation. Secondary note (not a hard fail): Google Chromebook and Bandcamp captures are hero-cover-only because the sabato.studio case studies are locked behind a download gate; AI Notes does not mention this, so the thin depth looks like a skip rather than a documented block.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Images span 3 named distinct projects: Jadu AR (5 images + thumbnail + embed), Google Chromebook (1 image), Bandcamp (1 image). No duplicate angles or repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass-with-note",
+      "evidence": "Jadu AR has genuine depth: gameplay shots, character art, Season 1 key art, characters Absynth and TukTuk. Google Chromebook and Bandcamp are hero-cover-only because the sabato.studio case studies show a padlock-gated download link (full case study not publicly accessible). This is an understandable constraint but AI Notes does not document the gating, making it look like a lazy hero grab rather than a documented block. Scraper should add one line to AI Notes noting the case study pages are download-gated."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Creative technology and Product design. Work captured: Jadu AR (multiplayer AR fighting game, VP Product and Design role), Google Chromebook product design, Bandcamp experience design. All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is the real sabato.studio homepage (the blue cap image, which IS the current site state). site-02.png is the IG error page, correctly marked rejected in manifest, documented, and queued to ig-queue.json. This is the sanctioned IG-throttle exception path."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in the manifest has a caption naming the project and a link. sabato-portfolio-01.jpg caption is 'sabato.studio portfolio, 2020' (the portfolio index overview, acceptable as a named-context shot)."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "YouTube embed present for the Jadu launch trailer with thumbnail image (jadu-trailer-thumb.jpg). Thumbnail verified: shows Jadu Fight in AR branding and mobile app download screen. Embed has caption and link to jadu.ar. Pattern correct."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass-with-note",
+      "evidence": "IG absence is documented and queued. Case study gating is not documented in AI Notes (see depth note above) but is not an independent hard fail."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: sabato.studio. Instagram: instagram.com/sabato.studio. LinkedIn: linkedin.com/in/sabato-urciuoli-4b963214. Email: not present, but no Email field is shown as found or skipped. AI Notes does not mention email search outcome. Minor gap; not a hard fail at this discipline (product/tech creatives rarely list public email on portfolio sites)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology + Product design per TAXONOMY.md. An Open Question is already filed asking Jonathan to confirm whether to re-sort to Digital product design + Spatial and exhibition design. That is the correct channel for a judgment-adjacent question."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "fail",
+      "evidence": "Work Status is Employed and Works At Link points to jadu.ar. AI Notes states the Jadu role was 2022-23 and that 'current role per search is Raw Materials (Milano-based), site does not confirm.' The field is up to 3 years stale and AI Notes itself flags that 'Status may need an update from Jonathan.' No Open Question was raised to surface this to Jonathan. The entry reaches Needs Review with a stale employer showing and no question asking for confirmation.",
+      "fix": "Add an Open Question: '2. Work Status: LinkedIn/search shows Raw Materials (Milano, 2025) as current role; scout set Employed at Jadu (2022-23). Still at Jadu, or freelance/Raw Materials now?' Also update Works At Link to the Raw Materials URL if evidenced, or clear it and set Work Status to Unknown pending Jonathan's answer."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: 15 yrs career, VP Product and Design at Jadu, Creative Director at AKQA, Principal Designer at PayPal. Trajectory supports a 5 (can run projects fully unsupervised at director level)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note implies a relationship. Zero-states are not contradicted."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-04'. No relationship facts or judgment stated in the clip note per the entry. No --from-jonathan writes were needed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes a seniority read (15 yrs, director-level trajectory), hedges the current employer ('current role per search is Raw Materials (Milano-based), site does not confirm'), notes the portfolio site state honestly. No unverified assertions presented as fact. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-04'. Correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url nulls are a known systemic tooling gap (not a gate failure per checklist calibration note). set_by values are correct: agent for agent-researched fields, migration for Name/Size."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, all image captions. No em-dashes found. En-dash in '2022-23' in AI Notes is a date range, acceptable."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass-with-note",
+      "evidence": "The single Open Question about Capabilities is terse and appropriate. However, a second Open Question about Work Status/employer is missing and is required (see B.country-size-workstatus FAIL)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "fail",
+      "evidence": "Entry is in Enriching awaiting this gate. Status will only flip to Needs Review after the FAIL items are resolved. This check is structural; it fails because the entry cannot pass the gate in its current state."
+    }
+  ]
+}
