@@ -1,0 +1,113 @@
+{
+  "page_id": "8281b5d5-9aab-47ad-b422-a1ef4b27d4f5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects across active images: Discord, Origin, StoryBots, TED-Ed, Hatch, Hulu, Ripe"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple stills per project (Origin x3, StoryBots x3, Hatch x2); goes inside projects not just hero shots"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion; all images are animation/motion design stills (character animation, 3D renders, motion graphics frames)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed as douglasalberts.com homepage; IG (site-05.png) rejected + documented as headless rate-limit + queued to ig-queue.json; sanctioned throttle path followed"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 active images have project name + source link captions"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Hulu Vimeo embed with thumbnail; Ripe Vimeo embed with thumbnail; both have caption + link"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot failure documented in AI Notes and queued to state/ig-queue.json"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.links-present",
+      "result": "fail",
+      "evidence": "LinkedIn field is empty and AI Notes makes no mention of searching for or failing to find a LinkedIn profile. Douglas Alberts is an established motion designer with 10+ years and his own studio; a LinkedIn almost certainly exists. The scout checklist requires searching '<name> <discipline> linkedin' and documenting the outcome.",
+      "fix": "Search 'Douglas Alberts motion designer linkedin' (Google snippet, no login). If found, add the URL. If genuinely absent, note 'No LinkedIn found via search' in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion tagged (Jonathan's original tag per provenance); Open Questions 1 appropriately asks him about adding Creative direction and Film & video production"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, 1, Studio all set; AI Notes documents Work Status sourcing (Behance + web search) and hedges the Chicago/Noodle claim"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (studio owner/CD, inferred from history)"
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are zero-states consistent with no clip-note relationship signal"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is a bare web clipper entry from 2021-10-09; no relationship instructions in the clip note"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status claim hedged ('Could not confirm explicit statement'); Noodle/Chicago sourced to Behance + web search; Autonomy marked inferred"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-10-09"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values; null source_url is a known tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes or Open Questions text"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse conditional questions; neither asks for a field that already has a value"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer correctly holds it here pending this FAIL"
+    }
+  ],
+  "to": "scout",
+  "summary": "One failing check: LinkedIn not searched or documented. Website, Instagram, Capabilities, Country, Work Status, Autonomy, context shots, work images and embeds all pass. Fix the LinkedIn gap and this entry is ready.",
+  "fix": "Search 'Douglas Alberts motion designer linkedin' via Google snippet (no login). Add LinkedIn URL if found. If not found, add one line to AI Notes: 'No LinkedIn found via web search.' Then re-submit for review."
+}

@@ -2,111 +2,108 @@
   "page_id": "f8d89c67-091b-4a01-a219-ceb8315422b4",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
-  "to": "scout",
-  "summary": "One scout-level gap: LinkedIn is absent and not explained in AI Notes. All other checks pass.",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6+ distinct projects in active images: Wikipedia identity system (2020), YouTube Gaming (COLLINS), Interludes (COLLINS), Enody (2025, 3 shots), Runway logo, OPEN seishin neon sign, sketchbook illustration practice."
+      "evidence": "6+ distinct projects in active set: Wikipedia identity system, YouTube Gaming (COLLINS), Interludes (COLLINS), Enody (3 shots), Runway logo, OPEN seishin neon sign, sketchbook illustration."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Wikipedia identity gets 3 interior shots (poster spread, poster detail, postcard artifacts); Enody gets 3 shots (journal cover, campaign photography, Stereohenge set direction); YouTube Gaming gets 2 interior views (type system, billboard in-world)."
+      "evidence": "Wikipedia gets 3 interior shots; Enody gets 3 shots; YouTube Gaming gets 2 interior views. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design; all active work images are graphic design outputs (identity systems, logotypes, posters, illustration). Sketchbook correctly frames her illustration practice. No off-capability material in active set."
+      "evidence": "Tagged Graphic design; all active work images are graphic design outputs (identity systems, logotypes, posters, illustration). No off-capability material in active set."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-11.png verified as publicpark.info homepage (public.park logo + tagline visible). site-12.png verified as instagram.com/public.park (Instagram UI, @public.park handle, 2790 followers, Sharon Park bio visible). Both correct."
+      "evidence": "site-11.png confirmed as publicpark.info homepage (public.park logo visible). site-12.png confirmed as instagram.com/public.park (Instagram UI, @public.park handle, Sharon Park bio visible). Both correct and not swapped."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 active images have captions naming the project and a source link. Rejected images also captioned. No anonymous shots."
+      "evidence": "All 14 active images captioned with project name and source link. No anonymous shots."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "No video/audio discipline tagged; Graphic design. No video embeds expected. Mux video thumbnails from COLLINS were correctly rejected as low quality."
+      "evidence": "Graphic design discipline; no video/audio embeds required."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Site is active; IG context shot obtained logged-out at adequate quality. No IG queue needed. Behance appreciations correctly identified and rejected."
+      "evidence": "Site active; logged-out IG context shot obtained at adequate quality. Behance appreciations correctly identified and rejected. No unexplained thinness."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct for an individual practitioner."
+      "evidence": "Type: Person. Correct."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "LinkedIn field is absent. AI Notes makes no mention of LinkedIn having been searched or found absent. A search for 'Sharon Park graphic designer linkedin' or 'Sharon Park public.park linkedin' is a standard step; skipping it entirely and not documenting the absence in AI Notes does not meet the bar.",
-      "fix": "Search 'Sharon Park public.park linkedin' and 'Sharon Park graphic designer NYC linkedin'. If a profile is found, add the URL. If not found after a genuine search, add one line to AI Notes stating LinkedIn was searched and not found, then this check passes."
+      "result": "pass",
+      "evidence": "Website publicpark.info present. Instagram instagram.com/public.park present and verified correct person. Email s@publicpark.info present. LinkedIn: AI Notes documents two searches ('Sharon Park public.park linkedin', 'Sharon Park designer linkedin public.park'); multiple profiles returned but none confirmable as her at >=0.8 without login; absence documented at the confidence floor. This satisfies the check."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design is set (provenance: set_by jonathan from migration, not overridden). Open Question correctly asks Jonathan about adding Illustration, Creative direction, Identity systems."
+      "evidence": "Graphic design set (migration, jonathan). Open Question correctly asks about Illustration, Creative direction, Identity systems additions."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: US, Size: 1, Work Status: Freelance. AI Notes documents the Work Status reasoning: independent practice, no employer stated on site. Sources in AI Notes."
+      "evidence": "Country: US, Size: 1, Work Status: Freelance. Sources documented in AI Notes (independent practice, no employer stated on site, IG @public.park verified)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 4, set_by agent. AI Notes includes seniority read (mid-to-senior, strong client roster) and reasoning (independent, does creative direction). Hedged with 'inferred and hedged'."
+      "evidence": "Autonomy: 4, set_by agent. AI Notes includes seniority read (mid-to-senior, strong client roster) and reasoning (independent practice, does creative direction). Hedged."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Worked Together: Never; Familiarity: Don't know them; Work With?: Unvetted. No evidence in the entry contradicts any of these. No clip note with relationship context found."
+      "evidence": "Worked Together: Never; Familiarity: Don't know them; Work With?: Unvetted. No clip note or evidence contradicts any zero-state."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Entry is a 2021 web clipper entry with no clip note instructions. Source correctly set to 'Web clipper, 2021-10-09'."
+      "evidence": "2021 web clipper entry; no clip-note instructions. Source correctly set to 'Web clipper, 2021-10-09'."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges Autonomy estimate ('inferred and hedged'). Verifiable facts (clients, IG handle verification, email source) asserted plainly. Seniority read included ('Mid-to-senior, strong client roster'). No unhedged inferences found."
+      "evidence": "Autonomy hedged ('inferred and hedged'). Verifiable facts asserted plainly. Seniority read included. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-10-09'. Correct format."
+      "evidence": "Source: 'Web clipper, 2021-10-09'. Correct."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present and covers all touched fields. source_url is null throughout, which is a known systemic tooling gap per checklist calibration note; not a gate failure. set_by values are correct (agent for agent-set fields, jonathan for Capabilities from migration)."
+      "evidence": "Provenance present; set_by values correct. Null source_url is the known systemic tooling gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and captions scanned. No em-dashes found. En-dash used correctly in none of the fields."
+      "evidence": "AI Notes, Open Questions, captions scanned. No em-dashes found."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "One Open Question asking about Capabilities expansion. Terse and conditional (Capabilities currently only Graphic design, so asking for additions is not asking for a field that already has a non-zero value in its full form). No story nudge needed (Worked Together is Never, Familiarity is Don't know them)."
+      "evidence": "One terse conditional Open Question on Capabilities expansion. No story nudge needed."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry currently Enriching. Will remain Enriching until LinkedIn gap is resolved and scout re-submits."
+      "evidence": "Entry in Enriching; flipping to Needs Review now."
     }
   ]
 }
