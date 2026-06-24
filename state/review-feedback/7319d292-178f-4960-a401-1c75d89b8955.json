@@ -1,0 +1,112 @@
+{
+  "page_id": "7319d292-178f-4960-a401-1c75d89b8955",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "to": "scraper",
+  "summary": "One fail: the Showreel Vol.1 Vimeo embed has no thumbnail image. The oEmbed default (site-15.jpg) was correctly rejected because it returned Mikey's logo, but no fallback still was captured. Notion does not show a Vimeo poster, so Jonathan sees a blank embed for the showreel. All other checks pass.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: People (2021), CCTV Kids rebrand (2019), Boing rebrand (2020), At The Bar (2018). No repeated captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3-4 interior images per project (character stills, styleframes, scene shots), not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion + Illustration; all 14 images are 3D character/animation work and illustrated stills. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01.png) confirmed as mikeydowdle.com homepage. IG context shot (site-02.png) is a genuine IG error page, marked rejected with reject_reason documented, queued to state/ig-queue.json (page_id verified in queue). Meets the sanctioned throttle-exception path."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have captions naming project and year. All have links to source project pages."
+    },
+    {
+      "id": "A.embeds",
+      "result": "fail",
+      "evidence": "Two Vimeo embeds present (Showreel Vol.1 vimeo.com/641987915 and People Main Edit vimeo.com/509504813). People Main Edit has thumbnail site-16.jpg. Showreel Vol.1 has NO thumbnail: site-15.jpg was attempted but rejected (returned Mikey's logo brand mark, not a video still). No fallback still was captured. Notion does not show a Vimeo poster, so the showreel embed will appear blank to Jonathan.",
+      "fix": "Capture a video still or alternative thumbnail for the Showreel Vol.1 (vimeo.com/641987915). Try a direct Vimeo CDN thumbnail at a different time parameter (e.g. vimeo.com/641987915 oEmbed with time offset), or screenshot a frame from the video player. Add it to the manifest as a non-rejected image with caption 'Mikey Dowdle Showreel Vol.1 (video thumbnail)' and link 'https://vimeo.com/641987915'."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and ig-queue.json. Rejected thumbnail documented in manifest with reject_reason."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present. Instagram handle @mikeydowdle matches the person (3D/animation, London). LinkedIn and Email set_by agent with documented sources in AI Notes."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D & motion + Illustration, set_by jonathan (migration baseline). Work confirms both."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK (corrected from migration baseline, AI Notes explains), Size 1, Work Status Freelance with multi-source rule documented in AI Notes (own site + IG bio + LinkedIn all agree)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent, reasoning in AI Notes (runs own freelance practice, delivers finished 3D character pieces; hedged as inferred from self-described history)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them. No evidence in the entry contradicts these zero-states. Capabilities set_by jonathan is preserved."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-10-09'. No special instructions in clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy inference is explicitly hedged '(inferred from self-described freelance history, not first-hand)'. Work Status sources named. Seniority and experience read included. No em-dashes confirmed."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-09', set_by agent."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url nulls are the known systemic tooling gap (not a gate failure per checklist calibration note). set_by values are correct throughout."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes checked programmatically: 0 em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. All findable fields are filled; no conditional questions needed for fields already at non-zero-state values. Story nudge not applicable (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry still in Enriching; status flip held pending this gate. Correct."
+    }
+  ]
+}

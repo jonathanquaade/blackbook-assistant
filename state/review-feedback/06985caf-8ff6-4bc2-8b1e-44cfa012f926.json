@@ -2,112 +2,29 @@
   "page_id": "06985caf-8ff6-4bc2-8b1e-44cfa012f926",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
-    {
-      "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "12 work images span 4 distinct named projects: Riccardo Dalisi book, 100% Porto book, Sintese Ativa visual identity, FIS Festival poster/identity. No project repeats beyond its own 3-image depth set."
-    },
-    {
-      "id": "A.depth-over-breadth",
-      "result": "pass",
-      "evidence": "3 images per project showing interior spreads and material details (book spines/pages, exhibition signage, festival publications), not only hero covers."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "pass",
-      "evidence": "Tagged Graphic design; all captured work is editorial/print/identity: book design, visual identity, poster/festival design. Fully on-capability."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "pass",
-      "evidence": "site-13.png opened: confirmed oscarmaia.com homepage ('Oscar Maia / Visual Design & Art Direction'). site-14.png opened: confirmed instagram.com/@oscar.maia.design profile page with matching bio and grid."
-    },
-    {
-      "id": "A.no-uncaptioned-images",
-      "result": "pass",
-      "evidence": "All 14 manifest entries have captions and source links. Context shots captioned 'Website' and 'Instagram profile' with correct links."
-    },
-    {
-      "id": "A.embeds-for-video",
-      "result": "pass",
-      "evidence": "Discipline is print/editorial/identity design. No video/audio work expected; no embeds required."
-    },
-    {
-      "id": "A.absence-explained",
-      "result": "pass",
-      "evidence": "Work present from the site; no unexplained gaps."
-    },
-    {
-      "id": "B.type-classified",
-      "result": "pass",
-      "evidence": "Type: Person. Correct for an independent individual designer."
-    },
-    {
-      "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "LinkedIn field is empty and AI Notes contain no mention of a LinkedIn search or its result. The checklist requires ALWAYS searching '<name> <discipline> linkedin' and documenting either the URL or a confirmed absence in AI Notes. Oscar Maia is a named designer with a public portfolio since 2008; a LinkedIn profile is likely findable.",
-      "fix": "Search 'Oscar Maia designer linkedin' and either populate the LinkedIn field with the verified URL or add one sentence to AI Notes confirming no public profile was found (e.g. 'LinkedIn: no public profile found via search')."
-    },
-    {
-      "id": "B.capabilities",
-      "result": "pass",
-      "evidence": "Graphic design tagged. Open Question 1 correctly asks Jonathan whether to add Identity systems and Spatial & exhibition design, which is the right conditional ask given the evidence."
-    },
-    {
-      "id": "B.country-size-workstatus",
-      "result": "pass",
-      "evidence": "Country: Portugal (confirmed from site bio 'based in Porto, PT'). Size: 1 (individual). Work Status: Freelance (site states 'independent Designer'; AI Notes notes single-source signal and absence of conflicting employer, which is honest and documented)."
-    },
-    {
-      "id": "B.autonomy",
-      "result": "pass",
-      "evidence": "Autonomy 4 set_by agent, with hedged reasoning in AI Notes: solo practice, independent client list. Appropriate for a Person entry."
-    },
-    {
-      "id": "C.no-judgment-contradiction",
-      "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts these zero-states."
-    },
-    {
-      "id": "C.clip-note-acted-on",
-      "result": "pass",
-      "evidence": "Source is 'Web clipper, 2021-10-04' with no instruction text in the Name field. No stated facts or instructions to act on."
-    },
-    {
-      "id": "C.ai-notes-hedged",
-      "result": "pass",
-      "evidence": "Inferences are hedged ('years not pinned down', 'inferred from solo client list', 'single source'). Verifiable facts stated plainly (clients, discipline, location). Seniority read included ('mid-to-senior designer/art director')."
-    },
-    {
-      "id": "D.source-filled",
-      "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-10-04'. Correct format for a backfill entry."
-    },
-    {
-      "id": "D.provenance-written",
-      "result": "pass",
-      "evidence": "Provenance file present; all touched fields have set_by values. source_url nulls are a known systemic tooling gap per checklist note, not a gate failure."
-    },
-    {
-      "id": "D.no-em-dashes",
-      "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or image captions."
-    },
-    {
-      "id": "D.open-questions",
-      "result": "pass",
-      "evidence": "One conditional question on Capabilities expansion. Terse, specific, not asking for fields that already have values."
-    },
-    {
-      "id": "D.status-correct",
-      "result": "pass",
-      "evidence": "Entry remains Enriching; reviewer has not flipped it because of the LinkedIn FAIL."
-    }
+    {"id": "A.project-diversity", "result": "pass", "evidence": "4 distinct projects: Riccardo Dalisi book, 100% Porto book, Sintese Ativa identity, FIS Festival identity; no project repeated beyond its own 3-image depth set"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "3 interior spreads/application shots per project, not cover-only"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Capability: Graphic design; all work is print, editorial, identity"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-13 confirmed oscarmaia.com homepage (name + tagline visible); site-14 confirmed instagram.com/oscar.maia.design with correct bio and grid"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 14 manifest entries have captions and source links"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Print/editorial/identity discipline; no video/audio work expected"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "12 project images and 2 context shots; no unexplained gaps"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Person"},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "LinkedIn now set to linkedin.com/in/oscar-maia-023881149/; Website, Instagram, Email also present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Graphic design tagged; Open Question asks about expanding to Identity systems and Spatial design"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Portugal, Size 1, Freelance; sources named in AI Notes"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4 set_by agent with hedged reasoning in AI Notes grounded in solo client list"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states consistent with no relationship signal"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Source is Web clipper; no instructions in clip note"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Inferences hedged; seniority read present; no bare assertions below 0.8 confidence"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: Web clipper, 2021-10-04"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "Provenance present; null source_url is known systemic tooling gap, not a gate failure per checklist"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes in AI Notes, Open Questions, or captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question on Capabilities; no redundant asks"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Flipping to Needs Review now"}
   ],
-  "to": "scout",
-  "summary": "One FAIL: LinkedIn field empty with no documented search in AI Notes. All other checks pass: 4 distinct on-capability projects with depth, both context shots verified correct, metadata complete, no em-dashes, hedged AI Notes with seniority read, source filled.",
-  "fix": "Search 'Oscar Maia designer linkedin' and either add the LinkedIn URL to the entry or add one sentence to AI Notes confirming no profile was found. Then re-submit for review."
+  "to": null
 }
