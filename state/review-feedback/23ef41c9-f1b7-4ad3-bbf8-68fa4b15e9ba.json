@@ -2,51 +2,48 @@
   "page_id": "23ef41c9-f1b7-4ad3-bbf8-68fa4b15e9ba",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Active images span 6 distinct projects: Wolveridge Architects, Marsha Golemac, Studio Henry Wilson, Hot Cottage, Olijnyk, Choi Studio."
+      "evidence": "10 active images across 6 distinct projects: Wolveridge Architects, Marsha Golemac, Studio Henry Wilson, Hot Cottage, Olijnyk, Choi Studio."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "The 'interior' images added for depth (site-02.jpg from Wolveridge, site-06.jpg from Marsha Golemac, site-07.webp from Studio Henry Wilson) are content photography hosted on client sites: an architectural exterior photo, a circle of antique objects, and a product mirror shot. None of these show the web interface, layout, or frontend code Sam built. For a frontend developer, depth means showing inner pages, subpages, or detail views of the site UI, not the photography the site happens to host.",
-      "fix": "Replace site-02.jpg, site-06.jpg, and site-07.webp with actual inner-page screenshots from each client site (e.g. a project detail page, an inner gallery view, a contact or about page) that show the designed UI Sam implemented. The context shots of each site's homepage already exist; the 'depth' images should go one level deeper into the site, not into CDN content images."
+      "result": "pass",
+      "evidence": "site-25 (wolveridge.com.au/project/twin-creek-house) is a genuine inner project detail page showing the metadata grid layout and page structure Sam built. site-26 (marshagolemac.com/projects) is the projects index grid UI. site-27 (studiohenrywilson.com/pages/projects) is the editorial projects listing page. All three go deeper than the homepage context shots. Three CDN content photography images (site-02, site-06, site-07) are correctly rejected with documented reasons."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Same three images called out above. site-02.jpg is a photo of a stone house exterior; site-06.jpg is a studio still-life photo; site-07.webp is a furniture product photo. These are the clients' physical/product photography, not evidence of Sam's frontend development capability. They would be appropriate for a photographer or product designer, not a web developer.",
-      "fix": "Swap out those three CDN content images for screenshots of additional site pages (inner navigation, project listings, detail views) from the same client sites, which demonstrate the web UI Sam built."
+      "result": "pass",
+      "evidence": "All 10 active images are screenshots of web UI from sites Sam built: nav bars, grid layouts, project listing pages, homepage compositions. No content photography among active images. On-capability for Frontend development (web)."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is a correct screenshot of svmorgan.com (verified: shows 'SVMORGAN / Web Development' header and full client list). site-21.png shows an Instagram error page, is correctly marked rejected with rejection_reason 'Headless rate-limit: IG returned error page. Queued to ig-queue.json.' The sanctioned throttle path is invoked correctly in the manifest."
+      "evidence": "site-01.png is a correct svmorgan.com homepage screenshot (verified: shows SVMORGAN / Web Development header and client grid). IG shot (site-21) is rejected with documented reason (headless rate-limit) and the sanctioned throttle path is correctly followed: manifest rejection_reason present, entry in state/ig-queue.json confirmed."
     },
     {
       "id": "A.context-shots.ig-queue-written",
-      "result": "fail",
-      "evidence": "The manifest states the IG shot was 'Queued to ig-queue.json' but state/ig-queue.json contains no entry for page_id 23ef41c9-f1b7-4ad3-bbf8-68fa4b15e9ba. The queue write was never executed. The sanctioned throttle path requires the entry to actually appear in the queue file.",
-      "fix": "Add the entry to state/ig-queue.json: {\"page_id\": \"23ef41c9-f1b7-4ad3-bbf8-68fa4b15e9ba\", \"name\": \"Sam Morgan\", \"ig_url\": \"https://www.instagram.com/svmorganwork/\", \"reason\": \"Headless rate-limit on initial capture; needs logged-in ig.py grab for profile screenshot.\", \"queued_at\": \"2026-06-24\"}."
+      "result": "pass",
+      "evidence": "state/ig-queue.json contains an entry for page_id 23ef41c9-f1b7-4ad3-bbf8-68fa4b15e9ba with name Sam Morgan, ig_url https://www.instagram.com/svmorganwork/, and queued_at 2026-06-24. Prior fail addressed."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All active images have captions naming the client project and source link."
+      "evidence": "All 10 active images have captions naming the client project and a source link."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Sam Morgan is a web developer; no audio/video creative work expected. No embeds needed."
+      "evidence": "Sam Morgan is a frontend web developer; no audio/video creative work expected or missing."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle is documented in the manifest rejection_reason. AI Notes notes the IG fix."
+      "evidence": "IG throttle documented in manifest rejection_reason and AI Notes. Entry queued for logged-in ig.py grab."
     },
     {
       "id": "B.type-classified",
@@ -56,64 +53,64 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (svmorgan.com), Instagram (@svmorganwork, verified self-listed on his homepage), Email (sam@svmorgan.com) all present. LinkedIn intentionally left empty with an Open Question documenting that multiple Sam Morgans exist and the correct one could not be confirmed."
+      "evidence": "Website (svmorgan.com), Instagram (@svmorganwork, self-listed on his homepage), Email (sam@svmorgan.com) present. LinkedIn empty with Open Question documenting name-collision reason. This is a correct handling, not a skip."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Frontend development (web) matches the evidence: svmorgan.com is explicitly titled 'Web Development' and lists only web projects."
+      "evidence": "Frontend development (web) matches the evidence. svmorgan.com is titled Web Development and shows only web projects."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = Australia (site shows +61 phone, Australian clients); Size = 1 (solo freelancer); Work Status = Freelance (svmorgan.com positions him as independent dev-for-hire). AI Notes notes only the site as source; IG was inaccessible and LinkedIn not confirmed, so single-source Freelance is noted as inferred in AI Notes."
+      "evidence": "Country = Australia (site shows +61 phone, Australian clients); Size = 1 (solo freelancer); Work Status = Freelance (svmorgan.com positions as independent dev-for-hire). Sources documented in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 4, set_by agent, with reasoning in AI Notes (specialist freelance, client-facing). Required for Person entries."
+      "evidence": "Autonomy = 4, set_by agent, with reasoning in AI Notes (specialist freelance, client-facing, Pentagram-tier clients). Required for Person entries."
     },
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "No clip note signals a prior relationship. Worked Together = Never, Familiarity = Don't know them are correct zero-states."
+      "evidence": "No clip note signals a prior relationship. Worked Together = Never and Familiarity = Don't know them are correct zero-states."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2021-10-09'. No additional clip-note instructions detected in the entry."
+      "evidence": "Source = Web clipper, 2021-10-09. No additional clip-note instructions found."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes include 'inferred' on Autonomy and 'positions him as' on Work Status. Seniority read present (Senior/established). No em-dashes."
+      "evidence": "AI Notes hedge Autonomy as inferred and Work Status as positioned. Seniority read present (Senior/established, Pentagram-tier clients). No em-dashes."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2021-10-09'."
+      "evidence": "Source = Web clipper, 2021-10-09."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with set_by values for all touched fields. source_url nulls are a known systemic tooling gap per checklist calibration note; not a gate failure."
+      "evidence": "Provenance file present with set_by values. source_url nulls are a known systemic tooling gap per checklist calibration note; not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One Open Question explaining why LinkedIn is empty (name collision). Terse, conditional, not asking for a field that already has a value."
+      "evidence": "One Open Question explaining why LinkedIn is empty (name collision). Terse, conditional, not duplicating a field that already has a value."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still Enriching; reviewer has not flipped it (correct for a fail verdict)."
+      "evidence": "Entry was Enriching; flipping to Needs Review now that all checks pass."
     }
   ],
-  "to": "scraper",
-  "summary": "Two related fails: (1) three 'depth' images are CDN content photography from client sites (architecture exterior, still-life objects, product mirror) rather than inner-page UI screenshots; they show what the clients photograph, not what Sam built. For a frontend developer, depth means navigating deeper into the built site UI. (2) The IG queue entry was never actually written to state/ig-queue.json despite the manifest claiming it was queued."
+  "to": null,
+  "summary": "Both prior fails resolved: (1) the three CDN content photography images are correctly rejected and replaced with genuine inner-page UI screenshots (wolveridge project detail, marshagolemac projects grid, studiohenrywilson projects listing) -- all verified by opening the image files. (2) state/ig-queue.json now contains the entry for this page_id. All 20 checklist items pass."
 }

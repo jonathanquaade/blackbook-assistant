@@ -1,0 +1,112 @@
+{
+  "page_id": "bbd2634f-6a5e-4e3b-aea0-c9c7970df6ed",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Confetti (3 imgs), Shanghai/King Gizzard MV (thumb + 2 stills), D'un Feu Secret (2 stills), Batfish Soup (thumb + 2 stills)"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 interior frames, not hero-only; Batfish Soup thumbnail shows festival laurels detail"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Illustration (jonathan). All captures are hand-drawn animation stills and music video frames, fully on-capability"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png: amandabonaiuto.com homepage, name visible, animation thumbnails visible. site-13.png: instagram.com/@amandabonaiuto logged-out profile, correct person (bio matches, handle confirmed)"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 manifest image entries have caption and link fields"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "YouTube embed for Shanghai with thumbnail site-10.jpg (ytimg.com maxresdefault). Vimeo embed for Batfish Soup with thumbnail site-11.jpg (vimeocdn). Both embeds have caption and link"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Not applicable; work is present across 4 named projects"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent"
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Email field is empty and not documented as absent in AI Notes. The Instagram context screenshot (site-13.png) clearly shows 'at.amandabonaiuto@gmail.com' in the bio -- a public email visible on the very screenshot the scraper captured, not a hidden source",
+      "fix": "Add Email: at.amandabonaiuto@gmail.com (visible in IG bio on site-13.png, public). Update provenance accordingly."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Illustration tagged (jonathan). Open Question asks about Film & video production, 3D & motion, Art practice additions -- appropriately flagged"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Work Status Freelance with 'site plus press agree' documented in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes: 'directs and animates her own award-screened films end to end (inferred from solo auteur body of work)'"
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Worked Together Never, Familiarity Don't know them, Work With? Unvetted -- no clip note or evidence contradicts these zero-states"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-10-09'; no instruction text in clip note to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences are hedged ('inferred from solo auteur body of work'). Seniority read present: 'Senior auteur/director, ~10+ yrs'. No em-dashes found"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-09'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned; no em-dashes found"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single terse Capabilities question; conditional (proposing expansion of existing tag); no story nudge needed (Worked Together: Never)"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Currently Enriching; will remain so on this fail"
+    }
+  ],
+  "to": "scout",
+  "summary": "Single fail: public email (at.amandabonaiuto@gmail.com) visible in the captured Instagram bio screenshot was not added to the Email field and not documented as absent. One keeper.py set call fixes it."
+}

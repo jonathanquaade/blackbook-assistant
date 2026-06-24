@@ -2,47 +2,43 @@
   "page_id": "05cc6668-a46e-40f6-b407-3b53148bfdb5",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Manifest has 10 work images (site-01 to site-10) but ZERO context shots. No website screenshot and no Instagram profile screenshot are present in the manifest or among the uploaded files. Both are required for every entry.",
-      "fix": "Capture a screenshot of doubleup.studio homepage captioned 'Website' and a screenshot of instagram.com/louisesilfversparre captioned 'Instagram profile'. Add both to the manifest and upload. If IG is throttled, queue to state/ig-queue.json, document in AI Notes, and still provide the website shot."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "site-02.jpg, site-03.jpg, site-04.jpg (all captioned 'Postmates Sushi, 2023') show outdoor street murals and billboard mockups photographed in real-world settings. These are campaign photography or OOH mockups, NOT 3D renders. Louise is tagged '3D & motion'; these images do not demonstrate her 3D capability. The CreativeBoom source is a Mothers agency campaign article with no evidence Louise did the 3D work specifically.",
-      "fix": "Remove the three Postmates mural/billboard photos. If Louise genuinely did 3D work for this campaign, find the 3D renders specifically (not the OOH photos). Replace with on-capability 3D or motion work, e.g. from doubleup.studio case studies or her Behance. The 'Love So Cruel' thumbnail (love-so-cruel-thumbnail.jpg) and tech-02-nealite.jpg and tech-03-plastiglomerate.jpg are orphan files in the asset dir that ARE on-capability 3D work but are missing from the manifest entirely."
-    },
-    {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "With 3 Postmates images removed, the manifest contains: 1 Technofossils shot, 3 MTV Ident shots, 3 Fantasy Flora shots. That is only 3 projects but 3 shots of MTV and 3 of Fantasy Flora means heavy duplication within projects. Additionally, site-01.jpg (Technofossils) is pixel-identical to orphan file tech-01-trinitite-detail.jpg, confirming a duplicate was captured and only one made it to the manifest. The orphan files (love-so-cruel-thumbnail.jpg, tech-02-nealite.jpg, tech-03-plastiglomerate.jpg, mtv-ident-01.jpg, postmates-sushi-01.jpg) were captured but never added to the manifest.",
-      "fix": "Reconcile the manifest with the orphan files. Add the on-capability orphans (love-so-cruel-thumbnail, tech-02-nealite, tech-03-plastiglomerate) to the manifest with correct captions and links. Aim for 3 images from at least 3 distinct projects. Drop the duplicate trinitite shot."
-    },
-    {
-      "id": "B.links-present",
-      "result": "fail",
-      "evidence": "LinkedIn is absent from the entry metadata. The checklist requires all findable links including LinkedIn. No attempt documented in AI Notes to search for it.",
-      "fix": "Search 'Louise Silfversparre designer linkedin' and 'Double Up Studio linkedin'. Populate the LinkedIn field if found, or note in AI Notes that the search was done and no profile was found."
+      "result": "pass",
+      "evidence": "Four distinct projects: Technofossils (3 shots), MTV Ident (3 shots), Fantasy Flora (3 shots), Love So Cruel (thumbnail + 3 stills + embed). No repeated-project duplication."
     },
     {
       "id": "A.depth",
       "result": "pass",
-      "evidence": "Where 3D work IS present (MTV Ident, Fantasy Flora, Technofossils), the images go inside the projects with macro/interior renders, not just hero covers. Good depth on the valid projects."
+      "evidence": "Macro 3D renders and interior stills within each project, not hero-only covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All active images are 3D renders or animation stills. Postmates OOH shots (site-02/03/04) are correctly marked rejected:true with documented reasoning. No off-capability images in the live set."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png confirmed visually as doubleup.studio homepage (studio grid + branding). site-15.png confirmed as instagram.com/louisesilfversparre (handle and bio visible: '3D artist in Stockholm, half of @doubleup.studio'). Both marked context_shot:true with correct captions."
     },
     {
       "id": "A.uncaptioned",
       "result": "pass",
-      "evidence": "All 10 manifest entries have named project captions and source links."
+      "evidence": "Every manifest entry has a named project caption and source link."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "Louise is tagged 3D & motion (visual); no audio-only or writing work. Images are the right medium. No video embeds were required though the MTV Ident is an animation; a thumbnail was captured."
+      "evidence": "Love So Cruel YouTube embed present in manifest plus thumbnail preview image captioned and linked. Images present throughout; not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. Personal site unreachable documented in AI Notes."
     },
     {
       "id": "B.type",
@@ -50,19 +46,24 @@
       "evidence": "Type = Person, correct."
     },
     {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (doubleup.studio), Instagram (verified @louisesilfversparre), LinkedIn (linkedin.com/in/louise-silfversparre-a7509017b) all set. No public email found; personal site was unreachable so no contact page verifiable; prior reviewer did not flag this as a fail."
+    },
+    {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "3D & motion is accurate for her Technofossils, MTV Ident and Fantasy Flora work. Open Question 1 asks Jonathan about adding Creative direction, which is the right approach."
+      "evidence": "3D & motion matches all captured work. Open Question 1 asks Jonathan about adding Creative direction."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country Sweden, Size 1, Work Status Studio all set and sourced in AI Notes (IG bio + personal site + studio)."
+      "evidence": "Country Sweden, Size 1, Work Status Studio. Sources named in AI Notes (IG bio + studio)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes (studio co-founder, hands-on). Appropriate for a Person entry."
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (studio co-founder, hands-on, inferred)."
     },
     {
       "id": "C.no-judgment-contradiction",
@@ -72,12 +73,12 @@
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Source correctly set to 'Web clipper, 2021-10-09'. No relationship facts or special instructions visible in the Name field."
+      "evidence": "Source set to 'Web clipper, 2021-10-09'. No relationship facts or special instructions in the clip note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges the Autonomy estimate ('inferred'), notes the personal site was unreachable, and states the IG handle was verified via bio. Seniority read is present (early-career, studio co-founder). No em-dashes found."
+      "evidence": "AI Notes hedges the Autonomy estimate ('inferred'), documents personal site failure, confirms IG handle verification. Seniority read present (early-career studio co-founder). No em-dashes."
     },
     {
       "id": "D.source",
@@ -87,7 +88,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present for all touched fields. source_url is null throughout, which is the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance file present for all touched fields. Null source_url throughout is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -97,9 +98,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two terse, conditional Open Questions about capabilities and website URL. No field asked about that already has a non-zero value."
+      "evidence": "Two terse conditional Open Questions (Creative direction capability, personal site URL). No field asked about that already has a non-zero value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching, awaiting this gate flip to Needs Review."
     }
   ],
-  "to": "scraper",
-  "summary": "3 hard fails: (1) no context shots in manifest at all (website + IG both absent), (2) 3 Postmates OOH/mural photos are off-capability for a 3D designer, (3) LinkedIn not searched or populated. Separately: 3 orphan on-capability files (love-so-cruel-thumbnail, tech-02-nealite, tech-03-plastiglomerate) were captured but never added to the manifest and thus not uploaded."
+  "to": null,
+  "summary": "All four prior fails resolved: context shots present and visually confirmed correct (site-14 = doubleup.studio, site-15 = instagram.com/louisesilfversparre); Postmates OOH images rejected in manifest; orphan Technofossils files (tech-02-nealite, tech-03-plastiglomerate) and Love So Cruel assets included; LinkedIn set. Full checklist passes."
 }
