@@ -1,0 +1,31 @@
+{
+  "page_id": "389f84ba-ae13-8122-9fcc-d48c2c473e3f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "summary": "Special case: marketing/strategy director with Capabilities deliberately empty pending Jonathan Q1. No project work captured (correct given Q1). IG context shot rejected + documented + queued to ig-queue.json (sanctioned path per checklist exception). Site down (ECONNREFUSED) documented in AI Notes and Q2 asks Jonathan about a current site. All metadata fields complete: Type, Instagram, LinkedIn, Country, Size, Work Status, Autonomy, Source, AI Notes. Familiarity (Met or spoken, set_by jonathan) does not contradict Worked Together (Never) - the clip note describes a call, not collaboration. No em-dashes. Open Questions are terse and conditional. Minor notes: (1) no public email found and absence not explicitly noted in AI Notes, but palace-side marketing director with no public personal email surface is plausibly ungoogleable; (2) story nudge (Notes: how was working together?) technically fires on Familiarity >= Met or spoken but is correctly deprioritised until Q1 resolves membership. Neither is a gate failure.",
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "No capabilities tagged; no project work captured pending Q1 - correct call, not a gap"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Exempt: no capability decided yet"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "No off-capability work captured"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "IG shot rejected + documented in manifest (rejection_reason set) + queued to ig-queue.json - sanctioned exception applies. Website is ECONNREFUSED (no live site to screenshot), documented in AI Notes, Q2 asks Jonathan for a current site"},
+    {"id": "A.uncaptioned-images", "result": "pass", "evidence": "Images array empty; rejected shot not uploaded"},
+    {"id": "A.embeds", "result": "pass", "evidence": "Exempt"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "AI Notes: basmarijnen.com ECONNREFUSED + IG context shot queued - both gaps documented"},
+    {"id": "B.type", "result": "pass", "evidence": "Person"},
+    {"id": "B.all-links", "result": "pass", "evidence": "Instagram present (basmarijnen), LinkedIn present, Website down + Q2 raised, Email: no public personal email surface found for a brand-employed director - not a gateable miss"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Deliberately empty; Q1 asks Jonathan whether and how to classify"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, 1, Employed - sourced from clip note + LinkedIn; employer roles named in AI Notes"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (senior enough to run independently, primarily strategist)"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Familiarity Met or spoken (set_by jonathan, from clip note call). Worked Together Never - clip note describes a call/meeting, not project collaboration. No contradiction."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Source verbatim. Met or spoken set via --from-jonathan (provenance confirmed). Membership question raised as Q1."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Awards cited as verifiable facts. Autonomy hedged (primarily strategist/operator). Seniority + experience read present (~10+ yrs, named roles)."},
+    {"id": "D.source", "result": "pass", "evidence": "Clip note verbatim in Source field"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields present; set_by correct; source_url null is the known systemic tooling gap, not a gate failure per calibration note"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes and Open Questions use colons, semicolons, parentheses - no em-dashes found"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Q1 (keep/capability) and Q2 (website) are terse and conditional - neither field has a non-zero value"},
+    {"id": "D.status", "result": "pass", "evidence": "Currently Enriching; reviewer flipping to Needs Review now"}
+  ],
+  "to": null
+}

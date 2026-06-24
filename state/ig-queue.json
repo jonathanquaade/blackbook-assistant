@@ -915,5 +915,19 @@
     "ig_url": "https://www.instagram.com/sharp_type/",
     "reason": "headless rate-limit: screenshot returned Instagram 'Something went wrong' error page, not the real profile; logged-in ig.py grab needed for Instagram context shot",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "23ef41c9-f1b7-4ad3-bbf8-68fa4b15e9ba",
+    "name": "Sam Morgan",
+    "ig_url": "https://www.instagram.com/svmorganwork/",
+    "reason": "IG context screenshot failed: headless Playwright returned error page (rate-limited). Need logged-in ig.py grab for @svmorganwork profile context shot.",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "389f84ba-ae13-8122-9fcc-d48c2c473e3f",
+    "name": "Bas Marijnen",
+    "ig_url": "https://www.instagram.com/basmarijnen/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (rate-limited). Need logged-in ig.py grab for @basmarijnen profile context shot. basmarijnen.com is down so IG is the only visual anchor.",
+    "queued_at": "2026-06-24"
   }
 ]

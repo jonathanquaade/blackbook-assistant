@@ -20,7 +20,7 @@
   {
     "file": "site-16.png",
     "source_url": "https://wolveridge.com.au/",
-    "caption": "Wolveridge Architects, design by Studio Ongarato",
+    "caption": "Wolveridge Architects, homepage (UI), design by Studio Ongarato",
     "link": "https://wolveridge.com.au/",
     "captured_at": "2026-06-24"
   },
@@ -29,7 +29,9 @@
     "source_url": "https://wolveridge.com.au/wp-content/uploads/2026/05/V03-1-scaled.jpg",
     "caption": "Wolveridge Architects, design by Studio Ongarato",
     "link": "https://wolveridge.com.au/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "CDN content photography (architectural exterior shot); not the web UI Sam built. Replaced with UI screenshot of project detail page (site-25.png)."
   },
   {
     "file": "site-03.jpg",
@@ -50,9 +52,16 @@
     "rejection_reason": "Third Wolveridge image; two already included for this project."
   },
   {
+    "file": "site-25.png",
+    "source_url": "https://wolveridge.com.au/project/twin-creek-house/",
+    "caption": "Wolveridge Architects, project detail page (UI), design by Studio Ongarato",
+    "link": "https://wolveridge.com.au/project/twin-creek-house/",
+    "captured_at": "2026-06-24"
+  },
+  {
     "file": "site-19.png",
     "source_url": "https://www.marshagolemac.com/",
-    "caption": "Marsha Golemac, design by M.Giesser",
+    "caption": "Marsha Golemac, homepage (UI), design by M.Giesser",
     "link": "https://www.marshagolemac.com/",
     "captured_at": "2026-06-24"
   },
@@ -61,7 +70,9 @@
     "source_url": "https://www.marshagolemac.com/_next/image",
     "caption": "Marsha Golemac, design by M.Giesser",
     "link": "https://www.marshagolemac.com/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "CDN content photography (antique objects product shot); not the web UI Sam built. Replaced with UI screenshot of projects index page (site-26.png)."
   },
   {
     "file": "site-05.jpg",
@@ -73,9 +84,16 @@
     "rejection_reason": "Low resolution (41KB thumbnail); site-06 is stronger."
   },
   {
+    "file": "site-26.png",
+    "source_url": "https://www.marshagolemac.com/projects",
+    "caption": "Marsha Golemac, projects index page (UI), design by M.Giesser",
+    "link": "https://www.marshagolemac.com/projects",
+    "captured_at": "2026-06-24"
+  },
+  {
     "file": "site-18.png",
     "source_url": "https://www.studiohenrywilson.com/",
-    "caption": "Studio Henry Wilson, design by M.Giesser",
+    "caption": "Studio Henry Wilson, homepage (UI), design by M.Giesser",
     "link": "https://www.studiohenrywilson.com/",
     "captured_at": "2026-06-24"
   },
@@ -84,7 +102,9 @@
     "source_url": "https://www.studiohenrywilson.com/cdn/shop/files/251120_SHW_Showroom_DinaGrinberg-HR-0110_copy.webp",
     "caption": "Studio Henry Wilson, design by M.Giesser",
     "link": "https://www.studiohenrywilson.com/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "CDN content photography (product showroom mirror photo); not the web UI Sam built. Replaced with UI screenshot of projects page (site-27.png)."
   },
   {
     "file": "site-08.webp",
@@ -103,6 +123,13 @@
     "captured_at": "2026-06-24",
     "rejected": true,
     "rejection_reason": "Animated GIF; oversized (1.9MB) and not suitable for static portfolio display."
+  },
+  {
+    "file": "site-27.png",
+    "source_url": "https://www.studiohenrywilson.com/pages/projects",
+    "caption": "Studio Henry Wilson, projects page (UI), design by M.Giesser",
+    "link": "https://www.studiohenrywilson.com/pages/projects",
+    "captured_at": "2026-06-24"
   },
   {
     "file": "site-22.png",
@@ -196,29 +223,5 @@
     "captured_at": "2026-06-24",
     "rejected": true,
     "rejection_reason": "Screenshot captured the acknowledgment of country splash page, not the site UI."
-  },
-  {
-    "file": "site-25.png",
-    "source_url": "https://wolveridge.com.au/project/twin-creek-house/",
-    "caption": "Wolveridge Architects, project detail page (UI), design by Studio Ongarato",
-    "link": "https://wolveridge.com.au/project/twin-creek-house/",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
-    "file": "site-26.png",
-    "source_url": "https://www.marshagolemac.com/projects",
-    "caption": "Marsha Golemac, projects index page (UI), design by M.Giesser",
-    "link": "https://www.marshagolemac.com/projects",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
-    "file": "site-27.png",
-    "source_url": "https://www.studiohenrywilson.com/pages/projects",
-    "caption": "Studio Henry Wilson, projects page (UI), design by M.Giesser",
-    "link": "https://www.studiohenrywilson.com/pages/projects",
-    "captured_at": "2026-06-24",
-    "context_shot": true
   }
 ]

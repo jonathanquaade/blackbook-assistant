@@ -72,3 +72,6 @@ Do you feel like we could help with your ecommerce challenges? Reach out to simo
 # Archived page body (2026-06-24)
 
 Work
+# Archived page body (2026-06-24)
+
+Work
