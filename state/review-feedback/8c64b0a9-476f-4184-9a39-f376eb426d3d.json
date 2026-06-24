@@ -1,0 +1,112 @@
+{
+  "page_id": "8c64b0a9-476f-4184-9a39-f376eb426d3d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 active images span 6 distinct typefaces (Sharp Grotesk, Ogg, Sharp Sans, DOSS Collection, Beatrice Display, Sharp Earth) plus PRINT Magazine editorial spread"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside typeface pages showing hero + sub-family breakdowns; PRINT images show glyph-level detail and multi-script specimens"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are typeface specimens or editorial press features about typefaces; Capability is Type design"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website shot (site-02.png) is sharptype.co confirmed by nav; broken video block visible but site is identifiable. IG shot (site-10.png) properly rejected + documented + queued to ig-queue.json per throttle-exception path",
+      "note": "site-02.png has a broken embedded video block in the center of the homepage due to render restrictions; site nav and identity are clear. A clean retake would be better but does not fail the gate. IG queued correctly."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 active images have captions naming the typeface and a source link"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Foundry entry; no video/audio work to embed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes; queued to ig-queue.json"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Foundry; correct"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram (verified @sharp_type), LinkedIn, Email all present"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Type design; sole and correct capability for a type foundry"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, 2-10, Studio; AI Notes cites recent press and site as sources"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Foundry (org-type); Autonomy optional per checklist calibration 2026-06-21. AI Notes contains appropriate seniority read (founded 2015, Lucas Sharp as Type Director, ~10yr established)"
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted; no evidence contradicts any zero-state"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was bare URL entry; body archived to clipped.md; no instructions or judgment facts were present"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts hedged appropriately; verifiable claims (Monotype sale, clients, IG count) stated directly; no em-dashes"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-10-14"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have correct set_by values; null source_url is the known systemic tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written text"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions present; judgment fields are Jonathan's alone; conditional rule met"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flipping to Needs Review now"
+    }
+  ],
+  "notes": "One soft quality note for Jonathan: site-02.png website context shot shows a broken embedded video block in the center of the homepage due to a Cloudflare security restriction during headless render. The Sharp Type nav and branding are clearly visible so site identity is not in question. A clean retake on the next logged-in session would be better. SVG file site-03.svg (Sharp Grotesk specimen) may not upload to Notion as an inline image; if it shows blank in Notion, the scraper should re-capture as PNG on the next pass.",
+  "to": null
+}
