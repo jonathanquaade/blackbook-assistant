@@ -1,0 +1,104 @@
+{
+  "page_id": "0d89ccd2-22f7-44e8-bd3a-bbfc86e493e0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Familiarity is now 'Know them well' (set_by jonathan), matching Worked Together: 'Repeatedly' (set_by jonathan). No contradiction. Fix from attempt 1 confirmed applied."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Live Open Questions: '1. Notes: how was working together?' only. The 'Familiarity?' conditional-violation question is gone. Story-nudge OQ correctly retained."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 work images across 3 distinct named projects: Isomorphic Labs (4), Cohere (4), Univers (2). No duplicate-angle problem."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside projects: identity system colourways, mobile screens, component library, device spread, dashboard UI interiors. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design + Web design. Images show brand identity systems (Isomorphic Labs, Cohere) and product/web UI (Univers dashboard). On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png: danielkozma.hu homepage confirmed (name in nav, 'Branded digital experiences' hero). site-16.png: instagram.com with @danielkozma handle visible, cookie modal over grid, unmistakably the correct platform and handle. Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 10 work images have project name + source link. Context shots captioned 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design + Web design. No embeddable video/audio work in scope. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents password-protected case studies on danielkozma.hu. Rejected Behance and Mastory images documented in manifest with reject reasons."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email absent but danielkozma.hu has a Contact nav item (likely a form, not a public email address); absence not a skip."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design + Web design, set_by jonathan. Images confirm both."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Hungary (.hu domain, self-site). Size: 1. Work Status: Freelance (site self-description, documented in AI Notes)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent, reasoning in AI Notes. Seniority read present ('mid-to-senior'). Required for Person entries."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes. Inferences hedged ('Likely Hungary-based', 'inferred from solo freelance positioning'). Seniority + Autonomy paired."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-10-01'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance written for touched fields. source_url nulls are the known systemic tooling gap (calibration note 2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions are free of em-dashes."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry flipped to Needs Review on this pass."
+    }
+  ]
+}

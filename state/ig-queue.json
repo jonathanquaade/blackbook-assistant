@@ -964,5 +964,19 @@
     "ig_url": "https://www.instagram.com/czelmatyas/",
     "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited). @czelmatyas confirmed handle (czelmatyas.com redirects to it). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
+    "name": "Andy Price",
+    "ig_url": "https://www.instagram.com/__andyprice__/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "6c42b976-bd39-4313-9292-92e375537f5b",
+    "name": "Adam Varga",
+    "ig_url": "https://www.instagram.com/dmvrg/",
+    "reason": "IG context screenshot returned error page (headless rate-limit). Note: @dmvrg on Instagram is UNCONFIRMED - no public evidence this handle belongs to this person. If not found on IG, skip and mark IG field empty.",
+    "queued_at": "2026-06-24"
   }
 ]
