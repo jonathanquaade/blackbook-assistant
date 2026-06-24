@@ -1,0 +1,116 @@
+{
+  "page_id": "e1c65706-ede6-4d01-b21d-6a123efe665d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Work spans 5 distinct products: MetaMask wallet, MetaMask Portfolio, MetaMask Card, Linea L2, Infura API. No repeated projects from different angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Includes MetaMask Portfolio dashboard UI (site-15), isometric rebrand illustration (metamask-portfolio-01), card product design (metamask-card-hero), launch campaign image (metamask-card-01), Linea brand visual (site-01) - not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities ('Creative technology', 'Brand strategy') are set_by: jonathan in provenance and thus outside the scraper's mandate. Work captured shows brand identity and product visual design consistent with 'Brand strategy'. Note: 'Creative technology' per TAXONOMY means code-driven interactive/AR/VR work, which is not well evidenced in the images; this is a pre-existing scout-level concern, not a scraper gate issue.",
+      "note": "Jonathan should confirm or revise Capabilities - the schema fit is already surfaced in Open Question 1."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png is the correct consensys.io homepage. site-16.png (IG login wall) is correctly marked rejected in manifest, documented in AI Notes ('IG context shot queued to state/ig-queue.json'), and entry present in state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have project captions and source links in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "YouTube embed present (MetaMask explainer video) with thumbnail image (metamask-video-thumb-01.jpg) and linked caption."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG unavailability documented in AI Notes and queued to ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Open Question 1 correctly surfaces the schema-fit concern for Jonathan."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (consensys.io), Instagram (instagram.com/consensys), LinkedIn present. No public email found for an org of this type - expected absent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Both tags are valid TAXONOMY entries. set_by: jonathan in provenance (migration origin), so agent correctly left them in place. Schema-fit concern surfaced via Open Question 1."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US, Size: 100+ (745 employees per AI Notes), Work Status: Studio (closest valid value for an org-type entry per schema). AI Notes explains the fit issue."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=5 set. Per checklist calibration (2026-06-21), Autonomy is OPTIONAL for org-type entries. Setting it to 5 for a large tech org is unusual (the field is a person-level judgment) but is not a gate fail. Jonathan can correct on review.",
+      "note": "For calibration: Autonomy=5 on an Agency entry is arguably a category error. Worth flagging to Jonathan."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a personal relationship. No clip note stated relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was the page title only ('Blockchain Technology Solutions | Ethereum Solutions | ConsenSys'). Name cleaned to 'ConsenSys', body archived to clipped.md, no relationship or judgment facts in the clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the schema fit ('fits the schema poorly'), documents all key product context, records the IG queue. No em-dashes. No unverified plain assertions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-23'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields. source_url nulls are the known systemic tooling gap, not a gate fail."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions contain no em-dashes. Semicolons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) schema-fit concern, valid and unanswerable by agent; (2) name cleanup confirmation. Both are terse and conditional. No fields asked about that already have non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; being flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "notes": [
+    "site-14.png (Infura homepage) rendered with a blank upper half due to a cookie/consent overlay; the image is visually weak (mostly white). Not gate-blocking given 13 other strong images across 4 products, but a cosmetic quality note for Jonathan.",
+    "Autonomy=5 on an org-type (Agency) entry is a category mismatch worth Jonathan's attention."
+  ],
+  "to": null
+}

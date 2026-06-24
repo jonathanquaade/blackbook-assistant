@@ -1,0 +1,110 @@
+{
+  "page_id": "73579df9-71b4-43f2-b5b6-80e20168ba6f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: VEIRA Art Gallery (mrglox.io, 4 shots), AudioVisualizer GitHub repo, Remix+NestJS boilerplate, plus Tresorio and Be API employer frontends. Old broken/Cloudflare captures are all rejected with documented reasons."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "VEIRA has 4 interior shots (homepage, gallery room interior, Artists page, Collections page). GitHub repos go inside via individual repo pages. Employer sites show homepages only, but are labeled honestly as employer sites not project interiors. Note: site-36 (Collections) rendered as 'NO RESULTS' but filter UI chrome is visible, showing Morgan's UI structure; not a gate failure."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Creative technology + Frontend development (web). Work shown: VEIRA Art Gallery (multilingual Next.js frontend build on his own domain), GitHub repos (Remix/NestJS boilerplate with 19 stars, AudioVisualizer canvas experiment), Tresorio and Be API employer frontends. All squarely on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-15) verified as morgan-leroux.com homepage. IG context shot (site-02 and site-21) both rejected with reason 'Instagram login wall'; @morganleroux queued to ig-queue.json and AI Notes states handle is unconfirmed without login. Satisfies the IG throttle exception in the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 11 active images have captions and link fields. No needs_caption markers."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Frontend/creative-tech creative; no video or audio embeds expected. CodePen bookmark present as supplemental link."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "CodePen Cloudflare block documented in AI Notes and manifest (all URL patterns tested twice). AudioVisualizer GH Pages 404 documented. IG login wall documented and queued."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, and Email all set. Instagram field empty but handle @morganleroux queued (unverified without login; sanctioned path). No missing findable links."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Creative technology + Frontend development (web), set_by jonathan. Consistent with the work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "France, Size 1, Freelance. AI Notes explains multi-source basis: own site states freelance/Malt, past employers listed as prior."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent, with hedged reasoning in AI Notes (self-employed + build-focused output, not direction level). Seniority read present (mid-level, ~5 yrs)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with a 2021 web clipper entry with no relationship signal in clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip was site copy (MrGlox about text), archived to clipped.md. No Jonathan instructions in the clip note requiring action."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Previous IG/AI Notes contradiction is resolved: both manifest and AI Notes consistently state @morganleroux found via Google snippet but unconfirmed without login, queued. Autonomy hedged. Work Status reasoning documented."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-23'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url null throughout, which is the known systemic tooling gap (not a gate failure per checklist calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is null. No fields requiring questions are missing. No story nudge triggered (no prior relationship signal)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipping to Needs Review as part of this pass."
+    }
+  ],
+  "to": "scraper"
+}

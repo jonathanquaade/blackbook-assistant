@@ -28,16 +28,16 @@
     },
     "Country": {
       "value": [
-        "GB"
+        "NL"
       ],
       "source_url": null,
-      "verified_at": "2026-06-15T21:36:25",
+      "verified_at": "2026-06-25T00:24:07",
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:32:51",
+      "verified_at": "2026-06-25T00:28:01",
       "set_by": "agent"
     },
     "Work With?": {
@@ -56,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Employed",
       "source_url": null,
-      "verified_at": "2026-06-15T21:36:25",
+      "verified_at": "2026-06-25T00:24:07",
       "set_by": "agent"
     },
     "Name": {
@@ -86,15 +86,15 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Irish graphic designer and illustrator, 8+ yrs experience; worked at Science Gallery Dublin, Detail Design Studio, Something More Near, Ralph Appelbaum Associates, Publicis Dublin, WeTransfer (NL, 2020), SNASK (SE, Nov 2021 freelance), Studio Neboko / TBWA (NL, Adidas client). Notable: SEEING exhibition for Science Gallery Dublin won Collaborative Design Award (Irish Design Awards 2016, with 3D designer Claire Healy); projects in 100 Archive. Mid-level (Autonomy 3, inferred from trajectory and employer mix, no first-hand evidence). Location conflict: The Dots bio says London, Behance says Amsterdam; set GB provisionally, low confidence. Work Status Unknown: no current self-maintained statement. Instagram confirmed as @sinead.foley (handle found via PeekYou + Google snippet); IG context shot queued (headless returned error page) in state/ig-queue.json.",
+      "value": "Irish graphic designer and illustrator, 10+ yrs experience; worked at Science Gallery Dublin, Detail Design Studio, Something More Near, Ralph Appelbaum Associates, Publicis Dublin, WeTransfer (NL, 2020), SNASK (SE, Nov 2021 freelance), Studio Neboko / TBWA (NL, Adidas client), now Senior Brand Designer at Monks (Amsterdam, as of 2025 per her own About page). Notable: SEEING exhibition for Science Gallery Dublin won Collaborative Design Award (Irish Design Awards 2016, with 3D designer Claire Healy); projects in 100 Archive. Mid-senior level (Autonomy 3, inferred from trajectory and employer mix, no first-hand evidence). Location resolved to NL (Amsterdam, confirmed via her own About page sineadfoley.work/About). Work Status set to Employed (Monks, per About page; primary source). LinkedIn found via Google snippet (https://uk.linkedin.com/in/sin%C3%A9ad-foley-59556963, matched known employers in snippet, no login needed). Email sineadfoleydesign@gmail.com confirmed directly from her own About page (primary source). Instagram confirmed as @sinead.foley (handle found via PeekYou + Google snippet); IG context shot queued (headless returned error page) in state/ig-queue.json.",
       "source_url": null,
-      "verified_at": "2026-06-24T19:48:45",
+      "verified_at": "2026-06-25T00:24:37",
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Sin\u00e9ad based London or Amsterdam? (The Dots says London, Behance says Amsterdam)\n2. Current work status: freelance or employed?",
+      "value": "",
       "source_url": null,
-      "verified_at": "2026-06-15T21:36:27",
+      "verified_at": "2026-06-25T00:24:58",
       "set_by": "agent"
     },
     "Instagram": {
@@ -120,6 +120,18 @@
       ],
       "source_url": null,
       "verified_at": "2026-06-24T19:51:28",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://uk.linkedin.com/in/sin%C3%A9ad-foley-59556963",
+      "source_url": null,
+      "verified_at": "2026-06-25T00:24:07",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "sineadfoleydesign@gmail.com",
+      "source_url": null,
+      "verified_at": "2026-06-25T00:24:07",
       "set_by": "agent"
     }
   }

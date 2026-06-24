@@ -1,0 +1,20 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://good-loop.com/",
+    "caption": "Website",
+    "link": "https://good-loop.com/",
+    "captured_at": "2026-06-25",
+    "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/goodloophq/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/goodloophq/",
+    "captured_at": "2026-06-25",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "IG login wall served headless; no real profile captured. Not queued to ig-queue.json: adtech platform, not worth a logged-in run."
+  }
+]

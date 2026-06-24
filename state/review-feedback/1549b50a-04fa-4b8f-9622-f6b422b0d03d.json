@@ -1,45 +1,44 @@
 {
   "page_id": "1549b50a-04fa-4b8f-9622-f6b422b0d03d",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "12 uploaded images span 4 named projects (TITLES, Impossible Objects, The Degree Show, Kinetic typography) plus 2 context shots. Rejected entries correctly flagged in manifest."
+      "evidence": "12 active images span 4 named projects (TITLES, Impossible Objects, The Degree Show, Kinetic typography) plus 2 context shots. No caption duplication across projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "TITLES: 4 images (wordmark, data-type specimen, merch/packaging, metal card). Impossible Objects: 3 images (branded tape on boxes, garment tag detail, signage -- though see mislabel fail below). Degree Show: 2 images (wheatpaste poster street shot, outdoor billboard composite). Depth present across projects."
+      "evidence": "TITLES: 4 images (wordmark hero, data-type specimen, bubble-wrap merch with REDRUM USB, metal embossed card). Impossible Objects: 3 images (branded tape on boxes, garment tag with IO runway codes, stationery/invoice/business-card layout). Degree Show: 2 images (wheatpaste poster street shot, outdoor billboard composite). Goes inside each project."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities are Graphic design and Type design. All captured work is identity, typographic and type-driven graphic work -- fully on-capability."
+      "evidence": "Tagged Graphic design and Type design. All active images are identity, typographic and type-driven graphic work. site-12.gif is kinetic typography. On-capability throughout."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png: confirmed nikitaiziev.com homepage (site bio visible). site-14.png: confirmed instagram.com/nikitaiziev (handle nikitaiziev, 50.1K followers, name Nikita Iziev visible). Both correctly labeled and correct domain."
+      "evidence": "site-13.png: confirmed nikitaiziev.com (bio text, email, client names all visible). site-14.png: confirmed instagram.com/nikitaiziev (handle nikitaiziev, 50.1K followers, name Nikita Iziev visible). Both labeled correctly and on the correct domain."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "impossible-03.png is captioned 'Impossible Objects identity, 2026' but the image shows a physical storefront billboard reading 'JEONGLI' with Korean text -- a completely different project (Korean fashion brand). The caption does not match the image content. This is a mislabeled image currently live in the Images property.",
-      "fix": "Replace impossible-03.png with an image that is actually from the Impossible Objects Behance project (gallery/244366507). The JEONGLI image must be rejected in the manifest and removed from the Images property."
+      "result": "pass",
+      "evidence": "Fix verified: impossible-03.png (the JEONGLI mislabel) is rejected in manifest with documented reject_reason and is absent from the live Images property. impossible-03b.png replaces it and is confirmed to show genuine Impossible Objects identity work (stationery spread: business cards, branded invoice, handwritten note card, all reading IMPOSSIBLE OBJECTS with London address). All 12 active images have named-project captions with source links."
     },
     {
       "id": "A.embeds-video-audio",
       "result": "pass",
-      "evidence": "No YouTube/Vimeo embeds were required; work is identity and type projects served as statics. Kinetic typography captured as GIF (site-12.gif), which is the appropriate format for this type of work."
+      "evidence": "No YouTube/Vimeo embeds required; work is identity and type projects served as statics and GIF. Kinetic typography captured as site-12.gif."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents work status hedging and country correction. Rejected images have documented reject_reason in manifest."
+      "evidence": "AI Notes documents CDN contamination on Behance project 244366507 (3 of 5 module IDs serve JEONGLI content), explaining why only 3 Impossible Objects images are captured rather than more. Rejected images have documented reject_reason in manifest."
     },
     {
       "id": "B.type-classified",
@@ -48,39 +47,38 @@
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "LinkedIn is absent from the entry and not mentioned in AI Notes as searched or genuinely unfindable. The CLAUDE.md pipeline requires LinkedIn to be searched ('ALWAYS search [name discipline linkedin]') and its absence documented in AI Notes. Provenance has no LinkedIn field at all. Nikita Iziev is a senior London-based designer with major clients and a D&AD award -- a LinkedIn profile very likely exists and was not searched.",
-      "fix": "Search 'Nikita Iziev graphic designer linkedin' and attach the LinkedIn URL if found. If genuinely absent after a search, add one line to AI Notes stating so (e.g. 'No LinkedIn found under any variant searched')."
+      "result": "pass",
+      "evidence": "Fix verified: LinkedIn field now set to https://uk.linkedin.com/in/nikita-iziev-23a629132 in both Notion entry and provenance (set_by agent, verified_at 2026-06-24). AI Notes documents the find ('found via search'). Website, Instagram and Email also present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + Type design, set_by jonathan in provenance -- correctly preserved. Open Question 1 asks about adding Creative direction and 3D & motion, which is appropriate given the scope ambiguity."
+      "evidence": "Graphic design + Type design, set_by jonathan in provenance. Open Question 1 asks about adding Creative direction and 3D & motion -- appropriate given scope ambiguity."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK (AI Notes documents correction from US migration baseline, citing site + Behance). Size: 1. Work Status: Freelance with hedged sourcing documented in AI Notes (single source, self-positioned). Meets confidence floor with appropriate hedge."
+      "evidence": "Country: UK (AI Notes documents correction from US migration baseline, citing site and Behance). Size: 1. Work Status: Freelance, hedged in AI Notes as inferred from single source (own site). Meets confidence floor."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (leads own art direction, D&AD award, major brand client record). Grounded in verifiable facts."
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (leads own art direction, D&AD Golden Pencil, major brand client record). Grounded in verifiable facts."
     },
     {
       "id": "C.no-contradictory-judgment",
       "result": "pass",
-      "evidence": "Worked Together: Never and Familiarity: Don't know them are both zero-states with no clip-note evidence contradicting them. Work With?: Unvetted. No contradiction."
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are zero-states with no clip-note evidence contradicting them. Work With?: Unvetted. No contradiction."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2021-09-27' with no clip-note instructions found in the entry. No stated relationship facts or judgment values to act on."
+      "evidence": "Source is 'Web clipper, 2021-09-27' with no clip-note instructions. No stated relationship facts or judgment values to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Work Status hedged as inferred from single source. Seniority read present (senior designer/art director, award-level work). No em-dashes. Clients and award stated as verifiable facts from site copy."
+      "evidence": "Work Status hedged as inferred from single source. Seniority read present (senior designer/art director, award-level work). Clients and award stated as verifiable facts from site copy. No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.source-filled",
@@ -90,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by correctly attributed. Null source_url is the known systemic tooling gap (not a gate failure per calibration note). No fact written below 0.8 confidence."
+      "evidence": "Provenance file present with all touched fields, set_by correctly attributed. LinkedIn field now included in provenance. Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -105,10 +103,9 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains in Enriching pending this review gate. Will flip to Needs Review only on pass."
+      "evidence": "Entry remains in Enriching pending this review gate. Flipping to Needs Review now on pass."
     }
   ],
-  "failing_checks": ["A.no-uncaptioned-images", "B.all-findable-links"],
-  "to": "scraper",
-  "summary": "Two failures: (1) impossible-03.png is mislabeled -- image is a JEONGLI Korean fashion storefront, not Impossible Objects work; must be replaced or rejected and a correct Impossible Objects image added. (2) LinkedIn not searched or documented; required by pipeline for a senior designer with a public award record."
+  "to": "jonathan",
+  "summary": "Both prior failures resolved: (1) impossible-03.png (JEONGLI mislabel) rejected in manifest and removed from Images property; replaced by impossible-03b.png which is confirmed genuine Impossible Objects identity work (stationery system with business cards, invoice, branded tape). (2) LinkedIn field set to uk.linkedin.com/in/nikita-iziev-23a629132, documented in AI Notes and provenance. All 20 checklist items pass. Flipping to Needs Review."
 }

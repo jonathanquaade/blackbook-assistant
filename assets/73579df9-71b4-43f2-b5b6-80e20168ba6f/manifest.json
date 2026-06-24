@@ -5,7 +5,9 @@
     "caption": "Website",
     "link": "https://morgan-leroux.com/",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Replaced by site-15.png"
   },
   {
     "file": "site-02.png",
@@ -13,7 +15,9 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/morganleroux/",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Instagram login wall, not a real profile page. Handle @morganleroux queued to ig-queue.json for logged-in grab."
   },
   {
     "file": "site-03.png",
@@ -21,7 +25,9 @@
     "caption": "Three.js GLSL Noise Shader, CodePen",
     "link": "https://codepen.io/MrGlox/pen/dypWajW",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page. All codepen.io URLs are blocked by Cloudflare for headless browsers (confirmed across profile, individual pen, and /full/ preview URLs)."
   },
   {
     "file": "site-04.png",
@@ -29,21 +35,27 @@
     "caption": "Audio Visualizer experiment",
     "link": "https://mrglox.github.io/AudioVisualizer/",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "GitHub Pages 404. AudioVisualizer repo exists but is not deployed to GitHub Pages. Replaced with screenshot of the GitHub repo page."
   },
   {
     "file": "site-05.png",
     "source_url": "https://fbc791.claudeassets.com/20201126182520/https://tresorio.com/app/uploads/2020/04/workspace_fr-560x400.png",
     "caption": "Tresorio, cloud platform (prior employer)",
     "link": "https://tresorio.com/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Generic CDN-cached product thumbnail, not a screenshot of the live site. Replaced with site-30.png."
   },
   {
     "file": "site-06.png",
     "source_url": "https://tresorio.com/assets/tresorio.com/app/uploads/2019/12/VPS-FR.png",
     "caption": "Tresorio cloud platform, prior employer",
     "link": "https://tresorio.com/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Isolated asset URL. Replaced with site-30.png."
   },
   {
     "file": "site-07.png",
@@ -51,28 +63,36 @@
     "caption": "Tresorio cloud platform, prior employer",
     "link": "https://tresorio.com/",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Replaced by site-30.png"
   },
   {
     "file": "site-08.jpg",
     "source_url": "https://beapi.fr/app/uploads/2020/02/WORDCAMPPARIS_image1.jpg",
     "caption": "Be API agency, prior employer",
     "link": "https://beapi.fr/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "WordCamp event photo, generic employer content, not Morgan's frontend work."
   },
   {
     "file": "site-09.png",
     "source_url": "https://beapi.fr/app/uploads/2026/05/blog-article-cover-2026-1.png",
     "caption": "Be API agency, prior employer",
     "link": "https://beapi.fr/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Generic stock-art blog cover from Be API, not Morgan's frontend work."
   },
   {
     "file": "site-10.png",
     "source_url": "https://beapi.fr/app/uploads/2026/05/blog-article-refonte-et-seo.png",
     "caption": "Be API agency, prior employer",
     "link": "https://beapi.fr/",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Generic stock-art blog cover from Be API, not Morgan's frontend work."
   },
   {
     "file": "site-11.png",
@@ -80,7 +100,9 @@
     "caption": "SVG Filter Button, CodePen experiment",
     "link": "https://codepen.io/MrGlox/pen/bwVPGa",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page, same block as site-03."
   },
   {
     "file": "site-12.png",
@@ -88,7 +110,9 @@
     "caption": "GitHub profile",
     "link": "https://github.com/MrGlox",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Replaced by site-22.png"
   },
   {
     "file": "site-13.png",
@@ -96,7 +120,9 @@
     "caption": "Be API agency site, prior employer",
     "link": "https://beapi.fr/",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Replaced by site-31.png"
   },
   {
     "file": "site-14.png",
@@ -104,6 +130,210 @@
     "caption": "Twitter profile",
     "link": "https://twitter.com/MisterGlox",
     "captured_at": "2026-06-24",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Twitter is not a required context shot. Required: Website + Instagram profile only."
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://morgan-leroux.com/",
+    "caption": "Website",
+    "link": "https://morgan-leroux.com/",
+    "captured_at": "2026-06-25",
     "context_shot": true
+  },
+  {
+    "file": "site-16.jpg",
+    "source_url": "https://react-frontend-production.vercel.app/images/profile.jpg",
+    "caption": "Creative Developer Portfolio, Vercel demo",
+    "link": "https://react-frontend-production.vercel.app/",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Stock headshot of Muhammad Ahmed from a generic template. The Vercel URL is not Morgan's project."
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://react-frontend-production.vercel.app/",
+    "caption": "Creative Developer Portfolio (Vercel)",
+    "link": "https://react-frontend-production.vercel.app/",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Page shows 'Hi, I'm Muhammad Ahmed'. This Vercel URL is a different person's template portfolio, not Morgan's work."
+  },
+  {
+    "file": "site-18.png",
+    "source_url": "https://codepen.io/MrGlox",
+    "caption": "CodePen profile, MrGlox",
+    "link": "https://codepen.io/MrGlox",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page."
+  },
+  {
+    "file": "site-19.png",
+    "source_url": "https://codepen.io/MrGlox/pen/EyaLXN",
+    "caption": "Three.js JSON viewer, CodePen",
+    "link": "https://codepen.io/MrGlox/pen/EyaLXN",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page."
+  },
+  {
+    "file": "site-20.png",
+    "source_url": "https://morgan-leroux.com/",
+    "caption": "Website",
+    "link": "https://morgan-leroux.com/",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Duplicate of site-15.png."
+  },
+  {
+    "file": "site-21.png",
+    "source_url": "https://www.instagram.com/morganleroux/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/morganleroux/",
+    "captured_at": "2026-06-25",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Instagram login wall, not a real profile screenshot. Handle @morganleroux is plausible from Google snippet but requires login to verify. Queued to ig-queue.json."
+  },
+  {
+    "file": "site-22.png",
+    "source_url": "https://github.com/MrGlox",
+    "caption": "GitHub profile, MrGlox",
+    "link": "https://github.com/MrGlox",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-23.png",
+    "source_url": "https://github.com/MrGlox/AudioVisualizer",
+    "caption": "AudioVisualizer, JS canvas audio experiment (GitHub repo)",
+    "link": "https://github.com/MrGlox/AudioVisualizer",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-24.png",
+    "source_url": "https://github.com/MrGlox/remix-nest-boilerplate",
+    "caption": "Remix + NestJS boilerplate, 19 GitHub stars",
+    "link": "https://github.com/MrGlox/remix-nest-boilerplate",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-25.png",
+    "source_url": "https://github.com/MrGlox?tab=repositories",
+    "caption": "GitHub repositories list, MrGlox (37 repos)",
+    "link": "https://github.com/MrGlox?tab=repositories",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-26.png",
+    "source_url": "https://codepen.io/MrGlox/pen/dypWajW",
+    "caption": "Three.js GLSL Noise Shader, CodePen",
+    "link": "https://codepen.io/MrGlox/pen/dypWajW",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page."
+  },
+  {
+    "file": "site-27.png",
+    "source_url": "https://codepen.io/MrGlox/pen/EyaLXN",
+    "caption": "Three.js JSON viewer, CodePen",
+    "link": "https://codepen.io/MrGlox/pen/EyaLXN",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page."
+  },
+  {
+    "file": "site-28.png",
+    "source_url": "https://codepen.io/MrGlox/full/MewvbN",
+    "caption": "Canvas line generator, CodePen",
+    "link": "https://codepen.io/MrGlox/full/MewvbN",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page."
+  },
+  {
+    "file": "site-29.png",
+    "source_url": "https://codepen.io/MrGlox/pen/ZOGgNQ",
+    "caption": "Radar chart, CodePen",
+    "link": "https://codepen.io/MrGlox/pen/ZOGgNQ",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page."
+  },
+  {
+    "file": "site-30.png",
+    "source_url": "https://tresorio.com/",
+    "caption": "Tresorio cloud platform, frontend built here (prior employer)",
+    "link": "https://tresorio.com/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-31.png",
+    "source_url": "https://beapi.fr/",
+    "caption": "Be API WordPress agency, frontend work at prior employer",
+    "link": "https://beapi.fr/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-32.png",
+    "source_url": "https://tresorio.com/produits/",
+    "caption": "Tresorio products page",
+    "link": "https://tresorio.com/produits/",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "404 Not Found. Tresorio sub-pages not publicly accessible."
+  },
+  {
+    "file": "site-33.png",
+    "source_url": "https://mrglox.io/",
+    "caption": "VEIRA Art Gallery, homepage (mrglox.io, freelance build)",
+    "link": "https://mrglox.io/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-34.png",
+    "source_url": "https://mrglox.io/",
+    "caption": "VEIRA Art Gallery, interior gallery room (mrglox.io)",
+    "link": "https://mrglox.io/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-35.png",
+    "source_url": "https://mrglox.io/artists",
+    "caption": "VEIRA Art Gallery, Artists page (mrglox.io)",
+    "link": "https://mrglox.io/artists",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-36.png",
+    "source_url": "https://mrglox.io/collections",
+    "caption": "VEIRA Art Gallery, Collections with filter UI (mrglox.io)",
+    "link": "https://mrglox.io/collections",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-37.png",
+    "source_url": "https://mrglox.io/",
+    "caption": "VEIRA Art Gallery, homepage (mrglox.io, freelance build)",
+    "link": "https://mrglox.io/",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Duplicate of site-33.png."
+  },
+  {
+    "file": "site-38.png",
+    "source_url": "https://www.malt.fr/profile/morgan",
+    "caption": "Malt freelance profile",
+    "link": "https://www.malt.fr/profile/morgan",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check page. Malt.fr blocks headless browsers."
+  },
+  {
+    "type": "bookmark",
+    "url": "https://codepen.io/MrGlox",
+    "caption": "CodePen profile (MrGlox): 4 known pens incl. Three.js GLSL shader, Three.js JSON viewer, canvas line generator, radar chart. CodePen is Cloudflare-blocked for headless capture.",
+    "link": "https://codepen.io/MrGlox"
   }
 ]

@@ -1,0 +1,111 @@
+{
+  "page_id": "bd150f80-cdf1-4ea6-a490-1878d969db88",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T10:30:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 images across 9 distinct named projects: Away, Billie, Great Jones, Proenza Schouler, Chylak, Studio Giancarlo Valle, Inigo, The Modern House, Altuzarra. Verified visually."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Mix of CDN portfolio thumbnails plus live-site interior screenshots (Away product detail, Proenza Schouler collection page). Not purely hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 13 images show built web interfaces (e-commerce, editorial, brand sites). Squarely on Frontend development (web)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01.png) confirmed as praesens.co homepage. IG context shot (site-02.png) is a login wall, correctly marked rejected in manifest, documented in AI Notes, queued to state/ig-queue.json. Checklist exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have caption and link fields populated."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Frontend development studio; no video or audio embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes and queued to ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email field is empty. info@praesens.co is publicly listed on praesens.co (mailto link on homepage, confirmed via site fetch). CLAUDE.md P1 step 6 requires email capture. The scout skipped it.",
+      "fix": "Set Email = info@praesens.co (from praesens.co homepage mailto link)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) set by Jonathan. Open Question asks whether to add Web design / Digital product design, which is appropriate given PRAESENS positions as design+build."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country PL, Size 2-10, Work Status Studio. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy field optional per calibration 2026-06-21. AI Notes records founder-led read."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are not contradicted by any evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Name field is clean (PRAESENS). No instructions in the clip note. Source records the clip date."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size inferred and flagged as such. IG handle confirmed but visual verification deferred to logged-in grab, documented. Seniority read present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-09-15'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance with correct set_by values. source_url null throughout; known systemic gap, not a gate failure (calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question about adding capabilities. No non-zero fields queried."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status remains Enriching pending this gate."
+    }
+  ],
+  "to": "scout"
+}

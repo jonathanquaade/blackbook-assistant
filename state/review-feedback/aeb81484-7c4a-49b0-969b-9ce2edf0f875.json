@@ -1,0 +1,111 @@
+{
+  "page_id": "aeb81484-7c4a-49b0-969b-9ce2edf0f875",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:40:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "to": null,
+  "notes": "Special-case org: Good-Loop is an adtech platform, not a creative studio. Two scout passes confirmed no TAXONOMY capability applies. Empty Capabilities field is intentional and surfaced via Open Question 1 for Jonathan's keep/reject call. All other checks pass.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "N/A: non-creative platform; no capability-matched projects exist to diversify. Intentional state acknowledged by spawn context and Open Question."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A: same reason."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities intentionally empty pending Jonathan decision (Open Question 1). Not a gate failure per spawn instructions."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as good-loop.com homepage (correct caption 'Website'). site-02.png is Instagram login wall; correctly marked rejected:true in manifest with documented reason. IG absence documented in AI Notes. Exception path applies: not queued as adtech platform, rationale stated."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "site-01.png captioned 'Website'. Only non-rejected uploaded image."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "N/A: no video/audio work to embed for this platform type."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states no creative capabilities visible, platform vendor status, capabilities pending Jonathan steer. IG login wall documented. No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Appropriate for a ~38-staff scaled adtech company."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (good-loop.com), Instagram (instagram.com/goodloophq), LinkedIn (linkedin.com/company/good-loop/), Email (hello@good-loop.com) all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Intentionally empty, surfaced via Open Question 1. Not a gate failure per spawn instructions and confirmed by two scout passes."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK+US matches clipped body (London, Edinburgh, New York offices). Size 11-40 consistent with ~38 staff in AI Notes. Work Status Studio is standard org treatment. Minor note: zero-state for orgs is technically Unknown per schema, but Work Status value does not affect the keep/reject decision Jonathan faces."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Agency type); Autonomy is OPTIONAL per 2026-06-21 calibration note. Not set, which is correct."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with clip note; no relationship stated."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw name 'Good-Loop Ads Maker' cleaned; 'Ads Maker' preserved verbatim in Source and acknowledged in AI Notes. Open Question raises the classification question. Clipped.md archived."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('suggesting he sees...'). Factual claims (founders, B-Corp, Series A, staff count, offices) sourced to the platform itself. No em-dashes. Founders named as experience read for org."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2024-06-02. Jonathan note: Ads Maker' — present and clip note preserved verbatim."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with set_by: agent. source_url nulls are the known systemic tooling gap (not a gate failure per 2026-06-21 calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, addresses a genuine unresolvable (platform vs. creative studio classification). Not asking for a field that already has a value. Well-formed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Was Enriching; flipped to Needs Review on this pass."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "4e648b47-c0ba-44ae-9aab-85c0f1dc4514",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Actress at Frameworks, La Biennale di Venezia, Loraine James at MUTEK MX, Andy Stott at MUTEK MX, Sufjan Stevens Convocations."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "La Biennale has 4 images (identity, catalogue cover, two interior spreads); Loraine James has 3 live projection shots; Andy Stott has 3 stage shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All active images show generative AV visuals, live concert projections, or music festival identity work. Matches Creative technology capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-17.png confirmed as melissasantamaria.com homepage. IG context shot (site-18.png) correctly rejected with login-wall reason, queued to state/ig-queue.json. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 active images have captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "fail",
+      "evidence": "Two issues: (1) The Actress at Frameworks Festival project page contains a Vimeo video. The scraper captured it as a still preview (site-02, captioned 'Vimeo embed preview') but did NOT add it as a manifest embed entry. A Vimeo on a project page must be embedded, not just screenshotted. (2) The first Sufjan Stevens YouTube embed (youtube.com/watch?v=o2murFL_Ukw) has no active thumbnail image. Its intended thumbnail (site-19) was correctly rejected for being the Sufjan Stevens album cover art (not her generative visuals); no replacement thumbnail showing actual generative visuals was captured.",
+      "fix": "1. Add a manifest embed entry for the Actress Frameworks Festival Vimeo (the URL is visible in site-02: it is a Vimeo from Colectivo Colmena). 2. Capture a thumbnail frame of actual generative visuals from the first Sufjan Stevens YouTube video (youtube.com/watch?v=o2murFL_Ukw) to serve as its preview image. A frame from the video itself (not the album art poster) would work; the second embed's thumbnail (site-20) shows the correct type of image."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and queued. Other source gaps not applicable."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Creative technology set by Jonathan. Scout correctly proposes 3D/motion and Art practice additions via Open Questions."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Mexico, Size 1, Work Status Freelance. AI Notes names sources (site, LinkedIn) and resolves the migration NL error."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set_by agent with hedged reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) do not contradict any clip note or evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No relationship facts in clip note. Migration entry."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority/trajectory (born 1997, architecture grad, ~5 yrs TouchDesigner practice, Forbes 100 mention). Sources named for Work Status and Country. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; itsnicethat.com profile 2022; melissasantamaria.com; soundbetter.com; jobs.interactiveimmersive.io resume'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. Null source_url is the known systemic tooling gap (calibration note: not a v1 gate failure)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "4 questions: Capabilities proposal, Country correction confirm, Familiarity, Rating. All terse, conditional, and appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching awaiting this gate. Not yet flipped."
+    }
+  ],
+  "to": "scraper"
+}

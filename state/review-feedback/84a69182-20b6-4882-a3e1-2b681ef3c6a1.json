@@ -1,0 +1,111 @@
+{
+  "page_id": "84a69182-20b6-4882-a3e1-2b681ef3c6a1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T09:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Active images span 9+ distinct projects: ARTWORLD, EDIT art journal, edit.church, Porto Rocha Five Years, Passport Agency, LUNGE, BON, Yatofu, Open Statement studio site."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "ARTWORLD has 3 interior Behance CDN shots plus a live-site shot. EDIT has 2 Behance mockup shots plus live site. Other projects are single-hero screenshots; acceptable for a frontend developer where the artifact is the built site itself."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web). All 15 active images show built web interfaces: e-commerce (LUNGE, BON), editorial (EDIT, ARTWORLD), portfolio/agency (Passport, edit.church, Porto Rocha, Yatofu, Open Statement). Zero off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-13.png) verified as behance.net/scrgb with caption correctly noting scrgb.co DNS failure and reason. IG context shot (site-06.png) is marked rejected with documented reason (login wall, headless rate-limited) and entry confirmed in ig-queue.json. Sanctioned exception path followed per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 active manifest entries have caption and link fields naming the project and source URL. Rejected entries also captioned and marked rejected."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Frontend developer: work is built websites (no video/audio output). Screenshot captures of live sites and Behance CDN project images are appropriate for this capability. No video embeds were skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "scrgb.co DNS failure documented in AI Notes and manifest (site-13 caption). NON-STANDARD Cloudflare block documented in manifest (site-07 rejected). Behance overlay block documented in manifest (site-10 rejected). IG login wall documented in manifest (site-06 rejected) and in ig-queue.json and AI Notes."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance designer-developer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: scrgb.co (dead but documented, Behance active portfolio noted). Instagram: https://www.instagram.com/scrgb/ (handle confirmed in ig-queue note). LinkedIn and Email: AI Notes states 'no LinkedIn confirmation found'; absence documented. Works At Link set to openstatement.co."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) per TAXONOMY.md. Provenance set_by jonathan (migrated tag, not agent override). All captured work matches this tag."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country FI, Size 1, Work Status Freelance. AI Notes documents sources: Behance bio + Open Statement page agree on freelance; no LinkedIn confirmation found. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent, with reasoning in AI Notes: solo design+dev output, founded Open Statement studio. Grounded in work history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Notes field ('Worked with Mouthwash, Vincent Tavano') refers to Oscar's professional collaborators, not Jonathan's relationship with Oscar. Worked Together: Never and Familiarity: Don't know them are valid zero-states here. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped URL (openstatement.co) documented in Source. No personal relationship signals in the clip note requiring --from-jonathan handling. Clipped.md archived."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority read present ('Mid-to-senior designer-developer'). Inferences hedged ('inferred from', 'Behance bio + Open Statement page agree'). No em-dashes. No unhedged claims. Autonomy estimate paired with reasoning."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-20. Clipped URL was openstatement.co (the studio); his own portfolio is scrgb.co.' Filled and accurate."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by and verified_at entries. null source_url is the known systemic tooling gap (not a gate failure per calibration note in checklist). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field all scanned: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions set. Story nudge not triggered (Worked Together is Never, Familiarity is Don't know them, neither trigger condition met). LinkedIn absence documented in AI Notes rather than as an open question, which is appropriate since a search was performed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching at review time. Will be flipped to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "All 20 checks pass. Entry is a clean frontend developer capture: 9+ distinct built-interface projects, on-capability throughout, blocked sources all documented, IG queued per sanctioned path. Ready for Jonathan."
+}

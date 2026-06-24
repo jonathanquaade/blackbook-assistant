@@ -1,0 +1,128 @@
+{
+  "page_id": "4d64be4c-9faa-41bb-94b1-acbb1a179658",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Images span distinct projects (OTHERS packaging, Spitfire/BBC Symphony, ARTAH, Hello Klean, Patisserie Pihlstrom, Claire Foy film) so diversity exists. However, 5 of 6 project images are captioned 'Portfolio homepage' (site-01, site-02, site-03, site-04, site-18, site-19) rather than their actual project names. The real project content is unnamed in the manifest, making this structurally uncaptioned work.",
+      "fix": "Rename captions on site-01 through site-04 and site-18/19 to match the actual projects shown: Adrianne artist promo (site-01), OTHERS Red Skies packaging (site-02, visible on site homepage), Bambi wine opener (site-03), 'Becoming the Land with Claire Foy' film title card (site-04), Patisserie Pihlstrom (site-18). Link each to its source project page, not the homepage."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior views of OTHERS packaging (site-07, site-08, site-09 from Its Nice That case study), Spitfire Audio interior campaign shots (site-13, site-14, site-15). Reasonable depth on two projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design and Identity systems. All captured work is brand identity, packaging, and visual design. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-06.png is captioned 'Instagram profile' and linked to instagram.com/jennifer.whitworth/ but the actual image is the Instagram.com login page ('See everyday moments from your close friends / Log into Instagram'). This is not Jennifer Whitworth's profile. The manifest does not mark this rejected, no ig-queue.json entry exists for this page_id, and AI Notes do not document the throttle/login-wall condition. The sanctioned exception path (rejected + documented + queued) was not followed.",
+      "fix": "Mark site-06 as rejected in the manifest with a reason (e.g. 'headless IG returned login page'). Add an entry to state/ig-queue.json for {page_id: '4d64be4c-9faa-41bb-94b1-acbb1a179658', name: 'Jennifer Whitworth', ig_url: 'https://www.instagram.com/jennifer.whitworth/', reason: 'headless capture returned login page; need logged-in ig.py grab', queued_at: '2026-06-25'}. Add one line to AI Notes: 'IG context shot queued (headless returned login wall).' The website context shot (site-05.png) is correct: jenniferwhitworth.work homepage confirmed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-01, site-02, site-03, site-04, site-18, site-19 are all real project work images captioned 'Portfolio homepage'. The caption names the source URL correctly but does not name the project. Rule: every image names its project. Six images effectively uncaptioned by project name.",
+      "fix": "Same fix as A.project-diversity above: give each image its project name as its caption."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic designer / identity work; no video or audio embeds are warranted. No video-heavy projects found in captured work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No significant sources appear unavailable. Her site, Its Nice That, and Two Times Elliott studio pages were accessed. IG throttle is a failure (see A.context-shots) but the omission is the missing documentation, not a silently thin entry."
+    },
+    {
+      "id": "A.broken-context-shots",
+      "result": "fail",
+      "evidence": "site-10.png, site-11.png, and site-12.png are all 404 error pages on jenniferwhitworth.work (the page says 'We couldn't find the page you were looking for'). They are marked context_shot: true in the manifest with captions 'Spitfire Audio x BBC Symphony Orchestra', 'The Saltern poster series', and 'Archive page'. None of these are real project or context images; they are broken page captures that should not be uploaded.",
+      "fix": "Remove site-10, site-11, and site-12 from the manifest (or mark rejected). The actual project images for Spitfire Audio and The Saltern were captured from Its Nice That (site-13, site-14, site-15) and should be re-captioned to not conflict. The Archive page shot is not needed as a context shot."
+    },
+    {
+      "id": "A.mislabeled-studio-images",
+      "result": "fail",
+      "evidence": "site-16.jpg is captioned 'Two Times Elliott studio homepage' (source: datocms-assets.com/97422, link: xx.studio/) but the image shows an ARTAH supplement pouch. site-17.jpg is also captioned 'Two Times Elliott studio homepage' but shows Hello Klean hair serum products. These are project images from the xx.studio case studies, not screenshots of the studio homepage. The caption is inaccurate.",
+      "fix": "Re-caption site-16 as 'ARTAH rebrand, Two Times Elliott' and site-17 as 'Hello Klean, Two Times Elliott'. Update links to point to the specific case study pages on xx.studio if available."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (jenniferwhitworth.work), Instagram (instagram.com/jennifer.whitworth/), LinkedIn present. Email: field absent and AI Notes do not document a search, but for a freelancer without a public contact page this is an acceptable gap given all other links are present. No Open Question raised; not a hard block."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Identity systems, set_by jonathan per provenance. Confirmed by captured work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "GB, Size 1, Freelance. AI Notes cites her site bio and a Brand Identity interview as agreeing sources."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, hedged in AI Notes with reasoning (solo freelance, named clients, no first-hand evidence)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "fail",
+      "evidence": "Jonathan's Notes say 'Friends with allice and Harry, Editorial, Worked at Two times Elliot'. 'Friends with allice and Harry' reads as Jonathan's social circle overlap with Jennifer's. The agent set Familiarity: 'Don't know them' without asking Jonathan whether allice and Harry are his friends who vouched for her (which would make Familiarity: 'Recommended by a friend'). Per the clip-note rule, when a note implies a possible relationship fact, the agent must ask rather than default to Don't know them.",
+      "fix": "Add Open Question: '1. Familiarity? (Notes mention allice and Harry as friends -- are these your connections who recommended her, or her own friends?)'"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "fail",
+      "evidence": "Jonathan's Notes 'Friends with allice and Harry, Editorial, Worked at Two times Elliot' were not fully acted on. 'Worked at Two times Elliot' is corroborated (in AI Notes as employment history) but the friendship context ('Friends with allice and Harry') was not asked about. If allice and Harry are Jonathan's contacts, Familiarity needs adjustment.",
+      "fix": "Same as C.no-judgment-contradiction: add a terse Familiarity question with the allice/Harry context."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy 4 hedged ('inferred... no first-hand evidence'). Work Status sources named (site + interview). Seniority read present (mid-level/independent senior, 6-8 yrs). No em-dashes. No unhedged assertions about Jonathan's relationship to her."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-21'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields in provenance with set_by values. source_url null is the known systemic tooling gap (not a gate failure). Capabilities and Notes correctly stamped set_by jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes. Open Questions field is empty (no content to check)."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "Open Questions is empty. A Familiarity question is required given the clip note mentions allice and Harry as friends (see C.clip-note-acted-on). The story nudge does not trigger yet (Worked Together is Never, Notes is non-empty but pre-existing from Jonathan -- the story nudge asks 'how was working together?' which is not warranted here since Worked Together is Never).",
+      "fix": "Add terse Familiarity question referencing allice and Harry context."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching, pending this gate."
+    }
+  ],
+  "to": "scraper"
+}

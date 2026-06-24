@@ -1,0 +1,111 @@
+{
+  "page_id": "814e4a5e-e4b6-443b-92f9-09c1c6589610",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No images present; absence is correctly documented as genuinely unobtainable (no portfolio site, LinkedIn gated, no IG confirmed). Contract exception applies: empty is correct for a hidden-online subject."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A; same documented absence."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Two bookmarks present (LinkedIn + Companies House) both correctly match Brand strategy; nothing off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "LinkedIn profile screenshot (site-01.png) hit the login wall, correctly marked rejected in manifest with documented reason. No separate portfolio website exists; LinkedIn IS the only surface and is equally gated logged-out. No IG handle found, so no IG queue entry is warranted. All gating documented in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No uploaded images. Both bookmarks carry captions."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "N/A; Brand strategy, no audio/video work surface found."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states no portfolio site found, no IG confirmed, no bylined articles indexed, LinkedIn gated logged-out. Work capture section in AI Notes names each surface and the specific block."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "LinkedIn set. Website field set to LinkedIn URL (only surface). No portfolio site found (documented). No IG handle confirmable (documented). No public email findable given the minimal footprint and common name (not flagged as a skipped obvious search)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy, set_by jonathan per provenance."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "GB, Size 1, Work Status Freelance. Companies House confirms sole-director consultancy since 2016; sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning present and hedged in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) consistent with clip note (no relationship facts stated by Jonathan)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was LinkedIn-only, no instructions or judgment; Source preserves it verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority/experience read hedged ('inferred from company age and director level; hedged'). Autonomy estimate hedged. LinkedIn positioning attributed to LinkedIn, not asserted."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-16. Only link clipped was his LinkedIn (benmaxwellprofile, UK subdomain).'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields carry set_by. Null source_url is the known systemic tooling gap (non-gate per calibration note). No field written below 0.8 confidence; factual claims are from Companies House (public record)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use only commas, semicolons, parentheses and periods. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: identity confirmation for a common name with no portfolio. Terse, conditional, the ambiguity is real."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry was Enriching; flipping to Needs Review on this pass."
+    }
+  ],
+  "to": "jonathan",
+  "notes": "Thin entry by necessity, not by scraper shortcut. The scraper exhausted the available surfaces (LinkedIn, Companies House, web search for portfolio/articles/IG). The entry is correctly minimal: two bookmarks, one rejected login-wall screenshot, documented absence throughout AI Notes. The key open question (is this the right Ben Maxwell?) is well-formed and is the only decision Jonathan needs to make. Passing to him to keep or reject."
+}

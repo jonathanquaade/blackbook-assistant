@@ -1,0 +1,111 @@
+{
+  "page_id": "9278062d-5442-4fd8-adc9-69c5177fd9e1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct named films: Little Simz Introvert, Little Simz Flood, Giveon Heartbreak Anniversary, MOEDER, Ford Starting Line, HP The Wrong Kind of Busy, He Gets Us Be. No caption repeats."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "4 of 7 projects have interior film stills (not just thumbnails): 2 stills for Introvert, Flood, Heartbreak Anniversary and MOEDER each. Ford/HP/He Gets Us have thumbnails only, acceptable when the embed is the primary deliverable."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is film/music video/commercial production, matching tagged Capabilities (Photography + Film & video production). No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as real ligthelm.work homepage (Salomon Ligthelm name visible, project grid shown). site-02.png (IG) correctly marked rejected with documented reason (login wall) and queued to state/ig-queue.json entry 149. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link to the project page or Vimeo. site-02.png is rejected and not uploaded."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "7 Vimeo embeds, each with caption + project link. Thumbnail preview images present for all 7 (required since Notion shows no Vimeo poster). Entry is not embeds-only: 8 film stills + 7 thumbnails + website context shot."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG queue entry documents the login-wall block. Stink Films rep context in AI Notes."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person, correct."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "LinkedIn field is empty and AI Notes contain no line confirming it was searched and not found. Email field is empty with no note that contact is only through rep Stink Films. Per the checklist, a missing link is usually a skipped search; the scraper/scout must document the search attempt or provide the link.",
+      "fix": "Check LinkedIn for 'Salomon Ligthelm director' and either (a) add the URL to the LinkedIn field, or (b) add one sentence to AI Notes: 'LinkedIn searched, no personal profile found; contact via Stink Films (stinkfilms.com/directors/salomon-ligthelm).' Same for email: confirm no public address exists or add one. These are the only two missing findable-link checks."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography + Film & video production, set_by jonathan. Confirmed by the work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Freelance. AI Notes documents the multi-source resolution: his own site + Stink Films roster agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: established director who authors visual and narrative vision, evidenced by awards (Cannes Gold, AICP/MoMA, YDA) and named director on named-studio roster."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are consistent with a cold clip-from-Instagram entry; no relationship signal in the clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source records 'Clipped link was his Instagram.' No relationship facts, passcodes, or tagging instructions in the clip note. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts cited are verifiable (named awards, named films, Stink Films roster). Seniority read present and grounded in work history. No em-dashes. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-15. Clipped link was his Instagram.' Complete."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. null source_url is the known systemic tooling gap (non-gate per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source checked: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No judgment fields have non-zero values that would require story nudge. Rating and Familiarity are appropriate zero-states for a cold entry."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains Enriching as expected; reviewer does not flip on a fail."
+    }
+  ],
+  "to": "scout"
+}

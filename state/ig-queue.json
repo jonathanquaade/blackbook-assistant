@@ -1020,5 +1020,82 @@
     "ig_url": "https://www.instagram.com/consensys/",
     "reason": "IG context screenshot returned Instagram login wall (headless Playwright rate-limited); @consensys is the confirmed handle. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "4d64be4c-9faa-41bb-94b1-acbb1a179658",
+    "name": "Jennifer Whitworth",
+    "ig_url": "https://www.instagram.com/jennifer.whitworth/",
+    "reason": "headless capture returned Instagram login wall; logged-in ig.py grab needed for profile context shot",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "9278062d-5442-4fd8-adc9-69c5177fd9e1",
+    "name": "Salomon Ligthelm",
+    "ig_url": "https://www.instagram.com/salomonligthelm/",
+    "reason": "IG context screenshot returned login wall (headless Playwright rate-limited). @salomonligthelm confirmed handle (76K followers, film director). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "4e648b47-c0ba-44ae-9aab-85c0f1dc4514",
+    "name": "Melissa Santamaria",
+    "ig_url": "https://www.instagram.com/melissa__santamaria/",
+    "reason": "IG context screenshot returned login wall (headless Playwright rate-limited). @melissa__santamaria has 16K followers and her most recent generative AV work lives on IG. Need logged-in ig.py grab for profile context shot and recent work posts.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "84a69182-20b6-4882-a3e1-2b681ef3c6a1",
+    "name": "Oscar Gomez",
+    "ig_url": "https://www.instagram.com/scrgb/",
+    "reason": "IG context screenshot returned login wall (headless Playwright rate-limited logged out). @scrgb confirmed handle. Need logged-in ig.py grab for Instagram profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "73579df9-71b4-43f2-b5b6-80e20168ba6f",
+    "name": "Morgan Leroux",
+    "ig_url": "https://www.instagram.com/morganleroux/",
+    "reason": "Handle @morganleroux found via Google snippet ('Morgan Leroux @morganleroux Instagram photos and videos') but could not be verified without login (profile requires login). Need logged-in ig.py grab to confirm handle is right person and capture real profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "bd150f80-cdf1-4ea6-a490-1878d969db88",
+    "name": "PRAESENS",
+    "ig_url": "https://www.instagram.com/praesens/",
+    "reason": "IG context screenshot returned login wall (headless Playwright rate-limited). @praesens confirmed handle via web search (924 followers). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "6daaf909-e7fc-4eb8-9490-5c75d8b20c80",
+    "name": "Studio Dialect",
+    "ig_url": "https://www.instagram.com/studio_dialect/",
+    "reason": "IG hit login wall (rate-limited, logged-out redirect); website has good project coverage so IG is supplemental context",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "4f43e043-864f-426d-ae4a-6b5507e1257c",
+    "name": "Valery Polehenky",
+    "ig_url": "https://www.instagram.com/polehenky/",
+    "reason": "IG-primary creative (both Website and Instagram point to his IG). Headless Playwright returned Instagram login wall (site-01.png rejected). Need logged-in ig.py grab for real profile context shot. Also: his IG likely holds most-recent 3D motion work posts beyond Behance/Vimeo which dates to 2021.",
+    "queued_at": "2026-06-25"
   }
 ]

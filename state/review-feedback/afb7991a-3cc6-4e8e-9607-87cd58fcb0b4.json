@@ -1,21 +1,21 @@
 {
   "page_id": "afb7991a-3cc6-4e8e-9607-87cd58fcb0b4",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
-  "to": "scout",
-  "summary": "One B.links failure: public email not captured despite being directly linked from the Notion portfolio the scraper already visited. Everything else passes.",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "to": null,
+  "summary": "Re-gate after scout fix. Email hi@kleetime.com now set with provenance (source_url: isabelklee.notion.site, verified_at: 2026-06-25, set_by: agent) and documented in AI Notes. All 19 checklist items pass. Entry ready for Jonathan.",
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 active images span Winner Winner Chicken Dinner (site-02, site-14), Plant Flashcards (site-12), Ember Collective (site-13), SuperHi React course (site-05), GitHub profile (site-01), DEV Community (site-09), plus website context (site-07). 5 distinct projects easily."
+      "evidence": "8 active images span 5 distinct projects: Winner Winner Chicken Dinner (site-02, site-14), Plant Flashcards (site-12), Ember Collective (site-13), SuperHi React course (site-05), DEV Community profile (site-09), GitHub profile (site-01), and website context shot (site-07). No repeated project."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Winner Winner has both the live-app hero (site-02) and the README UI-flow strip (site-14); Plant Flashcards shows the learning-mode interior (site-12); Ember Collective shows app UI from README (site-13). Goes inside projects, not just covers."
+      "evidence": "Winner Winner has the live-app landing (site-02) and the README UI-flow strip (site-14); Plant Flashcards shows the learning-mode interior (site-12); Ember Collective shows the full app homepage from the README (site-13). Goes inside projects, not just covers."
     },
     {
       "id": "A.on-capability",
@@ -25,22 +25,22 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-07) correctly shows isabelklee.notion.site (current portfolio; DNS-dead isabelklee.co documented in AI Notes). IG context shot (site-08) rejected + documented: @kleetime handle removed/deactivated, not a rate-limit case, so no ig-queue entry is correct -- handle does not exist, queuing would be a no-op. Both limitations documented in AI Notes. Passes the spirit of the checklist exception."
+      "evidence": "site-07.png confirmed as isabelklee.notion.site (Notion portfolio page, correct current URL, DNS-dead isabelklee.co documented in AI Notes). IG context shot (site-08) correctly rejected: @kleetime handle removed/deactivated (not a throttle case), documented in manifest rejection_reason and AI Notes. No ig-queue entry needed since the handle does not exist."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 8 active images have named captions with source links in manifest."
+      "evidence": "All 8 active manifest entries have named captions with source links. No anonymous images."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Capability is frontend web development, not video/audio. No embedded video found on the project pages (all GitHub README / live static apps). Not applicable."
+      "evidence": "Capability is frontend web development; no embeddable video found on her project pages (all GitHub READMEs and live static apps). Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "DNS failure on isabelklee.co, IG deactivation, geo-blocked Imgur screenshots, and superseded GitHub repo-overview captures are all documented in manifest rejection_reason fields and/or AI Notes."
+      "evidence": "DNS failure on isabelklee.co, IG handle deactivation, geo-blocked Imgur screenshots, and superseded GitHub repo overviews all documented in manifest rejection_reason fields and AI Notes."
     },
     {
       "id": "B.type-classified",
@@ -49,9 +49,8 @@
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "Email field is absent with no provenance entry and no AI Notes mention. The captured portfolio screenshot (site-07, isabelklee.notion.site) shows a visible 'email me' hyperlink -- a public email was findable from a page the scraper already visited. LinkedIn is null but provenance shows a verified_at timestamp confirming it was searched. Instagram correctly absent (deactivated handle documented). Email is the gap.",
-      "fix": "Visit isabelklee.notion.site, extract the public email address from the 'email me' link, and set it via keeper.py set. If the link is obfuscated (mailto: only, no visible address), document that in AI Notes and leave Email empty. Either way, write the field to provenance."
+      "result": "pass",
+      "evidence": "Email: hi@kleetime.com set (fix confirmed, provenance has source_url isabelklee.notion.site). LinkedIn: null with verified_at timestamp confirming search was done; AI Notes says no LinkedIn found. Instagram: correctly absent (handle deactivated, documented). Website: https://www.isabelklee.co/ plus Notion portfolio documented in AI Notes. All findable links captured or absence documented."
     },
     {
       "id": "B.capabilities",
@@ -61,17 +60,17 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country US, Size 1, Work Status Freelance. AI Notes documents: 'own site and listed freelance/contract roles agree' -- satisfies the two-source objective rule."
+      "evidence": "Country US, Size 1, Work Status Freelance. AI Notes documents two-source agreement (own site + listed freelance/contract roles)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3 set_by agent with reasoning in AI Notes: 'capable independent contributor who ships and teaches web builds, more executional than directing.' Grounded in real work history (Shopify, SuperHi, Flatiron). Correct for a Person entry."
+      "evidence": "Autonomy 3 set_by agent with reasoning in AI Notes: 'capable independent contributor who ships and teaches web builds, more executional than directing.' Grounded in real work history (Shopify, SuperHi, Flatiron School)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Notes says 'looks junior' (Jonathan's read). Worked Together: Never and Familiarity: Don't know them are zero-states consistent with no relationship signal in the clip. No contradiction."
+      "evidence": "Notes: 'looks junior' (Jonathan's read). Worked Together: Never and Familiarity: Don't know them are zero-states, consistent with no relationship signal in the clip. No contradiction."
     },
     {
       "id": "C.clip-note-acted-on",
@@ -81,7 +80,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes assert verifiable facts (clients, projects, tech stack) and hedge the Autonomy estimate. Seniority read present: 'Mid-level engineer/educator with 5+ years track record.' No unhedged inferences found."
+      "evidence": "AI Notes assert verifiable facts (clients, projects, tech stack) and hedge the Autonomy estimate. Seniority read present: 'Mid-level engineer/educator with 5+ years track record.' Email fix documented in AI Notes. No unhedged inferences. Zero em-dashes confirmed programmatically."
     },
     {
       "id": "D.source-filled",
@@ -91,22 +90,22 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance written for all touched fields. source_url null across fields -- known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance written for all touched fields. Email field now has source_url populated (isabelklee.notion.site), set_by agent, verified_at 2026-06-25. Other source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes scanned programmatically: zero em-dashes (U+2014) found."
+      "evidence": "AI Notes and all other agent-written fields scanned: zero em-dashes (U+2014) found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Open Questions field is empty. No judgment fields have non-zero-state values that would trigger a required question. Story nudge not due (Worked Together is Never). Correct."
+      "evidence": "Open Questions field absent/empty. No judgment fields have non-zero-state values requiring a terse question. Story nudge not due (Worked Together is Never). Correct."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains Enriching pending this gate. Not yet flipped to Needs Review."
+      "evidence": "Entry in Enriching at review time; will be flipped to Needs Review on this pass."
     }
   ]
 }

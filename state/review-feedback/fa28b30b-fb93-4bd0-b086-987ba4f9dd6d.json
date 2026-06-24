@@ -1,0 +1,111 @@
+{
+  "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects visually confirmed: Harkand (site-03/04/05), Chemistry (chem-01/02/03), SoulCal (site-09/10/11), Vestra Wealth (site-12/13/14). No duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Interior brand guideline spreads and brochure page interiors captured, not hero-only shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all 4 projects are brand identity and print work. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png confirmed as adamjevans.com under-construction placeholder page (correct website context shot). site-16.png is the Instagram login wall, correctly rejected in manifest with documented reason. Entry confirmed present in state/ig-queue.json with page_id fa28b30b-fb93-4bd0-b086-987ba4f9dd6d. Sanctioned exception holds: broken capture rejected, documented, queued."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 live images have named project captions and Behance source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design / print work; no video or audio assets on these project pages."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site under construction documented in AI Notes. Behance DOM contamination documented with reject_reason in manifest for all 4 rejected files."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email: AI Notes explicitly states 'Email search run: Behance profile, adamjevans.com (under construction), LinkedIn snippet, YunoJuno checked; no public contact email found.' Previously-failing check is resolved."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design, set_by jonathan in provenance, confirmed by captured work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "UK, Size 1, Freelance. Sources named in AI Notes (LinkedIn headline: Graphic Designer/Design Director, Freelance/Self Employed)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoned in AI Notes as DD-level freelance who can run projects end-to-end, inferred from title and solo-credited Behance projects."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or body text contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a bare name with no special instructions or relationship facts."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Identity confidence explicitly hedged. Autonomy marked as inferred. Work Status sourced to LinkedIn headline. Seniority read present (mid-to-senior, design director title). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-24'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present, all touched fields recorded with correct set_by values. source_url null is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions. Colons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single terse identity question. Conditional (asks only about ambiguous identity due to under-construction site). Not redundant."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review by reviewer on this gate pass."
+    }
+  ],
+  "summary": "Both previously-failing checks are confirmed resolved. (1) state/ig-queue.json now contains an entry for page_id fa28b30b-fb93-4bd0-b086-987ba4f9dd6d with correct fields, and site-16.png is marked rejected in the manifest with the login-wall reason. The sanctioned IG throttle exception fully holds. (2) AI Notes now explicitly documents the email search (Behance, adamjevans.com, LinkedIn snippet, YunoJuno checked; no public email found). All 19 checklist items pass. Entry flipped to Needs Review.",
+  "to": null
+}

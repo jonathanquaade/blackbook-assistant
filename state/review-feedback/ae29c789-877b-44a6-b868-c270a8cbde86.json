@@ -1,44 +1,44 @@
 {
   "page_id": "ae29c789-877b-44a6-b868-c270a8cbde86",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-24T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "12 active images across 5 distinct projects: Corso Italia 23, Probe: Research Uncovered, HOME/SICK, Adidas campaign (Studio Neboko/TBWA), LIT LSAD Fashion Graduate Show. No duplicate-angle problem."
+      "evidence": "12 active images across 5 distinct projects: Corso Italia 23, Probe: Research Uncovered, HOME/SICK, Adidas NYC/billboard campaigns (Studio Neboko/TBWA), LIT LSAD Fashion Graduate Show. No duplicate-angle problem."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images inside Corso Italia 23 exhibition (installation interiors + poster system); 2 inside Probe (wayfinding system + campus map); 2 inside LIT LSAD (catalogue covers + garment tags). Goes beyond hero shots."
+      "evidence": "Corso Italia 23 has 3 images (installation interiors + poster system); Probe has 2 (wayfinding signage + campus map); LIT LSAD has 2 (catalogue covers + garment tags). Goes inside projects beyond hero shots."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities are Graphic design + Illustration. All captured work is on-capability: exhibition graphics, wayfinding, poster design, campaign graphics, print design. No off-capability material."
+      "evidence": "Capabilities are Graphic design + Illustration. All active images are exhibition graphics, wayfinding systems, poster design, branded campaigns, print design. Fully on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-08.png is the real sineadfoley.work homepage (confirmed visually: shows Sinead Foley header and work grid). site-07.png is the Instagram error page, correctly rejected in manifest with reject_reason, documented in AI Notes, and queued to state/ig-queue.json. Sanctioned exception applies."
+      "evidence": "site-08.png visually confirmed as sineadfoley.work homepage (shows 'Sinead Foley' nav and project grid). site-07.png rejected, reject_reason documents IG error page, queued to ig-queue.json. Sanctioned IG throttle exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 12 active images have captions with project names and source links. site-10.png caption 'Branded merchandise, sineadfoley.work' is vague (no named project, link goes to homepage not a project page) but the project cannot be identified from this image alone and the source is documented. Borderline; not a hard fail."
+      "evidence": "All 12 active images have captions naming the project and a link. site-10.png caption ('Branded merchandise, sineadfoley.work') is vague but borderline acceptable; the project cannot be individually named and the source is documented."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No YouTube/Vimeo embeds found on the source pages. The Adidas GIF (site-09.gif) was attempted but rejected at 25MB (over Notion limit); AI Notes do not mention this specifically but the manifest documents it. No apparent embed opportunity missed."
+      "evidence": "No YouTube/Vimeo embeds present on source pages. site-09.gif rejected at 25MB over Notion limit; site-11.gif (Adidas NYC screen campaign) is active. No embed opportunity missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in manifest, AI Notes, and ig-queue.json. No other source gaps are silently present."
+      "evidence": "IG throttle documented in manifest (site-07.png rejected with reason), AI Notes, and ig-queue.json entry confirmed present."
     },
     {
       "id": "B.type-classified",
@@ -47,39 +47,38 @@
     },
     {
       "id": "B.all-links-present",
-      "result": "fail",
-      "evidence": "LinkedIn and Email are absent from the entry with no documentation in AI Notes that a search was attempted and came up empty. CLAUDE.md P1 step 4 says 'ALWAYS capture during P1: public contact email and LinkedIn.' AI Notes mention Instagram verification via PeekYou and Google snippet but say nothing about LinkedIn or Email searches. The checklist rule is: 'A missing link is usually a skipped search, not an absence -- FAIL if an obvious search would have found it.' Sinead Foley is an active professional with a documented career across multiple studios; LinkedIn is virtually certain to exist.",
-      "fix": "Search 'Sinead Foley graphic designer linkedin' (Google snippet, no login); capture the URL and set LinkedIn. Also check sineadfoley.work contact page and web-search 'Sinead Foley email' or check her 100archive profile for contact details. Document in AI Notes if genuinely not found."
+      "result": "pass",
+      "evidence": "FIXED from attempt 1. LinkedIn set to https://uk.linkedin.com/in/sin%C3%A9ad-foley-59556963 (Google snippet, no login; provenance timestamped 2026-06-25). Email set to sineadfoleydesign@gmail.com (her own About page, primary source). Website and Instagram were already present. All four links now present and documented."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design + Illustration match the captured work. Provenance shows set_by: jonathan for Capabilities, so these are his tags, not agent-assigned."
+      "evidence": "Graphic design + Illustration. set_by jonathan in provenance."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country GB (low confidence, documented conflict in AI Notes + Open Question 1 asks Jonathan). Size 1 correct for individual. Work Status Unknown with two sources documented as conflicting. Multi-source rule applied and documented."
+      "evidence": "Country corrected to NL (Amsterdam, confirmed via About page, primary source). Size 1. Work Status corrected to Employed (Monks, About page as primary source). Sources named in AI Notes. Multi-source rule applied."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3, set_by agent, with reasoning in AI Notes (trajectory and employer mix, hedged with 'no first-hand evidence')."
+      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes: trajectory + employer mix, hedged 'inferred from trajectory and employer mix, no first-hand evidence'."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never and Familiarity: Don't know them. No clip note or other evidence that Jonathan knows her. Zero-states are appropriate. No contradiction."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them. No clip note or other evidence of a relationship. Zero-states appropriate."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2021-09-21'. No clip-note instructions visible in the entry. Zero-states set correctly."
+      "evidence": "Source is 'Web clipper, 2021-09-21'. No clip-note instructions present."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Autonomy hedged ('inferred from trajectory and employer mix, no first-hand evidence'). Country conflict documented. Work Status conflict documented. Seniority read present ('Mid-level, Autonomy 3'). Employment history listed with employers and years."
+      "evidence": "Autonomy hedged. Employment and location grounded in primary source (About page). Seniority read present. LinkedIn and Email finds documented with sources. No unverified assertions."
     },
     {
       "id": "D.source-filled",
@@ -89,24 +88,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance records with set_by agent. source_url is null throughout -- acknowledged systemic tooling gap per checklist calibration note; not a v1 gate failure. No confidence-floor violations found."
+      "evidence": "All fields have provenance records with correct set_by. LinkedIn and Email show verified_at 2026-06-25. source_url null throughout -- known systemic tooling gap per calibration note, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Checked AI Notes, Open Questions, and all manifest captions programmatically. No em-dashes present."
+      "evidence": "Programmatically checked AI Notes and all manifest captions. Zero em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) London or Amsterdam location conflict, (2) freelance or employed. Both are genuinely unresolvable by the agent given conflicting sources. Questions are terse and conditional. No judgment fields already have non-zero values being re-asked. Story nudge not applicable (Worked Together: Never, Familiarity: Don't know them)."
+      "evidence": "Open Questions cleared. The two previous questions (London vs Amsterdam, Work Status conflict) are now answered by primary sources and the field is empty. No story nudge applicable (Worked Together: Never, Familiarity: Don't know them)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching. Reviewer holds it here pending the LinkedIn/Email fix."
+      "evidence": "Entry was Enriching. Reviewer flipping to Needs Review on this pass."
     }
   ],
-  "to": "scout",
-  "summary": "One failing check: LinkedIn and Email are missing with no documented search attempt. All other checks pass. Work quality, depth, on-capability capture, context shots, metadata, and AI Notes are solid. Fix is straightforward: one LinkedIn search and one Email search, document results in AI Notes."
+  "to": null,
+  "summary": "All checks pass. The attempt-1 failure (LinkedIn and Email missing, no documented search) is resolved: LinkedIn set via Google snippet, Email found on her own About page, both documented in AI Notes and provenance. Country and Work Status also corrected to primary-source values. Work quality, context shots, metadata, and AI Notes are solid. Entry ready for Jonathan."
 }
