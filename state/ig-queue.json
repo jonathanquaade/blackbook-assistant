@@ -985,5 +985,40 @@
     "ig_url": "https://www.instagram.com/jonmarsh/",
     "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited). @jonmarsh confirmed handle (5223 followers, search result confirms designer). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "2ea1eb4c-8295-4672-a07a-2c5316d80ee5",
+    "name": "Loulou Joao",
+    "ig_url": "https://www.instagram.com/louloujoao/",
+    "reason": "IG context screenshot blocked: headless Playwright returned Instagram login wall. Need logged-in ig.py grab for profile context shot. She is active on IG with her 3D animation work.",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "ae29c789-877b-44a6-b868-c270a8cbde86",
+    "name": "Sinead Foley",
+    "ig_url": "https://www.instagram.com/sinead.foley/",
+    "reason": "context shot returned Instagram error page (headless rate-limit); logged-in grab needed for profile grid",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
+    "name": "Andy Price",
+    "ig_url": "https://www.instagram.com/__andyprice__/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "79c39b4b-88ab-42c0-b753-f638e7c28e25",
+    "name": "Andy Price",
+    "ig_url": "https://www.instagram.com/__andyprice__/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error page (logged-out headless Playwright blocked). Need logged-in ig.py grab for @__andyprice__ profile context shot. IG also likely holds recent still life work beyond editorial sources.",
+    "queued_at": "2026-06-20"
+  },
+  {
+    "page_id": "e1c65706-ede6-4d01-b21d-6a123efe665d",
+    "name": "ConsenSys",
+    "ig_url": "https://www.instagram.com/consensys/",
+    "reason": "IG context screenshot returned Instagram login wall (headless Playwright rate-limited); @consensys is the confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-24"
   }
 ]

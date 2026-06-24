@@ -28,3 +28,6 @@ The navigation of the website is based on swivel shelves, usually found in archi
 The second touchpoint is a glyph generator, that uses all letters of Unica’s Latin, Cyrillic and Greek glyph set and cuts them up in different grids. The user can then randomise and click on the tiles to change the composition, allowing for a completely unique experience for each person. The final outcome can then be saved and shared on social media.
 
 Ongoing visual experimentation that ranges from excercises in technical proficiency, personal style and interior meaning. A research-driven approach ties those aspects together in order to create a deeper methodology that sits the center of my practice.
+# Archived page body (2026-06-24)
+
+Work

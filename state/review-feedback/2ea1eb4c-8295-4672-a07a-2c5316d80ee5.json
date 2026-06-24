@@ -1,0 +1,109 @@
+{
+  "page_id": "2ea1eb4c-8295-4672-a07a-2c5316d80ee5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects confirmed in manifest and visually verified: Adult Swim Idents, MTV Ident, BMW China CNY, Focket Fyre/WarnerMedia, Apple Fall in Love with Learning, ID Tuca and Bertie. Visually distinct 3D worlds."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "2 images per project going inside each (close-up character renders, wide environment shots). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 project images are 3D-rendered characters and environments, matching Capability '3D & motion'. YouTube embed is a 3D animation lyric video."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png visually confirmed as louloujoao.com homepage. site-14.png is the IG login wall, correctly marked rejected=true with documented reason, entry present in state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All images have captions naming the project with source links. Embed has caption and link."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "YouTube embed present for lyric video. 12 project stills present so entry is not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG login wall documented in AI Notes and queued. HTML5 video (no embeddable iframes) documented in AI Notes."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person, correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Email now set to info@louloujoao.com (from her contact page). Website, Instagram, and LinkedIn all present and verified correct."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "'3D & motion' matches her Blender-based 3D animation work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "BE, 1, Freelance. AI Notes cite LinkedIn and self-run portfolio as two agreeing sources."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, hedged reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note mentions any relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note acted on: name cleaned, clipped.md archived, lyric video embedded."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy and seniority hedged. Seniority read present alongside Autonomy estimate. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source filled correctly with clip note verbatim and created date."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url null throughout, known systemic tooling gap, not a v1 gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No unresolvable questions. Story nudge not applicable."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry flipping to Needs Review on this pass."
+    }
+  ]
+}

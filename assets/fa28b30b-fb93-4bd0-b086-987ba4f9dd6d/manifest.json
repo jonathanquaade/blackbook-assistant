@@ -4,14 +4,18 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/max_808/3877d0242403881.Y3JvcCwxMjAwLDkzOCwwLDI3OQ.jpg",
     "caption": "Adam J. Evans Behance overview",
     "link": "https://www.behance.net/ajevans",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Contamination: Behance profile render pulled in a recommended interior photography project unrelated to Adam J. Evans"
   },
   {
     "file": "site-02.jpg",
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/max_808/ca73de204747303.Y3JvcCwxNjM2LDEyODAsMTQxLDA.jpg",
     "caption": "Adam J. Evans Behance overview",
     "link": "https://www.behance.net/ajevans",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Contamination: Behance profile render pulled in a recommended Unit91 branding project unrelated to Adam J. Evans"
   },
   {
     "file": "site-03.png",
@@ -39,18 +43,45 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/original/eb012c242402943.Y3JvcCwxMjAwLDkzOCwwLDEzNg.jpg",
     "caption": "Chemistry brand guidelines and visual identity, 2016",
     "link": "https://www.behance.net/gallery/36849871/Chemistry-Brand-Guidelines",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Contamination: Behance render pulled in a Kika branding project unrelated to Adam J. Evans Chemistry project"
   },
   {
     "file": "site-07.jpg",
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/original/9e453b220328415.Y3JvcCw1MDgwLDM5NzMsMTQ1OCwyNjQ.jpg",
     "caption": "Chemistry brand guidelines and visual identity, 2016",
     "link": "https://www.behance.net/gallery/36849871/Chemistry-Brand-Guidelines",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Contamination: Behance render pulled in an MBK Global branding project unrelated to Adam J. Evans Chemistry project"
   },
   {
     "file": "site-08.jpg",
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/original/553c67245265359.Y3JvcCwyODc2LDIyNTAsMTExNyww.jpg",
+    "caption": "Chemistry brand guidelines and visual identity, 2016",
+    "link": "https://www.behance.net/gallery/36849871/Chemistry-Brand-Guidelines",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Contamination: Behance render pulled in a Vitacon branding project unrelated to Adam J. Evans Chemistry project"
+  },
+  {
+    "file": "chem-01.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c7e99a36849871.572ce4bdc670b.png",
+    "caption": "Chemistry brand guidelines and visual identity, 2016",
+    "link": "https://www.behance.net/gallery/36849871/Chemistry-Brand-Guidelines",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "chem-02.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/ad6ce636849871.572b629b9d415.png",
+    "caption": "Chemistry brand guidelines and visual identity, 2016",
+    "link": "https://www.behance.net/gallery/36849871/Chemistry-Brand-Guidelines",
+    "captured_at": "2026-06-24"
+  },
+  {
+    "file": "chem-03.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/b32fce36849871.572b64f58da34.png",
     "caption": "Chemistry brand guidelines and visual identity, 2016",
     "link": "https://www.behance.net/gallery/36849871/Chemistry-Brand-Guidelines",
     "captured_at": "2026-06-24"
@@ -104,5 +135,15 @@
     "link": "https://www.adamjevans.com/",
     "captured_at": "2026-06-24",
     "context_shot": true
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://www.instagram.com/adamevansgd/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/adamevansgd/",
+    "captured_at": "2026-06-24",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Instagram returned login wall (rate-limit on headless). Handle confirmed as adamevansgd via Behance social links. Queued for ig.py grab."
   }
 ]

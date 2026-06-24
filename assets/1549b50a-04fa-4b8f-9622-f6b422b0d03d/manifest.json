@@ -13,7 +13,7 @@
     "link": "https://www.behance.net/gallery/244364439/TITLES",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "reject_reason": "Behance profile-level image (ID 9fedd5235117395 appears across multiple projects); shows runner line art unrelated to TITLES"
+    "reject_reason": "Behance profile-level image; shows runner line art unrelated to TITLES"
   },
   {
     "file": "site-03.jpg",
@@ -22,7 +22,7 @@
     "link": "https://www.behance.net/gallery/244364439/TITLES",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "reject_reason": "Behance profile-level image (ID 9e453b220328415 appears across multiple projects); shows MBK Global branding, not TITLES"
+    "reject_reason": "Behance profile-level image; shows MBK Global branding, not TITLES"
   },
   {
     "file": "titles-02.png",
@@ -61,7 +61,7 @@
     "link": "https://www.behance.net/gallery/244366507/Impossible-Objects",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "reject_reason": "Behance profile-level image (ID 553c67245265359 is a different project); shows Vitacon real estate branding, not Impossible Objects"
+    "reject_reason": "Behance profile-level image; shows Vitacon real estate branding, not Impossible Objects"
   },
   {
     "file": "site-06.png",
@@ -82,7 +82,9 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/bbbd3b244366507.6995e22336fd4.png",
     "caption": "Impossible Objects identity, 2026",
     "link": "https://www.behance.net/gallery/244366507/Impossible-Objects",
-    "captured_at": "2026-06-24"
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Behance CDN contamination: URL is registered under project 244366507 but serves a JEONGLI Korean fashion brand billboard, not Impossible Objects work. The Behance project page itself also loads with JEONGLI as hero image, suggesting this project covers JEONGLI identity. Two confirmed Impossible Objects images retained (site-06.png, impossible-02.png)."
   },
   {
     "file": "site-07.jpg",
@@ -114,7 +116,7 @@
     "link": "https://www.behance.net/gallery/78804199/The-Degree-Show",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "reject_reason": "Another Degree Show image that arrived under wrong caption from designcollector; already have two Degree Show shots (site-07, site-09)"
+    "reject_reason": "Another Degree Show image; already have two Degree Show shots (site-07, site-09)"
   },
   {
     "file": "site-11.gif",
@@ -123,7 +125,7 @@
     "link": "https://designcollector.net/likes/nikita-iziev",
     "captured_at": "2026-06-24",
     "rejected": true,
-    "reject_reason": "GIF exceeds 5MB API limit, could not be verified visually; site-12 confirmed as kinetic type and is kept instead"
+    "reject_reason": "GIF exceeds 5MB API limit; site-12.gif kept instead"
   },
   {
     "file": "site-12.gif",
@@ -147,5 +149,32 @@
     "link": "https://www.instagram.com/nikitaiziev/",
     "captured_at": "2026-06-24",
     "context_shot": true
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://www.behance.net/gallery/244366507/Impossible-Objects",
+    "caption": "Impossible Objects identity, 2026",
+    "link": "https://www.behance.net/gallery/244366507/Impossible-Objects",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Behance project page screenshot shows JEONGLI logotype as hero, not Impossible Objects branding; not usable as an Impossible Objects capture"
+  },
+  {
+    "file": "impossible-new1.png",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9445eb244366507.6995e21b4a31b.png",
+    "caption": "Impossible Objects identity, 2026",
+    "link": "https://www.behance.net/gallery/244366507/Impossible-Objects",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "Behance CDN contamination: serves a fashion trade show lookbook grid (SAN SAN GEAR, NEITHS AW25), not Impossible Objects work"
+  },
+  {
+    "file": "impossible-new2.gif",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/7e0646244366507.699848dd255fc.gif",
+    "caption": "Impossible Objects identity, 2026",
+    "link": "https://www.behance.net/gallery/244366507/Impossible-Objects",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "reject_reason": "13MB GIF; CDN contamination confirmed on all other 244366507 module IDs except 21300a and 7834eb; not verified"
   }
 ]
