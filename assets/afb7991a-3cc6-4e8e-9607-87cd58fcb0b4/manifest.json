@@ -1,53 +1,5 @@
 [
   {
-    "file": "site-01.png",
-    "source_url": "https://github.com/isabelxklee",
-    "caption": "GitHub profile",
-    "link": "https://github.com/isabelxklee",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
-    "file": "site-02.png",
-    "source_url": "https://winner-winner.netlify.app/",
-    "caption": "Winner Winner Chicken Dinner, React app",
-    "link": "https://winner-winner.netlify.app/",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
-    "file": "site-03.png",
-    "source_url": "https://github.com/isabelxklee/ember-collective",
-    "caption": "Ember Collective, GitHub repo",
-    "link": "https://github.com/isabelxklee/ember-collective",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
-    "file": "site-04.png",
-    "source_url": "https://github.com/isabelxklee/winner-winner-chicken-dinner",
-    "caption": "Winner Winner Chicken Dinner, GitHub repo",
-    "link": "https://github.com/isabelxklee/winner-winner-chicken-dinner",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
-    "file": "site-05.png",
-    "source_url": "https://www.superhi.com/catalog/intro-to-react",
-    "caption": "Intro to React.js course, SuperHi",
-    "link": "https://www.superhi.com/catalog/intro-to-react",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
-    "file": "site-06.png",
-    "source_url": "https://github.com/isabelxklee/plant-flashcards",
-    "caption": "Plant Flashcards, GitHub repo",
-    "link": "https://github.com/isabelxklee/plant-flashcards",
-    "captured_at": "2026-06-24",
-    "context_shot": true
-  },
-  {
     "file": "site-07.png",
     "source_url": "https://isabelklee.notion.site/Isabel-K-Lee-192e7ffe92fc804fa26ed41d32edb0e0",
     "caption": "Website",
@@ -61,15 +13,92 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/kleetime/",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Profile isn't available: @kleetime handle removed or deactivated. No confirmed active IG for Isabel K. Lee exists (scout noted @isabelklee is a different person, a pet influencer). No IG attached to entry."
+  },
+  {
+    "file": "site-01.png",
+    "source_url": "https://github.com/isabelxklee",
+    "caption": "GitHub profile, isabelxklee",
+    "link": "https://github.com/isabelxklee",
+    "captured_at": "2026-06-24",
+    "context_shot": false
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://winner-winner.netlify.app/",
+    "caption": "Winner Winner Chicken Dinner, live React app",
+    "link": "https://winner-winner.netlify.app/",
+    "captured_at": "2026-06-24",
+    "context_shot": false
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://github.com/isabelxklee/winner-winner-chicken-dinner",
+    "caption": "Winner Winner Chicken Dinner, app UI flow (React, styled-components)",
+    "link": "https://github.com/isabelxklee/winner-winner-chicken-dinner",
+    "captured_at": "2026-06-24",
+    "context_shot": false
+  },
+  {
+    "file": "site-12.png",
+    "source_url": "https://github.com/isabelxklee/plant-flashcards",
+    "caption": "Plant Flashcards, app UI showing learning mode (JavaScript + Rails API)",
+    "link": "https://github.com/isabelxklee/plant-flashcards",
+    "captured_at": "2026-06-24",
+    "context_shot": false
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://github.com/isabelxklee/ember-collective",
+    "caption": "Ember Collective, homepage UI (React, Redux, Mapbox API)",
+    "link": "https://github.com/isabelxklee/ember-collective",
+    "captured_at": "2026-06-24",
+    "context_shot": false
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://www.superhi.com/catalog/intro-to-react",
+    "caption": "Intro to React.js course, SuperHi (co-authored and taught by Isabel)",
+    "link": "https://www.superhi.com/catalog/intro-to-react",
+    "captured_at": "2026-06-24",
+    "context_shot": false
   },
   {
     "file": "site-09.png",
     "source_url": "https://dev.to/isabelxklee",
-    "caption": "DEV Community articles",
+    "caption": "DEV Community profile, technical articles on React and JavaScript",
     "link": "https://dev.to/isabelxklee",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "context_shot": false
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://github.com/isabelxklee/ember-collective",
+    "caption": "Ember Collective, GitHub repo",
+    "link": "https://github.com/isabelxklee/ember-collective",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "Superseded by site-13.png which shows the app UI from the README"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://github.com/isabelxklee/winner-winner-chicken-dinner",
+    "caption": "Winner Winner Chicken Dinner, GitHub repo",
+    "link": "https://github.com/isabelxklee/winner-winner-chicken-dinner",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "Superseded by site-14.png which shows the app UI from the README"
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://github.com/isabelxklee/plant-flashcards",
+    "caption": "Plant Flashcards, GitHub repo",
+    "link": "https://github.com/isabelxklee/plant-flashcards",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "Superseded by site-12.png which shows the app UI from the README"
   },
   {
     "file": "site-10.png",
@@ -77,7 +106,8 @@
     "caption": "Intro to React.js course curriculum, SuperHi",
     "link": "https://www.superhi.com/catalog/intro-to-react#curriculum",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "rejected": true,
+    "rejection_reason": "Duplicate of site-05.png; hash anchor did not change the view"
   },
   {
     "file": "site-11.png",
@@ -85,6 +115,39 @@
     "caption": "Launching Winner Winner article, DEV Community",
     "link": "https://dev.to/isabelxklee/launching-winner-winner-chicken-dinner",
     "captured_at": "2026-06-24",
-    "context_shot": true
+    "rejected": true,
+    "rejection_reason": "404 page; article URL changed or removed"
+  },
+  {
+    "file": "plant-01.png",
+    "source_url": "https://i.imgur.com/F643LUN.png",
+    "caption": "Plant Flashcards learning mode screenshot",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "Imgur returned 'Content not viewable in your region' (geo-blocked)"
+  },
+  {
+    "file": "plant-02.png",
+    "source_url": "https://i.imgur.com/BsmKc9m.png",
+    "caption": "Plant Flashcards quiz mode screenshot",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "Imgur returned 'Content not viewable in your region' (geo-blocked)"
+  },
+  {
+    "file": "ember-01.png",
+    "source_url": "https://i.imgur.com/buewPGc.png",
+    "caption": "Ember Collective homepage screenshot",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "Imgur returned 'Content not viewable in your region' (geo-blocked)"
+  },
+  {
+    "file": "ember-02.png",
+    "source_url": "https://i.imgur.com/hH7mFOg.png",
+    "caption": "Ember Collective Police Brutality Tracker screenshot",
+    "captured_at": "2026-06-24",
+    "rejected": true,
+    "rejection_reason": "Imgur returned 'Content not viewable in your region' (geo-blocked)"
   }
 ]

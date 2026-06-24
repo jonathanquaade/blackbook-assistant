@@ -1,0 +1,111 @@
+{
+  "page_id": "b13ccdb0-ee40-4a46-aa5c-4b9c9aea1504",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "summary": "Passed on re-gate. First review failed on B.links (email absent and undocumented). Scout confirmed no public email exists (Behance contact tab, web search) and documented the search in AI Notes. All other checks were clean on attempt 1 and remain clean: 9 images across 3 distinct named album-art projects with depth, on-capability, context shots sanctioned (IG throttle queued, jonmarsh.co gated+documented), metadata complete, no em-dashes, provenance in order.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 live images span 3 distinct projects: Indian Wells Pause (4), Alek Fin An Mynda (2), Kali Mutsa Souvenance Remixes (2), plus Behance context shot."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Cover detail, framed artwork, sleeve+vinyl mockup, label close-up (Indian Wells); gatefold interior and spine close-up (Alek Fin); two-sleeve lay-flat and vinyl mockup (Kali Mutsa). Genuinely inside projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design (album art). All 9 images are album art or CD packaging."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png confirmed as Behance profile (behance.net/jonmarsh) serving as website context shot. jonmarsh.co gated: site-12 rejected+documented. IG throttled: site-11 rejected+documented+queued to ig-queue.json. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 9 live images have captions naming project, year, and a Behance project link."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Graphic design / album art; no audio or video embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "jonmarsh.co gated: documented in manifest and AI Notes. IG throttled: documented in manifest, AI Notes, and ig-queue.json."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (Dropbox PDF, flagged in OQ2), Instagram (confirmed @jonmarsh), LinkedIn present. Email: scout confirmed none found (Behance contact tab, web search) and documented in AI Notes."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Open Question 1 correctly asks about adding Creative direction and Identity systems."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, 1, Freelance. Work Status sourced from Behance + LinkedIn (both agree), per AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoned in AI Notes. Seniority read present: Senior Creative Director level, ~15+ yrs."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never. Familiarity: Don't know them. No relationship language in clip note. Day Rate 1000 set_by jonathan."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is Web clipper, 2021-09-24. Day rate written via --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged with grounding. Work Status sources named. IG queue and gated site documented. Email search documented. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-24'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. Null source_urls are the known systemic tooling gap; not a gate failure per v1 calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: Capabilities expansion (OQ1) and Website URL clarification (OQ2). Terse, conditional, actionable."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry flipped to Needs Review after this gate."
+    }
+  ],
+  "to": null
+}

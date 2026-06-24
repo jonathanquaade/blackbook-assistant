@@ -1,0 +1,112 @@
+{
+  "page_id": "afb7991a-3cc6-4e8e-9607-87cd58fcb0b4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "to": "scout",
+  "summary": "One B.links failure: public email not captured despite being directly linked from the Notion portfolio the scraper already visited. Everything else passes.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 active images span Winner Winner Chicken Dinner (site-02, site-14), Plant Flashcards (site-12), Ember Collective (site-13), SuperHi React course (site-05), GitHub profile (site-01), DEV Community (site-09), plus website context (site-07). 5 distinct projects easily."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Winner Winner has both the live-app hero (site-02) and the README UI-flow strip (site-14); Plant Flashcards shows the learning-mode interior (site-12); Ember Collective shows app UI from README (site-13). Goes inside projects, not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web). All captured work is frontend React/JS projects or a React teaching course. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-07) correctly shows isabelklee.notion.site (current portfolio; DNS-dead isabelklee.co documented in AI Notes). IG context shot (site-08) rejected + documented: @kleetime handle removed/deactivated, not a rate-limit case, so no ig-queue entry is correct -- handle does not exist, queuing would be a no-op. Both limitations documented in AI Notes. Passes the spirit of the checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 active images have named captions with source links in manifest."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is frontend web development, not video/audio. No embedded video found on the project pages (all GitHub README / live static apps). Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "DNS failure on isabelklee.co, IG deactivation, geo-blocked Imgur screenshots, and superseded GitHub repo-overview captures are all documented in manifest rejection_reason fields and/or AI Notes."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Email field is absent with no provenance entry and no AI Notes mention. The captured portfolio screenshot (site-07, isabelklee.notion.site) shows a visible 'email me' hyperlink -- a public email was findable from a page the scraper already visited. LinkedIn is null but provenance shows a verified_at timestamp confirming it was searched. Instagram correctly absent (deactivated handle documented). Email is the gap.",
+      "fix": "Visit isabelklee.notion.site, extract the public email address from the 'email me' link, and set it via keeper.py set. If the link is obfuscated (mailto: only, no visible address), document that in AI Notes and leave Email empty. Either way, write the field to provenance."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) set_by jonathan. Consistent with all captured work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Freelance. AI Notes documents: 'own site and listed freelance/contract roles agree' -- satisfies the two-source objective rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set_by agent with reasoning in AI Notes: 'capable independent contributor who ships and teaches web builds, more executional than directing.' Grounded in real work history (Shopify, SuperHi, Flatiron). Correct for a Person entry."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Notes says 'looks junior' (Jonathan's read). Worked Together: Never and Familiarity: Don't know them are zero-states consistent with no relationship signal in the clip. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only site copy (Isabel's own about text). No relationship facts or instructions from Jonathan's clip note were present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (clients, projects, tech stack) and hedge the Autonomy estimate. Seniority read present: 'Mid-level engineer/educator with 5+ years track record.' No unhedged inferences found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-24'. Correct format."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance written for all touched fields. source_url null across fields -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned programmatically: zero em-dashes (U+2014) found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No judgment fields have non-zero-state values that would trigger a required question. Story nudge not due (Worked Together is Never). Correct."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains Enriching pending this gate. Not yet flipped to Needs Review."
+    }
+  ]
+}

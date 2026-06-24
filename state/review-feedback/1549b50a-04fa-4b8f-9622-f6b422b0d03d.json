@@ -1,0 +1,114 @@
+{
+  "page_id": "1549b50a-04fa-4b8f-9622-f6b422b0d03d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-24T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 uploaded images span 4 named projects (TITLES, Impossible Objects, The Degree Show, Kinetic typography) plus 2 context shots. Rejected entries correctly flagged in manifest."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "TITLES: 4 images (wordmark, data-type specimen, merch/packaging, metal card). Impossible Objects: 3 images (branded tape on boxes, garment tag detail, signage -- though see mislabel fail below). Degree Show: 2 images (wheatpaste poster street shot, outdoor billboard composite). Depth present across projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design and Type design. All captured work is identity, typographic and type-driven graphic work -- fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed nikitaiziev.com homepage (site bio visible). site-14.png: confirmed instagram.com/nikitaiziev (handle nikitaiziev, 50.1K followers, name Nikita Iziev visible). Both correctly labeled and correct domain."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "impossible-03.png is captioned 'Impossible Objects identity, 2026' but the image shows a physical storefront billboard reading 'JEONGLI' with Korean text -- a completely different project (Korean fashion brand). The caption does not match the image content. This is a mislabeled image currently live in the Images property.",
+      "fix": "Replace impossible-03.png with an image that is actually from the Impossible Objects Behance project (gallery/244366507). The JEONGLI image must be rejected in the manifest and removed from the Images property."
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "No YouTube/Vimeo embeds were required; work is identity and type projects served as statics. Kinetic typography captured as GIF (site-12.gif), which is the appropriate format for this type of work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents work status hedging and country correction. Rejected images have documented reject_reason in manifest."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person -- correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn is absent from the entry and not mentioned in AI Notes as searched or genuinely unfindable. The CLAUDE.md pipeline requires LinkedIn to be searched ('ALWAYS search [name discipline linkedin]') and its absence documented in AI Notes. Provenance has no LinkedIn field at all. Nikita Iziev is a senior London-based designer with major clients and a D&AD award -- a LinkedIn profile very likely exists and was not searched.",
+      "fix": "Search 'Nikita Iziev graphic designer linkedin' and attach the LinkedIn URL if found. If genuinely absent after a search, add one line to AI Notes stating so (e.g. 'No LinkedIn found under any variant searched')."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Type design, set_by jonathan in provenance -- correctly preserved. Open Question 1 asks about adding Creative direction and 3D & motion, which is appropriate given the scope ambiguity."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK (AI Notes documents correction from US migration baseline, citing site + Behance). Size: 1. Work Status: Freelance with hedged sourcing documented in AI Notes (single source, self-positioned). Meets confidence floor with appropriate hedge."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (leads own art direction, D&AD award, major brand client record). Grounded in verifiable facts."
+    },
+    {
+      "id": "C.no-contradictory-judgment",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are both zero-states with no clip-note evidence contradicting them. Work With?: Unvetted. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-09-27' with no clip-note instructions found in the entry. No stated relationship facts or judgment values to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status hedged as inferred from single source. Seniority read present (senior designer/art director, award-level work). No em-dashes. Clients and award stated as verifiable facts from site copy."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-27' -- correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by correctly attributed. Null source_url is the known systemic tooling gap (not a gate failure per calibration note). No fact written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed -- no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question on Capabilities ambiguity -- terse, conditional, not asking for fields that already have values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching pending this review gate. Will flip to Needs Review only on pass."
+    }
+  ],
+  "failing_checks": ["A.no-uncaptioned-images", "B.all-findable-links"],
+  "to": "scraper",
+  "summary": "Two failures: (1) impossible-03.png is mislabeled -- image is a JEONGLI Korean fashion storefront, not Impossible Objects work; must be replaced or rejected and a correct Impossible Objects image added. (2) LinkedIn not searched or documented; required by pipeline for a senior designer with a public award record."
+}

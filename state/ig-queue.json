@@ -978,5 +978,12 @@
     "ig_url": "https://www.instagram.com/dmvrg/",
     "reason": "IG context screenshot returned error page (headless rate-limit). Note: @dmvrg on Instagram is UNCONFIRMED - no public evidence this handle belongs to this person. If not found on IG, skip and mark IG field empty.",
     "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "b13ccdb0-ee40-4a46-aa5c-4b9c9aea1504",
+    "name": "Jon Marsh",
+    "ig_url": "https://www.instagram.com/jonmarsh/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited). @jonmarsh confirmed handle (5223 followers, search result confirms designer). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-24"
   }
 ]
