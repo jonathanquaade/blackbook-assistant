@@ -1,0 +1,111 @@
+{
+  "page_id": "683e0f6a-2a46-4f6c-989e-1659389c0fb9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct typefaces across active images (Facitype, Capitalis Brutalis, And Ever, Placard, Favorite, Grotesko, Cubic, Noise Abroad) plus the FACIT archival project. Well over 3 distinct works."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Specimen pages show character pairs and text-setting states; FACIT project includes archival spreads, collage images, letterhead and filing materials, not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is typeface specimens or the FACIT Model typeface project. Fully matches Type design capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed: OPS TYPE homepage at ops-type.com (nav shows OPS TYPE / TYPEFACES / ABOUT). site-02.png confirmed: instagram.com showing handle ops_type and display name OPS TYPE with cookie dialog overlay; identity confirmed, situation documented in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every active image has a caption naming the typeface and a source link. Rejected images carry reject_reason only."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Type foundry; no video or audio work expected. AI Notes explains the interactive-viewer-only site means screenshots are the correct capture method."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains no static raster images on site (live type tester only), documents the IG cookie dialog, and explains the rejected Fonts in Use thumbnail samples."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Foundry. Correct for a type house."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "All three attempt-1 failures are now fixed. Website: https://ops-type.com (canonical, confirmed on site-01.png nav). LinkedIn: https://www.linkedin.com/company/our-polite-society (present in entry). Email: info@ops-type.com (present in entry, AI Notes confirms sourced from ops-type.com About page). Instagram: https://www.instagram.com/ops_type/ (present and confirmed correct by site-02.png)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Type design is correct and sufficient for a type foundry."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "SE/DE/CA multi-country, Size 2-10, Work Status Studio. Sources referenced in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Foundry is an org-type entry; Autonomy is optional per calibration note 2026-06-21. AI Notes contains a seniority/leadership read (founding practice, 2008)."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; clip note implied no relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was bare name 'OPS Type'; no instructions or relationship facts to act on beyond cleaning the name."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual assertions drawn from foundry site and press (Creative Boom, Typographica, Fonts in Use). No unhedged inferences. Seniority read present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-09'. Correct format."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with correct set_by values. source_url nulls are the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions needed; no ambiguities requiring Jonathan's input before he can assess the entry."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching; this gate flips it to Needs Review."
+    }
+  ],
+  "to": null,
+  "summary": "All three attempt-1 failures resolved: Website updated to ops-type.com, LinkedIn added, Email added. All other checks continue to pass. Entry is complete and honest. Flipping to Needs Review."
+}

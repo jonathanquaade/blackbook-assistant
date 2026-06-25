@@ -1,0 +1,114 @@
+{
+  "page_id": "35c12798-6874-429c-9b71-dba1cb2a5720",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Manifest has only 1 entry (the website context shot). Three lululemon images and one adaptive-cognition thumbnail exist on disk but are NOT in manifest.json and were never uploaded to Notion. Notion shows 0 project images.",
+      "fix": "Add all captured images to manifest.json with captions and source links, then run keeper.py upload. Also need images from at least 2 more distinct projects (Covariant Flow / Pentagram, or Google/IBM/IDEO work)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "lululemon-03.jpg is a generic nighttime exterior storefront photo of a lululemon shop with a bus light trail. This does not show Felix's creative technology work; it is a lifestyle/brand photo. Even within the lululemon project the work shown is a yoga performance event, not the generative system Felix built.",
+      "fix": "Replace the exterior storefront shot with images showing the actual generative video installation or the computational system. Find the Covariant Flow project (Pentagram case study) and Adaptive Cognition installation images/video and add those."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Capabilities is 'Creative technology'. The lululemon-03.jpg is an exterior retail photograph showing no creative technology work. Open Questions even flags that Sound design and Digital product design are missing capabilities -- and the entry name is 'Music. Code. Design' -- but no music/audio embeds or sound work appears anywhere in the manifest.",
+      "fix": "Capture and embed Felix's actual generative/computational work (Covariant Flow Vimeo, Adaptive Cognition video, any SoundCloud/Bandcamp for music). Drop the exterior storefront shot. If Sound design and Digital product design are to be added as capabilities, capture representative work for those too."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-01.png shows a Cloudflare 'Performing security verification / Verify you are human' CAPTCHA interstitial -- not the actual felixfaire.com homepage. The website context shot is a bot-gate page, not the site. Instagram context shot is completely absent: no screenshot, no ig-queue.json entry, no documentation in AI Notes.",
+      "fix": "Re-capture the website context shot when the Cloudflare gate is not blocking (try scrape.py --render or at a different time). Capture an Instagram profile screenshot or queue it to state/ig-queue.json and document the reason in AI Notes."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "fail",
+      "evidence": "Felix Faire is explicitly a music and computational design practitioner (entry name: 'Music. Code. Design', AI Notes mention generative tools and installations). No embeds exist in the manifest. His Adaptive Cognition, Covariant Flow, and other projects are video/audio work that warrants embeds (Vimeo, YouTube, SoundCloud). None were captured.",
+      "fix": "Find Vimeo/YouTube links for Adaptive Cognition installation video and Covariant Flow, add as embed manifest entries with thumbnail preview images and source links. Search for SoundCloud or Bandcamp for his music work and embed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "The four disk images (adaptive-cognition-thumb.jpg, lululemon-01/02/03.jpg) are not in manifest.json at all -- they have no captions in any form. Even if they had been uploaded they would have been uncaptioned.",
+      "fix": "Add all images to manifest.json with proper project name + source link captions before uploading."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "fail",
+      "evidence": "Email is not present in the entry and not mentioned as searched-for or not-found in AI Notes. Instagram is not present in the entry despite Felix Faire being an active practitioner with likely IG presence; no note in AI Notes that it was searched and not found.",
+      "fix": "Search for Felix Faire's Instagram handle and public email. If not found, document the search in AI Notes."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "fail",
+      "evidence": "Jonathan's Notes says 'Worked on Intrinsic at Pentagram' and Worked Together is set to 'Once' by Jonathan -- meaning he worked with Felix directly. Familiarity is set to 'Don't know them' by the agent, which contradicts having worked with him. A person you worked with on a project is at minimum 'Met or spoken'.",
+      "fix": "Remove the agent-set Familiarity 'Don't know them' value (leave it empty) and add Open Question '1. Familiarity?' so Jonathan can set it himself. The agent should never have written 'Don't know them' against evidence of working together."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry name 'Felix Faire - Music. Code. Design' is parsed; 'Music. Code. Design' is the clip descriptor and is treated as signal for capabilities. Notes 'Worked on Intrinsic at Pentagram' is in provenance as set_by jonathan. Worked Together: Once set by jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the Work Status conflict ('flagged as a possible conflict'), includes seniority read ('Senior, ~10 yrs'), Autonomy reasoning, and names sources (LinkedIn, 10xdesigners speaker bio). No em-dashes present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, correct for an individual creative."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology is tagged; Open Questions already asks Jonathan about adding Sound design and Digital product design. The agent correctly flagged uncertainty rather than over-tagging."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country UK, Size 1, Work Status Employed. AI Notes names sources (LinkedIn + 10xdesigners bio) and notes the site-vs-LinkedIn conflict. Meets the multi-source objective rule."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes (can architect and ship bespoke creative-tech systems solo). Grounded in work history."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-08-05'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all fields. source_url nulls are a known systemic gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes or Open Questions. En-dash in Name field is from the original clip (set_by migration), not agent-written content."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions are terse and conditional. Q1 asks Familiarity (field has a contradicted value -- see C.no-judgment-contradiction fail). Q2 asks about adding capabilities. Both appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; only the reviewer flips to Needs Review. Correctly awaiting this gate."
+    }
+  ],
+  "summary": "Critical failures: (1) The website context shot is a Cloudflare CAPTCHA page, not the actual site. (2) No Instagram context shot, not queued, not documented. (3) Four disk images are not in the manifest and not uploaded to Notion -- zero project images reached the entry. (4) No embeds for a music/code/design practitioner whose work is primarily audio-visual. (5) Familiarity 'Don't know them' contradicts Jonathan's own 'Worked Together: Once' and Notes about working together on Intrinsic.",
+  "to": "scraper"
+}

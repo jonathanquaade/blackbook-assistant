@@ -1,0 +1,35 @@
+{
+  "page_id": "7310de47-0135-48f4-a087-8aa0986c3f62",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T10:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "site-01.jpg, site-02.jpg, site-03.jpg are all the same 'Fontana dell'Essaurimento' Venice Biennale poster in three different physical locations (building exterior, street level, train station). These are three angles of one single in-use instance, not three distinct Aeroport projects. This is the exact failure pattern the checklist was written to catch.",
+      "fix": "Replace at least two of the three Aeroport shots with specimens from a different Aeroport use-case (e.g. a second real-world application, a type specimen sheet, or letterform detail). One Aeroport in-use shot is fine; three of the same poster is not."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-15.png is captioned 'Website' but shows a typeface catalog/product page (the font listing grid with 'Formular' in large type and 'Aeroport' in the sidebar), not the brownfox.org homepage. The homepage context shot is meant to give Jonathan a quick visual anchor for the brand; a sub-page does not serve that purpose.",
+      "fix": "Recapture the context shot at brownfox.org (the root URL) so it shows the actual homepage, not a typeface detail page."
+    },
+    {
+      "id": "B.links-complete",
+      "result": "fail",
+      "evidence": "LinkedIn is entirely absent from the entry and AI Notes do not note it as genuinely unfindable. Brownfox's principals (Gayaneh Bagdasaryan, Vyacheslav Kirilenko) are publicly named in the clipped body; a LinkedIn search for each was not attempted or documented.",
+      "fix": "Search LinkedIn for Gayaneh Bagdasaryan and Vyacheslav Kirilenko. If profiles exist, add the most relevant one (likely Bagdasaryan as the founder). If genuinely none found, note 'No LinkedIn found for principals' in AI Notes."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "fail",
+      "evidence": "The clipped.md imprint shows a Berlin, Germany address (Utrechter Str. 28, 13347 Berlin) for the legal entity (Gayane Bagdasaryan). AI Notes say Country was 'corrected' to Russia based on Behance/MyFonts listing Moscow. These are two independent signals (legal registration address vs. operational/profile city) that genuinely conflict. The scraper silently resolved to Russia without raising an Open Question. The confidence floor is not met when primary sources conflict like this.",
+      "fix": "Add an Open Question for Jonathan: 'Country: legal imprint shows Berlin, Germany; Behance/MyFonts list Moscow, Russia. Which should be recorded?' Until Jonathan resolves it, either keep Russia with the conflict documented in AI Notes, or list both Germany and Russia in the Country multi-select."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Four failures: (1) three Aeroport context shots are the same poster from different angles, not distinct projects; (2) website context shot shows a sub-page, not the homepage; (3) LinkedIn not searched or documented as absent; (4) Berlin/Germany vs Moscow/Russia country conflict in primary sources was silently resolved rather than surfaced as an Open Question. The Behance work images (Formular, Geometria, Wermut, Activist, Brutal Type) are solid -- good depth and diversity across five typefaces. Fix the four issues above and re-submit."
+}

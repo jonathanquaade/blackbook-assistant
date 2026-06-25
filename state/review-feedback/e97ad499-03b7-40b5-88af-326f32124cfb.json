@@ -1,0 +1,110 @@
+{
+  "page_id": "e97ad499-03b7-40b5-88af-326f32124cfb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 active images span 5 distinct projects: Rat and Boa, Lyma, Tatras, Anglo-Italian, Hunza G. All visually confirmed distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Rat and Boa has 2 interior device mockups (editorial article + story layout); Hunza G has homepage + product grid. Depth present across multiple projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Fix confirmed: site-14.png (Rat and Boa modal popup) is marked rejected=true in manifest with a clear rejection_reason. Remaining 8 active images all show web UI or storefront layouts matching Frontend development (web) capability. No modal-obscured or off-capability images active."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png visually confirmed as designandbuild.co homepage (DBCO branded, correct). Instagram context shot (site-13.png) rejected + documented + queued to ig-queue.json: sanctioned path per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 active images have captions naming the project and source links in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is an eCommerce agency; no video/audio work expected. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes; ig-queue.json entry confirmed present from attempt 1."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. Consistent with self-described full-service eCommerce offering."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Fix confirmed: LinkedIn now set to https://www.linkedin.com/company/designandbuildco in the Notion entry. Website, Instagram, Email all present. All four link categories filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = Frontend development (web), set_by jonathan. Open Question 1 asks about adding Brand strategy, Creative direction, Web design. Correct handling of a locked field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10 (hedged in AI Notes), Work Status = Studio. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by agent, with hedged reasoning in AI Notes. Org entry; optional per calibration note (2026-06-21)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note relationship facts. Zero-states (Never, Don't know them, Unvetted) are consistent with evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note had no special instructions. Source set to 'Web clipper, 2021-08-26'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Size and Autonomy, states 'inferred' and 'hedged'. Seniority read included. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-08-26'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by and verified_at. source_url null throughout: known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question about Capabilities expansion; conditional on the jonathan-locked field. Terse and specific."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipped to Needs Review by this gate pass."
+    }
+  ],
+  "to": "jonathan"
+}

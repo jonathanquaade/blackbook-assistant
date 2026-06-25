@@ -1,0 +1,113 @@
+{
+  "page_id": "5647448c-e3bd-46d7-ad20-331ae5f71889",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct active projects: Toca Social, Maeving, Elandr Sport, Immersive Gamebox"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Booking flows, component collage, configurator screens, order UX -- goes inside projects"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web); all 9 active images show Shopify/booking UI"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16 confirmed multivitamin.studio homepage (hi@multivitamin.studio email visible top-left); site-17 confirmed instagram.com/@multivitamin.studio profile (6,879 followers, matching bio)"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 9 active images have project name captions and source links"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Ecommerce/frontend agency; static UI screenshots appropriate; no video embeds omitted"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "All 6 rejected manifest entries carry documented reject_reason fields"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency"
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Website (multivitamin.studio), Email (hi@multivitamin.studio), LinkedIn (uk.linkedin.com/company/multivitamin-studio) all now set -- those three fixes confirmed. However, Instagram is NOT SET in the entry. The handle is unambiguously verified: site-17 context shot shows instagram.com/@multivitamin.studio (6,879 followers, correct bio), manifest source_url records https://www.instagram.com/multivitamin.studio/, and the live site nav (site-16) displays INSTAGRAM in the header. The link is verified and findable; it was just not written to the Instagram field.",
+      "fix": "Set Instagram field to https://www.instagram.com/multivitamin.studio/ -- the handle is already verified by the context shot (site-17) and the manifest source URL. One write, no new research needed."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Expansion question correctly in Open Questions; Jonathan holds the judgment"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, 11-40 (hedged), Studio. Sources cited in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Agency type -- Autonomy optional for orgs; field set to 4, no issue"
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states consistent with evidence; Notes = 'Shopify' (a tag, not a relationship fact)"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Shopify' categorization only; no instructions missed"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size hedged as inferred; sources named; seniority read present; no em-dashes"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-08-23'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "set_by correct throughout; null source_url is the known systemic gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two numbered, terse, conditional questions. Both appropriate and non-redundant."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching; reviewer gate running correctly"
+    }
+  ],
+  "to": "scraper",
+  "summary": "Three link fixes from attempt 1 all confirmed (Website, Email, LinkedIn). One remaining B.links gap: Instagram field not set, despite the handle being fully verified by the context shot already captured (site-17: instagram.com/@multivitamin.studio). One-line write, no new research needed.",
+  "fix": "Set Instagram to https://www.instagram.com/multivitamin.studio/ (verified by manifest site-17 context shot and site-16 nav header). All other checks pass."
+}
