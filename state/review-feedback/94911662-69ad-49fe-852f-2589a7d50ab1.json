@@ -2,33 +2,33 @@
   "page_id": "94911662-69ad-49fe-852f-2589a7d50ab1",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects: The Gelina of Ribnovo 2025, Pearlies 2023, Ottery St Mary Tar Barrels 2024, Swim Dem Crew/FT HTSI 2024; 3 images each"
+      "evidence": "4 distinct projects: The Gelina of Ribnovo 2025, Pearlies 2023, Ottery St Mary Tar Barrels 2024, Swim Dem Crew/FT HTSI 2024; 3 images each across manifestly different subjects and geographies"
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Mix of environmental, portrait and action shots within each project; not hero-only"
+      "evidence": "Environmental, portrait and action shots within each project; not hero-only; images confirmed distinct on visual inspection"
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Photography; all 12 work images are photographs on-capability"
+      "evidence": "Tagged Photography; all 12 work images are photographs -- documentary and portrait work, on-capability"
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png confirmed as alexkurunis.com homepage. site-14.png is the IG login wall, correctly marked rejected in manifest with reason documented and entry queued to state/ig-queue.json; sanctioned exception applies"
+      "evidence": "site-13.png opened and confirmed as alexkurunis.com portfolio homepage. site-14.png is the Instagram login wall, correctly marked rejected in manifest with rejection_reason documented and entry present in state/ig-queue.json; sanctioned IG-throttle exception applies per checklist"
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 12 work images captioned with named project + source link; context shot captioned 'Website'"
+      "evidence": "All 12 work images captioned with named project + source link; context shot captioned Website"
     },
     {
       "id": "A.embeds-for-video",
@@ -38,7 +38,7 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG login wall documented in manifest rejection_reason and queued to ig-queue.json"
+      "evidence": "IG login wall documented in manifest rejected entry; ig-queue.json entry confirmed present"
     },
     {
       "id": "B.type-classified",
@@ -47,9 +47,8 @@
     },
     {
       "id": "B.links-present",
-      "result": "fail",
-      "evidence": "LinkedIn is absent from the entry and AI Notes make no mention of a LinkedIn search or explain why it is missing. For a photographer with credits at Nike, FT, The Guardian, a public LinkedIn profile is highly likely to be findable via a standard search.",
-      "fix": "Search '<name> photographer linkedin' and attach the LinkedIn URL if found, or note in AI Notes 'No LinkedIn found after search' with a brief reason if genuinely absent."
+      "result": "pass",
+      "evidence": "Website confirmed (alexkurunis.com). Instagram confirmed (@alexkuru). LinkedIn: AI Notes now explicitly documents the search ('searched Alex Kurunis photographer linkedin and Alex Kurunis site:linkedin.com; no profile found') with rationale (editorial/documentary photographers commonly absent from LinkedIn, relying on agency representation). Email field holds Jonathan's IG URL (set_by jonathan) with an Open Question raised. Absence documented -- sole attempt-1 fail is now resolved."
     },
     {
       "id": "B.capabilities-tagged",
@@ -59,54 +58,54 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK (migration), Size 1, Work Status Freelance; sources named in AI Notes (own site + agency)"
+      "evidence": "UK, Size 1, Work Status Freelance; multi-source resolution documented in AI Notes (own site + Twenty Twenty agency both confirm represented/freelance talent)"
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3 set by agent; reasoning in AI Notes grounded in work history"
+      "evidence": "Autonomy 3 set by agent with reasoning grounded in work history (agency-represented, independent assignments, no evidence of directing a team)"
     },
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "Zero-states do not contradict evidence; clipped.md is a blank Notion template with no Jonathan notes"
+      "evidence": "Zero-states do not contradict evidence; clipped.md is a blank Notion template stub with no Jonathan instructions"
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped body is a generic Notion template stub; no Jonathan instructions present"
+      "evidence": "No Jonathan instructions in clip note"
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Seniority and Autonomy reads hedged ('likely 8-12 yrs active based on depth'); verifiable facts (clients, awards) asserted directly"
+      "evidence": "Seniority read hedged (likely 8-12 yrs); verifiable facts (clients, awards, agency) asserted directly; LinkedIn search result documented"
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, migration; Twenty Twenty agency roster (twentytwenty.co); WePresent feature; It's Nice That article 2022'"
+      "evidence": "Source: Web clipper, migration; Twenty Twenty agency roster; WePresent feature; It's Nice That article 2022"
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with correct set_by values; null source_url is a known systemic tooling gap, not a gate failure"
+      "evidence": "All touched fields have provenance with correct set_by values; null source_url is the known systemic tooling gap, not a gate failure"
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions use double hyphens (--), not em-dashes"
+      "evidence": "AI Notes and Open Questions use double hyphens, no em-dashes found"
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question about the Email field holding an IG URL; appropriate and well-framed"
+      "evidence": "One terse conditional question about Email field holding an IG URL; correctly framed with proposed resolution"
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry currently in Enriching; status flip to Needs Review withheld pending this gate"
+      "evidence": "Entry in Enriching; flipped to Needs Review on this pass"
     }
   ],
-  "summary": "Single failing check: LinkedIn URL missing with no evidence of a search attempt or documented absence in AI Notes.",
-  "to": "scout"
+  "summary": "All checks pass on attempt 2. The sole attempt-1 failure (LinkedIn absent, no documented search) is resolved: AI Notes now documents the search and explains absence. 12 photos across 4 named distinct projects, website context shot confirmed correct, IG context shot correctly rejected and queued.",
+  "to": "jonathan"
 }

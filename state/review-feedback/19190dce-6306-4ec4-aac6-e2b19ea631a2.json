@@ -2,44 +2,43 @@
   "page_id": "19190dce-6306-4ec4-aac6-e2b19ea631a2",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "12 active images across 8+ distinct named clients: NYT (3 pieces, different commissions), New Yorker, Bloomberg Businessweek, The Atlantic, Columbia Global Reports, Medium, Plansponsor, Atour/BAM.Book. Variety is real."
+      "evidence": "12 active images across 8+ distinct named clients: NYT (3 separate commissions), The New Yorker, Bloomberg Businessweek, The Atlantic, Columbia Global Reports, Medium, Plansponsor, Atour/BAM.Book. Diversity is real and verified visually."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Images include full spreads and interiors (book cover + editorial scenes), not just hero banners. Multiple pieces per outlet show genuine depth."
+      "evidence": "Full editorial spreads and standalone pieces across multiple commissions. Not hero-only; multiple distinct works per outlet."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 12 active work images are editorial illustrations, matching the tagged Capability: Illustration."
+      "evidence": "All 12 active work images are editorial illustrations, matching tagged Capability: Illustration. Confirmed visually (NYT mental health, New Yorker dog, Bloomberg EV all distinct illustration pieces)."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-10.png is captioned 'Instagram profile' but is the Instagram login wall (generic instagram.com landing page, not the @howaboutacheesecake profile grid). The checklist exception requires the broken capture to be (1) marked rejected in manifest, (2) documented in AI Notes, AND (3) queued in state/ig-queue.json. None of the three conditions are met: site-10.png is active in the manifest, AI Notes has no mention of a failed IG screenshot, and the entry is absent from ig-queue.json.",
-      "fix": "Mark site-10.png rejected in manifest.json, add a note to AI Notes that the IG context shot could not be captured logged-out and is queued for ig.py, and append this entry to state/ig-queue.json with reason 'IG context shot: login wall served logged-out; need ig.py grab of @howaboutacheesecake'."
+      "result": "pass",
+      "evidence": "Website context shot (site-09.png) is the real jozixuan.com homepage, confirmed visually. IG login-wall shot (site-10.png) is marked rejected in manifest with reason documented. Entry is queued in state/ig-queue.json (confirmed present, page_id matches, reason: 'IG context shot: login wall served logged-out by scrape.py --render; need ig.py grab of @howaboutacheesecake profile grid'). AI Notes states: 'IG context shot queued for ig.py: scrape.py --render served the logged-out login wall for @howaboutacheesecake, not the profile grid; queued in state/ig-queue.json.' All three exception conditions satisfied."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All active images have descriptive captions. site-04.jpg uses a thematic description ('Editorial illustration, aging and care') without a named client publication, but includes a source link; this is acceptable given the piece appears to be a personal or unlisted commission shown on her own site."
+      "evidence": "All active images have descriptive captions with named clients/publications and source links. site-04.jpg uses a thematic description without a specific publication; acceptable given it appears on her own site as unlisted personal work."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Jo Zixuan is an illustrator; no video/audio work expected or present. No embeds needed."
+      "evidence": "Illustrator. No video or audio work expected or found. No embeds needed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Work is plentiful; no thin-entry concern. Rejected files are properly marked and explained in captions (duplicate, unidentified publications)."
+      "evidence": "Work is plentiful. Rejected files are marked with clear reasons. IG absence documented and queued."
     },
     {
       "id": "B.type-classified",
@@ -49,37 +48,37 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website: jozixuan.com (canonical). Instagram: instagram.com/howaboutacheesecake (verified via Caper agency page + LinkedIn per AI Notes). LinkedIn: linkedin.com/in/jo-zixuan-367517183. Email not listed in entry but AI Notes notes Caper as rep channel; the scout should have noted absence or found a public email. Minor gap but not a gate failure given illustration agency representation (public email often not listed separately)."
+      "evidence": "Website: jozixuan.com. Instagram: instagram.com/howaboutacheesecake (handle verified via Caper agency page and LinkedIn per AI Notes). LinkedIn: linkedin.com/in/jo-zixuan-367517183. No public email found; represented via Caper agency, which is the standard contact channel for repped illustrators."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Illustration tagged. Open Question 1 appropriately asks Jonathan whether to add Graphic design, Type design, Web design, Creative technology given the breadth of her practice."
+      "evidence": "Illustration tagged. Open Question 1 asks Jonathan whether to expand to Graphic design, Type design, Web design, Creative technology. Appropriate given breadth of practice."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: US (corrected from China, documented in AI Notes). Size: 1. Work Status: Freelance (own site + Caper both confirm; multi-source rule satisfied, sources named in AI Notes)."
+      "evidence": "Country: US (corrected from China, documented in AI Notes and asked in Open Question 2). Size: 1. Work Status: Freelance (own site + Caper both confirm; multi-source rule satisfied, sources named in AI Notes)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 3, set_by agent, with hedged reasoning in AI Notes (early-career, limited senior client-direction track record)."
+      "evidence": "Autonomy: 3, set_by agent. Hedged reasoning in AI Notes: early-career, limited senior client-direction track record."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip-note relationship claim."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with clip note containing no relationship facts."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped body contained only '© 2021 by Jo Zixuan Zhou.' -- no instructions or relationship facts to act on."
+      "evidence": "Clipped body contained only '2021 by Jo Zixuan Zhou.' with no instructions or relationship claims. Nothing to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Autonomy is explicitly hedged ('hedged; limited senior client-direction track record'). Seniority read and work history present. No em-dashes. Sources named."
+      "evidence": "Autonomy explicitly hedged. Seniority read present (early-career, MFA RISD, LAVA Beijing intern). No em-dashes. Sources named. IG queue documented."
     },
     {
       "id": "D.source-filled",
@@ -94,19 +93,19 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "Two terse questions: one about Capabilities expansion, one confirming Country change. Both conditional (neither field already has a non-zero definitive value -- Country is set but Open Question 2 is asking Jonathan to confirm a change the agent made, which is appropriate)."
+      "evidence": "Two terse questions: Capabilities expansion (conditional on Jonathan deciding), Country change confirmation. Both appropriate."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer has not flipped it to Needs Review (correct: this is a FAIL verdict)."
+      "evidence": "Entry is Enriching; will be flipped to Needs Review on this pass verdict."
     }
   ],
-  "summary": "One FAIL: the Instagram context shot (site-10.png) is the generic instagram.com login wall, not the @howaboutacheesecake profile. It is active in the manifest (not rejected), absent from ig-queue.json, and unmentioned in AI Notes. The three-part exception path is unsatisfied. All other checks pass cleanly.",
+  "summary": "All checks pass on re-review. The three-part IG exception is fully satisfied: site-10.png rejected in manifest with documented reason, AI Notes states the login wall was served and the entry is queued, and state/ig-queue.json contains the entry. Website context shot (site-09.png) is the real jozixuan.com homepage, confirmed visually. 12 editorial illustrations across 8+ named clients from 3+ distinct publishers. Flipping to Needs Review.",
   "to": "scraper"
 }

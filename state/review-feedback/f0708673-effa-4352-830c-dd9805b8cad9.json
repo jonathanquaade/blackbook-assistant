@@ -1,0 +1,111 @@
+{
+  "page_id": "f0708673-effa-4352-830c-dd9805b8cad9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T22:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct series: Swimming Pool 2014-2016 (3 shots, mariasvarbova.com CDN), In the Swimming Pool ongoing 2023 (2 shots, This Is Colossal source, different pool and composition), SPA Society 2021 (3 shots, Behance 112414947), Apple commissioned 2020 (3 shots, Behance 93601503). Pool and In-the-Pool are thematically related but visually and temporally distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "SPA Society images show interior corridor, poolside figure, and group scene from within the series. Swimming Pool images show different compositions (submerged figures, overhead view, side view). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography. All 11 work images are fine-art or commissioned photographs matching that capability. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed as mariasvarbova.com (shows MARIA SVARBOVA nav menu). IG context shot (site-05.png) is marked rejected with documented reason (logged-out redirect to login page), queued to state/ig-queue.json. Meets the IG throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every non-rejected manifest entry has a named project caption and source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Fine-art photographer; no video work present or documented on her site or Behance projects. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents: LinkedIn not found via web search, no public email surfaced, IG context shot blocked and queued. All absences accounted for."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (mariasvarbova.com) and Instagram (@maria.svarbova) present. LinkedIn and Email absent with explanations in AI Notes. No obvious findable links skipped."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography. Matches all captured work. The Open Question about adding Art practice is correctly flagged rather than asserted."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Slovakia (corrected from US migration error, documented). Size: 1. Work Status: Freelance with reasoning (self-employed, no evidence of employment). LinkedIn absent so no source conflict to resolve. Note: AI Notes does not explicitly list each source checked for Work Status by name, but the absence of LinkedIn and the rationale given are sufficient given the CLAUDE.md rule applies mainly to conflict resolution."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with grounded reasoning in AI Notes (self-directed vision, owns all creative decisions, works alone). Person entry; field required and present."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No clip note or evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note instructions beyond the name. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged ('no evidence of employment', 'may be worth adding... Jonathan to confirm'). Verifiable facts (Hasselblad Masters 2018, Forbes 30U30 2017, named clients) stated plainly. Seniority read grounded in work history. Autonomy reasoning present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration baseline); Wikipedia, Behance, Contessa Gallery biography'. Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url nulls are the documented systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, Source, and all manifest captions. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question (Art practice tag). Does not ask for fields that already have values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "summary": "All 20 checks pass. 12 images across 4 named series, correct Photography capability, website context shot confirmed, IG context shot correctly rejected and queued, no em-dashes, all absences documented."
+}

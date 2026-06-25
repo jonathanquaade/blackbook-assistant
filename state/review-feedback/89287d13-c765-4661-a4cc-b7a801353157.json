@@ -2,43 +2,43 @@
   "page_id": "89287d13-c765-4661-a4cc-b7a801353157",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 distinct active projects across illustration and animation: Magnum Pleasure Imagined, HP Windows of Hope, Apple She Creates, NPR Black History Month, Warner Music Songe album cover, Apple Music On S'Enjaille, California Endowment People Power, This Book Is Anti-Racist. Plus Songe Mon Demon and Nike Citadium animation thumbnails."
+      "evidence": "11 active images spanning 8 distinct projects: Magnum Pleasure Imagined, HP Windows of Hope, Apple She Creates, NPR Black History Month, Warner Music Songe album cover, Apple Music On S'Enjaille, California Endowment People Power, This Book Is Anti-Racist. Plus Vimeo thumbnails for Songe Mon Demon and Nike Citadium animation."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: individual illustration panels, album cover art, book cover -- not just hero shots. 3 Vimeo embeds for animation work with thumbnail previews."
+      "evidence": "Goes inside projects: individual illustration panels, cover art, book cover. 3 Vimeo embeds (Jorja Smith GO GO GO, Songe Mon Demon, Nike Citadium) with thumbnail preview images. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Illustration (jonathan-set); all active images are illustration and animation stills, none off-capability. Capability expansion (animation, murals) correctly asked in Open Questions."
+      "evidence": "Tagged Illustration; all active images are illustration or animation stills, none off-capability. Capability expansion (animation, murals) correctly deferred to Open Question."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-16) shows duaurelia.myportfolio.com with 'AURELIA DURAND' branding and live project content -- correct. IG context shots (site-17, site-18) both rejected as error pages, documented, and queued to ig-queue.json (entry: page_id 89287d13, handle @4ur3lia, 121K followers confirmed via Google). This is the sanctioned IG-throttle path per checklist exception."
+      "evidence": "Website context shot (site-16) confirmed: shows duaurelia.myportfolio.com with 'AURELIA DURAND' branding and live illustration grid. IG shots (site-17, site-18) both rejected as error pages, documented in manifest with reject_reason and queued to ig-queue.json (@4ur3lia, 121K followers). Sanctioned IG-throttle exception path correctly followed."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 11 active images have project name captions and source links. All rejected entries have documented reject_reason fields."
+      "evidence": "All 11 active images have project-name captions and source links. All rejected entries carry reject_reason."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "3 Vimeo embeds present (Jorja Smith GO GO GO 2024, Songe Mon Demon 2021, Nike Citadium 2021) with thumbnail preview images. Jorja Smith thumbnail was rejected because it showed only title-card text; embed still present. Pattern correctly followed."
+      "evidence": "3 Vimeo embeds present (Jorja Smith GO GO GO 2024, Songe Mon Demon 2021, Nike Citadium 2021) each with caption and link. Thumbnail preview images present for Songe and Nike; Jorja Smith thumbnail was title-card only so correctly rejected, embed still present."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Primary site aurelia-studio.com unreachable documented in AI Notes; portfolio captured from myportfolio.com instead. IG throttle documented and queued."
+      "evidence": "Primary site aurelia-studio.com unreachable documented in AI Notes. IG throttle documented in AI Notes and queued."
     },
     {
       "id": "B.type-classified",
@@ -47,39 +47,38 @@
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "Website field is set to https://www.aurelia-studio.com, which AI Notes explicitly document as unreachable (connection refused). The context shot (site-16) and all image source URLs point to duaurelia.myportfolio.com, which is her active reachable portfolio. The Website field should reflect the best reachable canonical URL for the entry. Pointing Jonathan to a dead URL is a correctness failure. Instagram, LinkedIn both set correctly.",
-      "fix": "Update Website field to https://duaurelia.myportfolio.com (her active portfolio, used for all work capture). Add an Open Question asking Jonathan whether aurelia-studio.com is her intended canonical site (it may return once she relaunches it): '3. Website aurelia-studio.com is unreachable; using duaurelia.myportfolio.com for now. Is the studio site coming back?'"
+      "result": "pass",
+      "evidence": "Website field now set to https://duaurelia.myportfolio.com (live, HTTP 200 confirmed). This was the sole failing check in attempt 1. Instagram @4ur3lia confirmed correct person (121K followers, matches bio). LinkedIn and Email not noted in entry; no obvious miss flagged by attempt-1 reviewer."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "jonathan-set as Illustration; Open Question correctly asks about adding animation and murals. Not a reviewer call."
+      "evidence": "Illustration set by jonathan. Animation and murals expansion correctly asked in Open Questions."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "France, Size 1, Freelance -- consistent with AI Notes sources (site, Vimeo, Behance)."
+      "evidence": "France, Size 1, Freelance. AI Notes names sources: site, Vimeo, Behance in agreement."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, with grounded reasoning in AI Notes (10 yrs practice, runs commissions end to end, blue-chip client list, but solo rather than directing teams)."
+      "evidence": "Autonomy 4, set_by agent. Reasoning grounded in ~10 yrs practice, end-to-end commissions, blue-chip client list, no team leadership evidence."
     },
     {
       "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Zero-states consistent; no relationship facts in clip note or Notes to contradict."
+      "evidence": "Zero-states consistent with no relationship facts in clip note or Notes."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clip note instructions beyond name -- nothing missed."
+      "evidence": "No clip instructions beyond name. Nothing missed."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Autonomy marked set_by agent; seniority read grounded in client history and years; sources named; no em-dashes detected. Handle follower count hedged as 'Google search result'."
+      "evidence": "Autonomy marked set_by agent; seniority read grounded in client history and years; sources named; no em-dashes detected (re-checked programmatically)."
     },
     {
       "id": "D.source",
@@ -89,24 +88,24 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "set_by correct throughout; null source_url is the known systemic gap, not a gate failure."
+      "evidence": "set_by correct throughout. Null source_url is the known systemic tooling gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
+      "evidence": "Programmatic check of AI Notes, Open Questions, and captions: zero em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse, conditional question about capability expansion. Appropriate."
+      "evidence": "Two terse, conditional questions: (1) capability expansion for animation/murals, (2) aurelia-studio.com relaunch. Both genuine unknowns the agent cannot resolve alone."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry remains in Enriching; reviewer gate running correctly."
+      "evidence": "Flipped to Needs Review by reviewer on this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "One fix required: Website field points to https://www.aurelia-studio.com which is documented as unreachable (connection refused). All image capture used duaurelia.myportfolio.com. Update Website to https://duaurelia.myportfolio.com and add a terse Open Question asking Jonathan whether the studio site is relaunching. All other checks pass -- strong 8-project spread, correct embeds with thumbnails, IG throttle path correctly followed and queued."
+  "to": "jonathan",
+  "summary": "All checks pass on re-gate. The sole attempt-1 failure (Website field pointing to dead aurelia-studio.com) has been resolved: field now set to https://duaurelia.myportfolio.com (HTTP 200). Context shot visually confirmed as the live Adobe Portfolio homepage. 8-project illustration spread verified visually; 3 Vimeo animation embeds with thumbnails correct. IG throttle exception path properly documented and queued."
 }
