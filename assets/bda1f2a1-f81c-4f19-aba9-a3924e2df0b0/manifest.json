@@ -55,12 +55,37 @@
     "source_url": "https://i0.wp.com/elisawong.com/wp-content/uploads/2019/09/ArmaniWavyName_1.gif?w=2000&ssl=1",
     "caption": "Armani White Show Visuals, custom animated type for HARD Summer",
     "link": "https://elisawong.com/work/armaniwhite-hardsummer",
+    "rejected": true,
+    "reject_reason": "Animated wordmark only, no illustration content; replaced by armani-white-03/04/05",
     "captured_at": "2026-06-25"
   },
   {
     "file": "armani-white-02.png",
     "source_url": "https://i0.wp.com/elisawong.com/wp-content/uploads/2019/10/Untitled_Artwork-55-copy.png?w=2000&ssl=1",
     "caption": "Armani White Show Visuals, custom illustration for HARD Summer set",
+    "link": "https://elisawong.com/work/armaniwhite-hardsummer",
+    "rejected": true,
+    "reject_reason": "Plain text lockup on white background, not illustration work; replaced by armani-white-03/04/05",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "armani-white-03.jpg",
+    "source_url": "https://i0.wp.com/elisawong.com/wp-content/uploads/2019/10/visuals-intro-side.jpg?w=2000&ssl=1",
+    "caption": "Armani White Show Visuals, stage graphic with illustrated elements for HARD Summer",
+    "link": "https://elisawong.com/work/armaniwhite-hardsummer",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "armani-white-04.png",
+    "source_url": "https://i0.wp.com/elisawong.com/wp-content/uploads/2019/10/bitch-please-2.png?w=2000&ssl=1",
+    "caption": "Armani White Show Visuals, custom illustration loop design for HARD Summer performance",
+    "link": "https://elisawong.com/work/armaniwhite-hardsummer",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "armani-white-05.png",
+    "source_url": "https://i0.wp.com/elisawong.com/wp-content/uploads/2019/10/repeating-pattern-04.png?w=2000&ssl=1",
+    "caption": "Armani White Show Visuals, illustrated repeating pattern for stage loop",
     "link": "https://elisawong.com/work/armaniwhite-hardsummer",
     "captured_at": "2026-06-25"
   },
@@ -113,6 +138,8 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/elisadoesstuff/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Logged-out grab returned instagram.com generic login/marketing wall, not @elisadoesstuff profile. Queued to state/ig-queue.json for logged-in ig.py grab."
   }
 ]

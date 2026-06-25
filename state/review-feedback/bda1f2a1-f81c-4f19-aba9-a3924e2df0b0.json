@@ -1,0 +1,113 @@
+{
+  "page_id": "bda1f2a1-f81c-4f19-aba9-a3924e2df0b0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects: TIME Editorial, Estoy Listo, Kenneth Mejia Campaign, Armani White, Stickerology, Butch Ware. Well over the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "Both Armani White images (armani-white-01.gif, armani-white-02.png) are wordmark/logotype text assets only, 'ARMANI WHITE' in plain type on black and decorative lettering on white. Neither shows illustration or show-visual work. Two image slots used with zero actual project content from this brief.",
+      "fix": "Replace armani-white-01.gif and armani-white-02.png with actual illustration or show visual images from elisawong.com/work/armaniwhite-hardsummer (the project page should have artwork, stage graphics, or merch illustrations, not just the logo lockup)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Illustration. All non-Armani-White images show illustration work (editorial illustrations, merch art, sticker illustrations, campaign graphics). On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-05.png is captioned 'Instagram profile' but is the instagram.com generic marketing/login wall ('See everyday moments from your close friends' + Log in form), not the @elisadoesstuff profile. The sanctioned throttle exception does not apply: the broken capture is not marked rejected in manifest, AI Notes do not document a throttle block, and the entry is absent from state/ig-queue.json.",
+      "fix": "Capture a real screenshot of instagram.com/elisadoesstuff showing her profile grid and bio. If the logged-out grab returns the login wall, mark the broken file rejected in manifest.json, document the throttle block in AI Notes, add the entry to state/ig-queue.json, and proceed without holding the entry."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected manifest entry has a caption and a link. Rejected site-03.svg is correctly excluded."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Illustration is image-native; no video/audio embeds expected or skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sourcing; 13 non-rejected project images plus 1 valid website context shot."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (elisawong.com), Instagram (@elisadoesstuff, full URL), LinkedIn (linkedin.com/in/elisamariewong), Email (hello@elisawong.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration set by jonathan (locked). Open Question asks about adding broader capabilities. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Studio. AI Notes names LinkedIn and littlewinsstudio.com as the confirming sources. Multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set by agent. Reasoning in AI Notes: studio co-founder, full creative ownership. Grounded in verifiable work history."
+    },
+    {
+      "id": "C.no-contradicting-judgments",
+      "result": "pass",
+      "evidence": "No clip note states a relationship; zero-states (Worked Together: Never, Familiarity: Don't know them) are consistent with absence of evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry is a migration import with no clip-note instructions. Source field reflects that correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferred claims, names sources for Work Status, includes seniority read and Autonomy reasoning. No unhedged assertions about working style or first-hand experience."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration import, 2026-06-12'. Appropriate for the entry provenance."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present, all touched fields recorded with set_by values. source_url null is a known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single question on Capabilities, which is locked at jonathan-set Illustration. Terse and conditional. Story nudge not triggered (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching. Correctly not flipped to Needs Review before this gate. Will remain Enriching on this fail."
+    }
+  ],
+  "summary": "Two fails. (1) The Instagram context shot (site-05.png) is the instagram.com login/marketing wall, not the @elisadoesstuff profile. Not marked rejected, not in ig-queue, not documented in AI Notes as throttled. (2) Both Armani White images are plain wordmark text assets with no illustration content; two image slots wasted on logo lockups.",
+  "to": "scraper"
+}

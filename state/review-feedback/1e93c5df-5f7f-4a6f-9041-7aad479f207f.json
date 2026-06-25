@@ -1,0 +1,114 @@
+{
+  "page_id": "1e93c5df-5f7f-4a6f-9041-7aad479f207f",
+  "name": "Sylvain Jule",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct client projects represented across non-rejected images (Rafael de Cardenas, Bruno Moinard Editions, PAC, Ethics for Design, Low-tech Lab, Grand Cuisine, Unknown Untitled, Qalqalah). Captions do not repeat a single project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple images per project with rejections of duplicates and near-duplicates documented in manifest. Goes inside projects rather than only hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Sylvain is tagged Frontend development (web): his work IS the websites themselves (layout, typography, interaction, Kirby CMS builds). The uploaded images are almost entirely client content photography that lives on those sites, not the web design. site-01 and site-02 are interior architecture photos (Rafael de Cardenas project shots). site-04 and site-05 are furniture product photography (Bruno Moinard). site-07 is a film-canister editorial photo (PAC content). site-11 is a documentary desk scene (Ethics for Design content). site-12 is a halftone crowd image (Low-tech Lab content). site-16 is a chef-with-radishes lifestyle photo (Grand Cuisine brand photo). site-17 is a wind turbine 3D render (Unknown Untitled project image). site-19 is a RIMOWA watch case product shot (Unknown Untitled product photo). Only site-14 (Grand Cuisine LOVE typographic UI) and the context shots site-24/25/26 actually show the web design work. The selection shows what his clients photograph, not what Sylvain builds. Fix: replace off-capability content photos with full-page or section screenshots of the sites themselves showing typography, layout, navigation, and interactive UI. Grand Cuisine, PAC, Qalqalah, Low-tech Lab and rafaeldecardenas.com all have distinctive web design visible at the site level."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-20.png is a real screenshot of sylvain-jule.fr/en and shows his name and discipline ('Graphic design and front-end development') correctly. Instagram context shot (site-21.png) is rejected+documented+queued in ig-queue.json per the sanctioned throttle exception. Sanctioned path confirmed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 non-rejected images have captions naming a project and a link field. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio embeds appear needed; capability is web design/frontend, not video or sound. No embed-only concern."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG login wall documented in AI Notes and manifest, queued to ig-queue.json. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, correct."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn field contains https://github.com/sylvainjule, which is a GitHub URL, not a LinkedIn URL. The LinkedIn field should hold a linkedin.com URL or be left empty. GitHub is a different platform. AI Notes explains no public LinkedIn was found, which is valid, but storing a GitHub URL in the LinkedIn field misuses the schema. Fix: clear the LinkedIn field (leave empty, since no LinkedIn found) and store the GitHub URL in AI Notes or a separate field if needed. Do not put a non-LinkedIn URL in the LinkedIn property."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) per TAXONOMY.md ('builds websites: the code that ships in a browser') is correct for a Kirby CMS-building graphic designer-developer. Web design could reasonably be added (he designs AND builds), but this is a judgment call and not a blocker."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country France, Size 1, Work Status Freelance. AI Notes documents source: his own site states currently available (authoritative). Multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes ('mid-level independent designer-developer, ~6-8 yrs, strong solo execution'). Grounded in portfolio depth."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Notes field says 'Use Kirby CMS mostly' (set_by jonathan), AI Notes agree. Rating 4 set_by jonathan. Zero-states (Work With? Unvetted, Familiarity Don't know them, Worked Together Never) are not contradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained Kirby CMS reference; AI Notes confirm it was used as signal. Rating 4 is marked set_by jonathan in provenance."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Experience estimate hedged ('~6-8 yrs inferred from portfolio depth'). No bare assertions about quality or Jonathan's firsthand knowledge. Seniority read present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-29'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url null is the known systemic tooling gap, not a gate failure per checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: no em-dashes found. Semicolons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions field is empty. No judgment fields with existing non-zero values are being asked about. No story nudge needed (Worked Together = Never, Familiarity = Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching. Reviewer is gating before the flip. Correct."
+    }
+  ],
+  "failing_checks": ["A.on-capability", "B.findable-links"],
+  "to": "scraper",
+  "summary": "Two fails. (1) The work images are client content photography rather than screenshots of the websites Sylvain built. Only one image (site-14, Grand Cuisine typographic UI) and three context shots (site-24/25/26) actually show web design or frontend work. The other eight non-context work images are interior design, product, editorial and lifestyle photography that happen to be hosted on his clients' sites. (2) The LinkedIn field holds a GitHub URL (github.com/sylvainjule), which is the wrong field for that link.",
+  "fix": "Re-capture the work images as full-page or section screenshots of the websites Sylvain designed and built: rafaeldecardenas.com, brunomoinardeditions.com, p-a-c.fr, ethicsfordesign.com, lowtechlab.org, grand-cuisine.fr, unknown-untitled.com, qalqalah.org. Use scrape.py shot or scrape.py --render to capture the actual UI (homepage, interior pages, typographic layouts). Aim for 2 screenshots per site showing distinct design moments (navigation, typography, layout grid). For the LinkedIn field: clear it (leave empty) since no LinkedIn was found, and move the GitHub URL into AI Notes only."
+}

@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://www.mariasvarbova.com/collections",
+      "value": "https://www.mariasvarbova.com/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-25T21:22:04",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -28,16 +28,16 @@
     },
     "Country": {
       "value": [
-        "US"
+        "Slovakia"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-25T21:22:04",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-15T21:43:50",
+      "verified_at": "2026-06-25T21:23:42",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-25T21:22:04",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-25T21:22:04",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/maria.svarbova/",
+      "source_url": null,
+      "verified_at": "2026-06-25T21:22:04",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper (migration baseline); Wikipedia, Behance, Contessa Gallery biography",
+      "source_url": null,
+      "verified_at": "2026-06-25T21:22:04",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-25T21:22:04",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "M\u00e1ria \u0160varbov\u00e1 (b. 1988, Zlat\u00e9 Moravce, Slovakia) is a fine-art photographer and art director based in Bratislava, Slovakia. She is known for her symmetrical, pastel-toned conceptual series set in socialist-era architecture (most famously her Swimming Pool series, 2014 onward), which won the 2018 Hasselblad Masters Award in the Fine Art category. Her work has appeared in Vogue, Forbes, CNN and The Guardian, and she has shot advertising campaigns for Apple, Murata and Museum of Ice Cream; she was listed in Forbes Slovakia 30 Under 30 in 2017. She works independently as a self-employed photographer/art director, commissioning her own fine-art series and taking on commercial projects on a per-project basis (no evidence of employment). Gallery representation includes Contessa Gallery and Gilman Contemporary; prints available via Artsy. Seniority: established mid-career independent, roughly 15 years of active practice with significant international gallery presence and commercial credits. Autonomy 4: highly self-directed creative vision, owns all creative decisions; occasionally directs commercial work for large clients, but works alone rather than leading a permanent team. Country corrected from US to Slovakia (migration error); multiple sources agree she lives and works in Bratislava. LinkedIn not found via web search; no public email surfaced. Art practice tag may be worth adding given gallery representation and autonomous series work (Jonathan to confirm).",
+      "source_url": null,
+      "verified_at": "2026-06-25T21:23:05",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Add Art practice tag? Gallery representation (Contessa, Gilman), prints on Artsy, autonomous fine-art series suggest it fits the definition.",
+      "source_url": null,
+      "verified_at": "2026-06-25T21:23:27",
+      "set_by": "agent"
     }
   }
 }
