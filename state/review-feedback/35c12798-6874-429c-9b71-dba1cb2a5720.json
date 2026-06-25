@@ -1,44 +1,44 @@
 {
   "page_id": "35c12798-6874-429c-9b71-dba1cb2a5720",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-25T21:00:00",
-  "verdict": "fail",
+  "reviewed_at": "2026-06-25T22:00:00",
+  "verdict": "pass",
   "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct projects: Adaptive Cognition (Field.io/Microsoft), AMBEO Audio Lab (Sennheiser), Graphite Sound Layers, Covariant Flow (Pentagram), lululemon generative video wall (Field.io). All distinct."
+      "evidence": "5 distinct projects: Adaptive Cognition (Field.io/Microsoft), AMBEO Audio Lab (Sennheiser), Graphite Sound Layers, Covariant Flow (Pentagram), lululemon generative video wall (Field.io). All distinct, no repeated project."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Images go inside the installations: covariant-flow-03 shows the generative line system output, covariant-flow-05 the fluid generative form, lululemon-01/02 show the video wall with performers in context. Not just cover shots."
+      "evidence": "covariant-flow-03/05 show the generative output system interiors; lululemon-01/02 show the video wall installation in context with performers; thumbnail images are frames from inside the video works. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capability is Creative technology. All images show generative/computational installation work or sound visualization. lululemon-01/02 show Felix's generative video wall inside the store (the installation itself), not lifestyle photography. On-capability."
+      "evidence": "Tagged Creative technology. All images show generative/computational installation and sound visualization work. lululemon shots show the actual generative video wall, not lifestyle photography."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-08.png is a Wayback Machine capture of the real felixfaire.com homepage (shows 'Felix Faire / Music. Code. Design' with generative particle visualization). Cloudflare block for live fetching is documented in manifest note. site-07.png is a confirmed instagram.com/@felixfaire profile (bio reads 'music, drawing, computational design', grid matches). Both are what their captions claim."
+      "evidence": "site-08.png visually confirmed as felixfaire.com (shows 'Felix Faire / Music. Code. Design' with particle visualization, captured via Wayback due to Cloudflare block, documented in manifest). site-07.png visually confirmed as instagram.com/@felixfaire (header shows Instagram logo, handle @felixfaire, bio 'music, drawing, computational design', grid visible). Both are what their captions claim."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 9 manifest images have captions naming the project and source links."
+      "evidence": "All 9 active image entries carry captions naming the project and source links. No anonymous images."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "3 Vimeo embeds present (Adaptive Cognition, AMBEO Audio Lab, Graphite Sound Layers), each paired with a thumbnail preview image and a link caption."
+      "evidence": "3 Vimeo embeds present (Adaptive Cognition, AMBEO Audio Lab, Graphite Sound Layers), each paired with a thumbnail preview image and a linked caption. Images also present (not embeds-only)."
     },
     {
       "id": "A.absence-is-explained",
       "result": "pass",
-      "evidence": "Cloudflare block on live site is documented in the manifest note; Wayback Machine substitution called out explicitly."
+      "evidence": "Live site Cloudflare block documented in manifest note; Wayback Machine substitution called out. No silent gaps."
     },
     {
       "id": "B.type-classified",
@@ -47,40 +47,38 @@
     },
     {
       "id": "B.all-links-present",
-      "result": "fail",
-      "evidence": "Email is absent from the entry and no mention in AI Notes that it was searched for and not found. This was a FAIL in attempt 1 and has not been addressed. Instagram is now present. LinkedIn is present. Email remains unresolved.",
-      "fix": "Search for Felix Faire's public contact email (check felixfaire.com contact page via Wayback, his GitHub, or any 'contact' link on his profiles). If genuinely unfindable, write one line in AI Notes: 'Email: no public address found via site, IG, GitHub, or web search.'"
+      "result": "pass",
+      "evidence": "Website: felixfaire.com (present). Instagram: instagram.com/felixfaire (present, verified correct person via IG profile screenshot). LinkedIn: present. Email: absent but now documented in AI Notes ('only a contact form at felixfaire.com/contact (site Cloudflare-blocked); no reliable public direct email found, Email left empty'). Absence documented, not silent. Resolved from attempt-2 failure."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Creative technology tagged. Open Questions asks Jonathan about adding Sound design and Digital product design. Appropriate."
+      "evidence": "Creative technology tagged. Open Questions asks Jonathan about adding Sound design and Digital product design. Appropriate pending his judgment."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country UK, Size 1, Work Status Employed. Multi-source resolution documented in AI Notes (LinkedIn + 10xdesigners bio, site conflict flagged)."
+      "evidence": "Country UK, Size 1, Work Status Employed. Multi-source resolution documented in AI Notes (LinkedIn role + 10xdesigners speaker bio; site conflict flagged as possible stale data)."
     },
     {
       "id": "B.autonomy-estimated",
       "result": "pass",
-      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes. Grounded in work history."
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes grounded in approximately 10-year work history building bespoke creative-tech systems."
     },
     {
       "id": "C.no-judgment-contradiction",
-      "result": "fail",
-      "evidence": "Familiarity is still set to 'Don't know them' (set_by agent, confirmed in provenance). Jonathan's Notes reads 'Worked on Intrinsic at Pentagram' and Worked Together is 'Once' (set_by jonathan). These facts mean Jonathan worked with Felix directly. A Familiarity of 'Don't know them' contradicts that evidence. The scraper acknowledged the issue by placing Q1 'Familiarity?' in Open Questions but did not clear the contradicted field value. The field must be emptied, not left at a contradicted zero-state.",
-      "fix": "Clear Familiarity to empty (blank, not a zero-state value) via keeper.py set. Open Question 1 'Familiarity?' should remain so Jonathan sets it himself. The agent-written 'Don't know them' cannot stand against his own stated 'Worked Together: Once' and Notes."
+      "result": "pass",
+      "evidence": "Familiarity is now empty (blank, no value in the live entry). Worked Together: Once (set_by jonathan). Notes: 'Worked on Intrinsic at Pentagram' (jonathan). Empty Familiarity with Open Question 1 asking Jonathan to fill it is correct and honest. Contradiction from attempt 2 is resolved."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Entry name 'Felix Faire - Music. Code. Design' parsed. Notes 'Worked on Intrinsic at Pentagram' is in provenance as set_by jonathan. Worked Together: Once set by jonathan. Capabilities and AI Notes reflect the Music/Code/Design descriptor."
+      "evidence": "Clip name 'Felix Faire - Music. Code. Design' parsed; Name cleaned. Notes preserved as set_by jonathan. Worked Together: Once per jonathan's note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges Work Status conflict, includes seniority read (Senior, ~10 yrs), Autonomy reasoning, source naming. No em-dashes."
+      "evidence": "Work Status conflict hedged, seniority read present (Senior, approximately 10 yrs), Autonomy 5 reasoning included, sources named, email search outcome documented. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -90,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file covers all fields. source_url nulls are a known systemic gap, not a gate failure per calibration note. set_by values are correct."
+      "evidence": "Provenance covers all touched fields. source_url nulls are a documented systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -100,14 +98,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Q1 Familiarity and Q2 capabilities additions are terse and conditional. Appropriate."
+      "evidence": "Q1 'Familiarity?' is terse and conditional. Q2 capabilities additions question provides genuine ambiguity context. No field with a non-zero value is queried."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry in Enriching, awaiting reviewer gate. Correct."
+      "evidence": "Entry flipped to Needs Review by this reviewer pass. Correct."
     }
   ],
-  "summary": "Substantial improvement from attempt 1. All image, embed, and context-shot failures are resolved. Two items remain open: (1) Email was never searched for or documented as searched -- a carried-over miss from attempt 1. (2) Familiarity field still reads 'Don't know them' (agent-set) despite Jonathan's own 'Worked Together: Once' and Notes confirming they worked together on Intrinsic at Pentagram -- the contradicted value was not cleared. Both are mechanical fixes, not new work.",
-  "to": "scraper"
+  "summary": "All 20 checks pass. The two attempt-2 failures are confirmed resolved: Familiarity is now blank (not the contradicted 'Don't know them'), and the email search outcome is documented in AI Notes. Work is 5 distinct on-capability projects with 3 Vimeo embeds plus thumbnails. Both context shots visually confirmed correct. Entry is complete and honest.",
+  "to": "jonathan"
 }

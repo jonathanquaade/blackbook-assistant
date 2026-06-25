@@ -1153,5 +1153,19 @@
     "ig_url": "https://www.instagram.com/thinnertheair/",
     "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (rate-limited). Handle @thinnertheair is UNCONFIRMED (Open Question 2 in entry). Need logged-in ig.py grab to confirm this handle matches the Berlin designer and capture real profile context shot.",
     "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "89287d13-c765-4661-a4cc-b7a801353157",
+    "name": "Aurelia Durand",
+    "ig_url": "https://www.instagram.com/4ur3lia/",
+    "reason": "IG context screenshot failed on two attempts (both @aureliadurand and @4ur3lia URLs returned Something went wrong error page under headless Playwright rate-limiting). Handle @4ur3lia confirmed via Google search (Aurelia Durand, 121K followers). Need logged-in ig.py grab for Instagram profile context shot. Her IG is also primary showcase for animations and recent illustration work.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "ae5e19b5-a652-46de-9776-78ff84a3088b",
+    "name": "Johnson Eziefula",
+    "ig_url": "https://www.instagram.com/johnsoneziefula/",
+    "reason": "IG context screenshot returned login wall (headless Playwright rate-limited logged out). johnsoneziefula is his confirmed primary platform (also listed as Website). Need logged-in ig.py grab for real profile context shot. No personal website beyond IG; IG is the anchor context for this entry.",
+    "queued_at": "2026-06-25"
   }
 ]

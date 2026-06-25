@@ -1,0 +1,112 @@
+{
+  "page_id": "19190dce-6306-4ec4-aac6-e2b19ea631a2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active images across 8+ distinct named clients: NYT (3 pieces, different commissions), New Yorker, Bloomberg Businessweek, The Atlantic, Columbia Global Reports, Medium, Plansponsor, Atour/BAM.Book. Variety is real."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images include full spreads and interiors (book cover + editorial scenes), not just hero banners. Multiple pieces per outlet show genuine depth."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 active work images are editorial illustrations, matching the tagged Capability: Illustration."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-10.png is captioned 'Instagram profile' but is the Instagram login wall (generic instagram.com landing page, not the @howaboutacheesecake profile grid). The checklist exception requires the broken capture to be (1) marked rejected in manifest, (2) documented in AI Notes, AND (3) queued in state/ig-queue.json. None of the three conditions are met: site-10.png is active in the manifest, AI Notes has no mention of a failed IG screenshot, and the entry is absent from ig-queue.json.",
+      "fix": "Mark site-10.png rejected in manifest.json, add a note to AI Notes that the IG context shot could not be captured logged-out and is queued for ig.py, and append this entry to state/ig-queue.json with reason 'IG context shot: login wall served logged-out; need ig.py grab of @howaboutacheesecake'."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All active images have descriptive captions. site-04.jpg uses a thematic description ('Editorial illustration, aging and care') without a named client publication, but includes a source link; this is acceptable given the piece appears to be a personal or unlisted commission shown on her own site."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Jo Zixuan is an illustrator; no video/audio work expected or present. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is plentiful; no thin-entry concern. Rejected files are properly marked and explained in captions (duplicate, unidentified publications)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: jozixuan.com (canonical). Instagram: instagram.com/howaboutacheesecake (verified via Caper agency page + LinkedIn per AI Notes). LinkedIn: linkedin.com/in/jo-zixuan-367517183. Email not listed in entry but AI Notes notes Caper as rep channel; the scout should have noted absence or found a public email. Minor gap but not a gate failure given illustration agency representation (public email often not listed separately)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged. Open Question 1 appropriately asks Jonathan whether to add Graphic design, Type design, Web design, Creative technology given the breadth of her practice."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US (corrected from China, documented in AI Notes). Size: 1. Work Status: Freelance (own site + Caper both confirm; multi-source rule satisfied, sources named in AI Notes)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent, with hedged reasoning in AI Notes (early-career, limited senior client-direction track record)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip-note relationship claim."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body contained only '© 2021 by Jo Zixuan Zhou.' -- no instructions or relationship facts to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy is explicitly hedged ('hedged; limited senior client-direction track record'). Seniority read and work history present. No em-dashes. Sources named."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-15'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists at state/provenance/19190dce-6306-4ec4-aac6-e2b19ea631a2.json."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two terse questions: one about Capabilities expansion, one confirming Country change. Both conditional (neither field already has a non-zero definitive value -- Country is set but Open Question 2 is asking Jonathan to confirm a change the agent made, which is appropriate)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer has not flipped it to Needs Review (correct: this is a FAIL verdict)."
+    }
+  ],
+  "summary": "One FAIL: the Instagram context shot (site-10.png) is the generic instagram.com login wall, not the @howaboutacheesecake profile. It is active in the manifest (not rejected), absent from ig-queue.json, and unmentioned in AI Notes. The three-part exception path is unsatisfied. All other checks pass cleanly.",
+  "to": "scraper"
+}

@@ -1,0 +1,112 @@
+{
+  "page_id": "1c321fb4-bc60-4446-914b-8dca4ebe1ff6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T21:10:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active images span 5 distinct projects: Rain (3 screens), Patreon State of Create (2 shots), Coins (3 screens), Rebound (1 screen), Swan (2 system shots). No repeated-angle problem."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images go inside products: individual app screens (pay, cash-out, cards, bitcoin home, cash flow, send screens), a vault transactions view, a widgets design system SVG, and two stateofcreate.co shots. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development (web); all 12 active images show digital product interfaces and one interactive web project. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed as real otk.studio homepage (OTK logo, studio description visible). Both IG shots (site-14.png, site-15.png) are marked rejected in manifest; block is documented in AI Notes; entry is in ig-queue.json. Sanctioned logged-in-capture-loop exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a caption naming the project and year, plus a link field. No anonymous shots in the active set."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No evidence of embeddable video on these project pages; the Patreon State of Create site is interactive web but no video embed was present. No skipped embeds identified."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes with throttle reason and queued to ig-queue.json. No other unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct: OTK is Oliver Thomas Klein, an individual operating a solo studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn field is absent and AI Notes makes no mention of searching for or failing to find a LinkedIn profile. AI Notes lists sources as 'own site, Awwwards, press' only. OTK is Awwwards-recognised with named client work; a LinkedIn profile search is an obvious step that is not documented as attempted or absent.",
+      "fix": "Search 'Oliver Thomas Klein linkedin' or 'OTK studio linkedin'; check the Google snippet for a profile. If a profile is found, add the LinkedIn URL. If genuinely absent (no profile exists), note 'LinkedIn: no profile found' in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) are set (set_by jonathan per provenance). Open Question 1 asks whether to add Identity systems, Digital product design, Creative direction. Conditional and appropriate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country US + Germany (both listed with reason in AI Notes and Open Question 2 asks Jonathan to confirm). Size 1 correct for solo. Work Status Studio with reasoning in AI Notes (solo practitioner, not freelancing). Multi-source rule noted: own site + description support Studio."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set (set_by agent) with grounded reasoning: ships full product design and engineering solo, Reggie Watts credit cited. Seniority read present in AI Notes."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note indicates a relationship; zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relationship facts or stated judgments in the clip note. Source correctly set to 'Web clipper, 2021-07-20'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (clients, Awwwards recognition, Reggie Watts credit). Autonomy read is explicitly framed as a judgment. Seniority read is grounded in observable work output. No over-claimed inferences detected. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-07-20'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields recorded with set_by. source_url null on all fields is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions contain zero em-dashes."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion proposal (appropriate: current tags are jonathan-set, asking before adding); (2) Country confirmation. Both conditional and terse."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is still in Enriching; reviewer has not flipped it. No premature Needs Review found."
+    }
+  ],
+  "summary": "One FAIL: LinkedIn field is missing with no documentation that a search was attempted. All other checks pass. Work is strong, on-capability, well-captioned across 5 projects. IG context shot gap is correctly handled via the logged-in queue. Fix is a single search step.",
+  "to": "scout"
+}

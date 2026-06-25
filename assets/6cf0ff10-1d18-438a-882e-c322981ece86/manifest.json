@@ -5,7 +5,9 @@
     "caption": "Website",
     "link": "https://uriba.medium.com/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Medium returns Cloudflare CAPTCHA block to headless browsers"
   },
   {
     "file": "site-02.png",
@@ -21,12 +23,14 @@
     "caption": "Website",
     "link": "https://uriba.medium.com/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Duplicate Medium Cloudflare block"
   },
   {
     "file": "site-04.png",
     "source_url": "https://marketingbabylon.com/author/baruchin/",
-    "caption": "Website",
+    "caption": "Website (Marketing Babylon, his writing hub)",
     "link": "https://marketingbabylon.com/author/baruchin/",
     "captured_at": "2026-06-25",
     "context_shot": true
@@ -36,32 +40,28 @@
     "source_url": "https://marketingbabylon.com/2025/03/10/the-impact-of-genai-on-human-creativity/",
     "caption": "The Impact of GenAI on Human Creativity, 2025",
     "link": "https://marketingbabylon.com/2025/03/10/the-impact-of-genai-on-human-creativity/",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "captured_at": "2026-06-25"
   },
   {
     "file": "site-06.png",
     "source_url": "https://marketingbabylon.com/2025/02/19/the-great-creative-treasure-hunt-how-to-think-about-breakthrough-thinking/",
     "caption": "The Great Creative Treasure Hunt, 2025",
     "link": "https://marketingbabylon.com/2025/02/19/the-great-creative-treasure-hunt-how-to-think-about-breakthrough-thinking/",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "captured_at": "2026-06-25"
   },
   {
     "file": "site-07.png",
     "source_url": "https://marketingbabylon.com/2024/12/13/in-time-and-space-strategy/",
     "caption": "In Time and Space: Strategy, 2024",
     "link": "https://marketingbabylon.com/2024/12/13/in-time-and-space-strategy/",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "captured_at": "2026-06-25"
   },
   {
     "file": "site-08.png",
     "source_url": "https://www.dandad.org/profiles/person/526369/uri-baruchin/",
-    "caption": "D&AD profile",
+    "caption": "D&AD profile: Course Leader, 2 D&AD Awards",
     "link": "https://www.dandad.org/profiles/person/526369/uri-baruchin/",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "captured_at": "2026-06-25"
   },
   {
     "file": "site-09.png",
@@ -69,6 +69,72 @@
     "caption": "Understanding Creative Strategy: How do you like them apples, 2024",
     "link": "https://uriba.medium.com/understanding-creative-strategy-how-do-you-like-them-apples-f6b41c67684f",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Medium returns Cloudflare CAPTCHA block to headless browsers"
+  },
+  {
+    "file": "yt-thumb-01.jpg",
+    "source_url": "https://i.ytimg.com/vi/VbqQKaH3BhY/hqdefault.jpg",
+    "caption": "E204: Uri Baruchin, strategy philosopher (Howard Ibach podcast, 2025) -- thumbnail preview",
+    "link": "https://www.youtube.com/watch?v=VbqQKaH3BhY",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "yt-thumb-02.jpg",
+    "source_url": "https://i.ytimg.com/vi/uASrckpZj88/hqdefault.jpg",
+    "caption": "Beyond Survival: What Happens to Strategy in a Crisis (ISOLATED Talks, 2020) -- thumbnail preview",
+    "link": "https://www.youtube.com/watch?v=uASrckpZj88",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "yt-thumb-03.jpg",
+    "source_url": "https://i.ytimg.com/vi/PKjRHF5CGEI/hqdefault.jpg",
+    "caption": "Uri Baruchin on Startup Branding (Angular Ventures, 2021) -- thumbnail preview",
+    "link": "https://www.youtube.com/watch?v=PKjRHF5CGEI",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "YouTube video unavailable, black placeholder thumbnail only"
+  },
+  {
+    "type": "embed",
+    "url": "https://www.youtube.com/watch?v=VbqQKaH3BhY",
+    "caption": "E204: Uri Baruchin, strategy philosopher (Howard Ibach podcast, 2025)",
+    "link": "https://www.youtube.com/watch?v=VbqQKaH3BhY"
+  },
+  {
+    "type": "embed",
+    "url": "https://www.youtube.com/watch?v=uASrckpZj88",
+    "caption": "Beyond Survival: What Happens to Strategy in a Crisis (ISOLATED Talks, 2020)",
+    "link": "https://www.youtube.com/watch?v=uASrckpZj88"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://uriba.medium.com/this-is-your-brain-on-ai-and-how-to-fix-it-80363d5af7bd",
+    "caption": "This Is Your Brain on AI (and How to Fix It), Medium 2025",
+    "link": "https://uriba.medium.com/this-is-your-brain-on-ai-and-how-to-fix-it-80363d5af7bd"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://uriba.medium.com/the-great-creative-treasure-hunt-how-to-think-about-breakthrough-thinking-24e9d65c78a0",
+    "caption": "The Great Creative Treasure Hunt: How to Think About Breakthrough Thinking, Medium 2025",
+    "link": "https://uriba.medium.com/the-great-creative-treasure-hunt-how-to-think-about-breakthrough-thinking-24e9d65c78a0"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://uriba.medium.com/understanding-creative-strategy-how-do-you-like-them-apples-f6b41c67684f",
+    "caption": "Understanding Creative Strategy: How Do You Like Them Apples, Medium 2024",
+    "link": "https://uriba.medium.com/understanding-creative-strategy-how-do-you-like-them-apples-f6b41c67684f"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://uriba.medium.com/brand-strategy-returns-to-radical-simplicity-75b018abd792",
+    "caption": "Brand Strategy Returns to Radical Simplicity, Medium 2017",
+    "link": "https://uriba.medium.com/brand-strategy-returns-to-radical-simplicity-75b018abd792"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://www.linkedin.com/pulse/understanding-creative-strategy-contents-post-uri-baruchin",
+    "caption": "Understanding Creative Strategy (series index), LinkedIn",
+    "link": "https://www.linkedin.com/pulse/understanding-creative-strategy-contents-post-uri-baruchin"
   }
 ]

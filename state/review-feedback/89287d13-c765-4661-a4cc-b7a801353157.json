@@ -1,0 +1,112 @@
+{
+  "page_id": "89287d13-c765-4661-a4cc-b7a801353157",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct active projects across illustration and animation: Magnum Pleasure Imagined, HP Windows of Hope, Apple She Creates, NPR Black History Month, Warner Music Songe album cover, Apple Music On S'Enjaille, California Endowment People Power, This Book Is Anti-Racist. Plus Songe Mon Demon and Nike Citadium animation thumbnails."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: individual illustration panels, album cover art, book cover -- not just hero shots. 3 Vimeo embeds for animation work with thumbnail previews."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Illustration (jonathan-set); all active images are illustration and animation stills, none off-capability. Capability expansion (animation, murals) correctly asked in Open Questions."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-16) shows duaurelia.myportfolio.com with 'AURELIA DURAND' branding and live project content -- correct. IG context shots (site-17, site-18) both rejected as error pages, documented, and queued to ig-queue.json (entry: page_id 89287d13, handle @4ur3lia, 121K followers confirmed via Google). This is the sanctioned IG-throttle path per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 11 active images have project name captions and source links. All rejected entries have documented reject_reason fields."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "3 Vimeo embeds present (Jorja Smith GO GO GO 2024, Songe Mon Demon 2021, Nike Citadium 2021) with thumbnail preview images. Jorja Smith thumbnail was rejected because it showed only title-card text; embed still present. Pattern correctly followed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Primary site aurelia-studio.com unreachable documented in AI Notes; portfolio captured from myportfolio.com instead. IG throttle documented and queued."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Website field is set to https://www.aurelia-studio.com, which AI Notes explicitly document as unreachable (connection refused). The context shot (site-16) and all image source URLs point to duaurelia.myportfolio.com, which is her active reachable portfolio. The Website field should reflect the best reachable canonical URL for the entry. Pointing Jonathan to a dead URL is a correctness failure. Instagram, LinkedIn both set correctly.",
+      "fix": "Update Website field to https://duaurelia.myportfolio.com (her active portfolio, used for all work capture). Add an Open Question asking Jonathan whether aurelia-studio.com is her intended canonical site (it may return once she relaunches it): '3. Website aurelia-studio.com is unreachable; using duaurelia.myportfolio.com for now. Is the studio site coming back?'"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "jonathan-set as Illustration; Open Question correctly asks about adding animation and murals. Not a reviewer call."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "France, Size 1, Freelance -- consistent with AI Notes sources (site, Vimeo, Behance)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with grounded reasoning in AI Notes (10 yrs practice, runs commissions end to end, blue-chip client list, but solo rather than directing teams)."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states consistent; no relationship facts in clip note or Notes to contradict."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note instructions beyond name -- nothing missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy marked set_by agent; seniority read grounded in client history and years; sources named; no em-dashes detected. Handle follower count hedged as 'Google search result'."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-07-15'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "set_by correct throughout; null source_url is the known systemic gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question about capability expansion. Appropriate."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching; reviewer gate running correctly."
+    }
+  ],
+  "to": "scraper",
+  "summary": "One fix required: Website field points to https://www.aurelia-studio.com which is documented as unreachable (connection refused). All image capture used duaurelia.myportfolio.com. Update Website to https://duaurelia.myportfolio.com and add a terse Open Question asking Jonathan whether the studio site is relaunching. All other checks pass -- strong 8-project spread, correct embeds with thumbnails, IG throttle path correctly followed and queued."
+}

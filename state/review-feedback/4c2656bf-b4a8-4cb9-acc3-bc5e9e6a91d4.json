@@ -1,0 +1,111 @@
+{
+  "page_id": "4c2656bf-b4a8-4cb9-acc3-bc5e9e6a91d4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active images across 3 distinct projects: Half-Earth Socialism (4 game UI shots), Animals as Objects (3 shots), Cosmos Network (2 shots) + 1 website context shot"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Half-Earth: intro splash, story event card, parliament+card overlay, emissions factors panel. Animals as Objects: homepage, articles index, specimen content image. Goes inside each project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Web design + Frontend development (web). All three captured projects are live web products: a browser game (spaceandtim.es case study), a cultural web archive (animalsasobjects.org), and a blockchain product site (cosmos.network). On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-05.png) confirmed as son-la.co homepage showing 'Son La Pham / Graphic Design & Technology, Berlin'. IG shot (site-06.png) is marked rejected with reason documented (rate-limited error page), queued to state/ig-queue.json with correct page_id and handle. Sanctioned exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active images have captions with project name and source link. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Half-Earth Socialism is a browser game; screenshot UI captures are the appropriate format for web design work. No audio/video-only creative; no Vimeo/YouTube embeds appear to have been skipped given the capability tags."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents IG handle as unconfirmed and queued; ig-queue.json entry confirmed present with reason."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (son-la.co), LinkedIn (de.linkedin.com), Email (hello@son-la.co) all present. Instagram unconfirmed with Open Question 2 asking Jonathan to confirm handle; handle queued for logged-in verification. No link left silently absent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) set_by jonathan (pre-existing). Open Question 1 correctly asks Jonathan whether to add Graphic design / Creative technology (site says 'Graphic Design & Technology'). Agent is not overwriting jonathan's Capabilities field, asking instead."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Germany, Size: 1, Work Status: Employed. Multi-source resolution documented in AI Notes: LinkedIn lists Design Strategy Lead at Cosmos Labs (reads as current); own site silent on employment. Sources named."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent, reasoning in AI Notes: mid-level/senior individual designer-developer ~10 yrs, ships projects solo."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them have no contradicting clip note or evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note is a plain web clipper entry (2021-07-20) with no special instructions or relationship facts to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "LinkedIn employment attributed to LinkedIn with caveat 'own site is silent on employment'. IG handle noted as UNCONFIRMED. Seniority and Autonomy read present and grounded in work history."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-20'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields present in provenance with correct set_by values. source_url null throughout -- known systemic tooling gap, not a gate failure per checklist note (2026-06-21). Capabilities correctly shows set_by jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 asks about adding Capabilities (valid: Capabilities are set_by jonathan, evidence on homepage supports additions but agent cannot overwrite). Q2 asks to confirm IG handle (valid: unverifiable headless). Both conditional and terse. No story nudge needed (Worked Together Never, Familiarity Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will be flipped to Needs Review by this gate pass."
+    }
+  ],
+  "notes": "One observation for Jonathan: site-01.jpeg is a close-up photo of a taxidermy silkworm specimen from the Animals as Objects content, not a web interface screenshot. It illustrates the site's visual subject matter rather than the UI. The interface is represented by site-07.png and site-11.png so this is fine as a third depth shot, but Jonathan may prefer to swap it for a different interior page of the site.",
+  "to": "scraper"
+}

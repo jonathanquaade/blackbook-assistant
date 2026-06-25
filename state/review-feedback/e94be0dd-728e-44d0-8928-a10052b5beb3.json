@@ -2,28 +2,28 @@
   "page_id": "e94be0dd-728e-44d0-8928-a10052b5beb3",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 active images across 5 distinct Behance projects: Byebyebad, Via Carota, Earshots, Coffee Supreme, Emma Lewisham. No repeat-project clustering."
+      "evidence": "11 active images across 5 distinct Behance projects: Byebyebad, Via Carota Craft Cocktails, Earshots, Coffee Supreme, Emma Lewisham. No repeat-project clustering."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Each project has 2 images showing different angles or compositions; Earshots has exterior hang-tab + product-inside view, Byebyebad has dieline flat + boxed product."
+      "evidence": "Byebyebad shows boxed product and flat dieline; Earshots shows hang-tab exterior and product inside; Coffee Supreme shows two compositions. Goes inside projects, not only cover shots."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Fabrication / Paper & materials. All 11 images are physical packaging production shots. Directly on-capability."
+      "evidence": "Tagged Fabrication / Paper and materials. All 11 active images are physical packaging production shots. Directly on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website shots (site-16, site-18) correctly rejected and documented (Cloudflare 522 in AI Notes). Behance profile (site-15) substitutes as portfolio context anchor; absence of website shot is documented and the server is genuinely down. Instagram (site-17) confirmed as instagram.com/porter_packaging with correct bio and grid."
+      "evidence": "site-15.png verified visually: Behance profile for Porter Packaging, Auckland NZ, packaging grid visible. Website shots (site-16, site-18) correctly rejected and documented as Cloudflare 522. site-17.png verified visually: instagram.com/porter_packaging with 'Curated packaging solutions' bio and grid. Both substitutions documented in AI Notes."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,12 +33,12 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Not applicable: Porter Packaging is a fabrication vendor, no video capability tagged."
+      "evidence": "Not applicable: Porter Packaging is a fabrication vendor; no video capability tagged."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Website down documented in AI Notes. IG context shot obtained logged-out successfully."
+      "evidence": "Website down documented in AI Notes (Cloudflare 522, two attempts). No other unexplained gaps."
     },
     {
       "id": "B.type-classified",
@@ -47,29 +47,28 @@
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "LinkedIn field is empty. AI Notes says 'Sources: Behance, LinkedIn' meaning LinkedIn was consulted but no URL was recorded and no 'not found' statement appears. Email field is absent with no documented search attempt. CLAUDE.md P1 step 4 requires public contact email and LinkedIn for every entry.",
-      "fix": "Search for Porter Packaging on LinkedIn and record the company page URL in the LinkedIn field (or note 'no LinkedIn found' in AI Notes if genuinely absent). Search Behance profile and any cached porterpackaging.com pages for a public contact email; record it or note not found."
+      "result": "pass",
+      "evidence": "LinkedIn now recorded: https://www.linkedin.com/company/porter-packaging (confirmed Auckland NZ address via Google snippet). Email: AI Notes documents search across Behance, porterpackaging.com, Linktree and ZoomInfo; no public email found. Both prior attempt-1 failures resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Fabrication and Paper & materials tagged. Open Question about Print production is appropriate."
+      "evidence": "Fabrication and Paper and materials tagged. Open Question about Print production is appropriate and terse."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "New Zealand confirmed from Behance Auckland location. Size 2-10 noted as inferred. Work Status: Studio appropriate for an org. Sources named in AI Notes."
+      "evidence": "New Zealand confirmed. Size 2-10 noted as inferred. Work Status: Studio appropriate for an org. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio-type entry; Autonomy is optional per checklist calibration 2026-06-21. Field is set to 4 which is fine."
+      "evidence": "Studio-type entry; Autonomy is optional per checklist calibration 2026-06-21. Field set to 4, acceptable."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states are appropriate; clip note contains only site copy, no relationship information."
+      "evidence": "Zero-states appropriate; clip note contains only studio marketing copy, no relationship information."
     },
     {
       "id": "C.clip-note-acted-on",
@@ -79,7 +78,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Size noted as inferred. No false assertions. No em-dashes. Seniority/positioning read included."
+      "evidence": "Size inference noted. UK disambiguation explicit. No em-dashes. Seniority/positioning read included."
     },
     {
       "id": "D.source-filled",
@@ -89,12 +88,12 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All fields have set_by values. source_url null is the known systemic tooling gap, not a gate failure per checklist calibration 2026-06-21."
+      "evidence": "All fields have set_by values. source_url null is the known systemic tooling gap, not a gate failure per calibration 2026-06-21."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions and image captions all checked. No em-dashes found."
+      "evidence": "AI Notes, Open Questions and image captions checked. No em-dashes found."
     },
     {
       "id": "D.open-questions-terse",
@@ -104,10 +103,9 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching; reviewer holds the flip to Needs Review until gate passes."
+      "evidence": "Flipped to Needs Review on this pass."
     }
   ],
   "to": "scout",
-  "summary": "Strong work capture: 11 images across 5 distinct projects, all on-capability, well-captioned, context shots handled correctly. One scout-level fail: LinkedIn URL missing (used as a source in AI Notes but never recorded as a link) and public email not searched or documented. Both are required by the P1 runbook.",
-  "fix": "1. Find and record Porter Packaging LinkedIn company URL in the LinkedIn field, or note 'no LinkedIn found' in AI Notes. 2. Search Behance profile and any cached porterpackaging.com pages for a public contact email; record it or document the search result. Then re-hand-off to the reviewer."
+  "summary": "All attempt-1 failures resolved: LinkedIn URL recorded and confirmed as the Auckland NZ company, email search documented with no result found. Work capture, context shots, metadata and machinery all pass. Entry is complete."
 }
