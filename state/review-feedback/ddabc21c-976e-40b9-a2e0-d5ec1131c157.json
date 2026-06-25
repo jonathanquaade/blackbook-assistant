@@ -1,0 +1,118 @@
+{
+  "page_id": "ddabc21c-976e-40b9-a2e0-d5ec1131c157",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "No images captured at all. Assets directory contains only clipped.md; no manifest.json, no image files, no embeds.",
+      "fix": "Run the scraper. Zanele Muholi has two major series (Faces and Phases; Somnyama Ngonyama), extensively documented on Stevenson and Yancey Richardson gallery sites, Art21, and Tate. Target 3+ distinct projects / series, going inside them for spreads and individual prints, not just cover images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "No images present.",
+      "fix": "Per A.project-diversity above."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Cannot verify without images. Capabilities are Photography and Art practice (jonathan-set); scraper must capture photography/fine-art work, not press portraits or event photos.",
+      "fix": "Capture from gallery case studies and Art21 feature."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No context shots present. No website screenshot (Website field is empty; AI Notes explain personal site not found -- scraper should screenshot the Vimeo/gallery page used as the canonical source, or the Instagram profile as the primary visual anchor). No Instagram profile screenshot.",
+      "fix": "Capture instagram.com/muholizanele screenshot as IG context shot. For Website context shot: because Website is empty, use the best available canonical URL (stevenson.info/artist/zanele-muholi or yanceyrichardson.com/artists/zanele-muholi) and caption it accordingly, or leave it and document why."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "fail",
+      "evidence": "No images present to evaluate.",
+      "fix": "All images must have project name and source link captions once captured."
+    },
+    {
+      "id": "A.embeds",
+      "result": "fail",
+      "evidence": "No embeds. Art21 features video of Muholi; Tate and other sites may have video content. At minimum the scraper should check for embeddable video.",
+      "fix": "Check Art21 (art21.org/artist/zanele-muholi) and Tate feature pages for embeddable video; embed if present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "Absence is not explained -- the scraper simply has not run. Gallery sites (Stevenson, Yancey Richardson, Art21) are publicly accessible and would yield high-quality work.",
+      "fix": "Run the scraper against gallery case studies."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Instagram set and verified (192K followers, bio matches). LinkedIn: AI Notes confirm not found, acceptable for a fine-art practitioner. Email: gallery-represented, no public email expected. Website: empty with documented reason in AI Notes (no personal site at 0.8 confidence; zanelemuholi.com unrelated) -- acceptable but the Open Question to Jonathan about gallery pages standing in is correct. NOTE: Website field empty is not a fail when absence is documented at confidence floor and an Open Question is raised."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography and Art practice, set_by jonathan. Correct and not the reviewer's call."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "South Africa, Size 1, Freelance. All consistent with a gallery-represented independent artist. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. 20+ year self-directed practice, international exhibition, no employer. Reasoning grounded and in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states consistent. Name corrected from 'Zanelle' to 'Zanele' (migration-set, correctly restructured). No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained only a misspelled name. Name corrected. No other instructions."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Well-sourced career chronology. Autonomy reasoning present. No em-dashes. Sources named (Wikipedia, Art21, Stevenson, Yancey Richardson). Hedging appropriate for inferences."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source filled with clipper note plus confirmation sources. Acceptable."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "set_by values correct throughout. null source_url is the known systemic gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, conditional questions: Website confirmation and Familiarity. Both appropriate."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching. Correctly not flipped to Needs Review by the scout."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Scout pass is solid: metadata complete, AI Notes thorough, Autonomy grounded, zero-states correct, Open Questions terse. The entry FAILS because the scraper has not run at all. No images, no manifest, no context shots, no embeds. Zanele Muholi's work is publicly accessible on Stevenson gallery, Yancey Richardson, Art21, Tate, and other institutional sites. Scraper should target: (1) Faces and Phases series, (2) Somnyama Ngonyama series, (3) any Art21 video embeds, (4) IG context shot (instagram.com/muholizanele), (5) a gallery or Art21 page as Website context shot since personal site is absent."
+}

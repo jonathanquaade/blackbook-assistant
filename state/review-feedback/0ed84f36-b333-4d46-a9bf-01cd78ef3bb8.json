@@ -2,8 +2,8 @@
   "page_id": "0ed84f36-b333-4d46-a9bf-01cd78ef3bb8",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,18 +13,17 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Thumbnail stills from inside each film (not just cover images) plus 5 Vimeo embeds; site-01 is a full-frame animation still from BLANKET."
+      "evidence": "Thumbnail stills from inside each film plus 5 Vimeo embeds; site-01 is a full-frame animation still from BLANKET."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Illustration (jonathan-set); all captured work is 2D animation/illustration. Capability expansion asked in Open Questions -- correctly deferred to Jonathan."
+      "evidence": "Tagged Illustration (jonathan-set); all captured work is 2D animation/illustration. Capability expansion asked in Open Questions."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-04 is captioned 'Website' and shows vimeo.com/ingerbierma. The Website field is NOT SET in the entry. If Vimeo is her canonical portfolio, the Website field must be set to https://vimeo.com/ingerbierma so the context shot caption 'Website' is honest. site-05 is a genuine instagram.com/ingerbierma profile screenshot -- verified correct (3,769 followers, bio matches, illustrator/director, Berlin).",
-      "fix": "Set Website field to https://vimeo.com/ingerbierma (her active portfolio per AI Notes; personal site dead). Context shot caption 'Website' is then accurate and the field passes B.links."
+      "result": "pass",
+      "evidence": "site-04 shows vimeo.com/ingerbierma profile (avatar, 8 videos listed, Hamburg/Guelderland location) -- Website field is now set to https://vimeo.com/ingerbierma so 'Website' caption is honest. site-05 shows instagram.com/ingerbierma (bio: Animator, director and Illustrator; Berlin; 3,769 followers) -- correct and verified."
     },
     {
       "id": "A.no-uncaptioned",
@@ -34,12 +33,12 @@
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "5 Vimeo embeds present with thumbnail preview images and linked captions -- correct pattern for a video/animation creator."
+      "evidence": "5 Vimeo embeds present with thumbnail preview images and linked captions -- correct pattern for a video/animation creator. Images also present; not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Dead personal site documented in AI Notes; Vimeo used as portfolio source; IG logged-out capture noted."
+      "evidence": "Dead personal site documented in AI Notes; Vimeo used as portfolio source."
     },
     {
       "id": "B.type-classified",
@@ -48,9 +47,8 @@
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "Website field is NOT SET. AI Notes confirm the personal site (ingerbierma.myportfolio.com) is dead and Vimeo is her active portfolio. The Website field should point to https://vimeo.com/ingerbierma. Instagram (https://www.instagram.com/ingerbierma/), LinkedIn (https://www.linkedin.com/in/inger-bierma-359134179/) and Email are present (no public email found -- not a fail if genuinely absent, but should be confirmed). The Website gap is the primary issue.",
-      "fix": "Set Website = https://vimeo.com/ingerbierma. Confirm email genuinely absent or find one (check Vimeo profile / itsnicethat contact)."
+      "result": "pass",
+      "evidence": "Website = https://vimeo.com/ingerbierma (now set, her active portfolio per AI Notes). Instagram = https://www.instagram.com/ingerbierma/ (verified). LinkedIn = https://www.linkedin.com/in/inger-bierma-359134179/ (present). Email: no public email found; AI Notes note Vimeo contact; absence not a fail when genuinely absent."
     },
     {
       "id": "B.capabilities",
@@ -60,12 +58,12 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Germany, Size 1, Freelance -- all consistent with AI Notes sources (LinkedIn, Graphic Days 2023 bio)."
+      "evidence": "Germany, Size 1, Freelance -- consistent with AI Notes sources (LinkedIn, Graphic Days 2023 bio)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3, set_by agent, with grounded reasoning in AI Notes (early career, solo, festival traction, no team-direction evidence)."
+      "evidence": "Autonomy 3, set_by agent, grounded reasoning in AI Notes (early career, solo, festival traction, no team-direction evidence)."
     },
     {
       "id": "C.no-contradiction",
@@ -105,9 +103,9 @@
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry remains in Enriching; reviewer gate running correctly."
+      "evidence": "Flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "One fix required, both checks pointing to the same gap: the Website field is not set. Her personal site is dead (documented in AI Notes) and Vimeo (vimeo.com/ingerbierma) is her active portfolio. Set Website = https://vimeo.com/ingerbierma. This also resolves the context shot caption: site-04 is correctly a Vimeo profile screenshot and the 'Website' caption will be honest once the field is set. All other checks pass -- strong capture of 5 projects, correct embeds with thumbnails, good AI Notes."
+  "to": "jonathan",
+  "summary": "Attempt 1 failure resolved: Website field is now set to https://vimeo.com/ingerbierma. Context shot site-04 (vimeo.com/ingerbierma profile) verified correct -- the 'Website' caption is now honest. All 20 checks pass. Strong entry: 5 distinct animation projects, Vimeo embeds with thumbnails, clean metadata."
 }
