@@ -1,112 +1,112 @@
 {
   "page_id": "bda1f2a1-f81c-4f19-aba9-a3924e2df0b0",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-25T12:00:00",
-  "verdict": "fail",
-  "attempt": 2,
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 3,
+  "notes": "Final re-gate after the previously failing armani-white-03.jpg mislabeling was resolved. That file is now correctly marked rejected in the manifest with a documented reason and excluded from the 14-image active set. All remaining checks pass.",
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Active manifest has 6 distinct named projects: TIME Editorial, Estoy Listo, Kenneth Mejia Campaign, Armani White (3 images), Stickerology, Butch Ware. Well over the 3-project minimum."
+      "evidence": "6 distinct named projects across 14 active images: TIME Editorial Illustration, Estoy Listo Album Merch, Kenneth Mejia Campaign Merch 2022, Armani White Show Visuals, Stickerology Book, Butch Ware Governor Campaign."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "armani-white-03.jpg is captioned 'stage graphic with illustrated elements for HARD Summer' and linked to the Armani White project, but the image actually depicts a smiley-face illustration encircled by the text 'JAH AND BRADLEY POCKETS'. This is not an Armani White asset; a different project's image was captured and mislabeled. Two correct Armani White images remain (armani-white-04.png and armani-white-05.png), but armani-white-03.jpg is wrong content presented as Armani White work.",
-      "fix": "Replace armani-white-03.jpg with an actual image from elisawong.com/work/armaniwhite-hardsummer (the project page). The 'Jah and Bradley Pockets' smiley badge belongs to a different project entirely; remove it and capture a real Armani White show visual."
+      "result": "pass",
+      "evidence": "2-3 images per project showing interior detail: vaccination card redesign and annotated diagram for TIME; illustration artwork and merch mockup for Estoy Listo; shirt and sticker spread for Kenneth Mejia; portrait illustration and repeating pattern for Armani White; cover, book spine close-up, and sticker spread for Stickerology."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Illustration. All non-rejected non-Armani-White images confirm illustration work (editorial, merch, stickers, campaign). The two valid Armani White images (04, 05) are illustration-based. On-capability overall."
+      "evidence": "Tagged Illustration. All captured work is illustration-forward: editorial illustration, merch illustration, illustrated patterns, sticker illustration, campaign illustration. butch-ware-01.png is a reference moodboard of vintage posters (honestly captioned 'moodboard') and butch-ware-02.png is a box-logo t-shirt with minimal illustration; these are context images within a case study, not misrepresentations. Open Question asks Jonathan about expanding Capabilities if appropriate.",
+      "note": "butch-ware-01 (vintage poster moodboard) and butch-ware-02 (box logo tee) show weaker illustration content than the rest of the set. Jonathan may want to swap for stronger Butch Ware illustration work. Captions are accurate so this is taste, not a mechanical failure."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-04.png) confirmed: shows elisawong.com homepage with her name, nav, and project grid. PASS. Instagram context shot (site-05.png) is the instagram.com generic login wall, correctly marked rejected in manifest with reject_reason documented, AI Notes document the throttle block, and bda1f2a1-f81c-4f19-aba9-a3924e2df0b0 is confirmed present in state/ig-queue.json. Sanctioned throttle exception applies. PASS."
+      "evidence": "site-04.png visually confirmed as elisawong.com homepage (name, nav, project grid visible). site-05.png (Instagram) is marked rejected with documented reason 'logged-out grab returned instagram.com generic login/marketing wall'; entry present in state/ig-queue.json; AI Notes documents the block. Checklist IG-throttle exception satisfied."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every active manifest entry has a caption and a source link."
+      "evidence": "All 14 active manifest entries have project-named captions and source links."
     },
     {
-      "id": "A.embeds-for-video",
+      "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Illustration is image-native; no video/audio embeds expected or skipped."
+      "evidence": "Entry is an Illustrator; no video/audio embeds required or skipped."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained thin sourcing; IG throttle is documented and queued."
+      "evidence": "IG throttle documented in AI Notes and ig-queue.json. No other unexplained absences."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Correct."
+      "evidence": "Type: Person."
     },
     {
-      "id": "B.links-present",
+      "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (elisawong.com), Instagram (@elisadoesstuff full URL), LinkedIn, Email all present."
+      "evidence": "Website (elisawong.com), Instagram (full URL to @elisadoesstuff, confirmed right person per AI Notes), LinkedIn (linkedin.com/in/elisamariewong), Email (hello@elisawong.com) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Illustration set by jonathan (locked). Open Question asks about broader capabilities. Correct handling."
+      "evidence": "Illustration tagged, set_by jonathan (locked). Open Question raised about adding Identity systems, Graphic design, Web design; agent correctly cannot override a jonathan-set field."
     },
     {
-      "id": "B.country-size-workstatus",
+      "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country US, Size 1, Work Status Studio. AI Notes names confirming sources."
+      "evidence": "Country: US; Size: 1; Work Status: Studio. AI Notes documents multi-source resolution: LinkedIn (Co-Founder at Little Wins Studio) and littlewinsstudio.com (active, March 2026) and personal site all agree."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4 set by agent with grounded reasoning in AI Notes."
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: studio founder, self-directed, owns all creative direction. Seniority read present: Senior/Creative Director level, decade of work history."
     },
     {
-      "id": "C.no-contradicting-judgments",
+      "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note states a relationship; zero-states consistent with absence of evidence."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no evidence of Jonathan knowing her."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Migration import; no clip-note instructions to act on."
+      "evidence": "Migration import entry; no special clip-note instructions present."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges inferred claims, names sources, includes seniority and Autonomy reasoning."
+      "evidence": "Factual assertions (clients, studio co-founder, IG follower count) are grounded. Work Status resolution documented. Seniority and Autonomy read included. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Migration import, 2026-06-12'. Appropriate."
+      "evidence": "Source: 'Migration import, 2026-06-12'."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present; null source_url is a known systemic tooling gap, not a gate failure."
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "AI Notes and Open Questions checked programmatically: zero em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Single terse Capabilities question. Conditional, not nagging."
+      "evidence": "One terse Capabilities question for a jonathan-set field the agent cannot override. Conditional, not nagging a field already answered."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching; correctly not flipped on this fail."
+      "evidence": "Entry in Enriching; flipping to Needs Review on this pass."
     }
   ],
-  "summary": "One fail. armani-white-03.jpg is mislabeled: the image visually shows 'JAH AND BRADLEY POCKETS' smiley badge art, not Armani White show-visual work. A different project's image was captured and attributed to the Armani White project. The Instagram throttle fix (site-05.png rejected + queued + documented) is confirmed correct and passes. Everything else passes.",
-  "to": "scraper"
+  "to": null
 }

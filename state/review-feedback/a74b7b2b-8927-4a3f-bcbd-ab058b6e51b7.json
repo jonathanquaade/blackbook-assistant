@@ -1,0 +1,119 @@
+{
+  "page_id": "a74b7b2b-8927-4a3f-bcbd-ab058b6e51b7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "summary": "Two context-shot failures and a missing Instagram property. The Instagram context shot is the logged-out IG login page, not @theplacebureau profile. The website context shot has an error block covering the hero ('We couldn't verify the security of your connection'). The Instagram Notion property is unset despite the handle being known.",
+  "checks": [
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-14.png captioned 'Instagram profile' is the instagram.com logged-out login wall, not the @theplacebureau profile. The sanctioned IG-throttle exception does not apply: the manifest item is not marked rejected, AI Notes has no documentation of the block, and no entry exists in state/ig-queue.json.",
+      "fix": "Re-capture the IG context shot via ig.py (logged-in) or document the throttle block properly: mark the item rejected in the manifest, add 'IG context shot blocked, queued for ig.py grab' to AI Notes, and append to state/ig-queue.json. The item must not stay as a login-wall screenshot without being rejected and queued."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-13.png captioned 'Website' shows theplacebureau.com but the lower half of the frame is an error block: 'We couldn't verify the security of your connection. Access to this content has been restricted.' The nav is visible but the homepage hero is broken.",
+      "fix": "Re-take the website context shot with scrape.py shot -- the Cloudflare/security check blocked the Playwright render. Try scrape.py shot https://www.theplacebureau.com --out assets/a74b7b2b-8927-4a3f-bcbd-ab058b6e51b7 --caption 'Website' with --render flag or retry; if persistently blocked, document in AI Notes and note the failure."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Instagram Notion property is empty. The handle @theplacebureau is present in the manifest context-shot link and the studio is active on Instagram, but the field was never written to the entry.",
+      "fix": "Set Instagram to https://www.instagram.com/theplacebureau/ via keeper.py set."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 images across 4 distinct named projects (Silvertown Royal Docks, Snaefellsnes Iceland, Canning Dock Liverpool, The Glenturret Scotland). No duplicate-angle issue."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project; mix of place photography and brand identity materials (e.g. Snaefellsnes guide covers in site-05/06 show the deliverable)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Brand strategy / placemaking. Place photography and brand identity outputs are on-discipline for a placemaking strategist. The Snaefellsnes guide covers and Glenturret shots show the strategy translated into visual identity."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 project images carry project names and source links in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 bookmarks added for Place Bureau essays. No embedded video/audio detected on project pages for this discipline; appropriate for a strategist entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Images are present and sourced from theplacebureau.com CDN."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct -- Rosanna Vitiello is an individual who runs a studio."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy set (jonathan-locked). Open Question raised about adding Insights & research. Correct handling."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country UK, Size 1, Work Status Studio. AI Notes documents the Spain-to-UK correction with multi-source rationale."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes (founder-operator, director-level, 15+ yrs)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with the clip note, which contains no relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Rosanna Vitiello | Strategist' -- no instructions or judgment facts. Name cleaned and archived."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes is factual and hedged where appropriate (studio size 'approx 10-person'). Seniority and Autonomy read included. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-29'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance written for all touched fields; set_by values correct (jonathan for Capabilities, agent for all other enriched fields). source_url nulls are the known systemic gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Capabilities. Conditional and appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer is not flipping to Needs Review due to fails above."
+    }
+  ],
+  "to": "scraper"
+}
