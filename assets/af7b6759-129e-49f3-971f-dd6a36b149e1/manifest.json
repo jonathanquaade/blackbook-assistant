@@ -89,13 +89,23 @@
     "caption": "Website",
     "link": "https://handover.studio",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "CDN hero image downloaded directly, not a browser screenshot. Replaced by site-15.png."
   },
   {
     "file": "site-14.png",
     "source_url": "https://www.instagram.com/handoveruk/",
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/handoveruk/",
+    "captured_at": "2026-06-25",
+    "context_shot": true
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://handover.studio",
+    "caption": "Website",
+    "link": "https://handover.studio",
     "captured_at": "2026-06-25",
     "context_shot": true
   }

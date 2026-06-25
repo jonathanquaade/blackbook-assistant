@@ -2,58 +2,43 @@
   "page_id": "8a06cf2d-1c19-4440-b7f3-053016ac7d14",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "All 3 manifest images caption to the same project (Spatial Listening Experience for Bottega Veneta, 2020) and point to the same project URL. Entry shows 1 project, not the required 3+ distinct projects.",
-      "fix": "Capture images from at least 2 additional distinct Random Studio projects (e.g. from their /projects listing on random.studio). Target 3 projects minimum, 3 images each, going inside the project pages."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "No website screenshot and no Instagram profile screenshot present in the asset folder or manifest. Both are required as memory anchors.",
-      "fix": "Run scrape.py shot https://random.studio --out assets/<id> --caption 'Website' and scrape.py shot https://www.instagram.com/random.studio/ --out assets/<id> --caption 'Instagram profile' (or note throttle exception and queue to ig-queue.json per checklist protocol)."
-    },
-    {
-      "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "AI Notes does not explain why only 1 project was captured or why context shots are absent.",
-      "fix": "If a source was blocked or unavailable, document it in AI Notes. Otherwise capture the missing work."
-    },
-    {
-      "id": "B.links",
-      "result": "fail",
-      "evidence": "Instagram and LinkedIn are both missing from the entry. AI Notes contains no statement that these were searched and not found. Random Studio is a well-known Amsterdam studio with a publicly visible social presence; both links are almost certainly findable.",
-      "fix": "Search for Instagram (@randomstudio or @random.studio) and verify the handle matches the studio before attaching. Search LinkedIn ('Random Studio Amsterdam'). Record result (found URL or 'not found after search') in AI Notes per CLAUDE.md."
-    },
-    {
-      "id": "B.name-cleanup",
-      "result": "fail",
-      "evidence": "Name field is 'Random Studio - Studio'. The ' - Studio' suffix is a clipper artifact and should be cleaned to 'Random Studio'.",
-      "fix": "Run keeper.py set <id> with Name set to 'Random Studio'."
+      "result": "pass",
+      "evidence": "4 distinct projects across 12 work images: Bottega Veneta Spatial Listening (site-01/02/03), Moncler Puffy Summer Seoul (moncler-01/02/03), Lexus Moving Sanctuary Milan (lexus-01/02/03), Glossier AI Perfume Launch (glossier-01/02/03). All captions and links confirm distinct project pages."
     },
     {
       "id": "A.depth",
       "result": "pass",
-      "evidence": "Images that are present go inside the installation (interior views, not just a hero cover). Depth is acceptable for what was captured."
+      "evidence": "Interior shots present for each project: Glossier pavilion interior, Lexus pod interior with speakers, Moncler inflatable sea-creature installation interior, Bottega Veneta spatial installation views. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Captured images show a spatial/immersive installation, matching the tagged Capabilities (Creative technology, Spatial & exhibition design, Creative direction)."
+      "evidence": "All 12 work images show spatial/immersive/interactive installations, matching Creative technology + Spatial & exhibition design + Creative direction."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png: confirmed random.studio homepage with 'Random Studio' wordmark and nav. site-05.png: confirmed instagram.com page at @random_studio handle (handle visible in profile header, URL matches Instagram field). Cookie consent overlay present but handle and source are unambiguous. Not a mislabel."
     },
     {
       "id": "A.uncaptioned",
       "result": "pass",
-      "evidence": "All 3 manifest entries have captions and project links."
+      "evidence": "All 14 manifest entries have captions and links. No anonymous images."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "Studio is spatial/experience design, not primarily a video/audio discipline. Image-only capture is acceptable here."
+      "evidence": "Studio is spatial/experience design; image capture is appropriate. Not a video/audio discipline requiring embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states 4 captured projects and confirms both context shots present. No unexplained gaps."
     },
     {
       "id": "B.type",
@@ -61,34 +46,44 @@
       "evidence": "Type = Studio, correct for a small specialized experience-design team."
     },
     {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram (@random_studio, verified via AI Notes cross-reference), LinkedIn, and Email all present. All 4 findable links found."
+    },
+    {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Creative technology, Spatial & exhibition design, Creative direction match the studio's observed work."
+      "evidence": "Creative technology, Spatial & exhibition design, Creative direction match observed work."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Netherlands + France (two offices), Size 11-40 (hedged in AI Notes as inferred), Work Status Studio. All documented appropriately."
+      "evidence": "Netherlands + France (two offices), Size 11-40 inferred from LinkedIn team size (~30), hedged in AI Notes. Work Status Studio."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry. Autonomy 5 is set and reasoning is in AI Notes. Per calibration note, Autonomy is optional for org-type entries; having it set with reasoning is fine."
+      "evidence": "Autonomy 5 set with reasoning in AI Notes. Optional for org entries; present and grounded."
+    },
+    {
+      "id": "B.name-cleanup",
+      "result": "pass",
+      "evidence": "Name is 'Random Studio'. Clipper artifact ' - Studio' has been removed."
     },
     {
       "id": "C.judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with no relationship evidence in the clip note."
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) consistent with no relationship signal in clip note."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Clip note had no instruction text beyond the URL. Source recorded as 'Web clipper, 2021-08-01'."
+      "evidence": "No instruction text in clip note beyond URL. Source recorded as 'Web clipper, 2021-08-01'."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Size inference is flagged as inferred; sources cited. No unhedged unverifiable assertions."
+      "evidence": "Size inference hedged; sources cited; seniority/experience read present; no unhedged unverifiable assertions. No em-dashes."
     },
     {
       "id": "D.source",
@@ -98,7 +93,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "set_by fields are correct. source_url nulls are a known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "set_by fields correct. source_url nulls are a known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -108,9 +103,9 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No outstanding ambiguities that require Open Questions for a Studio entry with no relationship signal."
+      "evidence": "No open questions needed. Studio entry with no relationship signal and no unresolvable ambiguities."
     }
   ],
-  "to": "scraper",
-  "summary": "4 hard fails: (1) only 1 project captured across 3 images -- need 3+ distinct projects; (2) no website or Instagram context screenshots; (3) absence of both not explained in AI Notes; (4) Instagram and LinkedIn missing with no evidence they were searched. Also 1 cleanup item: Name has clipper artifact suffix ' - Studio' that needs trimming."
+  "to": "jonathan",
+  "summary": "All 5 prior fails resolved: 4 distinct projects (12 work images) spanning Bottega Veneta, Moncler, Lexus, Glossier; website and Instagram context shots present and confirmed correct; Instagram and LinkedIn links added; Name cleaned to 'Random Studio'. Full gate pass."
 }

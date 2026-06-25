@@ -1,0 +1,111 @@
+{
+  "page_id": "7d6b2763-8322-4c8a-9dd2-2cb760db1ff7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T22:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active work images across 8 distinct named projects: NBC, Time Warner Cable, Alvin Ailey, Signature Theatre, Peace poster, NY Dance poster, NY Theatre poster, Young Artist Performances + NYPL banners. No project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "NBC: mark + standards manual; Time Warner: mark + entrance sign + fleet livery; Alvin Ailey: poster + brochure spread; Signature Theatre: mark + environmental graphics. Goes inside projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All images are graphic design and identity work. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png: geissbuhler.com confirmed (nav shows 'geissbuhler:design', site nav fully visible). site-05.png: instagram.com confirmed, handle 'steffgeissbuhler', name 'Steff Geissbuhler', 0 posts, 130 followers. Both shots correct platform and correct person. site-06.png correctly rejected (duplicate dark render)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image has a named caption and source link. Rejected images (site-03, site-06) have captions explaining why they were rejected."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic/identity designer; no video or audio work expected. No embed gaps."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents IG @steffgeissbuhler exists with 0 posts; no IG queue needed and no work unexplainably missing."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "LinkedIn now set to https://www.linkedin.com/in/steff-geissbuhler-178b1a10/. Website: https://geissbuhler.com. Instagram: https://www.instagram.com/steffgeissbuhler/. Email: not found but not a documented public email for this person. All reasonably findable links present. The sole failure from attempt 1 is resolved."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Open Question asks Jonathan about adding Identity systems, the right channel for that judgment call."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: USA. Size: 1. Work Status: Freelance. AI Notes documents sources (own site, Wikipedia, AGI) and explains prior wrong values corrected."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes: 'Master-level, fully independent principal: Autonomy 5.' Grounded in 40+ year documented career history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with a 2021 web-clip entry with no relationship note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-26'. No relationship facts or instructions in the clip note. No --from-jonathan writes needed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual claims (clients, awards, career history) verifiable from AGI, Wikipedia, own site. Sources cited. Seniority read present. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-26'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file populated for all touched fields. source_url null is the documented systemic tooling gap, not a v1 gate failure. set_by values are correct."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: 'Add Capability Identity systems?' Terse, conditional (Capabilities currently only has Graphic design). Story nudge not triggered (Worked Together is Never, appropriate)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry was in Enriching; flipping to Needs Review now as gate passes."
+    }
+  ],
+  "to": "jonathan",
+  "summary": "All 20 checks pass. LinkedIn (the sole attempt-1 failure) is now set to https://www.linkedin.com/in/steff-geissbuhler-178b1a10/. 14 images across 8 named projects, context shots verified visually (geissbuhler.com nav confirmed, instagram.com/steffgeissbuhler confirmed with 0 posts), metadata complete, AI Notes hedged with sources."
+}

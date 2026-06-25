@@ -1,35 +1,111 @@
 {
   "page_id": "7310de47-0135-48f4-a087-8aa0986c3f62",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-25T10:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-25T21:30:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "site-01.jpg, site-02.jpg, site-03.jpg are all the same 'Fontana dell'Essaurimento' Venice Biennale poster in three different physical locations (building exterior, street level, train station). These are three angles of one single in-use instance, not three distinct Aeroport projects. This is the exact failure pattern the checklist was written to catch.",
-      "fix": "Replace at least two of the three Aeroport shots with specimens from a different Aeroport use-case (e.g. a second real-world application, a type specimen sheet, or letterform detail). One Aeroport in-use shot is fine; three of the same poster is not."
+      "result": "pass",
+      "evidence": "Three distinct Aeroport use-contexts (Venice Biennale exterior poster via site-01.jpg; Avangard Spisok No.1 catalogue cover + interior spread via site-21.jpg/site-22.jpg; Gorky Park 90th festival identity via aeroport-gorky-01.jpg/aeroport-gorky-02.jpg) plus five other typeface families (Formular x3, Geometria x3, Wermut x3, Activist x2, Brutal Type x2). Well over 3 distinct projects; no repeated-angle duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each typeface gets 2-3 specimen shots including spreads and interior catalogue pages (site-22.jpg is the interior of the Avangard catalogue showing typeset body copy and reproductions; aeroport-gorky-02.jpg is the folded pamphlet interior). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Type design. Every image is a typeface specimen or in-use application of a Brownfox typeface. No off-capability material."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-15.png is captioned 'Website' but shows a typeface catalog/product page (the font listing grid with 'Formular' in large type and 'Aeroport' in the sidebar), not the brownfox.org homepage. The homepage context shot is meant to give Jonathan a quick visual anchor for the brand; a sub-page does not serve that purpose.",
-      "fix": "Recapture the context shot at brownfox.org (the root URL) so it shows the actual homepage, not a typeface detail page."
+      "result": "pass",
+      "evidence": "site-23.png is captured from https://brownfox.org (root URL per manifest), shows the BROWNFOX nav with TYPEFACES/INFO links and the two-column typeface grid: this is the homepage for a foundry whose homepage IS the catalog. Distinct from the rejected site-15.png which showed a single-typeface catalog sub-page. site-16.png shows instagram.com/brownfoxtype with the @brownfoxtype handle, 2800 followers, and bio confirming Bagdasaryan and Kirilenko. Both context shots are correct and labelled accurately."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 20 active images have captions naming the typeface and context (e.g. 'Aeroport in use - Avangard Spisok No.1 exhibition catalogue interior, Brownfox'). Links present on all entries. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Type foundry; no video/audio work. N/A. Images present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents why Behance was used over the brownfox.org CDN (DOM contamination with --render). No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Foundry. Correct per schema (type house)."
     },
     {
       "id": "B.links-complete",
-      "result": "fail",
-      "evidence": "LinkedIn is entirely absent from the entry and AI Notes do not note it as genuinely unfindable. Brownfox's principals (Gayaneh Bagdasaryan, Vyacheslav Kirilenko) are publicly named in the clipped body; a LinkedIn search for each was not attempted or documented.",
-      "fix": "Search LinkedIn for Gayaneh Bagdasaryan and Vyacheslav Kirilenko. If profiles exist, add the most relevant one (likely Bagdasaryan as the founder). If genuinely none found, note 'No LinkedIn found for principals' in AI Notes."
+      "result": "pass",
+      "evidence": "Website: https://brownfox.org. Instagram: https://www.instagram.com/brownfoxtype/ (verified via context shot and Behance). Email: hello@brownfox.org. LinkedIn: AI Notes state 'no profile found for either Bagdasaryan or Kirilenko as type designers; multiple name-matches are unrelated professionals' -- genuinely documented as searched, not skipped. This resolves the attempt-1 fail."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: [Type design]. Set by jonathan (migration). Correct for a type foundry."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Russia (conflict flagged via Open Question). Size: 2-10. Work Status: Studio. Sources documented in AI Notes. Country conflict is not a silent resolution -- the Open Question and AI Notes both surface it for Jonathan."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Foundry-type entry; Autonomy is optional per checklist calibration note (2026-06-21). Autonomy: 5 is set with reasoning in AI Notes ('independent foundry, running since early 2010s, fully autonomous principals'). Above the bar for an org entry."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note implies otherwise. Zero-states are valid."
     },
     {
       "id": "C.clip-note-acted-on",
-      "result": "fail",
-      "evidence": "The clipped.md imprint shows a Berlin, Germany address (Utrechter Str. 28, 13347 Berlin) for the legal entity (Gayane Bagdasaryan). AI Notes say Country was 'corrected' to Russia based on Behance/MyFonts listing Moscow. These are two independent signals (legal registration address vs. operational/profile city) that genuinely conflict. The scraper silently resolved to Russia without raising an Open Question. The confidence floor is not met when primary sources conflict like this.",
-      "fix": "Add an Open Question for Jonathan: 'Country: legal imprint shows Berlin, Germany; Behance/MyFonts list Moscow, Russia. Which should be recorded?' Until Jonathan resolves it, either keep Russia with the conflict documented in AI Notes, or list both Germany and Russia in the Country multi-select."
+      "result": "pass",
+      "evidence": "Clip note (Notes field, set_by jonathan): 'Fonts: Aeroport, Wermut, Activist'. These three typefaces are all represented in the image set. Country conflict from clipped body imprint (Berlin address) is now raised as Open Question 1. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges seniority ('suggests senior, fully autonomous principals'), documents sources (Behance, Fonts In Use, clipped body imprint, MyFonts), and records the LinkedIn search outcome explicitly. No bare assertions beyond verifiable facts (typeface names, email, Instagram handle)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-07'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all active fields have set_by values. null source_url is the known systemic tooling gap (documented in checklist, not a gate failure in v1)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions all reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: Country conflict (Berlin vs Moscow). Terse, specific, conditional on a genuine unresolved conflict. No redundant questions. Story nudge not applicable (org entry, no relationship fields in play)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Needs Review. Reviewer gate confirms this is earned: entry is complete, all attempt-1 failures resolved."
     }
   ],
-  "to": "scraper",
-  "summary": "Four failures: (1) three Aeroport context shots are the same poster from different angles, not distinct projects; (2) website context shot shows a sub-page, not the homepage; (3) LinkedIn not searched or documented as absent; (4) Berlin/Germany vs Moscow/Russia country conflict in primary sources was silently resolved rather than surfaced as an Open Question. The Behance work images (Formular, Geometria, Wermut, Activist, Brutal Type) are solid -- good depth and diversity across five typefaces. Fix the four issues above and re-submit."
+  "to": null,
+  "summary": "All four attempt-1 failures are resolved. (1) Three distinct Aeroport use-contexts now present (Venice Biennale, Avangard catalogue, Gorky Park festival), with two other applications plus five additional typeface families. (2) Homepage context shot is the brownfox.org root URL showing the catalog grid -- confirmed as the homepage, not a sub-page. (3) LinkedIn documented as searched and not found for either principal. (4) Country conflict surfaced as Open Question 1 rather than silently resolved. Entry is complete, honest, and on-capability. Status Needs Review is confirmed."
 }

@@ -1,0 +1,30 @@
+{
+  "page_id": "e4856834-904e-4508-a8ca-07d07f9fdbb8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "6 distinct named projects: Becontree Forever, Becoming Richard Burton, Shezad Dawood, UBIK Productions, Colophon Foundry, Matthew Barney Cosmic Hunt"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Becontree Forever and Becoming Richard Burton each have homepage + interior shot; 4 other projects have one shot each"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All 8 work images are websites Simon Rogers built or co-built, matching Frontend development / Web design; 6 rejected files were content photos embedded in those sites, not web work"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-13 is simonrogers.info (career/about page, correct); site-14 is instagram.com/@simonhrogers logged-out profile, correctly labeled Instagram profile"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 10 uploaded images carry named project captions with source links"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Not applicable; no video/audio primary capability"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No unexplained gaps; IG identity uncertainty handled via Open Question"},
+    {"id": "B.type", "result": "pass", "evidence": "Type: Person"},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "Website, Instagram (with identity caveat flagged), LinkedIn, Email all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Frontend development (web) + Web design, set_by jonathan"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, Size 1, Work Status Unknown; AI Notes explains: site roles end May 2022, no current signal meets confidence floor"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, grounded in ~10yr career history and self-built complex sites; reasoning in AI Notes"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states (Never / Don't know them / Unvetted) do not contradict any clip note or body evidence"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note is Web clipper baseline with no relationship facts or special instructions"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Work Status Unknown hedged with sourcing rationale; namesake disambiguation explicit; seniority read paired with Autonomy estimate; no bare assertions about unverified claims"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: Web clipper, 2021-08-01"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have set_by; source_url null throughout but this is the known systemic tooling gap, not a v1 gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, or manifest captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse question about unverified IG handle; no redundant questions; no story nudge warranted"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Status flipped to Needs Review by reviewer on this pass"}
+  ],
+  "to": null
+}

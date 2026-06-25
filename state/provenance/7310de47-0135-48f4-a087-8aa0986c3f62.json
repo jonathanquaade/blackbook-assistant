@@ -41,9 +41,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:31:44",
+      "verified_at": "2026-06-25T20:55:08",
       "set_by": "agent"
     },
     "Work With?": {
@@ -91,9 +91,9 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Independent type foundry founded by Gayaneh Bagdasaryan and Vyacheslav Kirilenko, based in Moscow, Russia (prior entry said Germany; corrected from Behance/MyFonts which both list Moscow). Specializes in Latin and Cyrillic typefaces (21+ families incl. Aeroport, Wermut, Activist, Formular, Geometria, Brutal Type). Established, well-regarded foundry with a long catalogue; running it since the early 2010s suggests senior, fully autonomous principals. Type design house, Autonomy 5 as an independent foundry. Country corrected via Behance/MyFonts. Instagram found: @brownfoxtype (https://www.instagram.com/brownfoxtype/, verified via Behance profile). Sanity/Next.js site prefetches images globally; scraper --render caused DOM contamination on typeface pages, so Formular/Geometria/Wermut/Activist specimens sourced from Behance galleries instead.",
+      "value": "Independent type foundry founded by Gayaneh Bagdasaryan and Vyacheslav Kirilenko. Specializes in Latin and Cyrillic typefaces (21+ families incl. Aeroport, Wermut, Activist, Formular, Geometria, Brutal Type). Established, well-regarded foundry with a long catalogue; running it since the early 2010s suggests senior, fully autonomous principals. Type design house, Autonomy 5 as an independent foundry. Country conflict: legal imprint (clipped body) shows Berlin, Germany (Utrechter Str. 28, 13347 Berlin); Behance and MyFonts list Moscow, Russia. Two independent primary sources conflict; Open Question raised for Jonathan to resolve. LinkedIn: no profile found for either Bagdasaryan or Kirilenko as type designers; multiple name-matches are unrelated professionals. Instagram found: @brownfoxtype (https://www.instagram.com/brownfoxtype/, verified via Behance profile). Sanity/Next.js site prefetches images globally; scraper --render caused DOM contamination on typeface pages, so Formular/Geometria/Wermut/Activist specimens sourced from Behance galleries instead. Aeroport in-use specimens sourced from Fonts In Use (Gorky Park festival, 2018; Avangard catalogue, 2019).",
       "source_url": null,
-      "verified_at": "2026-06-25T01:13:29",
+      "verified_at": "2026-06-25T20:51:58",
       "set_by": "agent"
     },
     "Autonomy": {
@@ -111,8 +111,6 @@
     "Images": {
       "value": [
         "site-01.jpg",
-        "site-02.jpg",
-        "site-03.jpg",
         "formular-01.jpg",
         "formular-02.jpg",
         "formular-03.jpg",
@@ -126,11 +124,21 @@
         "activist-02.png",
         "brutal-01.jpg",
         "brutal-02.jpg",
-        "site-15.png",
-        "site-16.png"
+        "site-16.png",
+        "site-21.jpg",
+        "site-22.jpg",
+        "aeroport-gorky-01.jpg",
+        "aeroport-gorky-02.jpg",
+        "site-23.png"
       ],
       "source_url": null,
-      "verified_at": "2026-06-25T01:14:31",
+      "verified_at": "2026-06-25T20:52:34",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "{\"1\": \"Country: legal imprint in clipped body shows Berlin, Germany (Utrechter Str. 28, 13347 Berlin); Behance and MyFonts both list Moscow, Russia. Which should be recorded?\"}\n",
+      "source_url": null,
+      "verified_at": "2026-06-25T20:51:35",
       "set_by": "agent"
     }
   }
