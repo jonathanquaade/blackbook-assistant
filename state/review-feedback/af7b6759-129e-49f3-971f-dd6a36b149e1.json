@@ -3,111 +3,110 @@
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "12 work images span 4 distinct named projects: Nike Ultrafly, Tracksmith Eliot Racer, Montane, Brooks England. No duplication across projects."
+      "evidence": "12 work images across 4 distinct named projects: Nike Ultrafly, Tracksmith Eliot Racer, Montane, Brooks England."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project showing different angles and contexts (product studio, graphic design, on-location). Not just hero covers."
+      "evidence": "3 images per project showing different angles and contexts, not only hero covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities are Photography and Film & video production. All 12 work images are photography/production work for branded clients. Brooks England is a documentary (film). Correct."
+      "evidence": "All work images are photography and film/video production work. Capabilities are Photography + Film & video production. Correct."
     },
     {
       "id": "A.context-shots",
       "result": "fail",
-      "evidence": "site-13.png is captioned 'Website' but is NOT a browser screenshot of handover.studio. It is a CDN image (squarespace-cdn URL via the manifest? No -- source_url is handover.studio but the file is a landscape editorial photo with a 'handover' wordmark in the top-left corner). A website context shot must show the browser rendering the site (navigation, layout, URL visible), not a hero image extracted from the site. The Instagram context shot (site-14.png) is correct: it shows instagram.com/handoveruk with the profile, follower count, and grid.",
-      "fix": "Replace site-13.png with a real browser screenshot of handover.studio using `scrape.py shot https://handover.studio --out assets/af7b6759-129e-49f3-971f-dd6a36b149e1 --caption 'Website'`. The current file is a content image, not a context screenshot."
+      "evidence": "site-15.png is captioned 'Website' and claimed to be a 1440x900 Playwright browser screenshot, but the image is a full-bleed editorial photograph (mountainous outdoor scene, person in foreground) with only a small 'handover' wordmark in the top-left corner. It is visually identical to the rejected site-13.png -- same scene, same wordmark, same composition. A real browser screenshot shows the site's navigation, page layout, text sections, and URL in the browser chrome. What was captured is again a CDN content image, not a rendering of handover.studio in a browser. The Instagram context shot (site-14.png) is correct: it shows the real instagram.com/handoveruk profile with the Instagram UI, follower count, bio, and grid.",
+      "fix": "Run `scrape.py shot https://handover.studio` via Playwright and confirm the output shows the actual site layout (navbar, sections, text) before uploading. The current file is a content photograph masquerading as a context screenshot. The scraper must visually verify the output file before re-uploading."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 manifest entries have captions and links. No uncaptioned images."
+      "evidence": "All manifest entries have captions and links."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Handover is tagged Photography and Film & video production. Brooks England is a documentary -- site-10.png shows a video frame/screenshot. No Vimeo/YouTube embeds are included. This is borderline: a documentary project page likely has a video. However the scraper captured still photography from the project, which is within capability. Not a hard fail -- photography stills from a film project are acceptable for this entry. Noting for Jonathan."
+      "evidence": "Photography studio; stills from the Brooks England documentary project are acceptable. Not a hard fail."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents website migration and IG verification. No unexplained gaps."
+      "evidence": "No unexplained gaps. AI Notes documents website migration and IG verification."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a small specialized photography/production team."
+      "evidence": "Type = Studio. Correct."
     },
     {
       "id": "B.links-present",
-      "result": "fail",
-      "evidence": "LinkedIn is missing from the entry. AI Notes states 'Sources: own site /info, LinkedIn company page' which confirms a LinkedIn page was found during research, but the URL was never written to the LinkedIn field in Notion.",
-      "fix": "Find and write the Handover LinkedIn company page URL to the LinkedIn field. The scout already visited it (per AI Notes) -- retrieve the URL and add it via keeper.py set."
+      "result": "pass",
+      "evidence": "LinkedIn is now present: https://www.linkedin.com/company/handover-agency. Website, Instagram, Email also present. All four link fields populated."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Photography + Film & video production. Open Question asks whether Creative direction should be added. That is the right handling: ask rather than over-tag."
+      "evidence": "Photography + Film & video production. Open Question asks about Creative direction. Correct handling."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = UK, Size = 2-10, Work Status = Studio. All set with agent confidence. AI Notes names sources (own site /info, LinkedIn company page)."
+      "evidence": "Country = UK, Size = 2-10, Work Status = Studio. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "This is a Studio entry. Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. Autonomy = 4 is set with reasoning in AI Notes ('concepts and delivers shoots end to end'). Fine."
+      "evidence": "Studio entry; Autonomy = 4 set with reasoning. Per calibration note, optional for org-type entries; set here with justification."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate -- no evidence contradicts them."
+      "evidence": "Zero-states are appropriate; no evidence contradicts them."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2021-07-23'. No special instructions in the clip note to act on."
+      "evidence": "Source is 'Web clipper, 2021-07-23'. No special instructions in the clip note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes states facts (clients, Birmingham location, website redirect) and provides reasoning for Autonomy. No over-asserted inferences. Seniority read is present ('principal-led team', 'concepts and delivers shoots end to end')."
+      "evidence": "AI Notes states verifiable facts (clients, location, redirect) and hedged Autonomy reasoning. Seniority read present."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2021-07-23'. Present and correct format."
+      "evidence": "Source = 'Web clipper, 2021-07-23'."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by values for all touched fields. source_url is null throughout -- this is the known systemic tooling gap (calibration note 2026-06-21), not a gate failure."
+      "evidence": "Provenance present. Null source_url is the known systemic tooling gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Scanned AI Notes and Open Questions. No em-dashes found."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question asking about Creative direction capability. Terse, conditional, appropriate."
+      "evidence": "One terse conditional question about Creative direction. Appropriate."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Reviewer (not the scraper) would flip to Needs Review on pass."
+      "evidence": "Entry remains in Enriching. Reviewer holds the flip."
     }
   ],
-  "summary": "Two fails: (1) Website context shot is a CDN hero image, not a browser screenshot of handover.studio -- same class of error as Zuzanna. (2) LinkedIn URL was visited during research (AI Notes says so) but never written to the entry. Both are quick fixes.",
+  "summary": "LinkedIn fix confirmed (PASS). Website context shot still fails: site-15.png is the same full-bleed editorial photograph as the rejected site-13.png, just sourced from a slightly different path. It is not a browser screenshot. A real `scrape.py shot` output shows page layout, navigation, and text -- not a single hero image filling the frame. This is now attempt 2; per v2 gate rules, a second failure escalates to Jonathan.",
   "to": "scraper"
 }

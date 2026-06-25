@@ -1,30 +1,65 @@
 [
   {
+    "file": "game-intro.jpg",
+    "source_url": "https://spaceandtim.es/assets/uploads/half_earth/intro.jpg",
+    "caption": "Half-Earth Socialism browser game, 2022 - intro screen",
+    "link": "https://spaceandtim.es/projects/half_earth_socialism/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "game-events.jpg",
+    "source_url": "https://spaceandtim.es/assets/uploads/half_earth/events.jpg",
+    "caption": "Half-Earth Socialism browser game, 2022 - story event interface",
+    "link": "https://spaceandtim.es/projects/half_earth_socialism/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "game-parliament_with_card.jpg",
+    "source_url": "https://spaceandtim.es/assets/uploads/half_earth/parliament_with_card.jpg",
+    "caption": "Half-Earth Socialism browser game, 2022 - parliament and card system",
+    "link": "https://spaceandtim.es/projects/half_earth_socialism/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "game-emissions_factors.jpg",
+    "source_url": "https://spaceandtim.es/assets/uploads/half_earth/emissions_factors.jpg",
+    "caption": "Half-Earth Socialism browser game, 2022 - emissions factors UI",
+    "link": "https://spaceandtim.es/projects/half_earth_socialism/",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://animalsasobjects.org",
+    "caption": "Animals as Objects, 2021 - homepage",
+    "link": "https://animalsasobjects.org",
+    "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://animalsasobjects.org/articles",
+    "caption": "Animals as Objects, 2021 - articles index",
+    "link": "https://animalsasobjects.org/articles",
+    "captured_at": "2026-06-25"
+  },
+  {
     "file": "site-01.jpeg",
     "source_url": "https://animalsasobjects.org/thumbnails/l/silkworm-seidenraupe-maulbeerspinner-model-side-view-louis-auzoux.jpeg",
-    "caption": "Animals as Objects, 2021",
+    "caption": "Animals as Objects, 2021 - specimen content image",
     "link": "https://animalsasobjects.org",
     "captured_at": "2026-06-25"
   },
   {
-    "file": "site-02.png",
-    "source_url": "https://animalsasobjects.org/thumbnails/l/fossil-fuel.png",
-    "caption": "Animals as Objects, 2021",
-    "link": "https://animalsasobjects.org",
+    "file": "site-09.png",
+    "source_url": "https://cosmos.network",
+    "caption": "Cosmos Network - Design Strategy Lead (current role)",
+    "link": "https://cosmos.network",
     "captured_at": "2026-06-25"
   },
   {
-    "file": "site-03.jpg",
-    "source_url": "https://animalsasobjects.org/thumbnails/l/cover-lions-tigers-specimens.jpg",
-    "caption": "Animals as Objects, 2021",
-    "link": "https://animalsasobjects.org",
-    "captured_at": "2026-06-25"
-  },
-  {
-    "file": "site-04.jpg",
-    "source_url": "https://www.half.earth/_next/image",
-    "caption": "Half-Earth Socialism browser game, 2022",
-    "link": "https://www.half.earth",
+    "file": "site-12.png",
+    "source_url": "https://cosmos.network/solutions",
+    "caption": "Cosmos Network solutions page",
+    "link": "https://cosmos.network/solutions",
     "captured_at": "2026-06-25"
   },
   {
@@ -32,8 +67,7 @@
     "source_url": "https://www.son-la.co",
     "caption": "Website",
     "link": "https://www.son-la.co",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "captured_at": "2026-06-25"
   },
   {
     "file": "site-06.png",
@@ -41,31 +75,44 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/thinnertheair/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Instagram returned error page (Something went wrong) under rate-limiting. Queued to state/ig-queue.json for logged-in ig.py grab."
   },
   {
-    "file": "site-07.png",
-    "source_url": "https://animalsasobjects.org",
+    "file": "site-02.png",
+    "source_url": "https://animalsasobjects.org/thumbnails/l/fossil-fuel.png",
     "caption": "Animals as Objects, 2021",
     "link": "https://animalsasobjects.org",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Content infographic - shows the site's subject matter rather than the web design interface. Surplus."
+  },
+  {
+    "file": "site-03.jpg",
+    "source_url": "https://animalsasobjects.org/thumbnails/l/cover-lions-tigers-specimens.jpg",
+    "caption": "Animals as Objects, 2021",
+    "link": "https://animalsasobjects.org",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Historical archival document - content rather than web interface. Surplus."
+  },
+  {
+    "file": "site-04.jpg",
+    "source_url": "https://www.half.earth/_next/image",
+    "caption": "Half-Earth Socialism - book cover",
+    "link": "https://www.half.earth",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Book cover image, not the browser game UI. Replaced by actual game screenshots."
   },
   {
     "file": "site-08.png",
     "source_url": "https://www.half.earth",
-    "caption": "Half-Earth Socialism, 2022",
+    "caption": "Half-Earth Socialism site",
     "link": "https://www.half.earth",
     "captured_at": "2026-06-25",
-    "context_shot": true
-  },
-  {
-    "file": "site-09.png",
-    "source_url": "https://cosmos.network",
-    "caption": "Cosmos Network, Design Strategy Lead",
-    "link": "https://cosmos.network",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Book/events marketing site screenshot. Surplus - actual game UI screenshots are more representative."
   },
   {
     "file": "site-10.png",
@@ -73,6 +120,25 @@
     "caption": "Cosmos Network technology page",
     "link": "https://cosmos.network/technology",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Near-duplicate of solutions page - same dark design system. Keeping homepage and solutions only to avoid padding."
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://store.steampowered.com/app/2071530/HalfEarth_Socialism/",
+    "caption": "Half-Earth Socialism Steam page",
+    "link": "https://store.steampowered.com/app/2071530/HalfEarth_Socialism/",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Steam store page with browser chrome - low quality. Replaced by actual game UI screenshots."
+  },
+  {
+    "file": "game-policy_slots.jpg",
+    "source_url": "https://spaceandtim.es/assets/uploads/half_earth/policy_slots.jpg",
+    "caption": "Half-Earth Socialism - policy slots",
+    "link": "https://spaceandtim.es/projects/half_earth_socialism/",
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "Wrong image - shows UI from a different game (Civilization-style), not Half-Earth Socialism. Dropped."
   }
 ]

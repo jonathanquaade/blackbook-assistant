@@ -1132,5 +1132,26 @@
     "ig_url": "https://www.instagram.com/designandbuild.co/",
     "reason": "IG @designandbuild.co confirmed (607 followers, fashion/luxury eCommerce agency). Headless Playwright returned 'Something went wrong' error page. context shot site-13.png rejected. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "1c321fb4-bc60-4446-914b-8dca4ebe1ff6",
+    "name": "OTK - Oliver Thomas Klein",
+    "ig_url": "https://www.instagram.com/otk.studio/",
+    "reason": "Both @otk.studio and @oliverthomasklein returned Profile not available or Something went wrong error pages under headless logged-out Playwright. The site links to @otk.studio. Need logged-in ig.py grab to confirm which handle is active and capture real profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "4c2656bf-b4a8-4cb9-acc3-bc5e9e6a91d4",
+    "name": "Son La Pham",
+    "ig_url": "https://www.instagram.com/thinnertheair/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (rate-limited). Handle @thinnertheair is UNCONFIRMED (Open Question 2 in entry). Need logged-in ig.py grab to confirm this handle matches the Berlin designer and capture real profile context shot.",
+    "queued_at": "2026-06-25"
   }
 ]
