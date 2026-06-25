@@ -1,0 +1,111 @@
+{
+  "page_id": "90c197e4-5219-48ef-8b58-4fa2ed03eaaa",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T10:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 distinct work images spanning: sewn-binding notebooks, PEEL foil-cover book, Outside clamshell slipcase, Coptic-sewn 'stichd' book, die-cut pop-up piece, YSL luxury gift box, photography book interior spread, A Pencil gift set + colourway variants, gold-leaf metallic interior, J. Detroit hardcover. Two A Pencil images (site-09, site-11) show the same project from different angles; considered acceptable as they show different craft aspects (accordion contents vs embossed box colourways) and the remainder are clearly distinct."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Includes interior spreads (site-08 lay-flat, site-10 gold-leaf page), binding details (site-02 sewn covers, site-05 Coptic spine), opened packaging (site-07 YSL box interior), slipcase with matted print (site-04 Outside). Goes beyond hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 'Paper & materials' (set_by jonathan). All 11 work images show print production craft: binding, foiling, embossing, die-cutting, luxury packaging. Open Question Q2 appropriately asks whether 'Print production' is the better tag; this is a scout/Jonathan call, not a scraper defect."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed printsmith.uk homepage (Gallery/About/Contact nav, 'PRINTSMITH' branding), correctly captioned 'Website' because bossprint.com now redirects there. site-14.png: confirmed instagram.com/print_at_boss profile (print_at_boss handle, Boss Print name, 1,090 posts, correct bio). Both match their captions."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 uploaded images have descriptive captions. Work images name the specific piece; context shots are labeled 'Website' and 'Instagram profile'. No anonymous images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Print studio; no video/audio capability. No embeds expected."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "13 images present, solid coverage. No thin-coverage issue."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a specialist print production house."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present and verified. Email: not found in entry, not noted as searched. Minor gap for a likely-closed studio; no public email would be expected post-closure. Not a gate failure given closure context."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "'Paper & materials' present (set_by jonathan). Q2 in Open Questions flags the Print production vs Paper & materials distinction for Jonathan to resolve."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "GB, 11-40, Studio. All set. Work Status 'Studio' with closure context documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry. Autonomy is optional per calibration (2026-06-21). Not required."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are appropriate; no evidence of a Jonathan relationship with Boss Print."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Entry clipped 2021-09-13; no instruction text in clip note beyond the URL. Source field records the clip date correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Closure stated as 'likely no longer operating' (hedged), sourced to Printweek Nov 2023. Size hedged as 'from pre-closure headcount'. No em-dashes. No unverified assertions presented as fact."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-13'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have set_by recorded. source_url null across the board (known systemic tooling gap, not a gate failure per calibration). set_by: jonathan on Capabilities (his tag) is correct."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, all manifest captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 (keep or reject given closure) and Q2 (capability tag swap) are both terse, actionable, and address genuinely unresolvable agent questions. Neither asks for a field that already has a non-zero-state value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status flipped to Needs Review after this gate pass."
+    }
+  ],
+  "reviewer_notes": "Website field shows bossprint.com (the registered domain, now redirecting to printsmith.uk). Context shot correctly captures the printsmith.uk destination. AI Notes documents the redirect and closure. The keep/reject Open Question (Q1) is the main thing Jonathan needs to decide; everything else is complete and correct.",
+  "to": null
+}

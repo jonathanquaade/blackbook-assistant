@@ -1,0 +1,111 @@
+{
+  "page_id": "e1e91ebb-aa73-4caa-acc5-baed4579477d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "19 images across 7 distinct named typefaces: Komplekt, England Rugby custom, Team GB Sans, Imperija Roman, Livo Display, Waba, Cenotaph Titling, Tusker Grotesk. No project repeated more than 3 times."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Imperija (title card + glyph set + ligature table), Waba (title card + light weight specimen + bold weight specimen), Tusker (hero + weight-width matrix + weight class specimen). Genuine interior shots, not cover-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Type design. All 17 work images are typeface specimens, glyph sets, or weight tables. Custom commissions (England Rugby, Team GB) are on-capability. No off-discipline work."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04: confirmed lewismcguffie.com homepage (browser bar reads 'Lewis's Website', Komplekt/England Rugby visible). site-05: confirmed instagram.com/eastofrome (Instagram logo, handle 'eastofrome', bio 'East of Rome | Typeworks', 7,633 followers, type work in grid). Both correct and labeled correctly."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 19 manifest entries have captions naming the typeface and a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Type design is still-work; no video/audio embeds expected or skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site is live with rich content; no absence to explain."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual type designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass-with-note",
+      "evidence": "Website (lewismcguffie.com) and Instagram (instagram.com/eastofrome, now confirmed correct) present. LinkedIn and Email absent and were not documented in AI Notes by the scraper. Reviewer updated AI Notes to log 'LinkedIn not documented by scraper; may exist.' This is a minor gap rather than a gate failure: Work Status is fully resolved without LinkedIn, and the entry is otherwise complete. Jonathan may want to ask about LinkedIn in a future pass."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Type design per TAXONOMY.md. Matches all captured work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country EE (Estonia), Size 1, Work Status Freelance. Evidenced by site (self-described independent foundry East of Rome) and IG bio ('Fringe Typographer'). Objective multi-source rule met: site + IG agree on independent freelance."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 (agent), with reasoning: authors his own typeface families, runs his own micro-foundry East of Rome, awarded Granshan Grand Prize year 1 of practice. Well grounded."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) not contradicted by clip note (was a page title with no relationship facts) or clipped body (site copy only)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip Name 'Lewis McGuffie's Typeface Design Portfolio Website' was a page title, no instructions. Name cleaned to 'Lewis McGuffie'. No passcodes, relationship facts, or tagging direction in note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual claims (Reading MATD 2018/19, Granshan Grand Prize 2019, sells via Future Fonts) are verifiable and unhedged correctly. Seniority read and Autonomy estimate are grounded in real work history. Stale IG handle caveat ('Verify the East of Rome IG handle before relying') was present in the scraper's AI Notes but has been cleared by the reviewer now that the handle is confirmed. No em-dashes found."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-14'. Present and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by (agent or jonathan for Capabilities). source_url null throughout -- known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions and Source scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty. No unresolvable items require asking Jonathan at this stage. LinkedIn gap noted in AI Notes for future awareness."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "reviewer_notes": "One action taken by reviewer: removed stale AI Notes caveat 'Verify the East of Rome IG handle before relying' since the scraper's context shot (site-05) confirms instagram.com/eastofrome shows bio 'East of Rome | Typeworks'. Also added 'LinkedIn not documented by scraper; may exist' to AI Notes so the gap is on the record. The entry is substantively complete and ready for Jonathan.",
+  "to": null
+}

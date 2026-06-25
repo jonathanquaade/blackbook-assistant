@@ -1,0 +1,110 @@
+{
+  "page_id": "6daaf909-e7fc-4eb8-9490-5c75d8b20c80",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: On Running Movement Lab, HOKA UTMB Web AR, Nike Air Max Day anamorphic, Nespresso 360 immersive room, Google Pixel Fold anamorphic, McLaren Artura launch."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "On Running has 3 angles (installation, LED ticker, table UI); HOKA has 3 angles (base camp exterior, 3D AR gate interior, mountain chalet interior); Nike has 2 complementary shots; McLaren has 2 colorway shots. Goes inside projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 6 projects are interactive/AR/WebGL/immersive/anamorphic OOH work, matching the Creative technology capability. No off-capability shots."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as studiodialect.com homepage (Dialect branding, EXPERT DIGITAL PRODUCTION hero, verified visually). site-02.png rejected with documented IG login-wall reason, queued to state/ig-queue.json. Sanctioned exception path followed correctly."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries carry project-name captions with source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Scraper confirmed no YouTube/Vimeo on project pages; all project content is image-based on studiodialect.com."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest (rejected: true, reject_reason set) and queued to ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correctly distinguished from Agency (small specialised hands-on team)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Email hello@studiodialect.com now set (sourced from studiodialect.com/contact mailto link). Provenance carries source_url: https://studiodialect.com/contact, set_by: agent, verified_at: 2026-06-25T00:57:16. Website, Instagram, LinkedIn all present. Fix confirmed."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative technology, set_by: jonathan (provenance correct)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "GB, 11-40, Studio. Work Status 'Studio' correct for org-type entry. Sources cited as 'their site + LinkedIn' in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry. Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. AI Notes include leadership read (co-founders Jonathan Landon and Andy, Simon Hathaway as non-exec chairman)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No evidence of prior relationship in clip note. Correct."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Name field is clean ('Studio Dialect'). No relationship facts or instructions found in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Sources cited in parentheses. Awwwards SOTD grounded. No em-dashes. Co-founder 'Andy' listed without surname; vague but not a gate failure."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-14'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All agent-set fields have provenance entries. Email is the only field with a real source_url (https://studiodialect.com/contact); all others have the known systemic null gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions and source fields reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. No judgment fields needing clarification; story nudge not triggered (Worked Together: Never). Correct."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

@@ -1097,5 +1097,40 @@
     "ig_url": "https://www.instagram.com/polehenky/",
     "reason": "IG-primary creative (both Website and Instagram point to his IG). Headless Playwright returned Instagram login wall (site-01.png rejected). Need logged-in ig.py grab for real profile context shot. Also: his IG likely holds most-recent 3D motion work posts beyond Behance/Vimeo which dates to 2021.",
     "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "23cbb358-b219-4b81-ada0-65640913a96c",
+    "name": "Jonathan Landon",
+    "ig_url": "https://www.instagram.com/landocreates/",
+    "reason": "IG @landocreates returned Account not available in United Kingdom (legal geo-restriction, not rate-limit). Context shot site-04.png rejected. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "86624f20-e4aa-4fba-b6af-76115f8ca3eb",
+    "name": "Neubau",
+    "ig_url": "https://www.instagram.com/neubau_berlin/",
+    "reason": "IG context screenshot returned Profile is not available error page (headless Playwright blocked logged-out). @neubau_berlin is the stated handle in the entry. Need logged-in ig.py grab to confirm handle and capture real profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "e97ad499-03b7-40b5-88af-326f32124cfb",
+    "name": "Design & Build Co.",
+    "ig_url": "https://www.instagram.com/designandbuild.co/",
+    "reason": "IG @designandbuild.co confirmed (607 followers, fashion/luxury eCommerce agency). Headless Playwright returned 'Something went wrong' error page. context shot site-13.png rejected. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-25"
   }
 ]

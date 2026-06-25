@@ -1,0 +1,111 @@
+{
+  "page_id": "51ff05f3-4507-4141-8cf0-aa42c2a54e13",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:07:56",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Zalagasper Riso, Cappuccetto Rosso, Invasive Species in Italy, Naive Weekly, Erlkonig. No repeated-project issue."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3 images each for Zalagasper and Cappuccetto Rosso showing multiple illustrations per project; book spreads and interiors for Invasive Species."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities = Illustration. All 13 work images are illustration or riso prints: digital illustration (Cappuccetto Rosso), risograph illustration (Zalagasper, Naive Weekly), editorial illustration (Invasive Species), album cover illustration (Erlkonig). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14 shows lukasantl.com homepage (LUKA SANTL header, 15 projects listed). site-15 shows instagram.com/@lukasantl profile (handle confirmed in screenshot, 489 followers). Both correct."
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has caption + link. Rejected site-12 has reject_reason. No anonymous images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video/audio work on this portfolio (illustration/print only). N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site had accessible, usable work throughout. No absence to explain."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (canonical root https://www.lukasantl.com, corrected from /signalsriso sub-path), Instagram (https://www.instagram.com/lukasantl/, verified in context shot), LinkedIn (https://si.linkedin.com/in/luka-santl-554764201, via Google snippet), Email (luka.santl@gmail.com, from about page). All four findable links present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Illustration set by Jonathan and confirmed by work. Open Question filed to ask whether Graphic design should be added (branding + editorial design are stated on his about page). Correct approach given set_by: jonathan lock."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Slovenia (confirmed, Ljubljana). Size = 1 (person). Work Status = Employed -- grounded in primary source (self-maintained about page states working for Open Purpose); sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 2 (agent-set). Reasoning in AI Notes: individual contributor at an agency, early-to-mid career, craft-level execution, no evidence of leading teams. Hedged and grounded."
+    },
+    {
+      "id": "C.judgment-honest",
+      "result": "pass",
+      "evidence": "No clip note with relationship facts. Zero-states (Never/Unvetted/Don't know them) are correct. No contradictions."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No clip note text in the raw Name -- standard migration entry. Nothing to act on beyond what was done."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges career stage as approximate (\"appears to be early-to-mid career\", \"roughly 3-5 yrs\"). Work Status sourcing explicitly named. Autonomy reasoning included. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = \"Web clipper, migrated 2026-06-12\". Appropriate for a migration entry with no clip note."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file updated by keeper for all touched fields. source_url nulls are a known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions use semicolons/commas throughout. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question: Capabilities -- add Graphic design? Conditional (Capabilities already has Illustration from Jonathan, so the question proposes an addition, not a restatement). Story nudge not applicable (Worked Together = Never, no relevant relationship signals)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, being flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. 14 images (13 work + 2 context), 5 distinct projects, all on-capability illustration work. Scout metadata complete. One open question for Jonathan on whether to add Graphic design capability."
+}

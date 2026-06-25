@@ -2,8 +2,8 @@
   "page_id": "4e648b47-c0ba-44ae-9aab-85c0f1dc4514",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -28,18 +28,17 @@
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 13 active images have captions and source links."
+      "evidence": "All 14 active images have captions and source links."
     },
     {
       "id": "A.embeds-for-video",
-      "result": "fail",
-      "evidence": "Two issues: (1) The Actress at Frameworks Festival project page contains a Vimeo video. The scraper captured it as a still preview (site-02, captioned 'Vimeo embed preview') but did NOT add it as a manifest embed entry. A Vimeo on a project page must be embedded, not just screenshotted. (2) The first Sufjan Stevens YouTube embed (youtube.com/watch?v=o2murFL_Ukw) has no active thumbnail image. Its intended thumbnail (site-19) was correctly rejected for being the Sufjan Stevens album cover art (not her generative visuals); no replacement thumbnail showing actual generative visuals was captured.",
-      "fix": "1. Add a manifest embed entry for the Actress Frameworks Festival Vimeo (the URL is visible in site-02: it is a Vimeo from Colectivo Colmena). 2. Capture a thumbnail frame of actual generative visuals from the first Sufjan Stevens YouTube video (youtube.com/watch?v=o2murFL_Ukw) to serve as its preview image. A frame from the video itself (not the album art poster) would work; the second embed's thumbnail (site-20) shows the correct type of image."
+      "result": "pass",
+      "evidence": "Attempt 1 FAIL fixed: (1) Actress Vimeo (vimeo.com/489664691) is domain-locked (oEmbed 404, player 405 without Referer) so embed is technically impossible; added as bookmark with domain-lock noted in manifest, site-02.png remains as visual preview. Sanctioned fallback. (2) Sufjan embed 1 (o2murFL_Ukw) now has site-21.jpg as thumbnail: YouTube storyboard frame /2.jpg, confirmed as abstract orange/pink generative visuals, not album art. Both Sufjan YouTube embeds now have thumbnail preview images."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in AI Notes and queued. Other source gaps not applicable."
+      "evidence": "IG throttle documented in AI Notes and queued. Vimeo domain-lock documented in manifest note and AI Notes."
     },
     {
       "id": "B.type-classified",
@@ -104,7 +103,7 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching awaiting this gate. Not yet flipped."
+      "evidence": "Flipped to Needs Review after this pass-2 gate."
     }
   ],
   "to": "scraper"

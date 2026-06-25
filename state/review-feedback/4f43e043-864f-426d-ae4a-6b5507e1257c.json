@@ -1,0 +1,111 @@
+{
+  "page_id": "4f43e043-864f-426d-ae4a-6b5507e1257c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects across 9 active images: Windows 11 Themes, Burberry HER (2 fragrance variants), N26 Metal, Fenty Beauty Invisimatte, Beoplay H8i, Valentino Garavani SS21. No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Windows 11 has arctic + desert dune render (two moods); Burberry has Blossom + EDP variant (two different fragrance stills); N26 has Slate rock reveal + Quartz Rose crystal (two distinct shots from same project). Embeds go inside the motion films, not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion. All 9 images and 4 Vimeo embeds are 3D renders or motion films (Windows 11 landscapes, Burberry floral 3D stills, N26 product 3D, Fenty exploded-compact 3D, Beoplay headphones 3D, Valentino bag 3D). Zero off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Sanctioned exception applies: site-01.png is correctly marked rejected in manifest ('headless Playwright returned Instagram login wall'), documented in AI Notes ('IG context shot blocked (login wall headless); logged-in IG capture queued'), and entry present in state/ig-queue.json. Website field IS his Instagram (no separate personal site exists), so the queued IG shot covers both context-shot requirements. Exception path followed correctly per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images carry a caption naming project, descriptor, and year. All 4 embeds carry a caption and a link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present (Beoplay H8i, Fenty Invisimatte, Valentino SS21 Nature, Valentino SS21 Cement), each with a corresponding thumbnail image. Entry also has 7 non-thumbnail images, so not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes and queued. No other source gaps left unexplained."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website = https://www.instagram.com/polehenky/ (he is IG-primary, no personal site found). Instagram = same URL. LinkedIn: AI Notes states 'no public LinkedIn found'. Email: AI Notes states 'No verified email'. Both absences documented; given IG-primary creatives with no LinkedIn presence are common in the 3D motion space, this meets the standard."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: ['3D & motion'], set_by jonathan per provenance. Matches all captured work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UA, Size: 1, Work Status: Freelance. Sources named in AI Notes: 'Freelance per Behance positioning'. Objective resolution noted (Behance self-positioning is a primary source)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: 'inferred from solo-authored brand work and named co-credits on Six N. Five campaigns'. Seniority read present: 'Mid-to-senior'."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) are consistent with clip note (no relationship signal in source, which is a Web clipper link)."
+    },
+    {
+      "id": "C.clip-note-fully-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was IG link only. Source field preserves this: 'Web clipper, 2021-09-14. Clipped link was his Instagram (@polehenky).' No instructions or relationship facts were in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences: 'inferred from solo-authored brand work' for Autonomy; 'Freelance per Behance positioning' for Work Status (not asserted as verified fact). Seniority and experience trajectory present. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-14. Clipped link was his Instagram (@polehenky).' Includes created date and origin."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with set_by and verified_at. source_url is null throughout, which is the known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field all checked: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions present. None required: no unresolvables beyond what AI Notes already documents (LinkedIn absent, email absent, IG queued). The story nudge does not apply (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted, Notes is empty but these are all zero-states so no nudge triggered)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "notes": "Minor: Beoplay caption reads 'Bang and Olufsen' (correct brand, missing ampersand). Not a factual error, not a gate failure. IG queue entry confirmed in state/ig-queue.json with correct page_id, ig_url, and reason. Work covers 6 projects across 5 distinct clients (Microsoft/Windows, Burberry, N26, Fenty, Valentino) plus Beoplay as a personal concept, demonstrating commercial range.",
+  "to": null
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "86624f20-e4aa-4fba-b6af-76115f8ca3eb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Nomen Nescio (graphic identity), NB Television Pro (type specimen), Neubau Archives Showroom Berlin (environmental), NB International Pro (type specimen). No caption repeats indicating same-project duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside the work: care-label guidelines sheet, logo/brand application, showroom interior views, type specimen spreads. Not hero-only shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Graphic design: Nomen Nescio identity + Archives Showroom environmental. Type design: NB Television Pro + NB International Pro specimens. Both tagged capabilities covered."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed as neubauberlin.com homepage (shows Neubau nav, grid of work). IG shot (site-14.png) is the Instagram 'Profile isn't available' error page, marked rejected:true with documented reject_reason, and queued to state/ig-queue.json. Sanctioned exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 uploaded images have captions naming the project and source links back to neubauberlin.com project pages."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Scraper reported no video embeds present on the project pages captured. No embeddable video was skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in manifest reject_reason and ig-queue.json entry. IG handle unverified note in AI Notes. No other unexplained gaps in work capture."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per CLAUDE.md definition (small specialized design practice, also runs in-house type library)."
+    },
+    {
+      "id": "B.all-links",
+      "result": "fail",
+      "evidence": "LinkedIn and Email fields are absent with no documentation in AI Notes or provenance that a search was attempted and came up empty. Neubau Berlin is a well-known studio active since 2001 with a public web presence; a LinkedIn company page and a public contact email are very likely findable (neubauberlin.com has a contact section). AI Notes says only 'Verify the IG handle before relying' with no mention of LinkedIn or email lookups.",
+      "fix": "Search for Neubau Berlin LinkedIn company page (try 'Neubau Berlin linkedin', 'Stefan Gandl linkedin'). Check neubauberlin.com contact page for a public email. If genuinely not findable, note that explicitly in AI Notes (e.g. 'No public email found on site or web search; LinkedIn company page absent or private'). Add both fields if found, or document the gap."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design + Type design, set_by jonathan (migrated). Confirmed appropriate by the work captured."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country DE, Size 2-10 (inferred, hedged in AI Notes), Work Status Studio. Reasonable for a founder-led Berlin practice."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry. Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. Not required here."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No clip note or evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md shows only a PHP error string (no instructions from Jonathan in the clip). Source correctly set to 'Web clipper, 2021-09-08'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size 2-10 marked as inferred; IG handle flagged for verification. No unhedged inferences. No seniority note needed for a studio entry."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-08'. Present and correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have correct set_by values. source_url nulls are the known systemic tooling gap, not a gate failure (per checklist calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes checked programmatically: no em-dash character (U+2014) present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field; appropriate since no unresolved judgment fields require Jonathan's input at this stage."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching as expected while under review."
+    }
+  ],
+  "to": "scout"
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "bccbd5c4-ba81-4b38-bbbc-5641143b292c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "notes": "Special-case: Justice Defenders is a legal-aid NGO, not a creative. Empty Capabilities and Type are intentional states awaiting Jonathan's keep/reject call, surfaced via Open Question. Reviewed with that context.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No capability-matched work exists for an NGO; intentional per spawn context and Open Question."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Same rationale as A.project-diversity; N/A for a non-creative entity."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "No Capabilities tagged (intentional); capture is not applicable. Open Question surfaces this to Jonathan."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as justice-defenders.org homepage (correct). site-02.png is the IG login wall, marked rejected=true in manifest with documented reason. AI Notes documents the IG block. Sanctioned exception path (not-queued because NGO mis-clip not worth a logged-in run -- documented decision, not a silent omission)."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "site-01.png captioned 'Website'. Only non-rejected image."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "N/A: no creative work to embed for a legal-aid NGO."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly documents empty capability state and IG login wall outcome."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type left unset intentionally (documented in AI Notes) alongside Capabilities, pending Jonathan's keep/reject call. No taxonomy option cleanly fits an NGO; classifying it speculatively before he decides would be noise. Open Question covers this."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present and plausible. No public email found; minor for a mis-clip pending possible rejection."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Intentionally empty per spawn context; Open Question surfaces the decision to Jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country GB/KE/UG matches stated operations. Size 2-10 is migration value; AI Notes flags it as likely inaccurate. Work Status Unknown is correct. Sources documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (or pending classification). Checklist calibration 2026-06-21: Autonomy is optional for org-type entries. N/A."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; no evidence in entry or clip note contradicts them."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Raw name 'About Us | Justice Defenders' cleaned to 'Justice Defenders'. No relationship facts or instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges appropriately ('looks like a mis-clip OR a reference saved for non-roster reasons'; Size flagged as likely inaccurate). Factual assertions (founding year, location, scale) are verifiable from their website. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-09-23' present."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with correct set_by values. source_url null throughout -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all captions scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single terse question: 'Justice Defenders is a legal-aid NGO, not a creative. Looks like a mis-clip. Reject, or keep for a reason?' Surfaces the core decision without asking for fields that can be filled after his call."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry was Enriching; flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null
+}
