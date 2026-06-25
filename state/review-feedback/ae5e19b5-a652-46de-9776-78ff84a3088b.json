@@ -1,0 +1,111 @@
+{
+  "page_id": "ae5e19b5-a652-46de-9776-78ff84a3088b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 active images across 4 distinct named series: Entirety Interrupted 2020 (x3), Bubblegum Club 2021 (x3), From Time to a Time solo show 2022 at Maruani Mercier Brussels (x3 hires), Saatchi Gallery 2023 series (x2 hires) plus one additional Maruani work."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Individual titled works with years captured (e.g. Sombre Reverie 2023, Fate of a Helpless Man 2022, Banke and the Portal 2021), not hero-only shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Art practice and Illustration (set_by jonathan). All 13 active images are figurative paintings and mixed-media artworks directly matching the tagged capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png verified as maruanimercier.com artist page showing JOHNSON EZIEFULA name and nav (correct). IG context shot (site-13.png) is rejected + documented with rejection_reason in manifest + queued to state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 active images have named captions with project title, year, and source links. Zero anonymous shots."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Fine artist; work is visual (paintings). No video embeds expected. No video flagged on gallery pages. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest rejection_reason, in AI Notes ('IG context shot blocked (headless rate-limit); queued to ig-queue.json'), and confirmed in ig-queue.json."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent. Correct for an individual fine artist."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website set to Instagram URL (documented: no personal website exists beyond Instagram and gallery pages). Instagram set. LinkedIn: no LinkedIn documented in AI Notes as expected for fine artist, searches returned no results. Email not present; AI Notes do not explicitly mention email search but gallery-represented fine artists do not typically publish personal contact emails; their gallery handles contact (maruanimercier.com has contact). Minor gap but not a clear search failure for this entry type."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Art practice and Illustration set, provenance set_by: jonathan (his own tags, reviewer does not override)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Nigeria. Size: 1. Work Status: Freelance sourced from Artsy and gallery pages per AI Notes (two sources cited, objective rule met)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: 'inferred from gallery representation and solo practice'. Hedged. Seniority read present: 'Established independent studio artist'. CALIBRATION NOTE: This is a Person entry, Autonomy is required for Person entries."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match available evidence. No clip note signals a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is Web clipper, 2021-07-15. No special instructions visible in the clip note. Entry has been fully enriched."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge Autonomy as inferred. Factual assertions (galleries, collections, exhibitions) are verifiable. Seniority read and Autonomy estimate both present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-15' filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with correct set_by values. source_url is null throughout -- known systemic tooling gap, not a gate fail per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes scanned: no em-dashes present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No judgment fields need asking; all at correct zero-states with no relationship evidence. Story nudge not triggered (Worked Together: Never, correct)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry currently Enriching, will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "reviewer_notes": "Context shot site-14.png renders with a black hero image area (gallery site JS did not load the painting in the screenshot). The page is correctly identified as the Maruani Mercier artist page and shows the name clearly; this is a rendering limitation, not a mislabel. Surfaced for Jonathan as a taste note only. Email field absent and not mentioned in AI Notes; for a gallery-represented fine artist the gallery contact page covers this, but the reviewer notes the omission for calibration purposes.",
+  "to": "scraper"
+}

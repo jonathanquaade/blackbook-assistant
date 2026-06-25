@@ -1,0 +1,31 @@
+{
+  "page_id": "6cf0ff10-1d18-438a-882e-c322981ece86",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5+ distinct pieces: 3 Marketing Babylon articles, D&AD profile, 2 YouTube talk thumbnails"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Article screenshots open inside each article; talk thumbnails show actual video content; appropriate for writer/strategist"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Brand strategy; all captured work is strategy articles and strategy talks; D&AD strategy masterclass profile"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-02 confirmed as real instagram.com/uriba2012 (bio shows Uri Baruchin); site-04 is Marketing Babylon fallback (Medium CAPTCHA-blocked, site-01 and site-03 rejected in manifest, documented in AI Notes; D&AD profile also lists marketingbabylon.com as his contact site)"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 8 active images have named captions with source links"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "2 YouTube embeds present for both talks, each paired with a thumbnail preview image"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Medium CAPTCHA block documented in AI Notes; rejected entries in manifest are marked with reject_reason"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Person"},
+    {"id": "B.links", "result": "pass", "evidence": "Website (uriba.medium.com), Instagram (verified as right person via screenshot), LinkedIn present; no public email found, documented in AI Notes"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Brand strategy tagged, set_by jonathan in provenance"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, 1, Freelance; AI Notes names sources: LinkedIn + The Dots + Creativepool all agree"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5 set_by agent; reasoning in AI Notes: runs own consultancy practice"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Rating 4 set_by jonathan; zero-states (Never/Don't know them/Unvetted) not contradicted by any evidence"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Source is Web clipper 2021-07-12; no clip note instructions to act on"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Facts grounded in verifiable sources (D&AD profile, LinkedIn, Creativepool); seniority read included (~20 yrs, strategy-director level); Autonomy reasoning included; Work Status sources named"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-07-12"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields have provenance; set_by correct; null source_url is the known systemic gap, not a gate failure per v1 calibration note"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "Programmatically verified: no em-dashes in AI Notes or any active caption"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No open questions needed: Rating and Capabilities already set by Jonathan; zero-states are appropriate; no story nudge triggered"},
+    {"id": "D.status", "result": "pass", "evidence": "Status is Enriching, ready to flip to Needs Review"}
+  ],
+  "to": null,
+  "notes": "Clean entry for a writer/strategist. Website context shot uses marketingbabylon.com as documented fallback (Medium CAPTCHA-blocked headless, both attempts rejected in manifest). IG context shot confirmed as real instagram.com/uriba2012 by visual inspection. All captures on-capability. No em-dashes. No issues."
+}

@@ -1,9 +1,9 @@
 {
   "page_id": "1c321fb4-bc60-4446-914b-8dca4ebe1ff6",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-25T21:10:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-25T22:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -23,7 +23,7 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png confirmed as real otk.studio homepage (OTK logo, studio description visible). Both IG shots (site-14.png, site-15.png) are marked rejected in manifest; block is documented in AI Notes; entry is in ig-queue.json. Sanctioned logged-in-capture-loop exception applies."
+      "evidence": "site-13.png confirmed as real otk.studio homepage (OTK logo, studio description visible, opened and verified). Both IG shots (site-14.png, site-15.png) are marked rejected in manifest; block documented in AI Notes; entry in ig-queue.json with correct shape. Sanctioned logged-in-capture-loop exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,7 +33,7 @@
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "No evidence of embeddable video on these project pages; the Patreon State of Create site is interactive web but no video embed was present. No skipped embeds identified."
+      "evidence": "No embeddable video identified on these project pages. Patreon State of Create is interactive web but no video embed was present. No skipped embeds."
     },
     {
       "id": "A.absence-explained",
@@ -47,19 +47,18 @@
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "LinkedIn field is absent and AI Notes makes no mention of searching for or failing to find a LinkedIn profile. AI Notes lists sources as 'own site, Awwwards, press' only. OTK is Awwwards-recognised with named client work; a LinkedIn profile search is an obvious step that is not documented as attempted or absent.",
-      "fix": "Search 'Oliver Thomas Klein linkedin' or 'OTK studio linkedin'; check the Google snippet for a profile. If a profile is found, add the LinkedIn URL. If genuinely absent (no profile exists), note 'LinkedIn: no profile found' in AI Notes."
+      "result": "pass",
+      "evidence": "AI Notes now states: 'LinkedIn: none found; searched, the only Oliver Klein profile (oliver-c-klein) is a different person (architectural designer), so no LinkedIn attached.' Search documented and absence explained. Email present (office@otk.studio). Website present (otk.studio). IG handle identified (@otk.studio), queued for logged-in grab. Prior failure resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Web design + Frontend development (web) are set (set_by jonathan per provenance). Open Question 1 asks whether to add Identity systems, Digital product design, Creative direction. Conditional and appropriate."
+      "evidence": "Web design + Frontend development (web) set. Open Question 1 asks whether to add Identity systems, Digital product design, Creative direction. Conditional and appropriate."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country US + Germany (both listed with reason in AI Notes and Open Question 2 asks Jonathan to confirm). Size 1 correct for solo. Work Status Studio with reasoning in AI Notes (solo practitioner, not freelancing). Multi-source rule noted: own site + description support Studio."
+      "evidence": "Country US + Germany (both listed with reason in AI Notes; Open Question 2 asks Jonathan to confirm). Size 1 correct for solo. Work Status Studio with reasoning in AI Notes."
     },
     {
       "id": "B.autonomy",
@@ -79,7 +78,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes asserts verifiable facts (clients, Awwwards recognition, Reggie Watts credit). Autonomy read is explicitly framed as a judgment. Seniority read is grounded in observable work output. No over-claimed inferences detected. No em-dashes."
+      "evidence": "AI Notes asserts verifiable facts (clients, Awwwards recognition, Reggie Watts credit). Autonomy read is framed as a judgment. Seniority read grounded in observable work output. No over-claimed inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present; all touched fields recorded with set_by. source_url null on all fields is the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance file present; all touched fields recorded with set_by. source_url null is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,14 +98,14 @@
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "Two questions: (1) Capabilities expansion proposal (appropriate: current tags are jonathan-set, asking before adding); (2) Country confirmation. Both conditional and terse."
+      "evidence": "Two questions: (1) Capabilities expansion proposal; (2) Country confirmation. Both conditional and terse."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still in Enriching; reviewer has not flipped it. No premature Needs Review found."
+      "evidence": "Entry is in Enriching; reviewer flipping to Needs Review now on pass."
     }
   ],
-  "summary": "One FAIL: LinkedIn field is missing with no documentation that a search was attempted. All other checks pass. Work is strong, on-capability, well-captioned across 5 projects. IG context shot gap is correctly handled via the logged-in queue. Fix is a single search step.",
-  "to": "scout"
+  "summary": "All 20 checks pass. The sole prior failure (LinkedIn absent, no documented search) is resolved: AI Notes now explicitly documents the search outcome (oliver-c-klein is a different person, no LinkedIn for OTK). Work is strong, on-capability, well-captioned across 5 projects. IG context gap correctly handled via the sanctioned queue path.",
+  "to": null
 }
