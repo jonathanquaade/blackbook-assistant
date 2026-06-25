@@ -97,6 +97,8 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/alexkuru/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Logged-out IG served login wall, not the profile page. Queued to state/ig-queue.json for ig.py grab."
   }
 ]

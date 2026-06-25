@@ -1174,5 +1174,33 @@
     "ig_url": "https://www.instagram.com/howaboutacheesecake/",
     "reason": "IG context shot: login wall served logged-out by scrape.py --render; need ig.py grab of @howaboutacheesecake profile grid",
     "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "94911662-69ad-49fe-852f-2589a7d50ab1",
+    "name": "Alex Kurunis",
+    "ig_url": "https://www.instagram.com/alexkuru/",
+    "reason": "logged-out IG served login wall; his site has ample work so entry proceeds without IG context shot; grab needed for hi-res grid and profile context shot",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "089ac1f8-e32c-4d9a-bd34-bc77a7071183",
+    "name": "YONK",
+    "ig_url": "https://www.instagram.com/yonk.online/",
+    "reason": "IG context screenshot returned login wall (headless Playwright rate-limited logged out). @yonk.online confirmed from site footer. Need logged-in ig.py grab for real Instagram profile context shot.",
+    "queued_at": "2026-06-25"
+  },
+  {
+    "page_id": "1e93c5df-5f7f-4a6f-9041-7aad479f207f",
+    "name": "Sylvain Jule",
+    "ig_url": "https://www.instagram.com/sylvainjule/",
+    "reason": "Instagram context screenshot returned login wall (headless Playwright rate-limited). @sylvainjule confirmed handle via web search and Google result title tag. Need logged-in ig.py grab for real profile context shot.",
+    "queued_at": "2026-06-25"
   }
 ]

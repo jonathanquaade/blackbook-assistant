@@ -1,0 +1,110 @@
+{
+  "page_id": "089ac1f8-e32c-4d9a-bd34-bc77a7071183",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-25T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Sprite Spriteverse 2022, Nickelodeon Portal to Fun Ident, Nike Kids Mooove Challenge 2023, Doodle for Google 2025, Barry Animated Short. No repeated captions across different projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside each (interior stills, character close-ups, scene frames), not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Illustration + 3D & motion. All 15 work images are 3D character animation / illustration stills directly matching those capabilities. Barry embed is an animated short film. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png is a confirmed screenshot of yonk.online (YONK logo, 3D work grid visible). site-17.png is the Instagram login wall, correctly marked rejected:true with reason, queued to ig-queue.json per the sanctioned IG throttle exception path."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 manifest image entries have caption and link fields populated with named project and source URL."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Barry Animated Short has a YouTube embed entry plus a thumbnail preview image (site-15-thumb.jpg) linked to the video. Entry is not embeds-only: 15 still images also present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG wall documented in AI Notes and ig-queue.json. LinkedIn absence documented in AI Notes (two searches, no company page found). No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small two-person specialized animation studio (Victoria Young + Niels van der Donk), not agency scale."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: yonk.online (present). Instagram: instagram.com/yonk.online (present, confirmed from site footer per AI Notes). LinkedIn: two searches, no company page exists (documented). Email: info@yonk.online (present). No obvious missing link."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration + 3D & motion. Set by jonathan per provenance. Matches their VR-sculpting/character animation practice confirmed by site."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Netherlands. Size: 2-10 (duo). Work Status: Studio. All consistent with AI Notes (The Hague studio, two founders). Multi-source check documented (site + bio agree)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio; Autonomy field is optional per checklist calibration note (2026-06-21). Field is set to 5 with set_by agent, which is acceptable for a studio with a clear founding duo. AI Notes includes seniority/leadership read."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-07-05'; no clip-note instructions observed in the entry."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged language for inferences; client list and awards are grounded in verifiable public record (YONK site, One Club, INTNice That). Seniority read included (duo, founded 2021, award-winning, festival speakers). No unhedged personal assessments."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-07-05'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. source_url nulls are a known systemic tooling gap per checklist note (2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No terse questions needed: no unresolvable ambiguities, zero-state fields are accurate, no story nudge triggered (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "to": "scraper"
+}
