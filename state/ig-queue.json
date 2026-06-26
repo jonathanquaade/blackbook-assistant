@@ -1335,5 +1335,33 @@
     "ig_url": "https://www.instagram.com/szoraidez/",
     "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited logged out). @szoraidez confirmed handle. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-26"
+  },
+  {
+    "page_id": "44a98e37-06d9-4dce-9e41-3ead3e3d0711",
+    "name": "Ariel Davis",
+    "ig_url": "https://www.instagram.com/arieldavi.s/",
+    "reason": "arielrdavis.com completely down (SSL timeout); IG recent posts show Spotify, NYT, Bloomberg 2022-2024 commissions; full-res capture needed for recent work",
+    "queued_at": "2026-06-26"
+  },
+  {
+    "page_id": "24d505b2-7e26-4758-853d-e6cc50023e83",
+    "name": "Crea",
+    "ig_url": "https://www.instagram.com/crea.st/",
+    "reason": "IG error page (Something went wrong) returned logged-out; hi-res grid capture needs ig.py",
+    "queued_at": "2026-06-26"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "84c93d1d-79da-4ebb-b99e-43f437f2ee55",
+    "name": "Matt Bellamy",
+    "ig_url": "https://www.instagram.com/mattabellamy/",
+    "reason": "IG context screenshot failed: headless Playwright returned login wall. @mattabellamy confirmed NZ concept designer (ArtStation + IG bio match). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-26"
   }
 ]

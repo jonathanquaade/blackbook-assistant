@@ -1,0 +1,113 @@
+{
+  "page_id": "af62226c-17c7-452f-bf6f-90222ca21ae0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: MATE GO+ e-bike, Hinge, Nike Epic React Flyknit, Samsung Wallpaper Development, Upwork Mindful AI, Kettal Pi Modular. No repeated captions or near-identical images."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3 stills inside each of MATE, Hinge, Nike, Upwork; 2 stills for Samsung; Kettal has thumbnail-only (no stills beyond the video preview). Acceptable spread given embed coverage."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images confirmed as 3D renders or motion stills (MATE, Hinge, Samsung, Upwork, Nike shoe render, Kettal furniture render). Fully matches tagged Capability 3D & motion."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed santizoraidez.com homepage. site-02.png is Instagram error page, correctly marked rejected=true in manifest with documented reason, queued to ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present (MATE, Hinge, Nike, Kettal), each with a Vimeo thumbnail preview image and a linked caption to the Behance/source page. Images also present (not embeds-only)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes; ig-queue.json entry confirmed present for this page_id."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person. Correct for an individual freelance art director."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Email field is empty with no explanation in AI Notes and no Open Question. Santi is represented by Agent Pekka (agentpekka.com), a talent agency whose contact/booking page almost certainly lists an email for him. No search attempt is documented.",
+      "fix": "Check agentpekka.com for Santi Zoraidez booking or contact email. If found, populate Email field. If genuinely absent there too, note 'No public email found; contact via Agent Pekka' in AI Notes."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D & motion, Jonathan-set (set_by jonathan). Confirmed accurate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Argentina / 1 / Freelance. AI Notes names sources: site + agent representation agree on Freelance. Country corrected from migration's Germany."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoned in AI Notes as inferred from AD-level rep work. Hedged appropriately."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are consistent with no relationship evidence in clip note or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-06-17'. No clip note instructions beyond that; nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy inference marked 'inferred from AD-level rep work'. Seniority read present. No em-dashes found anywhere in entry."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-17'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url nulls are the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, provenance, or any agent-written field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No judgment fields have non-zero values that would require questions. Story nudge not applicable (no relationship history)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status is Enriching, awaiting this gate. Correct pre-flip state."
+    }
+  ],
+  "to": "scraper",
+  "summary": "One failing check: Email is empty with no documented search attempt or Open Question. Santi is repped by Agent Pekka; their site is the obvious first stop for a booking email.",
+  "fix": "Check agentpekka.com for Santi Zoraidez contact or booking email. Populate Email if found, or note absence in AI Notes if not listed. Then resubmit for review."
+}

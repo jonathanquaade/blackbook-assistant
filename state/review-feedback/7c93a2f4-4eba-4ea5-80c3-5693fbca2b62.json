@@ -2,28 +2,28 @@
   "page_id": "7c93a2f4-4eba-4ea5-80c3-5693fbca2b62",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-26T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "15 non-rejected images across 7 named projects (Totems, Diamond Veins, Together Forever, Lost in Paradise, Primizie, BADROOM, Heard about you last night)"
+      "evidence": "15 non-rejected images across 7 distinct named projects: Lost in Paradise, Primizie, BADROOM, Heard about you last night (Behance); Diamond Veins, Totems (KALTBLUT); Together Forever (Contributor Magazine)"
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images from Diamond Veins (interior shots from the series), 3 from Totems, 2 from Together Forever; Behance projects each have one cover shot which is acceptable given limited scrape depth on covers-only sources"
+      "evidence": "4 images from Diamond Veins (interior series shots), 3 from Totems, 2 from Together Forever; Behance projects have single cover shots which is acceptable given grid-level source depth"
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 15 images are fashion or fine-art photography; matches tagged Capability Photography"
+      "evidence": "All 15 images are fashion or fine-art photography; matches tagged Capability Photography; visually confirmed site-02 (Lost in Paradise, fashion editorial) and totems-01 (Totems, fine-art)"
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-17.png visually confirmed as Behance profile page (chiararigato, photographer, Venice, Italy) captioned Website; site-18.png visually confirmed as instagram.com/chiaraxrigato/ captioned Instagram profile; both correct"
+      "evidence": "site-17.png visually confirmed: Behance profile page for Chiara Rigato (photographer + content creator, Venice, Italy); site-18.png visually confirmed: instagram.com/chiaraxrigato/ profile page, handle and bio match; both captions correct"
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,7 +33,7 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Photography capability, no video or audio work in scope; not applicable"
+      "evidence": "Photography capability; no video/audio work in scope; not applicable"
     },
     {
       "id": "A.absence-explained",
@@ -43,13 +43,12 @@
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person, correct for an individual photographer"
+      "evidence": "Type: Person, correct for individual photographer"
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email field is empty and there is no mention anywhere (AI Notes, Open Questions, provenance) that a public email search was attempted or that none was found. Behance profiles and personal sites often list a contact email; this was not documented as searched or absent.",
-      "fix": "Search for a public contact email on the Behance profile contact section (static scrape of behance.net/chiararigato), the chiararigato.com domain (even with SSL error, a robots/whois lookup may surface it), and a web search for 'Chiara Rigato photographer contact email'. If genuinely not found, add one line to AI Notes: 'Email: searched Behance + web, not publicly listed.' If found, add it to the Email field with provenance."
+      "result": "pass",
+      "evidence": "Website (Behance, canonical given SSL failure on chiararigato.com), Instagram (chiaraxrigato, verified matching person), LinkedIn present. Email: AI Notes now documents the search: Behance contact section (login-gated), web search, Facebook page (ChiaraRigatoPhotography), KALTBLUT/Contributor editorial credits; none list a contact address. Empty field is correct and documented."
     },
     {
       "id": "B.capabilities-tagged",
@@ -59,7 +58,7 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Italy confirmed by Behance and IG bio (Venice, Italy); Size 1 correct for solo person; Work Status Freelance with LinkedIn conflict documented and resolved by site+IG majority rule in AI Notes"
+      "evidence": "Italy confirmed by Behance and IG bio (Venice, Italy); Size 1 correct; Work Status Freelance with LinkedIn conflict documented and resolved by site+IG majority rule in AI Notes"
     },
     {
       "id": "B.autonomy",
@@ -74,12 +73,12 @@
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is Web clipper, 2021-06-25; no special clip instructions found in entry"
+      "evidence": "Source: Web clipper, 2021-06-25; no special clip instructions found"
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "LinkedIn/Freelance conflict disclosed and hedged; Autonomy hedged as limited public career detail; seniority read present"
+      "evidence": "LinkedIn/Freelance conflict disclosed and hedged; Autonomy hedged as limited public career detail; seniority read present; email search documented"
     },
     {
       "id": "D.source-filled",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by; null source_urls are the known systemic gap, not a gate failure"
+      "evidence": "All touched fields have provenance entries with set_by; null source_urls are the known systemic gap, not a gate failure per calibration note"
     },
     {
       "id": "D.no-em-dashes",
@@ -104,10 +103,9 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching, awaiting this gate; correct holding state"
+      "evidence": "Entry flipped to Needs Review on this pass"
     }
   ],
-  "to": "scraper",
-  "summary": "One failing check: Email field is empty with no documented search attempt. All other checks pass (7 named projects, on-capability photography, context shots verified, Behance + LinkedIn links present, Work Status conflict documented).",
-  "fix": "Search for Chiara Rigato's public contact email on Behance contact section, web search, and chiararigato.com domain. If found, set it. If genuinely absent, add one sentence to AI Notes confirming the search came up empty. Then re-submit for review."
+  "to": "jonathan",
+  "summary": "All checks pass on attempt 2. The sole attempt-1 failure (email search not documented) is resolved: AI Notes now explicitly documents four sources checked with no public email found. Context shots verified visually. 7 distinct named projects, on-capability photography throughout."
 }

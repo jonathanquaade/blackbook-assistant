@@ -1,0 +1,112 @@
+{
+  "page_id": "3de19c04-b2ef-47fb-9846-fe47b8d51d20",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "context": "Documented blocked-source + unidentifiable-person case. IG account deleted/private. No website, Behance, ArtStation, or LinkedIn exists. FutureDeluxe site independently verified: 'Unused forms' (2021 experimental collab) is not on their current work page (18 active brand projects only); Pinterest archive is the only reachable source. Thin capture is caused by absent web presence, not scraper laziness.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Only 1 known project exists online. Absence is documented in AI Notes. Cannot fail for non-existence."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A; single image is the only publicly archived asset from this project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "One image is a CGI concrete render, matching tagged Capability '3D & motion'."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "IG context shot (site-01.png) is correctly instagram.com, correctly captioned 'Instagram profile', and marked rejected=true with documented reason (error page, not the real profile). Entry is queued to state/ig-queue.json. Checklist exception applies. No website exists for this person so no website context shot is possible."
+    },
+    {
+      "id": "A.uncaptioned-images",
+      "result": "pass",
+      "evidence": "The one real image is captioned 'Unused forms with FutureDeluxe, 2021' with a Pinterest source link."
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "No video or audio sources found; nothing to embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states: IG deleted/private, no website/Behance/ArtStation found, only one Pinterest-archived image, IG queued. Fully documented."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Instagram URL present. No website, LinkedIn, Behance, ArtStation, or public email exists; absence documented in AI Notes. Identity unconfirmed so no further search path is available."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "'3D & motion' matches the one documented collaboration (abstract CGI renders)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Size = 1 (correct for Person). Work Status = Unknown (correct; no sources to confirm). Country left empty; unresolvable without confirmed identity. Documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Left empty; AI Notes state 'Seniority and experience cannot be assessed'. With no confirmed identity and a single archived project, no history exists to ground an estimate. Honest omission, per checklist ('REQUIRED ... when the history supports a read')."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with a 2021 web-clipper origin and no stated relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is a web clipper clip from 2021. No relationship or judgment facts stated in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "All uncertain facts hedged ('may be deleted', 'cannot be assessed', 'should confirm'). No bare assertions beyond the verifiable FutureDeluxe collab."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-17'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with correct set_by values. Null source_url is a known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Question scanned; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question asking Jonathan to confirm identity. Correct escalation path for an unidentifiable entry."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Correct pre-flip state."
+    }
+  ],
+  "reviewer_notes": "Independent check confirmed: FutureDeluxe's site has 18 current brand projects; 'Unused forms' (2021 experimental collab) is not listed. No case study page exists. Pinterest archive is the only reachable source. The scraper did not miss a reachable source. Thin capture is honest and documented. Entry should reach Jonathan as an escalation: he must confirm the identity or reject the entry.",
+  "to": "jonathan"
+}
