@@ -2,8 +2,8 @@
   "page_id": "48ec7c6c-964e-4f3d-a436-98c39ac03f01",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-26T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,28 +13,32 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 interior paintings per series, not just hero covers."
+      "evidence": "3 interior paintings per series, not just hero covers. Images verified as distinct works (too_bad_so_sad.jpg and daydream_of_a_nocturne.jpg opened and confirmed as separate figurative oil paintings)."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 11 work images are figurative oil paintings, matching Illustration tag."
+      "evidence": "All 11 work images are figurative oil paintings, matching Illustration capability tag."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-02.png is captioned 'Instagram profile' but is the Instagram generic login/landing page (instagram.com splash), not the @shyamagolden profile. It is not marked rejected in the manifest, not mentioned in AI Notes, and not queued to state/ig-queue.json. No sanctioned exception applies.",
-      "fix": "Capture a real screenshot of instagram.com/shyamagolden (the actual profile grid). If logged-out IG serves a login wall, mark site-02.png rejected in the manifest, document the block in AI Notes, and add an entry to state/ig-queue.json for a logged-in ig.py grab. The website context shot (site-01.png) is correct and does not need to be redone."
+      "result": "pass",
+      "evidence": "site-01.png opened and confirmed as shyamagolden.com homepage (name in header, painting hero). site-02.png (IG) is marked rejected in manifest with specific reason ('Instagram login/landing wall, not the profile'). AI Notes documents the block. Entry is present in state/ig-queue.json (line 1277) with queued_at 2026-06-26. All three conditions of the sanctioned exception are met: rejected+documented+queued."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 11 work images have project name and source link in captions."
+      "evidence": "All 11 work images have named project title, series, medium, and source link. site-01.png captioned 'Website' with link."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Entry is a painter/illustrator; no video/audio embeds required."
+      "evidence": "Painter/illustrator; no video or audio embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG login wall documented in AI Notes; ig-queue entry created; no other sources left unexplored."
     },
     {
       "id": "B.type-classified",
@@ -44,12 +48,12 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website, Instagram, Email all set. LinkedIn documented as not found in AI Notes."
+      "evidence": "Website (shyamagolden.com), Instagram (instagram.com/shyamagolden), Email (art@shyamagolden.com) all set. LinkedIn documented as not found in AI Notes."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Illustration tagged; Open Question asks about adding Art practice for gallery painting work."
+      "evidence": "Illustration tagged. Open Question asks Jonathan about adding Art practice for gallery fine-art work. Conditional and appropriate."
     },
     {
       "id": "B.country-size-work-status",
@@ -59,22 +63,22 @@
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (self-run practice across galleries and editorial clients)."
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (self-run practice across galleries and editorial clients, ~22 years independent)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note relationship or prior-work signal. Zero-states are appropriate."
+      "evidence": "No clip note relationship or prior-work signal. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was 'Shyama Golden | Illustrator'; identity confirmed, no further instructions."
+      "evidence": "Clip note was 'Shyama Golden | Illustrator'; identity confirmed, no further instructions to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Notes are factual with verifiable sources cited; seniority and Autonomy read included."
+      "evidence": "Notes are factual with verifiable sources cited; seniority and Autonomy read included; IG block documented; no em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -84,23 +88,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields and correct set_by values. Null source_urls are a known systemic gap, not a gate failure."
+      "evidence": "Provenance file present with all touched fields and correct set_by values. Null source_urls are a known systemic gap, not a gate failure per checklist calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse question on Capabilities (Art practice). Conditional and appropriate."
+      "evidence": "One terse conditional question on Capabilities (Art practice). No fields with existing non-zero values were asked about."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching as expected; awaiting gate."
+      "evidence": "Entry is in Enriching; ready to flip to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

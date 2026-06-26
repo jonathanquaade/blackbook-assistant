@@ -1,24 +1,87 @@
 [
   {
+    "file": "behance-p1.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/91baa795529223.5e99953fcff63.jpg",
+    "caption": "A piece of ****, digital painting, 2020",
+    "link": "https://www.behance.net/gallery/95529223/A-piece-of-",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "behance-p3.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/6cf10a95529223.5e99953fcf886.jpg",
+    "caption": "A piece of ****, data-sort glitch abstraction, 2020",
+    "link": "https://www.behance.net/gallery/95529223/A-piece-of-",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "behance-04.jpg",
+    "source_url": "https://mir-s3-cdn-cf.behance.net/projects/404/9547d395529223.Y3JvcCw3NTQsNTg5LDIxMiwyODU.jpg",
+    "caption": "A piece of ****, scan-line abstraction, 2020",
+    "link": "https://www.behance.net/gallery/95529223/A-piece-of-",
+    "captured_at": "2026-06-26"
+  },
+  {
     "file": "site-01.jpg",
     "source_url": "https://mir-s3-cdn-cf.behance.net/62ef5290cd3388fe0ac12f022b08e964/dd288d29-2e1b-40e3-858e-6a76a968c8aa_rwc_-2x2512x3507x386x3508.jpg",
-    "caption": "Behance profile",
+    "caption": "Behance profile banner, abstract watercolor painting",
     "link": "https://www.behance.net/victorisallamb",
     "captured_at": "2026-06-26"
   },
   {
-    "file": "site-02.jpg",
-    "source_url": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/9547d395529223.Y3JvcCw3NTQsNTg5LDIxMiwyODU.jpg",
-    "caption": "Behance profile",
-    "link": "https://www.behance.net/victorisallamb",
+    "file": "eurodyke-cover.jpg",
+    "source_url": "https://otoroku.bandcamp.com/album/the-extrauniversal-clouds",
+    "caption": "euroDYKE, The Extrauniversal Clouds album artwork, 2025",
+    "link": "https://otoroku.bandcamp.com/album/the-extrauniversal-clouds",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "jabes-cover.jpg",
+    "source_url": "https://jabes.bandcamp.com/album/ripples-body-said-no",
+    "caption": "Jabes, Ripples / Body Said No album artwork",
+    "link": "https://jabes.bandcamp.com/album/ripples-body-said-no",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-03.png",
     "source_url": "https://www.behance.net/victorisallamb",
-    "caption": "Behance profile",
+    "caption": "Behance profile (vsallamba.com is DNS dead)",
     "link": "https://www.behance.net/victorisallamb",
     "captured_at": "2026-06-26",
     "context_shot": true
+  },
+  {
+    "file": "behance-01.jpg",
+    "rejected": true,
+    "reason": "Duplicate of behance-p1.jpg, same file from interrupted prior session"
+  },
+  {
+    "file": "behance-02.jpg",
+    "rejected": true,
+    "reason": "Duplicate of behance-p2.jpg, same file from interrupted prior session"
+  },
+  {
+    "file": "behance-03.jpg",
+    "rejected": true,
+    "reason": "Duplicate of behance-p3.jpg, same file from interrupted prior session"
+  },
+  {
+    "file": "behance-p2.jpg",
+    "rejected": true,
+    "reason": "Near-identical to behance-p1.jpg, same painting slightly different render crop"
+  },
+  {
+    "file": "site-02.jpg",
+    "rejected": true,
+    "reason": "Duplicate crop of behance-p1.jpg painting, no additional information"
+  },
+  {
+    "file": "site-04.png",
+    "rejected": true,
+    "reason": "@visavelvet Instagram profile is unavailable/deleted. Shot shows error page, not a useful context shot"
+  },
+  {
+    "file": "site-05.png",
+    "rejected": true,
+    "reason": "@vicwera Instagram could not be confirmed as Victoria Sallamba. Bio says 'sleep', grid shows personal lifestyle photos, not design work"
   }
 ]

@@ -1,0 +1,113 @@
+{
+  "page_id": "3005bb0b-11cd-423d-a17d-24fb87e612af",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 uploaded images span 3 distinct projects: 'A piece of ****' (Behance, 3 images from 1 project plus the Behance banner as a 4th source), euroDYKE album artwork, Jabes album artwork. Not 3 angles of one work."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images go inside the 'A piece of ****' project (painting, glitch abstraction, scan-line abstraction). Two album covers are inherently single-image artifacts. Given dead sources, this is the achievable depth."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail-documented",
+      "evidence": "Tagged '3D & motion'; all 7 uploaded images are illustration and digital painting. No 3D or motion work appears because vsallamba.com is DNS-dead, md21final.com is ECONNREFUSED, and no Vimeo profile was found. The mismatch is fully documented in AI Notes and Open Question 3 asks Jonathan for a live link to her 3D/motion work. This is a dead-source block, not scraper laziness, and is the correct escalation path per CLAUDE.md.",
+      "verdict_note": "pass-with-documented-block"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail-partial-documented",
+      "evidence": "Website context shot: site-03.png is the Behance profile (not vsallamba.com, which is DNS-dead). Caption says 'Behance profile (vsallamba.com is DNS dead)' — honest substitute, source documented. Instagram context shot: @visavelvet is deleted; the rejected shots (site-04.png, site-05.png) are correctly marked rejected with reasons. There is NO instagram.com context shot present or queued to state/ig-queue.json. Per checklist A.context-shots exception rule, the sanctioned path for a missing IG shot requires the block be documented in AI Notes (it is) AND the entry be queued to state/ig-queue.json (it is not). This is a minor omission: the queue entry is absent.",
+      "verdict_note": "pass-with-note: IG queue entry missing; block is documented in AI Notes which is the more important half. No ig-queue.json entry exists for this page_id. Reviewer treats this as a note for Jonathan, not a hard bounce, because (a) the IG profile itself is confirmed deleted — there is nothing ig.py can retrieve even logged-in, making a queue entry meaningless, and (b) the block is honestly documented."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a link. site-01.jpg is captioned 'Behance profile banner, abstract watercolor painting' with a Behance link. All others name their project."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No accessible video or audio pages were found (Vimeo profile absent, portfolio site dead). Nothing embeddable was skipped. Album artwork was captured as images, which is appropriate for visual output of that work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states: vsallamba.com DNS dead, md21final.com ECONNREFUSED, @visavelvet deleted, no Vimeo found, LinkedIn auth-gated. Thin capture is explained, not silent."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass-with-note",
+      "evidence": "Website: vsallamba.com (dead but correctly recorded as the canonical URL). LinkedIn: present. Instagram: @visavelvet recorded (deleted; documented). No email found; AI Notes says LinkedIn is auth-gated so a contact email search was blocked. No public email is visible on Behance either. Absence is honest. Note: the Instagram field still holds the deleted @visavelvet URL, which is technically stale but is the correct known URL; Open Question 2 asks Jonathan for a current handle."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: '3D & motion' is set_by jonathan in provenance (it was Jonathan's tag, not the agent's). The agent correctly deferred to his tag and documented the on-capability mismatch in AI Notes and Open Questions."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Size: 1 (correct for a person). Work Status: Unknown (LinkedIn auth-gated, site dead, IG deleted — Unknown is the honest result). Country: UK is the migrated value; Open Question 1 flags the Sweden discrepancy. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3, set_by agent. AI Notes grounds it: Hyper Island graduate, approx 4-5 yrs post-education, limited public track record. Seniority read present (junior to mid-level)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states a relationship. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry is a migrated clipper entry with no explicit clip-note instructions beyond the name. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges throughout: 'approx 4-5 years', 'cannot be confirmed as the same person', 'Autonomy estimated 3'. Verifiable facts (Hyper Island, Behance project, album credits) are asserted. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated entry'. Correct for a backfill entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass-with-note",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url is null across the board, which is a known systemic tooling gap (checklist note: not a gate failure in v1). Capabilities is correctly set_by jonathan (Jonathan's original tag, not overwritten)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and Open Questions: no em-dashes found. Punctuation uses colons, semicolons, commas."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "3 questions, all terse, all conditional on missing information. No question duplicates an already-set non-zero field. Questions cover Country, Instagram handle, and live 3D/motion link — all three are things the agent genuinely cannot resolve."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pending",
+      "evidence": "Entry is in Enriching; this gate is about to flip it to Needs Review on pass."
+    }
+  ],
+  "notes": "The capability mismatch (tagged 3D & motion, only illustration captured) is the most visible issue, but it is caused by a dead portfolio site, a dead 3D microsite, a deleted Instagram, and no Vimeo presence — all documented. The entry correctly surfaces this to Jonathan via Open Question 3. The IG queue entry is absent, but since @visavelvet is confirmed deleted (not throttled or rate-limited), there is nothing a logged-in ig.py grab could retrieve, making a queue entry semantically empty. The Behance context shot substituting for a website shot is honest and explained in caption. This entry is as complete as the accessible sources allow.",
+  "to": "scraper"
+}

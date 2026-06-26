@@ -18,14 +18,16 @@
     "source_url": "https://www.richardmosse.com/img/broken-spectre-stills-01.jpg",
     "caption": "Broken Spectre, 2022",
     "link": "https://www.richardmosse.com",
-    "captured_at": "2026-06-25"
+    "captured_at": "2026-06-25",
+    "rejected": true
   },
   {
     "file": "site-04.jpg",
     "source_url": "https://www.richardmosse.com/img/broken-spectre-stills-03.jpg",
     "caption": "Broken Spectre, 2022",
     "link": "https://www.richardmosse.com",
-    "captured_at": "2026-06-25"
+    "captured_at": "2026-06-25",
+    "rejected": true
   },
   {
     "file": "site-05.jpg",
@@ -39,13 +41,155 @@
     "source_url": "https://jackshainman.com/uploads/4600046/1587143819734/2011_JSG_Infra_Install_29_lr-1400-xxx_q85.jpg",
     "caption": "Infra, 2012 (Jack Shainman Gallery)",
     "link": "https://jackshainman.com/exhibitions/infra",
-    "captured_at": "2026-06-25"
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "near-duplicate of site-05, same Infra print different distance"
   },
   {
     "file": "site-07.jpg",
     "source_url": "https://jackshainman.com/uploads/4600046/1587143818874/2011_JSG_Infra_Install_15_lr-1400-xxx_q85.jpg",
     "caption": "Infra, 2012 (Jack Shainman Gallery)",
     "link": "https://jackshainman.com/exhibitions/infra",
-    "captured_at": "2026-06-25"
+    "captured_at": "2026-06-25",
+    "rejected": true,
+    "reject_reason": "near-duplicate of site-05, same Infra print different distance"
+  },
+  {
+    "file": "site-08.jpg",
+    "source_url": "https://jackshainman.com/uploads/5300053/15871547118/2014_JSG_Mosse_install_1_lr-1400-xxx_q85.jpg",
+    "caption": "The Enclave, 2013 (Jack Shainman Gallery)",
+    "link": "https://jackshainman.com/exhibitions/the_enclave",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-09.jpg",
+    "source_url": "https://jackshainman.com/uploads/5300053/1587154718159/2014_JSG_Mosse_install_8_lr-1400-xxx_q85.jpg",
+    "caption": "The Enclave, 2013 (Jack Shainman Gallery)",
+    "link": "https://jackshainman.com/exhibitions/the_enclave",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-10.jpg",
+    "source_url": "https://jackshainman.com/uploads/5300053/1587154718451/2014_JSG_Mosse_install_7_lr-1400-xxx_q85.jpg",
+    "caption": "The Enclave, 2013 (Jack Shainman Gallery)",
+    "link": "https://jackshainman.com/exhibitions/the_enclave",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-11.jpg",
+    "source_url": "https://jackshainman.com/uploads/13600136/1705945289339/JSGTribeca_RIM_2024_v3_E_LR-1400-xxx_q85.jpg",
+    "caption": "Broken Spectre, 2022 (Jack Shainman Gallery)",
+    "link": "https://jackshainman.com/exhibitions/richard_mosse_broken_spectre",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-12.jpg",
+    "source_url": "https://jackshainman.com/uploads/13600136/1705686087301/JSGTribeca_RIM_2024_v2_LR-1400-xxx_q85.jpg",
+    "caption": "Broken Spectre, 2022 (Jack Shainman Gallery)",
+    "link": "https://jackshainman.com/exhibitions/richard_mosse_broken_spectre",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-13.jpg",
+    "source_url": "https://publicdelivery.org/wp-content/uploads/2016/11/Richard-Mosse-Vintage-violence-2011-Courtesy-of-the-artist-and-Jack-Shainman-Gallery-New-York-800x634.jpg",
+    "caption": "Infra, 2012 (infrared print, eastern DRC)",
+    "link": "https://publicdelivery.org/richard-mosse-the-enclave/",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-14.jpg",
+    "source_url": "https://publicdelivery.org/wp-content/uploads/2016/11/Richard-Mosse-Commodius-Vicus-2015-800x641.jpg",
+    "caption": "The Enclave, 2013 (still from DRC infrared series)",
+    "link": "https://publicdelivery.org/richard-mosse-the-enclave/",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-15.jpg",
+    "source_url": "https://publicdelivery.org/wp-content/uploads/2016/11/Richard-Mosse-Of-Lillies-and-Remains-North-Kivu-eastern-Congo-2012-digital-C-print-72-x-90-inches.-Courtesy-of-the-artist-and-Jack-Shainman-Gallery-800x635.jpg",
+    "caption": "Infra, 2012 (Of Lillies and Remains, North Kivu, eastern Congo)",
+    "link": "https://publicdelivery.org/richard-mosse-the-enclave/",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-16.jpg",
+    "source_url": "https://d1hhug17qm51in.cloudfront.net/www-media/2019/06/10153515/3.-Richard-Mosse_1000px-1024x576.png",
+    "caption": "Incoming, 2017 (SFMOMA installation view)",
+    "link": "https://www.sfmoma.org/exhibition/richard-mosse-incoming/",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-17.jpg",
+    "source_url": "https://d1hhug17qm51in.cloudfront.net/www-media/2019/06/04173323/2.-Richard-Mosse.png",
+    "caption": "Incoming, 2017 (thermal camera still, SFMOMA)",
+    "link": "https://www.sfmoma.org/exhibition/richard-mosse-incoming/",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-18.jpg",
+    "source_url": "https://d1hhug17qm51in.cloudfront.net/www-media/2019/06/10154013/7.-RIM17.016-Eleonas-HHR_1000px.png",
+    "caption": "Incoming, 2017 (Eleonas refugee camp, Athens)",
+    "link": "https://www.sfmoma.org/exhibition/richard-mosse-incoming/",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "thumb-incoming.jpg",
+    "source_url": "https://i.vimeocdn.com/video/624456202-8273cbffb9e8fee956b51dd533e53afa055b5352a4efe309cc119ebbe52e69d4-d_640?region=us",
+    "caption": "Incoming, 2017 (video preview, Vimeo)",
+    "link": "https://vimeo.com/209008534",
+    "captured_at": "2026-06-26",
+    "embed_preview": true
+  },
+  {
+    "file": "thumb-enclave.jpg",
+    "source_url": "https://i.vimeocdn.com/video/1129233247-fafc475a6f4430d340a51e87975979596c2d3878ba5b7d26513074b022f6a139-d_1280?region=us",
+    "caption": "The Enclave, 2013 (video preview, Vimeo)",
+    "link": "https://vimeo.com/545425768",
+    "captured_at": "2026-06-26",
+    "embed_preview": true
+  },
+  {
+    "file": "thumb-broken-spectre.jpg",
+    "source_url": "https://i.ytimg.com/vi/hJygMzJczFs/hqdefault.jpg",
+    "caption": "Broken Spectre, 2022 (teaser, YouTube)",
+    "link": "https://www.youtube.com/watch?v=hJygMzJczFs",
+    "captured_at": "2026-06-26",
+    "embed_preview": true
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/209008534",
+    "caption": "Incoming, 2017 (three-channel thermal video installation)",
+    "link": "https://vimeo.com/209008534",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/545425768",
+    "caption": "The Enclave, 2013 (six-channel infrared video installation, Venice Biennale Irish Pavilion)",
+    "link": "https://vimeo.com/545425768",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "type": "embed",
+    "url": "https://www.youtube.com/watch?v=hJygMzJczFs",
+    "caption": "Broken Spectre, 2022 (teaser, multispectral Amazon video installation)",
+    "link": "https://www.youtube.com/watch?v=hJygMzJczFs",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-19.png",
+    "source_url": "https://www.richardmosse.com",
+    "caption": "Website",
+    "link": "https://www.richardmosse.com",
+    "captured_at": "2026-06-26",
+    "context_shot": true
+  },
+  {
+    "file": "site-20.png",
+    "source_url": "https://www.instagram.com/richardmosse_/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/richardmosse_/",
+    "captured_at": "2026-06-26",
+    "context_shot": true
   }
 ]
