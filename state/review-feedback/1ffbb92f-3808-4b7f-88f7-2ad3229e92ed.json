@@ -1,0 +1,111 @@
+{
+  "page_id": "1ffbb92f-3808-4b7f-88f7-2ad3229e92ed",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active work images across 7 distinct named projects: Alice Station, Megafon Bank, T-Bank, Yandex Cloud, Extremum GG, Yandex Music, J.Lindeberg x Ecco. 6 contaminated/ambiguous images correctly rejected."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 images from Alice Station, 2 from Yandex Cloud, 3 from Extremum GG (logo, hoodie, sleeve), 2 from Yandex Music, 3 from J.Lindeberg x Ecco (key visual, product render, sole detail). Goes inside projects, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "The jonathan-set Capabilities (Frontend dev web, Web design) are stale vs the studio's current CGI/3D/motion output. Scraper correctly captured current work and filed Open Question 2 asking Jonathan to update Capabilities. Forcing a bounce to capture non-existent web design work would be dishonest. The mismatch is flagged; this is jonathan's call."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png confirmed: wrs.design homepage with mirror/interior image and client list text visible. site-17.png confirmed: instagram.com profile for @wrs.design showing 16.8k followers and grid previews. Both are what their captions claim."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active work images have named project captions and source links. Both context shots have matching link fields."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "WRS.design is a CGI/motion studio. The scraper captured still renders and identity work. No embedded videos are present. The site is Next.js-rendered and the manifest notes Next.js prefetch contamination as the main challenge; still images from project pages are the primary output format. The entry is not embeds-only (14 work images present). Note for Jonathan: the studio does motion work; video embeds from Behance/Vimeo project pages could strengthen the entry on a future pass, but this is not a gate failure."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "6 rejected images are documented in manifest.json with reject_reason. Next.js prefetch contamination is explained. AI Notes documents the whiterussian.studio domain redirect anomaly."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio, set_by agent. Moscow-based small team (2-10), hands-on CGI execution. Correct classification."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website: wrs.design (corrected from stale whiterussian.studio). Instagram: @wrs.design (16.9k, verified in screenshot). LinkedIn: linkedin.com/company/wrs-design. Email: absent, not flagged in AI Notes. Studio contact emails are typically on the website; no evidence the scraper searched for it. Minor gap, not a gate failure for a studio entry where the website is the contact surface."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities are jonathan-set (locked). Agent correctly left them and filed Open Question 2 to propose adding 3D/motion. Not an agent error."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Russia (Moscow-based, confirmed from site). Size: 2-10 (3 named co-founders, small team). Work Status: Studio. All set_by agent with verified_at timestamps."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry, not a Person. Autonomy 5 set_by agent with AI Notes context (3 co-founders, full creative scope). Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries; the field is set here with supporting reasoning, which exceeds the minimum."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all zero-states with no contradicting evidence in the clip note or page body."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body was site copy (studio description). Archived to clipped.md. No judgment language or Jonathan voice in the clip. Name cleaned to White Russian with rename question in Open Questions."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list framed as factual (publicly listed on wrs.design and Behance). Domain redirect documented. Instagram and LinkedIn sources named. Capabilities mismatch flagged. No unhedged inferences. No em-dashes. Includes seniority read (3 co-founders, full creative scope) paired with Autonomy 5 estimate."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-25'. Filled, matches the migration date pattern."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All agent-set fields have set_by: agent. jonathan Capabilities preserved as set_by: jonathan. migration Name preserved as set_by: migration. null source_url is a known systemic tooling gap (per checklist 2026-06-21 calibration), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions, both terse and conditional: (1) rename entry to WRS.design, (2) add 3D/motion to Capabilities. Both address genuine unresolvables that require Jonathan's judgment. No question duplicates an already-answered field."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": "scraper",
+  "summary": "All 20 checks pass. 7 distinct projects with depth, both context shots verified correct, metadata complete, Open Questions appropriately flag the rebrand and Capabilities mismatch for Jonathan. No em-dashes."
+}

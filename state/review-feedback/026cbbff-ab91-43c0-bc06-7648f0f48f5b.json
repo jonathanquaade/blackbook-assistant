@@ -1,39 +1,49 @@
 {
   "page_id": "026cbbff-ab91-43c0-bc06-7648f0f48f5b",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-26T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-26T02:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
+      "id": "A.upload-complete",
+      "result": "pass",
+      "evidence": "19 images + 3 embeds confirmed live in Notion (19 in Images property; page body: H2 + 19 image blocks + 3 embed blocks + 3 paragraph blocks + divider = 27 blocks)."
+    },
+    {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "7 images span only 2 of Mosse's 4 named series (Broken Spectre + Infra). The Enclave and Incoming are entirely absent. site-06 and site-07 are near-duplicate shots of the same Infra print (same subject, different distance), offering no additional project coverage.",
-      "fix": "Capture at least one strong image or embed from The Enclave (2013) and from Incoming (2017). Replace the site-06/site-07 near-duplicate pair with a single Infra image. Target 3+ distinct series."
+      "result": "pass",
+      "evidence": "4 distinct series now represented: Broken Spectre 2022 (site-01, site-02, site-11, site-12, thumb-broken-spectre), Infra 2012 (site-05, site-13, site-15), The Enclave 2013 (site-08, site-09, site-10, site-14, thumb-enclave), Incoming 2017 (site-16, site-17, site-18, thumb-incoming). All 4 series previously failing are now present. Near-duplicate site-06/07 correctly rejected."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "Mosse's defining works (The Enclave, Incoming, Broken Spectre) are multi-channel video installations. No video embeds are present at all. The Enclave is on Vimeo; Incoming has a Vimeo trailer; Broken Spectre has a trailer. These are embeddable and represent the core of his practice -- skipping them is a depth failure.",
-      "fix": "Embed the Vimeo/YouTube trailer or clip for at least Incoming (2017) and Broken Spectre (2022) with thumbnail preview images per the CLAUDE.md pattern. Add a still image per embed as a preview."
+      "result": "pass",
+      "evidence": "Multiple views per series: 3 Incoming stills from SFMOMA (installation view + thermal still + Eleonas refugee camp), 3 Enclave install shots from Jack Shainman, 2 Broken Spectre from richardmosse.com + 2 from Jack Shainman. Embeds for all 3 major video works."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Photography (set_by jonathan). Work images are his signature infrared photographs and video installation stills, directly on-capability. Video embeds show the installation work that sits at the edge of Photography and Film/Video, correctly flagged in Open Questions."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Zero context screenshots in the manifest or assets directory. No website homepage screenshot and no Instagram profile screenshot were captured.",
-      "fix": "Run scrape.py shot https://www.richardmosse.com --out assets/026cbbff-ab91-43c0-bc06-7648f0f48f5b --caption 'Website' and attempt an Instagram profile screenshot. If IG is throttled, document in AI Notes and queue to state/ig-queue.json per the sanctioned exception."
+      "result": "pass",
+      "evidence": "site-19.png confirmed as richardmosse.com (header 'Richard Mosse' with nav to Broken Spectre, Publication, Exhibitions visible). site-20.png confirmed as instagram.com/richardmosse_ (handle visible, verified badge, 18.7k followers, bio visible). Both correct and present."
+    },
+    {
+      "id": "A.uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 19 Notion image blocks have captions, verified via blocks API."
     },
     {
       "id": "A.embeds-for-video-audio",
-      "result": "fail",
-      "evidence": "Mosse is a video installation artist (The Enclave, Incoming, Broken Spectre are all multi-channel video). No embeds of any kind are present in the manifest. This is an on-capability failure: the work is video and it was not embedded.",
-      "fix": "Add embed entries to the manifest for Incoming (Vimeo) and Broken Spectre (Vimeo/YouTube) with thumbnail images and link captions. See CLAUDE.md embed+thumbnail pattern."
+      "result": "pass",
+      "evidence": "3 embeds present: Incoming (Vimeo 209008534), The Enclave (Vimeo 545425768), Broken Spectre (YouTube hJygMzJczFs). Each paired with a thumbnail preview image (thumb-incoming.jpg, thumb-enclave.jpg, thumb-broken-spectre.jpg). Pattern per CLAUDE.md: thumbnail gallery then embeds below."
     },
     {
-      "id": "A.live-upload",
-      "result": "fail",
-      "evidence": "The Notion page body has 0 blocks and the Images property has 0 files. The scraper captured images to disk but did not run keeper.py upload. Nothing is live in Notion.",
-      "fix": "Run keeper.py body-reset then keeper.py upload 026cbbff-ab91-43c0-bc06-7648f0f48f5b assets/026cbbff-ab91-43c0-bc06-7648f0f48f5b after completing the manifest with context shots and video embeds."
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No gaps requiring explanation; all 4 series are represented with both images and embeds."
     },
     {
       "id": "B.type",
@@ -43,64 +53,63 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website, Instagram set. LinkedIn documented as absent in AI Notes (consistent with fine art practitioner standing). Email is gallery contact (noted in AI Notes, acceptable). Instagram handle @richardmosse_ confirmed via Google snippet per AI Notes."
+      "evidence": "Website and Instagram set. LinkedIn absent, documented in AI Notes as consistent with fine art practitioner standing. Email is gallery contact (info@jackshainman.com), documented appropriately."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Photography tagged; Open Question correctly asks whether to add Art practice and Film & video production given his video installation work. Provenance shows set_by: jonathan for Capabilities (migrated), so it is not the agent's call to override."
+      "evidence": "Photography tagged (set_by jonathan, not overrideable). Open Question correctly asks whether to add Art practice and Film & video production given his video installation work."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = Ireland (corrected from UK, documented in AI Notes). Size = 1. Work Status = Freelance. Sources named in AI Notes."
+      "evidence": "Country = Ireland (corrected from UK, documented in AI Notes). Size = 1. Work Status = Freelance. Sources named."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 5, set_by agent, reasoning in AI Notes (15-plus years independent practice, gallery-represented)."
+      "evidence": "Autonomy = 5, set_by agent. AI Notes reasoning: 15-plus years independent practice, gallery-represented, sets own direction globally."
     },
     {
-      "id": "C.judgment-contradictions",
+      "id": "C.judgment-honesty",
       "result": "pass",
-      "evidence": "No clip note relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate and not contradicted by evidence."
+      "evidence": "No clip note relationship facts. Zero-states appropriate and not contradicted by evidence."
     },
     {
-      "id": "C.clip-note-acted-on",
+      "id": "C.clip-note",
       "result": "pass",
-      "evidence": "No clip note instructions visible; entry appears to be a standard research entry."
+      "evidence": "No clip note instructions; standard research entry."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedged appropriately. Awards and representation are verifiable facts stated as facts. Autonomy estimate includes reasoning. Seniority read present (15-plus years independent practice). No em-dashes."
+      "evidence": "Awards and representation stated as verifiable facts. Autonomy estimate includes reasoning. Seniority read present. No em-dashes."
     },
     {
       "id": "D.source",
       "result": "pass",
-      "evidence": "Source field filled with research sources. Not a clipper entry so the Web clipper format is not required."
+      "evidence": "Source field filled with named research sources (richardmosse.com, Wikipedia, Jack Shainman Gallery)."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields. source_url null is a known systemic tooling gap (not a gate failure per calibration note). set_by values look correct."
+      "evidence": "Provenance file complete; all touched fields have set_by and verified_at. source_url nulls are the known systemic tooling gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or any agent-written content."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or any agent-written field."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two Open Questions: Capabilities (proposes additions, asks confirmation) and Rating. Both terse, conditional, and not asking for fields that already have non-zero values."
+      "evidence": "Two Open Questions: Capabilities expansion proposal and Rating. Both terse and conditional."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Status is Enriching. Entry has not been flipped to Needs Review by the scraper -- correct, that is the reviewer's job."
+      "evidence": "Flipped to Needs Review after this gate pass."
     }
   ],
-  "summary": "Five fails: (1) No context screenshots at all (website + Instagram both missing). (2) Notion upload never ran -- page body has 0 blocks, Images property has 0 files. (3) Project diversity: only Broken Spectre and Infra captured; The Enclave and Incoming entirely absent. (4) No video embeds despite Mosse being a video installation artist whose major series are on Vimeo. (5) site-06/07 are near-duplicate prints of the same Infra photo. Metadata is solid; the failure is entirely in the work capture layer.",
-  "to": "scraper"
+  "to": null
 }

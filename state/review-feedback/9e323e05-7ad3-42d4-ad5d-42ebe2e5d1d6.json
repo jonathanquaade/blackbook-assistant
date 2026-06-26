@@ -1,0 +1,115 @@
+{
+  "page_id": "9e323e05-7ad3-42d4-ad5d-42ebe2e5d1d6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T03:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.upload-complete",
+      "result": "pass",
+      "evidence": "13 images + 4 embeds confirmed live in Notion. Images property: 13 files. Page body: H2 + 13 image blocks + 4 embed blocks + 4 paragraph blocks + divider = 23 blocks."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects: Showreel 2020, Diesel FW18, Huesitos/Chocolates Valor, Jumpers Antioutfit, The Karman Project, Utah Jazz Playoff 2021, SEAT Ateca, Pull and Bear SS20, Sonar x Timoni West. Exceeds 3-project minimum by a wide margin."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Diesel FW18 has 2 animated GIFs showing different CGI fashion sequences. Pull and Bear SS20 has 2 images (metallic 3D type + dark neon still). Villalba not applicable here. Each major project paired with embed + thumbnail provides the best depth achievable for video work."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is 3D & motion. Spot-checked: site-03.png is SEAT Ateca CGI dinosaur/car composite; pullbear-01.jpg is SS20 3D metallic lettering; showreel thumbnail, Diesel GIFs, Huesitos thumbnail all show CGI/animation output. A photography poster rejection (site-09.jpg) was correctly made. All present images are on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-11.png confirmed as behance.net/amigototal (Behance profile page, 'Amigo Total, Barcelona, Spain' visible, project grid shown). site-12.png confirmed as instagram.com/amigototal (handle @amigototal, 'Future thinking creative studio', 8,484 followers, Barcelona address, production reps listed). Both correct. Note: Website field is Behance (not .com) because the original domain now serves a gambling site; the context shot correctly reflects this."
+    },
+    {
+      "id": "A.uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 Notion image blocks and 4 embed blocks have captions, confirmed via blocks API."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds: Showreel 2020, Huesitos/Chocolates Valor, Jumpers Antioutfit, The Karman Project. Each paired with a thumbnail preview image. CLAUDE.md thumbnail+embed pattern applied correctly."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions both document the compromised .com domain. No unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (Behance), Instagram, LinkedIn all present. Email: no public email found, not flagged as required for this studio type. LinkedIn added (https://www.linkedin.com/company/amigototal). Instagram @amigototal confirmed via IG screenshot."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D & motion tagged (set_by jonathan). Open Question asks whether to add Film & video production given live action and film direction work. Appropriate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Spain, Size 2-10, Work Status Studio. All set and consistent with IG bio (Barcelona address, production reps listed)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set for Studio type; checklist notes this is optional for org entries and only required when a single founder clearly embodies the org. Acceptable here given they operate as an independent creative studio with global production representation."
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) are appropriate. No relationship evidence in clip note."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-06-25'; no hidden instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes the domain-compromise warning, production rep names, and Autonomy reasoning. Seniority read present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-25'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file complete; all touched fields have set_by and verified_at. source_url nulls are known systemic gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in any agent-written field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse Open Questions: domain status confirmation and Capabilities expansion. Both conditional and appropriate."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review after this gate pass."
+    }
+  ],
+  "to": null
+}
