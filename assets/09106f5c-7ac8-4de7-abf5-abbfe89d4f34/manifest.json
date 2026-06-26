@@ -91,20 +91,18 @@
     "captured_at": "2026-06-25"
   },
   {
-    "file": "site-14.png",
-    "source_url": "https://www.mikeydowdle.com/",
-    "caption": "Website",
-    "link": "https://www.mikeydowdle.com/",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "file": "site-16.jpg",
+    "source_url": "https://i.vimeocdn.com/video/806075064-655ef1bdfdf5f35eb8aa226fd49a13b19a4d34d4fc46831e02af17ef91b19cfe-d_1280x720?region=us",
+    "caption": "Wimbledon 2019 Loop, video thumbnail",
+    "link": "https://vimeo.com/353780099",
+    "captured_at": "2026-06-25"
   },
   {
-    "file": "site-15.png",
-    "source_url": "https://www.instagram.com/mikeydowdle/",
-    "caption": "Instagram profile",
-    "link": "https://www.instagram.com/mikeydowdle/",
-    "captured_at": "2026-06-25",
-    "context_shot": true
+    "type": "embed",
+    "url": "https://vimeo.com/353780099",
+    "caption": "Wimbledon 2019 Loop",
+    "link": "https://vimeo.com/353780099",
+    "captured_at": "2026-06-25"
   },
   {
     "file": "site-17.jpg",
@@ -126,5 +124,23 @@
     "caption": "People, 2021, solo project",
     "link": "https://www.mikeydowdle.com/projects/people",
     "captured_at": "2026-06-25"
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://www.mikeydowdle.com/",
+    "caption": "Website",
+    "link": "https://www.mikeydowdle.com/",
+    "captured_at": "2026-06-25",
+    "context_shot": true
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://www.instagram.com/mikeydowdle/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/mikeydowdle/",
+    "captured_at": "2026-06-25",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Instagram served login page to headless Playwright (logged-out rate-limit). Not the real profile. Queued to ig-queue.json for logged-in ig.py grab."
   }
 ]

@@ -1,0 +1,68 @@
+{
+  "page_id": "4f0c7407-d562-4f12-a068-6cbf7ad8bc3a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "UPLOAD-COMPLETE",
+      "result": "fail",
+      "evidence": "Live Notion Images property is empty (0 files). The manifest has 11 entries and asset files exist locally, but keeper.py upload was never completed or was interrupted before finishing. The Work section body is also absent from Notion.",
+      "fix": "Run keeper.py body-reset then keeper.py upload 4f0c7407-d562-4f12-a068-6cbf7ad8bc3a assets/4f0c7407-d562-4f12-a068-6cbf7ad8bc3a against the corrected manifest (see below)."
+    },
+    {
+      "id": "A.manifest-caption-mismatch",
+      "result": "fail",
+      "evidence": "The manifest has systematic caption-to-image mismatches caused by sequential numbering drift. site-01 (Heliot Emil sculpture, correct), site-02 (a calendar grid showing months Jan-Dec 2021, NOT Heliot Emil), site-03 (laptop showing a blue-screen homepage, NOT Heliot Emil), site-04 (Hemper logo on white, NOT BUREAU213), site-05 (BUREAU213/pandemia poster, captioned BUREAU213 but is the right project at wrong file), site-07 (IOCUS/Closure typographic poster, captioned VILLALBA), site-08 (Deemer wordmark homepage, captioned VILLALBA), site-09 (Design Market Barcelona poster, captioned VILLALBA), site-10 (borshch.com editorial website screenshot, captioned Hemper brand identity), site-11 (Sauvage International black t-shirt product photo, captioned Hemper brand identity). Captions and images are misaligned throughout.",
+      "fix": "Rebuild the manifest from scratch, verifying each file's actual content against its source URL before assigning a caption. The project links in the manifest are correct; the captions need to be re-assigned by opening each downloaded file and matching it to the right project."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "The manifest assigns three images each to Heliot Emil, BUREAU213 and VILLALBA, and two to Hemper, but the actual image files do not match those projects. Additionally, 12 extra files exist in the assets directory that are NOT in the manifest (b213-01.jpg, freegratis-01.jpg, freegratis-02.jpg, heliot-01.jpeg, hemper-01.jpg, sauvage-01.jpg, sauvage-02.jpg, sauvage-04.jpg, villalba-01.jpg, villalba-02.jpg, villalba-04.jpg). The manifest is out of sync with the actual downloaded files.",
+      "fix": "Reconcile the manifest against all files in the assets directory. The named project files (villalba-01, hemper-01, sauvage-01, freegratis-01, b213-01 etc.) look like they are from a second, correct download pass that was never folded into the manifest. Use those files to build a clean manifest spanning at least 4 distinct named projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-10 is a screenshot of borshch.com (an editorial website showing an article about musician Object Blue). This is not Carlos Mayo's work at all and is off-capability. site-11 is a Sauvage International t-shirt product photo, which is e-commerce product photography, not the identity or web design work Carlos Mayo is tagged for. site-04 is the Hemper logo in isolation (a logo-only shot). These three images do not show design work.",
+      "fix": "Remove borshch.com screenshot, the Sauvage product photo, and the bare Hemper logo. Replace with images showing Carlos Mayo's actual graphic design and web output: typographic layouts, brand system applications, editorial spreads, or web UI from his named projects."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No website context screenshot is present in the manifest or in the assets directory (there is no shot of carlosmayo.info as a homepage screenshot). No Instagram context shot is present either. The b213-01.jpg file is a blank white square with crossed lines (a placeholder or failed screenshot). Context shots are entirely absent.",
+      "fix": "Run scrape.py shot https://carlosmayo.info/ --out assets/4f0c7407... --caption 'Website' and scrape.py shot https://www.instagram.com/carlosmayo.info/ --out assets/4f0c7407... --caption 'Instagram profile'. If IG is throttled, queue it and note it, but the website context shot must be present."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "site-02 is a calendar UI grid and site-03 is a laptop photo showing a homepage. These are surface-level or hero shots. The BUREAU213 captures (site-05, site-06) are good poster work. The VILLALBA slots (site-07 through site-09) are mixed: one is a typographic poster for a different project (Iocus/Closure), one is a standalone logotype (Deemer), and one is an in-situ photo of signage. Depth is not achieved because the mismatched files prevent a coherent project read.",
+      "fix": "Once the manifest is corrected, ensure each named project has 2-3 interior shots showing the actual design system, not just a cover or logo."
+    },
+    {
+      "id": "B.links-linkedin",
+      "result": "fail",
+      "evidence": "LinkedIn field is absent from the entry. AI Notes does not state LinkedIn was searched and found absent. A search for 'Carlos Mayo designer linkedin' or 'Carlos Mayo Madrid graphic design linkedin' should be attempted before declaring it absent.",
+      "fix": "Search for Carlos Mayo's LinkedIn. If genuinely absent, note 'LinkedIn: no profile found via search' in AI Notes."
+    }
+  ],
+  "passes": [
+    {"id": "B.type", "result": "pass", "evidence": "Type: Person, correct."},
+    {"id": "B.website", "result": "pass", "evidence": "Website https://carlosmayo.info/ present and correct."},
+    {"id": "B.instagram", "result": "pass", "evidence": "Instagram https://www.instagram.com/carlosmayo.info/ present; AI Notes states verified via site footer."},
+    {"id": "B.email", "result": "pass", "evidence": "Email hello@carlosmayo.info present."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Web design + Frontend development (web) set; Open Question asks about adding Graphic design / Identity systems. Appropriate."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Spain, Size 1, Freelance all set; AI Notes names sources (own site explicit)."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes."},
+    {"id": "C.judgment-no-contradiction", "result": "pass", "evidence": "No judgment field contradicts evidence. Zero-states correct."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes hedged appropriately; includes seniority and experience read."},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-06-27."},
+    {"id": "D.provenance", "result": "pass", "evidence": "Provenance file present and complete; source_url nulls are known systemic gap, not a gate failure per checklist."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes or Open Questions."},
+    {"id": "D.open-questions-terse", "result": "pass", "evidence": "One terse Open Question about Capabilities. Conditional and appropriate."}
+  ],
+  "to": "scraper",
+  "summary": "Upload was interrupted: Notion has zero images. Manifest captions are systematically misaligned with actual downloaded files. Context shots (website + Instagram) are entirely missing. One off-capability image (borshch.com editorial screenshot). LinkedIn not searched. Fix the manifest, complete the upload, add context shots, and remove the off-capability shot before re-submitting."
+}

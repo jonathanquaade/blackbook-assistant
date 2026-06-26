@@ -101,7 +101,9 @@
     "caption": "Website",
     "link": "https://www.theplacebureau.com/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Cloudflare security block: lower half of shot shows 'We couldn't verify the security of your connection' error overlay. Replaced by re-shoot attempt site-15.png."
   },
   {
     "file": "site-14.png",
@@ -109,7 +111,9 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/theplacebureau/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Logged-out IG login wall, not @theplacebureau profile. Queued for ig.py grab in state/ig-queue.json."
   },
   {
     "file": "site-15.png",
@@ -117,6 +121,8 @@
     "caption": "Website",
     "link": "https://www.theplacebureau.com",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Cloudflare security block persisted on re-shoot: same 'We couldn't verify the security of your connection' error overlay in lower half. Website context shot blocked; documented in AI Notes."
   }
 ]

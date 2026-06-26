@@ -1,51 +1,44 @@
 {
   "page_id": "ddabc21c-976e-40b9-a2e0-d5ec1131c157",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-25T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "No images captured at all. Assets directory contains only clipped.md; no manifest.json, no image files, no embeds.",
-      "fix": "Run the scraper. Zanele Muholi has two major series (Faces and Phases; Somnyama Ngonyama), extensively documented on Stevenson and Yancey Richardson gallery sites, Art21, and Tate. Target 3+ distinct projects / series, going inside them for spreads and individual prints, not just cover images."
+      "result": "pass",
+      "evidence": "14 active images across 5 named series: Somnyama Ngonyama, Miss Black Lesbian, Faces and Phases, Beloved, Brave Beauties. Plus installation view and video thumbnail. Well over 3 distinct projects."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "No images present.",
-      "fix": "Per A.project-diversity above."
+      "result": "pass",
+      "evidence": "Multiple images within each series (3 Somnyama Ngonyama individual portraits, 3 Faces and Phases, 2 Miss Black Lesbian). Installation view (site-10, site-12) shows the 2015 Yancey Richardson hang. Goes inside the work, not just covers."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Cannot verify without images. Capabilities are Photography and Art practice (jonathan-set); scraper must capture photography/fine-art work, not press portraits or event photos.",
-      "fix": "Capture from gallery case studies and Art21 feature."
+      "result": "pass",
+      "evidence": "Capabilities are Photography and Art practice (set_by: jonathan). All 14 active images are Muholi's fine-art portrait photography. Both YouTube embeds are Art21 documentaries about her practice. No off-capability work present."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "No context shots present. No website screenshot (Website field is empty; AI Notes explain personal site not found -- scraper should screenshot the Vimeo/gallery page used as the canonical source, or the Instagram profile as the primary visual anchor). No Instagram profile screenshot.",
-      "fix": "Capture instagram.com/muholizanele screenshot as IG context shot. For Website context shot: because Website is empty, use the best available canonical URL (stevenson.info/artist/zanele-muholi or yanceyrichardson.com/artists/zanele-muholi) and caption it accordingly, or leave it and document why."
+      "result": "pass",
+      "evidence": "site-17.png confirmed as the Stevenson gallery artist profile page (image shows Stevenson header, 'ZANELE MUHOLI' title, gallery nav) -- correctly captioned 'Stevenson gallery profile', not falsely labeled 'Website'. No personal website exists; AI Notes document this with Open Question 1 raised. IG: site-16.png rejected + documented ('Instagram returned login wall; queued to ig-queue.json for logged-in ig.py grab'); Zanele Muholi confirmed in ig-queue.json (line 1235). Sanctioned IG-throttle exception met: rejected, documented, queued. Not a fail."
     },
     {
       "id": "A.no-uncaptioned",
-      "result": "fail",
-      "evidence": "No images present to evaluate.",
-      "fix": "All images must have project name and source link captions once captured."
+      "result": "pass",
+      "evidence": "Every active manifest entry has a caption naming the series and source URL. No anonymous images."
     },
     {
       "id": "A.embeds",
-      "result": "fail",
-      "evidence": "No embeds. Art21 features video of Muholi; Tate and other sites may have video content. At minimum the scraper should check for embeddable video.",
-      "fix": "Check Art21 (art21.org/artist/zanele-muholi) and Tate feature pages for embeddable video; embed if present."
+      "result": "pass",
+      "evidence": "Two YouTube embeds present: Art21 Season 9 'Zanele Muholi in Johannesburg' and Art21 Extended Play 'Mobile Studios'. thumb-johannesburg.jpg is in manifest and uploaded (14 active images include it). NOTE: thumb-mobilestudios.jpg exists in assets/ but is absent from the manifest and not uploaded; the Mobile Studios embed will render without a Notion preview thumbnail. Minor gap -- Muholi is not a video creative and 14 images already anchor the entry visually. Not a gate failure."
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "Absence is not explained -- the scraper simply has not run. Gallery sites (Stevenson, Yancey Richardson, Art21) are publicly accessible and would yield high-quality work.",
-      "fix": "Run the scraper against gallery case studies."
+      "result": "pass",
+      "evidence": "No personal website: documented in AI Notes and Open Question raised. IG login wall: documented in manifest (site-16.png rejected with reason) and queued to ig-queue.json. No unexplained gaps."
     },
     {
       "id": "B.type-classified",
@@ -55,64 +48,64 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Instagram set and verified (192K followers, bio matches). LinkedIn: AI Notes confirm not found, acceptable for a fine-art practitioner. Email: gallery-represented, no public email expected. Website: empty with documented reason in AI Notes (no personal site at 0.8 confidence; zanelemuholi.com unrelated) -- acceptable but the Open Question to Jonathan about gallery pages standing in is correct. NOTE: Website field empty is not a fail when absence is documented at confidence floor and an Open Question is raised."
+      "evidence": "Instagram set (@muholizanele). LinkedIn: absence documented in AI Notes ('not expected for a fine-art practitioner of this profile'). Email: gallery-represented, no public email expected. Website: empty with documented reason in AI Notes and Open Question 1 raised. Honest documented absence throughout."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Photography and Art practice, set_by jonathan. Correct and not the reviewer's call."
+      "evidence": "Photography and Art practice, set_by: jonathan. Correct and not the reviewer's call."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "South Africa, Size 1, Freelance. All consistent with a gallery-represented independent artist. Sources named in AI Notes."
+      "evidence": "South Africa, Size 1, Freelance. Sources named in AI Notes (Wikipedia, Art21, Stevenson, Yancey Richardson). Freelance is correct for a gallery-represented independent artist with no employer."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5, set_by agent. 20+ year self-directed practice, international exhibition, no employer. Reasoning grounded and in AI Notes."
+      "evidence": "Autonomy 5, set_by: agent. 20+ year self-directed practice, internationally exhibited (Tate, Guggenheim, Venice Biennale), no employer. Reasoning grounded and in AI Notes."
     },
     {
       "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Zero-states consistent. Name corrected from 'Zanelle' to 'Zanele' (migration-set, correctly restructured). No contradictions."
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate -- clip note contained only a misspelled name, no relationship facts. No contradictions."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note contained only a misspelled name. Name corrected. No other instructions."
+      "evidence": "Clip note was 'Zanelle Muholi' (misspelling only). Name corrected to 'Zanele Muholi'. clipped.md confirms the raw name preserved. No other instructions present."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Well-sourced career chronology. Autonomy reasoning present. No em-dashes. Sources named (Wikipedia, Art21, Stevenson, Yancey Richardson). Hedging appropriate for inferences."
+      "evidence": "Factual claims sourced (exhibitions, awards, galleries, education). Seniority read present ('20+ years of practice'). Autonomy reasoning explicit. No em-dashes. Sources named throughout."
     },
     {
       "id": "D.source",
       "result": "pass",
-      "evidence": "Source filled with clipper note plus confirmation sources. Acceptable."
+      "evidence": "Source: 'Web clipper; confirmed via Wikipedia, Art21, Stevenson gallery biography, Yancey Richardson gallery page'. Filled and informative."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "set_by values correct throughout. null source_url is the known systemic gap, not a gate failure."
+      "evidence": "set_by values correct: agent for all scout/scraper fields, jonathan for Capabilities (locked migration value). null source_url is the known systemic tooling gap, not a gate failure per checklist calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or image captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two terse, conditional questions: Website confirmation and Familiarity. Both appropriate."
+      "evidence": "Two terse conditional questions: (1) Website clarification (Website field empty, appropriate), (2) Familiarity (zero-state, appropriate). Both correctly conditional."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry remains in Enriching. Correctly not flipped to Needs Review by the scout."
+      "evidence": "Entry was in Enriching. Flipped to Needs Review by this reviewer pass."
     }
   ],
-  "to": "scraper",
-  "summary": "Scout pass is solid: metadata complete, AI Notes thorough, Autonomy grounded, zero-states correct, Open Questions terse. The entry FAILS because the scraper has not run at all. No images, no manifest, no context shots, no embeds. Zanele Muholi's work is publicly accessible on Stevenson gallery, Yancey Richardson, Art21, Tate, and other institutional sites. Scraper should target: (1) Faces and Phases series, (2) Somnyama Ngonyama series, (3) any Art21 video embeds, (4) IG context shot (instagram.com/muholizanele), (5) a gallery or Art21 page as Website context shot since personal site is absent."
+  "to": "jonathan",
+  "summary": "Full pass. Stale fail feedback (attempt 1) was correctly out of date: the scraper ran and completed. 14 images uploaded across 5 distinct named series (Somnyama Ngonyama, Faces and Phases, Miss Black Lesbian, Beloved, Brave Beauties) plus installation view and Art21 video thumbnail. Two YouTube embeds. Stevenson gallery page correctly used as context shot stand-in (no personal site exists, documented). IG login wall rejected, documented, and queued to ig-queue.json. Scout metadata solid: Autonomy 5 grounded, AI Notes thorough, zero-states correct. Minor: thumb-mobilestudios.jpg exists locally but not in manifest; Mobile Studios embed will render without a Notion preview. Not a gate failure."
 }

@@ -1,0 +1,125 @@
+{
+  "page_id": "b75d3f42-ddec-4818-b5e3-fcfff546ab6e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.upload-complete",
+      "result": "fail",
+      "evidence": "Notion page body has exactly 1 block (an uncaptioned image); Images property has 0 files. The scraper's keeper.py upload never completed. 13 manifest items exist on disk but none reached Notion.",
+      "fix": "Re-run keeper.py upload b75d3f42-ddec-4818-b5e3-fcfff546ab6e assets/b75d3f42-ddec-4818-b5e3-fcfff546ab6e/ to push all manifest items to Notion."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Of 13 manifest images: 5 are from the Deep Time / Nevada Museum of Art project (site-02 through site-04, site-08, site-09, site-10); 3 are from eFlow E Ink sculpture (site-05, site-06, site-07); 3 are captioned BMW iX Flow (site-11, site-12, site-13). Only 3 distinct projects total, which meets the minimum, BUT several images in each group are wrong (see below).",
+      "fix": "Passes diversity threshold once wrong images are removed and replaced."
+    },
+    {
+      "id": "A.wrong-images",
+      "result": "fail",
+      "evidence": "site-12.jpg is captioned 'BMW iX Flow E Ink facade, CES 2022' but is actually a BMW Z1 roadster (a vintage sports car unrelated to Ivan Cruz's work). site-09.jpg is an editorial portrait of an unidentified man on a Reno rooftop. site-10.jpg is a group photo at a Hillel Northern Nevada student event. All three are from a unr.edu news article that happened to mention the Deep Time exhibit; the scraper grabbed editorial filler images from that page, not exhibit images.",
+      "fix": "Mark site-09.jpg, site-10.jpg, and site-12.jpg as rejected:true in the manifest. Replace with actual BMW iX Flow E Ink images from the bmwblog.com CES 2022 article (site-13.jpg is correct) and additional Deep Time exhibit images from nevadaart.org."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No website context screenshot and no Instagram context screenshot are present in the manifest or on the Notion page. The checklist requires one screenshot of the real website homepage and one of the Instagram profile as memory anchors. Both are absent.",
+      "fix": "Run scrape.py shot https://ivanjcruz.com/ --out assets/b75d3f42-ddec-4818-b5e3-fcfff546ab6e --caption 'Website' and scrape.py shot https://www.instagram.com/_ivanjcruz/ --out assets/b75d3f42-ddec-4818-b5e3-fcfff546ab6e --caption 'Instagram profile', add to manifest, re-upload. Note: site was 503 at scraper time; retry or use a cached/live attempt now. If IG is throttled, document and queue to state/ig-queue.json."
+    },
+    {
+      "id": "A.uncaptioned-images",
+      "result": "fail",
+      "evidence": "The one block that did land in Notion has no caption. This is a side effect of the interrupted upload, but it must be corrected when re-uploading.",
+      "fix": "Resolved by a complete re-upload from the manifest (all entries have captions)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior shots per project (3 eFlow angles, multiple Deep Time installation views, multiple BMW E Ink shots) -- depth is attempted. Passes once wrong images are removed."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is 'Creative technology'; images are spatial installations, interactive sculptures, and E Ink facades -- all on-capability."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video embeds present; none were required based on captured project pages (all static images). Acceptable unless scraper found video on project pages and skipped it."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents that site was 503 at time of pass; facts sourced from CanvasRebel interview, ArtCenter, and search."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present and plausible. No Email; AI Notes does not document a search for public email -- minor gap but not a bounce-level failure given the profile type."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Creative technology is appropriate for spatial media, generative design, VR, projection mapping work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, Size 1, Work Status Freelance. AI Notes cites CanvasRebel interview + site as sources. Meets objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. AI Notes provides reasoning: 13 yrs, runs own practice (Hexen Inc), teaches at ArtCenter."
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) are consistent with no relationship evidence in the clip."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was just 'Web clipper, 2021-06-27'; no hidden instructions detected."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes notes the 503 site issue and hedges where necessary. Seniority + experience read is present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-27'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file exists; all touched fields have set_by and verified_at. source_url nulls are the known systemic tooling gap, not a gate failure per checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Source, or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set -- none required given the entry state."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching (correct for a failed gate). Will flip to Needs Review only on a passing re-review."
+    }
+  ],
+  "to": "scraper"
+}

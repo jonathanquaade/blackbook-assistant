@@ -1,0 +1,117 @@
+{
+  "page_id": "09106f5c-7ac8-4de7-abf5-abbfe89d4f34",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "summary": "Upload never completed: Notion page body has 0 blocks. All 19 active image files and the manifest are on disk. Run keeper.py body-reset + keeper.py upload to push them to Notion, then re-submit for review.",
+  "to": "scraper",
+  "checks": [
+    {
+      "id": "UPLOAD-VERIFY",
+      "result": "fail",
+      "evidence": "Notion API returns 0 blocks on the page body. The scraper session cut off before keeper.py upload ran (or it failed silently). Assets and manifest are complete on disk but Jonathan would see a blank Work section.",
+      "fix": "Run: KEEPER_NO_MIRROR=1 python3 scripts/keeper.py body-reset 09106f5c-7ac8-4de7-abf5-abbfe89d4f34 && KEEPER_NO_MIRROR=1 python3 scripts/keeper.py upload 09106f5c-7ac8-4de7-abf5-abbfe89d4f34 assets/09106f5c-7ac8-4de7-abf5-abbfe89d4f34"
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Manifest covers 6 distinct projects: CCTV Kids Rebrand, Boing Kids Channel Rebrand, Virgin Media Join Journey, Commuter Characters, Wimbledon 2019 Loop, and People. No repeated-project bloat."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per main project (CCTV, Boing, Virgin Media, Commuters, People) plus a Vimeo embed for Wimbledon. Interior shots rather than single hero per project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion. Commuter Characters (site-11 to 13), Wimbledon thumbnail (site-16), and People (site-17 to 19) are clearly Cinema 4D 3D work. CCTV and Boing images are 2D styleframes from those motion projects, but they are legitimate deliverables from his studio work on those campaigns, not off-capability side projects. Acceptable."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png is the real mikeydowdle.com homepage (verified visually). site-15.png is the Instagram login wall, correctly marked rejected with reason documented, and entry is in state/ig-queue.json. This matches the sanctioned IG-throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 18 active work/context items in manifest have captions and links. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Wimbledon 2019 Loop has a Vimeo embed entry plus a thumbnail preview image (site-16.jpg) with link. Pattern followed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG rejection is documented and queued. No other unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present. LinkedIn documented in AI Notes (site + LinkedIn agree on Freelance). Email noted as inferred hello@ pattern with caveat in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion matches his work. Set_by jonathan in provenance."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, size 1, Freelance. Work Status resolved from site + LinkedIn (both agree); sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: 10+ yrs, went fully freelance, collaborates worldwide, teaches. Grounded."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states a relationship. Zero-states are consistent with clipped.md (no personal connection evidence)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md contains only template placeholder text (Notes here, What can they do?, etc.) with no instructions or stated facts. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Email is flagged as inferred. LinkedIn described as a corroborating source. Seniority and Autonomy reasoning are grounded in actual work history. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-06-29."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by. source_url null across the board, flagged as known systemic tooling gap per checklist calibration note; not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes uses semicolons and commas throughout. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present on the entry. None are required: Familiarity, Work With?, and Worked Together all have values; no relationship evidence triggers the story nudge; LinkedIn is documented."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching as expected pre-gate. Will flip to Needs Review only on a passing re-review after upload is confirmed."
+    }
+  ]
+}

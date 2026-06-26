@@ -90,6 +90,8 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/shyamagolden/",
     "captured_at": "2026-06-25",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Instagram login wall, not the profile -- headless Playwright returned the logged-out login/landing page instead of @shyamagolden profile grid. Queued for logged-in ig.py grab."
   }
 ]
