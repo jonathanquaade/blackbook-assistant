@@ -1,0 +1,111 @@
+{
+  "page_id": "eefa90a6-09ba-489f-b82e-56d3cd07f5cd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T10:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Google DeepMind (3 stills), Microsoft Fluent Emoji (2 stills + animated GIF), BCG Branding Tool (3 stills), Samsung Galaxy S24 live wallpaper (3 stills), Polaroid 3D product films (2 stills). All distinct subjects, no angle-duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple stills per project (3 per project typically), showing different angles and system elements within each project. MS Emoji includes an animated GIF showing the grid in motion. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are 3D-rendered outputs: design system elements, emoji 3D renders, abstract 3D compositions, live wallpaper stills, product renders. Matches tagged Capability '3D & motion' throughout. Verified visually."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png confirmed as mwinckelmann.com homepage (name and nav visible). site-16.png is an IG error page ('Something went wrong'), correctly marked rejected:true with reason documented, and entry is in state/ig-queue.json. Sanctioned exception applies per checklist: error-page rejected+documented+queued is not a fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 work images have captions naming the project and source links to the relevant project page on mwinckelmann.com. Context shots captioned 'Website' and 'Instagram profile' respectively."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "All 5 project pages (deepmind, msemojis, bcg, samsungs24, polaroid) contain HTML5 native video tags, not YouTube/Vimeo/SoundCloud embeds. The checklist embed rule covers YouTube/Vimeo/SoundCloud etc.; self-hosted video is not in scope. No missing embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest.json rejection_reason and ig-queue.json. No other sources blocked without explanation."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Person. Correct: Matthias Winckelmann is an individual (co-founder of someform Studio but the entry is the person, noted in AI Notes)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (mwinckelmann.com), Instagram (@hellowinck, linked from his own site), LinkedIn present. Email: /contact returns 404, /about has no mailto, homepage has no mailto. No public email discoverable from primary source. Absence is genuine, not a skipped search. Note: the AI Notes do not explicitly state that LinkedIn and IG were checked as Work Status sources alongside the site (only 'his site frames independent + studio work, no employer' is stated). Minor documentation gap, not a link-presence fail."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "'3D & motion' set_by jonathan. Fits the work captured. Open Question asks whether Identity systems / Creative direction should be added, which is appropriate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 1. Work Status: Freelance. All set. Work Status sourcing: AI Notes names site as the source ('his site frames independent + studio work, no employer'). LinkedIn and IG not explicitly named as checked sources in AI Notes, which is a minor gap against the objective multi-source rule documentation requirement. However, the site read is strong (co-founder framing, no employer listed) and the value is plausible. Not treating as a gate fail in v1; flagging for calibration."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent, reasoning in AI Notes ('runs comprehensive visual systems end to end and co-runs a studio (Autonomy 5, inferred)'). Grounded in verifiable client list and studio co-founder status."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no Jonathan relationship signal in the clip note. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2021-06-17' with no embedded instructions. No relationship facts stated. Name cleaned to 'Matthias Winckelmann'. clipped.md absent (body reset completed)."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy marked 'inferred'. Seniority stated with client evidence. No plain assertions about subjective quality. Minor: Work Status multi-source documentation is thin (site only named; LinkedIn/IG check not stated). Hedging is otherwise adequate."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-17'. Present and appropriate for a backfill entry."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. All agent-written fields set_by: agent. Capabilities correctly set_by: jonathan (Jonathan's own tag, locked). source_url null throughout: known systemic tooling gap, not a v1 gate fail per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "1 question: 'Add Identity systems / Creative direction to Capabilities? His work is heavy on 3D branding systems (DeepMind, Microsoft), not just motion.' Terse, conditional, asks about a field not already answered. Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, awaiting this reviewer gate before Needs Review flip. Correct."
+    }
+  ],
+  "notes": "Two minor documentation gaps noted but not treated as gate fails in v1: (1) Work Status AI Notes names site as the source but does not explicitly state what LinkedIn and IG showed, as the multi-source rule requires. (2) Self-hosted HTML5 video is present on all project pages but not captured as video embeds; the checklist covers YouTube/Vimeo/SoundCloud, so this is not in scope, but it may be worth Jonathan noting whether he wants the native video files downloaded in future for motion-designer entries.",
+  "to": "scraper"
+}

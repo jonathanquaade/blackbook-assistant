@@ -1,0 +1,31 @@
+{
+  "page_id": "94f1a3a8-edab-4e2f-9225-30ee3ac157c1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "7 distinct named projects (Uber 2018, Tricot 2018, Nemesis 2019, Y2K 2021, Vans 2022, Dawn FM 2022, Interspecies Future 2022); no repeated captions"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "3 images per project going inside each (letterhead, poster, website mockup, type specimen, billboard); not hero-only"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All 21 images are brand identity, graphic and motion work matching tagged Capability (Graphic design)"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png confirmed violetoffice.com homepage. site-02.png is blank white (IG rate-limit); correctly rejected:true in manifest, documented in AI Notes, queued to state/ig-queue.json. Sanctioned exception applies."},
+    {"id": "A.uncaptioned-images", "result": "pass", "evidence": "Every manifest entry has a named project caption and source link"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "YouTube playlist embed present for Dawn FM lyric videos; thumbnail image also captured; 21 images total (never embeds-only)"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "IG blank documented in AI Notes with queued entry in state/ig-queue.json"},
+    {"id": "B.type", "result": "pass", "evidence": "Studio (correct; small specialised hands-on team)"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram (@violetoffice verified via site), LinkedIn (company/violet-office), Email (info@violetoffice.com) all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Graphic design tagged (set_by jonathan); Open Question 1 asks about expanding to Identity systems, 3D and motion, Type design -- correct approach for a jonathan-locked field"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "US, 2-10 (corrected from 11-40, hedged in AI Notes), Studio; sources noted in AI Notes"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5 set (set_by agent); Studio type so optional per calibration; AI Notes includes seniority/leadership read"},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Zero-states not contradicted; no relationship facts in clip note"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip note was web-clipper only with no instructions; Source filled verbatim"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Size correction hedged; client roster is from public site; no em-dashes confirmed"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-06-25"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields in provenance with correct set_by; null source_url is known systemic gap, not a gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes or Open Questions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "2 terse conditional questions (Capabilities, Size); no story nudge needed (no prior relationship signals)"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching; flipped to Needs Review by this reviewer pass"}
+  ],
+  "notes": "Minor: interspecies-03.jpg is an orphaned file in assets/ not present in the manifest or Images property. Not a gate failure but scraper should clean it up on next pass.",
+  "to": null
+}

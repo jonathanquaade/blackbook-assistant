@@ -1,0 +1,111 @@
+{
+  "page_id": "a4b5e1ca-76a0-42b7-bf9e-81b0b2fe1661",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T10:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Panther Ring 2025 (jewellery CG), PRDCT VIZ 2023 (car render), Unfold Brand Video 2021 (abstract 3D forms), Abstract Wallpapers 2022 (Houdini procedural). No near-duplicate images across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple stills per project (3 for Panther Ring, 3 for PRDCT VIZ, 2 for Unfold, 2 for Abstract Wallpapers). Interior frames, not only hero covers. Visually confirmed."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 active images are 3D CG renders; 3 Vimeo embeds are motion films. Matches tagged capability '3D & motion' exactly. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png visually confirmed as Behance profile for Vladyslav Lavrenov (correct website context shot). Both IG shots (site-13, site-14) are rejected, documented in AI Notes, and queued to ig-queue.json (url updated to @lavrenowlad). Sanctioned throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a named project caption and a Behance or Vimeo source link."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "3 Vimeo embeds present (1081172508, 849997461, 627956978), each paired with a thumbnail preview image and a linked caption. Entry is not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes. ig-queue.json entry references the corrected handle @lavrenowlad with full reason."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, correct for an individual freelancer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Instagram field now reads https://www.instagram.com/lavrenowlad/ (corrected from defunct @vladyslav_lavrenov). Provenance source_url: 'LinkedIn slug + search agree on @lavrenowlad'. LinkedIn present. Website (Behance profile) present. Email: not found (Behance does not surface public email; absence acceptable at this confidence floor)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "'3D & motion' set_by jonathan, appropriate and confirmed by the work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Slovakia / 1 / Freelance. AI Notes names sources (Behance + LinkedIn agree). Objective multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes ('inferred from freelance AD work'). Seniority read present (senior CG/Houdini specialist, AD-level)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never / Don't know them / Unvetted) are appropriate. No clip note implies a relationship."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No instructions in the clip note beyond the URL."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged ('inferred'). Clients listed as Behance-sourced facts. No em-dashes. Seniority read present. IG handle situation accurately documented."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-17'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with correct set_by values. Null source_urls are the known systemic tooling gap, not a gate failure. Instagram field now has a non-null source_url."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, captions, or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions needed: the Instagram field is now set to the active handle at >=0.8 confidence (two sources agree). No unresolved judgment fields. No story nudge triggered (zero-state relationships, no clip note relationship signal)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; will be flipped to Needs Review on this pass."
+    }
+  ],
+  "summary": "Attempt 1 failed solely on B.links (Instagram field held defunct @vladyslav_lavrenov). Corrected: field now holds https://www.instagram.com/lavrenowlad/ supported by LinkedIn slug + search at >=0.8 confidence. All other checks were already passing. 14 images + 3 Vimeo embeds across 4 distinct 3D/motion projects. IG context screenshot queued (sanctioned exception). Entry is complete.",
+  "to": null
+}
