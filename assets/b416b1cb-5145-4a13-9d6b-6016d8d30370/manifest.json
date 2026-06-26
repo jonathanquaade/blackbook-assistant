@@ -2,57 +2,91 @@
   {
     "file": "site-01.jpg",
     "source_url": "https://hopperprize.org/wp-content/uploads/david-alabo-shade-10.jpg",
-    "caption": "FACELESS series",
+    "caption": "Shade, FACELESS series",
     "link": "https://hopperprize.org/david-alabo/",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-02.jpg",
     "source_url": "https://hopperprize.org/wp-content/uploads/david-alabo-portaltonowhere-09.jpg",
-    "caption": "FACELESS series",
+    "caption": "Portal to Nowhere, FACELESS series",
     "link": "https://hopperprize.org/david-alabo/",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-03.jpg",
     "source_url": "https://hopperprize.org/wp-content/uploads/david-alabo-peoplewatching-08.jpg",
-    "caption": "FACELESS series",
+    "caption": "People Watching, FACELESS series",
     "link": "https://hopperprize.org/david-alabo/",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-04.jpg",
     "source_url": "https://hopperprize.org/wp-content/uploads/david-alabo-magician-07.jpg",
-    "caption": "FACELESS series",
+    "caption": "Magician, FACELESS series",
     "link": "https://hopperprize.org/david-alabo/",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-05.png",
     "source_url": "https://artx.net/wp-content/uploads/2019/08/DA-2-1024x1024.png",
-    "caption": "Artworks 2019, ArtX Lagos spotlight",
+    "caption": "Safari, 2019, ArtX Lagos artist spotlight",
     "link": "https://artx.net/mediapost/artist-spotlight-david-alabo/",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-06.png",
     "source_url": "https://artx.net/wp-content/uploads/2019/08/DA-3-1024x1024.png",
-    "caption": "Artworks 2019, ArtX Lagos spotlight",
+    "caption": "Beyond The Horizon, 2019, ArtX Lagos artist spotlight",
     "link": "https://artx.net/mediapost/artist-spotlight-david-alabo/",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-07.png",
     "source_url": "https://artx.net/wp-content/uploads/2019/08/DA-4-1024x1024.png",
-    "caption": "Artworks 2019, ArtX Lagos spotlight",
+    "caption": "Anxiety in Chrome, 2019, ArtX Lagos artist spotlight",
     "link": "https://artx.net/mediapost/artist-spotlight-david-alabo/",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-08.png",
     "source_url": "https://artx.net/wp-content/uploads/2019/08/DA-5-1024x1024.png",
-    "caption": "Artworks 2019, ArtX Lagos spotlight",
+    "caption": "Shade, 2019",
     "link": "https://artx.net/mediapost/artist-spotlight-david-alabo/",
+    "captured_at": "2026-06-26",
+    "rejected": true,
+    "reject_reason": "Duplicate composition of site-01.jpg (same Shade / skull+palm island piece at lower resolution)"
+  },
+  {
+    "file": "lust-2019.jpg",
+    "source_url": "https://cdn.sanity.io/images/t4cb1ejj/production/ac9c7d02e07eeb232c96cd023cfc716001b2ef59-1400x1750.jpg",
+    "caption": "Lust, 2019, Contemporary And feature",
+    "link": "https://contemporaryand.com/magazines/black-mirrors-and-afro-surrealism/",
     "captured_at": "2026-06-26"
+  },
+  {
+    "file": "introspection-2019.jpg",
+    "source_url": "https://cdn.sanity.io/images/t4cb1ejj/production/c591703528409cbcb480f09a5cb5cc3bb20d91d6-1400x1400.jpg",
+    "caption": "Introspection, 2019, Contemporary And feature",
+    "link": "https://contemporaryand.com/magazines/black-mirrors-and-afro-surrealism/",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://www.davidalabo.com/",
+    "caption": "Website",
+    "link": "https://www.davidalabo.com/",
+    "captured_at": "2026-06-26",
+    "context_shot": true
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://www.instagram.com/davidalabo/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/davidalabo/",
+    "captured_at": "2026-06-26",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "IG served login wall (logged-out redirect); queued to state/ig-queue.json for ig.py grab"
   }
 ]

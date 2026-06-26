@@ -1,0 +1,110 @@
+{
+  "page_id": "24d505b2-7e26-4758-853d-e6cc50023e83",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 images across 5 named, visually distinct projects: Tarraco, The Tide, Fuego, Nobl Organizations, Balloon. No repeated-angle duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per main project (Tarraco, The Tide, Fuego), 2 for Nobl, 1 for Balloon. Interior/varied angles within each, not all hero crops."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion; all 12 images are CGI/3D renders or motion branding outputs. Work matches capability exactly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png is Behance profile for Crea Studio (correctly captioned 'Website (Behance, crea.st DNS failure)'). site-01.png is the IG error page, marked rejected in manifest with reject_reason, queued to state/ig-queue.json. Sanctioned exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has caption + link. Images array in Notion excludes rejected site-01.png."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Entry is a Studio (3D/motion); no embedded video assets were present. Behance CDN stills are the appropriate capture. No skipped YouTube/Vimeo links observed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "crea.st DNS failure documented in AI Notes. IG throttle documented in AI Notes and queued. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized creative team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://crea.st/ (DNS-dead but correctly retained as canonical). Instagram: https://www.instagram.com/crea.st/. LinkedIn: https://www.linkedin.com/company/crea-st. Email: none found; not recorded as missing but no evidence it was searched. NOTE: no Email field present; acceptable for a studio with no public contact address found."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D & motion tagged. Open Question #1 asks Jonathan whether to add Graphic design / Creative technology, which is the correct handling for an ambiguous add."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US, Size 2-10, Work Status Studio. AI Notes names sources (Behance, LinkedIn). Objective multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type: Studio (org-level). Checklist calibration 2026-06-21 exempts org entries from required Autonomy; AI Notes notes the omission with reasoning. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2021-06-17'; no relationship instructions or special signals present. Source field reflects this verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges founder's Apple move ('per LinkedIn, 2026'), documents DNS failure, IG queue, and Behance as active portfolio. Seniority/experience read present (founder Bruno Canales, studio founded 2018). No bare assertions of unverifiable claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-17'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values; agent-set fields marked agent, Capabilities marked jonathan (migrated). source_url null is the known systemic tooling gap (not a gate failure per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found. En-dash in '2-10' size is correct range usage."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion. Terse and conditional (current value is only 3D & motion, so expansion is a live question). No story nudge needed (no relationship change)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Currently Enriching; reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null
+}
