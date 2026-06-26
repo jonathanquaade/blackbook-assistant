@@ -1,0 +1,110 @@
+{
+  "page_id": "a31eac75-f82f-47d3-a7eb-3e96953a60ff",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects: Electric Elsewhere/Rivian, Chase US Open, SW-1 Music Player, Google DeepMind, IBM z17 LinuxONE, Riot Worlds 2022. No caption repetition across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project across 6 projects; images show interior stills (particle landscape, product close-up detail, machinery silhouettes, floating 3D terrain, fabric simulation). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is 3D & motion. All 18 project stills are 3D renders or motion styleframes (particles, product 3D, IBM hardware 3D, DeepMind terrain, Riot cloth sim). IBM Vimeo embeds are on-capability motion films. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-19.png confirmed: nidiadias.com homepage (nav shows NIDIA DIAS, ECD & ART DIRECTOR, OPO, PORTUGAL). site-20.png confirmed: instagram.com/imnidiadias profile (handle imnidiadias, name Nidia Dias, 21K followers). Both correct, neither mislabeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 22 manifest entries (18 project stills + 2 Vimeo thumbnails + 2 context shots) carry a caption and a link. No unnamed images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 Vimeo embeds present (IBM z17 and IBM LinuxONE), each paired with a thumbnail image and link. Entry is not embeds-only (18 project stills present)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thinness; 6 projects captured with depth. AI Notes documents source strategy."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual freelance designer/director."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (nidiadias.com), Instagram (instagram.com/imnidiadias, verified via IG profile screenshot + her site links it), LinkedIn (/in/imnidiadias/) all present. Email not listed; no public email found is acceptable and not noted as a gap in AI Notes, but LinkedIn note states it was set 2026-06-26 which is current. No obvious email gap flagged."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion (set_by jonathan). Matches her self-description (ECD/Director/3D Designer) and all captured work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Portugal. Size: 1. Work Status: Freelance. AI Notes sources: site + interviews (School of Motion / WNW). Objective multi-source rule applied and documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 (set_by agent) with reasoning in AI Notes: director-level remote freelance, leads pitches solo, awarded art director. Person entry; required and present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note states relationship facts. Zero-states (Never, Don't know them, Unvetted) are consistent with no contrary evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source set to 'Web clipper, 2021-06-17'. AI Notes documents the migrated Instagram field correction. No instructions in clip note left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged as 'inferred from director-level remote freelance work'. Studios named with sourcing (per School of Motion / WNW). Seniority read present (Art-Director to ECD level). No bare assertions of unverifiable claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-17'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields recorded in provenance with set_by values. source_url null is the known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, Source all checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field visible in the entry; none are conditionally required (no story-nudge trigger: Worked Together = Never, Familiarity = Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching (correct pre-gate state). Flipping to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

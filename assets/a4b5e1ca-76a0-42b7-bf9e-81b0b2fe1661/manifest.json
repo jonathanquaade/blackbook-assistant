@@ -1,5 +1,19 @@
 [
   {
+    "file": "vimeo-thumb-01.jpg",
+    "source_url": "https://i.vimeocdn.com/video/2011902226-81d5541a403fe57c4a769bc6a82423a9c7c41d2e0582591533e3ab80dbf88fd8-d_640?region=us",
+    "caption": "Panther Ring Film (preview), 2025",
+    "link": "https://vimeo.com/1081172508",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/1081172508",
+    "caption": "Panther Ring Film, 2025",
+    "link": "https://vimeo.com/1081172508",
+    "captured_at": "2026-06-26"
+  },
+  {
     "file": "site-01.png",
     "source_url": "https://mir-s3-cdn-cf.behance.net/projects/max_808/69715f220334625.Y3JvcCwxOTg3LDE1NTQsMCww.png",
     "caption": "Panther Ring, 2025",
@@ -18,6 +32,20 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/b5e212220334625.67c4932802d39.jpg",
     "caption": "Panther Ring, 2025",
     "link": "https://www.behance.net/gallery/220334625/Panther-Ring",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "file": "vimeo-thumb-02.jpg",
+    "source_url": "https://i.vimeocdn.com/video/1704255339-4f65661ab5b6c8e06c628c4fb5cb0e7e854798cc1c7aee9bac899d846ab66522-d_640?region=us",
+    "caption": "PRDCT VIZ (preview), 2023",
+    "link": "https://vimeo.com/849997461",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/849997461",
+    "caption": "PRDCT VIZ, 2023",
+    "link": "https://vimeo.com/849997461",
     "captured_at": "2026-06-26"
   },
   {
@@ -42,6 +70,20 @@
     "captured_at": "2026-06-26"
   },
   {
+    "file": "vimeo-thumb-03.jpg",
+    "source_url": "https://i.vimeocdn.com/video/1270294131-dca68e105042a0dcc18a19b23594d6a1cef185d8ce1bcf988_640?region=us",
+    "caption": "Unfold Brand Video (preview), 2021",
+    "link": "https://vimeo.com/627956978",
+    "captured_at": "2026-06-26"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/627956978",
+    "caption": "Unfold Brand Video, 2021",
+    "link": "https://vimeo.com/627956978",
+    "captured_at": "2026-06-26"
+  },
+  {
     "file": "site-07.png",
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/110ec6128720399.616433b7d3786.png",
     "caption": "Unfold Brand Video, 2021",
@@ -60,19 +102,21 @@
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/49a382128720399.616433b77bc9d.png",
     "caption": "Unfold Brand Video, 2021",
     "link": "https://www.behance.net/gallery/128720399/Unfold-Brand-Video",
-    "captured_at": "2026-06-26"
+    "captured_at": "2026-06-26",
+    "rejected": true,
+    "reject_reason": "Near-identical to site-07.png, same abstract surface render from same project"
   },
   {
     "file": "site-10.png",
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2111fd135104499.6207f18b6bfa6.png",
-    "caption": "Abstract Wallpapers (Houdini generative), 2022",
+    "caption": "Abstract Wallpapers (Houdini procedural), 2022",
     "link": "https://www.behance.net/gallery/135104499/Abstract-Wallpapers",
     "captured_at": "2026-06-26"
   },
   {
     "file": "site-11.png",
     "source_url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ac34ee135104499.61faeb574e123.png",
-    "caption": "Abstract Wallpapers (Houdini generative), 2022",
+    "caption": "Abstract Wallpapers (Houdini procedural), 2022",
     "link": "https://www.behance.net/gallery/135104499/Abstract-Wallpapers",
     "captured_at": "2026-06-26"
   },
@@ -90,6 +134,18 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/vladyslav_lavrenov/",
     "captured_at": "2026-06-26",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Profile shows 'Profile isn't available' - handle @vladyslav_lavrenov may be defunct; see @lavrenowlad"
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://www.instagram.com/lavrenowlad/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/lavrenowlad/",
+    "captured_at": "2026-06-26",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "IG throttled logged-out: 'Something went wrong' error page. Queued to ig-queue.json for logged-in grab via ig.py"
   }
 ]

@@ -1293,5 +1293,33 @@
     "ig_url": "https://www.instagram.com/carlosmayo.info/",
     "reason": "context shot and recent work; site has good coverage but IG may have newer projects; throttled at queue time",
     "queued_at": "2026-06-26"
+  },
+  {
+    "page_id": "94f1a3a8-edab-4e2f-9225-30ee3ac157c1",
+    "name": "Violet Office",
+    "ig_url": "https://www.instagram.com/violetoffice/",
+    "reason": "context shot blank (IG rate-limiting logged-out scrape); studio has good work on IG",
+    "queued_at": "2026-06-26"
+  },
+  {
+    "page_id": "a4b5e1ca-76a0-42b7-bf9e-81b0b2fe1661",
+    "name": "Vladyslav Lavrenov",
+    "ig_url": "https://www.instagram.com/lavrenowlad/",
+    "reason": "IG context screenshot blocked: @vladyslav_lavrenov shows 'Profile isn't available' (handle may be defunct); @lavrenowlad (confirmed via LinkedIn URL slug and search) returns 'Something went wrong' under headless throttle. Need logged-in ig.py grab for correct profile context shot. Also: IG may hold recent 3D/motion work posts beyond Behance (Netflix Atlas campaign, Las Vegas Sphere ATLA visuals not found on Behance).",
+    "queued_at": "2026-06-26"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "eefa90a6-09ba-489f-b82e-56d3cd07f5cd",
+    "name": "Matthias Winckelmann",
+    "ig_url": "https://www.instagram.com/hellowinck/",
+    "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited logged out). @hellowinck is the confirmed handle (linked directly from mwinckelmann.com). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-26"
   }
 ]
