@@ -1,0 +1,31 @@
+{
+  "page_id": "e6725e97-a775-49b1-a400-a4d913695640",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "6 distinct named projects: Natural Highs Festival 2017, POST-PRINT 2019, Tactile 3D Series, Uncommon Ventures 2020, Forum Internacional de Gaia 2019, Big Kitchen 2018"},
+    {"id": "A.depth", "result": "pass", "evidence": "2-3 images per project going inside the work: 3D stills, printed materials, motion frames; not just cover shots"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged 3D & motion. Tactile, Uncommon Ventures and NHF images are unambiguously 3D renders. POST-PRINT is AR/3D. Big Kitchen bigkitchen-02 shows a 3D-printed type sculpture. Forum uses 3D spheres in graphic design. Work is on-capability."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-16.png confirmed as serafimmendes.com (shows his photo, bio, and WEBSITE UNDER DEVELOPMENT banner). site-17.png confirmed as instagram.com/serafim.mendes (correct profile, 234 posts, matching bio and 3D work in grid). Both labeled correctly."},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 18 active images have captions and source links in manifest"},
+    {"id": "A.embeds", "result": "pass", "evidence": "Vimeo embed present for POST-PRINT (vimeo.com/382911426) with thumbnail image (postprint-thumb.jpg) and linked caption"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Work is present and sufficient; no unexplained thin sections"},
+    {"id": "B.type", "result": "pass", "evidence": "Person, correct"},
+    {"id": "B.links", "result": "pass", "evidence": "Website (serafimmendes.com), Instagram (serafim.mendes, verified), LinkedIn (/in/serafimmendes/), Email (hi@serafimmendes.com) all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "3D & motion, confirmed by actual images and AI Notes noting the AR/VR and animation dimension"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Portugal / 1 / Freelance. AI Notes documents: own site states independent, IG + Behance agree, no employer. Multi-source resolution recorded."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4 set by agent; reasoning in AI Notes: solo freelancer delivering to international clients, inferred from 8 years self-directed work"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note contradicts them"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Source is Web clipper, 2021-05-25; no special clip note instructions detected"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Autonomy noted as inferred; years estimated with roughly; seniority read included; no bare assertions of unverifiable facts"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-05-25"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have set_by values. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes and all written fields checked; no em-dashes found"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No Open Questions needed: all factual fields resolved, zero-states are correct defaults, no relationship signals requiring questions"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching, ready to flip to Needs Review"}
+  ],
+  "notes": "Website context shot shows WEBSITE UNDER DEVELOPMENT banner; the screenshot is honest documentation of the current live state, not a mislabeled shot. No action required.",
+  "to": null
+}

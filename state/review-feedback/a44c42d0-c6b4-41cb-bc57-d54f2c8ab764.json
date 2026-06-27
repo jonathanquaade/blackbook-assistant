@@ -1,0 +1,32 @@
+{
+  "page_id": "a44c42d0-c6b4-41cb-bc57-d54f2c8ab764",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "9 distinct client projects across the 9 non-context images"},
+    {"id": "A.depth-over-breadth", "result": "fail", "evidence": "Every one of the 9 project images is a homepage/hero-level screenshot; no interior pages, sub-pages, scroll states or multiple page templates captured for any project", "fix": "Go inside at least 3 of the strongest projects: capture sub-pages, collection/archive pages, or scroll states that show the designed layout system rather than just the entry splash. For example: Arpenteur collection pages showing product grid layout; Magma Journal article or archive page; M Magazine Le Monde a specific year/issue interior view."},
+    {"id": "A.on-capability", "result": "fail", "evidence": "3 of 9 project images show predominantly client content photography with minimal or invisible web UI: site-04.png (Ami Paris SS22) is a full-bleed fashion campaign photo with a small logo, no layout or navigation visible; site-11.png (Lachlan Bailey) is a book-cover product photo, no web interface visible; site-13.png (Romain Roucoules) is a large flower photo with the photographer's name, minimal UI chrome. The capability is Web design and Jonathan needs to see the designed interface, not the client's content.", "fix": "Replace site-04, site-11, and site-13 with captures that show the actual web layout: for Ami Paris find an interior page (shop, lookbook nav, or another scroll state showing the navigation system); for Lachlan Bailey capture a works grid or gallery page showing the designed layout; for Romain Roucoules capture a projects list or selected-works page where the typography/grid is legible. If interior pages are not accessible, swap these projects for ones where the UI is clearly visible."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png is paullacour.com (correct); site-15.png is instagram.com/@paul.lacour with handle, follower count and grid visible (correct)"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All manifest entries have captions and links"},
+    {"id": "A.embeds-video", "result": "pass", "evidence": "Web designer, not a video/audio creative; no embeds required"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Work is present; N/A"},
+    {"id": "B.type", "result": "pass", "evidence": "Person"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, LinkedIn all present; Email not found but no obvious public source identified"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Web design tagged; Open Question asks Jonathan about adding Frontend development (web) and Graphic design"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "France / 1 / Freelance; AI Notes documents own site + LinkedIn agree"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states consistent with no stated relationship in clip note"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "No instructions in clip note beyond basic URL"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Inferences hedged ('inferred from independent client roster, not first-hand'); seniority and trajectory included; no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Web clipper, 2021-05-13"},
+    {"id": "D.provenance", "result": "pass", "evidence": "Provenance file present; source_url null throughout (known systemic gap, not a gate failure); set_by values correct"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes or Open Questions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about Capabilities"},
+    {"id": "D.status", "result": "pass", "evidence": "Enriching, correct pre-gate state"}
+  ],
+  "to": "scraper",
+  "summary": "Two image failures. First: all 9 project captures are homepage splash screens only, no depth into any project's interior pages. Second: 3 of 9 project images (Ami Paris SS22, Lachlan Bailey, Romain Roucoules) show client content photography with near-invisible web UI, which does not demonstrate Paul's web design capability.",
+  "fix": "For the depth issue: go inside at least 3 projects and capture interior/sub-pages that show the layout system. For the on-capability issue: replace site-04, site-11, site-13 with captures where the designed interface is clearly visible (navigation, grid, typography, layout) not just the client's photography filling the frame."
+}

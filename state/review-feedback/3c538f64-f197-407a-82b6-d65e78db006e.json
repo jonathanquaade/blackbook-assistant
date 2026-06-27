@@ -1,0 +1,102 @@
+{
+  "page_id": "3c538f64-f197-407a-82b6-d65e78db006e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "to": "scraper",
+  "summary": "Multiple hard failures: no context shots, 3 blank images in the manifest from failed Spacebirth 2 fetches, the spagat files (actual studio work) are on disk but missing from the manifest, and LinkedIn is absent with no documented search.",
+  "checks": [
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No website screenshot and no Instagram profile screenshot appear in the manifest (all 11 entries are work images). Both context shots are mandatory per the checklist.",
+      "fix": "Add scrape.py shot of thepeople.world homepage (captioned 'Website') and a screenshot of instagram.com/thepeople.world (captioned 'Instagram profile') to the manifest and upload."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "3 of 11 manifest images (site-05, site-06, site-07) are completely blank white images captioned 'Spacebirth 2, 2022' -- failed fetches from spacebirth2.com that were not caught before upload. Additionally, spagat-01, spagat-02, spagat-03 are on disk (Spagat Music Berlin vinyl artwork, actual on-capability studio work) but are absent from the manifest entirely -- they were never added to the work section.",
+      "fix": "Remove or re-fetch site-05/06/07 (blank). Add spagat-01/02/03 to the manifest with correct captions and source links (Spagat Music Berlin). Aim for at least 3 distinct visible named projects."
+    },
+    {
+      "id": "A.depth",
+      "result": "fail",
+      "evidence": "Of 11 manifest images, 3 are blank (useless), and 4 are generic Behance portfolio thumbnails captioned 'Marius Jopen portfolio' without a named project. Only 'Love Foundation identity' has a project name. The actual studio work (spagat files on disk) is not in the manifest.",
+      "fix": "Replace blank and anonymous shots with the spagat files (named Spagat Music Berlin record artwork) and any other named project from thepeople.world or their clients. Each caption must name the project."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn field is empty and AI Notes does not document a LinkedIn search or confirm genuine absence. For a Berlin creative studio active since at least 2021, LinkedIn is likely findable.",
+      "fix": "Search 'THE PEOPLE Berlin studio linkedin' or 'thepeople.world linkedin'. If genuinely absent, note it in AI Notes. If found, add the URL."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-05, site-06, site-07 are blank white images in the manifest -- they appear to be failed fetches from spacebirth2.com (a Next.js CDN URL that returned empty). They have captions but the images contain no visible content.",
+      "fix": "Mark these three files as rejected in the manifest (or remove them) and re-fetch from spacebirth2.com with --render flag or find the images via another source."
+    },
+    {
+      "id": "A.project-diversity-studio-attribution",
+      "result": "fail",
+      "evidence": "Work is credited to 'Marius Jopen' (apparently a collective member's personal Behance) rather than to 'Service : THE PEOPLE' as a studio. The entry is for the studio, not the individual. Images should be captioned to name the studio project, not the individual contributor's personal portfolio page.",
+      "fix": "Identify which projects were done as THE PEOPLE (not just Marius Jopen solo work) and caption them with the project name and studio context. The spagat files appear to be actual studio output and are better sourced."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small Berlin creative collective."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan). Open Question 1 correctly asks about whether film/video production applies. No agent override of a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany, 2-10, Work Status Studio -- all set with agent confidence from site. Correct given a small Berlin collective."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy field is optional for Studio-type entries per checklist calibration note (2026-06-21). Autonomy 4 is set with a hedged note in AI Notes."
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a relationship. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source set to 'Web clipper, 2021-05-19'. No special instructions found in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes appropriately hedges: 'suggests film/video production and broader creative production may apply, unverified'. Autonomy noted as 'inferred, low confidence'. Seniority read present (independent collective)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-05-19'. Correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout but that is a known systemic tooling gap, not a gate failure per checklist calibration."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse Open Question about disciplines. LinkedIn is empty so no conditional violation there. Question is appropriate and specific."
+    }
+  ]
+}
