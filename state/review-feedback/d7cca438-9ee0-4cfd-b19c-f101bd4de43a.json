@@ -1,112 +1,111 @@
 {
   "page_id": "d7cca438-9ee0-4cfd-b19c-f101bd4de43a",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-26T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 named projects with visually distinct subjects: Adobe MAX 2023 (CGI landscape), Sealy (crystal closeup), Bali 2002 (3D flower), Val Morgan (particle sphere), OPPO R17 (product viz)"
+      "evidence": "5 named projects confirmed visually distinct: Adobe MAX 2023 (colorful CGI landscape), Sealy Posturepedic Crown Jewel (crystal macro render), Bali 2002 (3D floral), Val Morgan 2019 (particle sphere), OPPO R17 2018 (product viz). No repeated project."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Each project has 2 stills plus embed or thumbnail; different frames/angles, not just hero covers"
+      "evidence": "Each project has 2 stills plus a Vimeo embed with thumbnail; different angles and frames, not only hero covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All images are 3D renders and motion graphics stills, matching the 3D & motion capability exactly"
+      "evidence": "All images are 3D renders and motion stills; OPPO shot is a product CGI render. Matches 3D & motion exactly."
     },
     {
       "id": "A.context-shots-present-and-correct",
       "result": "pass",
-      "evidence": "site-12.png = rorymclean.com homepage (verified visually); site-13.png = instagram.com/_rorymclean profile with handle and bio visible (verified visually)"
+      "evidence": "site-12.png is rorymclean.com homepage (Rory McLean 3D & Motion branding, project grid visible). site-13.png is instagram.com/_rorymclean (Instagram UI, handle _rorymclean and bio '3D Artist using Houdini' confirmed)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every manifest entry has a caption and link"
+      "evidence": "Every manifest entry has caption and link; all 17 images named to a project or context shot."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "4 Vimeo embeds present (Sealy, Bali, Val Morgan, OPPO R17), each with a thumbnail preview image; entry has 13 still images so not embeds-only"
+      "evidence": "4 Vimeo embeds (Sealy, Bali, Val Morgan, OPPO R17), each paired with a Vimeo thumbnail preview image. 13 still images in addition; not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "LinkedIn absence documented in AI Notes with specific reason (search returns unrelated people)"
+      "evidence": "LinkedIn absence documented in AI Notes with specific reason (search returns unrelated individuals, no matching profile found)."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Person"
+      "evidence": "Type = Person."
     },
     {
       "id": "B.all-findable-links-present",
-      "result": "fail",
-      "evidence": "Site has a visible Contact nav item (confirmed in website context screenshot). No public email was captured, and AI Notes does not document checking the contact page and finding nothing. P1 runbook requires capturing the public contact email. The Email field is empty with no documented search.",
-      "fix": "Visit rorymclean.com/contact (or equivalent contact page), capture any public email address, write it to the Email field, or document in AI Notes that the contact page exists but has no public email address listed."
+      "result": "pass",
+      "evidence": "Email = hello@rorymclean.com now set (found publicly on rorymclean.com/pages/contact). Website, Instagram, LinkedIn (documented absent) all present or accounted for. The sole failing check from attempt 1 is resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "3D & motion, set_by jonathan, matches all captured work"
+      "evidence": "Capabilities = 3D & motion, matches all captured work."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Australia / 1 / Freelance, all sourced from his own site (his about page states freelance 3D artist, Sunshine Coast)"
+      "evidence": "Australia / 1 / Freelance, sourced from his own site about page (explicit statement)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: 10+ yrs freelance, runs own commissions solo"
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (10+ yrs freelance, runs own commissions solo)."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states are appropriate; clip note contains no relationship or judgment facts that would contradict them"
+      "evidence": "Zero-states appropriate; clip note contains no relationship or judgment facts that would contradict them."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is bare web clipper with no special instructions"
+      "evidence": "Source is bare web clipper with no special instructions."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Autonomy inference hedged ('inferred from'); seniority read present; factual claims attributed to his own site. Minor: AI Notes says 'Three Vimeo embeds' but manifest has four; not a gate failure."
+      "evidence": "Autonomy inference hedged ('inferred from'); seniority read present; factual claims attributed to his own site. Minor count discrepancy ('Three Vimeo embeds' vs four in manifest) is informational, not a gate failure."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2021-06-17'"
+      "evidence": "Source = 'Web clipper, 2021-06-17'."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All fields have set_by; source_url nulls are the known systemic tooling gap, not a gate failure per checklist note"
+      "evidence": "All fields have set_by; source_url nulls are the known systemic tooling gap, not a gate failure per checklist note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written text"
+      "evidence": "No em-dashes in AI Notes, captions, or any agent-written text."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions needed; no unresolvables; story nudge not triggered (Worked Together = Never)"
+      "evidence": "No Open Questions needed; no unresolvables; story nudge not triggered (Worked Together = Never)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching, pending this gate"
+      "evidence": "Status is Enriching pending this gate; will be flipped to Needs Review on pass."
     }
   ],
-  "summary": "One failing check: public email not captured and not documented as absent. Site has a visible Contact nav. Everything else passes: 5 distinct on-capability 3D/motion projects, 4 Vimeo embeds with thumbnails, correct context shots, all metadata complete.",
-  "to": "scraper"
+  "summary": "Attempt 1 failed on missing public email. Email is now set to hello@rorymclean.com (found on contact page). All 20 checks pass: 5 distinct on-capability 3D/motion projects, 4 Vimeo embeds with thumbnails, correct context shots, complete metadata.",
+  "to": null
 }
