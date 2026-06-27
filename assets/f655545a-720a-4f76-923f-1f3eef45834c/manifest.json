@@ -201,7 +201,9 @@
     "source_url": "https://www.carmenamsterdam.com",
     "caption": "Carmen Amsterdam, homepage UI by Gentle Studio",
     "link": "https://www.carmenamsterdam.com",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Pixel-duplicate of site-03 (carmenamsterdam.com homepage)"
   },
   {
     "file": "site-25.png",
@@ -215,7 +217,9 @@
     "source_url": "https://myraflores.com",
     "caption": "Myraflores, homepage UI by Gentle Studio",
     "link": "https://myraflores.com",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Pixel-duplicate of site-10 (myraflores.com homepage)"
   },
   {
     "file": "site-27.png",
@@ -240,7 +244,9 @@
     "source_url": "https://linguaplanta.com",
     "caption": "Lingua Planta, homepage UI by Gentle Studio",
     "link": "https://linguaplanta.com",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Near-duplicate of site-23 (linguaplanta.com homepage)"
   },
   {
     "file": "site-30.png",
@@ -262,15 +268,15 @@
     "caption": "GEM Faces casting agency, homepage UI by Gentle Studio",
     "link": "https://www.gem-faces.com",
     "captured_at": "2026-06-27",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Page loaded blank (Webflow JS-heavy, does not render without client-side execution)"
   },
   {
     "file": "site-33.png",
     "source_url": "https://linguaplanta.com/collections/all",
-    "caption": "Lingua Planta, shop page UI by Gentle Studio",
+    "caption": "Lingua Planta, products shop page UI by Gentle Studio",
     "link": "https://linguaplanta.com/collections/all",
-    "captured_at": "2026-06-27",
-    "context_shot": true
+    "captured_at": "2026-06-27"
   },
   {
     "file": "site-34.png",
@@ -278,6 +284,7 @@
     "caption": "Jhonathan Baena portfolio, homepage UI by Gentle Studio",
     "link": "https://www.jhonathanbaena.com",
     "captured_at": "2026-06-27",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Duplicate of site-18 (same Jhonathan Baena homepage render)"
   }
 ]

@@ -31,14 +31,18 @@
     "source_url": "https://ss22campaign.amiparis.com/",
     "caption": "Ami Paris SS22 campaign site",
     "link": "https://ss22campaign.amiparis.com/",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Full-bleed fashion campaign photography with tiny logo overlay; web UI invisible. Flagged by reviewer A.on-capability."
   },
   {
     "file": "site-05.png",
     "source_url": "https://www.magmajournal.com/",
     "caption": "Magma Journal",
     "link": "https://www.magmajournal.com/",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Replaced by deeper interior captures (site-17 issues page and site-24 article layout) to avoid three homepage splashes from same project."
   },
   {
     "file": "site-06.png",
@@ -59,7 +63,7 @@
   {
     "file": "site-08.png",
     "source_url": "https://www.arpenteur.fr/",
-    "caption": "Arpenteur",
+    "caption": "Arpenteur, homepage",
     "link": "https://www.arpenteur.fr/",
     "captured_at": "2026-06-27"
   },
@@ -84,7 +88,9 @@
     "source_url": "https://www.lachlanbailey.com/",
     "caption": "Lachlan Bailey photographer",
     "link": "https://www.lachlanbailey.com/",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Book-cover product shot; no web interface visible. Flagged by reviewer A.on-capability. Replaced by site-23.png."
   },
   {
     "file": "site-12.png",
@@ -98,7 +104,9 @@
     "source_url": "https://www.romainroucoules.com/",
     "caption": "Romain Roucoules photographer",
     "link": "https://www.romainroucoules.com/",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Full-bleed flower photograph; designed web interface invisible. Flagged by reviewer A.on-capability. Replaced by site-18.png."
   },
   {
     "file": "site-14.png",
@@ -114,6 +122,100 @@
     "link": "https://www.instagram.com/paul.lacour/",
     "captured_at": "2026-06-27",
     "context_shot": true
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://www.arpenteur.fr/collections/all",
+    "caption": "Arpenteur, collection grid interior",
+    "link": "https://www.arpenteur.fr/collections/all",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://www.magmajournal.com/issues",
+    "caption": "Magma Journal, issues listing",
+    "link": "https://www.magmajournal.com/issues",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-18.png",
+    "source_url": "https://www.romainroucoules.com/work",
+    "caption": "Romain Roucoules, selected works grid",
+    "link": "https://www.romainroucoules.com/work",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-19.png",
+    "source_url": "https://www.lachlanbailey.com/gallery/selected-works-commercial-2010-2026/",
+    "caption": "Lachlan Bailey, works gallery page",
+    "link": "https://www.lachlanbailey.com/gallery/selected-works-commercial-2010-2026/",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Blank frame; JS gallery did not load during render capture."
+  },
+  {
+    "file": "site-20.png",
+    "source_url": "https://www.magmajournal.com/contributions",
+    "caption": "Magma Journal, contributions archive",
+    "link": "https://www.magmajournal.com/contributions",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Shows a single editorial image and title rather than the archive listing layout; insufficient UI signal. Replaced by site-24 (article interior)."
+  },
+  {
+    "file": "site-21.webp",
+    "source_url": "https://www.lachlanbailey.com/",
+    "caption": "Lachlan Bailey photographer, homepage grid",
+    "link": "https://www.lachlanbailey.com/",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Scraper extracted LV Ibiza book cover image from page; client content photography not web UI."
+  },
+  {
+    "file": "site-22.webp",
+    "source_url": "https://www.lachlanbailey.com/",
+    "caption": "Lachlan Bailey photographer, homepage grid",
+    "link": "https://www.lachlanbailey.com/",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Scraper extracted editorial photography from page; client content not web UI."
+  },
+  {
+    "file": "site-23.png",
+    "source_url": "https://www.lachlanbailey.com/",
+    "caption": "Lachlan Bailey, homepage layout",
+    "link": "https://www.lachlanbailey.com/",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-24.png",
+    "source_url": "https://www.magmajournal.com/contributions/five-prose-poems-by-charles-ray",
+    "caption": "Magma Journal, article page interior",
+    "link": "https://www.magmajournal.com/contributions/five-prose-poems-by-charles-ray",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-25.png",
+    "source_url": "https://ss22campaign.amiparis.com/",
+    "caption": "Ami Paris SS22 campaign site, scroll state",
+    "link": "https://ss22campaign.amiparis.com/",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Same issue as site-04: full-bleed campaign photography, no legible web UI."
+  },
+  {
+    "file": "site-26.png",
+    "source_url": "https://champlacombe.fr/",
+    "caption": "Champ Lacombe gallery",
+    "link": "https://champlacombe.fr/",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-27.png",
+    "source_url": "https://luk-e.com/",
+    "caption": "Luke Evans photographer",
+    "link": "https://luk-e.com/",
+    "captured_at": "2026-06-27"
   },
   {
     "file": "magma-cover-1.jpg",
@@ -132,99 +234,5 @@
     "captured_at": "2026-06-27",
     "rejected": true,
     "reject_reason": "Publication cover photo (editorial content), not a screenshot of Paul's web design"
-  },
-  {
-    "file": "site-16.png",
-    "source_url": "https://www.arpenteur.fr/collections/all",
-    "caption": "Arpenteur, collection grid",
-    "link": "https://www.arpenteur.fr/collections/all",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-17.png",
-    "source_url": "https://www.magmajournal.com/issues",
-    "caption": "Magma Journal, issues archive",
-    "link": "https://www.magmajournal.com/issues",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-18.png",
-    "source_url": "https://www.romainroucoules.com/work",
-    "caption": "Romain Roucoules, selected works",
-    "link": "https://www.romainroucoules.com/work",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-19.png",
-    "source_url": "https://www.lachlanbailey.com/gallery/selected-works-commercial-2010-2026/",
-    "caption": "Lachlan Bailey, works grid",
-    "link": "https://www.lachlanbailey.com/gallery/selected-works-commercial-2010-2026/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-20.png",
-    "source_url": "https://www.magmajournal.com/contributions",
-    "caption": "Magma Journal, contributions archive",
-    "link": "https://www.magmajournal.com/contributions",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-21.webp",
-    "source_url": "https://assets.lachlanbailey.com/assets/media/designs/1440x1579/louis-vuitton-fashion-eye-ibiza-book-julia-martin-interim-scaling-916287.webp",
-    "caption": "Lachlan Bailey photographer, homepage grid",
-    "link": "https://www.lachlanbailey.com/",
-    "captured_at": "2026-06-27"
-  },
-  {
-    "file": "site-22.webp",
-    "source_url": "https://assets.lachlanbailey.com/assets/media/designs/1440x961/louis-vuitton-fashion-eye-ibiza-2026-maya-2023-898708.webp",
-    "caption": "Lachlan Bailey photographer, homepage grid",
-    "link": "https://www.lachlanbailey.com/",
-    "captured_at": "2026-06-27"
-  },
-  {
-    "file": "site-23.png",
-    "source_url": "https://www.lachlanbailey.com/",
-    "caption": "Lachlan Bailey, homepage gallery",
-    "link": "https://www.lachlanbailey.com/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-24.png",
-    "source_url": "https://www.magmajournal.com/contributions/five-prose-poems-by-charles-ray",
-    "caption": "Magma Journal, article page layout",
-    "link": "https://www.magmajournal.com/contributions/five-prose-poems-by-charles-ray",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-25.png",
-    "source_url": "https://ss22campaign.amiparis.com/",
-    "caption": "Ami Paris SS22 campaign site, scroll state",
-    "link": "https://ss22campaign.amiparis.com/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-26.png",
-    "source_url": "https://champlacombe.fr/",
-    "caption": "Champ Lacombe gallery",
-    "link": "https://champlacombe.fr/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
-  },
-  {
-    "file": "site-27.png",
-    "source_url": "https://luk-e.com/",
-    "caption": "Luke Evans photographer",
-    "link": "https://luk-e.com/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
   }
 ]
