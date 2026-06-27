@@ -1,0 +1,111 @@
+{
+  "page_id": "59fbfc8b-96b1-41da-9734-0eca912e5db7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects across 10 work images: Sandals Resorts (2), United Airlines (2), J&J/Kenvue (3), Vevo (2), Uber (1). Captions confirm different projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: United Airlines has both the logo animation and the app UI motion; J&J has logo shorthand + 3D red blood cells + Kenvue type motion; not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "7 of 10 work images are GIFs (motion animations: Sandals endcard, Sandals social loop, United logo animation, United app UI, J&J logo, J&J 3D cells, Kenvue motion type). 3 static images are marginal (vevo-mobile.jpg, vevo-desktop.jpg are identity mockups; uber-motion-02.jpg is a type sequence frame) but are agency-work context from the same projects. Majority is solidly on-capability. NOTE: vevo-mobile and vevo-desktop are identity stills, not motion. Reviewer judges acceptable given 7 motion GIFs anchor the entry; flagging for Jonathan to decide if he wants the two Vevo identity shots swapped for motion frames."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed: draegergillespie.com homepage, shows 'A MOTION DESIGNER FROM PORTLAND, OR.' and work experience. site-14.png confirmed: instagram.com/@draeger profile, 'Motion Design' bio, 2158 followers. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active work images have captions naming project and source link. Both context shots captioned 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Homepage features a self-hosted HTML5 video player (Uber showreel, 1:39), not a YouTube/Vimeo embed. No YouTube/Vimeo/SoundCloud found on project pages in the GIF-based stream section. No embed obligation triggered."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site is a sparse placeholder with a stream section of GIFs; AI Notes states this. No unexplained thin areas."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual motion designer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.draegergillespie.com/ (present). Instagram: https://www.instagram.com/draeger/ (present, confirmed correct by context shot showing 'Motion Design' bio). LinkedIn: https://www.linkedin.com/in/draegergillespie/ (present). Email: draeger.gillespie@gmail.com (present, visible on homepage screenshot)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: 3D & motion. Set_by jonathan in provenance. Matches his role as motion designer with 3D animation work (J&J red blood cells 3D GIF)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US (Portland OR confirmed on site). Size: 1 (individual). Work Status: Employed. AI Notes documents source resolution: site (highest weight) states 'Senior Motion Designer at Coinbase, 2025-Now'; LinkedIn snippet lists Wolff Olins (treated as stale). Multi-source rule correctly applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by agent). AI Notes provides grounded reasoning: ~10 yrs agency trajectory, Associate Motion Director at Wolff Olins, can run a motion workstream solo. Inferred from career history, hedged as inferred."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship. Clip note was 'Draeger Gillespie NYC' (location tag only, no relationship signal)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Draeger Gillespie NYC': name cleaned to 'Draeger Gillespie', NYC location noted (he is now Portland; AI Notes explains the move). No judgment facts stated in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('inferred from trajectory'), notes LinkedIn lag, confirms Instagram handle. Includes seniority read ('Senior / Motion-Director level, roughly 10 yrs') and career trajectory. No unverified claims asserted as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-25'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by for all touched fields. source_url is null across fields (known systemic tooling gap, not a gate failure per calibration note 2026-06-21). No fields written below 0.8 confidence; all facts from primary sources."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field reviewed. No em-dashes found. En-dashes used only in year ranges (2021-2025, 2015-2018), which is correct."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. None required: no unresolvables, no story nudge (Worked Together = Never, no relationship signal). Correct absence."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer (this gate) is flipping to Needs Review on pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "One soft flag for Jonathan: vevo-mobile.jpg and vevo-desktop.jpg are static brand identity mockups from the Vevo rebrand at Violet Office, not motion work. They are supplementary to 7 motion GIFs and do not fail the on-capability check, but Jonathan may prefer motion stills or frames from those Vevo project pages instead."
+}

@@ -1,0 +1,47 @@
+{
+  "page_id": "8d1bf303-80c2-4884-ad4c-f2313dd50d65",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "site-01.jpg and site-06.jpg are near-identical shots of the same Bang & Olufsen x Balenciaga speaker at the same angle (source URLs _Sh16.jpg and _Sh16-p-1600.jpg are the same image at two resolutions). That means 4 of 8 images are the Balenciaga project. The other 5 portfolio-overview images each show a different project (Volvo, Apple, Simpsons ident, Cornetto) but are captioned identically and link to the homepage root, so they read as anonymous hero grabs rather than identified project work.",
+      "fix": "Remove the duplicate site-01 / site-06 pair (keep the higher-res site-06). For the 5 portfolio-overview shots, trace each to its named project page (e.g. ajkhan.co.uk/volvo, /apple, /simpsons, /cornetto) and re-caption with project name and link. Aim for 3 named projects with 2-3 shots each so depth and diversity both pass."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "site-01 through site-05 are all homepage-level hero/cover images (source URLs are CDN thumbnails linked to the root, not to project pages). No interior/spread shots from any project except the Balenciaga page.",
+      "fix": "Open individual project pages (Volvo, Apple, Simpsons ident, Cornetto) on ajkhan.co.uk and pull interior frames: mid-shots, detail renders, alternate camera angles. The Balenciaga page already has depth; apply the same to at least 2 other projects."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No website homepage screenshot present in the manifest or asset folder. No Instagram profile screenshot present. Both are required per the checklist. AI Notes states IG was not located, but does not document whether the IG-throttle exception path was followed (no ig-queue entry, no 'rejected+documented' broken screenshot).",
+      "fix": "Run scrape.py shot https://www.ajkhan.co.uk/ --out assets/8d1bf303-80c2-4884-ad4c-f2313dd50d65 --caption 'Website' to get the homepage context shot. For Instagram: search for @ajkhan, @abduljabaarkhan, @a.j.khan or similar handles; if found add it, if not add an ig-queue entry and note the block in AI Notes per the IG-throttle exception path. Either way the website shot must be present."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "5 of 8 images (site-01 through site-05) are captioned 'Portfolio overview' with a link to the homepage root. The checklist requires every image to name its project. 'Portfolio overview' is not a project name.",
+      "fix": "Re-caption each image with its actual project name and a link to that project's page on ajkhan.co.uk. If a project page does not exist for a given image, replace the image with one from a named project page."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn field is empty. AI Notes does not document a LinkedIn search attempt or confirm none exists. The checklist requires an ALWAYS search for LinkedIn (name + discipline) with a documented finding or confirmed absence. Instagram is also empty; AI Notes says 'IG not located on his site' but does not document handle variants searched or a web search for his IG.",
+      "fix": "Search 'Abdul Jabbaar Khan motion designer linkedin' and capture the snippet. Search for his Instagram via handle variants and his own site/read.cv external links. Document findings (or confirmed absence with search terms used) in AI Notes. Add LinkedIn URL to the entry if found."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "note",
+      "evidence": "Image content is clearly on-capability (3D renders and motion stills: speaker, car, Apple ident, Simpsons ident, ice cream, fire VFX) so A.on-capability passes once the caption/link issues are fixed.",
+      "fix": "n/a"
+    }
+  ],
+  "summary": "Four distinct failures: (1) duplicate image pair (site-01 and site-06 are the same speaker shot at two resolutions), (2) no context shots at all (no website screenshot, no IG screenshot or documented exception path), (3) five images captioned 'Portfolio overview' linking to the homepage root rather than named project pages, and (4) LinkedIn not searched and IG search not documented. The capture is too thin and the mandatory context shots are missing. Bounce to scraper to fix.",
+  "to": "scraper"
+}

@@ -1,0 +1,110 @@
+{
+  "page_id": "8f012d2b-90b1-4499-9eb5-fa11e120cc65",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active images across 5 distinct named projects: MIMIC (4), Narratives of the Mind (3), Algorithmic Balance (3), Commercial Projects X2 (2), Unreal Characters (1), plus Website context shot. All 5 are genuinely different 3D works."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "MIMIC: 3 individual sculpture renders + 1 gallery room installation view. Narratives: full figure + 2 close-up details. Algorithmic Balance: 3 compositionally distinct sculpture views. Goes inside projects rather than hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is 3D & motion. Every active image is 3D CGI: cubist sculptures (MIMIC), surreal 3D character (Narratives), robot assemblage (Unreal Characters), 3D product CGI (Commercial Projects X2), abstract sculptural compositions (Algorithmic Balance). Two off-capability images (2D logo, ballroom illustration) correctly rejected in manifest."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-13.png) verified as behance.net/omaraqil profile page, correct. IG context shot (site-14.png) is an Instagram login page, correctly marked rejected with reject_reason documenting the issue, and entry is present in state/ig-queue.json. Sanctioned IG throttle path followed per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active manifest entries have captions naming the project. All non-context shots also have source links to Behance project pages."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capability is 3D still art / CGI illustration. No video embeds are needed; the work is rendered stills, not motion video or audio. No embed requirement triggered."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest reject_reason and in ig-queue.json. No other source gaps present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance CGI artist."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: behance.net/omaraqil. Instagram: instagram.com/omaraqildesign (verified same person via AI Notes: bio + 45K Lahore account). LinkedIn: linkedin.com/in/omaraqildesign. Email: me@omaraqil.com. All four link categories present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: 3D & motion, set_by jonathan (Jonathan-set, locked). AI Notes notes his work also spans graphic design/illustration but defers to Jonathan's tag. No override attempted."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Pakistan. Size: 1. Work Status: Freelance. AI Notes names the resolution: IG + LinkedIn both say freelance/own studio, two sources agree, meets objective rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: self-directed signature art and commercial commissions, senior Art-Director level, ~8 yrs experience."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note relationship claim. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry is a web clipper entry from 2021-06-17 with no relationship or instruction text in the clip note. Nothing to act on beyond the URL."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read, Autonomy reasoning, Work Status source resolution, and IG handle verification. Client list (Apple, Adobe, etc.) is standard for a Behance/portfolio listing and stated as context. No unhedged inferences about working style or Jonathan's experience with him."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-17'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout, but per checklist calibration note (2026-06-21) this is a known systemic tooling gap and is not a gate failure. set_by values are correct (agent for agent-set fields, jonathan for Capabilities)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and manifest captions checked programmatically. No em-dashes present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present in the entry. No judgment fields have non-zero values that would trigger the story nudge. No unresolvable gaps requiring a question."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

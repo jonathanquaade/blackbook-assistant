@@ -1,0 +1,110 @@
+{
+  "page_id": "b416b1cb-5145-4a13-9d6b-6016d8d30370",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 non-context images across 3 distinct sources: FACELESS series via Hopper Prize (4 individually titled works: Shade, Portal to Nowhere, People Watching, Magician), ArtX Lagos 2019 spotlight (Safari, Beyond The Horizon, Anxiety in Chrome), Contemporary And feature (Lust, Introspection). Works within FACELESS are separately named digital artworks with distinct compositions, not angles of one piece. Duplicate site-08 (Shade lower-res) correctly rejected. 3+ distinct projects/sources confirmed."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "9 work images across 3 named series/publication contexts; individual piece titles present rather than generic cover shots. Series framing appropriate for an autonomous art practice."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Illustration (Jonathan-set, set_by: jonathan). All 9 work images are 2D/3D digital surrealist artworks consistent with that tag. Open Question correctly asks Jonathan to consider re-tagging to 3D & motion + Art practice. No off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-09.png) confirmed: real davidalabo.com homepage showing DAVID ALABO name + nav (ART, WORK, ABOUT, CONTACT). IG context shot (site-10.png) rejected + reject_reason logged + entry queued to state/ig-queue.json with reason. AI Notes documents the login wall. Meets the sanctioned IG-throttle exception: block documented, rejected, queued."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active manifest entries have captions. Context shot captioned 'Website'. All work images carry named titles and source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "David Alabo is a digital visual artist; work is still images, not video/audio. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and manifest reject_reason. IG queue entry confirmed present in state/ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual artist."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.davidalabo.com/ (confirmed live, context shot shows real site). Instagram: https://www.instagram.com/davidalabo/ (set_by agent, AI Notes notes IG verified as Afro-surrealist 3D art matching site). LinkedIn: https://www.linkedin.com/in/davidalabo/ set. Email: hello@davidalabo.com from site contact page. All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Illustration (set_by jonathan). Open Question correctly surfaces a re-tag proposal. Reviewer does not override Jonathan-set Capabilities; the question is the right mechanism."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Ghana (corrected from migration Senegal, documented in AI Notes). Size: 1. Work Status: Freelance, supported by AI Notes noting own site + commissions + exhibitions + no employer. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: 'internationally exhibited artist who self-directs his work'. Grounded in brand collab credits (HBO, Apple, Adobe, Meta) and exhibition record (ArtX Lagos, Art Dubai). Appropriate for an autonomous art practice."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts these zero-states. Capabilities set_by jonathan respected and not overwritten."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relational facts or judgment calls present in the clip note (Source: Web clipper 2021-06-17). No clipped.md present; the body was likely processed and archived during the P1 pass. No outstanding instructions detected."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read (established, internationally exhibited), Autonomy reasoning (self-directs work), Work Status resolution (own site + commissions + no employer), IG verification note, and capability question flag. No em-dashes found. No unhedged unsupported claims (brand collabs described as facts, consistent with public record)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-17'. Present and complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. Capabilities correctly marked set_by: jonathan. Known systemic null source_url gap noted but not a gate failure per checklist calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions, and Source field all verified: zero em-dash characters found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: Capabilities re-tag proposal. Terse, conditional (Capabilities currently jonathan-set so agent cannot just change it, question is appropriate). No questions for fields already carrying non-zero-state values. No story nudge triggered (Worked Together remains Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently Enriching. Will be flipped to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper"
+}

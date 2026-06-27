@@ -1,0 +1,112 @@
+{
+  "page_id": "ef992156-bc3b-44a4-bd79-31682b01fc46",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Hublot/Arsham Droplet, Tiffany and Co. Holiday Icons, NIO ET9, Magic Leap 2, League of Legends Worlds 2021. No repeated project from different angles among the 12 work images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Arsham (3 images), Tiffany (3), NIO (3), MagicLeap (2), LoL (1). Multiple interior/detail shots per project rather than a single hero per project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is 3D and motion (Jonathan-set). Arsham: 3D fluid/watch renders. Tiffany: 3D jewellery renders. NIO: product CGI campaign. MagicLeap: 3D product visualisation. LoL: 3D character animation frame. All images show 3D/CGI/motion work. magiclp02 is a website screenshot showing his 3D campaign hero but is an acceptable secondary shot alongside a direct Behance extract."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-01.png is captioned 'Behance portfolio' and IS behance.net/nemanja_remake, not his website nemanjaivanovic.com. The required WEBSITE homepage context shot (nemanjaivanovic.com) is absent. The checklist requires a screenshot of the real WEBSITE homepage. site-02.png (Instagram login wall) is correctly marked rejected, documented, and queued to ig-queue.json, so the IG exception applies.",
+      "fix": "Capture scrape.py shot https://nemanjaivanovic.com/ --out assets/ef992156-bc3b-44a4-bd79-31682b01fc46 --caption 'Website' and add it to the manifest as a context_shot. The Behance context shot may remain as a supplement but does not substitute for the website screenshot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 active manifest entries have captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are 3D and motion (primarily visual output). League of Legends Worlds 2021 Show Open is a motion piece but a still frame was captured (lol01.jpg). The Behance project page likely has a video embed; however this is a borderline call and the still frame is representative. No clear evidence of a skipped YouTube/Vimeo embed on the other project pages based on available information."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest (site-02 rejected), AI Notes notes the block, and the entry is in ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct: Nemanja is an individual designer/director who runs a studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (nemanjaivanovic.com), Instagram (@lunemastudio), LinkedIn all present. Public email not found; AI Notes does not document a search for it, but for a studio founder with no public email listed this is a minor gap rather than a skipped obvious search. Behance is the primary portfolio and links all verified."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = '3D and motion', set_by jonathan. Agent correctly preserved it per AI Notes. Work captured matches."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Germany, Size = 1, Work Status = Studio. AI Notes documents sources: Behance + LinkedIn. Migration had Bosnia (corrected). Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5, set_by agent. Reasoning in AI Notes: leads own studio, Design Director level. Appropriate."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) are consistent with a 2021 web clipper entry; no clip note evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Old web clipper entry (2021-06-17). No relationship facts or instructions in clip note; Source records 'Web clipper, 2021-06-17'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read (Design Director level), Autonomy reasoning, client list framed as from public profile, and source attribution. No un-hedged inferences detected. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-17'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by and verified_at. source_url is null throughout (known systemic tooling gap per calibration note; not a gate fail)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all agent-written fields checked; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions present. Appropriate: no unresolvable facts and no relationship signals requiring questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, pending this gate. Status will be flipped to Needs Review on a pass verdict."
+    }
+  ],
+  "summary": "One FAIL: the website context shot is missing. site-01.png captures his Behance portfolio page (behance.net/nemanja_remake), not his website homepage (nemanjaivanovic.com). The checklist requires a screenshot of the real WEBSITE homepage. Everything else passes: 5 distinct 3D/motion projects with depth, IG throttle exception properly handled and queued, all metadata fields complete, AI Notes hedged, no em-dashes.",
+  "to": "scraper"
+}

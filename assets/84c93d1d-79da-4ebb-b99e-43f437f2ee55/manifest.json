@@ -68,6 +68,18 @@
     "caption": "Website",
     "link": "https://www.artstation.com/mattabellamy",
     "captured_at": "2026-06-26",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Mislabeled as Website context shot; actual content is altcinc.com SAAB S9 project page, not ArtStation portfolio homepage."
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://www.artstation.com/mattabellamy",
+    "caption": "Website",
+    "link": "https://www.artstation.com/mattabellamy",
+    "captured_at": "2026-06-27",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "ArtStation blocked by Cloudflare CAPTCHA (Epic Games gate); screenshot shows CAPTCHA page, not portfolio. ArtStation homepage context shot not capturable via headless browser."
   }
 ]
