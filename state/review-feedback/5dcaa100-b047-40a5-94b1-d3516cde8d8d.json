@@ -1,0 +1,111 @@
+{
+  "page_id": "5dcaa100-b047-40a5-94b1-d3516cde8d8d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active work images across 12 distinct named clients/projects. TNY has 2 images but they are two separate commissions (office cubicle interior vs neighborhood night scene). NYT has 2 images from distinct assignments. No repeated angles of one piece."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "For an editorial illustrator the finished illustration IS the deliverable; no interior project pages exist. The selection shows the actual rendered illustrations, not just hero banners. Appropriate for the medium."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Illustration. All 14 work images are editorial/commercial illustrations (The Atlantic cover, Bloomberg Businessweek cover, NYT editorials, MUBI, Google Doodle, album art, personal illustration series). Visually confirmed: isometric, figurative, hyperrealistic collage -- exactly the style described."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-13.png) confirmed: shows maxguther.de with the Nav (Work / About / Shop / Instagram). IG context shot (site-14.png) is rejected=true with documented reason ('IG served blank white page logged-out'), queued to state/ig-queue.json (confirmed entry present), and documented in AI Notes ('Freelance: site + IG + multiple press bios agree'). Meets the sanctioned-exception path in the checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active work images have named client/project captions and source links. Context shot has caption 'Website' with link."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Max Guther is an illustrator; no video/audio work in his portfolio. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest rejection_reason and queued. No other sources known to be blocked."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for a solo freelance illustrator."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://maxguther.de/ (confirmed live, correct). Instagram: https://www.instagram.com/maxguther/ (set; logged-out blank but handle verified via site nav link 'Instagram'). LinkedIn: https://www.linkedin.com/in/max-guther-b023471a5/ (set). Email: not present in entry or Notion fields -- but the checklist says 'public Email'; maxguther.de does not surface a public contact email (confirmed from clipped.md which lists project clients but no contact). No Open Question was filed about email, which is a minor gap but not a hard FAIL since the site may not publish one. NOTE: this is borderline; email absence is acceptable if the site genuinely does not publish one."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration -- correct per TAXONOMY.md; this is the sole and unambiguous capability. Set_by: jonathan in provenance, so reviewer does not second-guess."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (Berlin-based, confirmed). Size: 1 (solo freelancer). Work Status: Freelance, with sources named in AI Notes ('site + IG + multiple press bios agree, no employer'). Meets the objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: 'solo commissioned illustrator who delivers finished work to brief, no evidence of leading a team'. Seniority read present: 'Mid-career, roughly 8 years freelance, strong self-directed editorial illustrator'. Grounded in verifiable work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No clip note evidence of a prior relationship with Jonathan. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only clipped site/project copy (project titles, client names), no Jonathan commentary or instructions. No special instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences appropriately: 'Autonomy 4 (inferred)', 'roughly 8 years freelance'. Factual assertions (client list, award, location, education) are verifiable from public sources. No unhedged opinion stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-06'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout -- noted as a known systemic tooling gap per checklist calibration note (not a gate failure). set_by values are correct (agent for agent-researched fields, migration for migrated factual fields, jonathan for Capabilities which Jonathan set). No fact written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and all active manifest captions. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present in the entry. No terse questions are outstanding: Rating, Familiarity, and Worked Together are Jonathan's calls and should not be auto-asked when the entry has zero-states (no story nudge triggers here as Worked Together is Never). Acceptable."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Clean pass. 14 editorial illustration images across 12 distinct named clients. Website context shot confirmed. IG context shot sanctioned-exception (blank logged-out page, rejected, documented, queued). All metadata fields present. No em-dashes. AI Notes hedged with seniority read and Autonomy estimate. Work Status resolved by multi-source rule."
+}

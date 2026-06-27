@@ -1,0 +1,111 @@
+{
+  "page_id": "cd08ee2c-6a09-48f5-8e19-3834ca745087",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects across narrative (Changing Room, PISSNCHIPS), fashion (M&S Jager x David Gandy, Orla Kiely AW25), documentary (MIISTA/Emma Dabiri, Swiss Sauna Raft, Sauna Channel x Bagni Popolari) - verified visually, all different subjects and visual styles"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "7 projects each with a thumbnail still + playable Vimeo embed; for a film editor/director, this is the correct depth format (the film IS the interior)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production; all 7 projects are film/video work (short films, fashion brand films, documentaries); zero off-capability captures"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed as veraromanova.com homepage (verified visually). IG context shot (site-05.png) is rejected+documented in manifest with rejection_reason, queued to state/ig-queue.json for logged-in ig.py grab, and documented in AI Notes - meets the sanctioned IG throttle exception"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 7 thumbnails have named project captions with Vimeo source links; website context shot captioned 'Website'; rejected images are rejected in manifest"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "7 Vimeo embeds present for all 7 projects, each paired with a thumbnail image; entry is not embeds-only (7 thumbnails + 1 website shot = 8 images)"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes and manifest rejection_reason; queued to ig-queue.json"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person - correct"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website veraromanova.com, Instagram @vera.v.romanova (verified via site link), LinkedIn linkedin.com/in/vera-romanova, Email vera.v.romanova@gmail.com - all four present"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Film & video production - accurate per TAXONOMY.md; set_by jonathan per provenance (pre-existing tag confirmed correct by work captured)"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK, Size 1, Work Status Freelance; AI Notes documents the resolution: own site presents independent project work, LinkedIn links Bray's Run Productions; site authoritative. Note: clipped.md archived body contains 'Working Full-time at Stella McCartney as Senior Video Editor' under a template-scaffolded 'Availability / Terms' field - this appears to be stale 2021 template data, not a current Jonathan note, and the scraper's multi-source resolution (site authoritative over a 5-year-old template entry) is defensible. Flagged here for Jonathan's awareness."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent; AI Notes: 'self-shooting director/editor running her own projects' - grounded reasoning"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any clip note evidence; no relationship claim in the clip"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body was template scaffolding (archived to clipped.md); no Jonathan-authored instructions found in Name field or body; all template copy cleaned"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy noted as 'inferred'; Work Status resolution documented with sources named; no bare assertions of unverified facts; seniority read present ('Senior craft editor/director, 10+ yrs'); no em-dashes"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-06'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by entries; source_url is null throughout (known systemic gap, not a gate failure per checklist calibration note 2026-06-21)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all captions checked; no em-dashes found"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty; no fields need asking (all factual fields resolved or documented as queued); no story nudge required (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted)"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flipping to Needs Review now"
+    }
+  ],
+  "note": "One item for Jonathan's awareness: the 2021 clipped body (archived to assets/.../clipped.md) contains 'Working Full-time at Stella McCartney as Senior Video Editor' under a template row. The scraper set Freelance based on the current self-maintained site, which is the correct resolution rule. If Jonathan knows her current status, he can verify.",
+  "to": "scraper"
+}
