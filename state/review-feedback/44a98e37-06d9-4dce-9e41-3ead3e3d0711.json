@@ -1,0 +1,113 @@
+{
+  "page_id": "44a98e37-06d9-4dce-9e41-3ead3e3d0711",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-26T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images span two distinct sources (It's Nice That 2017 feature, LATAM Arte gallery) with visually distinct editorial illustrations across different subjects and styles; rejected site-02 duplicate correctly excluded."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images show editorial illustrations at full composition depth, not hero crops or cover thumbnails."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 13 work images are editorial illustrations; tagged Capability is Illustration. No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-08.png confirmed as real instagram.com/@arieldavi.s profile (14.9K followers, Ariel Davis name, arieldavis.studio@gmail.com bio visible). Website context shot (site-09.png) is rejected+documented in AI Notes (arielrdavis.com SSL timeout, WNW fallback 404'd) and entry is queued in state/ig-queue.json. Sanctioned path per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "6 LATAM Arte images (latam-1, latam-3, latam-5, latam-7, latam-8, latam-9) are captioned 'Editorial illustration, [subject], Ariel Davis portfolio' without naming the commissioning publication. clipped.md lists the actual clients (New Yorker, NYT Sunday Review, McSweeney's, Harvard Law Bulletin, The New Republic, among others) and the illustration subjects match recognizable commissions (e.g. latam-5 fingerprint/surveillance = NYT Privacy Project, latam-12 keys/gig symbols = NYT Gig Workers already correctly named). Only latam-12 names a client.",
+      "fix": "For each of latam-1, 3, 5, 7, 8, 9: cross-reference the illustration subject against the client list in clipped.md and the AI Notes client roster (New Yorker Infinite Scroll, NYT Privacy Project, NYT Wellness, Bloomberg, etc.) and update the caption to name the commissioning publication and project. If a specific commission cannot be confirmed, caption with the known era and style context rather than the generic 'Ariel Davis portfolio'. Prefer fewer correctly-named images over more anonymous ones."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video or audio work; illustrator. Embeds not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "arielrdavis.com completely down (SSL timeout, documented in AI Notes). IG queued in state/ig-queue.json for logged-in grab of recent commissions."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Person. Correct for a solo freelance illustrator."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (arielrdavis.com, dead but set), Instagram (verified @arieldavi.s, correct person confirmed via bio and grid), LinkedIn (set), Email (arieldavis.studio@gmail.com set). No obvious missing links."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Illustration matches all captured work and the client list."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US/1/Freelance set. Work Status sourcing note: site is dead so sourced from IG bio and LATAM Arte gallery context; AI Notes does not explicitly name the sources used to resolve Work Status (per the objective multi-source rule) but the freelance determination is well-supported by the nature of editorial commissions across many independent mastheads."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes: 'solo editorial commissions from top-tier mastheads, works without art direction beyond brief, mid-to-senior level.'"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no known relationship. Clip note carries no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip was a simple web clipper entry with no special instruction text. Source set correctly to 'Web clipper, 2021-06-22'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list claims are verifiable from public sources. Seniority read ('mid-to-senior level') and Autonomy reasoning present. No em-dashes found in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-22'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url null throughout is the known systemic tooling gap (not a gate failure per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-authored text."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "Open Questions field is empty. Standard terse questions for Familiarity? and Rating? are missing. Familiarity is at zero-state (Don't know them) and Rating is empty, so neither is conditional-blocked. Both should be present.",
+      "fix": "Add Open Questions: '1. Familiarity? 2. Rating?' via keeper.py ask."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Correct."
+    }
+  ],
+  "summary": "Two failures: (1) 6 of 13 LATAM Arte images lack named project/client captions despite clipped.md listing the actual commissioning publications; (2) Open Questions field is empty, missing the standard Familiarity? and Rating? questions.",
+  "to": "scraper"
+}

@@ -1377,5 +1377,19 @@
     "ig_url": "https://www.instagram.com/omaraqildesign/",
     "reason": "Context shot shows IG login page (logged-out redirect); need logged-in grab for real profile screenshot and hi-res 3D work posts",
     "queued_at": "2026-06-26"
+  },
+  {
+    "page_id": "fa28b30b-fb93-4bd0-b086-987ba4f9dd6d",
+    "name": "Adam J. Evans",
+    "ig_url": "https://www.instagram.com/adamevansgd/",
+    "reason": "login wall on headless; handle confirmed via Behance social links; IG context shot (site-16.png) rejected",
+    "queued_at": "2026-06-24"
+  },
+  {
+    "page_id": "ef992156-bc3b-44a4-bd79-31682b01fc46",
+    "name": "Nemanja Ivanovic",
+    "ig_url": "https://www.instagram.com/lunemastudio/",
+    "reason": "Instagram context screenshot returned login wall (headless Playwright blocked logged-out). @lunemastudio is his active studio account. Need logged-in ig.py grab for profile context shot and recent 3D/motion work posts.",
+    "queued_at": "2026-06-26"
   }
 ]
