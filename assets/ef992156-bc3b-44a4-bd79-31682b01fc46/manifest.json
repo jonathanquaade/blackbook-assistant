@@ -86,10 +86,20 @@
   {
     "file": "site-01.png",
     "source_url": "https://www.behance.net/nemanja_remake",
-    "caption": "Behance portfolio",
+    "caption": "Behance profile",
     "link": "https://www.behance.net/nemanja_remake",
     "captured_at": "2026-06-26",
     "context_shot": true
+  },
+  {
+    "file": "website-context.png",
+    "source_url": "https://nemanjaivanovic.com/",
+    "caption": "Website",
+    "link": "https://nemanjaivanovic.com/",
+    "captured_at": "2026-06-27",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "nemanjaivanovic.com DNS not resolving as of 2026-06-27 (ERR_NAME_NOT_RESOLVED, curl exit 6, WebFetch ECONNREFUSED). Site is down. Screenshot cannot be taken. Retry when site is back up."
   },
   {
     "file": "site-02.png",

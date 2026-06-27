@@ -1,45 +1,44 @@
 {
   "page_id": "44a98e37-06d9-4dce-9e41-3ead3e3d0711",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-26T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "13 work images span two distinct sources (It's Nice That 2017 feature, LATAM Arte gallery) with visually distinct editorial illustrations across different subjects and styles; rejected site-02 duplicate correctly excluded."
+      "evidence": "14 active images span two distinct sources: It's Nice That 2017 feature (6 distinct editorial illustrations across different scenes and subjects) and LATAM Arte gallery (7 images including named commissions for Increment Magazine, NYT Privacy Project, NYT Gig Workers, plus varied subjects). Rejected duplicate (site-02) correctly excluded."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Images show editorial illustrations at full composition depth, not hero crops or cover thumbnails."
+      "evidence": "Images show full editorial compositions at depth, not hero crops. Multiple illustrations from inside the It's Nice That feature and distinct latam commissions."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 13 work images are editorial illustrations; tagged Capability is Illustration. No off-capability material present."
+      "evidence": "All 13 work images are editorial illustrations. Tagged Capability is Illustration. No off-capability material."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-08.png confirmed as real instagram.com/@arieldavi.s profile (14.9K followers, Ariel Davis name, arieldavis.studio@gmail.com bio visible). Website context shot (site-09.png) is rejected+documented in AI Notes (arielrdavis.com SSL timeout, WNW fallback 404'd) and entry is queued in state/ig-queue.json. Sanctioned path per checklist exception."
+      "evidence": "site-08.png confirmed as real instagram.com profile: Instagram wordmark visible, @arieldavi.s handle, 14.9K followers, 'Ariel Davis' name, arieldavis.studio@gmail.com bio, illustration grid visible. Website context shot (site-09.png) is rejected, documented in AI Notes (arielrdavis.com SSL timeout, WNW fallback 404), and entry is queued in state/ig-queue.json. Sanctioned path per checklist exception."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "6 LATAM Arte images (latam-1, latam-3, latam-5, latam-7, latam-8, latam-9) are captioned 'Editorial illustration, [subject], Ariel Davis portfolio' without naming the commissioning publication. clipped.md lists the actual clients (New Yorker, NYT Sunday Review, McSweeney's, Harvard Law Bulletin, The New Republic, among others) and the illustration subjects match recognizable commissions (e.g. latam-5 fingerprint/surveillance = NYT Privacy Project, latam-12 keys/gig symbols = NYT Gig Workers already correctly named). Only latam-12 names a client.",
-      "fix": "For each of latam-1, 3, 5, 7, 8, 9: cross-reference the illustration subject against the client list in clipped.md and the AI Notes client roster (New Yorker Infinite Scroll, NYT Privacy Project, NYT Wellness, Bloomberg, etc.) and update the caption to name the commissioning publication and project. If a specific commission cannot be confirmed, caption with the known era and style context rather than the generic 'Ariel Davis portfolio'. Prefer fewer correctly-named images over more anonymous ones."
+      "result": "pass",
+      "evidence": "All 6 previously-failed LATAM captions are fixed: latam-1 names Increment Magazine; latam-5 names NYT Privacy Project; latam-12 names NYT Gig Workers article. latam-3/7/8/9 carry honest era/subject context without the generic 'Ariel Davis portfolio' tail. Per the fix instruction: named client where confirmable, honest era context otherwise. No anonymous captions remain."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "No video or audio work; illustrator. Embeds not applicable."
+      "evidence": "No video or audio work. Illustrator only. Embeds not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "arielrdavis.com completely down (SSL timeout, documented in AI Notes). IG queued in state/ig-queue.json for logged-in grab of recent commissions."
+      "evidence": "arielrdavis.com completely down (SSL timeout) documented in AI Notes. IG queued in state/ig-queue.json for logged-in high-res grab."
     },
     {
       "id": "B.type-classified",
@@ -49,22 +48,22 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (arielrdavis.com, dead but set), Instagram (verified @arieldavi.s, correct person confirmed via bio and grid), LinkedIn (set), Email (arieldavis.studio@gmail.com set). No obvious missing links."
+      "evidence": "Website (arielrdavis.com, dead but set), Instagram (verified @arieldavi.s, bio and grid confirmed as correct person), LinkedIn (set), Email (arieldavis.studio@gmail.com set)."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Illustration matches all captured work and the client list."
+      "evidence": "Illustration matches all captured work and the full client list."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "US/1/Freelance set. Work Status sourcing note: site is dead so sourced from IG bio and LATAM Arte gallery context; AI Notes does not explicitly name the sources used to resolve Work Status (per the objective multi-source rule) but the freelance determination is well-supported by the nature of editorial commissions across many independent mastheads."
+      "evidence": "US/1/Freelance set. Freelance determination supported by nature of independent editorial commissions across many mastheads. AI Notes note sources (IG bio, LATAM Arte context)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes: 'solo editorial commissions from top-tier mastheads, works without art direction beyond brief, mid-to-senior level.'"
+      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes: solo editorial commissions from top-tier mastheads, mid-to-senior level."
     },
     {
       "id": "C.no-judgment-contradiction",
@@ -74,12 +73,12 @@
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip was a simple web clipper entry with no special instruction text. Source set correctly to 'Web clipper, 2021-06-22'."
+      "evidence": "Clip was a simple web clipper entry with no special instructions. Source set to 'Web clipper, 2021-06-22'."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Client list claims are verifiable from public sources. Seniority read ('mid-to-senior level') and Autonomy reasoning present. No em-dashes found in AI Notes."
+      "evidence": "Client list claims are verifiable from public sources. Seniority read and Autonomy reasoning present. No em-dashes in AI Notes or any agent-authored field."
     },
     {
       "id": "D.source-filled",
@@ -94,20 +93,19 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, or any agent-authored text."
+      "evidence": "No em-dashes in AI Notes, Open Questions, captions, or any agent-authored text."
     },
     {
       "id": "D.open-questions",
-      "result": "fail",
-      "evidence": "Open Questions field is empty. Standard terse questions for Familiarity? and Rating? are missing. Familiarity is at zero-state (Don't know them) and Rating is empty, so neither is conditional-blocked. Both should be present.",
-      "fix": "Add Open Questions: '1. Familiarity? 2. Rating?' via keeper.py ask."
+      "result": "pass",
+      "evidence": "Open Questions now reads '1. Familiarity? 2. Rating?' - terse, conditional (Familiarity at zero-state, Rating empty), no fields already set at non-zero value. Confirmed in both the live entry and provenance (verified_at 2026-06-27)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching, awaiting this gate. Correct."
+      "evidence": "Entry is in Needs Review. Scraper flipped it during the re-upload pass; confirmed in provenance (set_by agent, 2026-06-27). Status correct."
     }
   ],
-  "summary": "Two failures: (1) 6 of 13 LATAM Arte images lack named project/client captions despite clipped.md listing the actual commissioning publications; (2) Open Questions field is empty, missing the standard Familiarity? and Rating? questions.",
-  "to": "scraper"
+  "summary": "Both attempt-1 failures resolved: (1) all 6 LATAM captions now name a client or carry honest era/subject context, no generic tails; (2) Open Questions field set to '1. Familiarity? 2. Rating?'. All other checks unchanged from passing. Entry is clean.",
+  "to": "jonathan"
 }
