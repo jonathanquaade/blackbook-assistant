@@ -1,45 +1,44 @@
 {
   "page_id": "0afe27f0-0704-4fb8-9967-8861fd7c54c5",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-27T00:00:00",
-  "verdict": "fail",
-  "attempt": 2,
+  "reviewed_at": "2026-06-27T10:30:00",
+  "verdict": "pass",
+  "attempt": 3,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "13 specimen images across 8 distinct typefaces. No repeated project."
+      "evidence": "17 work images across 8 distinct typefaces (Roobert, Avantt, Greed, Teodor, Tobias, Reckless, Panell, Post). No repeated project."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "Roobert, Avantt, Greed, and Tobias each have exactly one image, all identical-template hero cards: font name large on a solid colour, 'Displaay Type Foundry' below, nothing else. No character set, no weight range, no text-setting specimens. Teodor-01 is also a cover card (site-03 is a typeface-page screenshot that partially helps but does not replace it). That is 4 typefaces with zero interior depth, unchanged from attempt 1. Reckless, Panell, and Post do have real depth (3 images each, interior specimens).",
-      "fix": "For Roobert, Avantt, Greed, and Tobias: visit each typeface page on displaay.net and pull 1-2 interior images showing the character set, weight range, or paragraph text-setting — NOT the cover card already present. The cover cards may stay but must be accompanied by at least one interior specimen shot per typeface."
+      "result": "pass",
+      "evidence": "Prior fail fully resolved. Roobert: roobert-02 (bold+italic Moogfest text-setting at display scale) + roobert-03 (light-weight text-setting, same case study). Avantt: avantt-02 (MoMA Crafting Modernity wall type, in situ) + avantt-03 (Tre Mari printed collateral, display + text sizes). Greed: greed-02 (Polansky Gallery, italic text-setting) + greed-03 (GEN Z, compressed display on blue). Teodor: teodor-02 (Ar/Ge Kunst wordmark, 3-weight progression on black). Tobias: tobias-02 (Die Epilog interior editorial spread) + tobias-03 (BIRI Strategic Report covers, display + text). All 5 previously bare hero cards (roobert-01, avantt-01, greed-01, teodor-01, tobias-01) confirmed rejected:true in manifest and absent from Notion Images. No cover-card-only typefaces remain."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All work images are typeface specimens. Capability is Type design (Foundry). On-capability."
+      "evidence": "All 17 work images are typeface specimens. Capability = Type design (Foundry). On-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is the displaay.net homepage. site-02.png is the instagram.com/xyz_displaay profile page (correct handle, correct platform)."
+      "evidence": "site-01.png confirmed as displaay.net homepage. site-02.png confirmed as instagram.com/xyz_displaay profile (Instagram header visible, correct handle)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every manifest entry has a caption naming the typeface and a link to displaay.net. site-03.png is captioned 'Teodor typeface page'."
+      "evidence": "Every active manifest entry has a named caption and source link."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Type design is a visual discipline; no video or audio embeds expected."
+      "evidence": "Not applicable. Type design is a visual discipline; no video or audio embeds expected or missing."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained thin sections. The depth gap is the flagged check above."
+      "evidence": "No unexplained thin sections. All typefaces with prior gaps now have real specimens."
     },
     {
       "id": "B.type-classified",
@@ -49,7 +48,7 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Email = rgb@displaay.net (set since attempt 1 fix). Website, Instagram, LinkedIn all present."
+      "evidence": "Website (displaay.net), Instagram (xyz_displaay), LinkedIn, Email (rgb@displaay.net) all present."
     },
     {
       "id": "B.capabilities-tagged",
@@ -64,7 +63,7 @@
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Foundry is org-type; Autonomy optional per calibration. Field set to 4 with reasoning in AI Notes."
+      "evidence": "Org-type entry; Autonomy optional per calibration. Field set to 4 with hedged reasoning in AI Notes."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
@@ -74,7 +73,7 @@
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No special clip instructions. Source records Web clipper date."
+      "evidence": "No special clip instructions. Source records Web clipper date verbatim."
     },
     {
       "id": "C.ai-notes-hedged",
@@ -94,20 +93,19 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes in any agent-written text."
+      "evidence": "No em-dashes in any agent-written text confirmed across AI Notes and captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions; none required."
+      "evidence": "No Open Questions present; none required."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching. Not pre-flipped."
+      "evidence": "Entry was Enriching. Flipping to Needs Review as part of this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "Depth failure persists at attempt 2, identical to attempt 1. Roobert, Avantt, Greed, and Tobias each have only one image, all the same cover-card template (font name on solid colour, no specimen detail). The scraper added site-03 (a Teodor page screenshot) but did not add interior specimens for any of the four flagged typefaces. Email was fixed and passes. Everything else passes. This is the same A.depth-over-breadth fail after two scraper passes -- recommend escalating to Jonathan for adjudication.",
-  "adjudication_note": "This is attempt 2. The depth failure is real and specific: 4 typefaces still covered by cover cards only. Escalate to Jonathan with the specific issue rather than a third scraper bounce."
+  "to": "jonathan",
+  "summary": "All 20 checks pass. The A.depth-over-breadth failure from attempts 1 and 2 is fully resolved: all 5 bare hero cards are rejected, replaced by 9 real in-use and interior specimen images sourced from Anymade, Fonts In Use, and Typewolf. Every typeface now shows real character-set detail, weight ranges, or genuine deployment context. Metadata complete; context shots correct; no em-dashes; email present."
 }
