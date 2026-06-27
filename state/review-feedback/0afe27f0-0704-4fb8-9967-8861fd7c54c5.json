@@ -1,0 +1,113 @@
+{
+  "page_id": "0afe27f0-0704-4fb8-9967-8861fd7c54c5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 specimen images across 8 distinct font families (Roobert, Avantt, Greed, Teodor, Tobias, Reckless, Panell, Post). No repeating project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "Teodor (teodor-01) and Tobias (tobias-01) are each represented by a single hero cover card -- font name in one weight on a solid color, no character set, no text sample, no weight range shown. Roobert, Avantt and Greed also have only one image each and all three are the same layout hero card. 5 of 13 work images are cover cards showing nothing of the typeface design.",
+      "fix": "For each of Teodor and Tobias go to displaay.net/typeface/teodor and /tobias, pull 1-2 interior specimen images showing the character set, weight range, or text-setting. Do the same for Roobert, Avantt and Greed which each currently have only one cover card. Replace or supplement the cover cards with actual specimen detail shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Entry is tagged Type design (Foundry). All 13 work images are typeface specimens from the foundry catalog."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as displaay.net homepage. site-02.png confirmed as instagram.com/xyz_displaay profile page."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the typeface and a link to the typeface page on displaay.net."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Type design is a visual discipline; no video or audio embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sections; all gaps are the hero-card depth issue flagged above."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Foundry, correct for a type foundry."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email field is empty and not in provenance. displaay.net/help/contact lists rgb@displaay.net publicly -- one click from the homepage Contact link.",
+      "fix": "Set Email = rgb@displaay.net (from displaay.net/help/contact), record in provenance set_by agent."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Type design], correct per TAXONOMY."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Czech Republic, 2-10, Studio. AI Notes names the org and explains Work Status reasoning (it is the org itself)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Foundry is an org-type entry; Autonomy is optional per calibration note. Field is set to 4 with reasoning in AI Notes, which is acceptable."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship signal in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = Web clipper 2021-05-28; no special clip instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy marked as inferred. Seniority read present (established foundry, in-house staff). No em-dashes. No unhedged claims beyond verifiable facts."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = Web clipper, 2021-05-28."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or any agent-written text."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present; none required given no unresolved ambiguities beyond the failing items above."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains in Enriching pending this gate; not pre-flipped."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Two fails: (1) depth on 5 of 13 work images -- Teodor and Tobias have only a cover hero card each, Roobert/Avantt/Greed also single cover cards; go inside those typeface pages for actual specimen detail. (2) Public email rgb@displaay.net is on displaay.net/help/contact and was not captured."
+}
