@@ -1,29 +1,51 @@
 [
   {
+    "file": "site-22.png",
+    "source_url": "http://www.susana-rios.com/",
+    "caption": "Website",
+    "link": "http://www.susana-rios.com/",
+    "captured_at": "2026-06-27",
+    "context_shot": true
+  },
+  {
+    "file": "site-21.png",
+    "source_url": "https://www.instagram.com/susanarios_/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/susanarios_/",
+    "captured_at": "2026-06-27",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Blank screenshot: Instagram blocked logged-out render. Handle @susanarios_ unconfirmed as the designer. Queued to ig-queue.json for logged-in grab once handle is confirmed."
+  },
+  {
     "file": "site-01.gif",
     "source_url": "http://www.susana-rios.com/wp-content/uploads/2024/04/Bowery2.gif",
     "caption": "Website homepage",
     "link": "http://www.susana-rios.com/",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "18.5MB animated GIF, too large to upload. Bowery covered by site-14 through site-17."
   },
   {
     "file": "site-02.png",
     "source_url": "http://www.susana-rios.com/wp-content/uploads/2024/04/QontoCover2.png",
     "caption": "Website homepage",
     "link": "http://www.susana-rios.com/",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Qonto homepage cover thumbnail, redundant with deeper Qonto project images site-06, site-08, site-09."
   },
   {
     "file": "site-03.png",
     "source_url": "http://www.susana-rios.com/wp-content/uploads/2024/04/UntappedCover2.png",
-    "caption": "Website homepage",
+    "caption": "Untapped, brand identity",
     "link": "http://www.susana-rios.com/",
     "captured_at": "2026-06-27"
   },
   {
     "file": "site-04.png",
     "source_url": "http://www.susana-rios.com/wp-content/uploads/2023/04/SusoSiguenzaCover.png",
-    "caption": "Website homepage",
+    "caption": "SusoSiguenza, brand identity and collateral",
     "link": "http://www.susana-rios.com/",
     "captured_at": "2026-06-27"
   },
@@ -32,7 +54,9 @@
     "source_url": "http://www.susana-rios.com/wp-content/uploads/2024/04/FiitCover2.png",
     "caption": "Website homepage",
     "link": "http://www.susana-rios.com/",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Fiit homepage cover thumbnail, redundant with deeper Fiit project images site-19, site-20."
   },
   {
     "file": "site-06.jpg",
@@ -46,7 +70,9 @@
     "source_url": "http://www.susana-rios.com/wp-content/uploads/2023/05/Qonto-5.png",
     "caption": "Qonto, digital brand system, Koto 2021",
     "link": "http://www.susana-rios.com/project/qonto",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Portrait photo of a person, off-capability for graphic design entry."
   },
   {
     "file": "site-08.jpg",
@@ -123,7 +149,9 @@
     "source_url": "http://www.susana-rios.com/wp-content/uploads/2023/05/Fiit-1-scaled.jpg",
     "caption": "Fiit, digital brand identity, 2024",
     "link": "http://www.susana-rios.com/project/fiit",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Lifestyle fitness photography, off-capability for graphic design entry."
   },
   {
     "file": "site-19.png",

@@ -1,0 +1,113 @@
+{
+  "page_id": "f655545a-720a-4f76-923f-1f3eef45834c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 images across 5 distinct client projects (Carmen Amsterdam, Myraflores, GEM Faces, Jhonathan Baena, Lingua Planta) plus 2 context shots"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "Of 12 work images, 7-8 are client product/lifestyle/portrait photography hosted on those sites (site-04: product bottle shot; site-12: fashion/sandal shot; site-13: hotel interior; site-14: dining scene; site-15, site-16, site-17: model portrait headshots from GEM Faces; site-22: hand holding wildflower). Only 4 images actually show web UI: site-03 (Carmen), site-10 (Myraflores), site-18 (Jhonathan Baena), site-23 (Lingua Planta). The scraper pulled imagery from those CDN URLs rather than screenshotting the pages as designed interfaces.",
+      "fix": "Replace the 7-8 photography-only images with full-page or above-the-fold screenshots of the actual web interfaces at carmenamsterdam.com, myraflores.com, gem-faces.com, jhonathanbaena.com, linguaplanta.com. Use scrape.py shot <url> for each. At least 8 of 12 work images must show web layouts, navigation, typography and UI -- not the clients content photography."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Tagged Web design + Frontend development (web). The majority of the non-context work images (site-04, site-12, site-13, site-14, site-15, site-16, site-17, site-22) are client product shots, interior photography, and model portraits -- content that lives on those sites but does not demonstrate web design. Jonathan's spawn prompt specifically flagged: verify 'the captured client sites show her web work, not just brand photography.' They do not.",
+      "fix": "Capture screenshots of the web pages themselves: homepage layouts, collection pages, navigation states, typography, UI components. Scrape.py shot at multiple scroll depths or --render for JS-heavy Shopify/Webflow pages. The work to show is the interface she built, not images the client placed inside it."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is gentle-studio.com homepage (correct). site-02.png is instagram.com showing @angelique_janssen profile with name 'Angelique Janssen' and bio 'designing a cuter web' visible -- correct person, correct platform. IG context shot captured logged-out with the login modal present but the profile header is identifiable."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have captions and links in the manifest"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio work identified in the projects; no embed opportunity missed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "gentle-studio.com 503 documented in AI Notes; projects sourced from live client sites"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all set"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web); Open Question raised about the frontend tag"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands, Size 1, Freelance; sources (own site + LinkedIn + interview) named in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (runs solo client studio end to end)"
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "No judgment field contradicts any evidence in the entry"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md archived; clip body was a template shell with no Jonathan instructions requiring action"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Frontend tag hedged with Open Question; seniority/Autonomy reasoned and flagged as inferred"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-06'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries; source_url null is a known systemic tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about Frontend development (web) tag; no field with existing non-zero value queried"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching; not prematurely flipped"
+    }
+  ],
+  "summary": "Entry is metadata-complete and context shots are correct. The failure is in the work images: 7-8 of 12 work images are client product/lifestyle/model photography pulled from those site CDNs rather than screenshots of the web interfaces Angelique designed. Carmen Amsterdam has 3 images that are a fashion shoot and a hotel interior; GEM Faces has 3 model portrait headshots; Myraflores and Lingua Planta each have one raw product/brand photo. Only 4 images (site-03, site-10, site-18, site-23) actually show web UI layouts. This directly fails the on-capability bar and the depth check for a Web design entry.",
+  "to": "scraper"
+}

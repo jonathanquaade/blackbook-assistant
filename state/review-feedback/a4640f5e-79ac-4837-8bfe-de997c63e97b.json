@@ -1,113 +1,111 @@
 {
   "page_id": "a4640f5e-79ac-4837-8bfe-de997c63e97b",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-27T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-27T10:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct named projects: Gucci Hallucination 2018, Plats Bruts 2019, Bulgari Serpenti 2023, Ruinart 2023"
+      "evidence": "4 distinct named projects: Gucci Hallucination 2018 (4 images), Plats Bruts exhibition 2019 (3 images), Bulgari Serpenti 75th anniversary 2023 (3 images), Ruinart x Ignasi Monreal 2023 (3 images). No caption duplication across projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3-4 images per project, going inside the work (Gucci panoramic + detail illustrations, Bulgari painting installed in boutique, Ruinart label and painted motifs)"
+      "evidence": "Goes inside each project: Gucci has panoramic + 3 detail digital paintings (different scenes/figures); Bulgari has artist-with-painting portrait plus painting installed in boutique plus close detail view; Plats Bruts mixes finished exhibition paintings and a studio process shot; Ruinart has label detail, painted canvas, and studio setup. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All captured images are illustration and oil painting: Gucci digital-painted campaign, Bulgari Cadmus and Harmonia oil painting, Ruinart bottle and painting details, Plats Bruts trompe l'oeil paintings and exhibition shots. Capability is Illustration; match is clean."
+      "evidence": "Capability tagged Illustration. All 14 active images are digital illustration or oil painting work: Gucci SS18 digital-painted campaign scenes (site-01 to 04), Plats Bruts trompe l'oeil oil paintings (site-05 to 07), Bulgari Cadmus and Harmonia oil painting (site-08 to 10), Ruinart painted label and canvas (site-14 to 16), IG profile context shot (site-18). Fully on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-17.png (website) is rejected and marked with rejection reason (HTTP 500 error page) -- correct. site-18.png visually confirmed as instagram.com profile for @ignasi showing 'Ignasi Monreal' bio. IG-throttle exception applies: queued to state/ig-queue.json, documented in AI Notes. Sanctioned path followed."
+      "evidence": "Website (site-17.png): rejected + documented with reason 'HTTP 500 error page captured'; AI Notes confirm 'ignasimonreal.com returning HTTP 500 as of 2026-06-27'. Website is genuinely down, not a lazy skip. IG context shot (site-18.png): visually confirmed as instagram.com -- shows Instagram logo, @ignasi handle, 'Ignasi Monreal' bio, 213K followers, correct grid. IG capture queued to state/ig-queue.json for logged-in full-res pass; confirmed present in queue."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 active (non-rejected) manifest entries have captions and source links"
+      "evidence": "All 14 active manifest entries have a caption field and a link field. 4 rejected entries (site-11, 12, 13 contaminated from Whitewall sidebar; site-17 website error page) are properly excluded."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Capability is Illustration (static art); no video/audio embeds required"
+      "evidence": "Capability is Illustration (static visual art). No video or audio embeds applicable or required."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Dead website documented in AI Notes with HTTP 500 reason. LinkedIn absence documented. IG queue documented."
+      "evidence": "Dead website documented in AI Notes with HTTP 500 reason and date. LinkedIn absence documented ('no profile surfaced in search; typical for independent fine artists at this level'). IG full-res queued with documented reason. 3 contaminated images rejected with specific reasons in manifest. No unexplained thin sourcing."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person"
+      "evidence": "Type: Person. Correct for an individual artist."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email field is empty and AI Notes contain no mention of whether a public email was searched. Artists at this profile level often have gallery contact, agent email, or a public contact address on press materials. The AI Notes document LinkedIn absence ('no profile surfaced in search') but say nothing about email.",
-      "fix": "Search for Ignasi Monreal public contact email via press materials, gallery representation (La Fresh Gallery, representation agencies), and any contact page on ignasimonreal.com once it comes back online. If none found after a genuine search, add one line to AI Notes: 'No public email found; no contact page accessible while site is down.' Then clear the gap."
+      "result": "pass",
+      "evidence": "Website set (https://www.ignasimonreal.com/). Instagram set and verified (@ignasi -- bio and grid confirmed as Ignasi Monreal, 213K). LinkedIn: searched, not found, documented in AI Notes. Email: sonia@ignasi-monreal.com present (management/representative contact sourced from press snippets and search snippets while site is down). All four fields addressed."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Illustration tagged, set_by jonathan. Work matches."
+      "evidence": "Illustration tagged, set_by jonathan. Work matches. Open Question filed asking whether Art should be added given his fine-art exhibitions and oil paintings."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Italy + Spain (Rome/Barcelona). Size 1. Work Status Freelance with sources cited: own site + press agree, LinkedIn stale/absent. Objective rule applied."
+      "evidence": "Country Italy + Spain (Rome base, Barcelona origin). Size 1. Work Status Freelance with multi-source evidence cited in AI Notes (own site + press agree; LinkedIn absent/stale). Objective rule applied correctly."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes: 'conceives and directs his own large campaigns and exhibitions end to end'"
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: 'conceives and directs his own large campaigns and exhibitions end to end.' Seniority read: 'approx. 15 yrs, high profile.' Person entry; field required and present."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never and Familiarity: Don't know them consistent with web-clipper provenance and no relationship note"
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are consistent with plain web-clipper origin and no relationship note in the clip. Work With?: Unvetted as zero-state. No contradiction."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2021-06-06'; no instructions apparent in clip note"
+      "evidence": "Source is 'Web clipper, 2021-06-06'. Clip was a plain page-clip with no instructions, relationship facts, or judgment signals. Nothing left unacted."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Autonomy and career read hedged as inferred; verifiable facts (clients, awards, exhibitions) stated directly; seniority read present ('approx. 15 yrs, high profile')"
+      "evidence": "Autonomy 5 hedged as inferred. Verifiable facts (Gucci SS18, Beazley shortlist, Design Prize Milan, Plats Bruts at La Fresh Gallery, Bulgari Serpenti 75th, music videos for named artists) stated directly. Seniority read grounded in real work history. Email sourced from press while site is down -- nature of address (management contact) noted. No bare assertions about unverified claims."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-06-06'"
+      "evidence": "Source: 'Web clipper, 2021-06-06'."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries. Null source_url is the known systemic tooling gap, not a gate failure per checklist."
+      "evidence": "All touched fields have provenance entries with correct set_by values. Null source_url is the known systemic tooling gap per calibration note in the checklist; not a gate failure. No fact written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes reviewed; no em-dashes found"
+      "evidence": "AI Notes, Open Questions, and all manifest captions reviewed. No em-dashes found."
     },
     {
       "id": "D.open-questions",
-      "result": "fail",
-      "evidence": "AI Notes say 'reads strongly as Art practice too, see Open Questions' but no Open Question about Art capability exists in the entry. The self-reference is broken: the question was never filed. Jonathan needs to see this capability consideration to make a tagging call.",
-      "fix": "File a terse Open Question: 'Capabilities: add Art? Work spans fine art exhibitions and paintings (Plats Bruts, Bulgari oil), not only commercial illustration.' Do not pre-decide; ask him."
+      "result": "pass",
+      "evidence": "One Open Question filed: 'Capabilities: add Art? Work spans fine art exhibitions and oil paintings (Plats Bruts solo show, Bulgari Cadmus and Harmonia large-scale oil), not only commercial illustration.' Terse and conditional (Capabilities currently set to Illustration only, not a repeat ask). The prior broken self-reference ('see Open Questions') in AI Notes is now resolved by the filed question. No story-nudge needed (Worked Together is Never)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still Enriching; reviewer has not yet flipped it"
+      "evidence": "Entry was in Enriching; being flipped to Needs Review on this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "Two fails: (1) Email absent with no documentation of a search attempt -- need either a found address or a note in AI Notes confirming it was searched and not found; (2) AI Notes reference 'see Open Questions' for an Art capability question that was never actually filed -- the Open Question must be written so Jonathan can rule on it."
+  "to": "jonathan",
+  "summary": "Attempt 2. Both prior fails resolved: Email field has sonia@ignasi-monreal.com (management contact, sourced from press); Art capability Open Question is filed and resolves the broken AI Notes self-reference. All 20 checks pass. Entry is complete and honest."
 }

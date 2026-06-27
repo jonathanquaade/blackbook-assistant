@@ -13,7 +13,9 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/paul.lacour/",
     "captured_at": "2026-06-27",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Blank white frame on first capture (IG rate-limited); replaced by site-15.png"
   },
   {
     "file": "site-03.png",
@@ -21,23 +23,22 @@
     "caption": "Ami Paris SS23 campaign site",
     "link": "https://ss23campaign.amiparis.com/",
     "captured_at": "2026-06-27",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "Only shows loading splash (Ami logo + click to enter); no real site content visible"
   },
   {
     "file": "site-04.png",
     "source_url": "https://ss22campaign.amiparis.com/",
     "caption": "Ami Paris SS22 campaign site",
     "link": "https://ss22campaign.amiparis.com/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
+    "captured_at": "2026-06-27"
   },
   {
     "file": "site-05.png",
     "source_url": "https://www.magmajournal.com/",
     "caption": "Magma Journal",
     "link": "https://www.magmajournal.com/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
+    "captured_at": "2026-06-27"
   },
   {
     "file": "site-06.png",
@@ -45,31 +46,29 @@
     "caption": "Diorama Type Partners",
     "link": "https://www.dioramatypepartners.com/",
     "captured_at": "2026-06-27",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "JS-heavy site showed only LOADING spinner during capture"
   },
   {
     "file": "site-07.png",
     "source_url": "https://www.protoeditions.co/",
     "caption": "Proto Editions",
     "link": "https://www.protoeditions.co/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
+    "captured_at": "2026-06-27"
   },
   {
     "file": "site-08.png",
     "source_url": "https://www.arpenteur.fr/",
     "caption": "Arpenteur",
     "link": "https://www.arpenteur.fr/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
+    "captured_at": "2026-06-27"
   },
   {
     "file": "site-09.png",
     "source_url": "https://www.entorse-editions.com/",
     "caption": "Entorse Editions",
     "link": "https://www.entorse-editions.com/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
+    "captured_at": "2026-06-27"
   },
   {
     "file": "site-10.png",
@@ -77,22 +76,61 @@
     "caption": "Note Note Editions",
     "link": "https://www.notenote.eu/",
     "captured_at": "2026-06-27",
-    "context_shot": true
+    "rejected": true,
+    "reject_reason": "All-black frame; site did not render during capture"
   },
   {
     "file": "site-11.png",
     "source_url": "https://www.lachlanbailey.com/",
     "caption": "Lachlan Bailey photographer",
     "link": "https://www.lachlanbailey.com/",
-    "captured_at": "2026-06-27",
-    "context_shot": true
+    "captured_at": "2026-06-27"
   },
   {
     "file": "site-12.png",
     "source_url": "https://www.bureauperret.fr/",
-    "caption": "Bureau Perret",
+    "caption": "Bureau Perret architects",
     "link": "https://www.bureauperret.fr/",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://www.romainroucoules.com/",
+    "caption": "Romain Roucoules photographer",
+    "link": "https://www.romainroucoules.com/",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://mmagazine500.lemonde.fr/",
+    "caption": "M Magazine 500, Le Monde",
+    "link": "https://mmagazine500.lemonde.fr/",
+    "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://www.instagram.com/paul.lacour/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/paul.lacour/",
     "captured_at": "2026-06-27",
     "context_shot": true
+  },
+  {
+    "file": "magma-cover-1.jpg",
+    "source_url": "https://cdn.sanity.io/images/o1cnhb8w/production/291fe31c70552bd6472d182cd755d0b6e57c8969-3840x5760.jpg",
+    "caption": "Magma Journal No. 1 cover",
+    "link": "https://www.magmajournal.com/publications/",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Publication cover photo (editorial content), not a screenshot of Paul's web design"
+  },
+  {
+    "file": "magma-cover-3.jpg",
+    "source_url": "https://cdn.sanity.io/images/o1cnhb8w/production/c6e64ca9e62c7a70364b438eb4782ae2933ae619-4211x6318.jpg",
+    "caption": "Magma Journal No. 3 cover",
+    "link": "https://www.magmajournal.com/publications/",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Publication cover photo (editorial content), not a screenshot of Paul's web design"
   }
 ]
