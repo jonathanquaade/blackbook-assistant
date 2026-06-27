@@ -1,0 +1,111 @@
+{
+  "page_id": "78edf64f-ec7e-40a6-a336-8df1e5e7cad9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 project images span 4 distinct projects: Airsign (x4), Nike Circularity (x3), High Tide NYC (x3), Bridget Baker (x1). No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Airsign goes inside the product page, cart drawer UX, editorial section, and comparison table UI, not just a hero shot. Nike Circularity covers the homepage grid, an interior editorial + video section, and a principle page. High Tide covers homepage, a case study interior, and the journal grid."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 project images show web interfaces Tyler designed and built (ecommerce UI, editorial microsites, agency site, photographer portfolio site). Client content within those UIs (product photos, fashion photography) is incidental to the interface design being shown. Capabilities tagged: Frontend development (web) + Web design. All images match."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: tylermcrobert.com homepage showing numbered project list in large type, correct. site-02.png: instagram.com/tylermcrobert profile with handle 'tylermcrobert' and name 'Tyler McRobert' visible; logged-out grid wall is present but the profile header is fully readable and identity confirmed. Not an error page. Both shots correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link to the source case study page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Nike Circularity appears to use a self-hosted/inline video (Nike's own CDN), not a standalone YouTube/Vimeo embed. No embed entries are required for non-YouTube/Vimeo video. No other project pages evidenced video/audio that needed embedding. Note: scraper should confirm Nike Circularity video is not a standalone embeddable YouTube/Vimeo URL."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site has substantial work and AI Notes documents the research approach. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.tylermcrobert.com/, Instagram: https://www.instagram.com/tylermcrobert/ (verified via own site link, handle + name confirmed in context shot), LinkedIn: https://www.linkedin.com/in/tyler-mcrobert-79b45879/, Email: hello@tylermcrobert.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) + Web design per TAXONOMY.md; work confirms design-and-build practice across ecommerce, editorial, portfolio sites."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 1. Work Status: Freelance. AI Notes documents resolution: own info page states freelance, LinkedIn agrees. Two sources named."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: solo design-and-build practice, ~7+ yrs independent, inferred from own site description and work history."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-05-13' with no clip note relationship context. Zero-states (Never, Don't know them, Unvetted) are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a bare web clipper with no additional instructions. Nothing to act on beyond basic enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'cites' for client list (self-reported signal, not asserted fact). Autonomy hedged as 'inferred'. Seniority read present: mid-level independent, ~7+ yrs since ~2017. Sources named for Work Status."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-05-13'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by values (agent/migration/jonathan). source_url nulls are a known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source field contain no em-dashes. Image captions use parentheses and commas."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No fields require Jonathan input: all factual fields resolved, no ambiguous relationship context, no unresolvable links. Story nudge not applicable (Worked Together = Never, Notes empty)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper",
+  "summary": "All 20 checks pass. 11 on-capability web UI images across 4 distinct named projects with depth. Context shots correct and verified. Metadata complete. AI Notes hedged. No em-dashes."
+}
