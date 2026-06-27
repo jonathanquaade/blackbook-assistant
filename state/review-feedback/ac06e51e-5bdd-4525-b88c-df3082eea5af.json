@@ -1,0 +1,112 @@
+{
+  "page_id": "ac06e51e-5bdd-4525-b88c-df3082eea5af",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Bold poster series, Zweikommasieben (multiple issues treated as one magazine project), Akte Zollhaus Luzern, Kaffee-Kreise, Kunsthalle Basel, Weltformat 2021. Exceeds the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside issues: zks20-02 and zks20-05 are interior editorial spreads, zks26-04 is an interior spread, site-04 is a publication interior. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all captured work is graphic design: editorial, posters, publication design, exhibition materials. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png is a blank white screenshot of praesensbuero.ch (site is archived, renders blank -- documented in AI Notes; caption 'Website' is accurate). site-08.png confirmed as instagram.com profile for @praesens.buero (bio visible: 'Archived projects of former graphic design studio'). Neither is mislabeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 work images plus 2 context shots have captions and source links. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio is a graphic design studio (print/poster/editorial); no video or audio work expected. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "praesensbuero.ch blank is explained in AI Notes. No LinkedIn documented as not found. Instagram context shot present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio -- correct for a small specialized hands-on creative team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Instagram field is empty, but the handle @praesens.buero was verified and used as the context shot source (manifest site-08.png source_url: https://www.instagram.com/praesens.buero/). The link was found but never written to the Instagram property in Notion. LinkedIn absence is documented in AI Notes (acceptable). Website is present. Email: no studio contact email found; not documented in AI Notes as searched.",
+      "fix": "Write Instagram URL https://www.instagram.com/praesens.buero/ to the Instagram field (it is already verified from the context shot). Document in AI Notes whether a public contact email was searched and not found."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design -- set_by jonathan, matches the work captured."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Switzerland, Size: 2-10, Work Status: Studio -- all plausible for a 4-person Swiss studio (founders named in AI Notes). AI Notes explains the studio is archived and founders now work independently."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per calibration note (2026-06-21). Autonomy: 4 is set but the checklist does not require it for orgs. No gate failure."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted -- all zero-states consistent with no evidence of a Jonathan relationship. No clip note contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-05-13'; no relationship or judgment text in the clip note requiring --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority/history read (4 founders, HSLU Design, now split into Dahler Lehmann). Facts are verifiable (MoMA PS1 collection claim, named projects). No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-05-13' -- correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields. source_url is null throughout -- known systemic tooling gap, not a gate failure per calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: no em-dashes found. Semicolons and periods used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. No judgment fields have non-zero values that would need to trigger the story nudge. Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching, correct pre-gate state. Reviewer controls the flip to Needs Review."
+    }
+  ],
+  "summary": "One FAIL: the Instagram URL (https://www.instagram.com/praesens.buero/) was verified and used as the context shot source but was never written to the Instagram property in Notion. Also: no documentation in AI Notes that a public email was searched (minor, but should be noted). All image checks pass: 6 distinct projects, depth in spreads, on-capability graphic design work, context shots correctly labeled.",
+  "to": "scraper"
+}

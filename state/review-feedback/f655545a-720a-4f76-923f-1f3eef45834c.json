@@ -1,113 +1,112 @@
 {
   "page_id": "f655545a-720a-4f76-923f-1f3eef45834c",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-27T00:00:00",
+  "reviewed_at": "2026-06-27T12:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "14 images across 5 distinct client projects (Carmen Amsterdam, Myraflores, GEM Faces, Jhonathan Baena, Lingua Planta) plus 2 context shots"
+      "result": "fail",
+      "evidence": "site-03 and site-24 are pixel-identical (both carmenamsterdam.com homepage, same screenshot captured twice). site-10 and site-26 are pixel-identical (both myraflores.com homepage, same screenshot captured twice). site-23 and site-29 are near-identical (linguaplanta.com homepage, near-same scroll position, visually indistinguishable at a glance). That is 2 exact duplicate pairs and 1 near-duplicate pair among the 10 work images. Effective distinct work images: Carmen homepage x1 + Carmen collections x1 + Myraflores homepage x1 + Myraflores products x1 + Jhonathan Baena x1 + Lingua Planta x1 + GEM Faces faces x1 = 7 distinct views, but 3 slots are wasted on duplicates.",
+      "fix": "Remove site-24 (duplicate of site-03) and site-26 (duplicate of site-10) from the manifest and the Images property. Replace them with screenshots of two pages not yet captured: for example jhonathanbaena.com interior project page, or gem-faces.com homepage (it loaded blank before -- retry with --render). Also remove or replace site-29 if it is near-identical to site-23; capture a different Lingua Planta page (e.g. a product detail or shop page) instead."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "Of 12 work images, 7-8 are client product/lifestyle/portrait photography hosted on those sites (site-04: product bottle shot; site-12: fashion/sandal shot; site-13: hotel interior; site-14: dining scene; site-15, site-16, site-17: model portrait headshots from GEM Faces; site-22: hand holding wildflower). Only 4 images actually show web UI: site-03 (Carmen), site-10 (Myraflores), site-18 (Jhonathan Baena), site-23 (Lingua Planta). The scraper pulled imagery from those CDN URLs rather than screenshotting the pages as designed interfaces.",
-      "fix": "Replace the 7-8 photography-only images with full-page or above-the-fold screenshots of the actual web interfaces at carmenamsterdam.com, myraflores.com, gem-faces.com, jhonathanbaena.com, linguaplanta.com. Use scrape.py shot <url> for each. At least 8 of 12 work images must show web layouts, navigation, typography and UI -- not the clients content photography."
+      "result": "pass",
+      "evidence": "The fix correctly replaced CDN photography assets with full-page screenshots. site-25 (Carmen collections grid) and site-30 (Myraflores products grid with filter controls and category tabs) go inside the site structure. site-31 (GEM Faces faces grid) shows the grid layout and nav. These are genuine interior views, not just hero shots."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Tagged Web design + Frontend development (web). The majority of the non-context work images (site-04, site-12, site-13, site-14, site-15, site-16, site-17, site-22) are client product shots, interior photography, and model portraits -- content that lives on those sites but does not demonstrate web design. Jonathan's spawn prompt specifically flagged: verify 'the captured client sites show her web work, not just brand photography.' They do not.",
-      "fix": "Capture screenshots of the web pages themselves: homepage layouts, collection pages, navigation states, typography, UI components. Scrape.py shot at multiple scroll depths or --render for JS-heavy Shopify/Webflow pages. The work to show is the interface she built, not images the client placed inside it."
+      "result": "pass",
+      "evidence": "All 10 active work images are screenshots of web pages she designed. The interfaces show nav, typography, grid layouts, UI components. Web design capability confirmed. Hero sections have full-bleed client photography but that is the design of those pages -- the web UI is visible in nav chrome, layout, and inner pages."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is gentle-studio.com homepage (correct). site-02.png is instagram.com showing @angelique_janssen profile with name 'Angelique Janssen' and bio 'designing a cuter web' visible -- correct person, correct platform. IG context shot captured logged-out with the login modal present but the profile header is identifiable."
+      "evidence": "site-01.png is gentle-studio.com homepage showing the project list and studio copy -- correct website context shot. site-02.png is instagram.com showing the @angelique_janssen profile with name 'Angelique Janssen' and bio 'designing a cuter web' visible in the header -- correct person, correct platform. Login modal overlay present but profile is identifiable; this meets the exception criteria (IG served degraded logged-out view, profile header still readable, bio matches)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 uploaded images have captions and links in the manifest"
+      "evidence": "All 12 active images have captions and source links in the manifest."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio work identified in the projects; no embed opportunity missed"
+      "evidence": "No video or audio work identified for this web design entry; no embed opportunity missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "gentle-studio.com 503 documented in AI Notes; projects sourced from live client sites"
+      "evidence": "AI Notes explains gentle-studio.com was unreachable (503); projects sourced from live client sites. No silent thin selection."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person"
+      "evidence": "Type: Person -- correct for a solo practitioner."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all set"
+      "evidence": "Website, Instagram, LinkedIn, Email all present and consistent with the person."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Web design + Frontend development (web); Open Question raised about the frontend tag"
+      "evidence": "Web design + Frontend development (web); Open Question raised about whether she ships code herself. Appropriate hedge."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Netherlands, Size 1, Freelance; sources (own site + LinkedIn + interview) named in AI Notes"
+      "evidence": "Netherlands, Size 1, Freelance. AI Notes names own studio site + LinkedIn + interview as agreeing sources."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (runs solo client studio end to end)"
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (runs solo client studio end to end)."
     },
     {
       "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "No judgment field contradicts any evidence in the entry"
+      "evidence": "No judgment field contradicts any evidence in the entry."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped.md archived; clip body was a template shell with no Jonathan instructions requiring action"
+      "evidence": "Clipped.md archived; no actionable instructions in clip body."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Frontend tag hedged with Open Question; seniority/Autonomy reasoned and flagged as inferred"
+      "evidence": "Frontend tag hedged; seniority and Autonomy reasoning flagged as inferred. No bare assertion of unverified facts."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-06-06'"
+      "evidence": "Source: 'Web clipper, 2021-06-06'."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries; source_url null is a known systemic tooling gap, not a gate failure"
+      "evidence": "All touched fields have provenance entries; source_url null is a known systemic tooling gap, not a gate failure per checklist calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question about Frontend development (web) tag; no field with existing non-zero value queried"
+      "evidence": "One terse conditional question about Frontend development (web) tag; appropriate and non-redundant."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Currently Enriching; not prematurely flipped"
+      "evidence": "Currently Enriching; not prematurely flipped."
     }
   ],
-  "summary": "Entry is metadata-complete and context shots are correct. The failure is in the work images: 7-8 of 12 work images are client product/lifestyle/model photography pulled from those site CDNs rather than screenshots of the web interfaces Angelique designed. Carmen Amsterdam has 3 images that are a fashion shoot and a hotel interior; GEM Faces has 3 model portrait headshots; Myraflores and Lingua Planta each have one raw product/brand photo. Only 4 images (site-03, site-10, site-18, site-23) actually show web UI layouts. This directly fails the on-capability bar and the depth check for a Web design entry.",
+  "summary": "One check fails: project-diversity. The photography-vs-UI fix worked -- all 10 active work images now show web interfaces. However two exact duplicate pairs were introduced: site-03 and site-24 are the same carmenamsterdam.com homepage screenshot, and site-10 and site-26 are the same myraflores.com homepage screenshot. site-23 and site-29 are near-identical Lingua Planta homepages. The fix is mechanical: remove site-24 and site-26 from the manifest (mark rejected: true, reason: duplicate) and replace them with two screenshots not yet captured (a Jhonathan Baena interior page, or GEM Faces homepage on retry with --render, or a Lingua Planta shop/product detail page). All other checks pass. One more scraper pass to remove duplicates and add two replacement images should clear the gate.",
   "to": "scraper"
 }
