@@ -1,47 +1,111 @@
 {
   "page_id": "8d1bf303-80c2-4884-ad4c-f2313dd50d65",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-27T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-27T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "site-01.jpg and site-06.jpg are near-identical shots of the same Bang & Olufsen x Balenciaga speaker at the same angle (source URLs _Sh16.jpg and _Sh16-p-1600.jpg are the same image at two resolutions). That means 4 of 8 images are the Balenciaga project. The other 5 portfolio-overview images each show a different project (Volvo, Apple, Simpsons ident, Cornetto) but are captioned identically and link to the homepage root, so they read as anonymous hero grabs rather than identified project work.",
-      "fix": "Remove the duplicate site-01 / site-06 pair (keep the higher-res site-06). For the 5 portfolio-overview shots, trace each to its named project page (e.g. ajkhan.co.uk/volvo, /apple, /simpsons, /cornetto) and re-caption with project name and link. Aim for 3 named projects with 2-3 shots each so depth and diversity both pass."
+      "result": "pass",
+      "evidence": "17 active images span 6 distinct projects: Apple MacBook Air Feather film, Simpsons ident (Channel 4 / ManvsMachine), Cornetto Classic, Balenciaga x B&O Speaker Bag, Volvo EX90 A New Dawn (AKQA), Channel 4 rebrand, OFFF Barcelona 2024. Duplicate site-01 and homepage-thumbnail site-02 correctly marked rejected in manifest."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "site-01 through site-05 are all homepage-level hero/cover images (source URLs are CDN thumbnails linked to the root, not to project pages). No interior/spread shots from any project except the Balenciaga page.",
-      "fix": "Open individual project pages (Volvo, Apple, Simpsons ident, Cornetto) on ajkhan.co.uk and pull interior frames: mid-shots, detail renders, alternate camera angles. The Balenciaga page already has depth; apply the same to at least 2 other projects."
+      "result": "pass",
+      "evidence": "Balenciaga: hero + close detail render + VFX element (3 shots). Volvo: side profile + wing mirror macro + launch event (3 shots). Channel 4: motion animation still + broadcast ident + typeface specimen (3 shots). OFFF: exploded cluster + tiled pattern + key art (3 shots). All go inside projects beyond cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion. Every image is a 3D render or motion still: Apple CGI feather, Simpsons geometric 3D characters, Cornetto CGI ice cream, B&O speaker 3D product render, Volvo 3D CGI car and detail, Channel 4 3D type/animation elements, OFFF 3D organic forms. No off-capability material."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "No website homepage screenshot present in the manifest or asset folder. No Instagram profile screenshot present. Both are required per the checklist. AI Notes states IG was not located, but does not document whether the IG-throttle exception path was followed (no ig-queue entry, no 'rejected+documented' broken screenshot).",
-      "fix": "Run scrape.py shot https://www.ajkhan.co.uk/ --out assets/8d1bf303-80c2-4884-ad4c-f2313dd50d65 --caption 'Website' to get the homepage context shot. For Instagram: search for @ajkhan, @abduljabaarkhan, @a.j.khan or similar handles; if found add it, if not add an ig-queue entry and note the block in AI Notes per the IG-throttle exception path. Either way the website shot must be present."
+      "result": "pass",
+      "evidence": "site-18.png is ajkhan.co.uk homepage (LEAD HOUDINI ARTIST & ART DIRECTOR header, Abdul Khan branding, project catalog visible). site-19.png is instagram.com/@ajkhan.east profile (Instagram UI, handle ajkhan.east, bio 'Designer & Lead Houdini Artist @man vs machine, 2021-2025. Now Freelance', 3D/motion grid visible). Both captions match content and domain. Handle matches the entry's Instagram field."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "5 of 8 images (site-01 through site-05) are captioned 'Portfolio overview' with a link to the homepage root. The checklist requires every image to name its project. 'Portfolio overview' is not a project name.",
-      "fix": "Re-caption each image with its actual project name and a link to that project's page on ajkhan.co.uk. If a project page does not exist for a given image, replace the image with one from a named project page."
+      "result": "pass",
+      "evidence": "All 17 active images carry named project captions. site-03/04/05 link to site root but captions explicitly name the project (Apple MacBook Air Feather film, The Simpsons ident Channel 4 ManvsMachine, Cornetto Classic film). site-06 through site-17 link to specific project pages (/balenciaga, /volvo, /channel4, /off)."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "note",
+      "evidence": "No embeds captured. Jabbaar is a motion/3D creator whose project pages likely contain video. Not raised as a gate failure: the checklist requires embeds only 'if a project page had' video, which cannot be confirmed from the asset directory alone. Images are present and on-capability. Flag for Jonathan if he wants video embeds added.",
+      "fix": "n/a"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Entry is well-populated. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelancer."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "LinkedIn field is empty. AI Notes does not document a LinkedIn search attempt or confirm none exists. The checklist requires an ALWAYS search for LinkedIn (name + discipline) with a documented finding or confirmed absence. Instagram is also empty; AI Notes says 'IG not located on his site' but does not document handle variants searched or a web search for his IG.",
-      "fix": "Search 'Abdul Jabbaar Khan motion designer linkedin' and capture the snippet. Search for his Instagram via handle variants and his own site/read.cv external links. Document findings (or confirmed absence with search terms used) in AI Notes. Add LinkedIn URL to the entry if found."
+      "result": "pass",
+      "evidence": "Website ajkhan.co.uk present. Instagram https://www.instagram.com/ajkhan.east/ present and verified via profile screenshot (bio and grid match). LinkedIn https://uk.linkedin.com/in/abdul-jabbaar-khan-521445104 present. Email abdul@ajkhan.co.uk present from site. All four links found."
     },
     {
-      "id": "A.project-diversity",
-      "result": "note",
-      "evidence": "Image content is clearly on-capability (3D renders and motion stills: speaker, car, Apple ident, Simpsons ident, ice cream, fire VFX) so A.on-capability passes once the caption/link issues are fixed.",
-      "fix": "n/a"
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D & motion confirmed against site (Lead Houdini Artist, 3D/CGI work throughout). set_by jonathan, consistent with evidence."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, Size 1, Work Status Freelance. AI Notes documents site as primary source; IG bio corroborates ('Now Freelance'). Two sources agree."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set by agent. Reasoning in AI Notes: 'Senior / Art-Director level, ex-ManvsMachine lead, runs projects solo.' Grounded in documented work history."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) not contradicted by any clip note or evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No outstanding clip-note instructions. clipped.md archived."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged language ('Per his own site:', '~10 yrs experience'). Seniority and Autonomy read present. No em-dashes. Only verifiable facts asserted plainly (clients, prior employer, email)."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-06-17'. Present and filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. set_by values appropriate (agent for research fields, jonathan for Capabilities). source_url null across the board is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and manifest captions scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions needed. Judgment fields at zero-states. Story nudge condition not met (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching, flipped to Needs Review on this pass."
     }
   ],
-  "summary": "Four distinct failures: (1) duplicate image pair (site-01 and site-06 are the same speaker shot at two resolutions), (2) no context shots at all (no website screenshot, no IG screenshot or documented exception path), (3) five images captioned 'Portfolio overview' linking to the homepage root rather than named project pages, and (4) LinkedIn not searched and IG search not documented. The capture is too thin and the mandatory context shots are missing. Bounce to scraper to fix.",
-  "to": "scraper"
+  "to": "jonathan"
 }

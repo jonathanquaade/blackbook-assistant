@@ -1,0 +1,112 @@
+{
+  "page_id": "164ea9e2-88c7-4c6f-835f-bb3300034294",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct named projects: Outernet, BFI London Film Festival, Hidden, Charles Jeffrey LOVERBOY, StudioCanal, Prada Summer Garden, Harrods Menswear"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 stills each for Outernet, BFI, Charles Jeffrey, Prada; 1 still for Harrods; embed thumbnails serve as the sole visual for Hidden and StudioCanal, acceptable for a motion studio where the video IS the work"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 7 projects are motion identity or 3D motion work, matching tagged 3D & motion; charlesjeffrey-02.jpg is a production still from a motion/3D project, not off-capability"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed dblg.co.uk homepage; site-02.png is confirmed instagram.com/dblg_ldn profile showing handle and bio"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a source link; no anonymous images"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds captured (Outernet, BFI, Hidden, StudioCanal), each with a thumbnail preview image and a linked caption"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps; all sources accounted for in manifest"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio, correctly classified as small specialised creative team"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Email field is empty and AI Notes makes no mention of searching for a public contact email on dblg.co.uk. CLAUDE.md P1 step 4 requires capturing public contact email. A live studio site almost certainly has a contact page.",
+      "fix": "Check dblg.co.uk/contact (or equivalent) for a public email address and add it to the Email field. If none is publicly listed, add one line to AI Notes: 'No public email found on site contact page.'"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "3D & motion set by Jonathan; Open Question 1 correctly asks about adding Identity systems; no override of a jonathan-set field"
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country UK, Size 2-10, Work Status Studio; AI Notes documents the size caveat"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy is optional per checklist calibration 2026-06-21; AI Notes has a seniority/leadership read"
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no evidence contradicts them"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-06-17'; no clip instructions on record to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Asserted facts (clients, award-winning, decades of experience) are verifiable from public sources; no unhedged inferences; no em-dashes; seniority read present"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-06-17'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records; source_url null is a known systemic tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use commas, semicolons and parentheses throughout; no em-dashes found"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about adding Identity systems; not asking for a field that already has a value"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer gate running before any flip; correct"
+    }
+  ],
+  "summary": "Single fail: no public contact email captured and no AI Notes entry documenting why. All other checks pass cleanly including 7 distinct on-capability projects, 4 Vimeo embeds with thumbnails, verified context shots, and correct metadata.",
+  "to": "scraper"
+}

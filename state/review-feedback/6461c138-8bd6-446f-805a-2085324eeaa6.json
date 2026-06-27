@@ -1,0 +1,30 @@
+{
+  "page_id": "6461c138-8bd6-446f-805a-2085324eeaa6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5+ distinct named projects: multiple paintings (notrealart), Moses book cover (Amistad/HarperCollins), Bright Before Us book cover (Shout Mouse Press), Specter magazine Ruby Bridges series, OkayAfrica American Gothic painting, painted-chair installation"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Specter series has 3 interior images (figure study, print pattern detail, figurative collage); notrealart spread shows multiple distinct paintings"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Illustration; all 11 work images are painting, illustration, mixed media, book covers, or a painted installation -- fully on-capability"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-05.png is hamiltonianartists.org/resident-artists/jamilla-okubo/ (documented substitute for dead jamillaokubo.co, captioned Website, visually confirmed). site-09.png is instagram.com/jamillaokubo showing @jamillaokubo 17.8K profile, captioned Instagram profile, visually confirmed"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "Every active image has a named project caption and a source link"},
+    {"id": "A.embeds-video", "result": "pass", "evidence": "No video/audio embeds expected; all work is painting and illustration"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Dead website documented in AI Notes with substitute context anchor. Earlier blank IG render (site-07) was superseded by a successful logged-out capture (site-09) showing the real profile; no queue entry needed"},
+    {"id": "B.type", "result": "pass", "evidence": "Person"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram (confirmed @jamillaokubo = right person), LinkedIn, Email all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Illustration tagged; Open Question asks Jonathan about Art practice + Graphic design additions"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "US / 1 / Freelance; AI Notes cites own site + LinkedIn + press as agreeing sources"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4, set_by agent, reasoned in AI Notes as running her own studio practice and delivering to commission"},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Zero-states (Never / Don't know them / Unvetted) do not contradict any evidence; no clip note states a relationship"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip source is Web clipper 2021-06-06 with no special instructions"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Autonomy hedged as inferred; Capabilities expansion framed as a question; seniority (~10 yrs, mid-career) and Work Status sourcing both present"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-06-06"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have set_by populated; null source_url is the known systemic tooling gap (not a gate failure per checklist calibration note)"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about Capabilities additions; no story nudge required (no relationship evidence)"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry was Enriching pre-gate; flipped to Needs Review on this pass"}
+  ],
+  "to": null
+}
