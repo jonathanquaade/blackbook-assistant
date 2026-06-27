@@ -1,0 +1,114 @@
+{
+  "page_id": "4f08997a-766a-466d-b757-1c9daf58c5da",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects across 11 work images: Pantone Connect, Aura Bora, Moonbeam, First Street Foundation, Bandit Running."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Pantone Connect shows a UX wireflow diagram; Aura Bora shows a product detail page UI overlay; Moonbeam shows both a type spec and a computer mockup with UI; First Street shows brand system and live site."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Tagged capabilities are Web design + Frontend development (web). Several images show brand/print collateral rather than web interfaces: site-27.jpg is a printed business card mockup (First Street); site-29.jpg is a poster print series (First Street); site-24.jpg is a pure typography specimen sheet (Moonbeam). Most critically, site-12.png (Bandit Running, the only Bandit image kept) shows a lifestyle/client photography hero shot of a hand near a car interior with only a nav bar visible — this is exactly the 'client photography/lifestyle shots' the scraper said were rejected, yet it made the final cut. The live Bandit Running web design interface is not shown.",
+      "fix": "Replace site-12.png with a screenshot of the actual Bandit Running web interface (product grid, PDP, cart, or navigation system). Replace or supplement site-27.jpg and site-29.jpg with web-UI screenshots from the First Street Foundation website (their climate risk data product, the interactive address-lookup tool visible at firststreet.org). site-24.jpg can stay if the scraper notes it as type system for the web platform; otherwise replace with a Moonbeam UI screen. Target: all non-context-shot images show designed web/digital interfaces."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-19.png: correctly shows view-source.com homepage with 'View Source' branding, nav (Work / Studio / Contact), and tagline. site-20.png: correctly shows instagram.com/@viewsourcestudio — handle 'viewsourcestudio', name 'View Source', bio 'Ideas. Aesthetics. Code.' visible in the profile header. A login modal obscures the grid but identity is confirmed and caption is correct. Not an error page; not mislabeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions and link fields populated."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video/audio capabilities tagged; no embeds expected."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Sufficient work captured; no unexplained thin areas."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Studio — correct per the studio-bias rule (small specialized team, hands-on execution, ~18 people in Brooklyn)."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Instagram field is empty in the entry. The handle @viewsourcestudio was identified (manifest source_url = https://www.instagram.com/viewsourcestudio/ and the context shot was captured from it) but was never written to the Instagram property. This is a findable link that was skipped at write time.",
+      "fix": "Set Instagram = https://www.instagram.com/viewsourcestudio/ via keeper.py set."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web) tagged. Open Question asks Jonathan about expanding to Identity systems, Brand strategy, Photography, 3D & motion, Backend development — correctly conditional and terse."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "US, 11-40, Studio. AI Notes records the Brooklyn HQ and the France-correction reasoning."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set for a Studio entry. Per calibration note (2026-06-21), Autonomy is optional for org-type entries; set here, which is fine."
+    },
+    {
+      "id": "C.judgment-vs-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or known relationship evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-05-05'. No relationship instructions or judgment facts in the clip note visible in the entry."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes assert verifiable facts (founders named, founding year, location, headcount range, capabilities) and record the reasoning for classification calls. No unhedged inferences. Seniority read ('Established studio') present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-05-05'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have set_by populated. source_url is null across the board — known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional Open Question about capabilities. No questions asked for already-populated fields."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, correctly not yet flipped to Needs Review."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Two failures: (1) Instagram URL known but not written to the entry field; (2) on-capability image selection — site-12.png (Bandit Running) is a lifestyle photography shot with no visible web UI, exactly the type of shot the scraper flagged as rejected; First Street Foundation images lean heavily on brand print collateral (business card, poster series) rather than the web product; the Moonbeam type specimen is ambiguous. All web design work; replace the non-UI shots with actual web interface screenshots.",
+  "fix": "Set Instagram = https://www.instagram.com/viewsourcestudio/. Replace site-12.png with a Bandit Running web UI screenshot (product grid, PDP, or navigation). Swap or supplement site-27.jpg (business card) and site-29.jpg (poster series) with screenshots of the First Street Foundation web product (address-lookup tool, data dashboard, or interior pages at firststreet.org). Optionally replace site-24.jpg (type specimen) with a Moonbeam UI screen if the scraper cannot confirm it is a web-delivered type system asset."
+}

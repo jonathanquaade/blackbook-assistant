@@ -1,0 +1,111 @@
+{
+  "page_id": "30b9d796-9e1f-414b-9db2-6292f614f455",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects across 5 venues/years: Unsupervised (MoMA 2022), Quantum Memories (NGV 2020), WDCH Dreams (2019), Machine Hallucination (Artechouse 2019), Melting Memories (2018). No repeated-angle duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior/installation images per project (storyboards, gallery interiors, data-painting detail views), not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images and embeds are AI/data-driven generative installations, matching tagged Capability Art practice."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png visually confirmed as refikanadol.com homepage (nav: Works / About Refik Anadol / Events / Log / Digital Collections). site-16.png visually confirmed as instagram.com/refikanadol profile (@refikanadol, bio: Media Artist & Director at ARS, Co-founder & Artistic Director at DATALAND, Los Angeles CA). Both correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 21 image files have captions and source links in manifest.json. No needs_caption entries."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 YouTube/Vimeo embeds present, each paired with a thumbnail preview image and a link to the project page."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sections; all 5 projects have images plus embeds."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; entry is the individual, AI Notes notes the studio is separate."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Instagram now set to https://www.instagram.com/refikanadol/ (was the sole attempt-1 failure, now fixed). Website and LinkedIn also present. Email absent but no verifiable public email found for this artist; acceptable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Art practice tagged. Open Question 1 asks Jonathan whether to add Creative technology and 3D & motion, which is the correct conditional approach given prior Capabilities are set_by jonathan."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US (LA-based, corrected from prior Italy per AI Notes). Size: 1 (person entry). Work Status: Studio (co-founder of Refik Anadol Studio, AI Notes explains reasoning)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 set_by agent. Person entry, required and present. Reasoning in AI Notes: internationally established artist, director and co-founder of his own studio, major museum commissions."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with clip note showing no relationship context."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source reads 'Web clipper, 2021-04-15'; no relationship facts or instructions in the clip note requiring --from-jonathan treatment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual for verifiable claims (MoMA, NGV, UCLA MFA, studio founding year) and include seniority read with Autonomy 5 reasoning. Work Status reasoning documented. Country correction explained. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-04-15'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with set_by values for all touched fields. source_url nulls are the known systemic tooling gap, not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or manifest captions."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "One question about Capabilities, correctly conditional (defers to Jonathan since set_by is jonathan). No question for fields already carrying non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching before gate; flipping to Needs Review on this pass."
+    }
+  ],
+  "to": "jonathan",
+  "summary": "All checks pass on re-review. The sole attempt-1 failure (missing Instagram field) is resolved: Instagram is now set to https://www.instagram.com/refikanadol/. Entry has 21 images + 5 embeds with thumbnails across 5 distinct named projects, both context shots verified correct, all metadata fields complete."
+}

@@ -49,7 +49,9 @@
     "source_url": "https://images.prismic.io/rupturesstudio/ca79c1ca-4549-468c-ae58-9476fa95ac60_MVbigaffiche.png",
     "caption": "Ruptures Studio, Marie Violet film poster design",
     "link": "https://www.ruptures.studio",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Off-capability: Marie Violet film poster (print graphic asset), not a web design screenshot"
   },
   {
     "file": "site-07.png",
@@ -178,5 +180,14 @@
     "caption": "Art au Centre Geneve, artists and map interface",
     "link": "https://www.artaucentregeneve.ch/artistes",
     "captured_at": "2026-06-27"
+  },
+  {
+    "file": "site-23.png",
+    "source_url": "https://ruptures.studio",
+    "caption": "Ruptures Studio, website design",
+    "link": "https://ruptures.studio",
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "reject_reason": "Blank grey screenshot on retry with --render, ruptures.studio blocks headless rendering entirely"
   }
 ]

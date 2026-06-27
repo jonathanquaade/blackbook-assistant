@@ -1,0 +1,111 @@
+{
+  "page_id": "b1f95d65-eea7-4659-8296-400f12901516",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects across 7 work images: Nike Impact Game (2 screens), Beepy Bella (2 screens), Les Garconnes virtual fitting room (1 screen), Art au Centre Geneve (2 screens). Ruptures Studio excluded after two failed headless renders, documented in manifest."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Nike, Beepy Bella, and Art au Centre each have 2 distinct screens showing interior UI, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "site-06 (Marie Violet film poster) now rejected with documented reason. All 7 remaining work images are web interface screenshots matching Web design / Frontend development capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13 is samuelbassett.xyz (correct, partially rendered but correctly labeled). site-14 is instagram.com/_samuelbassett confirmed correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active images have captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No audio/video capability tagged; no embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Ruptures Studio absence documented in manifest (two render attempts, site blocks headless Playwright entirely)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design + Frontend development (web), set_by jonathan."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "France / 1 / Freelance. AI Notes cites own portfolio and Awwwards French-freelancers listing as agreeing sources."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with reasoning in AI Notes (designs and codes solo, inferred)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "No clip note relationship signals; zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No instructions in clip note beyond entry identification."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy hedged as inferred. Seniority read present (mid-level independent)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-05-08."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with correct set_by values. null source_url is the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions needed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review on this pass."
+    }
+  ],
+  "summary": "Re-review after scraper bounce. site-06 (Marie Violet film poster) correctly rejected and documented. 7 on-capability web-UI images across 4 distinct projects remain. All checks pass. Flipped to Needs Review.",
+  "to": "jonathan"
+}
