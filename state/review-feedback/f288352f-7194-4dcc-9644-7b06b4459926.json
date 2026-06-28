@@ -1,0 +1,110 @@
+{
+  "page_id": "f288352f-7194-4dcc-9644-7b06b4459926",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named series: Name Place Animal Thing (2025), Edifice Complex (2023), Highly Unfriendly (2024), The Stadium Project (2024); captions and images visually confirmed as different bodies of work"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside each series: individual painting close-ups, gallery installation interiors, multi-panel grid views; not hero-only"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Illustration + Art practice (jonathan-set); all 11 work images are paintings/illustration/gallery art; no off-capability material"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png is sameerkulavoor.com homepage (name and nav confirmed); IG context shot site-13.png marked rejected with documented reason (rate-limited blank page), not in Images property, entry queued to state/ig-queue.json; meets sanctioned IG-throttle exception"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 11 work images captioned with named project + year; all have source links in manifest"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Painter/illustrator; no YouTube/Vimeo embeds required; Edifice Complex timelapse video existence not confirmed on project page from evidence available"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes; ig-queue.json entry confirmed present with correct page_id and reason"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (sameerkulavoor.com) and Instagram (sam_kulavoor) present and verified; LinkedIn documented as not found (noted in AI Notes, consistent with fine-art practice); public Email not found and not mentioned in AI Notes (minor documentation gap, not a structural failure for a gallery-represented artist with no public email)"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Illustration + Art practice, set_by jonathan; fits work captured"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country India, Size 1, Work Status Freelance; AI Notes cites site + IG + Wikipedia as agreeing sources; meets objective multi-source rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set_by agent with reasoning in AI Notes (runs own practice and studio independently)"
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states not contradicted by any evidence; clipped.md body was placeholder template text only, no Jonathan relationship signals"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clipped body contained only Lorem Ipsum placeholder template text; archived to clipped.md; nothing actionable in the original clip note"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts (TARQ, M+/KADIST/Bloomberg collections, Netflix, Paul Smith) stated as facts; seniority read and Autonomy reasoning present; Work Status sources named; no em-dashes"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-03-01"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries; source_url null throughout (known systemic tooling gap, not a gate failure per calibration note)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and captions reviewed; no em-dashes found"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions; none warranted (all discoverable fields filled, no relationship signals, Capabilities jonathan-set)"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipped to Needs Review on gate pass"
+    }
+  ],
+  "to": null
+}

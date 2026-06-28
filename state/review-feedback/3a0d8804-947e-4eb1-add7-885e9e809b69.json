@@ -1,0 +1,32 @@
+{
+  "page_id": "3a0d8804-947e-4eb1-add7-885e9e809b69",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "4 distinct projects: Good Girl oil 2022, Natural Encounters Coca-Cola NFT 2023, Primavera II Mayfair 2022, Territorial Beings Maison Kitsune 2021"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "5 individual works from inside the Kitsune exhibition; Primavera exterior installation view is the installed work"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All 8 work images are oil paintings or digital illustrations; matches Art practice + Illustration capabilities"},
+    {"id": "A.context-shots", "result": "fail", "evidence": "site-05.png is a near-blank white page with only faint nav text in the top-right corner; the hero image did not render. It is NOT rejected or queued; it is presented as the live website context shot but is useless as a memory anchor.", "fix": "Retake the stefaniatejada.com screenshot with --render flag (Framer/JS site) so the homepage hero actually loads, then replace site-05.png in the manifest and re-upload"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 8 work images have project name + source link in caption"},
+    {"id": "A.embeds-for-video-audio", "result": "pass", "evidence": "No video or audio in scope for a painter/illustrator"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "IG blank correctly rejected and queued to state/ig-queue.json with documented reason in manifest and AI Notes"},
+    {"id": "B.type", "result": "pass", "evidence": "Person"},
+    {"id": "B.all-links", "result": "fail", "evidence": "Email field is absent and AI Notes does not say it was searched for or found to be absent. stefaniatejada.com has a Contact page; a public contact email is likely findable and is required by the P1 runbook.", "fix": "Check stefaniatejada.com/contact (and MTArt agency page) for a public contact email; if found set it; if genuinely absent note that in AI Notes"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Art practice + Illustration, set_by jonathan"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "France + Colombia, 1, Freelance; sources named in AI Notes (self-maintained site + IG agree)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes"},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Zero-states valid; no clip note evidence contradicts any field"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "clipped.md contains only placeholder boilerplate text; no relationship facts or instructions from Jonathan"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Seniority read present, verifiable clients listed, Autonomy reasoned; no unhedged inferences detected"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-03-01"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields have set_by; null source_url is systemic tooling gap, not a gate failure per calibration note"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, captions, or Open Questions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Open Questions empty; no pending ambiguities; story nudge not triggered"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Entry is Enriching; correctly held at gate pending verdict"}
+  ],
+  "to": "scraper",
+  "summary": "Two fixes needed before this entry is ready: (1) the website context shot is a blank white page (JS site did not render); (2) email was not captured and absence was not documented.",
+  "fix": "1. Retake stefaniatejada.com with scrape.py shot --render so the Framer homepage loads, replace site-05.png, re-upload. 2. Check stefaniatejada.com/contact and mtart.agency/stefania-tejada/ for a public contact email; set it or document absence in AI Notes."
+}
