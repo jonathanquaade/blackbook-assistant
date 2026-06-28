@@ -18,7 +18,9 @@
     "source_url": "https://rogerburkhard.com/wp-content/uploads/2024/12/aargauerkunsthaus-full-2.webp",
     "caption": "Aargauer Kunsthaus, 2024",
     "link": "https://rogerburkhard.com/en/projekte/aargauer-kunsthaus/",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Shows a painting from the museum collection, not the web UI Roger built"
   },
   {
     "file": "site-04.webp",
@@ -32,21 +34,27 @@
     "source_url": "https://rogerburkhard.com/wp-content/uploads/2026/02/heyday-2.webp",
     "caption": "Heyday, 2025",
     "link": "https://rogerburkhard.com/en/projekte/heyday/",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Near-duplicate of site-04, same Heyday homepage in different colour state"
   },
   {
     "file": "site-06.webp",
     "source_url": "https://rogerburkhard.com/wp-content/uploads/2026/02/mood-5.webp",
     "caption": "Heyday, 2025",
     "link": "https://rogerburkhard.com/en/projekte/heyday/",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Purple graphic/artwork from Heyday client content, not a web UI screenshot"
   },
   {
     "file": "site-07.webp",
     "source_url": "https://rogerburkhard.com/wp-content/uploads/2025/09/gurtenfestival-25-mood-12.webp",
     "caption": "Gurtenfestival, 2025",
     "link": "https://rogerburkhard.com/en/projekte/gurtenfestival-25/",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Aerial photo of festival event, not a screenshot of the web design Roger built"
   },
   {
     "file": "site-08.webp",
@@ -67,7 +75,9 @@
     "source_url": "https://rogerburkhard.com/wp-content/uploads/2026/03/atlas-19.webp",
     "caption": "Atlas Studio, 2025",
     "link": "https://rogerburkhard.com/en/projekte/atlas-studio/",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Photo of printed posters in a gallery setting, not a screenshot of the Atlas Studio website Roger built"
   },
   {
     "file": "site-11.webp",
@@ -81,6 +91,66 @@
     "source_url": "https://rogerburkhard.com/wp-content/uploads/2026/03/atlas-3.webp",
     "caption": "Atlas Studio, 2025",
     "link": "https://rogerburkhard.com/en/projekte/atlas-studio/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://rogerburkhard.com/en/",
+    "caption": "Website",
+    "link": "https://rogerburkhard.com/en/",
+    "captured_at": "2026-06-28",
+    "context_shot": true
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://www.instagram.com/roger_burkhard/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/roger_burkhard/",
+    "captured_at": "2026-06-28",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Blank white page; Instagram blocked headless Playwright. Queued to ig-queue.json for logged-in grab."
+  },
+  {
+    "file": "site-15.webp",
+    "source_url": "https://rogerburkhard.com/wp-content/uploads/2025/12/berner-design-stiftung-1.webp",
+    "caption": "Berner Design Stiftung, 2025",
+    "link": "https://rogerburkhard.com/en/projekte/berner-design-stiftung/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-16.webp",
+    "source_url": "https://rogerburkhard.com/wp-content/uploads/2025/12/berner-design-stiftung-2.webp",
+    "caption": "Berner Design Stiftung, 2025",
+    "link": "https://rogerburkhard.com/en/projekte/berner-design-stiftung/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-17.webp",
+    "source_url": "https://rogerburkhard.com/wp-content/uploads/2025/12/berner-design-stiftung-4.webp",
+    "caption": "Berner Design Stiftung, 2025",
+    "link": "https://rogerburkhard.com/en/projekte/berner-design-stiftung/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-18.webp",
+    "source_url": "https://rogerburkhard.com/wp-content/uploads/2024/12/aargauerkunsthaus-8.webp",
+    "caption": "Aargauer Kunsthaus, 2024",
+    "link": "https://rogerburkhard.com/en/projekte/aargauer-kunsthaus/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-19.webp",
+    "source_url": "https://rogerburkhard.com/wp-content/uploads/2024/12/aargauerkunsthaus-9.webp",
+    "caption": "Aargauer Kunsthaus, 2024",
+    "link": "https://rogerburkhard.com/en/projekte/aargauer-kunsthaus/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-20.webp",
+    "source_url": "https://rogerburkhard.com/wp-content/uploads/2024/12/aargauerkunsthaus-10.webp",
+    "caption": "Aargauer Kunsthaus, 2024",
+    "link": "https://rogerburkhard.com/en/projekte/aargauer-kunsthaus/",
     "captured_at": "2026-06-28"
   }
 ]
