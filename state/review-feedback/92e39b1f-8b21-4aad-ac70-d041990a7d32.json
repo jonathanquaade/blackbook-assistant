@@ -1,0 +1,112 @@
+{
+  "page_id": "92e39b1f-8b21-4aad-ac70-d041990a7d32",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Refresh Magazine, Decompressed Prism, BSX Studio, Into The Open. No duplicates."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Each project has 3 images including desktop and mobile interior views, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities: Frontend development (web) + Web design. All 4 projects are designed-and-built websites. Work matches exactly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-website.png confirmed piccolora.fr homepage. site-instagram.png confirmed instagram.com/laura.piccolora (login modal visible but URL and handle are correct; standard logged-out IG limitation, not an error page). Three prior attempts (site-01, site-02, site-03) are all marked rejected in manifest.",
+      "note": "The IG shot shows a signup modal over the grid, which is the typical logged-out IG state. The handle is legible. Not queued to ig-queue.json; scraper accepted this as sufficient. Jonathan may want a logged-in grab if he wants grid visibility."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 14 active images (12 work + 2 context) have captions naming the project.",
+      "note": "All 12 work image link fields point to the portfolio root (https://piccolora.fr/) rather than specific project-level URLs. Captions name each project clearly so images are not anonymous, but deep-linking per project would be more useful for revisits. Not a hard fail under current checklist wording."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Capabilities are Web design and Frontend development; no audio or video capability tagged. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "12 work images across 4 projects. Not thin; no unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for a solo freelance designer-developer."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://piccolora.fr/. Instagram: https://www.instagram.com/laura.piccolora/ (verified from her own site). LinkedIn: https://www.linkedin.com/in/laura-piccolo-769a5b1b5/. Email: hello.laurapiccolo@gmail.com. All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) + Web design tagged. Her site self-describes as Graphic Designer / Creative Developer but all portfolio work is website design and build, making these the correct primary tags. Capabilities are provenance set_by jonathan, so no change needed."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (Berlin-based; Open Question raised about Germany vs France vs both). Size: 1. Work Status: Freelance, confirmed by own site + web search per AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent. AI Notes: designs and builds end-to-end, inferred from solo practice. Appropriately hedged."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "No clip note relationship facts. Zero-states (Never, Don't know them, Unvetted) are all appropriate with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-04-10'; no special instructions in the clip note requiring action."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge Autonomy as inferred, state sources for Work Status, note the France/Germany distinction, and confirm IG handle verification. Seniority read included: mid-level, ~5+ yrs."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-04-10'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout; this is the known systemic tooling gap, not a gate failure per checklist note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Country Germany vs France vs both. Terse, genuinely ambiguous (French national, Berlin-based), not answerable from available data alone."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "to": "scraper"
+}

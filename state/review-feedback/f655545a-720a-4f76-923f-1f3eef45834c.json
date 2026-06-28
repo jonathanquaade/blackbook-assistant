@@ -1,45 +1,44 @@
 {
   "page_id": "f655545a-720a-4f76-923f-1f3eef45834c",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-27T12:00:00",
-  "verdict": "fail",
+  "reviewed_at": "2026-06-28T10:00:00",
+  "verdict": "pass",
   "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "site-03 and site-24 are pixel-identical (both carmenamsterdam.com homepage, same screenshot captured twice). site-10 and site-26 are pixel-identical (both myraflores.com homepage, same screenshot captured twice). site-23 and site-29 are near-identical (linguaplanta.com homepage, near-same scroll position, visually indistinguishable at a glance). That is 2 exact duplicate pairs and 1 near-duplicate pair among the 10 work images. Effective distinct work images: Carmen homepage x1 + Carmen collections x1 + Myraflores homepage x1 + Myraflores products x1 + Jhonathan Baena x1 + Lingua Planta x1 + GEM Faces faces x1 = 7 distinct views, but 3 slots are wasted on duplicates.",
-      "fix": "Remove site-24 (duplicate of site-03) and site-26 (duplicate of site-10) from the manifest and the Images property. Replace them with screenshots of two pages not yet captured: for example jhonathanbaena.com interior project page, or gem-faces.com homepage (it loaded blank before -- retry with --render). Also remove or replace site-29 if it is near-identical to site-23; capture a different Lingua Planta page (e.g. a product detail or shop page) instead."
+      "result": "pass",
+      "evidence": "Dedupe fix confirmed. site-24, site-26, and site-29 are all marked rejected:true in the manifest with explicit reject reasons (pixel-duplicate, near-duplicate). The 8 active work images span 5 distinct client projects: Carmen Amsterdam (site-03 homepage + site-25 collections grid), Myraflores (site-10 homepage + site-30 products grid), Jhonathan Baena (site-18 homepage), Lingua Planta (site-23 homepage + site-33 products shop page), GEM Faces (site-31 faces grid). No active image is a duplicate of another."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "The fix correctly replaced CDN photography assets with full-page screenshots. site-25 (Carmen collections grid) and site-30 (Myraflores products grid with filter controls and category tabs) go inside the site structure. site-31 (GEM Faces faces grid) shows the grid layout and nav. These are genuine interior views, not just hero shots."
+      "evidence": "Carmen Amsterdam has homepage + collections page. Myraflores has homepage + products grid. Lingua Planta has homepage + shop page. GEM Faces has the faces casting grid. Goes inside site structure beyond hero shots."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 10 active work images are screenshots of web pages she designed. The interfaces show nav, typography, grid layouts, UI components. Web design capability confirmed. Hero sections have full-bleed client photography but that is the design of those pages -- the web UI is visible in nav chrome, layout, and inner pages."
+      "evidence": "All 8 active work images are screenshots of live web interfaces she designed. site-18 (Jhonathan Baena) and site-25/30/31/33 clearly show nav, layout, typography, and UI components. Hero sections on Carmen and Myraflores show client photography as a design element within the web UI; web chrome and layout are visible throughout."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is gentle-studio.com homepage showing the project list and studio copy -- correct website context shot. site-02.png is instagram.com showing the @angelique_janssen profile with name 'Angelique Janssen' and bio 'designing a cuter web' visible in the header -- correct person, correct platform. Login modal overlay present but profile is identifiable; this meets the exception criteria (IG served degraded logged-out view, profile header still readable, bio matches)."
+      "evidence": "site-01 is gentle-studio.com with 'Gentle Studio' header, project list, and studio copy -- correct website context shot. site-02 is instagram.com showing @angelique_janssen profile with display name 'Angelique Janssen' and bio 'designing a cuter web' visible in the header; a login modal overlay covers the grid but the profile header is identifiable as the correct person. IG exception applies: degraded logged-out view, profile still identifiable, not a blank error page."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 12 active images have captions and source links in the manifest."
+      "evidence": "All 10 active images (2 context + 8 work) have captions and source links in the manifest."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video or audio work identified for this web design entry; no embed opportunity missed."
+      "evidence": "No video or audio work identified for this web design entry. Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes explains gentle-studio.com was unreachable (503); projects sourced from live client sites. No silent thin selection."
+      "evidence": "AI Notes explains sourcing context. No silent thin selection."
     },
     {
       "id": "B.type-classified",
@@ -49,12 +48,12 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present and consistent with the person."
+      "evidence": "Website, Instagram, LinkedIn, Email all present. Instagram handle @angelique_janssen verified against site-02 (display name + bio match)."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Web design + Frontend development (web); Open Question raised about whether she ships code herself. Appropriate hedge."
+      "evidence": "Web design + Frontend development (web); Open Question raised about whether she ships code herself. Appropriate hedge for the confidence level."
     },
     {
       "id": "B.country-size-workstatus",
@@ -69,27 +68,27 @@
     {
       "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "No judgment field contradicts any evidence in the entry."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted -- no evidence contradicts any of these."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped.md archived; no actionable instructions in clip body."
+      "evidence": "No relationship or judgment facts in clip note. All instructions acted on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Frontend tag hedged; seniority and Autonomy reasoning flagged as inferred. No bare assertion of unverified facts."
+      "evidence": "Frontend tag hedged, seniority trajectory present ('Mid-level independent, several years running her own studio'), Autonomy 4 labeled as inferred. No bare assertion of unverified facts. No em-dashes in AI Notes."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-06-06'."
+      "evidence": "Source: 'Web clipper, 2021-06-06' -- present."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries; source_url null is a known systemic tooling gap, not a gate failure per checklist calibration note."
+      "evidence": "Provenance file present. Null source_url is the known systemic tooling gap, not a gate failure per checklist calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,14 +98,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question about Frontend development (web) tag; appropriate and non-redundant."
+      "evidence": "One terse conditional question about Frontend development (web) tag; appropriate, non-redundant, not asking for a field that already has a value."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Currently Enriching; not prematurely flipped."
+      "evidence": "Entry was in Enriching; flipped to Needs Review by this gate pass."
     }
   ],
-  "summary": "One check fails: project-diversity. The photography-vs-UI fix worked -- all 10 active work images now show web interfaces. However two exact duplicate pairs were introduced: site-03 and site-24 are the same carmenamsterdam.com homepage screenshot, and site-10 and site-26 are the same myraflores.com homepage screenshot. site-23 and site-29 are near-identical Lingua Planta homepages. The fix is mechanical: remove site-24 and site-26 from the manifest (mark rejected: true, reason: duplicate) and replace them with two screenshots not yet captured (a Jhonathan Baena interior page, or GEM Faces homepage on retry with --render, or a Lingua Planta shop/product detail page). All other checks pass. One more scraper pass to remove duplicates and add two replacement images should clear the gate.",
-  "to": "scraper"
+  "summary": "All 19 checks pass. The dedupe fix is confirmed: site-24, site-26, and site-29 are all rejected in the manifest with clear reasons; the 8 active work images now cover 5 distinct client projects with no duplicates. On-capability (web UI screenshots) and context shots both pass. Metadata, provenance, Open Questions, and AI Notes all meet the bar. Entry is ready for Jonathan.",
+  "to": "jonathan"
 }

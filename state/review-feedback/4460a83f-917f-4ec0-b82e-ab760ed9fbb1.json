@@ -1,0 +1,115 @@
+{
+  "page_id": "4460a83f-917f-4ec0-b82e-ab760ed9fbb1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T09:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Images span 5 distinct projects: BBC Habitat, Lian (Face), Somnia, Nike (FIELD.IO), Circle + IBM (FIELD.IO). Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images each from BBC Habitat, Lian and Somnia show interior spreads and detail views, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "field-01.jpg (captioned 'Nike: A Global Retail Language, motion design system, at FIELD.IO 2024') is a content/retail photography shot of people walking inside a Nike store. The designed motion output is not shown. Tagged Capabilities include 3D & motion and Web design; a retail interior photo is off-capability content photography, not the designed work itself.",
+      "fix": "Replace field-01.jpg with an image that shows the actual motion design system output (e.g. the animated signage, type system in motion, or the digital screen content from the FIELD.IO Nike case study) rather than a store interior with shoppers."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-11.png (captioned 'Instagram profile') is instagram.com/jannchoy but a login-wall modal covers the entire grid. The profile name and follower count are visible but the post grid is fully hidden. This is a degraded capture: it is NOT marked rejected in the manifest, AI Notes does not document a throttle block, and the entry is NOT in state/ig-queue.json. All three conditions for the sanctioned exception path are unmet.",
+      "fix": "Either (a) retake the IG screenshot when the grid loads correctly (logged-out or via ig.py), OR (b) mark site-11.png as rejected in manifest.json, add a note to AI Notes ('Instagram context shot blocked by login modal; queued for ig.py'), and add the entry to state/ig-queue.json."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 active images have captions naming project and source link. Rejected images (field-02 through field-05) are correctly excluded."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No embedded video/audio disciplines tagged; 3D & motion work is captured as still images which is appropriate for this entry type. No video embed opportunities are documented as skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No sources are known dead or gated. AI Notes documents Day Rate pre-set and work status sources. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Instagram field is empty in the Notion entry. The manifest records instagram.com/jannchoy as the IG context shot source URL, confirming the handle was identified, but the scraper never wrote it to the Instagram property. Website and LinkedIn are present.",
+      "fix": "Set the Instagram field to https://www.instagram.com/jannchoy/ via keeper.py set."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web), 3D & motion, Web design are tagged. An Open Question asks Jonathan whether to add Creative technology and Graphic design, which is appropriate given the multidisciplinary breadth."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK, Size: 1, Work Status: Employed. AI Notes names The Org + LinkedIn as sources confirming employed at FIELD.IO. Objective multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 3 (set_by agent). AI Notes gives grounded reasoning: early-career, ~4 yrs, employed in a studio team. Seniority read included."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip was 'Web clipper, 2021-04-14', no personal instructions in the Name field. Source field filled verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy as 'inferred', notes Day Rate was 'pre-set', and qualifies seniority as 'early-career, rising (junior-to-mid, ~4 yrs)'. Seniority and experience read is present and grounded."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-04-14'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists with all touched fields. source_url is null throughout (known systemic tooling gap, not a gate failure per calibration note). set_by values are correct: agent for all agent-derived fields, jonathan for Day Rate and Capabilities."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question asking about adding Capabilities tags. Terse, conditional (Capabilities already have values but the question is a genuine expand/clarify, not asking for a set field). No story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer gate is running now; status will flip to Needs Review only on pass."
+    }
+  ],
+  "failing_checks": ["A.on-capability", "A.context-shots", "B.all-findable-links"],
+  "summary": "Three failures: (1) field-01.jpg is a Nike store interior content photo, not the motion design output; (2) the Instagram context shot has a login modal covering the grid and is neither rejected nor queued; (3) the Instagram URL was identified but not written to the Notion Instagram field.",
+  "to": "scraper"
+}

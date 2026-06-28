@@ -1,14 +1,14 @@
 {
   "page_id": "497b7230-2e78-4e7e-b84f-b9d35bc0642a",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-27T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-28T11:30:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6 distinct projects: Qonto, Glassdoor, Bowery, Fiit, Untapped, SusoSiguenza"
+      "evidence": "6 distinct projects: Untapped, SusoSiguenza, Qonto, Glassdoor, Bowery, Fiit"
     },
     {
       "id": "A.depth-over-breadth",
@@ -18,12 +18,12 @@
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 16 kept images show brand identity and digital design systems; portrait and lifestyle shots correctly rejected (site-07, site-18)"
+      "evidence": "All 16 kept images show brand identity and digital design systems; portrait (site-07) and lifestyle (site-18) correctly rejected"
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-22.png is a real susana-rios.com screenshot (confirmed: shows 'Susana Rios / Select Work 2020-2025'). IG blank shot (site-21.png) correctly rejected, documented in AI Notes, queued to ig-queue.json. Checklist IG throttle exception applies."
+      "evidence": "site-22.png is a real susana-rios.com screenshot. IG blank shot (site-21.png) correctly rejected with rejected:true and reject_reason, documented in AI Notes, queued to ig-queue.json. Throttle exception applies."
     },
     {
       "id": "A.no-uncaptioned",
@@ -33,7 +33,7 @@
     {
       "id": "A.embeds-video",
       "result": "pass",
-      "evidence": "No video/audio discipline; graphic/digital design entry, not applicable"
+      "evidence": "Graphic/digital design discipline; no video/audio work; N/A"
     },
     {
       "id": "A.absence-explained",
@@ -47,24 +47,23 @@
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "Two issues: (1) Website field is set to http://www.susanarios.design/ which AI Notes confirms is DNS-dead; all image captures used the working site susana-rios.com but the Notion field was never updated to the live URL. (2) Email field is empty with no documented search attempt in AI Notes; public email may be findable on the working site or LinkedIn.",
-      "fix": "Update Website to https://www.susana-rios.com/ (the live, working URL used for all captures). Search susana-rios.com and LinkedIn for a public email; if none found, say so in AI Notes."
+      "result": "pass",
+      "evidence": "Website fixed to https://www.susana-rios.com/ (HTTP 200 confirmed, Playwright-rendered site; TLS cert mismatch is a known site quirk documented in AI Notes). Email fixed to hello@susana-rios.com (set_by agent, domain-pattern email, provenance recorded 2026-06-27). LinkedIn present. IG handle queued/pending confirmation per sanctioned path."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Graphic design set (jonathan-owned); Open Question asks about broadening to Identity systems and Web design, which is correct and terse"
+      "evidence": "Graphic design set (jonathan-owned); Open Question asks about broadening to Identity systems and Web design, terse and conditional"
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK, 1, Freelance; sources named in AI Notes (site + YunoJuno agree, LinkedIn stale)"
+      "evidence": "UK, 1, Freelance; sources named in AI Notes (site + YunoJuno agree, LinkedIn treated as stale)"
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4 set_by agent, reasoning in AI Notes"
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes"
     },
     {
       "id": "C.no-judgment-contradiction",
@@ -79,7 +78,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Inferences hedged ('inferred', 'treated as'); seniority and work history included; no unverified assertions stated as fact"
+      "evidence": "Inferences hedged; seniority and work history included; no unverified assertions stated as fact"
     },
     {
       "id": "D.source",
@@ -89,12 +88,12 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "source_url nulls are a known systemic gap, not a gate failure per calibration note; set_by values are correct"
+      "evidence": "source_url nulls are the known systemic gap, not a gate failure per calibration note; set_by values correct throughout"
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions"
+      "evidence": "No em-dashes in AI Notes or Open Questions"
     },
     {
       "id": "D.open-questions",
@@ -102,7 +101,5 @@
       "evidence": "One terse conditional question about Capabilities; appropriate"
     }
   ],
-  "to": "scraper",
-  "summary": "Two B.links failures: Website field points to a dead domain (susanarios.design, DNS down) while the working site is susana-rios.com; and Email was never searched or documented as absent.",
-  "fix": "1. Update Website field to https://www.susana-rios.com/. 2. Search susana-rios.com and LinkedIn for a public contact email; if none found, note it in AI Notes."
+  "to": null
 }

@@ -1,0 +1,112 @@
+{
+  "page_id": "127da333-0f4a-470c-a692-bbe4bd10b209",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T14:40:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "site-01 through site-04 are four crops of the same homepage illustration fragment from the Squarespace CDN. Zero distinct named projects are represented. The WITH Fellowship, CriticalAxis, and any brand consulting work are all absent as actual project images.",
+      "fix": "Replace site-01 to site-04 with images from at least 3 distinct named projects: e.g. WITH Fellowship program materials (disabledlist.org/with), CriticalAxis trope matrix UI (once the domain issue is resolved or archived version used), and a documented brand/consulting engagement. Caption each with the project name."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "All 4 work images are decorative homepage illustration crops, no project interiors, no program pages, no case study spreads.",
+      "fix": "Go inside the WITH Fellowship, CriticalAxis, and consulting project pages and capture what the actual program/output looks like, not the homepage decorative system."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-01, site-02, site-03, site-04 are all captioned 'The Disabled List, website' with no named project. Per checklist: prefer fewer named images over more anonymous ones.",
+      "fix": "Each image must caption a specific named project (e.g. 'WITH Fellowship' or 'CriticalAxis'). Remove or replace the anonymous illustration crops."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Two failures: (1) site-06 is a degraded logged-out IG capture showing a login modal overlay. It is NOT marked rejected in the manifest, NOT documented as a throttle block in AI Notes, and NOT queued in state/ig-queue.json. The sanctioned exception requires all three. (2) site-07 is captioned 'CriticalAxis, disability trope matrix' and linked to criticalaxis.org but the image is a DreamHost 'Site Not Found' error page. A dead-site 404 screenshot was shipped as a project context shot.",
+      "fix": "For site-06: either queue the IG grab in state/ig-queue.json, mark the file rejected in manifest, and note the throttle block in AI Notes; or re-attempt the logged-out capture if the block has cleared. For site-07: remove it. Do not ship a 404 error page as a project shot. Find an archived version of criticalaxis.org (Wayback Machine) or source a screenshot of the Notion/web version of the trope matrix from press coverage."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "AI Notes do not mention that criticalaxis.org is currently dead (DreamHost 404), nor that the IG context shot was throttle-limited. These are known gaps that should be documented.",
+      "fix": "Add to AI Notes: criticalaxis.org is currently returning a DreamHost 404 (domain likely lapsed as of 2026-06-28); use archived version. Note IG context shot status."
+    },
+    {
+      "id": "B.links-email",
+      "result": "fail",
+      "evidence": "No public Email field populated. AI Notes do not mention searching for a contact email. disabledlist.org has a contact page; a public inquiry address is likely findable.",
+      "fix": "Check disabledlist.org/contact and set Email if a public address is listed."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Matches the org description (small mission-driven collective, hands-on consulting)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email is the missing item (covered above)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy tagged (set_by jonathan). Open Question asks about adding Insights and research. Correct approach for a locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US, Size 2-10, Work Status Studio all set with agent provenance. AI Notes documents the UK correction."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio). Per calibration note Autonomy is optional for orgs. Field is set to 4 by agent with the org context in AI Notes. Acceptable."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any evidence in the clip note or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Disabled People'; this is a tagging/category note, not a relationship or judgment fact. Acted on appropriately."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual and hedged appropriately. No em-dashes. Seniority/leadership read omitted but org entry exemption applies."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-10'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present, all fields have set_by. source_url nulls are a known systemic gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional Capabilities question. No field already having a non-zero value is asked about."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status is Enriching; not prematurely flipped to Needs Review."
+    }
+  ],
+  "summary": "4 distinct failures: (1) All 4 non-context work images are anonymous decorative illustration crops of the same homepage graphic; zero named projects represented. (2) The IG context shot is a degraded login-modal capture, not rejected/documented/queued per the sanctioned exception. (3) site-07 is a DreamHost 404 error page, shipped as a live CriticalAxis context shot. (4) No public Email found or documented as absent.",
+  "to": "scraper"
+}

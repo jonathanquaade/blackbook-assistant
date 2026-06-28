@@ -1,0 +1,30 @@
+{
+  "page_id": "3af29060-42e3-4336-8f65-f6f1a2be093d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "8 distinct brand films across 8 separate clients (Dunhill x2 but different campaigns 2022/2024, Krug x2 different locations, Belmond, Church's, Net-A-Porter, Soho House); visually distinct frames confirmed"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Thumbnails are meaningful film stills from inside each project (chef prep, shoemaking press, train interior), not generic hero banners"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Capability is Film & video production; all 8 embeds and thumbnails are brand films; no off-capability work"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png confirmed as acstudios.io (AC STUDIOS wordmark visible); site-02.png confirmed as instagram.com/@acstudios_ (Instagram chrome, handle, follower count visible)"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "Every manifest entry has a named caption and source link; no anonymous shots"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "8 Vimeo embeds present, each paired with a thumbnail image and link per the prescribed pattern"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Full slate of 8 projects captured; no silently thin areas"},
+    {"id": "B.type", "result": "pass", "evidence": "Studio: small founder-led, project-assembled crews, correct classification"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, LinkedIn and Email all present and populated"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Film & video production is correct and specific per TAXONOMY"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, 2-10, Studio; AI Notes records source basis (own site + press)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Studio type; Autonomy field set to 5 for solo founder embodying the org, noted in AI Notes; optional for orgs per checklist calibration note"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states consistent with bare 2021 web-clipper entry; no relationship signal to contradict"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Source is bare web clipper entry from 2021-03-26; no instructions to act on"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes includes seniority read, Autonomy reasoning, sources named; language is factual or appropriately hedged; no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: 'Web clipper, 2021-03-26'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "Manifest records source_url and captured_at on every file; per-field source_url gap is the known systemic tooling issue, not a gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes and all written fields use commas and periods; no em-dashes found"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No open questions needed; no unresolvables; no story-nudge trigger"},
+    {"id": "D.status", "result": "pass", "evidence": "Flipped to Needs Review by reviewer on this pass"}
+  ],
+  "to": null
+}

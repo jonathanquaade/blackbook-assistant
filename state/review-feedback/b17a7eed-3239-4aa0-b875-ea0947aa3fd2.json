@@ -1,0 +1,113 @@
+{
+  "page_id": "b17a7eed-3239-4aa0-b875-ea0947aa3fd2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Images span 4 distinct sources: Sight Unseen pine article, Sight Unseen seance article, Wallpaper Design Award, MagCulture interview. 3+ distinct projects represented."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Two Sight Unseen articles each have 3 interior images (product/editorial shots illustrating the piece). Reasonable depth for a writing entry."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "David Michon is tagged Brand strategy (a writer/editorial director). Work images are editorial photography illustrating his published articles at Sight Unseen and Wallpaper, plus bookmarks to the articles themselves. This is on-capability. NOTE: site-15.jpg is a headshot portrait (Alpha Kilo Muses) and site-09.jpg is a photo of him holding his broadsheet; these are not work samples but are minor in context. site-12.png is a Severance TV still used as article hero art for the Wallpaper piece; it is legitimate article illustration but looks decontextualised as a standalone image. Not a hard fail but scraper should note this."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Two failures: (1) Website context shot (site-01.png) shows a Substack subscribe popup for forscale.substack.com, NOT davidmichon.com. The manifest caption acknowledges 'davidmichon.com timed out' but uses the Substack popup as a substitute, which is not a usable website context shot. (2) Instagram profile context shot (site-08.png) shows the @for____scale Instagram account (his newsletter project account), NOT David Michon's personal Instagram profile. The caption says 'Instagram profile' but this is not his personal profile.",
+      "fix": "Re-attempt davidmichon.com with --render flag and capture the actual homepage. If it still times out, leave website context shot absent and document in AI Notes rather than substituting an unrelated site. For Instagram: find David Michon's personal Instagram handle (search 'David Michon instagram' or check his site/LinkedIn) and capture a screenshot of that profile page, OR document in AI Notes that no personal IG was found and queue for ig.py if a handle is identified. Do not use a project/newsletter account as a personal profile substitute."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 images in the manifest (non-rejected) carry captions with project names and links. site-15.jpg is a portrait captioned with its source (Alpha Kilo Muses). No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "David Michon is a writer/editorial director. No video work to embed. Five bookmarks covering his published articles and newsletter are present. Images also present (not embeds-only)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is findable via Sight Unseen, Wallpaper, MagCulture, NYRA. The manifest has meaningful coverage."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn and Email fields are absent with no AI Notes explanation that a search was attempted and failed. For a 15-year senior editorial director (ex-Icon, ex-Monocle), a LinkedIn profile is almost certainly findable via a Google snippet search. Email also absent with no documented search attempt.",
+      "fix": "Search 'David Michon linkedin' via Google snippet and capture the URL if found. Search 'David Michon email contact' or check davidmichon.com contact page. Document in AI Notes if genuinely not findable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities locked as set_by: jonathan (Brand strategy). Agent correctly asked in Open Questions whether Copywriting and Creative direction should be added rather than overwriting a jonathan-set field. This is the correct behaviour."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK (site states London since 2008, prior migration value France corrected, documented in AI Notes). Size: 1. Work Status: Freelance (own consultancy per site). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (runs own consultancy and ventures). This is a Person entry; Autonomy is required and present."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) are appropriate; no clip note signals a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2021-03-19' with no instruction text. Source set accordingly. Name cleaned to David Michon. Body archived to clipped.md and reset."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (senior/director-level, 15+ yrs), work history (ex-Icon, ex-Monocle, ex-Winkreative), Autonomy reasoning, and Work Status source rationale. Autonomy 4 is hedged ('hedged'). Clients listed are verifiable from the clipped site copy."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-19'. Present and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url null is a known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons and parentheses. No em-dashes detected."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities add Copywriting and Creative direction? Terse, conditional (Capabilities has a value but it is jonathan-set and the question is about expanding it, which is correct). No nagging on already-answered fields."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching. Will be flipped to Needs Review only on pass (not happening this run due to fails)."
+    }
+  ],
+  "summary": "Two hard fails: (1) website context shot is a Substack subscribe popup, not the actual davidmichon.com homepage; (2) Instagram context shot is the @for____scale newsletter project account, not David Michon's personal Instagram. LinkedIn and Email links are also absent with no documented search attempt. Fix context shots and attempt LinkedIn/Email before re-submitting.",
+  "to": "scraper"
+}
