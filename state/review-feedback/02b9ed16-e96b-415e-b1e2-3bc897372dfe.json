@@ -2,92 +2,88 @@
   "page_id": "02b9ed16-e96b-415e-b1e2-3bc897372dfe",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "Only 1 clearly named project in the active work images: 'New York Times Wordle Review, 2024' (site-05, site-06, site-07). Sites 01 and 02 are Schirn-related illustrations from the Cargo CDN but are captioned 'Website' with no project name, so they do not count as named project coverage. Site-03 is the website context shot. Site-04 is the IG context shot. Net result: 1 named project, 2 anonymous images. Need at least 3 distinct named projects.",
-      "fix": "Capture work from at least 2 more distinct named projects visible on benediktluft.com or Behance (e.g. the Schirn illustrations should be captioned 'Schirn [project name], [year]' with source link; then find 2 further projects such as Converse, Xbox or Secret 7 work mentioned in AI Notes). Site-01 and site-02 must be recaptioned with their actual project name and year, or replaced with properly captioned project images."
-    },
-    {
-      "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-01.png and site-02.png are non-context-shot project images captioned only 'Website'. They are Schirn project illustrations (source URLs include 'Schirn_Figur_Website.png' and 'Schirn_Tanzen_Website.png') but carry no project name or year in their caption.",
-      "fix": "Re-caption site-01 and site-02 with their project name, year, and source link (e.g. 'Schirn Kunsthalle illustrations, [year] · benediktluft.com')."
-    },
-    {
-      "id": "A.wrong-caption",
-      "result": "fail",
-      "evidence": "site-06.jpg is captioned 'New York Times Wordle Review illustrations, 2024' but the image clearly shows a 'LOGOS & MARKS VOL.2 2025 / 30DAYD 30LOGOS CHALLENGE' sheet with generic logo concepts. This is a different Behance project (a personal logo challenge), not the NYT Wordle work.",
-      "fix": "Remove site-06.jpg or replace it with an actual NYT Wordle Review image. If the Logos & Marks challenge is worth including, re-caption it correctly and count it as its own distinct project."
-    },
-    {
-      "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-03.png is the benediktluft.com homepage (browser chrome visible, 'About/Privacy/Imprint' nav links visible). site-04.png shows instagram.com/@benediktluft (IG header with login modal overlay but profile is identifiable). Both captions are correctly labeled."
+      "evidence": "15 active images (13 work + 2 context shots) span 4 distinct named projects: (1) Schirn Kunsthalle, Schirn at Night, 2020 (site-01, site-02, site-08, site-10); (2) NYT Wordle Review illustrations, 2024 (site-05, site-07, nyt-01, nyt-02); (3) ZEITmagazin angry cyclist editorial, 2021 (zeitmagazin-01, -02, -03); (4) ZEIT Campus family enterprise, 2021 (zeitcampus-01, -02). Rejected images (site-06 logo challenge, site-09 low-res duplicate) are correctly marked rejected and not in active set."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "With only 1 properly named project (NYT Wordle Review) and 2 anonymous 'Website' shots, depth cannot be assessed across 3+ projects. The scraper stalled mid-run and coverage is thin.",
-      "fix": "Once project diversity is fixed (3+ distinct named projects), go inside each project for 2-3 interior/detail shots per project."
+      "result": "pass",
+      "evidence": "Each project has 2-4 images going inside the work: Schirn has a figure illustration, a dancing figure, a branch illustration, and the event poster; NYT has four distinct Wordle-number illustration cards; ZEIT titles have editorial spreads and full illustrations. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Illustration; all active work images show illustration or graphic work (fluid-form illustrations, decorative patterns, NYT editorial illustrations). site-06 is an off-note logo challenge sheet but that is addressed by the wrong-caption fail above."
+      "evidence": "Tagged Illustration. All 13 work images show editorial and graphic illustration (fluid-form b/w illustrations, colourful editorial pieces for NYT and ZEIT, event poster). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-03.png: benediktluft.com homepage confirmed visually (bold b/w illustration, 'About / Privacy / Imprint' nav). site-04.png: instagram.com/@benediktluft confirmed (Instagram wordmark visible, profile header shows @benediktluft, 829 posts, 23.8k followers, login modal overlay). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 work images carry project name, year, and source link. The prior fail (site-01 and site-02 captioned only 'Website') is fixed; they now read 'Schirn Kunsthalle, Schirn at Night, 2020' with link to benediktluft.com/Schirn-at-Night-I."
+    },
+    {
+      "id": "A.wrong-caption",
+      "result": "pass",
+      "evidence": "Prior fail (site-06 mislabeled as NYT Wordle, was actually a logos challenge) is fixed: site-06 is marked rejected. No remaining caption/image mismatches found."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "No video/audio embeds expected for an illustrator; no obvious Vimeo/YouTube project pages skipped."
+      "evidence": "No video/audio embeds expected for an illustrator. No Vimeo/YouTube project pages were skipped."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes does not claim absence; entry has 7 images (thin but not zero). The scraper stall is the documented cause of the reduced count."
+      "evidence": "Entry is not thin; 13 work images across 4 projects. No gaps to explain."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type = Person. Correct for a solo illustrator."
+      "evidence": "Type = Person. Correct for a solo freelance illustrator."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website (benediktluft.com), Instagram (instagram.com/benediktluft), LinkedIn, and Email are all present."
+      "evidence": "Website (benediktluft.com), Instagram (instagram.com/benediktluft), LinkedIn, and Email all present."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Illustration tagged. Open Question 1 asks Jonathan about expanding to Graphic design and 3D & motion. Correct approach."
+      "evidence": "Illustration tagged. Open Question 1 surfaces the capabilities expansion question to Jonathan. Correct."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = Germany, Size = 1, Work Status = Freelance. AI Notes records 'Freelance: own site + Behance + agency representation agree.'"
+      "evidence": "Country = Germany, Size = 1, Work Status = Freelance. AI Notes records 'Freelance: own site + Behance + agency representation agree.' Multi-source resolution documented."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 4, set_by agent, reasoning in AI Notes ('solo commissioned illustrator delivering finished work to brief')."
+      "evidence": "Autonomy = 4, set_by agent, reasoning in AI Notes: solo commissioned illustrator delivering finished work to brief."
     },
     {
       "id": "C.judgment-honesty",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in source."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship stated in source."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2021-03-01'. No relationship facts or instructions in the clip note to act on."
+      "evidence": "Source = 'Web clipper, 2021-03-01'. No relationship facts or instructions in the clip note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges capabilities question ('could merit Graphic design, flagged below') and includes seniority read ('mid-level freelance illustrator') and Autonomy estimate."
+      "evidence": "AI Notes hedges capabilities question, includes seniority read ('mid-level freelance illustrator'), Autonomy estimate, and Work Status sourcing. No em-dashes. No unhedged inferences."
     },
     {
       "id": "D.source",
@@ -97,24 +93,24 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Not checked at field level (systemic tooling gap per checklist calibration note; set_by values appear correct)."
+      "evidence": "set_by values appear correct (systemic source_url gap noted per checklist calibration; not a gate failure)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes reviewed: no em-dashes found. Semicolons and commas used throughout."
+      "evidence": "AI Notes, Open Questions, and captions reviewed: no em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question about expanding Capabilities. Terse, conditional on Jonathan's Illustration-only tag. No story nudge needed (Worked Together: Never)."
+      "evidence": "One terse, conditional question about expanding Capabilities. No story nudge needed (Worked Together: Never)."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is Enriching; gate is pending. Status will only flip if this review passes."
+      "evidence": "Entry is Enriching; flipping to Needs Review now on this pass verdict."
     }
   ],
-  "summary": "Three FAILs, all in section A (work images). The scraper stalled mid-run and left the entry with only 1 properly named project (New York Times Wordle Review). Site-01 and site-02 are Schirn illustrations captioned 'Website' instead of their project name. Site-06 carries an outright wrong caption: it shows a 30-logos personal challenge but is labeled as NYT Wordle work. Need 3 distinct named projects, properly captioned, with project name + year + source link.",
-  "to": "scraper"
+  "summary": "All three attempt-1 FAILs resolved. 15 images (13 work + 2 context shots) span 4 distinct named projects, all correctly captioned with project name, year, and source link. Rejected files (site-06 wrong-caption, site-09 low-res duplicate) are correctly excluded. Context shots verified visually. All other checks pass unchanged. Entry is complete.",
+  "to": null
 }
