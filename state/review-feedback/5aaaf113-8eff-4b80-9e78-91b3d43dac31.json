@@ -1,0 +1,111 @@
+{
+  "page_id": "5aaaf113-8eff-4b80-9e78-91b3d43dac31",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T15:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 images across 7 distinct named projects: Sala Razzmatazz, Norman Foster Institute, Nomad Coffee, Antfood, Avalon, Isodope, Ciclope Festival. No duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Razzmatazz has 3 internal views (homepage, agenda, clubs); Norman Foster has 2 (homepage, education section); Antfood has 2 (homepage, work grid). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web). All 7 captured projects are live client websites LLOS& built. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: llos.xyz website (their portfolio homepage, nav reads 'forward, archive, about', correct domain). site-02.png: instagram.com/llos.xyz with LLOS& logo, 6,610 followers, Barcelona bio. Both context shots confirmed correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a web studio; no video/audio work to embed. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "site-09.png (Ciclope Festival duplicate, blank render) is marked rejected in manifest with reason documented. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct - small specialist team doing hands-on creative build work."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: llos.xyz. Instagram: instagram.com/llos.xyz (verified: handle matches, bio shows Barcelona design studio). LinkedIn: linkedin.com/company/llos-xyz. Email: not publicly listed on their site; AI Notes acknowledges they are a small studio with no public contact email visible. Acceptable absence."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) per TAXONOMY.md. Set by jonathan (provenance). Open Question raised about Web design addition - appropriate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Spain (Barcelona, per IG bio and site). Size: 2-10 (migration, noted as unconfirmed in AI Notes). Work Status: Studio (correct for an active studio entity). Sources referenced in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry (not Person). Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries. AI Notes includes 'Senior front-end execution' seniority read. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match the clip note (no relationship signals). No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a bare web clipper entry (clipped.md shows lorem ipsum template, no instructions). Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size is hedged ('plausible, not confirmed'). Studio partnerships are hedged ('often the build partner', sourced from their site positioning). Seniority noted. No unverified assertions presented as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-01'. Filled correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. set_by values are correct (agent/migration/jonathan). Note: source_url null on several fields (Size, Country, Open Questions) - known systemic tooling gap per checklist calibration 2026-06-21, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions checked: hyphens only, no em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about Web design capability. Correct - Capabilities has a value so this is an additive question, not asking for an already-set field."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will be flipped to Needs Review by this reviewer gate."
+    }
+  ],
+  "note": "Minor quality note (not a gate failure): site-05.png (Nomad Coffee) has two overlapping popups (cookie consent + newsletter) obscuring the page content. The project is still identifiable and the caption is correct, but the shot is not clean. Worth a reshoot on next revisit if the entry returns.",
+  "to": "n/a"
+}

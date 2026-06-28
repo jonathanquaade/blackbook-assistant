@@ -1,0 +1,111 @@
+{
+  "page_id": "7ec160d3-e45b-4306-a229-ce674620f103",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 distinct client sites across 10 named projects: System Arquitectura, Redwood Team, Openhouse Magazine, Stammler, Drei Club, Dubini, Heaven Inc., Roma (salveroma.tv), Serial Cut, Mayice. No duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "All 10 work images are homepage captures of client sites. For a frontend web developer whose deliverable IS the site, homepage captures of 10 distinct clients demonstrably shows capability breadth. Note: site-08 (Redwood Team) is visually degraded and partially cropped, making it the weakest image in the set. No hard failure but worth flagging."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged is Frontend development (web). All 10 work images show live websites he built for clients. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot present (site-01.png: feijoomontenegro.com homepage, verified correct). Instagram context shot present (site-13.png: instagram.com/feijoomontenegro logged-out profile page, verified correct handle and grid). Rejected site-02.png is a blank login-wall capture, correctly marked rejected in manifest."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected image in the manifest has a caption naming the project and a source link. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is frontend web development, not video/audio. No video or audio embed requirement applies. No project pages with embedded video were noted as skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Norman Foster Foundation rejected due to Cloudflare block, documented in manifest (site-06.png reject_reason). Instagram login-wall documented in manifest (site-02.png reject_reason). Both are explained."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Open Question asked whether Studio would be more appropriate given his branding. This is correctly handled."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: feijoomontenegro.com (set). Instagram: instagram.com/feijoomontenegro (set, verified correct person). LinkedIn: linkedin.com/in/anton-feijoo-montenegro-80b6b428 (set). Email: contact@feijoomontenegro.com (set from site). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) tagged, set_by jonathan per provenance. Matches the work shown."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Spain (migration baseline, plausible from site). Size: 1 (migration baseline). Work Status: Freelance, sourced from self-maintained site (availability listed on feijoomontenegro.com). AI Notes documents sources: self-maintained site and IG agree on freelance."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set (set_by agent). Reasoning in AI Notes: solo freelancer, ~10+ yrs front-end, acts as independent build partner to studios. Appropriate and grounded."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note indicates a relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship evidence. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md archived. Body content was placeholder/Lorem Ipsum copy from the clipper template, not Jonathan's commentary. No actionable instruction in clip note beyond the entry itself."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges location ('likely Madrid'), notes migration size field, hedges Type with Open Question. Seniority read present ('Senior, ~10+ yrs front-end'). Sources cited (self-maintained site and IG for Work Status). No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-03-01'. Filled per the backfill convention."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values. source_url null on some fields (known systemic tooling gap, not a gate failure per calibration note). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions verified: no em-dashes present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Type (Person vs Studio). Terse, conditional, relevant. No story nudge needed (no relationship fields changed from zero-states)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Fliping to Needs Review now as this gate passes."
+    }
+  ],
+  "to": "scraper",
+  "summary": "All checks pass. 10 distinct named client web projects, both context shots present and verified correct, all links found, metadata complete, AI Notes hedged. Soft note: site-08 (Redwood Team) is a degraded partial render, the weakest image in the set."
+}

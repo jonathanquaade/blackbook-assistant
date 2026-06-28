@@ -32,14 +32,18 @@
     "source_url": "https://kiwibravo.com/wp-content/uploads/2024/06/PARACHILNA_01_V3_02-640x800.jpg",
     "caption": "YSL Rouge, 2020",
     "link": "https://kiwibravo.com/projects/yslrouge/",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "WordPress DOM contamination: image is from Parachilna project, not YSL Rouge"
   },
   {
     "file": "site-06.png",
     "source_url": "https://kiwibravo.com/wp-content/uploads/2023/06/CLIMAFITNES_IMG08_V4-640x800.png",
     "caption": "YSL Rouge, 2020",
     "link": "https://kiwibravo.com/projects/yslrouge/",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "WordPress DOM contamination: image is from ClimFitnes project, not YSL Rouge"
   },
   {
     "file": "site-07.jpg",
@@ -60,6 +64,66 @@
     "source_url": "https://kiwibravo.com/wp-content/uploads/2021/04/M01_KB_LANCOME_IDOLE-640x800.jpg",
     "caption": "Nike Air Max Deluxe 12, 2023",
     "link": "https://kiwibravo.com/projects/nike-air-max-deluxe-12/",
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "WordPress DOM contamination: image is from Lancome Idole project, not Nike Air Max"
+  },
+  {
+    "file": "site-10.jpg",
+    "source_url": "https://kiwibravo.com/wp-content/uploads/2020/02/REEBOK_DETALLE_02-1667x2500.jpg",
+    "caption": "Reebok x Billionaire Boys Club",
+    "link": "https://kiwibravo.com/projects/reebok-x-billionaire-boys-club/",
     "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-11.jpg",
+    "source_url": "https://kiwibravo.com/wp-content/uploads/2020/02/REEBOK_02-1667x2500.jpg",
+    "caption": "Reebok x Billionaire Boys Club",
+    "link": "https://kiwibravo.com/projects/reebok-x-billionaire-boys-club/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-12.jpg",
+    "source_url": "https://kiwibravo.com/wp-content/uploads/2020/02/REEBOK-_01_GRANDE-3500x2500.jpg",
+    "caption": "Reebok x Billionaire Boys Club",
+    "link": "https://kiwibravo.com/projects/reebok-x-billionaire-boys-club/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-13.jpg",
+    "source_url": "https://kiwibravo.com/wp-content/uploads/2024/06/AUDI_04-2000x2500.jpg",
+    "caption": "Audi RS e-tron GT, 2024",
+    "link": "https://kiwibravo.com/projects/audirs/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-14.jpg",
+    "source_url": "https://kiwibravo.com/wp-content/uploads/2024/06/AUDI_07_WEB.jpg",
+    "caption": "Audi RS e-tron GT, 2024",
+    "link": "https://kiwibravo.com/projects/audirs/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-15.jpg",
+    "source_url": "https://kiwibravo.com/wp-content/uploads/2024/06/AUDI_03-2000x2500.jpg",
+    "caption": "Audi RS e-tron GT, 2024",
+    "link": "https://kiwibravo.com/projects/audirs/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://kiwibravo.com/",
+    "caption": "Website",
+    "link": "https://kiwibravo.com/",
+    "captured_at": "2026-06-28",
+    "context_shot": true
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://www.instagram.com/kiwibravo/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/kiwibravo/",
+    "captured_at": "2026-06-28",
+    "context_shot": true
   }
 ]
