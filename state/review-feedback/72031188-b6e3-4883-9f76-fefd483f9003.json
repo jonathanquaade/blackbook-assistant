@@ -1,0 +1,32 @@
+{
+  "page_id": "72031188-b6e3-4883-9f76-fefd483f9003",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "10 work images across 9+ distinct projects (DISORDERS x2 but visually distinct pieces, Premier Guitar cover, Modular Synth Expo, Quarantine, Five Games for Vinyl Moon, Checkmate with a Knight, Dr. Eyebrows, Wooden Blocks / Harry Styles, Symmetry)."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Images go inside projects (individual DISORDERS pieces, Five Games interior game art, full Checkmate composition) rather than covers only."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Illustration; all 10 work images are illustrations. No off-capability material."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png confirmed tomavagner.com homepage (nav + portfolio grid visible). site-02.png confirmed instagram.com/tomavagner (Instagram chrome, handle 'tomavagner', name 'Toma Vagner', bio 'Artist, NYC')."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 12 active images (2 context + 10 work) have captions. 6 rejected files in manifest have empty captions but are correctly marked rejected and excluded."},
+    {"id": "A.embeds", "result": "pass", "evidence": "Illustration is a static-image capability; no video or audio embeds are expected or applicable."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Work is abundant; no absence to document."},
+    {"id": "B.type", "result": "pass", "evidence": "Type = Person, correct for an individual illustrator."},
+    {"id": "B.links", "result": "fail", "evidence": "Email field is empty. tomavagner.com/contact publicly lists vagnertoma@gmail.com (confirmed via direct fetch of the page). LinkedIn absence is documented in AI Notes. Email was findable and was skipped.", "fix": "Set Email to vagnertoma@gmail.com (from tomavagner.com/contact, public)."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Illustration set (set_by jonathan). Confirmed correct by every work image."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country = United States, Size = 1, Work Status = Freelance. AI Notes names sources (own site + Behance + Working Not Working)."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy = 4 (set_by agent) with reasoning in AI Notes. Person entry."},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) are valid; clip note contains no relationship facts."},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clipped.md shows only 'Portfolio (Examples)'. No instructions or relationship facts to act on."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Client roster and awards are verifiable facts. Seniority read present. Autonomy reasoning present. No unhedged inferences. No em-dashes."},
+    {"id": "D.source", "result": "pass", "evidence": "Source = 'Web clipper, 2021-03-01'."},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have set_by; source_url null is the known systemic gap, not a gate failure per calibration note."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes scanned; no em-dashes found."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No Open Questions outstanding; no story nudge triggered (Worked Together = Never)."},
+    {"id": "D.status", "result": "pass", "evidence": "Entry correctly in Enriching pending gate."}
+  ],
+  "to": "scraper",
+  "summary": "One blocking fail: public email vagnertoma@gmail.com is listed on tomavagner.com/contact and was not captured. All other checks pass (10 on-capability illustration images across 9 distinct projects, both context shots correct, metadata complete, AI Notes solid).",
+  "fix": "Set Email = vagnertoma@gmail.com (tomavagner.com/contact, public). Then re-submit for review."
+}

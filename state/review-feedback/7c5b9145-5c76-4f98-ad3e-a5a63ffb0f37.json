@@ -1,0 +1,113 @@
+{
+  "page_id": "7c5b9145-5c76-4f98-ad3e-a5a63ffb0f37",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: O2 Monde, PEOPLES, Forsyth, Oncept. Captions do not repeat across those 4 sets."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images; includes product listing pages, product detail pages, and homepage views -- goes inside the site structure, not only the hero."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Tagged capability is 'Frontend development (web)'. Several images (site-01, site-03, site-04, site-05, site-10) are hero-banner screenshots where the frame is almost entirely content/product photography with only a nav bar as visible web design. These read as product photography captures, not web interface captures. Images site-06, site-08, site-09, site-11 clearly show designed web UI (product grids, detail pages, filters, typography). The ratio skews toward photography-dominant frames; the spawn brief specifically asks to verify images show DESIGNED WEB INTERFACES, not content photography. Additionally, AI Notes states her work spans 'web design, design, writing, editing and research' but Capabilities only tags 'Frontend development (web)' (set_by: jonathan, so not a gate failure on its own, but noted). The hero-dominated captures need to be replaced with UI-forward screens for this to be on-capability per the checklist.",
+      "fix": "Replace site-01, site-03, site-04, site-05, and site-10 (hero/lifestyle photography-dominant frames) with interior web UI screens: product listing pages, navigation menus, collection layouts, cart/checkout flows, about pages, or other screens where the DESIGNED INTERFACE is the subject. Keep site-06, site-08, site-09, site-11 which clearly show web UI. Pull additional interior pages from each Behance project or from the live sites."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png confirmed as laurabrown.studio homepage (shows 'Laura Brown' header, selected projects grid, correct). site-13.png confirmed as instagram.com/laurabrown.studio (shows Instagram chrome, 'laurabrown.studio' handle, 'Laura Brown' name, 'design & web development', Brussels/New York bio -- correct person, correct platform)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active manifest entries have captions naming the project and a link. site-02 is correctly marked rejected and excluded."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio capabilities tagged; web/frontend work does not require embeds. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present across 4 projects. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelancer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (laurabrown.studio), Instagram (instagram.com/laurabrown.studio, verified via context shot -- right person, right handle), LinkedIn (be.linkedin.com/in/1aurabrown), Email (laura@laurabrown.studio). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: 'Frontend development (web)', set_by: jonathan. Reviewer does not override jonathan-set fields. Noted that AI Notes describes broader work (web design, writing, editing, research) but this is Jonathan's field to expand."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Belgium (corrected from migrated UK, agent-verified via her own .xyz site). Size: 1 (solo). Work Status: Freelance (AI Notes names sources: explicit on her site since 2017). Multi-source resolution documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by: agent. Reasoning in AI Notes: solo practitioner, design + build, client-briefed. Person entry, required field present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Clip note (clipped.md) contains only 'Portfolio (Examples)' -- no relationship facts or judgments stated. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note is minimal ('Portfolio (Examples)'). No instructions to act on, no stated facts to write via --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read ('Mid to senior, ~10 yrs'), experience trajectory (Artsy engineer 2013-2016, freelance since 2017), Autonomy reasoning, and Work Status sourcing. Clients listed are verifiable (Artsy, Are.na, Khaite). No unhedged subjective assertions. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-01'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by values. source_url is null throughout -- noted as known systemic tooling gap per calibration 2026-06-21, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, captions, and Source all reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present in the entry data. No terse unanswered questions needed given clip note carries no relationship facts. Story nudge N/A (Worked Together is Never, no notes to prompt it)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will not flip to Needs Review due to FAIL on A.on-capability."
+    }
+  ],
+  "to": "scraper",
+  "summary": "One FAIL: the work images are skewed toward hero-banner frames where content/product photography dominates the entire viewport and the web design is barely visible (a nav bar at the edge). 5 of 10 work images fall into this category (site-01, site-03, site-04, site-05, site-10). The remaining 5 work images (site-06, site-08, site-09, site-11 + one Oncept detail) clearly show designed web UI and should be kept. The context shots are correct.",
+  "fix": "Replace the 5 photography-dominant hero frames with interior web UI screens from the same 4 projects. Target: product listing pages, category nav, typography layouts, collection grids, PDP screens, checkout flows -- frames where the DESIGNED INTERFACE is the primary visual subject. Behance project pages and the live sites all have these. Keep site-06 (PEOPLES product grid), site-07 (Forsyth homepage scroll), site-08 (Forsyth catalog), site-09 (Forsyth product detail), site-11 (Oncept PDP) -- these are on-capability."
+}
