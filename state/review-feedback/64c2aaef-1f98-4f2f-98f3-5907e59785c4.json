@@ -2,35 +2,33 @@
   "page_id": "64c2aaef-1f98-4f2f-98f3-5907e59785c4",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "Only 2 distinct named projects captured (Violet Sans + Good Glyphs No.1). Checklist minimum is 3. violetoffice.com was already used as a source for both projects, so a 3rd on-capability project (another Violet Office type or identity work) is reachable from the same site without new access.",
-      "fix": "Pull one more named project from violetoffice.com/work that overlaps with Type design or closely related work (e.g. another brand identity project that shows lettering/type). 2-3 images inside that project suffice."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-11.png (captioned 'Instagram profile') is a degraded IG page: the profile header loads (violetoffice, 163 posts, 2985 followers) but the grid is blanked out by a login modal overlay. The image is not marked rejected in manifest.json, is not queued to state/ig-queue.json, and AI Notes contains no documentation of a throttle block. The sanctioned exception (rejected + documented + queued) is not met.",
-      "fix": "Either: (a) mark site-11.png rejected in manifest.json, add an entry to state/ig-queue.json for violetoffice IG, and note 'IG capture degraded, queued for logged-in grab' in AI Notes; OR (b) retake the screenshot when IG is not rate-limiting (logged-out screenshot at a later time). The website context shot (site-10.png, goodglyphs.com) is correct and present."
+      "result": "pass",
+      "evidence": "3 distinct named projects confirmed in active manifest: Violet Sans 2020 (6 images), Good Glyphs No.1 2020 (3 images), Oboh 2020 (3 images). Oboh verified as a custom typeface by Violet Office, typeset in the Saturdays NYC zine; oboh-03.jpg explicitly reads 'Typeset throughout in Oboh Regular by Violet Office'. Previously failing; now fixed."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Violet Sans: wordmark, tote applications x2, full character-set specimen, display/editorial specimen, mixed-case specimen (6 images across different dimensions of the typeface). Good Glyphs No.1: 3 individual designer glyph cards. Adequate depth for typeface work."
+      "evidence": "Violet Sans: wordmark, tote applications x2, full character-set specimen, display specimen, mixed-case specimen. Good Glyphs: 3 individual designer glyph cards. Oboh: sticker field, zine cover, zine back with artist credits typeset in Oboh Regular. Adequate depth across all three projects."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Type design. All captured work is type design: Violet Sans typeface specimens and Good Glyphs dingbat font glyphs. No off-capability material."
+      "evidence": "Tagged Type design. All captured work is type design or type-in-use: a custom typeface (Violet Sans), a collaborative dingbat font (Good Glyphs No.1), and a custom typeface applied to print (Oboh). No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-10.png): confirmed goodglyphs.com homepage showing 'Good Glyphs No.1 - A Dingbat Font Created By 32 Designers'. Instagram context shot (site-11.png): marked rejected in manifest. @violetoffice queued to state/ig-queue.json (page_id, name, ig_url, reason, queued_at all present). AI Notes documents 'IG capture degraded by login modal, queued for logged-in grab'. Sanctioned exception fully satisfied. Previously failing; now fixed."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 11 active images have captions naming their project and source links."
+      "evidence": "All 13 active images have captions naming their project and source links. 4 rejected images are excluded from the live entry."
     },
     {
       "id": "A.embeds-for-video",
@@ -39,9 +37,8 @@
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "IG degradation not documented in AI Notes and capture not queued. Covered by A.context-shots fail above.",
-      "fix": "Same fix as A.context-shots."
+      "result": "pass",
+      "evidence": "IG degradation documented in AI Notes and capture queued. No other sources unexplained."
     },
     {
       "id": "B.type-classified",
@@ -51,22 +48,22 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website (goodglyphs.com), Instagram (instagram.com/violetoffice), LinkedIn (linkedin.com/company/violet-office), Email (info@violetoffice.com) all present. Links point to Violet Office as the parent entity, consistent with AI Notes and Open Questions."
+      "evidence": "Website (goodglyphs.com), Instagram (instagram.com/violetoffice), LinkedIn (linkedin.com/company/violet-office), Email (info@violetoffice.com) all present."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Type design tagged, set_by jonathan. Appropriate for Good Glyphs."
+      "evidence": "Type design tagged; all captured work aligns with it."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country US, Size 2-10, Work Status Studio - all set by agent with reasoning in AI Notes."
+      "evidence": "Country US, Size 2-10, Work Status Studio."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Org-type entry (Studio); Autonomy is optional per checklist calibration 2026-06-21. Not required."
+      "evidence": "Org-type entry (Studio); Autonomy optional per checklist calibration 2026-06-21. Not required."
     },
     {
       "id": "C.no-judgment-contradiction",
@@ -76,12 +73,12 @@
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Raw clip name was 'Good Glyphs | Good Glyphs' with no embedded Jonathan instructions. Body was clipped site copy only."
+      "evidence": "Raw clip name contained no embedded Jonathan instructions. Body was clipped site copy only."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes appropriately hedged: 'entry is really a one-off project', 'could not confirm a separate Good Glyphs team'. Seniority/experience note absent but this is a Studio entry (not Person), so that requirement does not apply."
+      "evidence": "AI Notes appropriately hedged: 'entry is really a one-off project', 'could not confirm a separate Good Glyphs team'. IG block documented. Studio entry; seniority/experience read not required."
     },
     {
       "id": "D.source",
@@ -96,14 +93,19 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two well-formed terse questions: (1) whether to re-point entry to Violet Office; (2) whether to broaden Capabilities if re-pointed. Both conditional on Jonathan's decision and cannot be resolved without him."
+      "evidence": "Two terse, conditional questions: (1) whether to re-point entry to Violet Office; (2) whether to broaden Capabilities if re-pointed. Both require Jonathan's decision."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review after this gate pass."
     }
   ],
-  "summary": "Two fails: (1) only 2 distinct projects against a checklist minimum of 3, with a 3rd reachable at violetoffice.com/work; (2) Instagram context shot is a degraded login-modal screenshot that is neither marked rejected nor queued for a logged-in grab.",
-  "to": "scraper"
+  "summary": "Both prior failures resolved. 3 distinct named type design projects now present (Violet Sans, Good Glyphs No.1, Oboh). IG context shot correctly rejected+queued+documented. All 20 checks pass.",
+  "to": "jonathan"
 }
