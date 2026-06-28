@@ -1,0 +1,108 @@
+{
+  "page_id": "ea8216f2-0b1e-43b5-8c12-798abb5061e5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Coeval portraits (site-02, site-04), Kenzo Gidi Gidi Bu Ugwu Eze (kenzo-01/02/04/bn-08), Fenty The Cameo (fenty-01/02/03), Vogue Met Gala (vogue-metgala-01)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside Coeval feature (portrait + group shot), 4 images across Kenzo project, 3 Fenty images showing distinct compositions/subjects, Met Gala portrait"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 10 work images are photography; on-capability for tagged Photography"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-05.png is captioned 'Website' with source_url ruthossai.tumblr.com but the image is an Instagram profile grid (@ruthossaistudio), NOT a Tumblr screenshot. The website context shot is wrong; the Tumblr homepage was never actually captured.",
+      "fix": "Capture a real screenshot of ruthossai.tumblr.com and save it as the Website context shot. Replace site-05.png (or add a new file) with the actual Tumblr page. site-06.png is correctly the Instagram profile and should be kept."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every image in manifest has caption and link"
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Photography capability; no video/audio embeds required"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "LinkedIn absence documented in AI Notes: 'No LinkedIn found (searched, none discoverable)'"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (ruthossai.tumblr.com), Instagram (ruthossaistudio verified via profile bio), Email (ruthossaiinfo@gmail.com). LinkedIn genuinely not found, documented."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography -- correct per TAXONOMY.md for a documentary/fashion photographer"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK/Nigeria (multi-country correct), Size 1, Freelance. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: established independently commissioned photographer with major brand credits"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) correct; clip note has no relationship facts"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note is bare (URL + date); no instructions to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged; seniority + trajectory included; Autonomy reasoning present"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-02'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by; null source_urls are the known systemic tooling gap, not a gate failure per calibration note"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or any written fields"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No active Open Questions; none required (all findable fields filled or absence documented)"
+    }
+  ],
+  "to": "scraper",
+  "summary": "One failure: the Website context shot (site-05.png) is mislabeled. It shows an Instagram profile grid, not ruthossai.tumblr.com. The scraper captured two Instagram screenshots and mislabeled the first as the website. Everything else passes: 4 distinct projects, on-capability photography, all metadata complete, AI Notes hedged and thorough.",
+  "fix": "Capture a real screenshot of https://ruthossai.tumblr.com/ and replace site-05.png with it (captioned 'Website', source_url ruthossai.tumblr.com). Then re-run keeper.py body-reset + upload to rebuild the Work section. The Instagram context shot (site-06.png) is correct and stays."
+}

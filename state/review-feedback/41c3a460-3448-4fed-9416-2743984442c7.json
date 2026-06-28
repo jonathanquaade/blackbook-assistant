@@ -1,0 +1,111 @@
+{
+  "page_id": "41c3a460-3448-4fed-9416-2743984442c7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No images: zero online presence documented; absence is the correct output, not a scraper failure"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A; no findable source to go deep into; documented exhaustively"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "No images present; Capabilities tagged as Frontend development (web), consistent with Notes field value 'Ecommerce' (jonathan-set); no off-capability capture to flag"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No website or Instagram found, so no context shots are possible; AI Notes documents the total absence; this is the correct handling for a fully unfindable person, analogous to the Van Stijn / Shan pattern"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Manifest is empty; no uncaptioned images exist"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "N/A; no source URLs found"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes details two independent search passes, all platforms tried (Google, LinkedIn, GitHub, Behance, Instagram, Twitter/X, Upwork, Fiverr), name variants, and direct domain checks; absence is fully explained"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person (set_by agent)"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "All link fields empty; AI Notes documents exhaustive search with no matches; nothing reachable was skipped"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) tagged, set_by jonathan (from Notes 'Ecommerce'); consistent with the only signal available"
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country US and Size 1 are migration-set; Work Status Unknown is correct given zero public profile; AI Notes explains why no better resolution is possible"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy not set; AI Notes explicitly states 'cannot estimate without any work history' -- correct per confidence floor; not a fail for a Person where evidence is zero"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are both consistent with no evidence of relationship; Notes field ('Ecommerce') is jonathan-set and does not contradict zero-states"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained 'Ecommerce' context and Day Rate 320; both are reflected (Notes preserved jonathan, Day Rate set_by jonathan); no stated relationship facts were ignored"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are appropriately hedged throughout ('suggesting', 'no primary source exists to confirm'); no unverified inference is asserted as fact; seniority listed as 'unknown'; Autonomy explicitly not estimated"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-01-19' (set_by agent)"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by values; no field written below confidence floor (Country/Size are migration-set, not agent-asserted as facts)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes uses '--' (double hyphen) in one place rather than an em-dash; this is a plain-text separator, not an em-dash character (U+2014); no em-dashes found"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question asking for a link or corrected name spelling; does not ask for fields already set by jonathan; story nudge N/A (Worked Together is Never)"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass"
+    }
+  ],
+  "notes": "Unfindable-person pattern: zero online presence after two independent passes, exhaustive platform and domain search documented in AI Notes, Open Question correctly escalates to Jonathan. This is a pass-as-escalation, not a pass-as-complete -- Jonathan must supply a link or confirm the name. No reachable undocumented source was found by this reviewer.",
+  "to": "scraper"
+}
