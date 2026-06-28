@@ -1,39 +1,39 @@
 {
   "page_id": "54ecfcf5-8293-4513-80e0-e7ad4ad37a19",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-28T15:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-28T16:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects: Nike Rise Intelligent Retail System (3 images), Nike Global Retail Language (1 image), IMI Yas Island HQ (3 images), personal generative pieces Kintsugi/Subdivisions/TapeType (3 images). No repeated-project captions."
+      "evidence": "4 distinct projects: Nike Rise Intelligent Retail System (3 images), Nike Global Retail Language Paris Olympics (1 image), IMI Yas Island HQ (3 images), personal generative pieces Kintsugi/Subdivisions/TapeType (3 images). No repeated-project captions."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Nike Rise shows interior tool UI steps (colour picker, upload graphics, exploded system view). IMI shows installation interiors. Personal pieces show the actual generative canvas outputs."
+      "evidence": "Nike Rise goes inside the tool (colour picker UI, interface screens, exploded system view). IMI shows interior installation. Personal pieces show actual generative canvas outputs."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities are Frontend development (web) and Creative technology. Nike Rise is a frontend retail tool UI; Nike Global Retail Language is a retail display system; IMI is a creative tech installation; personal pieces are generative/programmatic compositions. All on-capability."
+      "evidence": "Capabilities are Frontend development (web) and Creative technology. Nike Rise is a generative frontend retail tool UI; Nike Global Retail Language is a creative-tech retail display system; IMI is an immersive tech installation; personal pieces are generative/programmatic compositions. All on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png confirmed: ezekielaquino.com with 'Ezekiel Aquino Studio for Programmatic Design' generative composition. site-02.png confirmed: instagram.com showing handle ezekiel.3000 and name Ezekiel Aquino in the profile header."
+      "evidence": "site-01.png: confirmed ezekielaquino.com with branding and circular generative score. site-02.png: confirmed instagram.com profile page showing handle ezekiel.3000 and name Ezekiel Aquino. Both correct, correctly captioned."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 12 active manifest entries have a caption and a link. No anonymous images."
+      "evidence": "All 12 active manifest entries have caption and link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No embed entries; work is captured as stills of interactive tools and installations. No evidence that these specific project pages had embeddable YouTube/Vimeo that was skipped."
+      "evidence": "Work is captured as stills of interactive tools and installations. No evidence of skipped embeddable YouTube/Vimeo on the captured project pages."
     },
     {
       "id": "A.absence-explained",
@@ -47,39 +47,38 @@
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email field is empty and AI Notes gives no explanation for the absence. CLAUDE.md runbook step requires 'public contact email' to be captured on every P1 entry. ezekielaquino.com is a maintained studio site and may have a contact email; the search was not documented as attempted or as absent.",
-      "fix": "Check ezekielaquino.com for a contact email (footer, /contact, About page). If genuinely absent, add one sentence to AI Notes: 'No public email found on site or via web search.' Then either fill the Email field or document the absence."
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email absence now documented in AI Notes: 'no public email found on ezekielaquino.com (contact via form only) or via web search; left empty.' This was the sole attempt-1 failure and is resolved."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Frontend development (web) and Creative technology, set_by jonathan per provenance. Jonathan's Notes field says 'Creative Technology' confirming his tag."
+      "evidence": "Frontend development (web) and Creative technology, set_by jonathan. Consistent with Jonathan's Notes field 'Creative Technology'."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Netherlands, Size 1, Work Status Employed. AI Notes explains the source resolution: 'LinkedIn lists a current senior dev role; he keeps a side studio, so the role, not the studio, is his main status.' Conflict between employers is an honest Open Question."
+      "evidence": "Netherlands, Size 1, Work Status Employed. Multi-source resolution documented in AI Notes. Employer conflict surfaced as an Open Question."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent. AI Notes reasoning: 'senior individual contributor who also self-directs his own studio practice.' Grounded in work history (Bakken and Baeck, R/GA, FIELD.IO Lead/Senior Frontend)."
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: senior IC with self-directed studio practice, grounded in Bakken and Baeck, R/GA, FIELD.IO Lead/Senior Frontend history (~12+ yrs)."
     },
     {
       "id": "C.no-judgment-contradicts",
       "result": "pass",
-      "evidence": "Zero-states (Unvetted, Never, Don't know them) are all valid; no clip note contradicts them. Notes field has Jonathan's tag 'Creative Technology' intact, set_by jonathan."
+      "evidence": "Zero-states (Unvetted, Never, Don't know them) all valid. Nothing in clip note or evidence contradicts them."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped body (assets/clipped.md) was Lorem Ipsum placeholder plus 'Portfolio (6 Images)'. No relationship facts or instructions were present to act on."
+      "evidence": "Clipped body was Lorem Ipsum placeholder plus 'Portfolio (6 Images)'. No relationship facts or instructions to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Employer conflict hedged: 'recently Phantom (LinkedIn header) though a 2025 source says Enode.' Seniority read included (~12+ yrs) with Autonomy paired. No unsupported personal-knowledge claims. Work Status reasoning documented."
+      "evidence": "Employer conflict hedged. Seniority read included (~12+ yrs). Autonomy paired. No unsupported assertions."
     },
     {
       "id": "D.source",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries. set_by values are correct (agent, jonathan for Notes/Capabilities, migration for Name/Country/Size). null source_url is a known systemic tooling gap, not a gate failure per calibration note in checklist."
+      "evidence": "All touched fields have provenance entries with correct set_by values. Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,14 +98,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question: employer conflict (Phantom vs Enode). Terse, specific, conditional. Works At Link points to Phantom/LinkedIn as a reasonable interim value."
+      "evidence": "One terse, conditional question on employer conflict (Phantom vs Enode). No field already has a non-zero value making it redundant."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer has not yet flipped it."
+      "evidence": "Entry in Enriching; reviewer flips to Needs Review on this pass."
     }
   ],
-  "summary": "Entry is strong overall: 4 distinct on-capability projects, correct verified context shots, well-captioned images, solid metadata and hedged AI Notes. One gap: the Email field is empty with no documented reason. The CLAUDE.md P1 runbook requires a public email search on every entry; the absence is neither filled nor explained in AI Notes.",
-  "to": "scraper"
+  "summary": "Attempt-1 failure (email search undocumented) is resolved: AI Notes now explicitly states no public email was found on ezekielaquino.com (contact form only) or via web search. All other checks were passing at attempt 1 and remain passing. Entry is complete: 4 distinct on-capability projects, correct verified context shots, well-captioned images, solid metadata and hedged AI Notes with seniority read.",
+  "to": "jonathan"
 }
