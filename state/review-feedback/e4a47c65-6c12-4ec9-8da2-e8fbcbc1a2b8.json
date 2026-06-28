@@ -1,114 +1,111 @@
 {
   "page_id": "e4a47c65-6c12-4ec9-8da2-e8fbcbc1a2b8",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-28T21:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 images from 5 distinct projects: OEM x Toyo Sasaki glass, Cartier 2026, Gentle Monster sunglasses, Lancome lipstick, On Running FW26"
+      "evidence": "10 work images across 8 distinct named projects: OEM x Toyo Sasaki (2 images from same project page, different objects), Cartier Cult Design Campaign Film and Cartier Cult Designs (two separate project pages), Gentle Monster FW26, Lancome Moments of Reflection, On Running FW26, Chanel J12, Hermes Cut 2024, Mercedes-Benz Vision One-Eleven. All captions carry correct project names."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Close-up product/campaign shots show the studio's photographic approach, not just hero covers"
+      "evidence": "Images go inside projects: close-up glass product, ring detail from multiple angles, shoe sole macro, lipstick close-up, watch face, car wheel detail. Not hero/cover only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 5 images are high-end product and fashion photography, matching tagged Capabilities: Photography + Creative direction"
+      "evidence": "Capabilities are Photography + Creative direction (set_by jonathan). All 10 work images are high-end campaign and product photography. On-capability."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Website context shot (site-23.png) is a black loading screen showing only the logo text 'HAW-LIN SERVICES', not the actual homepage with work visible. IG context shot (site-24.png) shows the correct account (@hawlinservices) but with a login modal covering the grid, and this is NOT queued to state/ig-queue.json, and the block is NOT documented in AI Notes. The sanctioned throttle exception requires: rejected flag on broken shot + documented in AI Notes + queued to ig-queue. None of those three conditions are met.",
-      "fix": "Re-take the website context shot with --render so the JS-rendered homepage actually loads (haw-lin.com or haw-lin-services.com renders its grid after JS executes; the current shot hit the pre-render splash). For IG: either get a clean logged-out profile screenshot or, if throttled, mark site-24.png rejected, add a note to AI Notes documenting the block, and append the entry to state/ig-queue.json."
+      "result": "pass",
+      "evidence": "Website: site-32.png captured from haw-lin-services.com/work after JS click-through; shows real site grid and nav (haw-lin.com CDN visible in grid images). One CDN tile has a broken SSL error visible mid-grid -- a live site rendering artifact at capture time, not a mislabeled shot. Shot is correctly identified as the site and usable as a memory anchor. Noted for Jonathan. IG: site-24.png rejected, block documented in AI Notes ('login modal overlay blocking the grid'), entry queued to state/ig-queue.json. Sanctioned exception path satisfied: rejected + documented in AI Notes + queued."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "All 5 work images (site-01 through site-05) carry the caption 'Haw-lin Services homepage' linked to the root homepage URL. The manifest source URLs show these are distinct named projects (oem-x-ohlman-consorti-toyo-sasaki-glass, haw-lin-2026-car, haw-lin-2026-gent, lancome-moments-of-reflection, on-running-fw26-running). The project names are in the CDN paths but were not carried through to captions.",
-      "fix": "Update each manifest entry with the correct project caption and the specific project page URL as the link: site-01 = 'OEM x Toyo Sasaki Glass', site-02 = 'Cartier 2026', site-03 = 'Gentle Monster FW26', site-04 = 'Lancome Moments of Reflection', site-05 = 'On Running FW26'. Then re-run keeper.py upload to push the named captions to Notion."
+      "result": "pass",
+      "evidence": "Every work image has a named project caption and a specific project-page link. Context shot captioned 'Website' with link to haw-lin-services.com."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No YouTube/Vimeo embeds evidently missed on the captured project pages. The old clip body mentioned a 2020 showreel but the current work is still photography which does not require embeds."
+      "evidence": "Studio is Photography + Creative direction, not a video/audio discipline. No video embeds missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "5 work images present; site has findable work"
+      "evidence": "All gaps documented in AI Notes: no public studio email (JS-rendered site, no DOM contact); IG context shot blocked (login modal, queued); website context shot via /work after homepage JS splash."
     },
     {
-      "id": "B.type",
+      "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Studio: correct, small Berlin creative-execution team"
+      "evidence": "Type: Studio. Correct; two-founder hands-on creative-execution team."
     },
     {
-      "id": "B.links",
-      "result": "fail",
-      "evidence": "LinkedIn and Email are absent from the entry. AI Notes do not document a search for either. For an established 13-year-old studio with named founders (Nathan Cowen, Jacob Klein), a LinkedIn company page and/or a public contact email are very likely findable via a search.",
-      "fix": "Search for 'Haw-lin Services linkedin' and 'Nathan Cowen linkedin' / 'Jacob Klein linkedin'; also check haw-lin-services.com contact/imprint page for a public email. If genuinely not found, document that in AI Notes. If found, add to the entry."
-    },
-    {
-      "id": "B.capabilities",
+      "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Photography + Creative direction set (set_by jonathan, locked); Open Question on Graphic design is correct and terse"
+      "evidence": "Website: haw-lin-services.com. Instagram: instagram.com/hawlinservices (verified, 30.6K followers). LinkedIn: Nathan Cowen founder profile set (no company page, documented in AI Notes with Jacob Klein also noted). Email: none found; JS-only site, rep agency email documented as not direct studio address."
     },
     {
-      "id": "B.country-size-workstatus",
+      "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Germany, 2-10, Work Status: Studio. Appropriate for an active independent studio"
+      "evidence": "Photography + Creative direction, set_by jonathan (locked). Open Question filed for Graphic design. Agent correctly defers to jonathan-locked value and asks."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 2-10. Work Status: Studio. Consistent with two-founder independent studio operating 13+ years."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5 set (optional for Studio type per calibration note; founders-run independent studio supports the field being set)"
+      "evidence": "Autonomy: 5, set_by agent. Optional for org-type entries per checklist calibration; set here because two-founder team clearly embodies the studio. Reasoning in AI Notes."
     },
     {
-      "id": "C.no-judgment-contradicts",
+      "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "Zero-states (Never/Don't know them/Unvetted) are consistent with no stated relationship"
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No special instructions in clip note; Source set to 'Web clipper, 2021-03-08'"
+      "evidence": "Clip note was bare web-clipper entry; no relationship facts or judgment stated. Source set verbatim."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Founders named with biographical context, clients listed, studio history (13+ yrs, met at HORT), Autonomy reasoning present"
+      "evidence": "AI Notes document seniority (13+ yr established studio), Autonomy reasoning, client list from verifiable sources, capability uncertainty via Open Question. No unhedged assertions about personal working style."
     },
     {
-      "id": "D.source",
+      "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-03-08' set"
+      "evidence": "Source: 'Web clipper, 2021-03-08'."
     },
     {
-      "id": "D.provenance",
+      "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "set_by values are correct; source_url nulls are the known systemic gap, not a gate failure"
+      "evidence": "Provenance present for all fields with correct set_by values. source_url null throughout -- known systemic tooling gap, not a gate failure per checklist calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+      "evidence": "Scanned AI Notes, Open Questions, and all captions. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One conditional question on Graphic design capability; terse and appropriate"
+      "evidence": "One terse conditional question on Graphic design capability. No questions for fields that already have non-zero values."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching; reviewer will flip to Needs Review only on pass"
+      "evidence": "Entry is in Enriching. Reviewer flipping to Needs Review on this pass."
     }
   ],
   "to": "scraper",
-  "summary": "3 fails: (1) all 5 work image captions say 'Haw-lin Services homepage' instead of the actual project names visible in the CDN source URLs; (2) website context shot is the black JS-loading splash screen, not the rendered homepage, and the IG context shot has an obscuring login modal that is not queued or documented; (3) LinkedIn and public email absent with no search documented."
+  "notes": "Attempt 2 re-gate. All three attempt-1 failures resolved: (1) captions now carry correct project names and project-page links; (2) black splash website shot replaced with site-32.png (rendered /work grid, one broken CDN tile visible but site is identifiable -- noted for Jonathan), IG modal shot rejected + documented in AI Notes + queued to ig-queue.json; (3) LinkedIn set to Nathan Cowen founder profile, email absence documented. Entry is complete."
 }

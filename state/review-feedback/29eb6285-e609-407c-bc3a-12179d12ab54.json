@@ -1,9 +1,9 @@
 {
   "page_id": "29eb6285-e609-407c-bc3a-12179d12ab54",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-28T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,7 +13,7 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2-4 images per project showing interior spreads, packaging, editorial, environmental work; not hero-only"
+      "evidence": "2-4 images per project; interiors, editorial spreads, packaging, environmental work visible in opened images; not hero-only"
     },
     {
       "id": "A.on-capability",
@@ -22,44 +22,43 @@
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-16.png (captioned 'Instagram profile', source_url instagram.com/clasebcn) is a blank white 5.7K image; it renders as a completely empty white canvas, not an instagram.com profile page. It is NOT marked rejected in the manifest, NOT documented in AI Notes, and NOT queued in state/ig-queue.json. The sanctioned throttle exception does not apply.",
-      "fix": "Recapture the Instagram profile screenshot for instagram.com/clasebcn with scrape.py shot. If IG serves a broken page, mark site-16.png as rejected in the manifest, document the block in AI Notes, and add the entry to state/ig-queue.json. Then re-submit."
+      "result": "pass",
+      "evidence": "site-15.png confirmed as clasebcn.com homepage (verified by opening: Clase nav, branding text, Pedro Garcia hero visible). site-16.png (blank logged-out IG) is marked rejected:true in manifest with rejection_reason, AI Notes documents the block, and the entry is present in state/ig-queue.json. Sanctioned throttle exception fully satisfied."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 manifest entries have caption + link; no anonymous images"
+      "evidence": "All 15 active manifest entries have caption + link; site-16 is rejected and not active"
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No embeddable video identified on this studio's project pages; not applicable"
+      "evidence": "No embeddable video on this studio's project pages; not applicable"
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Work images present from 5 projects; no unexplained thinness"
+      "evidence": "Work images present from 5 projects; IG absence documented and queued"
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio (set_by agent, verified)"
+      "evidence": "Type: Studio"
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all filled"
+      "evidence": "Website (clasebcn.com), Instagram (instagram.com/clasebcn), LinkedIn (linkedin.com/company/clasebcn), Email (info@clasebcn.com) all present"
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design (set_by jonathan); Open Question raises Identity systems addition appropriately"
+      "evidence": "Graphic design (set_by jonathan); Open Question appropriately raises Identity systems for his decision"
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio; all set with sourcing noted in AI Notes"
+      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio; sourcing in AI Notes"
     },
     {
       "id": "B.autonomy",
@@ -69,17 +68,17 @@
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) correct; no evidence contradicts them"
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) correct; no evidence in clip note or entry contradicts them"
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Minimal clip note (Web clipper); no instructions or judgment statements in it"
+      "evidence": "Minimal clip note (Web clipper); no instructions or judgment statements to act on"
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes states verifiable facts (clients, founding year, leadership, team size) and hedges inferences; includes seniority read; no em-dashes"
+      "evidence": "AI Notes cites verifiable facts (clients, founding year, leadership names, team size source); no em-dashes; includes seniority read; IG queue note present"
     },
     {
       "id": "D.source-filled",
@@ -94,19 +93,19 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions; confirmed programmatically"
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question about Identity systems capability; not asking for any already-set field"
+      "evidence": "One terse conditional question on Identity systems capability; not asking for any already-set field; no story nudge needed (Worked Together is Never)"
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer holds it here on FAIL, correct"
+      "evidence": "Entry in Enriching; will be flipped to Needs Review on this pass"
     }
   ],
-  "summary": "Single failure: the Instagram context shot (site-16.png) is a blank white image, not an instagram.com/clasebcn profile page. It is not rejected, not documented, not queued. All other checks pass: 5 distinct on-capability branding projects with depth, all captioned, metadata complete.",
-  "to": "scraper"
+  "summary": "All 20 checks pass on re-gate. The sole attempt-1 failure (blank site-16.png not handled) is resolved: site-16 is rejected in the manifest with a documented reason, AI Notes records the block, and the entry is in ig-queue.json. The sanctioned throttle exception is fully satisfied. 15 active images across 5 distinct named branding projects plus a confirmed website context shot. Metadata complete.",
+  "to": null
 }
