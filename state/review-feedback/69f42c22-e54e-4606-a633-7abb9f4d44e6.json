@@ -1,112 +1,112 @@
 {
   "page_id": "69f42c22-e54e-4606-a633-7abb9f4d44e6",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-28T00:00:00",
+  "reviewed_at": "2026-06-28T12:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "12 active images span 5 named projects (Mercedes-AMG GLC, YSL Rouge, Nike Air Max Deluxe, Reebok x Billionaire Boys Club, Audi RS e-tron GT); 3 WordPress-contaminated images correctly rejected."
+      "evidence": "12 active images span 5 named projects (Mercedes-AMG GLC, YSL Rouge, Nike Air Max Deluxe, Reebok x Billionaire Boys Club, Audi RS e-tron GT). Same verdict as attempt 1."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2-3 images per project going into detail shots (taillight, wheel hub, headlight) rather than only full-car hero frames."
+      "evidence": "2-3 images per project with detail shots (taillight, wheel hub, headlight) rather than only full-car hero frames."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Photography, Film & video production, 3D & motion. Captured work is commercial CGI/photography of products (cars, shoes, cosmetics) - directly on-capability. No off-capability material present."
+      "evidence": "Captured work is commercial CGI/photography on-capability for Photography, Film & video production, 3D & motion."
     },
     {
       "id": "A.context-shots",
       "result": "fail",
-      "evidence": "site-16.png is captioned 'Website' but shows a split-screen editorial hero of two project images (Mercedes wheel in blue / Audi headlight in orange), NOT a browser screenshot of the kiwibravo.com homepage. This is a project collage, not a homepage context shot.",
-      "fix": "Replace site-16.png with a real browser screenshot of https://kiwibravo.com/ (the homepage, not a project page or cropped hero). Run: scrape.py shot https://kiwibravo.com/ --out assets/69f42c22-e54e-4606-a633-7abb9f4d44e6 --caption 'Website'"
+      "evidence": "site-18.png is captioned 'Website' and is supposed to be the replacement browser screenshot of kiwibravo.com. Visually confirmed: it is the SAME split-screen editorial hero from attempt 1 (Mercedes wheel left / Audi headlight right with 'KIWI' / 'BRAVO' overlay text). This is a project collage, not a browser screenshot of the homepage. The old shot (site-16.png) was correctly rejected in the manifest, but site-18.png is an identical image from the same editorial, not a real browser screenshot. site-17.png (Instagram profile) is a real browser screenshot of instagram.com/kiwibravo and passes.",
+      "fix": "site-18.png must be replaced with a genuine full-browser screenshot of https://kiwibravo.com/ showing the browser chrome, URL bar, and the actual homepage layout. Run: scrape.py shot https://kiwibravo.com/ --out assets/69f42c22-e54e-4606-a633-7abb9f4d44e6 --caption 'Website'. The resulting file must visually show a browser window, not a cropped project image or editorial collage. Verify the file by opening it before re-submitting."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 active images have project captions and source links. Rejected images are clearly marked rejected with reason."
+      "evidence": "All active images have project captions and source links."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Studio is primarily photography/CGI (still images); no video/audio embeds required for the on-capability work shown. No YouTube/Vimeo content skipped on project pages evident from the captured images."
+      "evidence": "Studio is primarily photography/CGI; no video/audio embeds required for on-capability work."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained gaps. Three WordPress-contaminated images are documented in the manifest with reject reasons."
+      "evidence": "Rejected images documented in manifest with reasons."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio - correct for a small specialist creative duo doing hands-on CGI and photography."
+      "evidence": "Type: Studio - correct."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (kiwibravo.com), Instagram (instagram.com/kiwibravo), LinkedIn (linkedin.com/company/kiwi-bravo) all present. No public Email found - not flagged as missing in AI Notes, which is acceptable for a studio (contact usually via site form)."
+      "evidence": "Website, Instagram, LinkedIn all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Photography, Film & video production, 3D & motion all tagged. Open Question 1 asks Jonathan about adding Spatial & exhibition design and Creative direction - appropriate deferral."
+      "evidence": "Photography, Film & video production, 3D & motion tagged. Open Question 1 asks about two additional tags."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio - all set and plausible for a Barcelona/Madrid two-person commercial studio."
+      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry (org-type). Per calibration note 2026-06-21, Autonomy is optional for Studio entries. AI Notes includes a seniority read ('Senior commercial craft'). Not a fail."
+      "evidence": "Studio entry; Autonomy optional per calibration note 2026-06-21."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence in the clip note or entry."
+      "evidence": "Zero-states do not contradict any evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped.md shows only WordPress template boilerplate (Lorem Ipsum placeholder, portfolio image count) - no Jonathan instructions or stated facts to act on."
+      "evidence": "No Jonathan instructions in clip note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes are factual (client list from public portfolio), hedged where appropriate ('are not yet tagged - see Open Question'). Seniority read included ('Senior commercial craft')."
+      "evidence": "AI Notes are factual and hedged appropriately."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-03-01' - present and in the correct format."
+      "evidence": "Source: 'Web clipper, 2021-03-01'."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance not directly inspectable via keeper.py get, but all fields set_by agent as expected for a new enrichment. No confidence floor violations visible."
+      "evidence": "No confidence floor violations visible."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One Open Question asking about two capability additions - terse, conditional (those tags not yet set), appropriate."
+      "evidence": "One terse conditional Open Question about capability additions."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching - correct pre-gate state."
+      "evidence": "Entry remains in Enriching - correct pre-gate state."
     }
   ],
-  "summary": "One failing check: the 'Website' context shot (site-16.png) is a split-screen project collage image, not a browser screenshot of the kiwibravo.com homepage. All other checks pass: 5 distinct projects with depth, on-capability CGI/photography work, correctly rejected contaminated images, all metadata fields complete, no em-dashes, appropriate Open Question.",
+  "summary": "Attempt 2 still fails A.context-shots. site-18.png was submitted as the replacement Website context shot but is visually identical to the rejected site-16.png: the same split-screen editorial collage (Mercedes wheel blue left, Audi headlight orange right, KIWI/BRAVO text overlay). A project hero image was re-submitted in place of a browser screenshot. All other 19 checks pass. This is attempt 2 (retry cap reached); escalate to Jonathan with the specific failure.",
   "to": "scraper"
 }

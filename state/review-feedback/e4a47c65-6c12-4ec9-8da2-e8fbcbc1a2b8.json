@@ -1,0 +1,114 @@
+{
+  "page_id": "e4a47c65-6c12-4ec9-8da2-e8fbcbc1a2b8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 images from 5 distinct projects: OEM x Toyo Sasaki glass, Cartier 2026, Gentle Monster sunglasses, Lancome lipstick, On Running FW26"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Close-up product/campaign shots show the studio's photographic approach, not just hero covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 5 images are high-end product and fashion photography, matching tagged Capabilities: Photography + Creative direction"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Website context shot (site-23.png) is a black loading screen showing only the logo text 'HAW-LIN SERVICES', not the actual homepage with work visible. IG context shot (site-24.png) shows the correct account (@hawlinservices) but with a login modal covering the grid, and this is NOT queued to state/ig-queue.json, and the block is NOT documented in AI Notes. The sanctioned throttle exception requires: rejected flag on broken shot + documented in AI Notes + queued to ig-queue. None of those three conditions are met.",
+      "fix": "Re-take the website context shot with --render so the JS-rendered homepage actually loads (haw-lin.com or haw-lin-services.com renders its grid after JS executes; the current shot hit the pre-render splash). For IG: either get a clean logged-out profile screenshot or, if throttled, mark site-24.png rejected, add a note to AI Notes documenting the block, and append the entry to state/ig-queue.json."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "All 5 work images (site-01 through site-05) carry the caption 'Haw-lin Services homepage' linked to the root homepage URL. The manifest source URLs show these are distinct named projects (oem-x-ohlman-consorti-toyo-sasaki-glass, haw-lin-2026-car, haw-lin-2026-gent, lancome-moments-of-reflection, on-running-fw26-running). The project names are in the CDN paths but were not carried through to captions.",
+      "fix": "Update each manifest entry with the correct project caption and the specific project page URL as the link: site-01 = 'OEM x Toyo Sasaki Glass', site-02 = 'Cartier 2026', site-03 = 'Gentle Monster FW26', site-04 = 'Lancome Moments of Reflection', site-05 = 'On Running FW26'. Then re-run keeper.py upload to push the named captions to Notion."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No YouTube/Vimeo embeds evidently missed on the captured project pages. The old clip body mentioned a 2020 showreel but the current work is still photography which does not require embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "5 work images present; site has findable work"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Studio: correct, small Berlin creative-execution team"
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "LinkedIn and Email are absent from the entry. AI Notes do not document a search for either. For an established 13-year-old studio with named founders (Nathan Cowen, Jacob Klein), a LinkedIn company page and/or a public contact email are very likely findable via a search.",
+      "fix": "Search for 'Haw-lin Services linkedin' and 'Nathan Cowen linkedin' / 'Jacob Klein linkedin'; also check haw-lin-services.com contact/imprint page for a public email. If genuinely not found, document that in AI Notes. If found, add to the entry."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography + Creative direction set (set_by jonathan, locked); Open Question on Graphic design is correct and terse"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany, 2-10, Work Status: Studio. Appropriate for an active independent studio"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set (optional for Studio type per calibration note; founders-run independent studio supports the field being set)"
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are consistent with no stated relationship"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No special instructions in clip note; Source set to 'Web clipper, 2021-03-08'"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Founders named with biographical context, clients listed, studio history (13+ yrs, met at HORT), Autonomy reasoning present"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-08' set"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "set_by values are correct; source_url nulls are the known systemic gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One conditional question on Graphic design capability; terse and appropriate"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer will flip to Needs Review only on pass"
+    }
+  ],
+  "to": "scraper",
+  "summary": "3 fails: (1) all 5 work image captions say 'Haw-lin Services homepage' instead of the actual project names visible in the CDN source URLs; (2) website context shot is the black JS-loading splash screen, not the rendered homepage, and the IG context shot has an obscuring login modal that is not queued or documented; (3) LinkedIn and public email absent with no search documented."
+}
