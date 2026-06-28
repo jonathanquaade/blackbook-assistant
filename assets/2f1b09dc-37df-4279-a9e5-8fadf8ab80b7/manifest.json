@@ -4,14 +4,18 @@
     "source_url": "https://cdn.sanity.io/images/tp1qikt5/production/2998231843772423493b17b88368c4cdbc8d0996-1320x1600.png",
     "caption": "Civilist eCommerce, Pizza Pizza",
     "link": "https://pizzapizza.io/work/civilist",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Lifestyle photo of store exterior; not web/UI design output"
   },
   {
     "file": "site-02.jpg",
     "source_url": "https://cdn.sanity.io/images/tp1qikt5/production/343c7b212d2e6e7d3402787f4d5e905df0232e59-1320x1600.jpg",
     "caption": "Civilist eCommerce, Pizza Pizza",
     "link": "https://pizzapizza.io/work/civilist",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Interior store photo; not web/UI design output"
   },
   {
     "file": "site-03.jpg",
@@ -60,21 +64,27 @@
     "source_url": "https://cdn.sanity.io/images/tp1qikt5/production/f0034576679e09c8e49c161b567c862005cfe492-2880x1800.jpg",
     "caption": "GmbH eCommerce, Pizza Pizza",
     "link": "https://pizzapizza.io/work/gmbh",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Mood/texture photo of fabric; not web/UI design output"
   },
   {
     "file": "site-10.jpg",
     "source_url": "https://cdn.sanity.io/images/tp1qikt5/production/8e74cbe272631d1c4ae4ec9d50ea5c32b162d005-1320x1600.jpg",
     "caption": "Assembly web app, Pizza Pizza",
     "link": "https://pizzapizza.io/work/assembly",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Factory context photo; not web/UI design output"
   },
   {
     "file": "site-11.jpg",
     "source_url": "https://cdn.sanity.io/images/tp1qikt5/production/134bb6cd004691dd9e8a940b14c8acca7ef30952-1320x1600.jpg",
     "caption": "Assembly web app, Pizza Pizza",
     "link": "https://pizzapizza.io/work/assembly",
-    "captured_at": "2026-06-28"
+    "captured_at": "2026-06-28",
+    "rejected": true,
+    "reject_reason": "Factory context photo; not web/UI design output"
   },
   {
     "file": "site-12.jpg",
@@ -97,6 +107,8 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/pizzapizza.io/",
     "captured_at": "2026-06-28",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Blank render: Instagram blocked logged-out screenshot. Queued to ig-queue.json for logged-in ig.py grab."
   }
 ]

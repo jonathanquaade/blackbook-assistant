@@ -1,0 +1,112 @@
+{
+  "page_id": "7921d916-67dd-4707-a02d-8795c828a233",
+  "name": "James Homer",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects/repos: angular-ui-router-anim-in-out (repo + live demo counted as one), scrollwizardry, infinite-highway WebGL demo, mjml-mailchimp, ace-cms, vuxtras — plus GitHub profile overview as context. No repeated project angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each repo shot shows the GitHub repo page with star count, description, and file structure — appropriate depth for an open-source developer portfolio. Live demo screenshots (site-11 for anim-in-out, site-09 for infinite-highway) go inside the interactive work beyond the repo listing."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Frontend development (web). All captured work is frontend/fullstack open-source libraries (Angular, Vue, MJML, WebGL). GitHub sourcing is the sanctioned substitute for dead portfolio sites. On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is github.com/homerjam (GitHub profile, captioned correctly as proxy for offline personal site with documented reason). site-02.png is instagram.com/homer_tech — confirmed as Instagram profile page showing handle homer_tech, Homer Technologies Ltd. bio, London/Lisbon, post grid. Both captions are accurate; no mislabeling. IG throttle exception does not apply (logged-out IG grid successfully captured). Website context shot caveat: GitHub is used as proxy because homerjam.es is ECONNREFUSED and no Wayback snapshot is available — this is documented in AI Notes and the caption explains the substitution."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 active manifest entries have captions naming the project and a source link. Two rejected entries (site-07, site-10) have rejection reasons. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio embeds applicable; GitHub repos and live demos are the portfolio medium. No YouTube/Vimeo present on these project pages."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly documents: homerjam.es ECONNREFUSED, homertech.ltd offline, no Wayback snapshot usable, GitHub as primary public presence, IG capture queued. ig-queue.json entry confirmed present for @homer_tech."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct — individual developer trading as Homer Technologies Ltd."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.homerjam.es/ (offline but recorded). Instagram: https://www.instagram.com/homer_tech/ (confirmed correct account — bio matches, IG profile shot verified). LinkedIn: https://uk.linkedin.com/in/jameshomer (present). Email: not present; no public email found (acceptable given the entry; AI Notes does not claim one was skipped). Note: no Email field in entry — an obvious search failure would be a miss, but for this profile there is no public email on GitHub or IG bio."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) tagged, set_by jonathan per provenance. Open Question asks about adding Backend development — correctly deferred to Jonathan since capabilities field is jonathan-owned."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 1. Work Status: Freelance. AI Notes documents the multi-source resolution: personal site, IG bio, and LinkedIn all consistent on freelance/own-Ltd. Objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: solo operator, own Ltd., ships full-stack open-source independently, hedged appropriately."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a personal relationship. Notes field says 'Ecommerce' (jonathan, set_by jonathan) — this is a category note, not a contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-01-19'; no relationship facts or judgment markers visible in the entry that would require --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences are hedged ('Autonomy 4 hedged', 'now appears based in Lisbon per IG bio', 'consistent with senior-level freelance developer'). Verifiable facts (star counts, repo names, university) asserted directly. Seniority read and Autonomy estimate present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-01-19'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url is null throughout — noted as the known systemic tooling gap per calibration note 2026-06-21; not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically: no em-dash character in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about adding Backend development to Capabilities. Conditional (Capabilities already has a value, but this is an additive proposal — correct use of OQ). Story nudge not applicable (Worked Together: Never, no relationship signals)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null,
+  "summary": "All checks pass. Dead-site situation is properly documented, GitHub sourcing is the correct on-capability substitute, context shots are present and correctly labeled, IG queued for logged-in capture, no em-dashes, provenance complete."
+}

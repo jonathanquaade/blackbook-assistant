@@ -1489,5 +1489,19 @@
     "ig_url": "https://www.instagram.com/homer_tech/",
     "reason": "Company IG @homer_tech (Homer Technologies Ltd.); both personal site (homerjam.es) and homertech.ltd are down; logged-in grab needed for work posts on company account",
     "queued_at": "2026-06-28"
+  },
+  {
+    "page_id": "2f1b09dc-37df-4279-a9e5-8fadf8ab80b7",
+    "name": "Pizza Pizza",
+    "ig_url": "https://www.instagram.com/pizzapizza.io/",
+    "reason": "IG context shot blank (logged-out blocked); studio IG @pizzapizza.io confirmed on their homepage footer; need logged-in grab for profile screenshot",
+    "queued_at": "2026-06-28"
+  },
+  {
+    "page_id": "5c2ff9df-dde5-4ee3-88a5-b70f13ae7857",
+    "name": "Simphiwe Ndzube",
+    "ig_url": "https://www.instagram.com/ndzube_studio/",
+    "reason": "IG context screenshot returned 'Profile isn't available' error (headless Playwright blocked logged-out). @ndzube_studio confirmed from artist's own website (simphiwendzube.com) as sole IG link. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-28"
   }
 ]
