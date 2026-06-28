@@ -70,20 +70,32 @@
     "captured_at": "2026-06-28"
   },
   {
-    "file": "site-05.png",
-    "source_url": "https://ruthossai.tumblr.com/",
-    "caption": "Website",
-    "link": "https://ruthossai.tumblr.com/",
-    "captured_at": "2026-06-28",
-    "context_shot": true
-  },
-  {
     "file": "site-06.png",
     "source_url": "https://www.instagram.com/ruthossaistudio/",
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/ruthossaistudio/",
     "captured_at": "2026-06-28",
     "context_shot": true
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://ruthossai.tumblr.com/",
+    "caption": "Website",
+    "link": "https://ruthossai.tumblr.com/",
+    "captured_at": "2026-06-28",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "ruthossai.tumblr.com redirects to Instagram in Playwright; screenshot showed Instagram grid, not a Tumblr page"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://ruthossai.tumblr.com/",
+    "caption": "Website",
+    "link": "https://ruthossai.tumblr.com/",
+    "captured_at": "2026-06-28",
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Second attempt; ruthossai.tumblr.com returns Cloudflare bot-check (403) in headless Playwright, and Wayback snapshot confirms the domain redirects to Instagram; no distinct website exists to screenshot"
   },
   {
     "file": "site-01.jpg",
@@ -116,7 +128,7 @@
     "file": "kenzo-bn-01.jpg",
     "source_url": "https://www.bellanaija.com/wp-content/uploads/2017/04/kenzo-campaign-ruth-ossai_1__bellanaija.jpg",
     "caption": "Portrait grid, Gidi Gidi Bu Ugwu Eze for Kenzo, 2017",
-    "link": "https://www.bellanaija.com/2017/04/gidi-gidi-bu-ugwu-eze-kenzo-collaborates-with-akinola-davies-and-ruth-ossai-for-a-new-project-shot-in-nsukka/",
+    "link": "https://www.bellanaija.com/2017/04/gidi-gidi-bu-ugwu-eze-kenzo-collaborates-with-akinola-davies-and-ruth-ossai-for-a-new-project-shot-in-nsugkka/",
     "captured_at": "2026-06-28",
     "rejected": true,
     "rejection_reason": "Composite grid layout; individual Dazed images from same project are higher quality"
@@ -129,13 +141,5 @@
     "captured_at": "2026-06-28",
     "rejected": true,
     "rejection_reason": "Duplicate of kenzo-04 from different source"
-  },
-  {
-    "file": "site-07.png",
-    "source_url": "https://ruthossai.tumblr.com/",
-    "caption": "Website",
-    "link": "https://ruthossai.tumblr.com/",
-    "captured_at": "2026-06-28",
-    "context_shot": true
   }
 ]

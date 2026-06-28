@@ -3,9 +3,9 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://mariafpereiram.com/",
+      "value": "https://www.noctmaria.com",
       "source_url": null,
-      "verified_at": "2026-06-15T21:42:46",
+      "verified_at": "2026-06-28T21:23:02",
       "set_by": "agent"
     },
     "Worked Together": {
@@ -35,9 +35,9 @@
       "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-15T21:41:53",
+      "verified_at": "2026-06-28T21:31:25",
       "set_by": "agent"
     },
     "Work With?": {
@@ -97,23 +97,35 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Portuguese 3D artist specialising in digital fashion (modelling in Maya, rendering in Blender). 3D Artist at BESTSELLER (Danish fashion group); a LinkedIn recommendation describes her as a Senior Specialist with strong ownership, so mid-to-senior level, likely 5+ yrs. Work Status Employed: LinkedIn lists BESTSELLER and reads current (recommendation references the role); personal site (mariafpereiram.com) is portfolio-only, silent on employment. Autonomy 3 hedged: senior IC inside a company rather than running her own practice. Known projects: Techwear, Lady in the Gold Dress, Black Pyramid Jacket, Leather Straps Dress, Dusk, Raeburn Outfit, Inktober series. Work image capture blocked: mariafpereiram.com DNS failure (completely down, confirmed on two attempts); ArtStation (mariafpereiram.artstation.com) returns 403 on all access methods including static fetch and Playwright render; Instagram serves only base64 logos logged-out, 0 image candidates. IG queued for logged-in ig.py capture (state/ig-queue.json, 2026-06-28). Instagram handle confirmed: @mariafpereiram. Website context shot omitted (DNS down). Only the Instagram profile context shot was captured.",
+      "value": "Portuguese 3D artist specialising in digital fashion (modelling in Maya/CLO/Blender, rendering in Blender/Unreal Engine). Mid-to-senior level, likely 5+ yrs; roles at BESTSELLER (Danish fashion group) and Browzwear (PI Milan 2024 lookbook). Autonomy 3 hedged: senior IC inside companies rather than running own practice. Rebranded from @mariafpereiram / mariafpereiram.com to @noctmaria / noctmaria.com (discovered via LinkedIn, confirmed by matching name + site link on IG bio). Old site mariafpereiram.com is DNS-down as of 2026-06-28. ArtStation (mariafpereiram.artstation.com) 403 Cloudflare-blocked. Work captured from noctmaria.com: RAEBURN SS21 Digital Lookbook (CLO + Blender, 2021), Raeburn Outfit 3D (CLO, n.d.), PI Milan 2024 Digital Lookbook (Browzwear, Daz, Unreal Engine), and Loewe Puzzle Bag 3D (ddigitt.com, 2020). IG queued for logged-in ig.py capture under @noctmaria (state/ig-queue.json, updated 2026-06-28). Email: no public address found; searched noctmaria.com and web (ZoomInfo results are different Maria Pereiras at unrelated companies, not this 3D artist); left empty.",
       "source_url": null,
-      "verified_at": "2026-06-28T20:49:46",
+      "verified_at": "2026-06-28T21:29:49",
       "set_by": "agent"
     },
     "Instagram": {
-      "value": "https://www.instagram.com/mariafpereiram/",
+      "value": "https://www.instagram.com/noctmaria/",
       "source_url": null,
-      "verified_at": "2026-06-28T20:49:25",
+      "verified_at": "2026-06-28T21:23:16",
       "set_by": "agent"
     },
     "Images": {
       "value": [
-        "site-01.png"
+        "site-02.png",
+        "site-03.png",
+        "rae-ss21-01.jpg",
+        "rae-ss21-02.webp",
+        "rae-ss21-03.gif",
+        "raeburn-outfit-01.jpg",
+        "raeburn-outfit-02.jpg",
+        "raeburn-outfit-03.jpg",
+        "pi-milan-01.png",
+        "pi-milan-02.png",
+        "pi-milan-03.png",
+        "puzzle-bag-02.jpg",
+        "puzzle-bag-03.jpg"
       ],
       "source_url": null,
-      "verified_at": "2026-06-28T20:50:54",
+      "verified_at": "2026-06-28T21:26:18",
       "set_by": "agent"
     }
   }

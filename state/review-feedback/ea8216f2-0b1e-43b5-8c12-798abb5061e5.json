@@ -3,7 +3,7 @@
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-28T00:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -23,13 +23,13 @@
     {
       "id": "A.context-shots",
       "result": "fail",
-      "evidence": "site-05.png is captioned 'Website' with source_url ruthossai.tumblr.com but the image is an Instagram profile grid (@ruthossaistudio), NOT a Tumblr screenshot. The website context shot is wrong; the Tumblr homepage was never actually captured.",
-      "fix": "Capture a real screenshot of ruthossai.tumblr.com and save it as the Website context shot. Replace site-05.png (or add a new file) with the actual Tumblr page. site-06.png is correctly the Instagram profile and should be kept."
+      "evidence": "site-07.png is captioned 'Website' with source_url ruthossai.tumblr.com but when opened it shows an Instagram profile grid (@ruthossaistudio, with followers count and photo thumbnails). It is a second Instagram screenshot, not the Tumblr homepage. The website context shot is still absent after attempt 1's bounce. site-05.png is correctly rejected. site-06.png is the correct Instagram context shot and passes.",
+      "fix": "Capture a real screenshot of https://ruthossai.tumblr.com/ using scrape.py shot. The Tumblr page should show the Tumblr UI with Ruth Ossai's posts, not an Instagram grid. Save it to assets/ea8216f2-0b1e-43b5-8c12-798abb5061e5/site-07.png (overwrite) or a new file, update the manifest, run body-reset and upload. Verify the saved PNG shows tumblr.com in the browser chrome before committing."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "Every image in manifest has caption and link"
+      "evidence": "Every active (non-rejected) image in manifest has caption and link"
     },
     {
       "id": "A.embeds-video",
@@ -39,7 +39,7 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "LinkedIn absence documented in AI Notes: 'No LinkedIn found (searched, none discoverable)'"
+      "evidence": "LinkedIn absence documented in AI Notes"
     },
     {
       "id": "B.type",
@@ -49,27 +49,27 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website (ruthossai.tumblr.com), Instagram (ruthossaistudio verified via profile bio), Email (ruthossaiinfo@gmail.com). LinkedIn genuinely not found, documented."
+      "evidence": "Website (ruthossai.tumblr.com), Instagram (ruthossaistudio verified), Email (ruthossaiinfo@gmail.com). LinkedIn genuinely not found, documented."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Photography -- correct per TAXONOMY.md for a documentary/fashion photographer"
+      "evidence": "Photography -- correct per TAXONOMY.md"
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK/Nigeria (multi-country correct), Size 1, Freelance. Sources named in AI Notes."
+      "evidence": "UK/Nigeria (multi-country), Size 1, Freelance. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: established independently commissioned photographer with major brand credits"
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes"
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never/Don't know them/Unvetted) correct; clip note has no relationship facts"
+      "evidence": "Zero-states correct; clip note has no relationship facts"
     },
     {
       "id": "C.clip-note-acted-on",
@@ -99,10 +99,10 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No active Open Questions; none required (all findable fields filled or absence documented)"
+      "evidence": "No active Open Questions; none required"
     }
   ],
   "to": "scraper",
-  "summary": "One failure: the Website context shot (site-05.png) is mislabeled. It shows an Instagram profile grid, not ruthossai.tumblr.com. The scraper captured two Instagram screenshots and mislabeled the first as the website. Everything else passes: 4 distinct projects, on-capability photography, all metadata complete, AI Notes hedged and thorough.",
-  "fix": "Capture a real screenshot of https://ruthossai.tumblr.com/ and replace site-05.png with it (captioned 'Website', source_url ruthossai.tumblr.com). Then re-run keeper.py body-reset + upload to rebuild the Work section. The Instagram context shot (site-06.png) is correct and stays."
+  "summary": "Still failing on the same check as attempt 1: the Website context shot is still an Instagram grid. site-07.png was supposed to be a real Tumblr homepage screenshot but opens as an Instagram profile page (@ruthossaistudio). The scraper captured a second Instagram screenshot and mislabeled it 'Website'. All other checks pass. This is attempt 2.",
+  "fix": "Open https://ruthossai.tumblr.com/ in a real browser/Playwright, screenshot it, and save it as the Website context shot. The saved PNG must show Tumblr's UI (tumblr.com URL, Tumblr header, Ruth's posts). Overwrite site-07.png or save as a new file, update manifest source_url and caption to match, then run body-reset + upload. Do NOT screenshot instagram.com again."
 }
