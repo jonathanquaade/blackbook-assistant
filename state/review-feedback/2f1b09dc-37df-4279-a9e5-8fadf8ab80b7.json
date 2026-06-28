@@ -1,0 +1,111 @@
+{
+  "page_id": "2f1b09dc-37df-4279-a9e5-8fadf8ab80b7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Civilist (site-03), VooStore (site-04/05/06), GmbH (site-07/08), Assembly (site-12), plus website context shot"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "VooStore has 3 mobile UI screens showing different page types; GmbH shows campaign + form UI interior; Assembly shows garment configurator web app interior; Civilist shows PDP interior"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "7 of 8 active images are clearly web/UI design outputs. site-07 (GmbH) is a brand editorial campaign photo with no UI visible -- borderline, but one ambient shot among 7 UI screens does not reach the Zuzanna threshold. Flagged for Jonathan's awareness.",
+      "note": "site-07 (GmbH eCommerce caption) is a campaign editorial of models, not a web artifact. Not a hard fail given 7 other on-capability images, but scraper should consider swapping for a GmbH UI screenshot on a future pass."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed as pizzapizza.io homepage (red background, 'is a digital product studio crafting memorable customer experiences'). IG context shot (site-14.png) rejected+documented+queued per sanctioned exception path: rejected in manifest, documented in AI Notes, entry present in state/ig-queue.json."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 active images have captions and source links in manifest"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio does web/UI design; no video/audio work to embed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG blank render documented in AI Notes and queued to ig-queue.json"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Studio -- correct for a small team (2-10, named directors) doing hands-on digital execution"
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (pizzapizza.io), Instagram (@pizzapizza.io confirmed from homepage footer), LinkedIn set. Email not present -- studio has a Contact section but no public email visible without visiting; common for studios to use contact forms only. Not a clear-cut miss."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) + Web design set by jonathan (migration). Open Question correctly asks about expanding to Digital product design + Brand strategy. Agent cannot override jonathan-set capabilities."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany, 2-10, Studio all set and consistent with AI Notes (Berlin, GmbH company registration). Work Status = Studio is factual for an org type."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5 set by agent. Optional for Studio type per calibration note. Present and not blocking."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "No clip note states a relationship; zero-states (Never, Don't know them, Unvetted) are appropriate and uncontradicted"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only site copy (services list, purpose statement); no Jonathan commentary detected; nothing left unacted"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Acquisition by Forte Digital noted as 'acquisition date unclear' (hedged). Directors named with source attribution ('per company records'). Client list drawn from visible case studies. No em-dashes. Seniority read appropriate for a Studio (two named directors identified)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-09'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present, all touched fields covered. source_url null throughout -- known systemic tooling gap, not a gate failure per checklist note. set_by values correct."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about expanding Capabilities. Appropriate -- not asking for a field already answered unconditionally, but proposing an addition to a jonathan-set multi-select."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer flips to Needs Review on pass"
+    }
+  ],
+  "to": "scraper"
+}

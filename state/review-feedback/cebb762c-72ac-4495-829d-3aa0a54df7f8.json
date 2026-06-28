@@ -1,0 +1,30 @@
+{
+  "page_id": "cebb762c-72ac-4495-829d-3aa0a54df7f8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "4 distinct named projects in active images: Sculpting Harmony/Getty, Pinot Meunier, Studio Maertens, Garoa Skincare"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Each project has 3-4 images showing interior screens, UI systems, navigation, product pages - not just hero covers"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Work (brand identity, web design, editorial, digital exhibition UI) matches tagged Graphic design; Open Question filed to expand Capabilities"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-11.png is brunoarizio.com homepage; site-12.png is instagram.com/brunoarizio profile showing correct handle and bio"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 14 active images have named project captions with source links; no anonymous shots"},
+    {"id": "A.embeds-video", "result": "pass", "evidence": "No skipped embeds documented; Sculpting Harmony represented by 4 UI screenshots; no video embed entries omitted per manifest"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Four named projects well-documented; no thin-source situation requiring explanation"},
+    {"id": "B.type", "result": "pass", "evidence": "Type: Studio - correct for named-principal distributed team"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram (@brunoarizio confirmed), LinkedIn, Email all present and verified"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Current Graphic design is jonathan-set migration tag; Open Question 1 correctly asks about expanding to Identity systems, Creative direction, Web design, Photography"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Netherlands/US/Canada, Size 2-10, Work Status Studio all set; AI Notes names source correction (migration had UK, corrected to Netherlands)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Studio-type entry; per 2026-06-21 calibration Autonomy is optional for orgs; AI Notes gives seniority read (senior, creative-director level)"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states (Never/Don't know them/Unvetted) are honest; no clip note or AI Notes evidence of a prior relationship"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "clipped.md contains only the studio's own site copy; no Jonathan instructions or relationship facts present"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Clients and awards are verifiable from clipped copy and work shown; seniority read included; no unhedged private claims"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2021-01-05"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All agent-set fields have set_by: agent; Capabilities correctly retains set_by: jonathan; null source_url is known systemic gap, not a gate failure per 2026-06-21 calibration"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No agent-authored em-dashes in AI Notes, Open Questions or captions; studio name STUDIO-BA uses its registered em-dash, not agent prose"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Two terse conditional questions: Capabilities expansion (Q1) and Type clarification (Q2); no redundant or answered-field questions; story nudge not triggered"},
+    {"id": "D.status", "result": "pass", "evidence": "Status was Enriching; reviewer flipping to Needs Review on this pass"}
+  ],
+  "to": "scraper"
+}

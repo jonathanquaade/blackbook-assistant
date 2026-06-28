@@ -1,0 +1,112 @@
+{
+  "page_id": "5c2ff9df-dde5-4ee3-88a5-b70f13ae7857",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T21:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 artwork images across 4 named exhibitions (Isithunywa so Moya 2022, Like the Snake that Fed the Chameleon 2021, Vusamazulu 2021, iNtwasahlobo/After Rain Songs 2024/2025); no repeated project"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each exhibition gets 2-3 images; goes inside individual works (named paintings, close-up sculpture, installation views) not just hero covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Art practice; all 11 artwork images show painting, sculpture and mixed-media installation; no off-capability design work"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png confirmed as simphiwendzube.com (artist name visible in nav). site-03.png is the genuine instagram.com error page, correctly marked rejected:true with documented reason and queued to ig-queue.json; sanctioned IG throttle exception path followed"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the individual work and exhibition; all have source links"
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Art practice (painting/sculpture) is visual; no video/audio work expected or skipped"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest rejected entry and ig-queue.json with reason"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person; correct for an individual fine artist"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (simphiwendzube.com), Instagram (@ndzube_studio, confirmed from artist's own site), LinkedIn all present. Email absent; gallery-represented fine artist with no public contact email is a reasonable absence, not a skipped obvious search"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Art practice tagged; set_by jonathan (migration); accurate to captured work"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country [South Africa, US], Size 1, Work Status Freelance all set. AI Notes names sources (Wikipedia, galleries) for country; Work Status sourcing is conclusory ('established independent fine artist') rather than explicit multi-source resolution, but for a gallery-represented artist with an independent practice, Freelance is unambiguous and undisputed. Note: future passes should name each source checked and which one won.",
+      "note": "Work Status multi-source narration in AI Notes is thin; acceptable here given unambiguous independent fine artist status, but sharpen for contested cases"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent; AI Notes reasoning: 'Established independent fine artist, fully autonomous'; grounded in gallery representation + museum collections"
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Unvetted/Don't know them) consistent with clip note 'Psychedelic Dr Seuss Paintings' which implies no relationship"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note archived to clipped.md; descriptive phrase only, no instructions or relationship facts to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts asserted (BFA, named galleries, named museum collections) are verifiable; characterizations appropriately framed; seniority + experience read included; no em-dashes"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-04'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values; source_url null throughout (known systemic tooling gap, not a gate failure per calibration note)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes (confirmed programmatically); manifest captions use double-hyphen separator, not em-dash"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions empty; no fields require a question (no ambiguous relationship facts, no contradicted zero-states, no unresolvable links)"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer will flip to Needs Review on pass"
+    }
+  ],
+  "to": null,
+  "summary": "All 20 checks pass. 11 on-capability artwork images across 4 named exhibitions; website context shot confirmed; IG context shot correctly rejected and queued per sanctioned throttle path; metadata complete; AI Notes clean of em-dashes; provenance correct."
+}

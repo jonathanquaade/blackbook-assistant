@@ -1,0 +1,31 @@
+{
+  "page_id": "b76ab157-ba12-44cb-9c49-c0ec3075833d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "12 active images across 5 distinct named client projects: Nerra, Bearaby, Prime Matter Labs, Deux, Swiftwick"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Each project has a homepage + an inner page (collections listing, product grid, capabilities page)"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All images show designed e-commerce web interfaces with nav, hero UI, product listing grids; matches Web design + Frontend development (web) capabilities"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01 = progresslabs.co homepage (correct). site-16 = instagram.com/progresslabsco (correct: username, bio, link to progresslabs.co visible). Rejected site-02 was the dead @progresslabs.co handle, properly documented."},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 12 active images have captions naming the project and source links present in manifest"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "N/A: capabilities are web design and frontend dev, not video/audio/writing"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Images are present and sourced; no unexplained thin spots"},
+    {"id": "B.type", "result": "pass", "evidence": "Type = Studio, correct for a small specialized team doing hands-on creative and dev execution"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram (@progresslabsco verified), LinkedIn, Email all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Web design + Frontend development (web); Open Question raised about expanding to Brand strategy/Identity/Digital product design/Backend"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country US (agent verified). Work Status Studio (correct for org). Size 11-40 from migration, unconfirmed, Open Question #2 raised appropriately"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Studio entry; Autonomy is optional for org-type entries per calibration note. AI Notes covers studio positioning."},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states (Never, Don't know them, Unvetted) align with a cold clip entry; no relationship signal in clip note to contradict them"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Source is Web clipper, 2020-12-29; no special instructions in clip note to act on"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Size hedged ('unconfirmed, reads like a small studio'); Instagram confirmed with specifics; no unsupported assertions"},
+    {"id": "D.source", "result": "pass", "evidence": "Source = 'Web clipper, 2020-12-29'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have set_by populated; source_url null throughout but that is the known systemic tooling gap, not a gate failure per calibration"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Two terse conditional questions on Capabilities expansion and Size confirmation; both are genuine open items"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry is Enriching, will flip to Needs Review on this pass"}
+  ],
+  "to": null,
+  "summary": "All checks pass. 12 on-capability web UI images across 5 named client projects, both context shots verified correct, all links present, metadata complete for a Studio entry."
+}

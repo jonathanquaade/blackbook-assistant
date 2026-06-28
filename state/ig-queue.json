@@ -1503,5 +1503,12 @@
     "ig_url": "https://www.instagram.com/ndzube_studio/",
     "reason": "IG context screenshot returned 'Profile isn't available' error (headless Playwright blocked logged-out). @ndzube_studio confirmed from artist's own website (simphiwendzube.com) as sole IG link. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-28"
+  },
+  {
+    "page_id": "64c2aaef-1f98-4f2f-98f3-5907e59785c4",
+    "name": "Good Glyphs",
+    "ig_url": "https://www.instagram.com/violetoffice/",
+    "reason": "IG context shot degraded by login modal overlay; logged-in grab needed for full profile grid",
+    "queued_at": "2026-06-28"
   }
 ]
