@@ -3,9 +3,125 @@
   "migrated_at": null,
   "fields": {
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-28T14:27:17",
+      "verified_at": "2026-06-28T14:38:52",
+      "set_by": "agent"
+    },
+    "Name": {
+      "value": "John Bucog",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Capabilities": {
+      "value": [
+        "Social media content",
+        "Film & video production"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Country": {
+      "value": [
+        "Canada"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Size": {
+      "value": "1",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Work Status": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://momentstudioinc.ca/",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://johnbucog.com/",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/johnbucog/",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "contact@johnbucog.com",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper; clip note verbatim: \"Johnbucog social media editor, all his work is on instagram\"",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Work With?": {
+      "value": "Unvetted",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Worked Together": {
+      "value": "Never",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Familiarity": {
+      "value": "Don't know them",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:29:56",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "John Bucog (also Alexis John Bucog) is a social-media video editor and content creator based in Edmonton, Canada (inferred from momentstudioinc.ca domain and ca.linkedin.com profile). He runs Moment Studio Inc, a production outfit focused on content for tech brands, and also co-founded Create with Shift. His IG @johnbucog has 211K followers and all public work is on Instagram Reels. Seniority: mid-to-senior independent creator; he runs his own studio and has built a meaningful following, suggesting sustained output and business development, though the editorial depth is unverifiable from public sources alone. Autonomy 4: founder of his own studio, no apparent employer above him. Country at 0.8 via .ca domain and Canadian LinkedIn domain; Edmonton from search snippet, treated as plausible. LinkedIn not set: multiple John Bucog profiles, none confirmable as this creator at 0.8 floor. IG capture queued: all work is on Reels, logged-in grab needed.",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:30:24",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. LinkedIn? (multiple John Bucog profiles found, none confirmed as the @johnbucog IG creator)\n",
+      "source_url": null,
+      "verified_at": "2026-06-28T14:31:28",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-02.png",
+        "site-03.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-06-28T14:36:35",
       "set_by": "agent"
     }
   }

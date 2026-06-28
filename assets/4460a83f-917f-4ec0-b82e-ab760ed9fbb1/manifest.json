@@ -67,7 +67,16 @@
     "source_url": "https://res.cloudinary.com/field-systems/image/upload/c_limit,w_2000/f_auto/q_90/v1/IO/Work/Nike%20Rise%202024%20Olympics/ScreenShot00034_1",
     "caption": "Nike: A Global Retail Language, motion design system, at FIELD.IO 2024",
     "link": "https://field.io/work/nike-a-global-retail-language",
-    "captured_at": "2026-06-27"
+    "captured_at": "2026-06-27",
+    "rejected": true,
+    "rejected_reason": "retail interior with shoppers, not the designed motion output; replaced by field-new01.jpg"
+  },
+  {
+    "file": "field-new01.jpg",
+    "source_url": "https://res.cloudinary.com/field-systems/image/upload/c_limit,w_2000/f_auto/q_90/v1/IO/Work/Nike%20Rise%202024%20Olympics/3Y7A0190-Edit-Edit-Nike-Y2k-HOI-TDM.Space-WEB_4",
+    "caption": "Nike: A Global Retail Language, large-format digital display running motion content, at FIELD.IO 2024",
+    "link": "https://field.io/work/nike-a-global-retail-language",
+    "captured_at": "2026-06-28"
   },
   {
     "file": "field-02.jpg",
@@ -136,6 +145,8 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/jannchoy/",
     "captured_at": "2026-06-28",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "login modal covered the grid; IG context shot blocked; queued for ig.py"
   }
 ]

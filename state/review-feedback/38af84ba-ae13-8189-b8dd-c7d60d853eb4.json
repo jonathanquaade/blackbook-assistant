@@ -1,0 +1,110 @@
+{
+  "page_id": "38af84ba-ae13-8189-b8dd-c7d60d853eb4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Entry is a sanctioned IG-only creative; no portfolio images are available without a logged-in ig.py grab. Absence is documented in AI Notes and IG queue. The rule applies: missing work due to a documented login-gated block is not a diversity failure."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Same login-gated block applies. Scraper went as deep as the public surface allows."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "No work images to assess, but the IG queue reason explicitly calls out Reels (Social media content + Film & video production), which matches the tagged Capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png opens to johnbucog.com homepage (JOHN BUCOG name top-left, Moment Studio Inc section visible, client logo ticker). site-03.png opens to instagram.com/johnbucog (Instagram wordmark top-left, @johnbucog handle, 211K followers, video-still grid). Both are correct for their captions. site-01.png (rejected Perplexity logo) is properly marked rejected in manifest with reason."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "site-02 captioned 'Website', site-03 captioned 'Instagram profile'; both have source links. site-01 is rejected and excluded from the Images property."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "All video work is on IG Reels, which require a logged-in ig.py grab. The queue entry documents exactly this. Embeds are not skippable here; they are gated."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states: 'IG capture queued: all work is on Reels, logged-in grab needed.' IG queue entry confirmed for this page_id with matching ig_url and reason. No undocumented reachable source was skipped."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct: he is an individual creator."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (johnbucog.com), Instagram (@johnbucog, verified as correct person via bio + 211K follower count), Email (contact@johnbucog.com) all present. LinkedIn: AI Notes documents multiple profiles found, none confirmable at 0.8 floor, with Open Question 1 asking Jonathan. Works At Link set to momentstudioinc.ca (login-gated; documented). The LinkedIn gap is honestly flagged, not silently omitted."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Social media content + Film & video production match the clip note ('social media editor, all his work is on instagram') and the johnbucog.com site copy ('brand partnerships, sponsored content')."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Canada at 0.8 via .ca domain + ca.linkedin.com (two signals). Size: 1 (person). Work Status: Studio (runs Moment Studio Inc). AI Notes names the sources. Objective rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set_by agent with reasoning in AI Notes: founder of own studio, no employer above him. Seniority read present and hedged."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with Jonathan's clip note, which states no relationship. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note: 'Johnbucog social media editor, all his work is on instagram.' Both instructions acted on: name cleaned to John Bucog, IG-only fact drives the queue and AI Notes. Source preserves the clip verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Canada location hedged ('inferred from .ca domain'); Edmonton hedged ('treated as plausible'); seniority hedged ('editorial depth is unverifiable'). Seniority read and Autonomy estimate both present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; clip note verbatim: \"Johnbucog social media editor, all his work is on instagram\"'. Correct."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by agent with timestamps. source_url is null throughout, which is the known systemic tooling gap (calibration note: not a gate failure). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Open Questions, Source, captions: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: LinkedIn (conditional on it being unresolvable, which it is). Terse. No question asked for a field that already has a value. Story nudge not applicable (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is the one to flip it to Needs Review. Correct flow."
+    }
+  ],
+  "to": "scraper"
+}
