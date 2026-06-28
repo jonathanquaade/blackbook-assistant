@@ -1,0 +1,111 @@
+{
+  "page_id": "8c30ae93-822b-4b39-a013-ad2e8978bd1f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T15:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Burberry AW23, Gucci, Vogue HK x Penelope Cruz, Louis Vuitton Golf SS25"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3 images per project, interiors of each shoot captured, not hero-only"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 work images are fashion/campaign photography and production stills, matching Photography + Film & video production"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed alanacompany.com homepage; site-14.png confirmed instagram.com/alanacompany profile page (Log In header, handle visible)"
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 12 work images have captions with project name and source link; 2 context shots captioned Website / Instagram profile"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Film & video production tagged but Vimeo not publicly accessible; absence documented in AI Notes"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states Vimeo not publicly accessible; no other gaps left unexplained"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Agency; multi-office full-service production company, reasoning in AI Notes"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and filled"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography + Film & video production; confirmed by alanacompany.com work portfolio"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country Spain/UK/US (4 offices, Miami = US); Size 2-10 questioned via Open Question; Work Status = Studio; sources named in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Agency); Autonomy is optional per calibration note 2026-06-21; AI Notes gives a seniority read"
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "No clip note states a relationship; zero-states Worked Together: Never and Familiarity: Don't know them are valid defaults"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clipped.md contains only a Spanish GDPR cookie notice, no agent instructions; Name was from migration"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cites verifiable facts (founded 2016, clients, offices); no unsupported assertions; seniority read present"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-03-01'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by; null source_urls are the known systemic tooling gap, not a gate failure per calibration 2026-06-21"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Size (11-40?); conditional and appropriate; story nudge not triggered (Worked Together = Never)"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status Enriching as expected pre-gate; will flip to Needs Review on pass"
+    }
+  ],
+  "notes": "Minor: Gucci caption reads 'Gucci, Alana production' while the case-study credits photographer Alasdair McLellan; caption is not wrong (identifies client and production company) but omits the photographer credit. Not a gate failure. Also: site-12.webp source URL contains 'MNG_ARCHIVE' in the CDN path but image is visually confirmed LV Golf (LV monogram bags, 'Louis Vuitton Malletier' cap); caption is correct.",
+  "to": "scraper"
+}

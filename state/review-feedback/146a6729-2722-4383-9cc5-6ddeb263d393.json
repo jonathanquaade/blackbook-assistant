@@ -2,8 +2,8 @@
   "page_id": "146a6729-2722-4383-9cc5-6ddeb263d393",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -22,14 +22,13 @@
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-01.png is captioned 'Website' but shows an Adobe Portfolio '404 Something went wrong / Page not found' error page at the lapsed madleif.com domain. This is not a homepage and does not serve as a memory anchor. AI Notes document the lapse but the context shot check requires a screenshot of the real website homepage (or, if the site is dead, a replacement showing the active primary surface). The IG shot (site-02.png) is instagram.com/mad.leif with Tom Coolen's profile visible behind a login modal -- correctly captioned, correct person, PASS.",
-      "fix": "Replace site-01.png with a screenshot of behance.net/tomcoolen (documented in AI Notes as the active primary surface). Caption it 'Behance profile' and update the manifest source_url and link accordingly. Delete the 404 error shot."
+      "result": "pass",
+      "evidence": "site-01.png (404 error at lapsed madleif.com) is marked rejected:true in manifest. Replacement site-03.png is confirmed behance.net/tomcoolen: Tom Coolen's profile with gradient illustration grid visible, captioned 'Behance profile' -- honest label, active primary surface per AI Notes. site-02.png is confirmed instagram.com/mad.leif: profile header shows Tom Coolen, 570 posts, 21.6K followers, 'Visual artist & designer' bio, correctly captioned 'Instagram profile'."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every image in the manifest has a caption and a source link"
+      "evidence": "Every active manifest entry has a caption and a source link"
     },
     {
       "id": "A.embeds-for-video-audio",
@@ -39,7 +38,7 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes document the lapsed domain and note IG capture was not attempted due to throttle budget"
+      "evidence": "AI Notes document the lapsed domain and note IG logged-in capture was not attempted due to throttle budget; Behance and IG provide adequate coverage"
     },
     {
       "id": "B.type-classified",
@@ -49,7 +48,7 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (madleif.com, lapsed but recorded), Instagram (verified @mad.leif = Tom Coolen), LinkedIn present. No public email found or noted; solo practitioner with no contact page evident -- absence not flagged as a skipped search given context"
+      "evidence": "Website (madleif.com recorded, lapsed noted in AI Notes), Instagram (verified @mad.leif = Tom Coolen), LinkedIn present. No public email found; solo practitioner with no contact page apparent"
     },
     {
       "id": "B.capabilities-tagged",
@@ -69,17 +68,17 @@
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with the Web clipper source -- no relationship notes in the clip"
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) consistent with Web clipper source -- no relationship notes in the clip"
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "clipped.md shows only a template body with lorem ipsum placeholders -- no Jonathan instructions to act on"
+      "evidence": "Clipped body was template lorem ipsum placeholder only -- no Jonathan instructions to act on"
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Notes hedge inferences ('LinkedIn lists him as', 'b. 1983, so ~15+ yrs') and include the required seniority and experience read paired with Autonomy"
+      "evidence": "Notes hedge inferences ('LinkedIn lists him as', 'b. 1983, so ~15+ yrs') and include the required seniority and experience read paired with Autonomy estimate"
     },
     {
       "id": "D.source-filled",
@@ -104,10 +103,9 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching; reviewer holds here pending the fix"
+      "evidence": "Flipping to Needs Review on this pass"
     }
   ],
   "to": "scraper",
-  "summary": "One failing check: the website context shot (site-01.png) is an Adobe Portfolio 404 error page at the lapsed madleif.com, not a homepage. Everything else passes -- 11 on-capability illustration images across 7 distinct named projects, correct IG context shot, full metadata, hedged AI Notes.",
-  "fix": "Replace site-01.png with a screenshot of behance.net/tomcoolen (the active primary surface per AI Notes). Caption it 'Behance profile', update the manifest source_url and link. Delete the 404 error shot. Then re-submit for review."
+  "summary": "Re-gate PASS. The sole failure from attempt 1 (website context shot was a 404 error page) is fixed: site-01.png is marked rejected, replaced by site-03.png which is a confirmed Behance profile page for Tom Coolen at behance.net/tomcoolen, captioned honestly as 'Behance profile'. All 20 checks pass. Flipping to Needs Review."
 }
