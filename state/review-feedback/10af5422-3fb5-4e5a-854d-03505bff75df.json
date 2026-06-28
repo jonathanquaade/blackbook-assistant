@@ -1,0 +1,31 @@
+{
+  "page_id": "10af5422-3fb5-4e5a-854d-03505bff75df",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "4 distinct named projects: THINK! Pint Block, Exale Brewing, ZAKUSKA, Spotify x CTC; 3 images each, no angle-duplication across projects"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Each project has interior illustrations (zombie scene, demon scene, menu card, can packaging spreads, animation stills), not hero-only"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All 11 work images are illustration or 2D animation stills matching tagged Capability Illustration"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.gif source_url is inga.land (website); site-02.png visually confirmed as instagram.com/@inguuuna profile page with correct handle and bio"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "Every manifest entry has a named-project caption and a source link"},
+    {"id": "A.embeds-video-audio", "result": "pass", "evidence": "Vimeo embed present for Spotify x CTC animation; Vimeo thumbnail image also captured; Behance still included; images present alongside embed"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "LinkedIn absence documented in AI Notes; no other unexplained gaps"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type = Person"},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "Website, Instagram (verified via site bio in AI Notes), Email all present; LinkedIn absence noted in AI Notes"},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Illustration tagged (set_by jonathan); Open Question raised about adding 2D animation / art direction, correct handling given jonathan ownership"},
+    {"id": "B.country-size-work-status", "result": "pass", "evidence": "Country UK, Size 1, Work Status Freelance; AI Notes names sources (site + IG agree, LinkedIn not found)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4 set_by agent with hedged reasoning in AI Notes"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states consistent with clip note which contains no relationship claim"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note was a name variant only; name cleaned, raw text archived to clipped.md"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Autonomy hedged, Work Status sources named, seniority read present; no em-dashes found in AI Notes or Open Questions or captions"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source = Web clipper, 2021-01-19"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "All touched fields have provenance entries; source_url null is the known systemic tooling gap, not a gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about Capabilities (jonathan-owned field); no questions for fields with non-zero values"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Status Enriching before review; flipped to Needs Review by reviewer on pass"}
+  ],
+  "notes": "Minor: spotify-ctc-02.jpg exists on disk but is absent from manifest and Images provenance (orphan file). Does not affect what Jonathan sees in Notion. Not a gate failure.",
+  "to": null
+}
