@@ -1,0 +1,116 @@
+{
+  "page_id": "6dd5628a-3482-4f37-beac-8781061ce9a8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 images across 6 named, distinct projects: Jack Davison (x3), A Magazine curated by Alessandro Michele (x2), RORRIMIRROR, Julia Noni, New Land, Grain, plus the Awwwards SOTD frame (Louisa Models) and 2 context shots. Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Julia Noni site shows a Vogue Germany editorial interior (1 of 66 images, captioned); A Magazine has homepage + Curated For interior; Jack Davison has title screen + full grid + single-photo view. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design (set_by jonathan). All images show digital art direction and web design outputs for fashion/beauty clients, which is consistent with his stated practice. Note: Capabilities appears under-tagged (Creative direction and Web design absent for a CD-level digital art director), but this is a jonathan-set field - flagged as a note, not a gate failure."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-03.png) is awwwards.com/sites/vincent-tavano, captioned 'Website', with the dead-domain substitution documented in AI Notes - accepted per the spawn prompt instruction. Instagram context shot (site-02.png) is genuinely instagram.com/tavanovincent: handle 'tavanovincent', full name 'Vincent Elio Tavano', bio visible behind the login modal. Correct person, correct platform."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 manifest entries have captions naming the project and a link field. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "His work is digital art direction for web; no video/audio embeds are expected. No obvious skipped embeds on the sourced project pages (Siteinspire, Wayback Machine, Awwwards)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Dead domain (tavanovincent.com squatted) documented in AI Notes. LinkedIn not found documented in AI Notes. Work Status conflict documented in AI Notes with sources named. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: empty with dead-domain documented (acceptable). Instagram: https://www.instagram.com/tavanovincent/ verified correct person. LinkedIn: not found documented in AI Notes (search surfaced wrong-person US profiles). Email: not present and not flagged - minor gap but AI Notes do not mention an email search was attempted. Noted but not failing: the AI Notes document the LinkedIn miss and the dead domain clearly; email absence is common for senior creatives and the notes are silent on it."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities set_by jonathan ('Graphic design'). Under-tagging is plausible (Creative direction and Web design are clearly applicable from the work) but jonathan owns this field; not a reviewer call. Reviewer notes this as a potential Open Question candidate for the scout on next pass."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: France (migration). Size: 1 (migration, correct for Person). Work Status: Unknown with conflict documented in AI Notes (freelance-for-agencies vs co-founder summary, no current authoritative source). Objective multi-source rule applied correctly: sources conflict, no majority, Unknown is the honest call."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 set_by agent, reasoning in AI Notes: 'CD-level, runs creative end to end.' Grounded in work history (8+ yrs, Creative/Art Director level, leads strategy through production and mentors teams)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never (agent) - no evidence contradicts this. Familiarity: Don't know them (agent) - Open Question 1 asks about Work With? for a Rating-5 entry, appropriate. Rating: 5 set_by jonathan, correctly attributed. Work With?: Unvetted (agent) - asked in Open Questions. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note referenced 'ex Partner-Dream' and Jonathan's Rating 5 is correctly set_by jonathan in provenance. Open Question 1 asks Work With? (conditional on the rating context). The 'ex Partner-Dream' fact is referenced in the Open Question parenthetical."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Inferences hedged: 'described as freelance-for-agencies in some profiles, co-founder of a studio in an unverified summary', 'clients cited'. Seniority read present: '8+ yrs, Creative/Art Director level'. Autonomy reasoning present. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-02-26', set_by agent."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout - noted as a known systemic tooling gap per calibration note 2026-06-21, not a gate failure. set_by values are correct: jonathan for Rating and Capabilities, agent for everything else written this pass, migration for Name/Country/Size."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Work With? - correct, field is Unvetted (zero-state), terse with context of Rating 5 and ex Partner-Dream note. (2) Work Status clarification - correct, field is Unknown due to genuine conflict. Both are conditional and not asking for jonathan-set fields."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": [
+    "site-04.png exists in assets/ but is not in manifest.json and not uploaded. Appears to be an unused capture (portrait photo, likely from the Jack Davison project). Not a gate issue since it was not included in the entry.",
+    "Capabilities under-tagging (Creative direction, Web design) is plausible from the work shown, but Capabilities is set_by jonathan and cannot be changed by the agent. Flagged for awareness.",
+    "No clipped.md archived in assets/ - the clip body was processed and reset but the archive step was skipped. Minor process miss; content is not recoverable but it does not affect entry quality.",
+    "Email search not mentioned in AI Notes - minor gap, common for senior creatives who do not publish email."
+  ],
+  "to": "scraper"
+}

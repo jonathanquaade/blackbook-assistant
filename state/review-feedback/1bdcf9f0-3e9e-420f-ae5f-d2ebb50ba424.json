@@ -1,0 +1,110 @@
+{
+  "page_id": "1bdcf9f0-3e9e-420f-ae5f-d2ebb50ba424",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 active images span 5 distinct named projects: Hennessy Brand Identity, Victoria's Secret Bare, Moet & Chandon x Pharrell Williams, Another Tomorrow Brand Identity, YSL Hamish Bowles Collection. No repeated-project bulk."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project go inside each project: Hennessy typeface anatomy and moodboard (not just cover), VS Bare bottle sketches/technical drawings alongside campaign, YSL book spread interior and branded exterior collateral. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Graphic design (jonathan-set) with an Open Question proposing Identity systems and Brand strategy. All 5 projects are brand/identity/campaign work for luxury clients, which is the studio's core output. Design-system depth is present: site-03 shows Hennessy custom typeface anatomy with construction annotations; site-06 shows VS Bare bottle technical drawings (packaging design process); site-13 shows YSL book interior spread (editorial design); site-10 shows Another Tomorrow logotype identity reveal. Lifestyle/campaign images (site-05, site-07, site-09, site-12) represent the executed brand campaign, which is legitimate output for a brand studio. Note: site-12 (garment hanger closeup) is the weakest image in the set as it shows product photography with no clear design deliverable visible beyond the label, but it is attached to the correct project and not off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png: verified as nr2154.com homepage (NR2154 wordmark, studio description, work grid visible). site-17.png: verified as instagram.com/nr2154nyc (handle 'nr2154nyc' and bio 'We are a creative studio based in New York, Copenhagen, and Paris' visible behind sign-up modal; the modal is the standard logged-out IG friction overlay, not an error page; profile is the correct entity)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 active manifest entries have a caption naming the project and a link to the source project page on nr2154.com. site-02.jpg is marked rejected with a documented reason and excluded from Images property."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio embeds expected or flagged; NR2154 is a visual branding studio and the captured projects are image-based design work. No SoundCloud/Vimeo noted as missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. The one rejected image (site-02) has a documented reject reason in the manifest."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per schema definition (small specialized team doing hands-on creative execution, not a large full-service agency)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.nr2154.com/ (canonical root). Instagram: https://www.instagram.com/nr2154nyc/ (verified via their own site per AI Notes). LinkedIn: https://www.linkedin.com/company/nr2154. Email: info@nr2154.com. All four link types filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design is set (jonathan-set from migration). An Open Question correctly proposes adding Identity systems and Brand strategy, which the agent cannot write unilaterally on a jonathan-set field. Correct handling."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Denmark, US, France (multi-office studio, correct). Size: 11-40 (hedged in AI Notes as approx). Work Status: Studio (correct for an established multi-person studio). AI Notes name the sources (their own site, IG bio)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio type). Per calibration note 2026-06-21, Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes describe 'established, senior-led multi-office studio.' Not required to fail."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note indicates a relationship; zero-states are consistent with evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-01-18' with no special instructions noted in the clip. No relationship facts or passcodes in the clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes use 'incl.' for client list (not exhaustive), '~11-40' (hedged size), and 'Type Studio (specialised brand/identity team rather than full-service agency)' as a characterization note rather than a bare assertion. No unhedged inferences. Seniority/experience read present: 'senior-led multi-office studio.' No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-01-18' - format matches the convention for web-clipper entries."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout - noted as a known systemic tooling gap (calibration 2026-06-21), not a gate failure. set_by values are correct: agent for enriched fields, jonathan for Capabilities (correctly locked from migration). No field was written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned: no em-dashes present. Captions use plain text project names."
+    },
+    {
+      "id": "D.open-questions-quality",
+      "result": "pass",
+      "evidence": "One question asking Jonathan to confirm whether to expand Capabilities beyond Graphic design (the jonathan-set value). Terse, conditional (not asking about fields already filled with non-zero values), specific with examples. No story nudge needed (Worked Together is Never / Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, which is correct pre-gate. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper"
+}

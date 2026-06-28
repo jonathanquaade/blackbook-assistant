@@ -2,7 +2,7 @@
   {
     "file": "site-01.png",
     "source_url": "https://github.com/homerjam",
-    "caption": "GitHub profile",
+    "caption": "Website (homerjam.es down; GitHub is primary public presence)",
     "link": "https://github.com/homerjam",
     "captured_at": "2026-06-28",
     "context_shot": true
@@ -10,42 +10,59 @@
   {
     "file": "site-02.png",
     "source_url": "https://www.instagram.com/homer_tech/",
-    "caption": "Instagram profile",
+    "caption": "Instagram profile (Homer Technologies Ltd.)",
     "link": "https://www.instagram.com/homer_tech/",
-    "captured_at": "2026-06-28",
-    "context_shot": true
-  },
-  {
-    "file": "site-03.png",
-    "source_url": "https://github.com/homerjam/scrollwizardry",
-    "caption": "scrollwizardry, open-source scroll animation library, GitHub",
-    "link": "https://github.com/homerjam/scrollwizardry",
-    "captured_at": "2026-06-28",
-    "context_shot": true
-  },
-  {
-    "file": "site-04.png",
-    "source_url": "https://github.com/homerjam/mjml-mailchimp",
-    "caption": "mjml-mailchimp, Mailchimp-compatible email components, GitHub",
-    "link": "https://github.com/homerjam/mjml-mailchimp",
-    "captured_at": "2026-06-28",
-    "context_shot": true
-  },
-  {
-    "file": "site-05.png",
-    "source_url": "https://github.com/homerjam/ace-cms",
-    "caption": "ace-cms, flexible multi-site headless CMS, GitHub",
-    "link": "https://github.com/homerjam/ace-cms",
     "captured_at": "2026-06-28",
     "context_shot": true
   },
   {
     "file": "site-06.png",
     "source_url": "https://github.com/homerjam/angular-ui-router-anim-in-out",
-    "caption": "angular-ui-router-anim-in-out, Angular animation directive, GitHub",
+    "caption": "angular-ui-router-anim-in-out, Angular animation directive, 231 stars on GitHub",
     "link": "https://github.com/homerjam/angular-ui-router-anim-in-out",
-    "captured_at": "2026-06-28",
-    "context_shot": true
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://homerjam.github.io/angular-ui-router-anim-in-out/",
+    "caption": "angular-ui-router-anim-in-out, live demo showing configurable page transitions",
+    "link": "https://homerjam.github.io/angular-ui-router-anim-in-out/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://github.com/homerjam/scrollwizardry",
+    "caption": "scrollwizardry, scroll-triggered animation library for Vue and Angular, 24 stars",
+    "link": "https://github.com/homerjam/scrollwizardry",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://homerjam.github.io/infinite-highway/",
+    "caption": "infinite-highway, canvas-based interactive WebGL experience",
+    "link": "https://homerjam.github.io/infinite-highway/",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://github.com/homerjam/mjml-mailchimp",
+    "caption": "mjml-mailchimp, Mailchimp-compatible MJML v4 email components, 49 stars",
+    "link": "https://github.com/homerjam/mjml-mailchimp",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://github.com/homerjam/ace-cms",
+    "caption": "ace-cms, flexible multi-site headless CMS (Angular, CouchDB, Express), 7 stars",
+    "link": "https://github.com/homerjam/ace-cms",
+    "captured_at": "2026-06-28"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://github.com/homerjam/vuxtras",
+    "caption": "vuxtras, Nuxt-compatible Vue component and plugin collection, 6 stars",
+    "link": "https://github.com/homerjam/vuxtras",
+    "captured_at": "2026-06-28"
   },
   {
     "file": "site-07.png",
@@ -53,23 +70,8 @@
     "caption": "scrollwizardry live demo",
     "link": "https://homerjam.github.io/scrollwizardry/example/",
     "captured_at": "2026-06-28",
-    "context_shot": true
-  },
-  {
-    "file": "site-08.png",
-    "source_url": "https://github.com/homerjam/vuxtras",
-    "caption": "vuxtras, Nuxt-compatible Vue component library, GitHub",
-    "link": "https://github.com/homerjam/vuxtras",
-    "captured_at": "2026-06-28",
-    "context_shot": true
-  },
-  {
-    "file": "site-09.png",
-    "source_url": "https://homerjam.github.io/infinite-highway/",
-    "caption": "infinite-highway, canvas demo",
-    "link": "https://homerjam.github.io/infinite-highway/",
-    "captured_at": "2026-06-28",
-    "context_shot": true
+    "rejected": true,
+    "reason": "Static screenshot shows empty canvas; animation only visible during scroll interaction"
   },
   {
     "file": "site-10.png",
@@ -77,14 +79,7 @@
     "caption": "ace-api, headless CMS content API, GitHub",
     "link": "https://github.com/homerjam/ace-api",
     "captured_at": "2026-06-28",
-    "context_shot": true
-  },
-  {
-    "file": "site-11.png",
-    "source_url": "https://homerjam.github.io/angular-ui-router-anim-in-out/",
-    "caption": "angular-ui-router-anim-in-out, live demo",
-    "link": "https://homerjam.github.io/angular-ui-router-anim-in-out/",
-    "captured_at": "2026-06-28",
-    "context_shot": true
+    "rejected": true,
+    "reason": "Too similar to ace-cms entry; adds no new project diversity"
   }
 ]
