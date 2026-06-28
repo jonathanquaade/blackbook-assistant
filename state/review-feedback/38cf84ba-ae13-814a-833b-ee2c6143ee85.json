@@ -2,33 +2,33 @@
   "page_id": "38cf84ba-ae13-814a-833b-ee2c6143ee85",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 work images across 4 distinct client projects: Rhode (homepage + PLP + PDP), Stadium Goods (homepage), HexClad (PDP), U Beauty (case-study article), Jacob and Co (storefront). Meets the 3+ distinct project bar."
+      "evidence": "7 work images across 5 distinct client projects: Rhode skin (homepage + PLP + PDP), Stadium Goods (homepage), HexClad (PDP), U Beauty (VAAN case-study article), Jacob and Co (luxury storefront). Confirmed visually."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Rhode covered at homepage, PLP and PDP level. Other clients each get one interior page. Acceptable depth for a multi-client studio."
+      "evidence": "Rhode covered at three page types (homepage, collection PLP, product PDP). Other clients get interior pages, not hero covers only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged capabilities are Brand strategy, Frontend development (web), Identity systems, Web design. All 7 work images are web storefronts or web UI screens. No lifestyle photography in the active set (correctly rejected)."
+      "evidence": "All 7 active work images are web storefronts or web UI screens, matching tagged capabilities (Web design, Frontend development, Brand strategy, Identity systems)."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-04.png is vaangroup.com homepage (confirmed). site-05.png is instagram.com/thevaangroup profile with login modal overlay; the profile handle 'thevaangroup' and name 'VAAN' are visible behind the modal, confirming it is the correct Instagram page."
+      "evidence": "site-04.png is vaangroup.com homepage (VAAN logo and nav confirmed). site-05.png is instagram.com/thevaangroup: handle 'thevaangroup' and name 'VAAN' visible behind login modal, confirming correct IG profile."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 9 active images have captions naming the client project and source links in the manifest. No anonymous shots."
+      "evidence": "All 9 active images (2 context shots + 7 work images) have captions naming the client/project and source links in the manifest."
     },
     {
       "id": "A.embeds-for-video",
@@ -38,77 +38,74 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Multiple rejected shots documented in manifest with specific reject reasons (lifestyle photos, 404s, Cloudflare blocks, duplicates). No silent thin sections."
+      "evidence": "All rejected images documented in manifest with specific reasons (lifestyle photos, 404s, Cloudflare blocks, duplicates). No silent thin sections."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct; small specialized Shopify design-and-build team."
+      "evidence": "Type: Studio. Correct for a small specialized Shopify design-and-build team."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (vaangroup.com), Instagram (@thevaangroup), LinkedIn (linkedin.com/company/vaan-group/), Email (vaangroup@vaangroup.com) all present."
+      "evidence": "Website (vaangroup.com), Instagram (instagram.com/thevaangroup), LinkedIn (linkedin.com/company/vaan-group/), Email (vaangroup@vaangroup.com) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Brand strategy, Frontend development (web), Identity systems, Web design. All grounded in their 'Brand Conversion Design' positioning and Shopify platinum-partner work."
+      "evidence": "Brand strategy, Frontend development (web), Identity systems, Web design. Grounded in their 'Brand Conversion Design' positioning and Shopify Platinum partner work."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: United States. Size: 41-100 (reconciled from LinkedIn 11-50 and PitchBook up to 76, hedged in AI Notes). Work Status: Studio (structural, appropriate for an org entry). Sources noted in AI Notes."
+      "evidence": "Country: United States, Size: 41-100 (reconciled from LinkedIn 11-50 and PitchBook up to 76, hedged in AI Notes), Work Status: Studio. Sources noted in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4 set with reasoning in AI Notes. Optional for org entries per 2026-06-21 calibration; setting it with reasoning is better than omitting it."
+      "evidence": "Autonomy 4 set with reasoning in AI Notes. Optional for org entries per 2026-06-21 calibration note."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "'oren john mentioned it' is correctly treated as a discovery path, not a recommendation. Familiarity: Don't know them and Worked Together: Never are both consistent with that reading."
+      "evidence": "'oren john mentioned it' correctly treated as a discovery path, not a recommendation. Zero-states (Worked Together: Never, Familiarity: Don't know them) are consistent with that reading."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note parsed: studio identity confirmed, 'rhode website' as discovery context noted in Source, 'oren john mentioned it' correctly classified as discovery path (not Familiarity: Recommended). No instructions unacted on."
+      "evidence": "Both clip note elements acted on: 'rhode website' used as source context, 'oren john mentioned it' classified as discovery path (not Familiarity: Recommended). No instructions unacted on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Size range hedged ('likely 40-80 range pre-acquisition'). Acquisition status stated as fact (Verndale, January 2026) which is verifiable from their own site. Autonomy reasoning grounded in studio structure. Seniority read present (CEO Xavier Armand named, studio founder context)."
+      "evidence": "Size range hedged. Acquisition noted as verifiable fact (Verndale, January 2026). Autonomy reasoning grounded in studio structure. Seniority read present (CEO Xavier Armand named). No em-dashes in AI Notes."
     },
     {
       "id": "D.source-filled",
-      "result": "fail",
-      "evidence": "Source field reads: 'Web clipper (rhode website) — oren john mentioned it' -- contains an em-dash (—). Jonathan reads em-dashes as AI slop; this appears in a field he will read in his review inbox.",
-      "fix": "Rewrite Source to: 'Web clipper (rhode website), oren john mentioned it' replacing the em-dash with a comma."
+      "result": "pass",
+      "evidence": "Source reads 'Web clipper (rhode website), oren john mentioned it' -- em-dash replaced with comma. Confirmed in both keeper.py output and provenance JSON."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by: agent. source_url is null throughout but that is the known systemic tooling gap, not a gate failure per 2026-06-21 calibration note."
+      "evidence": "All touched fields have provenance entries with set_by: agent. Null source_url is the known systemic tooling gap, not a gate failure per 2026-06-21 calibration note."
     },
     {
       "id": "D.no-em-dashes",
-      "result": "fail",
-      "evidence": "Em-dash found in Source field: 'Web clipper (rhode website) — oren john mentioned it'. AI Notes text is clean.",
-      "fix": "Replace the em-dash in Source with a comma: 'Web clipper (rhode website), oren john mentioned it'."
+      "result": "pass",
+      "evidence": "Source field confirmed clean (comma, no em-dash). AI Notes text confirmed clean. No em-dashes found anywhere in the entry."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions set. Appropriate: no unresolvable ambiguities for this org entry; judgment fields (Rating, Work With?) are Jonathan's alone."
+      "evidence": "No Open Questions set. Appropriate: no unresolvable ambiguities for this org entry; judgment fields are Jonathan's alone."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Reviewer is the only one who flips to Needs Review, and that flip depends on this gate."
+      "evidence": "Entry is in Enriching; flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "One failing check: an em-dash in the Source field. Everything else passes cleanly: 4 distinct client projects, all on-capability web UI, correct context shots, full metadata, clean AI Notes, correct clip-note handling. Single-field fix needed before this entry can be sent to Jonathan.",
-  "fix": "Update Source field from 'Web clipper (rhode website) — oren john mentioned it' to 'Web clipper (rhode website), oren john mentioned it' (replace em-dash with comma). Then resubmit for review."
+  "to": "jonathan",
+  "summary": "All 20 checks pass on attempt 2. The only prior failure (em-dash in Source) is fixed. 5 distinct client projects across 7 web UI images, correct context shots, full metadata, clean AI Notes, no em-dashes anywhere."
 }

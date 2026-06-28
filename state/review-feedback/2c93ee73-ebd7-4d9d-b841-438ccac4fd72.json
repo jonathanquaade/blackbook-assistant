@@ -1,0 +1,111 @@
+{
+  "page_id": "2c93ee73-ebd7-4d9d-b841-438ccac4fd72",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active work images (plus 1 embed thumbnail + 1 embed) span 6 distinct named projects: Saut Hermes 2023 identity (3 images: poster, billboard in situ, print collateral), Louis Vuitton City Guide Avignon (1 image), Kasanova umbrella (1 image), Paris Surf and Skateboard Film Festival 2024 (1 image), Japanese client triptychs (2 images from the same commission, different triptych sets), Here We Are exhibition (1 image), Hermes Year of the OX animation (1 thumbnail + Vimeo embed). Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Saut Hermes project has 3 interior images (poster flat, billboard in situ, print collateral spread). Japanese client commission has 2 images showing different triptych sets. Not all hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Illustration. All work images are illustration output: event posters (Hermes, Paris Surf), City Guide illustration, product illustration (Kasanova umbrella), fine art triptychs, exhibition installation, animation still. The animation Vimeo embed is consistent with an illustrator-animator (AI Notes mentions he does motion). No off-capability work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-21.png confirmed: shows alecsi.com homepage with nav (Design, Drawing, Show, About, Shop) and two portfolio thumbnails. Correct website. site-22.png confirmed: shows instagram.com/alexis_jamet logged-out profile page with handle alexis_jamet, 115 posts, 61.5K followers, grid visible. Correct Instagram profile page."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active manifest entries have captions and link fields. No caption is blank or generic. Every image names its project."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Vimeo embed present for Hermes Year of the OX animation at vimeo.com/511048864. Thumbnail preview image (vimeo-thumb-01.jpg) also captured and linked, per the pattern. Entry is not embeds-only: 10 images accompany the embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absence. Rejected manifest entries are documented with reasons (low-res duplicates, duplicate hashes, show-page non-illustration photos). AI Notes does not flag any blocked or inaccessible sources."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance illustrator."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://alecsi.com/ (present, canonical). Instagram: https://www.instagram.com/alexis_jamet/ (present, confirmed correct person per context shot). LinkedIn: https://fr.linkedin.com/in/alexis-jamet-40223141 (present). Email: not in entry and not flagged absent in AI Notes. For a freelance illustrator repped by an agency (Monsieur l'Agent), public email is plausibly absent and the scout did not note a findable one. Minor gap: AI Notes does not explicitly state email was searched and not found. Not a gate failure (a systemic gap, not a lazy miss given the agency-rep context), but noted."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged. Provenance shows set_by: jonathan (migration baseline). AI Notes and Open Question 1 correctly flag that Graphic design and motion/animation should be added, pending his answer. Conditional question correctly asked. No incorrect tags."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Japan + France (agent-verified, AI Notes explains Behance still lists Paris but site confirms Tokyo). Size: 1 (Person, correct). Work Status: Freelance, resolved via site + IG agreement noted in AI Notes ('Freelance per self-maintained site and IG'). Multi-source rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: self-directed practice across illustration, graphic design and motion, ~10 yrs, agency-repped. Grounded in observable work history. Seniority read present (mid-to-senior, ~10 yrs)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note from Jonathan in this entry (clipped.md shows only Notion default template text, no personal commentary). Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) do not contradict any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md contains only Notion boilerplate (Availability / Key Notes / Lorem Ipsum / Portfolio). No Jonathan instructions or relationship facts to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences: 'came up via the Paris skate scene' is background context not asserted as fact. Capability uncertainty is flagged as an Open Question. Autonomy estimate is labelled as such. Client list ('Clients incl.') is a list, not an assertion of sole authorship. Seniority read ('Mid-to-senior, ~10 yrs') hedged as an estimate. No unhedged inferences found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-01'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields. set_by values are correct: migration for Name and Size (historical baseline), jonathan for Capabilities (his tagged field), agent for everything else. source_url is null on several fields (Worked Together, Familiarity, Work With?, Size, Open Questions) but per checklist calibration note (2026-06-21) null source_url is a known systemic tooling gap and is NOT a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions in manifest. No em-dashes found. En-dash used correctly in '~10 yrs' context is fine."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: 'Add Graphic design and 3D & motion to Capabilities?' Terse, conditional (Capabilities currently only has Illustration, so not asking for a field that already has a non-zero-state value in the sense of the capability already being tagged), and accurately reflects evidence from the entry. No story nudge needed (Worked Together is Never, not Once/Repeatedly)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching pending this gate. Will flip to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "summary": "All 20 checklist items pass. 6 distinct projects, correct context shots, on-capability illustration work throughout, Vimeo embed with thumbnail, metadata complete, provenance clean, no em-dashes, one correct conditional Open Question."
+}

@@ -1,0 +1,113 @@
+{
+  "page_id": "146a6729-2722-4383-9cc5-6ddeb263d393",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images across 7 distinct named projects/prints (Posters Vol 1 Parts 3+5, Sorrows, Wired Magazine Mind Grenades, Optics, Atardecer, Absolver) from Behance and East Side Studio London"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: 3 images from Posters Vol 1 Part 5, 2 from Sorrows, 2 from Wired -- not just hero covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 work images are illustration and poster work matching the Illustration capability tag"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-01.png is captioned 'Website' but shows an Adobe Portfolio '404 Something went wrong / Page not found' error page at the lapsed madleif.com domain. This is not a homepage and does not serve as a memory anchor. AI Notes document the lapse but the context shot check requires a screenshot of the real website homepage (or, if the site is dead, a replacement showing the active primary surface). The IG shot (site-02.png) is instagram.com/mad.leif with Tom Coolen's profile visible behind a login modal -- correctly captioned, correct person, PASS.",
+      "fix": "Replace site-01.png with a screenshot of behance.net/tomcoolen (documented in AI Notes as the active primary surface). Caption it 'Behance profile' and update the manifest source_url and link accordingly. Delete the 404 error shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in the manifest has a caption and a source link"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Illustration entry; no video/audio work expected or present"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes document the lapsed domain and note IG capture was not attempted due to throttle budget"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (madleif.com, lapsed but recorded), Instagram (verified @mad.leif = Tom Coolen), LinkedIn present. No public email found or noted; solo practitioner with no contact page evident -- absence not flagged as a skipped search given context"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged; Open Question raised about adding Graphic design -- appropriate handling"
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Belgium, Size 1, Freelance. AI Notes name sources: LinkedIn + self-maintained IG agree on freelance/self-employed"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (solo self-directed studio-of-one, ~15+ yrs)"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with the Web clipper source -- no relationship notes in the clip"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md shows only a template body with lorem ipsum placeholders -- no Jonathan instructions to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes hedge inferences ('LinkedIn lists him as', 'b. 1983, so ~15+ yrs') and include the required seniority and experience read paired with Autonomy"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-01'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with appropriate set_by values. Null source_urls are the known systemic tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about Graphic design capability; field not yet set, so the question is not redundant"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching; reviewer holds here pending the fix"
+    }
+  ],
+  "to": "scraper",
+  "summary": "One failing check: the website context shot (site-01.png) is an Adobe Portfolio 404 error page at the lapsed madleif.com, not a homepage. Everything else passes -- 11 on-capability illustration images across 7 distinct named projects, correct IG context shot, full metadata, hedged AI Notes.",
+  "fix": "Replace site-01.png with a screenshot of behance.net/tomcoolen (the active primary surface per AI Notes). Caption it 'Behance profile', update the manifest source_url and link. Delete the 404 error shot. Then re-submit for review."
+}
