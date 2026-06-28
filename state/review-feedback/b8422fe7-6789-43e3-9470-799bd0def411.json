@@ -1,0 +1,113 @@
+{
+  "page_id": "b8422fe7-6789-43e3-9470-799bd0def411",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-27T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Moving/Isa 2023, Home 2020, Pendulum 2018, When We're Not Looking 2019"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Home has cover + 2 interior spreads; Pendulum has 3 interior spreads; When We're Not Looking has 1 object + 1 interior spread; goes inside projects"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 active images are illustration and comics work matching the Illustration tag"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is confirmed cargocollective.com/kimhyunmin; site-14.png is confirmed instagram.com/kimhyunmin0111 profile page"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active images have captions with named project and source link"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Illustration/comics discipline; no video or audio work in evidence; not applicable"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No known gaps; LinkedIn absence documented in AI Notes; all available sources covered"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person, correct"
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Public email hyunminkim111@gmail.com was found by the scraper (documented in AI Notes: 'Contact email hyunminkim111@gmail.com found via IG/Cargo') but was never written to the Email field in Notion",
+      "fix": "Write hyunminkim111@gmail.com to the Email field via keeper.py set"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Illustration tag matches all captured work"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "South Korea confirmed via Cargo + It's Nice That; Size 1; Work Status Unknown with multi-source reasoning documented in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 2, set_by agent, reasoning present in AI Notes"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states consistent with no prior relationship; no clip note stating otherwise"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-03-26'; no additional clip note instructions to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "LinkedIn uncertainty hedged; Autonomy read hedged ('relatively underground'); Work Status documented as unknown with reasons"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-26'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values; null source_url is the known systemic tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written content"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions present; all resolvable fields have been addressed or documented"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Needs Review; note: scraper flipped the status directly rather than leaving it to the reviewer, but the content itself is gate-ready pending the email fix"
+    }
+  ],
+  "to": "scraper",
+  "summary": "Single fix required: the public contact email hyunminkim111@gmail.com was researched, confirmed, and documented in AI Notes but never written to the Email field. Everything else passes: 4 distinct on-capability illustration projects with interior depth, correct context shots, all fields set, AI Notes hedged, source filled.",
+  "fix": "Run: keeper.py set b8422fe7-6789-43e3-9470-799bd0def411 with Email = hyunminkim111@gmail.com (set_by agent, source: IG/Cargo Collective). Then leave entry in Enriching for reviewer re-check."
+}
