@@ -1,0 +1,111 @@
+{
+  "page_id": "28bd9510-ed7a-45b2-b273-263ff8e9331a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T14:55:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 active images span 6+ distinct product views across AdvisorCore (Dossier, Meeting Assistant, Portfolio Assistant, proposal output) and ValuesCore (Fund Screener, values questionnaire, impact report); no repeated angles"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images go inside the products: Dossier personal-info form, Meeting Assistant list view, Portfolio analytics tab, Fund Screener data table, values questionnaire grid, impact report card; not marketing hero shots"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Digital product design; all 8 work images are product UI screens from yourstake.org"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-06.png confirmed as yourstake.org homepage (YourStake logo, AdvisorCore/ValuesCore nav visible). IG shot (site-07.png) correctly rejected and documented: @yourstake is a different entity, AI Notes explain this, no wrong-entity shot in live set. Checklist exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 9 live images have captions naming product suite and feature (e.g. 'AdvisorCore, Dossier client profile view'); all link to yourstake.org"
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "N/A: no video/audio capabilities tagged; product/web design entry; no embeddable video observed in scope"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes with reason (wrong-entity @yourstake handle); no other gaps"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, Email all set; Instagram correctly not set (documented wrong entity); no obvious missing link for a fintech company"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Digital product design: correct for a fintech company saved for its product UI"
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = US, Size = 11-40, Work Status = Studio; org type, not a person; AI Notes confirm LinkedIn and site consulted"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Checklist (2026-06-21): Autonomy is OPTIONAL for org-type entries; Autonomy = 4 is set but the org is not a solo foundry -- flagged as a note to Jonathan (see below), not a gate failure"
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) appropriate; clip note carries no relationship signal"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip name 'Your Stake' cleaned to 'YourStake'; no instructions or facts in clip note beyond the URL"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge intent ('Likely saved for its product/web design'); state non-studio nature as a fact; raise an Open Question; no unhedged inferences. Seniority read not required for an org entry."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-03-05'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have provenance; set_by = agent throughout; null source_url is the known systemic tooling gap (exempt per 2026-06-21 calibration note)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all captions reviewed: no em-dashes present"
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One question asking whether the entry belongs in the blackbook; terse; not duplicating any field with a value"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching; will be flipped to Needs Review by this reviewer pass"
+    }
+  ],
+  "notes": "Autonomy = 4 is set on a 11-40 person fintech company (not a solo foundry). Checklist does not require it for orgs and it does not map cleanly to the Storonsky scale for a multi-person company. Surfaced for Jonathan's awareness; not a gate failure.",
+  "to": null
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "8290b9ba-b414-4b37-a9d9-da139913deac",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images across 6 named projects: Prince.com, Becoming.prince.com, Prince2Me, Kenzo.com mobile, Burberry.com, Miss Dior/dior.com. No caption repeats; all distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 interior shots per project showing UI detail: responsive grids (Burberry), mobile screen flows (Kenzo, Dior), interactive map UI (Becoming.prince), animated web layout (Prince.com hub)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 11 work images show designed web interfaces: browser-framed or device-framed UI, responsive design systems, mobile mockups. Capabilities are Web design + Graphic design. Images match. Becoming.prince.com map shots are the interactive web UI of a digital storytelling experience, not content photography."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-05.png is catherineuhlrich.com (Cargo placeholder page, URL visible in screenshot, correctly noted in AI Notes as dead domain). site-06.png is instagram.com/cath.uu (Instagram header present, handle 'cath.uu' confirmed, 'This profile is private' shown). Both labels correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image has a named project caption and a source link in the manifest. Zero anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video or audio projects in scope; web/UI work only. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Dead website documented in AI Notes ('domain not connected'). IG private with 0 posts documented; IG queue correctly not added since profile is empty and has no capturable work."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance art director."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present and verified. Email absent and not documented as searched; noted as a soft gap but not a gate fail given a dead personal site and no public contact surface. AI Notes acknowledge the dead website."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Web design, set_by jonathan (provenance locked). Open Question 2 proposes adding Digital product design and Creative direction, which is appropriate given her interactive/app work."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Size 1 (individual). Work Status Freelance: LinkedIn and Behance both describe freelance, two self-maintained sources agree, documented in AI Notes. Country France set with low confidence, conflict documented and Open Question 1 raised."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, hedged in AI Notes with reasoning: long freelance/director track record at senior level."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are clean. No clip note contains relationship facts that would contradict them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a bare Web clipper entry with no embedded instructions. Nothing to act on beyond standard P1 enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Country uncertainty explicitly hedged ('set France with low confidence'). Autonomy hedged. Seniority read present: 'Senior, 15+ yrs, director-level, ex-AKQA, ex-Instrument, ex-Base Design'. No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-09'. Present and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url nulls are a known systemic tooling gap, not a gate failure per checklist calibration note (2026-06-21). set_by values are correct throughout."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and Open Questions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, conditional questions: (1) Country conflict (Behance vs LinkedIn), (2) Capabilities expansion proposal. Neither asks for a field that already has a non-zero jonathan-set value. Appropriate use."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry was in Enriching; reviewer flipping to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Clean pass. 6 named web design projects, 11 interface images all on-capability, both context shots correct and verified by opening the files. Metadata complete: Work Status multi-sourced, Country conflict surfaced in Open Questions, Autonomy estimated and hedged. One soft note: public email not documented as searched or absent, minor gap in AI Notes completeness, not a gate failure."
+}

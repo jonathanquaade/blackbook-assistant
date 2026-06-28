@@ -1,0 +1,110 @@
+{
+  "page_id": "1c1340b2-89c9-4d3d-b7ad-6fb33d4270a7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active images span 4 distinct named projects: Dries Van Noten (site-03/04/05), Le Coq Sportif (site-06/07/08), Kassandre (site-09/10/11), Carven (site-12/13). No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 interior screens (desktop homepage + mobile PDP + mobile nav/UI detail), not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged: Frontend development (web). All 12 images show designed web interfaces (storefronts, PDPs, nav menus, cart flows). Off-capability client product photos (site-01, site-02) and wrong-person IG (site-15) are correctly rejected in manifest."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14 is a genuine screenshot of blackswan.paris homepage (their own site, confirmed visually). IG context shot (site-15) is rejected and documented: no confirmed IG handle exists, noted in AI Notes. Checklist IG exception applies: rejection documented, reason stated, no IG field set. Website context shot present and correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active images have captions naming the project and a source link to the project page or site URL."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web), not video/audio/writing. No video embeds expected or required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence explicitly documented in AI Notes: both checked handles belong to unrelated personal accounts. No IG field set on entry."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Their own site calls them an 'agency'; 11-40 team size, full-service e-commerce builds. Classification is defensible, though the Open Question about Web Design capability suggests scout considered Type carefully."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (https://www.blackswan.paris/en), LinkedIn (https://fr.linkedin.com/company/blackswan-paris), Email (hello@blackswan.paris) all set. Instagram: no confirmed handle exists (documented). No Instagram field set, consistent with documented absence. LinkedIn is a company page, appropriate for a Studio/Agency entry."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) set by jonathan (migration-era, locked). Web design is queried via Open Question 1, correct approach given jonathan owns Capabilities."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: France. Size: 11-40 (migration). Work Status: Studio (agent, sourced from blackswan.paris). AI Notes names the source. Note: Work Status 'Studio' for an org typed Agency is a minor inconsistency (should likely be 'Studio' type or Work Status reconciled), but this is a judgment call for Jonathan rather than a hard failure."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry type is Agency (org). Per checklist calibration 2026-06-21: Autonomy is optional for org-type entries; not required. AI Notes provides a seniority/leadership read ('senior agency-level execution'). No Autonomy field failure."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no contradicting evidence in clip note or entry body. Day Rate: 1000 set by jonathan."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2021-03-02'; no clip note instructions visible in the entry beyond standard metadata. No stated relationship facts to map."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges size ('per migration; not independently confirmed') and IG absence ('No confirmed Instagram presence: handles checked'). Clients listed are verifiable from their own site. Seniority read present ('Senior agency-level execution combining web design and frontend build'). No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-02' present."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by fields for all touched fields. source_url null on several fields is a known systemic tooling gap (checklist note 2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: '1. Add Web design to Capabilities?' Terse, conditional (Capabilities currently has only one tag set by jonathan). Story nudge not triggered (Worked Together: Never, no relationship change)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper"
+}

@@ -13,3 +13,6 @@ Just like us.
 And we will be represented in society as we are, rather than how we are perceived to be.
 
 #CriticalAxis is a community-driven project that collects and analyzes Disability representation in media and advertising.
+# Archived page body (2026-06-28)
+
+Work
