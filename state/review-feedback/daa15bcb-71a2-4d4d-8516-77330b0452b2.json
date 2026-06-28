@@ -2,45 +2,45 @@
   "page_id": "daa15bcb-71a2-4d4d-8516-77330b0452b2",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
-  "summary": "One field gap: the public email (ian@shapeshop.games) was found and documented in AI Notes but never written to the Email property. Everything else passes cleanly.",
-  "to": "scout",
+  "verdict": "pass",
+  "attempt": 2,
+  "summary": "Email field now set (ian@shapeshop.games). All 20 checks pass. 6 distinct games, 2 YouTube embeds with thumbnails, correct context shots, complete metadata.",
+  "to": "scraper",
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6 distinct games represented: Catacombs of Solaris, Red Desert Render, If We Were Allowed to Visit, Dissembler, Boson X, Mars First Logistics."
+      "evidence": "6 distinct games: Catacombs of Solaris, Red Desert Render, If We Were Allowed to Visit, Dissembler, Boson X, Mars First Logistics."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Multiple gameplay screenshots per project (e.g. 3 for Catacombs, 3 for If We Were Allowed to Visit, 3 for Dissembler); goes inside the games, not only covers."
+      "evidence": "3 images each for Catacombs, If We Were Allowed to Visit, Dissembler; gameplay interiors throughout, not just covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All images are indie game visuals; Capabilities are Creative technology / 3D & motion / Frontend development (web), set by Jonathan; game work matches all three."
+      "evidence": "All images are indie game visuals; Capabilities (Creative technology, 3D & motion, Frontend development) match the work shown."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-17.png is ianmaclarty.com homepage (confirmed visually). site-18.png is instagram.com/@ianmaclarty profile page (ianmaclarty handle, Ian MacLarty display name, 623 posts visible behind the login prompt overlay -- the profile is real and identifiable)."
+      "evidence": "site-17.png is ianmaclarty.com homepage (Ian MacLarty nav confirmed visually). site-18.png is instagram.com/ianmaclarty profile (handle + display name + 623 posts visible behind login prompt)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 active manifest images have captions and source links. Rejected entries (site-04, site-11, site-14, site-16) have reject_reason set and are excluded from the upload list."
+      "evidence": "All 16 active manifest images have captions and source links. 4 rejected entries have reject_reason and are excluded."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "2 YouTube embeds (Mars First Logistics 1.0 Release Trailer 2025, Mars First Logistics Gameplay Trailer 2022) with thumbnail images (site-12.jpg, site-13.jpg) and linked captions."
+      "evidence": "2 YouTube embeds for Mars First Logistics (release trailer 2025, gameplay trailer 2022) with thumbnail images site-12.jpg and site-13.jpg."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No thin sourcing. 6 games covered with gameplay images; no unexplained gaps."
+      "evidence": "6 games covered with gameplay images; no unexplained gaps or silently thin sourcing."
     },
     {
       "id": "B.type-classified",
@@ -49,64 +49,63 @@
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "Email (ian@shapeshop.games) was found and noted in AI Notes but was never written to the Email property in Notion.",
-      "fix": "Set Email = ian@shapeshop.games via keeper.py set. The address is already confirmed public in AI Notes."
+      "result": "pass",
+      "evidence": "Website: ianmaclarty.com. Instagram: instagram.com/ianmaclarty (verified correct person: handle, display name, 623 posts match AI Notes). Email: ian@shapeshop.games now set. LinkedIn: absent; AI Notes documents no LinkedIn found for this solo indie dev."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities set by Jonathan (provenance set_by: jonathan): 3D & motion, Frontend development (web), Creative technology. Scout deferred to Jonathan's values correctly."
+      "evidence": "Capabilities set by Jonathan (provenance set_by: jonathan): 3D & motion, Frontend development (web), Creative technology."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Australia; Size: 1; Work Status: Freelance. AI Notes names the basis: solo self-publishing via itch.io/Steam. Objective sources sufficient for this solo dev."
+      "evidence": "Country: Australia; Size: 1; Work Status: Freelance. AI Notes names basis: solo self-publishing via itch.io and Steam."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5 (set_by agent), reasoning in AI Notes: conceives, builds and ships games entirely solo."
+      "evidence": "Autonomy 5 (set_by agent); reasoning in AI Notes: conceives, builds and ships games entirely solo."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note suggesting a relationship."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with clip note containing no relationship signal."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source recorded as 'Web clipper, 2021-03-01'; no clip note instructions found beyond the URL."
+      "evidence": "Source: Web clipper, 2021-03-01. No clip note instructions beyond the URL."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Hedged language throughout ('active since ~2013', '~12+ yrs'). Seniority read present. Autonomy reasoning provided."
+      "evidence": "Appropriately hedged (~2013, ~12+ yrs). Seniority read present. Autonomy reasoning grounded in actual work history."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2021-03-01'."
+      "evidence": "Source: Web clipper, 2021-03-01."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by values. source_url nulls are the known systemic tooling gap, not a gate failure."
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written text."
+      "evidence": "No em-dashes in AI Notes, captions, or any agent-written text."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No open questions present; none are required (LinkedIn absence is documented in AI Notes, not an open question)."
+      "evidence": "No open questions present; none required (LinkedIn absence documented in AI Notes)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching; entry has not been prematurely flipped to Needs Review."
+      "evidence": "Status is Enriching; will be flipped to Needs Review by this reviewer pass."
     }
   ]
 }
