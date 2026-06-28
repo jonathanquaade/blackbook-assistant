@@ -1461,5 +1461,26 @@
     "ig_url": "https://www.instagram.com/roger_burkhard/",
     "reason": "IG context screenshot failed: headless Playwright returned blank white page (Instagram blocked). @roger_burkhard confirmed (3476 followers, web designer Bern). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-06-28"
+  },
+  {
+    "page_id": "2f6cbb88-210c-4e46-acd2-88b56853a2c4",
+    "name": "Maria Pereira",
+    "ig_url": "https://www.instagram.com/mariafpereiram/",
+    "reason": "website mariafpereiram.com DNS failure (completely down); ArtStation 403 all methods; IG is the only accessible source of her 3D fashion work (techwear, digital fashion renders)",
+    "queued_at": "2026-06-28"
+  },
+  {
+    "page_id": "29eb6285-e609-407c-bc3a-12179d12ab54",
+    "name": "Clase bcn",
+    "ig_url": "https://www.instagram.com/clasebcn/",
+    "reason": "IG context shot blank logged-out; needs logged-in ig.py",
+    "queued_at": "2026-06-28"
+  },
+  {
+    "page_id": "e4a47c65-6c12-4ec9-8da2-e8fbcbc1a2b8",
+    "name": "Haw-lin Services",
+    "ig_url": "https://www.instagram.com/hawlinservices/",
+    "reason": "IG context screenshot (site-24.png) returned login modal overlay blocking the grid. @hawlinservices confirmed (30.6K followers, Photographer and Director Duo). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-06-28"
   }
 ]

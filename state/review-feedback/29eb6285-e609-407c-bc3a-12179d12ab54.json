@@ -1,0 +1,112 @@
+{
+  "page_id": "29eb6285-e609-407c-bc3a-12179d12ab54",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Kave Home rebrand, PoMo Museum identity, Palau de la Musica campaigns, Prostoria brand identity, Pedro Garcia rebrand"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-4 images per project showing interior spreads, packaging, editorial, environmental work; not hero-only"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are branding/identity/graphic design; matches tagged Capability"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-16.png (captioned 'Instagram profile', source_url instagram.com/clasebcn) is a blank white 5.7K image; it renders as a completely empty white canvas, not an instagram.com profile page. It is NOT marked rejected in the manifest, NOT documented in AI Notes, and NOT queued in state/ig-queue.json. The sanctioned throttle exception does not apply.",
+      "fix": "Recapture the Instagram profile screenshot for instagram.com/clasebcn with scrape.py shot. If IG serves a broken page, mark site-16.png as rejected in the manifest, document the block in AI Notes, and add the entry to state/ig-queue.json. Then re-submit."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 manifest entries have caption + link; no anonymous images"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No embeddable video identified on this studio's project pages; not applicable"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work images present from 5 projects; no unexplained thinness"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio (set_by agent, verified)"
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all filled"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design (set_by jonathan); Open Question raises Identity systems addition appropriately"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Spain; Size: 2-10; Work Status: Studio; all set with sourcing noted in AI Notes"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio); Autonomy field optional per checklist calibration 2026-06-21; AI Notes includes seniority read (40+ yr heritage, current leadership since 2001)"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) correct; no evidence contradicts them"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Minimal clip note (Web clipper); no instructions or judgment statements in it"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes states verifiable facts (clients, founding year, leadership, team size) and hedges inferences; includes seniority read; no em-dashes"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-01-22'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; set_by values correct; null source_urls are known tooling gap, not a gate failure per calibration 2026-06-21"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question about Identity systems capability; not asking for any already-set field"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer holds it here on FAIL, correct"
+    }
+  ],
+  "summary": "Single failure: the Instagram context shot (site-16.png) is a blank white image, not an instagram.com/clasebcn profile page. It is not rejected, not documented, not queued. All other checks pass: 5 distinct on-capability branding projects with depth, all captioned, metadata complete.",
+  "to": "scraper"
+}

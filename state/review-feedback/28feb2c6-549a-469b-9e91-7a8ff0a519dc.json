@@ -1,9 +1,9 @@
 {
   "page_id": "28feb2c6-549a-469b-9e91-7a8ff0a519dc",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-28T21:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-28T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,7 +13,7 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside each project: crest on apparel + EV application + typeface/stationery (Cadillac); business card + OOH + custom typeface (Tripadvisor); brand typography + illustration system + OOH (PizzaExpress); OOH + graphic language system + app icon (Scribd); wordmark morphing + typeface + poster system (Eyebeam). No hero-only coverage."
+      "evidence": "3 images per project, each going inside: crest on apparel + EV application + typeface/stationery (Cadillac); business card + OOH + custom typeface (Tripadvisor); brand typography + illustration system + OOH (PizzaExpress); OOH + graphic language system + app icon (Scribd); wordmark morphing + typeface + poster system (Eyebeam). No hero-only coverage."
     },
     {
       "id": "A.on-capability",
@@ -23,7 +23,7 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-02.png: verified instagram.com/@motherdesign profile page, captioned 'Instagram profile'. site-03.png: verified motherdesign.com/work portfolio page, captioned 'Website'. site-01.png (JS splash) correctly rejected. Both context shots are present, open to the correct domains, and correctly labeled."
+      "evidence": "site-02.png: visually confirmed as instagram.com/@motherdesign profile page (Instagram UI visible, handle 'motherdesign', 93.7k followers). site-03.png: visually confirmed as motherdesign.com/work portfolio page (Mother Design nav visible, project grid). site-01.png (JS splash) correctly rejected with reason in manifest. Both context shots present, on correct domains, correctly labeled."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -38,48 +38,47 @@
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "All sources accessible; site-01.png JS splash rejection documented in manifest with reason. No silent gaps."
+      "evidence": "All sources accessible. site-01.png JS splash rejection documented in manifest with explicit reason. No silent gaps."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct per schema definition (small specialized hands-on execution arm within Mother agency). AI Notes explains the distinction."
+      "evidence": "Type: Studio. Correct per schema (hands-on design execution arm within Mother agency). AI Notes explains the distinction."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email is missing. motherdesign.com/contact publicly lists newyork@motherdesign.com, london@motherdesign.com and la@motherdesign.com. The scraper did not populate the Email field. Website, Instagram, LinkedIn are all present and correct.",
-      "fix": "Add Email: newyork@motherdesign.com (primary / US office) to the entry, sourced from motherdesign.com/contact. Alternatively list all three office emails if the schema supports it, or pick the most relevant one and note the others in AI Notes."
+      "result": "pass",
+      "evidence": "Email: newyork@motherdesign.com is now set, sourced from motherdesign.com/contact. Provenance records source_url 'motherdesign.com/contact (NY studio primary; also london@/la@)' and set_by agent. Website, Instagram, LinkedIn were already present and correct. All four link types populated."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged (set_by jonathan). AI Notes flags the potential addition of Identity systems and raises it as Open Question 1 for Jonathan. Correct handling: his tag is respected, the gap is surfaced as a question."
+      "evidence": "Graphic design tagged (set_by jonathan). AI Notes flags potential Identity systems addition and raises it as Open Question 1. His tag respected, gap surfaced correctly."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: US + UK. Size: 41-100 (estimated for the design arm, caveat in AI Notes and Open Question 2). Work Status: Studio. Sources cited in AI Notes."
+      "evidence": "Country: US + UK. Size: 41-100 (estimated for the design arm, caveated in AI Notes and Open Question 2). Work Status: Studio. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry is a Studio (org-type). Autonomy is optional for orgs per checklist calibration note. AI Notes provides a seniority/leadership read. No Autonomy field required."
+      "evidence": "Entry is Studio (org-type). Autonomy is optional for orgs per checklist calibration note. AI Notes provides seniority/leadership read. No Autonomy field required."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note text contradicts these zero-states. Jonathan's Capabilities tag (set_by jonathan) preserved without overwrite."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note contradicts these zero-states. Jonathan's Capabilities tag preserved without overwrite."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note had no relationship facts or judgment instructions (Source: 'Web clipper, 2021-02-19'). Zero-states correctly applied."
+      "evidence": "Source is 'Web clipper, 2021-02-19'. No relationship facts or judgment instructions in the clip note. Zero-states correctly applied."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Size estimate is hedged ('is an estimate'). Studio vs Agency classification is reasoned and caveated ('though it is large and multi-office'). Seniority/experience read included (multi-office, founded 1996, major client roster). No unverified assertions presented as fact."
+      "evidence": "Size estimate hedged ('is an estimate'). Studio vs Agency classification reasoned and caveated. Seniority/experience read included (multi-office, founded 1996, major client roster). No unverified assertions presented as fact. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,26 +88,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by values for all touched fields. source_url null is a known systemic tooling gap (not a gate failure per checklist calibration note). Capabilities correctly recorded set_by jonathan."
+      "evidence": "Provenance file present with set_by values for all touched fields, including Email now recorded with source_url and verified_at. source_url null on older fields is the known systemic tooling gap, not a gate failure. Capabilities correctly set_by jonathan."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions, both terse and conditional: Q1 asks about adding Identity systems (Capabilities has only the jonathan-set value, so the question is appropriate). Q2 asks Jonathan to confirm Size estimate. No redundant questions, no questions for fields already answered by Jonathan."
+      "evidence": "Two terse, conditional questions: Q1 on Identity systems capability (appropriate, his tag is the current value), Q2 on Size estimate. No redundant questions, no questions for fields already answered."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is currently Enriching. Status will be flipped by the reviewer only on a clean pass. Correct."
+      "evidence": "Entry is Enriching. Will be flipped to Needs Review by this reviewer pass on clean gate."
     }
   ],
-  "failing_checks": ["B.all-findable-links"],
-  "to": "scraper",
-  "summary": "Entry is otherwise complete and well-executed (17 images, 5 distinct brand-identity projects, correct context shots, sound metadata). One concrete miss: the Email field is empty despite newyork@motherdesign.com, london@motherdesign.com and la@motherdesign.com being listed on the public contact page.",
-  "fix": "Add Email from motherdesign.com/contact (newyork@motherdesign.com is the primary US address). One field write, no re-scraping needed."
+  "to": null,
+  "summary": "All 20 checks pass. The sole attempt-1 failure (Email empty) is resolved: newyork@motherdesign.com is now set with correct provenance. 17 images across 5 distinct brand-identity projects, verified context shots, complete metadata, no em-dashes, terse open questions."
 }

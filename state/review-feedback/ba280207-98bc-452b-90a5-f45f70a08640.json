@@ -2,39 +2,38 @@
   "page_id": "ba280207-98bc-452b-90a5-f45f70a08640",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-28T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Active images span 5 named projects: Aargauer Kunsthaus (site-01, 02, 18, 19, 20), Heyday (site-04), Gurtenfestival (site-08, 09), Atlas Studio (site-11, 12), Berner Design Stiftung (site-15, 16, 17). Well above the 3-project minimum."
+      "evidence": "Active images span 5 named projects: Aargauer Kunsthaus (site-01, 02, 18, 19, 20), Heyday (site-04), Gurtenfestival (site-08, 09), Atlas Studio (site-21, 22), Berner Design Stiftung (site-15, 16, 17). Well above the 3-project minimum."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Multiple interior views per project: Aargauer Kunsthaus has 5 distinct page states (hero, collection browser, agenda, listing views, archive); Gurtenfestival shows Artists and Stages sub-pages; Berner Design Stiftung shows hero, scrolled, and open-nav states."
+      "evidence": "Multiple interior views per project: Aargauer Kunsthaus has 5 distinct page states; Gurtenfestival shows Artists and Stages sub-pages; Berner Design Stiftung shows hero and scrolled states. Atlas Studio shows the immersive project viewer homepage and the Info page typography layout."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "site-11 (Atlas Studio) shows printed posters running through a physical printing press. site-12 (Atlas Studio) shows a physical outdoor advertising pillar with a poster on a street. Neither image shows the web interface Roger built for Atlas Studio. Both are photographs of physical print production, not web design or frontend work. The scraper correctly rejected site-10 (gallery photo of printed posters) but missed these two. For a web designer and frontend developer, these two images are off-capability.",
-      "fix": "Replace site-11 and site-12 with actual screenshots of the atlasdesignstudio.ch (or equivalent) website Roger built. Go to the Atlas Studio project page at rogerburkhard.com/en/projekte/atlas-studio/ and identify which images show the actual website UI, or visit the live Atlas Studio site and take a screenshot."
+      "result": "pass",
+      "evidence": "site-21 confirmed: atlasstudio.ch browser viewport showing the immersive project viewer UI Roger built (nav bar 'Atlas Studio / Projects (All) / Info' visible, floating caption overlay, project viewer interface). The content inside the viewer is a photo of printed items but the interface itself is the web design. site-22 confirmed: clean Info page typography layout, unambiguously web UI. All other active images (Aargauer Kunsthaus, Gurtenfestival, Berner Design Stiftung, Heyday) are website screenshots. The four rejected physical-artifact images (site-10, 11, 12 print photos; site-14 blank IG) are correctly marked rejected. 14 active images, all web interfaces. On-capability for Web design + Frontend development."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13 (Website context shot): confirmed as rogerburkhard.com with visible nav and page content. IG context shot (site-14) correctly rejected+documented (Instagram blocked headless Playwright, blank white page) and queued to state/ig-queue.json with reason. AI Notes documents the block. This satisfies the sanctioned IG throttle exception."
+      "evidence": "site-13 (context_shot: true): confirmed rogerburkhard.com homepage with visible nav and page content. IG context shot (site-14) correctly rejected+documented (Instagram blocked headless Playwright) and queued to state/ig-queue.json. AI Notes documents the block. Sanctioned IG throttle exception satisfied."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 13 active images have captions naming the project and source links to the project page on rogerburkhard.com."
+      "evidence": "All 14 active images have captions naming the project and source links."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio/sound work is involved; Roger is a web designer and frontend developer. No embeds needed."
+      "evidence": "No video/audio work involved. Roger is a web designer and frontend developer. No embeds needed."
     },
     {
       "id": "A.absence-explained",
@@ -49,37 +48,37 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (rogerburkhard.com/en/), Instagram (@roger_burkhard confirmed), LinkedIn (ch.linkedin.com/in/rogerburkhard confirmed), Email (hello@rogerburkhard.com) all present."
+      "evidence": "Website (rogerburkhard.com/en/), Instagram (@roger_burkhard confirmed), LinkedIn (ch.linkedin.com/in/rogerburkhard), Email (hello@rogerburkhard.com) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Frontend development (web) + Web design. Both are Jonathan-set (set_by: jonathan) and confirmed by portfolio. On-capability tagging."
+      "evidence": "Frontend development (web) + Web design. Jonathan-set, confirmed by portfolio."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: Switzerland (confirmed Bern). Size: 1. Work Status: Freelance. AI Notes documents source resolution: own site frames him as independent. No conflicting signals noted."
+      "evidence": "Country: Switzerland. Size: 1. Work Status: Freelance. AI Notes documents source resolution: own site frames him as independent solo practitioner."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: runs his own one-person practice doing design and development end to end. Grounded in portfolio evidence."
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: runs own one-person practice doing design and development end to end."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Clip note is plain site copy ('Development + Interaction Design / Bern, Switzerland'). No relationship facts or judgment signals in the clip text. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship."
+      "evidence": "Clip note is plain descriptor text. Zero-states consistent with no stated relationship."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped body was plain descriptor text. Archived to clipped.md. No instructions, relationship facts, or judgment signals to extract."
+      "evidence": "Clipped body was plain descriptor text. Archived to clipped.md. No instructions or judgment signals to extract."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes includes seniority read ('Senior solo practitioner'), Autonomy reasoning, Work Status source documentation, LinkedIn and Instagram confirmation with caveat on IG context shot. No unhedged inferences found."
+      "evidence": "AI Notes includes seniority read, Autonomy reasoning, Work Status source documentation, LinkedIn and Instagram confirmation with caveat on IG context shot. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
@@ -89,25 +88,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by values for all fields. Source_url null is a known systemic tooling gap (not a gate failure per calibration note 2026-06-21). No facts written below 0.8 confidence."
+      "evidence": "Provenance file present with set_by values for all fields. Source_url null is a known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes reviewed: no em-dashes found. Semicolons and commas used throughout."
+      "evidence": "AI Notes and all written fields reviewed. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions field visible in the entry, which is correct: all judgment fields have zero-states, no ambiguities requiring a question. Clip note had no relationship signals requiring follow-up."
+      "evidence": "No Open Questions needed: all judgment fields have zero-states, no ambiguities requiring a question, clip note had no relationship signals."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry currently Enriching. Status flip to Needs Review is pending this gate, which is the correct mechanic."
+      "evidence": "Entry in Enriching; flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "One FAIL: the two Atlas Studio images in the active set (site-11, site-12) show physical printed artifacts (printing press output, outdoor poster pillar), not the web UI Roger built for Atlas Studio. For a web designer and frontend developer these are off-capability and need replacement with actual website screenshots.",
-  "fix": "Replace site-11 and site-12 with screenshots of the Atlas Studio website Roger designed. Check the project page at rogerburkhard.com/en/projekte/atlas-studio/ for images that show the actual website interface, or visit the live Atlas Studio site. Reject site-11 and site-12 in the manifest with reason matching the other print-photo rejections."
+  "to": "jonathan",
+  "summary": "All 20 checks pass. The Atlas Studio slot now shows two confirmed web UI images: site-21 (atlasstudio.ch immersive project viewer with browser nav visible) and site-22 (Atlas Studio Info page typography layout). The four physical-artifact and blank images (site-10, 11, 12, 14) are correctly rejected. 14 active images across 5 named web projects, all on-capability."
 }
