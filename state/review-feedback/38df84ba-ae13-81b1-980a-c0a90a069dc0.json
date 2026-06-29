@@ -1,46 +1,44 @@
 {
   "page_id": "38df84ba-ae13-81b1-980a-c0a90a069dc0",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-29T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-29T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6 distinct projects: TNF Flora Alpina, PAF x On Current Form 1.0, DeMamiel Rebrand, Corsica Studios, Puma Mercedes F1, Jordan Brand Luxury Collection."
+      "evidence": "6 distinct projects: TNF Flora Alpina, PAF x On Current Form 1.0, DeMamiel Rebrand, Corsica Studios, Puma Mercedes F1 x Christopher Raeburn, Jordan Brand Luxury Collection."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "DeMamiel has 3 interior views (monogram, packaging, box detail); TNF and PAF each go inside the project with 2 content shots plus a film thumbnail."
+      "evidence": "DeMamiel goes 3 levels deep (monogram, packaging, box detail). TNF and PAF each have film thumb + 2 interior campaign stills. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities include Film & video production, Identity systems, Graphic design, Creative direction. Work shown covers campaign imagery, identity monogram, packaging, film stills, event poster. All on-capability."
+      "evidence": "Capabilities include Film & video production, Identity systems, Graphic design, Creative direction. Work covers campaign films, identity monogram, packaging, event poster, campaign imagery. All on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is softpower.global homepage (SOFT POWER heading, client list visible). site-02.png is instagram.com/softpower.global/ (Instagram header, handle and grid visible behind modal). Both correct."
+      "evidence": "site-01.png confirmed as softpower.global homepage (SOFT POWER heading and client list visible). site-02.png confirmed as instagram.com/softpower.global/ (Instagram UI, handle, grid visible behind login modal). Both correct."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 16 images have captions naming the project. Links point to softpower.global root rather than per-project pages; noted but captions are present and descriptive."
+      "evidence": "All 16 images have captions naming the project and role. Links all point to softpower.global root, which is correct for this single-scroll site with no per-project deep URLs."
     },
     {
       "id": "A.embeds-for-video",
-      "result": "fail",
-      "evidence": "Two projects are explicitly described as films: TNF Flora Alpina film and PAF x On Current Form 1.0 film. The manifest source URLs include Mux CDN thumbnails (image.mux.com), confirming video exists on the site. Only thumbnail still images were captured; no {type:\"embed\"} entries exist in the manifest for either film.",
-      "fix": "Return to softpower.global and find the embed URLs for the TNF Flora Alpina film and the PAF x On Current Form 1.0 film (they will be Mux or Vimeo players on the project pages). Add {type:\"embed\", url, caption, link} manifest entries for each, with the existing thumbnail images kept as preview images linked to the film.",
-      "to": "scraper"
+      "result": "pass",
+      "evidence": "Two {type:\"embed\"} manifest entries added for TNF Flora Alpina and PAF x On Current Form 1.0 (stream.mux.com URLs). NOTE for Jonathan: Notion does not natively render stream.mux.com URLs as playable embeds -- Mux is not on Notion's oEmbed provider list. The embed entries in the manifest will appear as unfurled links in Notion. The effective visual representation of both films is carried by the two thumbnail images (tnf-flora-film-thumb.jpg, paf-on-film-thumb.jpg) captured from Mux's thumbnail endpoint at full resolution, both captioned and linked. This is a platform constraint, not a scraper failure -- the films cannot be embedded in Notion regardless. Thumbnails carry the work visually."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Work images are present across 6 projects; no source is cited as unavailable."
+      "evidence": "6 projects covered, work is well populated, no unexplained thin sources."
     },
     {
       "id": "B.type",
@@ -50,39 +48,37 @@
     {
       "id": "B.all-links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present."
+      "evidence": "Website, Instagram, LinkedIn, Email all present and populated."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "5 capabilities tagged: Brand strategy, Creative direction, Film & video production, Graphic design, Identity systems. Consistent with portfolio evidence."
+      "evidence": "5 capabilities tagged (Brand strategy, Creative direction, Film & video production, Graphic design, Identity systems), grounded in portfolio evidence."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK / 2-10 / Studio. AI Notes cites softpower.global and LinkedIn for the size and location confirmation."
+      "evidence": "UK / 2-10 / Studio. AI Notes cites softpower.global and LinkedIn as sources."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entity; checklist calibration note says Autonomy is optional for org-type entries. AI Notes confirms 'Studio-level entity, not a person; Autonomy field not applicable.'"
+      "evidence": "Studio entity; Autonomy is optional for org-type entries per checklist calibration. AI Notes states 'Studio-level entity, not a person; Autonomy field not applicable.'"
     },
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with the clip note, which contains no relationship facts."
+      "evidence": "Clip note contains no relationship facts. Zero-states (Never, Don't know them, Unvetted) are valid and not contradicted by evidence."
     },
     {
       "id": "C.clip-note-acted-on",
-      "result": "fail",
-      "evidence": "Clip note reads 'Soft power (ad agency)'. Jonathan used the word 'agency'. The scout filed Type: Studio, which may well be correct for a 2-10-person hands-on studio, but the discrepancy with Jonathan's own label was not addressed via an Open Question. Schema requires Studio vs Agency to be distinguished deliberately; silently overriding his label without asking is not acting on the clip note.",
-      "fix": "Add Open Question: 'Type: you called this an ad agency; filed as Studio (small hands-on team) -- confirm or correct?'",
-      "to": "scout"
+      "result": "pass",
+      "evidence": "Clip note 'Soft power (ad agency)' now addressed via Open Question 1 asking Jonathan to confirm Studio vs agency classification."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes state verifiable facts (founded 2018, founders named, client list, size) and cite sources. No unhedged inferences. No em-dashes."
+      "evidence": "AI Notes state verifiable facts (founded 2018, founders named, client list, size), cite sources, and include no unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source",
@@ -92,26 +88,23 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All fields have set_by: agent and verified_at timestamps. source_url null throughout; this is the known systemic tooling gap, not a gate failure per checklist calibration note."
+      "evidence": "All fields have set_by: agent and verified_at timestamps. source_url null throughout -- known systemic tooling gap, not a gate failure per checklist calibration."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and all agent-written text checked; no em-dashes found."
+      "evidence": "AI Notes, Open Questions, captions all clean. No em-dashes found."
     },
     {
       "id": "D.open-questions",
-      "result": "fail",
-      "evidence": "No Open Questions exist. The Type vs clip note discrepancy (agency vs Studio) required one. See C.clip-note-acted-on.",
-      "fix": "Same as C.clip-note-acted-on fix above -- add the Type question.",
-      "to": "scout"
+      "result": "pass",
+      "evidence": "Open Question 1 addresses the Type/clip-note discrepancy. Terse and conditional. No redundant or answered questions."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry Status is Enriching, correct for an entry awaiting the review gate."
+      "evidence": "Entry was in Enriching; flipped to Needs Review by this gate pass."
     }
   ],
-  "failing_checks": ["A.embeds-for-video", "C.clip-note-acted-on", "D.open-questions"],
-  "to": "scraper"
+  "to": null
 }
