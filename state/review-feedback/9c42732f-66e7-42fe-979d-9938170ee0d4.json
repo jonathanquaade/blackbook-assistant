@@ -1,44 +1,44 @@
 {
   "page_id": "9c42732f-66e7-42fe-979d-9938170ee0d4",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-29T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-29T22:15:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 distinct client sites: Atelier Munro, Westergas, Tenue de Nimes, Wieden+Kennedy Amsterdam, Holy Fools, Frankey, Dawn."
+      "evidence": "7 distinct client sites confirmed visually: Atelier Munro, Westergas, Tenue de Nimes, Wieden+Kennedy Amsterdam, Holy Fools, Frankey, Dawn."
     },
     {
       "id": "A.depth",
       "result": "pass",
-      "evidence": "6 of 7 clients have homepage plus one interior page shot. Appropriate depth for frontend web work."
+      "evidence": "5 of 7 clients have homepage plus at least one interior shot. Adequate depth for frontend web work."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Frontend development (web); all project images are screenshots of live client websites he built. On-capability."
+      "evidence": "Tagged Frontend development (web). All 12 project images are screenshots of live client websites he built. On-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-01.png) is correctly pieter-de-jong.nl. No Instagram context shot, but AI Notes documents 'No Instagram found on site or via search' - absence is explained, no IG account to capture."
+      "evidence": "site-01.png verified as pieter-de-jong.nl showing 'Pieter de Jong / Webdeveloper'. No Instagram context shot: AI Notes documents 'No Instagram found on site or via search', which is the sanctioned documented-absence path."
     },
     {
       "id": "A.uncaptioned",
       "result": "pass",
-      "evidence": "All 13 images have captions and source links in manifest."
+      "evidence": "All 13 manifest entries have captions and source links."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "Frontend developer, no audio/video work requiring embeds."
+      "evidence": "Frontend developer; work is websites, not audio or video. No embeds required."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes explicitly states no Instagram found; no IG to capture or queue."
+      "evidence": "No Instagram exists; AI Notes states this explicitly. No IG queue entry needed."
     },
     {
       "id": "B.type",
@@ -48,64 +48,63 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website, LinkedIn, Email all present. No Instagram documented as absent in AI Notes. No public Instagram account exists per AI Notes."
+      "evidence": "Website, LinkedIn, Email all present. Instagram absence documented in AI Notes."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Frontend development (web) matches the portfolio evidence."
+      "evidence": "Frontend development (web) matches portfolio evidence."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Netherlands, Size 1, Freelance. AI Notes records 'site + LinkedIn snippet both indicate freelance/self-employed' as the multi-source basis."
+      "evidence": "Netherlands / 1 / Freelance. AI Notes names both sources: site and LinkedIn snippet both indicate freelance/self-employed."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes ('works independently, delivers for agencies and brands, no evidence of leading teams or owning strategy')."
+      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes: works independently for agencies/brands, no team-lead or strategy signals."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never/Unvetted/Don't know them) are appropriate; no evidence in the entry contradicts them."
+      "evidence": "Zero-states (Never/Unvetted/Don't know them) not contradicted by any evidence in the entry."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Day Rate 400 is set_by jonathan (came via original clip/migration). No clip note text that was unacted on is visible."
+      "evidence": "Day Rate 400 set_by jonathan per provenance. No unacted clip instructions visible."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes includes seniority read ('Mid-level'), Autonomy reasoning, Work Status source basis, and no unhedged assertions. No em-dashes."
+      "evidence": "Seniority read present (Mid-level). Autonomy reasoning present. Work Status sources named. No em-dashes. Hedging appropriate throughout."
     },
     {
       "id": "D.source",
-      "result": "fail",
-      "evidence": "Source field is 'Web clipper' but CLAUDE.md requires the format 'Web clipper, <created date>' for clipper entries. The page creation date is missing. The field is incomplete per the runbook format.",
-      "fix": "Set Source to 'Web clipper, <YYYY-MM-DD>' where the date is the Notion page created_time. Retrieve it via the API (keeper.py get returns created_time) and patch the Source field."
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-03-22'. Prior fail resolved. Format matches CLAUDE.md requirement."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by values. null source_url is the known systemic tooling gap, exempted from gate per calibration note 2026-06-21."
+      "evidence": "All touched fields have provenance with correct set_by values. Null source_url is the known systemic tooling gap, not a gate failure per 2026-06-21 calibration note."
     },
     {
       "id": "D.em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written content."
+      "evidence": "AI Notes, captions, and all agent-written fields checked. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions set. No unresolvable gaps remain that require asking Jonathan."
+      "evidence": "No Open Questions set. No unresolvable gaps requiring Jonathan input."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Currently Enriching. Reviewer holds at Enriching pending Source fix."
+      "evidence": "Enriching -> flipped to Needs Review on this pass."
     }
   ],
-  "to": "scout"
+  "to": null
 }

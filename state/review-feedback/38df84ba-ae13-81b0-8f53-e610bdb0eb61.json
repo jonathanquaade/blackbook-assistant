@@ -1,9 +1,9 @@
 {
   "page_id": "38df84ba-ae13-81b0-8f53-e610bdb0eb61",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-29T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-29T22:15:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -23,7 +23,7 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-16.png is the real akestamholst.se homepage (NoA logo, AH branding visible). site-17.png is the real instagram.com/akestamholst profile (Instagram header, @akestamholst username, login modal overlaid on visible grid). Both correct."
+      "evidence": "site-16.png confirmed as akestamholst.se homepage (NoA logo, AH wordmark, PLEASE SCROLL footer). site-17.png confirmed as instagram.com/akestamholst profile (Instagram header, @akestamholst bio, login modal over visible grid). Both correct."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,7 +33,7 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Two YouTube embeds present (Legora + IKEA Wherever Life Goes), each paired with a thumbnail image + link to source project page on akestamholst.se"
+      "evidence": "Two YouTube embeds present (Legora + IKEA Wherever Life Goes), each paired with a thumbnail image and link to akestamholst.se project page"
     },
     {
       "id": "A.absence-explained",
@@ -47,65 +47,64 @@
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email field is empty. Akestam Holst is a 100+ person Swedish agency with a public website; contact email is almost certainly on their /about or /contact page. A website contact page was not checked or the result was not recorded.",
-      "fix": "Visit akestamholst.se/contact or their About page and capture the public contact email (typically a general info@ or new-business@ address). Set it in the Email field."
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present. Email newbiz@akestamholst.se added (public new-business address from akestamholst.se). Prior fail resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "5 capabilities set: Brand strategy, Copywriting, Creative direction, Film & video production, Graphic design -- consistent with the work shown"
+      "evidence": "5 capabilities set: Brand strategy, Copywriting, Creative direction, Film & video production, Graphic design -- consistent with work shown"
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Sweden. Size: 100+. Work Status: Studio (correct schema value for an org-type entry). AI Notes names the sources (LinkedIn 51-200 bracket, one source cites 119)."
+      "evidence": "Country: Sweden. Size: 100+. Work Status: Studio (correct schema value for org-type). AI Notes names sources (LinkedIn 51-200 bracket, one source cites 119)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Agency org-type entry; Autonomy not required per 2026-06-21 calibration note. AI Notes states 'Org entry: Autonomy not applicable.'"
+      "evidence": "Agency org-type entry; Autonomy not required per 2026-06-21 calibration. AI Notes states Autonomy not applicable."
     },
     {
       "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; Jonathan's note contains no relationship data"
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) appropriate; Jonathan's clip note contains no relationship data"
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note preserved verbatim in Source; the named Legora campaign is the featured work in the entry; taste comment 'maybe too swedish' noted in AI Notes without being written as a field"
+      "evidence": "Clip note preserved verbatim in Source; Legora campaign is featured work; taste comment 'maybe too swedish' reflected in AI Notes without being written as a field value"
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Notes cite specific verifiable facts (founded 1998, 7x Agency of the Year, named clients); inferences are hedged ('approximately', 'one source cites'); no unverified assertions"
+      "evidence": "Cites verifiable facts (founded 1998, 7x Agency of the Year, named clients); inferences hedged (approximately, one source cites); seniority/leadership read present; no em-dashes"
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source field contains clip note verbatim plus provenance of how agency was identified"
+      "evidence": "Source contains clip note verbatim plus provenance of how agency was identified"
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All fields have set_by populated; null source_url is the known systemic tooling gap, not a v1 gate failure"
+      "evidence": "All fields have set_by populated; Email provenance added (verified_at 2026-06-29); null source_url is the known systemic tooling gap, not a v1 gate failure"
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Source, and captions contain no em-dashes"
+      "evidence": "AI Notes, Source, and captions checked; no em-dashes found"
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions set; no unresolvable factual gaps requiring Jonathan input. Familiarity and Rating are his to set on review."
+      "evidence": "No Open Questions set; no unresolvable factual gaps requiring Jonathan input"
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching (correct pre-gate status); reviewer will flip to Needs Review only on pass"
+      "evidence": "Entry in Enriching pre-gate; flipping to Needs Review on this pass"
     }
   ],
-  "to": "scout"
+  "to": "jonathan"
 }
