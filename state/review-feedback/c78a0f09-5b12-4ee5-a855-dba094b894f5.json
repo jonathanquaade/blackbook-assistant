@@ -1,0 +1,111 @@
+{
+  "page_id": "c78a0f09-5b12-4ee5-a855-dba094b894f5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 specimens across 5 distinct typefaces (Grace Roman, Timmons NY, Heseltine, Organon, Laura). No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per typeface showing different weights, glyph sets, and specimen styles, not cover slides alone."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Type design; all 13 specimen images are type specimens from individual font pages on buyfontssavelives.com. Verified visually: Grace Roman, Timmons NY, Heseltine, Organon Sans, Laura all confirmed as distinct type specimens."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png verified visually as the real buyfontssavelives.com homepage. No Instagram account exists; documented in AI Notes and asked in Open Question 1. No confirmed account to queue."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a named caption and a source link."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Type design is not a video/audio/writing discipline; no embeds expected or missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No Instagram exists; documented in AI Notes and Open Question 1."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Foundry, set_by agent."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "LinkedIn absence is now documented in AI Notes: 'LinkedIn: searched, no BFSL company page or relevant founder profile found (Paul Harpin / London Type has no public LinkedIn presence; only a third-party article exists).' Prior failing check resolved."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Type design, set_by jonathan, appropriate."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, 2-10, Studio. All set with reasoning in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Foundry/org entry; Autonomy is optional per calibration note 2026-06-21. AI Notes names Harpin and Graham as core operators."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are all appropriate; no evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body was site copy only; archived to clipped.md. No Jonathan voice, no relationship facts, no instructions present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual and grounded. No em-dashes. Seniority/leadership read present (Harpin and Graham named). LinkedIn search outcome documented."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration backfill)' is present."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with set_by. source_url null throughout; known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question: 'Instagram handle?' Conditional and appropriate."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Will be flipped to Needs Review on pass."
+    }
+  ],
+  "summary": "All 20 checks pass. The sole failing check from attempt 1 (B.links: LinkedIn not searched or documented) has been resolved: AI Notes now explicitly records that LinkedIn was searched for both the org and named founders, with no company page or personal profile found. All image, metadata, and machinery checks carry over from attempt 1 unchanged.",
+  "to": "jonathan"
+}

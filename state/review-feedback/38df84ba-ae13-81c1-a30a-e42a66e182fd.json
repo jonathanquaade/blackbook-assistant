@@ -1,0 +1,30 @@
+{
+  "page_id": "38df84ba-ae13-81c1-a30a-e42a66e182fd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "6 distinct projects across 6 directors and clients: Travis Scott/Dumbo, A$AP Rocky/pray4dagang, Nike Air Max DN, Harry Styles/Aperture, Lancome/Zendaya, Can-Am/Ditch The Norm"},
+    {"id": "A.depth", "result": "pass", "evidence": "Thumbnail + embed pattern per CLAUDE.md for video production company; each thumbnail is a frame from the actual film, not a cover card"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Creative direction + Film & video production; all 6 works are music videos or commercials, correctly on-capability"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png is division.global homepage (DIVISION logo, cinematic dark layout confirmed); site-02.png is instagram.com/division.global profile (100K followers, DIVISION bio confirmed)"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 6 thumbnails captioned with director, client/project and year, each with a Vimeo source link; context shots captioned Website and Instagram profile"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "6 Vimeo embeds in manifest, each paired with a thumbnail preview image and linked caption per the documented video pattern"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No unexplained gaps; all sources accessible via public Vimeo"},
+    {"id": "B.type", "result": "pass", "evidence": "Studio: correct for a director's rep and production company doing hands-on creative execution"},
+    {"id": "B.links", "result": "pass", "evidence": "Website (division.global), Instagram (instagram.com/division.global), LinkedIn (linkedin.com/company/divisionglobal), Email (commercials@division.global) all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Creative direction + Film & video production; appropriate for a production house representing directors across commercials and music video"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country: Australia/France/United States (Paris HQ, LA, Sydney offices); Size: 11-40; Work Status: Studio; all set with sources noted in AI Notes"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5 set with reasoning (fully self-directed, no parent company); org-type entry so field is optional per calibration note, but agent set it with grounded reasoning"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Clip note contains only a description ('house of directors'), no relationship facts; zero-states are appropriate"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note text preserved verbatim in Source; Name cleaned from 'Division (house of directors)' to 'Division'"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes states verifiable facts (founders, est. date, office locations, D&AD awards, client list); Autonomy estimate framed as a judgment; no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: 'Web clipper; clip note: house of directors' - present and correct"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have set_by: agent with verified_at timestamps; source_url null throughout but this is the documented systemic tooling gap, not a gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes and captions contain no em-dashes; manifest uses ' -- ' double hyphen as a separator"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "No open questions needed; all fields filled, no relationship facts to ask about, no story nudge triggered"},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching, ready to flip to Needs Review on gate pass"}
+  ],
+  "to": null
+}

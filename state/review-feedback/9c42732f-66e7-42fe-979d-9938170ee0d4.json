@@ -1,0 +1,111 @@
+{
+  "page_id": "9c42732f-66e7-42fe-979d-9938170ee0d4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct client sites: Atelier Munro, Westergas, Tenue de Nimes, Wieden+Kennedy Amsterdam, Holy Fools, Frankey, Dawn."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "6 of 7 clients have homepage plus one interior page shot. Appropriate depth for frontend web work."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Frontend development (web); all project images are screenshots of live client websites he built. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-01.png) is correctly pieter-de-jong.nl. No Instagram context shot, but AI Notes documents 'No Instagram found on site or via search' - absence is explained, no IG account to capture."
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 images have captions and source links in manifest."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Frontend developer, no audio/video work requiring embeds."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states no Instagram found; no IG to capture or queue."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, Email all present. No Instagram documented as absent in AI Notes. No public Instagram account exists per AI Notes."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Frontend development (web) matches the portfolio evidence."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands, Size 1, Freelance. AI Notes records 'site + LinkedIn snippet both indicate freelance/self-employed' as the multi-source basis."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent, reasoning in AI Notes ('works independently, delivers for agencies and brands, no evidence of leading teams or owning strategy')."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Unvetted/Don't know them) are appropriate; no evidence in the entry contradicts them."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Day Rate 400 is set_by jonathan (came via original clip/migration). No clip note text that was unacted on is visible."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read ('Mid-level'), Autonomy reasoning, Work Status source basis, and no unhedged assertions. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "fail",
+      "evidence": "Source field is 'Web clipper' but CLAUDE.md requires the format 'Web clipper, <created date>' for clipper entries. The page creation date is missing. The field is incomplete per the runbook format.",
+      "fix": "Set Source to 'Web clipper, <YYYY-MM-DD>' where the date is the Notion page created_time. Retrieve it via the API (keeper.py get returns created_time) and patch the Source field."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. null source_url is the known systemic tooling gap, exempted from gate per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written content."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. No unresolvable gaps remain that require asking Jonathan."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Currently Enriching. Reviewer holds at Enriching pending Source fix."
+    }
+  ],
+  "to": "scout"
+}

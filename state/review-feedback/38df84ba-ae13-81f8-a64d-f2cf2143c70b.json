@@ -1,0 +1,126 @@
+{
+  "page_id": "38df84ba-ae13-81f8-a64d-f2cf2143c70b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.manifest-incomplete",
+      "result": "fail",
+      "evidence": "manifest.json contains only 1 entry (site-01.png, the website context shot). 20 image files exist in assets/ but are not registered in the manifest and have never been uploaded to Notion. keeper.py upload was not run with the full manifest.",
+      "fix": "Rebuild manifest.json to register all work images with captions and source_url, then run keeper.py upload so images actually reach the Notion entry. Without this, the Notion page has no work imagery at all."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Only a website context shot (site-01.png, correct isleofany.com homepage) is present. No Instagram context shot exists in manifest.json or assets/. The checklist requires both.",
+      "fix": "Capture a screenshot of instagram.com/isleofany (the logged-out grid or a scrape.py shot) and add it to the manifest as a context_shot with caption 'Instagram profile'. If IG is throttled, queue to state/ig-queue.json, mark rejected in manifest, and document in AI Notes -- but the IG shot must be addressed, not silently absent."
+    },
+    {
+      "id": "A.project-diversity-duplicate-frames",
+      "result": "fail",
+      "evidence": "Three files (chatgpt-roadtrip-thumb.jpg, chatgpt-roadtrip-mq.jpg, chatgpt-roadtrip-sd.jpg) are the same frame from the same video at different resolutions. Similarly, coinbase-yourwayout-key-visual.jpg and coinbase-yourwayout-thumb.jpg show the same GTA-style street scene at different crops, and coinbase-bts-mq.jpg / coinbase-bts-sd.jpg are the same BTS frame. Multiple resolution copies of the same image do not count as distinct work.",
+      "fix": "Retain only the highest-resolution version of each unique frame. Replace the redundant slots with genuinely different shots: different scenes, different spots in the ChatGPT campaign, or work from A24 or NYT."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "fail",
+      "evidence": "Isle of Any is tagged Film & video production, and their known work (ChatGPT 'Road Trip' film, Coinbase 'Your Way Out' Oscars ad, NYT campaign) all exist as Vimeo or YouTube films. None are embedded in the manifest. Per checklist: project pages with YouTube/Vimeo must be embedded with a thumbnail preview image and linked caption, not just stills.",
+      "fix": "Add embed manifest entries (type: embed) for the main films (ChatGPT campaign film, Coinbase Your Way Out, NYT if available) with their YouTube/Vimeo URLs, captions, and link fields. Also add thumbnail images for each embed so the Notion page is not a wall of blank embeds."
+    },
+    {
+      "id": "B.email",
+      "result": "fail",
+      "evidence": "Email field is absent and AI Notes does not explain its absence. For a studio of this profile, a contact email is expected to be findable (contact page, press inquiries) or its absence documented.",
+      "fix": "Check isleofany.com contact page and any press/agency contact info. If genuinely absent (founders use LinkedIn/Instagram only), note 'No public email found; contact via site form or LinkedIn' in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Files are named by project (chatgpt-*, coinbase-*, nyt-*, isle-of-any-founders) and are legible as project-linked. However this check is moot given the manifest is incomplete and images were never uploaded."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images span 3 projects (ChatGPT campaign, Coinbase Your Way Out, NYT) plus a founders portrait, showing multiple perspectives within projects. Depth is adequate once duplicates are resolved."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are from advertising film campaigns (ChatGPT, Coinbase, NYT), consistent with Brand strategy / Creative direction / Film & video production tags."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absent sources; the failures are upload/manifest gaps, not missing sources."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: 2-founder boutique ideas company doing hands-on creative execution, not a large full-service agency."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (isleofany.com), Instagram (instagram.com/isleofany), LinkedIn (linkedin.com/company/isle-of-any) all present. Email is the gap (flagged separately). Instagram handle: isleofany matches the studio name and is plausible; could not independently verify identity but naming is unambiguous for this studio."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy, Creative direction, Film & video production -- appropriate for an ideas company whose output is advertising films."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US, Size 2-10, Work Status Studio -- all consistent with a 2-founder NY studio. AI Notes names the founders and notes small size."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 for a Studio type is acceptable per the calibration note (Autonomy optional for orgs; set when a single founder clearly embodies the org -- here two founders co-lead a fully independent studio)."
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with clip note which gives no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Isle of Any ad agency, openai, coinbase ad' -- studio identified, OpenAI and Coinbase work captured, Name cleaned. All instructions acted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes states facts (founded 2023, ex-Droga5, named campaigns, Ad Age award) as verifiable claims and includes seniority/experience read. No unhedged inferences detected. No em-dashes present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source field filled: 'Web clipper; clip note: Isle of Any ad agency, openai, coinbase ad' plus enrichment context."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout -- noted as known systemic tooling gap per calibration note, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Source reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field seen in entry output. No judgment fields with non-zero values require questions. Appropriate."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status remains Enriching -- correct, the reviewer has not yet passed it."
+    }
+  ],
+  "to": "scraper",
+  "summary": "4 failures, all in the scraper's domain. The two blockers are: (1) the manifest was never completed and upload never run, so Notion has zero work images; (2) no Instagram context shot was captured or queued. Secondary failures: duplicate resolution-variant frames of the same scene need culling, and video embeds are missing for a film studio whose whole output is YouTube/Vimeo films. Email absence should be documented. Metadata (scout work) is solid and passes cleanly."
+}

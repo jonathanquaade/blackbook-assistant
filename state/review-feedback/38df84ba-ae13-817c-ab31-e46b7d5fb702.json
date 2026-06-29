@@ -1,0 +1,113 @@
+{
+  "page_id": "38df84ba-ae13-817c-ab31-e46b7d5fb702",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Manifest has zero context shots. No website homepage screenshot (mackshepp.com) and no Instagram profile screenshot (instagram.com/mackshepp) anywhere in manifest.json. Six thumb-*.jpg files are on disk but are orphaned (not in manifest, never uploaded to Notion).",
+      "fix": "Add a website context shot (scrape.py shot https://www.mackshepp.com/ --out assets/38df84ba-ae13-817c-ab31-e46b7d5fb702 --caption 'Website') and an Instagram context shot (scrape.py shot https://www.instagram.com/mackshepp/ --out assets/38df84ba-ae13-817c-ab31-e46b7d5fb702 --caption 'Instagram profile'), add both to manifest.json, then re-upload."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "fail",
+      "evidence": "Mackenzie Sheppard is a film director; every project in the manifest is a video campaign. The manifest has zero embed entries. Six thumbnail files (thumb-apple-mac-bronzed.jpg, thumb-apple-mac-unplugged.jpg, thumb-amazon-castle-cat.jpg, thumb-fatal-fury.jpg, thumb-microsoft-windows.jpg, thumb-nike-moving-mountains.jpg) are on disk but have no corresponding embed entries in manifest.json and were never uploaded. The checklist requires video work to be embedded (Vimeo/YouTube) with thumbnail preview images, not just skipped.",
+      "fix": "For each project page on mackshepp.com, find the Vimeo or YouTube embed URL and add a manifest entry of type 'embed' with url, caption, and link. The thumb-*.jpg files already downloaded can be the preview images; add them to manifest.json as type 'image' paired with each embed. Then add the Apple Mac work (two campaigns: Bronzed and Unplugged) as embeds plus their thumbnails. Re-run keeper.py body-reset and upload."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "fail",
+      "evidence": "The clip note says 'Did the apple galre campaign. good stuff' -- Jonathan flagged Apple as the defining work. Apple Mac (Bronzed and Unplugged) appears nowhere in the manifest. The two Apple thumb files on disk are orphaned. The Apple work is the entire reason Jonathan added this entry and it is invisible in Notion.",
+      "fix": "Add Apple Mac Bronzed and Apple Mac Unplugged as embed + thumbnail pairs in the manifest (Vimeo links are on mackshepp.com project pages) and ensure they appear in the Work section on upload."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 images span 3 distinct projects (Amazon Business x3, Fatal Fury x3, Tiffany x2). Minimum 3 met. Images go inside projects: production design sketches, costume reference photos, and cinematic stills. NOTE: the Apple work flagged by Jonathan and the Nike/Microsoft/Amazon thumb work are absent from the manifest, so the diversity pass is conditional on the scraper addressing the embed failure above."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "site-02.png (costume sketch with director annotations) and site-03.png (costume reference sheet) show genuine production depth inside the Amazon project, not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production and Creative direction. All captured images are film stills and production materials from commercial campaigns. On-capability."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 manifest images have captions naming the project and year, plus a source link."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No IG throttle note needed; logged-out IG context shot not attempted but the fail is captured under A.context-shots."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person -- correct for an individual director."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (mackshepp.com), Instagram (instagram.com/mackshepp), Email (mackfilm@gmail.com) all present. LinkedIn documented in Open Questions as not found after 2 searches, which is the correct handling."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative direction and Film & video production are accurate for a commercial film director of this calibre."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Japan, Size: 1, Work Status: Freelance. AI Notes documents source resolution: site lists direct contact and rep by territory (no employer), which supports Freelance."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set by agent with grounded reasoning in AI Notes (Cannes Silver Lion 2023, D&AD Yellow Pencil 2024, major commercial clients, independent representation)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Unvetted, Never, Don't know them) are consistent with the clip note, which contains no relationship signal."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read, experience trajectory, Autonomy estimate with reasoning, and sources for all factual claims. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source preserves the clip note verbatim: 'Mackenzie Sheppard - Film Director Tokyo based film director. Did the apple galre campaign. good stuff'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have provenance entries in state/provenance/38df84ba-ae13-817c-ab31-e46b7d5fb702.json with set_by and verified_at. source_url is null on Open Questions (known systemic gap, not a gate failure per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, commas, and colons throughout. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question: LinkedIn not found. Conditional (no LinkedIn value already set). Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching, as expected while awaiting reviewer gate."
+    }
+  ],
+  "to": "scraper"
+}

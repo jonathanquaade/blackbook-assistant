@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://mathieurivier.ch/projets/",
+      "value": "https://mathieurivier.ch",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -21,23 +21,23 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "1",
+      "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "Switzerland"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T22:55:57",
+      "verified_at": "2026-06-29T22:05:52",
       "set_by": "agent"
     },
     "Work With?": {
@@ -56,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Employed",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-29T22:04:33",
       "set_by": "agent"
     },
     "Name": {
@@ -66,6 +66,54 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/mathieu_rivier/",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/pauline-saglio/",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "mathieu@rivier.org",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, migration (no clip date); Mathieu Rivier born 1986 Geneva, ECAL Media & Interaction Design graduate and current ECAL assistant; Pauline Saglio born 1989 Paris, ECAL Media & Interaction Design 2013 honours, now Head of M&ID at ECAL; both at mouvement.studio collective",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Duo entry: Mathieu Rivier (interaction designer/media artist, ECAL assistant, b. 1986 Geneva, site mathieurivier.ch) and Pauline Saglio (interaction designer, Head of Media & Interaction Design at ECAL since Sept 2013, site sagl.io). Mid-to-senior level; Saglio ~12 yrs experience post-ECAL, Mathieu ~similar tenure at ECAL as assistant. Both primarily employed at ECAL while running independent project work under the Pauline&Mathieu collaborative identity and as part of Mouvement Studio (4-person collective with Joelle Aeschlimann and Sebastien Matos). Practice spans tangible-digital installations, luxury brand interactive experiences (Hermes, Vacheron Constantin, Audemars Piguet, On Running), museum commissions. Capabilities corrected from migration tags (Graphic design, Art practice) to add Creative technology; their core work is interactive installations and tangible-digital design. Work Status Employed based on ECAL roles confirmed across ECAL site plus LinkedIn snippets for both. Instagram set to @mathieu_rivier (mathieurivier.ch links there; right person confirmed via search). LinkedIn set to Pauline Saglio Mouvement studio profile (ch.linkedin.com/in/pauline-saglio). Autonomy: 4 (both operate at senior/lead level; Saglio heads a department, Rivier runs his own studio alongside ECAL; both brief-to-output independently). This is a joint entry for two individuals; see Open Questions.",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:04:33",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Split into two entries? This is named as a duo (Mathieu Rivier + Pauline Saglio) but they are two separate individuals who each have their own studios and independent practices. They collaborate as \"Pauline&Mathieu\" and via Mouvement Studio. Should I create separate Person entries for each, or keep as one joint entry representing their collaboration?\n2. Capabilities: migration set Art practice + Graphic design, but their actual work is tangible-digital interactive installations (Creative technology). Should I add Creative technology and remove Graphic design, or keep as-is?\n3. Pauline Saglio's website is sagl.io (confirmed). Should I add that as a second website link, or set it instead of mathieurivier.ch?\n4. Autonomy: estimated 4 for both (senior/department-head level at ECAL, independent practices). Confirm?\n",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:04:52",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-29T22:06:27",
+      "set_by": "agent"
     }
   }
 }

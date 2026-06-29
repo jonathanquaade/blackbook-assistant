@@ -1,0 +1,113 @@
+{
+  "page_id": "1d892173-1b7f-4b29-ae7b-8add3c34a6aa",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active work images span individual artworks from 2018-2025 across ItsNiceThat feature, oscarukonu.com, and Corey Helford Gallery LA show. At least 8 distinct pieces."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Includes detail shot (Nene detail, int-04), full portraits, and a multi-figure composition (Headcount). Goes beyond hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured images are ballpoint pen illustration artworks matching the Illustration capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-05.png is oscarukonu.com homepage (OSCAR UKONU header and nav visible). site-06.png is instagram.com/oscarukonu profile (Instagram wordmark, handle oscarukonu, 196K followers visible). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active work images have project title, year, and source link. Context shots captioned Website and Instagram profile."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Oscar Ukonu is a visual artist (ballpoint pen illustration); no video/audio work to embed. Absence is not a failure here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Active work images are present from multiple sources. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (oscarukonu.com), Instagram (instagram.com/oscarukonu), LinkedIn (ng.linkedin.com/in/oscarukonu), Email (info@oscarukonu.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "fail",
+      "evidence": "TAXONOMY.md rule (line 75-76): 'Autonomous work, exhibitions, gallery representation -> Art practice (often both).' Oscar Ukonu has gallery representation at Omenka Gallery (Lagos) and Voltz Clarke Gallery (New York) and sells originals. The taxonomy rule is unambiguous: both Illustration AND Art practice should be tagged. The scout filed this as an Open Question asking Jonathan, but it is not Jonathan's call -- it is a taxonomy rule the agent can resolve. Asking Jonathan for a fact the rulebook settles is a conditional-question violation.",
+      "fix": "Add Art practice to Capabilities alongside Illustration. Remove Open Question 1 (it is answered by TAXONOMY.md). The scout must apply the taxonomy rule, not ask Jonathan to apply it."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Nigeria (confirmed Wikipedia, ItsNiceThat, own site). Size: 1. Work Status: Freelance with sources named in AI Notes (site + store, no employer found). AI Notes names the sources used."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes (fully self-directed, gallery rep, sets own vision, no employer)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all appropriate. Clip note contains no relationship facts or Jonathan commentary."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Oscar Ukonu's' (possessive fragment, no instructions or relationship facts). clipped.md archived. Name cleaned to Oscar Ukonu. No instructions were deferred."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read (mid-career), Autonomy reasoning, Work Status source resolution, and country correction with source. No unverified assertions stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-25'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by values. Known systemic null source_url on some fields is documented as a tooling gap (not a gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "fail",
+      "evidence": "Open Questions field contains an em-dash: '...and sells originals via his own store -- fits the autonomous-art definition alongside Illustration.' The character U+2014 (em-dash) appears at that position in the stored value.",
+      "fix": "Replace the em-dash in Open Question 1 with a comma or semicolon. Note: if B.capabilities fix removes Open Question 1 entirely (correct action), this fail resolves automatically."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "Open Question 1 asks Jonathan about Art practice capability, which TAXONOMY.md resolves unambiguously (gallery representation + sales = Art practice). Asking Jonathan for this is a conditional-question violation: never ask for a field the taxonomy rule already answers. Open Question 2 (Rating?) is valid.",
+      "fix": "Delete Open Question 1. Apply Art practice tag per taxonomy. Keep Open Question 2 (Rating?)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer is the one to flip it to Needs Review on pass -- correct process."
+    }
+  ],
+  "to": "scout"
+}
