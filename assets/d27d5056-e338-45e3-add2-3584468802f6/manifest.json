@@ -75,7 +75,7 @@
   {
     "file": "hypebeast-nike.jpg",
     "source_url": "https://imgproxy.domestika.org/unsafe/s:1440:1440/rs:fill/ex:true/el:true/plain/src://project-covers/001/309/594/1309594-original.?1634135911",
-    "caption": "Hypebeast X Nike, interactive ad overlay for VaporMax Evo on Hypebeast, 2021",
+    "caption": "Hypebeast X Nike, interactive ad overlay for VaporMax Evo, 2021",
     "link": "https://www.domestika.org/en/projects/1309594-hypebeast-x-nike",
     "captured_at": "2026-06-29"
   },
@@ -98,28 +98,27 @@
     "file": "site-12.png",
     "source_url": "https://web.archive.org/web/20240101000000/http://dxr.zone/",
     "rejected": true,
-    "caption": "Wayback Machine calendar page, not a site homepage shot",
+    "caption": "Wayback Machine calendar view, not a site homepage screenshot",
     "captured_at": "2026-06-29"
   },
   {
     "file": "site-13.png",
     "source_url": "https://web.archive.org/web/20240324000000/http://dxr.zone/",
     "rejected": true,
-    "caption": "Wayback Machine snapshot blank, WebGL site did not render without JS execution",
+    "caption": "Wayback Machine snapshot blank, WebGL site did not render in static capture",
     "captured_at": "2026-06-29"
   },
   {
     "file": "site-14.png",
     "source_url": "https://web.archive.org/web/20230801000000/http://dxr.zone/",
-    "caption": "Website (dxr.zone archived Aug 2023, via Wayback Machine)",
-    "link": "https://web.archive.org/web/20230801000000/http://dxr.zone/",
-    "captured_at": "2026-06-29",
-    "context_shot": true
+    "rejected": true,
+    "caption": "Wayback Machine snapshot blank, same WebGL rendering failure as site-13",
+    "captured_at": "2026-06-29"
   },
   {
     "file": "site-15.png",
     "source_url": "https://itsnicethat.com/articles/danny-baragwanath-rifke-sadlier-dxr-studio-digital-110221",
-    "caption": "It's Nice That feature (primary documentation source, dxr.zone domain expired)",
+    "caption": "Website (It's Nice That feature, used in lieu of dxr.zone, domain expired and Wayback snapshots blank due to WebGL)",
     "link": "https://itsnicethat.com/articles/danny-baragwanath-rifke-sadlier-dxr-studio-digital-110221",
     "captured_at": "2026-06-29",
     "context_shot": true
