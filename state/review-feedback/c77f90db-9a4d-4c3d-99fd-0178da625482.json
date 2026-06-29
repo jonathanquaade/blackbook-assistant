@@ -1,0 +1,111 @@
+{
+  "page_id": "c77f90db-9a4d-4c3d-99fd-0178da625482",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T23:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images across 5 distinct named series: Lovesody (3), Project Family (3), Still Life (3), Holy Onion (2), MISAKO & ROSEN installation views (3). No repeated-angle duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside series: individual prints from Lovesody and Still Life, an installation view showing the full Holy Onion panoramic piece, and individual Project Family domestic shots. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are fine-art photography. Capability tagged Photography. No off-capability work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opens to motoyukidaifu.blogspot.com (MOTOYUKI DAIFU header, nav links visible). site-02.png opens to instagram.com showing @motoyukidaifu profile (11.3k followers, bio confirmed). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry carries a caption naming the series plus a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Photography entry with no video/audio work. No embeds expected or needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "16 files captured; no thin or unexplained gaps. AI Notes document that LinkedIn was not found and explains why (fine-art practice, no employer structure)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (motoyukidaifu.blogspot.com), Instagram (instagram.com/motoyukidaifu, verified @motoyukidaifu in context shot), Email (motoyuki0720@hotmail.co.jp). LinkedIn documented as not found in AI Notes with reasoning. No LinkedIn expected for a Japanese fine-art photographer outside commercial networks; AI Notes make the absence explicit."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography tagged (jonathan-locked). Open Question correctly proposes adding Art practice via OQ rather than writing to a locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Japan. Size: 1. Work Status: Freelance. AI Notes name the sources (MISAKO & ROSEN artist page + blogspot site, no employer structure). Multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy 4 set with reasoning in AI Notes: independent artist, gallery-represented internationally, sets own projects, no evidence of directing a team. Grounded in career history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are consistent with no relationship evidence in the clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md shows template boilerplate only (no instructions from Jonathan). No clip-note facts to act on. Name cleaned to Motoyuki Daifu."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (15-18 years active exhibition history), Autonomy reasoning, Work Status source attribution, and explicit note that LinkedIn was not found. Factual claims (SFMOMA collection, ICP 2023, MEP 2022, Prix Pictet) are verifiable from public gallery records. No unjustified assertions found. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "note",
+      "evidence": "Source field reads 'Web clipper' without the creation date. CLAUDE.md requires 'Web clipper, <created date>' for migration/backfill entries. Entry is otherwise complete; flagged for calibration rather than bounce. In v2 this would be a scout fix before ship."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all written fields. source_url is null system-wide (known tooling gap, per calibration note in checklist -- not a v1 gate failure). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Open Questions, and all captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question proposing Art practice addition via OQ (correct channel for a jonathan-locked Capabilities field). Terse, non-redundant. No fields asked that already have non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "One soft miss: Source should be 'Web clipper, <created date>' not bare 'Web clipper'. Not bouncing in v1 but flagged for scout calibration. Caption accuracy on the MISAKO & ROSEN installation images (misako-01 'Untitled (Pee)', misako-02 'Untitled (Surround)') cannot be independently verified from this session -- titles are plausible given Daifu's known series but were taken from the gallery page without individual title tags. Jonathan will see the images and can correct if wrong.",
+  "to": null
+}

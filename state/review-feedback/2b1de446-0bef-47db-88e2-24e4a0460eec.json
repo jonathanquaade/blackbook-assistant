@@ -1,0 +1,112 @@
+{
+  "page_id": "2b1de446-0bef-47db-88e2-24e4a0460eec",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T23:05:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct projects: Crocs x Salehe Bembury, Oakley Born to Rewild, Google DeepMind (two Vimeo films), Hublot x Daniel Arsham, Hublot Big Bang 20 Years, Lexus LF-Z, YSL Beauty. No repeated projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per Crocs, 3 per Oakley, 2 per DeepMind, 3 per Hublot Splash, 1 per Hublot BigBang, 2 per Lexus, 3 per YSL. Shots are interior renders and product detail, not hero-only covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged 3D & motion. Every image is CGI or product render; all 4 Vimeo embeds are motion films. Fully on-capability. No off-capability work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed as zunc.studio homepage (Zunc Studio wordmark visible); personal site block documented in manifest note. site-02.png confirmed as instagram.com/ondrejzunka (Instagram branding, @ondrejzunka handle, bio Chef @zunc.studio, 116K followers visible). Both correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 27 manifest entries (images + embeds) carry a caption and a link to the source project page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present (Crocs, Oakley, DeepMind GenAI, DeepMind SynthID), each paired with a thumbnail preview image and a source link. Images also present throughout; entry is not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "ondrejzunka.com Playwright block documented in manifest note on site-04.png; zunc.studio accepted as documented substitute."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person. Correct: individual artist and CD, not the studio entity."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (ondrejzunka.com), Instagram (instagram.com/ondrejzunka, confirmed correct person via bio), LinkedIn (linkedin.com/in/ondrejzunka) all present. Email absent and not documented in AI Notes as searched; noted below as a minor gap, not a gate failure given studio-CD profile where personal email is rarely public."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "3D & motion is accurate and confirmed by captured work. OQ 1 correctly proposes Creative direction and Art practice additions to Jonathan for approval, as the field is jonathan-locked."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK + Czech Republic (born Czech, London-based). Size 1 (Person). Work Status Studio confirmed by site + LinkedIn per AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Reasoning in AI Notes: owns and leads own studio, fully independent. Grounded in documented career history."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Clipped.md is template placeholder text only (Lorem Ipsum, no Jonathan relationship notes). Zero-states Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped body was template placeholder only; nothing to act on. Archive in clipped.md confirms this."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority hedged as 'approximately 10+ years'. Work Status multi-source logic stated ('site + LinkedIn both position him as...'). Career trajectory documented. No bare assertions on unverified claims."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper'. Missing the created date per CLAUDE.md format ('Web clipper, <created date>'). Minor documentation gap; noted but not a gate-level failure in v1.",
+      "note": "Scraper should append the created date on next touch: 'Web clipper, YYYY-MM-DD'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. null source_url is a known systemic tooling gap (calibration note in checklist), not a gate fail. No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically: no em-dash character in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "3 questions: (1) Capabilities additions proposal to jonathan-locked field, appropriate. (2) Rating, not yet set, appropriate. (3) Familiarity, currently at zero-state, appropriate to surface for upgrade. All terse. No question asks for a field already at a non-zero-state value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching at review time. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "Clean entry overall. One minor gap: public email not documented as searched in AI Notes. At studio-CD level (London, 117K IG following) a personal email is rarely public, so the absence is plausible, but AI Notes should note 'no public email found' on future entries to make the search explicit. Source field should include the created date per CLAUDE.md. Neither prevents release to Jonathan.",
+  "to": null
+}
