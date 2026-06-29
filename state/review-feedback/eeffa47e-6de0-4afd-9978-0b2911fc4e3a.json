@@ -1,0 +1,111 @@
+{
+  "page_id": "eeffa47e-6de0-4afd-9978-0b2911fc4e3a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T23:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images across 5 distinct named projects: Salmon Festival, CentroCentro Madrid, Un exercici de violencia (IVAM), Linea d'argento, Fragments. No caption repeats."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 shots showing distinct assets: poster + programme + tote (Salmon); signage + brochure + wayfinding (CentroCentro); cover + interior spread + typography detail (IVAM); cover + interior layout + spread (Linea); poster + banner (Fragments). Goes inside projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are graphic design / editorial / identity / exhibition print work matching the tagged Capability. No off-capability captures. salmon-01 shows a festival banner in situ (identity-in-context, on-capability) though the other two Salmon images are stronger design shots."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-21.png verified as pauorts.com homepage (bio text visible, site confirmed). site-22.png verified as instagram.com/pauorts (Instagram chrome visible, handle 'pauorts', name 'Pau Orts Ros', 1,093 followers, work grid present)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 work images have project-named captions. 20 auto-scraped files correctly rejected in manifest. Note: all work image links point to site root (https://www.pauorts.com/) rather than project-level URLs. This is a JS-rendered Kirby site limitation; project subpaths exist but require render to discover. Captions identify projects clearly so lookup is possible."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video or audio work present in this graphic designer's portfolio. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site has good content and was captured. No gaps to explain."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (pauorts.com), Instagram (instagram.com/pauorts, verified correct person: IG shows 'Pau Orts Ros' handle 'pauorts'), LinkedIn (linkedin.com/in/pau-orts-ros-9b3575133), Email (info@pauorts.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set (jonathan-locked from migration). OQ #1 correctly proposes Identity systems, Spatial & exhibition design, Web design additions for Jonathan to confirm, rather than writing to a locked field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Spain. Size: 1. Work Status: Freelance. AI Notes names sources: LinkedIn (Self-employed) and site both consistent. Meets objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 2, set_by agent. Reasoning in AI Notes: strong craft, deeply collaborative, culturally niche practice. Seniority read present (mid-level, estimated 5-8 yrs, no large-studio pedigree)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no contradicting evidence. clipped.md is site copy only; no Jonathan commentary present."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry came from migration. clipped.md is Pau's own site bio text (no Jonathan instructions embedded). No hidden instructions missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Practice described as 'estimated 5-8 yrs' (hedged), 'no large-studio pedigree visible' (hedged). Clients named (IVAM, CentroCentro, Salmon) as verifiable facts. Autonomy reasoning hedged ('may need direction'). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated entry; pauorts.com, LinkedIn snippet, web search 2026-06-29'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by (agent or jonathan/migration as appropriate). source_url null throughout: known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified: no em-dashes in AI Notes, Open Questions, or any manifest caption."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ proposing Capabilities additions to a jonathan-locked field. Terse, non-redundant, correctly conditional (Capabilities field is locked so agent cannot write it directly)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently Enriching. Reviewer flipping to Needs Review."
+    }
+  ],
+  "notes": "Clean pass. One minor observation not rising to FAIL: all 14 work-image links point to the site root rather than per-project URLs. The site is JS-rendered (Swup/Kirby) and project page URLs were not harvested; captions name projects clearly so the traceability gap is minor. Recommend the scraper harvest project-level URLs on future JS-rendered Kirby sites by following /projects/[slug] path conventions visible in the CDN source URLs.",
+  "to": null
+}
