@@ -79,3 +79,6 @@ What kind of questions do I need to ask for you to your job?
 We ask a lot of questions in the beginning
 
 Portfolio (6 Images)
+# Archived page body (2026-06-29)
+
+Work

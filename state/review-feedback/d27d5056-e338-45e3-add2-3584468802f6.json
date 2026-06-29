@@ -1,87 +1,84 @@
 {
   "page_id": "d27d5056-e338-45e3-add2-3584468802f6",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-29T23:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 active images span 7 named or identifiable projects: Climate in Colour, Jac Satterwhite Boundless, Depop x Selfridges, Eco Fortuneteller, Institute of Digital Fashion, Jocelyn Anquetil, Hypebeast x Nike, Dazed x Burberry Boundless. Well above 3-project floor."
+      "evidence": "8 active work images span 8 distinct projects: Climate in Colour, Jac Satterwhite Boundless, Depop Space at Selfridges, Eco Fortuneteller, Institute of Digital Fashion, Jocelyn Anquetil, Hypebeast x Nike, Dazed x Burberry Boundless. Well above 3-project floor."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Interiors captured: Climate in Colour course screen, Jac Satterwhite 3D WebGL space, Depop microsite interior, Eco Fortuneteller satirical game, IDF 3D fashion render, Jocelyn Anquetil full portfolio site, Hypebeast x Nike overlay, Burberry Boundless 3D ring. Not just hero shots."
+      "evidence": "Interiors captured throughout: Climate in Colour course screen, Jac Satterwhite 3D WebGL scatter-space, Depop microsite interior, Eco Fortuneteller satirical game, IDF 3D fashion render, Jocelyn Anquetil full portfolio page, Hypebeast x Nike ad overlay, Burberry Boundless 3D ring. Not hero shots only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Frontend development (web). All captured work is interactive web/WebGL builds, microsites, custom digital experiences. On-capability. The open question about adding Web design + Creative technology is filed correctly as an OQ, not a tag change."
+      "evidence": "Tagged Frontend development (web). All 8 work images show interactive web builds, WebGL microsites, and custom digital experiences. On-capability. Capabilities OQ correctly files a proposal to expand the jonathan-locked field rather than self-tagging."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-11.png confirmed as instagram.com/dxr_zone showing 'PERMANENTLY CLOSED' bio, correct. site-15.png is It's Nice That feature article, captioned as such and documented as substitute for dead dxr.zone (Wayback attempts site-12/13/14 all rejected with reasons). Degraded context shot is fully documented and acceptable for a dissolved studio whose WebGL site could not render in archive."
+      "evidence": "site-11.png visually confirmed as instagram.com/dxr_zone (handle, PERMANENTLY CLOSED bio, grid visible). site-15.png is the It's Nice That feature article, captioned explicitly as a substitute for the dead dxr.zone domain; WebGL rendering failure and Wayback rejections (site-12, site-13, site-14) all rejected with documented reasons. Degraded-context exception for a dissolved studio is correctly invoked and documented."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-08.jpeg is captioned '3D/WebGL project (client unconfirmed), via It's Nice That'. The checklist requires every image names its project. 'client unconfirmed' signals the project is not fully identified. The checklist instruction is 'prefer fewer named images over more anonymous ones'. This image should either be identified or dropped.",
-      "fix": "Identify the client for site-08 (It's Nice That article, Feb 2021, same spread -- check article body text for the project name), or remove it and keep 10 fully identified images. Do not ship a captioned-as-unconfirmed image."
+      "result": "pass",
+      "evidence": "site-08.jpeg (the bounce-triggering image, 'client unconfirmed') is now rejected in the manifest with explicit reason. All 8 active work images and 2 context shots carry full captions with project name and source link. No uncaptioned images remain."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No YouTube/Vimeo video found embedded on the It's Nice That source article for these projects. Domestika and INN sources are image-only. No embed opportunity was missed as far as the manifest records."
+      "evidence": "Source pages (It's Nice That article, Domestika project pages) contain no YouTube/Vimeo embeds. No embed opportunity missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Dead dxr.zone domain documented in AI Notes. Three Wayback attempts rejected with explanation (WebGL rendering failure). IG throttle not invoked (logged-out IG shot was obtainable and captured). Absence of live homepage is explicitly documented."
+      "evidence": "AI Notes documents studio dissolution, expired domain, and Wayback WebGL failure. Three Wayback attempts rejected with individual reasons in manifest. No unexplained thinness."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a 2-person specialized web execution team."
+      "evidence": "Type = Studio. Correct: 2-person specialized web execution team, small and hands-on."
     },
     {
       "id": "B.all-links-present",
       "result": "pass",
-      "evidence": "Website (dxr.zone, expired but correct canonical), Instagram (dxr_zone confirmed by visual), LinkedIn (uk.linkedin.com/company/dxr-zone). Email absent but the studio is permanently dissolved; AI Notes does not call this out explicitly. Acceptable omission given dissolution, though a brief note in AI Notes would be cleaner."
+      "evidence": "Website (dxr.zone, expired canonical), Instagram (dxr_zone, visually confirmed correct person/studio), LinkedIn (uk.linkedin.com/company/dxr-zone). Email absent; acceptable for a permanently dissolved studio."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Frontend development (web) tagged, jonathan-locked per provenance. Open Question filed asking Jonathan to confirm Web design + Creative technology additions. Correct path for a locked field."
+      "evidence": "Frontend development (web) tagged, jonathan-locked per provenance. OQ filed as the correct path for proposing additions to a locked field."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country UK (migration, confirmed by Companies House and London address in AI Notes). Size 2-10 (accurate, 2-person studio). Work Status = Studio (correct structural type for an org; now dissolved, which is noted in AI Notes)."
+      "evidence": "Country UK (migration, corroborated by Companies House and London address in AI Notes). Size 2-10 (accurate). Work Status = Studio (correct structural type; dissolution documented in AI Notes)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry Type = Studio. Checklist calibration note (2026-06-21) states Autonomy is optional for org-type entries. No Autonomy field needed here."
+      "evidence": "Org-type entry (Studio). Autonomy is optional per checklist calibration 2026-06-21. Not required."
     },
     {
       "id": "C.no-judgment-contradiction",
-      "result": "fail",
-      "evidence": "The archived page body (clipped.md) is unmistakably Jonathan's own post-call notes: 'Should we work with them? Yes. Are talented and seem organised, honest and cheerful.' This is his voice, his judgment. The scout set Work With? = Unvetted and Familiarity = Don't know them. Both directly contradict the evidence. 'Should we work with them? Yes' is a clear Work With? statement (Definitely or Yes) from Jonathan. The body also implies Jonathan had a direct meeting or call with DXR Zone (process, payment terms, day rate, availability were all discussed), which should map to Familiarity >= Met or spoken at minimum. The scout was required to: (1) extract Work With? via set --from-jonathan, (2) assess Familiarity from the body evidence, (3) relocate his prose to Notes via set-notes --relocated-from-body. None of this happened. Notes is empty.",
-      "fix": "Scout must: (a) set Work With? = Yes (or Definitely) via keeper.py set --from-jonathan, with provenance set_by jonathan; (b) assess Familiarity from the call-note evidence -- the body reads as post-meeting notes (day rate, process, payment terms discussed in person), which maps to at minimum Met or spoken -- set via --from-jonathan; (c) move Jonathan's body prose verbatim to Notes via keeper.py set-notes <id> '...' --relocated-from-body; (d) if any judgment is ambiguous, ask via Open Questions (e.g. 'Work With? body says yes -- confirm Definitely?'), never zero-state a field when evidence contradicts it."
+      "result": "pass",
+      "evidence": "Work With? = Yes (set_by jonathan, verified 2026-06-29). Familiarity = Met or spoken (set_by jonathan, verified 2026-06-29). Notes filled with Jonathan's relocated call prose. Worked Together = Never (agent): the Depop item in the clip notes describes a pitch with a design delivered to a staging site, not a completed project -- this call was documented in the spawn prompt and is acceptable. No contradiction between fields and evidence."
     },
     {
       "id": "C.clip-note-acted-on",
-      "result": "fail",
-      "evidence": "The clipped body contained Jonathan's call notes with explicit judgment ('Should we work with them? Yes', day rate 500-600 GBP, process details, client mentions). These were not acted on: Work With? still Unvetted, Notes still empty, no --from-jonathan writes evident in provenance. The body-content handling rule (CLAUDE.md) requires: Jonathan's own commentary extracted for judgment fields via set --from-jonathan, prose relocated to Notes. Day Rate = 550 is in the entry but provenance shows set_by jonathan, which may be a pre-existing migration value -- it aligns with the '500-600 GBP' range in the notes, so that is fine.",
-      "fix": "Same as C.no-judgment-contradiction above. The scout pass needs to re-read the archived clipped.md and act on it fully before re-submitting."
+      "result": "pass",
+      "evidence": "Jonathan's body call-notes fully acted on: Work With? and Familiarity set via --from-jonathan (provenance shows set_by jonathan with 2026-06-29 timestamps). Notes field contains the relocated prose verbatim. Day Rate 550 was already on record (migration, aligns with the 500-600 GBP range in the notes)."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes cites sources (itsnicethat.com, Companies House, creativelivesinprogress.com, rifke.world, LinkedIn snippet). Facts stated are verifiable (dissolution date, client names, dissolution of studio). The note 'Jonathan has a Day Rate (550) and Rating (4) on record, suggesting a prior relationship' is correctly hedged with 'suggesting' rather than asserting a relationship. No em-dashes found in AI Notes."
+      "evidence": "AI Notes cites sources (itsnicethat.com, Companies House, creativelivesinprogress.com, rifke.world, LinkedIn snippet). Factual claims are verifiable. The phrase 'suggesting a prior relationship' is now slightly under-hedged given the confirmed jonathan Notes, but the statement is conservative rather than false; not a gate failure. No em-dashes. Seniority noted (2-person self-taught founders, founded 2019). Autonomy not required for Studio type."
     },
     {
       "id": "D.source-filled",
@@ -91,24 +88,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by correctly recorded for all touched fields. Rating and Day Rate correctly marked set_by jonathan. Capabilities marked set_by jonathan (correct, locked). null source_url is the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance file present; set_by correct for all fields including jonathan-locked Rating, Day Rate, Familiarity, Work With?, Notes, Capabilities. null source_url is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions. The open question uses '--' (double hyphen) which is acceptable."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Notes field. Double-hyphen in OQ is acceptable."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One open question filed, terse, conditional (Capabilities is jonathan-locked so the OQ is the correct path). No superfluous questions. Story nudge not applicable (Worked Together is Never and Familiarity is Don't know them per current state -- though this will change once the scout corrects those fields)."
+      "evidence": "One OQ: terse Capabilities expansion proposal for a jonathan-locked field. No superfluous questions. Story nudge not triggered: Notes is filled with Jonathan's call notes, so the 'AND Notes is empty' condition is not met."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching. Entry has not been flipped to Needs Review prematurely. Correct."
+      "evidence": "Entry flipped to Needs Review at verdict pass. Correct."
     }
   ],
-  "summary": "Two linked gate failures, both scout-owned: (1) Jonathan's call notes in the page body were not acted on -- Work With? = Unvetted when the body says 'Yes', Notes is empty when his prose should have been relocated there, Familiarity = Don't know them when the body implies a direct meeting. (2) One uncaptioned image (site-08, client unconfirmed). The image/context-shot work is otherwise strong and the dissolved-studio degraded capture is correctly documented. Fix the scout failures and this entry passes.",
-  "to": "scout"
+  "summary": "Both bounce failures fully resolved: (1) site-08 (client unconfirmed) rejected in manifest, no uncaptioned images remain; (2) Jonathan's call-note judgment extracted and applied -- Work With? = Yes and Familiarity = Met or spoken set via --from-jonathan, Notes filled with relocated prose. All 20 checks pass. Entry is complete and honest. Minor note for calibration: AI Notes still says 'suggesting a prior relationship' though the relationship is now confirmed via jonathan-set Notes -- not a gate failure (conservative rather than false), but the AI Notes could drop the hedge on the next revisit pass.",
+  "to": null
 }
