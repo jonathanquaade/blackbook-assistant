@@ -28,11 +28,12 @@
     },
     "Country": {
       "value": [
-        "Netherlands"
+        "Netherlands",
+        "Singapore"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -55,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-06-29T23:02:02",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +66,54 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/okok.services/",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://nl.linkedin.com/company/okok-services",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "areyou@okok.services",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Migration entry; enriched 2026-06-29 via okok.services (403), Developments Media interview, The Brand Identity, Spaces Lovers Magazine, Siteinspire, web search.",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Independent creative studio run by two co-founders: My Kim Bui (Amsterdam) and Faris Kassim (Singapore/Seoul). Distributed working model across ~7h time difference. Founded formally around 2019-2020 after both worked at Bravo (Singapore branding studio) ~10 years prior. Specialise in web design, frontend development, creative coding, WebGL, 3D, and generative branding. Clients include Adidas, Prada, Red Bull, Beyonce, SM Entertainment (SHINee), Singapore Art Museum, National Gallery Singapore. Highly capable studio doing all work in-house. Autonomy 4: they run the full project lifecycle (concept, design, build, delivery) with no apparent studio overhead.",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:02",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: migration set Frontend development (web) only; their work clearly includes Web design, Creative technology (WebGL, generative, installations), and 3D & motion. Confirm/expand?\n2. Rating?\n3. Familiarity?",
+      "source_url": null,
+      "verified_at": "2026-06-29T23:02:46",
+      "set_by": "agent"
     }
   }
 }
