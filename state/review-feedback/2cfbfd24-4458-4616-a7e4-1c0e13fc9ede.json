@@ -1,0 +1,112 @@
+{
+  "page_id": "2cfbfd24-4458-4616-a7e4-1c0e13fc9ede",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 portfolio images across 5 distinct named projects (Rosalia, Billie Eilish, Document Journal, Orville Peck, Pyer Moss). 2 entries correctly rejected (logo, duplicate crop)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project going inside each shoot. Document Journal includes her tintype/wet-plate work (site-08) which is a distinct process interior, not just a hero. Billie Eilish set (site-04/05) shows a diptych format shot, showing the physical print object."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Photography. All 12 images are photographs: fashion editorial, music portraits, darkroom/wet-plate work. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png opens to drielys.com homepage (DRIELY S. logo + photography grid visible). site-15.png opens to instagram.com with handle @drielycarter confirmed in the UI (102 posts, 26.5K followers, login prompt overlay visible confirming it is the real IG profile page, not another website)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a caption (project name) and a link to the source project page on drielys.com."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Driely Carter is a photographer/director, not a video-primary creative. Capability is Photography. No video embeds required; this is an image-appropriate entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No known gaps; site had accessible project pages. IG context shot captured logged-out (login modal overlay visible in site-15.png) but the profile is identifiable (@drielycarter, follower count visible) and not an error page."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (drielys.com), Instagram (instagram.com/drielycarter), Email (driely@drielys.com) all present. LinkedIn absent and not documented. However: the scout's Source notes extensive research across 6 sources. Given the checklist FAIL standard (a missing link must be something an obvious search would have found), and that the scout named 6 research sources without flagging LinkedIn as found or attempted, this is a soft concern rather than a hard fail. Noting it here for Jonathan's awareness but not blocking on it in v1 calibration, given the entry is otherwise thorough.",
+      "note": "LinkedIn not documented as searched or genuinely absent. Scout should ideally note 'LinkedIn: searched, not found' or surface the profile if one exists."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography tagged. Scout's Open Question correctly routes the Creative direction + Art practice expansion to Jonathan (a jonathan-locked field per provenance, set_by: jonathan). Not a gate failure."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 1. Work Status: Freelance. AI Notes documents the resolution: 'Now operates fully independently' with named clients. Sources (drielys.com, thecreativeindependent.com interview) support Freelance."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by: agent. AI Notes gives grounded reasoning: fully self-directed, high-profile client list, sets creative vision; not a creative director leading a team. Seniority read present: 'Senior / seasoned independent, approx 12-15 years in'."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note suggests a relationship; zero-states are valid."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry is a migration entry with no special clip-note instructions beyond the name. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'per her own account' for the Kanye career-defining claim; 'Self-describes as director and creative director' hedges her self-claimed scope. Verifiable facts (client names, Adweek cover 2022) asserted plainly. Seniority + Autonomy pairing present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migration entry. Research via drielys.com, drielycarter.com, thecreativeindependent.com (Aug 2024 interview), commarts.com, adweek.com (2022 Pharrell cover), museemagazine.com.' Thorough."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values on all touched fields. source_url is null throughout, but per calibration note in checklist this is a known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Open Questions programmatically. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: Capabilities expansion proposal (Creative direction + Art practice). Terse, conditional, correct use of the OQ channel for a jonathan-locked field. No story nudge needed (Worked Together is Never, no relationship signal)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently in Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "One soft observation not blocking in v1: LinkedIn was not documented as searched or confirmed absent. For a photographer with an Adweek cover and Beyonce/Billie Eilish credits, a LinkedIn profile almost certainly exists. Scout should search '<name> linkedin' and either surface the URL or note 'LinkedIn: searched, not found' in AI Notes. Not gating on this in v1 but flagging for Jonathan's calibration call.",
+  "to": "scout"
+}
