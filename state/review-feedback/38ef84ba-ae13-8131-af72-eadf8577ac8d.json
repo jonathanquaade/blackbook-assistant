@@ -1,0 +1,112 @@
+{
+  "page_id": "38ef84ba-ae13-8131-af72-eadf8577ac8d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T23:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 thumbnails from 7 distinct YouTube videos, each a different titled film (bricks, still frames, marathon, butterfly, failure, cinematic art, year recap). No near-duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each thumbnail is a genuine frame from the video rather than a generic channel hero. Given the medium (short-form film), video thumbnails are the interior content for this discipline. Playable embeds accompany every thumbnail."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production + Social media content. All 7 captured works are self-directed films/vlogs from @qfrost YouTube. Perfectly on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png: confirmed YouTube channel page for @qfrost/videos showing Quyen Van, subscriber count, video grid. site-03.png: confirmed instagram.com/qfroost profile showing qfroost handle, quyen van name, 344k followers, London. Both correct and match their captions. site-01.jpg (error page) correctly marked rejected. IG hi-res reels queued to state/ig-queue.json per the sanctioned exception; logged-out context shot at site-03.png is a real IG profile page (not an error), so the EXCEPTION clause does not apply here -- the IG context shot is present and valid."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 7 thumbnails have named video titles as captions and YouTube links. Both context shots have descriptive captions. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "All 7 YouTube videos are embedded with accompanying thumbnail preview images. Entry is not embeds-only: 9 images present (7 thumbs + 2 context shots)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains IG-only creator with no separate website. IG hi-res reels queued with reason documented. The entry is not silently thin."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass-with-note",
+      "evidence": "Website: set to https://www.instagram.com/qfroost/ (correct for IG-only creator with no separate site). Instagram: https://www.instagram.com/qfroost/ confirmed by context shot. LinkedIn: https://www.linkedin.com/in/quyen-van21/ present. Email: absent, not mentioned in AI Notes as searched. For an IG-only social creator, a public email may live in the IG bio or a linktree. The AI Notes does not document the search. Minor documentation gap; no evidence an obvious search was skipped, so not a hard fail, but worth noting.",
+      "note": "Scout should confirm whether IG bio or linked linktree carries a public business email, and document the result in AI Notes."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Film & video production + Social media content. Matches clip note ('videographer, editor the whole thing') and confirmed by YouTube channel content."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United Kingdom (confirmed by IG bio showing London). Size: 1 (solo creator). Work Status: Unknown with reasoning in AI Notes (LinkedIn shows Amazon history, current status unclear; sources named)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: Jonathan's clip note says 'the whole thing (shoot, edit, post)', suggesting high self-direction; hedged as no commercial client work confirmed. Seniority read: 'Early-to-mid career creator' present."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with the clip note, which contains no relationship facts. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note: 'A creator (videographer, editor the whole thing) / Q frost 340k followers'. Name cleaned to Quyen Van. Capabilities set to video + social. Autonomy 4 from 'the whole thing'. Follower count in AI Notes. YouTube handle @qfrost found and used as context shot source."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy estimate hedged ('though no commercial client work confirmed'). LinkedIn snippet treated as uncertain ('current status unclear'). Work history acknowledged as limited ('no stated agency background'). Seniority + experience read present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration backfill)'. Appropriate for a backfill entry."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by agent and timestamps. source_url is null throughout -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: no em-dashes found. Captions reviewed: none. Source: none."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. Judgment zero-states (Familiarity: Don't know them, Work With?: Unvetted) are valid as no evidence contradicts them and the clip note implies no prior relationship. No unresolvable ambiguities requiring a question."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate flip to Needs Review."
+    }
+  ],
+  "notes": "Entry is clean and complete for an IG-only social video creator. The IG hi-res reels are correctly queued (not a hold reason per CLAUDE.md). One minor documentation gap: no mention of whether a public business email was searched for (IG bio or linktree). Not a bounce -- no evidence the search was obviously skippable and findable. Jonathan should be aware the entry's hi-res IG reel capture is pending an ig.py drain.",
+  "to": null
+}

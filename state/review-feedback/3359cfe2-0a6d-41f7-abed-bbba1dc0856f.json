@@ -1,0 +1,111 @@
+{
+  "page_id": "3359cfe2-0a6d-41f7-abed-bbba1dc0856f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Hermes Legerete, Chateau de Prangins, On Running storytelling tools, Hermes Magic Shoe, Musee de Morat Panorama, Hermes Carre Surprise"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project showing installation interiors, not only hero/cover shots"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 work images show tangible-digital interactive installations consistent with Creative technology; migration tags (Art practice, Graphic design) are locked set_by jonathan and addressed via OQ2"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png is mouvement.studio homepage (confirmed); site-17.png is instagram.com/@mathieu_rivier with profile header visible (standard logged-out login modal, not an error page; profile name and grid visible behind modal)"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link to the source page"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 Vimeo embeds present (Carre Surprise, Panorama augmente), each paired with a thumbnail preview image and source link"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents DNS-dead mathieurivier.ch, thin sagl.io, and confirms mouvement.studio as the primary source"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio; OQ1 asks Jonathan whether to split into two Person entries, which is the correct deferral"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Website field holds https://mathieurivier.ch which is DNS-dead (documented in AI Notes). The live canonical site is https://mouvement.studio (source of all 15 scraped images and the website context shot). set_by: agent so the scout can correct it. OQ3 asks about sagl.io as a second site but does not flag the dead primary Website or propose updating it to mouvement.studio. Jonathan will hit a broken link.",
+      "fix": "Update Website field to https://mouvement.studio (the only live, richer canonical for this entry). Revise OQ3 to read something like: 'Website was mathieurivier.ch (DNS-dead), updated to mouvement.studio. Should I also add sagl.io (Pauline Saglio personal site) as a second link?'"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Migration-locked tags (set_by jonathan) left in place; OQ2 asks for correction to Creative technology. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Switzerland, 2-10, Employed; sources (ECAL site + LinkedIn snippets for both) named in AI Notes; objective multi-source rule satisfied"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (Saglio heads ECAL department, Rivier runs own studio alongside ECAL; both brief-to-output independently)"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Unvetted, Never, Don't know them) are consistent with no contradicting evidence in the clip note or body"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry with no clip-note instructions beyond the compound name; compound name handled correctly"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority read is grounded (ECAL roles, years) and hedged; clients named as verifiable facts; no bare assertions"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source field present: migration baseline with research context"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by and verified_at; null source_url is a known systemic tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or manifest"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "4 questions, all terse and conditional; none ask for already-set fields; locked-field proposals correctly routed via OQ not via direct write"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching, correct pending this gate"
+    }
+  ],
+  "to": "scout"
+}

@@ -1,113 +1,110 @@
 {
   "page_id": "38df84ba-ae13-817c-ab31-e46b7d5fb702",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-29T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-29T22:30:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Manifest has zero context shots. No website homepage screenshot (mackshepp.com) and no Instagram profile screenshot (instagram.com/mackshepp) anywhere in manifest.json. Six thumb-*.jpg files are on disk but are orphaned (not in manifest, never uploaded to Notion).",
-      "fix": "Add a website context shot (scrape.py shot https://www.mackshepp.com/ --out assets/38df84ba-ae13-817c-ab31-e46b7d5fb702 --caption 'Website') and an Instagram context shot (scrape.py shot https://www.instagram.com/mackshepp/ --out assets/38df84ba-ae13-817c-ab31-e46b7d5fb702 --caption 'Instagram profile'), add both to manifest.json, then re-upload."
-    },
-    {
-      "id": "A.embeds-for-video",
-      "result": "fail",
-      "evidence": "Mackenzie Sheppard is a film director; every project in the manifest is a video campaign. The manifest has zero embed entries. Six thumbnail files (thumb-apple-mac-bronzed.jpg, thumb-apple-mac-unplugged.jpg, thumb-amazon-castle-cat.jpg, thumb-fatal-fury.jpg, thumb-microsoft-windows.jpg, thumb-nike-moving-mountains.jpg) are on disk but have no corresponding embed entries in manifest.json and were never uploaded. The checklist requires video work to be embedded (Vimeo/YouTube) with thumbnail preview images, not just skipped.",
-      "fix": "For each project page on mackshepp.com, find the Vimeo or YouTube embed URL and add a manifest entry of type 'embed' with url, caption, and link. The thumb-*.jpg files already downloaded can be the preview images; add them to manifest.json as type 'image' paired with each embed. Then add the Apple Mac work (two campaigns: Bronzed and Unplugged) as embeds plus their thumbnails. Re-run keeper.py body-reset and upload."
-    },
-    {
-      "id": "C.clip-note-acted-on",
-      "result": "fail",
-      "evidence": "The clip note says 'Did the apple galre campaign. good stuff' -- Jonathan flagged Apple as the defining work. Apple Mac (Bronzed and Unplugged) appears nowhere in the manifest. The two Apple thumb files on disk are orphaned. The Apple work is the entire reason Jonathan added this entry and it is invisible in Notion.",
-      "fix": "Add Apple Mac Bronzed and Apple Mac Unplugged as embed + thumbnail pairs in the manifest (Vimeo links are on mackshepp.com project pages) and ensure they appear in the Work section on upload."
-    },
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 images span 3 distinct projects (Amazon Business x3, Fatal Fury x3, Tiffany x2). Minimum 3 met. Images go inside projects: production design sketches, costume reference photos, and cinematic stills. NOTE: the Apple work flagged by Jonathan and the Nike/Microsoft/Amazon thumb work are absent from the manifest, so the diversity pass is conditional on the scraper addressing the embed failure above."
+      "evidence": "7 distinct projects: Apple Mac Bronzed, Apple Mac Unplugged, Fatal Fury, Amazon Castle of the Cat, Nike Moving Mountains, Microsoft Windows, Tiffany. Well above the 3-project minimum."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "site-02.png (costume sketch with director annotations) and site-03.png (costume reference sheet) show genuine production depth inside the Amazon project, not just hero shots."
+      "evidence": "site-01/02/03 go inside Amazon (cinematic stills plus costume design sketch with director annotations, costume reference sheet). site-04/05/06 go inside Fatal Fury (SNK city fly-through, retro arcade still, Eubank vs Benn pixel art title card). Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Film & video production and Creative direction. All captured images are film stills and production materials from commercial campaigns. On-capability."
+      "evidence": "Tagged Film & video production and Creative direction. All images are commercial film stills, production materials, and video thumbnails. No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-09.png (context_shot: true, caption 'Website') opens to mackshepp.com homepage with nav bar 'mackenzie sheppard - Original Series, Films, Commercials, MV, Weird, Archive, About'. site-10.png (context_shot: true, caption 'Instagram profile') opens to instagram.com showing @mackshepp handle, 'Mackenzie Sheppard' name, Instagram logo top-left. Both confirmed correct."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 8 manifest images have captions naming the project and year, plus a source link."
+      "evidence": "All 16 images in manifest have captions naming the project and year, plus a source link. No anonymous entries."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo embeds present: Apple Mac Bronzed (1078540617), Apple Mac Unplugged (1078542763), Fatal Fury (1074642251), Amazon Castle of the Cat (1116958696), Nike Moving Mountains (487691322), Microsoft Windows (1191723329). Each paired with a thumbnail preview image and linked caption."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No IG throttle note needed; logged-out IG context shot not attempted but the fail is captured under A.context-shots."
+      "evidence": "No thin content; IG context shot obtained via logged-out scrape. No queue entry needed."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person -- correct for an individual director."
+      "evidence": "Type: Person. Correct for an individual commercial director."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (mackshepp.com), Instagram (instagram.com/mackshepp), Email (mackfilm@gmail.com) all present. LinkedIn documented in Open Questions as not found after 2 searches, which is the correct handling."
+      "evidence": "Website (mackshepp.com), Instagram (instagram.com/mackshepp), Email (mackfilm@gmail.com) present. LinkedIn documented as not found after 2 attempts in Open Questions (correct handling per CLAUDE.md)."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Creative direction and Film & video production are accurate for a commercial film director of this calibre."
+      "evidence": "Creative direction and Film & video production. Accurate for a senior commercial director with Cannes/D&AD/Ciclope awards."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Japan, Size: 1, Work Status: Freelance. AI Notes documents source resolution: site lists direct contact and rep by territory (no employer), which supports Freelance."
+      "evidence": "Country: Japan, Size: 1, Work Status: Freelance. AI Notes documents source resolution: site lists direct contact and per-territory commercial reps, no employer signal."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4 set by agent with grounded reasoning in AI Notes (Cannes Silver Lion 2023, D&AD Yellow Pencil 2024, major commercial clients, independent representation)."
+      "evidence": "Autonomy 4 set by agent with grounded reasoning in AI Notes (Cannes Silver Lion 2023, D&AD Yellow Pencil 2024, 10x Vimeo Staff Pick, major clients Apple/Nike/Amazon/Microsoft, independent commercial representation across USA/UK/Europe/Japan)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Unvetted, Never, Don't know them) are consistent with the clip note, which contains no relationship signal."
+      "evidence": "Zero-states (Unvetted, Never, Don't know them) are consistent with clip note, which contains no relationship signal beyond 'good stuff' (taste, not relationship)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note flags 'Did the apple galre campaign.' Apple Mac Bronzed and Apple Mac Unplugged are now present as both embed+thumbnail pairs in the manifest, and Source preserves the clip note verbatim."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes includes seniority read, experience trajectory, Autonomy estimate with reasoning, and sources for all factual claims. No unhedged inferences."
+      "evidence": "Seniority read present (senior independent director, ~11-12 years, award history cited), Autonomy estimate with reasoning, Work Status sourcing documented, rep relationships described. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source preserves the clip note verbatim: 'Mackenzie Sheppard - Film Director Tokyo based film director. Did the apple galre campaign. good stuff'."
+      "evidence": "Source: 'Mackenzie Sheppard - Film Director Tokyo based film director. Did the apple galre campaign. good stuff' -- clip note verbatim."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All fields have provenance entries in state/provenance/38df84ba-ae13-817c-ab31-e46b7d5fb702.json with set_by and verified_at. source_url is null on Open Questions (known systemic gap, not a gate failure per calibration note)."
+      "evidence": "All fields have provenance in state/provenance/38df84ba-ae13-817c-ab31-e46b7d5fb702.json with set_by and verified_at. source_url null on Images and Open Questions (known systemic gap, not a gate failure per calibration note)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions use semicolons, commas, and colons throughout. No em-dashes found."
+      "evidence": "AI Notes uses semicolons and commas throughout. Open Questions uses periods. No em-dashes found in any agent-written field."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse question: LinkedIn not found. Conditional (no LinkedIn value already set). Appropriate."
+      "evidence": "One question: LinkedIn not found. Terse, conditional (no LinkedIn value already set), not redundant."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching, as expected while awaiting reviewer gate."
+      "evidence": "Status is Enriching; will be flipped to Needs Review by this reviewer pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }
