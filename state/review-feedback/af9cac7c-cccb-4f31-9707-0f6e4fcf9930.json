@@ -1,0 +1,111 @@
+{
+  "page_id": "af9cac7c-cccb-4f31-9707-0f6e4fcf9930",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Non-visual strategist entry; no image portfolio expected. Bookmarks (House of Coco interview, LinkedIn) are the correct shape for a consultant."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A for a strategist; bookmarks reference named work history (Sophia Webster, Rixo, Martine Rose)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Captured work (interview, LinkedIn) is on-capability for Brand strategy / ecommerce consultant. No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-01.png is captioned 'Instagram profile' and sourced from instagram.com/lesleyboerio, but the image is a blank white page showing only the Instagram logo and 'from Meta' -- a logged-out IG error/splash page, not a real profile screenshot. The checklist exception (broken capture is acceptable if: rejected: true in manifest AND documented in AI Notes AND queued to ig-queue.json) is not met: the manifest entry has no 'rejected' flag, the entry is absent from state/ig-queue.json, and AI Notes do not mention that the IG context shot failed. No website context shot exists (website is dead -- this absence is acceptable as documented). The broken IG splash that is not flagged, not queued, and not documented is a FAIL.",
+      "fix": "In manifest.json: add 'rejected': true to the site-01.png entry. Add Lesley Boerio to state/ig-queue.json with reason 'logged-out IG served error/splash page; real profile screenshot needs ig.py logged-in grab'. In AI Notes: add one sentence noting the IG context shot returned an error page and is queued for a logged-in ig.py run. No new image capture is needed now -- queuing is the sanctioned path."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "The one image and both bookmarks carry captions and links."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video/audio applicable for a strategist. Bookmarks are the correct format."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Dead website documented in AI Notes and Open Questions. IG issue is the separate fail above; once that is queued and documented the absence is properly explained."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person -- correct, set_by agent."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website present (dead, documented), Instagram present (URL plausible from Google search, profile verification is the IG-queue task), LinkedIn present. Email: no public email found; website is dead and no email surfaces on IG or LinkedIn snippet -- absence is plausible for a solo consultant with a lapsed site. Not a clear search miss."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy, set_by jonathan (provenance confirms). Correct."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK/1/Freelance. Work Status sourced from LinkedIn (Founder of Lesley Boerio Fashion Consultancy) plus self-founded consultancy. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: experienced solo practitioner, client-facing, but specialist rather than broad CD. Grounded in work history."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are consistent with the clip note (no relationship language; 'Working for Vyrao' is a fact about her work, not about Jonathan knowing her). Notes field is jonathan's, left untouched."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note content (Vyrao ecommerce launch, portfolio images reference) was read and the Vyrao work surfaced in AI Notes. No judgment statements in the clip that would require --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges years (~18-20), notes website may be temporarily down or domain lapsed, sources Work Status to LinkedIn. Seniority + Autonomy read present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated entry; LinkedIn snippet via Google search 2026-06-29' -- filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have set_by values. source_url is null throughout -- known systemic tooling gap, not a gate failure per calibration note 2026-06-21. set_by values are correct (jonathan for Notes and Capabilities, agent for everything else the agent set)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions contain no em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about the dead website. Conditional (no duplicate of a filled field). Story nudge not triggered (no relationship indicators)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching -- correct, awaiting this gate."
+    }
+  ],
+  "to": "scraper"
+}

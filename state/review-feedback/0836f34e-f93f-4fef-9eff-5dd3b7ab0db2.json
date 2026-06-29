@@ -1,0 +1,119 @@
+{
+  "page_id": "0836f34e-f93f-4fef-9eff-5dd3b7ab0db2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: We Bulletproof Brands, Lemkus, Maggie Rose, Amuse Bouche, Sleep Well Creative, VWLab. No duplicate projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Maggie Rose has 3 interior shots (brief, full layout, product page). Multiple interior views for other projects where accessible."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are interactive web sites and web products, matching the tagged Frontend development (web) capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as victor.work homepage (shows 'VICTOR WORK' logotype). site-02.png confirmed as instagram.com/@victorwork_ profile (shows 7,869 followers, 'Victor Work' bio, web animation content). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active images have captions naming the project and source links. No uncaptioned images in the active set."
+    },
+    {
+      "id": "A.sleep-well-textures",
+      "result": "fail",
+      "evidence": "site-05.webp and site-06.webp are both captioned 'Sleep Well Creative website' but the actual images are raw CDN texture assets: site-05 is a blue-on-blue watercolor blob pattern; site-06 is blue and black oval brushstrokes on cream. Neither shows the Sleep Well Creative website as a product. They are background texture files pulled from the site's Webflow CDN (cdn.prod.website-files.com). They do not represent Victor's web design/development work and are visually misleading.",
+      "fix": "Replace site-05.webp and site-06.webp with an actual screenshot of the sleep-well-creatives.com homepage and/or interior pages showing the web product Victor built. Use scrape.py shot https://sleep-well-creatives.com/ to get a proper page screenshot, or capture the best loaded state. If the site renders blank due to WebGL, mark it rejected and document it as a WebGL blank (matching the pattern used for Garoa and Impermanence), and either get a screenshot from the Awwwards listing or Behance, or drop it from the set and rely on the other 5 projects."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Scraper documented that no Vimeo/YouTube showreel exists for Victor. WebGL-only projects render blank in static capture. Gap is documented and the documented-absence path was followed correctly."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "WebGL blank-render limitation is documented in the manifest (Garoa Skincare, Impermanence, VWLab Animaster all rejected with reason). Documented in the spawn prompt. Sanctioned path followed."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (victor.work), Instagram (instagram.com/victorwork_, confirmed right person), LinkedIn (ca.linkedin.com/in/workvictor), Email (victor@victor.work). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) is jonathan-locked. Open Question 1 correctly proposes additions (Web design, 3D & motion, Creative technology) without overwriting his setting. Correct handling for a locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Canada. Size: 1. Work Status: Freelance, resolved from site + Awwwards + Unicorn Factory (three sources agree); LinkedIn consistent. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: self-directed, award wins, runs own client work. Grounded in work history."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "fail",
+      "evidence": "clipped.md contains Jonathan's own call/meeting notes (his voice throughout: 'Should we work with them? Yes. Seems very capable. A bit restrained but makes up for it in his professionalism in spades.'). This is Jonathan having met or spoken with Victor and documented the call. Familiarity is set to 'Don't know them' which directly contradicts the evidence that Jonathan had a substantive call/meeting with this person. The notes describe a structured interview covering rates, stack, process and availability. Familiarity should be at minimum 'Met or spoken' and the Work With? answer is effectively stated ('Yes') in his own words. Additionally, the Day Rate in the entry is 430 but the call notes say 600USD/d -- no provenance for 430 and no documentation of the discrepancy.",
+      "fix": "Read the clipped.md call notes and act on them via set --from-jonathan. Map: 'Yes. Seems very capable.' to Work With? = Yes (Jonathan's stated verdict). The call itself sets Familiarity to at minimum 'Met or spoken'. Move Jonathan's call notes verbatim into Notes via keeper.py set-notes --relocated-from-body. Resolve the Day Rate discrepancy: call notes say 600USD/d, entry says 430; ask Jonathan or trust the call notes and set 600 via --from-jonathan with source referencing the call."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "fail",
+      "evidence": "The page body contained Jonathan's call notes (now archived to clipped.md). The scout archived them but did not: (1) extract his stated judgments via set --from-jonathan, (2) move his prose into Notes via set-notes --relocated-from-body, or (3) ask about the Day Rate discrepancy (call says 600, entry says 430). These are P1 runbook requirements per CLAUDE.md body-content-handling section.",
+      "fix": "Same as C.no-judgment-contradicts above. Also check if Notes field is currently empty -- if so, the call notes must be relocated there from clipped.md verbatim. Do not rephrase or summarize his words."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes a seniority read ('Early-to-mid career'), Autonomy reasoning, Work Status sources named, and awards are factual (verifiable from Awwwards). No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration backfill)'. Present."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null throughout -- known systemic tooling gap, not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One open question, terse, conditional (Capabilities is jonathan-locked so asking is correct). No redundant questions for fields already set."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status remains Enriching. Reviewer has not flipped it due to fails. Correct."
+    }
+  ],
+  "summary": "Two FAILs block this entry. (1) Scout failure: Jonathan's call/meeting notes in the page body were archived to clipped.md but not acted on -- his stated judgment ('Yes. Seems very capable', work through meeting) was never written to Work With?, Familiarity, or Notes via the correct set-notes path. The Day Rate discrepancy (call: 600USD/d, entry: 430) is undocumented. (2) Scraper failure: site-05 and site-06 are raw CDN texture assets (watercolor blobs, painted ovals) mislabeled as the Sleep Well Creative website -- they are not representative work and are misleading. Fix both before re-gate.",
+  "to": "scout"
+}

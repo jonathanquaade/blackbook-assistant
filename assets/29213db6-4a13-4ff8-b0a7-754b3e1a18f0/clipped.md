@@ -55,3 +55,6 @@ Sitemap, Design. Open to discussing though
 Portfolio (6 Images)
 
 http://www.fereos.net/
+# Archived page body (2026-06-29)
+
+Work

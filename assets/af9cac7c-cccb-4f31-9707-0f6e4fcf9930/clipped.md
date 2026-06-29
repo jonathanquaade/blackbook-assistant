@@ -13,3 +13,10 @@ Working for Vyrao on their ecommerce launch
 Experience: 
 
 Portfolio (6 Images)
+# Archived page body (2026-06-29)
+
+Work
+
+House of Coco interview: Lesley Boerio and L&Clay Ceramics — houseofcoco.net
+
+LinkedIn: Lesley Boerio, fashion and ecommerce consultant — uk.linkedin.com
