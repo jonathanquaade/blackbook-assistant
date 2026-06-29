@@ -58,17 +58,17 @@
     "captured_at": "2026-06-29"
   },
   {
-    "file": "site-05.webp",
-    "source_url": "https://cdn.prod.website-files.com/68fcf9490b2a28caaa0e59bc/68fcf9490b2a28caaa0e59c6_tunnel_texture.webp",
-    "caption": "Sleep Well Creative website, 2026",
-    "link": "https://sleep-well-creatives.com/",
+    "file": "sleep-well-aww-01.png",
+    "source_url": "https://assets.awwwards.com/awards/element/2025/12/694c6a6df22b2254674363.png",
+    "caption": "Sleep Well Creative, desktop view (Awwwards SOTD, 2026)",
+    "link": "https://www.awwwards.com/sites/sleep-well-creative",
     "captured_at": "2026-06-29"
   },
   {
-    "file": "site-06.webp",
-    "source_url": "https://cdn.prod.website-files.com/68fcf9490b2a28caaa0e59bc/68fcf9490b2a28caaa0e59c7_floor_texture.webp",
-    "caption": "Sleep Well Creative website, floor texture, 2026",
-    "link": "https://sleep-well-creatives.com/",
+    "file": "sleep-well-aww-02.png",
+    "source_url": "https://assets.awwwards.com/awards/element/2025/12/694c6a6e0bf2a096551337.png",
+    "caption": "Sleep Well Creative, mobile screens (Awwwards SOTD, 2026)",
+    "link": "https://www.awwwards.com/sites/sleep-well-creative",
     "captured_at": "2026-06-29"
   },
   {
@@ -77,6 +77,33 @@
     "caption": "VWLab web animation education platform, 2025",
     "link": "https://vwlab.io/",
     "captured_at": "2026-06-29"
+  },
+  {
+    "file": "site-05.webp",
+    "source_url": "https://cdn.prod.website-files.com/68fcf9490b2a28caaa0e59bc/68fcf9490b2a28caaa0e59c6_tunnel_texture.webp",
+    "caption": "Sleep Well Creative raw CDN texture asset (blue watercolour blob, not a website screenshot)",
+    "link": "https://sleep-well-creatives.com/",
+    "captured_at": "2026-06-29",
+    "rejected": true,
+    "rejected_reason": "raw CDN texture asset, not the website"
+  },
+  {
+    "file": "site-06.webp",
+    "source_url": "https://cdn.prod.website-files.com/68fcf9490b2a28caaa0e59bc/68fcf9490b2a28caaa0e59c7_floor_texture.webp",
+    "caption": "Sleep Well Creative raw CDN texture asset (blue/black brushstrokes, not a website screenshot)",
+    "link": "https://sleep-well-creatives.com/",
+    "captured_at": "2026-06-29",
+    "rejected": true,
+    "rejected_reason": "raw CDN texture asset, not the website"
+  },
+  {
+    "file": "site-23.png",
+    "source_url": "https://sleep-well-creatives.com/",
+    "caption": "Sleep Well Creative loading screen (WebGL renders blank in static capture)",
+    "link": "https://sleep-well-creatives.com/",
+    "captured_at": "2026-06-29",
+    "rejected": true,
+    "rejected_reason": "WebGL canvas renders blank in headless capture, shows only Enter Site loading screen"
   },
   {
     "file": "site-03.png",

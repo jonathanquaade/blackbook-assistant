@@ -2,88 +2,83 @@
   "page_id": "29213db6-4a13-4ff8-b0a7-754b3e1a18f0",
   "reviewer_version": "v1",
   "reviewed_at": "2026-06-29T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 distinct client site screenshots: Anemi Hotel, Golden Ratio Architects, Medecins du Monde Greece, Baltakos Law, ANAX Group, Athenian Yachts, Hellenica, Ikon Living. All visually distinct, confirmed via image review."
+      "evidence": "14 portfolio shots across 8 distinct client sites: Anemi Hotel, Golden Ratio Architects, Medecins du Monde Greece, Baltakos Law, ANAX Group, Athenian Yachts, Hellenica, Ikon Living. Two MDM Greece interior shots are marked rejected. Strong diversity confirmed via image review."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "All 8 client shots are hero/landing-page screenshots only. No interior pages, sub-pages, or UX flow screens captured. For a frontend dev studio the work is in the page layouts, navigation, forms and sub-pages, not just the above-the-fold hero. Checklist requires going inside projects.",
-      "fix": "For at least 3 of the 8 client sites, capture 1-2 interior pages (e.g. a hotel rooms sub-page, an architects project gallery, a law firm contact or services page) that show the actual UX and layout work beyond the homepage hero."
+      "result": "pass",
+      "evidence": "6 interior pages added across 3 client sites: Anemi Hotel /accommodation (site-11) and /gastronomy (site-14), Athenian Yachts /charters (site-12) and /destinations (site-17), Ikon Living /our-products (site-13) and /product-category (site-18). Images confirmed via visual inspection. MDM Greece interiors were unreachable due to JS routing 404s and are marked rejected in the manifest."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capability is Frontend development (web); all 8 images are screenshots of live websites Lab21 built. On-capability."
+      "evidence": "Capability is Frontend development (web); all portfolio images are screenshots of live websites built by Lab21. On-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-09.png confirmed: lab21.gr homepage showing 'Web development studio' heading. site-10.png confirmed: instagram.com showing lab21.gr profile with 1,167 followers, grid visible. Both correct."
+      "evidence": "site-09.png: lab21.gr homepage showing 'Web development studio' heading and full nav. Correct. site-10.png: instagram.com showing lab21.gr profile page with logo, 1,167 followers, and grid. Correct."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 10 manifest entries have captions and source links."
+      "evidence": "All 16 non-rejected manifest entries have captions and source links. Two rejected entries (site-15, site-16) have captions too but are excluded from the live set."
     },
     {
       "id": "A.embeds-video-audio",
       "result": "pass",
-      "evidence": "No video/audio work applicable for a frontend dev studio; screenshots are the correct specimen type."
+      "evidence": "Not applicable; frontend web dev studio work is represented by website screenshots, which is the correct specimen type."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Not applicable; images are present."
+      "evidence": "MDM Greece interior pages marked rejected in manifest with the reason documented (JS routing 404s). AI Notes covers the limitation."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct; sole-founder web dev studio."
+      "evidence": "Type: Studio. Correct; small specialized web dev studio with hands-on execution."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website, Instagram (confirmed correct handle), LinkedIn, Email all present."
+      "evidence": "Website (lab21.gr), Instagram (instagram.com/lab21.gr, verified correct profile), LinkedIn (linkedin.com/company/lab21gr/), Email (info@lab21.gr) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Frontend development (web) correctly tagged. Open Question proposing Web design addition is the right channel for a jonathan-set Capabilities field."
+      "evidence": "Frontend development (web) present, set_by: jonathan. Open Question correctly proposes Web design addition through the right channel, since Capabilities is a jonathan-locked field."
     },
     {
       "id": "B.country-size-workstatus",
-      "result": "fail",
-      "evidence": "Size is '1' (migration-era) but clipped.md call notes state: 'Have two more developers that are freelancers. She has trained them yourself. Use them when she has too many project.' Team is at least 3. Size=1 contradicts this direct evidence and fails the confidence floor.",
-      "fix": "Update Size to '2-10' (Mayra + 2 overflow freelancers = 3 total, within 2-10 band). Update provenance set_by to agent. Note team structure in AI Notes."
+      "result": "pass",
+      "evidence": "Country: Greece, Size: 2-10 (updated from 1; provenance set_by: agent, verified_at 2026-06-29), Work Status: Studio. All resolved and consistent with call notes (Mayra + 2 freelance devs). Sources noted in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry; Autonomy optional per calibration note (2026-06-21). However an estimate is strongly recommended on re-pass: Metaxa is a solo founder who clearly embodies the studio (all comms through her, 19 yrs experience) -- suggest Autonomy 4."
+      "evidence": "Autonomy 4, set_by: agent, with reasoning in AI Notes (solo founder runs all client comms and projects independently, 19 yrs experience). Studio entry; field is optional but well-grounded here."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
-      "result": "fail",
-      "evidence": "Work With? is 'Unvetted' but clipped.md contains Jonathan's explicit call verdict: 'Should we work with them? If doing more legacy work or on a budget yes.' His judgment is stated; Unvetted is not a valid zero-state when he has already expressed a conditional yes.",
-      "fix": "Set Work With? via keeper.py set --from-jonathan. Best mapping: 'In a pinch' (conditional, budget/legacy-work qualifier, not a strong yes). If mapping is uncertain, ask one Open Question rather than leaving Unvetted."
+      "result": "pass",
+      "evidence": "Work With? is 'In a pinch', set_by: jonathan (provenance confirmed). Maps correctly to his conditional verdict from the call notes ('if doing more legacy work or on a budget, yes'). No judgment field contradicts evidence."
     },
     {
       "id": "C.clip-note-fully-acted-on",
-      "result": "fail",
-      "evidence": "clipped.md contains Jonathan's call notes (his voice, his judgments, working style, stack, pricing, team). CLAUDE.md requires his prose relocated to Notes via set-notes --relocated-from-body, and stated facts/judgments written via set --from-jonathan. Neither was done. Notes is empty. Day Rate is 250 with no source; the notes cite 2800 EUR project prices with no per-day derivation documented.",
-      "fix": "Run keeper.py set-notes <id> with his call prose verbatim from clipped.md. Run keeper.py set --from-jonathan for Work With?. Verify Day Rate source (250/day is not derivable from the 2800/project figures; confirm or ask Jonathan)."
+      "result": "pass",
+      "evidence": "Notes field contains his full call write-up verbatim, set_by: jonathan. Work With? set via --from-jonathan. Day Rate 250 is set_by: jonathan per provenance. AI Notes flags it as an undocumented estimate relative to the 2800 EUR project pricing in the call notes, which is honest."
     },
     {
       "id": "C.ai-notes-hedged",
-      "result": "fail",
-      "evidence": "AI Notes omits call-note content entirely: team model, stack, pricing, availability, working style. CLAUDE.md: 'Fold Jonathan's body call-notes into AI Notes.' Seniority read is thin (says 'founded 2010' but call notes say Metaxa started in 2007 as full-stack developer, giving ~19 yrs experience). No Autonomy estimate despite a clear read being available.",
-      "fix": "Rebuild AI Notes to include: seniority read (started 2007, ~19 yrs, solo CD/lead, all client comms through her), Autonomy estimate (suggest 4: experienced, independent, runs full client projects), stack (WP/PHP/WebGL/Figma/Zeplin/XD), team model (Mayra + 2 freelance devs on overflow projects), pricing context (project-based, ~2800 EUR typical), and synthesis of his call verdict. Hedge inferences; assert only what the notes confirm."
+      "result": "pass",
+      "evidence": "AI Notes now includes: seniority read (full-stack since 2007, ~19 yrs), team model (solo principal + 2 freelance devs), stack (WP/PHP/WebGL/Figma/Zeplin/XD/Photoshop), pricing context (project-based ~2800 EUR; Day Rate 250 flagged as estimate), Jonathan's verdict synthesized, Autonomy 4 with reasoning. Inferences hedged appropriately."
     },
     {
       "id": "D.source-filled",
@@ -93,30 +88,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields. set_by values correct. source_url nulls are the known systemic tooling gap, not a gate failure."
+      "evidence": "Provenance file covers all touched fields with correct set_by values. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source field."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One Open Question: Capabilities/Web design proposal. Terse, appropriate channel for a jonathan-set field."
+      "evidence": "One Open Question: proposing Web design capability addition. Terse, does not ask for any field that already has a non-zero value. Appropriate channel since Capabilities is set_by: jonathan."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching; reviewer has not flipped it. Correct holding state pending this gate."
+      "evidence": "Status is Enriching going into this gate. Reviewer will flip to Needs Review on this pass."
     }
   ],
-  "failing_checks": [
-    "A.depth-over-breadth",
-    "B.country-size-workstatus",
-    "C.no-judgment-contradicts-evidence",
-    "C.clip-note-fully-acted-on",
-    "C.ai-notes-hedged"
-  ],
-  "to": "scout"
+  "to": "jonathan"
 }

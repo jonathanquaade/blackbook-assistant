@@ -1,0 +1,115 @@
+{
+  "page_id": "32f53531-d20a-4c30-8b48-7a0c0f86e9ae",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Vercel, Next.js Conf 2024, Daylight Computer, Harvey, KidSuper. No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project (interiors, not just covers). Harvey shows product UI; KidSuper shows animated brand screens; Daylight shows device; Next.js Conf shows site and laptop mockup."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-01.jpg (Vercel project) is a 3D prism/rainbow render with no web design content. site-02.jpg (Vercel project) is a video still of Guillermo Rauch speaking at a conference, a talking-head shot with zero frontend or design craft visible. site-03.jpg (Vercel project) is a dotted city illustration. All 3 Vercel project images fail to demonstrate Frontend development (web) or Web design. The remaining 7 work images are on-capability.",
+      "fix": "Replace 3 Vercel project images (site-01, site-02, site-03) with images from the Vercel showcase case study that show the actual web design or frontend work (UI screens, live site shots, component design). If the Vercel case study is illustration/video-heavy with no web design shots, substitute a 6th project instead."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png confirmed as basement.studio homepage (dark 3D wireframe render with nav visible). site-17.png confirmed as instagram.com/basementdotstudio profile page (Instagram UI, bio reads 'A digital studio making cool shit that performs', grid visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 work images + 2 context shots have captions and source links in manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds required. Entry is a Studio (Web design + Frontend development); images are the appropriate capture format. No YouTube/Vimeo spotted in showcase case studies from the scraper's sourcing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sections. 5 rejected dupes documented in manifest with rejected: true."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small specialized team doing hands-on creative execution, not a large full-service agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://basement.studio/ (canonical root). Instagram: https://www.instagram.com/basementdotstudio/ (verified correct account in context shot). LinkedIn: https://www.linkedin.com/company/basementstudio. Email: hello@basement.studio. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) and Web design are set by jonathan (locked). Scout correctly escalated proposed additions via Open Question rather than overwriting the locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Argentina. Size: 11-40. Work Status: Studio. All set by agent at reasonable confidence. AI Notes names clients and describes the studio's scope."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry. Autonomy field is optional for org-type entries per checklist calibration note (2026-06-21). AI Notes contains seniority/leadership read: 'full-service execution partner'. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "fail",
+      "evidence": "clipped.md contains Jonathan's call notes in his own voice: 'Should we work with them? YES hahaha', 'Definitely a strong candidate for larger projects', 'It felt very natural and as if we had talked together for a long time'. These establish: (1) he had a call with them, making Familiarity: Don't know them demonstrably false; (2) 'YES hahaha / Definitely a strong candidate' makes Work With?: Unvetted demonstrably false. Per CLAUDE.md: zero-states are valid ONLY where evidence does not contradict them. These must be left empty with Open Questions, not set to false zero-states.",
+      "fix": "Clear Familiarity (currently 'Don't know them'), clear Work With? (currently 'Unvetted'), clear Worked Together (currently 'Never' -- he had a call which at minimum means he has met/spoken). Add terse Open Questions: '1. Familiarity? (call notes suggest Met or spoken or better)' '2. Work With? (notes say YES -- Definitely?)' '3. Worked Together?'"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "fail",
+      "evidence": "The page body (now in clipped.md) is Jonathan's own call/meeting notes ('It felt very natural...', 'YES hahaha', day rate, stack notes). CLAUDE.md rule: Jonathan's own commentary in the page body must be moved verbatim into Notes via keeper.py set-notes --relocated-from-body. Notes is currently empty. The text was archived to clipped.md but never relocated into his Notes field. The Day Rate (350) and Rating (4) were extracted correctly as set_by: jonathan, but the full prose relocation was skipped.",
+      "fix": "Run keeper.py set-notes 32f53531-d20a-4c30-8b48-7a0c0f86e9ae with the call note prose verbatim, using --relocated-from-body flag, so his words live in Notes where he can find them."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual (named clients, founded date, staff count, awards) or hedged where inferred. Seniority read present ('senior, full-service execution partner'). No unverified assertions passed as fact. Double-hyphen (--) used as separator in 'Autonomy: 5 (set_by agent) -- full creative...' is not an em-dash character and does not fail the em-dash rule."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; confirmed via basement.studio, Codrops interview Dec 2025'. Present and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. set_by values are correct: jonathan for Rating and Day Rate (his decisions), agent for scout-filled fields. source_url nulls are a known systemic tooling gap per checklist note (2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dash character (U+2014) found in AI Notes, Open Questions, or captions. Double-hyphen in AI Notes is not an em-dash."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question proposing Capabilities additions to the jonathan-locked field. Terse, conditional, correct channel for a locked-field proposal."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching as expected before gate pass. Reviewer holds the flip to Needs Review."
+    }
+  ],
+  "failing_checks": ["A.on-capability", "C.no-judgment-contradiction", "C.clip-note-acted-on"],
+  "to": "scout",
+  "notes": "The on-capability fix (Vercel images) can be handled by the scraper, but the two C failures (false zero-states from call notes, missing Notes relocation) are scout metadata failures and must be fixed by the scout. Route to scout; scout should also coordinate with scraper on the Vercel image replacement."
+}
