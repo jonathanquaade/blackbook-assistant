@@ -1,0 +1,114 @@
+{
+  "page_id": "09445d8d-6b58-4c46-8af2-98c22138fedc",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 work images across 7 distinct named projects: Another Man, Adidas, Victoria Beckham, GQ Style, Swarovski FW16, Ochirly, Boon The Shop, Girl Gaze. Zero duplicate-project bloat."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "GQ Style has 3 images (editorial spread + Channing Tatum cover + interior); Swarovski has 3 (catalog spread + opener + interior); Ochirly has 3 (2014 campaign + 2012 spread + editorial); Boon The Shop has 3 (portrait + campaign + creative direction). Goes inside projects, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities = Creative direction. All 16 work images are fashion editorial, luxury campaign, and magazine art direction output -- squarely on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-17.png visually confirmed: laurarulecollective.com homepage showing 'Laura Rule Collective' nav header, Boon The Shop and Another Man work visible. site-18.png visually confirmed: instagram.com logged-out view of @laura_rule_collective with profile name 'laura_rule_collective', bio 'Creative Direction', 171 posts, 1,295 followers. Both correct and distinct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 18 manifest entries have non-empty captions naming their project. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capabilities are Creative direction (fashion/luxury campaigns, editorial). No video/audio capability tagged; no embedded video required. No evidence of YouTube/Vimeo projects missed -- AI Notes documents site was 503 via fetch but project pages were indexed and captured via Playwright render."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents site returning 503 at time of enrichment and explains the fallback: indexed project pages (GQ Style, Swarovski, Ochirly, Boon The Shop, Girl Gaze) used. No unexplained thin coverage."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Laura Rule Collective LLC is a named creative studio with curated collaborators, not solely Laura Rule doing freelance -- Studio is defensible."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (https://laurarulecollective.com/), Instagram (https://www.instagram.com/laura_rule_collective/, verified via IG context screenshot showing correct profile), LinkedIn (https://www.linkedin.com/in/laura-rule-4a651099/), Email (studio@laurarule.com) all present. Instagram handle verified visually."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Creative direction is set. Scout filed an Open Question for Brand strategy and Identity systems (Another Man rebrand, luxury campaign identity) rather than asserting -- correct per TAXONOMY disambiguation (Brand strategy vs Creative direction: thinking/positioning vs leading the making; Identity systems requires confirmed full brand programme). Asking is the right call."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = US (LA-based per AI Notes). Size = 2-10 (collective model with collaborators). Work Status = Studio (set by agent; AI Notes names sources: studio site and LinkedIn both consistent with LLC/studio model). Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio, so Autonomy is optional per calibration note (2026-06-21). Scout set Autonomy 5 (set_by agent) with reasoning: 'runs her own studio with a director-level track record across top-tier clients.' Reasoning is grounded in work history. Not required but present and defensible."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. Clipped.md archived body was only 'Another Man / Adidas Originals' (no Jonathan relationship text). No clip note evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only brief client text ('Another Man', 'Adidas Originals') -- site copy, not Jonathan instructions. No relationship facts, passcodes, or tagging direction in the clip text. Provenance set_by migration for Name; handled correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences appropriately: 'roughly 15+ years', 'evidence supports fully autonomous delivery', 'Instagram @laura_rule_collective verified via Google snippet title'. Seniority + experience included (Art Director at Another Man, CD at Mario Testino+, CD at Apple/Marcom). Career trajectory documented with roles and employers. No unhedged first-hand claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Migration import, 2026-06-12' -- the correct format for a migration entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by recorded for every touched field. source_url is null throughout -- known systemic tooling gap per calibration note (2026-06-21), not a gate failure. No field is stamped jonathan that should be agent, except Capabilities which was set_by jonathan in migration (correct: Jonathan's tag is preserved per CLAUDE.md). No sub-0.8 fact written as asserted."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically: no em-dash character in AI Notes or Open Questions. Manifest captions also checked -- none found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question asking whether to add Brand strategy and Identity systems to Capabilities. Terse and conditional (does not ask for fields that already have non-zero values -- it proposes additions). Story nudge not triggered: Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted (all zero-states, no nudge condition met)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "notes": [
+    "Minor: site-01, site-02, site-03 have link = 'https://laurarulecollective.com/' (homepage root) rather than per-project URLs. This is expected -- site was 503 and these appear pulled from the rendered homepage mosaic. Captions correctly name the projects. Not a gate failure.",
+    "Autonomy 5 set on a Studio-type entry -- optional per calibration, but the reasoning is solid (sole-founder studio). Jonathan may want to confirm this is about the person Laura Rule specifically, not the collective entity."
+  ],
+  "to": null
+}

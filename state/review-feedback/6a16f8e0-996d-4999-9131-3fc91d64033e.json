@@ -1,0 +1,111 @@
+{
+  "page_id": "6a16f8e0-996d-4999-9131-3fc91d64033e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 active images span 7 distinct named projects: Spotify, Dropbox, San Francisco Symphony, Twitch, Figma, Mailchimp, Robinhood. No caption repeats a single project more than 3 times."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Dropbox type-system sheet (site-04, the 'Whoa' variable-weight spread), interior brand spreads (site-05, site-06), SFS signage application in situ (site-08), SFS identity frame (sfs-identity.jpg), Twitch interior screens (site-10, site-11), Figma illustration interior (site-14), Robinhood illustrated world (site-19). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design (Jonathan's migration value). All 16 images show brand identity systems, graphic campaigns, and visual programs. On-capability. Scout's Open Question 1 correctly flags that the tag is undertagged for Jonathan to expand."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-20.png confirmed: wearecollins.com homepage ('Rewrite your worth.' headline, COLLINS nav, AdAge 2019-2026 badges). site-21.png confirmed: instagram.com profile page showing handle 'thisiscollins', bio 'COLLINS', 307 posts, 125K followers. Both correct, both matching their captions."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 16 active manifest entries have captions naming the project and source links to the wearecollins.com case study pages."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Four Mux video thumbnails captured as preview images with links (site-04.webp, sfs-identity.jpg, site-17.webp, site-18.webp). This follows the sanctioned CLAUDE.md pattern: Notion does not preview Vimeo/Mux embeds, so thumbnail + link is correct. No raw embed-only entries."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No absence. 16 images across 7 projects; rejected entries documented in manifest with reasons."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. Scout reasoning documented: 70+ staff, full-service brand transformation at blue-chip scale, NYC + SF offices. Correct per CLAUDE.md Agency definition."
+    },
+    {
+      "id": "B.all-links",
+      "result": "pass",
+      "evidence": "Website: https://www.wearecollins.com. Instagram: https://www.instagram.com/thisiscollins/ (verified via context shot, handle and bio match). LinkedIn: https://www.linkedin.com/company/collins-. Email: info@wearecollins.com. All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities is set_by: jonathan (migration). Agent correctly could not overwrite it and instead filed Open Question 1 asking Jonathan to approve expansion to Brand strategy, Identity systems, Creative direction, 3D and motion, Web design."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US (NYC + SF confirmed). Size: 41-100 (corrected from migration's 11-40; team page count ~70+, LinkedIn 51-200; sources named in AI Notes). Work Status: Studio (org-as-entity status, standard for independent agency/studio entries in this schema)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Agency entry. Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries. Not set; seniority context in AI Notes (founded by Brian Collins and Leland Maschmeyer, 70+ staff). Compliant."
+    },
+    {
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are valid. Source is 'Web clipper, 2026-06-12' with no relationship facts stated in the clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contains no instructions beyond the entry name and URL. Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges: 'approximately 70+ staff (team page count; LinkedIn says 51-200)', 'founded c.2007'. Factual assertions (8x Ad Age, D&AD 2021, named clients) are verifiable from public sources. No em-dashes. Seniority context included (founders named, org scale). No unverified inferences stated as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2026-06-12'. Filled and matches the entry's clip origin."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. source_url is null throughout but this is the known systemic tooling gap (checklist note 2026-06-21); not a gate failure. set_by values are correct: Capabilities = jonathan (migration), all others = agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions scanned. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion (asks about Jonathan's migration-set field, correctly conditional), (2) Name casing COLLINS vs Collins. Both terse. Neither asks about a field already holding a non-zero-state value set by Jonathan."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer flipping to Needs Review now as gate pass."
+    }
+  ],
+  "notes": "Clean entry. Scout and scraper did thorough work: 7 distinct projects, all named, all on-capability, full-res CDN pulls, both context shots verified correct. The only open threads are Jonathan's judgment calls (Capabilities expansion, Name casing) properly filed as Open Questions. No mechanical failures found.",
+  "to": null
+}
