@@ -1,0 +1,111 @@
+{
+  "page_id": "a421f4d0-c3d0-4a56-93f0-1352eb3b27d0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 distinct projects across 9 brands (Nike Jordan, Miu Miu, LV Holiday 2023, Calvin Klein S24, Jay-Z Smile, Gucci Famiglia, Hermes Carres Soie, Versace SS22, Adidas) directed by 7 different directors. No repeated project, no near-duplicate frames."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each thumbnail is a mid-film frame (not a logo/title card). For a directors rep house the film-still-per-project model is correct depth; spreads do not apply to this type."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production; all 9 projects are commercial/music video/fashion films. Capability and content align."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opened and confirmed: diplomats.tv homepage, DIPLOMATS wordmark, Paris address, full director roster visible. site-02.png opened and confirmed: instagram.com UI, handle diplomats.tv, 12K followers, film grid. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a named project, director credit, and source link. Zero anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "9 Vimeo embeds present, each paired with a downloaded thumbnail image and captioned link. 5 are domain-locked (Vimeo private, only play on diplomats.tv). This is a third-party platform constraint, not a scraper failure. Thumbnail gallery makes the entry glanceable regardless of embed playback. Handling is correct per CLAUDE.md embed pattern."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No silent gaps. AI Notes documents sourcing and the domain-lock situation is explained in the spawn prompt context."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Diplomats is a small specialized production company (directors rep), not a large full-service agency. Correct classification."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (diplomats.tv), Instagram (instagram.com/diplomats.tv, verified correct via context shot), LinkedIn (fr.linkedin.com/company/diplomats), Email (contact@diplomats.tv). All four link types present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Film & video production is accurate and sufficient for a directors rep/production house."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "France (confirmed), 11-40 (confirmed from site), Studio (AI Notes: site + LinkedIn agree). Objective multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio-type entry. Per checklist calibration (2026-06-21): Autonomy optional for org types; seniority read in AI Notes (Micenmacher founding date, Iconoclast background, team structure) is sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) unchallenged. Clip note was a bare URL fragment with no relationship or judgment claims."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a URL with a #francisco-sendino fragment. Scout noted this in AI Notes (suggests entry was sourced via that director, who has moved to AKKURAT). No instructions to act on beyond this."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Uses 'approx', 'likely', 'suggests' for inferences. Founder background and team structure stated as verifiable facts. No em-dashes. Seniority/experience read present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-12-09'. Correct format."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have set_by values; agent-set fields are marked set_by agent. Null source_url on some fields is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Programmatic check: em-dash character absent from AI Notes. Captions and open questions also clean."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions. No ambiguities remain that the agent could not resolve. No story nudge needed (no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer flipping to Needs Review as part of this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Domain-locked Vimeo embeds (5 of 9) are a third-party constraint, not fixable by the scraper. Thumbnails + source links self-document every film; the gallery works regardless. Entry is complete and honest."
+}
