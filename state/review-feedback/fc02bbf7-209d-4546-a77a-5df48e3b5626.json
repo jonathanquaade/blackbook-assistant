@@ -1,0 +1,111 @@
+{
+  "page_id": "fc02bbf7-209d-4546-a77a-5df48e3b5626",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct project sets in active images: Bose x Coco Gauff, Crown Royal x Triple Nickel, Valley of a Thousand Hills, The Black Mambas, Photography portfolio. No single project dominates the set unfairly."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 film stills per doc/commercial project plus a YouTube/Vimeo embed per film; goes inside projects, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Photography; entry also includes her primary film/director work. Scout filed Open Question 1 to confirm adding Film & video production. Capturing both directions is correct given that she presents as director and photographer, and the Open Question properly flags the capability gap for Jonathan. No off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png: confirmed jesscolquhoun.co homepage (FILM/PHOTO/CONTACT nav visible, JESS COLQUHOUN title). site-15.png: confirmed instagram.com/@jess.colquhoun profile page (handle, 62 posts, 3,151 followers, 'Film Director / london & la' bio)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All active image files have captions. The 3 photography images are captioned 'Photography, jesscolquhoun.co' with link to /photo -- this is a generic section label rather than a named project title, but the photography section has no discrete named projects (it is a portfolio grid), so the section/URL caption is the honest maximum. Not a failure."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "3 video embeds present: YouTube for Bose x Coco Gauff, Vimeo for Crown Royal x Triple Nickel, Vimeo for Valley of a Thousand Hills. Each paired with a thumbnail preview image. The Black Mambas has no Vimeo embed present but images from its project page are captured; acceptable (not every project requires an embed if the film is not publicly embeddable)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "2 CDN-contaminated images correctly rejected with specific reason in manifest. No silent thin sections."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: jesscolquhoun.co (confirmed). Instagram: instagram.com/jess.colquhoun (confirmed correct person via context shot: bio reads Jess Colquhoun / Film Director). Email: hello@jesscolquhoun.com (set). LinkedIn: not found after search -- Open Question 2 asks Jonathan to confirm or supply; AI Notes explains the absence (multiple Jessica Colquhouns, none matching). Absence documented, not silently skipped."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography tagged. Film & video production absent but flagged in Open Question 1 for Jonathan to confirm -- correct handling given the scout cannot unilaterally add a second capability without Jonathan's input on someone whose primary self-presentation is as a director."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + US (London/LA dual-base confirmed via IG bio and site). Size: 1 (Person). Work Status: Freelance. AI Notes documents sources: site and IG both present her independently with no employer branding; Stept Studios listing treated as lapsed (absent from current roster). Multi-source rule applied and documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: operates independently, commands brand clients, Young Guns winner, ~10 yrs experience. Grounded in real history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or body commentary indicates a relationship. Zero-states are clean."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No special instructions in the clip/Name text beyond the raw entry. Migration entry; no relationship facts or passcodes to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Stept Studios relationship hedged as 'no longer listed on their current roster, treated as lapsed'. Seniority (~10 yrs, senior freelance director) included and grounded in client list and awards. Autonomy reasoning present. No bare assertions of unverifiable claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated 2026-06-12'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null throughout -- known systemic tooling gap (per calibration note 2026-06-21), not a gate failure. set_by values are correct: agent-set fields marked agent, migration-baseline (Size, Name) marked migration, Capabilities marked jonathan (correctly reflects his original tag). No fact written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "2 questions: (1) capability addition for Film & video production -- conditional, non-zero-state, warranted; (2) LinkedIn URL confirmation -- conditional, not already set. Both terse and actionable. No story nudge required (Worked Together is Never with no contrary evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently in Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. One minor observation: the photography images use section-level captions ('Photography, jesscolquhoun.co') because the /photo section is a portfolio grid with no named project titles -- honest maximum. The Capability gap (Photography only, but she primarily directs) is correctly surfaced as Open Question 1 rather than unilaterally resolved."
+}

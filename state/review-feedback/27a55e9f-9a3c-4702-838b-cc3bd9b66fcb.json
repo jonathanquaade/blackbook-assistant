@@ -1,0 +1,110 @@
+{
+  "page_id": "27a55e9f-9a3c-4702-838b-cc3bd9b66fcb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 4 named series: Snow and Rose (1-3), Mail Order (4-6), Shadows in Paradise (7-9), Making It Real (10-12). Visually distinct work in each."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior images per series, not just covers. site-10 (Making It Real) shows a diptych with a handwritten note alongside a staged photograph."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Photography; all 12 work images are fine-art photographs from named photographic series."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png verified as mariannarothen.com homepage. site-14.png verified as instagram.com/mariannarothen profile page (logged-out view, handle and grid visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions; all 12 work images also have source links to named series pages."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Subject is a still photographer. No video embeds required. AI Notes mentions she directed a short film but this is peripheral to her tagged capability."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin capture; 12 images across 4 series is adequate depth for a still photographer."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present and sourced to mariannarothen.com/info."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography set by jonathan (locked). Scout correctly proposed Art practice as an Open Question rather than overwriting a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: CA+US, Size: 1, Work Status: Freelance. AI Notes records resolution: confirmed from personal site info page and gallery listings, no employer relationship found."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent, with reasoning in AI Notes (fully self-directed practice, gallery representation, four monographs, international exhibition record)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship evidence in the clip note or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained only a misspelled name (Marianne). Scout corrected to Marianna, archived original in clipped.md. No instructions or judgment facts present in the clip."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual claims (galleries, monographs, birth year, location) are verifiable from her site. Inferences (autonomy level, self-directed practice) are grounded in observable career facts. Seniority read is included (active since 2007, international gallery standing). No bare assertions about working style or first-hand quality."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2026-06-12', set_by agent."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance present for all touched fields. set_by values are consistent (agent for fields the scout researched, jonathan for Capabilities which was pre-set). Known systemic null source_url gap noted; not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single terse question about adding Art practice to Capabilities; correctly conditional (not asking for a field that already has a non-zero value, since Capabilities is jonathan-set and the agent cannot overwrite it). No story nudge applies (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is now flipping to Needs Review."
+    }
+  ],
+  "to": null
+}
