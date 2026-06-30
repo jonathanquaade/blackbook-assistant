@@ -1,109 +1,105 @@
 {
   "page_id": "6a69cf33-0884-49df-aeab-9d13a494a429",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-29T23:10:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 work images span New Yorker (3 pieces), NYT Book Review, WSJ, Giant Robot Gallery show, Story of Art Without Men book, Delta x Coca-Cola, plus 3 unlabeled editorial pieces. Distinct outlets confirmed."
+      "evidence": "14 work images span 6+ distinct named projects: New Yorker (3 pieces), NYT Book Review, NYT x2, WSJ, Delta x Coca-Cola GIF, Story of Art Without Men book x3 (Frida, Surrealism, Yoko Ono spreads), Film School II at Giant Robot x3 (Gum, Rooftop, The Deal). Well above the 3-project floor."
     },
     {
       "id": "A.depth",
       "result": "pass",
-      "evidence": "Goes inside individual illustrations (landscape, portrait, figure, interior) rather than only cover/hero shots."
+      "evidence": "Interior book spreads (multi-panel children's book layouts with text and art), standalone gallery paintings at full resolution, editorial interiors. Not hero-cover-only."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Two images are not illustration artwork. site-04.png is a lifestyle product photo of The Story of Art Without Men book sitting on a marble table; the illustration on the cover is hers but what was captured is a product shot, not the illustration itself. site-03.jpg is an exhibition promotion flyer (Film School II poster with text, dates, artist list) where Ping Zhu's illustration is a small inset, not the subject. Both should be replaced with actual illustration artwork: pull interior spreads from the book (Dutch Uncle page has them) and a standalone artwork from the Giant Robot show.",
-      "fix": "Replace site-04.png with an interior illustration spread from The Story of Art Without Men (Dutch Uncle listing has examples). Replace site-03.jpg with a standalone painting from the Film School II show (dutchuncle.co.uk/ping-zhu lists gallery works)."
+      "result": "pass",
+      "evidence": "Previously failing images (site-04.png product photo, site-03.jpg exhibition flyer) are marked rejected in manifest with documented reasons. All 14 active work images are illustration artwork, confirmed by opening representative files: newyorker-wind-01.jpg (gouache landscape), editorial-nykr-swm.jpg (portrait illustration), editorial-nyt-bookreview.jpg (landscape), book-soawm-frida.jpg (book spread), filmschool2-gum.jpg (standalone painting), filmschool2-rooftop.jpg (standalone painting). All on-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-10.png confirmed as pingszoo.com homepage (Ping Zhu nav + illustration grid visible). site-11.png confirmed as instagram.com/pingszoo (Instagram chrome, @pingszoo handle, 393 posts, 124K followers visible)."
+      "evidence": "site-10.png: pingszoo.com homepage confirmed (Ping Zhu nav, illustration grid, 'You've reached the h...' text visible). site-11.png: instagram.com/pingszoo confirmed (Instagram chrome, @pingszoo handle, 393 posts, 124K followers visible). Both correct and matching their captions."
     },
     {
       "id": "A.no-uncaptioned",
-      "result": "fail",
-      "evidence": "Three images have no named client or publication: editorial-032518.jpg captioned 'Figure in flower field, editorial', editorial-050118.jpg captioned 'Interior with black cat, editorial', site-01.jpg captioned 'Winter sunrise landscape, editorial'. Source link points to dutchuncle.co.uk/ping-zhu but the outlet/client for each is unknown in the caption. Checklist requires images to name their project.",
-      "fix": "Identify the publication or client for each of the three unlabeled pieces via the Dutch Uncle page or Ping Zhu's known client list. If the outlet cannot be confirmed, drop these images and keep the named ones (New Yorker, NYT, WSJ all identified). Prefer fewer named images over more anonymous ones."
+      "result": "pass",
+      "evidence": "Previously failing three unnamed editorial images (editorial-032518.jpg, editorial-050118.jpg, site-01.jpg) are marked rejected with reason 'outlet/client cannot be confirmed, dropped per named-only instruction'. All 14 active work images carry a named client or project and a source link."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Illustration is a still-image medium; no video embeds required. Delta x Coca-Cola GIF (site-05.gif) is the animated work and is present."
+      "evidence": "Still-image illustration discipline; no video embeds required. Delta x Coca-Cola animated GIF (site-05.gif) is present."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "pingszoo.com SPA blank is documented in manifest as rejected entries with reason 'Blank Cargo SPA screenshot'. Scraper correctly pivoted to Dutch Uncle."
+      "evidence": "All 10 SPA blank screenshots are rejected in manifest with reason documented. Scraper correctly sourced from Dutch Uncle and Giant Robot instead."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type = Person, correct."
+      "evidence": "Type = Person. Correct."
     },
     {
       "id": "B.links",
-      "result": "fail",
-      "evidence": "LinkedIn field is absent. AI Notes does not document whether a LinkedIn search was run and found nothing, or was skipped. For a well-established illustrator with 15 years of career history, a LinkedIn profile is plausible and a search would likely surface it. A missing link is usually a skipped search per checklist.",
-      "fix": "Search 'Ping Zhu illustrator linkedin' and capture the Google snippet. If a LinkedIn profile exists, add it. If genuinely absent (profile does not exist or is private with no snippet), document 'LinkedIn: no public profile found' in AI Notes."
+      "result": "pass",
+      "evidence": "Website (pingszoo.com), Instagram (instagram.com/pingszoo), Email (pingszoo@gmail.com) present. LinkedIn search documented in AI Notes: 'Ping Zhu illustrator linkedin' returned one profile (linkedin.com/in/ping-zhu-8aa13213a) but Google snippet shows Ping Zhu at Meta, a different person. No LinkedIn profile for this illustrator confirmable at 0.8 confidence. Field correctly left empty."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Illustration tagged (jonathan-set). Art practice proposed correctly via Open Question rather than adding to jonathan-locked field."
+      "evidence": "Illustration tagged (set_by jonathan). Art practice proposed via Open Question rather than overwriting the locked field."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country US, Size 1, Work Status Freelance all set. AI Notes names Dutch Uncle representation and long-standing freelance practice as the basis."
+      "evidence": "Country US, Size 1, Work Status Freelance. AI Notes names Dutch Uncle representation and long-standing freelance practice as the basis. Objective multi-source rule applied."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5 set with reasoning in AI Notes: long-established solo practitioner, major editorial and commercial clients, gallery practice, published books."
+      "evidence": "Autonomy 5 set (set_by agent) with reasoning in AI Notes: long-established solo practitioner, major editorial and commercial clients, gallery practice, published books, fully independent."
     },
     {
       "id": "C.no-judgment-contradicts",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a Jonathan relationship. Clip note body was template noise, no instructions."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship evidence in the clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped.md shows only template placeholder text (Lorem Ipsum, availability boilerplate). No instructions from Jonathan to act on."
+      "evidence": "Clip note body was template placeholder text only. No instructions to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes are factual (clients named, awards named, gallery show dated). Seniority read present (~15 yrs, ADC Young Guns, major outlets). No unhedged inferences found. No em-dashes."
+      "evidence": "All claims are verifiable facts (named clients, awards, gallery show dates). Seniority read present (~15 yrs, ADC Young Guns 2013, major editorial outlets). LinkedIn non-match documented with explicit search query and snippet evidence. No em-dashes. No unhedged inferences."
     },
     {
       "id": "D.source",
-      "result": "fail",
-      "evidence": "Source is 'Web clipper' with no created date. CLAUDE.md runbook requires 'Web clipper, <page created date>' for clipper-origin entries. The created_time is retrievable via the API.",
-      "fix": "Fetch the page created_time via keeper.py and update Source to 'Web clipper, YYYY-MM-DD'."
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2021-03-01'. Created date now present."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "set_by values are correct throughout. Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "set_by values correct throughout: migration fields (Website, Name, Size, Country), agent fields (Worked Together, Familiarity, Work Status, Type, Instagram, Email, Autonomy, Source, AI Notes, Open Questions, Images), jonathan field (Capabilities). Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-emdashes",
       "result": "pass",
-      "evidence": "Checked AI Notes, Open Questions, and all captions. No em-dashes found."
+      "evidence": "AI Notes, Open Questions, and all image captions checked. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question, terse, conditional (Capabilities field is jonathan-set so proposing an addition via OQ is correct). No redundant or already-answered questions."
+      "evidence": "One terse conditional question about Art practice capability (jonathan-locked field, correct to propose via OQ). No redundant or already-answered questions."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

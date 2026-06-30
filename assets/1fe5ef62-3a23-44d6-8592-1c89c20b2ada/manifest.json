@@ -2,36 +2,35 @@
   {
     "file": "site-01.jpg",
     "source_url": "https://www.okok.services/assets/works/okokmeters/1.jpg",
-    "caption": "OKOK Services, website",
-    "link": "https://www.okok.services/",
+    "caption": "Are You OKOK? meters shop, self-initiated project",
+    "link": "https://areyou.okok.services/",
     "captured_at": "2026-07-01"
   },
   {
     "file": "site-02.jpg",
     "source_url": "https://www.okok.services/assets/works/okokmeters/2.jpg",
-    "caption": "OKOK Services, website",
-    "link": "https://www.okok.services/",
-    "captured_at": "2026-07-01"
+    "rejected": true,
+    "reason": "Same project (okokmeters shop), redundant with areyouokok-cover and site-01"
   },
   {
     "file": "site-03.jpg",
     "source_url": "https://www.okok.services/assets/works/aO1000/0.jpg",
-    "caption": "OKOK Services, website",
-    "link": "https://www.okok.services/",
+    "caption": "Adidas 1000 Originals Stories, web experience",
+    "link": "https://www.adidas.com/1000-originals-stories",
     "captured_at": "2026-07-01"
   },
   {
     "file": "site-04.jpg",
     "source_url": "https://www.okok.services/assets/works/shinee/0.jpg",
-    "caption": "OKOK Services, website",
-    "link": "https://www.okok.services/",
+    "caption": "SHINee HARD album WebGL 3D experience, SM Entertainment",
+    "link": "https://shinee.okok.services",
     "captured_at": "2026-07-01"
   },
   {
     "file": "site-05.jpg",
     "source_url": "https://www.okok.services/assets/works/snakepool/about.jpg",
-    "caption": "OKOK Services, website",
-    "link": "https://www.okok.services/",
+    "caption": "Snakepool / Kanghyuk Lee photographer portfolio, built by OKOK Services",
+    "link": "https://snakepool.me.com",
     "captured_at": "2026-07-01"
   },
   {
@@ -41,5 +40,72 @@
     "link": "https://www.okok.services/",
     "captured_at": "2026-07-01",
     "context_shot": true
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://www.instagram.com/okok.services/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/okok.services/",
+    "captured_at": "2026-07-01",
+    "context_shot": true
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://shinee.okok.services",
+    "rejected": true,
+    "reason": "Loading screen only, WebGL did not render in time"
+  },
+  {
+    "file": "site-09.jpg",
+    "source_url": "https://www.datocms-assets.com/114490/1777528481-dsc2625755-1.jpg",
+    "rejected": true,
+    "reason": "Off-capability: client content image (restaurant) from Local Remote site, not OKOK UI work"
+  },
+  {
+    "file": "site-10.jpg",
+    "source_url": "https://www.datocms-assets.com/114490/1707944997-cover-2.jpg",
+    "rejected": true,
+    "reason": "Off-capability: client content image (publication cover) from Local Remote site, not OKOK UI work"
+  },
+  {
+    "file": "areyouokok-cover.jpg",
+    "source_url": "https://assets.awwwards.com/awards/images/2022/01/auo-cover.jpg",
+    "caption": "Are You OKOK? virtual meters interface, 2021",
+    "link": "https://areyou.okok.services/",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "areyouokok-meters.jpg",
+    "source_url": "https://assets.awwwards.com/awards/gallery/2022/01/auo-interior-image00.jpg",
+    "rejected": true,
+    "reason": "Redundant with areyouokok-cover and site-01, same project"
+  },
+  {
+    "file": "areyouokok-debug.jpg",
+    "source_url": "https://assets.awwwards.com/awards/gallery/2022/01/auo-interior-image01.jpg",
+    "caption": "Are You OKOK? three.js development, real-time lighting controls, 2021",
+    "link": "https://www.awwwards.com/are-you-okok-website-case-study-virtual-measuring-instruments-for-behavioral-patterns.html",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "areyouokok-canvas.jpg",
+    "source_url": "https://assets.awwwards.com/awards/gallery/2022/01/auo-interior-image02.jpg",
+    "caption": "Are You OKOK? OKOK-003 meter detail, 2021",
+    "link": "https://areyou.okok.services/",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "localremote-siteinspire.jpg",
+    "source_url": "https://r2.siteinspire.com/cdn-cgi/image/width=1920,height=1200,quality=75,format=auto,metadata=none,gravity=top,fit=crop,compress=true/screengrabs/images/000/018/015/original-28db24aed31006be36d5521632e80554.png",
+    "caption": "Local Remote website, built by OKOK Services",
+    "link": "https://www.localremote.co/",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "shannonlim-siteinspire.jpg",
+    "source_url": "https://r2.siteinspire.com/cdn-cgi/image/width=1920,height=1200,quality=75,format=auto,metadata=none,gravity=top,fit=crop,compress=true/screengrabs/images/000/018/275/original-d30960791ffb856c03c1f35320893cf8.png",
+    "caption": "Shannon Lim portfolio site, built by OKOK Services",
+    "link": "https://www.thisisveryrude.com/",
+    "captured_at": "2026-07-01"
   }
 ]

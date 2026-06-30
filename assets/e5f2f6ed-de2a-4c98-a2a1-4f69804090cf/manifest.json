@@ -5,6 +5,26 @@
     "caption": "Website",
     "link": "https://agentpekka.com/artist/merijn-hos/",
     "captured_at": "2026-07-01",
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Agent Pekka blocks headless Playwright, returned 403 page"
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://www.studioandmarie.com/artists/merijn-hos",
+    "caption": "Website",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01",
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Secondary rep site, replaced by merijnhos.com shot which loaded on retry"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://merijnhos.com/",
+    "caption": "Website",
+    "link": "https://merijnhos.com/",
+    "captured_at": "2026-07-01",
     "context_shot": true
   },
   {
@@ -16,19 +36,129 @@
     "context_shot": true
   },
   {
-    "file": "site-03.png",
-    "source_url": "https://www.studioandmarie.com/artists/merijn-hos",
-    "caption": "Website",
+    "file": "hermes-01.png",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/974a9f5444004e6cd6b44b4d47fc38650b308359-1920x1080.png?w=2000&auto=format",
+    "caption": "Hermes Valentines Day, 2022",
     "link": "https://www.studioandmarie.com/artists/merijn-hos",
-    "captured_at": "2026-07-01",
-    "context_shot": true
+    "captured_at": "2026-07-01"
   },
   {
-    "file": "site-04.png",
-    "source_url": "https://merijnhos.com/",
-    "caption": "Website (merijnhos.com - currently 503)",
-    "link": "https://merijnhos.com/",
+    "file": "hermes-02.png",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/519d80dc26184e46af4bf44e820f2a07eb3d4fcb-1920x1080.png?w=2000&auto=format",
+    "caption": "Hermes Valentines Day, 2022",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "hermes-03.png",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/50614d48b0a3d0e8bff85a0f9c418bf69a04986f-1920x1080.png?w=2000&auto=format",
+    "caption": "Hermes Valentines Day, 2022",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "nyt-01.jpg",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/12ae3e59ad55014e795b7f855637d2e293680c2e-2880x1920.jpg?w=2000&auto=format",
+    "caption": "The New York Times, Meditations for Uncertain Times, 2022",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "nyt-02.jpg",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/c5924b22c2c86a205638c17a5ddfc52fe86f308a-2880x1920.jpg?w=2000&auto=format",
+    "caption": "The New York Times, Meditations for Uncertain Times, 2022",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "baffler-01.jpg",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/748fff2ce6372dcdc69ab94e1d7dd3631e3c91e5-2175x3075.jpg?w=2000&auto=format",
+    "caption": "The Baffler magazine cover, 2023",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "baffler-02.jpg",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/72446905e079081500bf8f20e6fde8eb9c024842-2175x3075.jpg?w=2000&auto=format",
+    "caption": "The Baffler magazine cover, 2023",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "atmos-02.png",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/88cba2f987ae4721f295aaf48b55a1f940c9b572-857x1320.png?w=2000&auto=format",
+    "caption": "Atmos magazine cover, 2021",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "artsclub-01.png",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/6ec33193a94ffb4c2327958c5ec0333e79016345-930x1320.png?w=2000&auto=format",
+    "caption": "The Arts Club publication cover, 2019",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "030303-01.png",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/5e3532a0a97b8bbe44fc77a059f0b9cd93cc27af-3000x1812.png?w=2000&auto=format",
+    "caption": "030303 Records sleeve illustration, 2020",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "noema-01.jpg",
+    "source_url": "https://cdn.sanity.io/images/k8fkf0ay/production/84f271cfc736cee484055ef5888cae30239516c2-947x1186.jpg?w=2000&auto=format",
+    "caption": "Noema magazine illustration, 2022",
+    "link": "https://www.studioandmarie.com/artists/merijn-hos",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "wepresent-01.jpg",
+    "source_url": "https://images.ctfassets.net/adaoj5ok2j3t/36qugKKZFeYaO8g0sqY6mg/ef0aaaab47fa3a816d509ff472644a2c/merhos4gl_1920x1200.jpg",
+    "caption": "Personal work, Planets series",
+    "link": "https://wepresent.wetransfer.com/story/merijn-hos/",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "wepresent-02.jpg",
+    "source_url": "https://images.ctfassets.net/adaoj5ok2j3t/3ZOl722xryUE668EwQKoso/d6cc86f01bb301b0ee949afcefcc0beb/merhos2gl_1920x1200-1600x1000.jpg",
+    "caption": "Personal work, Planets series",
+    "link": "https://wepresent.wetransfer.com/story/merijn-hos/",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "file": "wepresent-03.jpg",
+    "source_url": "https://images.ctfassets.net/adaoj5ok2j3t/62nGjtS5wIWcUM80ACUw2S/ce30cc335141f0c59579abd93284cd73/merhos3gl_1920x1200-1600x1000.jpg",
+    "caption": "Personal work, Planets series",
+    "link": "https://wepresent.wetransfer.com/story/merijn-hos/",
     "captured_at": "2026-07-01",
-    "context_shot": true
+    "rejected": true,
+    "rejected_reason": "Too similar to wepresent-02, same Planets series from same angle"
+  },
+  {
+    "file": "dtrh-2017-thumb.jpg",
+    "source_url": "https://i.vimeocdn.com/video/602591570-e7df4d750505b4a8331a2d271f9d234e32926715d01b9a6d728a2d135ccf44bc-d_1280",
+    "caption": "Down the Rabbit Hole 2017 title sequence, video thumbnail",
+    "link": "https://vimeo.com/191541025",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/191541025",
+    "caption": "Down the Rabbit Hole 2017 title sequence",
+    "link": "https://vimeo.com/191541025"
+  },
+  {
+    "file": "dtrh-2019-thumb.jpg",
+    "source_url": "https://i.vimeocdn.com/video/747005489-337b39f7aba9a6e157652b7840eb4f8ce90d94f05b99b201f9242051afeb4d11-d_1280",
+    "caption": "Down the Rabbit Hole 2019 title sequence, video thumbnail",
+    "link": "https://vimeo.com/307122856",
+    "captured_at": "2026-07-01"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/307122856",
+    "caption": "Down the Rabbit Hole 2019 title sequence",
+    "link": "https://vimeo.com/307122856"
   }
 ]
