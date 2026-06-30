@@ -1,0 +1,31 @@
+{
+  "page_id": "9aed1a3d-4e76-4085-b1bd-9d893804f5d6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "7 distinct named projects: Flatiron Building, Marton Perlaki, Union Pacific, LCS Studio, De Pass Montgomery, Studio Hagen Hall, Gagosian/Jeffrey Deitch"},
+    {"id": "A.depth", "result": "pass", "evidence": "Flatiron: homepage + press interior; Marton Perlaki: homepage + commissioned interior; Union Pacific: 3 pages (homepage, artists, exhibitions)"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Frontend development (web); all 11 project images are live websites Kieran built"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01 visually confirmed as kieranstartup.co.uk; site-02 visually confirmed as instagram.com/kieranstartup (Instagram chrome + @kieranstartup handle visible)"},
+    {"id": "A.uncaptioned", "result": "pass", "evidence": "All 13 active images have captions naming project and year; site-12 rejected (404) and documented"},
+    {"id": "A.embeds", "result": "pass", "evidence": "Web design studio; no video/audio work in scope; no embed requirement triggered"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "site-12 (De Pass Montgomery work interior) rejected with reason '404 page returned' in manifest"},
+    {"id": "B.type", "result": "pass", "evidence": "Studio - correct for Kieran Startup Limited, registered company, sole-practitioner"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, LinkedIn, Email all present and verified in provenance"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Frontend development (web) tagged; Open Question asks Jonathan about adding Web design + Identity systems, which is the correct handling for a scout-uncertain capability expansion"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, Size 1, Work Status Studio; AI Notes names sources: site + LinkedIn + company registration all agree"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Studio type with sole founder clearly embodying org; Autonomy 5 set with reasoning (sole-director studio operation)"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Notes says 'Apfel girl's boyfriend' (social connection only); Familiarity left at 'Don't know them' with Open Question to resolve; Worked Together: Never consistent with no working claim in note"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note contained only a social reference with no stated judgment fields; Open Question filed for Familiarity"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Experience hedged 'per their own site'; LinkedIn detail hedged 'per LinkedIn snippet'; Autonomy has stated reasoning; clients are verifiable. Minor: 'Jonathan knows of them personally' is slightly assertive but follows directly from Notes content"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: 'Web clipper, 2026-06-12'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have correct set_by; source_url null is a known systemic tooling gap per calibration note, not a v1 gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "Programmatic check confirmed zero em-dashes in AI Notes, Open Questions, and Source"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Two terse conditional questions: Familiarity (ambiguous social connection in Notes) and Capabilities expansion (appropriate scout ask)"},
+    {"id": "D.status", "result": "pass", "evidence": "Will flip to Needs Review on this pass"}
+  ],
+  "to": null,
+  "notes": "Clean pass. All 7 projects are distinct live sites Kieran built; context shots verified visually; no em-dashes; Open Questions appropriately conditional. AI Notes slightly asserts Jonathan knows Kieran personally based on Notes field inference, but this is defensible and not a gate failure."
+}

@@ -1,9 +1,9 @@
 {
   "page_id": "df23790d-70de-4574-81cb-843779ac3274",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-30T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-30T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,33 +13,32 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2-3 images per project including interior catalog spreads, in-situ poster photos, moodboard/brief, web mockup and 3D renders."
+      "evidence": "2-3 images per project including catalog spreads, in-situ poster photos, 3D renders and motion GIFs."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "3D renders (Hellerau, B-Sides, TERRA), motion GIFs (Weimar AR + trailer), editorial layouts (Spike, Kunsthalle Kiel). Graphic design work is complementary; scout correctly raised an Open Question rather than overriding the jonathan-set tag."
+      "evidence": "3D renders (Hellerau, B-Sides, TERRA), motion GIFs (Weimar AR and trailer), editorial layouts (Spike, Kunsthalle Kiel). All on-capability for 3D and motion."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-17.png shows laragessner.com homepage (LARA GESSNER header, 3D work). site-18.png shows instagram.com logged-out view with handle @laragess__ confirmed in bio."
+      "evidence": "site-17.png: laragessner.com homepage confirmed (LARA GESSNER header, 3D work). site-18.png: instagram.com logged-out profile, handle @laragess__ visible in bio, correct person."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-07.jpg, site-08.png, and site-09.jpg are captioned with year 2021, but site-07 clearly shows posters reading '15. bis 17. Juni 23' (the 2023 edition of B-Sides Festival). The year in all three B-Sides captions is factually wrong.",
-      "fix": "Correct the year on the three B-Sides captions. If her laragessner.com/B-Sides-Festival page covers multiple years, pick the year that matches the images shown (2023 for the poster images). If the moodboard/brief (site-09) is from a different year, caption it accurately. Update manifest.json captions and re-upload the Work section."
+      "result": "pass",
+      "evidence": "All three B-Sides captions now read 2023. site-07.jpg poster clearly shows '15. BIS 17. JUNI 23' -- year matches. site-08.png 3D visual captioned 2023. site-09.jpg moodboard/brief captioned 2023 consistent with the project. Prior FAIL resolved."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Motion work captured as animated GIFs (site-13, site-14) from the cargo.site CDN -- these are the actual files on her site, not screenshotted videos. No YouTube/Vimeo embeds found or skipped."
+      "evidence": "Motion work captured as animated GIFs (site-13, site-14) directly from CDN. No YouTube/Vimeo found on her site to embed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No documented gaps; all 7 projects are accessible and captured."
+      "evidence": "No documented gaps; all projects accessible and captured."
     },
     {
       "id": "B.type",
@@ -49,17 +48,17 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present and populated."
+      "evidence": "Website, Instagram, LinkedIn, Email all present."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "3D & motion (jonathan-set). Scout raised Open Question to add Graphic design rather than overriding -- correct protocol."
+      "evidence": "3D and motion (jonathan-set). Open Question raised to add Graphic design rather than overriding -- correct protocol."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Germany, Size 1, Employed. AI Notes names sources: site + Ariane Spanier team page agree; LinkedIn HEY HOH association noted as potentially stale."
+      "evidence": "Germany, Size 1, Employed. AI Notes names sources: site and Ariane Spanier team page agree; LinkedIn HEY HOH noted as potentially stale."
     },
     {
       "id": "B.autonomy",
@@ -69,17 +68,17 @@
     {
       "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note implies a relationship."
+      "evidence": "Zero-states appropriate; no clip note implies a relationship."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source shows standard web clipper entry, no special instructions in the clip note."
+      "evidence": "Standard web clipper entry; no special instructions in the clip note."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Seniority and experience read present. LinkedIn association hedged ('may be stale or a secondary association'). No em-dashes confirmed by string search."
+      "evidence": "Seniority and experience read present. LinkedIn association hedged. No em-dashes."
     },
     {
       "id": "D.source",
@@ -89,12 +88,12 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All fields have set_by populated. null source_url is the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "All fields have set_by populated. Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "No em-dashes in AI Notes, Open Questions or captions."
     },
     {
       "id": "D.open-questions",
@@ -104,8 +103,8 @@
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Currently Enriching. Will flip on next pass after caption fix."
+      "evidence": "Flipping to Needs Review now."
     }
   ],
-  "to": "scraper"
+  "to": null
 }
