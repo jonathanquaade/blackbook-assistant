@@ -1,0 +1,112 @@
+{
+  "page_id": "f5547cd0-1d36-42d6-821c-8c128fb22682",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "strangers-01.jpg is captioned 'Strangers, 2012-2020' but visually is a close-up portrait of a man with glasses and a navy jacket that matches the artist's own face and attire from the Instagram profile (site-02.png). The rejected strangers-02.jpg is near-identical (same subject, same jacket, different background). These appear to be press/headshot portraits of Pelle Cass himself pulled from the Strangers series page, not the composite street-photography work the series actually contains.",
+      "fix": "Replace strangers-01.jpg with an actual image from the Strangers series (composite portrait street photography). Go to pellecass.com/strangers and capture a genuine work image. The current file is a headshot of the subject and must not be presented as a portfolio work image."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Same as above: strangers-01.jpg appears to be a headshot of the artist rather than a photograph from his artistic practice. All other 11 work images are on-capability composite photography. One image needs replacement.",
+      "fix": "Same fix as A.project-diversity: replace strangers-01.jpg with an actual Strangers series photograph from pellecass.com/strangers."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png shows pellecass.com homepage (PELLE CASS heading, Crowded Fields hero image). site-02.png shows instagram.com/pellecass profile page with handle 'pellecass', bio 'I am an artist and photographer from Boston', matching follower counts. Both correct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "12 work images across 6 named series; Crowded Fields gets 3 images (Enzo Lefort fencing composite, Dartmouth Football, Head of the Charles Regatta) going inside the series rather than one cover shot. Depth present for the strongest series."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have captions naming the series and a link to the series page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Pelle Cass is a still photographer; no video/audio work expected. No embedded video needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Source material is well-represented; no unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website pellecass.com present. Instagram @pellecass verified (profile shot matches). LinkedIn linkedin.com/in/pelle-cass-52444287 present. Email field is empty; no public contact email is visible on pellecass.com (Adobe Portfolio, no mailto). Absence is plausible and not an obvious search miss."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography and Art practice. Both correct per TAXONOMY.md for a fine-art composite photographer with museum collections. Provenance shows set_by: jonathan, which is from the original migration."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Freelance. AI Notes documents sources: site and LinkedIn both indicate self-employed independent practice. Multi-source check present."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, with reasoning in AI Notes ('fully independent artist-photographer, no employer, operates at highest level of self-direction'). Person entry, so Autonomy is required and present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are consistent with no clip note suggesting a relationship. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relationship facts or instructions were present in the clip note (Source is 'Web clipper, 2026-06-12'). Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual and grounded in verifiable public record (museum collections, awards, monograph, gallery representation). Seniority read present ('fully independent artist-photographer'). No em-dashes present. Sources implicit in the facts cited."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-12'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url is null across all fields; per calibration note (2026-06-21) this is a known systemic tooling gap, not a gate failure. set_by values are correct (migration for original fields, agent for enriched fields). No fact written below 0.8 confidence floor evident."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, captions, and all text fields. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set. Entry has no unresolvable gaps that require Jonathan's input. Correct: terse, conditional, story nudge not applicable (Worked Together = Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching as expected at gate time. Reviewer will flip to Needs Review only on pass."
+    }
+  ],
+  "to": "scraper"
+}

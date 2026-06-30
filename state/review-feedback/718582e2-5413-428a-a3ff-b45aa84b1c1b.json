@@ -1,113 +1,111 @@
 {
   "page_id": "718582e2-5413-428a-a3ff-b45aa84b1c1b",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-30T12:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-30T14:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 work images span 5 named projects: Mouthwash, Ombia Studio, Jacob McKee, Passbase, Southern Guild, Synchrodogs. Captions are distinct."
+      "evidence": "10 work images span 6 named projects: Mouthwash (3), Ombia Studio (2), Jacob McKee (1), Passbase (1), Southern Guild (2), Synchrodogs (1). No repeated project dominates."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Mouthwash has 3 interior views (homepage, podcast/mobile, product page). Ombia has 2 (homepage+mobile composite, product detail page). Passbase has 1 3D hero. Southern Guild and Synchrodogs each contribute 2 images."
+      "evidence": "Mouthwash: homepage, podcast+mobile views, product page interior. Ombia: homepage+mobile composite, product detail+shop pages. Southern Guild: homepage + artists grid. Goes inside projects, not only covers."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "4 of 11 work images (site-04.gif, site-06.gif, site-12.jpg, site-13.jpg) are the CLIENT'S content served on the site, not screenshots of Jason's web/WebGL work. site-04.gif shows a bronze sculpture; site-06.gif shows fine art paintings on a gallery wall; site-12.jpg and site-13.jpg are Synchrodogs' own fine-art photography. The web UI Jason built for Southern Guild and Synchrodogs is not visible in any of these images -- they show what the site displays, not how it is built or designed. This mirrors the Air Company failure that was correctly rejected. Replace with actual UI screenshots of the southernguild.com interface (nav, transitions, layout) and synchrodogs.com UI (their known experimental web design). Mouthwash (3), Ombia (2), Jacob McKee (1), Passbase (1) are solid on-capability; only Southern Guild and Synchrodogs need re-capture.",
-      "fix": "Replace site-04.gif and site-06.gif with a screenshot of the southernguild.com web interface showing its layout, navigation, and/or interactive elements. Replace site-12.jpg and site-13.jpg with a screenshot of the synchrodogs.com web interface showing its design/motion/WebGL. scrape.py shot southernguild.com and synchrodogs.com, or scrape.py --render to capture interactive UI. If capturing the UI itself produces thin results, scrape.py the Behance case study (https://www.behance.net/gallery/182939001/Synchrodogs-Website) for UI mockup images instead."
+      "result": "pass",
+      "evidence": "All 10 work images are screenshots of websites Jason built showing UI chrome, layout, and design: Mouthwash editorial site, Ombia e-commerce, Jacob McKee colorist site, Passbase 3D WebGL identity, Southern Guild gallery (homepage nav + artists grid), Synchrodogs experimental web design. Bounce was for GIF files showing raw client artwork with no UI visible; replacements (site-18, site-19, site-20) are genuine website screenshots with nav and layout visible. Matches tagged capability: Frontend development (web)."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-10.png is jasonbradley.co homepage (PASS: shows 'JASON BRADLEY' header, 'Design Technologist' label). site-11.png is instagram.com/jasonbradleyy profile (PASS: shows Instagram UI, handle @jasonbradleyy, bio 'Design Technologist', matching person)."
+      "evidence": "site-10.png: jasonbradley.co homepage confirmed (shows 'JASON BRADLEY' header, 'Design Technologist' label). site-11.png: instagram.com/@jasonbradleyy confirmed (shows Instagram UI with handle @jasonbradleyy, bio 'Design Technologist', portrait, grid)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 13 active images have captions naming the project and a link. No uncaptioned images."
+      "evidence": "All 12 active manifest entries have captions and source links. No anonymous images."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Jason is a frontend developer, not a video/audio creative. No embeds required for this capability type. No evidence of skipped video embeds on project pages based on what was captured."
+      "evidence": "Jason is a frontend/design technologist, not a video or audio creative. No video/audio embeds required. No evidence of skipped embeds on captured project pages."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Rejected images are documented in manifest with captions explaining why (Behance contamination, duplicates, Air Company client stock). IG is not throttled -- profile screenshot was captured successfully."
+      "evidence": "All rejected images documented in manifest with reject_reason. IG profile screenshot captured successfully (no throttle). No unexplained thin coverage."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person, set_by agent. Correct for a sole practitioner freelance design technologist."
+      "evidence": "Type: Person, set_by agent. Correct for sole practitioner freelancer."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email field is absent from the entry and not documented as 'searched but not found' in AI Notes. The checklist requires a public contact email or documentation that it was searched. The entry at jasonbradley.co includes a 'General Inquiry' button that links to a contact page or email -- this was not captured. AI Notes has no mention of email search.",
-      "fix": "Scout: check jasonbradley.co/contact or inspect the 'General Inquiry' button link on jasonbradley.co for a public email. If found, add it via keeper.py set. If genuinely absent (form-only, no email displayed), note 'Contact form only, no public email found' in AI Notes."
+      "result": "pass",
+      "evidence": "Website: jasonbradley.co (migration). Instagram: instagram.com/jasonbradleyy (agent, verified via Behance + search). Email: mailforjasonbradley@gmail.com (found via mailto link on jasonbradley.co, documented in AI Notes). LinkedIn: confirmed absent, documented in AI Notes ('LinkedIn not confirmed; Behance listed jason-adamus which resolves to a different person'). All four link types resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities: 'Frontend development (web)' set_by jonathan (migration, locked). Scout correctly left it untouched and raised Open Question #1 proposing expansions for Jonathan to confirm. Appropriate handling."
+      "evidence": "Capabilities: 'Frontend development (web)', set_by jonathan (locked). Scout left it untouched and raised Open Question #1 proposing expansions for Jonathan to confirm. Correct handling of a locked jonathan field."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: Netherlands (migration). Size: 1 (correct for sole practitioner). Work Status: Freelance, set_by agent. AI Notes names three confirming sources: own site title, Behance, Awwwards profile. Meets multi-source objective rule."
+      "evidence": "Country: Netherlands. Size: 1. Work Status: Freelance, multi-source: own site title, Behance, Awwwards profile all agree. Objective rule met."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: 'full-stack creative-to-technical execution without oversight, inferred from award history and client tier.' Grounded in verifiable signals (12x Awwwards SOTD, Burberry/Air Company client tier). Hedged as inferred."
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: full-stack creative-to-technical execution without oversight, inferred from 12x Awwwards SOTD and Burberry/Air Company client tier. Hedged as inferred."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note is minimal ('00' in clipped.md, no relationship facts). No evidence contradicts these zero-states."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note contained only '00', no relationship facts. Zero-states do not contradict any evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note body contained only '00' -- no instructions, relationship facts, or judgment to act on. Archive in clipped.md confirms."
+      "evidence": "Clip note body was '00' only. No instructions, relationship facts, or judgments to act on. clipped.md confirms."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges inferred claims ('inferred from award history and client tier'). States sources for Work Status. Includes seniority read ('Senior/director-level independent') paired with Autonomy 5 estimate. LinkedIn absence and Instagram verification path both documented."
+      "evidence": "All inferences hedged ('inferred from award history and client tier'). Work Status sources named. Seniority read ('Senior/director-level independent') paired with Autonomy 5. LinkedIn absence and Instagram verification path documented."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2020-12-08'. Correctly uses the created date."
+      "evidence": "Source: 'Web clipper, 2020-12-08'. Correct format using the created date."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file covers all agent-touched fields. source_url is null throughout -- known systemic gap, not a gate failure per calibration note. set_by values are correct: migration fields as migration, agent writes as agent, jonathan-locked Capabilities as jonathan."
+      "evidence": "Provenance covers all agent-touched fields. source_url null throughout: known systemic tooling gap, not a gate failure per calibration note. set_by values correct: migration fields as migration, agent writes as agent, Capabilities as jonathan (locked)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and captions scanned. No em-dashes found."
+      "evidence": "AI Notes, Open Questions, and all captions checked. No em-dashes present."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "Two questions: (1) Capabilities expansion proposal -- appropriate given locked jonathan field. (2) LinkedIn -- genuine gap, correctly asks Jonathan. Both terse and conditional. Story nudge not applicable (Worked Together is Never, Familiarity is Don't know them)."
+      "evidence": "Two questions: (1) Capabilities expansion proposal, appropriate for locked jonathan field. (2) LinkedIn, genuine gap. Both terse and conditional. Story nudge not applicable (Worked Together: Never, Familiarity: Don't know them)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching. Reviewer will flip to Needs Review only on a pass verdict."
+      "evidence": "Entry was Enriching. Flipping to Needs Review as part of this pass verdict."
     }
   ],
-  "to": "scraper",
-  "summary": "Two FAILs: (1) On-capability: 4 of 11 work images show client-hosted art/photography content rather than Jason's web UI work (Southern Guild sculpture/painting photos, Synchrodogs fine-art photos). Replace with actual web interface screenshots of southernguild.com and synchrodogs.com. (2) Email not searched or documented as absent. Check jasonbradley.co contact link for public email; if form-only note it in AI Notes."
+  "to": "jonathan",
+  "summary": "All checks pass on re-gate. The two attempt-1 failures are resolved: (A.on-capability) replaced GIF client-artwork files with website screenshots (site-18 Southern Guild homepage, site-20 artists grid, site-19 Synchrodogs UI) showing Jason's web design and layout work; (B.links) Email mailforjasonbradley@gmail.com added from mailto link on jasonbradley.co, LinkedIn absence documented in AI Notes. Entry is complete and ready for Jonathan."
 }

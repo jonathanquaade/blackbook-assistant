@@ -1,9 +1,9 @@
 {
   "page_id": "042e3f9a-3870-4fc3-adfb-4c16445d33f9",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-30T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-30T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,17 +13,17 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2-3 images per series going inside the work (e.g. site-01 reaper drone, site-02/03 telephotography landscapes, site-07/08/09 hallucination composites), not only hero covers."
+      "evidence": "2-3 images per series going inside the work (reaper drone closeup, hallucination composites, installation interior of From Apple to Anomaly), not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 16 work images are Photography/Art practice: surveillance photography, astrophotography, AI-generated composites, ImageNet installation. No off-capability work present."
+      "evidence": "All 16 work images are Photography/Art practice: surveillance photography, astrophotography, AI-generated composites, ImageNet installation. No off-capability work."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-17.png is paglen.studio homepage (TREVOR PAGLEN header, series grid visible). site-18.png is instagram.com/trevorpaglen (trevorpaglen handle, bio 'i am an artist', portrait + grid visible). Both correct."
+      "evidence": "site-17.png is paglen.studio homepage (TREVOR PAGLEN header, series grid confirmed visually). site-18.png is instagram.com/trevorpaglen (trevorpaglen handle, 'i am an artist' bio, portrait + grid confirmed visually). Both correct."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,12 +33,12 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Paglen's practice is still photography and print installations; no video project pages were present requiring embeds. Not applicable."
+      "evidence": "Still photography and print installation practice; no video project pages requiring embeds. Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "18 images captured; no thin or unexplained gaps. No IG queue needed (context shot obtained logged-out)."
+      "evidence": "18 images captured across 6 series; no thin or unexplained gaps. No IG queue needed."
     },
     {
       "id": "B.type-classified",
@@ -47,66 +47,64 @@
     },
     {
       "id": "B.links-present",
-      "result": "fail",
-      "evidence": "LinkedIn field is empty and AI Notes contains no mention of whether LinkedIn was searched. CLAUDE.md requires: 'ALWAYS search (<name> <discipline> linkedin); Genuinely none -> say so in AI Notes.' The scout skipped documenting this entirely.",
-      "fix": "Search 'Trevor Paglen artist linkedin'. If a profile exists, add it. If not found, write 'LinkedIn: searched, no public profile found' in AI Notes."
+      "result": "pass",
+      "evidence": "Website, Instagram, Email present. LinkedIn searched and documented in AI Notes: 'LinkedIn: searched, no personal profile found (posts by others mentioning him appear but no profile page).' Prior failure addressed."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Photography and Art practice (set_by jonathan). Correct and consistent with work captured."
+      "evidence": "Photography and Art practice (set_by jonathan). Consistent with work captured."
     },
     {
       "id": "B.country-size-workstatus",
-      "result": "fail",
-      "evidence": "Two sub-issues. (1) Size = '1' (from migration, never updated) but AI Notes states 'Runs his own studio (paglen.studio) with staff'. A studio-with-staff is not Size 1; it should be at minimum 2-10. (2) Work Status = 'Studio' is correct but the objective multi-source rule (CLAUDE.md) requires AI Notes to name which sources were checked and which prevailed (e.g. 'site + IG both show studio; LinkedIn not verified'). AI Notes is silent on sources for this determination.",
-      "fix": "Update Size to 2-10 (or whatever the actual headcount evidence supports). Add one sentence to AI Notes naming the sources used to determine Work Status = Studio."
+      "result": "pass",
+      "evidence": "Size corrected to 2-10 in provenance (verified_at 2026-07-01), sourced from 2023 interview naming studio team. Work Status Studio sourcing now in AI Notes: 'paglen.studio names a studio entity with staff; Instagram bio confirms independent practice.' Prior failure addressed."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5 with explicit reasoning ('independent artist at peak international career, fully self-directed practice, no employer above him'). Grounded in verifiable career history."
+      "evidence": "Autonomy 5, set_by agent, with explicit reasoning in AI Notes. Person entry: required and present."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never/Don't know them/Unvetted) consistent with no evidence of a Jonathan relationship. No clip note to contradict."
+      "evidence": "Zero-states consistent with no evidence of a Jonathan relationship. No clip note to contradict."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Migration entry; no clip note instruction text present beyond the web clipper baseline."
+      "evidence": "Migration entry; no clip-note instruction text beyond the web clipper baseline."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Factual claims (awards, galleries, publications, academic credentials) are verifiable and stated plainly. No unhedged inferences. Seniority and Autonomy read included."
+      "evidence": "Factual claims (awards, galleries, academic credentials) are verifiable and stated plainly. Seniority and Autonomy read included. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2020-11-02'. Correct format for a migration/clipper entry."
+      "evidence": "Source: 'Web clipper, 2020-11-02'. Correct format."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by and verified_at for all agent-set fields. source_url null is a known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance file present with set_by and verified_at for all agent-set fields. source_url null is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, captions, or Open Questions."
+      "evidence": "No em-dashes found in AI Notes, captions, or any agent-written text."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "No Open Questions set. Appropriate: no unresolvables and no story nudge triggered (judgment fields at zero-state, no relationship evidence)."
+      "evidence": "No Open Questions set. Appropriate: no unresolvables, no story nudge triggered."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Correctly held for this gate."
+      "evidence": "Flipped to Needs Review on this pass."
     }
   ],
-  "to": "scout"
+  "to": null
 }

@@ -1,0 +1,114 @@
+{
+  "page_id": "6826484b-b889-4966-92c4-549e5c41aa9f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 images span 9 distinct named works (Studio 1997, Laboratory 2000, Clearing 2003, Grotto 2006, Presidency II 2008, Kontrollraum 2011, Pacific Sun 2012, Werkstatt 2017, Pond 2020, Ballroom 2025) — each visually confirmed as a different work"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Includes interior/detail shots: kontrollraum-detail (paper construction close-up), werkstatt-detail (cardboard violins interior), pacific-sun film still, pond installation view — not just hero shots"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography + Art practice; all images are Demand's paper/cardboard reconstruction photographs — fully on-capability"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as thomasdemand.net homepage (nav bar reads 'THOMAS DEMAND / Now / Selected Work / Biography, Books & Contact'). No Instagram exists per documented search in AI Notes — no IG context shot required; absence documented"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions naming project + year + medium; links provided to source pages"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Pacific Sun (2012 video work) has both a film still image AND a Vimeo embed entry in the manifest; entry is not embeds-only"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states 'No personal Instagram found; no LinkedIn (consistent with major fine-art figures)'"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person, set_by agent, sourced from thomasdemand.net"
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: thomasdemand.net (confirmed active). Instagram: none found, documented in AI Notes. LinkedIn: none found, documented in AI Notes. Email: not found, not documented in AI Notes — minor documentation gap but plausible absence for a major fine-art figure with gallery representation; no hard evidence a public email exists"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography + Art practice — both per TAXONOMY.md, set_by jonathan in provenance (Capabilities carried from clipper), appropriate to his practice"
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Germany (sourced thomasdemand.net). Size: 1. Work Status: Studio (runs own practice + Berlin/LA studio), sourced thomasdemand.net, AI Notes names the sources checked (site, IG absence, LinkedIn absence)"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes includes seniority read (30+ yr career, professor of sculpture HFBK Hamburg, represented by Matthew Marks + Spruth Magers, MoMA retrospective); Autonomy 5 well-grounded"
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship evidence. No clip note instructions beyond 'Web clipper' baseline"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2026-06-12'; no instructional text in the clip note to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Career facts (training, galleries, exhibitions, collections, honors) are verifiable public record stated as fact; Work Status inference hedged as '(professorship secondary)'; no em-dashes found; seniority + Autonomy reasoning present"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2026-06-12' — correct format for a backfill entry"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values; source_url null only on judgment zero-states (Worked Together, Familiarity, Work With?) which is the documented systemic gap, not a gate failure per calibration note 2026-06-21"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dash character (U+2014) found in AI Notes, captions, or any agent-written field"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions set; none required (no resolvable unknowns, no relationship context, no conflicting sources). Story nudge not triggered (Worked Together remains Never)"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; this gate flip to Needs Review is the correct next step"
+    }
+  ],
+  "notes": [
+    "Orphaned file 'kontrollraum-2011.jpg' is on disk but absent from manifest and Images property — this is a superseded intermediate from the capture pass, not a missing or mislabeled image; the detail shot (kontrollraum-detail-2011.jpg) is in the manifest and correctly shows the paper construction interior",
+    "Email absence not explicitly documented in AI Notes (only Instagram and LinkedIn are called out); acceptable for a major museum-collected artist with gallery representation, but a one-line note would be cleaner in future"
+  ],
+  "to": null
+}

@@ -1,0 +1,112 @@
+{
+  "page_id": "890cd9cc-8c04-494a-9ae9-f856c28e3b0b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T12:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "17 work images span 5 distinct named series: Datazone, D.P.R.K., Fukushima, E.A.U./Emirates, Alphaville. No repetition of project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per series, going inside the projects (documentary stills, landscape, portrait), not just cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is Photography and Art practice (long-form documentary photography). Matches tagged Capabilities exactly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-05.png (captioned 'Instagram profile') is a partially obscured instagram.com page: a sign-up/login modal covers the grid. The handle philippe.chancel is visible and correct, so identity is confirmed, but the shot is not clean. The checklist exception (IG throttle) requires the broken capture to be (1) marked rejected:true in manifest, (2) documented in AI Notes, AND (3) queued in state/ig-queue.json. None of those three conditions are met: manifest has no rejected flag, AI Notes do not mention the failed capture, and state/ig-queue.json has no entry for this page_id.",
+      "fix": "Either: (a) re-capture a clean logged-out IG screenshot if IG is now serving the public grid, OR (b) mark site-05.png as rejected:true in manifest, add a note to AI Notes ('IG context shot blocked by login modal; queued for ig.py grab'), and add an entry to state/ig-queue.json for page_id 890cd9cc-8c04-494a-9ae9-f856c28e3b0b. Then re-submit for review."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 work images have captions naming the series and year, plus a source link. Context shots have descriptive captions ('Website', 'Instagram profile')."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Philippe Chancel is a still photographer; no video/audio embeds expected or missing. No YouTube/Vimeo on checked project pages."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "17 images from named series; no unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (philippechancel.com), Instagram (@philippe.chancel verified correct person per bio 'PHILIPPE CHANCEL scopique, VISUAL ARTIST'), LinkedIn present. Email not found; no public contact email on his site or gallery page, acceptable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography and Art practice. Set_by: jonathan in provenance; appropriate and accurate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: France; Size: 1; Work Status: Freelance. AI Notes documents sources: 'site and gallery representation both confirm independent practice; no employer signal found.' Meets the objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. AI Notes reasoning: 'entirely self-directed, autonomous long-form projects across decades, no employer relationship visible.' Well-grounded for a 40-year independent artist-photographer."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are consistent with the entry being a 2020 web-clip with no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-02'. No clip note instructions present beyond the website URL. Source references Polka Galerie context noted in the spawn prompt and covered in AI Notes."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (exhibitions, collections, gallery representation, specific awards/nominations). Seniority and Autonomy read are present and grounded in work history. No em-dashes detected."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-02'. Filled and correct."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by entries. source_url is null throughout but this is the known systemic tooling gap, not a gate failure per checklist calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes. Captions use commas and parentheses throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. No unresolved ambiguities that require asking Jonathan. Story nudge not applicable (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Will flip to Needs Review only on pass."
+    }
+  ],
+  "notes": "One caption warrants scraper attention but is not a hard fail: site-01.jpg is captioned 'Datazone, Japan (Asia Symphony), 2019' and links to philippechancel.com/Datazone-1, but the image shows the cargo ship Asia Symphony beached during the 2011 Fukushima tsunami. Datazone is a multi-site project that plausibly includes this location, so the attribution may be correct, but the caption is ambiguous and could be confused with the dedicated Fukushima series. Scraper should verify whether this image appears on the Datazone-1 page or the Fukushima page and correct the caption if needed.",
+  "to": "scraper"
+}
