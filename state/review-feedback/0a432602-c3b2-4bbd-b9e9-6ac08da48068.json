@@ -1,0 +1,111 @@
+{
+  "page_id": "0a432602-c3b2-4bbd-b9e9-6ac08da48068",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Images span 6+ distinct projects: Fact Residency, Fact Mix 781 AV, Gutter (DJ Python), Objekt Live AV, Solvency series, Silk Road series, Plastic Pulse. Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project in most cases (e.g. 3x Fact Mix 781, 3x Gutter, 3x Objekt, 3x Solvency variants, 3x Plastic Pulse). Goes inside the work, not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities field is jonathan-locked at Frontend development (web) from migration; scout correctly did not override it and raised a question in Open Questions. Captured work is generative AV / code art, which is consistent with his actual practice and the proposed capability update. No off-capability capture visible."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as ezramiller.biz homepage (correct). IG profile shot: scrape failed logged-out; manifest entry marked rejected with documented reason; queued to state/ig-queue.json. Sanctioned exception path followed correctly."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in manifest has a caption naming the project and a source link. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two YouTube embeds present (Fact Residency and Gutter). Each has a corresponding thumbnail preview image. Embed captions include project link."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG capture failure documented in manifest (rejected entry with reason) and queued to ig-queue.json. AI Notes mentions the queue. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent, sourced from ezramiller.biz."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (ezramiller.biz), Instagram (@ezzzrrra, sourced from site), Email (ezra@ezramiller.biz, from site) all present. LinkedIn: not found at 0.8 confidence; documented in AI Notes and asked in Open Questions. Acceptable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities field is jonathan-set (migration, locked). Scout raised a well-formed Open Question asking Jonathan to confirm or update to Art practice / Creative technology / Frontend development (web) / 3D & motion. Correct handling of a locked field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country US, Size 1, Work Status Freelance all set with agent provenance. AI Notes documents the three-source resolution (site + IG bio + Whitewall article). Objective rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: solo practice, strong client list, ADC Young Guns, 10+ years. Grounded and hedged appropriately."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are not contradicted by any note or evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Notes field contains jonathan-set value 'Creative Technology'. Scout used this as signal for the Open Question about Capabilities rather than overriding the locked field. No other clip instructions visible."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes use 'roughly', 'among youngest', 'no LinkedIn found at 0.8 confidence'. Seniority + Autonomy read present. No unhedged inferences visible."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; migration baseline. Identified via ezramiller.biz + ItsNiceThat profile (2018) + CLOT Mag interview + Whitewall feature + Fact Mag residency (2020).' Specific and complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and complete for all fields. set_by values look correct (jonathan for Notes/Capabilities migration, agent for all scout-written fields). source_url null on a few fields is the known systemic gap, not a gate failure per checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or manifest captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities confirmation (appropriate since field is jonathan-locked and practice clearly wider than tagged); (2) LinkedIn URL ask. Both terse and conditional. No story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching awaiting this gate. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. Strongest aspects: diverse projects (7 distinct), proper embed+thumbnail pattern for video work, sanctioned IG exception path followed exactly. One open item for Jonathan: Capabilities field is migration-locked at 'Frontend development (web)' but his practice is clearly generative AV / creative technology; the scout has asked the right question."
+}

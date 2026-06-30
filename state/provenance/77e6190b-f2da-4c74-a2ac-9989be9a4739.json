@@ -47,9 +47,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-06-28T22:56:28",
+      "verified_at": "2026-07-01T00:23:22",
       "set_by": "agent"
     },
     "Work With?": {
@@ -77,6 +77,30 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-07-01T00:23:13",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2026-06-12",
+      "source_url": null,
+      "verified_at": "2026-07-01T00:23:13",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Identity unknown: name field is 'sb', website https://developer.sb/ is currently unreachable (ECONNREFUSED), and no web search returned identifying information. Jonathan rated this 4 and tagged Frontend development (web), so he knows who this is. Country: UK, Size: 1 from migration. Cannot confirm seniority, Autonomy, or work history without the site or a full name. IG capture queued pending identification.",
+      "source_url": null,
+      "verified_at": "2026-07-01T00:23:13",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Who is \"sb\"? The name field has only initials and https://developer.sb/ is currently down -- full name needed to research and enrich this entry.\n",
+      "source_url": null,
+      "verified_at": "2026-07-01T00:23:22",
+      "set_by": "agent"
     }
   }
 }

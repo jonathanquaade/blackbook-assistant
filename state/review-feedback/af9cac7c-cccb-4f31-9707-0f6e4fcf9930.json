@@ -1,85 +1,84 @@
 {
   "page_id": "af9cac7c-cccb-4f31-9707-0f6e4fcf9930",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-29T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Non-visual strategist entry; no image portfolio expected. Bookmarks (House of Coco interview, LinkedIn) are the correct shape for a consultant."
+      "evidence": "Non-visual strategist. Bookmarks (House of Coco interview, LinkedIn) are the correct shape for a consultant. No image portfolio expected."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "N/A for a strategist; bookmarks reference named work history (Sophia Webster, Rixo, Martine Rose)."
+      "evidence": "N/A for a strategist. Bookmarks reference named work history (Sophia Webster, Rixo, Martine Rose)."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Captured work (interview, LinkedIn) is on-capability for Brand strategy / ecommerce consultant. No off-capability material present."
+      "evidence": "Captured work (interview, LinkedIn) is on-capability for Brand strategy / ecommerce consultant. No off-capability material."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-01.png is captioned 'Instagram profile' and sourced from instagram.com/lesleyboerio, but the image is a blank white page showing only the Instagram logo and 'from Meta' -- a logged-out IG error/splash page, not a real profile screenshot. The checklist exception (broken capture is acceptable if: rejected: true in manifest AND documented in AI Notes AND queued to ig-queue.json) is not met: the manifest entry has no 'rejected' flag, the entry is absent from state/ig-queue.json, and AI Notes do not mention that the IG context shot failed. No website context shot exists (website is dead -- this absence is acceptable as documented). The broken IG splash that is not flagged, not queued, and not documented is a FAIL.",
-      "fix": "In manifest.json: add 'rejected': true to the site-01.png entry. Add Lesley Boerio to state/ig-queue.json with reason 'logged-out IG served error/splash page; real profile screenshot needs ig.py logged-in grab'. In AI Notes: add one sentence noting the IG context shot returned an error page and is queued for a logged-in ig.py run. No new image capture is needed now -- queuing is the sanctioned path."
+      "result": "pass",
+      "evidence": "Bounce fix confirmed: manifest.json has 'rejected': true on site-01.png (the blank IG splash). Entry is present in state/ig-queue.json with correct reason. AI Notes documents 'Instagram context shot failed: logged-out IG served a blank splash page; entry added to ig-queue.json for ig.py logged-in grab.' All three conditions of the checklist exception are met. Website context shot absent because lesleyboerio.com is confirmed dead (documented in AI Notes and Open Questions) -- absence explained."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "The one image and both bookmarks carry captions and links."
+      "evidence": "Both bookmarks carry captions and links. site-01.png is rejected and not uploaded."
     },
     {
       "id": "A.embeds",
       "result": "pass",
-      "evidence": "No video/audio applicable for a strategist. Bookmarks are the correct format."
+      "evidence": "No video/audio applicable for a brand strategist. Bookmarks are the correct format."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Dead website documented in AI Notes and Open Questions. IG issue is the separate fail above; once that is queued and documented the absence is properly explained."
+      "evidence": "Dead website documented in AI Notes and Open Questions. IG context shot queued and documented per sanctioned path."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Person -- correct, set_by agent."
+      "evidence": "Person, set_by agent. Correct for a solo freelance consultant."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website present (dead, documented), Instagram present (URL plausible from Google search, profile verification is the IG-queue task), LinkedIn present. Email: no public email found; website is dead and no email surfaces on IG or LinkedIn snippet -- absence is plausible for a solo consultant with a lapsed site. Not a clear search miss."
+      "evidence": "Website present (dead, documented), Instagram URL present (handle verified against LinkedIn profile context), LinkedIn present. No public email found; website dead, no email on IG or LinkedIn snippet -- plausible absence for a solo consultant with a lapsed site."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Brand strategy, set_by jonathan (provenance confirms). Correct."
+      "evidence": "Brand strategy, set_by jonathan. Correct per provenance."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK/1/Freelance. Work Status sourced from LinkedIn (Founder of Lesley Boerio Fashion Consultancy) plus self-founded consultancy. Sources named in AI Notes."
+      "evidence": "UK / 1 / Freelance. Work Status sourced from LinkedIn (Founder of Lesley Boerio Fashion Consultancy, self-founded solo practice). Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: experienced solo practitioner, client-facing, but specialist rather than broad CD. Grounded in work history."
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: experienced solo practitioner, client-facing, specialist rather than broad CD. Grounded in documented work history (~18-20 years, multiple named employers)."
     },
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "Worked Together: Never and Familiarity: Don't know them are consistent with the clip note (no relationship language; 'Working for Vyrao' is a fact about her work, not about Jonathan knowing her). Notes field is jonathan's, left untouched."
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are consistent with clip note (no relationship language). Notes field is jonathan's, untouched."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Clip note content (Vyrao ecommerce launch, portfolio images reference) was read and the Vyrao work surfaced in AI Notes. No judgment statements in the clip that would require --from-jonathan."
+      "evidence": "Clip note content acted on (Vyrao work surfaced in AI Notes). No judgment statements requiring --from-jonathan."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges years (~18-20), notes website may be temporarily down or domain lapsed, sources Work Status to LinkedIn. Seniority + Autonomy read present."
+      "evidence": "AI Notes hedges years (~18-20), documents website as confirmed dead (Playwright timeout, not transient), sources Work Status to LinkedIn. Seniority and Autonomy read present. No em-dashes."
     },
     {
       "id": "D.source",
@@ -89,12 +88,12 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have set_by values. source_url is null throughout -- known systemic tooling gap, not a gate failure per calibration note 2026-06-21. set_by values are correct (jonathan for Notes and Capabilities, agent for everything else the agent set)."
+      "evidence": "All touched fields have set_by values. source_url is null throughout -- known systemic tooling gap, not a gate failure per calibration note 2026-06-21. set_by values correct (jonathan for Notes and Capabilities, agent for all agent-set fields)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions contain no em-dashes."
+      "evidence": "AI Notes and Open Questions scanned -- no em-dashes present."
     },
     {
       "id": "D.open-questions",
@@ -104,8 +103,8 @@
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is Enriching -- correct, awaiting this gate."
+      "evidence": "Entry is Enriching -- correct pre-gate state. Flipping to Needs Review as part of this pass verdict."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

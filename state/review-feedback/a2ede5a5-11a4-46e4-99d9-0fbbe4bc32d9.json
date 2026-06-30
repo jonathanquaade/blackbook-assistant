@@ -1,0 +1,111 @@
+{
+  "page_id": "a2ede5a5-11a4-46e4-99d9-0fbbe4bc32d9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-29T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 accepted images span 7 distinct named projects: Armin Linke/IGFAE, Sabela Mendoza, IGFAE Labs, LLIM Venice Biennale, Noroeste Obradoiro, Marxe arquitectura, Fundacio Sorigue, Premios Enor. No caption repeats."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Sorigue has 4 images showing homepage, sections, interior view, and collection grid. Remaining 6 projects are single-image hero shots each. Acceptable spread across 7 projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All accepted work images are screenshots of live websites (fundaciosorigué.com, sabelamendoza.com, igfae.usc.es/labs, llim.llull.cat, noroesteobradoiro.com, marxe.eu, premio.enor.es). Matches tagged Capabilities: Frontend development (web) + Web design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed as iagobarreiro.com homepage (black bg, portfolio list with Novagarda credits). site-14.png confirmed as instagram.com/iacus profile showing handle @iacus, name Iago Barreiro, 0 posts/1193 followers, 'No posts yet' grid. Both are real and correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every accepted manifest entry has a caption and a link. Context shots have 'Website' and 'Instagram profile' captions with source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Web design discipline; no video or audio work to embed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG @iacus has 0 public posts (grid cleared/archived) - confirmed in the context screenshot itself. AI Notes does not spell out the 0-posts reason explicitly, but the capture is self-documenting. No queuing needed since a screenshot of the real profile was successfully obtained logged-out."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer/developer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (iagobarreiro.com), Instagram (instagram.com/iacus, verified by bio 'Iago Barreiro / I design and code things'), LinkedIn (linkedin.com/in/iago-barreiro), Email (iago@iagobarreiro.com). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) + Web design. Set_by jonathan (his locked field). Scout correctly proposed Identity systems and Creative direction additions via Open Question rather than overwriting."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Spain; Size: 1; Work Status: Studio (co-founder of Novagarda per DAG profile + Domestika). Resolution sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: senior practitioner, 10+ years, designs and codes full projects independently, co-runs a studio."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note instructions beyond the entry itself. Entry cleaned, metadata filled."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts (Laus awards, named employers, LABASAD profile) asserted; Domestika freelance availability hedged as 'lists him open to freelance'. Autonomy estimate marked as Autonomy 4 with supporting rationale. Seniority and trajectory documented (10+ years, Barcelona background, Galicia return)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; iagobarreiro.com, DAG profile dag.gal/es/iago-barreiro, LABASAD profile labasad.com/profesor/iago-barreiro, Domestika, web search'. Multi-source, specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with correct set_by values. source_url is null throughout - known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions checked. No em-dashes found. Semicolons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: proposes Capabilities additions to jonathan-locked field - correct channel. Terse and conditional (Capabilities already has a non-zero jonathan value, so asking rather than writing). Story nudge not required (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, awaiting this gate. Flip to Needs Review follows this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. 7 distinct web projects, all on-capability. Context shots verified visually. IG 0-posts accurately captured and self-documenting via the context screenshot. Scout handled the jonathan-locked Capabilities field correctly via Open Question. No em-dashes, no contradictions, provenance complete."
+}
