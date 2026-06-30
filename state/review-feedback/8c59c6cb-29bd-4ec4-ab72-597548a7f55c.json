@@ -1,115 +1,111 @@
 {
   "page_id": "8c59c6cb-29bd-4ec4-ab72-597548a7f55c",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-06-30T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-06-30T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Active images span 4 distinct projects: Nike Rise 2022, Instagram Global Gradient Toolkit, Nike Global Retail Language 2024, Blue Series (personal). Sufficient diversity."
+      "evidence": "13 active images span 5 distinct projects: Nike Rise 2022, Instagram Global Gradient Toolkit 2024, Nike Global Retail Language 2024, IBM Observability/AI Automation 2024, Blue Series (personal generative art). No caption repeats across projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Nike Rise has 4 images showing store interior, exploded diagram, facade, content creator view. Blue Series has 2 images (digital print + gallery installation). Goes inside projects."
+      "evidence": "Nike Rise has 4 images (store interior, exploded system diagram, facade, content creator view). Nike Global Retail has 3. Blue Series has 2 (digital print + gallery installation). Goes inside projects, not just hero covers."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "site-03.png is uploaded and captioned 'Nomi Cose Citta, gianlucamonaco.com' but the actual image is a Google Maps screenshot of a cycling route (Piovera to Godo, 5 stages). This is not a project image at all -- it appears to be an accidental scrape artifact from a Google Maps embed on the site. The 'Nomi Cose Citta' project (which appears to be a poetry book or typographic project based on the website grid shown in site-16.png) was not actually captured; only a Google Maps location screenshot was pulled instead.",
-      "fix": "Remove site-03.png from Images and the manifest (mark rejected). Capture the actual Nomi Cose Citta project images from gianlucamonaco.com (the typographic/poetry book visible in the site thumbnail grid in site-16.png). If the project has no accessible detail page or images, replace with a different project from the site or from an interview source."
+      "result": "pass",
+      "evidence": "site-03.png is marked rejected in manifest with reason documented. ibm-01.jpg replaces it -- confirmed as IBM AI Automation case study image from field.io/work/observability-solutions (presentation of interactive data viz system). All 11 work images are Field.io client projects or personal creative coding work, matching Capabilities: Frontend development (web) + Web design."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-16.png is the real gianlucamonaco.com homepage (confirmed: shows his name, bio 'I am a designer and developer', project grid including Blue Series and Nomi Cose Citta thumbnails). site-17.png is the real instagram.com/gianlucamonacou profile (confirmed: shows username 'gianlucamonacou', name 'Gianluca Monaco', 54 posts, 1218 followers)."
+      "evidence": "site-16.png confirmed as real gianlucamonaco.com homepage (shows name, bio 'I am a designer and developer', project grid). site-17.png confirmed as real instagram.com/gianlucamonacou profile (handle 'gianlucamonacou', name 'Gianluca Monaco', 54 posts, 1218 followers). Both correct and correctly labeled."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All active images have captions and source links in the manifest. No anonymous images."
+      "evidence": "All 13 active manifest entries have captions and source links. No anonymous images."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Capabilities are Frontend development (web) and Web design; no audio/video embed requirement triggered. Field.io project pages may have video but the captured work is adequately represented by static images for a web/frontend designer."
+      "evidence": "Capabilities are Frontend development (web) and Web design. No audio/video embed requirement. Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained thin sections. IG not queued (not needed given context shots obtained). Site accessible and scraped."
+      "evidence": "No unexplained thin sections. Site accessible, 5 projects captured, context shots obtained. No IG queue needed."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Person, set_by: agent."
+      "evidence": "Type = Person, set_by: agent. Correct for an individual designer/developer."
     },
     {
-      "id": "B.links-present",
+      "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all filled. Instagram handle @gianlucamonacou confirmed correct person (name and profile match in site-17.png). Works At Link set to field.io (employer not in DB, correct fallback)."
+      "evidence": "Website (gianlucamonaco.com), Instagram (instagram.com/gianlucamonacou, verified correct person in site-17.png), LinkedIn, Email all present. Works At Link = field.io (employer not in DB, correct fallback)."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities = Frontend development (web) + Web design, set_by: jonathan. Open Question asks Jonathan whether to add Creative technology and Art practice given his generative art work. Correct handling of a jonathan-locked field."
+      "evidence": "Capabilities = Frontend development (web) + Web design, set_by: jonathan. Open Question asks whether to add Creative technology and Art practice given Field.io generative work. Correct channel for a jonathan-locked field."
     },
     {
-      "id": "B.country-size-workstatus",
+      "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country = Italy, Size = 1, Work Status = Employed. AI Notes names sources: Jonathan's Dec 2024 note + external sources agree on Field.io employment. Objective multi-source rule documented."
+      "evidence": "Country = Italy, Size = 1, Work Status = Employed. AI Notes documents sources: Jonathan Dec 2024 note + external sources agree on Field.io employment. Objective multi-source rule applied."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 4, set_by: agent. AI Notes grounds it: senior level (~10 yrs), ships code and design, employed at respected creative tech studio. Seniority trajectory present (ISIA Urbino, Lava Amsterdam, freelance, Vacanza Studio, Field.io)."
+      "evidence": "Autonomy = 4, set_by: agent. AI Notes grounds it: senior level (~10 yrs), ships code and design, Field.io employment history. Seniority trajectory documented (ISIA Urbino, Lava Amsterdam, freelance, Vacanza Studio, Field.io)."
     },
     {
-      "id": "C.no-judgment-contradicts-evidence",
-      "result": "fail",
-      "evidence": "Two judgment fields contradict the clipped.md call notes, which are clearly Jonathan's own words from a call with Gianluca: (1) Work With? = 'Unvetted' -- but clipped.md states 'Should we work with him? Yes, on smaller portfolio projects like Morningside, Aera Nova, AUFI sized sites'. That is a clear Jonathan judgment of Work With? = Yes. (2) Familiarity = 'Don't know them' -- but clipped.md contains detailed call notes (availability, rate, stack, working style) indicating Jonathan had a real conversation with him. Familiarity should be at minimum 'Met or spoken', and likely needs an Open Question to confirm.",
-      "fix": "Scout: (1) Set Work With? = Yes via keeper.py set --from-jonathan, preserving the quote from clipped.md in Source. (2) Set Familiarity = 'Met or spoken' via --from-jonathan, or if uncertain about the exact level, leave it empty and add a terse Open Question ('Familiarity? (have his call notes)'). Do NOT leave Don't know them when a full call transcript exists."
+      "id": "C.no-judgment-contradicts",
+      "result": "pass",
+      "evidence": "Work With? = Yes (set_by jonathan, sourced from clipped.md: 'Should we work with him? Yes, on smaller portfolio projects like Morningside, Aera Nova, AUFI sized sites'). Familiarity = 'Met or spoken' (set_by jonathan, sourced from full call transcript in clipped.md). Worked Together = Never (set_by agent -- call was a discovery/screening call, not a work collaboration, so Never is correct and not contradicted by clipped.md evidence)."
     },
     {
       "id": "C.clip-note-acted-on",
-      "result": "fail",
-      "evidence": "The clipped.md contains Jonathan's call notes with explicit judgment signals that were not acted on: Work With? = Yes, Familiarity implied >= Met or spoken, Day Rate mentioned as 300-500 (the scout set 400 which is reasonable midpoint but the range note should have been flagged or the provenance should cite the clip). The Day Rate is already set (set_by: jonathan per provenance -- likely from a prior migration step). The Work With? and Familiarity items are the active failures.",
-      "fix": "Same as C.no-judgment-contradicts-evidence fix above."
+      "result": "pass",
+      "evidence": "Work With? = Yes set via --from-jonathan with clipped.md quote in source. Familiarity = 'Met or spoken' set via --from-jonathan with same sourcing. Day Rate = 400 (set_by jonathan, within the £300-500 range stated in call notes). All judgment signals from clipped.md acted on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges inferences with 'likely refers to', 'most recently listed as', '~10 yrs'. Verifiable facts (Field.io employment, career history, Jonathan's note confirmation) are asserted appropriately. Seniority and Autonomy reasoning present."
+      "evidence": "Inferences hedged ('likely refers to', 'most recently listed as', '~10 yrs'). Verifiable facts (Field.io employment, career trajectory, Jonathan's Note confirmation) asserted appropriately. Seniority and Autonomy reasoning present."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Migration entry; website gianlucamonaco.com; Balloon Project interview; Digicult interview; LinkedIn snippet (Rome, Italy)'. Filled and informative."
+      "evidence": "Source = 'Migration entry; website gianlucamonaco.com; Balloon Project interview; Digicult interview; LinkedIn snippet (Rome, Italy)'. Multi-source, specific."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by populated for every field. source_url is null throughout -- noted as known systemic tooling gap per calibration note, not a gate failure."
+      "evidence": "All touched fields have provenance with correct set_by values. Familiarity and Work With? show set_by: jonathan with source_url documenting the clipped.md call notes. source_url null on other fields is the known systemic tooling gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions use double hyphens (--) not em-dashes. No em-dashes found."
+      "evidence": "AI Notes and Open Questions checked programmatically. No em-dashes (U+2014) found. Double hyphens (--) used in AI Notes and Open Questions throughout."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One Open Question on Capabilities expansion -- terse and conditional (Capabilities is jonathan-set so asking is correct). No question asked for fields already with non-zero values."
+      "evidence": "One Open Question on Capabilities expansion -- terse and conditional (jonathan-set field, asking before overwriting). No question asked for fields with non-zero values. Story nudge not required: Notes is not empty ('Dec 24: He is at Field.io fulltime')."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry Status = Enriching. Correct holding state pending this gate."
+      "evidence": "Entry Status = Enriching, awaiting this gate. Flipping to Needs Review on pass."
     }
   ],
-  "failing_checks": ["A.on-capability", "C.no-judgment-contradicts-evidence", "C.clip-note-acted-on"],
-  "to": "scraper",
-  "bounce_notes": "Two agents need fixes. The image fix (site-03.png is a Google Maps screenshot, not project work) goes to the scraper. The judgment fixes (Work With? and Familiarity not acted on from call notes in clipped.md) go to the scout. Routing to scraper first since the image fix is simpler and the scout fix can be bundled in the same bounce if the scraper agent is given both tasks, OR route to scout only and scraper separately. Recommended: bounce to SCOUT (to fix Work With? + Familiarity from clipped.md) AND to SCRAPER (to fix site-03.png). Both are required before re-gate."
+  "to": null,
+  "notes": "All three attempt-1 failures resolved. site-03.png (Google Maps screenshot) marked rejected and replaced with ibm-01.jpg from Field.io IBM Observability case study. Work With? = Yes and Familiarity = 'Met or spoken' set via --from-jonathan, correctly sourced from Jonathan's call transcript in clipped.md. Worked Together = Never is correct (discovery call, not work engagement). 5 distinct projects, 2 confirmed context shots, no em-dashes, all judgment fields consistent with evidence."
 }

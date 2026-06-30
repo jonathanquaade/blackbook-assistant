@@ -1,0 +1,110 @@
+{
+  "page_id": "e5f2f6ed-de2a-4c98-a2a1-4f69804090cf",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 distinct named projects across manifest: Hermes, NYT, The Baffler, Atmos, Arts Club, 030303 Records, Noema, Planets series, Down the Rabbit Hole 2017+2019"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 shots from Hermes, 2 from NYT, 2 from Baffler, 2 from DTRH; goes inside projects not just covers"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Illustration; all work images are illustration output (commercial clients + personal practice); DTRH animation embeds are his illustration applied to title sequences, not an off-capability discipline"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed merijnhos.com homepage (Merijn Hos nav visible, gradient artwork); site-02.png confirmed instagram.com/merijnhos profile page (bio: Visual Artist & Illustrator, 24.3k followers, grid visible)"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 active images and 2 embeds carry named project captions and source links; wepresent-03 and site-01/site-03 are rejected with documented reasons"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two Vimeo embeds for DTRH 2017 and 2019, each paired with a thumbnail preview image and linked caption"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Agent Pekka 403 block documented in manifest and AI Notes; merijnhos.com 503 on scout pass documented with resolution noted"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person; correct for solo freelance illustrator"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website merijnhos.com, Instagram instagram.com/merijnhos (bio confirmed matching), LinkedIn linkedin.com/in/merijnhos, Email mh@merijnhos.com; all 4 present"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Illustration tagged per TAXONOMY; Open Question asks Jonathan to confirm additions (Art practice, 3D & motion) rather than over-tagging"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands/1/Freelance; sources named in AI Notes (representation by Agent Pekka + Studio & Marie confirms solo freelance practice)"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent; reasoning grounded in 20+ year solo practice, international representation, self-directed project selection"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) consistent with empty clipped.md body; no relationship evidence to contradict them"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "clipped.md contains only the heading 'Work'; no instructions or relationship facts to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts cited are verifiable (clients, education, exhibitions, years); Autonomy reasoning hedged appropriately; seniority + trajectory present"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source lists web clipper migration origin plus named research sources (itsnicethat.com, creative.voyage, wepresent.wetransfer.com, artofthetitle.com)"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by and verified_at; source_url null is the known systemic tooling gap, not a bounce-level issue per calibration note"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes or Open Questions text"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question asking Jonathan to confirm capability additions; does not re-ask for fields already set"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer flipping to Needs Review on this pass"
+    }
+  ],
+  "to": null
+}

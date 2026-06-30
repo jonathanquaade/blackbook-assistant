@@ -1,0 +1,110 @@
+{
+  "page_id": "38ef84ba-ae13-811a-87b1-c66d73ab2d0f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 thumbnails from 4 visually and thematically distinct YouTube projects: NYC cinematic short, music/art video essay, bricks concept piece, Vietnam Shorts. No duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 playable embeds present alongside thumbnails; for a video-first creator the embed is the depth equivalent. One video (Vietnam Shorts) has thumbnail only, minor but not a fail pattern."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production + Social media content. All 4 thumbnails and 3 embeds are cinematic short-form video work from her YouTube channel @qfrost. On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png opened and verified: real instagram.com/qfroost page (Instagram UI, @qfroost, Quyen Van, 340K followers, London bio, post grid visible). No standalone website exists; AI Notes document this explicitly ('No standalone portfolio site found, website context shot skipped') -- nothing to screenshot."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 4 thumbnails captioned with project name + YouTube link. IG context shot captioned 'Instagram profile' with IG link. No uncaptioned images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "3 YouTube embeds present (still frames, music+art, bricks) each with caption and link. Thumbnail preview images accompany each. Vietnam Shorts has thumbnail but no embed; minor gap, not a blocking issue."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG queue confirmed in state/ig-queue.json with reason. Website absence documented in AI Notes. AI Notes explain the thin YouTube-only capture and queue the primary IG reel work."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Person. Correct for a solo independent creator."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website null (no portfolio site, documented). Instagram = https://www.instagram.com/qfroost/ (verified correct person from context screenshot). LinkedIn = https://www.linkedin.com/in/quyen-van21/ (found, login wall prevents visit, noted in AI Notes). Email = qfrost@upset.agency."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Film & video production + Social media content match her cinematic short-form video work across IG, TikTok, YouTube."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK (IG bio 'London'). Size 1 (solo creator). Work Status Freelance: IG bio + TikTok presence + talent agency email (not employer email) -- sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3, set_by agent, with reasoning in AI Notes (mid-level independent creator, all own production, no senior/director trajectory evident). Person entry, required field met."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) not contradicted by clip note. Clip note contains no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'A creator (videographer, editor the whole thing)' used to inform Capabilities and AI Notes. Name cleaned. Source field preserves clip note verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include hedging language throughout ('suggest', 'suggesting', 'appears to be'). Seniority read and Autonomy estimate both present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, date unknown; clip note: A creator (videographer, editor the whole thing)'. Filled with clip note verbatim."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with set_by: agent. source_url null across board -- known systemic tooling gap, not a v1 gate failure per checklist calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed in full; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions needed: no unresolvable gaps, no judgment fields left at zero-state that contradict evidence, story nudge conditions not met (Worked Together remains Never, Familiarity Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

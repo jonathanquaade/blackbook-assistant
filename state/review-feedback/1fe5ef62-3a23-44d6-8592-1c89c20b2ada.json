@@ -1,0 +1,111 @@
+{
+  "page_id": "1fe5ef62-3a23-44d6-8592-1c89c20b2ada",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 live images across 6 distinct projects: Are You OKOK? (4 images), Adidas 1000 Originals (1), SHINee HARD WebGL (1), Snakepool portfolio (1), Local Remote (1), Shannon Lim (1) + 2 context shots. No repeated project angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Are You OKOK? has 4 interior shots (shop view, result slip, live debug controls panel, meter detail) going inside the WebGL interface, not just a cover."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All work images show web/WebGL/interactive work: 3D WebGL meters interface, Adidas interactive storytelling experience, SHINee 3D jungle WebGL, photographer portfolio site, two client sites from Siteinspire. Adidas image (site-03) shows the web interface nav/overlay (Story #80, share, prev/next) not just client photography. Consistent with tagged Frontend development (web)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-06.png confirmed as okok.services homepage (3D OKOK letterforms on black, studio description visible). site-07.png confirmed as instagram.com/@okok.services profile (Instagram chrome, handle 'okok.services', bio, grid). Both correct and distinct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link to source. No anonymous shots in the live set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Primary capability is web/WebGL which is not audio or film. No YouTube/Vimeo embed opportunities were apparent for these projects. Still images are the right format here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "okok.services returned 403 (documented in Source); scraper sourced images from Awwwards case study and Siteinspire instead. Rejected images documented in manifest with reasons."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a 2-person distributed creative studio (not Agency; not a person entry)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (okok.services), Instagram (@okok.services, confirmed bio + grid match), LinkedIn (nl.linkedin.com/company/okok-services), Email (areyou@okok.services) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Migration value Frontend development (web) is set_by: jonathan (locked). Scout correctly raised expand question in Open Questions rather than overwriting. Appropriate handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Netherlands + Singapore (two-founder distributed model). Size: 2-10. Work Status: Studio. AI Notes names sources (Developments Media interview, The Brand Identity, web search). Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio type: Autonomy optional per checklist calibration. Field set to 4 anyway with reasoning ('run the full project lifecycle with no apparent studio overhead'). Acceptable."
+    },
+    {
+      "id": "C.no-contradicting-judgments",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No evidence in clip note or entry body contradicting any zero-state."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry with no clip instructions. No stated facts requiring --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged language ('Founded formally around 2019-2020', 'no apparent studio overhead'). Seniority + experience read present (two co-founders, 10+ years combined, full-stack from concept to delivery). Autonomy estimate included with reasoning. Minor: 'Highly capable studio doing all work in-house' is lightly asserted; sourced from interviews so acceptable."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; enriched 2026-06-29 via okok.services (403), Developments Media interview, The Brand Identity, Spaces Lovers Magazine, Siteinspire, web search.' Present and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url null is the known systemic tooling gap, not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions and Source checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "3 questions: Capabilities expand (on locked migration value, appropriate), Rating (zero-state), Familiarity (zero-state). All conditional, none asking for already-set non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching pre-gate; reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. Main open item for Jonathan: Capabilities are under-tagged (only Frontend development (web) from migration; work clearly spans Web design, Creative technology, 3D and motion) but correctly queued in Open Questions since the field is set_by: jonathan and cannot be overwritten by the agent."
+}
