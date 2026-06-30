@@ -1,0 +1,111 @@
+{
+  "page_id": "ed85eddf-0a2e-4864-a061-3999f47ae3c7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "7 distinct named series across 13 work images + 2 embeds: Face in the Crowd (2013), La Grande Sortie (2016), Uncanny Valley (2018), Play the Wind (2019), Part One: The Mountain (2021), Run (2022), Matinee (2026). Three Matinee images are genuinely different (standalone print, second print, installation view), not angles of one shot."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside series: two crowd shots from Face in the Crowd, two stills from Play the Wind, two from Part One: The Mountain. Vimeo embeds + thumbnails for both film works. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Photography and Art practice. All captured images are staged cinematic photography and film stills, directly on-capability. Vimeo embeds are for her short films which align with Art practice and the proposed Film addition."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed: alexprager.com homepage with Alex Prager STUDIO header. site-05.png confirmed: instagram.com/@alexprager profile, 187K followers, bio matches. Both correct and match their captions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the series and year. Every work image links to its source page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two Vimeo embeds present (Uncanny Valley 2018, Part One: The Mountain Interviews 2021), each with a Vimeocdn thumbnail preview image captioned and linked to the Vimeo URL. Pattern is correct."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin source. Work pulled from Lehmann Maupin and alexprager.com site."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn field is absent and AI Notes do not document that a LinkedIn search was run and returned no result. CLAUDE.md requires: 'Genuinely none -> say so in AI Notes.' Checked alexprager.com and contact page: no LinkedIn link. Google search returned no /in/ URL either. Given she is a gallery artist who may not have a LinkedIn, the absence may be genuine, but the scout must document the search outcome in AI Notes so the entry is not silently missing the check.",
+      "fix": "Scout: add one sentence to AI Notes confirming LinkedIn was searched and no profile found (e.g. 'LinkedIn: no public profile found via Google search or site links.'). If a profile is found, add it to the LinkedIn field and provenance."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography + Art practice set by Jonathan (provenance: set_by jonathan). Scout filed an Open Question proposing Film & video production addition, which is appropriate since Jonathan owns Capabilities. No override of his fields."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US; Size: 1; Work Status: Studio. AI Notes explain she runs Alex Prager Studio LLC independently. Work Status multi-source resolution: site + Lehmann Maupin representation confirm independent studio operation."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: 'sets her own creative agenda across photography, fine art film, and public performance.' Grounded in career history documented in same field. Seniority read present (~19 years practice, gallery representation, Emmy, Foam Paul Huf Award)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note indicating a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2026-06-12' indicating a clean clipper entry with no relationship or instruction text in the Name field requiring --from-jonathan treatment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts (Emmy 2012, Foam Paul Huf Award 2012, SXSW 2026 premiere, gallery representation) are verifiable and asserted. Seniority + Autonomy read present. Minor style note: 'NYT Magazine -- Film and video production...' uses a double-hyphen as a sentence break; this reads as an em-dash substitute. The `--` is not the Unicode em-dash character the style rule prohibits, so it is not a hard fail, but the scout should use a period or semicolon instead."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2026-06-12'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by populated. source_url is null across fields, which is the known systemic tooling gap (not a v1 gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No Unicode em-dash (U+2014) found in AI Notes or Open Questions. Double-hyphen noted above but not a rule violation per the written standard."
+    },
+    {
+      "id": "D.open-questions-quality",
+      "result": "pass",
+      "evidence": "One Open Question: Film & video production capability proposal. Terse, contextual, not asking for a field that already has a non-zero value (Capabilities is set_by jonathan so the question is appropriate). No story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, awaiting this gate. Will flip to Needs Review on pass."
+    }
+  ],
+  "to": "scout"
+}

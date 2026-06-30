@@ -1,0 +1,110 @@
+{
+  "page_id": "09968ca4-5769-4b92-a9ab-7c9a88e73c19",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "17 active images span 9 distinct named series: The Journey, Midland, The Hyena and Other Men (Gadawan Kura), 1994 (Rwanda), La Cucaracha, Permanent Error, Nollywood, Kin, Looking Aside. Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside each series: 3 Gadawan Kura images with distinct subjects and settings, 2 Permanent Error stills from different waste-landscape vantage points, 2 Nollywood images with different subjects, 2 Kin portraits (stark contrast between them), 2 Looking Aside close portraits. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography + Art practice. All 15 work images are Pieter Hugo documentary/portrait photographs from his named series. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png: confirmed pieterhugo.com homepage with his nav list of series. site-17.png: confirmed instagram.com page showing @pieter.hugo.official with 426 posts and Photography artist bio. Both are exactly what their captions claim."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a caption naming the series and year, plus a source link. The two rejected entries (site-05 duplicate, site-07 wrong-image) are correctly marked rejected with documented reasons."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Pieter Hugo is a still photographer; his series produce no video embeds on their project pages. No embed obligation applies. Still images correctly carry the work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No public email found: stated in AI Notes. LinkedIn used snippet-only (no login). Rejected captures documented with reasons in manifest. No silent gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual photographer."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://pieterhugo.com. Instagram: https://www.instagram.com/pieter.hugo.official/ (verified by context screenshot and cross-referenced via all-about-photo.com). LinkedIn: https://www.linkedin.com/in/pieter-hugo-2b8425158/. Email: none found, documented in AI Notes as 'No public email found'. All findable links are present; absence explained."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography + Art practice per TAXONOMY.md. Capabilities provenance shows set_by: jonathan (from original clip or migration), which is locked. The tags accurately describe his documentary/fine-art photography practice."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: South Africa. Size: 1. Work Status: Freelance, resolved by multi-source agreement (Wikipedia + Yossi Milo bio + LinkedIn 'Self' + active 2024 pieterhugo.com). Sources named in AI Notes. Objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent, grounded in 20+ year independent career with no employer. Seniority read present in AI Notes (museum-level, MoMA/Tate/Centre Pompidou). Reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states: Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Clip note 'Pieter Hugo Gadawan' contains no relationship fact, vouch, or rating. Zero-states are not contradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'Gadawan' correctly interpreted as reference to the Gadawan Kura / Hyena and Other Men series. Documented in Source field verbatim. That series is prominently represented (3 images). No further instruction in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts asserted (gallery representation, exhibition venues, birth year from Wikipedia). Work Status inference named by source. Fabrica residency and film background sourced from public bios. Seniority + Autonomy estimate present and grounded. No unhedged vibe claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2026-06-12; clip note: Pieter Hugo Gadawan (Gadawan = ref to his Hyena & Other Men / Gadawan Kura series)'. Filled, clip note preserved verbatim."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url null on some fields is the known systemic tooling gap (per checklist calibration note, 2026-06-21), not a gate failure. set_by values are all correct: agent for metadata, jonathan for Capabilities (locked, correct)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes. No em-dashes in captions or Source field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field present on the entry, which is correct: there are no unresolvable gaps that warrant questions. Terse conditional rule satisfied by omission."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. The reviewer is the sole agent to flip it to Needs Review, which will happen now upon this pass verdict."
+    }
+  ],
+  "to": null
+}
