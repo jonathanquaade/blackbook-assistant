@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-81a2-8547-cfac8a375ae7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "special_case": "Non-creative entry: confirmed not a designer; no portfolio, no images, no context shots. Image checks pass as documented absence, not a scraper miss.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No images present; documented absence for a confirmed non-creative. Not a scraper miss."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A; no portfolio exists."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities field is empty (correct); nothing off-capability captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No personal website or Instagram exists for a non-creative with no public design presence. Absence documented in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images present; no captions needed."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes: 'No design portfolio found'; career roles documented in detail explaining why."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent, provenance present."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "LinkedIn present and sourced. Website and Instagram: no public design presence exists; absence implied by documented non-creative finding. Minor: AI Notes do not explicitly say 'IG searched, not found' but the documented absence covers it for a non-creative."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities empty, correct for a non-creative. AI Notes justify the omission."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States; Size: 1; Work Status: Employed. All sourced from theorg.com org chart (OpenTable), set_by agent, confidence above 0.8."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy not set; inapplicable for a non-creative. Omission is correct, not a gap."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) do not contradict any evidence. No clip note from Jonathan conflicts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No Jonathan clip note found in Name field; scout's own scouting note is in provenance source_url on Name, not a Jonathan instruction. Nothing unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Career timeline with specific dates and roles stated as fact (theorg.com + LinkedIn sourced). Reject recommendation hedged ('unless Jonathan can confirm...'). No em-dashes. Seniority context included via role titles."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source field: 'Scouted via Claude, 2026-06-15; COLLINS Girl Scouts rebrand team credit (wearecollins.com); career data from theorg.com and web search'. Specific and complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance. source_url null on AI Notes and Open Questions: known systemic tooling gap, not a gate failure per calibration note. set_by values correct throughout."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and Source checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "One question: Reject or clarify identity. Terse, conditional, not asking for any already-set field. Story nudge not applicable (Familiarity: Don't know them, Worked Together: Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "This entry should reach Jonathan so he can make the Reject call or clarify identity. Do NOT bounce to scraper (nothing to scrape for a confirmed non-creative)."
+}

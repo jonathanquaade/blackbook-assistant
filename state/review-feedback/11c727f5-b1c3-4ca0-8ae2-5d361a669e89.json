@@ -1,0 +1,111 @@
+{
+  "page_id": "11c727f5-b1c3-4ca0-8ae2-5d361a669e89",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 images across 4 distinct typefaces: Romie (4 images), Kalice (3), Ninna (2), Ernest (3) + 1 website context shot. Each typeface is a separate project with specimen and in-use shots."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each typeface has both a specimen card and at least one in-use shot (Moncler billboard, LV Cafe menu, Palais Galliera exhibition, Museum Ball print, fashion campaign). Goes beyond hero/cover."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 13 images are type design work: specimens, type-in-use applications in luxury/fashion contexts. Capabilities tagged are Type design, Graphic design, Creative direction; all captured work is on-capability. Noted the scraper correctly rejected off-capability fashion/product stills."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-12.png) confirmed as claudetype.com, captioned 'Website' with link to claudetype.com. IG context shot correctly absent: login wall failure documented in AI Notes, queued to state/ig-queue.json for @margot.leveque, satisfies the documented throttle exception. NOTE: Website field in Notion is margotleveque.com but the context shot is of claudetype.com (her foundry, the primary work site). The manifest link and caption are honest (claudetype.com), so this is a Website field vs context-shot domain mismatch, not a mislabeling. Flagged for Jonathan: should Website field be updated to claudetype.com? Not gated on this."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions and source links. NOTE: site-06.jpg captioned 'Kalice in use, ornamental numeral, 2025' does not name the client/brand; image shows a stylized '15' in a circular frame over a hands-on-pottery-wheel photo. Caption is descriptive but the brand context is unidentified. Acceptable; not a gate failure."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Entry is a type foundry/designer; work is inherently image-based (type specimens and in-use applications). No video/audio capability tagged. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence explained in AI Notes and queued. No other gaps silently present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; she is an individual person who runs a foundry, not the foundry itself."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: margotleveque.com (set). Instagram: instagram.com/margot.leveque (set, handle confirmed). LinkedIn: linkedin.com/company/margot-leveque-studio (company page; personal LinkedIn may not exist publicly, this is the best findable link). Email: concierge@claudetype.com (set). All four link fields populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Type design, Graphic design, Creative direction. Set_by jonathan per provenance. Appropriate for a founder/CD of a bespoke type foundry with ex-Pentagram/LV art direction background."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France + United States (French national, NY-based). Size: 1. Work Status: Studio (she runs Claude Type foundry/atelier). AI Notes documents the source resolution: site and press agree on Studio status."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Grounded in: solo founder/CD of own foundry, ex-Pentagram/LV AD, 10+ yrs experience. Reasoning in AI Notes. Appropriate for Person entry."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are all valid; no clip note or evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2021-03-25' with no stated relationship facts or instructions beyond the entry itself. Source field reflects this verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read ('Senior, founder-level, ~10+ yrs'), Autonomy reasoning, Work Status source resolution, and IG/email notes. No bare assertions of unverifiable facts. Client list (Hermes, Vogue, Prada, A24, Apple) could benefit from a hedge ('per site/press') but this is a minor calibration note, not a gate failure."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2021-03-25'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url nulls are the known systemic tooling gap (not a gate failure per checklist calibration note). set_by values are correct: agent for all agent-written fields, jonathan for Capabilities (genuinely his)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, all captions, and all manifest entries. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No judgment fields need asking (all have non-zero-state values or are correctly at zero-state with no contradicting evidence). Story nudge not applicable (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer flips to Needs Review on pass."
+    }
+  ],
+  "notes": "Two minor items for Jonathan's attention (not gate failures): (1) Website field is margotleveque.com but the work site and context shot are claudetype.com; he may want to update Website to claudetype.com and keep margotleveque.com as a redirect/secondary. (2) site-06.jpg (Kalice numeral '15') does not name its brand client; if Jonathan knows it, a caption update would help.",
+  "to": "scraper"
+}

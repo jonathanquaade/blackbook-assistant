@@ -1,0 +1,111 @@
+{
+  "page_id": "090692ce-3770-4afd-afcb-e2e16cfbb3a7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Brick Magazine (3 images, distinct editorial spreads), Jeshi x Protein (2 images), Super Friendz Magazine (1 image), Friends Our Family (1 image). No repetition across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Brick Magazine images are interior editorial spreads (Nobodys On Fool, HeavyTrackerz, Mike Goodness), not covers. Super Friendz shows the full issue-by-issue cover system. Friends Our Family shows the typographic identity system. Goes inside the work."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 8 work images are graphic design output: editorial layout, publication design, identity/typographic systems. On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is the real thisiscatalogue.co.uk homepage (verified: CATALOGUE studio text, projects visible). site-02.png is the Instagram login wall, correctly marked rejected:true in manifest with documented reason (headless Playwright returned login wall), queued to state/ig-queue.json. Throttle exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 work images have project-name captions. Links point to the studio root URL; site probing confirms a single-page portfolio with no individual project URLs, so root link is the correct fallback."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio work detected on the site. Graphic design studio. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest and ig-queue.json. No other source gaps noted."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small specialist creative execution team (2-person founding, Leeds)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present. Instagram handle @cataloguedesign queued and confirmed. LinkedIn is the Companies House-registered entity page."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Scout Open Question asks Jonathan about adding Identity systems, Web design, and Frontend development, which is correct: Capabilities is set_by jonathan, so a question is the right channel rather than a direct write."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10. Work Status: Studio. AI Notes documents the Companies House verification, Shaw departure, and Leeds registration. Work Status reasoning is in AI Notes (studio entity, still active as of April 2025 accounts)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per the calibration note. Autonomy: 3 is set anyway with reasoning in AI Notes (studio with proven commercial clients but small and specialist). No issue."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship. No clip note states otherwise."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained site-copy text (client list, project list), archived to clipped.md. No relationship facts or judgment statements present in the clip note. All acted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the size read ('reads as 1-3 people in practice'), the Autonomy estimate ('set at 3... but small and specialist'), and the Shaw departure ('appears to be Tom Pratt-led'). Sources named (UK Companies House, press coverage). Seniority read included."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper'. Technically the spec calls for 'Web clipper, <created date>' when no clip note has provenance text. The created date is omitted. Minor gap but not a gate-level failure in v1; flagged for the scraper to add the date on next pass."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. set_by values are consistent (agent for factual/zero-state fields, jonathan for Capabilities which was pre-existing). source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question about Capabilities. Terse, conditional (Capabilities currently only shows Graphic design so the question is not redundant), not asking for fields already set. Story nudge not applicable (no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "Source field omits the created date ('Web clipper' instead of 'Web clipper, <date>'). Spec-required but not a gate-level fail in v1. Scraper should add the date on next touch. All other checks clear.",
+  "to": "scraper"
+}
