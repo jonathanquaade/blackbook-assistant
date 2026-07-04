@@ -1,0 +1,151 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://www.victoriabeckham.com/",
+    "caption": "Victoria Beckham, homepage · https://www.victoriabeckham.com/",
+    "link": "https://www.victoriabeckham.com/",
+    "captured_at": "2026-07-05"
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.lovemagazine.co.uk/",
+    "caption": "Love Magazine homepage",
+    "link": "https://www.lovemagazine.co.uk/",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "blank render, site returns empty page to headless browser"
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://www.katiegrand.com/",
+    "caption": "katiegrand.com (now Perfect magazine, Katie Grand project) · https://www.katiegrand.com/",
+    "link": "https://www.katiegrand.com/",
+    "captured_at": "2026-07-05"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://www.ivypark.com/",
+    "caption": "Ivy Park homepage",
+    "link": "https://www.ivypark.com/",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "500 Internal Server Error page"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://hydrogen-sanity-demo.com/",
+    "caption": "AKVA, Shopify Hydrogen + Sanity demo storefront by Robin Pyon · https://hydrogen-sanity-demo.com/",
+    "link": "https://hydrogen-sanity-demo.com/",
+    "captured_at": "2026-07-05"
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://www.victoriabeckhambeauty.com/",
+    "caption": "Victoria Beckham Beauty, homepage · https://www.victoriabeckhambeauty.com/",
+    "link": "https://www.victoriabeckhambeauty.com/",
+    "captured_at": "2026-07-05"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://hydrogen-sanity-demo.com/products",
+    "caption": "AKVA products page",
+    "link": "https://hydrogen-sanity-demo.com/products",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "Resolved to AKVA custom 404 page, not actual products listing"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://www.katiegrand.com/archive",
+    "caption": "Katie Grand archive page",
+    "link": "https://www.katiegrand.com/archive",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "404 Page not found"
+  },
+  {
+    "file": "site-09.png",
+    "source_url": "https://www.lovemagazine.co.uk/collections",
+    "caption": "Love Magazine collections",
+    "link": "https://www.lovemagazine.co.uk/collections",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "blank render"
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://www.victoriabeckham.com/collections/clothing",
+    "caption": "Victoria Beckham clothing",
+    "link": "https://www.victoriabeckham.com/collections/clothing",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "404 page"
+  },
+  {
+    "file": "site-11.png",
+    "source_url": "https://www.victoriabeckham.com/collections/all",
+    "caption": "Victoria Beckham shop grid",
+    "link": "https://www.victoriabeckham.com/",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "Product images lazy-loaded, grid shows empty white tiles"
+  },
+  {
+    "file": "site-12.png",
+    "source_url": "https://www.lovemagazine.co.uk/editorial",
+    "caption": "Love Magazine editorial",
+    "link": "https://www.lovemagazine.co.uk/editorial",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "blank render"
+  },
+  {
+    "file": "site-13.png",
+    "source_url": "https://hydrogen-sanity-demo.com/products/autodrawi-soap-dish",
+    "caption": "AKVA product detail",
+    "link": "https://hydrogen-sanity-demo.com/products/autodrawi-soap-dish",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "404 page, URL slug not found"
+  },
+  {
+    "file": "site-14.png",
+    "source_url": "https://www.victoriabeckhambeauty.com/collections/complexion",
+    "caption": "Victoria Beckham Beauty complexion",
+    "link": "https://www.victoriabeckhambeauty.com/collections/complexion",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "404 page"
+  },
+  {
+    "file": "site-15.png",
+    "source_url": "https://hydrogen-sanity-demo.com/products/soap-dish",
+    "caption": "AKVA, product detail, Shopify Hydrogen + Sanity · https://hydrogen-sanity-demo.com/",
+    "link": "https://hydrogen-sanity-demo.com/",
+    "captured_at": "2026-07-05"
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://hydrogen-sanity-demo.com/pages/about",
+    "caption": "AKVA about page",
+    "link": "https://hydrogen-sanity-demo.com/pages/about",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "reject_reason": "Text-only page, less representative than product UI shots already kept"
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://www.sanity.io/exchange/community/robinpyon",
+    "caption": "Robin Pyon, Sanity.io profile · https://www.sanity.io/exchange/community/robinpyon",
+    "link": "https://www.sanity.io/exchange/community/robinpyon",
+    "captured_at": "2026-07-05",
+    "context_shot": true
+  },
+  {
+    "file": "site-18.png",
+    "source_url": "https://www.sanity.io/blog/conde-nast-asset-management-tool",
+    "caption": "Love Magazine / Conde Nast, asset manager built by Robin Pyon · https://www.sanity.io/blog/conde-nast-asset-management-tool",
+    "link": "https://www.sanity.io/blog/conde-nast-asset-management-tool",
+    "captured_at": "2026-07-05"
+  }
+]

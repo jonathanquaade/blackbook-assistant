@@ -21,23 +21,23 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "11\u201340",
+      "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:24:29",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "UK"
+        "Germany"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:24:29",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T22:58:11",
+      "verified_at": "2026-07-05T01:21:33",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-05T01:24:29",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:24:29",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/100k_studio/",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:24:29",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "contact@100k.studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:24:29",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-11-01",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:24:29",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "100k Studio GmbH is a two-founder web development and design studio based in Berlin, Germany. Co-founders Armin Unruh (full-stack developer, creator of the Lay Theme WordPress theme, active since at least 2015) and Marius Jopen (art director and web developer) run it as a GmbH registered in January 2021. Clients include Adidas, Burberry, Soho House, Warp Records, e-flux, and Vice; they build in NextJS, React, SvelteKit, Shopify, and headless CMS stacks (Prismic, Directus). Studio-level entity; no Autonomy field applies. Note: Capabilities currently tagged as Graphic design (set by Jonathan) but their stated and visible work is web design and web development; see Open Questions.",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:24:29",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: tagged Graphic design but 100k.studio explicitly offers Web Development (NextJS, React, SvelteKit, Shopify) and Web Design; should Capabilities be Web design + Frontend development (web) instead? 2. Country corrected from UK to Germany (Berlin address confirmed from site and company register) and Size from 11-40 to 2-10 (two managing directors only, small GmbH) -- please confirm both.",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:25:12",
+      "set_by": "agent"
     }
   }
 }
