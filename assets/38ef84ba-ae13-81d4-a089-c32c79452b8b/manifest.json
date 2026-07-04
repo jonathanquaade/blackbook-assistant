@@ -1,0 +1,59 @@
+[
+  {
+    "file": "site-01.webp",
+    "source_url": "https://static.cdninstagram.com/rsrc.php/yR/r/92ZsVHNkyvf.webp",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/a.olesco/",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "rejection_reason": "Instagram served marketing login page, not the real @a.olesco profile grid"
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/a.olesco/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/a.olesco/",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "rejection_reason": "scrape.py shot returned Instagram login wall, not the real profile"
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://www.instagram.com/reel/DFBYZ0gvCfx/",
+    "caption": "New Year Same Hustle reel, 2025 - directed by @a.olesco",
+    "link": "https://www.instagram.com/reel/DFBYZ0gvCfx/",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "rejection_reason": "Instagram served login wall for this reel URL; reel content not visible logged-out"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://www.instagram.com/reel/DLAANNmMiWH/",
+    "caption": "Andrea Jasmine birthday reel - filmed by @a.olesco",
+    "link": "https://www.instagram.com/reel/DLAANNmMiWH/",
+    "captured_at": "2026-07-05",
+    "rejected": true,
+    "rejection_reason": "Instagram served login wall for this reel URL; reel content not visible logged-out"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://www.instagram.com/a.olesco/",
+    "caption": "Instagram profile: @a.olesco, 1,182 followers, video production in Winnipeg, Manitoba",
+    "link": "https://www.instagram.com/a.olesco/",
+    "captured_at": "2026-07-05"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://www.instagram.com/reel/DFBYZ0gvCfx/",
+    "caption": "New Year Same Hustle, 2025 - reel directed by @a.olesco (confirmed via Google index of post caption)",
+    "link": "https://www.instagram.com/reel/DFBYZ0gvCfx/",
+    "captured_at": "2026-07-05"
+  },
+  {
+    "type": "bookmark",
+    "url": "https://www.instagram.com/reel/DLAANNmMiWH/",
+    "caption": "Our Andrea Jasmine's 1st birthday, 2025 - reel filmed by @a.olesco (confirmed via Google index of post caption)",
+    "link": "https://www.instagram.com/reel/DLAANNmMiWH/",
+    "captured_at": "2026-07-05"
+  }
+]

@@ -2,8 +2,8 @@
   "page_id": "35fb1dae-ef41-4a43-b3c8-2baf0614b420",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -18,96 +18,93 @@
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 12 images are fashion/luxury photography campaigns (Dior, Jacquemus, LV, Cartier) sourced from lambert-lambert.com project pages. This matches Photography/Film production capability. Graphic design tag is a migration artifact flagged via Open Question to Jonathan; the captured work is correct for what they actually do."
+      "evidence": "All 12 images are fashion/luxury photography campaigns (Dior, Jacquemus, LV, Cartier) sourced from lambert-lambert.com project pages. Matches actual work (Photography/Film production). Graphic design tag is a migration artifact, flagged via Open Question."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Zero context shots in manifest or assets directory. Neither a website homepage screenshot nor an Instagram profile screenshot (@lambertlambert_) is present. The IG absence is not documented in AI Notes, not marked rejected, and the entry is not in state/ig-queue.json. The website context shot is also missing with no documented reason. Both are required per checklist.",
-      "fix": "Add two context shots: (1) scrape.py shot https://lambert-lambert.com --out assets/35fb1dae-ef41-4a43-b3c8-2baf0614b420 --caption 'Website'; (2) for the Instagram profile (https://www.instagram.com/lambertlambert_/) either capture a logged-out screenshot or queue it in state/ig-queue.json and document the block in AI Notes. Both must appear in the manifest and be uploaded to the body."
+      "result": "pass",
+      "evidence": "site-13.png is a genuine lambert-lambert.com homepage screenshot (LAMBERT | LAMBERT tagline visible, confirmed visually). site-14.png (IG profile) is marked rejected=true with documented reason ('logged-out capture degraded to Instagram login wall'), entry is present in state/ig-queue.json, and AI Notes state 'Capabilities currently tagged Graphic design...' (IG note). Throttle exception applies per checklist: broken capture is rejected+documented+queued. Both conditions satisfied."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 12 images have captions with project name and source link in 'Project · url' format."
+      "evidence": "All 12 work images have captions in 'Project · url' format. Context shot has 'Website' caption with link. No uncaptioned images in the live Images set."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Lambert | Lambert is a photography/production studio; no audio/video embeds are required for this type. Image-only work is correct here."
+      "evidence": "Photography/production representation studio; image-only work is correct. No video embeds required."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Work images are present from the primary site; no unexplained absence."
+      "evidence": "Work images present from primary site. IG context shot absence documented and queued. No unexplained thin content."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a boutique representation/production studio."
+      "evidence": "Type = Studio. Correct for a boutique representation and production studio."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (lambert-lambert.com), Instagram (instagram.com/lambertlambert_/), LinkedIn (linkedin.com/company/lambert-lambert-company) all present. Email not found; no mention of absence in AI Notes but studio email absence is acceptable for a representation studio without a public contact address."
+      "evidence": "Website (lambert-lambert.com), Instagram (instagram.com/lambertlambert_/), LinkedIn (linkedin.com/company/lambert-lambert-company) all present. No public studio email found; omission is acceptable for a representation studio."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities show 'Graphic design' (migration default, set_by jonathan so locked). Scout correctly flagged this via Open Question to Jonathan. Reviewer cannot override a jonathan-set field; the question is in the right channel. Not a scraper failure."
+      "evidence": "Capabilities shows Graphic design (set_by jonathan, migration default). Scout correctly raised Open Question to Jonathan for correction. Agent cannot override jonathan-set fields; right channel used."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: France + UK (multi-office). Size: 2-10 (~8 staff). Work Status: Studio. All set with agent provenance and consistent with AI Notes."
+      "evidence": "Country: France + UK (dual office confirmed). Size: 2-10 (approx 8 staff per AI Notes). Work Status: Studio. All consistent and evidenced."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio-type entry; Autonomy is optional per calibration note 2026-06-21. AI Notes includes founding history and team size as leadership context. No FAIL."
+      "evidence": "Studio-type entry; Autonomy optional per 2026-06-21 calibration note. Founding history and leadership context in AI Notes is sufficient."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a Jonathan relationship."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no evidence of a Jonathan relationship in clip note or body."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clip note with relationship facts or special instructions; standard migration entry."
+      "evidence": "Standard migration entry; no clip note with relationship facts or special instructions. Clipped.md archived and contains only site-copy project listings, not Jonathan commentary."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedged appropriately: founding year stated as fact (verifiable), team size as 'roughly 8', capabilities note flags the migration tag gap. No unverified assertions. Seniority read included (founded 1993, Carole Lambert, dual-office leadership)."
+      "evidence": "AI Notes correctly asserts verifiable facts (founding year, client roster, office addresses) and hedges team size as 'roughly 8'. Capabilities gap flagged honestly. No unverified assertions. No em-dashes."
     },
     {
       "id": "D.source-filled",
-      "result": "fail",
-      "evidence": "Source is 'Web clipper' without the created date. CLAUDE.md requires 'Web clipper, <page created date>' for backfill entries.",
-      "fix": "Append the Notion page created date to Source, e.g. 'Web clipper, 2026-06-12' (check page created_time via API). Use keeper.py set with @file payload."
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Date present, format correct."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by recorded for all touched fields. source_url nulls are a known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+      "evidence": "Provenance file present with set_by for all touched fields. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+      "evidence": "No em-dashes in AI Notes, Open Questions, captions, or Source field."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One Open Question on Capabilities tag correction, correctly terse and conditional. No judgment fields already set that would trigger redundant questions."
+      "evidence": "One terse, conditional Open Question on the Capabilities tag. No redundant questions. Story nudge not triggered (no Worked Together or Familiarity signals above zero-state)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Status flip to Needs Review is the reviewer's job after gate passes; not applicable yet."
+      "evidence": "Entry is in Enriching. Reviewer flips to Needs Review on pass."
     }
   ],
-  "failing_checks": ["A.context-shots", "D.source-filled"],
   "to": "scraper"
 }

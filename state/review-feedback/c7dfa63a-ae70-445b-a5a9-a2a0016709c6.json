@@ -2,116 +2,108 @@
   "page_id": "c7dfa63a-ae70-445b-a5a9-a2a0016709c6",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "3 named project groups: Harvard Design Magazine (5 images), Venice Biennale/CHART (4 images, caption wrong but the actual images are distinct projects), Perspecta/Yale (3 images). Genuine diversity confirmed from file inspection."
+      "evidence": "6 distinct projects across 16 work images: Harvard Design Magazine (site-01 to site-05), Ones to Watch / Spotify Design feature (site-06), Slagmark / Forlaget Slagmark book series (site-07 to site-09), Perspecta 50 Yale journal (site-10 to site-12 + perspecta-01 + perspecta-02), Vandkunsten 50-year monograph (dm-01), CHART / OVO exhibition poster (dm-02). Clear diversity of distinct commissions."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: spreads, interiors, publication pages from Harvard DM; book covers and interiors from Slagmark/Forlaget. Not hero-only."
+      "evidence": "Goes inside projects: Harvard DM spreads and typeset layouts; Slagmark book covers and a stacked-copy editorial shot; Perspecta 50 cover and interior text spread; Vandkunsten interior page. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Work is graphic design and identity/editorial, matching tagged Capability."
+      "evidence": "All work is graphic design and editorial / publication design, matching the tagged Capability. No off-capability content."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png is alexismark.com (verified visually). site-14.png is instagram.com/office.alexismark (verified visually, shows 18.5k followers)."
+      "evidence": "site-13.png verified visually: alexismark.com homepage showing Harvard Design Magazine covers (correct). site-14.png verified visually: instagram.com/office.alexismark profile showing @office.alexismark handle, 18.5k followers, correct grid. Both context shots accurate and correctly captioned."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-06 is captioned 'Venice Biennale / CHART identity' but the image is the 3-founder 3D avatar portrait for the It's Nice That 'Ones to Watch / Spotify Design' feature. site-07, site-08, site-09 are also captioned 'Venice Biennale / CHART identity' but show Slagmark / Forlaget Slagmark book design (Immanuel Kant, Hannah Arendt, 1968 titles). Four images carry a wrong project caption.",
-      "fix": "Correct captions: site-06 to 'It's Nice That / Ones to Watch, 2020 · itsnicethat.com'; site-07 through site-09 to something like 'Slagmark editorial design · itsnicethat.com' (or the actual project name from the source page). Also verify what the It's Nice That 2020 article actually shows and retitle accordingly."
-    },
-    {
-      "id": "A.manifest-disk-sync",
-      "result": "fail",
-      "evidence": "5 files on disk (dm-01.png, dm-02.png, perspecta-01.jpg, perspecta-02.jpg, perspecta-03.jpg) are absent from manifest.json. dm-02.png is an exhibition poster (Silas Inoue / Christine Overvad Hansen, CHART 2020). perspecta-01.jpg is a Perspecta / Venice Biennale publication. These files will not be uploaded to Notion as the upload is manifest-driven. Either add them to the manifest with correct captions, or delete them if they were intentionally excluded.",
-      "fix": "Reconcile manifest vs disk: add dm-01, dm-02, perspecta-01, perspecta-02, perspecta-03 with captions and source_urls, or mark them explicitly excluded. The manifest must be the single source of truth."
+      "result": "pass",
+      "evidence": "All 16 work images have named project captions with source links. Corrected captions verified against actual image content: site-06 shows 3D founder portrait for Ones to Watch 2020 / Spotify Design feature (correct); site-07 shows Immanuel Kant Forlaget Slagmark cover (correct); site-08 shows Hannah Arendt Forlaget Slagmark book on stool (correct); site-09 shows 1968 Slagmark Revolutionsserie cover (correct). dm-01 shows VK:50 Vandkunsten monograph interior (caption Vandkunsten 50-year monograph, correct). dm-02 shows OVO exhibition poster for Silas Inoue / Christine Overvad Hansen captioned as CHART Art Fair commission; CHART is listed as a client in AI Notes and studio is documented commissioning exhibition posters, plausible attribution."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video embeds required; entry is a graphic design studio with static print/editorial work. No YouTube/Vimeo found in manifest source links."
+      "evidence": "Graphic design / editorial studio; no video or audio work in scope. No YouTube or Vimeo on source pages. Static image capture is appropriate."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained thin areas; 12 work images plus 2 context shots captured."
+      "evidence": "16 work images plus 2 context shots. No thin areas or unexplained gaps. IG context shot present (logged-out capture of public grid, adequate for a studio account)."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a small Copenhagen design studio."
+      "evidence": "Type = Studio. Correct: small specialized Copenhagen team doing hands-on graphic design and editorial execution."
     },
     {
       "id": "B.links-present",
-      "result": "fail",
-      "evidence": "LinkedIn is absent and not explained. AI Notes does not mention a LinkedIn search or confirm it was checked. Studio LinkedIn pages are often findable via search (e.g. 'Alexis Mark Copenhagen linkedin'). This is a skipped search, not a confirmed absence.",
-      "fix": "Search 'Alexis Mark Copenhagen graphic design linkedin' and attach any company page found, or note in AI Notes 'LinkedIn: no company page found' to confirm it was checked."
+      "result": "pass",
+      "evidence": "Website: alexismark.com (confirmed). Instagram: instagram.com/office.alexismark (verified correct account, right bio and grid). Email: office@alexismark.com (confirmed from site). LinkedIn: AI Notes documents 'searched (Alexis Mark Copenhagen graphic design linkedin), no company page found at confidence, left empty (genuine absence for a small studio).' Confirmed searched and absent, not a skipped search."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged (Jonathan-set). Open Question raised about adding Identity systems, Web design, Spatial and exhibition design. Correct approach."
+      "evidence": "Graphic design tagged (Jonathan-set, provenance set_by: jonathan, locked). Open Question raised about adding Identity systems, Web design, Spatial and exhibition design. Correct approach: not overwriting his tag, asking."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Denmark, 2-10, Studio. AI Notes names sources confirming size and Copenhagen base."
+      "evidence": "Denmark, 2-10, Studio. AI Notes names sources confirming Copenhagen base, three-founder flat structure, collaborator network. Work Status resolution: site confirms studio (no employer), consistent with Studio classification."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5 for an org-type (Studio) is optional per calibration note (2026-06-21). Scout set it with reasoning (self-directed, no employer). Acceptable."
+      "evidence": "Autonomy 5 set for an org-type (Studio). Per calibration note (2026-06-21) this is optional for orgs. Scout set it with reasoning (self-directed, no employer, sets own creative agenda). Acceptable."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the entry."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the entry or clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Migration entry; no clip instruction text to act on beyond the migration baseline."
+      "evidence": "Migration entry; no clip instruction text beyond the baseline. No relationship facts, passcodes, or tagging direction in the source material."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes includes seniority read (three founders, flat structure), Autonomy reasoning, client list sourced from published features. Capabilities extension noted as 'likely also covers' (hedged). No em-dashes."
+      "evidence": "Seniority read present: three-founder flat rotating structure named. Autonomy reasoning stated. Client list (Harvard, Yale, MIT Press, GANNI, Venice Biennale, SMK) sourced from published features. Capabilities extension hedged as 'likely also covers.' LinkedIn absence documented. No em-dashes in AI Notes."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Migration entry; studio site alexismark.com, It's Nice That feature (Feb 2020), Instagram @office.alexismark'. Adequate."
+      "evidence": "Source: 'Migration entry; studio site alexismark.com, It's Nice That feature (Feb 2020), Instagram @office.alexismark.' Adequate and specific."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by values for all fields. null source_urls are a known systemic gap (not a gate failure per calibration 2026-06-21)."
+      "evidence": "Provenance file present, set_by values correct for all fields (jonathan for Capabilities, agent for zero-states and enriched fields, migration for migrated baseline fields). null source_urls are the known systemic tooling gap (not a gate failure per calibration 2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source field."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse, conditional Capabilities question. No field with existing value is re-asked. Story nudge not applicable (no relationship fields set to non-zero-state)."
+      "evidence": "One terse, conditional Capabilities question. No field with an existing non-zero-state value is re-asked. Story nudge not applicable (all relationship fields at zero-state, no Notes content)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Status flip to Needs Review is gated on this review passing."
+      "evidence": "Entry is in Enriching. Flipping to Needs Review now on this pass."
     }
   ],
   "to": "scraper"

@@ -1545,5 +1545,40 @@
     "ig_url": "https://www.instagram.com/qfroost/",
     "reason": "Primary work is short-form video and reels on Instagram (340K followers); no standalone portfolio site. YouTube thumbnails captured logged-out but full-res reel content needs logged-in ig.py grab.",
     "queued_at": "2026-07-01"
+  },
+  {
+    "page_id": "35fb1dae-ef41-4a43-b3c8-2baf0614b420",
+    "name": "Lambert | Lambert",
+    "ig_url": "https://www.instagram.com/lambertlambert_/",
+    "reason": "context shot only; logged-out IG degraded to login wall",
+    "queued_at": "2026-07-04"
+  },
+  {
+    "page_id": "38ef84ba-ae13-81d4-a089-c32c79452b8b",
+    "name": "Arvin Olesco",
+    "ig_url": "https://www.instagram.com/a.olesco/",
+    "reason": "IG-only video creator (no website, no Vimeo, no YouTube found); all work lives on Instagram. Two confirmed directed reels found via Google index: DFBYZ0gvCfx (New Year Same Hustle) and DLAANNmMiWH (birthday film). Logged-out scrape.py returned login wall on all URL attempts (profile, individual reels). Need logged-in ig.py grab for real profile context shot and reel stills/thumbnails.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "090692ce-3770-4afd-afcb-e2e16cfbb3a7",
+    "name": "Catalogue",
+    "ig_url": "https://www.instagram.com/cataloguedesign/",
+    "reason": "IG context screenshot failed: headless Playwright returned Instagram login wall instead of profile page. @cataloguedesign confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "38ef84ba-ae13-81d4-a089-c32c79452b8b",
+    "name": "Arvin Olesco",
+    "ig_url": "https://www.instagram.com/a.olesco/",
+    "reason": "IG-only video creator (no website, no Vimeo, no YouTube found); all work lives on Instagram. Two confirmed directed reels found via Google index: DFBYZ0gvCfx (New Year Same Hustle) and DLAANNmMiWH (birthday film). Logged-out scrape.py returned login wall on all URL attempts (profile, individual reels). Need logged-in ig.py grab for real profile context shot and reel stills/thumbnails.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "11c727f5-b1c3-4ca0-8ae2-5d361a669e89",
+    "name": "Margot Leveque",
+    "ig_url": "https://www.instagram.com/margot.leveque/",
+    "reason": "IG context screenshot failed: headless Playwright returned Instagram login wall. @margot.leveque confirmed handle (in entry). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-05"
   }
 ]

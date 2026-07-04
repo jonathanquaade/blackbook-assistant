@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-81b3-9b38-d7506f897d15",
+  "name": "Cecilia Wellander",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active images across 3 distinct projects: GBGT Honest Packaging (site-01, 03, 04, 13), Audinate (site-05, 07, 08), Neko Health (site-09, 10). Duplicates correctly rejected in manifest."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: box detail close-ups (GBGT), wordmark on building + signage (Audinate), interior clinic space + storefront (Neko Health). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Brand strategy. Work shown is brand identity output from Bedow projects where she is credited Account Director. AI Notes honestly states she is not the creative/design lead; Open Question 1 surfaces the hands-on vs. account director question. Per CLAUDE.md, agency work counts and is framed honestly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No personal website exists (documented in AI Notes). Employer website bedow.se captured as context shot (site-12.png), correctly captioned 'Bedow studio website (employer)'. No Instagram handle found (documented in AI Notes, not a throttle case), so no IG context shot is possible. Both absences are documented rather than silently missing."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active images carry caption + source link per manifest. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio capability. Two bookmarks present: Guldagget award page (credit confirmation) and Bedow/Audinate case study. Appropriate for Brand strategy."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states: no personal website found, no Instagram identified, no LinkedIn URL confirmed. Nothing silently thin."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "No personal website (documented). No IG handle confirmed (documented). LinkedIn not found, surfaced as Open Question 2. Email present (cecilia.wellander@bedow.se). Works At Link = bedow.se. All gaps are acknowledged, not silently skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy fits her confirmed role (Account Director who co-leads Brand Impact Strategy process). Open Question 1 asks whether she also does hands-on design execution."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Sweden / 1 / Employed. AI Notes names sources: Guldagget award credits and Bedow team roster confirm employment. Multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, with hedged reasoning in AI Notes: 'runs client engagements independently within the Bedow framework; not the studio founder or a fully independent operator.'"
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match a scouted candidate with no stated relationship. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was scouted (not clipped by Jonathan). Source correctly reflects this: 'Found using Claude, 2026-06-15.' No clip note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('hedged'), Work Status sources named, hands-on design capability flagged as unconfirmed. Seniority read present: 'mid-to-senior: director-level title at a well-regarded 10-person studio.' Per the honesty check in the gate prompt: AI Notes explicitly calls out that 'only confirmed title is Account Director; hands-on design capability is unconfirmed.' Honest."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Account Director at Bedow Stockholm; confirmed via Guldagget Honest Packaging credits (listed as Account Director, 2025) and Bedow brand-impact-strategy page snippet.' Full and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note (2026-06-21). set_by values are correct (agent throughout; no jonathan-locked fields overwritten)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked all provenance field values and manifest captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "3 questions: (1) hands-on design capability vs. account role -- directly addresses the honesty check in the gate prompt; (2) LinkedIn URL; (3) Instagram handle. All terse and conditional. No field already answered is re-asked. Story nudge not applicable (Worked Together: Never, no relationship stated)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching, ready for Needs Review flip. Reviewer is flipping on this pass."
+    }
+  ],
+  "notes": "Critical honesty check confirmed pass: AI Notes clearly states the Account Director credit and flags that hands-on design capability is unconfirmed. Open Question 1 surfaces this for Jonathan explicitly. The 'surface, do not cull' principle is correctly applied. Autonomy 4 is arguably high for an account director role (as opposed to a creative director); Jonathan may adjust. The Audinate file contains the file name 'dante-visual-identity' in the CDN URL, which is the internal Bedow project codename; this is not a labeling error, just an internal alias.",
+  "to": "scraper"
+}
