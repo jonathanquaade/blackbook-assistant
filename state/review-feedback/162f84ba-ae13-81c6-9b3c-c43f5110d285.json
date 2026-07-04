@@ -1,0 +1,111 @@
+{
+  "page_id": "162f84ba-ae13-81c6-9b3c-c43f5110d285",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: TextOS (6 screens), Fitbit Ace LTE at Studio Koto (2 images), One Year journal app (1 image), plant inventory app concept (1 image). No repeated angles of the same project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "TextOS has 6 screen-level shots (weather, stocks, social feed, calculator, music player, home/notifications summary). One Year and plant app each show a single interior screen. Fitbit is the shallow pair but it is supplementary to the TextOS depth."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Tagged capability is Product design. site-12.jpg is a 3D brand mascot key-art image for Fitbit Ace LTE (Studio Koto brand identity campaign). site-14.jpg is a lifestyle photograph of a child on a climbing frame wearing the watch, with the tagline 'Moving the next generation of gamers.' Both are brand identity and campaign imagery, not product design UI or UX screens. If Sam contributed UI work to the Fitbit Ace LTE device, those screens should have been captured instead. If his contribution was brand-side only, this project is off-capability and should be dropped.",
+      "fix": "Replace site-12.jpg and site-14.jpg with either (a) Fitbit Ace LTE UI/UX screens Sam contributed to (check koto.com case study and Sam's own site for device UI), or (b) a different on-capability project. Product design entry needs product/UI screens, not brand campaign imagery."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot site-15.png confirmed correct: sam-peitz.com homepage showing 'SAMUEL DAVID PEITZ' with site nav illustrations. Instagram context shot site-16.png is an Instagram loading/splash screen (IG logo, Meta branding) because headless Playwright was blocked; correctly marked rejected in manifest, documented in reject_reason, and entry is present in state/ig-queue.json. Throttle exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 active images have captions naming their project and linking to source. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds were expected; the TextOS, One Year, and plant app work is static screens. Fitbit Ace LTE had Vimeo thumbnails pulled as stills (site-12.jpg from Vimeo CDN), which is acceptable for brand video content."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents IG throttle and queue; manifest reject_reasons cover all 20 rejected files with specific reasons."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual freelance designer."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website (sam-peitz.com), Instagram (@sa.da.pe, verified via Spaces interview), LinkedIn (/in/samuel-peitz) all present. No public email found; AI Notes does not address this gap explicitly but no obvious email was findable from the public sources described."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Product design tagged; set_by jonathan per provenance. Appropriate for his TextOS, One Year app, and plant inventory UI work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 1. Work Status: Freelance. AI Notes names three confirming sources: Spaces interview (Jan 2024 start), roster.so (Selbststandig), and LinkedIn title. Multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: runs full projects independently, brief to shipping, no evidence of managing teams. Grounded in visible solo practice and personal projects."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with the clip note context. Rating: 4 is set_by jonathan. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md shows only 'Add details' (Notion placeholder), no actual clip note instructions. Open Question asks about 'Partner-Dream' context for Work With?, which is appropriate."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'estimated', 'no evidence of', 'Mid-to-senior level' (hedged). Seniority read and Autonomy estimate are present. Work Status sourcing is explicit."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated entry'. Acceptable for a migration entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields with set_by values. Null source_url on several fields is the known systemic tooling gap, not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Live Notion Open Questions field reads '1. Work With? (ex Partner-Dream)' with no em-dash. Provenance JSON records a stale value with an em-dash but the field in Notion is clean. AI Notes, captions, and Source are all em-dash free."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Work With? given the 'Partner-Dream' context. Conditional: Work With? is currently Unvetted (zero-state), so asking is appropriate. Rating is already set by Jonathan at 4, so no Rating question is needed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching pending this gate. Status flip to Needs Review is the reviewer's job on pass."
+    }
+  ],
+  "to": "scraper"
+}

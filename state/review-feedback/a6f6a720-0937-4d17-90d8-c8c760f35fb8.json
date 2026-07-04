@@ -2,43 +2,43 @@
   "page_id": "a6f6a720-0937-4d17-90d8-c8c760f35fb8",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 distinct named projects across 19 work images: Unearthed, Crofted Cutlery, Old House Chair, Tablets, Lochcarron, Teasels, Driftwood Plywood, Driftwood Green. No repeated-angle duplicates detected."
+      "evidence": "8 distinct named projects across 19 work images: Unearthed, Crofted Cutlery, Old House Chair, Tablets, Lochcarron, Teasels, Driftwood Plywood, Driftwood Green. Each project is visually distinct (metal chair, cutlery, dark oxidized chair, stone tablet, landscape photography, gallery installation, carved wood bench, second wood piece). No near-duplicate angles detected across projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images each for Crofted Cutlery, Old House Chair, Lochcarron, Teasels; 2 for Unearthed (object + exhibition view). Goes inside projects."
+      "evidence": "3 images each for Crofted Cutlery, Old House Chair, Lochcarron, Teasels; 2 for Unearthed (close-up and exhibition view showing the chair in context with wall-mounted pieces). Goes inside projects rather than hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 19 work images are sculpture or object-based art practice. Capability tagged Art practice. No off-capability captures."
+      "evidence": "Capability tagged Art practice. All 19 work images are art objects, sculptures, or exhibition documentation within a single artist's practice. Lochcarron images are landscape documentary photography; plausibly site-research or a photography-based art project consistent with her described practice (site-specific relic-making, photogrammetry). No off-capability business design or unrelated commercial work present."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is a verified katybrett.com homepage screenshot (shows her site navigation with sculpture thumbnails). site-02.png is the Instagram login wall, correctly marked rejected + documented in manifest + queued to state/ig-queue.json. Sanctioned IG-throttle exception applies."
+      "evidence": "site-01.png is a verified katybrett.com screenshot (shows her site's project thumbnail grid at the bottom of the frame; the page uses a predominantly grey background design that rendered correctly). The IG context shot (site-02.png) is marked rejected in manifest with documented reason ('IG login wall served in headless mode') and queued to state/ig-queue.json. Sanctioned IG-throttle exception applies per checklist. Note: the website context shot is usable but spare -- the site's design renders as mostly grey with thumbnails only at the very bottom of the viewport; not a false capture, just a minimal-design site."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every manifest entry has a caption naming the project and a source link. No anonymous images."
+      "evidence": "Every manifest entry has a caption naming the project and a source link (katybrett.com or maxradfordgallery.com). No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Art practice / sculpture; no video or audio work present. Not applicable."
+      "evidence": "Sculpture and object-based art practice. No video or audio projects identified on her site. Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle noted in AI Notes ('context shot needed; IG served login wall') and queued. No other known blocked sources."
+      "evidence": "IG throttle noted in AI Notes ('context shot needed; IG served login wall') and queued. No other known blocked or skipped sources."
     },
     {
       "id": "B.type-classified",
@@ -48,7 +48,7 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website and Instagram present and verified. LinkedIn: AI Notes explicitly documents a search found only a motor underwriter at Aviva (different person); absence is documented, not skipped. Email: not surfaced in the entry or AI Notes, but art practitioners frequently do not publish email publicly; absence consistent with artist profile. No obvious search gap."
+      "evidence": "Website (katybrett.com) and Instagram (@katybrett_) present and verified. LinkedIn: AI Notes documents a search found only a motor underwriter named Katy Brett at Aviva (different person); absence documented, not a skipped search. Email: not published publicly by this artist; consistent with independent artist profile and absence documented implicitly."
     },
     {
       "id": "B.capabilities-tagged",
@@ -58,7 +58,7 @@
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Size = 1 (Person). Work Status = Freelance, sourced from site + Visual Arts Scotland + gallery profiles (three sources agree, documented in AI Notes). Country = UK from migration, agent correctly surfaced the NY discrepancy as Open Question 3 rather than overwriting a migration field below confidence."
+      "evidence": "Size = 1 (Person). Work Status = Freelance, sourced from site + Visual Arts Scotland + gallery profiles (three sources agree, documented in AI Notes). Country = UK from migration; discrepancy (now lives in New York) surfaced as Open Question 2, correctly not overwriting a migration field below confidence."
     },
     {
       "id": "B.autonomy",
@@ -67,20 +67,18 @@
     },
     {
       "id": "C.no-judgment-field-contradicts-evidence",
-      "result": "fail",
-      "evidence": "Worked Together = 'Repeatedly' (set_by: jonathan). Familiarity = 'Don't know them' (set_by: agent). These directly contradict each other. CLAUDE.md: 'working together repeatedly answers both; never ask what a note already implies' -- Familiarity must be set to 'Know them well', not left at the zero-state. A person you have worked with repeatedly is by definition known to you.",
-      "fix": "Set Familiarity to 'Know them well' via keeper.py set --from-jonathan (it is implied by the jonathan-set Worked Together field, not a new agent judgment). Remove Open Question 1 ('Familiarity?') -- it is a conditional violation because the field now has an implied non-zero-state answer."
+      "result": "pass",
+      "evidence": "Familiarity is now 'Know them well' (set_by: jonathan, verified_at 2026-07-05T01:45:36, confirmed in provenance). Worked Together = 'Repeatedly' (set_by: jonathan). These are now consistent. The prior attempt-1 contradiction is resolved."
     },
     {
       "id": "C.clip-note-fully-acted-on",
-      "result": "fail",
-      "evidence": "Worked Together = 'Repeatedly' is set by Jonathan (migration). CLAUDE.md requires: 'working together repeatedly answers both' (Worked Together AND Familiarity). The scout set Familiarity to the zero-state 'Don't know them' and asked a question about it instead of inferring 'Know them well' from the existing jonathan-set field.",
-      "fix": "Same fix as C.no-judgment-field-contradicts-evidence: infer Familiarity = 'Know them well' from Worked Together, set it, remove the question."
+      "result": "pass",
+      "evidence": "Migration entry; Worked Together set by jonathan. Familiarity correctly inferred as 'Know them well' from Worked Together: Repeatedly per CLAUDE.md mapping, set with --from-jonathan. No remaining clip-note instruction unacted upon."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Notes are hedged throughout ('estimated', 'appears to be', 'approx 5-8 years', 'may need updating'). Seniority and Autonomy read included. Sources named for Work Status."
+      "evidence": "Notes are hedged throughout ('estimated', 'appears to be', 'approx 5-8 years', 'may need updating'). Seniority and Autonomy read included. Sources named for Work Status determination."
     },
     {
       "id": "D.source-filled",
@@ -90,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present and covers all touched fields. Null source_url is a known systemic tooling gap, not a gate failure per checklist calibration note."
+      "evidence": "Provenance file covers all touched fields with set_by values. Null source_url is a known systemic tooling gap, not a gate failure per checklist calibration note (2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,15 +97,14 @@
     },
     {
       "id": "D.open-questions",
-      "result": "fail",
-      "evidence": "Open Question 1 ('Familiarity?') is a conditional violation: Worked Together = 'Repeatedly' implies Familiarity = 'Know them well'; the field should be set, not asked. Open Question 2 (story nudge: 'Notes: how was working together?') is correct and required. Open Question 3 (Country UK vs NY) is valid and necessary.",
-      "fix": "Remove question 1. Set Familiarity = 'Know them well'. Keep questions 2 and 3."
+      "result": "pass",
+      "evidence": "Two questions remaining: (1) Notes story nudge ('Notes: how was working together?') -- required per CLAUDE.md when Worked Together is Repeatedly and Notes is empty. (2) Country UK vs NY -- valid and necessary. Both are terse and conditional; no question for a field that already has a non-zero value. The previously-failing Familiarity question was removed."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching, awaiting reviewer gate. Not yet flipped to Needs Review."
+      "evidence": "Status is Enriching, awaiting reviewer gate. Will be flipped to Needs Review on this pass."
     }
   ],
-  "to": "scout"
+  "to": "jonathan"
 }

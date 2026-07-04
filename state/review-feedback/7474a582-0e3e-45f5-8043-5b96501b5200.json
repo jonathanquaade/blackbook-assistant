@@ -3,7 +3,7 @@
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -13,28 +13,28 @@
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "YCN and Reed Words each have a homepage + inner page shot; appropriate depth for web product screenshots"
+      "evidence": "YCN has homepage (site-02) and programmes inner page (site-23); Reed Words has homepage (site-05) and work listing (site-24); appropriate depth for web product screenshots"
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 7 work shots are screenshots of live web products Daniel Howells built; matches Frontend development (web)"
+      "evidence": "All 8 images (1 website context + 7 work shots) show live web products Howells built; matches Frontend development (web)"
     },
     {
       "id": "A.context-shots",
       "result": "fail",
-      "evidence": "site-18.png is the Instagram login wall (instagram.com/accounts/login), not the @howells profile. It is not marked rejected in manifest, not queued in state/ig-queue.json, and AI Notes does not document the block. The checklist exception requires all three: rejected + documented + queued.",
-      "fix": "Mark site-18.png rejected in manifest with caption explaining the login wall. Document in AI Notes that the logged-out IG grab hit the login wall. Add an entry for page_id 7474a582-0e3e-45f5-8043-5b96501b5200 to state/ig-queue.json so a later ig.py pass captures the real @howells profile."
+      "evidence": "site-18.png is correctly marked rejected in manifest with reject_reason and the entry is in ig-queue.json. The checklist exception requires the block to ALSO be documented in AI Notes. AI Notes currently say only 'Instagram handle @howells confirmed via his own Siteinspire profile listing' with no mention of the login wall, the failed grab, or the queued ig.py capture. One of the three required conditions is unmet.",
+      "fix": "Append one sentence to AI Notes: 'Logged-out IG grab for @howells hit the login wall; capture queued in ig-queue.json for a supervised ig.py pass.' No other changes needed."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every image has a caption and a link to the source URL"
+      "evidence": "All 8 live images have captions and source links; rejected images are excluded from the body"
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Work is frontend web products; no video embeds expected or applicable"
+      "evidence": "Work is frontend web products; no video embeds applicable"
     },
     {
       "id": "A.absence-explained",
@@ -59,22 +59,22 @@
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK, Size: 1, Work Status: Studio. AI Notes names sources: site + Siteinspire profile both describe him as independent"
+      "evidence": "Country: UK, Size: 1, Work Status: Studio; AI Notes names sources (site + Siteinspire profile)"
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry type is Studio; Autonomy is optional for org entries per calibration note. AI Notes includes seniority read: senior/director level, 20+ years career"
+      "evidence": "Entry is Studio type; Autonomy optional for org entries per calibration note; AI Notes includes seniority read (senior/director, 20+ years)"
     },
     {
       "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are consistent with no clip note indicating prior relationship"
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) consistent with no clip note indicating prior relationship"
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipper entry with no special instructions; Source records the clip date"
+      "evidence": "Standard clipper entry; no special instructions; Source filled with clip date"
     },
     {
       "id": "C.ai-notes-hedged",
@@ -89,17 +89,17 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Null source_urls are a known systemic tooling gap, not a gate failure; set_by values correct"
+      "evidence": "Null source_urls are a known systemic tooling gap, not a gate failure; set_by values correct throughout"
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions"
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse question about Capabilities expansion; no question for already-set fields"
+      "evidence": "One terse conditional question about Capabilities; no question asked for already-set fields"
     }
   ],
   "to": "scraper"

@@ -29,9 +29,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-07-05T01:43:25",
+      "verified_at": "2026-07-05T01:50:01",
       "set_by": "agent"
     },
     "Work With?": {
@@ -59,6 +59,30 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:48:55",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Notion migration (no clip note, no URL recorded)",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:48:55",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Identity unclear: no website URL, no LinkedIn, no Instagram found for a studio named exactly Department of Realities in the Netherlands. The closest match is Department of New Realities (DPTNR), an internal creative unit at Wieden+Kennedy Amsterdam (founded 2016 by Anita Fontaine and Geoffrey Lillemon), focused on AR, VR, gaming, and experiential installations. However DPTNR had roughly 6 people and was a W+K internal division, not an independent studio, which conflicts with the 11-40 size set in this entry. Could not confirm this is the same entity at 0.8 confidence. Capabilities tagged Art practice by Jonathan. Country Netherlands and Size 11-40 from migration, not verified. Identity requires Jonathan confirmation before further enrichment.",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:48:55",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Which entity is this? Could not find a studio called exactly Department of Realities in the Netherlands. Is this the Department of New Realities (DPTNR), the internal W+K Amsterdam creative unit run by Anita Fontaine and Geoffrey Lillemon? Or is it a different, independent studio? A website URL or any other identifier would unblock full enrichment.",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:49:13",
+      "set_by": "agent"
     }
   }
 }
