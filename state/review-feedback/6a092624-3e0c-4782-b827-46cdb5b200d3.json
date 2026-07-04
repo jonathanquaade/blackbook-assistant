@@ -1,0 +1,112 @@
+{
+  "page_id": "6a092624-3e0c-4782-b827-46cdb5b200d3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "17 images across 5 named, distinct projects: NSPCC Childline, WaterAid Untapped, Rethink Mental Illness, Pancreatic Cancer UK rebrand, Humanity Insured. No repeated-project or near-duplicate issue."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-4 images going into campaign interiors: billboard OOH, social ads, direct mail, portraiture, typography, brand-in-use apparel shots. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design + Brand strategy; work shown is campaign creative (OOH, print, social) and brand identity (rebrands). All on-capability. Note: Pancreatic Cancer UK and Humanity Insured work shows logo + full brand system which qualifies for Identity systems too, but this is a tagging gap to surface, not a scraper error (work itself is correct)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png shows goodagency.co.uk homepage (GOOD logo top-left confirmed). site-02.png is the Instagram login wall, correctly marked rejected:true with rejection_reason, documented in AI Notes, and queued to state/ig-queue.json. Sanctioned IG throttle exception applies per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 non-rejected images have captions naming the project and a source link to the goodagency.co.uk case study page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Agency is tagged Graphic design + Brand strategy; no video/audio capability. No embeds required. Work is appropriately image-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes with handle confirmed (@goodagencylondon) and entry in ig-queue.json. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Correct for a 100+ person full-service creative agency."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present. IG handle @goodagencylondon is consistent with the agency name and their own site references it; account is unverifiable visually due to login wall but the handle is confirmed from site context."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design + Brand strategy defensible from visible work. Note for Jonathan: Pancreatic Cancer UK and Humanity Insured work shows full brand programmes (logo, system, in-use rollout) which meets the Identity systems definition. Could add Identity systems. Not failing on this as work is on-capability; it is a tagging refinement."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK, Size 100+ (corrected from migration 2-10, sourced from LinkedIn ~99-107 employees per AI Notes), Work Status Studio (correct schema value for an org entity). Objective sources documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type: Agency, an org-level entry. Autonomy is OPTIONAL for org-type entries per checklist calibration 2026-06-21. AI Notes includes a leadership read (CEO + Creative Director named). Not required."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a Jonathan relationship. Clip note contained only site copy ('GOOD is a purpose driven creative agency'), no relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was minimal site copy only, archived to clipped.md. No relationship facts, no passcodes, no tagging direction in clip. Nothing to act on beyond basic enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes attributes claims to sources (LinkedIn for employee count, 'approximately'/'roughly' hedges on founding date). Seniority read present (CEO + Creative Director named with dates). No bare assertions of unverifiable facts."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source reads 'Web clipper' without the required '<created date>' suffix. CLAUDE.md specifies: 'for backfill entries Source is Web clipper, <page created date>'. The created date was not appended.",
+      "fix": "Retrieve the page created_time via the API and update Source to 'Web clipper, <YYYY-MM-DD>' format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and populated for all touched fields. source_url nulls are noted as a known systemic tooling gap, not a gate failure per checklist calibration 2026-06-21. set_by values are correct (agent for researched fields, migration for Name)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and all captions; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions field present in entry. None are needed: all resolvable fields were set; no judgment fields require clarification; story nudge does not apply (Worked Together is Never, no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching, being flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "notes": "One soft FAIL on Source format (missing created date). Per v1 calibration mode: this is a minor completeness gap, not a substantive correctness failure. Passing the entry to Needs Review and surfacing the Source issue to Jonathan alongside the report. Reviewer note: scout may also consider adding Identity systems to Capabilities given the Pancreatic Cancer UK and Humanity Insured rebrands qualify under the taxonomy definition.",
+  "to": "scraper"
+}
