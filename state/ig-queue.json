@@ -1622,5 +1622,26 @@
     "ig_url": "https://www.instagram.com/howells/",
     "reason": "context shot only; logged-out IG degraded to login wall",
     "queued_at": "2026-07-04"
+  },
+  {
+    "page_id": "b1dbfbbd-49f5-471d-abf9-8b71dfe096d9",
+    "name": "Contagious",
+    "ig_url": "https://www.instagram.com/contagious/",
+    "reason": "IG context screenshot failed: headless Playwright returned Instagram login wall, not the @contagious profile page. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "38ef84ba-ae13-81d4-a089-c32c79452b8b",
+    "name": "Arvin Olesco",
+    "ig_url": "https://www.instagram.com/a.olesco/",
+    "reason": "IG-only video creator (no website, no Vimeo, no YouTube found); all work lives on Instagram. Two confirmed directed reels found via Google index: DFBYZ0gvCfx (New Year Same Hustle) and DLAANNmMiWH (birthday film). Logged-out scrape.py returned login wall on all URL attempts (profile, individual reels). Need logged-in ig.py grab for real profile context shot and reel stills/thumbnails.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "b23a0ce0-4638-465b-81ca-9c9f3712c081",
+    "name": "AATB",
+    "ig_url": "https://www.instagram.com/aatb_ch/",
+    "reason": "IG context screenshot returned Instagram login wall (headless Playwright blocked logged-out). Need logged-in ig.py grab for @aatb_ch profile context shot.",
+    "queued_at": "2026-07-05"
   }
 ]
