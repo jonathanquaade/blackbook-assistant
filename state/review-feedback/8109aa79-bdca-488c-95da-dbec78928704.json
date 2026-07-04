@@ -1,0 +1,111 @@
+{
+  "page_id": "8109aa79-bdca-488c-95da-dbec78928704",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Idols (2024), Fairy Tales (2021), Margaret Qualley for i-D (2025), NewJeans for The Face (2024), Olivia Rodrigo drop dead (2026), Selena Gomez Sunset Blvd (2025). No repeat-project images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per photographic series (cover + 2 interiors from each of 4 series). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Photography series and directed music videos. All work is visual and on-capability. Film direction is flagged in Open Questions for Jonathan to confirm as an additional tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: verified petra-collins.com homepage (nav shows Artwork/Books/Editorial/Commercial/Moving Image/CV). site-14.png: verified instagram.com/petrafcollins (Instagram wordmark, handle petrafcollins, 1.5M followers, correct grid). Both correct and matching captions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 manifest entries carry a named caption + source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 YouTube embeds (Olivia Rodrigo drop dead, Selena Gomez Sunset Blvd) with thumbnail preview images (site-15.jpg, site-16.jpg) and linked captions pointing to petra-collins.com film pages. Pattern is correct."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. LinkedIn absence documented in AI Notes ('No LinkedIn found, two searches'). No email documented ('No personal email on site')."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website and Instagram present and verified. LinkedIn absence documented in AI Notes after two searches. Email absence documented (no public email on site). Absence documentation meets the bar."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography set. Open Question asks Jonathan about Art practice (gallery/monographs) and Film & video production (music video direction). Scout correctly deferred the additions rather than adding unapproved capabilities."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Canada + US set (born Toronto, based NY). Size 1. Work Status Freelance: AI Notes documents sources (site, representation model, project-based career; no employer). Multi-source resolution present."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes: 15 yrs practice, fully autonomous, defines her own creative vision across photography, film, fine art."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are correct: no clip note or entry content contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source reads 'Web clipper' with no clip note text indicating special instructions. Nothing missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts are asserted with verifiable sources (named editorial credits, named commercial clients, named gallery). Seniority read ('roughly 15 yrs of practice') is hedged. No bare assertions of vibe or quality."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper'. CLAUDE.md specifies 'Web clipper, <page created date>' for backfill entries. Date is missing. This is a minor omission: the Source IS filled and identifies the origin correctly. Flagging as a note rather than a gate failure in v1 -- scout should append the created date on the next touch.",
+      "note": "Source should read 'Web clipper, <page created date>'; date suffix missing. Not a gate failure but scout should fix."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All agent-written fields carry set_by: agent. Capabilities set_by: jonathan (correct, from migration/clipper). source_url nulls are the known systemic tooling gap per calibration note; not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes uses double hyphens (--) not em-dashes. Open Questions use no dashes. No em-dashes found anywhere."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question about adding Capabilities (Art practice, Film & video production). Terse, conditional (Photography already set but Art practice and Film not yet set). Story nudge not applicable (Worked Together: Never, Familiarity: Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on pass. Correct flow."
+    }
+  ],
+  "to": null
+}

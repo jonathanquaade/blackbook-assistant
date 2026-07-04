@@ -1,0 +1,110 @@
+{
+  "page_id": "2883e098-6325-40b2-8010-302ef9bf50b7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-06-30T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct named projects: Illustrated Tapes, Franco Manca, How are you feeling?, Taking Flight, Phenakistoscope, Mirage, Animation Showreel 2022, Animated Alphabet 2021. No duplicate-angle grouping."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 images per project across 6 static illustration projects; showreel and alphabet each have a thumbnail + embed. Goes inside each project, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 17 images and both embeds are illustration or 2D animation work, matching the Illustration tag. Confirmed by visual inspection of franco-manca-01.jpg, how-are-you-feeling-01.jpg, taking-flight-02.jpg, mirage-01.jpg."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png visually confirms sofiajohnstonillustration.com homepage (purple header, Sofia Johnston name). site-02.png visually confirms instagram.com/illustratesofia profile (Instagram chrome, @illustratesofia handle visible in bio). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a link field. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two Vimeo embeds present (Animation Showreel 2022, Animated Alphabet 2021), each paired with a thumbnail image and a link caption. Pattern follows the CLAUDE.md thumbnail-then-embed spec."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Content is present; no thin or unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram (https://www.instagram.com/illustratesofia/ verified by context screenshot), LinkedIn, and public Email all set. IG handle confirmed correct person (bio + grid match context shot)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Illustration tagged per TAXONOMY.md. Animation capability proposed via Open Question (correct tag name 3D & motion confirmed in TAXONOMY). Capabilities set_by jonathan (migration baseline), proposal routed through Open Question as required."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country UK, Size 1, Work Status Freelance. AI Notes documents site + LinkedIn both say freelance, agreement at 0.9+, multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set_by agent. AI Notes explains: independent freelancer, direct commissions, early career, no evidence of team leadership. Seniority read present (mid-junior, 5-6 yrs post-grad)."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "No clip note relationship facts. Zero-states (Worked Together Never, Familiarity Don't know them, Work With Unvetted) are appropriate with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-12'. Raw entry is a clean clipper intake with no embedded instructions or judgments from Jonathan requiring --from-jonathan treatment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges Autonomy ('estimated'), grounds client list in verifiable sources, includes seniority/trajectory read. No unsupported plain assertions. No em-dashes confirmed by code check."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-12'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url null across all fields is the known systemic tooling gap (not a gate failure per 2026-06-21 calibration note). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Code check confirms no em-dash character in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) animation capability addition with evidence; (2) Familiarity, a zero-state so asking is valid. Neither asks for a field that already has a non-zero value. Terse and conditional."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review now."
+    }
+  ],
+  "to": null
+}
