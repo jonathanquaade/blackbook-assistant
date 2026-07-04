@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://www.aatb.ch/",
+      "value": "https://www.aatb.ch/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -28,16 +28,17 @@
     },
     "Country": {
       "value": [
+        "Switzerland",
         "France"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T22:58:23",
+      "verified_at": "2026-07-05T01:43:19",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,16 +56,64 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-05T01:45:50",
       "set_by": "agent"
     },
     "Name": {
-      "value": "AATB / Practice for Non-Industrial Robotics",
+      "value": "AATB",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/aatb_ch/",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://ch.linkedin.com/company/aatb",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "hi@aatb.ch",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper; aatb.ch, Swiss Design Awards blog, CERN Arts, LinkedIn",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Artist-duo practice (Andrea Anner, b.1985, Zurich; Thibault Brevet, b.1988, Lyon), founded 2018, based in Zurich and Marseille. Both trained at ECAL Lausanne (Anner: BA Visual Communication ZHdK 2008, MA Art Direction/Type Design ECAL 2012; Brevet: BA Graphic Design ECAL 2012, MA Visual Arts ECAL 2015). Their practice combines software programming, electronics, mechanical engineering and precision machining to make kinetic and interactive robotic installations exploring human-machine interaction. Swiss Design Award 2021; CERN Arts residency 2022-23; Atelier Luma residency; exhibited at ZKM, New Museum NY, Venice Architecture Biennale, Ars Electronica, and active in 2026 (Shenzhen show). Senior/established practice at roughly 8 years; Autonomy 4 as a self-directed studio with international institutional reach, though they do hands-on execution rather than pure direction.",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:45:50",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: site and work confirm Creative technology (code-driven robotic installations) and Fabrication (precision machining, mechanical engineering). Add both alongside existing Art practice?",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:46:08",
+      "set_by": "agent"
     }
   }
 }

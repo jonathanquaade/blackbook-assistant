@@ -1608,5 +1608,19 @@
     "ig_url": "https://www.instagram.com/katybrett_/",
     "reason": "context shot needed; IG served login wall in headless mode",
     "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "162f84ba-ae13-81c6-9b3c-c43f5110d285",
+    "name": "Sam Peitz",
+    "ig_url": "https://www.instagram.com/sa.da.pe/",
+    "reason": "IG context screenshot returned loading screen only (headless Playwright blocked by Instagram). Need logged-in ig.py grab for @sa.da.pe profile context shot. IG may also have recent product design work posts beyond what was captured from X.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "7474a582-0e3e-45f5-8043-5b96501b5200",
+    "name": "Howells Studio (Daniel Howells)",
+    "ig_url": "https://www.instagram.com/howells/",
+    "reason": "context shot only; logged-out IG degraded to login wall",
+    "queued_at": "2026-07-04"
   }
 ]

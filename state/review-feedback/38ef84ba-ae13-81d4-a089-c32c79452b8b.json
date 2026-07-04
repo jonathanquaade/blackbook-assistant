@@ -1,0 +1,111 @@
+{
+  "page_id": "38ef84ba-ae13-81d4-a089-c32c79452b8b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "All 4 captured images are rejected (login wall); 3 bookmarks placed covering 2 distinct named reels plus the IG profile. No duplicate project angles. Sanctioned IG-only exception applies."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Two named confirmed credits (directed + filmed) found via Google-indexed captions. Thin but all that is reachable logged-out; IG queue ensures depth fills in on the next ig.py drain."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Captured work (2 reels: New Year Same Hustle, Andrea Jasmine birthday film) matches tagged capabilities Film & video production and Social media content. No off-capability content present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot: no website exists (exhaustive search documented in AI Notes), so nothing to screenshot. IG profile context shot: two attempts both rejected with rejection_reason recorded; entry queued to state/ig-queue.json for logged-in ig.py grab. Meets the sanctioned exception (rejected + documented + queued)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All rejected images have rejection_reason. The 3 bookmarks are captioned with project name and source link."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Reels are behind login wall logged-out; embed not possible. Bookmarks placed as the available fallback. The logged-in ig.py pass will supply the real stills and embeds. Documented in AI Notes."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly states all Instagram URLs returned login wall, all profile and reel screenshots rejected, IG capture queued to state/ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual creator."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Instagram set to https://www.instagram.com/a.olesco/ (moved from clipped Website field). Website, LinkedIn, and Email: AI Notes states no Vimeo, YouTube, LinkedIn, or standalone portfolio site found after exhaustive search. Absence documented; not a skipped search."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production and Social media content both match TAXONOMY.md definitions. He directs/films short-form reels (video production) and creates platform-native content (social media content)."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Canada (Winnipeg confirmed via Google result). Size: 1 (individual). Work Status: Unknown with documented reason (IG bio not readable logged-out, no other signal). Objective rule applied correctly."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 2, set_by agent. Reasoning in AI Notes: solo emerging creator, short-form social video for local clients, no evidence of larger productions. Seniority read present (Junior/emerging level)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with the clip note, which contains no relationship facts. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'editor crearor videographer up and coming' treated as capability and seniority signal. Clipped IG URL moved from Website to Instagram field. Open Question 1 correctly flags that the name 'Arvin Olesco' is inferred from the handle and needs Jonathan's confirmation. Open Question 2 asks about a separate portfolio site."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Uses 'appears to be', 'estimated at', 'no evidence of', 'confirmed via Google search result'. Only verifiable facts (follower count, location, reel IDs, post captions) are asserted. Seniority + experience read included and hedged."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration backfill)'. Meets the convention. Minor: created date not included, but source type is clear."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by: agent. source_url is null throughout; known systemic tooling gap per calibration note, not a gate failure on its own. No field written below confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use colons, semicolons, commas, and double hyphens (--). No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) name/identity confirmation (critical, cannot verify without IG bio), (2) separate portfolio website. Both are conditional and terse. No question for a field that already has a value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching; reviewer flipping to Needs Review as final step."
+    }
+  ],
+  "notes": "One minor operational issue: state/ig-queue.json contains two identical entries for this page_id (duplicate queued_at 2026-07-05). The duplicate does not block the pass but the queue drain should deduplicate by page_id to avoid a double ig.py grab.",
+  "to": null
+}
