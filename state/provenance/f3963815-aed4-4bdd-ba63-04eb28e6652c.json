@@ -15,23 +15,24 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "1",
+      "value": "2-10",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:59:50",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "UK"
+        "UK",
+        "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:59:50",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T22:58:36",
+      "verified_at": "2026-07-05T01:59:07",
       "set_by": "agent"
     },
     "Work With?": {
@@ -49,9 +50,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-05T01:59:50",
       "set_by": "agent"
     },
     "Name": {
@@ -59,6 +60,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:59:50",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://www.dunneandraby.co.uk/",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:59:50",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/anthony-dunne-474359345/",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:59:50",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Notion migration entry; biography from dunneandraby.co.uk/content/biography and Wikipedia",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:59:50",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Dunne and Raby (Anthony Dunne + Fiona Raby) is a two-person speculative and critical design practice founded in 1994, widely regarded as the originators of Critical Design and Speculative Design as fields. Practice based in UK (London) with extended US presence; 2016-2025 they were University Professors of Design and Social Inquiry at Parsons / The New School in New York, co-directing the Designed Realities Studio. As of 2025, Distinguished Visiting Professors at the China Academy of Art. Historically at the RCA: Anthony as Professor and Head of Design Interactions (2005-2015), Fiona as Reader in Design Interactions. Very senior, field-defining level: ~32 years of practice, four books (Hertzian Tales 1999, Design Noir 2001, Speculative Everything 2013, Not Here, Not Now 2025), work in MoMA and V and A permanent collections. MIT Media Lab Award 2015 inaugural recipients, Royal Designers for Industry 2021. Autonomy: 5 (fully autonomous; run their own studio and set their own agenda; academic chairs). Work Status=Studio confirmed: dunneandraby.co.uk is their active studio site.",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:59:50",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-07-05T02:00:09",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: they have a jonathan-set tag of Art practice. Should Industrial design and Insights and research also be added, given their physical speculative objects and written research output? 2. Instagram: no confirmed studio account found. Anthony Dunne has @anthony__dunne (personal), Fiona Raby has @ny__f (personal) per search results but not verified against bios. Should either personal handle be attached, or is there a studio account?",
+      "source_url": null,
+      "verified_at": "2026-07-05T02:00:24",
+      "set_by": "agent"
     }
   }
 }

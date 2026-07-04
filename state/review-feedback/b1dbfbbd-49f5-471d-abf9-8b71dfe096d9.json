@@ -1,0 +1,110 @@
+{
+  "page_id": "b1dbfbbd-49f5-471d-abf9-8b71dfe096d9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 live images span 5+ distinct content buckets: IQ case-study mosaic, Volvo Epic Split case study, 5 distinct report covers (Radar 2026, IQ Download 2025, Centaur GenAI, Grand Prix Insights 2024, IQ Download 2024), 2 editorial spreads (Cannes Grand Prix coverage + Glass Lion spreads), 2 events pieces (Cannes Contenders 2026 + Highly Contagious Agencies 2023). No duplicate angles of the same piece."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside the product: IQ database mosaic shows the platform interface, editorial-02 opens the Glass Lion magazine spreads (interior layout, not just a cover), report covers are distinct publications not hero variants of one. Reasonable depth for a publication where the 'work' is editorial output."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Brand strategy (set_by jonathan). For a Publication, the editorial/intelligence output IS the on-capability work. Images show their intelligence platform (IQ mosaic), research reports, editorial coverage, and events programming. The Volvo Epic Split case-study image is an example from their IQ database, correctly contextualised. 3 bookmarks (IQ platform, Reports hub, Cannes Grand Prix analysis) directly represent their intelligence product. All content is squarely publication/editorial work."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-05.png): verified as contagious.com homepage showing 'Creativity is Contagious' hero and nav. Instagram context shot (site-06.png): shows Instagram login wall, NOT the profile. However, the login-wall shot is marked rejected in manifest (rejected:true, rejection_reason documents the login wall), entry is queued in state/ig-queue.json (confirmed), and AI Notes states the block. This is the sanctioned throttle-exception path per checklist A.context-shots. No fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every live image has a caption naming the publication/product + source link. Rejected images are excluded from the live set. site-07.png is captioned 'Contagious reports page' with link. No anonymous images in the live set of 13."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "3 bookmarks embedded (IQ platform, Reports, Cannes Grand Prix analysis article). No video embeds, but Contagious is a written-intelligence publication; their primary output is text reports and a database, not video. No YouTube/Vimeo project pages were skipped. Bookmarks are the appropriate format for editorial/written content per CLAUDE.md."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG login wall documented in AI Notes and rejection_reason in manifest. No other known gated or dead sources left unaddressed."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Publication. Correct for a marketing intelligence editorial outlet."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.contagious.com/ (present). Instagram: https://www.instagram.com/contagious/ (present, handle verified as the official account). LinkedIn: https://www.linkedin.com/company/contagious-communications (present). Email: support@contagious.com (present). All four findable link types accounted for."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy set_by jonathan. The Open Question asks whether to add Insights and research, which is appropriate given the intelligence platform. The agent did not overwrite Jonathan's tag, correctly deferred on expansion."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + US (London HQ + New York office, verified). Work Status: Unknown (appropriate for a Publication org; the field is more relevant for persons). Size: left empty with Open Question #1 asking Jonathan to confirm between 41-100 and 100+, since LinkedIn shows 51-200 straddling two buckets. That is the correct handling rather than guessing."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Publication (org-type). Per checklist calibration 2026-06-21, Autonomy is OPTIONAL for org-type entries. AI Notes contains a seniority/leadership read (founded by Paul Kemp-Robertson and Gee Thomson, part of LIONS/Informa). No fail for missing Autonomy field on an org."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with no evidence of Jonathan knowing Contagious personally. No clip note states a relationship. Zero-states are valid here."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry originated as a migrated web-clipper entry with no clip-note instructions beyond the URL. Nothing in the raw entry indicates Jonathan-stated facts to write --from-jonathan. Source field confirms 'Web clipper, migrated entry'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes correctly attributes facts to sources (LinkedIn for employee count, hedged with 'straddles two buckets'). The 'part editorial, part consultancy, part research' is a quoted positioning claim. No bare assertions of unverifiable quality judgments. Note does not include a seniority read (N/A for a Publication org). No em-dashes found in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated entry; contagious.com, Wikipedia, LinkedIn snippet'. Present and descriptive."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all fields. source_url is null throughout, which is the known systemic tooling gap (not a gate failure per checklist calibration 2026-06-21). set_by values look correct: Capabilities is jonathan (he set Brand strategy), all others are agent or migration."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Size disambiguation between two buckets (Size field is empty, question is conditional and non-redundant). (2) Capabilities expansion proposal (Brand strategy already set by Jonathan, question asks about adding Insights and research, conditional on his judgment). Both are terse and non-redundant. No story nudge needed (Worked Together is Never / no relationship signal)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper"
+}

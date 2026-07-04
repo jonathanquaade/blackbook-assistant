@@ -2,85 +2,83 @@
   "page_id": "250f3d66-4942-4878-895d-086392bfa3f9",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Active images span 6 distinct projects: e-flux Directory, Burberry for Hypebeast, Adidas Loops for Hypebae, Warp Records platform, Burberry Monogram for Hypebeast, Warp 2016. No repeated project."
+      "evidence": "8 work images across 6 distinct projects: e-flux Directory (site-01), Warp Records 2016 (site-20), Warp.net platform (site-21, site-29, site-30), Burberry Monogram for Hypebeast (site-23), Adidas Loops for Hypebae (site-26), Burberry for Hypebeast (site-28). 3 Warp.net shots cover meaningfully different sections (homepage hero, releases catalog, artists list), not duplicate angles. Passes the 3-distinct-projects bar comfortably."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "site-12 (Burberry for Hypebeast), site-13 (Adidas Loops), site-14 (Warp.net), site-16 (Burberry Monogram), and site-17 (Warp 2016) all show only the case-study title/intro page from 100k.studio, not the actual built site or interior design screens. site-12 has a large blank video placeholder box taking up the bottom half. site-17 shows a purple rectangle at the bottom (empty video embed). These are cover shots of 100k's own project pages, not screenshots of the finished client work (the actual Hypebeast takeover, the actual Warp Records platform UI, the actual Adidas Loops site). The e-flux shot (site-01) is the only one showing the real built product.",
-      "fix": "For each project, navigate to the LIVE built site (or the case study deeper scroll that shows real screens) and take screenshots of the actual finished product: the Hypebeast website during the Burberry takeover, the Warp.net platform UI, the Adidas Loops site, the Burberry Monogram tunnel. The 100k.studio portfolio page intro is the description, not the work."
+      "result": "pass",
+      "evidence": "All 8 work images now show actual built products. site-20: live warp2016.100k.studio interactive grid with artist/album panels. site-21: warp.net homepage with editorial photography hero. site-23: Burberry Monogram full-browser TB pattern takeover on Hypebeast with 'SCROLL TO EXPLORE' prompt. site-26: laptop mockup of Adidas Loops on Hypebae with video panels and MIRROR/STRIPES/NEON/FLOWER nav. site-28: Burberry 3D glass monogram mobile view. site-29: warp.net releases catalog 'ALL RELEASES (862)'. site-30: warp.net artists list (Aphex Twin, Autechre, etc.). The case-study wrapper pages from attempt 1 are all marked rejected in the manifest. No hero-only or blank-placeholder shots remain."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Captured work is web design and web development output (built sites, interactive experiences), consistent with what 100k.studio actually does. The Capabilities mismatch (Graphic design vs. Web design) is correctly flagged in Open Questions and is Jonathan's call, not a scraper error."
+      "evidence": "All captured work is web design and web development output (built platforms, interactive brand experiences, music label sites). Matches what 100k Studio actually builds. Capabilities mismatch (Graphic design vs. Web design) is correctly escalated via Open Question, not overridden."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-10.png is captioned 'Website' with source_url 'https://100k.studio/' but visually shows the e-flux Directory interface (a client project), NOT 100k Studio's own homepage. This is the shared-image-pool contamination the context warned about: the file was sourced from the studio's WP image pool and landed on a project view, not the studio homepage. site-11.png (Instagram profile @100k_studio) is correct: shows the instagram.com/@100k_studio profile grid.",
-      "fix": "Recapture the website context shot by taking a fresh screenshot of https://100k.studio/ (the studio's own homepage, which should show their portfolio grid and branding, not the e-flux site). The current site-10.png must be replaced."
+      "result": "pass",
+      "evidence": "site-18.png: fresh screenshot of https://100k.studio/ showing '100k Studio GmbH / Web Development' branding top-left, the 100k logo, project list sidebar with all clients visible (e-flux, Ventana, TEDE, WalletConnect, Adidas, Warp.net, etc.), and the portfolio interface with e-flux Directory loaded as the default featured project in the main area. The studio branding is unambiguously present; the e-flux content in the main pane is the homepage's interactive portfolio state (the scraper confirmed this is genuinely the homepage). Not contamination; the studio's own homepage design and nav are clearly visible. site-11.png: instagram.com/@100k_studio confirmed, shows the 100k logo, '100k Studio / Website Development Agency' bio, post grid. Both context shots are correct."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 8 active images have captions with project names and source links."
+      "evidence": "All 10 active images carry captions with project names and source links. No anonymous or unlabeled images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "100k Studio's work is interactive web (not video/audio in the editorial sense). No YouTube or Vimeo project pages were identified that require embeds. The Warp 2016 and Adidas Loops projects are interactive websites best represented by screenshots. No embed gap found."
+      "evidence": "100k Studio builds interactive web experiences; no YouTube or Vimeo embeds were found on the case-study pages for the captured projects. Screenshots are the appropriate representation format for this studio's work."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained absence; the IG context shot is present and correct."
+      "evidence": "No unexplained absence. Context shots present. IG screenshot obtained logged-out."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct for a two-person GmbH doing hands-on client web work."
+      "evidence": "Type: Studio. Two-person GmbH doing hands-on client web work. Correct."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (https://100k.studio/), Instagram (https://www.instagram.com/100k_studio/), Email (contact@100k.studio) all set. LinkedIn not present but AI Notes does not claim it was searched and found; for a two-person Berlin studio with no prominent LinkedIn presence this is not flagged as a skipped search. Acceptable gap."
+      "evidence": "Website (https://100k.studio/), Instagram (https://www.instagram.com/100k_studio/), Email (contact@100k.studio) all set. LinkedIn not present; this was passed at attempt 1 and the entry was bounced only on A.depth-over-breadth and A.context-shots, so the LinkedIn gap is treated as already reviewed and accepted. Noted here for completeness: a studio LinkedIn page may exist but was not flagged as a required find."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities tagged Graphic design (set_by jonathan). Scout correctly flags the mismatch via Open Question 1 and does not override a jonathan-set field. Appropriate handling."
+      "evidence": "Capabilities: Graphic design set by Jonathan (set_by: jonathan, locked). Scout raised Open Question 1 proposing Web design + Frontend development (web). Correct handling; no override of a jonathan-set field."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Germany (Berlin, confirmed from site and company register). Size: 2-10 (two managing directors). Work Status: Studio. All sourced and noted. Open Question 2 asks Jonathan to confirm the country and size corrections from migration values."
+      "evidence": "Country: Germany (Berlin, confirmed). Size: 2-10 (two managing directors). Work Status: Studio. All set with reasoning in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry; Autonomy is optional per checklist calibration note. AI Notes states 'Studio-level entity; no Autonomy field applies.' Correct."
+      "evidence": "Studio entry; Autonomy is optional per checklist calibration note (2026-06-21). AI Notes states 'Studio-level entity; no Autonomy field applies.' Correct."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note signals any relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate."
+      "evidence": "No clip note indicates any relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No instruction text detected in the clip note beyond the URL. Source is 'Web clipper, 2020-11-01'."
+      "evidence": "Clip note contains no instruction text beyond the URL. Source: 'Web clipper, 2020-11-01'."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes include verifiable facts (clients, tech stack, GmbH registration, founder names with roles). Seniority read is present: two-founder studio, art director plus developer. No unhedged inferences."
+      "evidence": "AI Notes assert only verifiable facts: clients, tech stack, GmbH registration date, founder names and roles, Capabilities mismatch flagged. Seniority read present (two-founder studio, art director plus developer). No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -90,24 +88,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance records with set_by values. source_url null across the board, which is the known systemic tooling gap per checklist calibration note, not a gate failure."
+      "evidence": "All touched fields have provenance records with correct set_by values. source_url null is the known systemic tooling gap per checklist calibration note; not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions use hyphens and semicolons. No em-dashes found."
+      "evidence": "Verified AI Notes and Open Questions text. No em-dashes found. Commas, semicolons, and hyphens used throughout."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "Two questions: capabilities correction and country/size confirmation. Conditional (Capabilities is jonathan-set so correction is appropriate to flag). Terse and actionable."
+      "evidence": "Two questions: (1) Capabilities correction proposal, (2) Country and Size correction confirmation. Both terse, conditional, and actionable."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching, pending this gate. Status flip to Needs Review is the reviewer's responsibility on pass."
+      "evidence": "Entry was Enriching; reviewer flipping to Needs Review on this pass."
     }
   ],
-  "failing_checks": ["A.depth-over-breadth", "A.context-shots"],
-  "to": "scraper"
+  "to": "jonathan"
 }
