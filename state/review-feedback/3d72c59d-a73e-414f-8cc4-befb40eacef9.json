@@ -1,0 +1,30 @@
+{
+  "page_id": "3d72c59d-a73e-414f-8cc4-befb40eacef9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "11 work images span 8+ distinct projects: Roar Next Gen showcase (2 works), Browns mural, Brentford FC apparel, Le Chocolat packaging, Beer 52 Ferment cover, Faux Adidas stickers, PUMA campaign, Dr. Martens ad. No caption repeats."},
+    {"id": "A.depth", "result": "pass", "evidence": "Goes inside projects: mural closeup (Browns), t-shirt product shot (Brentford), packaging illustration detail (Le Chocolat, Beer 52). Not just hero covers."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Illustration; all 11 work images show illustration work (editorial, packaging, apparel, mural, campaign). On-capability throughout."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png confirmed as ailishbeadle.com homepage; site-02.png confirmed as instagram.com/ailishbeadle profile page. Both correct and uncorrupted."},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "Every manifest entry has a caption naming the project and a source link. No anonymous images."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Dr. Martens YouTube video is embedded (type:embed in manifest) with dr-martens-thumb.jpg thumbnail image also uploaded. Pattern followed correctly."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No thin areas. Work sourced from Behance and Roar Artists. No unexplained gaps."},
+    {"id": "B.type", "result": "pass", "evidence": "Type = Person."},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, LinkedIn, Email all filled. IG handle @ailishbeadle verified via context screenshot (bio + grid match)."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Illustration tagged. Open Question asks Jonathan about adding Graphic design -- appropriate escalation rather than unilateral addition."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country=UK, Size=1, Work Status=Freelance. AI Notes names sources: site + IG bio both confirm freelance (two sources agree). LinkedIn unreadable (HTTP 999) documented. Objective rule met."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy=2, set_by agent. Reasoning in AI Notes: executes briefs across commercial contexts, not a strategic lead. Seniority read present (mid-level, ~5-6 years freelance)."},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match a bare web clipper entry with no relationship facts from Jonathan."},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Source is Web clipper, 2026-06-12. No embedded instructions or relationship facts in the clip note requiring --from-jonathan treatment."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Inferences hedged (approximately, not positioned as). Seniority + Autonomy pairing present. Sources named for Work Status resolution. LinkedIn failure documented."},
+    {"id": "D.source", "result": "pass", "evidence": "Source = Web clipper, 2026-06-12."},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have provenance entries with correct set_by values. null source_url is a known systemic tooling gap, not a gate failure per checklist calibration note."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes, Open Questions, and image captions scanned. No em-dashes found."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One question (Graphic design capability addition), terse and conditional. No story nudge needed (Worked Together: Never, no relationship signal)."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Status was Enriching pre-gate, correct. Flipping to Needs Review on this pass."}
+  ],
+  "to": null
+}

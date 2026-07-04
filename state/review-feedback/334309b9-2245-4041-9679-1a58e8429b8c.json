@@ -1,0 +1,34 @@
+{
+  "page_id": "334309b9-2245-4041-9679-1a58e8429b8c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No website screenshot and no Instagram profile screenshot exist in the manifest or asset directory. All 11 manifest entries are work images. The entry is also not in state/ig-queue.json. Context shots are completely absent, not missing-but-queued.",
+      "fix": "Run scrape.py shot https://www.massaradavid.com/ --out assets/334309b9-2245-4041-9679-1a58e8429b8c --caption 'Website' and scrape.py shot https://www.instagram.com/david.massara/ --render --out assets/334309b9-2245-4041-9679-1a58e8429b8c --caption 'Instagram profile' (or queue to ig-queue if throttled and document it). Both must be present before Needs Review."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "site-05, site-06, site-07 are captioned 'SC Walla typeface, 2024' but the images are historical paintings and a vintage photograph used as reference/source material for the typeface. They show no Walla letterforms. The captions misrepresent the images. Viewers will be confused about what 'SC Walla' looks like. Similarly site-01 through site-04, captioned 'SC Ripley typeface', show historical typographic source material (a Printing History book spread, metal type moulds, a Times specimen, a pencil sketch attributed to Jim Rimmer) rather than the finished Ripley typeface itself. The source material is labeled as the typeface.",
+      "fix": "Replace or supplement site-05/06/07 with actual SC Walla letterform specimens (type testers, printed PDF, or the specimen poster visible on salecharacter.com). Replace or supplement site-01/02/03/04 with actual Ripley typeface specimen images (the finished face, not the historical source documents). The source material images may be kept if captioned accurately as 'SC Ripley, source material' rather than 'SC Ripley typeface', but actual typeface output must be present for at least one image per face."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "fail",
+      "evidence": "Capabilities is set to only 'Graphic design' (provenance: set_by jonathan, likely a migration baseline). David Massara's primary work is type design: he co-founded SALE CHARACTER (a type studio), designed the Ripley and SC Walla typefaces, worked at Colophon Foundry (a type foundry) and Newglyph SA. Type design is not tagged. The Open Questions ask whether to add 'Type design + Creative direction' but the current single tag actively misrepresents him. The scraper should have either updated this (it is a migration baseline, not jonathan-locked on the judgment) or flagged it more prominently. A type designer listed only as 'Graphic design' is a material misclassification.",
+      "fix": "The Capabilities field is set_by:jonathan in provenance (migration-inherited). The agent cannot overwrite it unilaterally. The Open Question is the correct path, but the question wording should make the misclassification urgent: 'Capabilities: currently only Graphic design but primary work is type design (Ripley, SC Walla, Colophon Foundry). Suggest adding Type design + Creative direction.' The Open Question already asks this, so this is acceptable as-is IF the context shots and caption fixes are done. Do not re-write jonathan-locked fields."
+    },
+    {
+      "id": "D.source",
+      "result": "fail",
+      "evidence": "Source is 'Web clipper' with no date. The rule in CLAUDE.md requires 'Web clipper, <page created date>' for clipper entries.",
+      "fix": "Look up the page created_time via the Notion API (keeper.py get returns created_time or check the API directly) and update Source to 'Web clipper, YYYY-MM-DD'."
+    }
+  ],
+  "to": "scraper"
+}
