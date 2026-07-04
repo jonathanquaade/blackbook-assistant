@@ -27,19 +27,20 @@
       "set_by": "migration"
     },
     "Open Questions": {
-      "value": "1. Familiarity \u2014 you've worked together: (a) Met or spoken (b) Know them well\n2. How do you know them / what was working together like? One line in Notes.",
+      "value": "1. Notes: what was working with Pentagram like? Any partners in particular?",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-05T01:14:30",
       "set_by": "agent"
     },
     "Country": {
       "value": [
         "UK",
-        "US"
+        "US",
+        "Germany"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T01:14:15",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -62,9 +63,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-05T01:14:15",
       "set_by": "agent"
     },
     "Name": {
@@ -72,6 +73,36 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:14:15",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/pentagram",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:14:15",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "london@pentagram.com",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:14:15",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Migration import; pentagram.com/about confirmed offices, partner model, disciplines",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:14:15",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Pentagram is the world's largest independent design consultancy, founded 1972, partner-owned and operated from London, New York, Austin, and Berlin. The partnership model (24 partners, each a practicing designer personally leading client work) is the defining structural feature: partners own the firm, run their own teams, and are the primary contact for clients. This is hands-on creative execution at scale, not a holding-company or ad-agency structure. Type set as Studio per CLAUDE.md bias rule and Pentagram's own self-description as a design studio. Capabilities span graphic design, identity systems, brand strategy, web design, type design, spatial/exhibition design, 3D and motion, and sound, though jonathan's Capabilities field (Graphic design) is locked. Size 100+, Work Status Studio (partner-owned, not a freelance or employed structure). Worked Together: Repeatedly and Familiarity: Know them well are set by jonathan. Existing Open Questions about Familiarity and Notes are stale given those jonathan-set values; replaced with one corrected question below.",
+      "source_url": null,
+      "verified_at": "2026-07-05T01:14:15",
+      "set_by": "agent"
     }
   }
 }

@@ -1,0 +1,112 @@
+{
+  "page_id": "380f84ba-ae13-8169-9bd0-c3f29a693e34",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "special_case": "Non-creative: Audience and Partnerships / account-management track. No portfolio or images exist to capture. Image checks evaluated under documented-absence exception.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No assets directory; no images present. Absence documented in AI Notes ('No personal portfolio or design work found in any public source'). Documented-absence exception applies per spawn instructions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A — no capturable work exists. Absence documented."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities field is correctly empty. Scout explicitly withheld tags because confidence floor was not met (Fran Sans is a personal exploration, not a professional release). Correct call."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No website exists (AI Notes: 'No personal website found'). No confirmed Instagram handle at 0.8 confidence (three candidates searched, none verified). Absence documented in AI Notes and Open Questions. Nothing to screenshot; documented-absence exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images present. N/A."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "N/A — no embeddable work found. Not a video or audio practitioner."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains: no portfolio, no personal site, no confirmed Instagram, COLLINS ideas page 404. Reason for empty images is honest and specific."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "LinkedIn present and verified. Website: none found (documented). Instagram: not confirmed at 0.8 (documented in AI Notes + Open Questions Q2). Email: not surfaced by scout; no public email findable for a business-role employee at an agency is expected and AI Notes documents the situation. Works At Link set to wearecollins.com (employer not in DB as a relation entry)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities empty. Correct: no hands-on creative practice confirmed at 0.8. Scout documented reason in AI Notes."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: United States (LinkedIn). Size: 1 (person). Work Status: Employed, sourced from COLLINS team page + LinkedIn, no conflicting signal. Multi-source rule satisfied; sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy not set. AI Notes explicitly states 'Autonomy not estimated: no creative practitioner history to ground a rating.' Correct call per checklist calibration (2026-06-21): Autonomy required only for Person entries where creative history supports a read."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? = Unvetted, Worked Together = Never, Familiarity = Don't know them) do not contradict any evidence. No clip note states a prior relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source states 'Found using Claude, 2026-06-15' -- this entry was sourced by Claude, not by a clip note. No clip-note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes correctly hedges the Fran Sans font as 'appears to be a personal exploration, not a professional type-design release.' Seniority read is grounded in role history (Program Manager, Associate Account Manager, TEDx Director). No unverified assertions presented as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Audience and Partnerships role at COLLINS (New York); currently employed.' Filled and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by=agent and verified_at timestamps. source_url null on AI Notes, Open Questions, Source, Entry Status -- known systemic tooling gap, not a gate failure per checklist calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: Q1 surfaces the identity/scope decision (is this the right person, is he in scope for the blackbook); Q2 asks for an Instagram handle Jonathan may know. Both are conditional -- neither asks for a field that already has a non-zero value. Story nudge not applicable (Worked Together is zero-state, Familiarity is zero-state)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "All checks pass. This is a legitimate edge case: scout correctly identified that the person is on a business/partnerships track, not a hands-on creative, and documented everything honestly. Jonathan's call is whether this person belongs in the blackbook at all (Open Question 1). No scraper pass needed or appropriate."
+}

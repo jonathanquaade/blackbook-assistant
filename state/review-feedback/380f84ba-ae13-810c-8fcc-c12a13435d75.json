@@ -1,0 +1,111 @@
+{
+  "page_id": "380f84ba-ae13-810c-8fcc-c12a13435d75",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "special_case": "Non-hands-on creative (VP Managing Director / ops career). Capabilities correctly empty. No portfolio/site, so no work images and no context shots possible for own site. Orchestrator explicitly directed: do not bounce to scraper, pass to Needs Review.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No images expected. AI Notes documents absence: no personal website, no portfolio. Person is not a hands-on creative."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A, documented absence."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities field is empty (correct: role is account/ops management, not creative execution). Nothing to be off-capability from."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "note",
+      "evidence": "No assets directory exists. No website context shot (correct: no personal website, documented in AI Notes). No Instagram profile screenshot either, though @alexblum is confirmed and accessible. Orchestrator explicitly directed not to bounce to scraper. Noting the gap for Jonathan: entry has no visual memory anchor."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images present; not applicable."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "N/A, no creative work to embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes: 'No personal website; no public email.' Absence of portfolio images is explained by the non-creative role."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: none (documented absence in AI Notes). Instagram: https://www.instagram.com/alexblum/ (confirmed as right person per AI Notes). LinkedIn: https://www.linkedin.com/in/alexblumfelder/. Email: none (documented 'no public email' in AI Notes). Works At Link: wearecollins.com (employer, not personal site)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities empty with an Open Question asking Jonathan to rule on scope and which (if any) capabilities apply. Appropriate given the non-creative role."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: United States. Size: 1. Work Status: Employed. AI Notes lists sources checked: wearecollins.com/team, LinkedIn Google snippet, Muck Rack, Krop resume PDF. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: VP-level ops leader, 15+ years, hedged as non-creative role. Seniority read present."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note implies a relationship; zero-states are consistent with evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source shows entry was found by the agent (not a clip with instructions). No --from-jonathan facts required."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Autonomy estimate explicitly hedged ('estimated'). Capabilities hedge defers to Jonathan. Sources listed with dates. Seniority trajectory grounded in named roles and employers. No bare assertions about creative output."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Found using Claude, 2026-06-15. Confirmed employed at COLLINS as Managing Director. Sources: wearecollins.com/team, theorg.com, LinkedIn Google snippet.'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by (agent). source_url null across the board is the known systemic tooling gap; not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes and Open Questions: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse: asks Jonathan to rule on scope (is this person in scope?) and capabilities. Capabilities field is empty so the question is not conditional-blocked. Appropriate and specific."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching; will flip to Needs Review on this pass completing."
+    }
+  ],
+  "to": null
+}
