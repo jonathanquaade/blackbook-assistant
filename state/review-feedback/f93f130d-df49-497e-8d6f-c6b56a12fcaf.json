@@ -1,0 +1,112 @@
+{
+  "page_id": "f93f130d-df49-497e-8d6f-c6b56a12fcaf",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 4 named series (Sleeping by the Mississippi, Niagara, Songbook, A Pound of Pictures). No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior/subject images per series (not just covers); e.g. sbtm-01 is Peter's Houseboat, sbtm-02 Charles portrait, sbtm-03 cemetery -- goes inside the work."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Photography + Art practice; all 12 work images are large-format documentary photographs. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as alecsoth.com/photography homepage (Alec Soth nav visible). site-02.png confirmed as instagram.com/littlebrownmushroom profile page (handle and 'Alec Soth' bio visible). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming series, year, and subject/location. Source links present on all work images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Photography/Art practice; no video/audio work expected. No skipped embeds identified."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No significant source gaps; work is well-represented from alecsoth.com project pages."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn is absent from the entry and not addressed in AI Notes. Alec Soth is a globally recognized Magnum photographer -- a LinkedIn profile is almost certain to exist and would be found in a standard '<name> photographer linkedin' search. No note explains the absence.",
+      "fix": "Search 'Alec Soth photographer linkedin' and add the LinkedIn URL if found. If genuinely absent, document 'No LinkedIn found' in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography + Art practice, set_by jonathan. Correct for a Magnum author-photographer."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "fail",
+      "evidence": "Work Status = Studio is set but AI Notes does not name which sources were checked per the objective multi-source rule (CLAUDE.md requires sources named, e.g. 'Studio: site + IG agree; LinkedIn treated as...'). AI Notes mentions he 'runs Little Brown Mushroom' but does not state what sources were consulted to conclude 'Studio' over 'Freelance'.",
+      "fix": "Add a one-line source note to AI Notes: which sources were checked and which won (e.g. site self-description, Instagram bio). Also verify 'Studio' is the correct classification: he is a sole-author photographer who runs a small imprint -- this may warrant Freelance or Studio depending on sources; confirm and document."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5, set_by agent, with reasoning in AI Notes ('fully independent author-photographer, sets all creative direction, self-publishes, no employer'). Grounded in verifiable facts."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Clip note was only the clipped name 'Alex Soth'; no relationship or judgment facts. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was the raw name 'Alex Soth'. Scout corrected to 'Alec Soth' and raised Open Question 1 asking Jonathan to confirm. Handled correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts (Magnum membership, book titles, gallery representation, awards) are stated as verifiable. Autonomy reasoning is explicit. Seniority read included (b. 1969, one of the most prominent of his generation). No unhedged inferences detected."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-02', set_by agent. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. Null source_url on Worked Together/Familiarity/Work With? is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and manifest captions checked: no em-dashes found. Manifest uses '--' (double hyphen) as a separator in captions, which is acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three terse questions: (1) name confirmation, (2) Rating, (3) Familiarity. Conditional -- none ask for fields already holding non-zero values. Story nudge not applicable (Worked Together is Never, no relationship signal)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; status flip to Needs Review is withheld pending this gate."
+    }
+  ],
+  "to": "scout"
+}

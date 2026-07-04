@@ -1,0 +1,106 @@
+{
+  "page_id": "fe5efdbf-b38d-46a9-827c-42541f6056ea",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Jamaica, Kendrick Lamar tour, Simone Rocha, Goldie x Citizen, Llainwire x i-D. No repeated angles or near-identical images across non-rejected entries."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior shots per project (3 Simone Rocha, 2 Jamaica, 2 Llainwire x i-D). Not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography; all work images are photographs. Open Question on Film & video production is unresolved, so no embed required yet."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-12.png is captioned 'Website' but the image is a dark street photograph (a portfolio still), not a screenshot of fennomeally.com. It is not marked rejected, not documented in AI Notes, and not queued. site-13.png (Instagram profile) correctly shows instagram.com/fenn_omeally.",
+      "fix": "Replace site-12.png with a real screenshot of https://fennomeally.com (the homepage). Use scrape.py shot https://fennomeally.com --out assets/fe5efdbf-b38d-46a9-827c-42541f6056ea --caption 'Website', mark the old site-12.png as rejected in manifest.json, re-run keeper.py upload."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All non-rejected manifest entries carry project name captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Photography only; video embed requirement is not triggered until the Film & video production Open Question is resolved."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin areas; Phenomena and ItsNiceThat sources are substantial."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Person."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present and pointing to correct person. No public email found; not obviously skipped (no email visible on her site or representation pages)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Photography set_by jonathan. Open Question correctly asks about adding Film & video production."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK, Size 1, Freelance. AI Notes names multiple corroborating sources (smugglersite.com, phenomena.photos, itsnicethat.com, dazeddigital.com, bwgtbld.tv)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes (delivers finished films and editorial photography independently)."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are not contradicted by any clip note or evidence in the entry."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-02'; no instruction text in clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Factual claims are grounded in named sources. Seniority and trajectory are included. No em-dashes. No unsupported assertions."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "'Web clipper, 2020-11-02' is present."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse conditional question on Capabilities. No fields asked about that already have non-zero values."
+    }
+  ],
+  "to": "scraper"
+}
