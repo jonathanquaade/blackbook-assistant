@@ -2,44 +2,43 @@
   "page_id": "162f84ba-ae13-81c6-9b3c-c43f5110d285",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects: TextOS (6 screens), Fitbit Ace LTE at Studio Koto (2 images), One Year journal app (1 image), plant inventory app concept (1 image). No repeated angles of the same project."
+      "evidence": "3 distinct projects: TextOS (6 screens across weather, stocks, social feed, calculator, music player, home/notifications), One Year journal app (site-17.jpg), plant inventory app concept (site-20.jpg). No repeated angles of one project."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "TextOS has 6 screen-level shots (weather, stocks, social feed, calculator, music player, home/notifications summary). One Year and plant app each show a single interior screen. Fitbit is the shallow pair but it is supplementary to the TextOS depth."
+      "evidence": "TextOS has 6 different screen-level interior shots showing the system breadth (not just one hero). One Year and plant inventory each add a distinct product concept with interior UI. All 9 images go inside projects rather than stopping at cover/hero level."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Tagged capability is Product design. site-12.jpg is a 3D brand mascot key-art image for Fitbit Ace LTE (Studio Koto brand identity campaign). site-14.jpg is a lifestyle photograph of a child on a climbing frame wearing the watch, with the tagline 'Moving the next generation of gamers.' Both are brand identity and campaign imagery, not product design UI or UX screens. If Sam contributed UI work to the Fitbit Ace LTE device, those screens should have been captured instead. If his contribution was brand-side only, this project is off-capability and should be dropped.",
-      "fix": "Replace site-12.jpg and site-14.jpg with either (a) Fitbit Ace LTE UI/UX screens Sam contributed to (check koto.com case study and Sam's own site for device UI), or (b) a different on-capability project. Product design entry needs product/UI screens, not brand campaign imagery."
+      "result": "pass",
+      "evidence": "Prior fail resolved. site-12.jpg and site-14.jpg (Fitbit Ace LTE brand/campaign imagery) are both marked rejected in manifest and absent from the Images property. All 9 active images are product design UI: TextOS screens (weather, stocks, social feed, calculator, music player, home summary), One Year growth garden view, plant inventory screen. Verified by opening each file. textos-03.png shows a social feed UI screen via an X post embed, which is the same TextOS UI design shown from a social context; on-capability content confirmed."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot site-15.png confirmed correct: sam-peitz.com homepage showing 'SAMUEL DAVID PEITZ' with site nav illustrations. Instagram context shot site-16.png is an Instagram loading/splash screen (IG logo, Meta branding) because headless Playwright was blocked; correctly marked rejected in manifest, documented in reject_reason, and entry is present in state/ig-queue.json. Throttle exception applies per checklist."
+      "evidence": "Website context shot site-15.png confirmed correct: sam-peitz.com homepage showing 'SAMUEL DAVID PEITZ' with the three illustrated nav icons (flower, bird, man in suit). Instagram context shot (site-16.png) was blocked by headless Playwright returning a loading screen, correctly marked rejected in manifest with documented reason, and entry is present in state/ig-queue.json for a logged-in ig.py grab. Throttle exception in checklist applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 11 active images have captions naming their project and linking to source. No anonymous shots."
+      "evidence": "All 9 active images have captions naming their project and a source link. No anonymous shots."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video embeds were expected; the TextOS, One Year, and plant app work is static screens. Fitbit Ace LTE had Vimeo thumbnails pulled as stills (site-12.jpg from Vimeo CDN), which is acceptable for brand video content."
+      "evidence": "No video embeds expected or missed. All work is static UI screens. No YouTube or Vimeo on the relevant project pages that were skipped."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "AI Notes documents IG throttle and queue; manifest reject_reasons cover all 20 rejected files with specific reasons."
+      "evidence": "AI Notes documents IG throttle and queue. Manifest reject_reasons cover all rejected files with specific reasons. No silent thinness."
     },
     {
       "id": "B.type-classified",
@@ -49,37 +48,37 @@
     {
       "id": "B.all-links-present",
       "result": "pass",
-      "evidence": "Website (sam-peitz.com), Instagram (@sa.da.pe, verified via Spaces interview), LinkedIn (/in/samuel-peitz) all present. No public email found; AI Notes does not address this gap explicitly but no obvious email was findable from the public sources described."
+      "evidence": "Website (sam-peitz.com), Instagram (@sa.da.pe, verified via Spaces interview), LinkedIn (/in/samuel-peitz) all present. No public email found; no obvious public email address was findable. This is an acceptable gap for a freelancer with no contact form email exposed."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Product design tagged; set_by jonathan per provenance. Appropriate for his TextOS, One Year app, and plant inventory UI work."
+      "evidence": "Product design tagged, set_by jonathan per provenance. Matches the captured UI work: TextOS OS concept, One Year journal app, plant inventory app."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Germany. Size: 1. Work Status: Freelance. AI Notes names three confirming sources: Spaces interview (Jan 2024 start), roster.so (Selbststandig), and LinkedIn title. Multi-source rule satisfied."
+      "evidence": "Country: Germany. Size: 1. Work Status: Freelance. AI Notes names three sources: Spaces interview (Jan 2024 start), roster.so (Selbststandig), LinkedIn title. Multi-source rule satisfied."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: runs full projects independently, brief to shipping, no evidence of managing teams. Grounded in visible solo practice and personal projects."
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: runs full projects independently from brief to shipping, no evidence of managing teams. Grounded in visible solo practice and personal projects. Seniority read present (mid-to-senior level, 10+ years)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with the clip note context. Rating: 4 is set_by jonathan. No contradictions."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the clip note. Rating: 4 is set_by jonathan. No contradictions."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clipped.md shows only 'Add details' (Notion placeholder), no actual clip note instructions. Open Question asks about 'Partner-Dream' context for Work With?, which is appropriate."
+      "evidence": "clipped.md shows only 'Add details' and 'Work' (Notion placeholder text, no actual instructions). Open Question asks about Work With? given the 'Partner-Dream' context found in the entry name. Appropriate."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes uses 'estimated', 'no evidence of', 'Mid-to-senior level' (hedged). Seniority read and Autonomy estimate are present. Work Status sourcing is explicit."
+      "evidence": "AI Notes uses 'estimated', 'no evidence of', 'Mid-to-senior level' as hedges. Seniority read and Autonomy estimate are present and grounded. Work Status sourcing is explicit with three named sources."
     },
     {
       "id": "D.source-filled",
@@ -89,22 +88,22 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present and covers all touched fields with set_by values. Null source_url on several fields is the known systemic tooling gap, not a gate failure per checklist calibration note."
+      "evidence": "Provenance file covers all touched fields with correct set_by values. Null source_url on several fields is the known systemic tooling gap, not a gate failure per calibration note. Images provenance updated to reflect the 9-image set with verified_at 2026-07-05T01:51:48."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Live Notion Open Questions field reads '1. Work With? (ex Partner-Dream)' with no em-dash. Provenance JSON records a stale value with an em-dash but the field in Notion is clean. AI Notes, captions, and Source are all em-dash free."
+      "evidence": "Open Questions field reads '1. Work With? (ex Partner-Dream)' with no em-dash. AI Notes, captions, and Source are all em-dash free. Provenance JSON records a stale value with an em-dash in Open Questions but the live Notion field is clean."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse question about Work With? given the 'Partner-Dream' context. Conditional: Work With? is currently Unvetted (zero-state), so asking is appropriate. Rating is already set by Jonathan at 4, so no Rating question is needed."
+      "evidence": "One terse question about Work With? given the 'Partner-Dream' context. Conditional: Work With? is Unvetted (zero-state), so asking is correct. Rating is already set by Jonathan at 4, no Rating question needed."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching pending this gate. Status flip to Needs Review is the reviewer's job on pass."
+      "evidence": "Entry is in Enriching. Flipping to Needs Review now as part of this pass verdict."
     }
   ],
   "to": "scraper"

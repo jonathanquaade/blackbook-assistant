@@ -2,105 +2,104 @@
   "page_id": "7474a582-0e3e-45f5-8043-5b96501b5200",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
-  "verdict": "fail",
-  "attempt": 2,
+  "verdict": "pass",
+  "attempt": 3,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct client products: Siteinspire, Mob, YCN, Reed Words, Bergmeyer"
+      "evidence": "5 distinct client products: Siteinspire, Mob, YCN, Reed Words, Bergmeyer. Images confirmed visually distinct."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "YCN has homepage (site-02) and programmes inner page (site-23); Reed Words has homepage (site-05) and work listing (site-24); appropriate depth for web product screenshots"
+      "evidence": "YCN has homepage (site-02) and programmes inner page (site-23); Reed Words has homepage (site-05) and work listing (site-24); Bergmeyer work listing (site-21). Appropriate inner-page depth for web product screenshots."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 8 images (1 website context + 7 work shots) show live web products Howells built; matches Frontend development (web)"
+      "evidence": "All 8 live images show live web products Howells built; matches tagged Capability: Frontend development (web)."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-18.png is correctly marked rejected in manifest with reject_reason and the entry is in ig-queue.json. The checklist exception requires the block to ALSO be documented in AI Notes. AI Notes currently say only 'Instagram handle @howells confirmed via his own Siteinspire profile listing' with no mention of the login wall, the failed grab, or the queued ig.py capture. One of the three required conditions is unmet.",
-      "fix": "Append one sentence to AI Notes: 'Logged-out IG grab for @howells hit the login wall; capture queued in ig-queue.json for a supervised ig.py pass.' No other changes needed."
+      "result": "pass",
+      "evidence": "Website context shot (site-01.png) is danielhowells.com, verified visually. IG context shot (site-18.png) is rejected in manifest with reject_reason, the block is documented in AI Notes ('Logged-out IG grab for @howells hit the login wall; the context shot is queued in ig-queue.json for a supervised ig.py pass.'), and the entry is queued in state/ig-queue.json. All three exception conditions met."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 8 live images have captions and source links; rejected images are excluded from the body"
+      "evidence": "All 8 live images have captions and source links. Rejected images excluded from body."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Work is frontend web products; no video embeds applicable"
+      "evidence": "Work is frontend web products; no video embeds applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Active client sites captured directly; no unexplained thin sources"
+      "evidence": "Active client sites captured directly; no unexplained thin sources."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio, set_by jonathan"
+      "evidence": "Type: Studio."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website (danielhowells.com), Instagram (instagram.com/howells), LinkedIn (uk.linkedin.com/in/danielhowells), Email (daniel@danielhowells.com) all set"
+      "evidence": "Website (danielhowells.com), Instagram (instagram.com/howells), LinkedIn (uk.linkedin.com/in/danielhowells), Email (daniel@danielhowells.com) all set."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Frontend development (web) set; Open Question asks Jonathan about adding Web design and Digital product design"
+      "evidence": "Frontend development (web) set; Open Question asks Jonathan about adding Web design and Digital product design."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK, Size: 1, Work Status: Studio; AI Notes names sources (site + Siteinspire profile)"
+      "evidence": "Country: UK, Size: 1, Work Status: Studio; AI Notes names sources (site + Siteinspire profile)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry is Studio type; Autonomy optional for org entries per calibration note; AI Notes includes seniority read (senior/director, 20+ years)"
+      "evidence": "Entry is Studio type; Autonomy optional for org entries per calibration note; AI Notes includes seniority read (senior/director, 20+ years)."
     },
     {
       "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) consistent with no clip note indicating prior relationship"
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) consistent with no clip note indicating prior relationship."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Standard clipper entry; no special instructions; Source filled with clip date"
+      "evidence": "Standard clipper entry; no special instructions; Source filled with clip date."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Work Status resolution named; seniority read present; no unhedged inferences; no em-dashes"
+      "evidence": "Work Status resolution named; seniority read present; no unhedged inferences; no em-dashes; IG block documented."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: Web clipper, 2026-06-12"
+      "evidence": "Source: Web clipper, 2026-06-12."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Null source_urls are a known systemic tooling gap, not a gate failure; set_by values correct throughout"
+      "evidence": "Null source_urls are a known systemic tooling gap, not a gate failure; set_by values correct throughout."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question about Capabilities; no question asked for already-set fields"
+      "evidence": "One terse conditional question about Capabilities; no question asked for already-set fields."
     }
   ],
-  "to": "scraper"
+  "to": null
 }
