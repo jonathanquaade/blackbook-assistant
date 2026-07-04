@@ -1,0 +1,114 @@
+{
+  "page_id": "54e0ea22-3170-4c09-b966-28d4cf433ac3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects represented: Victoria Beckham (fashion), Katie Grand / Perfect Magazine, AKVA Hydrogen+Sanity demo, Victoria Beckham Beauty, Love Magazine / Conde Nast asset manager. Two AKVA shots (site-05, site-15) are the same project but different pages (homepage vs product detail), which is acceptable depth."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "AKVA has homepage + product detail (two distinct views). Sanity blog case study (site-18) is a depth piece documenting actual build work. For a frontend dev, screenshots of live built sites are the correct on-capability evidence."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 7 kept images are frontend-built sites (ecommerce, editorial, headless CMS). Matches tagged Capability: Frontend development (web)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Website context shot is absent. robinpyon.com has no DNS record (documented in AI Notes), so the shot could not be taken. The Sanity.io community profile (site-17) is used as the identity anchor instead. There is no formal checklist exception for a dead portfolio domain. The IG profile context shot is also absent (no confirmed IG handle). The checklist requires both; neither is present in the standard form.",
+      "fix": "The website being down is not recoverable this pass. Add an Open Question asking Jonathan whether robinpyon.com is permanently down and if there is a backup URL (GitHub Pages, read.cv, etc.) that could serve as the context anchor. Document the search for an Instagram handle in AI Notes: note that Sanity profile, GitHub, and LinkedIn were checked and none link to an Instagram account, and that no search confirmed a handle."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 7 kept images have captions with project name and source link."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Frontend development (web); no video/audio work expected. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents robinpyon.com DNS failure. Rejected manifest entries have documented reject reasons (blank render, 404, lazy-loaded grid). The thinness of the image set (7) is explained by repeated render failures on Love Magazine and VB interior pages."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "Instagram field is empty and AI Notes contain no documentation of an Instagram search. The Sanity profile, GitHub profile, and LinkedIn are the only sources referenced. Whether a search for @robinpyon or handle variants was attempted is unrecorded. For a London-based freelance developer who works with fashion clients (VB, Love, Ivy Park), an Instagram presence is plausible and a search should be documented either way.",
+      "fix": "Add a note to AI Notes: 'Instagram: searched Sanity profile, GitHub (github.com/robinpyon), and LinkedIn; no linked Instagram found; @robinpyon and variants not confirmed to be the right person.' If the search was genuinely done and nothing found, this one line clears the check."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Frontend development (web) is the correct single capability. Sanity CMS and Shopify Hydrogen are tools within that capability, not separate tags."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "UK / 1 / Freelance. AI Notes documents source resolution: Sanity.io profile self-describes as 'freelance and available for work' (primary source, treated as current); LinkedIn lists prior role at Jonny Lu Studio (treated as stale). Two-source agreement not strictly available but self-maintained profile is highest-weight source per the objective rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 (set_by agent) with reasoning in AI Notes: senior individual, runs projects independently, lead-level track record, no evidence of directing teams. Grounded in LinkedIn work history (Lead Developer at Jonny Lu Studio) and Sanity profile."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "fail",
+      "evidence": "Familiarity is set to 'Don't know them' (set_by agent) but Worked Together is 'Repeatedly' (set_by jonathan). CLAUDE.md is explicit: 'never write a zero-state that evidence contradicts.' If Jonathan worked with Robin repeatedly, 'Don't know them' is knowingly false. The agent correctly added Open Question 1 to ask Familiarity, but should have left the field empty rather than writing the contradicting zero-state.",
+      "fix": "Clear Familiarity to empty (the field should be blank, not a false zero-state). The existing Open Question 1 already prompts Jonathan correctly. The fix is removing the 'Don't know them' value, not changing the question."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Day Rate (300), Worked Together (Repeatedly), and Notes ('Ecommerce **') are set_by jonathan from migration. Story-nudge question is present (Open Question 2: 'Notes: how was working together?') since Worked Together = Repeatedly and Notes is sparse."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list and experience claims are sourced from Robin's own Sanity profile (primary source, self-described), which meets the 0.8 confidence floor for assertion. Work Status source resolution is documented. Autonomy estimate is hedged ('no evidence of directing teams'). No em-dashes. Seniority read is present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; verified via sanity.io/exchange/community/robinpyon, github.com/robinpyon, uk.linkedin.com/in/robinpyon'. Complete and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by correctly assigned (jonathan for his fields, agent for agent fields, migration for migrated baseline). Per calibration note (2026-06-21), null source_url is a known systemic tooling gap and is not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Familiarity with context, (2) story nudge. Both terse and appropriate. The Familiarity question is conditional on the current contradicting value being cleared (see C.no-judgment-contradicts-evidence fail)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, pending this gate. Correct."
+    }
+  ],
+  "to": "scraper",
+  "summary": "Three fails. (1) Familiarity set to 'Don't know them' directly contradicts Worked Together: Repeatedly (jonathan) -- a false zero-state that CLAUDE.md explicitly forbids. Fix: clear the Familiarity field to empty. (2) Website context shot absent and no formal exception exists for a dead portfolio domain. Fix: add an Open Question asking Jonathan for a backup URL or confirming the domain is gone. (3) Instagram search not documented in AI Notes -- unclear whether a search was done. Fix: one line in AI Notes noting what was checked and what was found (or not found)."
+}

@@ -1,0 +1,112 @@
+{
+  "page_id": "b467ec39-d8fe-4f55-bbc8-32d3503939cb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Kali Uchis RMIV, Paul Smith Ginza, Atlantic Records 75th, Eastern Margins, Nike ACG. No repeated captions or near-identical images."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "3 images per project go inside each: back cover and gatefold spread (Kali); storefront sketch and artwork spread (Paul Smith); frame sheet and logo explorations (Atlantic); poster template and content card (Eastern Margins); editorial layout and typography treatment (Nike ACG)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 15 work images show graphic design work: packaging, brand identity, illustration, typography, editorial layout. On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed chachaanteng.biz homepage (visually verified). site-02.png is the Instagram login wall, marked rejected in manifest with documented rejection_reason, and the entry is queued in state/ig-queue.json. Checklist IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 15 work images carry project name plus source link in caption field. No anonymous shots."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Entry is tagged Graphic design only; no video/audio/writing capability. No embed requirement triggered."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest rejection_reason and ig-queue.json entry. No other absences."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; Wei Prior is an individual designer who also runs a studio."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Email is absent and there is no mention in AI Notes that a public contact email was searched and not found. Website (weiprior.fun), Instagram (@weiprior), and LinkedIn are all present. Email is the gap. The studio site chachaanteng.biz may expose a contact email, as may the weiprior.fun personal site.",
+      "fix": "Search chachaanteng.biz and weiprior.fun for a public contact email. If genuinely absent after checking both sites and a web search, note 'no public email found' in AI Notes so future reviewers know it was tried."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design tagged per TAXONOMY.md. AI Notes notes the studio also covers typography, illustration, animation, and art direction, which are plausibly sub-capabilities of Graphic design or separate tags. Acceptable as-is; not a gate issue."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK confirmed. Size 1 correct for a Person entry. Work Status Studio confirmed via ItsNiceThat and Zetteler per AI Notes; LinkedIn corroborates. Multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set_by agent with reasoning in AI Notes: runs own studio and drives creative direction, small-scale operation. Grounded in real work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together Repeatedly and Rating 5 and Day Rate 250 are jonathan-set and untouched. Familiarity is correctly empty (pending question 1). Work With? is Unvetted (zero-state, appropriate since Jonathan has not set it). No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Jonathan-set fields (Worked Together Repeatedly, Rating 5, Day Rate 250) are set_by jonathan in provenance. Familiarity question and story nudge (Notes: how was working together?) are both present in Open Questions."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge unverified inferences (studio size 'roughly 5', year 'around 2021'). Verifiable facts (clients, ItsNiceThat/Zetteler sources, LinkedIn role) are asserted plainly. Seniority read and Autonomy estimate are both present and grounded."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated entry; ItsNiceThat article 2021-02-16; Zetteler 22 for 2022 feature'. Specific and filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. jonathan-set fields (Worked Together, Rating, Day Rate) are stamped set_by jonathan. source_url nulls are the known systemic tooling gap; not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions text verified: zero em-dash characters present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Familiarity, terse with context; (2) story nudge (Notes: how was working together?). Both conditional and appropriate. No field asked that already has a non-zero value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Gate is open; reviewer will flip to Needs Review on pass. Currently held at Enriching pending this review."
+    }
+  ],
+  "failing_checks": ["B.links"],
+  "to": "scraper"
+}

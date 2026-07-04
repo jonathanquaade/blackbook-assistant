@@ -245,3 +245,12 @@ CDN) -> own site/IG as supplement. Now the headline rule in CLAUDE.md step 6.
   (Name/Website/Instagram/Country/Size) as `jonathan`, falsely locking them.
   Reclassified to `migration` (restructurable). Notes + Capabilities kept as
   jonathan. Future automation should never blanket-stamp `jonathan` on import.
+
+## 2026-07-04 — WordPress shared-CDN image contamination (100k Studio)
+scrape.py --render on a WordPress site (100k.studio) can pull a SHARED image pool
+across all project pages: pointing at a specific project URL returned images from
+unrelated projects with wrong captions. Fix pattern used: (1) take `scrape.py shot`
+screenshots of each specific project page for accurate captioned visuals, (2) correct
+manifest captions from the source_url filename, (3) mark all mislabeled shared-pool
+renders rejected. Consider a --probe check that flags when the same image hashes recur
+across different project URLs (contamination signal).

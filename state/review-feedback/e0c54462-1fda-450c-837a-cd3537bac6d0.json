@@ -1,0 +1,112 @@
+{
+  "page_id": "e0c54462-1fda-450c-837a-cd3537bac6d0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 active images (site-14 and two others correctly rejected) span 5 distinct named projects: Artefact 188, Void Frames, Pearson Sound, Growing My Own Gods, ABS Collective. No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "warn",
+      "evidence": "Artefact 188 and Void Frames images skew toward logo lockup / cover shots rather than system interiors. Site-01 is a plain wordmark in a circle; site-04 and site-05 are both logo-only lockups on grey (icon+wordmark vs wordmark alone). Pearson Sound has two website interiors (site-08 dark abstract, site-09 nav open) plus a portrait cover, which is better. Not a hard fail but Jonathan may want deeper system images for those two identity projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all 13 images are visual identity, publication, and digital design work consistent with that capability. No off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-13) is adedicated.studio homepage, confirmed correct in the image. jackeden.uk is 404 so the studio site is the right substitute and is documented in the spawn note. Instagram context shot (site-14) is the Instagram login wall, correctly marked rejected in manifest, documented as throttle block, queued to ig-queue.json (entry confirmed present). Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image has a caption naming the project and a link to the source page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Graphic design, not video or audio. No embed requirement triggered. No YouTube/Vimeo present on these project pages per the scraper's work."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "jackeden.uk 404 documented (spawn prompt). IG throttle documented in manifest and ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual designer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "fail",
+      "evidence": "LinkedIn and Email are absent from the entry and from provenance. AI Notes makes no mention of a LinkedIn search attempt or a finding of none. A London graphic designer named Jack Eden who works at a named studio is very likely findable on LinkedIn via a simple search; the scraper's checklist (CLAUDE.md P1 step 4) explicitly requires LinkedIn search. Absence without documentation of a search attempt fails the standard.",
+      "fix": "Search 'Jack Eden graphic design linkedin' and 'Jack Eden A Dedicated Studio linkedin'; capture the URL if found or document 'searched, not found' in AI Notes and provenance. Also check adedicated.studio /about and his IG bio for a public contact email."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design is the correct primary tag for this work. Provenance marks it set_by: jonathan (migrated), which is appropriate."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK (agent, confirmed from IG bio and studio location). Size: 1 (person). Work Status: Unknown, correctly set with multi-source conflict documented in AI Notes (The Dots says freelance, IG bio suggests studio role, no clear majority). Sources named."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 3 set by agent with hedged reasoning in AI Notes. Person entry, required field present."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Repeatedly set_by: jonathan (migration-preserved). Familiarity left null with an Open Question rather than a false zero-state. Work With?: Unvetted (zero-state, no evidence contradicts it). Story nudge applied (Open Question 3 asks about the working relationship)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; Source preserves the original clip note verbatim. Worked Together: Repeatedly carried from migration as set_by: jonathan. No clipped.md exists, consistent with a sparse migration clip. The Website redirect from jackeden.com to jackeden.uk was caught and documented."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Work Status uncertainty hedged explicitly. Autonomy estimate hedged ('estimated', 'not yet confirmed CD-level'). Seniority read present ('mid-level') with caveat ('experience depth unclear from public sources'). No hard assertions about private facts. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; jackeden.com (now jackeden.uk) in original clip'. Present and informative."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout, noted as the known systemic tooling gap (not a v1 gate failure per checklist calibration note). set_by values are correct: jonathan for Worked Together (migration-preserved judgment), agent for all agent-set fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, captions, or Source. Verified programmatically."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: (1) Familiarity - terse, conditional on Worked Together being set, (2) Work Status - terse with specific source conflict named, (3) Notes story nudge. None ask for a field that already has a non-zero value. Familiarity is correctly left empty rather than defaulted."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on passing this gate (v1)."
+    }
+  ],
+  "notes": "One FAIL (B.all-findable-links: LinkedIn and Email absent, no search documented) and one WARN (A.depth-over-breadth: Artefact 188 and Void Frames lean heavily on logo lockups). In v1 mode the entry proceeds to Needs Review; Jonathan should be aware the LinkedIn gap exists. The individual-credit claim for these 5 projects at A Dedicated Studio is in the spawn note but not surfaced in AI Notes; Jonathan may want that context given Worked Together = Repeatedly.",
+  "to": "scraper"
+}

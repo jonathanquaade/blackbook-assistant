@@ -1594,5 +1594,19 @@
     "ig_url": "https://www.instagram.com/jack____eden/",
     "reason": "logged-out Instagram returned login page not profile grid; jackeden.uk is 404 so IG profile context shot is important; Jonathan worked with him repeatedly so strong entry matters",
     "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "6a092624-3e0c-4782-b827-46cdb5b200d3",
+    "name": "GOOD Agency",
+    "ig_url": "https://www.instagram.com/goodagencylondon/",
+    "reason": "IG context screenshot failed: headless Playwright returned Instagram login wall instead of profile page. @goodagencylondon is confirmed handle (from entry). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "a6f6a720-0937-4d17-90d8-c8c760f35fb8",
+    "name": "Katy Brett",
+    "ig_url": "https://www.instagram.com/katybrett_/",
+    "reason": "context shot needed; IG served login wall in headless mode",
+    "queued_at": "2026-07-05"
   }
 ]

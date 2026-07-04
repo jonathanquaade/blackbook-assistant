@@ -1,0 +1,113 @@
+{
+  "page_id": "250f3d66-4942-4878-895d-086392bfa3f9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Active images span 6 distinct projects: e-flux Directory, Burberry for Hypebeast, Adidas Loops for Hypebae, Warp Records platform, Burberry Monogram for Hypebeast, Warp 2016. No repeated project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "site-12 (Burberry for Hypebeast), site-13 (Adidas Loops), site-14 (Warp.net), site-16 (Burberry Monogram), and site-17 (Warp 2016) all show only the case-study title/intro page from 100k.studio, not the actual built site or interior design screens. site-12 has a large blank video placeholder box taking up the bottom half. site-17 shows a purple rectangle at the bottom (empty video embed). These are cover shots of 100k's own project pages, not screenshots of the finished client work (the actual Hypebeast takeover, the actual Warp Records platform UI, the actual Adidas Loops site). The e-flux shot (site-01) is the only one showing the real built product.",
+      "fix": "For each project, navigate to the LIVE built site (or the case study deeper scroll that shows real screens) and take screenshots of the actual finished product: the Hypebeast website during the Burberry takeover, the Warp.net platform UI, the Adidas Loops site, the Burberry Monogram tunnel. The 100k.studio portfolio page intro is the description, not the work."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Captured work is web design and web development output (built sites, interactive experiences), consistent with what 100k.studio actually does. The Capabilities mismatch (Graphic design vs. Web design) is correctly flagged in Open Questions and is Jonathan's call, not a scraper error."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-10.png is captioned 'Website' with source_url 'https://100k.studio/' but visually shows the e-flux Directory interface (a client project), NOT 100k Studio's own homepage. This is the shared-image-pool contamination the context warned about: the file was sourced from the studio's WP image pool and landed on a project view, not the studio homepage. site-11.png (Instagram profile @100k_studio) is correct: shows the instagram.com/@100k_studio profile grid.",
+      "fix": "Recapture the website context shot by taking a fresh screenshot of https://100k.studio/ (the studio's own homepage, which should show their portfolio grid and branding, not the e-flux site). The current site-10.png must be replaced."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 active images have captions with project names and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "100k Studio's work is interactive web (not video/audio in the editorial sense). No YouTube or Vimeo project pages were identified that require embeds. The Warp 2016 and Adidas Loops projects are interactive websites best represented by screenshots. No embed gap found."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absence; the IG context shot is present and correct."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a two-person GmbH doing hands-on client web work."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (https://100k.studio/), Instagram (https://www.instagram.com/100k_studio/), Email (contact@100k.studio) all set. LinkedIn not present but AI Notes does not claim it was searched and found; for a two-person Berlin studio with no prominent LinkedIn presence this is not flagged as a skipped search. Acceptable gap."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities tagged Graphic design (set_by jonathan). Scout correctly flags the mismatch via Open Question 1 and does not override a jonathan-set field. Appropriate handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (Berlin, confirmed from site and company register). Size: 2-10 (two managing directors). Work Status: Studio. All sourced and noted. Open Question 2 asks Jonathan to confirm the country and size corrections from migration values."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per checklist calibration note. AI Notes states 'Studio-level entity; no Autonomy field applies.' Correct."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note signals any relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No instruction text detected in the clip note beyond the URL. Source is 'Web clipper, 2020-11-01'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include verifiable facts (clients, tech stack, GmbH registration, founder names with roles). Seniority read is present: two-founder studio, art director plus developer. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Present."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with set_by values. source_url null across the board, which is the known systemic tooling gap per checklist calibration note, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use hyphens and semicolons. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: capabilities correction and country/size confirmation. Conditional (Capabilities is jonathan-set so correction is appropriate to flag). Terse and actionable."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, pending this gate. Status flip to Needs Review is the reviewer's responsibility on pass."
+    }
+  ],
+  "failing_checks": ["A.depth-over-breadth", "A.context-shots"],
+  "to": "scraper"
+}

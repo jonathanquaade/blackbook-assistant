@@ -1,0 +1,111 @@
+{
+  "page_id": "7b013ec3-14c3-4c3e-8de9-6b06d24fc321",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects across 14 work images: Imperial College, Green-Wood Cemetery, Mozilla Foundation, Windham-Campbell Prizes 2025, St Paul's Cathedral, MoN Takanawa"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior/application shots per project (e.g. 3 Imperial frames, 3 Green-Wood frames, 3 Mozilla frames). Not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are identity/graphic design work matching the Graphic design Capability. 4 images were correctly rejected for off-capability content (portrait at podium, architectural interiors, building exterior only). NOTE: site-03 (Imperial) shows a person holding a branded folder at a presentation -- borderline portrait, but branded materials are present so retained. site-04 and site-05 (Green-Wood) show the wordmark applied to building signage from street/drone level -- these are environmental applications of the identity, not pure architecture shots. Acceptable for an identity project. site-12 (Windham-Campbell) is a building exterior with the wordmark and logomark overlaid digitally -- on-capability composition. site-15 (St Paul's Cathedral) shows craftspeople carving the typeface into stone -- a craft/process shot that is relevant to the identity project and shows the letterforms. These border cases are all defensible."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-19.png verified as pentagram.com homepage (nav shows Work, About, News, Contact, Q, Archive; Pentagram branding visible). site-20.png verified as instagram.com/pentagramdesign (handle 'pentagramdesign', 1M followers, bio 'A multi-disciplinary, independently owned design studio')."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active work images have captions naming the project and a link to the source page. Context shots captioned 'Website' and 'Instagram profile'."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities tagged as Graphic design only; no video/audio capability tagged. No embed requirement triggered."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. 4 images rejected with documented reasons in manifest.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Set by agent, justified in AI Notes (partner-owned, hands-on execution, CLAUDE.md bias rule)."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website: pentagram.com (present). Instagram: instagram.com/pentagramdesign (present, verified correct via site-20 screenshot). LinkedIn: linkedin.com/company/pentagram (present). Email: london@pentagram.com (present)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set by jonathan (locked). AI Notes notes broader capabilities exist but correctly leaves the jonathan-set field alone."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK, US, Germany (multi-office studio confirmed via pentagram.com/about). Size: 100+ (migration, consistent with known scale). Work Status: Studio (partner-owned structure, sourced from pentagram.com/about)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio). Per checklist calibration 2026-06-21: Autonomy is optional for org entries. Not set. AI Notes describes the partner model and hands-on execution -- sufficient seniority/leadership read for a studio entry."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Repeatedly and Familiarity: Know them well both set by jonathan. Work With?: Notion shows 'Definitely' -- likely Jonathan's override (provenance still says 'Unvetted' set_by agent, a tracking gap not a content error). No agent-set judgment contradicts evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note with special instructions. Worked Together and Familiarity values set by jonathan in provenance (pre-existing). Story nudge correctly applied: Open Question asks about working experience given Worked Together: Repeatedly and Notes empty."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual and accurately describe the entry. No unverified inferences asserted without hedging. Studio-level entry so no individual seniority/Autonomy read required."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration import; pentagram.com/about confirmed offices, partner model, disciplines'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file exists and covers all agent-touched fields. NOTED: Familiarity provenance shows set_by:agent, value:'Don't know them' -- but Notion shows 'Know them well' (which AI Notes says Jonathan set). This is a stale provenance record where a Jonathan override was not mirrored back to provenance. Per checklist note: source_url nulls are a known tooling gap, not a gate failure. The set_by mismatch for Familiarity is a minor tracking gap (Jonathan's override simply was not re-mirrored) rather than an agent writing below confidence floor. Similarly Work With? provenance says 'Unvetted' but Notion shows 'Definitely' -- Jonathan's value, not tracked in provenance. Flagged for scraper to update on next pass."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and Open Questions -- no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question: 'Notes: what was working with Pentagram like? Any partners in particular?' Correctly conditional (Notes is empty, Worked Together is Repeatedly). Story nudge applied."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching, will flip to Needs Review on this gate pass."
+    }
+  ],
+  "notes": "Two provenance tracking gaps flagged (Familiarity and Work With? show stale agent values while Notion holds Jonathan's overrides). Not gate failures under current checklist rules but the scraper should mirror these on the next pass. All image border cases (Green-Wood building shots, Windham-Campbell building exterior, St Paul's stone-carving process) are defensible as identity project documentation. Entry is complete and honest.",
+  "to": "scraper"
+}
