@@ -3,32 +3,113 @@
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 work images span 6 distinct projects: SC Ripley (2 images), SC Walla (4 images including in-use posters for Charivari and Fri-Son), OFFSET typeface, Rammellzee editorial face, SALE CHARACTER Type Journal No.1 (2 images). No duplicate-angle problem."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Entry goes inside projects: the Charivari poster in-situ, the Fri-Son venue poster in-situ, the OFFSET weight waterfall, the Rammellzee editorial specimen text, the Type Journal newspaper spread and sticker. Not just hero covers. The two social-preview images (sc-ripley-specimen.png = 'Ripley' wordmark only; sc-walla-specimen.png = 'Walla' wordmark only) are thin but the other images compensate and the overall selection reads as depth."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 10 work images show typeface specimens and in-use typography. Entry is tagged Graphic design (with an Open Question to add Type design), and the images are on-capability for a type designer. No off-capability work captured."
+    },
     {
       "id": "A.context-shots",
       "result": "fail",
-      "evidence": "No website screenshot and no Instagram profile screenshot exist in the manifest or asset directory. All 11 manifest entries are work images. The entry is also not in state/ig-queue.json. Context shots are completely absent, not missing-but-queued.",
-      "fix": "Run scrape.py shot https://www.massaradavid.com/ --out assets/334309b9-2245-4041-9679-1a58e8429b8c --caption 'Website' and scrape.py shot https://www.instagram.com/david.massara/ --render --out assets/334309b9-2245-4041-9679-1a58e8429b8c --caption 'Instagram profile' (or queue to ig-queue if throttled and document it). Both must be present before Needs Review."
+      "evidence": "Website context shot (site-12.png) is PASS: shows massaradavid.com homepage with SPECTRODRAMA and design references, correct person. Instagram context shot (site-13.png) is a FAIL: the screenshot shows @david.massara but the bio reads 'Every day is an opportunity to be the person you always wanted to be!' with a podcast/blog link at @davemassx. The profile is private, shows no design or type work, and has lifestyle content. This is the wrong-person IG problem the checklist explicitly flags (pattern: Neil, Morgan). The AI Notes claim '@david.massara identified via Google-indexed profile URL consistently attributed to this person' but the actual screenshot contradicts this -- the bio is inconsistent with a Swiss type designer. The IG is NOT in the ig-queue (checked state/ig-queue.json: empty for this entry), so the sanctioned throttle exception does not apply. The attached Instagram URL and context shot are likely for a different David Massara.",
+      "fix": "Verify whether https://www.instagram.com/david.massara/ actually belongs to the type designer David Massara (b. 1994, Lausanne, ECAL / Colophon Foundry / SALE CHARACTER). The screenshot bio shows no design signal and a private account with lifestyle content. Cross-check against massaradavid.com for any linked IG handle, and check salecharacter.com for any linked social. If the handle is confirmed wrong: remove the Instagram field from the entry and add an Open Question ('Instagram: the @david.massara handle appears to be a different person -- what is the correct handle, if any?'). If confirmed right: note in AI Notes that the account is private/lifestyle-focused with no design content visible. Either way, remove or replace the context shot so Jonathan is not shown a misleading lifestyle profile as 'Instagram profile' for a type designer."
     },
     {
-      "id": "A.project-diversity",
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active manifest entries have captions naming the project plus a link. No anonymous images."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video or audio work identified for this type designer. Images are the appropriate format."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work sources are available and used (massaradavid.com, salecharacter.com). No unexplained thin sections."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Person. Correct for an individual."
+    },
+    {
+      "id": "B.links",
       "result": "fail",
-      "evidence": "site-05, site-06, site-07 are captioned 'SC Walla typeface, 2024' but the images are historical paintings and a vintage photograph used as reference/source material for the typeface. They show no Walla letterforms. The captions misrepresent the images. Viewers will be confused about what 'SC Walla' looks like. Similarly site-01 through site-04, captioned 'SC Ripley typeface', show historical typographic source material (a Printing History book spread, metal type moulds, a Times specimen, a pencil sketch attributed to Jim Rimmer) rather than the finished Ripley typeface itself. The source material is labeled as the typeface.",
-      "fix": "Replace or supplement site-05/06/07 with actual SC Walla letterform specimens (type testers, printed PDF, or the specimen poster visible on salecharacter.com). Replace or supplement site-01/02/03/04 with actual Ripley typeface specimen images (the finished face, not the historical source documents). The source material images may be kept if captioned accurately as 'SC Ripley, source material' rather than 'SC Ripley typeface', but actual typeface output must be present for at least one image per face."
+      "evidence": "The Instagram link https://www.instagram.com/david.massara/ is suspect. The context screenshot shows a private lifestyle account whose bio contains no design references. If this is the wrong person, the Instagram field is incorrect. See A.context-shots for detail.",
+      "fix": "Resolve the Instagram handle identity question before this entry reaches Jonathan. If wrong: clear the Instagram field and add an Open Question. If right: document in AI Notes."
     },
     {
       "id": "B.capabilities",
-      "result": "fail",
-      "evidence": "Capabilities is set to only 'Graphic design' (provenance: set_by jonathan, likely a migration baseline). David Massara's primary work is type design: he co-founded SALE CHARACTER (a type studio), designed the Ripley and SC Walla typefaces, worked at Colophon Foundry (a type foundry) and Newglyph SA. Type design is not tagged. The Open Questions ask whether to add 'Type design + Creative direction' but the current single tag actively misrepresents him. The scraper should have either updated this (it is a migration baseline, not jonathan-locked on the judgment) or flagged it more prominently. A type designer listed only as 'Graphic design' is a material misclassification.",
-      "fix": "The Capabilities field is set_by:jonathan in provenance (migration-inherited). The agent cannot overwrite it unilaterally. The Open Question is the correct path, but the question wording should make the misclassification urgent: 'Capabilities: currently only Graphic design but primary work is type design (Ripley, SC Walla, Colophon Foundry). Suggest adding Type design + Creative direction.' The Open Question already asks this, so this is acceptable as-is IF the context shots and caption fixes are done. Do not re-write jonathan-locked fields."
+      "result": "pass",
+      "evidence": "Capabilities is jonathan-locked (set_by: jonathan in provenance). The agent correctly left it at Graphic design and placed a clear Open Question (Q1) asking to add Type design + Creative direction. The question is specific and actionable. This is the correct handling of a jonathan-locked field the agent cannot overwrite."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Switzerland; Size: 1; Work Status: Studio. AI Notes documents 'site + LinkedIn both point to SPECTRODRAMA as current venture'. Multi-source resolution is documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by: agent). AI Notes: 'Autonomy 4: running own studio, CD + type design + graphic design independently; not yet an established Autonomy-5 solo name.' Grounded in real work history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states a relationship. Zero-states are consistent with evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No clip note instructions identified beyond the name. Source correctly set to 'Web clipper, 2020-11-02' (prior attempt 1 fail D.source is resolved)."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include a seniority read ('Mid-to-senior level, ~7 yrs post-graduation'), career trajectory (ECAL, ARD Design, Newglyph, Colophon, SPECTRODRAMA, SALE CHARACTER), work status sourcing. One concern: the IG identification claim 'identified via Google-indexed profile URL consistently attributed to this person' is asserted as fact but the screenshot shows a private lifestyle account. If the handle is the wrong person this assertion is false. This is tied to the A.context-shots failure and will be resolved together."
     },
     {
       "id": "D.source",
-      "result": "fail",
-      "evidence": "Source is 'Web clipper' with no date. The rule in CLAUDE.md requires 'Web clipper, <page created date>' for clipper entries.",
-      "fix": "Look up the page created_time via the Notion API (keeper.py get returns created_time or check the API directly) and update Source to 'Web clipper, YYYY-MM-DD'."
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-02'. Prior attempt 1 fail is resolved."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values correct. Capabilities correctly set_by:jonathan. Known systemic null source_url gap noted but not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities -- terse, correct, not asked for a field that already has a non-zero jonathan value; the jonathan-locked tag makes this the right channel. (2) Rating -- appropriate zero-state ask. No redundant or verbose questions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status is Enriching. Entry has not been flipped to Needs Review yet. Correct -- gate holds it until all checks pass."
     }
   ],
-  "to": "scraper"
+  "failing_checks": ["A.context-shots", "B.links"],
+  "to": "scraper",
+  "at_cap": true,
+  "at_cap_note": "This is attempt 2. The single remaining failure (wrong-person Instagram handle + mislabeled context shot) is concrete and verifiable. The scraper must resolve the IG identity question: check massaradavid.com and salecharacter.com for a linked IG handle, compare against the @david.massara bio. If wrong: clear the Instagram field, remove site-13.png from the manifest (rejected:true), add an Open Question. If right: document and replace the context shot with a note that the account is private/lifestyle. After resolution, escalate to Jonathan for adjudication review since retry cap is reached."
 }

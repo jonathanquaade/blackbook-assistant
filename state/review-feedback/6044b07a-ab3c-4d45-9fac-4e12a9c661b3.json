@@ -1,0 +1,110 @@
+{
+  "page_id": "6044b07a-ab3c-4d45-9fac-4e12a9c661b3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: PAGAN tee, PORTAL tee, LISTEN tee, Only NY collab, Mountain Hardwear LNT collab; plus Hatchet Supply studio process pair. No caption repeats a single project across unrelated images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple angles per project where appropriate (PAGAN x2, PORTAL x2, Only NY x2, Hatchet x2). Hatchet pair shows in-process studio work, not cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 10 work images show hand-drawn/screen-printed graphic apparel design, matching the tagged capability of Graphic design. Publication design mentioned in AI Notes is not shown, but that capability is not yet tagged (Open Question pending). Process shots (hatchet-ev-02, hatchet-ev-03) are legitimate studio context for an apparel-producing studio."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as extra-vitamins.com homepage (SHOP ALL nav, LISTEN tee hero visible). site-02.png confirmed as instagram.com/extravitamins profile page (Instagram logo, handle 'extravitamins', 76.5K followers shown). Both captions are correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 manifest entries have captions naming the project and a source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video or audio embeds required; studio is graphic design and apparel, not a video or audio discipline."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "LinkedIn absence documented in AI Notes: 'LinkedIn not found after two searches, consistent with their indie artist profile.' No IG queue needed; IG context shot was captured logged-out successfully."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type set to Studio. Correct: small two-person hands-on creative studio, not an agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (extra-vitamins.com), Instagram (instagram.com/extravitamins), Email (info@extra-vitamins.com) all present. LinkedIn searched twice, not found, documented. LinkedIn field is empty, which is honest."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Open Question raised for Illustration and Art practice -- appropriate conditional ask since those capabilities are genuinely in evidence but Jonathan must confirm the tag."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "US / 2-10 / Studio -- all set. AI Notes names sources: multiple sources confirm Studio status; size grounded in 2023 interview ('founders plus one assistant')."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry (two-person org), not a Person entry. Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries. No single founder embodies the org alone. No Autonomy field needed."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "No clip note signals a personal relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all appropriate and uncontradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only their own site copy (shipping policy, sustainability blurb). No Jonathan commentary, no stated relationship facts, no tagging direction in the clip. Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts only (named clients, named exhibitions, size sourced to interview). Trajectory from Matter Studio included. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration entry)' -- correct for a migration entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with set_by and verified_at. source_url nulls are a known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single terse Open Question about adding Illustration/Art practice capabilities. Conditional (Graphic design is the only current tag, so the question is not redundant). No story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

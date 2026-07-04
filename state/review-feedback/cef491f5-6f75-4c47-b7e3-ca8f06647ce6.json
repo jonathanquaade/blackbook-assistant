@@ -1,0 +1,110 @@
+{
+  "page_id": "cef491f5-6f75-4c47-b7e3-ca8f06647ce6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct non-rejected projects: Byredo Couvrant, Rimowa Ingenieurskunst, Prada Paradoxe, Tom Ford Bitter Peach, Jacquemus Artefact, Bulgari Octo Finissimo, Solebox x Nike Air Jordan Artefact, Liquid Flowers Unearthed, Glamcult Element. Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior shots per project (e.g. 3 Byredo product stills, 3 Solebox shots, 3 Glamcult Element shots). Full-res alternates captured for Bulgari, Rimowa, Prada. Goes inside projects, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Photography. All non-rejected work images are product, still-life, and editorial photography on-brand for that capability. Tom Ford shot (site-17) appears to be a CGI/3D render, which is also within his practice as noted in AI Notes (PALAM studio). Acceptable; scout flagged the CGI dimension in Open Questions."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-21.png: confirmed tobiasfaisst.com homepage (nav shows TOBIAS FAISST / PALAM, CGI + PHOTOGRAPHY). site-22.png: confirmed instagram.com showing @tobias.faisst profile with bio 'Creative CD and AI Director, Founder of 3D Studio @palam_digital'. Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a link. No anonymous or uncaptioned images found."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Photography entry; no video embeds required. No YouTube/Vimeo found on project pages per the scraper pass. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No obviously missing sources. Work is photography-heavy and sourced from his own site. AI Notes documents the CGI/PALAM dimension as out-of-scope for the current Photography tag. No IG queue entry needed; context shot was captured logged-out successfully."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Correct; Tobias Faisst is an individual photographer and studio co-founder."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://tobiasfaisst.com/ (canonical). Instagram: https://www.instagram.com/tobias.faisst/ (verified correct person via profile shot bio). LinkedIn: https://www.linkedin.com/in/tobias-faisst-43269314b/. Email: hello@tobiasfaisst.com. Works At Link: https://palam.digital/. All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Photography set (jonathan). Scout correctly deferred Graphic design, Creative direction, 3D/CGI additions to Open Question 1 since those are beyond the jonathan-set baseline. No unauthorized overwrites."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 1 (person). Work Status: Studio. AI Notes documents the multi-source resolution: site and LinkedIn both confirm self-directed studio operation (PALAM). Objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Reasoning in AI Notes: studio co-founder with decade-plus independent practice, no evidence of outside employment. Grounded in work history."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) all consistent with no clip-note relationship facts. Clip note contains no relationship context. No contradictions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained the 'astro-landscape' description mismatch. Scout correctly surfaced this as Open Question 2 ('Is this the right Tobias Faisst?') rather than dropping it. The mismatch is documented in AI Notes and flagged for Jonathan. Fully acted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges capabilities ('left for Jonathan to confirm additions'), marks Autonomy as an estimate, and documents the work-status source resolution. Seniority read present (~12 years, studio co-founder). No unhedged inferences found. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-02'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All agent-written fields have set_by: agent. Capabilities correctly marked set_by: jonathan. source_url nulls are the known systemic tooling gap (not a gate failure per checklist note 2026-06-21). No facts written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Open Questions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion options, conditional on jonathan's baseline; (2) astro-landscape mismatch identity check. Both are terse, actionable, and not asking for fields already filled. Story nudge not applicable (no Worked Together/Familiarity signals in clip note)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching. Reviewer (this gate) will flip to Needs Review on pass."
+    }
+  ],
+  "to": "scraper"
+}

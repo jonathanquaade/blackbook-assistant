@@ -2,44 +2,43 @@
   "page_id": "aeea15dc-0145-47d4-bd8f-f3cc8d28882c",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-04T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "18 work images span 6 distinct named projects: site editorial portfolio (Leikeli47 shoot + 2 others), Sarah Hasted fine art (2 prints), Nike x Kendrick (3), Optimism/WePresent (3), American Black Beauty (3), Ralph Lauren (1), What's My Name monograph (3). Well-spread."
+      "evidence": "16 active work images span 6 distinct named projects: Leikeli47 editorial (site-01), Sarah Hasted fine art prints (site-07, site-09), Nike Cortez Kenny IV campaign (nike-01/02/03), WePresent Optimism (opt-01/02/03), American Black Beauty gallery (abb-01, abb-dazed-02/03), Ralph Lauren We Stand Together (rl-01), What's My Name Prestel monograph (wmn-01/02/03). Well-spread across commercial, editorial and fine art."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Most projects have 2-3 images going inside the work (monograph spreads, gallery prints, campaign shots), not just covers."
+      "evidence": "Most projects have 2-3 images going inside the work: monograph interior spreads, gallery prints, campaign subject shots. Not hero/cover-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All 18 work images are photography (portrait, editorial, fine art, commercial campaign). Capability tagged Photography. Fully matched."
+      "evidence": "All 16 work images are portrait, editorial, fine art or commercial photography. Capability tagged Photography. Full match."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png: confirmed micaiahcarter.com homepage (name visible in nav). site-12.png: confirmed instagram.com/micaiahcarter profile page (handle 'micaiahcarter' and Instagram wordmark visible, grid matches photographer's work)."
+      "evidence": "site-13.png: verified micaiahcarter.com homepage (name visible in nav). site-12.png: verified instagram.com/micaiahcarter profile (Instagram wordmark, handle, photographic grid visible). Both correct."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-02.jpg captioned 'Fashion portrait, blue, micaiahcarter.com' and site-03.jpg captioned 'Fashion portrait B&W, micaiahcarter.com' both link only to the homepage root with no named project or client. These are anonymous shots. The checklist rule is explicit: prefer fewer named images over more anonymous ones.",
-      "fix": "Identify the named project or client for site-02 and site-03 from micaiahcarter.com's project navigation (the site has named series/sections), update captions and links to the specific project page, OR remove both images and replace with identified named work from another project (e.g. a Vogue/GQ editorial or the Thom Browne campaign named in AI Notes). Do not ship anonymous homepage pulls when named project pages exist one click away."
+      "result": "pass",
+      "evidence": "Prior fail resolved. site-02.jpg and site-03.jpg both marked rejected: true with reject_reason in manifest, absent from active Images list. All 16 remaining work images carry a named project and source link in their captions."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Photographer entry. No video/audio embeds required; still images are the correct output format."
+      "evidence": "Photographer entry. Still images are the correct output format. No video or audio embeds required."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained thinness. 18 work images + 2 context shots."
+      "evidence": "18 images total (16 work + 2 context). No unexplained thinness; no missing source documented as unvisited."
     },
     {
       "id": "B.type-classified",
@@ -49,22 +48,22 @@
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website (micaiahcarter.com), Instagram (instagram.com/micaiahcarter), LinkedIn, and Email all present. Instagram handle verified visually against IG profile screenshot."
+      "evidence": "Website (micaiahcarter.com), Instagram (instagram.com/micaiahcarter, verified against IG profile screenshot), LinkedIn, and Email all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Photography, set_by jonathan. Open Question asks about adding Art practice given LACMA/DIA permanent collections and solo exhibitions -- appropriate deferral."
+      "evidence": "Photography set_by jonathan. Open Question asks about adding Art practice given LACMA/DIA permanent collections and solo gallery exhibitions. Appropriate deferral."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: US. Size: 1. Work Status: Freelance. AI Notes names the sources (LinkedIn title, 1854 Photography profile, agency representation structure). Multi-source rule met."
+      "evidence": "Country: US. Size: 1. Work Status: Freelance. AI Notes names sources (LinkedIn title Freelance Photographer, 1854 Photography profile, commercial agency representation structure). Multi-source rule met."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 4, set_by agent, reasoning in AI Notes ('highly accomplished independent practitioner... does the work himself'). Paired with seniority read (10+ years, rapid ascent from editorial into major commercial and gallery). Grounded in verifiable work history."
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: 'highly accomplished independent practitioner... does the work himself'. Paired with seniority read (10+ years, rapid ascent from editorial into major commercial and gallery work). Grounded in verifiable work history."
     },
     {
       "id": "C.no-judgment-contradictions",
@@ -74,12 +73,12 @@
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note is 'Web clipper, 2020-11-02' -- no instructions embedded. No relationship facts, no passcode, no tagging direction to act on."
+      "evidence": "Clip note is 'Web clipper, 2020-11-02' with no embedded instructions, relationship facts, passcode or tagging direction. Nothing to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes assert only verifiable facts (LACMA/DIA collections, Prestel monograph, named clients, agency representation). Seniority and Autonomy reasoning present. No unhedged inferences detected. No em-dashes."
+      "evidence": "AI Notes assert only verifiable facts (named clients, LACMA/DIA collections, Prestel monograph, agency representation). Seniority and Autonomy reasoning present and grounded. No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,7 +88,7 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All enriched fields have set_by values. Capabilities is set_by jonathan (correct, he tagged it). No field written below 0.8 confidence. Null source_url is a known systemic gap, not a gate failure per calibration note."
+      "evidence": "All enriched fields have set_by values (agent, jonathan, migration as appropriate). Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -99,12 +98,12 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question: Art practice tag, terse, conditional (Photography already set, this proposes an addition). Appropriate use."
+      "evidence": "One question: Art practice tag, terse, conditional (Photography already set, this proposes an addition). Appropriate use of the field."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching. Correct pre-gate state."
+      "evidence": "Status is Enriching. Reviewer flips to Needs Review on this pass."
     }
   ],
   "to": "scraper"

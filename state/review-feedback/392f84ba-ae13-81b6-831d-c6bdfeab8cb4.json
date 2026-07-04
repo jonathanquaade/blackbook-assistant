@@ -1,0 +1,111 @@
+{
+  "page_id": "392f84ba-ae13-81b6-831d-c6bdfeab8cb4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T14:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images span Sonos, Swiffer, Braze, Mi Campo, Vectiv, MAXEN, Febreze, Spruce, Dasani, Bezel -- well over 3 distinct projects (Sonos appears twice but each shot is a different image)"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Appropriate for a naming studio: name reveals plus brand-in-use shots (Febreze hero, Dasani bottle, Swiffer product, Sonos speaker). Depth is correct for verbal/naming work."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured images are brand name reveals or named product shots. Matches Capabilities: Brand strategy + Copywriting. No off-capability work."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png is lexiconbranding.com homepage (confirmed visually). site-13.png is instagram.com/lexiconbranding/ profile page (confirmed visually, shows handle 'lexiconbranding' and bio)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "6 of 11 work images have wrong or absent project names. (1) site-01 through site-05 are all captioned 'Lexicon results page' with no project name -- the actual brands shown are Sonos, Swiffer, Braze, Mi Campo, and Vectiv respectively; for a NAMING studio, shipping images without naming the name is the core failure. (2) site-06 is captioned 'BlackBerry, Research in Motion' but the image is MAXEN by LeapXpert. (3) site-08 is captioned 'Febreze, P&G' but the image is Spruce (a different P&G brand). (4) site-11 is captioned 'Dasani, Coca-Cola' but the image is Bezel wine (Cakebread Family).",
+      "fix": "Fix captions for all 6 images: site-01 -> 'Sonos, Rincon Networks' (link: https://www.lexiconbranding.com/case-studies/tech-names-rebrand-sonos/); site-02 -> 'Swiffer, P&G' (link: find the Swiffer case-study URL on lexiconbranding.com); site-03 -> 'Braze, formerly Appboy' (link: find the Braze case-study URL or results page); site-04 -> 'Mi Campo Tequila' (link: find the Mi Campo case-study URL); site-05 -> 'Vectiv, The North Face' (link: find the Vectiv case-study URL); site-06 -> 'MAXEN, LeapXpert' (was mislabeled BlackBerry -- fix caption); site-08 -> 'Spruce, P&G' (was mislabeled Febreze -- fix caption); site-11 -> 'Bezel, Cakebread Family' (was mislabeled Dasani -- fix caption). Also: azure-hero.jpg and blackberry-credential.jpeg are in assets/ but absent from manifest.json -- either add them with correct captions (Azure, Microsoft and BlackBerry, Research in Motion) or delete them; do not leave orphaned files."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "No video/audio embeds applicable -- Lexicon is a verbal/naming studio; case study pages contain images not video reels. No embed opportunity was skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Images are present; no unexplained thin coverage."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct -- small specialized team doing hands-on naming execution."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and plausible. No obvious search skipped."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy + Copywriting. Appropriate for a naming studio per TAXONOMY.md."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US. Size: 11-40 (~29 employees per AI Notes). Work Status: Studio. AI Notes names lexiconbranding.com and LinkedIn as sources for size and status."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio). Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. AI Notes reads seniority/leadership correctly (David Placek, 40+ years, founder-led)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Clip note is 'the goats of naming' -- an enthusiasm phrase, not a relationship fact or rating. Zero-states (Never, Don't know them, Unvetted) are appropriate and do not contradict evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note 'the goats of naming' is preserved verbatim in Source and quoted in AI Notes. No relationship facts or rating signals were present in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cites verifiable facts (clients, founding date, employee count ~29, founder name). Autonomy N/A noted for org. No unhedged inferences. Seniority read present (David Placek, 40+ years). No em-dashes (double hyphens used, which are acceptable)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (clip note: \"the goats of naming\"); lexiconbranding.com; LinkedIn company page'. Clip note preserved verbatim."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields set_by agent. No jonathan-locked fields overridden. source_url null is the known systemic tooling gap, not a gate failure per checklist calibration (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes uses '--' (two hyphens) not an em-dash character. Acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No open questions. Correct: judgment fields have zero-states, clip note had no relationship facts, no genuine ambiguity requiring a question."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer holds the flip to Needs Review pending this gate."
+    }
+  ],
+  "to": "scraper"
+}

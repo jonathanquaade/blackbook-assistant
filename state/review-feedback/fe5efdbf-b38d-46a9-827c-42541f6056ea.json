@@ -1,44 +1,44 @@
 {
   "page_id": "fe5efdbf-b38d-46a9-827c-42541f6056ea",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-04T12:00:00",
+  "reviewed_at": "2026-07-04T14:00:00",
   "verdict": "pass",
   "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "9 work images across 5 distinct projects: Jamaica documentary (site-01, site-05), Kendrick Lamar Big Steppers Tour (site-03), Simone Rocha editorial (site-04, site-07, site-08), Goldie x Citizen (site-06), Llainwire x i-D (site-10, site-11). No duplicates or near-identical crops."
+      "evidence": "9 non-rejected work images across 5 distinct named projects: Jamaica documentary (site-01, site-05), Kendrick Lamar Big Steppers Tour (site-03), Simone Rocha editorial (site-04, site-07, site-08), Goldie x Citizen (site-06), Llainwire x i-D (site-10, site-11). Verified visually: bamboo river, B&W plane portrait, red-jewel close portrait, school-uniform girl, Citizen magazine cover, B&W rooftop portrait. No duplicate crops or same-project repetition."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 interior shots inside Simone Rocha, 2 inside Jamaica, 2 inside Llainwire x i-D. Not hero-only."
+      "evidence": "3 interior shots inside Simone Rocha, 2 inside Jamaica documentary, 2 inside Llainwire x i-D. Selection goes inside projects, not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Photography (set_by jonathan); all 9 work images are photographs. The film/directing capability is the subject of the open question, so no embed is required at this pass."
+      "evidence": "Tagged Photography (set_by jonathan). All 9 work images are photographs. Film/directing capability correctly deferred to Open Question; no embed required at this pass."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-14.png (Website): opened and confirmed -- fennomeally.com homepage with site nav chrome (INFO link top-right) and full-bleed dark street photograph; caption is accurate. site-12.png is marked rejected with reason documented. site-13.png (Instagram profile): opened and confirmed -- instagram.com page showing handle fenn_omeally, profile photo, follower count (52.2k), and grid. Both context shots are present and correct."
+      "evidence": "site-14.png opened and confirmed: fennomeally.com homepage, dark night street scene with lone figure, APPR. 276 nav text top-right, caption accurate as full-bleed photographic site. site-12.png is marked rejected with documented reject_reason. site-13.png opened and confirmed: instagram.com page, Instagram wordmark, handle fenn_omeally, verified blue tick, 52.2k followers, BBC FILM post visible in grid. Both context shots present, correct, and captioned accurately. Prior A.context-shots fail is resolved."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All non-rejected manifest entries have project-name captions and source links."
+      "evidence": "All non-rejected manifest entries carry project-name captions and source links."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Current tagged Capability is Photography only. Film embed requirement is deferred pending the Open Question resolution."
+      "evidence": "Tagged Capability is Photography only. No video embed required at this pass; film/directing Open Question defers that decision to Jonathan."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained thin areas. Five named projects from two strong sources (phenomena.photos, itsnicethat.com)."
+      "evidence": "5 named photography projects from two strong sources (phenomena.photos, itsnicethat.com). No unexplained thin areas."
     },
     {
       "id": "B.type",
@@ -48,37 +48,37 @@
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website (fennomeally.com), Instagram (instagram.com/fenn_omeally), LinkedIn (uk.linkedin.com/in/fenn-o-meally-05047273) all present and verified as the correct person. No public email visible on her site or representation pages."
+      "evidence": "Website (fennomeally.com), Instagram (instagram.com/fenn_omeally, handle confirmed in site-13.png), LinkedIn (uk.linkedin.com/in/fenn-o-meally-05047273) all present. No public email visible on site or representation pages; acceptable for a represented director/photographer."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Photography set_by jonathan. Open Question correctly surfaces the film/directing capability question."
+      "evidence": "Photography set_by jonathan. Open Question correctly surfaces the film/directing addition question without second-guessing his tag."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK, Size 1, Freelance. AI Notes names 5 corroborating sources. Multi-source agreement meets objective rule."
+      "evidence": "UK, Size 1, Freelance. AI Notes names 5 corroborating sources. Multi-source agreement satisfies the objective rule."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 4, set_by agent, reasoning in AI Notes: delivers finished films and editorial photography independently at senior level within a commercial representation model."
+      "evidence": "Autonomy 4, set_by agent. Reasoning grounded in real work history: BBC university placement origin, commercial representation by Smuggler (Europe), Berlinale 2026 Special Prize, Ad Age Director to Watch. Seniority read present in AI Notes."
     },
     {
       "id": "C.no-judgment-field-contradicts",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or evidence."
+      "evidence": "Source is plain web clipper (2020-11-02) with no relationship instruction. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or evidence."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2020-11-02'; no instruction text in the clip note requiring action."
+      "evidence": "No instruction text in the clip note beyond the bare entry. Nothing to act on or ask about."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Factual claims grounded in named sources. Seniority read and Autonomy reasoning present. No em-dashes. No unsupported assertions."
+      "evidence": "Factual claims grounded in named sources. Unverified inferences hedged (Autonomy reasoning framed as model-based estimate). Seniority and experience read present. No em-dashes."
     },
     {
       "id": "D.source",
@@ -88,22 +88,22 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All fields carry set_by values. source_url nulls are the known systemic tooling gap, not a gate failure per the calibration note."
+      "evidence": "All fields carry set_by values; Capabilities correctly set_by jonathan. source_url nulls on some fields are the known systemic tooling gap, not a gate failure per the calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes in AI Notes, Open Questions, captions, or Source."
+      "evidence": "Checked AI Notes, Open Questions, all captions, Source field. No em-dashes found anywhere."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question on Capabilities. No fields asked about that already carry a non-zero value."
+      "evidence": "One terse conditional question on Capabilities. No field asked about that already carries a non-zero value."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Status flipped to Needs Review after this gate pass."
+      "evidence": "Entry flipped to Needs Review after this gate pass."
     }
   ],
   "to": "scraper"

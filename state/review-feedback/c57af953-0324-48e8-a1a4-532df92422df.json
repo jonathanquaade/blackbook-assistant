@@ -1,0 +1,122 @@
+{
+  "page_id": "c57af953-0324-48e8-a1a4-532df92422df",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Manifest covers 6 distinct named projects: AskNature (3 images), Characters (3 images), Bocci (3 images), Shout Your Abortion (3 images), AIDS Memorial Pathway (3 images), Woman Life Freedom (3 images). Genuine diversity across identity, web, signage, and campaign work."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "AskNature goes inside the live site UI; Shout Your Abortion goes inside the poster/campaign system; AIDS Memorial Pathway shows installed signage in situ. Not all hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Studio tagged Graphic design; all six projects are branding/identity/campaign design. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13 is clearly builtbycivilization.com homepage. site-14 is instagram.com/builtbycivilization (logged-out gate with handle and follower count visible, correct account confirmed). Both captions accurate."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 20 manifest entries have captions with project name and source link."
+    },
+    {
+      "id": "A.wrong-images-in-manifest",
+      "result": "fail",
+      "evidence": "site-04, site-05, and site-06 are captioned 'Characters typeface project' but the actual image content does not show the typeface or exhibition. site-04 is an Anthem Award vote-request promo for 'Now Matters Now' (a health website). site-05 is a workshop event flyer for Prem Krishnamurthy at City of Possibilities. site-06 is a promotional image for Briar Levit's books at Boathouse Microcinemas. These are event marketing pieces that appear to have been scraped from the Characters project page by URL proximity, not because they depict the Characters work. Meanwhile, 'characters-typeface-exhibition.jpg' IS on disk (shows the actual MODA 'Love Over Hate' / 'Characters' exhibition installed) but is NOT in the manifest and will not be uploaded.",
+      "fix": "Remove site-04, site-05, site-06 from the manifest (mark rejected: true) and replace with 'characters-typeface-exhibition.jpg', which is already on disk and shows the actual Characters exhibition at MODA. Optionally pull one or two further images from builtbycivilization.com/project/characters/ that show the typeface itself."
+    },
+    {
+      "id": "A.off-manifest-files",
+      "result": "fail",
+      "evidence": "8 files exist in assets/c57af953-0324-48e8-a1a4-532df92422df/ that are absent from manifest.json and will therefore not be uploaded: amp-capitol-hill-station.jpg, amp-park-signage.jpg, amp-signs-system.jpg, asknature-identity-manual-p04.jpg, asknature-identity-manual-p07.jpg, asknature-social-media-design.jpg, characters-typeface-exhibition.jpg, sya-identity-design.png. Several of these are higher-quality, deeper images than their manifest counterparts (e.g. asknature-identity-manual-p04/07 are brand-guideline spreads; amp-park-signage is a wider shot of the AMP installation). The manifest is incomplete.",
+      "fix": "Audit each off-manifest file: add the strong ones to manifest.json with correct captions and source links, or mark rejected if truly unwanted. At minimum add characters-typeface-exhibition.jpg (mandatory per the Characters fix above) and evaluate asknature-identity-manual-p04.jpg, asknature-identity-manual-p07.jpg, amp-park-signage.jpg for inclusion as deeper project shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio is a design/branding studio; no video-primary capability tagged. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No gaps requiring explanation; site is accessible and well-populated."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized hands-on creative team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email are all present. Instagram handle confirmed via studio redirect. No missing links."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Only 'Graphic design' is set, which is a narrower tag than the studio warrants. However the scout has already surfaced this in Open Questions (asking Jonathan to add Identity systems, Brand strategy, Creative direction, Web design, Frontend development). That is the correct handling: Capabilities is set_by jonathan on migrated entries, so the agent cannot expand it unilaterally. The question is terse and conditional. No failure here."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US (Seattle). Size: 2-10 (5 named members, site + web search). Work Status: Studio. AI Notes names the sources (site and LinkedIn). Multi-source rule applied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry; Autonomy not required per checklist calibration note. AI Notes states 'Studio type; Autonomy field not applicable.' Correct."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper import, migrated 2026-06-12'. No relationship facts or special instructions in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual (founded year, founders, client list, award) and hedged where appropriate ('web search cites up to 9' vs site's 5). No unverified assertions. Seniority context addressed via studio leadership description. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper import, migrated 2026-06-12'. Filled correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. source_url is null throughout, which is a known systemic tooling gap per checklist note and is not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, conditional, asks about Capabilities which lacks a non-zero value (only Graphic design is set and that is set_by jonathan from migration, so the question is appropriate). No story nudge required (Worked Together/Familiarity are at zero-states with no contrary evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on a pass. Not yet flipped."
+    }
+  ],
+  "to": "scraper"
+}

@@ -1,0 +1,118 @@
+{
+  "page_id": "c7dfa63a-ae70-445b-a5a9-a2a0016709c6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-04T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 named project groups: Harvard Design Magazine (5 images), Venice Biennale/CHART (4 images, caption wrong but the actual images are distinct projects), Perspecta/Yale (3 images). Genuine diversity confirmed from file inspection."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: spreads, interiors, publication pages from Harvard DM; book covers and interiors from Slagmark/Forlaget. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work is graphic design and identity/editorial, matching tagged Capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is alexismark.com (verified visually). site-14.png is instagram.com/office.alexismark (verified visually, shows 18.5k followers)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-06 is captioned 'Venice Biennale / CHART identity' but the image is the 3-founder 3D avatar portrait for the It's Nice That 'Ones to Watch / Spotify Design' feature. site-07, site-08, site-09 are also captioned 'Venice Biennale / CHART identity' but show Slagmark / Forlaget Slagmark book design (Immanuel Kant, Hannah Arendt, 1968 titles). Four images carry a wrong project caption.",
+      "fix": "Correct captions: site-06 to 'It's Nice That / Ones to Watch, 2020 · itsnicethat.com'; site-07 through site-09 to something like 'Slagmark editorial design · itsnicethat.com' (or the actual project name from the source page). Also verify what the It's Nice That 2020 article actually shows and retitle accordingly."
+    },
+    {
+      "id": "A.manifest-disk-sync",
+      "result": "fail",
+      "evidence": "5 files on disk (dm-01.png, dm-02.png, perspecta-01.jpg, perspecta-02.jpg, perspecta-03.jpg) are absent from manifest.json. dm-02.png is an exhibition poster (Silas Inoue / Christine Overvad Hansen, CHART 2020). perspecta-01.jpg is a Perspecta / Venice Biennale publication. These files will not be uploaded to Notion as the upload is manifest-driven. Either add them to the manifest with correct captions, or delete them if they were intentionally excluded.",
+      "fix": "Reconcile manifest vs disk: add dm-01, dm-02, perspecta-01, perspecta-02, perspecta-03 with captions and source_urls, or mark them explicitly excluded. The manifest must be the single source of truth."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds required; entry is a graphic design studio with static print/editorial work. No YouTube/Vimeo found in manifest source links."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin areas; 12 work images plus 2 context shots captured."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small Copenhagen design studio."
+    },
+    {
+      "id": "B.links-present",
+      "result": "fail",
+      "evidence": "LinkedIn is absent and not explained. AI Notes does not mention a LinkedIn search or confirm it was checked. Studio LinkedIn pages are often findable via search (e.g. 'Alexis Mark Copenhagen linkedin'). This is a skipped search, not a confirmed absence.",
+      "fix": "Search 'Alexis Mark Copenhagen graphic design linkedin' and attach any company page found, or note in AI Notes 'LinkedIn: no company page found' to confirm it was checked."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (Jonathan-set). Open Question raised about adding Identity systems, Web design, Spatial and exhibition design. Correct approach."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Denmark, 2-10, Studio. AI Notes names sources confirming size and Copenhagen base."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 for an org-type (Studio) is optional per calibration note (2026-06-21). Scout set it with reasoning (self-directed, no employer). Acceptable."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip instruction text to act on beyond the migration baseline."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes seniority read (three founders, flat structure), Autonomy reasoning, client list sourced from published features. Capabilities extension noted as 'likely also covers' (hedged). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; studio site alexismark.com, It's Nice That feature (Feb 2020), Instagram @office.alexismark'. Adequate."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all fields. null source_urls are a known systemic gap (not a gate failure per calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional Capabilities question. No field with existing value is re-asked. Story nudge not applicable (no relationship fields set to non-zero-state)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Status flip to Needs Review is gated on this review passing."
+    }
+  ],
+  "to": "scraper"
+}

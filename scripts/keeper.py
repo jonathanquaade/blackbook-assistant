@@ -134,7 +134,13 @@ def schema():
 def encode(field, value):
     t = schema()['properties'][field]['type']
     if value is None:
+        # explicit clear: emit the type-appropriate empty so Notion accepts it
+        # (a bare Python None becomes an invalid property payload and 400s)
         if t == 'select': return {'select': None}
+        if t in ('url', 'email', 'number', 'date'): return {t: None}
+        if t == 'rich_text': return {'rich_text': []}
+        if t == 'multi_select': return {'multi_select': []}
+        if t == 'relation': return {'relation': []}
         return None
     if t == 'select': return {'select': {'name': value}}
     if t == 'multi_select': return {'multi_select': [{'name': v} for v in value]}
