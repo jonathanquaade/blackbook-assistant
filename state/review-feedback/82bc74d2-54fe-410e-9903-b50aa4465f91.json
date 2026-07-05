@@ -1,0 +1,112 @@
+{
+  "page_id": "82bc74d2-54fe-410e-9903-b50aa4465f91",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Zurich Jazz Orchestra, Atlas of Spatial Figures, Spacetimes Matter, Kunsthalle Wien, 50 Jahre Kunstraum Kreuzberg"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 interior spreads per book project; Kunsthalle Wien shows logotype system + publication covers + exhibition print. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All work is poster design, book/editorial design, or visual identity for cultural institutions. Matches Graphic design capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png is a real studiogretzinger.de homepage screenshot (confirmed visually). IG context shot (site-16.png) is correctly marked rejected+documented+queued per the throttle exception: rejected=true, rejection_reason explains the error page, entry is in state/ig-queue.json. Exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "fail",
+      "evidence": "3 images have captions that do not match the visible content. site-05.jpg is captioned 'Atlas of Spatial Figures, book design' but shows a fiction book interior titled 'BLIND DATE' by Daniel Grunfeld, with 'SALON' handwriting -- a completely different publication. site-07.jpg is captioned 'Spacetimes Matter, book design' but shows a 'Ground Atlas / Decolonial Mapping' article with maps and figures, not Spacetimes Matter content. site-08.jpg is captioned 'Spacetimes Matter, book design' but shows a workshop diagram about 'future of work' and '2008 financial crash' annotations -- again not Spacetimes Matter. These are interior pages from books Studio Gretzinger did not necessarily design, or from entirely different projects mislabeled during capture. Captions must match the actual image.",
+      "fix": "For site-05, site-07, site-08: either identify what publication/project each image actually comes from and correct the caption, or replace them with images that genuinely belong to Atlas of Spatial Figures and Spacetimes Matter respectively. The cover shots (site-03 for Atlas, site-06 for Spacetimes Matter) are correctly labeled and can stay. The interior spreads need verification against the actual project pages at studiogretzinger.de/atlas-of-spatial-figures and studiogretzinger.de/spacetimes-matter."
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio embeds expected; this is a graphic design studio with print/identity work. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and queued."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a one-principal design studio."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and filled."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Scout raised Identity systems + Web design as an Open Question -- appropriate; not a gate failure since the question is correctly framed."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany, Size: 2-10, Work Status: Studio. Sources named in AI Notes (studio site + berlin-international.de article). Objective rule followed."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio. Autonomy field is optional for org-type entries per checklist calibration note. Autonomy 4 has been set with reasoning in AI Notes (sole creative director, runs own studio, 20+ yrs). Acceptable."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note stating a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note with instructions detected beyond the standard web-clipper entry. Source field records this correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes include seniority read, Autonomy reasoning, and IG queue note. Factual claims (clients, teaching posts, Jan van Eyck residency) are specific enough to be verifiable. No unhedged assertions about taste or working style."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; studio site studiogretzinger.de, trendlist.org, berlin-international.de studio visit article'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present, all fields have set_by. source_url is null throughout -- known systemic tooling gap, not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions checked programmatically and visually. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single terse question about Capabilities expansion. Conditional (Capabilities currently has only Graphic design, so the question is valid). No story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Gate is running before any flip to Needs Review. Correct."
+    }
+  ],
+  "failing_checks": ["A.no-uncaptioned"],
+  "to": "scraper"
+}

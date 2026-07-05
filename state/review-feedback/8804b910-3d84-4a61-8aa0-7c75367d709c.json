@@ -1,0 +1,111 @@
+{
+  "page_id": "8804b910-3d84-4a61-8aa0-7c75367d709c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 images span 5 distinct named projects (LNDR, Martin Parr Foundation, London Art Fair 2020, Grind Clerkenwell, Yoni). No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images going inside the work: publication spreads (lndr-02, grind-01), printed collateral (grind-02, mpf-01), and OOH placements (mpf-02, mpf-03, laf-02, laf-03, yoni-02, yoni-03)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "grind-03.jpg is captioned 'Grind Clerkenwell, environmental signage' but the image is a close-up photograph of a herringbone marble tile floor with no visible branding, logotype, signage, or graphic design work. It is an interior photography shot, not brand/identity/graphic design output. The other 13 images are correctly on-capability (brand identity, OOH campaigns, print collateral).",
+      "fix": "Replace grind-03.jpg with an image from the Grind Clerkenwell project page that actually shows environmental signage, wall graphics, or branded elements -- the studiothomas.co.uk/projects/grind-clerkenwell/ page should have other shots. Alternatively drop it and keep 2 images from Grind (grind-01 and grind-02 are both strong and on-capability)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png correctly shows studiothomas.co.uk homepage ('Design for Bold Brands'). site-02.png (Instagram profile) is correctly marked rejected with documented throttle reason, queued to state/ig-queue.json for logged-in ig.py grab. Sanctioned IG throttle path followed per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected image has a caption naming the project and a link to the source project page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio Thomas is a graphic/identity studio; no video/audio embeds are required for this capability. No project pages flagged as having embeddable video."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and in manifest rejection_reason. ig-queue.json entry confirmed for page_id 8804b910-3d84-4a61-8aa0-7c75367d709c."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized two-founder practice doing hands-on creative execution."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website (studiothomas.co.uk), Instagram (@studio.thomas), LinkedIn (uk.linkedin.com/company/studio-thomas), Email (hello@studiothomas.co.uk) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set by Jonathan (provenance set_by: jonathan). Open Question asks about adding Identity systems and Brand strategy -- appropriate escalation rather than overriding a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK, Size: 2-10, Work Status: Studio. AI Notes names the sources (site, LinkedIn company page, It's Nice That profile). Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per calibration note (2026-06-21). Autonomy: 5 is set anyway (reasonable for a founder-run practice). Seniority read present in AI Notes ('senior/founder level, ~12 yrs in practice')."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted -- all zero-states with no contradicting evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note instructions to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes state verifiable facts (clients, founding year, location, working model). No unhedged inferences. Includes seniority read paired with Autonomy estimate."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; studiothomas.co.uk, LinkedIn company page, It's Nice That profile (Nov 2020)' -- correctly populated."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url nulls are the known systemic tooling gap (not a gate failure per calibration note 2026-06-21). set_by values are correct (jonathan for Capabilities, agent for all agent-researched fields, migration for Name)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found. En-dashes in size range '2-10' are fine."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Single Open Question asks about adding capabilities to a jonathan-set field -- appropriate, conditional, and actionable."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Status will be flipped to Needs Review only on a clean pass."
+    }
+  ],
+  "to": "scraper"
+}

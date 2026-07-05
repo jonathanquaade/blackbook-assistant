@@ -1,0 +1,111 @@
+{
+  "page_id": "be52faee-aa25-420a-b397-07ad10fa6eb3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 work images cover 8+ distinct deliverables across at least 7 named projects (Musee de l'Imprimerie identity 2022, Musee de l'Imprimerie signage 2022, Profane Magazine, Maison de Correction, RVB identity + RVB poster 2023, Epopee Celeste, Vivette Tattoo, Une histoire d'images, The Sun Comes In). Four Musee de l'Imprimerie images link to 4 separate project pages and show 4 distinct deliverables across two years. No near-identical crops or repeated hero angles detected."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Images include publication interiors/spreads (sites 01, 02, 05, 06, 09, 10), signage in situ on a building facade (site-04), a printed identity collateral spread (site-03), a poster (site-08), and a storefront signage system (site-07). Goes beyond hero/cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Graphic design. All 10 work images are graphic design / editorial / identity outputs: book design, visual identity systems, exhibition graphics, signage. No off-capability material found."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-11.png confirmed as real s-y-n-d-i-c-a-t.eu homepage (founders' emails, project list, empire/revue-faire links visible). site-12.png is the Instagram 'Something went wrong' error page, marked rejected in manifest with rejection_reason documented, queued to ig-queue.json (entry present with correct ig_url and reason). Sanctioned IG throttle exception applies per checklist A.context-shots."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 10 work images have a caption naming the project and a link to the source project page. site-11.png captioned 'Website'. site-12.png rejected and not uploaded."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "This is a print/graphic/identity studio. No video or audio projects identified from the site. No embeds missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes; entry is in ig-queue.json. No other unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized Paris graphic design and publishing team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://s-y-n-d-i-c-a-t.eu/ (present). Instagram: https://www.instagram.com/s.y.n.d.i.c.a.t/ (present). Email: sacha@s-y-n-d-i-c-a-t.eu (present). LinkedIn: no studio company page found; absence documented in Open Questions Q2. Absence is explained, not silently skipped."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design set by Jonathan (set_by: jonathan). Scout raised a valid Open Question about adding Identity systems, Spatial & exhibition design, and Web design. Correct deferral to Jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 2-10 (team of approx 3, consistent with 2-10). Work Status: Studio. All sourced from studio site; multi-source rule met (studio self-description + practice profile)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is a Studio (org-type). Per calibration note, Autonomy is optional for orgs; seniority/leadership read in AI Notes is sufficient. AI Notes contain a full read: 'Founding director level, ~14 yrs in practice; high autonomy, self-directed and editorially independent.' Autonomy field is set to 5 with reasoning. No fail."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) not contradicted by clip note. Raw clip note was only 'syndicat' with no relationship facts."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was minimal (just 'syndicat'). No instructions, relationship facts, or judgment to act on. Fully handled."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year, founding team, institutional clients, Empire Books, Revue Faire - all from their own site). No unhedged inferences detected. Seniority and experience read present. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper'. CLAUDE.md specifies 'Web clipper, <page created date>' for backfill entries. The created date is missing from the value. Minor omission; not a blocking gate failure but noted for the scraper to tighten on future entries.",
+      "note": "Scraper should append the page created date to Source on the next entry of this type."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values (agent or jonathan where appropriate). source_url is null throughout; this is the known systemic tooling gap documented in the calibration note and is not a gate failure on its own."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions confirmed em-dash-free via string check."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 asks about additional Capabilities (valid, Jonathan set only one tag but site shows more outputs). Q2 asks about LinkedIn (no studio page found; absence documented). Both terse. Neither asks for a field already filled. Story nudge not applicable (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Awaiting this gate to flip to Needs Review."
+    }
+  ],
+  "to": "scraper"
+}
