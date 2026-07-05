@@ -1664,5 +1664,54 @@
     "ig_url": "https://www.instagram.com/wednesdayagency/",
     "reason": "IG context screenshot returned Something went wrong error page (Instagram blocked headless Playwright rate-limited). wednesdayagency.com domain also DNS-SERVFAIL from this network. Need logged-in ig.py grab for @wednesdayagency profile context shot.",
     "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "bdbabb0f-7fcb-444e-a8fe-c17f55c47996",
+    "name": "The Colour Club",
+    "ig_url": "https://www.instagram.com/thecolourclubstudio/",
+    "reason": "Instagram context screenshot failed: headless Playwright returned loading spinner (rate-limited). Need logged-in ig.py grab for IG profile context shot.",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "5d5659fb-e257-4750-b7ce-56e80104a90c",
+    "name": "TEMPLO",
+    "ig_url": "https://www.instagram.com/t_e_m_p_l_o/",
+    "reason": "IG profile page returned error (throttled logged-out); logged-in ig.py grab needed",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "3674dca7-03ae-4ec8-b15a-2a57f521738f",
+    "name": "WAF GMBH",
+    "ig_url": "https://www.instagram.com/waf.gmbh/",
+    "reason": "IG context shot blocked (Something went wrong error on unauthenticated load); need logged-in grab for profile screenshot",
+    "queued_at": "2026-07-05T23:25:48.691035Z"
+  },
+  {
+    "page_id": "d0a0c695-ee73-4df2-ae8e-299dc586e151",
+    "name": "Two Times Elliott",
+    "ig_url": "https://www.instagram.com/twotimeselliott/",
+    "reason": "IG context shot blocked (Something went wrong error on unauthenticated load); need logged-in grab for profile screenshot",
+    "queued_at": "2026-07-05T23:28:40.544604Z"
+  },
+  {
+    "page_id": "38ef84ba-ae13-81d4-a089-c32c79452b8b",
+    "name": "Arvin Olesco",
+    "ig_url": "https://www.instagram.com/a.olesco/",
+    "reason": "IG-only video creator (no website, no Vimeo, no YouTube found); all work lives on Instagram. Two confirmed directed reels found via Google index: DFBYZ0gvCfx (New Year Same Hustle) and DLAANNmMiWH (birthday film). Logged-out scrape.py returned login wall on all URL attempts (profile, individual reels). Need logged-in ig.py grab for real profile context shot and reel stills/thumbnails.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "aed6b998-bd71-4529-8858-b1d3200d055c",
+    "name": "Thomas Herve",
+    "ig_url": "https://www.instagram.com/thomasherve_studio/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited). @thomasherve_studio confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "b06ba156-62b7-43a6-8882-9d79428e97ee",
+    "name": "Universal Everything",
+    "ig_url": "https://www.instagram.com/universaleverything/",
+    "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited). @universaleverything is confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-06"
   }
 ]

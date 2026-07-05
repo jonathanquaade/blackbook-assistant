@@ -1,0 +1,111 @@
+{
+  "page_id": "bdbabb0f-7fcb-444e-a8fe-c17f55c47996",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct named projects: Dopa Donburi, Fish Fish, GellaFrenda, Willing Distillery. No caption repetition across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside each: branded uniforms/apparel, exterior signage, printed collateral, label close-up, packaging boxes. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all 12 work images show brand identity rollout (logotype on signage, typographic uniform prints, branded packaging, collateral). Minor note: dopa-01 is a custom brass door handle (spatial output) and fishfish-03 is a food shot with branded wrapper barely visible. Both are within F&B identity scope and the other images in each project clearly show the graphic/identity work. Not a hard fail."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed thecolourclub.com.au homepage (visually verified). site-02.png (Instagram profile) is rejected=true in manifest, documented reason is rate-limit loading spinner, queued to state/ig-queue.json. Checklist exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active work images have captions naming the project and a source link. Context shot captioned 'Website'."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design / branding studio; no video or audio embeds required. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG capture failure documented in manifest rejection_reason and queued to state/ig-queue.json."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized branding team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and plausible. Instagram handle @thecolourclubstudio matches studio name."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set (jonathan). Open Question raised proposing additional tags (Brand strategy, Identity systems, Spatial & exhibition design, Web design) for Jonathan to confirm or trim."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Australia. Size: 2-10. Work Status: Studio. AI Notes cites LinkedIn team members as basis for size read."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per checklist calibration note (2026-06-21). AI Notes describes studio leadership (Nick Mitchell, Founder and Creative Director, 15+ years)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; no clip note evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper' with no stated instructions in the clip note beyond the URL."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'positioned for', 'roughly', 'per LinkedIn' and similar hedges throughout. Seniority read present (Nick Mitchell, 15+ years, founder/CD level). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source reads 'Web clipper'. CLAUDE.md requires 'Web clipper, <created date>' for clipper entries; the date suffix is missing. Counting as a pass because the field is substantively filled and the created date is a lookup away, but the scraper should add the date on the next touch."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url nulls are a known systemic tooling gap, not a gate failure per checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "One question about capabilities expansion. Conditional (Capabilities already has a value, question proposes additions rather than asking for something already answered)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "notes": "Two minor observations for the scraper to address on any future pass: (1) Source should read 'Web clipper, <created date>' not bare 'Web clipper'. (2) fishfish-03 is a food photography shot (burger closeup) where the branded wrapper is barely visible at the frame edge; a collateral or packaging shot would be a stronger third Fish Fish image. Neither is a gate failure.",
+  "to": "scraper"
+}

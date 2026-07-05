@@ -1,110 +1,110 @@
 {
   "page_id": "69832598-d7fb-498b-89d6-2d7b7f8e61eb",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-06T00:00:00",
+  "reviewed_at": "2026-07-06T12:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct named projects: Uber, The Met, GSK, Patreon, TikTok. No repeated angles of one project."
+      "evidence": "5 distinct named projects active in manifest: Uber, The Met, GSK, Patreon, TikTok. No repeated angles of one project."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project, going inside case studies (typography, environmental, brand-in-use). Not hero-only."
+      "evidence": "3 images per project going inside case studies (typography, environmental application, brand architecture). Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "fail",
-      "evidence": "patreon-01.jpg (captioned 'Patreon rebrand, logo and wordmark') is a photograph of hands operating an Elektron synthesizer. patreon-03.jpg (captioned 'Patreon rebrand, digital applications') is a photograph of a vinyl record next to an Elektron Digitone synthesizer. Both are lifestyle photography of a Patreon creator, not Wolff Olins brand or identity work. The captions are factually wrong. patreon-02.jpg (Patreon Creator Fest poster wall) is on-capability. 2 of 3 Patreon images are off-capability.",
-      "fix": "Replace patreon-01.jpg and patreon-03.jpg with actual Wolff Olins brand/identity work from the Patreon case study: logo, wordmark, color system, typography, UI applications, or campaign visuals. Source from wolffolins.com/work/patreon. Do not use creator lifestyle photography."
+      "evidence": "patreon-02.jpg (caption: 'Patreon rebrand, identity system in use') is a photograph of the Patreon Creator Fest poster wall: a street installation showing creator portraits (Kevin Woo, Art Russell, Tina Yu, Jade Novah, Kamauu) with 'Creator Fest' and creator-handle text. This is event/campaign lifestyle photography, identical in nature to patreon-01.jpg and patreon-03.jpg which were correctly rejected. It is not Wolff Olins brand identity work (no wordmark, no color system, no typography, no UI). The caption is factually wrong. All three Patreon images from the Creator Fest campaign are off-capability; patreon-02.jpg was not rejected when the other two were.",
+      "fix": "Mark patreon-02.jpg rejected in the manifest with reject_reason matching the other two. Replace with an actual identity-system image from wolffolins.com/work/patreon: the Patreon wordmark, the color palette, the typeface specimen, a digital UI application, or a brand guidelines spread. Do not use Creator Fest photography."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is wolffolins.com homepage (Sandals brand campaign visible, Wolff Olins nav header confirmed). site-02.png is instagram.com/wolffolins profile page (130K followers, @wolffolins bio, grid visible)."
+      "evidence": "site-01.png is wolffolins.com homepage (Sandals campaign visible, Wolff Olins nav confirmed). site-02.png is instagram.com/wolffolins (130K followers, @wolffolins bio, grid visible). Both correct."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 16 images have captions. Captions for patreon-01 and patreon-03 are factually wrong but present; the content mismatch is captured under A.on-capability."
+      "evidence": "All active images have captions. The patreon-02.jpg caption is factually wrong but the mismatch is captured under A.on-capability."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio work expected for a brand consultancy; static identity work appropriately captured as images."
+      "evidence": "Static identity work appropriately captured as images. No video/audio expected for a brand consultancy."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "14 work images present across 5 named projects. No unexplained thinness."
+      "evidence": "13 active work images across 5 named projects. No unexplained thinness."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type: Agency. Wolff Olins is a 200-person full-service brand consultancy under Omnicom. Correct classification per schema."
+      "evidence": "Type: Agency. 200-person full-service brand consultancy under Omnicom. Correct per schema."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website (wolffolins.com), Instagram (instagram.com/wolffolins), LinkedIn (linkedin.com/company/wolff-olins), Email (hello@wolffolins.com) all present."
+      "evidence": "Website, Instagram, LinkedIn, Email all present and verified."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Current tag 'Graphic design' is set_by: jonathan (locked). Scout correctly could not override it and raised Open Question 1 asking Jonathan to confirm expanded tags (Brand strategy, Identity systems, etc.). This is the correct handling."
+      "evidence": "Capabilities set_by: jonathan (locked). Scout raised Open Question 1 for expanded tags. Correct handling."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK + US (London HQ, NY/LA/SF offices). Size: 100+ (LinkedIn ~199, ZoomInfo ~224). Work Status: Studio is the correct org-level value."
+      "evidence": "Country UK + US, Size 100+, Work Status Studio all consistent with evidence."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Org entry (Agency). Autonomy N/A per checklist. AI Notes include seniority/leadership read (CEO, Global ECD named)."
+      "evidence": "Org entry. Autonomy N/A per checklist calibration. AI Notes include seniority read."
     },
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate for an org Jonathan has not worked with. No evidence contradicts them."
+      "evidence": "Zero-states appropriate for an org Jonathan has not worked with. No contradictions."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "No clip note instructions beyond the name. Nothing deferred."
+      "evidence": "No clip note instructions. Nothing deferred."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes cite sources (LinkedIn, ZoomInfo), hedge headcount ('approximately'), and assert only verifiable facts (founding date, Omnicom acquisition, named clients). No em-dashes. Seniority read present."
+      "evidence": "AI Notes cite sources, hedge headcount, assert only verifiable facts. No em-dashes. Seniority read present."
     },
     {
       "id": "D.source",
       "result": "pass",
-      "evidence": "Source: 'Notion DB entry; web research 2026-07-05'. Acceptable for a backfill entry."
+      "evidence": "Source: 'Notion DB entry; web research 2026-07-05'. Acceptable."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "set_by values are correct throughout. source_url null is a known systemic tooling gap; not a gate fail per checklist calibration note."
+      "evidence": "set_by values correct. source_url null is known systemic tooling gap; not a gate fail."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+      "evidence": "No em-dashes in AI Notes, Open Questions, captions, or Source."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse, conditional question (Capabilities). No fields with non-zero values queried unnecessarily."
+      "evidence": "One terse conditional question on Capabilities. No unnecessary asks."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is in Enriching; gate holds it here until verdict. Not prematurely flipped."
+      "evidence": "Entry remains in Enriching. Gate holds it here pending this verdict."
     }
   ],
   "to": "scraper"

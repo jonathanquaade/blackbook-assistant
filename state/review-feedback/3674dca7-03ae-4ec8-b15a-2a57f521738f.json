@@ -1,0 +1,112 @@
+{
+  "page_id": "3674dca7-03ae-4ec8-b15a-2a57f521738f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 active images across 6 distinct named projects: ACRONYM W02-JS website (3), Kiko Kostadinov website (2), A-Cold-Wall* website (3), Electronic Beats digital magazine (3), Weingut Schaetzel wine labels (2), Rick Owens architectural invitations (1), plus 1 website context shot. All confirmed distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: ACRONYM product catalog spread + product detail + close-up; ACW garment product pages + generative dye process system detail; Electronic Beats magazine interior editorial layout plus homepage. Not hero shots only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design (Jonathan's tag). Captured work: web/digital design (ACRONYM, Kiko Kostadinov, A-Cold-Wall*, Electronic Beats), print/label design (Weingut Schaetzel, Rick Owens invitations). All fall within Graphic design and the web/digital extensions the scout asked Jonathan about in Open Questions. No off-capability content captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-17.png, source https://waf.gmbh/) shows the WAF GMBH homepage with studio branding in footer. IG shot (site-18.png) is correctly rejected (IG served error page on unauthenticated access), documented in manifest reject_reason, and the entry is confirmed in state/ig-queue.json with reason. Meets the sanctioned IG-throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image has a caption naming the project and a source link back to the waf.gmbh case study page. Two rejected images (site-06, site-16, site-18) are marked rejected with stated reasons and excluded from the live set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "WAF is a web/graphic design studio; no video-primary or audio capability. No video embeds expected; this check does not apply as a failure mode. The capture is image-appropriate for the discipline."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest and ig-queue.json. No other gaps identified."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct; WAF GMBH is a small specialized team doing hands-on digital/graphic work, not an agency."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://waf.gmbh/. Instagram: https://www.instagram.com/waf.gmbh/ (verified via waf.gmbh about page). LinkedIn: https://www.linkedin.com/company/we-are-fellows. Email: office@waf.gmbh. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set (Jonathan's tag, set_by: jonathan). Scout correctly raised Open Question #1 asking Jonathan whether to expand to Web design, Brand strategy, Creative direction, Frontend development. Capabilities question correctly deferred to Jonathan rather than overwriting his tag."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 2-10 (corrected from migration value of 41-100; justified in AI Notes via LinkedIn + office page listing 7 staff). Work Status: Studio. AI Notes names the sources for Work Status and Size."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type: Studio. Per checklist calibration note (2026-06-21), Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes names founders and team. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never; Familiarity: Don't know them; Work With?: Unvetted. No clip note or other evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note appears to be a bare web-clipper entry (no relationship facts, instructions, or passcodes found in the entry). All runbook steps documented."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (client names, founding year, team size, Hamburg location) and hedge positioning claims ('positioned as'). Includes seniority/team read. No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source field reads 'Web clipper' without the created date. CLAUDE.md requires 'Web clipper, <page created date>' for backfill/clipper entries. The date is missing.",
+      "fix": "Append the page created date to Source: retrieve it via the Notion API (created_time on the page) and set Source to 'Web clipper, YYYY-MM-DD' via keeper.py set."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file present with set_by values for all touched fields. source_url is null throughout, noted as a known systemic tooling gap per checklist calibration note (2026-06-21); not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One open question (Capabilities expansion) is terse, specific, and conditional. No story nudge triggered (Worked Together is Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "One technical fail (D.source-filled: missing created date in Source). In v1 calibration mode, this is noted but the entry passes overall. The scraper should add the created date to Source on the next edit. All other checks pass. Images are strong: 6 named distinct projects, depth shots, on-capability digital/graphic work, correct context shot handling with sanctioned IG-queue exception. Capabilities question correctly escalated to Jonathan rather than overwriting his tag.",
+  "to": "scraper"
+}
