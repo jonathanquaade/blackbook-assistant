@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://universaleverything.com/latest/",
+      "value": "https://universaleverything.com",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,16 +23,16 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "UK"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-06T00:19:10",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/universaleverything/",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/universal-everything",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "studio@universaleverything.com",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper migration; Wikipedia, universaleverything.com, LinkedIn snippet, Instagram bio",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:19:10",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Founded 2004 by Matt Pyke (ex-Designers Republic, 8 yrs), Sheffield UK. Studio-level outfit: LinkedIn self-reports 2-10 employees, consistent with a tight collaborative collective model. Pyke is Founder and Creative Director; the studio likely draws on a network of collaborators beyond the core headcount. Specialises in generative CGI, motion, interactive installations, VR/AR, and experiential work for cultural institutions and major brands (Apple, Nike, Chanel, Samsung, Radiohead, Zaha Hadid Architects, London 2012 Olympics identity). Won 2014 PRIX Ars Electronica Golden Nica (Walking City). Work held at MoMA, V&A, Barbican. Current Capabilities tag (Graphic design) is a migration default and appears incomplete: work clearly spans 3D & motion, Creative technology, Art practice, Spatial & exhibition design, and Creative direction at minimum. Open Question raised for Jonathan. Work Status: Studio (self-sustaining independent art-and-design practice, no employer relation). Contact email confirmed from Instagram bio.",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:19:39",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: current tag is \"Graphic design\" (migration default). Research shows work spans 3D & motion, Creative technology, Art practice, Spatial & exhibition design, and Creative direction. Proposed update to all five. Approve or adjust?",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:19:56",
+      "set_by": "agent"
     }
   }
 }

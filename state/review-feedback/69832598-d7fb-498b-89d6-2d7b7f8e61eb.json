@@ -1,0 +1,111 @@
+{
+  "page_id": "69832598-d7fb-498b-89d6-2d7b7f8e61eb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Uber, The Met, GSK, Patreon, TikTok. No repeated angles of one project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project, going inside case studies (typography, environmental, brand-in-use). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "patreon-01.jpg (captioned 'Patreon rebrand, logo and wordmark') is a photograph of hands operating an Elektron synthesizer. patreon-03.jpg (captioned 'Patreon rebrand, digital applications') is a photograph of a vinyl record next to an Elektron Digitone synthesizer. Both are lifestyle photography of a Patreon creator, not Wolff Olins brand or identity work. The captions are factually wrong. patreon-02.jpg (Patreon Creator Fest poster wall) is on-capability. 2 of 3 Patreon images are off-capability.",
+      "fix": "Replace patreon-01.jpg and patreon-03.jpg with actual Wolff Olins brand/identity work from the Patreon case study: logo, wordmark, color system, typography, UI applications, or campaign visuals. Source from wolffolins.com/work/patreon. Do not use creator lifestyle photography."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is wolffolins.com homepage (Sandals brand campaign visible, Wolff Olins nav header confirmed). site-02.png is instagram.com/wolffolins profile page (130K followers, @wolffolins bio, grid visible)."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 16 images have captions. Captions for patreon-01 and patreon-03 are factually wrong but present; the content mismatch is captured under A.on-capability."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio work expected for a brand consultancy; static identity work appropriately captured as images."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "14 work images present across 5 named projects. No unexplained thinness."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Agency. Wolff Olins is a 200-person full-service brand consultancy under Omnicom. Correct classification per schema."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (wolffolins.com), Instagram (instagram.com/wolffolins), LinkedIn (linkedin.com/company/wolff-olins), Email (hello@wolffolins.com) all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Current tag 'Graphic design' is set_by: jonathan (locked). Scout correctly could not override it and raised Open Question 1 asking Jonathan to confirm expanded tags (Brand strategy, Identity systems, etc.). This is the correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + US (London HQ, NY/LA/SF offices). Size: 100+ (LinkedIn ~199, ZoomInfo ~224). Work Status: Studio is the correct org-level value."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Agency). Autonomy N/A per checklist. AI Notes include seniority/leadership read (CEO, Global ECD named)."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate for an org Jonathan has not worked with. No evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No clip note instructions beyond the name. Nothing deferred."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cite sources (LinkedIn, ZoomInfo), hedge headcount ('approximately'), and assert only verifiable facts (founding date, Omnicom acquisition, named clients). No em-dashes. Seniority read present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Notion DB entry; web research 2026-07-05'. Acceptable for a backfill entry."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "set_by values are correct throughout. source_url null is a known systemic tooling gap; not a gate fail per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional question (Capabilities). No fields with non-zero values queried unnecessarily."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; gate holds it here until verdict. Not prematurely flipped."
+    }
+  ],
+  "to": "scraper"
+}

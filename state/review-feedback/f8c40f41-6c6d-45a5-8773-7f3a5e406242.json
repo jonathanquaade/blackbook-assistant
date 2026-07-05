@@ -1,0 +1,111 @@
+{
+  "page_id": "f8c40f41-6c6d-45a5-8773-7f3a5e406242",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Centre Pompidou identity, Musee d'Orsay identity, Chaillot Theatre identity/campaign, MOCO Montpellier Contemporain identity, Basquiat/Fondation Louis Vuitton catalogue. No repeated-angle problem."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: editorial spreads (orsay-03, basquiat-02, chaillot-03), campaign posters in situ (chaillot-01, chaillot-02), applied print collateral (moco-02, cp-03). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 5 projects are graphic design identity/editorial/campaign work. NOTE: cp-01.jpg is an aerial photo of Paris with no visible design work -- it is the weakest image in the set (the project is covered by the stronger cp-02 and cp-03). Not a fail but worth swapping on a future pass."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is z-o-o.fr (confirmed: nav reads 'zoo contact team clients projets tous'). site-02.png is instagram.com with @zoo_designers_graphiques profile visible (bio: 'Creative design office based in Paris', 217 posts, 20.8k followers). Both verified correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 images have captions. All 13 work images name the project and carry a link to the source project page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Graphic design studio; still work is appropriate. No video embeds required or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "13 work images present across 5 named projects. No thin entry; no unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized Paris design office."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (z-o-o.fr), Instagram (zoo_designers_graphiques, verified via profile bio + grid), LinkedIn (fr.linkedin.com/company/zoo-designers-graphique), Email (contact@z-o-o.fr) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Open Question 1 asks Jonathan about adding Identity systems and Web design -- appropriate terse question, not a gate failure."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 2-10 (AI Notes says ~9 people). Work Status: Studio. AI Notes names the research basis (z-o-o.fr confirmed Paris studio, 10+ years operating)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy field is optional per calibrated checklist. AI Notes references founders Julie Galand and Baptiste de l'Espinay and 10+ years operating -- seniority/leadership read present in prose."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only a single URL (z-o-o.fr/works/zat-100-artistes-dans-la-ville/). No instructions or relationship facts in the clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes states verifiable facts (founded 2013, named clients Centre Pompidou/Musee d'Orsay/LVMH/Prada, ~9 people). Uses hedged qualifier ('~9 people'). No unverified assertions presented as fact. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated entry; z-o-o.fr confirmed Paris studio'. Filled and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at on all touched fields. source_url is null throughout -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions and Source all checked. No em-dashes found. Open Question uses '--' (double hyphen), acceptable."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion. Terse, conditional (Capabilities currently only Graphic design), and sensible given the site shows identity and digital sections."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer is flipping to Needs Review now."
+    }
+  ],
+  "notes": "One weak image (cp-01.jpg: aerial cityscape of Paris, no design work visible) worth replacing with a stronger Centre Pompidou identity shot on a future pass. Not a fail: the project is adequately represented by cp-02 and cp-03.",
+  "to": null
+}

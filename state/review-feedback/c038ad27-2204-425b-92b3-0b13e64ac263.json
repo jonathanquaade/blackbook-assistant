@@ -1,0 +1,30 @@
+{
+  "page_id": "c038ad27-2204-425b-92b3-0b13e64ac263",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5 distinct projects: Fridericianum, Berlin Biennale, Taipei Biennial, Serpentine Manifesto Marathon, Nike No Finish Line"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "2-3 images per project showing in-situ applications and spreads, not only cover shots"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All captured work is identity systems and publication design, matching Graphic design tag"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-14.png confirmed zak.group homepage; site-15.png is IG error page marked rejected, documented in AI Notes, queued in ig-queue.json — exception applies"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 14 active images carry project captions and source links"},
+    {"id": "A.embeds", "result": "pass", "evidence": "Static graphic design studio; no video/audio work present to embed"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "IG throttle documented in AI Notes; entry in state/ig-queue.json"},
+    {"id": "B.type", "result": "pass", "evidence": "Type: Studio"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, LinkedIn, Email all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Graphic design tagged (set_by jonathan); Open Question asks about adding Identity systems, Creative direction, Brand strategy, Web design"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, 2-10, Studio; sources named in AI Notes (site zak.group, office page, LinkedIn)"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4 set with reasoning; Studio type so optional but present"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Zero-states consistent with no evidence of prior relationship"},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Entry pre-existed as New with no clip note instructions; Source documents origin"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Factual assertions grounded in studio site; Autonomy estimate hedged; seniority read present; no em-dashes"},
+    {"id": "D.source", "result": "pass", "evidence": "Source field filled with origin and research sources"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have provenance entries; null source_url is known systemic gap, not a gate failure; set_by values correct"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes or Open Questions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about capability expansion; no redundant asks"},
+    {"id": "D.status", "result": "pass", "evidence": "Will flip to Needs Review on this pass"}
+  ],
+  "to": null
+}

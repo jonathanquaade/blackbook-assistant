@@ -1,0 +1,111 @@
+{
+  "page_id": "2050f1d1-5af1-48e6-aea4-7a11f0c62ad6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 distinct named projects across the active manifest (Lexus, Argos, British Gas, Adobe Summit, Honda Redline, Virgin Money, Warner Bros, Hive, Center Parcs, Honda Vultus/Batman VR). site-03.jpg correctly rejected as a near-duplicate Lexus crop."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "One image per campaign, all showing campaign output (personalised video frames, app screens, DOOH installs, interactive leaderboard). The studio site presents a single hero image per project; this is the full depth available from a project gallery of this kind."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities is Brand strategy (set_by jonathan). The Open Question correctly flags that Creative technology is a stronger fit and asks Jonathan to confirm. The captured work (technology-driven campaigns) represents what the studio actually does and is on-capability relative to either tag. No off-capability drift."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is a confirmed screenshot of visualvoiceglobal.com showing the Visual Voice logo and homepage copy. No Instagram context shot is present, but no Instagram handle was found for this studio; the checklist exception covers throttle blocks, not non-existent accounts. Absence of an IG account is the correct situation here. Minor gap: AI Notes does not explicitly state no Instagram account was found (see note below)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 10 active images have captions naming the client campaign and linking to visualvoiceglobal.com."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "This is a B2B martech studio whose site presents still images only per project. No embeddable video was available on the project gallery pages. No embed opportunity skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site content is captured. No IG account found; not queued (correct, since there is no handle to queue). Minor: AI Notes does not explicitly note 'no Instagram account found' but the absence is self-evident from the entry having no Instagram field and the provenance having no IG entry."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per schema (small specialist team, technology-enabled campaigns)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, LinkedIn, and Email are all present with sources. Instagram: no handle found and none in the entry; plausible for a B2B martech studio. AI Notes omits an explicit 'no Instagram found' note, which is a minor documentation gap but not a gate failure."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy set_by jonathan (locked). Scout has raised an Open Question proposing Creative technology addition. Process is correct."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK, Size: 2-10, Work Status: Studio, all sourced to visualvoiceglobal.com and verified 2026-07-05. AI Notes records the multi-source basis."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio). Autonomy not required per calibration note. AI Notes states 'Autonomy not set for orgs'. Correct."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) all set_by agent with no contradicting evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper migration', no instruction text in the Name field. No clip-note instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes correctly hedges: 'Not a traditional creative studio; the work is technology-enabled campaign experiences rather than hands-on craft.' Client list is verifiable (named on the studio site). Seniority/Autonomy addressed with org-level reasoning. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper migration'. Correct for a migration entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries. set_by values are correct (jonathan for Capabilities locked field, agent for everything else the scout set). source_url null on some fields is the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes and Open Questions: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: Capabilities addition proposal. Terse, conditional, relevant. No field with a non-zero value is being asked about."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "notes": "Minor documentation gap: AI Notes does not explicitly state that no Instagram account was found for Visual Voice Global. This is not a gate failure but the scraper should add one line to AI Notes on the next pass if opportunity arises.",
+  "to": null
+}
