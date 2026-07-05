@@ -1,0 +1,113 @@
+{
+  "page_id": "3aa70e82-18fb-4cf7-bcd0-8caa124939a6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct projects across Nike AirMax DN, Zegna FW25, Zegna SS25, Starbucks, Adidas F50, Niska x Ninho GOAT, Valentino Holiday 24, LVMH. No caption repeats the same project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Full-res campaign stills (Nike, Valentino), Vimeo thumbnails showing interior cinematography (Zegna opera house, Adidas starting blocks), music video thumbnail. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Film & video production. All 6 embeds are commercials or music videos produced by Glitch Paris. Valentino images are stills from a production Glitch handled (production studio involvement is on-capability). LVMH still is a film frame. No off-capability design or branding-only work."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as glitchparis.tv homepage (Glitch logo, nav visible). site-02.png confirmed as instagram.com/glitchparis.tv (IG wordmark and handle visible); cookie consent overlay obscures the grid but the page IS instagram.com, not a mislabeled shot. Handle matches the Instagram field. Not a Zuzanna-type mislabel; noted as degraded capture but not a checklist fail.",
+      "note": "Cookie overlay means the grid is not visible. If Jonathan wants the grid visible, a logged-in ig.py shot would fix it. Not queued but also not a blocking failure given the handle is confirmed correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active images have captions naming project, client, and/or director. Two context shots captioned 'Website' and 'Instagram profile' with links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 embeds present (3 Vimeo, 1 Vimeo, 1 Vimeo, 1 YouTube) each paired with a thumbnail preview image and a link to the source project page. Thumbnail-then-embed pattern implemented. Entry is never embeds-only (10 non-context images present)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents that KFC and Zalando films were not found on Vimeo. Pepsi film correctly rejected in manifest (produced by Filmdeluxe, not Glitch Paris)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per the Studio vs Agency distinction (small specialized team, hands-on creative execution, roster of directors)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present. Instagram handle verified via manifest source_url pointing to instagram.com/glitchparis.tv."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production tagged. Open Question asks Jonathan about adding Photography and Creative direction. Correct: scout tags what is confirmed, asks about the rest."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France, Size: 2-10 (sourced from LinkedIn), Work Status: Studio. Multi-source evidence documented in provenance."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio). Autonomy is optional per calibration note (2026-06-21). AI Notes includes a seniority/leadership read (Leslie Dupuis-Mendel as founder, ex-Bandits Production)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note body. Name is clean. No instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "fail",
+      "evidence": "AI Notes states as fact 'founded 2017 by Leslie Dupuis-Mendel' but the website homepage (site-01.png, visible in the context shot) shows 'Est. 2000'. These directly contradict. The founding year claim is unhedged and below the confidence floor unless corroborated by a second source. Either 'founded 2017' is the wrong year (perhaps when the current leadership took over), or 'Est. 2000' is a marketing affectation and the real founding was 2017. Neither case supports asserting 2017 as fact without hedging.",
+      "fix": "Scout to verify the founding year from a second source (LinkedIn company page, press coverage, packshotmag profile). Either hedge 'founded 2017' as 'reportedly founded 2017 (site says Est. 2000; possible rebranding or ownership change)' or correct to whatever the majority of sources support. Write the resolved or hedged version back to AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source is 'Web clipper' without the page created date. Runbook (CLAUDE.md P1 step 5) requires 'Web clipper, <page created date>' for backfill/migration entries.",
+      "fix": "Scout to retrieve the page created_time via keeper.py get and update Source to 'Web clipper, YYYY-MM-DD'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at for all touched fields. Null source_url on a few fields is the known systemic tooling gap, not a gate failure per the calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or manifest captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question, terse, on Capabilities expansion. Conditional: Capabilities is set but the question asks about adding tags Jonathan has not confirmed. Correct usage."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching pending this gate. Status will only move to Needs Review on a pass verdict."
+    }
+  ],
+  "to": "scout"
+}

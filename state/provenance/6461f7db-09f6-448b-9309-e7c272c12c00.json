@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://yes.studio/",
+      "value": "https://yes.studio/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,16 +23,16 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "UK"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -56,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-05T21:01:29",
       "set_by": "agent"
     },
     "Name": {
@@ -66,6 +66,54 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/yes__studio/",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://uk.linkedin.com/company/yes-studio",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "mail@yesstudio.co.uk",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "yes.studio (migrated entry); yes.studio/information; LinkedIn company page; It's Nice That article (2007); web search",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Art direction, design and technology studio founded in 2004 by Alice Cowling and Simon Earith, based in Shoreditch, East London (Rochelle School, Arnold Circus E2). Long-running studio with 20+ years of history; senior/founder-led. Around 6 employees per LinkedIn. Work spans visual identity systems, graphic design, web design and development, and art direction across culture and commerce clients. Notable relationships: 14-year collaboration with Sir Paul McCartney (GRAMMY win + 4 nominations), Penguin Books, V&A, Warp Records, Serpentine Galleries, Thames & Hudson, Somesuch, Tim Walker. Autonomy set to 5 (founder-run independent studio; no external oversight). Capabilities on entry set by Jonathan; additional candidates Identity systems, Graphic design, Creative direction are visible in their work but left as Open Question to avoid overriding his tags.",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:01:29",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:01:44",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: their work visibly includes Identity systems (full brand programmes), Graphic design (posters, editorial, packaging), and Creative direction (studio is founder-led, client-facing art direction). Add any of these to the existing Web design + Frontend development (web) tags?",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:02:04",
+      "set_by": "agent"
     }
   }
 }

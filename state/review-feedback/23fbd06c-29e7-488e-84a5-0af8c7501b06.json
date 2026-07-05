@@ -1,0 +1,30 @@
+{
+  "page_id": "23fbd06c-29e7-488e-84a5-0af8c7501b06",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "9 distinct named projects: Film4, ITV2, Apple Eye Candy, Xbox motion brand, Apple iMac Pro, More4, VERSUS/Maxon, Nike Flyknit, Nike Air Max 2017. Visually confirmed distinct."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Film4, ITV2, More4 each get 3 interior stills plus thumbnail plus embed; goes inside projects not just hero covers."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All work is CGI-heavy motion and 3D broadcast idents, brand films, motion identity. No off-capability material."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-13.png is mvsm.com homepage (confirmed visually). site-14.png is instagram.com showing @man.vs.machine profile with cookie overlay but correct handle and domain visible."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 23 manifest entries have captions naming project or context type; all work images carry source links."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "9 Vimeo embeds present, each paired with a thumbnail preview image. 14 still images also present; not embeds-only."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No source gaps; all identified projects have work captured."},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type = Studio. Correct for a specialized motion/3D studio."},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "Website mvsm.com, Instagram man.vs.machine (verified correct handle), LinkedIn company page, Email enquiries@mvsm.com all present."},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "3D & motion set_by jonathan (migration). Open Question correctly proposes expansion without overwriting his tag."},
+    {"id": "B.country-size-work-status", "result": "pass", "evidence": "Country UK+US (dual offices in AI Notes), Size 41-100 (60 employees, source named), Work Status Studio (confirmed). Sources documented in AI Notes."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Studio type; Autonomy field is optional per calibration note. AI Notes includes seniority/leadership read (17+ years, top of motion/identity field)."},
+    {"id": "C.no-contradictions", "result": "pass", "evidence": "Zero-states Worked Together Never, Familiarity Don't know them, Work With? Unvetted are all appropriate; no evidence Jonathan knows the studio."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Migration entry with no personal clip note instructions."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes assert only verifiable facts (founding year, WPP stake, employee count with source, clients, awards). Leadership read present. No overreach."},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source = 'Migration entry; research via mvsm.com, WPP company page, LinkedIn, itsnicethat.com, web search 2026-07-04'."},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "All touched fields in provenance with correct set_by values. source_url null is the known systemic tooling gap, not a gate failure."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about Capabilities expansion. Appropriate."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Entry in Enriching; reviewer flipping to Needs Review now."}
+  ],
+  "to": null
+}
