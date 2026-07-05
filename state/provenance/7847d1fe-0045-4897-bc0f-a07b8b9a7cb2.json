@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://stereo-buro.com/",
+      "value": null,
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,21 +23,21 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "France"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T22:59:23",
+      "verified_at": "2026-07-06T00:37:29",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-06T00:39:23",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,36 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/stereoburo/",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://fr.linkedin.com/company/st%C3%A9r%C3%A9o-buro",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper migration; confirmed via annuaire-entreprises.data.gouv.fr (SIREN 910679398), Instagram @stereoburo bio, and web research",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Graphic design and art direction studio founded 2015 in Paris by Silvia Dore and Diane Boivin (both ENSAD Strasbourg alumni), with occasional third collaborator Christelle Menage. Incorporated legally Jan 2022, officially dissolved Dec 31 2023 per French business registry. Instagram bio confirms: 'stereo buro is closed'. Original website domain stereo-buro.com has been hijacked and now hosts casino content. Studio worked for cultural and institutional clients, focused on typography-led identity, editorial design, signage, and print/web; notably redesigned Intramuros magazine layout and created identities for arts organizations. Autonomy: not set (studio is closed). NOTE: studio is closed; Jonathan to decide whether to retain or reject this entry.",
+      "source_url": null,
+      "verified_at": "2026-07-06T00:39:23",
+      "set_by": "agent"
     }
   }
 }

@@ -1,0 +1,110 @@
+{
+  "page_id": "b06ba156-62b7-43a6-8882-9d79428e97ee",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 images + 6 embeds span 6 distinct named projects: Future You (Barbican), Walking City (Golden Nica), Infinity, Transfiguration, Screens of the Future, Super You. No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Infinity has 3 images (parade still, figure still, figure-generator thumbnail) plus an embed. Screens of the Future has 3 stills plus an embed. Both go inside the work, not just covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All work is generative CGI, motion, interactive installation, and AR - consistent with the scout's proposed 3D & motion / creative technology / art practice tags. The live Capabilities field still reads 'Graphic design' (migration default) but an Open Question flags this for Jonathan. The captured work itself is on-capability for what the studio actually does."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed as www.universaleverything.com homepage (branded nav, 'We are media artists and experience designers'). site-01, site-02, site-03 all marked rejected with documented reasons. IG context shot (site-02) rejected+documented+queued to state/ig-queue.json per the sanctioned throttle exception. Exception criteria all met: error page rejected, AI Notes note present, entry in ig-queue."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image has a caption naming the project, year, and descriptive content. All link to a source URL. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo/YouTube embeds present across 5 projects. Each non-Screens embed has a dedicated thumbnail image (oEmbed grab). Screens of the Future embed (vimeo/188112478) uses 3 project stills as visual anchors instead of an oEmbed thumbnail - acceptable given stills are present. Not embeds-only: 11 images in the Images property."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "universaleverything.com (without www) blank Apache page: 3 rejected entries in manifest with documented reason. JS-gated site workaround: AI Notes and manifest document alt-sourcing via Vimeo/YouTube oEmbed + press (Stash, AGI, Designboom). IG throttle: ig-queue entry present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialist team (2-10), hands-on creative execution, Sheffield."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (www.universaleverything.com), Instagram (instagram.com/universaleverything), LinkedIn (linkedin.com/company/universal-everything), Email (studio@universaleverything.com) all present and agent-verified."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Current tag 'Graphic design' is a migration default (set_by: jonathan in provenance, so agent cannot overwrite). Open Question 1 correctly asks Jonathan to approve the proposed update to 3D & motion / creative technology / art practice / spatial & exhibition design / creative direction. Checklist item is about whether capabilities are addressed - they are, via the question. Not a fail."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10 (LinkedIn self-reported). Work Status: Studio (independent art-and-design practice, no employer). Multi-source check noted in AI Notes (Wikipedia, LinkedIn snippet, Instagram bio)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry (org-type). Per calibration note in checklist (2026-06-21), Autonomy is optional for org-type entries. AI Notes includes seniority/leadership read: Matt Pyke as Founder and Creative Director since 2004, ex-Designers Republic 8 yrs. Field omission is correct."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all zero-states. No evidence in the entry of a prior relationship with Jonathan. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry is a migration entry with no clip-note relationship facts or passcodes. Source field records the migration baseline. Nothing in Name or body text was flagged as an outstanding instruction."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges inferences ('the studio likely draws on a network of collaborators beyond the core headcount', 'appears incomplete'). Verifiable facts (awards, clients, museum holdings, founding year) stated plainly. Seniority read present (Matt Pyke, Founder/CD, ~22 yrs at the studio, ex-Designers Republic 8 yrs). No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper migration; Wikipedia, universaleverything.com, LinkedIn snippet, Instagram bio'. Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields present in provenance with set_by and verified_at. source_url is null across all fields - known systemic tooling gap, not a gate failure per calibration note (2026-06-21). set_by values are correct: Capabilities is jonathan (migration, locked), Name is migration, all agent-written fields are agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions: no em-dashes found. Hyphens in captions (e.g. 'CGI prototype: flexible display as botanical leaf structure') are correct usage."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities update proposal. Terse, conditional (Capabilities currently set to migration default, not agent-written, so the question is appropriate). No redundant questions. Story nudge: Worked Together is Never so nudge does not apply."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on pass verdict."
+    }
+  ],
+  "to": "scraper"
+}
