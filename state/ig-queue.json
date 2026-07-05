@@ -1643,5 +1643,26 @@
     "ig_url": "https://www.instagram.com/aatb_ch/",
     "reason": "IG context screenshot returned Instagram login wall (headless Playwright blocked logged-out). Need logged-in ig.py grab for @aatb_ch profile context shot.",
     "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "c038ad27-2204-425b-92b3-0b13e64ac263",
+    "name": "Zak Group",
+    "ig_url": "https://www.instagram.com/zakgroupoffice/",
+    "reason": "context shot: IG profile returned error page logged-out; studio has active design portfolio on IG",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "6461f7db-09f6-448b-9309-e7c272c12c00",
+    "name": "YES studio",
+    "ig_url": "https://www.instagram.com/yes__studio/",
+    "reason": "IG context screenshot (site-20.png) returned Something went wrong error page (Instagram blocked headless Playwright). Need logged-in ig.py grab for @yes__studio profile context shot.",
+    "queued_at": "2026-07-05"
+  },
+  {
+    "page_id": "fc7c35fd-b273-48b8-a480-fb9f0481eff6",
+    "name": "Wednesday Agency",
+    "ig_url": "https://www.instagram.com/wednesdayagency/",
+    "reason": "IG context screenshot returned Something went wrong error page (Instagram blocked headless Playwright rate-limited). wednesdayagency.com domain also DNS-SERVFAIL from this network. Need logged-in ig.py grab for @wednesdayagency profile context shot.",
+    "queued_at": "2026-07-05"
   }
 ]

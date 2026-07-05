@@ -28,16 +28,17 @@
     },
     "Country": {
       "value": [
-        "US"
+        "US",
+        "UK"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-05T21:03:26",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-07-05T20:59:58",
+      "verified_at": "2026-07-05T21:25:17",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-05T21:03:26",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +66,59 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Agency",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:03:26",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/wednesdayagency/",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:03:26",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/wednesday",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:03:26",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "newyork@wednesdayagency.com",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:03:26",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Migration import; research via wednesdayagency.com, LinkedIn, Crunchbase, PR Net, Ads of the World, FashionNetwork",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:03:26",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Wednesday Agency Group is a full-service creative agency specialising in fashion, luxury, and lifestyle brands. Founded 2004 (as Saturday London) by Jens Grede and Erik Torstensson; merged into Wednesday in 2013-2014; majority stake acquired by BBDO Worldwide (Omnicom) in 2016. Offices in New York and London. Current headcount estimated at 27-30 (down from 100+ at peak). Known work includes Mr Porter brand identity and site, Frame Denim brand strategy and campaigns, Theory identity, Calvin Klein, Louis Vuitton. Services span brand strategy, identity, campaigns, digital, content production. Operates as a boutique at scale within the BBDO network. Global President Sveta Doucet leads as of 2024-2025.",
+      "source_url": null,
+      "verified_at": "2026-07-05T21:03:26",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "mrporter-01.jpg",
+        "mrporter-02.jpg",
+        "mrporter-03.jpg",
+        "moncler-01.jpg",
+        "moncler-02.jpg",
+        "moncler-03.jpg",
+        "maxco-01.jpg",
+        "industrie-02.jpg",
+        "kurtgeiger-01.jpg",
+        "site-02.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-05T21:22:12",
+      "set_by": "agent"
     }
   }
 }

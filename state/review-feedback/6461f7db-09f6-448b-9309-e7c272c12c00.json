@@ -1,0 +1,111 @@
+{
+  "page_id": "6461f7db-09f6-448b-9309-e7c272c12c00",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 images across 7 distinct client projects (Somesuch, Tim Walker, East, MMXX Artists, AP Studio Inc, Bardia Zeinali, 138 Productions) plus 1 website context shot. No repeated-project duplicates in the active set."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Somesuch and Tim Walker each get a screenshot plus a content image. For a web design/development studio, live-site screenshots are the appropriate interior view. Acceptable for the Type."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged capabilities are Web design + Frontend development (web). All 9 work images show live websites built by YES studio. On-capability. Spawn prompt notes their work also spans identity/graphic/art-direction; Open Question 1 correctly asks Jonathan whether to add those tags rather than applying them unilaterally."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-19.png confirmed: yes.studio homepage, correct. site-20.png (Instagram) marked rejected in manifest (Instagram blocked headless Playwright with error page), documented in AI Notes, entry queued to state/ig-queue.json for logged-in ig.py grab. Checklist IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a caption naming the client project and a link field. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "YES studio is a web design and development studio. No video/audio work to embed. No video embeds were skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Solve Sundsbo dropped with rejection reason documented in manifest (blank screenshot on video-only hero). IG context shot queued with reason documented. Nothing silently thin."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialist creative team (2-10 people, hands-on execution)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: yes.studio; Instagram: https://www.instagram.com/yes__studio/ (handle verified via site); LinkedIn: https://uk.linkedin.com/company/yes-studio; Email: mail@yesstudio.co.uk. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities (set_by: jonathan) are Web design + Frontend development (web). Open Question asks about adding Identity/Graphic/Creative direction. Agent did not override Jonathan's tags."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK; Size: 2-10 (sourced from LinkedIn ~6 employees); Work Status: Studio. Multi-source resolution noted in AI Notes (site + LinkedIn agree on studio status). Sources named in Source field."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent, reasoning in AI Notes (founder-run independent studio, no external oversight). Calibration note: for org-type entries Autonomy is optional; it is set here, which is fine."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No evidence in the entry contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migrated entry. No clip note instructions visible. Source field preserves the migration origin."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cite sources (LinkedIn for team size, It's Nice That for history). GRAMMY collaboration is a verifiable public fact. Autonomy reasoning is explicit. Seniority read present (senior/founder-led, 20+ years). No em-dashes. One editorial note: site-01.jpg and site-05.jpg are editorial photography content from client sites, not YES studio's design output per se; this is a reasonable inclusion for a web studio (the content lives within the design they built) and is not a gate failure."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'yes.studio (migrated entry); yes.studio/information; LinkedIn company page; It's Nice That article (2007); web search'. Complete."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by recorded. source_url is null throughout - this is the known systemic tooling gap (not a gate failure per calibration note from 2026-06-21). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, captions and Source field all checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Capabilities expansion. Not asking for fields already set. Conditional and appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. One editorial observation for Jonathan: site-01.jpg and site-05.jpg are editorial photography that lives on the sites YES studio built (Somesuch, Tim Walker) rather than design outputs by the studio itself. Jonathan may want to swap these for layout/typography shots if he prefers to see the design work directly. Not a blocker."
+}

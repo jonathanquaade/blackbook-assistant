@@ -1,0 +1,113 @@
+{
+  "page_id": "fc7c35fd-b273-48b8-a480-fb9f0481eff6",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects confirmed by visual inspection: Mr Porter, Moncler, Max & Co SS14, Industrie Magazine, Kurt Geiger SS14. No duplicated projects or near-identical images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Mr Porter has 3 shots showing distinct design artifacts (website UI, packaging system, ribbon label detail). Moncler shows 3 different digital touchpoints (homepage, product detail, landing page). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design (set_by: jonathan, locked). Work images show brand identity, campaign, and digital design output consistent with Graphic design at minimum. A broader tagging (Identity systems, Art direction) would be more accurate, but that is a jonathan-locked field. Surfaced as an observation below."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png confirmed as wednesdayagency.com homepage via Wayback Machine (WaybackMachine chrome visible, URL bar shows http://wednesdayagency.com/). Wayback sourcing is the correct fallback given DNS-SERVFAIL on live domain. Instagram (site-03.png) shows the expected error page and is correctly marked rejected: true with rejection_reason documented and entry queued to state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 9 work images and 1 website context shot have captions naming the project. Moncler and single-project images link to root URL (wednesdayagency.com) rather than project-specific pages because those pages are not in the Wayback CDX archive; this is documented and honest, not a defect."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds available from the archived 2013-14 WordPress-era source pages. Gatsby-era work with richer media is unarchived and documented as such. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "DNS-SERVFAIL on live site, Wayback CDX sourcing documented, Gatsby-era gap documented, IG queue entry confirmed present in state/ig-queue.json with correct page_id and reason."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Agency. Correct: large creative agency (BBDO/Omnicom network), full-service, NY + London offices."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and populated. Handle @wednesdayagency is the agency's own brand handle."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design is set_by: jonathan (locked). Cannot FAIL on a locked field. Observation: the agency's work spans Identity systems (Mr Porter is a full brand programme), digital design (Moncler e-commerce), and campaign art direction. A future revisit could propose adding Identity systems and Art direction via Open Question."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country US + UK correct (dual offices). Size 11-40 consistent with AI Notes estimate of 27-30 current headcount. Work Status Studio is a defensible call for an independent creative agency with studio character."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Agency/org-type entry. Per checklist calibration note, Autonomy is optional for org entries; a seniority read in AI Notes is sufficient. AI Notes names Global President Sveta Doucet and notes agency leadership. Satisfied."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate for a migration agency entry with no Jonathan relationship signals in the clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note instructions present to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'estimated' for headcount, attributes named facts to verifiable events (BBDO acquisition 2016, founders named). No unhedged inferences. No em-dashes. Leadership context provided."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration import; research via wednesdayagency.com, LinkedIn, Crunchbase, PR Net, Ads of the World, FashionNetwork'. Multiple named sources."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. null source_url is the known systemic tooling gap (not a gate failure per calibration note). set_by values are correct: migration for original fields, agent for enriched fields, jonathan for Capabilities."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and all fields inspected. No em-dashes found; semicolons and commas used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. No unresolved agent questions outstanding. IG queue handled correctly via state/ig-queue.json per CLAUDE.md guidance."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, which is correct pre-gate. Flipping to Needs Review now."
+    }
+  ],
+  "observations": [
+    "Capabilities is locked (set_by: jonathan) as 'Graphic design' only. The captured work includes a full Mr Porter brand programme (Identity systems per TAXONOMY.md), Moncler digital design, and fashion campaign direction. A richer tag set would be more accurate. Surfacing for Jonathan's consideration on review."
+  ],
+  "to": "scraper"
+}
