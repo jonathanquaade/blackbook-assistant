@@ -1,0 +1,111 @@
+{
+  "page_id": "a0b4e936-5046-4386-96bb-c115664aa2bd",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9+ distinct named projects across images and embeds: Black Transparency 2014, Islands in the Cloud 2013, The Sprawl 2015, Version History 2018, Eurasia 2018, Chaos Theory, Capture, Information Skies, The Feeling Sonnets."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "4 installation images of Black Transparency (distinct elements: ship model, tablet on textile, fabric wall piece, sculpture), 3 of Islands in the Cloud from MoMA PS1, 2 of The Sprawl. Appropriate depth for a gallery art studio."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged capability is Art practice (set_by jonathan). All captured work is gallery installations, documentary film stills, and art film embeds. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is metahaven.net (confirmed: shows 'metahaven' header, inquiries@metahaven.net, instagram/vimeo/linktree links, and current news items). site-14.png is instagram.com/metahaven/ (confirmed: shows Instagram UI, @metahaven handle, 40.5k followers, correct profile grid)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "palindromes_thumb.jpg (thumbnail for vimeo.com/1182532387) and transitional_object_thumb.jpg (thumbnail for vimeo.com/1149044692) both carry the identical caption 'The Feeling Sonnets (Transitional Object), 2024'. These are two different Vimeo films. The embed for vimeo.com/1182532387 correctly calls itself 'The Feeling Sonnets (Transitional Object) - Palindromes excerpt, 2024' but its paired thumbnail does not. Jonathan cannot tell the thumbnails apart from their captions.",
+      "fix": "Update palindromes_thumb.jpg caption to 'The Feeling Sonnets (Transitional Object) - Palindromes excerpt, 2024' (to match its embed partner at vimeo.com/1182532387). transitional_object_thumb.jpg stays as 'The Feeling Sonnets (Transitional Object), 2024' for vimeo.com/1149044692."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present (Chaos Theory, Capture, The Feeling Sonnets Palindromes excerpt, Information Skies), each paired with a thumbnail image. Embed+thumbnail pattern is correctly implemented."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "metahaven.net is mid-redesign (visible in website context shot: page is a minimal link-in-bio with news items only). AI Notes does not call this out explicitly but the website screenshot is self-evident. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small specialized Amsterdam design/art/film collective."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (metahaven.net), Instagram (instagram.com/metahaven/, verified correct from screenshot), Email (inquiries@metahaven.net) all present. LinkedIn: AI Notes states 'No LinkedIn company page found (2 searches); studio does not appear to maintain one.' Absence documented."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Art practice tagged, set_by jonathan. Open Question 1 correctly asks Jonathan whether to add Graphic design, Film & video production, Copywriting. Agent may not override his tag; the question is the right action."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = Netherlands, Size = 2-10, Work Status = Studio. All set with agent provenance. Work Status documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5 (set_by agent) with reasoning in AI Notes: self-directed practice, Jonathan would commission not direct. Studio entry so field is optional per checklist calibration 2026-06-21; field was set and reasoning documented."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note or other signal contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2026-06-12'. No special instructions or relationship facts in the clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cite verifiable facts (MoMA, Guggenheim Bilbao, Stedelijk, IFFR 2016 premiere, Design Academy Eindhoven roles, Rijksakademie advisory). Seniority read ('senior/director level, ~19 years') is grounded in founded date. Autonomy reasoning is stated. No em-dashes in AI Notes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-12'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all fields. source_url is null throughout; this is the known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all captions contain no em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Q1 asks about expanding Capabilities beyond the jonathan-set Art practice tag. Q2 asks Rating. Both terse, both conditional (capabilities field has only one tag set by jonathan, Rating field is empty). Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, awaiting this gate. Status will be flipped only on a pass verdict."
+    }
+  ],
+  "to": "scraper"
+}
