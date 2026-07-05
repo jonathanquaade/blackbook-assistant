@@ -1,0 +1,116 @@
+{
+  "page_id": "5d53e311-bb4c-4b47-b810-f26257942633",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 distinct projects across 7 film and 4 photography subjects: Adidas/Edwards, James Blake & Lil Yachty, Lil Yachty sAy sOMETHINg, slowthai Yum, slowthai/Skepta Inglorious, Diesel x Skepta, Nike/Raducanu (film); Nike Travis Scott x McEnroe, PinkPantheress, Nike Marcus Rashford, Chase & Status (photography)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Photography projects each have 3 interior shots (e.g. nike_travis_scott_01-03, pinkpantheress_01-03, chase_status_01-03, nike_rashford_01-03). Film projects use Vimeo thumbnails as preview images paired with playable embeds, an accepted pattern for video-first creatives."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Film & video production and Photography. Film embeds are music videos and brand films; photography images are editorial/campaign stills. All work matches declared capabilities."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is a real screenshot of crownsandowls.com (nav shows CROWNS & OWLS branding, project grid visible). site-02.png is a real Instagram profile screenshot for @crownsandowls (instagram.com header visible, bio 'C&O', 37.6k followers, James Blake post visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming project and client. All 21 image entries carry captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "7 Vimeo embeds present, each paired with a thumbnail preview image and a link caption. Never embeds-only: photography stills provide additional images throughout."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. Sources are live and used."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: 3-person collective doing hands-on creative execution."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (crownsandowls.com), Instagram (instagram.com/crownsandowls, verified by context shot), LinkedIn (uk.linkedin.com/company/crowns-&-owls), Email (welcome@crownsandowls.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Film & video production + Photography match the work captured and the site bio. An Open Question asks Jonathan about adding Creative direction."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10 (3-person team), Work Status = Studio. AI Notes records sources (crownsandowls.com/information, Companies House)."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by agent. AI Notes gives reasoning (established senior collective, 13+ years, major brand clients, small 3-person hands-on team). Studio entry; Autonomy is optional per calibration note but is set and reasoned here."
+    },
+    {
+      "id": "C.no-judgment-contradictions",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Notes field has Jonathan's single word 'Fashion' (his, untouched). No clip-note instructions found that were left unactioned."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes is factual (named clients, award confirmed, Companies House registration cited, site bio quoted). Seniority read and Autonomy estimate present. No unhedged inferences found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper; site crownsandowls.com, Companies House (reg. 07692399), shots.net, Iconoclast.tv, onepointfour.co'. Full and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at for all touched fields. source_url null on some older migration fields; per calibration note this is a known tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "fail",
+      "evidence": "Open Questions field contains an em-dash: '...creative direction' — add Creative direction tag?'",
+      "fix": "Replace the em-dash in Open Questions with a comma or colon. Rewrite as: '1. Capabilities: site bio lists Moving image, photography and creative direction, add Creative direction tag? 2. Rating?'"
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions, both conditional (Rating is not yet set; Creative direction is a genuine ambiguity). Correct form."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer will flip to Needs Review on a pass verdict (or after fix on fail)."
+    },
+    {
+      "id": "A.manifest-disk-parity",
+      "result": "note",
+      "evidence": "chase_status_04.jpg exists on disk but is absent from manifest.json and the Images property. It appears to be a scraper artefact that was not manifested. It is not included in the entry, so it causes no user-facing issue, but the file is orphaned."
+    }
+  ],
+  "to": "scraper"
+}

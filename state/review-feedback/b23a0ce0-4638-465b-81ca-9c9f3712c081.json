@@ -1,0 +1,111 @@
+{
+  "page_id": "b23a0ce0-4638-465b-81ca-9c9f3712c081",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images span 8 distinct projects: A Glimpse of the Infinite (3), Particular Score III 4m (1), Spare Pack III (1), In a State of Flow (1), Their Masters Voice (1), Handshake (2), Soap Opera (2), EYESS (1), Untitled 64 Vortices (1). Well over 3 distinct projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple views per project where applicable: 3 shots of Glimpse, 2 of Handshake, 2 of Soap Opera. Images go inside installations (detail views, interaction views), not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Art practice. All 13 work images are kinetic/robotic installations (robot dogs, bubble machines, water sculptures, rooftop LED eyes, suspended arc). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png confirmed as real aatb.ch archive page (AATB header and artwork index visible). site-05.png (Instagram) is marked rejected with documented reason (login wall under headless Playwright) and queued in state/ig-queue.json. Sanctioned exception per checklist applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Prior FAIL resolved. Hash verification: in-a-state-01.jpg on disk matches CDN image from /archive/in-a-state-of-flow (sha256 fac2cd88652c8014, 390937 bytes). their-masters-01.jpg matches CDN image from /archive/their-masters-voice (sha256 confirmed, 369547 bytes). vortices-01.jpg source_url is from kinetical-patterns CMS folder, which is also where /archive/untitled-64-vortices serves its images (Kirby CMS folder name differs from page slug; confirmed by fetching the untitled-64-vortices page). All 14 active manifest entries have named captions with source links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "AATB makes physical kinetic/robotic installations; images are the appropriate primary medium. No skipped YouTube/Vimeo embeds identified on project pages."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented (login wall, rejected in manifest, queued to ig-queue.json). No other unexplained thin sources."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a two-person hands-on creative and technical execution practice."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.aatb.ch/ (canonical). Instagram: https://www.instagram.com/aatb_ch/ (correct handle). LinkedIn: https://ch.linkedin.com/company/aatb. Email: hi@aatb.ch. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Art practice tagged (set_by jonathan, locked). Open Question #1 correctly asks about adding Creative technology and Fabrication rather than overwriting a jonathan-locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Switzerland + France (duo in Zurich and Marseille). Size: 2-10. Work Status: Studio (self-directed practice). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy optional per checklist calibration note. Autonomy: 4 is set (set_by agent) with reasoning in AI Notes grounded in 8-year independent practice with international institutional reach."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or body content. clipped.md contains only the raw name 'AATB / Practice for Non-Industrial Robotics'; no relationship facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was the name 'AATB / Practice for Non-Industrial Robotics'. No relationship or judgment instructions. Name cleaned to AATB; descriptor preserved in Source."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes. Seniority read present ('Senior/established practice at roughly 8 years'). Autonomy 4 estimate present with reasoning. Verifiable facts (Swiss Design Award 2021, CERN residency, venues) asserted; one hedged inference ('roughly 8 years')."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; aatb.ch, Swiss Design Awards blog, CERN Arts, LinkedIn'. Present and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url is null throughout (known systemic tooling gap; not a gate failure per checklist). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions checked programmatically. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One terse, conditional Open Question on Capabilities. Not asking for a field with a non-zero value (the question proposes additions, not a value for an empty field). Story nudge not applicable."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; will be flipped to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Attempt 2 re-gate. Both prior FAIL items (in-a-state-01.jpg and their-masters-01.jpg caption mismatches) are resolved and verified by hash comparison against live CDN. All 20 checks pass."
+}

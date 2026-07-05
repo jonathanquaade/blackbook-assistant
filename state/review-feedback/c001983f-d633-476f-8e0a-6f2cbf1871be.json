@@ -1,0 +1,111 @@
+{
+  "page_id": "c001983f-d633-476f-8e0a-6f2cbf1871be",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Dua Lipa Love Again, Yves Tumor Echolalia, Kelela LMK, Stormzy Toxic Trait, Hermes commercial. No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project go inside each set: Dua Lipa shows hats-on-hangers set piece + ballroom dancer + illuminated horseback rider, all distinct scenes. Yves Tumor, Kelela, Stormzy similar depth."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are production/set design stills from music videos and a commercial, matching the Spatial & exhibition design tag. No off-capability work present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png is studioaugmenta.com homepage (verified: STUDIO AUGMENTA client-list page, correct). site-15.png is instagram.com/studio_augmenta logged-out profile page (verified: shows studio_augmenta username, bio, and grid)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming project and source link. Thumbnails captioned 'X thumbnail · url'. Context shots captioned 'Website' and 'Instagram profile'."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 video embeds present (Vimeo for Dua Lipa, YouTube for Yves Tumor, Kelela, Stormzy). Each paired with a thumbnail image. Hermes has no embed but the commercial may not be publicly hosted; 2 still images captured from the project page."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thinness. 19 images across 5 projects is solid coverage. Hermes has 2 images with no embed; acceptable given commercial content is often not on public video platforms."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: two-person named studio doing hands-on production design."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (studioaugmenta.com), Instagram (instagram.com/studio_augmenta, verified correct account in context shot), LinkedIn (linkedin.com/in/studio-augmenta-454b901b1), Email (studio@studioaugmenta.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Spatial & exhibition design tagged. Scout raised an Open Question about adding Film & video production and/or Fabrication, which is correct and appropriately deferred to Jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK, Size 2-10, Work Status Studio. AI Notes states sources: site confirmed studio status and London base. Multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio org entry; Autonomy correctly omitted per checklist calibration note (optional for org-type entries). AI Notes includes seniority read (mid-career, 7-10 yrs experience, named mentors Shona Heath and Es Devlin)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) are consistent with no clip-note relationship facts. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry is a web clipper entry with no apparent clip-note instructions beyond the URL. No stated facts in the Name field that were left unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges size ('roughly 7-10 yrs experience combined') and is factual on clients. Seniority read present. No unhedged inferences. No em-dashes detected."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper'. Technically missing the created date per spec ('Web clipper, <created date>'). Minor gap but Source is not empty; flagged as a note, not a gate failure."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields with set_by values. Capabilities set_by jonathan (migration, correct). Known systemic null source_url gap on zero-state fields is documented in checklist as not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question about Capabilities expansion, terse and conditional. No questions for fields that already have non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Source field reads 'Web clipper' without the created date. Spec says 'Web clipper, <created date>'. Soft gap only; not a bounce. Scout should include the date on future clipper entries.",
+  "to": null
+}

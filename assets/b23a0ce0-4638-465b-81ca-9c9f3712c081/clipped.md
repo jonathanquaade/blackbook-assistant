@@ -6,3 +6,6 @@ AATB / Practice for Non-Industrial Robotics
 
 AATB / Practice for Non-Industrial Robotics
 
+# Archived page body (2026-07-05)
+
+Work

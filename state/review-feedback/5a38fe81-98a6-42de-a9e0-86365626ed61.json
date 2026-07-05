@@ -1,0 +1,110 @@
+{
+  "page_id": "5a38fe81-98a6-42de-a9e0-86365626ed61",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-05T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: If I Were Graphic Design 2014, Greetings from 2034 2015, ManifestFest/The Solemn poster 2014, Domestic Affairs 2015, NO EXIT installation 2016. No repeat-project filler."
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Multiple interior shots per project: 3 exhibition views of If I Were, 3 installation views of NO EXIT, 5 print-sheet shots of Greetings from 2034, poster + newspaper spread for Domestic Affairs. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Art practice (set_by: jonathan). Work shown is conceptual graphic design, print editions, video installation -- on-capability. Open Questions correctly asks Jonathan about adding Graphic design and Spatial & exhibition design (jonathan-owned field, right escalation)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png visually confirmed as designdisplacementgroup.com parked-domain page. site-16.png visually confirmed as the real instagram.com/designdisplacementgroup profile with correct avatar and bio. Both present and correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a project-named caption and a source link. All rejected entries are explicitly marked rejected with a reason."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Two Vimeo embeds (NO EXIT vimeo.com/200726408, Death of Graphic Design vimeo.com/180779197) each paired with a thumbnail preview image and a linked caption. Not embeds-only: 15 images also present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states website is a placeholder; scraper correctly sourced from press (People of Print, GDFS), Vimeo, and Tumblr. Thinness is documented and proportionate to a dormant collective's available archive."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio -- appropriate for a small multi-member hands-on creative collective."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, Email all set. LinkedIn: AI Notes states no LinkedIn page found for the collective -- acceptable for an org of this type."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Art practice tagged set_by: jonathan. Open Questions Q1 correctly asks Jonathan to expand to Graphic design and Spatial & exhibition design. Agent cannot unilaterally override a jonathan-owned Capabilities field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Netherlands / 11-40 / Studio all set. AI Notes explains Work Status: collective entity, not a freelancer or employed individual."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry: Autonomy is optional per checklist calibration (2026-06-21). AI Notes covers structure (16-member collective, Roosje Klap as founder). No field required."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all appropriate. No clip note contradicts them."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Migration entry with no clip note instructions. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Activity framed as 'appears to have peaked around 2014-2016'. No unverified assertions. Seniority/structure read included (Roosje Klap founder, ~16 members). No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source lists: migration entry, People of Print feature, Its Nice That coverage, Tumblr. Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records. set_by values are correct (jonathan for Capabilities, migration for baseline Name/Country/Size, agent for everything the scout set). source_url nulls are the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, conditional questions: Q1 Capabilities expansion (correct escalation for jonathan-owned field), Q2 dormancy / Rejected decision (Jonathan's call). Neither asks for a field that already has a non-zero-state value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Currently Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}
