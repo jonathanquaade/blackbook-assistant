@@ -1713,5 +1713,40 @@
     "ig_url": "https://www.instagram.com/universaleverything/",
     "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited). @universaleverything is confirmed handle. Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "8804b910-3d84-4a61-8aa0-7c75367d709c",
+    "name": "Studio Thomas",
+    "ig_url": "https://www.instagram.com/studio.thomas/",
+    "reason": "IG logged-out screenshot returned error page (throttled); context shot rejected; logged-in ig.py grab needed",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "aa619fbb-cc09-4a7b-ad73-bfee4dbe479d",
+    "name": "Studio Hyte",
+    "ig_url": "https://www.instagram.com/studiohyte/",
+    "reason": "IG served error page (Something went wrong) under logged-out rate-limiting; context shot rejected; need logged-in ig.py grab for profile screenshot",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "5db1a951-d52b-4c21-8db2-3e712644434d",
+    "name": "Studio Veronica Ditting",
+    "ig_url": "https://www.instagram.com/studioveronicaditting/",
+    "reason": "IG context shot returned error page (logged-out block); site portfolio is good but IG profile shot needed for context",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "be52faee-aa25-420a-b397-07ad10fa6eb3",
+    "name": "Syndicat",
+    "ig_url": "https://www.instagram.com/s.y.n.d.i.c.a.t/",
+    "reason": "IG context screenshot (site-12.png) returned 'Something went wrong' error page (headless Playwright blocked by Instagram rate-limiting). Need logged-in ig.py grab for @s.y.n.d.i.c.a.t profile context shot.",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "82bc74d2-54fe-410e-9903-b50aa4465f91",
+    "name": "Studio Katja Gretzinger",
+    "ig_url": "https://www.instagram.com/studiogretzinger/",
+    "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited logged-out). studiogretzinger confirmed handle (in entry). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-06"
   }
 ]

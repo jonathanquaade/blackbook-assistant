@@ -1,0 +1,112 @@
+{
+  "page_id": "aa619fbb-cc09-4a7b-ad73-bfee4dbe479d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 work images span 5 distinct named projects: Furtherfield (site-01..03), iiii Magazine (site-04..06), Arts Catalyst (site-07..09), People's Park Plinth (site-10..12), Live Art Sector Research/LADA (site-13..15). All visually distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project; each goes inside: Furtherfield shows the live website and interior project pages; iiii Magazine shows spreads and print artefacts; Arts Catalyst shows the web identity and interior screens; PPP shows a booklet cover and in-use photo; LADA shows the publication cover and interior spreads."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged Graphic design. All 15 work images show identity, editorial, and web graphic design output. Nothing off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-16.png) confirmed as studiohyte.com archive homepage. IG context shot (site-17.png) is rejected+documented+queued: manifest marks rejected with reason 'IG served error page under logged-out rate-limiting', entry is in state/ig-queue.json. Sanctioned exception applies; not a fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project (or 'Website') and a link to the source project page. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Capability is Graphic design (not sound/video). No video/audio work to embed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes ('queued to ig-queue.json') and ig-queue.json entry confirmed present. No other known blocked source."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized creative team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present. This is a dissolved studio with a public archive site; all four link fields are populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (Jonathan's tag, set_by jonathan). AI Notes and Open Question 2 flag that additional tags may apply; that escalation is correct given the provenance lock."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10. Work Status: Unknown. All set with documented reasoning: company dissolved May 2025, site is a retrospective archive. Multi-source resolution noted in AI Notes."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Entry is Type: Studio (org). Autonomy is OPTIONAL for org entries per calibration note 2026-06-21. AI Notes includes a seniority read (founding team, CSM graduates, taught at Goldsmiths/CSM). No Autonomy field required."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship. No clip note states otherwise."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper' with no embedded instruction text (no relationship facts, passcodes, or tagging direction stated). Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges uncertain claims ('appears to have ceased', 'suggesting additional tags may apply'). Verifiable facts (Companies House dissolution, client names, founder names) asserted plainly. Seniority read present (founding team, teaching roles). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source is 'Web clipper' with no created date appended. CLAUDE.md specifies 'Web clipper, <page created date>' for backfill/clipper entries. The date is missing.",
+      "fix": "Set Source to 'Web clipper, <page created date>' (retrieve the Notion page created_time and append it). Minor; does not block the entry from reaching Jonathan in v1."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by correctly assigned. source_url is null throughout, which is a known systemic tooling gap (not a gate failure per calibration note 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: (1) keep-or-reject given dissolution, (2) capabilities expansion. Both terse, non-redundant, and conditional on genuinely unresolvable agent judgment. Story nudge not applicable (no relationship indicators)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, awaiting this gate. Will be flipped to Needs Review on pass."
+    }
+  ],
+  "notes": "The Source field omits the page created date ('Web clipper' instead of 'Web clipper, YYYY-MM-DD'). This is a minor formatting miss, not a material completeness failure. Surfacing to Jonathan alongside the entry in v1 so he can calibrate whether this is a gate-worthy defect or a cosmetic one. All other checks pass cleanly. The dissolved-studio Open Question is correctly escalated to Jonathan; that is his call.",
+  "to": "scraper"
+}
