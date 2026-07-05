@@ -1,0 +1,111 @@
+{
+  "page_id": "d0a0c695-ee73-4df2-ae8e-299dc586e151",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: PAIST (3 images), Hello Klean (3), Lick (3), AKT (3), Artah (1). Each visually distinct brand."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "All four main projects show interior product/packaging shots, not just hero covers. AKT shows deodorant balm tubes from multiple angles; Hello Klean shows logotype, product-in-use, and 3D packaging forms; PAIST shows label typography detail, campaign portrait, and flatlay; Lick shows packaging, wordmark, and brand tagline slide."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 14 images show brand identity outputs (logotypes, packaging, brand systems) for named client projects. paist-02.png is a campaign portrait (art direction, not graphic design output) but it is part of a brand identity presentation and is acceptable within a full-brand programme context."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-02.png shows xx.studio website (tagline visible, sculptural X logo, studio branding confirms correct URL). IG context shot (site-03.png) rejected with documented reason (IG throttle error page on unauthenticated load), queued to state/ig-queue.json. Checklist throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have captions naming the project. One note: site-01.jpg (Artah) has link pointing to https://xx.studio/ (homepage) rather than a project-level URL. Accepted because xx.studio is a JS-rendered SPA with no stable deep-link URLs for projects; CDN source URL correctly recorded in manifest."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video work embedded or encountered in the sourced projects (Behance, BP+O, DatoCMS). Studio is an identity/packaging studio; video embeds not expected."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Feeld 403 block documented in scraper context. IG context shot throttle documented and queued. AI Notes mentions IG queue."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialist branding team, hands-on execution, not a large full-service agency."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website https://xx.studio/, Instagram https://www.instagram.com/twotimeselliott/, LinkedIn https://uk.linkedin.com/company/twotimeselliott, Email hello@xx.studio. All four link categories filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design present. Open Question 1 proposes adding Brand strategy, Identity systems, Web design -- appropriate, conditional, and correctly routed to Jonathan for approval since Capabilities is set_by jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10, Work Status = Studio. AI Notes names LinkedIn as source for size; Work Status = Studio is correct for an org entry."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy not applicable per calibration note in checklist. AI Notes states 'Studio-level entity (not an individual); Autonomy not applicable.' Correct."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are correct defaults with no contradicting evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relationship facts or judgment signals visible in the entry's clip note / Name field; Name is clean ('Two Times Elliott'). Nothing required --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes records verifiable facts (founding year, clients, Behance features). Size attributed to LinkedIn. No unhedged inferences. Seniority note ('Studio-level entity') is appropriate for an org entry."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; confirmed via xx.studio (canonical site, formerly 2xelliott.co.uk), LinkedIn company page, Instagram @twotimeselliott, Behance'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Open Questions programmatically. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, conditional (Capabilities is the only ambiguous field). No story nudge needed (Worked Together = Never, Familiarity = Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Alt-sourcing from Behance/BP+O/DatoCMS CDN accepted as legitimate given xx.studio is a JS-rendered SPA with no scrapable project images. Artah project has only 1 image (sourced from the studio's own CDN) vs 3 for other projects; link goes to homepage as no project-level SPA URL exists. Both are acceptable given documented constraints."
+}

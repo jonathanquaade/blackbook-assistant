@@ -1,0 +1,111 @@
+{
+  "page_id": "aed6b998-bd71-4529-8858-b1d3200d055c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images across ~10 named projects: Nike After Dark Tour, Panconesi, Samuel Snider, 0-93.Lab, Utah Jazz (desktop + mobile), Paume, Paris Internationale, Beats in Space, Cortege, Nike BB 2020, Nike FEFA19, Sheriff Projects. All visually distinct; no repeated angles of one project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Nike After Dark Tour shot shows multiple screen states (desktop + mobile). 0-93.Lab shows full website composition. Utah Jazz shows desktop and mobile views with content panels. Panconesi and Beats in Space show interior site pages, not hero banners only. Appropriate depth for web design portfolio."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Web design; the majority of images are website screenshots (Nike After Dark Tour, Panconesi, Samuel Snider, 0-93.Lab, Utah Jazz, Paume, Paris Internationale, Beats in Space, Cortege). The art-direction images (Nike BB 2020, Nike FEFA19) fit the 'Design and Art Direction Studio' framing and are supported by AI Notes. Sheriff Projects identity is borderline (Graphic design / Identity systems) but the open question correctly flags that Graphic design and Identity systems should be added; if those are added the full set is on-capability. No off-capability mismatch."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is confirmed as hervethomas.com website homepage (Thomas Herve, Design and Art Direction Studio, grid of project thumbnails). site-02.png is confirmed as an Instagram 'Something went wrong' error page, correctly marked rejected in manifest with rejection_reason documented, entry present in state/ig-queue.json with @thomasherve_studio handle confirmed. Sanctioned IG throttle exception applies per checklist note."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 work images have project-named captions (e.g. 'Nike After Dark Tour website, 2025', '0-93. Lab website and identity, 2026'). Site-01 is captioned 'Website'. Minor note: utah-jazz-desktop.png, utah-jazz-mobile.png, nike-bb-2020.jpg, and nike-fefa19.jpg link to hervethomas.com rather than a live project URL. The CLAUDE.md convention is link to the source project page; for these four the scraper used the portfolio site as the link. This is weak but not a fail since the images are clearly from his site portfolio and the caption names the project. Noted for the scraper to improve on future entries."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio embeds expected; Thomas Herve is a web/graphic designer, not a videographer or sound designer. No embedded video content identified on hervethomas.com that was skipped."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in manifest rejected entry and in ig-queue.json. No other unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. He runs a solo studio but is an individual operator, consistent with schema (Size = 1, Work Status = Studio)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.hervethomas.com/ (present). Instagram: https://www.instagram.com/thomasherve_studio/ (present, handle confirmed in ig-queue). LinkedIn: https://www.linkedin.com/in/thomas-herv%C3%A9-6921aa7b/ (present). Email: contact@hervethomas.com (present). All four findable links present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Web design tagged (Jonathan's original tag, set_by jonathan). Open Question 1 correctly asks about adding Graphic design and Identity systems. Appropriate handling: do not override Jonathan's tag, surface the question."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 1. Work Status: Studio. AI Notes cites site bio ('Design and Art Direction Studio') + LinkedIn title as confirming sources; IG handle aligns. Multi-source objective rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. Reasoning in AI Notes: runs studio alone, handles major-brand briefs solo, ECAL-trained. Grounded in observable work history."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the clip note, which contains no relationship or judgment signals."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clipped.md shows site copy only (studio description). No Jonathan instructions, relationship facts, or judgment values in the clip note. All site copy archived; nothing carried over as Jonathan's words."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged language ('suggesting formal design education', 'Running own studio independently for several years at minimum'). Sources cited inline. Seniority read included (ECAL-trained, solo major-brand briefs). Autonomy estimate included with reasoning. No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; hervethomas.com, instagram @thomasherve_studio, LinkedIn google snippet'. Filled and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. set_by values are correct: Capabilities set_by jonathan (his original tag), all agent-researched fields set_by agent. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One open question on Capabilities (conditional: Jonathan's original tag is Web design only, so asking about additions is appropriate). Terse and actionable. No question asked for fields that already have non-zero-state values. Story nudge not applicable (Worked Together is Never, Familiarity is Don't know them, Work With? is Unvetted)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "sheriff-projects-desktop.png exists in the assets directory but is absent from manifest.json and was not uploaded. Not a fail (the logo shot was uploaded instead), but worth a scraper note to keep assets/ and manifest in sync by either including or explicitly excluding files. Four manifest entries (utah-jazz-desktop, utah-jazz-mobile, nike-bb-2020, nike-fefa19) link back to hervethomas.com rather than a live client project URL; minor process gap, not a fail in v1.",
+  "to": "scraper"
+}
