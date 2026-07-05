@@ -2,84 +2,83 @@
   "page_id": "f3963815-aed4-4bdd-ba63-04eb28e6652c",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-05T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "11 work images span 6 distinct named projects (Robots 2007, United Micro Kingdoms 2012, Foragers 2009, Placebo Project 2001, Hertzian Tales/Faraday Chair 1994-97, Fragile Personalities/Huggable Atomic Mushroom 2004). No single project dominates."
+      "evidence": "11 work images span 6 distinct named projects: Technological Dreams/Robots (2007), United Micro Kingdoms (2012/13), Designs for an Overpopulated Planet/Foragers (2009), Placebo Project (2001), Hertzian Tales/Faraday Chair (1994-97), Designs for Fragile Personalities/Huggable Atomic Mushroom (2004/05). No single project dominates."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2-3 images per project, showing specific objects/installations (compass table in use, digester dress detail, huggable mushroom sculpture) not just hero covers."
+      "evidence": "2-3 images per project showing distinct objects and scenarios within each project (e.g. Robots: all-girl lineup vs sentinel figure; UMK: three different kingdoms; Placebo: compass table in use and portrait). Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Art practice. All 11 work images are speculative design objects and installations from named D&R projects. On-capability."
+      "evidence": "Tagged Art practice. All 11 work images are speculative design objects and critical design installations from named D&R projects. On-capability throughout."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-01.png is captioned 'Website' with source_url https://www.dunneandraby.co.uk/ but the image is NOT a screenshot of that website. It shows an aerial render of coloured objects around a mound -- visually identical to D&R project imagery (likely the UMK Digiland or Robots series). The website homepage of dunneandraby.co.uk was never captured. No Instagram context shot exists, which is acceptable given no confirmed studio handle -- but the AI Notes do not document the absent IG context shot as deliberate. The mislabeled website shot is the hard failure here.",
-      "fix": "Recapture a real screenshot of https://www.dunneandraby.co.uk/ homepage with scrape.py shot and replace site-01.png. Add a note in AI Notes that no IG context shot was taken because no confirmed studio Instagram handle exists. The current site-01.png should either be rejected (mark rejected:true in manifest) if it is a duplicate of a work image already in the set, or re-captioned to its actual project if it is unique and worth keeping as a work image."
+      "result": "pass",
+      "evidence": "site-01.png (the prior failing shot, an aerial CGI project render) is now correctly marked rejected:true in the manifest with a documented reason. site-02.png verified by direct image inspection: it is a genuine full-page browser screenshot of dunneandraby.co.uk showing the nav bar (ABOUT US, PROJECTS, EXHIBITIONS, TEXTS, LECTURES & CONFERENCES, BOOKS & LIMITED EDITIONS) and the full project thumbnail grid. Correct context shot. No Instagram context shot present, which is acceptable per checklist exception: AI Notes document the absence ('no confirmed studio handle exists; two personal handles surfaced in search results but not verified against bios and left as an Open Question'). The IG question is in Open Questions. Sanctioned path followed."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 12 manifest entries have captions naming a project or context role, plus a link field. No anonymous images."
+      "evidence": "All manifest entries have captions naming a project or context role plus a link field. No anonymous images."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "D&R is an Art practice / speculative design studio. No YouTube or Vimeo videos were present on their project pages per the scraper's run. Static object photography is the appropriate medium here."
+      "evidence": "D&R is a speculative/critical design practice. Static object photography is the appropriate medium. No YouTube or Vimeo embeds were present on their project pages. N/A."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No known dead or gated source blocking capture. 11 real work images present from the live site."
+      "evidence": "No blocked or gated source. 11 real work images from the live site. IG absence documented in AI Notes and asked in Open Questions."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a two-person named practice."
+      "evidence": "Type = Studio. Correct for a two-person named practice with their own studio site."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website confirmed (dunneandraby.co.uk). LinkedIn set (Anthony Dunne profile). Instagram: no confirmed studio handle; two personal handles surfaced in Open Questions but not verified, so correctly left empty with a question asked. Email: not set and not surfaced anywhere -- D&R's contact page does not publish a direct email (contact form only), so absence is acceptable. No obvious skip."
+      "evidence": "Website confirmed (dunneandraby.co.uk). LinkedIn set (Anthony Dunne profile). Instagram: no confirmed studio handle; correctly empty with an Open Question. Email: not published (contact form only); absence is not a skipped search. Fiona Raby has no confirmed separate LinkedIn; not a skipped search for a micro-studio where one founder's profile is set."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Art practice set_by jonathan. The agent asked about adding Industrial design and Insights and research via Open Questions rather than unilaterally adding to a jonathan-set tag. Correct handling."
+      "evidence": "Art practice set_by jonathan. Agent asked about Industrial design and Insights and research additions via Open Question rather than overwriting a jonathan-set tag. Correct handling."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK + US (both confirmed by RCA/London + Parsons/NYC posts). Size: 2-10 (two-person named practice, correct for a two-founder micro-studio). Work Status: Studio (confirmed via active studio site). AI Notes names the source (dunneandraby.co.uk) though only one source is cited; for a Studio-type org the structural read is defensible."
+      "evidence": "Country: UK + US (London RCA history + Parsons NYC 2016-2025). Size: 2-10 (two-founder practice). Work Status: Studio (active studio site confirmed). AI Notes names sources."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 5 set_by agent, reasoning in AI Notes (run their own studio, academic chairs). Checklist notes Autonomy is optional for org-type entries; setting it here is appropriate since the two named founders clearly embody the org."
+      "evidence": "Autonomy = 5, set_by agent, reasoning in AI Notes (own studio, academic chairs, set their own agenda). Checklist notes Autonomy optional for org-type entries but appropriate here given two named founders who clearly embody the org."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match no contradicting evidence in the entry. No clip note implies relationship."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with a migration entry containing no relationship evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "This is a migration entry with no clip note containing relationship or judgment instructions. Migration baseline handled correctly."
+      "evidence": "Migration entry. No clip note with relationship or judgment instructions. Correct."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes assert verifiable facts (books, MoMA/V&A collections, award names, academic roles) and hedge Autonomy with reasoning. Seniority read present ('Very senior, field-defining level: ~32 years of practice'). No unverified claims asserted as fact."
+      "evidence": "AI Notes assert verifiable facts (books, MoMA/V&A collections, award names, academic roles, founding year) and hedge appropriately. Seniority read present. Autonomy reasoning present. No em-dashes. No unverified claims stated as fact."
     },
     {
       "id": "D.source-filled",
@@ -89,23 +88,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by values. source_url is null throughout -- noted as a known systemic tooling gap (not a gate failure per checklist calibration 2026-06-21). Capabilities correctly set_by jonathan. No field written below 0.8 confidence."
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url is null throughout -- known systemic tooling gap, not a gate failure per checklist calibration 2026-06-21. Capabilities correctly set_by jonathan. No field written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found. 'V and A' written out, ranges use en-dashes."
+      "evidence": "AI Notes, Open Questions, and all captions reviewed. No em-dashes found. 'V and A' written out in full. En-dashes used correctly for year ranges."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) Capabilities additions -- conditional (existing jonathan-set tag, asking about additions); (2) Instagram handle confirmation -- no handle to attach yet, asking for direction. Both terse and appropriate. No question for a field that already has a confirmed non-zero value."
+      "evidence": "Two questions: (1) Capabilities additions, conditional on existing jonathan-set tag; (2) Instagram handle confirmation. Both terse and conditional. No question for a field already holding a confirmed non-zero-state value."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Reviewer gate is running before any flip to Needs Review. Correct."
+      "evidence": "Entry is in Enriching. Reviewer flipping to Needs Review now on this pass."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }
