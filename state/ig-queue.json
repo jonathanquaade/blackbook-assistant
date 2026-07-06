@@ -1804,5 +1804,26 @@
     "ig_url": "https://www.instagram.com/sthlmdesignlab/",
     "reason": "logged-out IG hit error/throttle",
     "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "bc14e86d-6809-40d8-a7df-7b102c7d5820",
+    "name": "Sawdust",
+    "ig_url": "https://www.instagram.com/sawduststudio/",
+    "reason": "IG context screenshot (site-16.png) returned Something went wrong error page (headless Playwright rate-limited logged out). site-16.png rejected. Need logged-in ig.py grab for @sawduststudio profile context shot.",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "c7b0f83c-8d26-48da-a1dd-8a891829605c",
+    "name": "Praline",
+    "ig_url": "https://www.instagram.com/designbypraline/",
+    "reason": "IG profile screenshot returned error page (Something went wrong) when captured logged-out; need logged-in ig.py grab for context shot",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "08a2a8f5-a79c-442b-8bfd-ca33ce723ec4",
+    "name": "Re",
+    "ig_url": "https://www.instagram.com/re.design.global/",
+    "reason": "Logged-out IG shows login wall; need ig.py logged-in grab for Instagram profile context shot",
+    "queued_at": "2026-07-06"
   }
 ]

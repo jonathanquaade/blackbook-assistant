@@ -29,9 +29,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-07-06T18:47:07",
+      "verified_at": "2026-07-06T18:59:45",
       "set_by": "agent"
     },
     "Work With?": {
@@ -91,9 +91,9 @@
       "set_by": "agent"
     },
     "Source": {
-      "value": "Web clipper",
+      "value": "Web clipper, 2020-11-01",
       "source_url": null,
-      "verified_at": "2026-07-06T18:48:43",
+      "verified_at": "2026-07-06T19:00:36",
       "set_by": "agent"
     },
     "Autonomy": {
@@ -103,15 +103,37 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Praline is a London graphic design studio founded in 2000 by David Tanguy (Central Saint Martins; previously Wolff Olins, Base Design, Intro). Team of 5 as of mid-2026: Tanguy as Creative Director plus four designers. Over 20 years specialising in branding, identity, editorial, exhibition, and digital work for cultural clients (Tate, Barbican, V&A, Hayward Gallery, Royal Academy, Harvard GSD). Work Status confirmed Studio. Autonomy 4: well-established small studio with a senior founder and a long track record of leading complex identity and culture programmes independently. Capabilities confirmed Graphic design; studio nav also covers Identity systems, Web design, and Brand strategy -- proposed via Open Questions. Sources: designbypraline.com/about, LinkedIn snippet, web search.",
+      "value": "Praline is a London graphic design studio founded in 2000 by David Tanguy (Central Saint Martins; previously Wolff Olins, Base Design, Intro). Team of 5 as of mid-2026: Tanguy as Creative Director plus four designers. Over 20 years specialising in branding, identity, editorial, exhibition, and digital work for cultural clients (Tate, Barbican, V&A, Hayward Gallery, Royal Academy, Harvard GSD). Work Status confirmed Studio. Autonomy 4: well-established small studio with a senior founder and a long track record of leading complex identity and culture programmes independently. Capabilities confirmed Graphic design; studio nav also covers Identity systems, Web design, and Brand strategy -- proposed via Open Questions. Sources: designbypraline.com/about, LinkedIn snippet, web search. Work captured: Warhol: The Textiles (Yale, 2023, book design, 4 images), De La Warr Pavilion (campaign design, 2023, 4 images), Immortalised/Historic England (exhibition graphics, 2018, 4 images), Into the Unknown/Barbican (campaign, 2021, 1 image), Yoshitomo Nara/Hayward Gallery (catalogue, 2025, 1 image). IG context shot (@designbypraline) returned error page logged-out; queued to ig-queue.json for logged-in ig.py grab.",
       "source_url": null,
-      "verified_at": "2026-07-06T18:49:00",
+      "verified_at": "2026-07-06T18:57:06",
       "set_by": "agent"
     },
     "Open Questions": {
       "value": "1. Capabilities: site nav shows Branding (brand strategy, naming, identity), Digital (websites, apps, motion), and Culture (books, exhibitions, wayfinding, editorial) -- add Identity systems, Brand strategy, and Web design alongside Graphic design?\n2. Rating?",
       "source_url": null,
       "verified_at": "2026-07-06T18:49:12",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "warhol-01.jpg",
+        "warhol-09.jpg",
+        "warhol-10.jpg",
+        "warhol-13.jpg",
+        "dlwp-01.jpg",
+        "dlwp-02.jpg",
+        "dlwp-03.jpg",
+        "dlwp-04.jpg",
+        "immortalised-01.jpg",
+        "immortalised-02.jpg",
+        "immortalised-03.jpg",
+        "immortalised-04.jpg",
+        "barbican-01.jpg",
+        "nara-01.jpg",
+        "site-01.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-06T18:56:17",
       "set_by": "agent"
     }
   }

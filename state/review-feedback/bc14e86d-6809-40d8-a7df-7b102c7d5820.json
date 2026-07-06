@@ -1,0 +1,111 @@
+{
+  "page_id": "bc14e86d-6809-40d8-a7df-7b102c7d5820",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: WIRED UK Display Typeface, NASA JPL Enceladus, Netflix The Sea Beast, Nike x LeBron James Typeface, Nike x Kobe Bryant Typeface"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project; sites 07-09 go inside The Sea Beast project (logo lockup, film application, Netflix UI context); site-04 is a full-length Enceladus poster (not a hero crop)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images show bespoke typefaces, lettering, and typographic systems; the Vimeo embed is a title design process video; fully matches Graphic design and the proposed Type design / Identity tags"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass-with-note",
+      "evidence": "Website context shot (site-15.png) confirmed correct: sawdust.works homepage. IG shot (site-16.png) rejected with documented reason (headless rate-limited error page) and queued to state/ig-queue.json. Sanctioned exception applies. HOWEVER: AI Notes do not mention the IG queue. The checklist exception requires the block to be documented in AI Notes. The manifest rejection_reason and ig-queue.json entry are both present, so the intent is met, but the AI Notes field should have a one-liner: 'IG context shot queued (throttle exception, see ig-queue.json).' Flagging for Jonathan but not bouncing on this alone in v1."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image has a caption and a link to its source project page in the manifest; no anonymous images"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass-with-note",
+      "evidence": "Vimeo embed present (vimeo.com/1435053193, Netflix The Sea Beast title design process). CLAUDE.md specifies downloading the oEmbed thumbnail_url as a dedicated preview image linked to the video; the manifest embed entry has no thumbnail_file or thumbnail_url field. Three Sea Beast project images (site-07, 08, 09) provide visual context for the project and the entry is not embeds-only. For a Graphic Design studio entry where the embed is supplementary (not the primary portfolio carrier), this is acceptable, but the pattern is not fully implemented. Not a hard fail."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle exception documented in manifest (rejection_reason) and ig-queue.json; the site content is comprehensive and the absence is not silent"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio; correct for a two-principal creative partnership doing hands-on execution"
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: sawdust.works; Instagram: instagram.com/sawduststudio; LinkedIn: uk.linkedin.com/company/sawdustworks; Email: hello@sawdust.works. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities currently carries only 'Graphic design' (set_by: jonathan from migration). Scout correctly identified the gap and raised Open Question 1 asking Jonathan to approve adding Type design, Identity systems, 3D & motion. This is the correct handling for a jonathan-owned field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK; Size: 2-10 (2 principals confirmed); Work Status: Studio. AI Notes names sources: sawdust.works, B&A Reps, Creative Boom. Multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio); Autonomy not required per checklist calibration note. AI Notes provides seniority read: 20 years operating, D&AD Wood Pencils, blue-chip client roster."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry with no clip note instructions. Name is clean."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert published verifiable facts (client roster, awards, founding year, location) without over-hedging. No first-hand claims about working style or deliverables. Appropriate for a well-documented studio with 20 years of press coverage. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; confirmed via sawdust.works, B&A Reps, Creative Boom, web search 2026-07-06'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance records with set_by values. null source_url is systemic tooling gap (tracked separately, not a gate failure per calibration note). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion (terse, conditional, the field has a jonathan-owned value so the question is appropriate). No story nudge needed (Familiarity and Worked Together are at zero-states)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer flips to Needs Review on this pass"
+    }
+  ],
+  "notes": "Two soft findings flagged for Jonathan's awareness but not bounced in v1: (1) AI Notes should include one line noting the IG context shot is queued (throttle exception) - the rejection is documented in the manifest but the checklist exception formally requires AI Notes documentation too. (2) The Vimeo embed has no dedicated oEmbed thumbnail image file per the CLAUDE.md pattern; the three Sea Beast project images serve as visual context and the entry is not embeds-only, so this is acceptable for a supplementary embed on a type studio entry.",
+  "to": "scraper"
+}

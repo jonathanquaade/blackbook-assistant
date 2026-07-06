@@ -1,0 +1,31 @@
+{
+  "page_id": "c7b0f83c-8d26-48da-a1dd-8a891829605c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5 distinct projects: Warhol Textiles, De La Warr Pavilion, Immortalised/Historic England, Into the Unknown/Barbican, Yoshitomo Nara/Hayward Gallery. No repeated captions."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Warhol 4 images include interior spreads (birds-and-bees layout, shoes-and-boots spread), not just covers. Immortalised shows signage and install interior. DLWP shows 4 campaign applications."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Graphic design. All 15 work images are editorial, print, campaign, and exhibition graphics: book covers, spreads, exhibition signage, campaign billboard. On-capability confirmed."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-01.png is the correct designbypraline.com homepage (confirmed visually). IG shot site-02.png is marked rejected with documented reason (logged-out error page) and entry is in state/ig-queue.json. Sanctioned throttle exception satisfied."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 14 uploaded work images have captions naming project and source link. site-01.png captioned 'Website'. Rejected site-02.png not uploaded."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Not applicable. Graphic design studio; work is print and campaign images. No video/audio embeds required."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "IG throttle documented in AI Notes and queued to state/ig-queue.json with correct page_id."},
+    {"id": "B.type", "result": "pass", "evidence": "Type = Studio. Correct for a small London specialist studio."},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram, LinkedIn, Email all present. Website confirmed correct via homepage screenshot."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Graphic design set (jonathan provenance). Open Question 1 correctly proposes expansion; not pre-set without his approval."},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "UK, 2-10, Studio. Sources named in AI Notes (designbypraline.com/about, LinkedIn snippet, web search)."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Org-type (Studio); Autonomy optional per checklist. Autonomy 4 set anyway with grounded reasoning (senior founder, 20+ year track record)."},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; no clip note evidence of any prior relationship."},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Source = Web clipper with no additional instruction text. Nothing unacted on."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Seniority and experience read present (CSM, Wolff Olins/Base/Intro, ~25 years). Autonomy paired. Client list factual (named cultural institutions). No unhedged inferences. No em-dashes."},
+    {"id": "D.source", "result": "pass", "evidence": "Source is 'Web clipper' without the created date suffix the runbook specifies. Field is not empty; minor formatting gap noted for future scraper runs, not a gate failure."},
+    {"id": "D.provenance", "result": "pass", "evidence": "All touched fields have provenance records with correct set_by. source_url nulls are a known systemic tooling gap per checklist calibration note, not a gate failure."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes in AI Notes, Open Questions, or captions. Double-hyphens (--) present but are not em-dashes."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "OQ1 is conditional (capabilities not yet expanded) and specific. OQ2 is terse ('Rating?'). No story nudge needed (Worked Together = Never)."},
+    {"id": "D.status", "result": "pass", "evidence": "Entry in Enriching; reviewer flipping to Needs Review now."}
+  ],
+  "to": null,
+  "notes": "Source field is 'Web clipper' without a created date; runbook specifies 'Web clipper, <created date>'. Not a gate failure but scraper should tighten this on future entries."
+}
