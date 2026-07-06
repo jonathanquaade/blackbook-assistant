@@ -1,92 +1,90 @@
 {
   "page_id": "c7de1d3a-44c8-417b-8a2b-aef4856a1fe2",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-06T00:00:00",
+  "reviewed_at": "2026-07-06T12:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct projects: BRAT/Charli XCX, Endless Summer Vacation/Miley Cyrus, Something To Tell You/HAIM, TOTAL/Martine Syms, i-D Magazine Issue 374. Captions are unique; no duplicate angles."
+      "evidence": "6 active project images span 5 distinct projects: BRAT/Charli XCX (proj-02), HAIM Something To Tell You (proj-06), KHY (site-06), Base Brand Guidelines (site-08), Supply and Demand x2 (web-01, web-02). No repeated angles."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: BRAT booklet spread (proj-03), Miley vinyl record detail (proj-04), HAIM interior OOH (proj-07), Martine Syms exhibition interior (proj-08), i-D Magazine interior spread (proj-11). Not hero-only."
+      "evidence": "Supply and Demand gets two shots showing different pages (director list + reel interior). HAIM shows the website in a browser mockup. Not hero-only across the set."
     },
     {
       "id": "A.on-capability",
       "result": "fail",
-      "evidence": "Capabilities are set_by jonathan as Frontend development (web) and Web design. Of 11 project images, only 1 (proj-06, HAIM website screenshot) is clearly on-capability. The remaining 10 are album packaging (BRAT vinyl, Miley ESV vinyl), exhibition identity/titles (Martine Syms TOTAL), OOH/campaign (HAIM bus shelter, Miley billboard), and print editorial (i-D Magazine cover + spread). Album packaging, exhibition work, and print are not Frontend development or Web design.",
-      "fix": "Capture 3+ additional built-website screenshots with live links from the Special Offer portfolio (e.g. the KHY site at khy.com, Martine Syms TOTAL microsite if one exists, or other web projects at specialoffer.inc/work). One named web project per image, captioned with project name, year, and source link. Alternatively: if Jonathan answers the Open Question and adds Creative direction, Identity systems, and Graphic design to Capabilities, the existing images become on-capability and no rescrape is needed -- but that answer must come first."
+      "evidence": "Three issues found on visual inspection. (1) proj-02.jpg is BRAT vinyl packaging -- off-capability for Web design / Frontend development (web). The scraper's claim that this one was 'kept honestly labeled' does not make it on-capability; it is still a FAIL image in a web-design entry. (2) web-01.jpg and web-02.jpg are from the specialoffer.inc/work/supplyanddemand case study (Sanity CDN URLs confirm authorship), but both images show video content playing fullscreen inside the site player, with the web UI barely visible -- web-01 shows a Pepsi video still with a narrow sidebar nav; web-02 shows a full-bleed crowd scene with only a 'Director's...' nav hint. These are weak specimens of web design: a viewer sees video frames, not the designed interface. (3) site-08.png (brand.base.org) has no case-study link on specialoffer.inc -- the manifest source_url goes directly to brand.base.org with no specialoffer.inc/work/base backing it. Attribution is unverifiable from the assets; this image may show a site Special Offer did not build.",
+      "fix": "Remove proj-02.jpg (vinyl packaging, off-capability). Replace web-01.jpg and web-02.jpg with Supply and Demand case-study images that show the website UI (navigation, layout, typography) rather than video-player stills -- the specialoffer.inc/work/supplyanddemand page has such images; scrape them directly from the Sanity CDN at full resolution. For site-08.png: verify the Base/brand.base.org attribution by finding a specialoffer.inc case study page or a press mention naming Special Offer as the builder; if unverifiable, remove it and replace with a confirmed web project (e.g. scrape 2-3 images from the specialoffer.inc/work/haim-something-to-tell-you or specialoffer.inc/work/supplyanddemand pages showing actual UI). After fixes, all active project images must show web UI from projects attributed to Special Offer via a case-study link."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot (site-04.png) verified live: fresh screenshot of specialoffer.inc matches exactly; the KHY hero is the studio's current featured client project, not a mislabel. IG context shot (site-05.png) is rejected + documented in manifest (Instagram rate-limit error) + queued to state/ig-queue.json -- meets the sanctioned IG throttle exception."
+      "evidence": "site-04.png: visually confirmed as specialoffer.inc homepage -- nav reads 'Special Offer, Inc.' with Projects/Portfolio links; KHY is the current featured client. Caption 'Website' is correct. IG context shot (site-05.png) is rejected + documented (Instagram rate-limit error under headless Playwright) + meets the sanctioned IG throttle exception per checklists/entry-review.md."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 11 project images carry named captions (project name, client, year) and source links pointing to specialoffer.inc case study pages."
+      "evidence": "All 6 active project images carry captions naming the project and client. Source links present. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video embeds in the manifest; no case study pages clearly offered embeddable video (Martine Syms TOTAL has video but it was captured as stills). No embeds-only situation; all entries have images."
+      "evidence": "No video embeds expected for a web design / frontend studio entry. Images carry the work. Not embeds-only."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in manifest and ai-queue. No other missing sources."
+      "evidence": "IG throttle documented in manifest (site-05.png rejected with reason) and queued in state/ig-queue.json. No other missing sources."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct -- small specialized team, hands-on creative execution, sub-10 staff."
+      "evidence": "Type: Studio. Correct -- small hands-on creative team, sub-10 staff, specialized execution."
     },
     {
       "id": "B.links-present",
-      "result": "fail",
-      "evidence": "Email field is empty with no documented search attempt in AI Notes or provenance. The runbook requires capturing public contact email during P1. specialoffer.inc and special-offer.studio both have a Contact section; a public email address or contact link is findable. Also: Website field is set to https://special-offer.studio/ but the context shot, manifest source URLs, and all project links use https://www.specialoffer.inc/ -- these are two separate domains for the same studio; the field should point to the canonical domain used in their own social and press links (specialoffer.inc).",
-      "fix": "Search for a public contact email on specialoffer.inc/contact or info@specialoffer.inc and set the Email field. Update Website to https://www.specialoffer.inc/ (the domain the studio uses across Instagram, press, and case study links) or add a note explaining which is canonical."
+      "result": "pass",
+      "evidence": "Website: https://www.specialoffer.inc/ (canonical domain, matches all case-study and press links). Instagram: https://www.instagram.com/specialoffer.inc/. LinkedIn: https://www.linkedin.com/company/specialofferinc. Email: office@specialoffer.inc. All four present. Prior fail resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities are set_by jonathan; the agent cannot change them. An Open Question correctly proposes expanding to Creative direction, Identity systems, and Graphic design. The flag is logged under A.on-capability -- images must match whichever capabilities are active."
+      "evidence": "Capabilities set_by jonathan: Frontend development (web), Web design. Open Question 1 correctly proposes expansion. Agent cannot change jonathan-locked capabilities."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: US. Size: 2-10 (AI Notes says 8 full-time staff, consistent). Work Status: Studio, confirmed via press and self-description in AI Notes."
+      "evidence": "Country: US. Size: 2-10 (AI Notes states 8 staff, consistent). Work Status: Studio, confirmed via press and self-description in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry; Autonomy is optional per calibration note. AI Notes names Brent David Freaney as founder, giving leadership context. No field required."
+      "evidence": "Studio entry; Autonomy optional per calibration note. Brent David Freaney named as founder in AI Notes."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship signal in the entry."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no relationship signal in the entry."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clip note text found (no clipped.md; Source is bare 'Web clipper'). Entry appears to be a minimal clipper entry with no instructions to parse."
+      "evidence": "clipped.md present in assets. No unacted instructions found. Source is 'Web clipper, 2020-11-01' as required."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes assert verifiable facts (Grammy win, client names, staff count from press). Work Status resolution sourced to press and self-description. No unhedged inferences found. No em-dashes."
+      "evidence": "AI Notes assert verifiable facts (Grammy win, client names, staff count from press). Work Status resolution sourced to press and self-description. No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
-      "result": "fail",
-      "evidence": "Source is 'Web clipper' only, missing the required creation date. Runbook: 'Web clipper, <page created date>'. The created_time can be retrieved from the Notion API and appended.",
-      "fix": "Append the page creation date to Source: e.g. 'Web clipper, 2026-MM-DD'."
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Prior fail resolved."
     },
     {
       "id": "D.provenance-written",
@@ -96,17 +94,17 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "Captions use ' -- ' (double hyphen, not U+2014 em-dash). AI Notes and Open Questions clean."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "One Open Question: proposes Capabilities expansion with named evidence. Conditional (not asking for fields already set). Terse."
+      "evidence": "One Open Question proposing Capabilities expansion with named evidence. Conditional. Terse."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching; reviewer has not flipped to Needs Review yet (correct; this is the gate)."
+      "evidence": "Entry is Enriching; reviewer has not flipped to Needs Review (correct; this is the gate)."
     }
   ],
   "to": "scraper"
