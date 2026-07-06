@@ -1,0 +1,117 @@
+{
+  "page_id": "6df031a8-463d-421b-be48-82315e78103e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T20:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 distinct named projects across identity, exhibition, book, poster, and web disciplines: HKW identity, Kunstmeile Hamburg, The Whole Earth, Ceremony/HKW, +ultra/Martin-Gropius-Bau, Frida Orupabo/Kunsthall Trondheim, CC:World, MIT Architecture Lecture Series, Teddy Cruz/Hatje Cantz, Sex Ecologies/MIT Press, Struggle of Memory, Vigeland Museum. Zero caption repeats."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Breadth-across-many-projects approach is appropriate for a studio portfolio of named identities. Images go inside projects: Ceremony shows environmental graphics in situ; +ultra shows an exhibition display table; Vigeland Museum shows the interior installation; CC:World shows branded video stills. One image per project is thin, but the spawn prompt flags this and it is acceptable for a studio with 20+ documented identities. No hero-only shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design. All 12 project images show graphic design output: identity systems, exhibition graphics, posters, book covers, editorial design. Vigeland Museum is captioned 'exhibition design and signage' though the image foregrounds museum sculptures rather than the signage itself; this is a mild framing issue (the actual graphic design output is partially obscured) but does not constitute an off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-08.png is node.international website homepage (shows Kunstmeile Hamburg project, site nav, correct domain). site-09.png is instagram.com/@nodeberlinoslo: Instagram logo, handle 'nodeberlinoslo', display name 'NODE Berlin Oslo' are all visible; cookie-consent modal obscures the grid but the profile identity is confirmed. Both are correctly captioned and the right pages.",
+      "note": "The website context shot (site-08.png) is visually indistinguishable from site-01.jpg (Kunstmeile Hamburg work image) at a glance; both show the same Kunstmeile Hamburg image. site-01.jpg caption is 'Kunstmeile Hamburg, corporate identity and web design' and its source_url is a Sanity CDN URL; site-08.png source_url is node.international/ and is flagged context_shot:true. Technically correct but this duplication is something Jonathan may notice."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active manifest entries have captions. All work images are tied to named projects with source links. Context shots are captioned 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design studio; no audio/video primary work. CC:World image shows video stills, which is contextually appropriate (design for a digital video series). No embedded video was required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. Rejected entries are documented in manifest with rejected:true. AI Notes explain Work Status sourcing."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per definition (small specialized team doing hands-on creative execution; two principals, ~4 people)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://node.international/ (confirmed, canonical). Instagram: https://www.instagram.com/nodeberlinoslo/ (confirmed, right studio). LinkedIn: https://www.linkedin.com/company/node-berlin-oslo (present). Email: mail@nodeberlin.com (present). All four link categories filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design is correct and well-evidenced. Scout left an Open Question asking Jonathan whether to add Identity systems, Spatial & exhibition design, Web design. This is the right call: those additions are visible on the site but the current tag (Graphic design) is accurate and expanding it is a judgment call for Jonathan. Capabilities field is provenance-stamped set_by:jonathan from migration, so the scout correctly proposed via Open Question rather than overwriting."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany + Norway (two offices, both confirmed). Size: 2-10 (approx. 4 per LinkedIn, two named principals). Work Status: Studio (two principals running their own studio; AI Notes cite node.international and LinkedIn company page as sources). Objective multi-source rule applied; sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio). Per checklist calibration 2026-06-21, Autonomy is optional for org entries. AI Notes include a seniority/leadership read (founded 2003, two principals, Gerrit Rietveld alumni, 20+ year track record). No Autonomy field required."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Clip note has no relationship facts or ratings. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence. All set_by:agent, appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md shows raw name 'Node Berlin' with no Jonathan annotation in the Name field. Name cleaned to 'NODE Berlin Oslo'. Source includes the redirect note. Nothing to act on beyond name cleanup."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Studio description hedged as 'Studio describes its approach as...' (their own claim). Client list is factual (verifiable from project pages). Size is hedged as 'Approx. 4 people per LinkedIn'. Work Status sourcing explicitly documented. Seniority/experience read included (founded 2003, 20+ years, named principals, Rietveld alumni). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; nodeberlin.com redirects to node.international'. Filled and informative."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all written fields. Capabilities correctly flagged set_by:jonathan (migration). source_url is null throughout, which is the known systemic tooling gap (noted in checklist calibration 2026-06-21) and is not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions, Source. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse and conditional: Capabilities expansion (identity systems, spatial/exhibition, web design). Correctly conditional; those fields are not already set. No story nudge needed (Worked Together is Never, Familiarity is Don't know them, Notes is empty)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "notes": [
+    "FLAGGED (not a fail): site-01.jpg (Kunstmeile Hamburg work image) and site-08.png (website context shot) show the same visual composition since the site's homepage happens to be displaying that project. They are correctly sourced differently in the manifest (CDN URL vs site root) and serve different purposes, but Jonathan will see two nearly identical images in the upload. Scraper could have chosen a different project for the context shot crop, but this does not constitute a rule violation.",
+    "FLAGGED (not a fail): vigeland-museum.jpg is captioned 'exhibition design and signage' but the image foregrounds museum plaster sculptures with signage panels visible in the background. The graphic design output (wayfinding/signage) is present but peripheral. One-image-per-project breadth limit means we cannot replace it with a tighter signage shot without removing the project entirely. Acceptable at this coverage level.",
+    "FLAGGED (not a fail): MIT Architecture Lecture Series image and The Whole Earth exhibition poster image each show the same design artifact twice (side by side). This is how the source photographs them; it is a photography/display convention, not a capture error or duplicate.",
+    "BREADTH NOTE (as requested by spawn prompt): 12 projects at ~1 image each is breadth-first. For a studio with 20+ documented identities this is reasonable to show range; Jonathan may want a second pass on 2-3 anchor projects (HKW identity, Vigeland, Ceremony) with 2-3 interior shots each. Not a gate failure; surface as an observation."
+  ],
+  "to": "scraper"
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "354da53e-aff5-4e0c-95e1-7baf6be13678",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects verified visually: LoL Esports/Riot Games, Grailed campaign, Robinhood x 23XI, Nike NYvsNY 2025, Possible Finance brand identity"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "LoL Esports shows 3 distinct creative executions (typographic poster, mobile UI application shot, playoffs poster with character illustration); all 5 projects show 3 interior shots each, not just cover images"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is brand/identity/graphic design: brand identity systems (LoL Esports, Possible Finance), campaign art direction (Grailed), livery + brand design (Robinhood x 23XI), event typography and graphics (Nike NYvsNY 2025)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png is thenewcompany.com homepage (Nike campaign hero with 'New' wordmark and tagline visible top-right). site-17.png is instagram.com/@thenewcompany verified profile (38.8K followers, correct grid, bio matches). Note: the website context shot is dominated by a Nike hero image; the studio branding is small text top-right but is legible and the URL is correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries have captions naming project and source link; no anonymous shots"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a brand/graphic design studio; no video-primary project pages identified that would require embeds. Still images are the correct medium for this capability."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present across 5 named projects; no absence to document"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio, set_by agent"
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present and verified. Public email: site is a JS-rendered Nuxt app; static fetch of homepage and /about returned no email; /contact returns 404. No email is published on the rendered site (render-mode fetch not attempted but /contact is 404). AI Notes does not document the email search. Minor note only: not a hard fail since studios frequently omit a public general email and the static evidence is consistent with none being published."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities set_by jonathan (migration baseline: Graphic design). Scout correctly did not overwrite a jonathan-set field; proposed additions via Open Question. Correct approach."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 11-40 (corrected from 2-10, sourced from LinkedIn ~26 staff 2024). Work Status: Studio. All set with agent reasoning in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry (Studio type). Per checklist calibration, Autonomy is optional for orgs; AI Notes includes a seniority/leadership read (founder-led, senior studio). Field correctly omitted."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never and Familiarity: Don't know them are not contradicted by any clip note or evidence in the entry"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was bare (raw name 'New Company'); cleaned to 'The New Company'. No relationship facts or stated judgments to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges staff count ('Approx 26 staff as of 2024 (LinkedIn)'). Verifiable facts stated plainly (founded 2018, founders named, client list). Seniority read present. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration)'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance present for all fields; set_by values correct (agent/migration). source_url null throughout -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "1 question on Capabilities expansion, terse, conditional (jonathan-set field, asking for his confirmation). No other questions needed."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipped to Needs Review by this reviewer on pass"
+    }
+  ],
+  "notes": "Clean entry. The website context shot (site-16.png) is dominated by a Nike campaign hero image with the studio branding as small text top-right -- technically correct but worth noting in case Jonathan finds it confusing at a glance. Email field empty: site is JS-rendered, /contact 404s, no public email discoverable without render mode; AI Notes does not explicitly document this gap but the evidence is consistent with no public email being available.",
+  "to": null
+}

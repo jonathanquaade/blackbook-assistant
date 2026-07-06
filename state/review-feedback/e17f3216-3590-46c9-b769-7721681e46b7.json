@@ -1,0 +1,111 @@
+{
+  "page_id": "e17f3216-3590-46c9-b769-7721681e46b7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 project images across 6 distinct named projects: Million Square/Arcade, Galecstasy/Stone Flute, Dynamic Movements, Only Connect Oslo 2024, nyMusikk, F37 Lara, plus 3 moving-image projects (Command X, Hello Again, Stephen Gill). Well beyond the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 images per music-packaging project (cover + detail/close-up), 3 images for Only Connect (poster, program spread, identity detail), 2 for nyMusikk, 2 for F37 Lara. Goes inside projects rather than hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All work is graphic design practice: music packaging, brand identity, festival print, typeface specimen, and motion/title sequences. F37 Lara is typography, which is within graphic design. Motion work is a real output of the studio (Cooper Hewitt permanent collection, AIGA). No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png verified: shows non-format.com homepage with 'Non Format' nav, Swix ski-pole project. site-02.png verified: shows instagram.com/non.format profile with 'non.format' handle, logo avatar, 6,053 followers, Norwegian/US bio. Both captions match content exactly."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 18 images (16 project + 2 context) have captions naming the project and a source link. Thumbnails carry the project name and the originating project-page link."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "3 Vimeo/YouTube embeds present for all 3 moving-image projects, each paired with a thumbnail preview image and a link to the non-format.com project page. Embed+thumbnail pattern correctly implemented. Restricted Solve Sundsbo Vimeo correctly excluded (403), device mockups from that project rejected in manifest."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Solve Sundsbo exclusion is documented (rejected entries in manifest with reason). No other unexplained absences. Site is live and accessible."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct; two-person practice, not an agency. Provenance set_by agent from primary sources."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: http://non-format.com/ (canonical). Instagram: https://www.instagram.com/non.format/ (verified via context shot: handle matches, bio matches). LinkedIn: https://www.linkedin.com/company/non-format. Email: info@non-format.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged, set_by jonathan (migration). Scout correctly did not overwrite jonathan's tag; instead asked in Open Question 1 whether to add Identity systems and Creative direction. That is the right handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Norway + USA (corrected from migration error Germany; confirmed via non-format.com/about/profile). Size: 2-10 (two founders; wider team via ANTI Oslo). Work Status: Studio, confirmed via site. AI Notes names sources: site + profile page. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. This is a Studio entry; field is optional per calibration note in checklist. Scout set it (founders fully operating as creative directors, 25+ years), which is appropriate for a two-founder studio where founders embody the org. Reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with absence of any relationship evidence in the clip or provenance."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "This is a migration entry; no clip note with relationship facts or instructions found. Scout parsed the name, corrected Country, and confirmed no clip-note judgment overrides were needed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (D&AD Yellow Pencil, Tokyo TDC, Cooper Hewitt collection, founded 2000, ANTI Oslo partnership since 2015). Seniority read present: 'Senior/director level, 25+ years of practice; founders operating fully as creative directors and executors.' No unverified inferences stated as fact. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; non-format.com/about/profile (profile + contact pages), Wikipedia, web search'. Verbosely sourced, not empty."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. Capabilities correctly set_by jonathan (not overwritten). null source_url on zero-state fields (Worked Together, Familiarity, Work With?) is the known systemic gap, not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, all manifest captions, and raw provenance JSON. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion proposal, conditional on Jonathan not having already tagged those (he has not). (2) Country correction confirmation. Both terse, actionable, conditional. No question asked for a field already at a non-zero value that Jonathan set. Story nudge not applicable (no relationship signals)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching (reviewer has not yet flipped it). Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "One minor observation not a gate failure: nymusikk-branding-021.jpg shows device mockups (iPhone screens) of the nyMusikk site rather than flat print/identity specimens. It is still the brand identity system and is on-capability; just not the deepest interior view of the brand work. Not bounced for this.",
+  "to": "scraper"
+}

@@ -1,0 +1,111 @@
+{
+  "page_id": "82e4e645-78fa-4e80-9c3a-81c4bd520f75",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images span 6 distinct projects: Barbican, Tate, Southbank Centre, West Kowloon/M+, Munchmuseet, Co-op. No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Barbican has exterior signage + interior foyer posters + Underground poster (three distinct contexts). Tate has building exterior + staff uniform. Southbank has poster system + exterior structure. West Kowloon has parent wordmark + two M+ building shots. Goes inside the systems, not only hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "North is tagged Graphic design; all 12 work images show identity systems and brand-in-use applications (logos, signage, poster systems, uniforms). Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-01.png (captioned 'Website') shows the contact/footer section of northdesign.co.uk, NOT the homepage. The domain is correct but the shot is the wrong page of the site. The checklist requires a screenshot of the real website HOMEPAGE. site-02.png (captioned 'Instagram profile') correctly shows the @northdesign_ instagram.com profile with 30.9k followers and the North bio.",
+      "fix": "Retake the website context shot targeting the northdesign.co.uk homepage (the work grid), not the contact/footer page. Re-run: scrape.py shot https://www.northdesign.co.uk/ --out assets/82e4e645-78fa-4e80-9c3a-81c4bd520f75 --caption 'Website' -- then delete or reject the current site-01.png and replace it."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions naming project + context. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "North is a brand identity studio (graphic design); no video/audio work to embed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "12 work images captured; no thin or unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialist team, designer-led, no account managers."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram (@northdesign_, verified correct profile in context shot), LinkedIn (linkedin.com/company/northdesign), Email (info@northdesign.co.uk) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set (jonathan). Scout proposes adding Identity systems and Brand strategy in Open Questions. Correct to ask rather than override a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 11-40, Work Status = Studio. AI Notes cites LinkedIn for size. Objective resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy N/A per calibration rule (org-type entries do not require the field). AI Notes records 'Autonomy N/A (studio entry)'. Sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all set_by agent. No clip note evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry originated via web clipper migration; no relationship facts or judgments were present in the clip note requiring --from-jonathan handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year, named clients, principals, Companies House registration). No unhedged inferences detected. Seniority read present ('senior creative director tier, ~30 years of practice'). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper; northdesign.co.uk, LinkedIn (linkedin.com/company/northdesign), Companies House (03969429), It's Nice That (Magnum rebrand article 2024-01-29)'. Specific and traceable."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have provenance records with set_by values. source_url is null across fields -- flagged as known systemic tooling gap per checklist calibration note (not a gate failure on its own)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, Source, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Capabilities expansion. Conditional (Capabilities is set, but the question proposes additions to a jonathan-set field, which is correct practice). No story nudge needed (Worked Together = Never, Familiarity = Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review only on a clean pass; held here on this FAIL."
+    }
+  ],
+  "to": "scraper"
+}
