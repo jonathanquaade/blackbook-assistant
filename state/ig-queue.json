@@ -1860,5 +1860,12 @@
     "ig_url": "https://www.instagram.com/querida__si/",
     "reason": "context shot returned IG login page (logged-out throttle); logged-in ig.py grab needed",
     "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "bc486f22-29de-42ad-bacb-4337658ccb4d",
+    "name": "Modem Studio",
+    "ig_url": "https://www.instagram.com/modem.studio/",
+    "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited logged out). Need logged-in ig.py grab for Instagram profile context shot.",
+    "queued_at": "2026-07-07"
   }
 ]
