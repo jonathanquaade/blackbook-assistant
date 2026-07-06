@@ -2,110 +2,109 @@
   "page_id": "2fd28d2d-e700-48c7-8bbc-c0300f4549d2",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-07T00:00:00",
-  "verdict": "fail",
-  "attempt": 2,
+  "verdict": "pass",
+  "attempt": 3,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 distinct projects: 50 Etats d'Amerique book, Fondation Louis Vuitton Family Festival, ARTE La Vie En Face, ARTE Summer Movies, Hermes x Brazilian Show Jumping, Tony's Chocolonely, MONSTERS 02."
+      "evidence": "7 distinct projects confirmed visually: 50 Etats d'Amerique book (site-02/03/06), Fondation Louis Vuitton Family Festival (site-14/15, site-05.gif), ARTE La Vie En Face (arte-lavieenface-01/02/03), ARTE Summer Movies (arte-summermovies-01), Hermes x Brazilian Show Jumping (hermes-01/02), Tony's Chocolonely (tonys-01), MONSTERS 02 (monsters-thumb). Each project is visually distinct."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: book cover + map spread + state interior (50 Etats); poster in context + logotype + animated GIF (Louis Vuitton); three animation stills (ARTE La Vie En Face)."
+      "evidence": "Goes inside projects: book cover and contents spread (50 Etats); poster in context + logotype + animated characters (Louis Vuitton); three animation stills (ARTE La Vie En Face). Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design and Illustration; captured work is book design, identity/poster, illustration-animation. Aligns with both tags and the proposed additions in Open Questions."
+      "evidence": "Tagged Graphic design and Illustration. Captured work is book design, identity/poster, illustration-animation, motion stills. All on-capability. Open Question proposes additional tags (3D & motion, Identity systems, Web design) for Jonathan to confirm."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-21.png (captured 2026-07-07) is from playgroundparis.com/references: shows the 'PLAYGROUND PARIS' studio name, the pink P logo, and the nav header (INSTAGRAM / REFERENCES / HELLO@PLAYGROUND.COOL). Unambiguously the correct site. The old wrong shots (site-12, site-18, site-19, site-20) are all marked rejected with documented reasons. site-13.png is instagram.com/playground.paris, confirmed: shows the @playground.paris profile with follower count, bio 'GRAPHIC DESIGN STUDIO / BY VALENTIN ADAM', and a grid of work. Pragmatic pass: the Cargo.site structure prevents a clean homepage hero; the studio identity header is visible and sufficient as a memory anchor."
+      "evidence": "site-21.png opened and verified: shows PLAYGROUND PARIS pink P logo and nav header reading 'PLAYGROUND PARIS / INSTAGRAM / REFERENCES / HELLO@PLAYGROUND.COOL' against white background. Unambiguously playgroundparis.com (Cargo.site structure, studio identity header visible). site-13.png opened and verified: instagram.com with @playground.paris handle, 24.5k followers, bio 'PLAYGROUND PARIS / GRAPHIC DESIGN STUDIO / BY VALENTIN ADAM', grid of colorful illustrated work. Both are correct. Four prior wrong/duplicate shots are marked rejected with documented reasons."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 live images have captions naming the project and source link. No anonymous shots."
+      "evidence": "All 16 live images (non-rejected) have captions naming the project and source link. No anonymous shots present."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Two Vimeo embeds (ARTE La Vie En Face teaser, MONSTERS 02), each paired with a thumbnail preview image and linked caption."
+      "evidence": "Two Vimeo embeds present: ARTE La Vie En Face teaser (vimeo.com/441963997) and MONSTERS 02 (vimeo.com/237452906). Each paired with a thumbnail preview image and linked caption."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained gaps; all rejected assets have documented reasons in manifest."
+      "evidence": "All rejected assets have documented reasons in manifest (duplicates, wrong shots, logo-only thumbnail). No unexplained thin content."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a named founder-led studio."
+      "evidence": "Type = Studio. Correct for a named founder-led studio (Playground Paris, founded 2011 by Valentin Adam)."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email in the entry is 'hello@playgroundparis.com', but the website context shot (site-21.png) clearly shows the nav contact as 'HELLO@PLAYGROUND.COOL'. These are different domains. The entry may have the wrong or stale email address.",
-      "fix": "Verify the canonical contact email by checking playgroundparis.com/references (or any page showing the nav) directly. If the site shows hello@playground.cool as the active address, update Email to hello@playground.cool via keeper.py set. If both exist and redirect, note it in AI Notes and keep whichever the site presents as primary."
+      "result": "pass",
+      "evidence": "Website: https://playgroundparis.com/ (confirmed). Instagram: https://www.instagram.com/playground.paris/ (confirmed correct profile via site-13.png). LinkedIn: https://www.linkedin.com/company/playgroundparis (present). Email: hello@playground.cool matches what site-21.png shows in the live nav ('HELLO@PLAYGROUND.COOL'). Previously failing item is now resolved."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design and Illustration tagged; Open Question asks Jonathan about adding 3D & motion, Identity systems, Web design."
+      "evidence": "Graphic design and Illustration tagged. Open Question asks Jonathan about adding 3D & motion, Identity systems, Web design. Appropriate to ask rather than assume."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country = France, Size = 2-10, Work Status = Studio; AI Notes documents sources and reasoning."
+      "evidence": "Country = France, Size = 2-10, Work Status = Studio. AI Notes documents the reasoning and hedges the size estimate ('conservative hedge; no explicit headcount confirmed')."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 4, set_by agent, with reasoning in AI Notes. Optional for Studio entry but present and grounded."
+      "evidence": "Autonomy = 4, set_by agent, with reasoning in AI Notes. Optional for Studio-type entry; present and grounded in 14+ years of founder-operated practice."
     },
     {
       "id": "C.no-judgment-contradictions",
       "result": "pass",
-      "evidence": "Zero-states are appropriate; no clip note signals a prior relationship."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are appropriate; no clip note signals a prior relationship."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clipped.md; Source reads 'Web clipper, 2020-11-01', consistent with a plain clipper entry."
+      "evidence": "No clipped.md content with instructions. Source reads 'Web clipper, 2020-11-01', consistent with a plain clipper entry."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges size ('conservative hedge; no explicit headcount confirmed'), Amsterdam note ('some sources mention'), and Work Status reasoning. Seniority/experience read present (14+ years, founder-operated). No unverified assertions stated as fact."
+      "evidence": "AI Notes hedges size, Amsterdam mention, and Work Status reasoning. Seniority/experience read present (14+ years, founder-operated, client roster named). Autonomy estimate grounded in work history. No unverified assertions stated as fact."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2020-11-01'. Previously failing; now correctly formatted."
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Correctly formatted."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "set_by values correct throughout; source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "set_by values correct throughout. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or any captions."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse Capabilities question; conditional (Capabilities are jonathan-set, appropriate to ask)."
+      "evidence": "One terse Capabilities question asking Jonathan to confirm or adjust proposed additional tags. Conditional (current tags are partial; question is about additions, not re-asking settled fields)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains in Enriching pending this gate pass."
+      "evidence": "Entry was in Enriching pending this gate. Flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": "jonathan"
 }

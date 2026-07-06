@@ -1,0 +1,111 @@
+{
+  "page_id": "a6e2e6b7-7b03-4099-8225-d63e5e527c16",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-07T00:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active images across 5+ distinct projects: PMU Annual Report (Trendlist), graphic illustration / HNY 2020 print / Andrevincent textile / Quarantine Flower Closeups / Fleurs Drapees (Flash Capsules), graphic research series (Tumblr). No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "PMU Annual Report has interior spread + cover; Fleurs Drapees has 2 images; Tumblr series has 3 research pieces. Goes inside projects, not only hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. Work shown: editorial (PMU annual report), graphic art/illustration, textile print, typographic print, graphic research series. All fit the tagged capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot: site-05.png is the Tumblr portfolio page (melanieimbert.tumblr.com), captioned honestly 'Tumblr portfolio (mmmimbert.com DNS down)'. Primary site is DNS-dead with no Wayback snapshots per AI Notes; Tumblr is the only live portfolio surface. IG: both @mmmimbert and @melanie.imbert shots are marked rejected in manifest, documented in AI Notes as unavailable logged-out, and queued to ig-queue.json. Checklist exception for IG is satisfied. NOTE: the website context shot is a Tumblr substitute, not a true homepage shot; flagged for Jonathan's calibration but treated as pass given documented dead site."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 active images have captions with project names and source links. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio work evident for this graphic designer. Embeds not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents: mmmimbert.com DNS-dead, no Wayback snapshots; @mmmimbert IG unavailable logged-out; both IG handles queued to ig-queue.json. Absence is documented, not silent."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. 'MMMIMBERT' operates as a named solo independent studio (set_by agent, sourced to mmmimbert.com/en/ while it was resolvable). Defensible per schema: solo named practice running as a studio entity."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass-with-note",
+      "evidence": "Website, Instagram URL, LinkedIn all present. Public email: not in entry and not mentioned in AI Notes. With the primary site DNS-dead, email may be unfindable, but the search is not documented. Minor gap; not called a hard fail given the dead-site constraint, but Jonathan should be aware the email field was not addressed."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Open Question 1 asks about Identity systems (appropriate -- work clearly includes brand programmes). Terse and correct."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "France (migration), Size 1, Freelance. AI Notes names sources: LinkedIn title 'Conceptrice Graphique Independante' + site self-description as independent studio. Objective multi-source rule satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4, set_by agent. Reasoning in AI Notes: 'runs all client work independently, no evidence of directing a team.' Paired with seniority read: 'Mid-career solo practitioner, concept-to-delivery across print and digital.'"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Work With? Unvetted, Familiarity Don't know them, Worked Together Never. No clip note or body text contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry. No instruction text in the Name field. No clip note judgment facts to extract. Source is set to 'Web clipper'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Uses 'approx. 2017', 'estimated at 4', 'may be a personal account'. Only verifiable facts (Trendlist feature, Flash Capsules publication, LinkedIn title) asserted directly. Seniority + Autonomy read present and grounded."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass-with-note",
+      "evidence": "Source is 'Web clipper' but lacks the created date ('Web clipper, YYYY-MM-DD' per CLAUDE.md). Minor gap on a migration entry; provenance records verified_at 2026-07-06. Not a hard fail but the date omission is a recurring pattern worth flagging."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and populated. Null source_url on several fields is the known tooling gap, per checklist calibration note (not a gate failure). set_by values are correct (agent/migration)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities / Identity systems. Terse, conditional (the field is tagged Graphic design only, so asking about an addition is correct). No story nudge needed (no relationship signals)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Two soft gaps for Jonathan's calibration (v1 learning signal, not hard fails): (1) Source field says 'Web clipper' without a created date -- common on migration entries but the spec calls for 'Web clipper, YYYY-MM-DD'; (2) public email not documented as searched or absent -- with the primary site DNS-dead this may be genuinely unfindable, but AI Notes should say so. The website context shot being a Tumblr substitute (not a real homepage shot) is pragmatically sound given the dead site and is labeled correctly; surfacing for Jonathan to confirm the pattern is acceptable.",
+  "to": "scraper"
+}

@@ -1,0 +1,86 @@
+{
+  "page_id": "e3d7f792-b82f-4410-aad3-4ed42c16a1d0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-07T00:15:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.work-images",
+      "result": "n/a",
+      "evidence": "Scout pass only; scraper has not run. Images absent is expected at this stage."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Confirmed correct for a small specialized creative execution team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (magpie-studio.com), Instagram (instagram.com/magpiestudio_/), LinkedIn (uk.linkedin.com/company/magpie-studio), Email (hello@magpie-studio.com). All four present and verified."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design retained (set_by jonathan, not touched). Open Question proposes Identity systems, Brand strategy, 3D & motion, Illustration, Spatial & exhibition design with evidence from site disciplines. Correct scout behaviour."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "UK confirmed, Size corrected from 2-10 to 11-40 with LinkedIn + RocketReach sources documented in AI Notes. Work Status = Studio appropriate for org entry."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy field is optional. Not set; AI Notes notes the studio-level entity."
+    },
+    {
+      "id": "B.name",
+      "result": "fail",
+      "evidence": "Name field reads 'Magpie' (migration stub). Scout confirmed full name is 'Magpie Studio' from magpie-studio.com and Companies House registration, but did not update the Name field.",
+      "fix": "Run: keeper.py set e3d7f792-b82f-4410-aad3-4ed42c16a1d0 via @file with Name = 'Magpie Studio'. The migration stub 'Magpie' is restructurable (set_by migration). Correct it before handing to the scraper."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source documents migration origin and verification sources. No relationship facts in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts: founders named, registration number, clients, awards. Size correction documented with sources. No unhedged inferences."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, migrated entry; studio confirmed via magpie-studio.com, LinkedIn, Companies House (no. 06415181)'. Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have set_by values. source_url null is the known systemic tooling gap (calibration note 2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions inspected. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, well-evidenced with specific site discipline confirmations. No non-zero-state fields asked about."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is Enriching; correct for a scout pass awaiting review."
+    }
+  ],
+  "to": "scout"
+}

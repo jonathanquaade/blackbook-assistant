@@ -1,0 +1,131 @@
+{
+  "page_id": "06f48baa-f2ae-42f3-a43a-afc622c86359",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-07T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects in manifest: BdC identity, Icones catalogue, Berline typeface, Hermes La Maison brochure, Diptyque Le Grand Tour, BdC wayfinding signage. Zero caption repeats across different projects.",
+      "fix": null
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Icones catalogue front+back+interior spread, Berline shown in 3 views (cover, weight specimens, applied), Hermes brochure cover + spread, Diptyque packaging spread, BdC signage in-situ. bdc-identity-01.jpg is wordmark-only but BdC is also represented by 2 in-situ signage shots so the project has real depth overall.",
+      "fix": null
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 13 work images are graphic design output: identity, editorial, type design specimens, wayfinding, packaging. Fully on-capability for Graphic design tag.",
+      "fix": null
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is a real les-graphiquants.fr homepage screenshot (verified visually: LES GRAPHIQUANTS wordmark, project grid, nav visible). site-02.png is an IG 'Something went wrong' error page, correctly marked rejected:true in manifest with reason documented, and entry is present in state/ig-queue.json. Sanctioned exception satisfied.",
+      "fix": null
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 work images have caption + source link in manifest. site-01.png captioned 'Website'. No anonymous images.",
+      "fix": null
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio practice is print/identity/type design. No video or audio work evident on site. Embeds not applicable.",
+      "fix": null
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest rejected_reason and in ig-queue.json. AI Notes states 'IG capture queued' context. No other source gaps.",
+      "fix": null
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialized team doing hands-on creative execution.",
+      "fix": null
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.les-graphiquants.fr/ (canonical root, verified). Instagram: https://www.instagram.com/lesgraphiquants/ (handle matches studio name, verified from site). LinkedIn: https://fr.linkedin.com/company/les-graphiquants. Email: hello@les-graphiquants.fr. All four present.",
+      "fix": null
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass-with-note",
+      "evidence": "Only 'Graphic design' tagged but AI Notes documents 10+ custom typefaces (Berline, Alsace, Lorraine) and full brand identity programmes (BdC, Diptyque). Identity systems and Type design are both clearly evidenced per TAXONOMY.md. Scout did not file an Open Question for the expansion. Reviewer filed it (OQ 1 now in Notion).",
+      "fix": "Open Question filed by reviewer: capabilities expansion to Identity systems + Type design for Jonathan to confirm."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: France (Paris, from site + Wikipedia). Size: 2-10 (self-described small team of ~4 core, LinkedIn 13 discrepancy resolved and explained in AI Notes). Work Status: Studio (own studio, self-directed). Sources named in AI Notes.",
+      "fix": null
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Org entry (Studio), so field is optional per calibration note. Scout set it with reasoning (self-directed studio, sets own creative direction). AI Notes includes seniority read: senior creative-director level founders.",
+      "fix": null
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Work With?: Unvetted, Familiarity: Don't know them. No clip note evidence of prior relationship. Zero-states are appropriate.",
+      "fix": null
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry. Source field confirms 'Web clipper' baseline. No relationship facts or instructions in clip note that were left unacted.",
+      "fix": null
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (clients, founding date, award, team size from stated sources) and hedges the size discrepancy explicitly. Seniority read present. No unsupported claims.",
+      "fix": null
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass-with-note",
+      "evidence": "Source = 'Web clipper' without the created date that CLAUDE.md calls for ('Web clipper, <created date>'). Migration entry provenance shows migrated_at 2026-06-12. Minor incompleteness; not a gate-level fail for a migration entry where created_time is not surfaced by keeper.py.",
+      "fix": null
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by values. null source_urls are the known systemic tooling gap (not a gate fail per calibration note). No field written below 0.8 confidence floor.",
+      "fix": null
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes checked: no em-dashes found. Captions checked: none. Open Question filed by reviewer: none.",
+      "fix": null
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Reviewer filed OQ 1 for Capabilities expansion (Identity systems + Type design). No other judgment fields require questions. Story nudge not applicable (Worked Together: Never + Familiarity: Don't know them, Notes empty but nudge only triggers when Worked Together/Familiarity leave zero-state).",
+      "fix": null
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, pending this gate. Reviewer will flip to Needs Review on pass.",
+      "fix": null
+    }
+  ],
+  "notes": "Capabilities gap (Identity systems + Type design clearly evidenced but not tagged) was the only substantive issue. Scout flagged it in AI Notes but did not file the question. Reviewer filed OQ 1 per spawn-prompt authority. All image checks pass: 6 distinct named projects, real depth inside each, correct context shots, sanctioned IG throttle exception properly documented and queued. Entry is otherwise complete and honest.",
+  "to": null
+}

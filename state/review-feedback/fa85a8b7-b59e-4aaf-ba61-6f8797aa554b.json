@@ -1,0 +1,113 @@
+{
+  "page_id": "fa85a8b7-b59e-4aaf-ba61-6f8797aa554b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-07T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 images across 7 distinct named projects: Unknown Untitled, Sixpack, Marine Dietrich, Paloma Pineda, Voir(e) Atelier, La Canaille, Human. No repeated-project angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 interiors per project (stationery + business card system, identity mark + textile pattern, business card + pixel system, book covers x2, woven label + brand card, vinyl cover + gatefold, journal cover + spread). Goes inside each project."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all 15 images are graphic design work: identity systems, record sleeves, editorial, print collateral. No off-capability captures."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-16.png (captioned 'Website') is a near-black JS loading screen showing only 'My name is ...' text - the site's JavaScript has not rendered. It is NOT a usable homepage screenshot. The IG context shot (site-17.png) is correctly rejected+documented+queued (IG throttle exception applies: rejected, documented in manifest, entry in state/ig-queue.json with reason 'IG profile screenshot returned error page (Something went wrong) - IG throttled'); that part passes.",
+      "fix": "Retake the website context shot with --render flag (scrape.py shot https://mynameis.fr --out assets/fa85a8b7-b59e-4aaf-ba61-6f8797aa554b --caption 'Website' --render) so the JS-rendered homepage loads before the screenshot is taken. Replace site-16.png and re-run keeper.py upload."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected image has a project name and source link in its caption."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio work found on mynameis.fr; all work is print/identity. No embed opportunity missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Three rejected homepage HTML-error shots documented as rejected in manifest. IG throttle documented and queued."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a 2-person Paris independent practice."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website: https://mynameis.fr (confirmed). Instagram: https://www.instagram.com/mynameis_studio/ (set). LinkedIn: https://fr.linkedin.com/company/mynameis-studio (set). Email: hello@mynameis.fr (set)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged; Open Question 1 asks Jonathan to confirm Identity systems + Web design additions. Correct approach per TAXONOMY guidance (unsure = more general tag + question)."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 2-10 (2-person studio). Work Status: Studio. AI Notes states sources (site + about page)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio type entry. Autonomy 5 set with reasoning in AI Notes ('own and direct the studio entirely'). Checklist note: for org-type entries, Autonomy is optional; this one is set with clear rationale (solo founding pair), which is fine."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note evidence contradicts these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relationship facts or judgments in clip note. Source records 'Web clipper; Name field read as clip note'. No instructions left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes state verifiable facts (founding year, founders, clients, awards). Seniority and Autonomy estimate are grounded in work history. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; Name field read as clip note'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url is null throughout - noted as a known systemic tooling gap per calibration note, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion (conditional, site evidence supports it); (2) Rating (terse, appropriate for a new studio entry). Neither asks about a field already set to a non-zero-state value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching. Will remain Enriching until the context-shot FAIL is fixed."
+    }
+  ],
+  "to": "scraper",
+  "summary": "One FAIL: website context shot (site-16.png) is a JS loading screen, not the rendered homepage. The mynameis.fr site requires JavaScript to load its project grid; the context shot captured before the JS executed, yielding a near-black screen with only 'My name is ...' text. All other checks pass: 7 distinct projects, good depth, on-capability, all links present, AI Notes clean, IG throttle handled correctly. Single fix required.",
+  "fix": "Retake the website context shot using the --render flag: scrape.py shot https://mynameis.fr --out assets/fa85a8b7-b59e-4aaf-ba61-6f8797aa554b --caption 'Website' --render. Wait for the JS grid to load before capturing. Replace site-16.png in the manifest and in Notion (body-reset + upload)."
+}
