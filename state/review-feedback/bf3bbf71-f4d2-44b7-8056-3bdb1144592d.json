@@ -1,0 +1,111 @@
+{
+  "page_id": "bf3bbf71-f4d2-44b7-8056-3bdb1144592d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images span 5 distinct named projects: Spots/Centre de la Photographie Geneve, La Main et le Gant/Musee Jenisch, Bibliotheque de Geneve exhibitions, Musee des beaux-arts La Chaux-de-Fonds posters, Swiss Literature Awards publications."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside each: exhibition installation views (Spots), book cover + spread (La Main et le Gant), spatial identity in situ (BGE), close poster detail (mbac), full series spread (Swiss Lit Awards)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all 5 projects are editorial design, poster design, exhibition identity, and publication design for Swiss cultural institutions. Correct match."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: from onlab.ch (source_url confirmed); shows the Onlab wordmark/logo at full crop -- the site appears to open on a hero logo panel. It is the real site, though the crop is tight. site-02.png: verified as instagram.com/onlabstudio -- shows the real profile with 16.4k followers, highlight reels (Posters/Identities/Conferences/Publications/Exhibitions/Digital/Music) and recognisable grid. Both captions and source_urls match. NOTE: the website context shot is logo-only rather than a layout overview; functional but thin as a memory anchor. Not a fail but worth flagging."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries have caption + link. Work images name the project and source anchor; context shots captioned Website and Instagram profile respectively."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a graphic design studio; no video/audio work embedded in captured projects. No embedded video was present or required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No IG-queue entry needed; logged-out context shot captured successfully. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per schema (small specialized team doing hands-on creative execution, 2-10 people)."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://onlab.ch/ | Instagram: https://www.instagram.com/onlabstudio/ (verified real profile) | LinkedIn: https://www.linkedin.com/company/onlab-studio | Email: info@onlab.ch. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged; Open Question 1 asks Jonathan to confirm additional tags (identity systems, exhibition/spatial design, typeface design, web design). Correct: scout held at the confirmed tag and asked about the rest."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Switzerland. Size: 2-10 (per LinkedIn, corroborated by AI Notes). Work Status: Studio (correct zero-state for a studio type entry). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type: Studio. Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes states founders have 15-20 years combined practice and positions the studio as senior/experienced."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the clipped.md, which contains only a truncated Name with no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md shows raw Name 'Onla' (truncated clip) with no instructions or relationship facts. Nothing to act on beyond cleaning the name."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (founders, founding year, Berlin office closure, client names) and hedges unverified estimates ('Positioned as senior', 'founders have 15-20 years combined practice'). No unsupported claims. Includes seniority/experience read as required."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migration import)'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by correctly populated for all fields. source_url is null throughout -- this is the known systemic tooling gap (noted in checklist 2026-06-21); not a gate failure. set_by values are correct: Capabilities is jonathan (migration baseline, correctly locked), all other agent-written fields are agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, and all captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse and conditional: asks about expanding Capabilities beyond Graphic design, which is a genuine ambiguity (site shows broader scope). No question asked for fields that already have non-zero values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "Website context shot (site-01.png) renders as a tight logo crop rather than a full homepage layout view -- the site likely opens on a full-bleed hero wordmark. Technically the correct URL and domain, but limited value as a memory anchor. Not a fail; flagging for Jonathan's awareness.",
+  "to": "scraper"
+}
