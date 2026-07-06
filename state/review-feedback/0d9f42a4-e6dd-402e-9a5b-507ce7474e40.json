@@ -1,0 +1,115 @@
+{
+  "page_id": "0d9f42a4-e6dd-402e-9a5b-507ce7474e40",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Active images span 7 distinct named projects: NS Dutch Railways, Dutch National Police, Van Gogh Museum, Utah Jazz (52nd season identity), Utah Jazz (brand in motion - separate project), North Sea Jazz, Instagram motion identity, OpenAI brand film, DEMO Festival. Well above the 3-project floor."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "NS: billboard (site-01) + train livery side (site-02) + train front (site-03). Police: car side (site-04) + car front (site-05) + motorcycle (site-06). North Sea Jazz: poster in situ (site-15) + t-shirt application (site-16) + flags (site-17). Utah Jazz: season identity hero (site-10) + arena court (site-13). Depth across systems, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design (with Open Question proposing expansion to identity/motion). All captured work is visual identity systems and motion - exactly on capability. Police livery, railway identity, museum branding, sports identity, motion reels all align."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-18.png, source https://studiodumbar.com): IS the studiodumbar.com homepage - 'STUDIO DUMBAR / DEPT' visible top-left; hero happened to show MSI/LoL project mid-cycle but the domain and studio branding are correct. Caption 'Website' is accurate. IG context shot (site-19.png, site-20.png): both rejected in manifest with documented reason (headless Playwright blocked by Instagram error page), entry queued to state/ig-queue.json. Meets the sanctioned exception: rejected+documented+queued."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry carries a named caption and a source link. Thumbnail files (thumb-*) each reference the Vimeo URL they preview. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present (OpenAI brand film, Utah Jazz music motion reel, North Sea Jazz motion identity reel, DEMO Festival 2022 aftermovie), each paired with a thumbnail preview image. Thumbnail files verified visually: Utah Jazz 'Take Note' title card, North Sea Jazz logo, DEMO Festival venue shot, OpenAI film sunset silhouette. Pattern correct."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in manifest (reject_reason) and in ig-queue.json. AI Notes references DEPT/STUDIO DUMBAR depth without gaps. No silent thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct - small specialized creative team within DEPT, hands-on execution."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://studiodumbar.com. Instagram: https://www.instagram.com/studiodumbar/ (studio handle, correct). LinkedIn: https://www.linkedin.com/company/studio-dumbar. Email: info@studiodumbar.com. All four link categories present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan per provenance - migration baseline). Open Question 1 proactively asks Jonathan to confirm expansion to identity systems, 3D and motion, brand strategy, sound design, creative technology. Correct handling: not overwriting jonathan's tag, but surfacing the gap."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Netherlands. Size: 11-40 (PitchBook/RocketReach cited; Open Question 2 asks Jonathan to confirm size change from 2-10). Work Status: Studio. All set with documented sources. Open Question on Size is appropriate given it changed from a prior value."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio-type entry; Autonomy is optional per checklist calibration (2026-06-21). AI Notes includes seniority read: Liza Enebeis as creative director since 2011, 47-year studio history. Sufficient for an org-type entry."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? Unvetted, Worked Together Never, Familiarity Don't know them) are correct - no clip note states any relationship. No contradiction."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field says 'Web clipper' - no clip note with relationship facts or instructions to parse. Name cleaned to 'Studio Dumbar'. Nothing outstanding."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes correctly hedges size ('approx 34-36 staff, 11-40 bracket per PitchBook/RocketReach'). Factual claims (founding year, acquisition, CD, awards, notable clients) are verifiable public record. No em-dashes. Seniority read present (Liza Enebeis, 2011)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper'. Entry pre-existed as a migration entry with no clip note date visible; 'Web clipper' is the correct baseline for this case. Acceptable."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by for all touched fields. Capabilities correctly marked set_by jonathan (migration). null source_url is a known systemic gap (not a gate failure per checklist calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "2 questions: (1) Capabilities expansion - appropriate because current tag is jonathan's and agent cannot overwrite without his confirmation; (2) Size confirmation - appropriate because value changed from a prior setting. Both conditional and terse. No story nudge needed (no relationship fields changed)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching. Reviewer will flip to Needs Review on verdict pass."
+    },
+    {
+      "id": "MISC.orphan-file",
+      "result": "note",
+      "evidence": "utah-jazz-extra.jpg exists in assets/0d9f42a4-e6dd-402e-9a5b-507ce7474e40/ but is not in manifest.json and not uploaded to Notion Images property. Not a gate failure (it is inert - no incorrect caption, not shown to Jonathan), but scraper should clean it up or add it to manifest with rejected:true to prevent confusion on future passes."
+    }
+  ],
+  "to": "scraper"
+}

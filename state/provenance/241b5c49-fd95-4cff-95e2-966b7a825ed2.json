@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://spassky-fischer.fr/",
+      "value": "https://spassky-fischer.fr/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,21 +23,21 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "France"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T22:59:59",
+      "verified_at": "2026-07-06T01:03:42",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-06T01:05:09",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/spasskyfischer/",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://fr.linkedin.com/company/spassky-fischer",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "contact@spassky-fischer.fr",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Migration entry; About page confirms founders Hugo Anglade, Thomas Petitjean, Antoine Stevenot; founded 2014",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:09",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Paris graphic design and art direction studio, founded 2014 by Hugo Anglade, Thomas Petitjean, and Antoine Stevenot; named after the 1972 chess championship. Studio-level operation with three founding partners plus collaborators (approx. 5-10 people). Works almost exclusively in the artistic and cultural field: major long-term clients include Mucem (2016-2023), MAC VAL, Festival d'Automne (since 2024), Paris Photo (since 2024), and Hermes (since 2019). Known for typographic rigour, flexible identity systems, and an approach influenced by Swiss concrete art. Existing Capabilities tag is Graphic design; the studio also produces substantial museum identity programmes that likely warrant Identity systems. Work Status confirmed Studio from their own About page, Eye Magazine feature, and It's Nice That profile.",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:38",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: add Identity systems? The studio builds full museum visual identity programmes (Mucem, MAC VAL, Paris Photo) alongside graphic design work, which reads as Identity systems territory per TAXONOMY.md.",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:51",
+      "set_by": "agent"
     }
   }
 }

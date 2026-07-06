@@ -15,18 +15,20 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "2\u201310",
+      "value": "41\u2013100",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "UK"
+        "UK",
+        "Italy",
+        "China"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -49,9 +51,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-06T01:05:14",
       "set_by": "agent"
     },
     "Name": {
@@ -59,6 +61,54 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://www.spaceagency-design.com/",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/spaceagencydesign/",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://uk.linkedin.com/company/spaceagency-london",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "info@spaceagency-design.com",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Migration entry; web research 2026-07-06",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:14",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Spaceagency is a London-founded experiential design and research studio (est. 2007) led by co-founders Sarah Manning (Strategy Director, ex-UN, ex-Silicon Valley UI) and Peter Feldmann (Design Director, ex-OMA, ex-UNStudio). Specialisms include wayfinding, environmental graphics, placemaking, and experience masterplanning across airports, museums, retail, and urban public realm at scale. Offices in London, Milan, and Guangzhou; approximately 40-48 staff per site and LinkedIn. Capabilities field is set_by jonathan as Graphic design only, but visible work strongly suggests Spatial and exhibition design and Identity systems are primary disciplines; raised as Open Question.",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:05:47",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: migration has this as Graphic design, but visible work is primarily wayfinding, environmental graphics, and spatial design. Should Spatial and exhibition design and Identity systems be added?",
+      "source_url": null,
+      "verified_at": "2026-07-06T01:06:00",
+      "set_by": "agent"
     }
   }
 }
