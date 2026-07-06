@@ -1,0 +1,110 @@
+{
+  "page_id": "8e022aef-dfc4-48b4-a768-ffac8a1ccb4d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "10 active work images span 7 distinct projects: Migrant Journal (4 images across issues 1-4 and No.5), Cosmogrammatics podcast identity, Not At Your Service publication, Civic identity, HKB Infotag poster, Klassensprachen exhibition identity, Kunstverein poster. Note: Migrant Journal takes 4 of 10 slots (40%) which is heavy but shows genuine depth (two sub-issues, covers and interiors). Borderline but passes."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside Migrant Journal (interior spreads site-04 and site-07), shows Not At Your Service publication open (site-09), Cosmogrammatics grid detail (site-08). Not only hero/cover shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capabilities: Graphic design. All 10 work images are graphic design: editorial publication design, poster design, visual identity. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-20.png) confirmed as offshorestudio.ch homepage showing OFFSHORE name, founders, Zurich address, and nav. Instagram context shot (site-21.png) is a confirmed blank white page (IG blocked headless Playwright), correctly marked rejected in manifest with reason, queued to state/ig-queue.json. Sanctioned exception applies: block documented, rejected flagged, queued. Not a fail."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image has a named-project caption and a source link. Context shot site-20 captioned 'Website' with link to offshorestudio.ch."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Offshore is a graphic design / print studio; no video or audio work to embed. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explains LinkedIn not found after two searches. IG throttle block explained in manifest (site-21 rejected reason) and queued. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: two-person hands-on creative execution studio, not agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://offshorestudio.ch (confirmed active, context shot matches). Instagram: https://www.instagram.com/offshore________/ (confirmed from studio site per AI Notes). Email: heaven@offshorestudio.ch (set). LinkedIn: AI Notes states not found after two searches; this is the expected outcome for a small Swiss studio (plausible absence). No red flags that an obvious search was skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design. Correct for an editorial/publication/poster studio. Open Question 1 asks Jonathan whether to add Identity systems given the Europalia identity work. Appropriate: the question is conditional and specific rather than a gap."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Switzerland (confirmed from studio address in website context shot: CH-8004 Zurich). Size: 2-10 (two known founders; provenance set_by migration, consistent with current evidence). Work Status: Studio. AI Notes names sources (studio site, AGI profile). Meets objective multi-source rule."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy field: 5 (set_by agent). This is a Studio type entry; per calibration note in checklist, Autonomy is optional for org-type entries. It is set here (appropriate because the studio's identity is inseparable from its two founders) and the reasoning is in AI Notes. No issue."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts these zero-states. Capabilities set_by jonathan (migration) is carried forward and not overwritten, consistent with contract."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry originated as a web clipper entry with no apparent relationship note or special instructions in the clipped name. Source field captures 'Web clipper'. Nothing in clip note was left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged language ('~2016', 'positioned as', 'confirmed from'). Seniority read is present and grounded (own studio, national awards, academic position). Autonomy 5 justified. No unsupported assertions. No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper'. Acceptable for a web-clipper-originated entry. Note: no created date appended (e.g. 'Web clipper, 2026-06-12'); this is minor and consistent with how other entries in this batch have been handled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "provenance file present with set_by values for all touched fields. null source_url values are the known systemic tooling gap (per checklist calibration note) and are not a gate failure. set_by values are correct: migration fields retain migration, agent-set fields are agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions checked programmatically: no em-dashes found. '--' used in Open Question 1 (double hyphen) is not an em-dash."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question asking about adding Identity systems to Capabilities given the Europalia identity. Terse, conditional (Capabilities currently only Graphic design), specific. Story nudge: Worked Together is Never, Familiarity is Don't know them, so no story nudge due. No redundant questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching prior to this gate pass. Reviewer is the only agent that flips to Needs Review, consistent with the pipeline contract."
+    }
+  ],
+  "to": "scraper"
+}
