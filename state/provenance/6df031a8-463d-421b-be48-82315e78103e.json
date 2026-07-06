@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "http://nodeberlin.com/",
+      "value": "https://node.international/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,16 +23,17 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "Germany"
+        "Germany",
+        "Norway"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -55,16 +56,58 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-06T19:28:02",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Node Berlin",
+      "value": "NODE Berlin Oslo",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-06T19:28:11",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/nodeberlinoslo/",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/node-berlin-oslo",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "mail@nodeberlin.com",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper; nodeberlin.com redirects to node.international",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "NODE Berlin Oslo is a graphic design studio founded in 2003 by Anders Hofgaard (NO) and Serge Rompza (DE), both Gerrit Rietveld Academy alumni. Two offices: Lindenstr. 90, Berlin (Rompza) and Mollergata 34B, Oslo (Hofgaard). Approx. 4 people per LinkedIn. Discipline focus: print, corporate identity, editorial, exhibition/environmental graphics, and web. Client base is strongly art/culture-institutional: Haus der Kulturen der Welt, Munch Museum, Astrup Fearnley, MIT Press, OMA, Diller Scofidio + Renfro, UN Environment Programme, Bundesministerium der Finanzen. Studio describes its approach as research-driven and context-sensitive rather than style-driven. Active teaching/workshop programme at European art academies (KHiO Oslo, UdK Berlin). Work Status sourced from node.international (studio entity, two principals) and LinkedIn company page. No individual Autonomy field set; org-type entry.",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:28:02",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: site shows identity systems, editorial/book design, exhibition/environmental graphics, and web design alongside Graphic design. Add Identity systems, Spatial & exhibition design, Web design?",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:28:19",
+      "set_by": "agent"
     }
   }
 }

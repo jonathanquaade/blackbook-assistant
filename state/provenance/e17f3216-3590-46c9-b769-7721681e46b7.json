@@ -4,9 +4,9 @@
   "fields": {
     "Website": {
       "value": "http://non-format.com/",
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -22,17 +22,18 @@
     },
     "Size": {
       "value": "2\u201310",
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "Germany"
+        "Norway",
+        "USA"
       ],
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -55,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
-      "source_url": null,
-      "verified_at": null,
+      "value": "Studio",
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +66,54 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/non.format/",
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/non-format",
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "info@non-format.com",
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Migration entry; non-format.com/about/profile (profile + contact pages), Wikipedia, web search",
+      "source_url": "non-format.com/about/profile; non-format.com/about/contact; Wikipedia; linkedin.com/company/non-format",
+      "verified_at": "2026-07-06T19:29:13",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Non-Format is a two-person graphic design and creative direction studio founded in 2000 by Kjell Ekhorn (Norwegian, b.1965, based Oslo) and Jon Forss (British, b.1966, based St. Paul, Minnesota). Work spans typography, print and editorial, music packaging, posters, brand development, moving image and image-making. Significant award history: D&AD Yellow Pencil (2007), two Tokyo TDC Prizes, New York ADC Gold; work in the permanent collection of the Smithsonian Cooper Hewitt. Since 2015 they have partnered with the Norwegian agency ANTI Oslo and run projects through that structure. Senior/director level, 25+ years of practice; founders operating fully as creative directors and executors. Work Status: Studio (their own practice, confirmed via site). Country set to Norway + USA (site states both studios explicitly); prior entry listed Germany which appears to be a migration error. Capabilities currently tagged Graphic design by Jonathan; their practice clearly also includes Identity systems and Creative direction from published project history, flagged in Open Questions.",
+      "source_url": "non-format.com/about/profile; Wikipedia; web search",
+      "verified_at": "2026-07-06T19:29:35",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": "non-format.com/about/profile; 25+ years practice, founder-directors",
+      "verified_at": "2026-07-06T19:29:51",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: site shows Typography, Print & Editorial, Music Packaging, Brand Development, Moving Image, Image-making. Suggest adding Identity systems and Creative direction alongside Graphic design. Confirm?\n2. Country was listed as Germany in migration; corrected to Norway + USA based on their profile page. Please confirm.",
+      "source_url": null,
+      "verified_at": "2026-07-06T19:30:02",
+      "set_by": "agent"
     }
   }
 }
