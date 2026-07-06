@@ -1,19 +1,19 @@
 {
   "page_id": "2fd28d2d-e700-48c7-8bbc-c0300f4549d2",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-06T00:00:00",
+  "reviewed_at": "2026-07-07T00:00:00",
   "verdict": "fail",
-  "attempt": 1,
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 distinct projects represented: 50 Etats d'Amerique book, Fondation Louis Vuitton Family Festival, ARTE La Vie En Face, ARTE Summer Movies, Hermes x Brazilian Show Jumping, Tony's Chocolonely, MONSTERS 02."
+      "evidence": "7 distinct projects: 50 Etats d'Amerique book, Fondation Louis Vuitton Family Festival, ARTE La Vie En Face, ARTE Summer Movies, Hermes x Brazilian Show Jumping, Tony's Chocolonely, MONSTERS 02."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: book cover + map spread + state interior for 50 Etats; poster in context + logotype + animated GIF for Louis Vuitton; three animation stills for ARTE La Vie En Face."
+      "evidence": "Goes inside projects: book cover + map spread + state interior (50 Etats); poster in context + logotype + animated GIF (Louis Vuitton); three animation stills (ARTE La Vie En Face)."
     },
     {
       "id": "A.on-capability",
@@ -22,19 +22,18 @@
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-12.png is captioned 'Website' but the image is not a homepage screenshot. It shows the playgroundparis.com Cargo.site page scrolled deep into the '50 Etats d'Amerique' project (Connecticut spread fills the viewport); only the site nav header is visible at the top. The homepage/portfolio grid is never shown.",
-      "fix": "Retake the Website context shot: load https://playgroundparis.com/ and capture the landing view (the portfolio grid or studio intro), not a scrolled project page. Use scrape.py shot https://playgroundparis.com/ --out assets/2fd28d2d-e700-48c7-8bbc-c0300f4549d2 --caption 'Website', replace site-12.png, and re-upload."
+      "result": "pass",
+      "evidence": "site-21.png (captured 2026-07-07) is from playgroundparis.com/references: shows the 'PLAYGROUND PARIS' studio name, the pink P logo, and the nav header (INSTAGRAM / REFERENCES / HELLO@PLAYGROUND.COOL). Unambiguously the correct site. The old wrong shots (site-12, site-18, site-19, site-20) are all marked rejected with documented reasons. site-13.png is instagram.com/playground.paris, confirmed: shows the @playground.paris profile with follower count, bio 'GRAPHIC DESIGN STUDIO / BY VALENTIN ADAM', and a grid of work. Pragmatic pass: the Cargo.site structure prevents a clean homepage hero; the studio identity header is visible and sufficient as a memory anchor."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 uploaded images have captions naming the project and source."
+      "evidence": "All 16 live images have captions naming the project and source link. No anonymous shots."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Two Vimeo embeds present (ARTE La Vie En Face teaser, MONSTERS 02) each paired with a thumbnail preview image and linked caption."
+      "evidence": "Two Vimeo embeds (ARTE La Vie En Face teaser, MONSTERS 02), each paired with a thumbnail preview image and linked caption."
     },
     {
       "id": "A.absence-explained",
@@ -44,48 +43,48 @@
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a named founder-led studio operating under a studio identity."
+      "evidence": "Type = Studio. Correct for a named founder-led studio."
     },
     {
       "id": "B.all-findable-links",
-      "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, and Email all present and populated."
+      "result": "fail",
+      "evidence": "Email in the entry is 'hello@playgroundparis.com', but the website context shot (site-21.png) clearly shows the nav contact as 'HELLO@PLAYGROUND.COOL'. These are different domains. The entry may have the wrong or stale email address.",
+      "fix": "Verify the canonical contact email by checking playgroundparis.com/references (or any page showing the nav) directly. If the site shows hello@playground.cool as the active address, update Email to hello@playground.cool via keeper.py set. If both exist and redirect, note it in AI Notes and keep whichever the site presents as primary."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design and Illustration tagged per TAXONOMY.md; Open Question asks Jonathan about adding 3D & motion, Identity systems, Web design (correctly deferred to him since Capabilities are set_by jonathan)."
+      "evidence": "Graphic design and Illustration tagged; Open Question asks Jonathan about adding 3D & motion, Identity systems, Web design."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country = France, Size = 2-10, Work Status = Studio; AI Notes documents the sources and reasoning for each."
+      "evidence": "Country = France, Size = 2-10, Work Status = Studio; AI Notes documents sources and reasoning."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy = 4, set_by agent, with reasoning in AI Notes. Studio entry; optional per calibration note, but present and grounded."
+      "evidence": "Autonomy = 4, set_by agent, with reasoning in AI Notes. Optional for Studio entry but present and grounded."
     },
     {
       "id": "C.no-judgment-contradictions",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; no clip note signals a relationship or prior contact."
+      "evidence": "Zero-states are appropriate; no clip note signals a prior relationship."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clipped.md found; Source reads 'Web clipper', consistent with a plain web-clipper entry with no special instructions in the Name field."
+      "evidence": "No clipped.md; Source reads 'Web clipper, 2020-11-01', consistent with a plain clipper entry."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges size ('conservative hedge; no explicit headcount'), Amsterdam note ('some sources mention'), and Work Status reasoning. Seniority/experience read present (14+ years, founder-operated). No unverified assertions stated as fact."
+      "evidence": "AI Notes hedges size ('conservative hedge; no explicit headcount confirmed'), Amsterdam note ('some sources mention'), and Work Status reasoning. Seniority/experience read present (14+ years, founder-operated). No unverified assertions stated as fact."
     },
     {
       "id": "D.source-filled",
-      "result": "fail",
-      "evidence": "Source = 'Web clipper' with no creation date. The runbook requires 'Web clipper, <page created date>' for clipper entries. The date is missing.",
-      "fix": "Look up the page created_time via the API (keeper.py get returns created_time) and update Source to 'Web clipper, YYYY-MM-DD' via keeper.py set using a @file payload."
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Previously failing; now correctly formatted."
     },
     {
       "id": "D.provenance",
@@ -100,12 +99,12 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse Capabilities question; conditional (Capabilities field currently has jonathan-set values, appropriate to ask). No fields with existing non-zero values asked about unnecessarily."
+      "evidence": "One terse Capabilities question; conditional (Capabilities are jonathan-set, appropriate to ask)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still in Enriching, correct pre-gate state."
+      "evidence": "Entry remains in Enriching pending this gate pass."
     }
   ],
   "to": "scraper"

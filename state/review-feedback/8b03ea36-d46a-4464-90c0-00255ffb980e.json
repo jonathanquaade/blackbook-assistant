@@ -1,0 +1,111 @@
+{
+  "page_id": "8b03ea36-d46a-4464-90c0-00255ffb980e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-07T00:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 non-rejected work images span 5 distinct named projects: Museum of London (2 images), Beefeater (3), D&AD Awards (3), London Sinfonietta (3), Almeida Theatre (2). No caption repeats from the same project dominate; all 5 are visually distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Museum of London shows outdoor campaign installation + postcard execution; Beefeater shows branded holdall and bucket hat applications; D&AD shows 3D identity figure and poster; London Sinfonietta shows logotype system and vinyl mockup; Almeida shows brand-in-use typography on campaign imagery. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design. All 13 work images show branding, identity and campaign work. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png: confirmed nbstudio.co.uk homepage (NB nav bar, 'We are NB, a branding agency' text visible). site-14.png: confirmed instagram.com/nbstudio_london (Instagram UI, handle nbstudio_london, NB Studio bio, 18.4K followers). Both visually verified. Neither is rejected; both are present."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a link. Context shots are captioned 'Website' and 'Instagram profile' with matching source links. All work images carry project name plus source URL."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "NB Studio is a graphic design and branding studio; no video/audio output is expected. No embedded video was skipped. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "2 rejected entries (site-02.jpg: placeholder image; site-15.webp: Almeida building exterior, both marked rejected in manifest). No thin/unexplained absence."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Confirmed by own site ('We are NB, a branding agency') and size (12 listed staff, independent studio since 1997). Studio vs Agency: small specialized team doing hands-on creative execution, not a large full-service org. Correct."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://nbstudio.co.uk/ (canonical root, confirmed). Instagram: https://www.instagram.com/nbstudio_london/ (confirmed correct account via context shot). LinkedIn: https://www.linkedin.com/company/nb-studio/ (present). Email: mail@nbstudio.co.uk (present, sourced from about page)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design is Jonathan's existing tag (set_by: jonathan, provenance confirmed). Scout correctly left it and opened an Open Question asking whether to add Identity systems, Brand strategy, Copywriting and 3D/motion. Appropriate handling of a jonathan-set capability."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 11-40 (own site lists ~12 core team; scout noted LinkedIn category 11-50 vs ~76 shown, flagged in AI Notes). Work Status: Studio, confirmed by own site + LinkedIn + Instagram, sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio (org-level entry). Per checklist calibration note (2026-06-21), Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes names both co-founders (Alan Dye, Nick Finney, both Founder/Creative Director) and describes the team structure. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states: Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Nothing in the entry or the clip note suggests Jonathan knows NB Studio personally. Zero-states are honest."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper', a migration entry. No clip note text visible beyond the name 'NB Studio'. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges the size discrepancy ('LinkedIn company size category 11-50 but their page shows ~76 which is likely inflated'). Facts stated (founded 1997, V&A/MoMA collection, 47 D&AD awards) are verifiable public record. Seniority read present (co-founders named, roles stated). No unhedged inferences detected. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "note",
+      "evidence": "Source is 'Web clipper' with no created date appended. CLAUDE.md specifies 'Web clipper, <page created date>' for backfill entries. The field is not empty, but the date is missing. Not blocking a pass in v1 given the field is present and honest; flagged for the scout to complete on the next touch."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and populated for all touched fields. set_by values correct: migration fields (Website, Name, Country) remain migration; agent fields (Type, Instagram, LinkedIn, Email, Work Status, Size, AI Notes, Open Questions, Images, Source) are agent. Capabilities is jonathan (correct, Jonathan set it). null source_url on some fields is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically: no em-dash character in AI Notes or Open Questions text."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion (asks whether to add tags Jonathan does not currently have set). Terse and conditional (asks only because the existing set_by:jonathan tag is 'Graphic design' and the scout found more disciplines). No redundant questions; no question about a field that already has a non-zero-state value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching. Reviewer will flip to Needs Review on pass (this is the correct pre-flip state)."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean pass. One non-blocking note on Source (missing created date). All 5 projects visually confirmed distinct and on-capability. Both context shots verified correct. Org-level entry, no Autonomy required."
+}

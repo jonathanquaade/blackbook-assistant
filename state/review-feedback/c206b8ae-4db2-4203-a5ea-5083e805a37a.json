@@ -1,0 +1,114 @@
+{
+  "page_id": "c206b8ae-4db2-4203-a5ea-5083e805a37a",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-07T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects confirmed visually: UniCredit Corporate Portal, Staatstheater Mainz premiere posters, Theater Magdeburg season booklet 22/23, Kulturstiftung des Bundes magazine. No duplicate angles or near-identical hashes."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "UniCredit has logo construction + typography system + colour palette; Theater Magdeburg has cover + interior spread + interior pages (including editorial body text layout); Kulturstiftung has multi-issue cover array + two distinct interior spreads. Goes inside projects, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 12 project images are graphic design and editorial work (identity systems, poster design, editorial layouts). Matches the tagged Capability of Graphic design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as neuegestaltung.de homepage (yellow, handwritten logotype, Work/About/Jobs/Contact nav). site-02.png is the Instagram 'Something went wrong' error page: correctly marked rejected in manifest, documented in AI Notes ('IG returned Something went wrong error page under logged-out rate-limiting; queued to state/ig-queue.json for logged-in ig.py capture'), and confirmed present in state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 project images have captions naming the project and a source link pointing to the neuegestaltung.de case-study page. Website context shot captioned 'Website'. Note: kulturstiftung-03-spread2.jpg caption says 'typography spread' but the image is an editorial/art spread (Nationalgalerie 'Hello World' feature), not primarily typography. Caption describes it inaccurately but the project attribution is correct (image sourced from the Kulturstiftung case-study page). Minor caption wording issue, not a false-project attribution."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Graphic design studio; no audio or video work in scope. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes and queued. No other unexplained absences."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio (GmbH, co-directors, small specialized team doing hands-on execution)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://neuegestaltung.de/. Instagram: https://www.instagram.com/neuegestaltung/. LinkedIn: https://de.linkedin.com/company/neue-gestaltung-gmbh. Email: contact@neuegestaltung.de. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan). Scout asked via Open Question whether to extend to Identity systems and Web design, which is correctly framed as a question rather than an overwrite of a jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 2-10 (hedged, noting LinkedIn 11-50 likely inflated vs RocketReach approx. 6). Work Status: Studio (GmbH entity, co-directors named). Multi-source logic documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry; Autonomy is optional per checklist calibration note (2026-06-21). Field is set to 4 with reasoning ('long-running independent studio, two senior directors, no agency overhead, but still co-leadership rather than sole creative'). Adequate."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts any of these zero-states."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper' which correctly identifies the channel. No clipped.md exists in assets (body cleared during P1). One minor gap: CLAUDE.md specifies the format 'Web clipper, <page created date>' but the created date is absent. The source field is present and honest; the missing date is an incomplete format application. Not a blocking failure in v1."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size hedged with source caveat. Capability gap noted as a question. Founding history and seniority grounded in verifiable facts (founded 1995, named co-directors). No unhedged inferences. Autonomy reasoning present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper'. Present and identifies the channel. Created date is missing (CLAUDE.md format is 'Web clipper, <created date>'). Minor format incompleteness; field is not empty. Flagged for the scraper to correct on next pass if Jonathan requests it."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url is null throughout, which is the known systemic tooling gap documented in the checklist as not a v1 gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all manifest captions checked. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, about Capabilities (proposing additions to a jonathan-set field, which is the correct channel). No redundant or already-answered questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. This review passes; status will be flipped to Needs Review."
+    }
+  ],
+  "notes": [
+    "kulturstiftung-03-spread2.jpg: caption says 'typography spread' but the image is an editorial layout featuring a Nationalgalerie Berlin art spread. The project attribution (Kulturstiftung des Bundes magazine) appears correct based on the source URL from the Kulturstiftung case-study page on neuegestaltung.de. Recommend the caption be updated to 'Kulturstiftung des Bundes magazine No. 30, editorial spread' on next pass.",
+    "Source field is 'Web clipper' without the created date. CLAUDE.md format is 'Web clipper, <page created date>'. Not a blocker but should be corrected on next pass."
+  ],
+  "to": "scraper"
+}
