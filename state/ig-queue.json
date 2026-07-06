@@ -1755,5 +1755,47 @@
     "ig_url": "https://www.instagram.com/studiodumbar/",
     "reason": "IG context screenshot failed on two consecutive attempts: headless Playwright returned Something went wrong error page (Instagram blocks logged-out access). Need logged-in ig.py grab for @studiodumbar profile context shot.",
     "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "eb54e897-b599-4dd2-9762-90061d426f08",
+    "name": "Studio 24/24",
+    "ig_url": "https://www.instagram.com/studio24.24/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited logged-out). @studio24.24 is the confirmed handle (in entry). Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "241b5c49-fd95-4cff-95e2-966b7a825ed2",
+    "name": "Spassky Fischer",
+    "ig_url": "https://www.instagram.com/spasskyfischer/",
+    "reason": "IG returned error page (throttled logged-out); context shot rejected; logged-in grab needed for profile screenshot",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "4f277c99-3e32-4b18-910f-68b3ee15d8d0",
+    "name": "Space Agency",
+    "ig_url": "https://www.instagram.com/spaceagencydesign/",
+    "reason": "IG served error page under rate-limiting during logged-out context shot; studio has active IG with recent work",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "97b95fd2-1062-488d-8479-f244a115e80c",
+    "name": "Sometime Always",
+    "ig_url": "https://www.instagram.com/sometimes__always/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited logged-out). @sometimes__always is the confirmed handle. Need logged-in ig.py grab for profile context shot.",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "c7de1d3a-44c8-417b-8a2b-aef4856a1fe2",
+    "name": "Special Offer Studio",
+    "ig_url": "https://www.instagram.com/specialoffer.inc/",
+    "reason": "IG context screenshot failed: headless Playwright returned Something went wrong error page (Instagram rate-limited logged-out). site-05.png rejected. Need logged-in ig.py grab for @specialoffer.inc profile context shot.",
+    "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "1a2f57e9-422d-4fee-92c5-a43be2abb3d3",
+    "name": "Spin",
+    "ig_url": "https://www.instagram.com/spin_studio/",
+    "reason": "context shot served error page (IG throttled logged-out); logged-in grab needed for full profile screenshot",
+    "queued_at": "2026-07-06"
   }
 ]

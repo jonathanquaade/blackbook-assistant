@@ -1,0 +1,111 @@
+{
+  "page_id": "eb54e897-b599-4dd2-9762-90061d426f08",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images span 4 distinct named projects: Rask (branding/web), Paul Jung (algorithmic web design), Timesheets Magazine London (editorial web design), Satu Maaranen (branding/web for fashion). No caption duplication across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project showing interior pages (nav expanded, collection grid, editorial spreads, contact/bibliography pages) rather than hero-only shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 4 projects are graphic/web design output for fashion and culture clients. Rask: e-commerce web design. Paul Jung: algorithmic web design. TM London: editorial web with custom type and layout. Satu Maaranen: branding and web. Note: satu-03.jpg is an about-page screengrab rather than a design artefact, but it is one of 12 work images and does not tip the set off-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is the real studio24-24.com homepage (confirmed: shows the S4 logomark and nav). site-02.png is correctly marked rejected with reason documented (Instagram rate-limit error page), and the entry is present in state/ig-queue.json for a logged-in ig.py grab. Sanctioned exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming project and source link. No file has a missing or generic caption."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Graphic/web studio; no video or audio work to embed. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site is an archive (closed Jan 2022); AI Notes documents closure. Work captured from archive site. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a two-person closed graphic/web studio."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://studio24-24.com/ (set). Instagram: https://www.instagram.com/studio24.24/ (set). Email: inquiry@studio24-24.com (set). LinkedIn: not set and not flagged as absent in AI Notes. Closed studio; LinkedIn absence is plausible but should be noted. Marginal, not a gate failure for a closed studio with no active presence, but scraper should note in AI Notes whether a LinkedIn search was attempted."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design. Provenance shows set_by: jonathan (migration tag, which is his). Aligns with observed work."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Netherlands (migration value, flagged in Open Questions as likely wrong; Portugal is correct per research). Scout correctly raised this as an Open Question rather than silently overwriting a migration value. Size: 2-10 (correct, two founders). Work Status: Studio (correct for a closed studio entity). The Country discrepancy is a Jonathan call per spawn prompt, not a gate defect."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4, set_by agent. AI Notes includes seniority read (co-founder level, ~8 yrs, director-equivalent) and Autonomy reasoning. Checklist calibration note: org-type entries do not require Autonomy, but it is set here and grounded in real history, which is fine."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a relationship in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note instructions to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes includes verifiable facts (founders named, closure date, Lisbon base, successor studios). Autonomy estimate is flagged as an estimate with reasoning. Seniority read is grounded. No em-dashes present in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; researched via studio24-24.com and It's Nice That interview (April 2020)'. Filled and specific."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance records with set_by values. source_url is null throughout, which is the known systemic tooling gap (not a gate failure per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions checked; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question on Country discrepancy (Netherlands vs Portugal). Terse, conditional, actionable. No other unconditional asks for already-set fields."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "LinkedIn absence not documented in AI Notes (minor gap for a closed studio). satu-03.jpg is a biography page screengrab rather than a design artefact; acceptable given 11 other on-capability images. Both are observations for Jonathan, not gate failures.",
+  "to": "scraper"
+}
