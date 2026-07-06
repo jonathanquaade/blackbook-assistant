@@ -1,0 +1,112 @@
+{
+  "page_id": "d93d8c6b-df54-4672-a2e2-240d046ab79e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 active images across 11 distinct named projects: St John's College, UK Parliament, Simmons and Simmons, NHM, Dockside Canada Water, Ridge, Equals, Donmar Warehouse, Portsmouth Historic Dockyard, Co-op Peckish, HaysMac, Inghams. No caption repeats. Duplicate rejections (site-19 second St John's, site-25 second Co-op) were caught and rejected correctly."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Breadth pattern (11 projects, 1 image each) is noted in spawn context as acceptable for a brand studio with varied identity output. Spot-checked images show interior application work (UK Parliament full-collateral spread, NHM OOH, St John's heraldic identity system) rather than pure hero covers. Flagged for Jonathan to judge.",
+      "note": "site-16.png (Equals) is a logo-on-gradient hero, the thinnest image in the set. Acceptable given 20 contaminated images had to be rejected; this was the best confirmed Equals image available."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability: Graphic design. All 12 work images show brand identity and visual identity systems. Scout's Open Question correctly flags Brand strategy and Identity systems as candidate additions."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png confirmed as someoneinlondon.com homepage (SomeOne wordmark, dark nav, 'Where the practical meets the brilliant' hero). site-14.png is the Instagram login wall, correctly rejected, documented in manifest rejected_reason and AI Notes, queued to state/ig-queue.json. Meets the sanctioned IG-throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 12 active work images have named project captions with source links. site-13.png captioned 'Website' with link. No anonymous images in the active set."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Brand identity studio; no video-centric work requiring embeds. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "WordPress contamination documented in AI Notes ('backend.someone.digital prefetches all project images into each project page DOM; images verified visually and by CDN filename'). IG login wall documented in AI Notes and manifest. 20 rejected images with specific rejection reasons in manifest."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized hands-on creative execution team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: someoneinlondon.com. Instagram: instagram.com/someoneinlondon. LinkedIn: uk.linkedin.com/company/someone-. Email: hello@someoneinlondon.com. All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Open Question asks Jonathan to confirm Brand strategy + Identity systems additions. Appropriate handling given Capabilities is set_by jonathan in provenance."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + Australia (multi-office documented). Size: 11-40 (sourced from LinkedIn 11-50 and David Law '30 staff' reference, both cited in AI Notes). Work Status: Studio. Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry. Per calibration note in entry-review.md, Autonomy is optional for org-type entries. AI Notes states 'Autonomy N/A: org entry'. Sufficient."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate for a migration entry with no personal relationship signal from the clip note."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note instruction text. Source field reflects this accurately."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes records founding facts, founders, client scope, award claims (marked as named awards, verifiable), size sourcing with two references cited, contamination disclosure, and IG queue note. No unhedged inferences found. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migration 2026-06-12'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by populated correctly. source_url null throughout; per calibration note (2026-06-21) this is a known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions scanned; no em-dashes found. Semicolons and commas used correctly throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion proposal (Brand strategy, Identity systems, Creative direction). Terse, specific, actionable. No conditional violations; the question proposes additions to a locked jonathan field, which is appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching awaiting this gate; will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "Breadth pattern (11 projects, 1 image each) flagged for Jonathan's awareness. Given the WordPress DOM contamination that forced rejection of 20 images, the scraper's approach of one confirmed clean image per project was a reasonable defensive choice. If Jonathan wants more depth per project, a revisit with a targeted scrape of each named project URL is the fix.",
+  "to": "scraper"
+}

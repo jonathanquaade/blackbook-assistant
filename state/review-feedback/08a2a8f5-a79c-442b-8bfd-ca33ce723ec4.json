@@ -2,50 +2,48 @@
   "page_id": "08a2a8f5-a79c-442b-8bfd-ca33ce723ec4",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-06T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6 distinct named projects: Swisscom, Franklin Templeton, All Blacks and Black Ferns, Optus refresh, Tourism Australia, G42. Captions do not repeat. Real project spread."
+      "evidence": "6 distinct named projects in active set: Swisscom (2), Franklin Templeton (3), All Blacks and Black Ferns (3), Optus (3), Tourism Australia (2), G42 (2). Captions do not repeat across projects. No near-duplicate images."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2-3 images per project going inside case studies (signage, collateral, OOH, digital screens), not just hero covers."
+      "evidence": "2-3 images per project going inside case studies (OOH, collateral, identity systems, digital screens), not only hero covers."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities tagged Graphic design; all verified non-blank images show brand identity and campaigns (OOH, identity systems, print) consistent with that tag."
+      "evidence": "Capabilities: Graphic design. All 15 work images show brand identity and campaigns (OOH, identity systems, print, sports kit branding). site-20.png (the FT replacement) is a Franklin Templeton 'Hello Progress' OOH billboard -- on-capability brand/campaign output. No event photography or off-capability content in active set."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-19.png is genuinely re.design (the Re wordmark and domain visible, loaded homepage). IG context shot (site-16.png) is correctly rejected+documented+queued per the throttle exception path documented in checklists/entry-review.md."
+      "evidence": "site-19.png verified as re.design homepage (Re wordmark 'R e' and 'Watch Showreel' copy visible). IG context shot (site-16.png) correctly rejected+documented+queued per throttle exception path. site-15.png (loading spinner) also correctly rejected, replaced by site-19.png."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every active manifest entry has a caption and a link. Rejected entries are marked rejected."
+      "evidence": "All 16 active manifest entries have a caption and a link. Rejected entries are marked rejected with reasons."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio/writing capability tagged; image-only capture is appropriate. The showreel link is present on the site but Re is not a video-primary entry."
+      "evidence": "No video/audio/writing capability tagged; image-only capture is appropriate."
     },
     {
-      "id": "A.blank-gif-in-active-set",
-      "result": "fail",
-      "evidence": "site-03b.gif is the active replacement for the rejected contaminated site-03.gif, but it renders as a pure white blank frame (verified by opening the file). It is listed in the Images property and manifest as active. A blank image is worse than no image and will appear as dead whitespace in Jonathan's review.",
-      "fix": "Remove site-03b.gif from the active Images list and manifest. Either source a real Swisscom static frame from the same Prismic CDN (the animated GIF may have a static poster in the same CDN path) or drop to 2 Swisscom images, which is still sufficient depth."
+      "id": "A.blank-gif-resolved",
+      "result": "pass",
+      "evidence": "site-03b.gif confirmed blank white (verified visually). Manifest marks it rejected with reason 'Renders as blank white frame'. Not present in Notion Images property. Swisscom covered by site-01 and site-02. Fix from attempt 1 is complete."
     },
     {
       "id": "A.content-matches-caption",
-      "result": "fail",
-      "evidence": "site-04.png is captioned 'Franklin Templeton brand identity, Re' but the image shows an event-photography shot: a man at a laptop in front of a stage screen reading '2023 Outlooks'. This is not brand identity output. It may be a Franklin Templeton event but it is off-capability (event photography, not brand design work) and does not represent Re's design output for that client.",
-      "fix": "Replace site-04.png with an actual Franklin Templeton brand identity asset from the re.design/work/franklin-templeton case study page: look for typography specimens, logo lockups, color system, or publication design. site-05.png (the Franklin Templeton magazine cover) and site-06.png (the Franklin Templeton spread) are both clean; a third on-capability FT image would complete the set, or drop to those two."
+      "result": "pass",
+      "evidence": "site-04.png (event photography) marked rejected with reason. Replacement site-20.png verified: Franklin Templeton 'Hello Progress' OOH billboard showing the FT logo, brand typography, and campaign visual. On-capability brand design output. Caption 'Franklin Templeton brand identity, Re' matches content. Fix from attempt 1 is complete."
     },
     {
       "id": "A.absence-explained",
@@ -65,12 +63,12 @@
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design is Jonathan's tag (provenance set_by: jonathan). Open Question correctly asks him whether to add Brand strategy, Identity systems etc. The reviewer does not override his tag."
+      "evidence": "Graphic design is Jonathan's tag (provenance set_by: jonathan). Open Question asks whether to expand to Brand strategy, Identity systems, etc. Reviewer does not override his tag."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country multi-valued (5 countries), Size 41-100, Work Status Studio (correct for an org entry). AI Notes names the sources used (LinkedIn headcount, site, LBBOnline relaunch article)."
+      "evidence": "Country multi-valued (5 countries), Size 41-100, Work Status Studio. AI Notes names sources (LinkedIn headcount, site, LBBOnline relaunch article)."
     },
     {
       "id": "B.autonomy",
@@ -90,7 +88,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Seniority/experience read present (founded ~2008, relaunched 2021, Patrick Guerrera). No unhedged inferences. Clients cited are verifiable from public case studies."
+      "evidence": "Seniority/experience read present (founded ~2008, relaunched 2021, Patrick Guerrera, six offices). No unhedged inferences. Clients cited are verifiable from public case studies."
     },
     {
       "id": "D.source-filled",
@@ -100,12 +98,12 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present for all touched fields. set_by values are correct (Capabilities is jonathan-locked; all other agent-set fields are set_by: agent). source_url null is a known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance file present for all touched fields. set_by values correct. source_url null is a known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
     },
     {
       "id": "D.open-questions",
@@ -115,7 +113,7 @@
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer holds Needs Review flip until all checks pass."
+      "evidence": "Entry is in Enriching; flipping to Needs Review now that all checks pass."
     }
   ],
   "to": "scraper"
