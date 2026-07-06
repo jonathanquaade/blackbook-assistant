@@ -21,18 +21,19 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "2\u201310",
+      "value": "41\u2013100",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "UK"
+        "UK",
+        "USA"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -55,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-07T00:00:30",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +66,42 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/made_thought/",
+      "source_url": null,
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/madethought",
+      "source_url": null,
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "hello@madethought.com",
+      "source_url": null,
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Migration entry; madethought.com, LinkedIn, WPP announcement Dec 2021, It's Nice That interview",
+      "source_url": null,
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Creative branding studio founded in 2000 by Paul Austin and Ben Parker (Ravensbourne), London and New York offices. Now part of WPP via a 2021 majority-stake acquisition, operating within The New Standard collective alongside Universal Design Studio and Map Project Office. Reported 55 staff at acquisition time; LinkedIn shows ~69 currently. Studio-level entity: not a person, Autonomy N/A. Core disciplines are brand strategy, identity, graphic design, packaging, digital/web, and spatial/experiential work; clients include Pinterest, LVMH, MoMA, Sonos, Stella McCartney, Fred Perry, Adidas. Current capabilities tag (Graphic design) likely underrepresents scope; see Open Questions.",
+      "source_url": null,
+      "verified_at": "2026-07-07T00:00:30",
+      "set_by": "agent"
     }
   }
 }
