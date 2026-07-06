@@ -1,50 +1,49 @@
 {
   "page_id": "82bc74d2-54fe-410e-9903-b50aa4465f91",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-06T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-06T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct named projects: Zurich Jazz Orchestra, Atlas of Spatial Figures, Spacetimes Matter, Kunsthalle Wien, 50 Jahre Kunstraum Kreuzberg"
+      "evidence": "5 distinct named projects across 12 active images: Zurich Jazz Orchestra, Atlas of Spatial Figures, Spacetimes Matter, Kunsthalle Wien, 50 Jahre Kunstraum Kreuzberg. Note: site-01 and site-02 are near-identical (same ZJO 25/26 poster, two pixel-dimension variants). Captions correctly match. Not a gate failure given 5 distinct projects, but the redundant pair is a minor quality note for Jonathan."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2-3 interior spreads per book project; Kunsthalle Wien shows logotype system + publication covers + exhibition print. Not hero-only."
+      "evidence": "Atlas of Spatial Figures: cover + index interior spread. Kunsthalle Wien: logotype typography, Essay Series publications, exhibition poster layout. Kunstraum Kreuzberg: cover + photo interior + text interior. Spacetimes Matter: cover only (interior spreads were rejected as mislabeled). Adequate depth across remaining set."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All work is poster design, book/editorial design, or visual identity for cultural institutions. Matches Graphic design capability."
+      "evidence": "All work is poster design, book and editorial design, or visual identity for cultural institutions. Matches Graphic design capability throughout."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-15.png is a real studiogretzinger.de homepage screenshot (confirmed visually). IG context shot (site-16.png) is correctly marked rejected+documented+queued per the throttle exception: rejected=true, rejection_reason explains the error page, entry is in state/ig-queue.json. Exception applies."
+      "evidence": "site-15.png confirmed as studiogretzinger.de homepage (project listing visible, 'Studio Gretzinger' in header). IG context shot (site-16.png) is rejected+documented+queued per the throttle exception: rejected=true, rejection_reason cites 'Something went wrong' error page, entry present in state/ig-queue.json. Exception applies."
     },
     {
       "id": "A.no-uncaptioned",
-      "result": "fail",
-      "evidence": "3 images have captions that do not match the visible content. site-05.jpg is captioned 'Atlas of Spatial Figures, book design' but shows a fiction book interior titled 'BLIND DATE' by Daniel Grunfeld, with 'SALON' handwriting -- a completely different publication. site-07.jpg is captioned 'Spacetimes Matter, book design' but shows a 'Ground Atlas / Decolonial Mapping' article with maps and figures, not Spacetimes Matter content. site-08.jpg is captioned 'Spacetimes Matter, book design' but shows a workshop diagram about 'future of work' and '2008 financial crash' annotations -- again not Spacetimes Matter. These are interior pages from books Studio Gretzinger did not necessarily design, or from entirely different projects mislabeled during capture. Captions must match the actual image.",
-      "fix": "For site-05, site-07, site-08: either identify what publication/project each image actually comes from and correct the caption, or replace them with images that genuinely belong to Atlas of Spatial Figures and Spacetimes Matter respectively. The cover shots (site-03 for Atlas, site-06 for Spacetimes Matter) are correctly labeled and can stay. The interior spreads need verification against the actual project pages at studiogretzinger.de/atlas-of-spatial-figures and studiogretzinger.de/spacetimes-matter."
+      "result": "pass",
+      "evidence": "All 3 previously-failing images (site-05, site-07, site-08) are now marked rejected=true in the manifest with documented reject_reasons. The 12 active images were verified visually: every caption matches the visible content. site-01 ZJO poster, site-02 ZJO poster (same design, pass), site-03 Atlas cover, site-04 Atlas index interior, site-06 Spacetimes Matter cover, site-09 Kunsthalle Wien typography, site-10 Kunsthalle Wien Essay Series, site-11 Kunsthalle Wien exhibition layout, site-12 Kunstraum Kreuzberg cover, site-13 Kunstraum Kreuzberg photo interior, site-14 Kunstraum Kreuzberg text interior, site-15 website context shot. All match."
     },
     {
       "id": "A.embeds-video-audio",
       "result": "pass",
-      "evidence": "No video/audio embeds expected; this is a graphic design studio with print/identity work. Not applicable."
+      "evidence": "Graphic design studio with print and identity work. No video or audio embeds expected or applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in AI Notes and queued."
+      "evidence": "IG throttle documented in AI Notes; entry queued to state/ig-queue.json."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct for a one-principal design studio."
+      "evidence": "Type: Studio. Correct for a one-principal design studio with collaborators."
     },
     {
       "id": "B.links",
@@ -54,32 +53,32 @@
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Graphic design tagged. Scout raised Identity systems + Web design as an Open Question -- appropriate; not a gate failure since the question is correctly framed."
+      "evidence": "Graphic design tagged. Open Question 1 asks Jonathan about adding Identity systems and Web design. Correctly framed; not a gate failure."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Germany, Size: 2-10, Work Status: Studio. Sources named in AI Notes (studio site + berlin-international.de article). Objective rule followed."
+      "evidence": "Country: Germany, Size: 2-10, Work Status: Studio. Sources named in AI Notes (studio site + berlin-international.de studio visit article)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Type is Studio. Autonomy field is optional for org-type entries per checklist calibration note. Autonomy 4 has been set with reasoning in AI Notes (sole creative director, runs own studio, 20+ yrs). Acceptable."
+      "evidence": "Type is Studio. Autonomy is optional for org-type entries per checklist calibration. Autonomy 4 set with reasoning in AI Notes (sole creative director, 20+ yrs experience, runs own studio)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note stating a relationship."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no clip note stating a relationship."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clip note with instructions detected beyond the standard web-clipper entry. Source field records this correctly."
+      "evidence": "No relationship facts or instructions in clip note beyond web-clipper standard. Source records this."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Notes include seniority read, Autonomy reasoning, and IG queue note. Factual claims (clients, teaching posts, Jan van Eyck residency) are specific enough to be verifiable. No unhedged assertions about taste or working style."
+      "evidence": "AI Notes include seniority read (20+ yrs, sole creative director), Autonomy reasoning, named clients, and IG queue note. Factual claims are specific and verifiable. No unhedged taste assertions."
     },
     {
       "id": "D.source-filled",
@@ -89,24 +88,24 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present, all fields have set_by. source_url is null throughout -- known systemic tooling gap, not a gate failure per checklist calibration note."
+      "evidence": "Provenance file present, all fields have correct set_by values. source_url null throughout is the known systemic tooling gap, not a gate failure per checklist calibration."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions checked programmatically and visually. No em-dashes found."
+      "evidence": "AI Notes and Open Questions reviewed. No em-dashes present."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Single terse question about Capabilities expansion. Conditional (Capabilities currently has only Graphic design, so the question is valid). No story nudge needed (Worked Together is Never)."
+      "evidence": "Single terse conditional question about Capabilities expansion. Valid and appropriately scoped."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Gate is running before any flip to Needs Review. Correct."
+      "evidence": "Entry in Enriching. Flipping to Needs Review now as gate has passed."
     }
   ],
-  "failing_checks": ["A.no-uncaptioned"],
-  "to": "scraper"
+  "to": "jonathan",
+  "notes": "Attempt 2 re-gate. The A.no-uncaptioned failure from attempt 1 is resolved: site-05, site-07, and site-08 are marked rejected=true in the manifest and removed from the active image set. All 12 remaining images verified visually against captions. Minor observation: site-01 and site-02 are near-duplicate views of the same ZJO poster (different pixel dimensions from the same source page). Not a gate failure given 5 distinct projects are represented, but Jonathan may wish to drop one of the two."
 }

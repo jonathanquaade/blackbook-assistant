@@ -2,116 +2,109 @@
   "page_id": "905b0137-c6cb-4e42-bf58-3eaddd82b2da",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-06T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 distinct named projects: ESL esports rebrand, Notpla packaging identity, Shelter charity identity, London Symphony Orchestra, DreamHack. All visually confirmed as separate projects."
+      "evidence": "5 distinct named projects visually confirmed: ESL esports rebrand, Notpla sustainable packaging identity, Shelter charity identity, London Symphony Orchestra rebrand, DreamHack gaming festival identity. No duplicate captions or near-identical images."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 interior shots per project (billboard application, event arena, colour system for ESL; product, packaging, in-use for Notpla; portrait hero, OOH campaign, environmental for Shelter; 3-poster spread for LSO; hero + OOH poster grid for DreamHack). Goes inside projects."
+      "evidence": "3 interior shots per project across all 5: ESL colour system, event arena, billboard; Notpla product shot, packaging detail, in-use at marathon; Shelter portrait hero, OOH campaign, environmental application; LSO poster series, motion brand visual, identity application; DreamHack hero, event visual. Goes inside projects."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Graphic design tag. All captured work is brand identity systems: typography, colour systems, OOH campaigns, poster series. On-capability."
+      "evidence": "Tagged Graphic design. All 14 work images show brand identity systems: typography, colour systems, OOH campaigns, poster series, environmental applications. On-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png is the real designbridge.com homepage (visually confirmed: Design Bridge and Partners nav, captioned to note merger). site-02.png (Instagram) is marked rejected in manifest with documented reason: @superunionhq account deleted post-merger, not a throttle issue, no ig-queue needed. This matches the checklist exception for accounts that no longer exist."
+      "evidence": "site-01.png is the real designbridge.com homepage (visually confirmed: 'Design Bridge and partners' header, captioned with merger context). site-02.png (@superunionhq) is an Instagram 'Profile isn't available' error page, marked rejected: true in manifest with documented reason: account deleted post-merger, not a throttle issue, no ig-queue needed. AI Notes confirms 'Instagram @superunionhq has been deleted (account retired with the brand)'. Matches the checklist exception for genuinely deleted accounts."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 work images have project name + source link captions. site-01.png has a merger-context caption. No uncaptioned images."
+      "evidence": "All 14 work images captioned with project name plus source link. site-01.png has a merger-context caption. No uncaptioned images in manifest."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Graphic design agency. No video-only discipline. No embed opportunity missed based on the case studies captured."
+      "evidence": "Graphic design agency. No video/audio discipline. Identity case studies captured; no embed opportunity missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG account deletion documented in both AI Notes and manifest rejected entry with rejection_reason. Wayback Machine CDX unavailability documented in AI Notes."
+      "evidence": "IG account deletion documented in AI Notes and manifest rejected entry with rejection_reason. Email absence documented in AI Notes. No silent gaps."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Agency. WPP-owned, 750+ staff, multi-office. Correct per schema (Agency = large full-service org built for scale)."
+      "evidence": "Type: Agency. WPP-owned, 750+ staff at peak, 23 offices. Correct per schema (Agency = large full-service org built for scale)."
     },
     {
       "id": "B.all-findable-links",
-      "result": "fail",
-      "evidence": "Email field is empty and not mentioned in AI Notes as searched or unfindable. The scraper checked Website, Instagram, LinkedIn but did not document email search. For a retired/merged brand this may be moot (superunion.com domain gone), but absence is undocumented. Additionally, LinkedIn points to the SUCCESSOR entity (Design Bridge and Partners, linkedin.com/company/designbridgeandpartners) rather than the original Superunion LinkedIn (linkedin.com/company/superunion). Given OQ2 asks Jonathan whether to keep as legacy, the LinkedIn choice deserves a note.",
-      "fix": "Add a note to AI Notes confirming email was searched and found absent (superunion.com domain retired, designbridge.com contact form is the current channel, no public email for legacy entity). Update LinkedIn note in AI Notes to clarify it points to the successor entity, or add it as part of OQ2."
+      "result": "pass",
+      "evidence": "Both prior attempt-1 fails resolved. Email: AI Notes documents 'no public contact email found, the legacy superunion.com domain is retired, so left empty.' LinkedIn: points to successor Design Bridge and Partners, documented in AI Notes as 'standalone Superunion company page was retired post-merger.' Website set to designbridge.com (the live redirect destination). Instagram preserved as the retired @superunionhq handle. No findable link omitted without documentation."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged (set_by: jonathan from migration). OQ1 correctly asks Jonathan whether to add Brand strategy and Identity systems. Appropriate handling."
+      "evidence": "Graphic design set_by: jonathan (migration). OQ1 asks about adding Brand strategy and Identity systems without overwriting jonathan-set value. Appropriate handling."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: UK/US/Hong Kong (multi-office). Size: 100+ (750 staff at peak, documented in AI Notes). Work Status: Studio (correct for an org entity). Sources named in AI Notes."
+      "evidence": "Country: UK, US, Hong Kong (multi-office, documented in AI Notes). Size: 100+ (750 staff at peak, documented). Work Status: Studio. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Agency type entry. Per checklist calibration note: Autonomy is OPTIONAL for org-type entries. Not required."
+      "evidence": "Agency-type entry. Autonomy is optional for org-type entries per checklist calibration note. Not required."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note contradicts these. Zero-states are appropriate."
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or evidence contradicts these zero-states. Migration entry with no relationship signal."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Migration entry. Source field documents the migration provenance. No clip-note instructions present."
+      "evidence": "Migration entry. No clip-note instructions present. Source field documents migration provenance."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes document the merger history, staff numbers framed as 'at peak', CDN sourcing explained, IG deletion explained. Facts are verifiable (WPP merger history, Cannes award). No unhedged inferences. Seniority/experience read not applicable for an org entry."
+      "evidence": "AI Notes assert verifiable facts (WPP merger history, staff numbers framed as 'at peak', Cannes Lions Grand Prix in Design confirmed award). No unhedged inferences. Seniority/experience read not applicable for org entry. IG deletion and email absence both documented."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Migration entry; superunion.com now 301 redirects to designbridge.com (merged Jan 2023)'. Filled and appropriate."
+      "evidence": "Source: 'Migration entry; superunion.com now 301 redirects to designbridge.com (merged Jan 2023)'. Filled and contextually appropriate."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by fields correct. source_url null is the known systemic tooling gap per checklist calibration note; not a gate failure."
+      "evidence": "Provenance file present. set_by: agent on agent-set fields; set_by: jonathan on Capabilities (migration). source_url null is the known systemic tooling gap; not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Reviewed AI Notes, Open Questions, captions. No em-dashes found. Semicolons and commas used correctly."
+      "evidence": "AI Notes, Open Questions, captions and Source reviewed. No em-dashes found. Commas and semicolons used throughout."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) Capabilities expansion proposal, (2) legacy vs successor entity question. Both terse and conditional. No field asked that already has a non-zero value."
-    },
-    {
-      "id": "D.name-correctness",
-      "result": "fail",
-      "evidence": "Name field is 'Super Union' (two words). The correct brand name is 'Superunion' (one word). Provenance shows set_by: migration (restructurable). The scraper did not clean this up despite the migration baseline being clearly wrong.",
-      "fix": "Run: keeper.py set 905b0137-c6cb-4e42-bf58-3eaddd82b2da Name 'Superunion' and update provenance set_by to agent."
+      "evidence": "OQ1: Capabilities expansion proposal (conditional, jonathan-set value present so asking is correct). OQ2: legacy vs successor entity question. Both terse and actionable. No field asked that already has a non-zero non-zero-state value."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry Status: Enriching. Awaiting reviewer gate. Correct pre-gate state."
+      "evidence": "Entry in Enriching, flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }

@@ -1,0 +1,111 @@
+{
+  "page_id": "7847d1fe-0045-4897-bc0f-a07b8b9a7cb2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T12:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 active images span 5 distinct named projects: poster/event work (grainedit, 3 images), CACC Chanot identity (3 images), Ambigrammes typography (3 images), Chaire Post-Minier identity (3 images), Fructose identity (3 images). No repeat-project clustering."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior shots per project (e.g. 3 CACC Chanot spreads including an animated GIF, 3 Chaire Post-Minier identity system sheets, 3 Fructose brand layouts). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 16 active images are typography-led posters, identity systems, and print/signage work. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-17.png is captioned 'Instagram profile' and marked context_shot:true, but the actual image shows Instagram's 'Profile isn't available / The link may be broken, or the profile may have been removed' error page -- not the actual @stereoburo profile. The checklist exception requires the broken capture to be marked rejected AND documented in AI Notes AND queued to ig-queue.json. None of these three conditions are met: site-17.png is active (not rejected), AI Notes does not mention the IG context shot failed, and the entry is absent from state/ig-queue.json. The website context shot is correctly absent (stereo-buro.com hijacked, documented in AI Notes -- PASS for that half).",
+      "fix": "Mark site-17.png rejected in manifest.json with reason 'IG account deleted -- @stereoburo profile no longer exists following studio dissolution.' Add one sentence to AI Notes: 'Instagram context shot unobtainable: @stereoburo account has been removed (account deleted, not throttled); no ig-queue entry needed as a logged-in grab cannot recover a deleted account.' Do NOT add to ig-queue. The no-website-shot requires no change."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image has a named project caption and a source link. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio is graphic design / print / identity; no video or audio work present. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Website absence documented in AI Notes (stereo-buro.com hijacked by casino). Wayback contamination documented in manifest reject_reason for site-06.jpg and site-07.jpg. Alt sourcing via silviadore.fr and grainedit is explicit."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small two-person Paris design practice."
+    },
+    {
+      "id": "B.findable-links",
+      "result": "pass",
+      "evidence": "Website: null (hijacked domain, documented). Instagram: https://www.instagram.com/stereoburo/ (correct handle, account now deleted but link was verified). LinkedIn: https://fr.linkedin.com/company/stereoburo (present). Email: not surfaced -- expected for a dissolved studio with no active contact page; no obvious search would yield a current address. Absence acceptable."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged; Open Question 2 asks Jonathan about adding Identity systems and Type design. Appropriate -- does not over-tag unconfirmed capabilities."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 2-10. Work Status: Studio (correct for a studio entity; dissolved status surfaced in AI Notes + Open Question 1). Sources cited in AI Notes (French business registry SIREN 910679398, Instagram bio)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry type is Studio (org). Calibration note: Autonomy is optional for org-type entries. AI Notes notes 'Autonomy: not set (studio is closed)'. Correct handling."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states a relationship. Zero-states are consistent with evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relationship or judgment facts in clip note. Migration baseline; scout confirmed identity via registry. Nothing to extract via --from-jonathan."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Facts cited to specific sources (French business registry, Instagram bio, silviadore.fr). No unhedged inferences. Seniority read present (ENSAD Strasbourg alumni, 2015-2023, cultural/institutional clients). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper migration; confirmed via annuaire-entreprises.data.gouv.fr (SIREN 910679398), Instagram @stereoburo bio, and web research'. Present and substantive."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for every field. source_url nulls are the known systemic tooling gap (not a gate failure per calibration note). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Open Questions programmatically. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: Q1 asks keep-or-reject on the closed studio (genuine judgment call for Jonathan). Q2 asks about capability additions. Both terse, conditional on genuinely unresolved points. No redundant asks."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is the one to flip to Needs Review on pass -- correct per protocol."
+    }
+  ],
+  "to": "scraper"
+}

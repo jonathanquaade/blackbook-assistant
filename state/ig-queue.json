@@ -1748,5 +1748,12 @@
     "ig_url": "https://www.instagram.com/studiogretzinger/",
     "reason": "IG context screenshot returned Something went wrong error page (headless Playwright rate-limited logged-out). studiogretzinger confirmed handle (in entry). Need logged-in ig.py grab for profile context shot.",
     "queued_at": "2026-07-06"
+  },
+  {
+    "page_id": "0d9f42a4-e6dd-402e-9a5b-507ce7474e40",
+    "name": "Studio Dumbar",
+    "ig_url": "https://www.instagram.com/studiodumbar/",
+    "reason": "IG context screenshot failed on two consecutive attempts: headless Playwright returned Something went wrong error page (Instagram blocks logged-out access). Need logged-in ig.py grab for @studiodumbar profile context shot.",
+    "queued_at": "2026-07-06"
   }
 ]

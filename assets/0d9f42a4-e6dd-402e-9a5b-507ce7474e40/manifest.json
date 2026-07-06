@@ -46,7 +46,9 @@
     "source_url": "https://studiodumbar.com/media/pages/work/24-vincent-van-gogh-museum/f6cebce5b0-1682344610/sft_vangoghmuseum-s0016V1962-3840.jpg",
     "caption": "Van Gogh Museum, identity",
     "link": "https://studiodumbar.com/work/24-vincent-van-gogh-museum",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "reject_reason": "Museum painting (Van Gogh self-portrait), not Studio Dumbar design work"
   },
   {
     "file": "site-08.webp",
@@ -74,14 +76,18 @@
     "source_url": "https://studiodumbar.com/media/pages/work/vbms/5228e4a599-1684268715/16-vbms-1600x.jpg",
     "caption": "Utah Jazz, 52nd season identity",
     "link": "https://studiodumbar.com/work/utah-jazz-25-26",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "reject_reason": "DOM contamination: Kirby CMS prefetched VBMS project image into Utah Jazz 25-26 page DOM"
   },
   {
     "file": "site-12.jpg",
     "source_url": "https://studiodumbar.com/media/pages/work/nemo/83a9da8bca-1684268633/13-nemo-museum-1600x.jpg",
     "caption": "Instagram, motion identity",
     "link": "https://studiodumbar.com/work/instagram",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "reject_reason": "DOM contamination: Kirby CMS prefetched NEMO Science Museum image into Instagram page DOM"
   },
   {
     "file": "site-13.webp",
@@ -95,7 +101,9 @@
     "source_url": "https://studiodumbar.com/media/pages/work/big-mile/3ea9e27f60-1684268626/12-big-mile-1600x.jpg",
     "caption": "Utah Jazz, brand in motion",
     "link": "https://studiodumbar.com/work/utah-jazz-brand-in-motion",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "reject_reason": "DOM contamination: Kirby CMS prefetched Big Mile project image into Utah Jazz brand-in-motion page DOM"
   },
   {
     "file": "site-15.webp",
@@ -117,5 +125,100 @@
     "caption": "North Sea Jazz, identity",
     "link": "https://studiodumbar.com/work/north-sea-jazz",
     "captured_at": "2026-07-06"
+  },
+  {
+    "file": "instagram-motion-cover.jpg",
+    "source_url": "https://www.deptagency.com/wp-content/uploads/2024/03/Cover_Instagram_Motion-Identity-System_Motion-Sizzle_1920x1080.jpg",
+    "caption": "Instagram, motion identity system",
+    "link": "https://studiodumbar.com/work/instagram",
+    "captured_at": "2026-07-06"
+  },
+  {
+    "file": "thumb-openai-film.jpg",
+    "source_url": "https://i.vimeocdn.com/video/1997066734-94dcf400b13cc111e3c417cf030be57beab268208c0598133f834284c3db02a2-d_1280x720?region=us",
+    "caption": "OpenAI brand film, 2025 (embed preview)",
+    "link": "https://vimeo.com/1068857946",
+    "captured_at": "2026-07-06",
+    "embed_preview_for": "https://vimeo.com/1068857946"
+  },
+  {
+    "file": "thumb-utah-jazz-music.jpg",
+    "source_url": "https://i.vimeocdn.com/video/1808453544-31e5d64075ff025aa7e4aa23cc46b206a962e1a0c8c574af74b022787d3f87af-d_1280x720?region=us",
+    "caption": "Utah Jazz, music motion reel, 2024 (embed preview)",
+    "link": "https://vimeo.com/919093493",
+    "captured_at": "2026-07-06",
+    "embed_preview_for": "https://vimeo.com/919093493"
+  },
+  {
+    "file": "thumb-north-sea-jazz.jpg",
+    "source_url": "https://i.vimeocdn.com/video/1517912270-5c7bc4bf5d3e4f5d0fbd0cfe9c670fd35b1b5ca9b070d58b68c3f0a4da2de6dd-d_1280x720?region=us",
+    "caption": "North Sea Jazz, motion identity reel, 2022 (embed preview)",
+    "link": "https://vimeo.com/738984682",
+    "captured_at": "2026-07-06",
+    "embed_preview_for": "https://vimeo.com/738984682"
+  },
+  {
+    "file": "thumb-demo-2022.jpg",
+    "source_url": "https://i.vimeocdn.com/video/1530809082-05971e52d05b42dbb387309b434f975388cbc798ec92b99ec6c4d8f71222231c-d_1280x720?region=us",
+    "caption": "DEMO Festival 2022, aftermovie (embed preview)",
+    "link": "https://vimeo.com/762247879",
+    "captured_at": "2026-07-06",
+    "embed_preview_for": "https://vimeo.com/762247879"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/1068857946",
+    "caption": "OpenAI brand film, 2025",
+    "link": "https://studiodumbar.com/work/openai-brand-film",
+    "captured_at": "2026-07-06"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/919093493",
+    "caption": "Utah Jazz, music motion reel, 2024",
+    "link": "https://studiodumbar.com/work/utah-jazz-brand-in-motion",
+    "captured_at": "2026-07-06"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/738984682",
+    "caption": "North Sea Jazz, motion identity reel, 2022",
+    "link": "https://studiodumbar.com/work/north-sea-jazz",
+    "captured_at": "2026-07-06"
+  },
+  {
+    "type": "embed",
+    "url": "https://vimeo.com/762247879",
+    "caption": "DEMO Festival 2022, aftermovie",
+    "link": "https://studiodumbar.com/work/demo-2022",
+    "captured_at": "2026-07-06"
+  },
+  {
+    "file": "site-18.png",
+    "source_url": "https://studiodumbar.com",
+    "caption": "Website",
+    "link": "https://studiodumbar.com",
+    "captured_at": "2026-07-06",
+    "context_shot": true
+  },
+  {
+    "file": "site-19.png",
+    "source_url": "https://www.instagram.com/studiodumbar/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/studiodumbar/",
+    "captured_at": "2026-07-06",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Instagram blocked headless browser with error page, needs logged-in capture"
+  },
+  {
+    "file": "site-20.png",
+    "source_url": "https://www.instagram.com/studiodumbar/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/studiodumbar/",
+    "captured_at": "2026-07-06",
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Instagram blocked headless browser on second attempt, queued to state/ig-queue.json"
   }
 ]

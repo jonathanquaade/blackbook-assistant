@@ -2,110 +2,109 @@
   "page_id": "8804b910-3d84-4a61-8aa0-7c75367d709c",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-06T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "14 images span 5 distinct named projects (LNDR, Martin Parr Foundation, London Art Fair 2020, Grind Clerkenwell, Yoni). No repeated project dominates."
+      "evidence": "14 work images span 5 distinct named projects: LNDR (3), Martin Parr Foundation (3), London Art Fair 2020 (2), Grind Clerkenwell (3), Yoni (3). No repeated-project saturation."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Each project has 2-3 images going inside the work: publication spreads (lndr-02, grind-01), printed collateral (grind-02, mpf-01), and OOH placements (mpf-02, mpf-03, laf-02, laf-03, yoni-02, yoni-03)."
+      "evidence": "Goes inside projects: lndr-02 is a publication interior spread; grind-01 is a publication interior (Grind menu book); mpf-01 is a close-up branded label detail. Not hero-only covers."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "grind-03.jpg is captioned 'Grind Clerkenwell, environmental signage' but the image is a close-up photograph of a herringbone marble tile floor with no visible branding, logotype, signage, or graphic design work. It is an interior photography shot, not brand/identity/graphic design output. The other 13 images are correctly on-capability (brand identity, OOH campaigns, print collateral).",
-      "fix": "Replace grind-03.jpg with an image from the Grind Clerkenwell project page that actually shows environmental signage, wall graphics, or branded elements -- the studiothomas.co.uk/projects/grind-clerkenwell/ page should have other shots. Alternatively drop it and keep 2 images from Grind (grind-01 and grind-02 are both strong and on-capability)."
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 14 work images are verified brand/graphic design deliverables: billboards, OOH posters, publication spreads, printed collateral, brand signage. grind-03-new.jpg confirmed visually: exterior GRIND branded sign on brick building facade, clear environmental graphic design deliverable. Prior fail (marble floor shot grind-03.jpg) is correctly marked rejected in the manifest with documented reason. Replacement resolves the issue."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-01.png correctly shows studiothomas.co.uk homepage ('Design for Bold Brands'). site-02.png (Instagram profile) is correctly marked rejected with documented throttle reason, queued to state/ig-queue.json for logged-in ig.py grab. Sanctioned IG throttle path followed per checklist exception."
+      "evidence": "site-01.png confirmed: studiothomas.co.uk homepage with 'Studio Thomas' wordmark and 'Design for Bold Brands' hero. Caption 'Website' is correct. site-02.png (Instagram profile) correctly rejected + documented (throttled logged-out error page) and queued to state/ig-queue.json. This is the sanctioned IG throttle exception path per checklist."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every non-rejected image has a caption naming the project and a link to the source project page."
+      "evidence": "All 15 active manifest entries (14 work + 1 context) carry a named project caption and source link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Studio Thomas is a graphic/identity studio; no video/audio embeds are required for this capability. No project pages flagged as having embeddable video."
+      "evidence": "Studio Thomas is a graphic/brand identity studio. No project pages were flagged as having embeddable video. Image-only format is appropriate for this capability."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in AI Notes and in manifest rejection_reason. ig-queue.json entry confirmed for page_id 8804b910-3d84-4a61-8aa0-7c75367d709c."
+      "evidence": "IG context shot absence documented in AI Notes and in manifest rejection_reason. ig-queue.json entry confirmed present for this page_id."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct for a small specialized two-founder practice doing hands-on creative execution."
+      "evidence": "Type: Studio. Correct for a small two-founder practice doing hands-on brand execution from Hackney Downs Studios."
     },
     {
       "id": "B.all-links-present",
       "result": "pass",
-      "evidence": "Website (studiothomas.co.uk), Instagram (@studio.thomas), LinkedIn (uk.linkedin.com/company/studio-thomas), Email (hello@studiothomas.co.uk) all present."
+      "evidence": "Website (studiothomas.co.uk), Instagram (instagram.com/studio.thomas), LinkedIn (uk.linkedin.com/company/studio-thomas), Email (hello@studiothomas.co.uk) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design set by Jonathan (provenance set_by: jonathan). Open Question asks about adding Identity systems and Brand strategy -- appropriate escalation rather than overriding a jonathan-set field."
+      "evidence": "Graphic design set by Jonathan (provenance set_by: jonathan). Open Question asks about adding Identity systems and Brand strategy. Correct deferral: does not add unapproved capabilities, asks instead."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK, Size: 2-10, Work Status: Studio. AI Notes names the sources (site, LinkedIn company page, It's Nice That profile). Multi-source resolution documented."
+      "evidence": "Country: UK, Size: 2-10, Work Status: Studio. AI Notes names sources: site, LinkedIn company page, It's Nice That profile. Multi-source resolution documented."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry; Autonomy is optional per calibration note (2026-06-21). Autonomy: 5 is set anyway (reasonable for a founder-run practice). Seniority read present in AI Notes ('senior/founder level, ~12 yrs in practice')."
+      "evidence": "Studio (org) entry; Autonomy is optional per calibration note (2026-06-21). Autonomy 5 set anyway (reasonable for a founder-run practice). Seniority read present in AI Notes: 'Two principals with ~12 years in practice; senior/founder level'."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted -- all zero-states with no contradicting evidence in the entry."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are correct. No clip note or entry content contradicts them."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Migration entry; no clip note instructions to act on beyond standard enrichment."
+      "evidence": "Migration entry. No clip note instructions beyond standard enrichment. Source records the research provenance trail."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes state verifiable facts (clients, founding year, location, working model). No unhedged inferences. Includes seniority read paired with Autonomy estimate."
+      "evidence": "Facts are verifiable and sourced (named founders, founding year, named clients, named locations). Capabilities observation is hedged ('they clearly also do... based on stated services') and routed to Open Questions. No bare assertions of vibe or quality. No em-dashes found in repr() check."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Migration entry; studiothomas.co.uk, LinkedIn company page, It's Nice That profile (Nov 2020)' -- correctly populated."
+      "evidence": "Source: 'Migration entry; studiothomas.co.uk, LinkedIn company page, It's Nice That profile (Nov 2020)'. Filled and identifies provenance trail clearly."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields. source_url nulls are the known systemic tooling gap (not a gate failure per calibration note 2026-06-21). set_by values are correct (jonathan for Capabilities, agent for all agent-researched fields, migration for Name)."
+      "evidence": "All touched fields carry set_by values (jonathan for Capabilities, migration for Name, agent for all agent-researched fields). source_url nulls are the known systemic tooling gap; not a gate failure per calibration note 2026-06-21."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found. En-dashes in size range '2-10' are fine."
+      "evidence": "AI Notes and Open Questions checked via repr(): no em-dash characters (U+2014). En-dashes in size range '2-10' are correct and expected."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "Single Open Question asks about adding capabilities to a jonathan-set field -- appropriate, conditional, and actionable."
+      "evidence": "Single terse conditional question about adding Capabilities to a jonathan-set field. Not asking for a field that already has a non-zero value. Story nudge not applicable (Worked Together: Never, Familiarity: Don't know them)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Status will be flipped to Needs Review only on a clean pass."
+      "evidence": "Entry is in Enriching. Reviewer flips to Needs Review on this pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }

@@ -2,111 +2,109 @@
   "page_id": "5db1a951-d52b-4c21-8db2-3e712644434d",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-06T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "20 work images across 7 named projects: Le Monde d'Hermes (4 images), The Gentlewoman editorial (5 images), The Gentlewoman covers grid (1), ATID/Alexander Taylor identity (2), Maison Margiela (1), Miu Miu Musings (1), Het Nieuwe Instituut (2), Tiffany (1), Hermes press tool (1). Well above 3-project floor."
+      "evidence": "20 work images across 7 named projects: Le Monde d'Hermes (4 images), The Gentlewoman editorial (5 images + 1 covers grid), ATID/Alexander Taylor identity (2), Maison Margiela (1), Miu Miu Musings (1), Het Nieuwe Instituut (2), Tiffany (1), Hermes press tool (1). Well above the 3-project floor. Images opened and confirmed as genuinely distinct."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: spread interiors on Le Monde d'Hermes, garment tags + shipping boxes for ATID identity, building signage + poster + email + print for HNI, all 24 Gentlewoman covers as a body-of-work image. Not hero-only."
+      "evidence": "Goes inside projects: fabric swatch palette spreads (Hermes), garment tags + shipping boxes (ATID identity system), building signage + outdoor poster + email + print in one frame (HNI identity), all 24 Gentlewoman covers as a body-of-work image. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design; work captured is editorial art direction, identity systems, print design, magazine covers. All on-capability. Scout's Open Question asks Jonathan about adding Creative direction and Identity systems, which is appropriate given the career evidence."
+      "evidence": "Tagged Graphic design; work captured is editorial art direction, identity systems, print design, magazine covers. All on-capability. Scout's Open Question correctly proposes adding Creative direction and Identity systems."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-21.png is captioned 'Website' and has context_shot:true, but the image is a Le Monde d'Hermes fashion editorial spread (two model photographs), not a browser screenshot of studioveronicaditting.com. The website homepage context shot is absent. The IG context shot (site-22.png) is correctly rejected+documented+queued for ig.py and passes the throttle exception.",
-      "fix": "Capture a real browser screenshot of https://studioveronicaditting.com/ as the website context shot. The current site-21.png is a work image that was miscategorised as a context shot. Remove its context_shot flag, give it a correct work caption, and add a genuine homepage screenshot as the website context shot."
+      "result": "pass",
+      "evidence": "site-21.png (prior fail) is now correctly rejected in manifest with rejection_reason documented. site-23.png is a fresh scrape of studioveronicaditting.com showing 'STUDIO VERONICA DITTING' header + portfolio pagination: the site is a fullscreen slideshow with no browser chrome; this is the honest homepage representation per spawn note. IG context shot (site-22.png) is correctly rejected+documented+queued for ig.py drain: throttle exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 20 work images have captions naming project and source. Website context shot is miscaptioned but that is the subject of A.context-shots above."
+      "evidence": "All 20 work images have captions naming project and source link. site-23.png is the website context shot, captioned 'Website' with the site URL."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video-primary work; Veronica Ditting's practice is print editorial and identity. No Vimeo/YouTube embeds expected."
+      "evidence": "No video-primary work. Veronica Ditting's practice is print editorial and identity; no Vimeo/YouTube embeds expected or present on the site."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "IG throttle documented in manifest (rejection_reason), queued to state/ig-queue.json. AI Notes notes 'IG context shot queued'."
+      "evidence": "IG throttle block documented in manifest rejection_reason and in ig-queue.json (entry confirmed present for page_id 5db1a951-d52b-4c21-8db2-3e712644434d). AI Notes notes the situation."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Person. Note: entry is named 'Studio Veronica Ditting' and Size is 2-10, which could argue for Type: Studio. Scout set Person, likely treating Veronica Ditting as the individual. This is a reasonable judgment call; the Open Question route would let Jonathan decide if he wants Studio instead. Not a hard fail, flagged as a note."
+      "evidence": "Type: Person. Entry name is 'Studio Veronica Ditting' and Size is 2-10, which could argue for Studio, but scout treated the principal as a Person with a small team -- a reasonable call. Open Question on Capabilities gives Jonathan a natural checkpoint; Type is a note, not a hard fail."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, and Email all present and filled. Instagram @studioveronicaditting confirmed in AI Notes from studio site + search. LinkedIn confirmed via snippet."
+      "evidence": "Website, Instagram, LinkedIn, and Email all present. Instagram @studioveronicaditting confirmed from studio site + search. LinkedIn snippet confirmed. Email office@veronicaditting.com present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged (set_by: jonathan from migration). Scout raised Creative direction and Identity systems in Open Questions, which is the correct handling."
+      "evidence": "Graphic design tagged (set_by: jonathan, migration baseline). Scout raised Creative direction and Identity systems in Open Questions. Correct handling."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country UK, Size 2-10, Work Status Studio. AI Notes names sources: site + multiple profiles confirm Studio. Multi-source rule met."
+      "evidence": "Country UK, Size 2-10, Work Status Studio. AI Notes names sources: site and multiple profiles confirm Studio. Multi-source rule met."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy 5 set_by agent, reasoning in AI Notes ('sole principal of her own studio with no employer, direct client relationships at the highest level'). Grounded in real work history."
+      "evidence": "Autonomy 5 set_by agent. Reasoning in AI Notes: sole principal, no employer, direct client relationships at the highest level. Grounded in real work history."
     },
     {
       "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "Zero-states (Never, Don't know them, Unvetted) are appropriate; no clip note evidence contradicts them."
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) appropriate; no clip note evidence contradicts them."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No relationship facts or judgment statements visible in the entry; zero-states are correct."
+      "evidence": "No relationship facts or judgment statements in the clip note; zero-states correctly applied."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedged where appropriate ('approx 20 years', 'small team of approx four'). Seniority and Autonomy read present. No em-dashes. Sources named."
+      "evidence": "AI Notes hedged where appropriate ('approx 20 years', 'approx four'). Seniority and Autonomy read present and grounded in career history. No em-dashes. Sources named."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper; site studioveronicaditting.com; Its Nice That interview 2019; The Spaces profile; The Gentlewoman contributor page'."
+      "evidence": "Source: 'Web clipper; site studioveronicaditting.com; Its Nice That interview 2019; The Spaces profile; The Gentlewoman contributor page'. Well documented."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present for all touched fields. source_url is null throughout (known systemic tooling gap, not a gate failure per calibration note). set_by values are correct: agent for agent-set fields, jonathan for Capabilities (migration baseline)."
+      "evidence": "Provenance file present. source_url is null throughout (known systemic tooling gap, not a gate failure per calibration note). set_by values are correct: agent for agent-set fields, jonathan for Capabilities (migration baseline)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or Source fields."
+      "evidence": "No em-dashes found in AI Notes, Open Questions, Source, or captions. AI Notes uses commas and periods throughout."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question on Capabilities, terse and conditional. Story nudge not applicable (no Worked Together signal). No questions for already-set fields."
+      "evidence": "One terse, conditional Capabilities question. No questions on already-set fields. Story nudge not applicable (Worked Together: Never, no signal to the contrary)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry currently in Enriching, as expected before the gate passes."
+      "evidence": "Entry in Enriching pre-gate; will be flipped to Needs Review on this pass."
     }
   ],
-  "to": "scraper",
-  "notes": "Single hard fail: the website context shot (site-21.png) is a fashion editorial image miscategorised as a context shot. Fix is targeted and fast: capture one browser screenshot of studioveronicaditting.com, re-tag site-21.png as a work image with a corrected caption, update the manifest. Everything else is solid. Type: Person vs Studio is worth a note to Jonathan but not a gate failure."
+  "notes": "All checks pass. Prior fail (A.context-shots: site-21 mislabeled as website context shot) is resolved: site-21 rejected+documented in manifest, site-23.png is a genuine homepage capture of the fullscreen slideshow site (studio name header visible, pagination visible). IG queued correctly per throttle exception. 20 images across 7 projects is strong. Type Person vs Studio is a minor note for Jonathan, not a gate issue."
 }
