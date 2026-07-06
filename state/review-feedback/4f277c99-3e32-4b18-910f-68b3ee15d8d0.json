@@ -1,0 +1,110 @@
+{
+  "page_id": "4f277c99-3e32-4b18-910f-68b3ee15d8d0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 uploaded images span 5 distinct named projects: Oman Across Ages Museum, Connected Manchester, Expo Dubai 2020, Singapore Rail Corridor, V&A. Plus website context shot."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: in-situ signage (site-03, site-08, site-16), system/planning diagrams (site-05, site-06, site-10, site-11), accessibility specs (site-06), visitor journey diagram (site-14). Not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design (set_by jonathan); visible work is wayfinding signage, environmental graphics, and placemaking. Open Question correctly raised about Spatial/exhibition design. Images match the actual work of the studio and are on-capability relative to whatever tag resolves."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-17) confirmed as spaceagency-design.com homepage. IG (site-18) is an error page, correctly marked rejected with rejected_reason, documented in AI Notes, and queued to ig-queue.json. Sanctioned IG throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 non-rejected images have project captions and source link fields populated in the manifest."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio embeds in scope; this is a spatial/visual studio and no embeddable project video was captured or missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes and ig-queue.json. No other unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio, set_by agent."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all populated. Instagram handle @spaceagencydesign verified against the studio name."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set_by jonathan (migration). Agent raised Open Question about adding Spatial and exhibition design. Correct handling: jonathan's field is not overwritten, question is raised."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK/Italy/China. Size: 41-100. Work Status: Studio. All set with agent provenance. Sources noted (site + LinkedIn agree)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry; Autonomy is optional per checklist calibration 2026-06-21. AI Notes provides leadership read (Manning + Feldmann co-founders, backgrounds noted)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all appropriate for a migration entry with no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note instructions present beyond the entry itself."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Staff count hedged ('approximately 40-48 staff per site and LinkedIn'). Leadership backgrounds noted as ex- roles. IG queue status documented. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; web research 2026-07-06'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with correct set_by values. Capabilities correctly shows set_by: jonathan. source_url nulls are the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One question: capabilities clarification. Terse, conditional (Capabilities is jonathan's field, question asks if it should be expanded). Story nudge not triggered (no relationship signal)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review on pass."
+    }
+  ],
+  "to": "scraper"
+}

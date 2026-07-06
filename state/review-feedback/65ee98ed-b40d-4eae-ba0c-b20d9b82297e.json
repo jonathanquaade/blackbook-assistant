@@ -1,0 +1,111 @@
+{
+  "page_id": "65ee98ed-b40d-4eae-ba0c-b20d9b82297e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 work images across 6 named projects: SAS, Nobel Prize, Ahlens, Polestar, Volvo, IKEA"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: SAS identity manual cover, Nobel Alfred Sans typeface specimen, Ahlens store facade + mark, Polestar symbol construction, Volvo stationery and guidelines, IKEA packaging range"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are brand identity / graphic design work; matches Capabilities: Graphic design"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-02.png captioned 'Instagram profile' is an Instagram error page ('Something went wrong / page could not be loaded'), not a real instagram.com profile screenshot. Exception conditions not met: not marked rejected in manifest, not documented in AI Notes, not present in state/ig-queue.json.",
+      "fix": "Capture a real instagram.com/sthlmdesignlab profile screenshot via ig.py or scrape.py --render. If IG is rate-limiting and genuinely unavailable logged-out, mark site-02.png rejected:true in manifest, document the block in AI Notes, add entry to state/ig-queue.json, and remove the error-page file from the upload."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image has a caption naming the project and a source link"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video present on the captured project pages; graphic identity work; not applicable"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "16 work images captured; no unexplained thinness"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged; Open Question raised to Jonathan about expanding to Identity systems + Brand strategy + Web design"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Sweden, Size: 11-40 (sourced from RocketReach + LinkedIn bracket per AI Notes), Work Status: Studio"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy optional per checklist calibration 2026-06-21; AI Notes note this explicitly"
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note states a relationship"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper' with no instructions beyond the URL; nothing to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size estimated with sources cited; Autonomy rationale noted; no unhedged inferences detected"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values; source_url null is tracked systemic tooling gap, not a gate failure per calibration note"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found"
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One question on Capabilities expansion; terse and conditional"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains Enriching pending this gate; will flip to Needs Review only on pass"
+    }
+  ],
+  "to": "scraper"
+}

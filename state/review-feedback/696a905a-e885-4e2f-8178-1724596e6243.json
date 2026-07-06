@@ -1,0 +1,30 @@
+{
+  "page_id": "696a905a-e885-4e2f-8178-1724596e6243",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T10:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "5 distinct named projects: Hello Image (MKG Hamburg), Trees Time Architecture (Architekturmuseum TUM), The Art of Connecting (ETH Zurich / Edition DETAIL), Architektur in Vorarlberg (Edition DETAIL), The Bird Show (ERES Foundation)"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Each project has 2-3 images going inside: posters in-situ and close-up, building vinyl + interior wall, book cover and spreads, poster detail"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Graphic design; all work is exhibition identity, editorial book design, exhibition graphics. Fully on-capability"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-14.png confirmed strobo.eu homepage (shows 'strobo B M design studio' nav); site-15.png confirmed instagram.com/strobo_bm (shows IG UI with @strobo_bm handle and grid)"},
+    {"id": "A.no-uncaptioned", "result": "pass", "evidence": "All 13 work images have project name + source link; both context shots captioned"},
+    {"id": "A.embeds", "result": "pass", "evidence": "No video/audio work; graphic design practice, not applicable"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "site-01.jpg marked rejected with reason ('Museum building exterior photo, not graphic design work')"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Studio"},
+    {"id": "B.links", "result": "pass", "evidence": "Website, Instagram (verified correct via context shot), LinkedIn (founder's profile), Email all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Graphic design tagged; Open Question asks Jonathan to confirm adding Identity systems, Spatial & exhibition design, Web design (correct handling as field is set_by jonathan)"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Germany, 2-10, Studio; AI Notes explains two founding partners + three collaborators"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5 set_by agent with reasoning in AI Notes; optional for Studio type, correctly set here"},
+    {"id": "C.no-contradicting-judgment", "result": "pass", "evidence": "No evidence of prior relationship; zero-states Worked Together: Never and Familiarity: Don't know them are appropriate"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Name is clean; no unacted instructions visible"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes grounded in verifiable facts (founding year, relocation, named clients, named awards, headcount); seniority read present; no em-dashes"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "'Web clipper; strobo.eu, relaunch.strobo.eu/studio/, web search'"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have provenance with correct set_by values; null source_urls are the known systemic tooling gap, not a gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes or Open Questions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One terse conditional question about Capabilities; no story nudge needed"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Flipped to Needs Review on this pass"}
+  ],
+  "to": null
+}

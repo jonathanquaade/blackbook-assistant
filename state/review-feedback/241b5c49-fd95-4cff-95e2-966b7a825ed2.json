@@ -1,0 +1,110 @@
+{
+  "page_id": "241b5c49-fd95-4cff-95e2-966b7a825ed2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "18 non-context images span 7 distinct named projects: Mucem, MAC VAL, Paris Photo, Festival d'Automne, Capc Bordeaux, T2G Theatre de Gennevilliers, Editions Caryatide. All clearly different identities and clients."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images going inside the work: Mucem triptyque + annual report spread interior; MAC VAL 10 ans + two exhibition posters; Paris Photo facade signage + metro poster + editorial interior; festival programme interior + metro campaign; Capc brochure + poster series; T2G two poster variants; Caryatide book stack + specific Cosa Mentale Markli publication."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All captured work is graphic design for cultural institutions: posters, identity systems, editorial design, signage. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed: real spassky-fischer.fr homepage ('Art direction and graphic design studio' header visible). site-02.png is an IG error page ('Something went wrong') correctly marked rejected in manifest with documented reason (IG throttled logged-out). Entry is in state/ig-queue.json queued for logged-in ig.py grab. Sanctioned path per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a link to the source project page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio is primarily graphic design / print / identity work. No video/audio work present on their site for these projects. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest and AI Notes; queued to ig-queue.json. No other known gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: small specialized Paris studio, three founding partners, hands-on creative execution."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: spassky-fischer.fr. Instagram: instagram.com/spasskyfischer. LinkedIn: fr.linkedin.com/company/spassky-fischer. Email: contact@spassky-fischer.fr. All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan, migration). Open Question raised about adding Identity systems. Appropriate; not a reviewer call."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 2-10 (three founders plus collaborators). Work Status: Studio. AI Notes names three sources: About page, Eye Magazine feature, It's Nice That profile. Objective multi-source rule met."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry (not a Person). Per calibration note, Autonomy is optional for org-type entries. No Autonomy field required; seniority read in AI Notes (founding partners, studio-level operation) is sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note or body text suggests Jonathan knows this studio. Zero-states are consistent with evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry. No clip note instructions to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedged appropriately: 'approx. 5-10 people', 'likely warrant Identity systems'. Verifiable facts (clients, founding year, founders) asserted directly. Sources named (About page, Eye Magazine, It's Nice That). Seniority read present (founding partners, three founders)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; About page confirms founders Hugo Anglade, Thomas Petitjean, Antoine Stevenot; founded 2014'. Filled and informative."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present. All touched fields have set_by values. source_url is null across the board -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, Source, and all manifest captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities add Identity systems? Terse, conditional (Capabilities field has a value but the question is about expanding it, not asking for a zero-state field). Appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Will be flipped to Needs Review by this reviewer gate."
+    }
+  ],
+  "to": null
+}

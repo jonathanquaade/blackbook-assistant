@@ -1,0 +1,110 @@
+{
+  "page_id": "1a2f57e9-422d-4fee-92c5-a43be2abb3d3",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 active images span 4 distinct named projects: Whitechapel Gallery identity, Waste Age exhibition, MUBI identity, Future Observatory identity. No duplicate-project clustering."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 3 images going inside the system: type specimen, print collateral, booklet cover (Whitechapel); icon set, infographic poster, environmental installation (Waste Age); logotype, OOH campaign, podcast brand (MUBI); logo lockup, editorial assets, podcast brand (Future Observatory)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all 13 images are graphic identity and editorial work. No off-capability images present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png verified as spin.co.uk homepage (SPIN wordmark visible). site-02.png is IG error page, correctly marked rejected in manifest with rejection_reason, queued to ig-queue.json, documented in AI Notes. Sanctioned IG-throttle path followed per checklist exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 active images have captions naming the project and source links pointing to spin.co.uk project pages."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Graphic design studio; no video/audio projects captured. No Vimeo/YouTube embeds present on the captured project pages per scraper evidence. Not applicable here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and ig-queue.json entry confirmed present for this page_id."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct per schema (small specialized creative practice, not Agency)."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://spin.co.uk/ (set). Instagram: https://www.instagram.com/spin_studio/ (set, confirmed via studio about page per AI Notes). LinkedIn: https://www.linkedin.com/company/spin-communications-limited (set). Email: studio@spin.co.uk (set)."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan per provenance). Open Question raised about adding Identity systems and Creative direction. Correct: reviewer does not override jonathan-set capabilities; the question is appropriately terse and conditional."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10 (confirmed via LinkedIn per AI Notes). Work Status: Studio (in-house practice, not freelance, confirmed via multiple sources per AI Notes)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "This is a Studio entry. Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries; a seniority read in AI Notes is sufficient. AI Notes covers founders' experience and 30+ year track record. Autonomy = 5 is set as a field (set_by agent), which is fine for a studio where founders clearly embody it."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all zero-states with no contradicting evidence in clip note or Jonathan instructions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper; studio referenced in Jonathan's DB' with no special instructions in the clip note beyond a name reference. Nothing left unacted."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year, clients, AGI membership, Unit Editions acquisition). Seniority read present: 30+ years, established senior-tier practice. Sources named. No unhedged inferences detected. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; studio referenced in Jonathan's DB'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url is null throughout; noted as a known systemic tooling gap (not a gate failure per calibration 2026-06-21). set_by values are correct: migration fields from migration, agent-researched fields from agent, jonathan-set Capabilities from jonathan."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: capabilities expansion (Identity systems + Creative direction). Terse, conditional, not asking for a field that already has a non-zero value. No story nudge needed (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching at gate time; reviewer flipping to Needs Review on pass."
+    }
+  ],
+  "to": null
+}
