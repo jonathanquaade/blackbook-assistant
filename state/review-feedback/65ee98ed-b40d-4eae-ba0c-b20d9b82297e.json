@@ -1,111 +1,110 @@
 {
   "page_id": "65ee98ed-b40d-4eae-ba0c-b20d9b82297e",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-06T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-06T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "16 work images across 6 named projects: SAS, Nobel Prize, Ahlens, Polestar, Volvo, IKEA"
+      "evidence": "16 work images across 6 named projects: SAS, Nobel Prize, Ahlens, Polestar, Volvo, IKEA. Visually confirmed: sas-01 is SAS aircraft livery, nobel-01 is Alfred Sans typeface specimen, ikea-01 is IKEA packaging range. Captions match images."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Goes inside projects: SAS identity manual cover, Nobel Alfred Sans typeface specimen, Ahlens store facade + mark, Polestar symbol construction, Volvo stationery and guidelines, IKEA packaging range"
+      "evidence": "Goes inside projects: typeface specimen (Nobel), identity manual (SAS), packaging range interior shots (IKEA), symbol construction grid (Polestar), stationery system + brand guidelines (Volvo), store facade + mark + campaign typography (Ahlens)."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "All images are brand identity / graphic design work; matches Capabilities: Graphic design"
+      "evidence": "All 16 work images are brand identity and graphic design output. Matches Capabilities: Graphic design."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-02.png captioned 'Instagram profile' is an Instagram error page ('Something went wrong / page could not be loaded'), not a real instagram.com profile screenshot. Exception conditions not met: not marked rejected in manifest, not documented in AI Notes, not present in state/ig-queue.json.",
-      "fix": "Capture a real instagram.com/sthlmdesignlab profile screenshot via ig.py or scrape.py --render. If IG is rate-limiting and genuinely unavailable logged-out, mark site-02.png rejected:true in manifest, document the block in AI Notes, add entry to state/ig-queue.json, and remove the error-page file from the upload."
+      "result": "pass",
+      "evidence": "site-01.png is confirmed as stockholmdesignlab.se homepage (SDL logo, nav bar, client logos). site-02.png is the IG error page but all three exception conditions are met: marked rejected:true in manifest with reason 'Instagram error/throttle page (not the profile); queued for ig.py'; AI Notes document the block; entry is present in state/ig-queue.json. Sanctioned exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every image has a caption naming the project and a source link"
+      "evidence": "Every manifest entry has a caption naming project and source link. site-02.png is rejected and excluded from the upload set (Images property does not include it)."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video present on the captured project pages; graphic identity work; not applicable"
+      "evidence": "Entry is identity/graphic design work; no video content applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "16 work images captured; no unexplained thinness"
+      "evidence": "16 work images captured across 6 distinct projects; no unexplained thinness."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio"
+      "evidence": "Type: Studio."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present"
+      "evidence": "Website, Instagram, LinkedIn, Email all present and filled."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged; Open Question raised to Jonathan about expanding to Identity systems + Brand strategy + Web design"
+      "evidence": "Graphic design tagged. Open Question raised asking Jonathan to confirm expansion to Identity systems, Brand strategy, Web design."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Sweden, Size: 11-40 (sourced from RocketReach + LinkedIn bracket per AI Notes), Work Status: Studio"
+      "evidence": "Country: Sweden. Size: 11-40 (sourced from RocketReach ~37 staff + LinkedIn 11-50 bracket, cited in AI Notes). Work Status: Studio (self-directed, independent)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Org-type entry (Studio); Autonomy optional per checklist calibration 2026-06-21; AI Notes note this explicitly"
+      "evidence": "Org-type entry (Studio). Autonomy is optional for org entries per checklist calibration 2026-06-21. AI Notes note this explicitly."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note states a relationship"
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate. No clip note states a relationship or overriding judgment."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper' with no instructions beyond the URL; nothing to act on"
+      "evidence": "Source is 'Web clipper' with no instructions beyond the URL. Nothing to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Size estimated with sources cited; Autonomy rationale noted; no unhedged inferences detected"
+      "evidence": "Size estimate is hedged with sources cited. Seniority/experience read present (founders named, founding date, client roster, 25+ years). Autonomy rationale noted. No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper'"
+      "evidence": "Source: 'Web clipper'."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with correct set_by values; source_url null is tracked systemic tooling gap, not a gate failure per calibration note"
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url null is the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found"
+      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "One question on Capabilities expansion; terse and conditional"
+      "evidence": "One question on Capabilities expansion; terse and conditional. No redundant or already-answered asks."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains Enriching pending this gate; will flip to Needs Review only on pass"
+      "evidence": "Entry is in Enriching; flipping to Needs Review as final step of this gate pass."
     }
   ],
-  "to": "scraper"
+  "to": null
 }

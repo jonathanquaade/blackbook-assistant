@@ -1,0 +1,113 @@
+{
+  "page_id": "c7de1d3a-44c8-417b-8a2b-aef4856a1fe2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: BRAT/Charli XCX, Endless Summer Vacation/Miley Cyrus, Something To Tell You/HAIM, TOTAL/Martine Syms, i-D Magazine Issue 374. Captions are unique; no duplicate angles."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: BRAT booklet spread (proj-03), Miley vinyl record detail (proj-04), HAIM interior OOH (proj-07), Martine Syms exhibition interior (proj-08), i-D Magazine interior spread (proj-11). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Capabilities are set_by jonathan as Frontend development (web) and Web design. Of 11 project images, only 1 (proj-06, HAIM website screenshot) is clearly on-capability. The remaining 10 are album packaging (BRAT vinyl, Miley ESV vinyl), exhibition identity/titles (Martine Syms TOTAL), OOH/campaign (HAIM bus shelter, Miley billboard), and print editorial (i-D Magazine cover + spread). Album packaging, exhibition work, and print are not Frontend development or Web design.",
+      "fix": "Capture 3+ additional built-website screenshots with live links from the Special Offer portfolio (e.g. the KHY site at khy.com, Martine Syms TOTAL microsite if one exists, or other web projects at specialoffer.inc/work). One named web project per image, captioned with project name, year, and source link. Alternatively: if Jonathan answers the Open Question and adds Creative direction, Identity systems, and Graphic design to Capabilities, the existing images become on-capability and no rescrape is needed -- but that answer must come first."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-04.png) verified live: fresh screenshot of specialoffer.inc matches exactly; the KHY hero is the studio's current featured client project, not a mislabel. IG context shot (site-05.png) is rejected + documented in manifest (Instagram rate-limit error) + queued to state/ig-queue.json -- meets the sanctioned IG throttle exception."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 project images carry named captions (project name, client, year) and source links pointing to specialoffer.inc case study pages."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds in the manifest; no case study pages clearly offered embeddable video (Martine Syms TOTAL has video but it was captured as stills). No embeds-only situation; all entries have images."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest and ai-queue. No other missing sources."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct -- small specialized team, hands-on creative execution, sub-10 staff."
+    },
+    {
+      "id": "B.links-present",
+      "result": "fail",
+      "evidence": "Email field is empty with no documented search attempt in AI Notes or provenance. The runbook requires capturing public contact email during P1. specialoffer.inc and special-offer.studio both have a Contact section; a public email address or contact link is findable. Also: Website field is set to https://special-offer.studio/ but the context shot, manifest source URLs, and all project links use https://www.specialoffer.inc/ -- these are two separate domains for the same studio; the field should point to the canonical domain used in their own social and press links (specialoffer.inc).",
+      "fix": "Search for a public contact email on specialoffer.inc/contact or info@specialoffer.inc and set the Email field. Update Website to https://www.specialoffer.inc/ (the domain the studio uses across Instagram, press, and case study links) or add a note explaining which is canonical."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities are set_by jonathan; the agent cannot change them. An Open Question correctly proposes expanding to Creative direction, Identity systems, and Graphic design. The flag is logged under A.on-capability -- images must match whichever capabilities are active."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: US. Size: 2-10 (AI Notes says 8 full-time staff, consistent). Work Status: Studio, confirmed via press and self-description in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional per calibration note. AI Notes names Brent David Freaney as founder, giving leadership context. No field required."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship signal in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note text found (no clipped.md; Source is bare 'Web clipper'). Entry appears to be a minimal clipper entry with no instructions to parse."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (Grammy win, client names, staff count from press). Work Status resolution sourced to press and self-description. No unhedged inferences found. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source is 'Web clipper' only, missing the required creation date. Runbook: 'Web clipper, <page created date>'. The created_time can be retrieved from the Notion API and appended.",
+      "fix": "Append the page creation date to Source: e.g. 'Web clipper, 2026-MM-DD'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with set_by values. Null source_urls are the known systemic tooling gap; not a gate fail per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question: proposes Capabilities expansion with named evidence. Conditional (not asking for fields already set). Terse."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; reviewer has not flipped to Needs Review yet (correct; this is the gate)."
+    }
+  ],
+  "to": "scraper"
+}
