@@ -1,0 +1,122 @@
+{
+  "page_id": "08a2a8f5-a79c-442b-8bfd-ca33ce723ec4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct named projects: Swisscom, Franklin Templeton, All Blacks and Black Ferns, Optus refresh, Tourism Australia, G42. Captions do not repeat. Real project spread."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project going inside case studies (signage, collateral, OOH, digital screens), not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Graphic design; all verified non-blank images show brand identity and campaigns (OOH, identity systems, print) consistent with that tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-19.png is genuinely re.design (the Re wordmark and domain visible, loaded homepage). IG context shot (site-16.png) is correctly rejected+documented+queued per the throttle exception path documented in checklists/entry-review.md."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active manifest entry has a caption and a link. Rejected entries are marked rejected."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio/writing capability tagged; image-only capture is appropriate. The showreel link is present on the site but Re is not a video-primary entry."
+    },
+    {
+      "id": "A.blank-gif-in-active-set",
+      "result": "fail",
+      "evidence": "site-03b.gif is the active replacement for the rejected contaminated site-03.gif, but it renders as a pure white blank frame (verified by opening the file). It is listed in the Images property and manifest as active. A blank image is worse than no image and will appear as dead whitespace in Jonathan's review.",
+      "fix": "Remove site-03b.gif from the active Images list and manifest. Either source a real Swisscom static frame from the same Prismic CDN (the animated GIF may have a static poster in the same CDN path) or drop to 2 Swisscom images, which is still sufficient depth."
+    },
+    {
+      "id": "A.content-matches-caption",
+      "result": "fail",
+      "evidence": "site-04.png is captioned 'Franklin Templeton brand identity, Re' but the image shows an event-photography shot: a man at a laptop in front of a stage screen reading '2023 Outlooks'. This is not brand identity output. It may be a Franklin Templeton event but it is off-capability (event photography, not brand design work) and does not represent Re's design output for that client.",
+      "fix": "Replace site-04.png with an actual Franklin Templeton brand identity asset from the re.design/work/franklin-templeton case study page: look for typography specimens, logo lockups, color system, or publication design. site-05.png (the Franklin Templeton magazine cover) and site-06.png (the Franklin Templeton spread) are both clean; a third on-capability FT image would complete the set, or drop to those two."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest and AI Notes; queued to state/ig-queue.json. No silently thin sources."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. Correct for M&C Saatchi Group design arm with 41-100 staff across six offices."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all populated and plausible."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design is Jonathan's tag (provenance set_by: jonathan). Open Question correctly asks him whether to add Brand strategy, Identity systems etc. The reviewer does not override his tag."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country multi-valued (5 countries), Size 41-100, Work Status Studio (correct for an org entry). AI Notes names the sources used (LinkedIn headcount, site, LBBOnline relaunch article)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry; Autonomy N/A per calibration note in checklist. AI Notes states N/A explicitly."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by the clip note ('Re Agency', no relationship text)."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Re Agency'. Name cleaned to 'Re'. Redirect from re.agency documented. No relationship facts or judgment in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Seniority/experience read present (founded ~2008, relaunched 2021, Patrick Guerrera). No unhedged inferences. Clients cited are verifiable from public case studies."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source field populated with clip note origin, redirect note, and verification sources."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. set_by values are correct (Capabilities is jonathan-locked; all other agent-set fields are set_by: agent). source_url null is a known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One conditional Open Question about Capabilities expansion. Terse and actionable. Not asking for already-set fields."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer holds Needs Review flip until all checks pass."
+    }
+  ],
+  "to": "scraper"
+}

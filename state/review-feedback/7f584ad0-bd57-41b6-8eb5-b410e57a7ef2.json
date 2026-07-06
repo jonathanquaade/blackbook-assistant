@@ -1,0 +1,111 @@
+{
+  "page_id": "7f584ad0-bd57-41b6-8eb5-b410e57a7ef2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T19:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images across 6 distinct named projects: Exist identity, Centre Pompidou Studio 13/16, CNAP Annual Report 2022, Cite de l'Architecture exhibition, Maison de l'Architecture identity, David Koma identity. No cross-project contamination."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project going inside each: CNAP shows a spread interior (table of contents), Cite de l'Architecture shows installed exhibition signage at scale, Studio 13/16 includes identity system detail. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work is graphic design: brand identity systems, publication design, exhibition signage, editorial. David Koma shot shows wordmark in campaign context -- on-capability as identity/branding work. Capability tag is Graphic design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-02.png is captioned 'Instagram profile' and its source_url is https://www.instagram.com/republique.studio/ -- but the image is the Instagram login/landing page ('See everyday moments from your close friends'), not the @republique.studio profile grid. The throttle exception does not apply: the shot is not marked rejected in the manifest, AI Notes do not document a block, and the entry is not in state/ig-queue.json.",
+      "fix": "Capture a real profile screenshot of instagram.com/republique.studio showing the @republique.studio grid/bio. If IG is throttled/login-walled logged-out, mark the broken shot rejected in manifest, document the block in AI Notes, add to state/ig-queue.json with reason, and replace site-02.png with the queued-state placeholder path -- do not ship the login page as the profile shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries have captions naming the project and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a graphic design studio; no video/audio capability tagged. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present across 6 projects; no unexplained thinness. AI Notes documents that no public contact email was found."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small specialized hands-on creative team."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email documented as not publicly findable in AI Notes. No Email field is appropriate here."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan per provenance). Open Question 1 proposes adding Identity systems, Web design, Spatial & exhibition design for Jonathan to confirm -- correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France, Size: 2-10, Work Status: Studio. AI Notes records corroborating sources (Penninghen profile, The Index directory, LinkedIn)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type: Studio. Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries; no Autonomy field required. AI Notes includes seniority/leadership read (Tom Uferas, founder, Penninghen grad, 15+ years)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any clip note or evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper' with no additional clip note instructions visible. Nothing outstanding."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes attributes team-size claims to named sources (Penninghen profile, The Index directory, LinkedIn). Style description ('typography-driven, minimalist approach') is framed as the studio's known positioning. Seniority read (Tom Uferas, founder, ~15 years) is grounded in verifiable history. No bare assertions of unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper'. Acceptable; no clip note date appended but the field is filled and honest."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url null is a known systemic tooling gap per checklist calibration 2026-06-21; not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use hyphens and commas, no em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One question, terse and conditional, proposes capability additions for Jonathan to confirm. No question asks for a field that already has a non-zero value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching (correct pre-gate state). Reviewer will flip to Needs Review only on pass."
+    }
+  ],
+  "to": "scraper"
+}
