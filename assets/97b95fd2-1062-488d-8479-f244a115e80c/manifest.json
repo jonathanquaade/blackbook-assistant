@@ -9,14 +9,14 @@
   {
     "file": "site-02.jpg",
     "source_url": "https://sometimes-always.com/wp-content/uploads/2024/03/sometimes-always-caracol-1.jpg",
-    "caption": "Caracol Bar identity, 2023",
+    "caption": "Caracol Bar, event poster series, 2023-2024",
     "link": "https://sometimes-always.com/projects/caracol-v2/",
     "captured_at": "2026-07-06"
   },
   {
     "file": "site-03.jpg",
     "source_url": "https://sometimes-always.com/wp-content/uploads/2024/03/sometimes-always-caracol-4.jpg",
-    "caption": "Caracol Bar identity, 2023",
+    "caption": "Caracol Bar, event poster series, 2023-2024",
     "link": "https://sometimes-always.com/projects/caracol-v2/",
     "captured_at": "2026-07-06"
   },
@@ -25,21 +25,27 @@
     "source_url": "https://sometimes-always.com/wp-content/uploads/2025/11/sometimes-always-found-objects-horizontal1.jpg",
     "caption": "Found Objects identity and web, 2025",
     "link": "https://sometimes-always.com/projects/found-objects/",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "rejection_reason": "Phone mockup showing Found Objects live website about/services page. This is a screenshot of the client site UI, not a design deliverable. Replaced by site-22, site-23, site-24 showing stationery, logomark application, and business card."
   },
   {
     "file": "site-05.jpg",
     "source_url": "https://sometimes-always.com/wp-content/uploads/2025/11/sometimes-always-found-objects-horizontal3.jpg",
     "caption": "Found Objects identity and web, 2025",
     "link": "https://sometimes-always.com/projects/found-objects/",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "rejection_reason": "Video still from Found Objects homepage hero. This is a screenshot of the client site, not a design deliverable. Replaced by site-22, site-23, site-24."
   },
   {
     "file": "site-06.jpg",
     "source_url": "https://sometimes-always.com/wp-content/uploads/2025/11/sometimes-always-found-objects-horizontal4.jpg",
     "caption": "Found Objects identity and web, 2025",
     "link": "https://sometimes-always.com/projects/found-objects/",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "rejection_reason": "Screenshot of Found Objects live website about/services desktop layout. Client site UI, not a design deliverable. Replaced by site-22, site-23, site-24."
   },
   {
     "file": "site-07.jpg",
@@ -124,6 +130,13 @@
     "rejection_reason": "Duplicate blank website screenshot attempt (render mode)."
   },
   {
+    "file": "site-17.jpg",
+    "source_url": "https://sometimes-always.com/wp-content/uploads/2026/05/the-nursery-2026-website-1-1.jpg",
+    "caption": "The Nursery 2026, identity for Public Records",
+    "link": "https://sometimes-always.com/projects/the-nursery-2026/",
+    "captured_at": "2026-07-06"
+  },
+  {
     "file": "site-18.png",
     "source_url": "https://sometimes-always.com/about/",
     "caption": "Website",
@@ -139,7 +152,9 @@
     "caption": "Website",
     "link": "https://sometimes-always.com/",
     "captured_at": "2026-07-06",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Shows the /info/ page with only the studio logo, the word INFO, a small palm icon, and an email on a blank white background. Zero visual context about the studio's work. Replaced by site-21.png."
   },
   {
     "file": "site-20.png",
@@ -149,14 +164,35 @@
     "captured_at": "2026-07-06",
     "context_shot": true,
     "rejected": true,
-    "rejection_reason": "Project page used for exploratory test; superseded by site-19.png."
+    "rejection_reason": "Exploratory test screenshot; superseded by site-21.png which is the official website context shot."
   },
   {
     "file": "site-21.png",
     "source_url": "https://sometimes-always.com/projects/caracol-v2/",
     "caption": "Website",
-    "link": "https://sometimes-always.com/projects/caracol-v2/",
+    "link": "https://sometimes-always.com/",
     "captured_at": "2026-07-06",
     "context_shot": true
+  },
+  {
+    "file": "site-22.jpg",
+    "source_url": "https://sometimes-always.com/wp-content/uploads/2025/11/sometimes-always-found-objects-vertical-17.jpg",
+    "caption": "Found Objects identity, stationery system, 2025",
+    "link": "https://sometimes-always.com/projects/found-objects/",
+    "captured_at": "2026-07-06"
+  },
+  {
+    "file": "site-23.jpg",
+    "source_url": "https://sometimes-always.com/wp-content/uploads/2025/11/sometimes-always-found-objects-vertical-19.jpg",
+    "caption": "Found Objects identity, logomark on apparel, 2025",
+    "link": "https://sometimes-always.com/projects/found-objects/",
+    "captured_at": "2026-07-06"
+  },
+  {
+    "file": "site-24.jpg",
+    "source_url": "https://sometimes-always.com/wp-content/uploads/2025/11/sometimes-always-found-objects-horizontal16.jpg",
+    "caption": "Found Objects identity, business card, 2025",
+    "link": "https://sometimes-always.com/projects/found-objects/",
+    "captured_at": "2026-07-06"
   }
 ]
