@@ -1,0 +1,111 @@
+{
+  "page_id": "c74b948a-071a-46c2-bab9-980af37c85d2",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images across 5 distinct named projects (Casa Batllo Contemporary, Rosalia Motomami Publication, Nike Runway 25 Victory Lap, Zara Join Life, Massimo Dutti Website). No duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project showing interior spreads, packaging, and design details rather than hero-only shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged is Graphic design. Captured work covers identity, editorial, web, fashion and print projects consistent with a graphic design studio. Work is on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-02.png is captioned 'Instagram profile' but is the Instagram login page ('Log into Instagram' / 'See everyday moments from your close friends'), not the querida__si profile grid. The login-page capture is not marked rejected in manifest.json, not documented in AI Notes, and the entry is absent from state/ig-queue.json. None of the three sanctioned-path conditions are met.",
+      "fix": "Mark site-02.png as rejected in manifest.json (add 'rejected': true). Add the entry to state/ig-queue.json with page_id c74b948a-071a-46c2-bab9-980af37c85d2, ig_url https://www.instagram.com/querida__si/, reason 'context shot returned IG login page (logged-out throttle); logged-in ig.py grab needed'. Add a note to AI Notes: 'IG context shot queued for ig.py (login page served logged-out)'. The website context shot (site-01.png) is correct and passes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 work images have captions naming the project and a link to the project page. Context shots captioned 'Website' and 'Instagram profile'."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video embeds are present. Studio is graphic design; captured projects are identity, editorial and web. No YouTube/Vimeo on project pages was cited as missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states 'No LinkedIn company page found'. IG throttle issue is the failing check above, not a silent gap."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a named Barcelona design studio."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (https://querida.si), Instagram (https://www.instagram.com/querida__si/), Email (hello@querida.si) all present. LinkedIn absence documented in AI Notes ('No LinkedIn company page found'). Instagram handle verified via the studio's own site."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (jonathan set_by). Open Question 1 asks Jonathan to confirm additions (Creative direction, Identity systems, Web design, Brand strategy, Film and video production). Correct approach: jonathan owns Capabilities, scout flags the question."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Spain, Size = 2-10 (provenance: migration, consistent with 9-person team noted in AI Notes), Work Status = Studio. AI Notes names querida.si and itsnicethat.com as sources. Sources named, multi-source resolution present."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4 (set_by agent). This is a Studio type; per checklist calibration note, Autonomy is optional for org entries. Field is set with reasoning in AI Notes (10+ years operating, CD-level founders, substantial roster). No failure."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? = Unvetted, Worked Together = Never, Familiarity = Don't know them) are not contradicted by any clip note or evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note instruction text visible in the entry. Source shows 'Web clipper' origin without special instructions."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'suggesting' for autonomy inference and qualifies founders' description. No em-dashes present. Seniority and experience read included (founded 2014, 10+ years, CD-level leadership)."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper; querida.si, itsnicethat.com, web search 2026-07-06'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. source_url null on some fields is the known systemic tooling gap (not a gate failure per checklist calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Confirmed no em-dashes in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question about Capabilities additions. Terse, conditional, not asking for fields already set."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching, correct for a pre-gate entry. Status will be flipped to Needs Review only after this gate passes."
+    }
+  ],
+  "to": "scraper"
+}

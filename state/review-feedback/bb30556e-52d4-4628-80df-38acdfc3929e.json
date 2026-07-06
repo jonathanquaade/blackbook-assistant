@@ -1,0 +1,111 @@
+{
+  "page_id": "bb30556e-52d4-4628-80df-38acdfc3929e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-06T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images span 5 distinct named projects: Hii Magazine, The New Yorker Puzzles & Games, Mailchimp Bloom, (Y)ours Press, Zadig & Voltaire. No repeat-angle duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project showing interiors: Hii Mag cover + web UI, New Yorker crossword page + icon set, Bloom wordmark detail, (Y)ours book spine + brand guidelines, Zadig location campaign grid."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-01.png shows an Akai MPC One music production device. Caption says 'Hii Magazine, identity + web'. An Akai MPC is not identity or web design work; it is editorial content School published in the magazine, not a design deliverable. This is an off-capability image that must be replaced with an actual School design artifact from the Hii Mag project (e.g. a logotype, type specimen, or web screenshot from schoooool.com/work/hii-mag).",
+      "fix": "Remove site-01.png. Replace with a design artifact from the Hii Mag case study: the wordmark, typographic system, or a web interface screenshot that shows School's actual identity/web work, not the magazine's editorial hardware content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png is schoooool.com homepage, confirmed by visual (shows 'Hi Ludwig, School is (y)our creative studio' UI). IG context shot (site-16.png) is correctly rejected+documented: rejection_reason cites Instagram login wall, entry is in state/ig-queue.json (confirmed, line 1830). Sanctioned throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 uploaded images have captions naming project + source link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Studio is identity/web/digital; no video-primary work found in the captured projects. No embedded video expected for this capability set."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG queued with documented reason. AI Notes notes the queue. No other known source is unexplored."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small Brooklyn 2-person founding team with hands-on execution."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: schoooool.com (confirmed). Instagram: @schoooooooooooool (confirmed, in provenance). LinkedIn: linkedin.com/company/schoooool (confirmed). Email: info@schoooool.com (confirmed). No missing link that an obvious search would have found."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design (set_by jonathan). Scout raised an Open Question asking Jonathan whether to add web design, identity systems, creative technology. This is the correct handling for a jonathan-set tag that may be narrower than the studio's scope."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US (corrected from migration error UK; ZoomInfo + multiple sources cited in AI Notes). Size: 2-10 (migration, consistent with '~2-5 core' stated in AI Notes). Work Status: Studio (self-operated). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry (not a Person). Per calibration note 2026-06-21, Autonomy is optional for org-type entries. AI Notes provide a seniority/leadership read (two partners, Andrew Herzog + Nicky Tesla, ex-Sagmeister+Walsh/R/GA/COLLINS/Google Creative Lab). No field required."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note or evidence contradicts the zero-states. Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are all consistent with a migration entry with no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip-note stated facts requiring --from-jonathan. Country correction (UK to US) was made with agent evidence."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'appears to be', 'stated scope', 'may be narrower'. Size hedged as '~2-5'. Country sourced to ZoomInfo. Seniority and trajectory named with specific employers. No em-dashes found."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper (migrated); studio identified as School (schoooool.com), Brooklyn NY, founded 2019 by Andrew Herzog and Nicky Tesla (ex-HAWRAF, Google Creative Lab)'. Filled and substantive."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. Null source_url is the known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional Open Question about Capabilities (jonathan-set field, appropriate to ask). Story nudge not triggered (Worked Together is Never, Familiarity is Don't know them). No redundant asks."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching. Reviewer holds at Enriching pending fix. Will flip to Needs Review only on a clean pass."
+    }
+  ],
+  "to": "scraper"
+}

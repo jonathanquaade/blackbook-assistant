@@ -20,18 +20,29 @@
     "link": "https://www.re.design/work/swisscom-brand-experience",
     "captured_at": "2026-07-06",
     "rejected": true,
-    "reject_reason": "Prismic/Next.js DOM prefetch contamination: filename is 1.Optus_LR.gif (Optus content), captured while scraping Swisscom page. Replaced by site-03b.gif."
+    "reject_reason": "Prismic/Next.js DOM prefetch contamination: filename is 1.Optus_LR.gif (Optus content captured while scraping Swisscom page)."
   },
   {
     "file": "site-03b.gif",
     "source_url": "https://images.prismic.io/reagency/366f72fc-5a0d-4137-b354-5ee4e281d8f3_Swisscom_LoopingLogo_CaseStudy_Thumbnail.gif",
     "caption": "Swisscom brand identity, Re",
     "link": "https://www.re.design/work/swisscom-brand-experience",
-    "captured_at": "2026-07-06"
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "reject_reason": "Renders as blank white frame; animated GIF first frame is transparent/white. Dropped; Swisscom covered by site-01 and site-02."
   },
   {
     "file": "site-04.png",
     "source_url": "https://images.prismic.io/reagency/5e686242-0d0c-4f0f-8416-a66a033cbc3b_FT_Event_pexels-igreja-dimensa%CC%83o-10123191.png",
+    "caption": "Franklin Templeton brand identity, Re",
+    "link": "https://www.re.design/work/franklin-templeton",
+    "captured_at": "2026-07-06",
+    "rejected": true,
+    "reject_reason": "Event photography (presenter at 2023 Outlooks conference); not brand design output. Replaced by site-20.png (Hello Progress OOH billboard)."
+  },
+  {
+    "file": "site-20.png",
+    "source_url": "https://images.prismic.io/reagency/5d834e90-f70e-47a7-a4b3-961a4c0895eb_franklintempleton-seo-image.png",
     "caption": "Franklin Templeton brand identity, Re",
     "link": "https://www.re.design/work/franklin-templeton",
     "captured_at": "2026-07-06"
