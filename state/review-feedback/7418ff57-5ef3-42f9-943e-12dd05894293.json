@@ -1,0 +1,116 @@
+{
+  "page_id": "7418ff57-5ef3-42f9-943e-12dd05894293",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T14:20:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "No images present. Only clipped.md in assets directory. Scout pass only; scraper has not run.",
+      "fix": "Scraper must run: capture poster, editorial, identity and signage work from helmo.fr project pages. Targets: Jazzdor festival posters (long-running series), Palais de Tokyo, Pompidou Center/Orsay exhibition catalogs, Louis Vuitton or Hermes collateral. Aim for 4-5 distinct projects, 2-3 images each."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "No images present.",
+      "fix": "Go inside projects on helmo.fr: spreads, multi-page layouts, wayfinding details, not just covers or hero images. The studio is known for intricate poster typography - capture full poster images, not cropped previews."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "No images present. Note for scraper: tagged Graphic design (jonathan-locked). The studio's documented work is poster design, editorial, book design, signage, visual identity. All of these fall under Graphic design. No off-capability risk flagged.",
+      "fix": "Capture poster design, editorial/book work, and signage as primary. All on-capability for Graphic design tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No context shots present. No website screenshot, no Instagram screenshot.",
+      "fix": "scrape.py shot https://helmo.fr --out assets/<id> --caption 'Website'. Then attempt scrape.py shot https://www.instagram.com/studiohelmo/ --render --caption 'Instagram profile'. If IG returns error/modal, reject in manifest, add to ig-queue, document in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images present to evaluate. Scraper must caption every image added."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design and poster studio. No video or audio work expected in scope. Check project pages for any embedded video anyway; embed if found."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No images because the scraper has not run. Expected pipeline state after scout-only pass."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: two-person founder-operated atelier, hands-on execution, not a full-service agency."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (https://helmo.fr), Instagram (https://www.instagram.com/studiohelmo/), Email (hello@helmo.fr). LinkedIn not present - documented in AI Notes as not found after two searches (Belgian HELMo school is a collision; no company page exists for the French studio). Missing LinkedIn is explained and documented, not a skipped search. Acceptable."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities set_by:jonathan (Graphic design). Scout preserved it and raised Open Question 1 on Identity systems. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France (agent-verified from helmo.fr, migration value confirmed). Size: 2-10 (agent-verified: two founders, confirmed from own site). Work Status: Studio (agent-set, confirmed from own site and contact page). All three set."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by:agent. Reasoning in AI Notes: fully autonomous studio principals, self-directed practice, no employer. Well-grounded for a two-founder Studio entry with 19 years of practice."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship signals. Clip note 'Helmo Fr' is purely a country/region annotation, no relationship facts."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note 'Helmo Fr': 'Fr' correctly interpreted as France annotation (Country set accordingly). Raw name archived to clipped.md before overwrite. Name cleaned to 'Helmo'. No relationship facts or stated judgments in the clip note. Handled correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year, founders, prior collective, client list, practice description). Autonomy estimate framed as a read. Seniority read present (~19 years, senior creative directors). LinkedIn absence noted. No em-dashes. Well-hedged."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled and consistent with the migration timestamp."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url is null across all fields - known systemic tooling gap per calibration note, not a gate failure. set_by values are correct (jonathan for Capabilities, migration for original Name, agent for all enriched fields)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, colons, commas, and parentheses. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: (1) Capabilities expansion - terse and conditional. (2) Familiarity? - zero-state, valid to ask. (3) Rating? - empty field, valid to ask. All terse and appropriate. Story nudge not applicable (no relationship signals)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Correct: scraper has not run yet."
+    }
+  ],
+  "failing_checks": ["A.project-diversity", "A.depth-over-breadth", "A.on-capability", "A.context-shots"],
+  "to": "scraper",
+  "notes": "Scout metadata pass is clean: all B/C/D checks pass. The four A-section failures are entirely because the scraper has not run - no images, no manifest, no context shots. This is the expected pipeline handoff state. The scraper needs to: (1) scrape project work from helmo.fr (Jazzdor poster series, Palais de Tokyo, Pompidou/Orsay catalog work, Louis Vuitton or Hermes collateral); (2) capture website context shot; (3) attempt Instagram context shot for @studiohelmo (reject + queue to ig-queue if modal/blocked). The studio does poster-heavy graphic design - go deep into individual projects for full poster images and spread layouts. No video/embed work expected but check project pages. Entry is NOT ready for Needs Review until the scraper completes."
+}

@@ -1,0 +1,112 @@
+{
+  "page_id": "c9e463af-7d12-4729-bb98-d7a38ea823d4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T14:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 project images across 5 distinct named projects: Nike Football NFP Typeface (3), Patagonia GO Campaign (3), Imperio De Reyes (3), StockX Brand Identity (3), Nike Los Fearless (2). All five are clearly separate commissions across different clients and categories. Plus 2 context shots."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects rather than just hero covers: Nike NFP has venue LED installation + type specimen sheet + in-environment application; Patagonia has poster grid close-up + desert billboard + transit rollout; StockX has mirrored-surface signage detail + apparel application + poster system; Imperio De Reyes has full bottle+tube render + embossed stopper close-up + label detail. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design (jonathan-locked). All images show applied graphic design output: custom typeface specimens, poster campaigns, brand identity systems, packaging design, typographic identities. nike-nfp-01.jpg shows a lit installation environment ('The Fastest Will Rise') which is the typeface in application - on-capability. imperio-01.jpg is a CGI render of the bottle/tube packaging - this is on-capability (brand identity and packaging design). No off-capability content found."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed real hypetype.studio homepage (shows 'HYPE TYPE STUDIO' wordmark in top-left nav, project grid with Sonos Ray campaign imagery, Projects/Info/Contact nav). Correct. site-02.png: confirmed real instagram.com profile page for @hypetypestudio (shows Instagram chrome, handle 'hypetypestudio', 'HYPE TYPE STUDIO' bio, 19K followers, 2,309 following, recent grid posts visible including 'MAKE GOOD WORK FOR GOOD PEOPLE' and blue product shots). Both context shots are what their captions claim."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in the manifest has a caption naming the project and a link to the source project page on hypetype.studio. All 16 entries (14 project + 2 context) are captioned."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Scraper reported no video embeds found on any of the project pages visited. Graphic design and type studio; image-based portfolio is appropriate. No embed gap."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present and sourced from DatoCMS CDN (hypetype.studio). No unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: independent, deliberately small, founder-led creative studio. Not an agency (no full-service scale or AOR positioning)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (https://hypetype.studio), Instagram (https://www.instagram.com/hypetypestudio/ - confirmed @hypetypestudio, 19K followers, LA bio matches), LinkedIn (https://www.linkedin.com/company/hype-type-studio), Email (hello@hypetype.studio). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities set_by:jonathan (Graphic design). Agent preserved it and raised Open Question 1 asking whether to add Identity systems, Type design, 3D and motion, Creative direction, Brand strategy. Correct handling of a locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US + UK (agent-set; LA primary office, London presence listed on site - multi-office is real per schema note). Size: 2-10 (agent-verified; described as deliberately small on site). Work Status: Studio (agent-set, confirmed via site and LinkedIn). NOTE: provenance shows Size value as '2-10' with a plain hyphen; the schema option is '2-10' with an en-dash. This may be a display artifact in the provenance JSON or the value landed on the correct Notion select option via case-insensitive matching. Not a gate failure but worth the scout verifying on a future pass."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by:agent. Reasoning in AI Notes: 25+ years independent operation, long-established studio, no parent company or network affiliation, sustained major-brand client history. Well-grounded."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship signals in the entry. Migration entry from 2020 with no clip note commentary."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Migration entry from November 2020. Name is clean (HypeType Studio, no annotation). No clip instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year 1999, founder identity, office locations, client list, FK_Type foundry, awards). Autonomy estimate framed as a read. Seniority read present (25+ years, highly senior creative direction-level). No em-dashes. Work Status and IG confirmation documented. Well-structured."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled, consistent with the migration timestamp."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url is null across all fields - known systemic tooling gap per calibration note, not a gate failure. set_by values are correct: jonathan for Capabilities, migration for Name, agent for all enriched fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, colons, commas, and parentheses. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question (Capabilities expansion). Terse, conditional, specific. Not asking for fields already at non-zero values. Story nudge not applicable (no relationship signals). Familiarity and Rating are not asked - both are missing/zero-state but the checklist does not require the reviewer to enforce those questions; that is the scout's job. The entry has them at zero-state which is valid."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, correctly held by the gate. Being flipped to Needs Review now."
+    }
+  ],
+  "failing_checks": [],
+  "to": null,
+  "notes": "Clean pass. 5 distinct projects with good depth, all on-capability graphic design and type work. Both context shots confirmed correct (website and real Instagram profile grid). Metadata complete: all four links present, AI Notes hedged and detailed, one terse Capabilities Open Question. Minor note: Size provenance shows '2-10' with a plain hyphen vs the schema en-dash '2-10' - cosmetic and not a gate failure, worth a future-pass check. Entry ready for Jonathan."
+}

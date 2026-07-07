@@ -1,0 +1,117 @@
+{
+  "page_id": "a2e5ceac-eb3d-4606-8514-a70ea7253985",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T14:10:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "No images present. No assets directory, no manifest.json. Scout pass only; scraper has not run.",
+      "fix": "Scraper must run: capture work from hingston.studio project pages (Massive Attack, Nick Cave, Dior, Apple, Serpentine, V&A, Formula 1 etc). Aim for 3+ distinct projects, 2-3 images each, from named project pages. Also embed video/motion work (the studio does CGI and film production). See notes below."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "No images present.",
+      "fix": "Go inside projects on hingston.studio. The site lists case studies - open each and pull interior images (identity applications, motion stills, exhibition shots, film stills), not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "No images present. Note for scraper: tagged Graphic design (jonathan-locked), but AI Notes document multi-disciplinary scope including 3D & motion, film, exhibition design. Capture the graphic design and identity work primarily; also embed video/motion work (YouTube/Vimeo from project pages) since the studio does film and CGI.",
+      "fix": "Capture work matching the tagged Graphic design capability: identity systems, brand campaigns, publication design, packaging. Embed any video/motion work found on project pages as embeds (with thumbnail preview images)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No context shots present. No website screenshot, no Instagram screenshot.",
+      "fix": "scrape.py shot https://www.hingston.studio --out assets/<id> --caption 'Website'. Then attempt scrape.py shot https://www.instagram.com/hingstonstudio/ --render --caption 'Instagram profile'. If IG returns error/modal, reject in manifest, add to ig-queue, document in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images present to evaluate. Condition vacuously met; scraper must caption every image it adds."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "fail",
+      "evidence": "No embeds present. Hingston Studio does film and CGI/animation work. The studio's project pages likely include Vimeo/YouTube embeds for motion work.",
+      "fix": "On project pages with embedded video (Vimeo/YouTube), add manifest entries with type:embed, url, caption, and link. Also download the video thumbnail as a preview image. Pattern: thumbnail images first, embeds below."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No images because the scraper has not yet run. This is expected pipeline state after a scout-only pass. Not a failure of explanation; the scraper pass will resolve it."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: independent principal-led London creative studio, ~9 people."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (https://www.hingston.studio), Instagram (https://www.instagram.com/hingstonstudio/), LinkedIn (https://uk.linkedin.com/company/hingston-studio), Email (info@hingston.studio). All four present and plausible. Instagram handle @hingstonstudio confirmed (bio matches, 12K followers per scout summary)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities set_by:jonathan (Graphic design). Scout correctly preserved it and raised Open Question 1 asking whether to add 3D & motion, Brand strategy, Creative direction, Film & video production, Identity systems, Spatial & exhibition design, Type design, Web design. Correct handling of a locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK (agent-verified). Size: 2-10 (agent-verified, ~9 employees per LinkedIn/RocketReach per scout). Work Status: Studio (agent-set). All three set with reasoning in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by:agent. Reasoning in AI Notes: 28-year principal-led studio, Tom Hingston owns and runs the practice with full creative direction mandate. Well-grounded for a Studio entry."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship signals in the entry. Migration entry from 2020 with no clip note commentary."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Migration entry from November 2020. Name is clean (Hingston Studio, no annotation). No clip instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year 1997, founder background, team size approximate, client roster, awards). Autonomy estimate framed as a read. Seniority read present (Senior/Creative Director level, 28 years of practice). No em-dashes. One minor note: 'independent London creative agency' in AI Notes slightly misclassifies the entity (the Type is Studio, not Agency), but this is cosmetic and does not affect any field value."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled and consistent with the migration timestamp."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url is null across all fields including agent-set ones - this is the known systemic tooling gap. Not a gate failure per calibration note. set_by values are correct (jonathan for Capabilities, migration for Name, agent for all enriched fields)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, colons, commas and parentheses. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question (Capabilities expansion). Terse, conditional, specific. Not asking for fields already at non-zero values. Story nudge not applicable."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Correct: the scraper has not yet run; Needs Review is not earned until images are captured and this gate passes on the complete entry."
+    }
+  ],
+  "failing_checks": ["A.project-diversity", "A.depth-over-breadth", "A.on-capability", "A.context-shots", "A.embeds-for-video-audio"],
+  "to": "scraper",
+  "notes": "Scout metadata pass is clean: all B/C/D checks pass. The five A-section failures are entirely because the scraper has not run - no images, no manifest, no context shots. This is the expected handoff state in the pipeline (scout -> scraper -> reviewer). The scraper needs to: (1) scrape project work from hingston.studio case studies (Massive Attack, Nick Cave, Dior, Apple, Serpentine, V&A, Formula 1 - pick 4-5 with depth); (2) embed any Vimeo/YouTube video found on project pages (with thumbnail preview images); (3) capture website context shot; (4) attempt Instagram context shot (cookie modal likely - reject + queue if blocked). The AI Notes 'creative agency' wording is a cosmetic mislabel (Type is Studio) but does not need to block - the scraper can ignore it and the scout can correct if needed. Entry is NOT ready for Needs Review until the scraper completes."
+}
