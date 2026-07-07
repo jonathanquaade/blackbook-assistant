@@ -1,0 +1,111 @@
+{
+  "page_id": "21fee348-9e31-47b2-8125-ce24ad6df4c8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-07T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images across 5 distinct named projects: Venezia FC, FC Internazionale Milano, Bavarian State Opera Season 2021-22, Rimowa, ZEITmagazin Best of Covers. No caption repeats across projects."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Selection goes inside projects: identity grid spec sheet (inter-03), book cover (venezia-02), logo construction drawing (inter-03-identity-76), editorial poster wayfinding (bso-04), stationery detail (rimowa-02), magazine covers (zeit series). Two atmospheric shots present (venezia-01 aerial stadium, inter-02 bus livery at night) but they are a minority and the remaining 13 are design-interior artifacts."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design. All 15 work images show graphic design output: identity systems, editorial covers, brand collateral, wayfinding. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: verified as bureauborsche.com homepage (Bureau Borsche projects grid visible). site-02.png: verified as instagram.com/mirkoborsche -- Instagram logo, handle @mirkoborsche, bio 'Designer', 51.3K followers visible. Both captions and source_urls correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 work images carry a caption naming the project and a link to the source project page. Context shots carry caption + link. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a graphic/identity designer. No video or audio discipline; embed requirement does not apply."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No thin or unexplained gaps. 15 images from a live, well-populated portfolio site."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Person. Mirko Borsche is an individual designer and founder; studio is a separate entity not this entry."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: bureauborsche.com. Instagram: instagram.com/mirkoborsche (verified correct person via context shot). LinkedIn: linkedin.com/in/mirko-borsche-146bb723. Email: info@bureauborsche.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities set_by jonathan (migration, locked). Scout correctly leaves it and raises an Open Question asking Jonathan to consider adding Identity systems and Creative direction. Proper handling of a jonathan-locked field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 1 (schema-correct for a Person entry regardless of studio size). Work Status: Studio (self-founded practice). AI Notes names sources: 'Work Status Studio: self-founded practice, confirmed on own site and LinkedIn.'"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Reasoning in AI Notes: 'fully independent founder, sets his own direction, 30+ yrs experience, internationally recognised.' Grounded in verifiable career history."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with a migration entry with no clip note indicating a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry. Source is 'Web clipper, migrated 2026-06-12'. No clip-note instructions present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes contains verifiable facts (named clients, awards, dates) and hedges inferences ('Capabilities currently set to Graphic design by Jonathan; Identity systems and Creative direction also strongly defensible -- flagged in Open Questions'). Seniority read and Autonomy estimate both present and grounded."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, migrated 2026-06-12'. Correct format for a migration entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url is null throughout -- known systemic tooling gap, not a gate failure per checklist calibration note (2026-06-21). No field written below 0.8 confidence floor; all factual claims are verifiable from Borsche's own site, LinkedIn, and press."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions scanned. No em-dashes found. En-dashes used correctly in season range '2021-22'."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "Three questions: (1) Capabilities expansion proposal -- appropriate since field is jonathan-locked; (2) Familiarity? -- terse, field is at zero-state; (3) Rating? -- terse, field is empty. No question asks for a field that already holds a non-zero value. Story nudge not applicable (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching (Enriching is correct while in the reviewer gate). Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "notes": "Minor tidiness: four image files on disk (bso-check-21.webp, inter-check-25.webp, rimowa-check-9.webp, zeit-check-406.webp) are absent from manifest.json. They appear to be unused candidate/check files from the scraper's selection process. Not a gate failure -- they are not surfaced to Jonathan -- but scraper should track or delete scratch files consistently.",
+  "to": null
+}
