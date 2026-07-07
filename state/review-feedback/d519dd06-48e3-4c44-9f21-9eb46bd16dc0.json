@@ -1,0 +1,115 @@
+{
+  "page_id": "d519dd06-48e3-4c44-9f21-9eb46bd16dc0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "notes_for_jonathan": [
+    "Minor: AI Notes says 'see Open Questions' regarding Capabilities undertag, but Open Questions field is empty. Capabilities is set_by:jonathan (migration value). Scout identified the gap but never wrote the question. Flagging so Jonathan can decide if Graphic design alone covers this studio's scope (brand strategy, packaging, spatial/experiential, digital are all visible in their work).",
+    "Minor: site-10 and site-11 (Pinterest project) are captioned 'brand identity system' and 'visual language' but the actual images show Pinterest advertising campaign creative ('Analogue airwalk', 'Lexi, Santa Cruz' collages). Source URLs confirm they are from the Pinterest project folder on madethought.com, so they are correct project images; the caption labels are slightly imprecise about which aspect of the Pinterest work they represent.",
+    "Studio-vs-Agency flag (judgment call, not a fail): Made Thought is 55-69 people, WPP-owned, but operates as a named creative studio within The New Standard collective and does hands-on execution. Type=Studio is defensible; Jonathan may wish to confirm."
+  ],
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Herman Miller Gaming (sites 01-03), MoMA (04-06), Ableton (07-09), Pinterest (10-11), Fred Perry (12-13). No repeated project across all 13 work images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: HMG has brand identity cover, packaging shot, and OOH billboard; MoMA has identity system, member calendars, and institution campaign copy; Ableton has color system, hardware application, and wordmark. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged as Graphic design. All 13 images show brand identity, packaging, campaign, and visual language work. No off-capability material."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png verified as madethought.com homepage (MADE THOUGHT wordmark + D&G Light Blue hero visible). IG shot (site-15.png) is the Instagram 'Something went wrong' error page; correctly marked rejected:true in manifest with rejection_reason; entry queued in state/ig-queue.json with page_id d519dd06. Sanctioned exception per checklist."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 work images have captions naming the project and a link to the source project page. Website context shot captioned 'Website'."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design studio; no video/audio work expected. No missed video embeds observed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in manifest rejection_reason; entry in ig-queue.json. No other known blocked sources."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type=Studio, set_by:agent. Flagged as judgment call in notes (WPP ownership, 55-69 staff) but defensible as named creative studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (madethought.com), Instagram (@made_thought), LinkedIn (linkedin.com/company/madethought), Email (hello@madethought.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set. Field is set_by:jonathan (migration value). Scout flagged in AI Notes that this may underrepresent scope but did not write the Open Question. Noted above for Jonathan; not a hard fail since the field is his."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK+USA (two offices). Size: 41-100 (55 at acquisition, ~69 on LinkedIn). Work Status: Studio. All set_by:agent with sourced reasoning (WPP announcement, LinkedIn)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry. Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. AI Notes notes 'Studio-level entity: not a person, Autonomy N/A'. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Unvetted/Don't know them) are appropriate for a migration entry with no relationship evidence. No clip note states a relationship fact that contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry; no clip note instruction to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Staff count hedged ('Reported 55... LinkedIn shows ~69 currently'). Founders named (Austin + Parker). Seniority/experience read present for org (founding year, trajectory, WPP acquisition). No em-dashes. No unverified assertions presented as fact."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Migration entry; madethought.com, LinkedIn, WPP announcement Dec 2021, It's Nice That interview'. Multi-source migration entry; no bare 'Web clipper' without date."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have set_by values. source_url null throughout is the known systemic tooling gap, not a gate failure per calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Source, captions, or any agent-written field."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No unanswered agent questions outstanding. The deferred Capabilities question is noted above for Jonathan but is not a structural failure (the field is jonathan-owned and the note is in AI Notes)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; being flipped to Needs Review by this reviewer gate pass."
+    }
+  ],
+  "to": null
+}
