@@ -1,0 +1,111 @@
+{
+  "page_id": "cac4ff40-b95f-40d5-9c94-dbe5597b40bf",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T10:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images span 7 distinct projects: Sonic Acts 2024, Sonic Acts 2026, Kunstverein Leipzig, Bauhaus Dessau, Werkleitz 2024, Werkleitz 2023, ARCH+, e-flux/YCTM. No caption repeats except the intentional 3-image Sonic Acts 2024 set."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "site-07 is an interior graphic from the Sonic Acts 2026 identity; site-05 shows the 2024 poster/identity system in full; site-15 and site-16 show interior festival website pages. NOTE: site-03 and site-04 (both captioned 'Sonic Acts Biennial 2024') appear to be event artwork/photography sourced from the CDN rather than K+R's graphic design output specifically -- they show a lenticular shell sculpture and a cloud painting, not typography or layout. They are ambiguous (could reflect art direction choices) but site-05 does show the actual identity work, so the project is represented. Flag for Jonathan to decide whether 03+04 add signal or should be replaced with interior pages of the 2024.sonicacts.com site."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design. All 11 work images show identity systems and web design for cultural institutions, which is exactly their practice. Matches perfectly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png verified: knoth-renner.com homepage, correct. site-02.png verified: instagram.com/knoth.renner profile grid, correct -- shows the studio account with 532 followers and their recent work grid."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every image in the non-rejected set has a project name caption and a source link. 7 rejected images are correctly excluded from the Images property."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "This is a graphic design and web studio. No video/audio embeds are expected. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sections. LinkedIn absence documented in AI Notes."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: two-person Berlin/Leipzig practice doing hands-on graphic design and web work for cultural institutions."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://knoth-renner.com/ confirmed. Instagram: https://www.instagram.com/knoth.renner/ confirmed (visually verified correct account). LinkedIn: none found, documented in AI Notes ('no LinkedIn found after two searches -- not unusual for a small German academic-practice studio'). Email: christoph@knoth-renner.com sourced from AGI profile."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan, retained). Open Question 1 proposes expanding to Identity systems, Web design, Frontend development (web) -- appropriate proposal, not a gap."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 2-10. Work Status: Studio. AI Notes names sources: 'Work Status Studio confirmed via their own site and consistent public profiles.' Objective resolution satisfied."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5, set_by agent. Studio entry, so field is optional per calibration note. Set correctly with reasoning: co-founders, own and run the entire studio. Seniority read in AI Notes: 15+ years practice, HFBK Hamburg professors, AGI members."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. Clip note (clipped.md) contains only site copy, no Jonathan relationship signal. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only the studio's own marketing copy ('work on the intersection of digital culture and graphic design...'), no Jonathan instructions. Archived and cleared. Name cleaned from clip convention."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include explicit seniority+experience read (co-founders, 15+ years, academic appointment, AGI members), Autonomy reasoning, Work Status source resolution. Capabilities proposal hedged via Open Questions rather than asserted. No unhedged inferences."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null across the board -- this is the known systemic tooling gap, not a fail per calibration note. set_by values correct: migration for Name/Website/Country/Size, agent for all enriched fields, jonathan for Capabilities."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions. Checked full text."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion proposal. Terse, conditional (existing tag has a value so asking about additions is appropriate). Story nudge not triggered (Worked Together = Never, no relationship signals)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer is flipping to Needs Review on this pass."
+    }
+  ],
+  "notes": "Overall clean entry. One item flagged for Jonathan's attention (not a fail): site-03 and site-04 are CDN images from the Sonic Acts 2024 project that appear to show event artwork rather than K+R's graphic design directly. site-05 does show the actual identity, so the project is represented. Jonathan may want to swap 03+04 for interior pages of 2024.sonicacts.com if he finds them ambiguous as portfolio evidence.",
+  "to": null
+}

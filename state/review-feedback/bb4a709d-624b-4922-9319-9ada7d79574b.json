@@ -1,0 +1,110 @@
+{
+  "page_id": "bb4a709d-624b-4922-9319-9ada7d79574b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 5 distinct named projects: Svea Solar, Equisafe, Art Mail with Winsor and Newton, Indicium AI, Wild"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project going inside each: mobile app UI, product screens, print collateral, responsive web mockups, brand system elements"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work shown is brand identity systems, digital product UI, web design, and campaign -- consistent with the studio's tagged Graphic design and the additional capabilities raised in Open Questions"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as justified.studio homepage (Justified.Studio nav visible); site-02.png confirmed as instagram.com/justified.studio (32.6K followers, verified badge, correct handle)"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 images carry captions with project name and source link; no anonymous shots"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Brand/design studio entry; no video-primary discipline; no YouTube/Vimeo embeds expected or missing"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps; all five case studies fully sourced from the studio's own Sanity CDN at full resolution"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio -- correct for a small specialized creative team (founded by 3 people, ~6-10 staff, hands-on execution)"
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present and verified; Instagram handle confirmed via screenshot"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design present (set by Jonathan); Open Question raised for Identity systems, Brand strategy, Web design additions -- correct handling of a Jonathan-owned field"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK (migration), Size 2-10 (migration, consistent with AI Notes ~6-10), Work Status Studio (agent)"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entity; Autonomy not applicable per checklist calibration (2026-06-21); AI Notes states this explicitly"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are set by agent; no clip note or entry evidence contradicts them"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Migration entry (Web clipper, 2020-11-01); no instruction-bearing clip text to act on"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Studio founding facts cited from public record; capability claims hedged as 'evidence also supports'; seniority/studio read included; no em-dashes"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with correct set_by values; null source_url is the known systemic tooling gap, not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No U+2014 em-dash character found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions only: Capabilities additions (Jonathan owns the field) and Rating; both terse and conditional"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently Enriching; flipped to Needs Review by this reviewer on pass"
+    }
+  ],
+  "to": null
+}
