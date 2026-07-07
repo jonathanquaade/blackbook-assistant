@@ -1,0 +1,110 @@
+{
+  "page_id": "9d8bcd5a-e116-4812-b75d-9ff2e60c71d7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: Ford Foundation (4 images), DonorsChoose (3 images), Supermajority (2 images), Climate Lead (3 images). No caption repeats."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Ford: color system + logo before/after + monogram construction diagram + brand idea typography. DonorsChoose: subway billboard application + self-serve digital brand tool + event stage backdrop. Climate Lead: report covers + website + template grid. Genuine interior depth on all four projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; proposed Identity systems, Brand strategy, Web design, Copywriting via Open Question. All 12 work images show identity, brand, and web work for social-impact clients (Ford Foundation rebrand, DonorsChoose rebrand, Supermajority dual-brand, Climate Lead rebrand). On-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: hyperakt.com homepage confirmed (Hyperakt logo, nav with Services/Work/Insights/Brand Score/Contact, tagline 'Courageous branding from the inside out'). site-02.png: instagram.com/@hyperakt confirmed (handle 'hyperakt', 521 posts, 7,072 followers, bio 'We collaborate with nonprofits to design brands that resonate and unlock impact')."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 manifest entries have captions and project links. All 12 work images name project and year."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Identity/brand studio; no video-first capability tagged. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "12 work images across 4 named projects. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized Brooklyn branding team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: https://www.hyperakt.com. Instagram: https://www.instagram.com/hyperakt/ (confirmed correct handle via bio in context shot). LinkedIn: https://www.linkedin.com/company/hyperakt. Email: press@hyperakt.com."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design set_by jonathan (migration). Open Question proposes adding Brand strategy, Identity systems, Web design, Copywriting for his confirmation. Correctly defers to Jonathan on an existing jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 2-10 (AI Notes explains ~6-8 named staff vs LinkedIn 11-50 discrepancy). Work Status: Studio. Sources documented in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional for org-type entries per checklist calibration 2026-06-21. AI Notes notes 'Autonomy n/a for studio entries.'"
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are agent-set and no evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01'; no clip note instructions present beyond the URL."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert only verifiable facts (founding year 2001, founders Deroy Peraza and Julia Zeltser, named clients, documented team size with sourcing caveat). No unsupported claims."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url is null throughout; this is the known systemic tooling gap (checklist calibration 2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, and all captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question on Capabilities: terse, correctly framed as a proposal for Jonathan to confirm, not asking for a field he has not touched."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipped to Needs Review by this gate."
+    }
+  ],
+  "to": null
+}
