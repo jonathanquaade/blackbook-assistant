@@ -1,0 +1,112 @@
+{
+  "page_id": "184a735f-48b2-42ab-a811-88db13113f46",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T14:40:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 project images (plus 2 context shots = 13 total) across 5 distinct named projects: Bacardi (2), Glenfiddich (3), Stauning Whisky (3), La Fantaisie (2), Monica Rich Kosann (1). All five are separate commissions. One rejected image (monica-rich-kosann-01.png, lifestyle photography) is correctly marked rejected in the manifest."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Glenfiddich has core range lineup + embossed stag bottle detail + Grand Cru gift box range; Stauning has brand campaign image + embossed cap detail + embossed bottle base logotype; Bacardi has heritage label archive research + outdoor billboard application; La Fantaisie has print collateral with key motif + Golden Poppy restaurant identity. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All active images show brand identity, packaging design, and visual identity output - on-capability for a brand design studio. stauning-01.png is a brand campaign image with tagline overlay - on-capability (brand communication). bacardi-01.jpg shows historical Bacardi label heritage research used in the brand work - appropriate context for a rebrand case study. monica-rich-kosann-02.png shows a manifesto card in a geometric checker identity system - on-capability. Lifestyle photography (monica-rich-kosann-01.png) correctly rejected."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png: confirmed real heredesign.com homepage (shows 'Here.' logotype in large serif type, Work/About/Journal/Contact nav, project tile visible at bottom). Correct. site-02.png: confirmed real instagram.com profile for @heredesign (Instagram chrome visible, handle 'heredesign', 'Here.' logo, 'We create brand ecosystems with cultural purpose, ensuring 21st century success. Certified B Corp.' bio, 24.1K followers, 816 posts, recent grid with La Fantaisie, Bacardi, and other work visible). Both confirmed correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image in the manifest has a caption naming the project and a link to the source project page on heredesign.com. Rejected image also has a caption. No anonymous or uncaptioned images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Brand design studio; image-based portfolio. Scraper noted 7up page uses only Mux video thumbnails (not usable as stills) and documented this. No embed gap for a graphic design studio entry."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Scraper documented that Fortnum & Mason and Hauser & Wirth case study URLs returned 404, and 7up page uses only video. This is documented in the task summary. The five projects captured provide good coverage. No unexplained gaps."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct: independent founder-led branding studio, ~33 people, hands-on creative execution for brand identity and packaging. Not an agency at full-service scale."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (https://www.heredesign.com), Instagram (https://www.instagram.com/heredesign/ - confirmed @heredesign, 24.1K followers, B Corp bio matches), LinkedIn (https://uk.linkedin.com/company/here-design), Email (newbusiness@heredesign.co.uk). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities set_by:jonathan (Graphic design). Agent preserved it and raised Open Question 1 asking whether to add Identity systems and Brand strategy. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK (agent-verified, East London Shoreditch). Size: 11-40 (agent-verified: ~33 confirmed on About page, LinkedIn 11-50 consistent). Work Status: Studio (agent-set, confirmed via site). All three set and sourced."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy not set. Studio/org-type entry with 33 people and two named co-founders (not a solo founder embodying the org). Per calibration note: Autonomy is optional for org-type entries; a seniority/leadership read in AI Notes is sufficient. AI Notes names both Creative Partners (Kate Marlow, Mark Paton) and Strategy Director (Alastair Cliff) with ~20 years operating. Sufficient for an org entry. Not a gate failure."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no relationship signals in the entry. Migration entry from 2020 with no clip note commentary."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Migration entry from November 2020. Name is clean (Here Design, no annotation). No clip instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year 2005, founders, location, team size with source noted, client list, B Corp certification). Leadership read present (Kate Marlow and Mark Paton as Creative Partners, Alastair Cliff as Strategy Director). No unverified inferences asserted as fact. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled, consistent with the migration timestamp."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url is null across all fields - known systemic tooling gap per calibration note, not a gate failure. set_by values are correct: jonathan for Capabilities, migration for Name, agent for all enriched fields."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, commas, colons, and parentheses. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion - terse and conditional; (2) Rating? - empty field, valid to ask. Both appropriate. Story nudge not applicable (no relationship signals). Familiarity is at zero-state (Don't know them) - not asked, which is acceptable (not required by checklist)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Being flipped to Needs Review now."
+    }
+  ],
+  "failing_checks": [],
+  "to": null,
+  "notes": "Clean pass. 5 distinct projects with good depth, all on-capability brand identity and packaging work. Lifestyle photography correctly rejected. Both context shots confirmed real and correct (heredesign.com homepage + @heredesign Instagram profile with B Corp bio matching AI Notes). Metadata complete: all four links present, AI Notes names founders and leadership, two terse Open Questions. Autonomy not set but this is an org-type with two co-founders - optional per calibration. Entry ready for Jonathan."
+}

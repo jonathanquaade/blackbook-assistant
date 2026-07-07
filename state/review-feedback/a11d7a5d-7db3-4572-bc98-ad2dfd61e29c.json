@@ -1,0 +1,111 @@
+{
+  "page_id": "a11d7a5d-7db3-4572-bc98-ad2dfd61e29c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images span 5 distinct projects: David Chipperfield Architects identity, Raven Row gallery identity, Common Worship (Church of England), Venice Architecture Biennale 2012, ArtReview magazine. No repeated angles of the same project among the live (non-rejected) images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "DCA: stationery flatlay (dca-01) + yearbook publication stack (dca-03). Raven Row: exterior signage (ravenrow-01) + typographic identity (ravenrow-02) + exhibition invitations (ravenrow-03). Common Worship: full book-set spread (commonworship-01) + cover detail (commonworship-03). Venice: installation wall shot (venice2012-01) + publications table (venice2012-02) + catalogue interior spread (venice2012-03). ArtReview: cover (artreview-01) + Power 100 cover pair (artreview-02) + editorial spread interior (artreview-03). Goes inside projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 13 work images are typography, book, editorial, and identity design work (stationery systems, signage, liturgical books, Biennale publications, magazine covers/spreads). No off-capability content."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-07.png: shows morganstudio.co.uk with visible header 'John Morgan studio' and image of John Morgan presenting a book -- real content, not a blank holding page. Acceptable even in temporary-holding context; AI Notes documents the post-death studio status. site-08.png: shows instagram.com/@johnmorganstudio profile page with 6,358 followers, bio, and grid -- correct account. Both context shots verified by opening the images."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 live work images carry named-project captions with source links (jms.scasascia.com project pages). Two context shots captioned 'Website' and 'Instagram profile' respectively. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio is a graphic/editorial/book design practice. No video or audio capabilities tagged. No embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "6 manifest entries marked rejected with documented reasons: 5 rejected for AGI contamination (images pre-fetched from other designers' AGI member pages -- Alan Fletcher, Anja Kaiser, Michael Mabry, Ralph Schraivogel, Michael Renner -- correctly identified and excluded); 1 (dca-02) rejected as redundant angle of same stationery spread as dca-01; 1 (commonworship-02) rejected for off-design context photo. All rejections are honest and specific."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Appropriate for a small specialist creative practice."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (morganstudio.co.uk), Instagram (instagram.com/johnmorganstudio), LinkedIn (linkedin.com/company/john-morgan-studio), Email (info@morganstudio.co.uk). All four link categories populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by jonathan, migration origin). Open Question 1 proposes expanding to Identity systems and Type design with evidence -- correct agent behavior when existing tag is jonathan-set."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10 (AI Notes: 'confirmed 2-3 core team as of 2022'). Work Status: Studio (the entry is the practice entity). All set_by agent with verified_at timestamps. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry. Per checklist calibration (2026-06-21): Autonomy is optional for org-type entries. Field not set; AI Notes provide leadership context (directors named post-founder death). Correct."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all valid. No evidence of a prior relationship with Jonathan in any field or clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No specific instruction text in the clip note beyond the URL. Nothing deferred."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding date, death date with specificity, directors from public records, named clients). The founder death date is documented factually. Notes do not assert taste or relationship judgments. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have set_by and verified_at in provenance. source_url is null throughout -- known systemic tooling gap per checklist calibration (2026-06-21), not a gate failure. No field appears written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, and all image captions. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Three questions: (1) Capabilities expansion with specific evidence for Identity systems and Type design -- appropriate since current tag is jonathan-set. (2) Country clarification re London/Berlin discrepancy -- the source entry suggested Berlin but the scout found no evidence. (3) Rating. All terse, all conditional, no duplicates. No story nudge required (Worked Together is Never)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching. Reviewer will flip to Needs Review on pass."
+    }
+  ],
+  "reviewer_notes": "Solid entry. The AGI contamination trap (their page prefetching other members' images into the DOM) was correctly identified and rejected. Work sourced from jms.scasascia.com, a working archive of the studio's portfolio, is legitimate and well-captioned. The 'temporary holding site' context is adequately documented in AI Notes. The website context shot shows real content (not a blank splash page), acceptable. One forward-note for Jonathan: the Open Questions on Capabilities and Country are both substantive and worth a quick glance alongside the Rating ask.",
+  "to": "scraper"
+}
