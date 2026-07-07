@@ -1,0 +1,113 @@
+{
+  "page_id": "6ddc37b3-5e74-4877-852c-827c13f4bb72",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T12:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active images across 5 distinct named projects: Goldsmiths CCA, Charleston, Glasgow International, V&A Exhibition Road Quarter wayfinding, Fitzwilliam Museum"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple images per project (2-3 each); includes interior wayfinding shot at V&A, Goldsmiths Drill typeface specimen sheet, Charleston print collateral. Goes inside the work, not just hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all images show applied graphic design output (identity systems, type specimens, wayfinding, print/poster campaigns). One image (site-02.jpg, Goldsmiths CCA) shows a raw brick/concrete wall with no design work visible -- contextual architectural photo from the project page, not design output. Borderline but the project is otherwise well covered by two other images (typeface specimen + orange signage), so not a gate failure on its own."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-14.png (Website): correct, shows kellenberger-white.com homepage with nav and project grid. PASS. site-15.png (Instagram profile): the URL is correct (instagram.com/@kellenbergerwhite) and the handle is visible, but the entire profile grid is obscured by a full-screen cookie-consent modal, rendering the shot useless as a memory anchor. The sanctioned exception requires the shot to be marked rejected in manifest + the block documented in AI Notes + an entry in state/ig-queue.json. None of these three conditions are met: site-15.png has context_shot true but is NOT rejected, AI Notes do not mention the cookie-modal block, and there is no ig-queue entry for this page.",
+      "fix": "1. In manifest.json: set site-15.png to rejected:true with rejected_reason 'Cookie-consent modal obscures profile grid; unusable as context anchor'. 2. Add to state/ig-queue.json: {page_id: '6ddc37b3-5e74-4877-852c-827c13f4bb72', name: 'Kellenberger-White', ig_url: 'https://www.instagram.com/kellenbergerwhite/', reason: 'Context shot blocked by cookie modal logged-out; need logged-in ig.py grab', queued_at: today}. 3. Add one sentence to AI Notes: 'IG context shot blocked by cookie-consent modal logged-out; queued for ig.py grab.' Then re-upload so the entry body reflects the rejection. The website context shot is fine and requires no change."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every active image has a caption naming the project and a link to the source project page"
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Graphic design studio; no video or audio work in scope. No embeds needed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present and sourced; no unexplained gaps"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialist 4-person creative practice."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present and sourced to kellenberger-white.com"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities field is set_by:jonathan (single tag: Graphic design). Scout correctly did not overwrite it and raised an Open Question (Q1) asking whether to add Identity systems, Spatial & exhibition design, Type design, Web design. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10. Work Status: Studio. Work Status sourced to kellenberger-white.com in provenance. AI Notes names the basis (founder-directed studio with 15+ years of practice)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by:agent, with reasoning in AI Notes. Studio entry; single founding pair clearly embodies the org. Optional for org-type but correctly set and grounded."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship in the clip note or entry body."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Migration entry from 2020 with no special clip instructions. No clipped.md present (nothing to relocate). Name is clean."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (clients, founding year, schools, team size) sourced from the studio's own site. Autonomy estimate hedged as a read. Seniority read present (Senior/director level throughout, Eva and Sebastian deeply hands-on). No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled and plausible for a migration entry."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by values. source_url null on several migration-inherited fields (Website, Country, Size, Name, Worked Together, Familiarity) -- known systemic tooling gap per calibration note, not a gate failure. Agent-set fields (Type, Instagram, LinkedIn, Email, Work Status, Source, Autonomy, AI Notes, Open Questions) all have source_url pointing to kellenberger-white.com."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, commas, colons, and parentheses. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question (Capabilities expansion). Terse and conditional -- not asking for fields already at non-zero-state values. Story nudge not applicable (no relationship signals present)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry status is Enriching, correctly awaiting this gate. Not yet flipped to Needs Review."
+    }
+  ],
+  "failing_checks": ["A.context-shots"],
+  "to": "scraper",
+  "notes": "Single blocker: the Instagram context shot (site-15.png) is the correct page but is fully obscured by a logged-out cookie-consent modal. The sanctioned fix is a three-step mechanical change (reject the shot in manifest, add to ig-queue, note in AI Notes) -- no re-scraping of work images needed. Everything else is clean: 5 distinct projects, good depth, on-capability, all metadata complete, no em-dashes, provenance clean."
+}

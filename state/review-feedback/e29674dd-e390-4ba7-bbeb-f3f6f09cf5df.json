@@ -1,0 +1,111 @@
+{
+  "page_id": "e29674dd-e390-4ba7-bbeb-f3f6f09cf5df",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 active images across 8 distinct named projects: Loewe identity, Bjork (3 separate releases across 2001-2007), Yohji Yamamoto (2 catalogues), Jil Sander, Calvin Klein, M/M typeface collection, Theatre de Lorient poster, EBIT visual identity. Well above the 3-project minimum."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Captures go inside projects: Loewe packaging system spread (not just logo), Bjork artwork covers with custom illustration treatments, Yohji catalogue interior spreads, Jil Sander campaign magazine spread, M/M type specimen sheet, EBIT full typeface-in-use composition. No lazy hero banners."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capabilities: Graphic design (set_by: jonathan). All captured work is graphic design output: fashion campaign art direction, editorial design, identity systems, custom typefaces, poster design. Everything matches the tagged capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png verified: mmparis.com landing page showing 'welcome to m/m (paris)' header and M/M logo. site-02.png verified: instagram.com profile page for @mmparisdotcom (username visible, verified blue badge, 174K followers, display name 'M/M (Paris)'). Both context shots correctly labeled and confirmed to show what their captions claim."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active manifest entries have captions naming project, context, and year. Every caption has a corresponding source link. No anonymous images in the active set."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "M/M (Paris) is a graphic design studio; no video/audio work in tagged capabilities. No embeds needed or missed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "mmparis.com is a TLS-broken minimal landing page with no portfolio. AI Notes does not explicitly flag this but the scraper correctly pivoted to press/client sites (Wallpaper, Dazed, AnOther, EBIT client site) per the sanctioned primary method. No gaps left unexplained."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct. Two-founder Paris studio doing hands-on creative execution, not a large full-service agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: mmparis.com (confirmed live). Instagram: instagram.com/mmparisdotcom (verified in context shot, correct account). LinkedIn: linkedin.com/company/mmparisdotcom (present). Email: anyone@mmparis.com (sourced from mmparis.com contact page, visible in site-01.png context shot). All four link categories filled."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design (set_by: jonathan, locked). Reviewer note for Jonathan: M/M (Paris) also produces Identity systems (Loewe full brand rebrand) and Type design (their own custom typefaces shown). These may warrant additional tags, but Capabilities is locked to Jonathan's set so no action taken here."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 2-10 (LinkedIn lists ~5 employees, two founders core team). Work Status: Studio (founded and active studio). AI Notes states 'Work Status Studio confirmed: founded, active studio with employees, not freelancers' and names LinkedIn as a source. Multi-source check implied by mmparis.com + LinkedIn."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy is optional per calibration note (2026-06-21). Field is set to 5 with reasoning: 'Studio-level principals, ~30 years running; Autonomy 5 is certain.' Appropriate for a solo-duo founding studio."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Work With? = Unvetted, Worked Together = Never, Familiarity = Don't know them) are all consistent with the clip note, which contained only 'M/m Paris' with no relationship facts or clip instructions."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md shows raw name 'M/m Paris' twice, no special instructions. Name corrected to canonical 'M/M (Paris)'. No stated facts, relationship notes, or passcodes in the clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include founder bios, founding year, client roster, institutional affiliations, Harper's Bazaar Italia appointment. Facts are verifiable (Wikipedia, press, mmparis.com). Seniority read present: 'Studio-level principals, ~30 years running'. Autonomy estimate included with reasoning. No em-dashes. No unhedged speculation."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper; M/M (Paris) Wikipedia, mmparis.com, LinkedIn, Instagram @mmparisdotcom, Harper's Bazaar Italia announcement 2025'. Filled and specific."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and complete for all fields. source_url is null throughout; this is the known systemic tooling gap noted in the checklist (not a gate failure in v1). set_by values are correct: agent for agent-researched fields, jonathan for Capabilities (correctly locked). No fields written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Programmatic scan of AI Notes and all manifest captions: zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "No Open Questions present. None needed: no unresolvable gaps, no relationship facts to ask about, no story nudge triggered (Worked Together is Never and Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is flipping to Needs Review now as part of this gate pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass across all checks. One observation for Jonathan: Capabilities is set to Graphic design only (locked, set_by: jonathan). The work shown includes a full Loewe brand identity system and custom M/M typefaces, which fall under Identity systems and Type design in the taxonomy. Jonathan may wish to add those tags."
+}
