@@ -1,75 +1,74 @@
 {
   "page_id": "fa85a8b7-b59e-4aaf-ba61-6f8797aa554b",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-07T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "15 images across 7 distinct named projects: Unknown Untitled, Sixpack, Marine Dietrich, Paloma Pineda, Voir(e) Atelier, La Canaille, Human. No repeated-project angles."
+      "evidence": "14 images across 7 distinct named projects: Unknown Untitled, Sixpack, Marine Dietrich, Paloma Pineda, Voir(e) Atelier, La Canaille, Human. No repeated-project angles."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "2 interiors per project (stationery + business card system, identity mark + textile pattern, business card + pixel system, book covers x2, woven label + brand card, vinyl cover + gatefold, journal cover + spread). Goes inside each project."
+      "evidence": "2 images per project showing interiors: foil card + business card system, identity mark + textile pattern, identity + pixel system, 2 book covers, brand card + woven label, vinyl cover + gatefold, journal cover + spread."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Graphic design; all 15 images are graphic design work: identity systems, record sleeves, editorial, print collateral. No off-capability captures."
+      "evidence": "Tagged Graphic design; all 14 images are graphic design work (print identity, editorial, record sleeves). Visually verified site-01.jpg (typographic compliments card) and site-13.jpg (La Canaille vinyl album cover). On-capability throughout."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-16.png (captioned 'Website') is a near-black JS loading screen showing only 'My name is ...' text - the site's JavaScript has not rendered. It is NOT a usable homepage screenshot. The IG context shot (site-17.png) is correctly rejected+documented+queued (IG throttle exception applies: rejected, documented in manifest, entry in state/ig-queue.json with reason 'IG profile screenshot returned error page (Something went wrong) - IG throttled'); that part passes.",
-      "fix": "Retake the website context shot with --render flag (scrape.py shot https://mynameis.fr --out assets/fa85a8b7-b59e-4aaf-ba61-6f8797aa554b --caption 'Website' --render) so the JS-rendered homepage loads before the screenshot is taken. Replace site-16.png and re-run keeper.py upload."
+      "result": "pass",
+      "evidence": "site-19.png visually confirmed as the mynameis.fr JS-rendered project index: two-column list of project titles under 'My name is ...' header. The three previously failing black loading screens (site-16.png, site-18.png, site-15.jpg) are all marked rejected in the manifest. IG context shot (site-17.png) is rejected, reason documented in manifest, entry queued in state/ig-queue.json. IG throttle exception applies per checklist."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every non-rejected image has a project name and source link in its caption."
+      "evidence": "Every non-rejected image has a named project caption and a source link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio work found on mynameis.fr; all work is print/identity. No embed opportunity missed."
+      "evidence": "No video or audio work on mynameis.fr; all work is print and identity. No embed opportunity missed."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Three rejected homepage HTML-error shots documented as rejected in manifest. IG throttle documented and queued."
+      "evidence": "Rejected HTML-error shots documented as rejected in manifest. IG throttle documented (manifest + ig-queue.json) and queued for logged-in ig.py grab."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a 2-person Paris independent practice."
+      "evidence": "Type = Studio. Correct for a two-founder Paris independent practice."
     },
     {
       "id": "B.findable-links",
       "result": "pass",
-      "evidence": "Website: https://mynameis.fr (confirmed). Instagram: https://www.instagram.com/mynameis_studio/ (set). LinkedIn: https://fr.linkedin.com/company/mynameis-studio (set). Email: hello@mynameis.fr (set)."
+      "evidence": "Website: https://mynameis.fr. Instagram: https://www.instagram.com/mynameis_studio/. LinkedIn: https://fr.linkedin.com/company/mynameis-studio. Email: hello@mynameis.fr. All four set."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged; Open Question 1 asks Jonathan to confirm Identity systems + Web design additions. Correct approach per TAXONOMY guidance (unsure = more general tag + question)."
+      "evidence": "Graphic design tagged. Open Question 1 asks Jonathan to confirm Identity systems + Web design additions. Correct approach: more general tag + question per TAXONOMY guidance."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: France. Size: 2-10 (2-person studio). Work Status: Studio. AI Notes states sources (site + about page)."
+      "evidence": "Country: France. Size: 2-10 (two-person studio). Work Status: Studio. Sources referenced in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio type entry. Autonomy 5 set with reasoning in AI Notes ('own and direct the studio entirely'). Checklist note: for org-type entries, Autonomy is optional; this one is set with clear rationale (solo founding pair), which is fine."
+      "evidence": "Studio entry; Autonomy 5 set with rationale in AI Notes (founders own and direct the studio entirely). Optional for org entries; set here appropriately given clear two-founder structure."
     },
     {
       "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note evidence contradicts these zero-states."
+      "evidence": "Zero-states (Never / Don't know them / Unvetted) are not contradicted by any clip note content or evidence in the entry."
     },
     {
       "id": "C.clip-note-acted-on",
@@ -79,7 +78,7 @@
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes state verifiable facts (founding year, founders, clients, awards). Seniority and Autonomy estimate are grounded in work history. No unhedged inferences. No em-dashes."
+      "evidence": "Verifiable facts asserted (founding year 2007, founders Alexandre Bouichou and Thomas Ibars, clients, awards). Seniority and Autonomy estimate grounded in work history. No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,25 +88,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by values. source_url is null throughout - noted as a known systemic tooling gap per calibration note, not a gate failure."
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url is null throughout; noted as known systemic tooling gap per calibration note, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and captions reviewed. No em-dashes found."
+      "evidence": "AI Notes, Open Questions, and image captions reviewed. No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) Capabilities expansion (conditional, site evidence supports it); (2) Rating (terse, appropriate for a new studio entry). Neither asks about a field already set to a non-zero-state value."
+      "evidence": "Two terse questions: (1) Capabilities expansion with evidence; (2) Rating. Neither asks for a field already holding a non-zero-state value."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is Enriching. Will remain Enriching until the context-shot FAIL is fixed."
+      "evidence": "Entry is Needs Review. The scraper flipped it after the fix; this re-review confirms the flip is earned."
     }
   ],
-  "to": "scraper",
-  "summary": "One FAIL: website context shot (site-16.png) is a JS loading screen, not the rendered homepage. The mynameis.fr site requires JavaScript to load its project grid; the context shot captured before the JS executed, yielding a near-black screen with only 'My name is ...' text. All other checks pass: 7 distinct projects, good depth, on-capability, all links present, AI Notes clean, IG throttle handled correctly. Single fix required.",
-  "fix": "Retake the website context shot using the --render flag: scrape.py shot https://mynameis.fr --out assets/fa85a8b7-b59e-4aaf-ba61-6f8797aa554b --caption 'Website' --render. Wait for the JS grid to load before capturing. Replace site-16.png in the manifest and in Notion (body-reset + upload)."
+  "to": null,
+  "summary": "PASS on attempt 2. The sole failure from attempt 1 (website context shot was a JS loading screen) is fixed: site-19.png is the mynameis.fr JS-rendered project index, visually confirmed. All three black loading screens and the throttled IG shot are correctly marked rejected in the manifest. All 20 checks pass. Entry is ready for Jonathan."
 }
