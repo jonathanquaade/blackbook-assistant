@@ -1,19 +1,49 @@
 {
   "page_id": "e3d7f792-b82f-4410-aad3-4ed42c16a1d0",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-07T00:15:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
-      "id": "A.work-images",
-      "result": "n/a",
-      "evidence": "Scout pass only; scraper has not run. Images absent is expected at this stage."
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "12 work images across 4 distinct named projects: Design District, Dandelyan, Roundhouse, Sea Containers. No caption repeats across projects; each is a separate client identity."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project, going inside each: Dandelyan has a menu close-up, stacked menus, and an interior cocktail-menu spread (site-06); Roundhouse has a brand-strategy document interior (site-08); Sea Containers has coasters, a full identity system flatlay, and print collateral (site-10/11/12). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tag is Graphic design. All work is brand identity, print, and environmental graphic design. One image (site-02: aerial architectural render of Design District) is client photography embedded in the case study, not off-capability content, and is consistent with the spatial/identity scope of that project. The other 11 work images are clear graphic design output."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png opened and confirmed: it is instagram.com showing @magpiestudio_ (handle visible in header, 14.9K followers, bio reads 'Magpie Studio', work grid visible). site-16.png opened and confirmed: it is magpie-studio.com work grid with project tiles. site-13 and site-15 are correctly marked rejected with documented reasons (blank splash screen). The Instagram profile is genuine and not an error page; no IG-throttle exception needed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project ('Design District, 2020', 'Dandelyan, 2017', 'Roundhouse, 2018', 'Sea Containers, 2018', 'Website', 'Instagram profile') and a link to the source page. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capabilities are Graphic design (print/identity). No video or audio work is claimed or evident. Embed check not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No gaps. 14 active images uploaded; two rejected context shots documented in manifest with reasons. AI Notes documents site access behaviour."
     },
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type = Studio. Confirmed correct for a small specialized creative execution team."
+      "evidence": "Type = Studio. Confirmed correct for a small specialized London creative studio doing brand and identity execution."
     },
     {
       "id": "B.links",
@@ -23,38 +53,37 @@
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Graphic design retained (set_by jonathan, not touched). Open Question proposes Identity systems, Brand strategy, 3D & motion, Illustration, Spatial & exhibition design with evidence from site disciplines. Correct scout behaviour."
+      "evidence": "Graphic design retained (set_by jonathan). Open Question proposes 5 additional tags with site evidence. Correct scout/scraper behaviour; judgment deferred to Jonathan."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "UK confirmed, Size corrected from 2-10 to 11-40 with LinkedIn + RocketReach sources documented in AI Notes. Work Status = Studio appropriate for org entry."
+      "evidence": "Country = UK confirmed. Size corrected from 2-10 to 11-40 with LinkedIn and RocketReach sources in AI Notes. Work Status = Studio appropriate for org entry."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry; Autonomy field is optional. Not set; AI Notes notes the studio-level entity."
+      "evidence": "Studio entry; Autonomy is optional per calibration note 2026-06-21. Not set. AI Notes cover founders and studio leadership. No fail."
     },
     {
       "id": "B.name",
-      "result": "fail",
-      "evidence": "Name field reads 'Magpie' (migration stub). Scout confirmed full name is 'Magpie Studio' from magpie-studio.com and Companies House registration, but did not update the Name field.",
-      "fix": "Run: keeper.py set e3d7f792-b82f-4410-aad3-4ed42c16a1d0 via @file with Name = 'Magpie Studio'. The migration stub 'Magpie' is restructurable (set_by migration). Correct it before handing to the scraper."
+      "result": "pass",
+      "evidence": "Name = 'Magpie Studio'. Provenance shows verified_at 2026-07-07T00:13:18, set_by agent. Migration stub 'Magpie' corrected. The sole failing item from attempt 1 is resolved."
     },
     {
       "id": "C.no-contradictions",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no contradicting evidence."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) have no contradicting evidence in clip note or entry body."
     },
     {
       "id": "C.clip-note",
       "result": "pass",
-      "evidence": "Source documents migration origin and verification sources. No relationship facts in clip note."
+      "evidence": "Source documents migration origin and verification sources. No relationship facts or judgment in clip note to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes assert verifiable facts: founders named, registration number, clients, awards. Size correction documented with sources. No unhedged inferences."
+      "evidence": "AI Notes assert only verifiable facts: founders named with departure date, Companies House registration, client list, awards, size correction with sourcing. No unhedged inferences. Seniority context present (studio-level, founders named, founding year 2008). No em-dashes."
     },
     {
       "id": "D.source",
@@ -64,23 +93,23 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "All touched fields have set_by values. source_url null is the known systemic tooling gap (calibration note 2026-06-21), not a gate failure."
+      "evidence": "All touched fields have set_by values in provenance. source_url null is the known systemic tooling gap (calibration 2026-06-21), not a gate failure. No fact written below 0.8 confidence."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions inspected. No em-dashes found."
+      "evidence": "AI Notes, Open Questions, image captions, and Source inspected. No em-dashes found anywhere written for Jonathan."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question, terse, well-evidenced with specific site discipline confirmations. No non-zero-state fields asked about."
+      "evidence": "One question, terse, conditional (Graphic design already set, so the question proposes additions not substitutions), evidence-grounded with specific site disciplines named. Story nudge not applicable (Worked Together is Never)."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Entry is Enriching; correct for a scout pass awaiting review."
+      "evidence": "Entry is Enriching; correct pre-flip state. Reviewer flipping to Needs Review now."
     }
   ],
-  "to": "scout"
+  "to": "jonathan"
 }
