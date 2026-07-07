@@ -1,0 +1,110 @@
+{
+  "page_id": "97b9cedf-2ce0-410b-9a5c-bfbbf072ab55",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T12:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images span 5 distinct named projects: Monopole Museum identity, KM21 Museum identity, Stay Sane Stay Safe campaign, Paard Push Forward campaign, De Correspondent illustrations. Note: site-04 and site-05 are two outdoor angles of the same KM21 Lisa Brice banner; not a fail given 5 distinct projects overall."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: in-situ poster photography in hospital corridors (Stay Sane 07-09), outdoor billboard placement (Paard 10-12), in-article editorial illustration screenshots (De Correspondent 13-14), spatial identity application shots (Monopole 01-03, KM21 04-06)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 14 work images show graphic design output: brand identities, poster campaigns, editorial illustration. No off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png visually confirmed as lennartsendebruijn.com homepage (large wordmark, project grid). site-16.png visually confirmed as instagram.com/studio_lennartsendebruijn profile (Instagram UI, correct handle and bio visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 work images carry named-project captions with source links (e.g. 'Monopole Museum identity · lennartsendebruijn.com/projects/monopole-museum'). Context shots captioned 'Website' and 'Instagram profile' with links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio is Graphic design, not primarily video/audio; no embedded video deliverables required. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Site is live and rich; no unexplained absence."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Founded 2015, 2-person partnership, independent hands-on creative team. Correct per schema definition."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (lennartsendebruijn.com), Instagram (instagram.com/studio_lennartsendebruijn, visually verified correct studio), LinkedIn (linkedin.com/company/lennarts-&-de-bruijn), Email (studio@lennartsendebruijn.com). All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities field is jonathan-set (Graphic design). Scout correctly did not overwrite; proposed expansion via Open Question #2. Correct protocol."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Netherlands (confirmed), 2-10 (2 founders + interns, confirmed), Work Status = Studio (confirmed via own site copyright 2026 + LinkedIn company type). AI Notes names the sources checked."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type is Studio (org). Autonomy is optional for orgs per calibration note. Autonomy 5 is set with reasoning in AI Notes ('runs as an independent studio, sets its own direction'). Adequate."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no clip note evidence of a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only the raw name 'Lennartsenddebruijn'. No instructions or relationship facts in the clip note beyond the URL. Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses double-hyphens (not em-dashes). Factual claims grounded in verifiable sources (Dutch Design Award, press coverage, clients). Seniority read and Autonomy estimate included. No unhedged inference."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. source_url null is the known systemic tooling gap (not a gate failure per calibration note). set_by values are correct (agent for agent-derived fields, jonathan for Capabilities, migration for baseline Website/Country)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use double-hyphens and commas only. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: #1 Rating (no value set, appropriate), #2 Capabilities expansion proposal (jonathan-set field, correct to ask). Both terse and conditional. No story nudge needed (no relationship fields set)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry was Enriching; flipped to Needs Review by reviewer on this pass."
+    }
+  ],
+  "to": "scraper"
+}
