@@ -17,16 +17,16 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-08T01:14:56",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "UK"
+        "USA"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-08T01:14:56",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -49,9 +49,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-08T01:14:56",
       "set_by": "agent"
     },
     "Name": {
@@ -63,19 +63,49 @@
     "Source": {
       "value": "Web clipper, 2020-11-01",
       "source_url": null,
-      "verified_at": "2026-07-08T00:33:49",
+      "verified_at": "2026-07-08T01:14:56",
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Identity unclear. Name 'Info CO' may abbreviate 'Information Office' or similar UK studio, or may refer to IN-FO.CO (Inventory Form and Content, Los Angeles), but that studio is US-based and does not match the UK tag. No UK studio named 'Info CO' was findable at 0.8 confidence. Entry clipped Nov 2020; Country (UK) and Size (2-10) are migration values. Pending Jonathan clarification before enrichment can proceed.",
+      "value": "IN-FO.CO (Inventory Form and Content), an independent design and editorial studio in Los Angeles, CA. Founded by Adam Michaels and Shannon Harvey in 2018, building on their prior practice Project Projects (2004-2017), which won the Cooper Hewitt National Design Award for Communication Design (2015). Current team of approx. 8 people (principals + 6 staff), confirmed by in-fo.co/studio. Studio work spans graphic design, editorial, book design, identity, web design, motion graphics, exhibition and environmental design, and content development; also operates Inventory Press (books on art, architecture, design, music). Country was migration-tagged UK but is confirmed USA (LA-based). Size 2-10 confirmed via LinkedIn and team page.",
       "source_url": null,
-      "verified_at": "2026-07-08T00:33:49",
+      "verified_at": "2026-07-08T01:14:56",
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Which studio is this? 'Info CO' returns no UK design studio at 0.8 confidence. The closest match is IN-FO.CO / Inventory Form and Content (in-fo.co), but they are LA-based. Could you confirm the website or full name?",
+      "value": "1. Capabilities: Jonathan tagged Graphic design. Site and team page show Identity systems, Web design, Spatial & exhibition design also in scope. Confirm adding those tags?",
       "source_url": null,
-      "verified_at": "2026-07-08T00:33:49",
+      "verified_at": "2026-07-08T01:14:56",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:14:56",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://in-fo.co",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:14:56",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/in_fo_co/",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:14:56",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/in-fo-co",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:14:56",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "info@in-fo.co",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:14:56",
       "set_by": "agent"
     }
   }

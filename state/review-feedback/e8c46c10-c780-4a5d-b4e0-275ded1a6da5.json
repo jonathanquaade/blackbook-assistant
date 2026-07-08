@@ -1,113 +1,112 @@
 {
   "page_id": "e8c46c10-c780-4a5d-b4e0-275ded1a6da5",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-08T10:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-08T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "6 distinct named projects: Gagosian identity, Design Museum identity, Frieze Art Fair identity, Cute exhibition, Science Museum Who Am I, Hult wayfinding. Well above the 3-project minimum."
+      "evidence": "6 distinct named projects across 18 images: Gagosian identity (3 images), Design Museum identity (3), Frieze Art Fair identity (2), Cute exhibition identity (3), Science Museum Who Am I exhibition (3), Hult wayfinding (2), plus 2 context shots. Well above the 3-project minimum."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project going inside each: Gagosian shows wordmark + publication array + gallery window in context; Frieze shows fair signage + full yearbook covers spread; Design Museum shows identity illustration from two campaign angles; Science Museum shows 3 interior angles of the typographic exhibition. Real depth, not hero-only."
+      "evidence": "3 images per project going inside each: Gagosian shows wordmark + publication spread array + gallery window in context; Design Museum shows identity illustration from two application angles plus a contextual use; Frieze shows signage in situ + publication covers spread; Cute shows entrance environment + logotype close-up + letterform detail; Science Museum shows 3 interior angles of the typographic exhibition environment; Hult shows building exterior lettering + interior wayfinding panel. Real depth, not hero-only."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "site-10.jpg (captioned 'Cute exhibition, Somerset House, 2024') is a CGI unicorn-cat render — a piece of exhibition artwork content, not GTF's graphic design output. site-12.jpg (also Cute, captioned same) shows toy bunnies on printed text that reads 'hyperson...' — again appears to be exhibit merchandise/art objects, not GTF's typographic or identity work. Two of the three Cute project images show exhibition content, not the graphic design GTF produced for the show.",
-      "fix": "Replace site-10.jpg and site-12.jpg with images that show GTF's actual graphic design output for the Cute exhibition: identity/logotype, printed matter, signage, environmental graphics, or catalogue design. The GTF project page at https://graphicthoughtfacility.com/cute/ should contain these. If the only images on the page are exhibition artworks with no GTF design output visible, substitute a different GTF project (e.g. their M&S or Vitra work) and note it in AI Notes."
+      "result": "pass",
+      "evidence": "The previous failure (attempt 1) was site-10 showing a CGI unicorn-cat render and site-12 showing toy bunnies -- exhibition artwork content, not GTF's design output. Fix confirmed: site-10 now shows the Cute exhibition entrance environment with GTF's dimensional pink 'cute' logotype mounted on the wall; site-11 shows the dimensional wordmark close-up against the dark grey wall; site-12 shows a letterform close-up of the dimensional 'cu' forms. All three Cute images now show GTF's own typographic identity and environmental signage work for the Cute show at Somerset House. All 18 work images are on-capability (graphic identity systems, print, exhibition design, wayfinding -- all within Graphic design / the studio's stated disciplines)."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-18.png is the real graphicthoughtfacility.com homepage (shows 'Graphic Thought Facility' header, blurred floral project image — the studio's current minimal homepage). site-19.png is the real instagram.com/graphicthoughtfacility profile page showing 0 posts, 1,384 followers, bio 'A London-based design consultancy' — matches reported fact of 0 posts. Both captions and source URLs are correct."
+      "evidence": "site-18.png is the real graphicthoughtfacility.com homepage (shows studio name header, blurred floral project image -- the current minimal homepage). site-19.png is the real instagram.com/graphicthoughtfacility profile (shows handle 'graphicthoughtfacility', 1,384 followers, bio 'A London-based design consultancy', 0 posts -- consistent with studio that does not actively post). Both captions and source URLs are correct."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 18 uploaded images have captions naming project and year (or 'Website'/'Instagram profile' for context shots). site-09.jpg is correctly rejected in the manifest with documented reason (source URL is from a different project). No anonymous images in the uploaded set."
+      "evidence": "All 18 uploaded images have captions naming project and year (or 'Website'/'Instagram profile' for context shots). site-09.jpg is correctly marked rejected in the manifest with documented reason (source URL belonged to a different GTF project). No anonymous images in the uploaded set."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "GTF is a graphic design studio; the Capabilities tag is Graphic design. No video/audio embed obligation applies. The Science Museum Who Am I project includes interactive digital elements but the images show the physical/typographic design, which is on-capability."
+      "evidence": "GTF is a graphic design studio; Capabilities = Graphic design. No video/audio embed obligation. Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "GTF's Instagram has 0 posts; the scraper captured this correctly and noted it so no IG queue is needed. No unexplained thin sources."
+      "evidence": "GTF's Instagram has 0 posts (confirmed by context shot); no IG queue needed. Site is the primary source and is fully explored. No unexplained thin sources."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio. Correct: small specialized hands-on creative team, not an agency built for scale."
+      "evidence": "Type = Studio. Correct: small specialized hands-on team (11 people), not an agency built for scale."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website: https://graphicthoughtfacility.com/ (canonical). Instagram: https://www.instagram.com/graphicthoughtfacility/ (verified: profile shows 'graphicthoughtfacility', bio matches). LinkedIn: https://www.linkedin.com/company/graphic-thought-facility-limited (company page). Email: info@graphicthoughtfacility.com. All four present."
+      "evidence": "Website: https://graphicthoughtfacility.com/ (canonical). Instagram: https://www.instagram.com/graphicthoughtfacility/ (verified: profile bio and handle match). LinkedIn: https://www.linkedin.com/company/graphic-thought-facility-limited. Email: info@graphicthoughtfacility.com. All four present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities = [Graphic design], set_by jonathan (migration). Agent correctly left this field untouched (jonathan-locked) and raised an Open Question asking whether Identity systems and Spatial and exhibition design should be added. This is the correct handling: propose via OQ, do not overwrite a jonathan-set field."
+      "evidence": "Capabilities = [Graphic design], set_by jonathan (migration, locked). Agent correctly left this untouched and raised Open Question 1 asking whether Identity systems and Spatial and exhibition design should be added. Correct handling of a jonathan-set field."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = UK, Size = 11-40 (AI Notes details 3 principals + 1 CD + 5 designers + 2 ops = ~11 confirmed minimum, reasonable range). Work Status = Studio, set_by agent, confirmed from site. AI Notes names the sources ('Work Status Studio confirmed from site and all sources')."
+      "evidence": "Country = UK. Size = 11-40 (AI Notes details: 3 principals + 1 CD + 5 designers + 2 ops = ~11, reasonable range). Work Status = Studio, set_by agent. AI Notes names sources ('Work Status Studio confirmed from site and all sources')."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Type = Studio; Autonomy is optional for org-type entries per checklist calibration note. Autonomy = 5 is set anyway with reasoning in AI Notes ('fully independent studio, co-owned by three principals, no parent company'). Grounded in real facts. No issue."
+      "evidence": "Type = Studio; Autonomy is optional for org-type entries per checklist calibration note. Autonomy = 5 is set with reasoning ('fully independent studio, co-owned by three principals, no parent company'). Grounded in verified facts."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note or Jonathan commentary contradicts these. Zero-states are appropriate."
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note or Jonathan commentary contradicts these. Zero-states appropriate for a web-clipped studio entry with no relationship stated."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2020-11-01' with no special clip-note instructions beyond the URL. Name is clean ('Graphic Thought Facility'). No clip-note judgment facts to apply via --from-jonathan."
+      "evidence": "Source = 'Web clipper, 2020-11-01'; no special clip-note instructions. Name is clean. No --from-jonathan judgment facts needed."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes includes seniority read ('Senior / studio-director level, 35+ years of practice'), verifiable facts stated plainly (founding year, principals, client list, AIC retrospective), Autonomy estimate with reasoning. The one marginally inferential claim ('considered one of the most influential British graphic design studios') is the kind of well-documented public consensus about GTF that can be stated without hedging. No em-dashes present."
+      "evidence": "AI Notes includes verifiable facts (founding year 1990, principals named, client list, AIC retrospective as first solo show for a single graphic design studio), seniority read ('Senior / studio-director level, 35+ years of practice'), Autonomy estimate with reasoning. The 'considered one of the most influential British graphic design studios' is well-documented public consensus, not a bare claim. No em-dashes. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source = 'Web clipper, 2020-11-01'. Filled."
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Present."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file is present and populated for all touched fields with set_by values. source_url is null across all fields — this is the known systemic tooling gap noted in the checklist (not a gate failure in v1). set_by values are correct: Capabilities is jonathan (migration), Name and Country are migration, all enriched fields are agent."
+      "evidence": "Provenance file present and populated for all touched fields with correct set_by values (Capabilities = jonathan, Name and Country = migration, enriched fields = agent). source_url is null across all fields -- the known systemic tooling gap, not a gate failure in v1."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Verified: 0 em-dashes in AI Notes, Open Questions, and Source field."
+      "evidence": "Zero em-dashes in AI Notes, Open Questions, Source, or captions. Confirmed by inspection."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse question on Capabilities (jonathan-set field, agent cannot touch it, correct to ask). No redundant or conditional violations. No story nudge needed (Worked Together = Never, no meeting implied)."
+      "evidence": "One terse, conditional question on Capabilities (jonathan-set field; agent cannot touch it; correct to ask). No redundant or unconditional violations. No story nudge needed (Worked Together = Never, no meeting implied by clip note)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is currently Enriching, as expected before reviewer gate. Status flip to Needs Review is pending this review passing."
+      "evidence": "Entry is at Needs Review in Notion (status was flipped in v1 mode after attempt 1 per protocol). Status is correct for this pass."
     }
   ],
-  "failing_checks": ["A.on-capability"],
-  "summary": "Entry is complete and correct in all dimensions except two images from the Cute exhibition project (site-10.jpg and site-12.jpg) that show exhibition artwork content rather than GTF's graphic design output. The unicorn-cat CGI render (site-10) and bunny-toy detail (site-12) are works displayed IN the exhibition, not the identity, printed matter, signage, or environmental graphics GTF produced FOR it. Replace these two images with GTF's actual design output for the Cute show, or if none is visible on the project page, swap in a different GTF project.",
-  "to": "scraper"
+  "failing_checks": [],
+  "summary": "All checks pass. The single failure from attempt 1 (A.on-capability: two Cute images showing exhibition artwork rather than GTF's design output) is resolved. The three Cute images now correctly show GTF's own dimensional typographic identity for the Somerset House show: entrance environment with pink 3D logotype, wordmark close-up, and letterform detail. Entry is complete, honest, and on-capability across all 6 named projects. Ready for Jonathan.",
+  "to": null
 }
