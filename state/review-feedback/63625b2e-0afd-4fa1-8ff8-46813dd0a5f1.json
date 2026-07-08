@@ -1,0 +1,111 @@
+{
+  "page_id": "63625b2e-0afd-4fa1-8ff8-46813dd0a5f1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "17 images uploaded (16 work + 1 website context shot) across 6 distinct named projects: Democracy Poster Series, Woman Life Freedom, Pina Bausch Foundation Triple Bill, Wiener Musikverein Perspektiven, Satantango, Haltet euch fest/Mecklenburgisches Staatstheater, Fly with Pacha. No duplicate-project stacking."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images going inside the series (poster variants, in-situ shots, flyer treatments). Not hero-only. pbf_01/02/03 show poster, poster in situ, and flyer. mvp_02/03/04 show three distinct portrait poster variants from the Musikverein series."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged as Graphic design. All 16 work images are graphic design: typographic posters, cultural institution campaign materials, film screening posters. No off-capability work. Rejected manifest entries for letterhead/business-card mockups confirm the scraper self-edited correctly."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-07.png confirmed visually as fonshickmann.com website homepage (Filter/Studio nav visible, projects grid showing Democracy, Light Window, etc.). IG context shot (site-08.png) is correctly rejected: image shows Instagram 'Profile isn't available' error page, marked rejected:true in manifest, documented in AI Notes ('IG profile screenshot returned error page logged-out'), entry is queued in state/ig-queue.json with reason and ig_url. Checklist IG throttle exception applies: rejected + documented + queued = pass."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected image in the manifest has a caption naming the project and a source link to the project page on fonshickmann.com. One minor inaccuracy: mvp_02 caption says '2023' but the poster image shows '24.-27.3.22', suggesting the correct year is 2022. The project name and link are correct; this is a labeling slip, not an uncaptioned image. Noted for Jonathan's awareness."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design (poster/identity studio). No video/audio embeds are required for this type. No embed opportunities were missed on the captured project pages (poster work, no video case studies)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes and queued. mvp_01.jpg rejected entry documents 'Cloudflare WAF blocked on Notion send endpoint' for one asset. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: Fons Hickmann m23 is a small Berlin design studio, not an agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://fonshickmann.com (confirmed live, context shot matches). Instagram: https://www.instagram.com/fons_hickmann_m23/ (per their own site). LinkedIn: https://de.linkedin.com/company/fons-hickmann-m23-gmbh. Email: fons@fonshickmann.com. All four link fields populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design, set_by jonathan (migration). AI Notes and Open Question 1 correctly flag that the portfolio also shows identity systems, spatial/exhibition design, and motion graphics, and asks Jonathan whether to expand the tag set. The base tag is correct; the expansion is properly deferred to Jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany (Berlin studio, confirmed). Size: 2-10 (AI Notes documents fluid team of 4-14 historically, current site lists sole named designer; 2-10 is the honest bracket at confidence floor). Work Status: Studio (Fons Hickmann IS the studio; AI Notes explains the reasoning). Multi-source resolution noted in AI Notes (site + LinkedIn)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry. Autonomy 5 set by agent with reasoning in AI Notes: 'principal and professor with 25+ years of independent practice at the highest international level.' Checklist calibration note says Autonomy is optional for orgs but acceptable to set when a single founder clearly embodies the org; Fons Hickmann is that case. Reasoning is grounded in real credentials (UdK professorship since 2007, AGI 2004, 100 Beste Plakate president)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states: Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No clip note or evidence contradicts these. Entry was a web-clipper backfill from 2020 with no relationship facts in the clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. No relationship facts, passcodes, or special instructions evident in the clip note. All standard runbook steps completed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes correctly hedges team size ('fluid 4-14 at different times per Hickmann himself; current site lists him as sole named designer, so 2-10 is a reasonable bracket') and IG handle ambiguity ('@fons_hickmann also exists, 30K followers, appears to be a personal handle'). Verifiable facts (AGI membership, UdK professorship, founding year) are stated plainly. Seniority and Autonomy read included as required."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Matches the created_time convention."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields. set_by values are correct: Capabilities is jonathan (migration, genuinely his), all agent-researched fields are agent. source_url is null across fields (known systemic tooling gap per checklist calibration note, not a gate failure in v1)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically: no em-dash character in AI Notes or Open Questions text."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: Capabilities expansion (identity systems, spatial/exhibition design, 3D & motion). Terse, conditional (Capabilities has a non-zero value but the question is about expanding, which is a legitimate agent question). No questions asked for already-answered fields. Story nudge not required (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. Will be flipped to Needs Review by this gate pass."
+    }
+  ],
+  "notes": "Minor caption inaccuracy on mvp_02: year shown as '2023' but the poster image reads '24.-27.3.22', suggesting the Musikverein Perspektiven Haneke event was March 2022 not 2023. Source link is correct; Jonathan may wish to confirm. Not a gate failure.",
+  "to": "scraper"
+}
