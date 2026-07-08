@@ -1,0 +1,118 @@
+{
+  "page_id": "1ab50f63-750f-466f-a454-dd58997e3046",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T10:15:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "No images present. Scraper has not run. Zero work images in the asset directory (only clipped.md exists).",
+      "fix": "Scraper pass required: capture at least 12 images across 3+ distinct named Landor projects from landor.com case studies."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "No images. Cannot assess.",
+      "fix": "Scraper must go inside project pages (not hero covers only): brand system applications, identity rollouts, packaging layouts, spatial/environmental shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "No images. Cannot verify on-capability capture. Tagged Graphic design; scraper should capture identity/branding work matching that tag.",
+      "fix": "Capture identity and graphic design work from landor.com case studies. Avoid generic agency office or lifestyle photography."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No context shots present: no website screenshot and no Instagram profile screenshot.",
+      "fix": "Run scrape.py shot https://landor.com for website context shot; run scrape.py shot https://www.instagram.com/landorofficial/ for Instagram context shot. Both required."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images exist yet; no uncaptioned images to fail on. Will need verification after scraper runs."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "N/A for this pass. Agency is tagged Graphic design; no video/audio capability. Note: Landor absorbed motion studio ManvsMachine, so scraper should check case study pages for embeddable Vimeo/YouTube project reels and embed them if present."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "No images and no explanation in AI Notes of why. AI Notes does not document any blocking reason (gated content, dead site, etc.).",
+      "fix": "If the scraper can access landor.com case studies freely, capture work. If blocked, document the specific block in AI Notes."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Correct. 1,300 staff, WPP-owned, full-service global brand consultancy. Matches the schema definition of Agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: landor.com (confirmed). Instagram: instagram.com/landorofficial (107K followers, verified from landor.com). LinkedIn: linkedin.com/company/landorglobal (confirmed from search and site footer). Email: N/A for an org at this scale (no public general email expected; no studio contact email findable). All findable links present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design retained from Jonathan (set_by: jonathan, locked). Proposed additions correctly placed in Open Questions rather than overwriting. Correct handling."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: 10 countries sourced from Landor's own contact page; Netherlands removal queried in Open Questions (correct). Size: 100+ (1,300 staff, 30 offices, confirmed). Work Status: Studio is the schema convention for org-type entries; AI Notes acknowledges it is an organisation, not an individual. Acceptable within current schema constraints."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy not set. Correct: per calibration note (2026-06-21), Autonomy is optional for org-type entries (Studio/Agency/Foundry/Publication). AI Notes notes 'no Autonomy field applies to an organisation'. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted. Clip note is bare (just the old name 'Landor & Fitch'). No relationship signal. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Raw clip name was 'Landor & Fitch'. Name updated to 'Landor' (2023 rebrand); old name preserved in Source. clipped.md archived. No relationship facts, passcodes, or special instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No bare unverified assertions. Staff count and office count stated as confirmed (1,300 staff, 30 offices). Rebrand date stated as November 2023 (datable public fact). Major clients listed are publicly documented Landor cases. No em-dashes. Seniority/Autonomy N/A noted explicitly for an org. No hedging failures."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01. Clipped as Landor & Fitch; company rebranded to Landor in November 2023 after dropping the Fitch name.' Well-formed."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file covers all touched fields with correct set_by values. Capabilities correctly retained as set_by: jonathan. source_url null throughout; known systemic gap, not a gate failure (calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes, Open Questions, or Source. Verified programmatically."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion, conditional on Jonathan's existing tag; (2) Netherlands removal, with documented source evidence. Both terse and specific. No double-asking."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry remains Enriching. Correct: it should stay Enriching until the scraper completes and a passing review flips it to Needs Review."
+    }
+  ],
+  "failing_checks": ["A.project-diversity", "A.depth-over-breadth", "A.on-capability", "A.context-shots", "A.absence-explained"],
+  "to": "scraper",
+  "scout_metadata_verdict": "CLEAN. Scout metadata is correct and complete. The scraper inherits a finished metadata entry and does not need to re-scout. All B/C/D checks pass.",
+  "scraper_brief": "landor.com is freely accessible (no gate). Target: 12+ images across 3+ distinct named case studies from landor.com/work. Go inside projects (brand rollouts, identity applications, packaging, spatial shots). Match tagged capability: Graphic design / Identity. Check case study pages for embeddable Vimeo/YouTube reels and embed them. Capture website context shot (landor.com homepage) and Instagram context shot (instagram.com/landorofficial). All images must be captioned with project name plus source link."
+}

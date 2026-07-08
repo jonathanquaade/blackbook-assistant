@@ -1,0 +1,111 @@
+{
+  "page_id": "f0940104-4ebd-43f8-ac8d-45a096e0f5bc",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images across 6 distinct named projects: Fashioning Masculinities (V&A 2022), Folk Archive (Barbican 2014), Art is Magic (Jeremy Deller 2023), Sex Life (Sarah Lucas 2021), Pulped Fiction (David Shrigley 2023), Sunset Sunrise Sunset (Art on the Underground 2022)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images including interior spreads (e.g. site-04 shows Folk Archive book spread with photographs across gutter). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 work images show editorial and book design, exhibition catalogues, typographic covers. Directly on-capability for Graphic design (a typographic studio). No off-capability material present."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png visually confirmed as pleasedonotbend.co.uk homepage (Fraser Muggeridge studio nav visible). site-17.png visually confirmed as instagram.com/@frasermuggeridgestudio profile (username, follower count 28.8k, bio 'Typography & graphic design and stuff' visible). Both captions correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 work images carry named project captions with source links. Context shots labeled 'Website' and 'Instagram profile' respectively."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Studio is graphic/typography/book design. No video or audio work in scope. No embed gap."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present and substantive. No unexplained thinness."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialized team doing hands-on typographic and graphic design execution."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (pleasedonotbend.co.uk), Instagram (@frasermuggeridgestudio, visually verified correct account), LinkedIn (uk.linkedin.com/company/fraser-muggeridge-studio-limited), Email (info@pleasedonotbend.co.uk) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = Graphic design (set_by jonathan, migration baseline). Scout correctly left jonathan's tag in place and raised Open Question asking about expanding to Identity systems, Type design, Web design rather than overwriting."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10 (3 named staff in AI Notes), Work Status = Studio. Sources described in AI Notes (Instagram active 29k followers, LinkedIn company page confirmed)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Studio type. Autonomy is optional for org entries per checklist calibration (2026-06-21). AI Notes include a leadership/seniority read: 'Highly established, director-level founder with 24+ years running the practice.' Sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Clip note contained name only, no relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Fraser Muggeridge' (name only). Name cleaned to 'Fraser Muggeridge studio'. No instructions or relationship facts to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes distinguish verifiable facts (named clients, AGI membership, professorships, archive held at named institutions) from inferred reads. Work Status sources named. No unsupported quality claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Present and correctly formatted."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have set_by. source_url is null throughout (known systemic tooling gap, not a gate failure per calibration note 2026-06-21). Capabilities correctly preserved as set_by jonathan (migration). No field written below confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes or Open Questions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question on Capabilities expansion. Terse, conditional on the migration-baseline single tag. Not asking for fields that already have non-zero values. No story nudge needed (Worked Together is Never, no relationship evidence)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching at review time. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Clean entry. All 17 images verified. 6 distinct projects, all on-capability book/editorial/exhibition graphic design. Both context shots visually confirmed correct. One minor style note: Open Question ends with 'Confirm or adjust?' which is slightly wordy but not a fail. Capabilities field is jonathan-set (migration) so the scout correctly asked rather than overwrote.",
+  "to": null
+}

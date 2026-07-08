@@ -2,49 +2,48 @@
   "page_id": "957033e3-290d-41fb-9ada-45e6c84cdec5",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-08T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects present: Sprite Global Rebrand (site-01/02/03), NIO Brand Identity (site-04/06), Teknion Tone Chair industrial design (site-07/08/09), Formo Brand Identity (site-10/11/12). Rejected site-05 already noted in manifest."
+      "evidence": "4 distinct projects: Sprite Global Rebrand (site-01/02/03), NIO Brand Identity (site-06), Teknion Tone Chair industrial design (site-07/08/09), Formo Brand Identity (site-10/11/12). site-04 and site-05 correctly marked rejected in manifest and absent from Notion Images property."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project; goes inside projects (Sprite intrinsics/OOH, NIO brand artefacts, Teknion prototype process shots, Formo journal interior and materials)."
+      "evidence": "Goes inside projects: Sprite has hero can grid + OOH billboard + intrinsics detail; Teknion has process shot + prototype + chair in context; Formo has journal cover + journal interior + materials. NIO has 1 image (brand artefacts shelf) after the group photo was rejected -- acceptable given the rejection reason."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "site-04.jpg is captioned 'NIO Brand Identity' but the image is a black-and-white group photo of approximately 20 people in an office with a whiteboard showing 'NEXT' -- a team meeting photo, not brand design output. site-06.jpg from the same NIO project correctly shows brand artefacts (NIO logo on branded boxes and a booklet on a shelf). site-04.jpg must be rejected and site-06.jpg kept as the NIO interior shot.",
-      "fix": "Add site-04.jpg to manifest with rejected:true, reject_reason: 'Team meeting group photo, not brand design work; NIO identity already covered by site-06.jpg'. Re-run keeper.py upload to sync the body."
+      "result": "pass",
+      "evidence": "Previously failing image site-04.jpg (team meeting group photo) is now marked rejected:true in manifest and absent from the active Notion Images list. site-06.jpg confirmed as real brand artefacts: NIO branded boxes and badge on a terracotta shelf. All 12 active images show on-capability brand design or industrial design work."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png is confirmed forpeople.com homepage (tagline 'How can we make the future more human?', nav with Projects/Practices/About). site-14.png is confirmed instagram.com with handle @weareforpeople visible in header -- correct profile, not a website screenshot."
+      "evidence": "site-13.png confirmed: forpeople.com homepage (tagline 'How can we make the future more human?', Projects/Practices/About/Contact nav visible). site-14.png confirmed: instagram.com with handle @weareforpeople in header, correct grid (Sprite cans, interior spaces, colourful posts visible)."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 13 uploaded images have caption + link. Context shots captioned 'Website' and 'Instagram profile' with matching links."
+      "evidence": "All 12 active images have caption and link. Context shots captioned 'Website' and 'Instagram profile' with matching links."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Forpeople is a brand/strategy/industrial design agency; no video-primary work that demands embeds. No video or audio on the captured project pages to embed."
+      "evidence": "Forpeople is a brand/strategy/industrial design agency; no video-primary projects in the captured set require embeds."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No gaps unexplained; all 4 projects are findable on forpeople.com."
+      "evidence": "No unexplained gaps; all 4 projects are publicly accessible on forpeople.com."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Agency. Correct: 107 creatives, full-service org, aligns with Agency definition (large full-service org built for scale)."
+      "evidence": "Type = Agency. Correct: 107 creatives, full-service org spanning strategy/brand/industrial design at scale."
     },
     {
       "id": "B.all-findable-links",
@@ -54,32 +53,32 @@
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Only 'Graphic design' is set (set_by: jonathan from migration). Scout correctly asked via Open Question to expand to Brand strategy, Identity systems, Industrial design, Insights & research, Creative direction, Digital product design. Cannot override Jonathan's tag without his approval; the question is appropriate and well-formed."
+      "evidence": "Graphic design set by Jonathan (migration). Open Question correctly asks approval to add Brand strategy, Identity systems, Industrial design, Insights & research, Creative direction, Digital product design. Terse and conditional."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: UK + Netherlands (London + Amsterdam offices confirmed). Size: 100+ (107 staff per AI Notes). Work Status: Studio (the standing convention for org-type entries in this schema)."
+      "evidence": "Country: UK + Netherlands (London + Amsterdam offices confirmed on site). Size: 100+ (107 staff per AI Notes). Work Status: Studio (convention for org-type entries)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Org-type entry (Agency). Per checklist calibration 2026-06-21, Autonomy is optional for org entries and not a gate failure. AI Notes includes a leadership/seniority read (Richard Stevens founding, leadership embeds creative direction across levels)."
+      "evidence": "Org-type entry (Agency). Per checklist calibration 2026-06-21, Autonomy is optional for org entries. AI Notes includes leadership and seniority read (Richard Stevens founding, creative direction embedded across levels)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note evidence contradicts them."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no relationship evidence in clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Entry was a web clipper entry (Source: Web clipper, 2020-11-01); no instruction text in the clip note to act on beyond the URL."
+      "evidence": "Web clipper entry (Source: Web clipper, 2020-11-01); no instruction text in the clip note beyond the URL."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes cite verifiable facts (founding year, staff count, client list, B-Corp status). No unhedged inferences. No em-dashes present."
+      "evidence": "AI Notes cite verifiable facts (2004 founding, 107 staff, B-Corp, client list). No unhedged inferences. No em-dashes."
     },
     {
       "id": "D.source-filled",
@@ -89,24 +88,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "All touched fields have provenance entries with set_by values. Null source_url is a known systemic tooling gap per checklist note (not a gate failure in v1)."
+      "evidence": "All touched fields have provenance entries with set_by values. Null source_url is the known systemic tooling gap per checklist note, not a gate failure in v1."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions."
     },
     {
       "id": "D.open-questions-correct",
       "result": "pass",
-      "evidence": "One question: Capabilities expansion. Terse, conditional (Capabilities has a jonathan-set value, so expanding it requires his approval -- correct to ask). No story nudge needed (Worked Together = Never, no relationship signal)."
+      "evidence": "One question: Capabilities expansion. Terse, conditional (Capabilities has a jonathan-set value). No story nudge needed (Worked Together = Never, no relationship signal)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Reviewer is the one to flip to Needs Review -- will do so only on a pass."
+      "evidence": "Entry was in Enriching. Flipping to Needs Review on this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "One FAIL: site-04.jpg is a team group photo (approx 20 people in an office, whiteboard with 'NEXT' visible) uploaded under the NIO Brand Identity project where brand design work was expected. The NIO project is already well-represented by site-06.jpg (brand artefacts on a shelf). Mark site-04.jpg rejected in manifest.json and re-run keeper.py body-reset + upload to sync. All other checks pass: context shots verified correct, 4 distinct projects, depth inside each project, no em-dashes, all links present, provenance complete."
+  "to": "jonathan",
+  "summary": "Re-review attempt 2. The single failing check from attempt 1 (A.on-capability: site-04.jpg was a team meeting group photo under NIO Brand Identity) is now resolved: site-04.jpg is marked rejected:true in the manifest, absent from the Notion Images property, and the NIO project is represented by site-06.jpg (confirmed as NIO branded boxes and badge on a shelf, real identity work). All 20 checks pass. 12 active images across 4 named projects (Sprite Global Rebrand, NIO Brand Identity, Teknion Tone Chair, Formo Brand Identity). Context shots verified correct. Entry flipped to Needs Review."
 }

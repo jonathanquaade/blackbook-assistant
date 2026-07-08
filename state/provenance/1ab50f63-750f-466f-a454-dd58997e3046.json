@@ -17,21 +17,25 @@
     "Size": {
       "value": "100+",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "Australia",
+        "China",
         "France",
         "Germany",
-        "Netherlands",
+        "India",
+        "Japan",
+        "Singapore",
+        "UAE",
         "UK",
         "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -54,16 +58,58 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-08T01:07:06",
       "set_by": "agent"
     },
     "Name": {
-      "value": "Landor & Fitch",
+      "value": "Landor",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Agency",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://landor.com",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/landorofficial/",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/landorglobal/",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-11-01. Clipped as 'Landor & Fitch'; company rebranded to 'Landor' in November 2023 after dropping the Fitch name.",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Global brand consultancy (Agency), part of WPP. Founded 1941 by Walter Landor in San Francisco; 1,300 staff across 30 offices in 32 markets. Rebranded from Landor & Fitch to Landor in November 2023, absorbing sonic branding firm AMP, workspace design firm BDG, and motion specialists ManvsMachine. Core offer: brand strategy and positioning, identity design (logo, visual systems, naming, verbal identity), packaging, digital branding, spatial and environmental design, motion and sonic branding, insights and analytics. Major clients include Volkswagen Group, Walmart, bp, Kellogg's, Renault. Scale is 100+ (1,300 staff); no Autonomy field applies to an organisation.",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:07:06",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: migration tagged only 'Graphic design' but Landor's documented work spans Brand strategy, Identity systems, Insights & research, Spatial & exhibition design, and 3D & motion (via ManvsMachine). Confirm which to add?\n2. Netherlands: the original migration listed NL as a country but Landor's current 30-office contact page has no Netherlands location. Remove NL from Country, or is there an office not listed publicly?",
+      "source_url": null,
+      "verified_at": "2026-07-08T01:07:20",
+      "set_by": "agent"
     }
   }
 }
