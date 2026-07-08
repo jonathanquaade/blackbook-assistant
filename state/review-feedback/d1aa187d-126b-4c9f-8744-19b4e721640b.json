@@ -1,0 +1,111 @@
+{
+  "page_id": "d1aa187d-126b-4c9f-8744-19b4e721640b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T10:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects across 12 work images: Nike NBA All-Star 2020 (3 images), Warp Records Logo redesign (1 image), Volksbuhne Berlin Digital Identity (3 images), Warp Publishing Identity (2 images), Warp Records rebrand/identity (3 images). Each is a separate project page on hellome.studio. Two Warp Records entries are genuinely different projects (different URLs, different years)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Nike shows OOH billboard + two poster variations; Volksbuhne shows website UI on laptop mockups (two different event states); Warp Records rebrand shows brand colour palette and logo system; Warp Publishing shows identity on phone mockup and flat graphic. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. All 12 work images show graphic design output: typographic poster campaigns, brand identity systems, digital identity UI, logo redesign process diagrams. Fully on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png: verified as hellome.studio website (browser tab shows the URL, phone mockup shows studio work). site-13.png: verified as instagram.com/@hellome.studio profile page (Instagram wordmark visible top-left, handle hellome.studio, 33.5K followers, bio lists Apple, Nike, Warp Records, Vitra). Both correct and correctly labeled."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 active manifest entries have captions. Work images include project name plus source link. Context shots captioned Website and Instagram profile respectively."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a graphic design studio; no video/audio capability tagged. No embeds required. N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Two rejected images (site-04.png, site-05.png) are documented in manifest with rejection reason (white logo on white background, unusable). No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct; HelloMe is a small specialized hands-on creative studio, not an agency."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: hellome.studio (confirmed). Instagram: instagram.com/hellome.studio (confirmed, 33.5K followers). Email: hello@hellome.studio (sourced from directory listings; AI Notes documents it was not directly confirmed from the site, which is honest). LinkedIn: no studio company page found; AI Notes documents the search result and notes only Till Wiedeck personal profile found. Acceptable for a Studio entry where no company LinkedIn exists."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set by Jonathan (provenance set_by: jonathan, preserved correctly). Agent Open Question proposes additions without overwriting. Correct handling."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 2-10 (corroborated by Clutch and 2019 press noting 7 full-time designers). Work Status: Studio. AI Notes names the sources used (Its Nice That 10th anniversary article, Clutch, web sources). Multi-source resolution documented."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 4 (set_by: agent). This is a Studio entry. Per calibration note in checklist (2026-06-21), Autonomy is optional for orgs; agent set it anyway with grounded reasoning (established independent studio, 17+ year founder, clear creative vision, own team). Acceptable and well-reasoned."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Worked Together: Never; Familiarity: Don't know them; Work With: Unvetted. No clip note signals any prior relationship. Zero-states are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source records Web clipper 2020-11-01. No relationship facts, passcodes, or special instructions in the clip note; nothing outstanding."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Email confidence hedged (sourced from directory listings, not directly confirmed from site). Size hedged (Clutch + press corroborate). Instagram follower count phrased as confirmed via Google snippet. Seniority read present (17+ years, senior/creative director level). Autonomy reasoning present and grounded. No bare assertions on unverified claims."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2020-11-01."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields with set_by values. source_url is null throughout; per calibration note (2026-06-21) this is a known systemic tooling gap and not a gate failure. No fields written below 0.8 confidence; hedged fields noted in AI Notes."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes found in AI Notes, Open Questions, captions, or Source field. Verified programmatically."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion proposal. Terse, conditional (Jonathan's existing Graphic design tag is the baseline), no double-asking. Story nudge not applicable (Worked Together is Never). Correct."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching; this gate will flip it to Needs Review on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 14 images across 5 named projects; both context shots verified correct. AI Notes appropriately hedged with seniority and Autonomy reads. LinkedIn absence documented honestly. One Open Question for Capabilities expansion is well-formed. No mechanical failures found."
+}
