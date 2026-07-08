@@ -1,0 +1,112 @@
+{
+  "page_id": "957033e3-290d-41fb-9ada-45e6c84cdec5",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-08T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects present: Sprite Global Rebrand (site-01/02/03), NIO Brand Identity (site-04/06), Teknion Tone Chair industrial design (site-07/08/09), Formo Brand Identity (site-10/11/12). Rejected site-05 already noted in manifest."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project; goes inside projects (Sprite intrinsics/OOH, NIO brand artefacts, Teknion prototype process shots, Formo journal interior and materials)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "site-04.jpg is captioned 'NIO Brand Identity' but the image is a black-and-white group photo of approximately 20 people in an office with a whiteboard showing 'NEXT' -- a team meeting photo, not brand design output. site-06.jpg from the same NIO project correctly shows brand artefacts (NIO logo on branded boxes and a booklet on a shelf). site-04.jpg must be rejected and site-06.jpg kept as the NIO interior shot.",
+      "fix": "Add site-04.jpg to manifest with rejected:true, reject_reason: 'Team meeting group photo, not brand design work; NIO identity already covered by site-06.jpg'. Re-run keeper.py upload to sync the body."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-13.png is confirmed forpeople.com homepage (tagline 'How can we make the future more human?', nav with Projects/Practices/About). site-14.png is confirmed instagram.com with handle @weareforpeople visible in header -- correct profile, not a website screenshot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 13 uploaded images have caption + link. Context shots captioned 'Website' and 'Instagram profile' with matching links."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Forpeople is a brand/strategy/industrial design agency; no video-primary work that demands embeds. No video or audio on the captured project pages to embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No gaps unexplained; all 4 projects are findable on forpeople.com."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. Correct: 107 creatives, full-service org, aligns with Agency definition (large full-service org built for scale)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (forpeople.com), Instagram (@weareforpeople verified in context shot), LinkedIn (/company/forpeople/), Email (hello@forpeople.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Only 'Graphic design' is set (set_by: jonathan from migration). Scout correctly asked via Open Question to expand to Brand strategy, Identity systems, Industrial design, Insights & research, Creative direction, Digital product design. Cannot override Jonathan's tag without his approval; the question is appropriate and well-formed."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK + Netherlands (London + Amsterdam offices confirmed). Size: 100+ (107 staff per AI Notes). Work Status: Studio (the standing convention for org-type entries in this schema)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Agency). Per checklist calibration 2026-06-21, Autonomy is optional for org entries and not a gate failure. AI Notes includes a leadership/seniority read (Richard Stevens founding, leadership embeds creative direction across levels)."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note evidence contradicts them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Entry was a web clipper entry (Source: Web clipper, 2020-11-01); no instruction text in the clip note to act on beyond the URL."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cite verifiable facts (founding year, staff count, client list, B-Corp status). No unhedged inferences. No em-dashes present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with set_by values. Null source_url is a known systemic tooling gap per checklist note (not a gate failure in v1)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+    },
+    {
+      "id": "D.open-questions-correct",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion. Terse, conditional (Capabilities has a jonathan-set value, so expanding it requires his approval -- correct to ask). No story nudge needed (Worked Together = Never, no relationship signal)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer is the one to flip to Needs Review -- will do so only on a pass."
+    }
+  ],
+  "to": "scraper",
+  "summary": "One FAIL: site-04.jpg is a team group photo (approx 20 people in an office, whiteboard with 'NEXT' visible) uploaded under the NIO Brand Identity project where brand design work was expected. The NIO project is already well-represented by site-06.jpg (brand artefacts on a shelf). Mark site-04.jpg rejected in manifest.json and re-run keeper.py body-reset + upload to sync. All other checks pass: context shots verified correct, 4 distinct projects, depth inside each project, no em-dashes, all links present, provenance complete."
+}
