@@ -376,13 +376,22 @@ def cmd_new(name, payload='{}', source=None):
     print(f'created {pid} — {name} (New)')
     return pid
 
-def cmd_ask(page_id, text):
-    api(f'pages/{page_id}', {'properties': {
-        'Open Questions': encode('Open Questions', text),
-        'Entry Status': encode('Entry Status', 'Needs Review')}})
-    prov_update(page_id, {'Open Questions': text, 'Entry Status': 'Needs Review'})
-    roster_mirror(page_id, {'Open Questions': text, 'Entry Status': 'Needs Review'})
-    print(f'asked on {page_id}')
+def cmd_ask(page_id, text, keep_status=False):
+    # In the single-pass P1, asking questions WAS the last step, so ask flips to
+    # Needs Review. In the split pipeline the scout files questions EARLY and must
+    # stay in Enriching (Needs Review is earned only after scraper + reviewer);
+    # --keep-status records the Open Questions without advancing the status.
+    # (Lesson 2026-07-11: scouts filing an Open Question were auto-dragged into
+    # Jonathan's review inbox imageless, before the gate. Fix the tool, not each run.)
+    props = {'Open Questions': encode('Open Questions', text)}
+    prov = {'Open Questions': text}
+    if not keep_status:
+        props['Entry Status'] = encode('Entry Status', 'Needs Review')
+        prov['Entry Status'] = 'Needs Review'
+    api(f'pages/{page_id}', {'properties': props})
+    prov_update(page_id, prov)
+    roster_mirror(page_id, prov)
+    print(f'asked on {page_id}' + (' (status kept)' if keep_status else ''))
 
 def cmd_status(page_id, status):
     guard(page_id, {'Entry Status': status})
@@ -606,7 +615,7 @@ if __name__ == '__main__':
     elif cmd == 'set':
         src = a[a.index('--source') + 1] if '--source' in a else None
         cmd_set(a[1], a[2], src, from_jonathan='--from-jonathan' in a)
-    elif cmd == 'ask': cmd_ask(a[1], a[2])
+    elif cmd == 'ask': cmd_ask(a[1], a[2], keep_status='--keep-status' in a)
     elif cmd == 'set-notes':
         if '--relocated-from-body' not in a:
             sys.exit("CONTRACT: set-notes only relocates Jonathan's own body words. Pass --relocated-from-body to confirm.")

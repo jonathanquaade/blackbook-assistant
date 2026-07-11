@@ -34,7 +34,10 @@ images**, so the Scraper inherits a complete entry and only has to capture work.
    Instagram (full URL, verified right person), LinkedIn, Email, Source, AI Notes
    (2-3 lines, hedged, with seniority/experience). Apply zero-states where evidence
    does not contradict them. Stated-by-Jonathan facts go via `set --from-jonathan`.
-5. Unresolvables → terse numbered `keeper.py ask`. Do NOT capture images.
+5. Unresolvables → terse numbered `keeper.py ask <id> <text> --keep-status`. Do NOT
+   capture images. **ALWAYS pass `--keep-status`**: plain `ask` auto-flips the entry to
+   Needs Review (that coupling is for the legacy single-pass P1), which would drag your
+   imageless entry into Jonathan's inbox before the Scraper and Reviewer have run.
 6. Hand off to the Scraper (do not flip to Needs Review yourself — the Reviewer gate
    does that). Leave the entry in Enriching.
 
