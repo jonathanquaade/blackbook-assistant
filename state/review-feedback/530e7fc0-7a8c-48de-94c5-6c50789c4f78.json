@@ -2,109 +2,103 @@
   "page_id": "530e7fc0-7a8c-48de-94c5-6c50789c4f78",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-08T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "5 of the 14 uploaded images (lego-piece-garden-ldf-hero.jpg, lego-piece-garden-01.jpg, lego-piece-garden-04.jpg, lego-piece-garden-ldf-02.jpg, lego-piece-garden-ldf-03.jpg) are from the LEGO Piece Garden at London Design Festival 2023, which was an IT'S NICE THAT project, not an Anyways project. The LDF page text is explicit: 'The team at It's Nice That wanted the experience to balance...' and 'It's Nice That' is named as the lead; Anyways is mentioned only as a related agency where one team member worked. Confirmed at londondesignfestival.com/stories/boosting-creativity-with-play-at-the-lego-piece-garden. Capturing another studio's work as this studio's portfolio is a misattribution fail.",
-      "fix": "Remove all 5 lego-piece-garden images and the LEGO Piece Garden project from the manifest. The entry now has only 2 confirmed Anyways projects (Google Pixel 6 World of Magic film + Adobe MAX 2023 identity). Find a third confirmed Anyways project to replace LEGO: check archived anyways.co case studies (Wayback Machine), the @anywayscreative Instagram grid, or known client credits (Nike, Sonos, Hinge, Levi's) for a project where Anyways is the credited agency. Then re-upload to meet the 3-project minimum."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "Flows from the LEGO misattribution above: the entry is tagged Graphic design (migration); actual Anyways scope was campaign development, identity and film. The LEGO images are It's Nice That work, not on-capability Anyways work. With LEGO removed, the remaining 2 projects (Google Pixel film + Adobe MAX identity) are plausibly on-capability for a campaign/identity studio, but the portfolio now has only 2 projects and needs a third that is genuinely Anyways work.",
-      "fix": "Remove LEGO images and source a confirmed third Anyways project as per A.project-diversity fix above."
-    },
-    {
-      "id": "identity-mismatch",
-      "result": "fail",
-      "evidence": "DB name is 'INT Works'. Scout AI Notes claim 'INT Works rebranded as Anyways Creative in 2016', but no primary source was found to verify this rebrand at the 0.8 confidence floor: anyways.co is dead (404), the Wayback Machine archive returns JS-rendered pages without readable rebrand history, and no press article confirming the rebrand was located during this review. The scout's Open Question 1 correctly flags the name/identity issue, but the underlying rebrand claim in AI Notes is asserted as fact without verifiable sourcing. If the rebrand cannot be confirmed, the connection between 'INT Works' (the DB entry Jonathan created in 2020) and 'Anyways Creative' is itself uncertain.",
-      "fix": "Scout must locate a primary source confirming the INT Works -> Anyways Creative rebrand (e.g. an archived anyways.co About page, an itsnicethat.com article about the rename, or a press announcement). If confirmed, update AI Notes with the source citation and escalate Open Question 1 to Jonathan so he can decide whether to rename or merge. If not confirmable, add a second Open Question: 'Could not verify that INT Works rebranded to Anyways Creative -- is this the same entity Jonathan clipped in Nov 2020?'"
-    },
-    {
-      "id": "B.links-website-dead",
-      "result": "fail",
-      "evidence": "Website field is set to https://www.anyways.co which returns 404 DEPLOYMENT_NOT_FOUND (documented in manifest). The context shot correctly shows buck.co but the Website property still points to the dead URL. Jonathan seeing https://www.anyways.co in the DB will click a broken link.",
-      "fix": "Update Website field to https://buck.co (the merger destination, already documented in the manifest and context shot caption) or clear it and add a note in AI Notes. Whichever is chosen, ensure the Website field matches the active context shot."
-    },
-    {
-      "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-04.png is indeed buck.co homepage (verified visually: BUCK logo, 'BUCK is a global creative company...' text, work thumbnails). Caption correctly states 'Website (anyways.co now lives at buck.co after Feb 2025 merger)'. site-02.png is indeed instagram.com/anywayscreative (verified visually: Instagram chrome, @anywayscreative handle, 'Anyways Creative' display name). Original site context shot (site-01.png) is correctly rejected+documented. This passes under the EXCEPTION: dead-site is documented and substitute shown.",
+      "evidence": "3 distinct confirmed Anyways projects: (1) Google Pixel 6 World of Magic campaign film, 2022; (2) Adobe MAX 2023 identity, Anyways x BUCK; (3) Sonos x Google Assistant: The Brilliant Sound Experience, 2019. All 5 LEGO Piece Garden images are now marked rejected:true in the manifest and are absent from the Notion Images field (12 live images, none lego-*). The previous misattribution is fully excised.",
       "fix": null
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Google Pixel project: 1 YouTube embed + thumbnail + 3 film stills (coffeeand.tv). Adobe MAX: 3 high-res Sanity CDN images showing different expressions of the identity system. Goes inside the projects, not just cover shots.",
+      "evidence": "Google Pixel: YouTube embed + thumbnail (maxresdefault) + 3 campaign film stills from coffeeand.tv. Adobe MAX: 3 high-res Sanity CDN images showing different expressions of the identity system. Sonos: 3 event/installation stills from the Dave & Gabe case study. Goes inside each project.",
+      "fix": null
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design (jonathan-set at migration, OQ 2 asks for expansion). All 3 projects -- campaign film, identity system, experiential brand installation -- match the scope of a creative agency doing campaign/identity/film work. On-capability.",
+      "fix": null
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png verified visually: BUCK homepage (BUCK logo, 'BUCK is a global creative company...' tagline, work thumbnails grid). Caption correctly states 'Website (anyways.co now lives at buck.co after Feb 2025 merger)'. site-02.png verified visually: instagram.com page showing @anywayscreative handle and 'Anyways Creative' display name (Instagram chrome visible, cookie overlay partially obscures grid but profile identity is confirmed). Original anyways.co context shot (site-01.png) is correctly rejected and documented.",
       "fix": null
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 14 manifest entries (non-rejected) have captions. All have link fields pointing to source project pages.",
+      "evidence": "All 12 live manifest entries have captions and link fields. No anonymous images.",
       "fix": null
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "YouTube embed present for Google Pixel 6 World of Magic film (https://www.youtube.com/watch?v=GgBRUduVTh8) with thumbnail image (google-pixel-world-of-magic-thumb.jpg) and link to source project page.",
+      "evidence": "YouTube embed present (https://www.youtube.com/watch?v=GgBRUduVTh8) for Google Pixel 6 World of Magic film, with thumbnail image (google-pixel-world-of-magic-thumb.jpg sourced from img.youtube.com maxresdefault) and link caption.",
       "fix": null
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "anyways.co dead: documented in manifest with reject_reason. BUCK team/anyways page also 404: documented. Both site context shots correctly rejected. AI Notes note the merger.",
+      "evidence": "anyways.co dead (DEPLOYMENT_NOT_FOUND): documented in manifest with reject_reason on site-01.png. BUCK team/anyways page also 404: documented on site-03.png. AI Notes explain the Feb 2025 merger and that anyways.co is the dead predecessor.",
       "fix": null
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Agency. Given pre-merger size (~53 employees, 41-100) and scope (campaigns, identity, film, web), this is a plausible classification, though Studio could also be argued. Not a gate failure.",
+      "evidence": "Type = Agency. Pre-merger scale (~53 staff, brand campaigns at Nike/Google/Adobe/Sonos scale) supports Agency over Studio. Plausible.",
       "fix": null
     },
     {
-      "id": "B.links-instagram-linkedin",
+      "id": "B.links",
       "result": "pass",
-      "evidence": "Instagram: https://www.instagram.com/anywayscreative/ -- verified visually from site-02.png (correct @anywayscreative profile). LinkedIn: https://www.linkedin.com/company/anyways. Email: not present, but for an org that has merged into BUCK, a contact email for the defunct Anyways entity is not reasonably findable.",
+      "evidence": "Website = https://buck.co (active, verified via context shot). Previous fail (dead anyways.co URL) is resolved. Instagram = https://www.instagram.com/anywayscreative/ (verified from site-02.png: correct handle and display name). LinkedIn = https://www.linkedin.com/company/anyways. Email: absent; no public Anyways contact email exists for a defunct brand that has merged into BUCK -- not a findable gap.",
       "fix": null
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Capabilities = Graphic design (migration, set_by jonathan). Open Question 2 correctly asks Jonathan to approve expansion. Reviewer does not override jonathan-set Capabilities.",
+      "evidence": "Graphic design set_by jonathan at migration. OQ 2 correctly asks for expansion approval. Reviewer does not override.",
       "fix": null
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = UK, Size = 41-100, Work Status = Studio. AI Notes document pre-merger size (~53 employees). Work Status 'Studio' is unusual for an org that has ceased to exist; the scout could have used 'Unknown' or noted the dissolution, but this is a minor judgment call not a gate failure.",
+      "evidence": "Country = UK, Size = 41-100 (~53 pre-merger staff, AI Notes document source), Work Status = Studio. Minor: Studio for a now-defunct entity could have been Unknown, but it is not a gate failure.",
       "fix": null
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry is org-type (Agency). Per checklist calibration 2026-06-21: Autonomy is OPTIONAL for org entries. AI Notes note 'No seniority read applicable as this is an org entry.' Correct.",
+      "evidence": "Org entry (Agency). Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries. AI Notes note no individual seniority read applicable. Correct.",
       "fix": null
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note states a relationship. Zero-states (Never/Don't know them/Unvetted) are not contradicted by any evidence.",
+      "evidence": "No clip note states a relationship. Zero-states (Never / Don't know them / Unvetted) are not contradicted by any evidence.",
       "fix": null
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clipped.md found in assets dir and no clip note instructions visible in the entry. Source = 'Web clipper, 2020-11-01' with no apparent embedded instructions.",
+      "evidence": "clipped.md contains only a reference to a work entry (Google Pixel 6 film) -- no embedded instructions from Jonathan. Name field was bare 'INT Works' with no instruction text.",
       "fix": null
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes do not include unhedged speculation. Minor concern: 'INT Works rebranded as Anyways Creative in 2016' is stated as fact without source -- this connects to the identity-mismatch fail above. However the hedging rule itself (AI Notes hedged) is addressed via the identity-mismatch fail item.",
+      "evidence": "INT Works/Anyways rebrand claim explicitly marked NOT confirmed: 'The claim that INT Works rebranded to Anyways in 2016 is NOT confirmed from a primary source (anyways.co is offline; no press located), so treat the INT Works/Anyways link as unverified.' Capabilities noted as 'reportedly.' OQ 1 frames the rebrand as a question for Jonathan. Previous identity-mismatch fail is resolved by this hedging and OQ surfacing.",
+      "fix": null
+    },
+    {
+      "id": "identity-mismatch",
+      "result": "pass",
+      "evidence": "AI Notes now honestly disclaim the rebrand as unverified. OQ 1 surfaces the name/identity decision to Jonathan. Sonos x Google Assistant attribution confirmed via Anyways-branded source URL in original image file (YaelMalka_Anyways_HollyHerndon_2019) and Dave & Gabe case study. The entry is transparent about what is and is not confirmed; Jonathan decides the name/rename question.",
       "fix": null
     },
     {
@@ -116,28 +110,28 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with all touched fields documented. source_url nulls are a known systemic tooling gap (calibration 2026-06-21); not a gate failure.",
+      "evidence": "Provenance file present; all touched fields documented with set_by values. source_url nulls are the known systemic tooling gap (calibration 2026-06-21), not a gate failure.",
       "fix": null
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dash (U+2014) found in AI Notes or Open Questions. Double-dashes (--) used in Open Questions instead -- acceptable.",
+      "evidence": "Programmatically verified: 0 em-dashes (U+2014) in AI Notes and Open Questions. Double-dashes (--) used in OQs are acceptable.",
       "fix": null
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: 1) name/identity decision for Jonathan; 2) Capabilities expansion approval. Both terse and conditional on unresolved facts. No story nudge required (Never/Don't know them).",
+      "evidence": "OQ 1: name/identity decision (keep / rename / merge under BUCK) -- Jonathan's call, correctly surfaced. OQ 2: Capabilities expansion approval -- terse and conditional. No story nudge required (Worked Together = Never, Familiarity = Don't know them).",
       "fix": null
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Reviewer correctly does not flip to Needs Review on a fail verdict.",
+      "evidence": "Entry was Enriching; reviewer is flipping to Needs Review on this pass verdict.",
       "fix": null
     }
   ],
-  "summary": "3 FAILs block this entry. (1) LEGO Piece Garden misattribution: 5 images are from an It's Nice That project, not an Anyways project -- the LDF page credits It's Nice That explicitly. These must be removed and replaced with a confirmed third Anyways project. (2) Identity mismatch unverified: the claim that INT Works rebranded to Anyways Creative in 2016 is stated as fact in AI Notes but no primary source was found to confirm it at 0.8 confidence. Scout must source the rebrand confirmation. (3) Website field is a dead 404 URL and must be updated to buck.co or cleared. Entry has only 2 confirmed Anyways projects after LEGO removal; a third genuine Anyways project is required.",
-  "to": "scraper"
+  "summary": "All 3 prior failures resolved. (1) LEGO misattribution cleared: all 5 LEGO images rejected and removed from Notion; a genuine third Anyways project (Sonos x Google Assistant 2019) added with attribution confirmed via Anyways-branded source URL and Dave & Gabe case study. (2) Identity/rebrand claim now honestly hedged in AI Notes ('NOT confirmed from a primary source') and surfaced to Jonathan via OQ 1. (3) Website updated to https://buck.co (active, verified via context shot). 12 images across 3 confirmed Anyways projects plus context shots. Full checklist passes.",
+  "to": null
 }
