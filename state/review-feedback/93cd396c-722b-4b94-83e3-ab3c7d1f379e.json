@@ -2,100 +2,98 @@
   "page_id": "93cd396c-722b-4b94-83e3-ab3c7d1f379e",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "5 named projects across 14 work images: London Museum (3), Strava (3), COLLUSION by ASOS (3), It's Nice That (3), Somerset House Channel / SHOWstudio (2). Plus 2 correct context shots."
+      "evidence": "5 distinct projects across 14 work images: London Museum (site-01 to 03), Strava (site-04 to 06), COLLUSION by ASOS (site-07 to 09), It's Nice That (site-10 to 12), SHOWstudio (site-14 to 15). No project repeats as a near-identical crop."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 interior shots per project (collection page, mobile UI, brand mascot for London Museum; map/dashboard/challenge screen for Strava; PDP/people/product for COLLUSION; etc.)."
+      "evidence": "3 interior shots per project throughout: collection page + mobile UI + brand mascot for London Museum; segment/challenge/map screens for Strava; PDP/people/product for COLLUSION; hero/carousel/article for It's Nice That; Burberry film + WebTV player for SHOWstudio."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged Web design + Frontend development (web). All captured work is digital/web UI. No off-capability content."
+      "evidence": "Tagged Web design + Frontend development (web). All 14 work images are digital/web UI screenshots. No off-capability content."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-13.png: bureau-va.com homepage -- correct. site-16.png: instagram.com/bureau_va logged-out profile page -- correct, clearly instagram.com in header."
+      "evidence": "site-13.png: bureau-va.com homepage confirmed (Bureau for Visual Affairs headline, yellow/cream palette). site-16.png: instagram.com/bureau_va logged-out profile confirmed (Instagram header, handle bureau_va, bio 'Bureau for Visual Affairs / Web Designer')."
     },
     {
       "id": "A.caption-content-match",
-      "result": "fail",
-      "evidence": "site-14.jpg is captioned 'Somerset House Channel, web platform' (link: bureau-va.com/work/somerset-house-channel) but the image shows 'FILM: THE THOMAS BURBERRY MONOGRAM COLLECTION' with SHOWstudio UI chrome. site-15.png is captioned the same project but shows 'DISCOVER OUR NEW WEBTV PLAYER / CURATED BY SHOWSTUDIO' and playlist UI. Both filenames confirm the mislabel: SHOWstudio_burberry_mobile.jpg and SHOWstudio_webTV_tablet_2.png. These are BVA's SHOWstudio project images assigned the wrong caption and link.",
-      "fix": "Replace site-14 and site-15 with images from the actual Somerset House Channel project (bureau-va.com/work/somerset-house-channel, rendered scrape) -- OR relabel them as 'SHOWstudio, web platform' with link bureau-va.com/work/showstudio (whichever project the scraper intended). Do not mix captions across projects."
+      "result": "pass",
+      "evidence": "Attempt-1 FAIL resolved. site-14.jpg now captioned 'SHOWstudio, web platform' / link bureau-va.com/work/showstudio; image shows SHOWstudio UI (Burberry film). site-15.png same caption/link; image shows SHOWstudio WebTV player. All other captions verified against images: London Museum (museum website), Strava (Strava platform screens), COLLUSION (e-commerce UI), It's Nice That (editorial site), Website context shot, Instagram context shot. No mismatches found."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 images have captions and project links in the manifest."
+      "evidence": "All 16 manifest entries have a caption and a link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio capability tagged. Studio is web design/dev; static images are the correct format."
+      "evidence": "No video/audio capability tagged. Web design/development studio; static screenshots are the correct format."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No thin/missing sections; 16 images from 5 named projects."
+      "evidence": "16 images from 5 named projects. No thin or missing sections; no IG queue needed."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct (small-to-mid specialist team doing hands-on digital execution)."
+      "evidence": "Type: Studio. Correct for a small-to-mid specialist team doing hands-on digital execution (founded 2002, London + Berlin)."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website: bureau-va.com. Instagram: instagram.com/bureau_va (verified correct studio). LinkedIn: uk.linkedin.com/company/bureau-for-visual-affairs. Email: info@bureau-va.com. All four present."
+      "evidence": "Website: bureau-va.com. Instagram: instagram.com/bureau_va (verified via context shot: handle + bio match). LinkedIn: uk.linkedin.com/company/bureau-for-visual-affairs. Email: info@bureau-va.com. All four present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Frontend development (web) + Web design. Consistent with the work shown. Open Question asks about adding Digital product design -- appropriate."
+      "evidence": "Frontend development (web) + Web design. Consistent with work captured. Open Question asks about Digital product design addition; appropriate and conditional."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK + Germany (London + Berlin offices, confirmed). Size: 11-40 (LinkedIn 11-50 visible, AI Notes explains). Work Status: Studio. Sources named in AI Notes."
+      "evidence": "Country: UK + Germany (London + Berlin confirmed in AI Notes). Size: 11-40 (LinkedIn 11-50 count explained in AI Notes). Work Status: Studio. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Org entry (Studio). AI Notes says 'Autonomy n/a (org entry).' Per calibration note in checklist, Autonomy is OPTIONAL for org-type entries. Not required."
+      "evidence": "Org entry (Studio). AI Notes states 'Autonomy n/a (org entry).' Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are all consistent with no stated relationship. No clip note signals otherwise."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the clip note or entry."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source field says 'Web clipper'; no relationship facts or judgment signals visible in the entry. No instructions to action."
+      "evidence": "Source: 'Web clipper, 2026-06-12'. No relationship facts or judgment signals in the clip note to action."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes states facts (founded 2002, named clients, LinkedIn employee count, office locations) and hedges the positioning claim ('Positioned as...'). Seniority note is org-level ('mid-size studio'). No em-dashes found in AI Notes or Open Questions."
+      "evidence": "AI Notes states verifiable facts (founded 2002, named clients, employee count, office locations) and hedges positioning ('Positioned as...'). Seniority is org-level. No em-dashes."
     },
     {
       "id": "D.source-filled",
-      "result": "fail",
-      "evidence": "Source reads 'Web clipper' with no date. CLAUDE.md rule: 'Web clipper, <page created date>'. The created_time is obtainable via the API and was not appended.",
-      "fix": "Append the page created date to Source: 'Web clipper, YYYY-MM-DD'. Minor -- does not block on its own but should be corrected on the same pass as the caption fix."
+      "result": "pass",
+      "evidence": "Attempt-1 FAIL resolved. Source now reads 'Web clipper, 2026-06-12'. Provenance verified_at 2026-07-11T14:39:45."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present; all touched fields have set_by and verified_at. source_url nulls are the known systemic tooling gap, not a gate failure per calibration note."
+      "evidence": "Provenance file present and covers all touched fields with set_by and verified_at. Null source_url values are the known systemic tooling gap, not a gate failure per calibration note."
     },
     {
       "id": "D.no-em-dashes",
@@ -105,14 +103,14 @@
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One conditional question about adding Digital product design capability. Terse, conditional, no field with an existing non-zero-state value is re-asked. No story nudge triggered (Worked Together still Never)."
+      "evidence": "One terse, conditional Open Question about Digital product design capability. No field with an existing non-zero-state value is re-asked."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching, as required for a FAIL. Not flipped to Needs Review."
+      "evidence": "Entry is in Enriching; flipping to Needs Review as part of this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "One concrete FAIL: site-14.jpg and site-15.png are captioned 'Somerset House Channel, web platform' but both images show SHOWstudio UI (Burberry film + SHOWstudio WebTV player); their original filenames (SHOWstudio_burberry_mobile.jpg, SHOWstudio_webTV_tablet_2.png) confirm the mislabel. The scraper assigned the wrong caption/link to these two images. Fix: either replace them with actual Somerset House Channel images from bureau-va.com/work/somerset-house-channel (rendered scrape needed), or relabel them as the SHOWstudio project if that was the intended project. Also append clip date to Source field on the same pass."
+  "to": null,
+  "summary": "Both attempt-1 fails are resolved: site-14 and site-15 captions now correctly read 'SHOWstudio, web platform' with link bureau-va.com/work/showstudio, confirmed by visual inspection of the images (SHOWstudio Burberry film UI and WebTV player). Source field now reads 'Web clipper, 2026-06-12'. All 21 checklist items pass. Entry cleared for Needs Review."
 }

@@ -1,0 +1,30 @@
+{
+  "page_id": "dbfba1a8-e617-44ab-b6c2-0ea103dab413",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "4 distinct named projects: Berlin Art Prize 2022, Famous For My Dinner Parties Issue 001, Kein Raum ohne Konflikte 2025, Z U K U N F/S T 2024"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "3 images per project across 4 projects; images go inside the work (spreads, sticker details, poster in situ)"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Tagged Graphic design; all 11 work images are posters, editorial, and graphic identity work"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-05.png verified as buerobumbum.com homepage (nav reads 'Büro Bum Bum'); site-04.png verified as instagram.com/buerobumbum profile page with 6,155 followers and grid visible"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 13 images captioned with project name and source link in manifest"},
+    {"id": "A.embeds-video-audio", "result": "pass", "evidence": "Studio is graphic design; no video/audio work to embed"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "Work is present and complete; no gaps to explain"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Studio"},
+    {"id": "B.links-present", "result": "pass", "evidence": "Website, Instagram, LinkedIn, Email all present"},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Graphic design tagged; Open Question asks Jonathan to confirm Identity systems, Photography, Web design additions"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Germany, 2-10, Studio; AI Notes names itsnicethat.com 2017 + LinkedIn + buerobumbum.com + Instagram as sources"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Studio entity; per checklist calibration 2026-06-21 Autonomy is optional for org-type entries; AI Notes states rationale"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "Zero-states (Never, Don't know them, Unvetted) are correct; no clip note contradicts them"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Source is Web clipper with no additional instructions in clip note"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes state verifiable facts (clients, founding year, size from named 2017 article); no unhedged inferences"},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: Web clipper"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "All touched fields have provenance; null source_url is known systemic tooling gap per checklist note, not a gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes or Open Questions"},
+    {"id": "D.open-questions-style", "result": "pass", "evidence": "One terse conditional question about expanding Capabilities; no redundant asks"},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Enriching -> Needs Review on this pass"}
+  ],
+  "to": null
+}
