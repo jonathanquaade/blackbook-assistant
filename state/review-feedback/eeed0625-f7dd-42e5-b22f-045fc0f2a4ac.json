@@ -2,18 +2,18 @@
   "page_id": "eeed0625-f7dd-42e5-b22f-045fc0f2a4ac",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
+  "verdict": "pass",
   "attempt": 3,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "7 distinct named projects in body: Kia Global, IBM Quantum, IBM Think 2019, DeepTime, Chopard, Meta Brand System, Nike. Well above the 3-project minimum."
+      "evidence": "7 distinct named projects: Kia Global, IBM Quantum, IBM Think 2019, DeepTime, Chopard, Meta Brand System, Nike. Well above the 3-project minimum."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "3 images per project for most projects; DeepTime shows interior installation space, Kia shows render + environment shots, Chopard shows experiential space. Goes inside projects, not only hero covers."
+      "evidence": "3 images per project for most projects. DeepTime shows interior installation space, Kia shows renders and environment, Chopard shows experiential space. Goes inside projects, not only hero covers."
     },
     {
       "id": "A.on-capability",
@@ -23,23 +23,22 @@
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-19.jpg confirmed as real field.io homepage (FIELD wordmark, 'Creative Intelligence for a Living World'). site-20.png confirmed as real instagram.com/@field_io profile (32.8k followers, handle visible, grid present). Both opened and visually verified."
+      "evidence": "site-19.jpg opened and confirmed as real field.io homepage (FIELD wordmark, 'Creative Intelligence for a Living World'). site-20.png opened and confirmed as real instagram.com/@field_io profile (32.8k followers, handle @field_io visible in header, grid present). Both visually verified this pass."
     },
     {
       "id": "A.no-uncaptioned",
       "result": "pass",
-      "evidence": "All 24 manifest image entries have captions and source links. All 27 image blocks in Notion have captions. No anonymous images."
+      "evidence": "All 24 manifest image entries have captions and source links. All image blocks in Notion have captions (verified via block listing). No anonymous images."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "4 Vimeo/YouTube embeds present in manifest and confirmed in Notion body (blocks 26, 29, 32, 35): DeepTime, IBM Think 2019, IBM Think 2020, OFFF 2023. 4 thumbnail preview images uploaded. Images property has 24 files confirmed."
+      "evidence": "4 Vimeo/YouTube embeds confirmed in Notion body (blocks 20, 23, 26, 29): DeepTime, IBM Think 2019, IBM Think 2020, OFFF 2023. Each paired with a thumbnail preview image with link caption. Images property has 24 files."
     },
     {
       "id": "A.body-structure-clean",
-      "result": "fail",
-      "evidence": "Notion body has 40 blocks; expected ~34. Blocks 0-5 are orphan residue from a prior partial upload that was not cleared before the final upload: OFFF thumbnail (block 0), OFFF embed (block 1), OFFF metadata para (block 2), Website context shot (block 3), Instagram context shot (block 4), divider (block 5). The correct Work section starts at block 6 (h2 'Work') but Jonathan sees 5 orphan blocks above it with no context. Website and Instagram context shots appear twice (blocks 3-4 and 37-38). body-reset was not run before the successful upload.",
-      "fix": "Run body-reset first to clear all 40 existing blocks, then re-run upload with KEEPER_FIT_UPLOAD=1. body-reset MUST precede upload to prevent block accumulation. Also patch keeper.py em-dash bug (see D.no-em-dashes) before re-uploading. Full command sequence after keeper.py patch: KEEPER_NO_MIRROR=1 python3 scripts/keeper.py body-reset eeed0625-f7dd-42e5-b22f-045fc0f2a4ac && KEEPER_NO_MIRROR=1 KEEPER_FIT_UPLOAD=1 python3 scripts/keeper.py upload eeed0625-f7dd-42e5-b22f-045fc0f2a4ac assets/eeed0625-f7dd-42e5-b22f-045fc0f2a4ac"
+      "result": "pass",
+      "evidence": "Notion body has exactly 34 blocks: [0] h2 Work, [1-18] project images, [19] DeepTime thumb, [20] DeepTime embed, [21] DeepTime para, [22] IBM 2019 thumb, [23] IBM 2019 embed, [24] IBM 2019 para, [25] IBM 2020 thumb, [26] IBM 2020 embed, [27] IBM 2020 para, [28] OFFF thumb, [29] OFFF embed, [30] OFFF para, [31] Website context shot, [32] IG context shot, [33] divider. No orphan blocks above the h2. No duplicates. body-reset before upload confirmed effective."
     },
     {
       "id": "A.absence-explained",
@@ -49,42 +48,42 @@
     {
       "id": "B.type",
       "result": "pass",
-      "evidence": "Type = Studio. Correct for a specialized creative technology studio."
+      "evidence": "Type = Studio. Correct for a specialized creative technology studio with integrated team."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website (field.io), Instagram (@field_io), LinkedIn (uk.linkedin.com/company/field), Email (hello@field.io) all present."
+      "evidence": "Website (field.io), Instagram (instagram.com/field_io), LinkedIn (uk.linkedin.com/company/field), Email (hello@field.io) all present."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Migration artifact 'Frontend development (web)' is locked (set_by jonathan) and correctly flagged via Open Question 1. Per spawn prompt: do not re-fail on this."
+      "evidence": "Migration artifact 'Frontend development (web)' is set_by jonathan (locked). Correctly flagged via Open Question 1. Per spawn prompt: do not re-fail on this."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: UK + Germany (London/Berlin confirmed in AI Notes). Size: 11-40 (LinkedIn + 2016 press). Work Status: Studio. Sources in AI Notes."
+      "evidence": "Country: UK + Germany (London/Berlin studio confirmed in AI Notes). Size: 11-40 (LinkedIn + 2016 press, hedged in AI Notes). Work Status: Studio. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy: 5, set_by agent. Studio org; per calibration note Autonomy is optional for orgs; reasoning present in AI Notes."
+      "evidence": "Autonomy: 5, set_by agent. Studio org; per calibration note Autonomy is optional for orgs but is set here with reasoning in AI Notes."
     },
     {
       "id": "C.no-contradiction",
       "result": "pass",
-      "evidence": "Worked Together: Never and Familiarity: Don't know them consistent with no prior-relationship evidence."
+      "evidence": "Worked Together: Never and Familiarity: Don't know them consistent with no prior-relationship evidence in clip note or body."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2020-11-01'. No clip-note instructions found in clipped.md or Name field."
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No clip-note instructions found in clipped.md or Name field beyond the basic URL clip."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges size estimate. Includes seniority/experience read. No em-dashes in the AI Notes field itself. Verifiable facts asserted; uncertain facts hedged."
+      "evidence": "AI Notes hedges size estimate ('reasonable current read'), includes seniority/experience summary. Verifiable facts asserted; uncertain inferences hedged. No em-dashes in the AI Notes field."
     },
     {
       "id": "D.source",
@@ -94,30 +93,25 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with correct set_by values. source_url nulls are the known systemic tooling gap per calibration note, not a gate failure."
+      "evidence": "Provenance file present. set_by values correct (Capabilities: jonathan; all agent-written fields: agent). source_url nulls are the known systemic tooling gap per calibration note, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
-      "result": "fail",
-      "evidence": "5 paragraph blocks in Notion body contain em-dashes: 'OFFF Festival 2023, Field.io studio presentation — www.youtube.com', 'DeepTime x Digital Impact 2023, generative installation, Barcelona — field.io', 'IBM Think 2019, Adaptation: generative visual system — field.io', 'IBM Think 2020, generative broadcast visuals — field.io', plus a duplicate of the OFFF one. These are written by keeper.py upload at line 547 where the code hardcodes ' — ' as a separator in the metadata paragraph below each embed. CLAUDE.md: no em-dashes in anything written for Jonathan. This is a tool-level bug. AI Notes and Open Questions are em-dash-free; the problem is solely in the keeper.py-generated embed metadata lines.",
-      "fix": "Patch scripts/keeper.py line 547: change the content string from '(entry.get(\"caption\") or \"Work\") + \" — \"' to '(entry.get(\"caption\") or \"Work\") + \" · \"' (middle dot, not em-dash). Commit the fix. Then run body-reset + upload so the corrected paragraphs replace the existing ones."
+      "result": "pass",
+      "evidence": "All 34 Notion body blocks scanned for em-dash (U+2014). Zero found. Paragraph metadata lines (blocks 21, 24, 27, 30) use ' · ' separator, confirming the keeper.py line 547 patch is live."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse Open Question about Capabilities migration artifact. Conditional and correctly scoped."
+      "evidence": "One terse Open Question about Capabilities migration artifact. Conditional, scoped, correctly formatted."
     },
     {
       "id": "D.status",
       "result": "pass",
-      "evidence": "Status is Enriching. Reviewer has not passed the entry."
+      "evidence": "Entry is in Enriching; reviewer flipping to Needs Review as this pass."
     }
   ],
-  "failing_checks": [
-    "A.body-structure-clean",
-    "D.no-em-dashes"
-  ],
-  "summary": "Content is complete: 24 images, 4 embeds with thumbnails, 7 distinct named projects, both context shots verified. Two structural failures remain. (1) Orphan blocks: body-reset was not run before the final upload, leaving 5 residue blocks (OFFF thumb + embed + metadata para + Website + IG shots + divider) above the Work heading, with Website and IG shots also duplicated at the end. Fix: body-reset then re-upload with KEEPER_FIT_UPLOAD=1. (2) Em-dash in tool output: keeper.py upload hardcodes ' — ' in the paragraph metadata line below each embed (line 547). 5 em-dash paragraphs are now in the Notion body. Fix: patch keeper.py line 547 to use ' · ' instead of ' — ', commit, then run body-reset + upload. The scraper must apply both fixes in one pass; the keeper.py patch must come first.",
-  "to": "scraper",
-  "notes": "Attempt 3. Both fails are mechanical and fixable in one re-upload pass, but keeper.py must be patched first or the em-dashes will recur. Steps in order: (1) edit scripts/keeper.py line 547 to replace ' — ' with ' · '; (2) commit the change; (3) KEEPER_NO_MIRROR=1 python3 scripts/keeper.py body-reset eeed0625-f7dd-42e5-b22f-045fc0f2a4ac; (4) KEEPER_NO_MIRROR=1 KEEPER_FIT_UPLOAD=1 python3 scripts/keeper.py upload eeed0625-f7dd-42e5-b22f-045fc0f2a4ac assets/eeed0625-f7dd-42e5-b22f-045fc0f2a4ac; (5) verify block count is ~34 and no em-dash paragraphs remain. Content does not need any changes."
+  "failing_checks": [],
+  "summary": "All checks pass. 34 clean Notion body blocks (no orphans, no duplicates), no em-dashes in body or metadata fields, 24 images + 4 embeds across 7 distinct named projects, both context shots opened and confirmed correct. The two structural fails from attempt 3 (orphan blocks, em-dash in keeper.py-generated paragraphs) are resolved. Entry flipped to Needs Review.",
+  "to": null
 }
