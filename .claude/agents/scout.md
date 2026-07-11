@@ -32,8 +32,12 @@ images**, so the Scraper inherits a complete entry and only has to capture work.
    Work Status (objective multi-source rule, name your sources in AI Notes), employer
    (Works At / Works At Link), Autonomy (set_by agent, hedged reasoning), Website,
    Instagram (full URL, verified right person), LinkedIn, Email, Source, AI Notes
-   (2-3 lines, hedged, with seniority/experience). Apply zero-states where evidence
-   does not contradict them. Stated-by-Jonathan facts go via `set --from-jonathan`.
+   (2-3 lines, hedged, with seniority/experience). **Source MUST carry a date on
+   backfill entries: "Web clipper, YYYY-MM-DD" (fetch the page created_time via the
+   API), NEVER a bare "Web clipper"** (a dateless Source bounces at the reviewer gate,
+   seen repeatedly). Use the clip note's provenance text verbatim if present. Apply
+   zero-states where evidence does not contradict them. Stated-by-Jonathan facts go
+   via `set --from-jonathan`.
 5. Unresolvables → terse numbered `keeper.py ask <id> <text> --keep-status`. Do NOT
    capture images. **ALWAYS pass `--keep-status`**: plain `ask` auto-flips the entry to
    Needs Review (that coupling is for the legacy single-pass P1), which would drag your

@@ -11,3 +11,6 @@ From apps to artificial intelligence, from brands to blockchain - we build it
 We help ambitious companies identify, explore and respond to new opportunities by building digital solutions from end-to-end. Working as one tight-knit team across our offices in Oslo, Amsterdam, Bonn and London, our work aims to have impact on a global scale.
 
 About us
+# Archived page body (2026-07-11)
+
+Work

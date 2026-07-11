@@ -53,14 +53,18 @@
     "source_url": "https://sierra.ai/-/cdn/image",
     "caption": "Sierra AI website, 2024",
     "link": "https://sierra.ai",
-    "captured_at": "2026-07-11"
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejection_reason": "File is SVG not JPEG; sierra.ai CDN serves SVGs regardless of extension; Notion cannot render SVGs"
   },
   {
     "file": "site-09.jpg",
     "source_url": "https://sierra.ai/-/cdn/image",
     "caption": "Sierra AI website, 2024",
     "link": "https://sierra.ai",
-    "captured_at": "2026-07-11"
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejection_reason": "File is SVG not JPEG; sierra.ai CDN serves SVGs regardless of extension; Notion cannot render SVGs"
   },
   {
     "file": "site-10.jpg",
@@ -110,5 +114,37 @@
     "link": "https://bakkenbaeck.com/case/ramp",
     "captured_at": "2026-07-11",
     "context_shot": true
+  },
+  {
+    "file": "site-16.jpg",
+    "source_url": "https://sierra.ai/-/cdn/image",
+    "caption": "Sierra AI website, 2024",
+    "link": "https://sierra.ai",
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejection_reason": "File is SVG not JPEG; sierra.ai CDN serves SVGs regardless of extension; Notion cannot render SVGs"
+  },
+  {
+    "file": "site-17.jpg",
+    "source_url": "https://sierra.ai/-/cdn/image",
+    "caption": "Sierra AI website, 2024",
+    "link": "https://sierra.ai",
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejection_reason": "File is SVG not JPEG; sierra.ai CDN serves SVGs regardless of extension; Notion cannot render SVGs"
+  },
+  {
+    "file": "site-16.png",
+    "source_url": "https://sierra.ai",
+    "caption": "Sierra AI website by Bakken & Baeck, 2024",
+    "link": "https://sierra.ai",
+    "captured_at": "2026-07-11"
+  },
+  {
+    "file": "site-17.png",
+    "source_url": "https://bakkenbaeck.com/case/sierra",
+    "caption": "Sierra AI case study, Bakken & Baeck",
+    "link": "https://bakkenbaeck.com/case/sierra",
+    "captured_at": "2026-07-11"
   }
 ]

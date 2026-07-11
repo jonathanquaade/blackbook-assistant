@@ -1,0 +1,116 @@
+{
+  "page_id": "c9535056-53fd-4d8f-b9cf-1b419ae4e909",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T16:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images across 5 distinct named projects: Die andere Bibliothek, Colophon Foundry/Guida, Bode Museum, Type on Earth, Perspectives of Global Learning"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-3 images per project going inside each (catalogue interiors, exhibition banners in context, spread interiors)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all 5 projects are visual identity, editorial or type work"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png is banktm.de homepage. site-16.png IG shot is rejected + documented (rejection_reason in manifest) + queued to ig-queue.json. Sanctioned exception applies"
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 uploaded images have project captions and source links in manifest"
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video work in scope; images-only is correct for this graphic design studio entry"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented in AI Notes and manifest rejection_reason; queued to ig-queue.json"
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "Manifest shows 15 work images plus 1 rejected context shot. No orphan blocks reported in attempt-1 pass; body-reset was run before upload"
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio (two-partner Berlin graphic design studio)"
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website banktm.de, Instagram @bank_graphic_design_today (confirmed correct account in AI Notes), LinkedIn Sebastian Bissinger personal profile (no company page, noted), Email tellme@banktm.de"
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set; Open Question 1 proposes 6 additional capabilities for Jonathan to confirm. Appropriate given migration baseline"
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany, Size: 2-10, Work Status: Studio. AI Notes names all sources checked"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set with reasoning in AI Notes. Studio entry with two identifiable founders justifies setting the field"
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate; no clip note evidence contradicts them"
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No clip note instructions; bare web-clipper entry with no annotation"
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts (clients, awards, follower count) stated directly; autonomy estimate includes reasoning. No em-dashes. Seniority read present"
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01' (confirmed in provenance verified_at 2026-07-11T15:32:26). Attempt-1 failure resolved"
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields present in provenance with correct set_by values. source_url nulls are the known systemic tooling gap; not a gate failure"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions. No embeds in this entry so keeper line-547 metadata lines not generated"
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One conditional Capabilities question; terse and not redundant (only Graphic design is set). No story nudge needed (Worked Together: Never)"
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review after this gate pass"
+    }
+  ],
+  "summary": "Attempt-1 sole failure (Source missing date suffix) confirmed fixed: Source is now 'Web clipper, 2020-11-01'. All other checks carry over clean from attempt 1. Entry flipped to Needs Review.",
+  "to": null
+}
