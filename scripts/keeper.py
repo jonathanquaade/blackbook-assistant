@@ -59,6 +59,16 @@ def api(path, body=None, method=None):
             if e.code in (409, 429, 500, 502, 503) and attempt < 4:
                 time.sleep(2 ** attempt); continue
             sys.exit(f'API error {e.code} on {method} {path}: {e.read().decode()[:400]}')
+        except OSError as e:
+            # Connection-level failure (ECONNRESET / broken pipe / timeout) from the
+            # degraded endpoint. HTTPError is handled above; this catches URLError and raw
+            # ConnectionResetError (both OSError subclasses) so a reset retries with backoff
+            # instead of killing the agent mid-run. Lesson 2026-07-11: resets on body-reset
+            # DELETEs, file-upload creates and status flips wasted 20-min scraper runs;
+            # HTTP-code retry alone did not cover connection drops.
+            if attempt < 4:
+                time.sleep(2 ** attempt); continue
+            sys.exit(f'API connection error on {method} {path} after retries: {e}')
 
 def query_all(filt=None):
     rows, cursor = [], None
