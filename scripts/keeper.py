@@ -417,7 +417,9 @@ def _fit_for_upload(path, force_kb=None):
     endpoint reset on bodies over ~1 MB from a degraded sandbox while small files and the
     JSON API worked fine). Returns a path to upload (a downscaled temp copy, or the
     original). Default off, so healthy runs keep full-res; upload_file also calls this
-    with force_kb to self-heal a reset. Uses sips (macOS); no-op if sips is absent."""
+    with force_kb to self-heal a reset. Uses sips (macOS); no-op if sips is absent.
+    Dimension ladder extended to 800/600 (2026-07-11: some high-res JPEGs stay over
+    950KB even at 1000px; going lower ensures the cap is actually honoured)."""
     maxkb = force_kb if force_kb is not None else int(os.environ.get('KEEPER_FIT_UPLOAD', '0') or '0')
     if maxkb <= 0:
         return path
@@ -433,13 +435,13 @@ def _fit_for_upload(path, force_kb=None):
     # PNG/WebP screenshots re-encode to JPEG (much smaller); step dimensions down until it fits.
     if ext in ('.png', '.webp'):
         subprocess.run(['sips', '-s', 'format', 'jpeg', tmp.name], capture_output=True)
-    for dim in (2000, 1600, 1200, 1000):
+    for dim in (2000, 1600, 1200, 1000, 800, 600):
         subprocess.run(['sips', '-Z', str(dim), '-s', 'formatOptions', '78', tmp.name], capture_output=True)
         if os.path.getsize(tmp.name) <= maxkb * 1024:
             break
     return tmp.name
 
-def upload_file(path, _force_kb=None):
+def upload_file(path, _force_kb=None, _reset_retries=3):
     orig_stem = os.path.splitext(os.path.basename(path))[0]
     send_path = _fit_for_upload(path, force_kb=_force_kb)
     name = orig_stem + os.path.splitext(send_path)[1]  # keep clean name, actual (possibly re-encoded) extension
@@ -460,12 +462,18 @@ def upload_file(path, _force_kb=None):
         json.load(urllib.request.urlopen(req))
     except OSError as e:
         # The degraded Notion file endpoint resets on large POST bodies (ECONNRESET).
-        # Self-heal: if this file was NOT already capped, retry it downscaled so callers
-        # don't have to remember KEEPER_FIT_UPLOAD by hand (lesson 2026-07-11: full-res
-        # >1MB image uploads died on ECONNRESET after 20+ min of capture work, wasting
-        # the whole scraper run). One forced-downscale retry, then re-raise.
+        # Two-stage recovery (lesson 2026-07-11 + 2026-07-11b):
+        #   Stage 1: if file was not yet capped, retry downscaled (size-related reset).
+        #   Stage 2: if already capped (or size was fine), retry with backoff for
+        #     transient resets; the network can reset even on small files under load.
+        #   Both stages must be tried before giving up.
         if _force_kb is None and send_path == path:
-            return upload_file(path, _force_kb=950)
+            return upload_file(path, _force_kb=950, _reset_retries=_reset_retries)
+        if _reset_retries > 0:
+            wait = 2 ** (3 - _reset_retries + 1)
+            print(f'  ECONNRESET on {name} ({size//1024}KB), retrying in {wait}s ({_reset_retries} left)...', flush=True)
+            time.sleep(wait)
+            return upload_file(path, _force_kb=_force_kb, _reset_retries=_reset_retries - 1)
         raise
     return fu['id'], name
 

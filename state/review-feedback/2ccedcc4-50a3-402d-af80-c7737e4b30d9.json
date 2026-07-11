@@ -1,0 +1,111 @@
+{
+  "page_id": "2ccedcc4-50a3-402d-af80-c7737e4b30d9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: FFP generative identity, Rythmus, Murmur, Stratum, Geologie des flux, Festival Acces)s(. No repeated captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2-4 images per project going inside each (logo system, poster series, website design for FFP; installation exterior + projection for Murmur; two installation angles for Rythmus and Stratum). Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work shown is generative identity, interactive installations, and graphic design, matching what Chevalvert does. Capabilities expansion question already in Open Questions (jonathan-set migration value kept; agent not overwriting). No off-capability capture."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png is genuinely chevalvert.fr (nav reads 'chevalvert / visual & interactive design'). site-02.png is instagram.com/chevalvert_studio (Instagram wordmark and handle both visible; cookie consent modal partially obscures the grid but this is the correct account and correct domain, not a mislabel)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 19 manifest entries have caption + link. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "5 Vimeo embeds present (FFP, Rythmus, Murmur, Stratum, Geologie des flux), each paired with a thumbnail preview image captioned and linked to the source project page. Pattern: thumbnail gallery first, embeds below."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. Studio has a live, richly documented site; all major projects found and captured."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small Parisian studio (2 founders, ~5 team), hands-on creative execution."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (chevalvert.fr/en), Instagram (instagram.com/chevalvert_studio), LinkedIn (fr.linkedin.com/company/chevalvert), Email (contact@chevalvert.fr) all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Single jonathan-set migration tag 'Graphic design' retained. Open Question 1 proposes Creative technology, Identity systems, Type design, Web design additions for Jonathan to confirm. Correct handling of a locked jonathan field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France. Size: 2-10 (AI Notes cites ~5 team as of 2022). Work Status: Studio. All consistent with evidence."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set (agent). Studio entry with 2 named co-founders as art directors running an independent practice since 2007. Calibration note: org-type entry, Autonomy optional but appropriate here given 2-founder identity. Reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in the clip note."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note is minimal (web clipper, 2020-11-01, no inline instructions). Source field reflects this correctly."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cites founders by name (verifiable), team size hedged with 'as of 2022', awards cited (Lumen Prize 2014, European Design Awards 2014, 2019). No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present; all written fields covered; source_url null throughout (known systemic tooling gap, not a gate fail per calibration note 2026-06-21). set_by values correct: Capabilities = jonathan (migration), all agent-written fields = agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes and Open Questions: no em-dashes found. Semicolons and periods used throughout."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, conditional (asks about Capabilities expansion of a jonathan-locked field). No repeat asks, no asks for already-answered fields."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flipping to Needs Review as part of this pass."
+    }
+  ],
+  "notes": "Minor: Images property in Notion lists 'festival-access-mockup.jpg' but actual file and manifest are 'festival-access-mockup.png'. Upload likely stored by content; filename label in Notion is the mismatch. Not a gate fail but worth a keeper.py fix to keep the property in sync with the manifest filename.",
+  "to": null
+}
