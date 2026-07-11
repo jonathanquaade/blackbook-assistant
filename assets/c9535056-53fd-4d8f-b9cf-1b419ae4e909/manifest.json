@@ -44,21 +44,21 @@
   {
     "file": "site-07.jpg",
     "source_url": "https://banktm.de/wp-content/uploads/2024/01/BANKTM-DE-Bode-Screen-02-crop-H1800-.jpg",
-    "caption": "Bode Museum, digital",
+    "caption": "Bode Museum, exhibition identity",
     "link": "https://www.banktm.de/bode-museum-scre/",
     "captured_at": "2026-07-11"
   },
   {
     "file": "site-08.jpg",
     "source_url": "https://banktm.de/wp-content/uploads/2024/01/BANKTM-DE-Bode-Screen-11-H1800-.jpg",
-    "caption": "Bode Museum, digital",
+    "caption": "Bode Museum, exhibition identity",
     "link": "https://www.banktm.de/bode-museum-scre/",
     "captured_at": "2026-07-11"
   },
   {
     "file": "site-09.jpg",
     "source_url": "https://banktm.de/wp-content/uploads/2024/01/BANKTM-DE-Bode-Screen-09-H1800-.jpg",
-    "caption": "Bode Museum, digital",
+    "caption": "Bode Museum, exhibition identity",
     "link": "https://www.banktm.de/bode-museum-scre/",
     "captured_at": "2026-07-11"
   },
@@ -111,6 +111,8 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/bank_graphic_design_today/",
     "captured_at": "2026-07-11",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejection_reason": "Instagram returned 'Something went wrong' error page (headless Playwright rate-limited logged out); queued to ig-queue.json for logged-in grab"
   }
 ]

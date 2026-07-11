@@ -1930,5 +1930,12 @@
     "ig_url": "https://www.instagram.com/bibliothequeldn/",
     "reason": "context shot IG profile page errored (rate-limited); studio has rich work on IG; logged-in grab needed for context shot",
     "queued_at": "2026-07-11"
+  },
+  {
+    "page_id": "c9535056-53fd-4d8f-b9cf-1b419ae4e909",
+    "name": "BANK™",
+    "ig_url": "https://www.instagram.com/bank_graphic_design_today/",
+    "reason": "IG context screenshot returned 'Something went wrong' error page (headless Playwright rate-limited logged out). Need logged-in ig.py grab for @bank_graphic_design_today profile context shot.",
+    "queued_at": "2026-07-11"
   }
 ]

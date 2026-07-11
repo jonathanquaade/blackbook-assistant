@@ -1,0 +1,113 @@
+{
+  "page_id": "80cf558e-585b-4700-826e-7b488db616df",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "site-01.jpg and site-02.webp are near-identical: both show the same reflected Basics09 logo on glass at sunset, both captioned 'Vessel & Voyager, Akademie der Kunste'. site-01 source_url is the site-wide og:image (basics09_ogimage-1200x630-crop.jpg) not a project-page image; site-02 is the same photo at a higher resolution. Two slots spent on one duplicated image.",
+      "fix": "Remove site-01.jpg (the og:image crop) and replace with a distinct interior shot from the Vessel & Voyager project page (basics09.de/projekte/vessel-voyager). Keep site-02 or the higher-res equivalent as the one Vessel & Voyager atmosphere shot."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-17.png captioned 'Instagram profile' is an error page ('Something went wrong / There's an issue and the page could not be loaded'), not an instagram.com profile. It is not marked rejected in manifest.json, not documented in AI Notes, and the entry is absent from state/ig-queue.json. The checklist exception (throttle path) requires all three conditions; none are met.",
+      "fix": "Either: (a) retake the IG context shot (scrape.py shot https://www.instagram.com/basics09/ --out assets/80cf558e-585b-4700-826e-7b488db616df --caption 'Instagram profile') and verify it actually shows the basics09 profile before uploading; or (b) if IG is still throttled/erroring, mark site-17.png rejected in manifest.json, add one line to AI Notes ('Instagram profile screenshot unavailable, logged-out IG returned error; queued for ig.py'), and append the entry to state/ig-queue.json per the sanctioned path."
+    },
+    {
+      "id": "D.source",
+      "result": "fail",
+      "evidence": "Source field is 'Web clipper' with no created date. CLAUDE.md requires 'Web clipper, <page created date>' when there is no verbatim clip note text. Created date is retrievable via keeper.py get.",
+      "fix": "Fetch the page's created_time via the API and set Source to 'Web clipper, YYYY-MM-DD'."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "15 named project shots across 5 projects; goes inside projects (spreads, interiors, event photography, web UI)."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities is Graphic design (visual identity, editorial, web); captured work shows identity systems, editorial publications, event branding, web design. Match is sound."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption and a link to the source project page."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio embed opportunities identified for a graphic design studio; image-only set is appropriate."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps; work present from all five named projects."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small Berlin team of ~8 doing hands-on creative execution."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all populated."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set (jonathan provenance from clipper). Open Question 1 asks Jonathan to confirm additional tags; appropriate given the jonathan set_by lock on Capabilities."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany / 2-10 / Studio. AI Notes names clients and team size as supporting evidence."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set by agent with reasoning in AI Notes. Org entry; single-founder read not strictly required but reasoning is present and sound."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note contains relationship facts; zero-states (Never, Don't know them, Unvetted) are appropriate."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained no instructions beyond the studio name; clipped.md confirms this."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'Positioned as' and 'well-established studio'; verifiable facts (clients, founding year, team) are asserted; inferences are hedged."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at for all touched fields. source_url is null across the board but this is the known systemic tooling gap, not a gate failure per checklist calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions contain no em-dashes."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question on Capabilities expansion, conditional (no non-zero Capabilities set by agent to make it redundant)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer has not flipped it (holding on fail)."
+    }
+  ],
+  "to": "scraper"
+}
