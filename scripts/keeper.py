@@ -544,7 +544,7 @@ def cmd_upload(page_id, asset_dir):
             # Auditable metadata line BELOW the embed: project name + source link,
             # so the page itself records what each video/link is (embed captions are
             # faint and lost on re-reads; this survives and aids revisits months later).
-            meta = [{'text': {'content': (entry.get('caption') or 'Work') + ' — '},
+            meta = [{'text': {'content': (entry.get('caption') or 'Work') + ' · '},
                      'annotations': {'bold': True}}]
             link = entry.get('link') or entry['url']
             meta.append({'text': {'content': link.split('//')[-1].split('/')[0],
