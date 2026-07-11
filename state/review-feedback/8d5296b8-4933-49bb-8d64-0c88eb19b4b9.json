@@ -1,0 +1,115 @@
+{
+  "page_id": "8d5296b8-4933-49bb-8d64-0c88eb19b4b9",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "14 work images span 5 named projects: Anton, Addium, NASA JPL Grace-FO/Psyche, Nike Move to Zero, Warehouse Project. No repeated project dominates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project go inside the work (identity system detail, poster close-up, court aerial, billboard in situ) rather than hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Current tag is Graphic design; all captured work is brand identity and visual comms. Open Question proposes expanded tags. No off-capability mismatch."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png is the acceptandproceed.com homepage. site-16.png is rejected=true with documented rejection_reason and entry confirmed in state/ig-queue.json. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 uploaded images have captions naming project and year plus a source link to acceptandproceed.com/work/[slug]."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No embeddable video identified in the five captured case studies; all are image-only. No embed gap."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle documented in AI Notes and queued; no other known source left unexplored."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "Notion body has exactly 17 blocks: heading_2 Work + 15 image blocks + divider. No orphan blocks above the heading."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct per CLAUDE.md definition."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present. IG handle @acceptandproceed confirmed per AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged (Jonathan's original). Scout raised an Open Question proposing expanded tags. Correct handling: propose, do not overwrite jonathan-set field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country=UK, Size=11-40, Work Status=Studio. AI Notes names sources: acceptandproceed.com, LinkedIn (11-50 employees), Instagram, web search."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=4 (set_by agent). Org entry; field is optional for orgs per calibration note, but was set and reasoned in AI Notes."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together=Never, Familiarity=Don't know them, Work With?=Unvetted) not contradicted by any clip note or evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No special instructions in the raw entry beyond the studio name. No relationship facts or passcodes in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged framing ('Positioned as', 'voted one of the top UK agencies by peers'). Seniority read present (Johnston ECD, Jo Roca Creative Venture Partner). Autonomy reasoning included."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Attempt-1 failure resolved: date now present."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present and covers all touched fields with set_by values. source_url null is a known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes uses semicolons and commas throughout. No em-dashes in Open Questions or captions. No embeds in body so keeper.py line-547 bug is not triggered."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One question about Capabilities expansion. Conditional and specific. Story nudge not applicable (Worked Together=Never, Notes empty, no relationship signal)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry flipped to Needs Review on this pass."
+    }
+  ],
+  "to": null
+}

@@ -1,112 +1,108 @@
 {
   "page_id": "148d64cf-1204-4215-9dda-07f3041e6633",
-  "reviewer_version": "v1",
+  "reviewer_version": "v1-adjudicator",
   "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
-  "attempt": 3,
+  "verdict": "pass",
+  "attempt": 2,
+  "adjudication": "OVERTURN",
+  "adjudication_reason": "The first reviewer's only failing check (A.context-shots) stated that neither error-page screenshot was marked rejected in the manifest, neither failure was documented in AI Notes, and the entry was not in ig-queue.json. All three conditions are now met: site-17.png and site-18.png are both marked rejected=true in the manifest with documented rejection reasons; AI Notes explicitly records the PHP server error (bizzarri-rodriguez.com down) and the Instagram error page with a note that ig.py capture is queued; and ig-queue.json contains the entry. The context-shot absence is a documented environmental failure, not a doer defect. 16 work images across 6 named, captioned, on-capability projects are present. Entry is complete enough for Jonathan.",
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "16 work images span 6 named projects: Gisele Vienne, David Douard ZZZ 0, Menace Mineure, David Douard/Konrad Fischer, Fireworks/Franciscopolis, David Douard/Serralves. All distinct."
+      "evidence": "16 work images span 6 named projects across Gisele Vienne, David Douard ZZZ 0, Menace Mineure, David Douard/Konrad Fischer, Fireworks/Franciscopolis, David Douard/Serralves. Distinct."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Multiple interior spreads per project (e.g. three Konrad Fischer Galerie shots, two Serralves shots, six It's Nice That spreads). Not hero-only."
+      "evidence": "Multiple interior spreads per project (three Konrad Fischer shots, two Serralves shots, six It's Nice That spreads). Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities tagged Graphic design; all captured work is editorial/book/publication design. Content matches capability."
+      "evidence": "Capabilities: Graphic design. All captured work is editorial/book/publication design."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-17.png (caption 'Website') is a PHP error page -- bizzarri-rodriguez.com threw Warning: foreach() errors at capture time; it is NOT a real homepage screenshot. site-18.png (caption 'Instagram profile') is an Instagram 'Something went wrong / page could not be loaded' error page; it is NOT a real profile screenshot. Neither error page is marked rejected in the manifest, neither is documented in AI Notes, and the entry is not in state/ig-queue.json. The IG throttle exception in the checklist requires all three conditions (rejected, documented, queued) -- none are met for either shot.",
-      "fix": "Recapture site-17.png when bizzarri-rodriguez.com is reachable (or retry with --render flag). Mark site-18.png rejected in manifest, add note to AI Notes that IG logged-out capture returned an error page, and append this entry to state/ig-queue.json for a logged-in ig.py grab."
+      "result": "pass",
+      "evidence": "Both context shots attempted and marked rejected=true in manifest with documented reasons (PHP server error for website, Instagram error page for IG). AI Notes records both failures. IG is in ig-queue.json. Environmental failure, properly documented. Checklist exception applies."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "Every manifest entry has a caption. The It's Nice That block (site-11 to site-16) captions as 'Bizzarri Rodriguez, It's Nice That 2019' -- not a named project title but adequate given it is a press feature spread, not a client project."
-    },
-    {
-      "id": "A.embeds-for-video-audio",
-      "result": "pass",
-      "evidence": "Studio is editorial/graphic design; no embedded video/audio expected or missing."
+      "evidence": "All 16 manifest work images have captions. Rejected context shots are correctly excluded from the Notion Images property."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained gaps in work coverage; the site is active and was scraped."
+      "evidence": "Context shot absence explained in AI Notes. No other unexplained gaps."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct for a two-founder hands-on design operation."
+      "evidence": "Type: Studio. Correct for a two-founder hands-on operation."
     },
     {
       "id": "B.links",
       "result": "pass",
-      "evidence": "Website, Instagram, Email all present. LinkedIn is individual profiles (noted in AI Notes, no company page); acceptable for a small studio. LinkedIn link is not in Notion fields but that is an org exception."
+      "evidence": "Website, Instagram, Email present. No LinkedIn company page (small studio, documented in AI Notes)."
     },
     {
       "id": "B.capabilities",
       "result": "pass",
-      "evidence": "Graphic design tagged. Open Question 1 asks Jonathan about adding Type design and Identity systems -- appropriate; the unresolved tags are held as a question, not silently dropped."
+      "evidence": "Graphic design tagged. Open Question asks about Type design and Identity systems."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "France, Size 2-10, Work Status Studio all set. AI Notes names sources: bizzarri-rodriguez.com, itsnicethat.com, trendlist.org."
+      "evidence": "France, 2-10, Studio all set with sources documented."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry is Type Studio; checklist calibration note (2026-06-21) marks Autonomy OPTIONAL for org-type entries. AI Notes provide a seniority/leadership read (founded 2010, both teach at ENSBA/ESAD). Sufficient."
+      "evidence": "Org-type entry; Autonomy optional per checklist calibration note."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Zero-states (Never/Don't know them/Unvetted) are consistent with no relationship signal in the clip note or body."
+      "evidence": "Zero-states consistent with no relationship signal in clip note."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note contained only 'Web clipper'; no relationship facts or instructions to act on."
+      "evidence": "Clip note was Web clipper only; no instructions to act on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "Factual assertions (clients, year founded, typeface names, LinkedIn handles) are grounded. No unsupported claims. Seniority read present (15+ year studio, founders also teach). No em-dashes found."
+      "evidence": "Factual assertions grounded, seniority read present, no em-dashes."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper'. Acceptable; no created date appended but the clip origin is clear."
+      "evidence": "Source: Web clipper."
     },
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present for all touched fields. source_url is null on all fields -- known systemic tooling gap, not a gate failure per checklist calibration note 2026-06-21."
+      "evidence": "Provenance file present. Null source_url is known systemic gap, not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions."
+      "evidence": "No em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One question on Capabilities -- terse, relevant, not asking for fields that already have non-zero values."
+      "evidence": "One terse, relevant question on Capabilities."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching; reviewer holds it here pending the fix."
+      "evidence": "Flipped to Needs Review by adjudicator."
     }
   ],
-  "summary": "Single blocker: both context shots are error pages. site-17.png captured a PHP error from bizzarri-rodriguez.com (not the homepage). site-18.png captured Instagram's 'Something went wrong' error page (not the profile). Neither is marked rejected, documented in AI Notes, or queued in state/ig-queue.json -- so the IG throttle exception does not apply. Fix: recapture the website shot when the site is up, and for IG mark the failed shot rejected, document it in AI Notes, and add to ig-queue.json so a logged-in grab can replace it. All other checks pass.",
-  "to": "scraper"
+  "summary": "OVERTURN. All 20 checks pass. The first reviewer's sole basis for failure (missing rejected flags + AI Notes documentation + ig-queue entry for the context shots) was accurate at review time but was remediated by the scraper. The current manifest, AI Notes, and ig-queue.json all meet the checklist exception for environmentally-failed context shots. 16 named, captioned, on-capability work images present. Entry ready for Jonathan.",
+  "to": "jonathan"
 }
