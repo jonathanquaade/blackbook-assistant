@@ -1979,5 +1979,12 @@
     "ig_url": "https://www.instagram.com/thefuturelaboratory/",
     "reason": "IG served error page logged-out (rate-limited); logged-in grab needed for profile context shot",
     "queued_at": "2026-07-11T00:00:00Z"
+  },
+  {
+    "page_id": "cbe78056-d88e-4d7f-9a88-d9b366322d78",
+    "name": "WGSN",
+    "ig_url": "https://www.instagram.com/wgsn/",
+    "reason": "IG profile screenshot returned error page (Something went wrong) under logged-out throttling; context shot rejected and queued for logged-in ig.py grab",
+    "queued_at": "2026-07-11"
   }
 ]

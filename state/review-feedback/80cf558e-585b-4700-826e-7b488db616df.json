@@ -2,34 +2,28 @@
   "page_id": "80cf558e-585b-4700-826e-7b488db616df",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
+  "verdict": "pass",
   "attempt": 2,
   "checks": [
     {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "Previously failing: site-02.webp (sitewide studio ambient photo, /media/site/ path) was mislabeled as V&V. Now confirmed rejected in manifest. Replacement site-20.webp source URL is /media/pages/projekte/vessel-voyager/dc5d53b03c-.../20260312_vessel-and-voyager-0095... (genuine project path). Image visually confirmed: printed V&V programme/publication on leather sofa, Vessel & Voyager typography clearly legible on cover. Two real V&V project images now in set (site-19: exhibition posters installed at Akademie der Kunste venue; site-20: printed programme). 16 active images across 5 distinct projects (Vessel & Voyager, Schlosstheater Moers, Mittendrin, Berlin Forum Aussenpolitik, Tracing the Ground)."
+    },
+    {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-17.png and site-18.png (both error pages) are marked rejected in manifest. Entry is in state/ig-queue.json with reason. AI Notes says 'IG profile shot queued (headless render blocked; added to state/ig-queue.json 2026-07-11)'. Checklist throttle exception fully met."
-    },
-    {
-      "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "site-02.webp is captioned 'Vessel & Voyager, Akademie der Kunste' but its source URL is basics09.de/media/site/307235277a-1741099726/basics09-2048x-q80.webp, a site-wide image path (not under /media/pages/projekte/vessel-voyager/). The image is visually the studio's own Kreuzberg office window with the mirrored Basics09 wordmark reflected in glass at sunset. It is a studio identity/brand photo, not a Vessel & Voyager project image. This is a mislabeled image: the scraper substituted a sitewide ambient shot for the OG image that was rejected, but labelled it as the V&V project.",
-      "fix": "Replace site-02.webp with a genuine project-interior image from basics09.de/projekte/vessel-voyager (the project page already supplies site-19.webp and site-03.webp; a third shot is already available at the rejected site-20 through site-23 entries, any of which is a real project image). Alternatively, re-caption site-02 honestly as a studio context shot (not a project image) and remove it from the project image group. Either way, the current caption is wrong and must be corrected."
-    },
-    {
-      "id": "D.source",
-      "result": "pass",
-      "evidence": "Source is 'Web clipper, 2020-11-01'. Date present and correctly formatted."
+      "evidence": "site-16.png visually confirmed as basics09.de homepage (Basics09 wordmark, German studio text, project cards for Akademie der Kunste and Schlosstheater Moers). IG shots site-17 and site-18 both rejected in manifest. Entry in state/ig-queue.json; AI Notes documents 'IG profile shot queued (headless render blocked; added to state/ig-queue.json 2026-07-11)'. Checklist throttle exception fully met."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "15 named project shots across 5 projects (V&V, Schlosstheater Moers, Mittendrin, Berlin Forum Aussenpolitik, Tracing the Ground); goes inside projects with spreads, interiors, event photography, web UI."
+      "evidence": "16 named project shots across 5 projects; goes inside projects with spreads, interiors, event photography, web UI. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capabilities tagged Graphic design; captured work covers visual identity, editorial, exhibition branding, web design. Match is sound."
+      "evidence": "Capabilities: Graphic design. Captured work covers visual identity, editorial, exhibition branding, web design. Match is sound."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -39,37 +33,37 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio embed opportunities identified for a graphic design studio; image-only set is appropriate."
+      "evidence": "No video/audio embed opportunities identified for a graphic design studio; image-only set appropriate."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No unexplained gaps. IG queue documented."
+      "evidence": "No unexplained gaps. IG queue documented in AI Notes and state/ig-queue.json."
     },
     {
       "id": "A.body-structure",
       "result": "pass",
-      "evidence": "Notion body has 18 blocks: H2 Work + 16 images + divider. No orphan blocks or duplication."
+      "evidence": "16 active images in Images property matches non-rejected manifest entries. Body structure confirmed clean in prior pass."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct."
+      "evidence": "Type: Studio. Correct for small Berlin design studio."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all present."
+      "evidence": "Website (basics09.de/en/), Instagram (instagram.com/basics09/), LinkedIn (de.linkedin.com/company/basics09), Email (info@basics09.de) all present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design set. Open Question 1 asks Jonathan to confirm additional tags."
+      "evidence": "Graphic design set. Open Question 1 asks Jonathan to confirm additional tags (Identity systems, Illustration, Web design, Frontend development)."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Germany / 2-10 / Studio, consistent with AI Notes."
+      "evidence": "Germany / 2-10 / Studio, consistent with AI Notes (Berlin Kreuzberg, core team ~8)."
     },
     {
       "id": "B.autonomy",
@@ -79,17 +73,22 @@
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note relationship facts; zero-states appropriate."
+      "evidence": "No clip note relationship facts; zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note contained only the studio name; clipped.md confirms."
+      "evidence": "Clip note contained only the studio name; clipped.md confirms. No instructions unacted on."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes uses hedged language for positioning; verifiable facts (clients, founding year, team) asserted; seniority read present."
+      "evidence": "AI Notes uses hedged language for positioning; verifiable facts (clients, founding year, team members, address) asserted; seniority read and Autonomy reasoning present."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Date present and correctly formatted."
     },
     {
       "id": "D.provenance-written",
@@ -99,19 +98,19 @@
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions are em-dash-free. keeper.py line 547 already uses ' · ' separator. No embed entries in manifest so the paragraph metadata path is not exercised."
+      "evidence": "AI Notes and Open Questions are em-dash-free. No embed entries in manifest so keeper.py paragraph metadata path is not exercised."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse conditional question on Capabilities expansion."
+      "evidence": "One terse conditional question on Capabilities expansion. No redundant or non-conditional questions."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains in Enriching; reviewer has not flipped it (holding on fail)."
+      "evidence": "Entry in Enriching; reviewer flips to Needs Review on this pass."
     }
   ],
-  "summary": "One remaining fail: site-02.webp is a sitewide studio ambient photo (source URL under /media/site/, not the vessel-voyager project path) mislabeled as 'Vessel & Voyager, Akademie der Kunste'. The original OG image (site-01) was correctly rejected, but its replacement (site-02) is the same studio window photo at full resolution, not a genuine V&V project image. Three of the rejected entries (site-20, site-21, site-22, site-23) are real V&V project images that could replace it. All three attempt-1 fixes are otherwise confirmed: IG shots rejected+queued+noted (pass), Source has date (pass), OG image itself is rejected (pass). Only the mislabeled replacement image blocks this pass.",
-  "to": "scraper"
+  "summary": "All checks pass. The sole failing item from attempt 2 (site-02.webp: sitewide studio photo mislabeled as V&V project image) is resolved. site-02 is now marked rejected in the manifest; its replacement site-20.webp has a genuine /media/pages/projekte/vessel-voyager/ source URL and is visually confirmed as a V&V printed programme. 16 clean images across 5 distinct projects. IG queue exception fully documented. Entry is complete and honest.",
+  "to": null
 }

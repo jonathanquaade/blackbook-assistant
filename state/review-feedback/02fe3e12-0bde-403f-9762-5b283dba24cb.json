@@ -1,0 +1,116 @@
+{
+  "page_id": "02fe3e12-0bde-403f-9762-5b283dba24cb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T16:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct report covers verified visually: Future Forecast 2026, Future Five 2026, The Synthocene Era, Gen Z Global Youth Atlas, Travel & Hospitality Futures, Retail Futures Culture-Coded Retail, New Codes of Luxury Branded Residence, Innovation Debrief 2025-2026. All titles match captions. No duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Entity type is a foresight consultancy; its output IS report covers. 8 covers across distinct sectors (cross-sector, AI, youth, travel, retail, luxury, innovation) constitute appropriate depth for this entity type."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability tagged Brand strategy; images are TFL trend/foresight report covers, which is their core deliverable output. Correctly representing the entity type."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as thefuturelaboratory.com homepage (THE : FUTURE : LABORATORY nav bar visible). site-02.png is the IG error page ('Something went wrong'), correctly marked rejected: true in manifest. IG queued to state/ig-queue.json with reason documented. AI Notes notes the block. Sanctioned exception path fully followed."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 report images have descriptive captions naming the report title and topic; all carry a link to thefuturelaboratory.com/shop. Website context shot captioned 'Website'. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio work present for this entity type (foresight consultancy). N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG throttle block documented in AI Notes; entry queued to state/ig-queue.json. No other known sources blocked or unexplored."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "9 images in Notion Images property match manifest (8 report covers + site-01.png); site-02.png correctly excluded (rejected). No sign of orphan blocks from manifest inspection."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Agency. Justified in AI Notes (large full-service strategic org for client scale and long-term retainers)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all populated and sourced. Email not found; no field for it in Notion schema listing. Absence not noted but email is not a required field for an org entry of this type."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Brand strategy set_by jonathan (locked). Second capability Insights & research raised as Open Question 2 for Jonathan to decide. Correct approach for a locked field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 41-100 (revised from migration undercount; reasoning in AI Notes citing PitchBook + LinkedIn). Work Status: Studio is a minor semantic quirk for an Agency-typed org (Studio usually means small team) but no FAIL warranted as it does not contradict facts and the type field already signals Agency. Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Agency). Autonomy is optional per calibration note 2026-06-21. Not set; seniority/leadership read present in AI Notes. No fail."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no stated relationship in clip note or elsewhere."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relationship facts or judgment instructions in the clip note. Source preserved as 'Web clipper, 2020-11-01'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list qualified as 'stated clients'; size discrepancy between sources explicitly noted and resolved with reasoning. No bare assertions of unverified claims. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Populated and dated."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. source_url null on AI Notes/Open Questions is the known systemic tooling gap (not a gate failure per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes, Open Questions, and all manifest captions programmatically. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: keep/reject (appropriate for an unconventional entity type) and Capabilities expansion. Both terse, conditional, and not redundant with existing field values."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching before this gate; flipped to Needs Review by reviewer on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Foresight consultancy entity type: report covers are the correct representation of their output. IG blocked/queued per sanctioned path. Keep/reject Open Question correctly preserved for Jonathan."
+}
