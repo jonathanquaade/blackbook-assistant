@@ -1,0 +1,111 @@
+{
+  "page_id": "53e47976-1a36-4b95-8e28-ec5e47fb10d8",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images span 5 distinct named projects: V&A Wayfinding, TfL Overground Naming, National Galleries of Scotland, Edinburgh Park Wayfinding, Television Centre Wayfinding. No repeated projects across captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 3 interior/applied images: V&A shows museum interior signage and a directory panel; TfL shows the line-naming color system; Edinburgh Park shows environmental totems installed in space; Television Centre shows plaza wayfinding at night. Goes inside projects, not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 work images show wayfinding signage, place branding, and identity systems -- directly matching DNCO's stated disciplines. No off-capability work captured. Capabilities field is jonathan-set (Graphic design only); scout correctly raised Open Question 1 rather than overwriting a locked field."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png verified: dnco.com homepage with DNCO logo, correct. site-17.png verified: instagram.com/dnco/ profile page showing @dnco handle, 57K followers, place branding bio, London and New York. Both context shots are correct and match their captions."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 manifest entries have caption and link fields. Every work image names its project and links to the source case study page on dnco.com."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "DNCO is a place branding and wayfinding studio; primary deliverables are spatial/identity work best shown as still images. No embeds expected or missing."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "17 images uploaded, 15 work images across 5 projects. No thin or unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio (set_by agent, verified 2026-07-11). Correct: small specialized team doing hands-on creative execution for place branding."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://dnco.com; Instagram: https://www.instagram.com/dnco/ (confirmed correct handle via context shot); LinkedIn: https://www.linkedin.com/company/dnco; Email: mail@dnco.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities set_by jonathan (migration) to Graphic design. Scout cannot overwrite a jonathan-locked field and correctly raised Open Question 1 proposing additions (Brand strategy, Creative direction, Identity systems, Spatial & exhibition design, Web design). Appropriate handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK, US (London + New York confirmed via dnco.com); Size: 41-100 (scout notes ~40-49 people); Work Status: Studio (confirmed via dnco.com). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy-estimated",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy is optional for org-type entries per checklist calibration 2026-06-21. AI Notes includes a seniority/leadership read (senior/director-level, female-founded). No fail."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note states a relationship; zero-states are appropriate and not contradicted by evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "No relationship facts or judgment in clip note. Scout raised Open Question 2 on the dn&co -> DNCO rebrand name change (migration-set Name field), which is the correct handling."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cites verifiable facts (founding year, clients, employee ownership, staff count). Work Status and Instagram sourcing explicitly documented. Seniority read present ('Senior and director-level leadership'). No unsupported assertions. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01' -- present and filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null across all fields -- this is the known systemic tooling gap, not a gate failure per checklist calibration note 2026-06-21. set_by attributions are correct: Capabilities is jonathan (migration lock respected), Name is migration, all agent-set fields are agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions-terse-conditional",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion proposal -- terse, necessary because field is jonathan-locked and cannot be silently updated; (2) Name rebrand question -- terse, necessary because Name is migration-set. Both conditional. No questions ask for fields that already have non-zero-state values. Name rebrand is a valid Open Question for Jonathan, not a fail condition."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently in Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 20/20 checks pass. The Capabilities question (OQ 1) is the most substantive item for Jonathan: the studio clearly does more than Graphic design and the scout's suggested additions (Brand strategy, Identity systems, Spatial & exhibition design, Wayfinding) are well-evidenced by the captured work. The Name question (OQ 2) on dn&co -> DNCO is factual and actionable. Neither is a gate failure."
+}

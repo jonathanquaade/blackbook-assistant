@@ -1,0 +1,123 @@
+{
+  "page_id": "f55dc421-7e26-4aca-8233-39022ca7dab0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-21.png is captioned 'Website' but shows the dualroom.ch LOVERESS Album Cover project-interior page (cyan gradient, project title top-left, pagination 1-49 at bottom), NOT the dualroom.ch homepage. A project interior was captured instead of the root homepage.",
+      "fix": "Retake the website context shot: scrape.py shot https://dualroom.ch --out assets/f55dc421-7e26-4aca-8233-39022ca7dab0 --caption 'Website'. Overwrite site-21.png and update the manifest source_url to https://dualroom.ch."
+    },
+    {
+      "id": "A.pov-source-url-mismatch",
+      "result": "flag",
+      "evidence": "pov-paper-issue2-1.jpg and pov-paper-issue3-1.jpg both have source_url CDN paths containing '/pov-paper-issue-8/' (e.g. /media/pages/projects/pov-paper-issue-8/a6bb14e47d-.../pov2_jvs_-17_web-1600x.webp). Filenames ('pov2_jvs_' and 'pov3_web') do suggest Issue 2 and 3 content, and the images show plausible POV Paper editorial spreads. The Kirby JS-prefetch trap is documented; the scraper pulled by project-slug-matched filenames. Images look correct but CDN path is Issue-8-routed. Not marking as outright FAIL (image content appears accurate) but flagging for Jonathan: the manifest source_urls for these two files reference the wrong Kirby project slug in the path.",
+      "fix": "Verify the two images are genuinely POV Issue 2 and Issue 3 content (not Issue 8 content served under a different filename). If confirmed correct, this is a benign CDN artefact. If wrong, replace with correct images from the Issue 2 and Issue 3 project pages."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "4 distinct projects: SDA 2018 (cover + newspaper, 4 images going inside the spread), SDA 2020 (poster + magazine, 5 images with interior spreads), La Fete du Slip (1 image), POV Paper issues 2/3/7/9 + collector (5 images across issues). Meets 3+ distinct project threshold with depth."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "SDA 2018: cover + 3 newspaper interior spreads. SDA 2020: poster + magazine cover + 3 interior spreads. POV Paper: 4 distinct issue images + collector edition. Goes inside projects, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged capability: Graphic design. All 16 work images are graphic design outputs: identity/poster (SDA), festival branding (La Fete du Slip), editorial design (POV Paper). No off-capability capture."
+    },
+    {
+      "id": "A.instagram-context-shot",
+      "result": "pass",
+      "evidence": "site-22.png shows instagram.com/dualroom/ -- correct account (bio reads 'Dual Room', 4,772 followers, 'Creative direction'). Domain visible in top-left header."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 16 work images captioned with project name and dualroom.ch source link. Two context shots captioned 'Website' and 'Instagram profile'. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Graphic design studio; no video/audio work present on the site that would require embedding. Not applicable here."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work is present and adequately sourced. No unexplained absence."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct -- small specialized team (Crivelli + collaborators) doing hands-on graphic/editorial execution."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://dualroom.ch. Instagram: https://www.instagram.com/dualroom/ (verified: correct account). LinkedIn: https://ch.linkedin.com/in/emmanuel-crivelli-46992019. Email: info@dualroom.ch. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design tagged. Open Questions correctly flags potential additions (Identity systems, Web design) for Jonathan's call. Not a reviewer failure -- the scout tagged conservatively and asked."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Switzerland. Size: 2-10. Work Status: Studio. AI Notes records the sourcing basis (self-describes as two-person room, Crivelli founder). Consistent with evidence."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type: Studio -- Autonomy is OPTIONAL per calibration note (2026-06-21). AI Notes include seniority read: 'Senior/Creative Director level: 15+ years practice, solo founder, award-winning; should operate fully autonomously.' Sufficient."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship. Source is Web clipper 2020-11-01 with no relationship text."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained no relationship facts, instructions, or passcodes beyond the URL. Source field records 'Web clipper, 2020-11-01'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedge studio size ('likely Crivelli plus occasional collaborators', 'effectively a one-senior-person outfit'), seniority grounded in ECAL 2008 + 15 years trajectory. No unverified assertions stated as fact. Includes seniority + experience read as required."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; all touched fields have set_by values. source_url null across all fields -- known systemic tooling gap, not a gate failure per calibration note (2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions scanned: no em-dashes found. En-dashes used correctly in '2018-2021' (range) and '2-10' (size)."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: capabilities expansion (legitimate ambiguity) and Rating (standard). Both terse, both conditional (neither field already has a non-zero value). Story nudge not applicable (Worked Together: Never, no prior relationship indicated)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry still in Enriching -- correct, reviewer has not yet passed it. Will flip on pass; fail here means it stays in Enriching."
+    }
+  ],
+  "summary": "One hard FAIL: the website context shot (site-21.png) shows a dualroom.ch project interior page, not the homepage. One flag (not a hard FAIL): POV Paper issue 2 and 3 CDN source paths route through the issue-8 Kirby slug -- image content appears correct but should be confirmed. All other checks pass. Fix the homepage screenshot and this entry is clean.",
+  "to": "scraper"
+}

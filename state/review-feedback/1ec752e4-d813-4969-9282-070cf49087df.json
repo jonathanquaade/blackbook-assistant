@@ -1,0 +1,112 @@
+{
+  "page_id": "1ec752e4-d813-4969-9282-070cf49087df",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "2 distinct clients (Liquides Imaginaires Tarot 2017; FFHB across 3 separate productions: Golden League 2020, CdF 2019, CdF 2018). Studio dissolved Sept 2023 with website and IG both offline; Wayback image URLs return 404; this is the documented maximum retrievable. Pragmatic pass per spawn instructions; Jonathan should decide if 2 clients is sufficient for his blackbook.",
+      "fix": null
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "4 thumbnails are visually distinct motion frames (handball energy typography, HISTOIRE typographic motion, 3D trophy reveal, tarot card + smoke). Not hero crops of one image."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Captured work is motion graphics and graphic identity (FFHB, Liquides Imaginaires). Matches tagged Capability: Graphic design. Open Question proposes adding Identity systems / Web design / Photography per research."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website: site-03.png is a Wayback Machine capture of studio-embuscade.fr (Dec 2023 archive URL visible in toolbar, French studio description text visible). Caption accurately says 'Website (archived Dec 2023, studio dissolved Sept 2023)'. IG: site-01.png shows the instagram.com 'Profile isn't available' error for @studio_embuscade; marked rejected in manifest with documented reason (account deactivated, studio dissolved); AI Notes document this. Account is permanently deactivated so ig.py cannot recover it; no ig-queue entry is correct. Vimeo profile shot (site-02.png) is a supplementary third context shot, correctly labeled 'Vimeo profile' and is vimeo.com."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 6 uploaded images carry captions: 1 website context, 1 Vimeo profile context, 4 project thumbnails each naming client and year."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "4 Vimeo embeds present in manifest, each paired with a corresponding thumbnail image. Images are not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly document: live site ECONNREFUSED; Wayback image URLs (im_ filenames) return 404; Wayback-rendered pages blank due to JS-external dependency; IG account deactivated. Castor Astral, Petit Navire, and FFHB static graphics all inaccessible for the same reason."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Two-person creative execution studio, not an agency. Correct per taxonomy."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all set. All are correctly the dead/dissolved studio's endpoints, noted as offline in AI Notes."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design set (jonathan-owned field). Open Question proposes additions. Appropriate channel for a jonathan-owned field."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "France / 2-10 / Studio. Dissolution documented. Work Status 'Studio' accurate for the entity type. Sources named in AI Notes (business registry for dissolution, studio own site for founding/discipline)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 3 (set_by agent). Org-level entry; field is optional per 2026-06-21 calibration. Field is present and reasonable for a 2-founder client-work studio. AI Notes note the optional status."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match no contradicting evidence in clip note or entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No relationship facts or special instructions in clip note text."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes distinguish verifiable facts (Vimeo videos, business registry dissolution, named founders with sourced backgrounds) from inferred scope. Seniority/experience read present (Kevin Fortin ex-Marcel Worldwide/Publicis, Theo Viardin background named). No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have provenance with correct set_by values. source_url null throughout: known systemic tooling gap, not a gate failure per 2026-06-21 calibration. Capabilities set_by: jonathan is correct (it was jonathan-tagged)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, captions, or Source."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question: Capabilities expansion proposal. Terse and conditional. Appropriate for a jonathan-owned field that the agent cannot overwrite."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer flips to Needs Review now."
+    }
+  ],
+  "jonathan_notes": "Studio Embuscade dissolved Sept 2023; website and Instagram permanently offline. All captured work is from Vimeo (4 motion videos, 2 clients: Liquides Imaginaires and FFHB across 3 years). Other documented projects (Castor Astral, Petit Navire, FFHB static identity) are irretrievable from any archive source. Entry is complete given the constraint. Jonathan should decide if 2 capturable clients is enough to keep this entry or reject it.",
+  "to": "scraper"
+}
