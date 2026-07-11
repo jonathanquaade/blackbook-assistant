@@ -391,8 +391,38 @@ def cmd_status(page_id, status):
     roster_mirror(page_id, {'Entry Status': status})
     print(f'{page_id} -> {status}')
 
+def _fit_for_upload(path):
+    """When KEEPER_FIT_UPLOAD=<maxKB> is set, downscale an oversized image to fit a
+    transport limit before upload (a workaround for a degraded network that resets on
+    large POST bodies; lesson 2026-07-11: Notion's file-send endpoint reset on bodies
+    over ~1 MB from a degraded sandbox while small files and the JSON API worked fine).
+    Returns a path to upload (a downscaled temp copy, or the original). Default off, so
+    healthy runs keep full-res. Uses sips (macOS); no-op if sips is absent."""
+    maxkb = int(os.environ.get('KEEPER_FIT_UPLOAD', '0') or '0')
+    if maxkb <= 0:
+        return path
+    if os.path.getsize(path) <= maxkb * 1024:
+        return path
+    import shutil, subprocess, tempfile
+    if not shutil.which('sips'):
+        return path
+    ext = os.path.splitext(path)[1].lower()
+    tmp = tempfile.NamedTemporaryFile(suffix='.jpg' if ext in ('.png', '.webp') else ext, delete=False)
+    tmp.close()
+    shutil.copyfile(path, tmp.name)
+    # PNG/WebP screenshots re-encode to JPEG (much smaller); step dimensions down until it fits.
+    if ext in ('.png', '.webp'):
+        subprocess.run(['sips', '-s', 'format', 'jpeg', tmp.name], capture_output=True)
+    for dim in (2000, 1600, 1200, 1000):
+        subprocess.run(['sips', '-Z', str(dim), '-s', 'formatOptions', '78', tmp.name], capture_output=True)
+        if os.path.getsize(tmp.name) <= maxkb * 1024:
+            break
+    return tmp.name
+
 def upload_file(path):
-    name = os.path.basename(path)
+    orig_stem = os.path.splitext(os.path.basename(path))[0]
+    path = _fit_for_upload(path)
+    name = orig_stem + os.path.splitext(path)[1]  # keep clean name, actual (possibly re-encoded) extension
     ctype = mimetypes.guess_type(name)[0] or 'application/octet-stream'
     size = os.path.getsize(path)
     if size > 20 * 1024 * 1024:
