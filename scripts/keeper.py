@@ -459,19 +459,22 @@ def upload_file(path, _force_kb=None, _reset_retries=3):
         headers=dict(H, **{'Content-Type': f'multipart/form-data; boundary={boundary}'}),
         data=body, method='POST')
     try:
-        json.load(urllib.request.urlopen(req))
+        # Timeout of 120s guards against a hung connection (lesson 2026-07-11b:
+        # default timeout=None caused a 17+ min hang when Notion's upload endpoint
+        # stalled mid-transfer; the process showed 0% CPU for the full 17 min).
+        json.load(urllib.request.urlopen(req, timeout=120))
     except OSError as e:
-        # The degraded Notion file endpoint resets on large POST bodies (ECONNRESET).
-        # Two-stage recovery (lesson 2026-07-11 + 2026-07-11b):
+        # The degraded Notion file endpoint resets on large POST bodies (ECONNRESET)
+        # or hangs and times out. Two-stage recovery:
         #   Stage 1: if file was not yet capped, retry downscaled (size-related reset).
         #   Stage 2: if already capped (or size was fine), retry with backoff for
-        #     transient resets; the network can reset even on small files under load.
+        #     transient resets/timeouts; the network can reset even on small files.
         #   Both stages must be tried before giving up.
         if _force_kb is None and send_path == path:
             return upload_file(path, _force_kb=950, _reset_retries=_reset_retries)
         if _reset_retries > 0:
             wait = 2 ** (3 - _reset_retries + 1)
-            print(f'  ECONNRESET on {name} ({size//1024}KB), retrying in {wait}s ({_reset_retries} left)...', flush=True)
+            print(f'  upload error on {name} ({size//1024}KB): {e} -- retrying in {wait}s ({_reset_retries} left)...', flush=True)
             time.sleep(wait)
             return upload_file(path, _force_kb=_force_kb, _reset_retries=_reset_retries - 1)
         raise
