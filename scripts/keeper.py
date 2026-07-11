@@ -400,14 +400,15 @@ def cmd_status(page_id, status):
     roster_mirror(page_id, {'Entry Status': status})
     print(f'{page_id} -> {status}')
 
-def _fit_for_upload(path):
-    """When KEEPER_FIT_UPLOAD=<maxKB> is set, downscale an oversized image to fit a
-    transport limit before upload (a workaround for a degraded network that resets on
-    large POST bodies; lesson 2026-07-11: Notion's file-send endpoint reset on bodies
-    over ~1 MB from a degraded sandbox while small files and the JSON API worked fine).
-    Returns a path to upload (a downscaled temp copy, or the original). Default off, so
-    healthy runs keep full-res. Uses sips (macOS); no-op if sips is absent."""
-    maxkb = int(os.environ.get('KEEPER_FIT_UPLOAD', '0') or '0')
+def _fit_for_upload(path, force_kb=None):
+    """When KEEPER_FIT_UPLOAD=<maxKB> is set (or force_kb is passed), downscale an
+    oversized image to fit a transport limit before upload (a workaround for a degraded
+    network that resets on large POST bodies; lesson 2026-07-11: Notion's file-send
+    endpoint reset on bodies over ~1 MB from a degraded sandbox while small files and the
+    JSON API worked fine). Returns a path to upload (a downscaled temp copy, or the
+    original). Default off, so healthy runs keep full-res; upload_file also calls this
+    with force_kb to self-heal a reset. Uses sips (macOS); no-op if sips is absent."""
+    maxkb = force_kb if force_kb is not None else int(os.environ.get('KEEPER_FIT_UPLOAD', '0') or '0')
     if maxkb <= 0:
         return path
     if os.path.getsize(path) <= maxkb * 1024:
@@ -428,24 +429,34 @@ def _fit_for_upload(path):
             break
     return tmp.name
 
-def upload_file(path):
+def upload_file(path, _force_kb=None):
     orig_stem = os.path.splitext(os.path.basename(path))[0]
-    path = _fit_for_upload(path)
-    name = orig_stem + os.path.splitext(path)[1]  # keep clean name, actual (possibly re-encoded) extension
+    send_path = _fit_for_upload(path, force_kb=_force_kb)
+    name = orig_stem + os.path.splitext(send_path)[1]  # keep clean name, actual (possibly re-encoded) extension
     ctype = mimetypes.guess_type(name)[0] or 'application/octet-stream'
-    size = os.path.getsize(path)
+    size = os.path.getsize(send_path)
     if size > 20 * 1024 * 1024:
         sys.exit(f'{name} is {size//1024//1024} MB > 20 MB single-part limit — compress or use a thumbnail.')
     fu = api('file_uploads', {'filename': name, 'content_type': ctype}, method='POST')
     boundary = uuid.uuid4().hex
     body = (f'--{boundary}\r\nContent-Disposition: form-data; name="file"; '
             f'filename="{name}"\r\nContent-Type: {ctype}\r\n\r\n').encode() \
-        + open(path, 'rb').read() + f'\r\n--{boundary}--\r\n'.encode()
+        + open(send_path, 'rb').read() + f'\r\n--{boundary}--\r\n'.encode()
     req = urllib.request.Request(
         f'https://api.notion.com/v1/file_uploads/{fu["id"]}/send',
         headers=dict(H, **{'Content-Type': f'multipart/form-data; boundary={boundary}'}),
         data=body, method='POST')
-    json.load(urllib.request.urlopen(req))
+    try:
+        json.load(urllib.request.urlopen(req))
+    except OSError as e:
+        # The degraded Notion file endpoint resets on large POST bodies (ECONNRESET).
+        # Self-heal: if this file was NOT already capped, retry it downscaled so callers
+        # don't have to remember KEEPER_FIT_UPLOAD by hand (lesson 2026-07-11: full-res
+        # >1MB image uploads died on ECONNRESET after 20+ min of capture work, wasting
+        # the whole scraper run). One forced-downscale retry, then re-raise.
+        if _force_kb is None and send_path == path:
+            return upload_file(path, _force_kb=950)
+        raise
     return fu['id'], name
 
 def block_text(b):
