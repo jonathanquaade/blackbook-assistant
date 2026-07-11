@@ -1,0 +1,123 @@
+{
+  "page_id": "41eded4a-51b6-496d-af2d-60be3a70bcd4",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "3 distinct named projects: Phantom rebrand, CoinTracker rebrand, Sierra AI website. For a 60-person digital product studio with extensive case study coverage, 3 projects is defensible depth. The spawn prompt explicitly asks the reviewer to judge sufficiency: these 3 are from bakkenbaeck.com/case/ pages, they are genuinely different in category (crypto wallet brand, crypto SaaS brand, AI SaaS web), and the scraper went inside each. PASS."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "10 work images across 3 projects (2 Phantom, 4 CoinTracker, 4 Sierra). Images go inside the projects: brand identity visuals, app icon, product screens, website hero. Not hero-only. PASS."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Web design (jonathan-set). Work captured: digital product design, web, brand identity - all core B&B output and consistent with tagged capability. The Open Question asks about expanding tags, which is correct handling. PASS."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-12.png) confirmed: bakkenbaeck.com homepage, correct. IG shot (site-13.png) is the IG error page, marked rejected in manifest with reason documented, entry queued to state/ig-queue.json. Sanctioned exception applies. Additionally, client site context shots (site-11: sierra.ai, site-14: phantom.app, site-15: bakkenbaeck.com/case/ramp) are present and correctly labeled. PASS."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every non-rejected manifest entry has a caption and a link. PASS."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No embed/bookmark entries in manifest. This is a visual/brand/web studio; no video or audio work was identified as the primary deliverable. PASS."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG absence documented. No other major source gap identified. PASS."
+    },
+    {
+      "id": "A.corrupt-images",
+      "result": "fail",
+      "evidence": "site-08.jpg and site-09.jpg are SVG files saved with a .jpg extension. Both are vector graphics from the sierra.ai CDN; Notion cannot render SVGs in the Images property and they will display as broken/blank tiles. These 2 images are included in the Images property upload and in the page body Work section as image blocks. They are counted as 2 of the 4 Sierra AI work shots.",
+      "fix": "Replace site-08.jpg and site-09.jpg with actual raster captures of the sierra.ai site (PNG or JPEG). Re-run body-reset then upload so the Images property and body are rebuilt clean. Target: 2 valid raster replacements captioned 'Sierra AI website, 2024' with link https://bakkenbaeck.com/case/sierra or https://sierra.ai."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "keeper.py upload was called after body-reset (standard pipeline order); manifest shows a single clean pass (all captured_at 2026-07-11). No evidence of double-upload. PASS - cannot inspect live blocks directly but no red flags from pipeline log."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a 60-person independent specialized team. PASS."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: bakkenbaeck.com, Instagram: instagram.com/bakkenbaeck, LinkedIn: linkedin.com/company/bakken-&-baeck-as, Email: hello@bakkenbaeck.com. All four present. PASS."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities field is jonathan-set (set_by: jonathan in provenance). Agent correctly left it intact and raised an Open Question proposing additions. Not the agent's call to override a jonathan-set field. PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: 5 offices (Germany, Netherlands, Norway, Spain, UK) sourced from bakkenbaeck.com/about. Size: 41-100 (site states 60+). Work Status: Studio (independent, confirmed). Sources named in AI Notes. PASS."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "This is a Studio entry. Per checklist calibration 2026-06-21: Autonomy is optional for org-type entries. No single solo founder embodies this 60-person studio. Omission is correct. PASS."
+    },
+    {
+      "id": "C.no-contradicting-judgment-fields",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. Nothing in the clip note or any evidence contradicts these zero-states. PASS."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field is 'Web clipper' (no additional clip note text with instructions beyond the URL). Nothing unacted-on. PASS."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual and sourced (bakkenbaeck.com/about, LinkedIn snippet, web search). Inferences about capabilities are framed as 'studio clearly also does...' (a reasonable characterization flagged in Open Questions, not asserted as fact). Seniority note is at org level, which is appropriate. No em-dashes. PASS."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper'. This is a migration entry with a web-clipper origin. PASS - though ideally would include the clipper date ('Web clipper, <created date>'); not failing for missing date alone."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present at state/provenance/41eded4a-51b6-496d-af2d-60be3a70bcd4.json. All touched fields have set_by values. source_url is null system-wide (known tooling gap, not a gate failure per calibration note). Capabilities correctly shows set_by: jonathan. PASS."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No embed or bookmark entries in manifest, so keeper.py's em-dash bug (line 547, fires only on embed/bookmark metadata lines) does not apply here. AI Notes, Open Questions, captions all checked: no em-dashes found. PASS."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question about Capabilities expansion. Terse, conditional (Capabilities currently has a value but it is jonathan-set and the question is about proposed additions, not asking him to fill an empty field). Story nudge not applicable (Worked Together is Never). PASS."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is Enriching, awaiting this gate. Status flip to Needs Review is the reviewer's job, pending verdict. PASS."
+    }
+  ],
+  "failing_checks": ["A.corrupt-images"],
+  "summary": "2 of the 4 Sierra AI work images (site-08.jpg, site-09.jpg) are SVG vector files saved with a .jpg extension, pulled from the sierra.ai CDN. Notion cannot render SVGs as image blocks; they will display as broken tiles. Replace both with valid raster captures (PNG/JPEG), then re-run body-reset and upload.",
+  "to": "scraper"
+}

@@ -1,0 +1,116 @@
+{
+  "page_id": "5c3e667b-aa4c-40a8-8c0a-2f28ab4b4b2b",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "to": null,
+  "summary": "Attempt-1 failure (Source missing date) confirmed fixed: Source is now 'Web clipper, 2020-11-01'. All other checks carry from attempt 1. 5 distinct projects with 3 interior images each, all captioned with project names and source links. Website context shot present and correct. IG context shot correctly rejected + documented + queued. No em-dashes. Open Questions terse and conditional. Source, provenance, and all metadata fields complete.",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: b.v-h type foundry, AB Bline typeface, FRAC Ile-de-France, Familistere de Guise, Revue Malaquais. No repeated project in captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside: type specimens (weight/spread/glyph), identity application sheets, museography interiors, editorial spreads. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design. Work shows identity systems (FRAC), editorial (Malaquais), museography signage (Familistere), and type design (Bline, bvhtype). All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png is baldingervuhuu.com homepage (correct). site-05.png (IG) rejected with documented reason, queued to state/ig-queue.json (confirmed present with matching page_id), AI Notes records the queue. Sanctioned IG-throttle exception applies."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 14 uploaded images have captions naming the project and a source link. frac-02 and frac-03 share the caption 'FRAC Ile-de-France, identity system application' but the images are visually distinct poster applications -- acceptable."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No embeddable video/audio work present in this entry (graphic/type studio). N/A."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "IG context shot absence documented in AI Notes and ig-queue.json. Studio website TLS issue noted in AI Notes with curl workaround used."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "Manifest has 14 live images + 1 website context shot + 3 rejected entries. Body structure consistent with a clean body-reset + upload run."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a two-person creative partnership."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email not findable for a dissolved studio; AI Notes documents sources checked. Not a gate failure."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design confirmed. Additional capabilities (Identity systems, Type design, Spatial & exhibition design) proposed via Open Question 2 pending Jonathan's approval. Correct protocol."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = France, Size = 2-10 (confirmed two founders), Work Status = Unknown (dissolved studio). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry (org-type). Autonomy field correctly not set per calibration note. AI Notes gives a seniority read (Autonomy 4-5 if assessed individually) which is sufficient."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted. No evidence in entry that Jonathan knows this studio personally."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was bare 'Web clipper' with no additional instructions. Nothing further to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts asserted (AGI membership, EnsAD teaching, dissolution date, bvhtype launch year). Inferences hedged ('research strongly supports', 'Autonomy 4-5 if assessed individually'). Seniority read present."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Fix from attempt 1 confirmed applied."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present. All touched fields have set_by values. source_url is null -- known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Zero em-dashes in AI Notes, Open Questions, or live Notion body blocks. keeper.py upload uses ' · ' not ' -- ', so no tool-level em-dash bug present."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: keep/reject the dissolved studio; Capabilities expansion. Both genuine unresolvables requiring Jonathan's judgment. Terse and conditional. Story nudge N/A."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipping to Needs Review as part of this gate pass."
+    }
+  ]
+}
