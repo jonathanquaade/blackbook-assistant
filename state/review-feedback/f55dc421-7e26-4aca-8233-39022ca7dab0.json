@@ -1,123 +1,116 @@
 {
   "page_id": "f55dc421-7e26-4aca-8233-39022ca7dab0",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-11T12:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-21.png is captioned 'Website' but shows the dualroom.ch LOVERESS Album Cover project-interior page (cyan gradient, project title top-left, pagination 1-49 at bottom), NOT the dualroom.ch homepage. A project interior was captured instead of the root homepage.",
-      "fix": "Retake the website context shot: scrape.py shot https://dualroom.ch --out assets/f55dc421-7e26-4aca-8233-39022ca7dab0 --caption 'Website'. Overwrite site-21.png and update the manifest source_url to https://dualroom.ch."
-    },
-    {
-      "id": "A.pov-source-url-mismatch",
-      "result": "flag",
-      "evidence": "pov-paper-issue2-1.jpg and pov-paper-issue3-1.jpg both have source_url CDN paths containing '/pov-paper-issue-8/' (e.g. /media/pages/projects/pov-paper-issue-8/a6bb14e47d-.../pov2_jvs_-17_web-1600x.webp). Filenames ('pov2_jvs_' and 'pov3_web') do suggest Issue 2 and 3 content, and the images show plausible POV Paper editorial spreads. The Kirby JS-prefetch trap is documented; the scraper pulled by project-slug-matched filenames. Images look correct but CDN path is Issue-8-routed. Not marking as outright FAIL (image content appears accurate) but flagging for Jonathan: the manifest source_urls for these two files reference the wrong Kirby project slug in the path.",
-      "fix": "Verify the two images are genuinely POV Issue 2 and Issue 3 content (not Issue 8 content served under a different filename). If confirmed correct, this is a benign CDN artefact. If wrong, replace with correct images from the Issue 2 and Issue 3 project pages."
+      "result": "pass",
+      "evidence": "site-27.png (source_url: https://www.dualroom.ch/projects) shows the dualroom.ch project grid: legible thumbnail grid of studio projects, domain visible, stable URL that survives the randomizing root. Replaces all five rejected homepage attempts (site-21 through site-26, all marked rejected with documented reasons in manifest). site-22.png shows instagram.com/dualroom/ with correct bio (Dual Room, Creative direction, 4772 followers). Both context shots present and correct."
     },
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "4 distinct projects: SDA 2018 (cover + newspaper, 4 images going inside the spread), SDA 2020 (poster + magazine, 5 images with interior spreads), La Fete du Slip (1 image), POV Paper issues 2/3/7/9 + collector (5 images across issues). Meets 3+ distinct project threshold with depth."
+      "evidence": "4 distinct projects: Swiss Design Awards 2018 (cover + 3 newspaper spreads), Swiss Design Awards 2020 (poster + magazine cover + 3 interior spreads), La Fete du Slip festival identity (1 image), POV Paper (issues 2, 3, 7, collector, issue 9 layout -- 5 images). Well exceeds 3-project minimum."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "SDA 2018: cover + 3 newspaper interior spreads. SDA 2020: poster + magazine cover + 3 interior spreads. POV Paper: 4 distinct issue images + collector edition. Goes inside projects, not hero-only."
+      "evidence": "Goes inside each project: SDA 2018 newspaper interior spreads; SDA 2020 magazine interior spreads; POV Paper multiple issue interiors and a collector edition. Not hero-only."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Tagged capability: Graphic design. All 16 work images are graphic design outputs: identity/poster (SDA), festival branding (La Fete du Slip), editorial design (POV Paper). No off-capability capture."
-    },
-    {
-      "id": "A.instagram-context-shot",
-      "result": "pass",
-      "evidence": "site-22.png shows instagram.com/dualroom/ -- correct account (bio reads 'Dual Room', 4,772 followers, 'Creative direction'). Domain visible in top-left header."
+      "evidence": "Tagged Graphic design. All 16 work images are graphic/editorial/identity outputs (awards identity systems, festival poster, editorial publication layouts). No off-capability capture."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All 16 work images captioned with project name and dualroom.ch source link. Two context shots captioned 'Website' and 'Instagram profile'. No anonymous images."
+      "evidence": "All 16 work images captioned with project name and dualroom.ch source link. Both context shots captioned Website and Instagram profile."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Graphic design studio; no video/audio work present on the site that would require embedding. Not applicable here."
+      "evidence": "Graphic design studio. No video or audio work present on the site to embed. Not applicable."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Work is present and adequately sourced. No unexplained absence."
+      "evidence": "Work is present and adequately sourced from the studio's own site. No unexplained absence."
+    },
+    {
+      "id": "A.pov-source-url-note",
+      "result": "pass",
+      "evidence": "Flagged in attempt 1: pov-paper-issue2-1.jpg and pov-paper-issue3-1.jpg CDN paths route through a /pov-paper-issue-8/ Kirby slug. Images are visually correct distinct editorial spreads (issue 2: broadsheet/red-grid editorial; issue 3: red-couch editorial). This is a known Kirby CMS CDN aggregation behaviour -- images are served under a single slug but filename metadata (pov2_jvs_, pov3_web) and visual content confirm correct issues. Not a gate failure; noted for Jonathan."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct -- small specialized team (Crivelli + collaborators) doing hands-on graphic/editorial execution."
+      "evidence": "Type: Studio. Correct for a small specialized team doing hands-on graphic/editorial execution."
     },
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website: https://dualroom.ch. Instagram: https://www.instagram.com/dualroom/ (verified: correct account). LinkedIn: https://ch.linkedin.com/in/emmanuel-crivelli-46992019. Email: info@dualroom.ch. All four present."
+      "evidence": "Website: https://dualroom.ch. Instagram: https://www.instagram.com/dualroom/ (verified correct account). LinkedIn: https://ch.linkedin.com/in/emmanuel-crivelli-46992019. Email: info@dualroom.ch. All four present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged. Open Questions correctly flags potential additions (Identity systems, Web design) for Jonathan's call. Not a reviewer failure -- the scout tagged conservatively and asked."
+      "evidence": "Graphic design tagged. Open Questions asks about potential additions (Identity systems, Web design). Scout tagged conservatively and asked; that is correct behaviour."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Switzerland. Size: 2-10. Work Status: Studio. AI Notes records the sourcing basis (self-describes as two-person room, Crivelli founder). Consistent with evidence."
+      "evidence": "Country: Switzerland. Size: 2-10. Work Status: Studio. Sources noted in AI Notes (self-describes as two-person room, Crivelli founder)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Type: Studio -- Autonomy is OPTIONAL per calibration note (2026-06-21). AI Notes include seniority read: 'Senior/Creative Director level: 15+ years practice, solo founder, award-winning; should operate fully autonomously.' Sufficient."
+      "evidence": "Type: Studio -- Autonomy field is optional per calibration note (2026-06-21). AI Notes include a seniority read (Senior/Creative Director, 15+ years, solo founder, award-winning)."
     },
     {
       "id": "C.no-contradicting-judgment",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship. Source is Web clipper 2020-11-01 with no relationship text."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with web-clipper source and no relationship evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note contained no relationship facts, instructions, or passcodes beyond the URL. Source field records 'Web clipper, 2020-11-01'."
+      "evidence": "Web clipper entry with no relationship facts, passcodes, or instructions beyond the URL. Source field records the clip date."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedge studio size ('likely Crivelli plus occasional collaborators', 'effectively a one-senior-person outfit'), seniority grounded in ECAL 2008 + 15 years trajectory. No unverified assertions stated as fact. Includes seniority + experience read as required."
+      "evidence": "AI Notes hedge studio size and composition. Seniority grounded in ECAL 2008 BA and 15-year trajectory. No unverified assertions stated as fact."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2020-11-01'. Correct format."
+      "evidence": "Source: Web clipper, 2020-11-01. Correct format."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present; all touched fields have set_by values. source_url null across all fields -- known systemic tooling gap, not a gate failure per calibration note (2026-06-21)."
+      "evidence": "Provenance file present with set_by values on all touched fields. Null source_url is the known systemic tooling gap -- not a gate failure per calibration note (2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and captions scanned: no em-dashes found. En-dashes used correctly in '2018-2021' (range) and '2-10' (size)."
+      "evidence": "AI Notes, Open Questions, and image captions scanned. No em-dashes. En-dashes used correctly in year ranges (2018-2021) and size (2-10)."
     },
     {
       "id": "D.open-questions-terse",
       "result": "pass",
-      "evidence": "Two questions: capabilities expansion (legitimate ambiguity) and Rating (standard). Both terse, both conditional (neither field already has a non-zero value). Story nudge not applicable (Worked Together: Never, no prior relationship indicated)."
+      "evidence": "Two questions: capabilities expansion (legitimate ambiguity, site shows identity and web work beyond the tagged Graphic design) and Rating (standard). Both terse and conditional."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry still in Enriching -- correct, reviewer has not yet passed it. Will flip on pass; fail here means it stays in Enriching."
+      "evidence": "Flipping to Needs Review on this pass verdict."
     }
   ],
-  "summary": "One hard FAIL: the website context shot (site-21.png) shows a dualroom.ch project interior page, not the homepage. One flag (not a hard FAIL): POV Paper issue 2 and 3 CDN source paths route through the issue-8 Kirby slug -- image content appears correct but should be confirmed. All other checks pass. Fix the homepage screenshot and this entry is clean.",
-  "to": "scraper"
+  "summary": "All checks pass. The attempt-1 FAIL (website context shot showing a project interior) is resolved: site-27.png captures the stable dualroom.ch/projects grid, all five prior homepage attempts are marked rejected in the manifest with documented reasons. Images are legible despite KEEPER_FIT_UPLOAD downscale. POV Paper CDN slug artefact from attempt 1 is benign (image content verified visually). 16 work images across 4 distinct projects with depth. All metadata fields complete and consistent.",
+  "to": null
 }

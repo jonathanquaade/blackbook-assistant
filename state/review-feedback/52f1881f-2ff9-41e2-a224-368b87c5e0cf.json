@@ -1,0 +1,111 @@
+{
+  "page_id": "52f1881f-2ff9-41e2-a224-368b87c5e0cf",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T14:30:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "11 work images across 4 distinct projects: TFT K.O. Coliseum, Beats x Minecraft, Formula 1 One Begins, Louis Vuitton VIA. No repeated angles of one project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 shots: layouts, character details, film stills, badge detail. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; work shown is graphic identity systems, brand campaign stills, motion stills. All within scope."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png is glgth.com homepage (GOLGOTHA wordmark + project grid visible). site-13.png is instagram.com/glgth/ (Instagram UI, glgth handle, GOLGOTHA name, follower count, post grid visible). Both correct."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 13 manifest entries have captions naming project and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Capability tagged Graphic design only (by Jonathan); motion/film are proposed additions pending Open Question 1. Stills from film projects (F1 One Begins, Beats x Minecraft) are appropriate for the current tag. Note: if Jonathan confirms film/video capabilities, the scraper should return to embed the Vimeo/video content from project pages on the next pass."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No gaps noted; 4 named projects with full still coverage captured."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small boutique 3-founder creative studio."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (glgth.com), Instagram (instagram.com/glgth/, verified via context shot), LinkedIn (linkedin.com/company/golgotha/), Email (hello@glgth.com). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design set by Jonathan. Open Question 1 asks about adding 3D & motion, Identity systems, Film & video production, Creative direction. Appropriate deferral to Jonathan."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "France, 2-10, Studio. AI Notes explains: Paris-based, 3 confirmed founders, headcount unconfirmed but boutique-sized."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio (org-type entry). Per calibration note 2026-06-21, Autonomy is optional for orgs. AI Notes notes it is not applicable. Correct."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) all agent-set. Clip note contains only a URL, no relationship signals."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note was just http://glgth.com/ with no instructions. Nothing missed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size and headcount hedged ('plausible'). Founding facts and client roster stated as facts with verifiable basis. No em-dashes. Seniority read present (3 founders, 10+ yr studio). Autonomy not-applicable note included."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. source_url null throughout; noted as known systemic tooling gap per calibration note 2026-06-21, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and captions use semicolons, commas, and hyphens. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse numbered question with multiple-choice options about Capabilities. Conditional (no redundant asks). Story nudge not applicable (no relationship signals)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status is Enriching, ready to flip to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. One forward note for the scraper: if Jonathan confirms film/video production capabilities via Open Question 1, a follow-on pass should embed the video content from the F1 One Begins and Beats x Minecraft project pages on glgth.com."
+}
