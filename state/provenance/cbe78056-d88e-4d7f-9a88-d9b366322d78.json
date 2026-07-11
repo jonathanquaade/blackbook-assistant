@@ -15,10 +15,10 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "41\u2013100",
+      "value": "100+",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
@@ -26,8 +26,8 @@
         "US"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -50,9 +50,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-11T15:58:58",
       "set_by": "agent"
     },
     "Name": {
@@ -60,6 +60,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Agency",
+      "source_url": null,
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://www.wgsn.com",
+      "source_url": null,
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/wgsn/",
+      "source_url": null,
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/wgsn",
+      "source_url": null,
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-11-01",
+      "source_url": null,
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "WGSN is the global authority in consumer trend forecasting; founded 1998 in London, now owned by Apax Partners (PE, acquired Feb 2024 for ~700M GBP). Over 1,000 employees across London, New York, Hong Kong, Sao Paulo; serves 6,500+ companies including 53 of the world's 100 largest brands. Revenue is subscription-based (9 products: fashion, beauty, interiors, food, consumer tech, etc.) plus custom advisory. This is a data/media SaaS company, not a hands-on creative doer; it supplies trend intelligence and brand strategy insight to clients rather than executing creative work itself. Size corrected from 41-100 to 100+ (LinkedIn 501-1000, multiple employee-count sources confirm ~1,000+). Capabilities: Brand strategy (positioned as a brand strategy advisor) and Insights and research (core product is consumer research and trend forecasting). Work Status set to Studio as it operates under its own brand. Type set to Agency as the best available fit for a large full-service organisation, though WGSN is more accurately a SaaS/media company; see Open Question.",
+      "source_url": null,
+      "verified_at": "2026-07-11T15:58:58",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Keep or reject? WGSN is a trend-forecasting SaaS/media company (1,000+ employees, subscription products, PE-owned) rather than a hands-on creative doer. It supplies brand strategy intelligence to clients but does not execute creative work itself. Worth keeping as a reference (e.g. tool or context) or reject?\n2. Capabilities: existing tag is Brand strategy (your set). Evidence also supports Insights & research (trend forecasting is their core product). Add it?\n3. Type: set to Agency as best available fit for a large full-service org, but WGSN is really a SaaS/media company (not a creative studio or traditional agency). Comfortable with Agency, or another call?\n",
+      "source_url": null,
+      "verified_at": "2026-07-11T15:59:08",
+      "set_by": "agent"
     }
   }
 }
