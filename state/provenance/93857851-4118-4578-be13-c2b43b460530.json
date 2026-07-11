@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://dia.tv/",
+      "value": "https://www.dia.studio/",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -23,21 +23,22 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "Switzerland"
+        "France",
+        "United States"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T23:03:07",
+      "verified_at": "2026-07-11T03:05:12",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +56,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-11T03:07:38",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +66,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/dia_studio/",
+      "source_url": null,
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/diastudio/",
+      "source_url": null,
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "meg@dia.studio",
+      "source_url": null,
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-11-01",
+      "source_url": null,
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "DIA Studio is a design, research and innovation studio co-founded in 2009 in SoHo, New York by Mitch Paone (Creative Director) and Meg Donohoe (Managing Director). Now dual-based in New York and Chamonix, France. Known for kinetic identity systems, typographic systems, and generative tools; clients include Coinbase, Pinterest, Nike, Adidas, Squarespace, Spotify and YouTube. Mitch Paone is an AGI member who teaches at European institutions (ECAL, ZHDK, KABK, HEAD). Small team of 2 founders plus likely a handful of collaborators, consistent with the 2-10 size. Country was Switzerland in migration data; their own About page says New York, Chamonix (Chamonix is in France), corrected here.",
+      "source_url": null,
+      "verified_at": "2026-07-11T03:07:38",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Country: migration had Switzerland; their About page lists New York and Chamonix (Chamonix is in France). Set to US + France -- please confirm.\n2. Capabilities: currently Graphic design (your tag). Portfolio shows kinetic identities, typographic systems, generative tools; suggest adding Identity systems, 3D & motion, Creative technology, Type design. Confirm?",
+      "source_url": null,
+      "verified_at": "2026-07-11T03:07:53",
+      "set_by": "agent"
     }
   }
 }
