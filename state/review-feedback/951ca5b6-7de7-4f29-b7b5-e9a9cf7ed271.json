@@ -1,0 +1,111 @@
+{
+  "page_id": "951ca5b6-7de7-4f29-b7b5-e9a9cf7ed271",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T13:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "13 work images span 4 distinct named projects: Airbnb (4 shots), Eurostar (3 shots), Deliveroo (3 shots), EA Sports (3 shots). No near-identical duplicates."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3-4 shots per project going inside each: logo/wordmark, campaign application, environmental rollout. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities tagged Graphic design (jonathan-set); all 13 work images show brand identity systems and visual rollout. On-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png is a 1440x900 Playwright screenshot of further.group homepage (verified: shows the Further hero image at that domain). site-15.png is a 1440x900 screenshot of instagram.com/@further_agency (verified: Instagram header and @further_agency handle visible; a cookie consent modal partially obstructs the grid but the identity is confirmed and the domain is correct). Captions match content."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 manifest entries have captions and source links. No anonymous images."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "Entry is a brand/identity agency; no audio or video primary discipline. No embedded video assets expected or missing for this capability set."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "13 work images captured from 4 case-study pages. No unexplained gaps."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. 400+ employees, three global offices, full-service positioning. Correct per schema (Agency = large full-service org built for scale)."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://further.group. Instagram: https://www.instagram.com/further_agency/. LinkedIn: https://www.linkedin.com/company/further-agency. Email: london@further.group. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = Graphic design (set_by jonathan, locked). Scout correctly flagged expanded tags in Open Question 2 rather than overwriting jonathan's field. Handled correctly."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK, US, UAE (corrected from migration error of Australia). Size: 100+ (LinkedIn ~407 employees). Work Status: Studio (correct for an org entity). AI Notes document the LinkedIn size signal. Country correction rationale in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type = Agency (org-level). Per checklist calibration note, Autonomy is optional for org entries; a seniority/leadership read in AI Notes is sufficient. AI Notes describe the org scale and positioning. No field required."
+    },
+    {
+      "id": "C.no-judgment-field-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Work With? = Unvetted, Worked Together = Never, Familiarity = Don't know them. No clip note evidence of a prior relationship. Zero-states are appropriate and do not contradict any stated facts."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01' with no stated relationship or judgment facts in the clip. No --from-jonathan writes required. Nothing deferred."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founding year, acquisition, employee count from LinkedIn, known clients). Capability expansion is posed as a question not an assertion. No unhedged inferences. Seniority read for an org is framed as scale/positioning context rather than person-level autonomy claim. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Filled correctly."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. source_url is null throughout (known systemic tooling gap, per checklist note: not a gate failure). set_by values are correct: jonathan for Capabilities, agent for scout/scraper fields, migration for Name."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Reviewed AI Notes, Open Questions, and captions. No em-dashes found. En-dash used correctly in none of these fields."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, non-redundant questions: (1) Name update to Further, (2) Capabilities expansion. Both conditional on fields that lack agent authority to write. Story nudge not applicable (no relationship signals). No unchecked field that already has a non-zero value is asked about."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Clean pass. One cosmetic note: the Instagram context screenshot (site-15) has a cookie consent modal partially obscuring the grid, but the domain (instagram.com) and handle (@further_agency) are confirmed visible. Not a fail. Website context shot correctly captures the further.group homepage hero at 1440x900."
+}
