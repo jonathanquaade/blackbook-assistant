@@ -1,0 +1,115 @@
+{
+  "page_id": "eeed0625-f7dd-42e5-b22f-045fc0f2a4ac",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects in manifest: Kia, IBM Quantum, DeepTime, Chopard, Meta Brand System, Nike. 3 images each."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Images go inside case studies (installation space photos for DeepTime, in-store for Nike, system detail for Meta) rather than only hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Captured work (generative brand systems, immersive installations, motion) matches what Field.io actually does. The Capabilities DB field is wrong (see B.capabilities) but the scraper captured on-point work."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-19.png is the field.io homepage (FIELD wordmark, 'Creative Intelligence for a Living World' visible). site-20.png is instagram.com showing handle field_io with 32.8k followers and correct bio."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "fail",
+      "evidence": "site-06.jpg is captioned 'IBM Quantum Brand Ecosystem, 2024' but its Cloudinary source URL is .../IBM/Think%202019/Construction/field.io_ibm_think2019_construction_13. This is an IBM Think 2019 asset incorrectly attributed to the IBM Quantum project. The visual (abstract 3D geometric forms) is plausibly from IBM brand work but the project attribution in the caption is wrong.",
+      "fix": "Verify which project site-06 belongs to. If it is from IBM Think 2019, either re-caption it correctly (e.g. 'IBM Think 2019, experiential -- field.io/work/ibm-think-2019') or replace it with a correctly sourced IBM Quantum image. Do not use a source URL from one project to illustrate a different project."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "fail",
+      "evidence": "Field.io is a creative technology and motion studio. Their case study pages include video (IBM Think keynote visuals, Nike Rise Olympics, DeepTime installation footage). The manifest has zero embed entries. Four thumbnail images (thumb-deeptime.jpg, thumb-ibm-think-2019.jpg, thumb-ibm-think-2020.jpg, thumb-offf-2023.jpg) were downloaded locally but are orphaned from manifest.json and were never added to Notion. A studio whose primary output is motion/video should have at least one embed with a thumbnail preview; images-only misrepresents them.",
+      "fix": "Add video embeds for at least 2 projects (e.g. IBM Think 2019, DeepTime, or Nike Rise Olympics) as {type: 'embed', url: <youtube/vimeo url>, caption: '...', link: '...'} entries in manifest.json. For each embed, also include the corresponding thumbnail image as a {file: 'thumb-...', caption: '...', link: '...'} entry. Then re-run keeper.py upload to push embed + thumbnail to the page body. The existing thumb files can be reused if their embed counterparts are added."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absence; all 6 projects are named and sourced."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small specialized creative technology team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (field.io), Instagram (instagram.com/field_io/), LinkedIn (uk.linkedin.com/company/field), Email (hello@field.io) all present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "fail",
+      "evidence": "Capabilities is still 'Frontend development (web)' from migration (set_by: jonathan). Field.io does generative/computational art, AI installations, motion, creative technology, and brand systems. The scout correctly identified this and raised Open Question 1, but the field is actively wrong as it stands. Jonathan must confirm the replacement before this entry ships.",
+      "fix": "This is gated on Jonathan's confirmation (Open Question 1 already raised). The scout handled it correctly by asking. The scraper should not re-ask; on the next pass, if Jonathan has answered the Open Question, apply his answer. If the question is still unanswered, note this is a known pending item but do not block on it further since it is Jonathan's field."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK + Germany. Size: 11-40. Work Status: Studio. AI Notes names sources (LinkedIn, 2016 press coverage)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent. Studio entry; checklist calibration note says Autonomy optional for orgs. Set here because founders Marcus Wendt and Vera-Maria Glahn clearly lead the work. Reasoning in AI Notes."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them) consistent with no evidence of a prior relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No clip note instructions detectable."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Hedged where appropriate ('2016 coverage cited', 'reasonable current read'). Clients named from public sources. Seniority/org read included."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "source_url nulls are a known systemic tooling gap (per calibration note, not a gate failure). set_by values are correct throughout."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or image captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse question about Capabilities; conditional (field has wrong migration value, Jonathan must confirm). No redundant questions."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Status remains Enriching. Reviewer has not passed this entry yet."
+    }
+  ],
+  "failing_checks": ["A.no-uncaptioned", "A.embeds-for-video", "B.capabilities"],
+  "to": "scraper",
+  "notes": "B.capabilities is blocked on Jonathan answering Open Question 1; the scout handled it correctly. The scraper should fix A.no-uncaptioned (site-06 mislabeled) and A.embeds-for-video (add embed entries + wire the 4 orphaned thumb files into manifest). Re-review after those two are done; B.capabilities may still be pending Jonathan at that point and should be noted but not re-failed since the question is already in flight."
+}

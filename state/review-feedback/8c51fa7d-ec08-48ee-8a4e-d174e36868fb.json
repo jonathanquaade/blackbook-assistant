@@ -1,0 +1,111 @@
+{
+  "page_id": "8c51fa7d-ec08-48ee-8a4e-d174e36868fb",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Bi-Scriptual (2017), Hamburger Bahnhof (2023), Staatsballett Berlin (2023), Berliner Festspiele (2018-2022), Stadttheater Ingolstadt (2024), Frauenhaus Cocon (2024)"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "2-3 interior shots per project: poster collections, logo systems, environmental applications, not only hero shots"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 14 work images are graphic design / identity work matching the tagged Capability"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png: verified as eps51.com homepage (shows 'Eps51' wordmark, studio tagline). site-16.png: verified as instagram.com/eps51 profile (shows @eps51, 494 posts, eps51 bio, grid of posts). Both correct."
+    },
+    {
+      "id": "A.uncaptioned",
+      "result": "pass",
+      "evidence": "Bounce fix confirmed: site-13.jpg (flag reading 'City Theatre Ingolstadt 24/25') is now captioned 'Stadttheater Ingolstadt identity, 2024' linked to eps51.com/Projects/stadttheater-ingolstadt/. Image content and caption match. site-14.jpg (Frauenhaus Cocon website on laptop screen) is correctly captioned 'Frauenhaus Cocon identity, 2024' linked to eps51.com/Projects/frauenhaus-cocon/. No caption/image mismatch remains."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Graphic design / identity studio; images are the correct medium. No video embeds required."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "16 images present across 6 projects plus 2 context shots; no thinness"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized Berlin design studio (not Agency)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website (eps51.com), Instagram (instagram.com/eps51), LinkedIn (linkedin.com/company/eps51-graphic-design-studio), Email (mail@eps51.com) all present"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design retained (jonathan-set); expanded capabilities proposed via Open Questions without overwriting. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Germany, 11-40, Studio. Size discrepancy vs original (2-10) surfaced in Open Question 2 for Jonathan to confirm. AI Notes names the sources."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 5 set with reasoning. Studio type: field is optional per calibration note; reasoning in AI Notes is sufficient and present."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "No clip note relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are valid."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No actionable instructions in clip note."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes include seniority read (founders 15+ years), Autonomy reasoning, client list, and multi-source Work Status resolution. No unsupported assertions. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance written for touched fields; null source_url is a known systemic gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two terse, conditional questions: Capabilities expansion and Size discrepancy. Both appropriate; neither asks about an already-set non-zero value."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry in Enriching; flipping to Needs Review as part of this gate pass."
+    }
+  ],
+  "to": "jonathan",
+  "summary": "All 20 checks pass on attempt 2. The bounce fix is correct: site-13.jpg (Stadttheater Ingolstadt flag image) now carries the matching caption 'Stadttheater Ingolstadt identity, 2024' and the correct project link; site-14.jpg (Frauenhaus Cocon website on laptop) carries 'Frauenhaus Cocon identity, 2024' as before. Context shots verified: site-15.png is the real eps51.com homepage, site-16.png is the real instagram.com/eps51 profile. 6 distinct projects, on-capability graphic design work, depth present. Entry is complete."
+}
