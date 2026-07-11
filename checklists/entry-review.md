@@ -9,20 +9,20 @@ logs the correction to `state/reviewer-corrections.jsonl`.
 The reviewer checks COMPLETENESS and CORRECTNESS, never taste. Work With?, Rating,
 Worked Together and Familiarity are Jonathan's alone; the reviewer never asserts them.
 
-## How the reviewer runs (v1 → v2)
+## How the reviewer runs (v1 -> v2)
 
 - **v1 (calibration):** evaluate every entry, write a report (each item PASS/FAIL +
   one-line evidence), flip the entry to Needs Review, and surface the report to
   Jonathan alongside the entry. His corrections tune this checklist. Goal: learn his
   bar. The report is written to `state/review-feedback/<page-id>.json`.
-- **v2 (production):** the reviewer GATES. FAIL on any item → bounce to the
+- **v2 (production):** the reviewer GATES. FAIL on any item -> bounce to the
   scraper/scout with specific feedback (`state/review-feedback/<page-id>.json`), up
   to a retry cap of 2; if it still fails, escalate to Jonathan with the reason. PASS
-  → flip to Needs Review. The full report is surfaced to Jonathan for a ~5% random
+  -> flip to Needs Review. The full report is surfaced to Jonathan for a ~5% random
   sample only (a spot-check on the reviewer itself, "the chef tastes a few plates").
 
 A FAIL is specific and actionable. Not "images weak" but "3 of 5 images are the same
-Bose project from different angles; need 3+ distinct projects" — the scraper has to
+Bose project from different angles; need 3+ distinct projects" -- the scraper has to
 know exactly what to fix.
 
 ## The checks
@@ -30,7 +30,7 @@ know exactly what to fix.
 ### A. Work / images (the Zuzanna failures live here)
 - [ ] **Project diversity.** Images span at least 3 DISTINCT projects, not multiple
       angles/crops of one. FAIL if captions repeat the same project (e.g. three
-      "Bose …" shots) or if image hashes/look are near-identical.
+      "Bose ..." shots) or if image hashes/look are near-identical.
 - [ ] **Depth over breadth.** Goes inside projects (spreads, screens, interiors),
       not only hero/cover shots.
 - [ ] **On-capability.** The captured work matches the tagged Capabilities. A Sound
@@ -56,21 +56,28 @@ know exactly what to fix.
       screenshotted or skipped. Video/audio/writing creatives still have images too
       (never embeds-only).
 - [ ] **Absence is explained.** If a source genuinely has no usable work (dead site,
-      gated, IG-only + throttled), AI Notes says so and the IG queue is used — the
+      gated, IG-only + throttled), AI Notes says so and the IG queue is used -- the
       entry is not silently thin.
+- [ ] **Body structure is clean (no orphan blocks).** The Notion page body must have
+      exactly the blocks produced by the most recent upload: h2 "Work", work items,
+      divider. FAIL if body-reset was not run before upload and residue blocks from a
+      prior upload appear above the Work heading or are duplicated. Verify by checking
+      block count via keeper.api (expected ~2 + items, not 2x). (Field.io, 2026-07-11:
+      a successful upload without a prior body-reset left 5 orphan blocks above the
+      Work heading and duplicated context shots.)
 
 ### B. Scout completeness (the scraper inherits a finished metadata entry)
 - [ ] **Type classified** (Person/Studio/Agency/Foundry/Publication).
 - [ ] **All findable links present:** Website (canonical root), Instagram (full URL,
       verified right person), LinkedIn, public Email. A missing link is usually a
-      skipped search, not an absence — FAIL if an obvious search would have found it.
+      skipped search, not an absence -- FAIL if an obvious search would have found it.
 - [ ] **Capabilities tagged** per TAXONOMY.md (objective, what they CAN DO).
 - [ ] **Country / Size / Work Status** set, with Work Status resolved by the
       objective multi-source rule (not a vibe), and the sources named in AI Notes.
 - [ ] **Autonomy** estimated (set_by agent) with reasoning, grounded in real work
       history. CALIBRATION (2026-06-21): Autonomy is a PERSON-level Storonsky judgment
       ("can they run a project unsupervised?"). REQUIRED for Person entries. For
-      org-type entries (Studio/Agency/Foundry/Publication) it is OPTIONAL — do NOT
+      org-type entries (Studio/Agency/Foundry/Publication) it is OPTIONAL -- do NOT
       FAIL/bounce an org for a missing Autonomy field; a seniority/leadership read in
       AI Notes is sufficient (set the field only when a single founder clearly embodies
       the org, e.g. a solo foundry). Reviewers had been inconsistent here; this
@@ -79,7 +86,7 @@ know exactly what to fix.
 ### C. Judgment & honesty
 - [ ] **No judgment field contradicts evidence.** Zero-states are valid only where
       evidence does not contradict them (e.g. not "Worked Together: Never" when
-      Jonathan's note says "working with him atm" — that should be empty + a question).
+      Jonathan's note says "working with him atm" -- that should be empty + a question).
 - [ ] **Clip note fully acted on.** Every instruction in the raw Name/clip text is
       done or asked about; stated facts written via `--from-jonathan`.
 - [ ] **AI Notes hedged.** Unverified inferences are hedged; only verifiable facts
@@ -92,10 +99,17 @@ know exactly what to fix.
       was written as fact. NOTE (calibration, 2026-06-21): a null `source_url` on
       provenance fields is a KNOWN SYSTEMIC TOOLING GAP (keeper does not yet capture
       per-field source URLs), tracked for a separate keeper.py fix. It is NOT a v1
-      gate failure on its own — record it as a note, do not FAIL/bounce an entry for
+      gate failure on its own -- record it as a note, do not FAIL/bounce an entry for
       source_url alone. Fail only if `set_by` is wrong or a fact was written below the
       confidence floor.
-- [ ] **No em-dashes** anywhere written for Jonathan (AI Notes, Open Questions, captions).
+- [ ] **No em-dashes** anywhere written for Jonathan (AI Notes, Open Questions,
+      captions, AND body paragraph blocks). NOTE (2026-07-11): keeper.py upload
+      hardcodes an em-dash in the paragraph metadata line it appends below each embed
+      (line 547: caption + ' -- '). This is a tool-level bug that produces em-dashes in
+      Notion body paragraphs regardless of what the scraper wrote. When this bug is
+      present, FAIL the entry and instruct the scraper to patch scripts/keeper.py line
+      547 (replace ' -- ' with ' · '), commit, then re-run body-reset + upload. The
+      bug cannot be fixed by re-running upload alone.
 - [ ] **Open Questions** are terse, conditional (never ask for a field that already
       has a non-zero value), and the story nudge applied where due.
 - [ ] **Status correct:** reaches Needs Review only after this gate passes; a Revisit

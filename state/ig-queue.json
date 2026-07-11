@@ -1933,9 +1933,30 @@
   },
   {
     "page_id": "c9535056-53fd-4d8f-b9cf-1b419ae4e909",
-    "name": "BANK™",
+    "name": "BANK\u2122",
     "ig_url": "https://www.instagram.com/bank_graphic_design_today/",
     "reason": "IG context screenshot returned 'Something went wrong' error page (headless Playwright rate-limited logged out). Need logged-in ig.py grab for @bank_graphic_design_today profile context shot.",
+    "queued_at": "2026-07-11"
+  },
+  {
+    "page_id": "80cf558e-585b-4700-826e-7b488db616df",
+    "name": "Basics09",
+    "ig_url": "https://www.instagram.com/basics09/",
+    "reason": "IG profile shot blocked (headless returns 'Something went wrong'); context shot queued",
+    "queued_at": "2026-07-11"
+  },
+  {
+    "page_id": "5c3e667b-aa4c-40a8-8c0a-2f28ab4b4b2b",
+    "name": "baldinger-vu-huu",
+    "ig_url": "https://www.instagram.com/baldinger_vu_huu/",
+    "reason": "IG context screenshot returned 'Something went wrong' error page (headless Playwright rate-limited logged out). site-05.png rejected. Need logged-in ig.py grab for @baldinger_vu_huu profile context shot.",
+    "queued_at": "2026-07-11"
+  },
+  {
+    "page_id": "148d64cf-1204-4215-9dda-07f3041e6633",
+    "name": "Bizzarri and Rodriguez",
+    "ig_url": "https://www.instagram.com/bizzarri_rodriguez/",
+    "reason": "logged-out IG context shot returned generic error page; logged-in ig.py grab needed for profile screenshot",
     "queued_at": "2026-07-11"
   }
 ]
