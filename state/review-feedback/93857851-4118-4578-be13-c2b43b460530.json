@@ -1,0 +1,111 @@
+{
+  "page_id": "93857851-4118-4578-be13-c2b43b460530",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T14:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 work images across 4 distinct projects: Coinbase State of Crypto Summit, Squarespace identity, Nike Basketball typographic system, Mailchimp identity system. No caption repeats a project more than 3 times and each project is visually distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 images going inside the work: Coinbase has an empty stage shot + crowd shot; Squarespace has logo lockup + in-situ street signage; Nike has two typographic installation angles; Mailchimp has a YouTube grid application + tote merchandise. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Capability is Graphic design (set_by: jonathan). All 9 work images are graphic/brand identity work: kinetic type, logo systems, identity applications. Motion and generative work not captured, but that capability is not yet tagged; Open Question 2 proposes expanding the tag. Scraper correctly matched the current tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-10.png is a clear screenshot of dia.studio homepage (nav, work grid visible). site-11.png is a clear screenshot of instagram.com/dia_studio (handle, follower count, bio, grid visible). Both captions and URLs in manifest match what the images actually show."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 11 manifest entries have caption + link fields populated. No needs_caption entries present."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "DIA's kinetic/generative work is not yet tagged as a Capability; the sole current tag is Graphic design. No video embeds are required for the current tag scope. Open Question 2 will surface this when tags expand. Images present throughout (never embeds-only)."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin sections. 9 work images from 4 named projects plus 2 context shots is a solid selection for a studio entry."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct per the Studio vs Agency definition (small specialized team, hands-on creative execution)."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.dia.studio/. Instagram: https://www.instagram.com/dia_studio/ (IG profile screenshot confirms handle and bio match DIA Studio). LinkedIn: https://www.linkedin.com/company/diastudio/. Email: meg@dia.studio. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design is tagged (jonathan's original tag, set_by: jonathan). Scout proposed additions via Open Question 2 rather than overwriting a jonathan-set field. Correct handling."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France + United States (confirmed from About page; migration discrepancy flagged via Open Question 1). Size: 2-10 (co-founders + collaborators, documented in AI Notes). Work Status: Studio (self-described on site)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "DIA is a Studio type entry. Per checklist calibration (2026-06-21), Autonomy is optional for org-type entries. AI Notes names the co-founders with roles (Mitch Paone, Creative Director; Meg Donohoe, Managing Director) and notes team size. Seniority/leadership read is present. No Autonomy field required."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "No clip note states a relationship. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence in the entry."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is a 2020 web clipper entry with no additional instructions in the Name field. No relationship facts, passcodes, or tagging directions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes present. Factual claims are grounded: clients named, co-founders named with titles and founding year, teaching affiliations named. Country correction is documented with reasoning. No unverified claims asserted as fact. Migration discrepancy noted honestly."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Correct format for a migration entry."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with all touched fields. source_url is null throughout, which is the known systemic tooling gap (not a v1 gate failure per checklist calibration note 2026-06-21). set_by values are correct: Capabilities remains jonathan (his original tag), all agent-written fields are agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified programmatically: no em-dash character (U+2014) in AI Notes or Open Questions text."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two questions: Country confirmation (migration conflict) and Capabilities expansion proposal. Both conditional and actionable. No story nudge needed (Worked Together: Never, no relationship signal)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "site-04.jpg (70KB, Squarespace logo lockup on black) is the smallest work image and the least informative on its own, but it is redeemed by site-05.jpg (street signage in context). The pair together shows the identity system applied. Not a fail. Uploaded images are all legible and reasonable resolution (70KB-11MB range); the KEEPER_FIT_UPLOAD downscale did not degrade any image to unusability.",
+  "to": null
+}

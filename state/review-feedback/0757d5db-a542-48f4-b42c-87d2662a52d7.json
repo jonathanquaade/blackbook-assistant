@@ -1,0 +1,116 @@
+{
+  "page_id": "0757d5db-a542-48f4-b42c-87d2662a52d7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-11T14:10:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Fenty, RIMOWA, Aesop Always On, Zegna, Lex Records. 3 images each. No duplication."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Fenty packaging + logotype, RIMOWA monogram, Aesop in-store, Lex Records sleeve artwork. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 15 work images are graphic design, visual identity, editorial or branding work. Matches the Graphic design tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png visually confirmed as commission.studio homepage (logo + nav visible). site-05.png visually confirmed as instagram.com/commission.studio profile page (handle, follower count, grid visible). Both correctly captioned."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass-with-note",
+      "evidence": "All images have project + link captions. Minor descriptor inaccuracy: zegna-01.png is captioned 'Zegna, visual identity' but the image is a fashion model campaign shot (source filename: Zegna Commission Context 14.png), not a brand mark or logo system. The project attribution and link are correct; only the sub-label misleads. zegna-03 uses 'campaign application' for a similar image type, which is more accurate. Flagged for calibration rather than a bounce call."
+    },
+    {
+      "id": "A.rejected-files-clean",
+      "result": "pass",
+      "evidence": "4 entries marked rejected (site-01.png, site-02.jpg, site-03.png, site-06.png). None appear in Notion Images field. No contaminated render files shipped."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "Graphic design studio; no video/audio work to embed. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. All 5 projects have 3 images."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for a small specialized hands-on creative team."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, Email all present. Instagram handle commission.studio confirmed on the profile screenshot."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Graphic design tagged (set_by: jonathan). Open Question correctly proposes Identity systems and Brand strategy additions rather than overwriting."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK, Size 2-10, Work Status Studio. AI Notes cites London/Peckham location and ~9 people. Multi-source resolution not strictly documented for Studio type but plausible and internally consistent."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy optional per checklist calibration note 2026-06-21. AI Notes contains a seniority read (CDs with 10+ years senior practice, founders hands-on)."
+    },
+    {
+      "id": "C.judgment-fields",
+      "result": "pass",
+      "evidence": "Zero-states (Never, Don't know them, Unvetted) have no contradicting evidence in clip note or elsewhere."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No relationship facts or instructions found in clip note to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No em-dashes. Verifiable facts (clients, founders, years) asserted; capabilities expansion hedged to Open Questions. Seniority read included."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source field: 'Web clipper, 2020-11-01'."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have set_by. Null source_url is the known systemic tooling gap (not a gate failure per checklist calibration 2026-06-21). Capabilities correctly shows set_by: jonathan."
+    },
+    {
+      "id": "D.no-emdashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and all manifest captions scanned. Zero em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse, substantive (capabilities is jonathan's field so agent cannot self-resolve). No fields asked about that already have non-zero-state values."
+    },
+    {
+      "id": "D.extension-mismatch-note",
+      "result": "note",
+      "evidence": "Notion Images field lists site-04.jpg, site-05.jpg, zegna-01.jpg but actual files and manifest are .png. Provenance file correctly records .png. This is likely Notion normalizing the filename on upload; content is correct. Not a gate failure but worth Jonathan knowing if he ever references filenames."
+    }
+  ],
+  "to": "scraper",
+  "notes": "One substantive note for Jonathan's calibration: zegna-01.png is captioned 'Zegna, visual identity' but the image is a fashion model campaign shot. The project attribution is correct but the sub-label is inaccurate. In v2 I would bounce this for a caption fix; flagging here to learn whether Jonathan considers caption sub-descriptors gate-level or cosmetic."
+}
