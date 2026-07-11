@@ -1,118 +1,111 @@
 {
   "page_id": "1ab50f63-750f-466f-a454-dd58997e3046",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-08T10:15:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-11T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "note": "Attempt 1 was a stale gate: reviewer ran before scraper upload completed (zero assets present at that time). Re-review on current state finds all 20 checks pass.",
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "No images present. Scraper has not run. Zero work images in the asset directory (only clipped.md exists).",
-      "fix": "Scraper pass required: capture at least 12 images across 3+ distinct named Landor projects from landor.com case studies."
+      "result": "pass",
+      "evidence": "14 work images across 5 distinct named projects: Volkswagen Group, Kellogg's Brand World, Milan Symphony Orchestra, Renault, Lobos 1707. No caption repetition. No near-identical images across projects."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "No images. Cannot assess.",
-      "fix": "Scraper must go inside project pages (not hero covers only): brand system applications, identity rollouts, packaging layouts, spatial/environmental shots."
+      "result": "pass",
+      "evidence": "3 images per project going inside each system. VWG: typography/motion collage (06), motion element (08), document covers (09). Kellogg's: packaging system (01), mobile digital (02), campaign UI (08). MOS: logo/monogram (02), outdoor billboard (09), poster (11). Renault: logo explorations across materials (02), Renault 5 applied (03), guidelines (07). Lobos: wolf-mark packaging (05), bottle (10). Not hero-only."
     },
     {
       "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "No images. Cannot verify on-capability capture. Tagged Graphic design; scraper should capture identity/branding work matching that tag.",
-      "fix": "Capture identity and graphic design work from landor.com case studies. Avoid generic agency office or lifestyle photography."
+      "result": "pass",
+      "evidence": "Tagged Graphic design (set_by jonathan). All 14 work images show brand identity systems, packaging, and visual/typography systems. No off-capability content (no event photography, no office shots). Verified visually on sample of 5 images."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "No context shots present: no website screenshot and no Instagram profile screenshot.",
-      "fix": "Run scrape.py shot https://landor.com for website context shot; run scrape.py shot https://www.instagram.com/landorofficial/ for Instagram context shot. Both required."
+      "result": "pass",
+      "evidence": "site-01.png: visually confirmed as landor.com homepage (LANDOR wordmark, blue brand, tagline 'World-leading brand specialists'). site-02.png: visually confirmed as instagram.com/landorofficial (Instagram chrome, @landorofficial handle, 107K followers, Landor blue avatar). Both captions correct."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "No images exist yet; no uncaptioned images to fail on. Will need verification after scraper runs."
+      "evidence": "Every active manifest entry has a caption and a source link. Context shots captioned 'Website' and 'Instagram profile' with matching links. Three rejected entries carry rejection reasons."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "N/A for this pass. Agency is tagged Graphic design; no video/audio capability. Note: Landor absorbed motion studio ManvsMachine, so scraper should check case study pages for embeddable Vimeo/YouTube project reels and embed them if present."
+      "evidence": "Active capability tag is Graphic design only. No video/audio capability tag is set. Potential motion work (Renault 3D, ManvsMachine acquisition) is correctly deferred to Open Question 1 pending Jonathan's capability confirmation. No embed requirement triggered by current tags."
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "No images and no explanation in AI Notes of why. AI Notes does not document any blocking reason (gated content, dead site, etc.).",
-      "fix": "If the scraper can access landor.com case studies freely, capture work. If blocked, document the specific block in AI Notes."
+      "result": "pass",
+      "evidence": "14 work images plus 2 context shots are present. No absence to explain."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Agency. Correct. 1,300 staff, WPP-owned, full-service global brand consultancy. Matches the schema definition of Agency."
+      "evidence": "Type: Agency. Correct for a 1,300-staff, WPP-owned, full-service global brand consultancy. Matches schema Agency vs Studio distinction."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website: landor.com (confirmed). Instagram: instagram.com/landorofficial (107K followers, verified from landor.com). LinkedIn: linkedin.com/company/landorglobal (confirmed from search and site footer). Email: N/A for an org at this scale (no public general email expected; no studio contact email findable). All findable links present."
+      "evidence": "Website: landor.com. Instagram: instagram.com/landorofficial (visually verified correct account). LinkedIn: linkedin.com/company/landorglobal. No public general email findable or expected at this org scale."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design retained from Jonathan (set_by: jonathan, locked). Proposed additions correctly placed in Open Questions rather than overwriting. Correct handling."
+      "evidence": "Graphic design retained from Jonathan (set_by: jonathan, locked). Proposed expansion (Brand strategy, Identity systems, Insights & research, Spatial & exhibition design, 3D & motion) placed in Open Question 1 rather than overwriting the jonathan-locked field. Correct handling."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country: 10 countries sourced from Landor's own contact page; Netherlands removal queried in Open Questions (correct). Size: 100+ (1,300 staff, 30 offices, confirmed). Work Status: Studio is the schema convention for org-type entries; AI Notes acknowledges it is an organisation, not an individual. Acceptable within current schema constraints."
+      "evidence": "Country: 10 countries from landor.com contact page; NL queried in Open Question 2 with cited evidence. Size: 100+ (1,300 staff). Work Status: Studio is the schema convention for org-type entries. AI Notes correctly notes this is an organisation."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy not set. Correct: per calibration note (2026-06-21), Autonomy is optional for org-type entries (Studio/Agency/Foundry/Publication). AI Notes notes 'no Autonomy field applies to an organisation'. No fail."
+      "evidence": "Autonomy not set. Correct per calibration note 2026-06-21: optional for Agency-type entries. AI Notes states 'no Autonomy field applies to an organisation' explicitly."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted. Clip note is bare (just the old name 'Landor & Fitch'). No relationship signal. Zero-states are appropriate."
+      "evidence": "Clip note was bare (old name only, no relationship facts). Zero-states Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted are appropriate and contradicted by no evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Raw clip name was 'Landor & Fitch'. Name updated to 'Landor' (2023 rebrand); old name preserved in Source. clipped.md archived. No relationship facts, passcodes, or special instructions in clip note."
+      "evidence": "Clip name 'Landor & Fitch' acted on: Name updated to 'Landor', old name preserved verbatim in Source, clipped.md archived. No passcodes or relationship instructions in clip."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "No bare unverified assertions. Staff count and office count stated as confirmed (1,300 staff, 30 offices). Rebrand date stated as November 2023 (datable public fact). Major clients listed are publicly documented Landor cases. No em-dashes. Seniority/Autonomy N/A noted explicitly for an org. No hedging failures."
+      "evidence": "All stated facts are verifiable (1941 founding, 1,300 staff, 30 offices, WPP ownership, November 2023 rebrand, named clients). No bare unverified assertions. No em-dashes. Autonomy N/A explicitly noted for org type."
     },
     {
       "id": "D.source-filled",
       "result": "pass",
-      "evidence": "Source: 'Web clipper, 2020-11-01. Clipped as Landor & Fitch; company rebranded to Landor in November 2023 after dropping the Fitch name.' Well-formed."
+      "evidence": "Source: 'Web clipper, 2020-11-01. Clipped as Landor & Fitch; company rebranded to Landor in November 2023 after dropping the Fitch name.' Well-formed with date and rebrand context."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file covers all touched fields with correct set_by values. Capabilities correctly retained as set_by: jonathan. source_url null throughout; known systemic gap, not a gate failure (calibration 2026-06-21)."
+      "evidence": "Provenance covers all touched fields with correct set_by values. Capabilities correctly set_by: jonathan (locked). source_url null throughout; known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "Zero em-dashes found in AI Notes, Open Questions, or Source. Verified programmatically."
+      "evidence": "Checked AI Notes, Open Questions, Source, all image captions. Zero em-dashes found."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions: (1) Capabilities expansion, conditional on Jonathan's existing tag; (2) Netherlands removal, with documented source evidence. Both terse and specific. No double-asking."
+      "evidence": "Two questions: (1) Capabilities expansion, conditional on jonathan-locked field; (2) NL country removal with specific cited evidence. Both terse. No questions for fields already holding non-zero-state values. No story nudge triggered."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry remains Enriching. Correct: it should stay Enriching until the scraper completes and a passing review flips it to Needs Review."
+      "evidence": "Entry flipped from Enriching to Needs Review by this reviewer pass."
     }
   ],
-  "failing_checks": ["A.project-diversity", "A.depth-over-breadth", "A.on-capability", "A.context-shots", "A.absence-explained"],
-  "to": "scraper",
-  "scout_metadata_verdict": "CLEAN. Scout metadata is correct and complete. The scraper inherits a finished metadata entry and does not need to re-scout. All B/C/D checks pass.",
-  "scraper_brief": "landor.com is freely accessible (no gate). Target: 12+ images across 3+ distinct named case studies from landor.com/work. Go inside projects (brand rollouts, identity applications, packaging, spatial shots). Match tagged capability: Graphic design / Identity. Check case study pages for embeddable Vimeo/YouTube reels and embed them. Capture website context shot (landor.com homepage) and Instagram context shot (instagram.com/landorofficial). All images must be captioned with project name plus source link."
+  "to": null
 }
