@@ -1,0 +1,129 @@
+{
+  "page_id": "a795a342-26f3-40b6-a659-9e55eaeb7137",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-12T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects: Matar, Concrete LCDA, Eugene Architectes, ABC, Tectoniques, plus Graal (6 projects across 16 images)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior/spread shots per project (Matar spreads, Concrete brochure interiors, Eugene identity details, Graal identity pieces). Not just hero covers."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All images are editorial design, visual identity, and web work; matches tagged Capability: Graphic design."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png confirmed: buildingparis.fr homepage with project grid and nav visible. site-16.png confirmed: instagram.com/buildingparis logged-out profile with bio, grid, follower count visible."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "site-10.jpg visually confirmed as ABC book covers (salmon covers, 'ABC' large type, 'Basic Design Practices' subtitle); caption 'ABC, Basic Design Practices book, 2024' matches. tectoniques-02.jpg visually confirmed as Tectoniques identity/website document grid with studio wordmark and architectural layouts; caption 'Tectoniques, engineering studio identity and website, 2025' matches. Both previously-failed images now correct. All 16 images have named captions with source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio content on buildingparis.fr case study pages; image-only output appropriate."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "LinkedIn absence documented in AI Notes. No other gaps."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "18 total body blocks: h2 'Work', 16 image blocks (all captioned), 1 divider. No orphan blocks above the heading; no duplicates. Clean."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized hands-on team."
+    },
+    {
+      "id": "B.all-links-present",
+      "result": "pass",
+      "evidence": "Website, Instagram, Email all set. LinkedIn: no company page found, documented in AI Notes."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Graphic design set. Open Question raised for additional capabilities expansion."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: France; Size: 2-10; Work Status: Studio. Sources cited in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5 (set_by agent). Founder-run studio; optional for org entries per checklist calibration note."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with no stated relationship in clip note or body."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper' only; no relationship facts or special instructions. Nothing to act on beyond standard enrichment."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes hedges team size ('likely 3-5 active'), uses 'suggesting' for seniority read. Verifiable facts stated plainly. Seniority and Autonomy read included."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Previously-failed check now fixed with page created_time."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present; set_by values correct. Null source_url is the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "All 16 body image captions use ' · ' (middle dot separator). AI Notes and Open Questions contain no em-dashes."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Single Open Question on Capabilities expansion. Terse, conditional, appropriate."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review on this pass."
+    }
+  ],
+  "to": "jonathan",
+  "summary": "All checks pass on attempt 2. Both previously-failed items resolved: (1) site-10.jpg is visually confirmed as ABC book covers matching its new caption; tectoniques-02.jpg is visually confirmed as Tectoniques identity document grid matching its caption. (2) Source now reads 'Web clipper, 2020-11-01'. Body structure is clean (18 blocks, no orphans). Entry is ready for Jonathan's review.",
+  "doer_responses": [
+    {
+      "responded_at": "2026-07-12",
+      "attempt": 1,
+      "actions": [
+        "A.no-uncaptioned-images: site-10 recaptioned from wrong 'Tectoniques' to 'ABC, Basic Design Practices book, 2024' (image shows ABC book covers); link repointed to buildingparis.fr homepage (no dedicated /projet/abc/ page exists).",
+        "A.no-uncaptioned-images: site-11 (content-free black Tectoniques title card) replaced with tectoniques-02.jpg, the only real Tectoniques content image (tectoniques-01.jpg is also a black title card). Caption: 'Tectoniques, engineering studio identity and website, 2025'.",
+        "D.source-filled: Source set to 'Web clipper, 2020-11-01' (page created_time)."
+      ],
+      "body_rebuilt": true,
+      "images_uploaded": 16
+    }
+  ]
+}

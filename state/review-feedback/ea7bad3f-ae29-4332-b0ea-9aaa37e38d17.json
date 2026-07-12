@@ -2,8 +2,8 @@
   "page_id": "ea7bad3f-ae29-4332-b0ea-9aaa37e38d17",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
@@ -18,12 +18,12 @@
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "2x4 is tagged Graphic design (Jonathan's original tag). All captured work is brand identity, signage, exhibition, and environmental design. site-07.png (Instagram Rebrand) shows campaign imagery and a color palette, which is identity system work. On-capability."
+      "evidence": "Tagged Graphic design (jonathan). All captured work is brand identity, signage, exhibition, and environmental design. On-capability."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-15.png is the 2x4.org homepage (confirms 2x4.org domain, 'ARTICULATE VALUES' headline, work grid visible). site-16.png is the instagram.com/2x4design profile (confirms Instagram logo, handle '2x4design', profile bio, grid of posts visible). Both correct."
+      "evidence": "site-15.png confirmed: 2x4.org homepage, 'ARTICULATE VALUES' headline, work grid visible. site-16.png confirmed: instagram.com/2x4design profile, handle '@2x4design', follower count, Prada-work grid visible. Both correct."
     },
     {
       "id": "A.no-uncaptioned-images",
@@ -33,58 +33,57 @@
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "2x4's work is identity and environmental design; no project pages with embedded YouTube/Vimeo video were present in scope. No embed gap."
+      "evidence": "2x4 work is identity and environmental design. No YouTube/Vimeo embeds present on project pages in scope. No embed gap."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "Work is present and sourced from 2x4.org project pages. No known gaps left unexplained."
+      "evidence": "Work is present and sourced from 2x4.org project pages. No gaps left unexplained."
     },
     {
       "id": "A.body-structure-clean",
-      "result": "fail",
-      "evidence": "Notion page body contains 0 blocks (body-reset --dry-run reports 0 blocks to remove). The Work section (h2 heading, image blocks, divider) is absent. The Images property has 16 uploaded files, but the body was either reset after upload or the upload command did not complete. The entry presents as images-in-property-only with no body Work section.",
-      "fix": "Run 'KEEPER_NO_MIRROR=1 python3 scripts/keeper.py body-reset ea7bad3f-ae29-4332-b0ea-9aaa37e38d17' to clear (should be a no-op if already empty), then 'KEEPER_NO_MIRROR=1 python3 scripts/keeper.py upload ea7bad3f-ae29-4332-b0ea-9aaa37e38d17 assets/ea7bad3f-ae29-4332-b0ea-9aaa37e38d17' to rebuild the Work section from the manifest."
+      "result": "pass",
+      "evidence": "body-reset --dry-run reports 18 blocks. Attempt-1 failure (0 blocks) is resolved. Work section is populated: h2 heading, 16 image blocks, divider. No orphan blocks reported above h2 (dry-run would surface them as text blocks; only 1 text block archived, consistent with a clean prior body-reset)."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct. 2x4 is a small specialized creative studio (not an agency by CLAUDE.md bias rule)."
+      "evidence": "Type: Studio. Correct per CLAUDE.md bias rule (small specialized creative studio, not agency)."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website: https://2x4.org/ (primary). Instagram: https://www.instagram.com/2x4design/ (verified: profile shows @2x4design, bio matches). LinkedIn: https://www.linkedin.com/company/2x4 (present). Email: info@2x4.org (present, from site). All four link types filled."
+      "evidence": "Website: https://2x4.org/. Instagram: https://www.instagram.com/2x4design/ (verified by context shot). LinkedIn: https://www.linkedin.com/company/2x4. Email: info@2x4.org. All four filled."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities field has 'Graphic design' (set_by: jonathan, from migration, correctly not overwritten by agent). Scout correctly raised Open Question 1 proposing additional tags (Brand strategy, Creative direction, Identity systems, Spatial & exhibition design, Web design) rather than overwriting a jonathan-locked field. This is the correct procedure. Not a fail."
+      "evidence": "Capabilities: Graphic design (set_by: jonathan). Scout correctly raised Open Question 1 proposing additional tags rather than overwriting a jonathan-locked field."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: US, CN (HQ in NYC + Beijing office, grounded in AI Notes). Size: 11-40 (AI Notes cites approx 30 NYC staff, LinkedIn 11-50). Work Status: Studio (correct type for an active design studio). Sources named in AI Notes."
+      "evidence": "Country: US, CN (NYC HQ + Beijing office, AI Notes). Size: 11-40 (AI Notes cites ~30 NYC staff, LinkedIn 11-50). Work Status: Studio. Sources named in AI Notes."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Type is Studio; per checklist calibration note (2026-06-21) Autonomy is OPTIONAL for org-type entries. Scout set Autonomy: 5 anyway with reasoning ('principal-led creative direction across cultural and commercial sectors'), which is fine. Seniority/leadership read present in AI Notes."
+      "evidence": "Type is Studio; Autonomy is optional for org-type entries per checklist calibration 2026-06-21. Scout set Autonomy: 5 with reasoning (principal-led creative direction). Seniority/leadership read in AI Notes."
     },
     {
       "id": "C.no-judgment-contradicts-evidence",
       "result": "pass",
-      "evidence": "Worked Together: Never / Familiarity: Don't know them / Work With?: Unvetted are zero-states. No clip note or other evidence contradicts them."
+      "evidence": "Worked Together: Never / Familiarity: Don't know them / Work With?: Unvetted are zero-states. No clip note or evidence contradicts them."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source field reads 'Web clipper, 2020-11-01'. No relationship facts or judgment in the original clip note that would require --from-jonathan handling. Open Question 1 (Capabilities) and OQ 2 (Beijing office status post-acquisition) are the right things to surface."
+      "evidence": "Source: 'Web clipper, 2020-11-01'. No relationship facts or judgment in the original clip. Open Questions 1 and 2 are appropriate."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes sources claims properly: staff count hedged ('approximately 30 staff', 'LinkedIn: 11-50'); disciplines listed as 'per their site'; acquisition stated as fact with date. Autonomy estimate marked 'set by agent'. No bare assertions about first-hand working relationships."
+      "evidence": "Staff count hedged ('approximately 30', 'LinkedIn: 11-50'); disciplines listed 'per their site'; acquisition stated as fact with date. Autonomy marked 'set by agent'. No bare unverified assertions."
     },
     {
       "id": "D.source-filled",
@@ -94,25 +93,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by and verified_at for all touched fields. Capabilities correctly remains set_by: jonathan (migration). source_url is null on all fields, which is a known systemic tooling gap per checklist note (2026-06-21) and is not a gate failure."
+      "evidence": "Provenance file present; set_by correct for all fields (Capabilities: jonathan, all others: agent/migration). source_url null across all fields, which is the known systemic tooling gap (checklist note 2026-06-21) and is not a gate failure."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and manifest captions reviewed: no em-dashes found. keeper.py line 547 now uses ' · ' not ' -- ' (the tool-level em-dash bug referenced in the checklist has already been fixed in this codebase). N/A for embeds (no embed entries in this manifest)."
+      "evidence": "AI Notes, Open Questions, and manifest captions contain no em-dashes. No embed entries in manifest so the keeper.py line-547 embed paragraph bug does not apply here."
     },
     {
       "id": "D.open-questions-style",
       "result": "pass",
-      "evidence": "Two questions: OQ1 addresses Capabilities (conditional, Jonathan's tag, genuine ambiguity with suggested options). OQ2 asks about Beijing office post-acquisition (genuinely unresolvable without his answer). Both terse and conditional. Story nudge not due (Worked Together: Never, Familiarity: Don't know them)."
+      "evidence": "Two questions: OQ1 (Capabilities, conditional, genuine ambiguity, suggested options listed). OQ2 (Beijing office post-acquisition, genuinely unresolvable). Terse and conditional. Story nudge not due (Worked Together: Never)."
     },
     {
       "id": "D.status-correct",
-      "result": "fail",
-      "evidence": "Entry Status is 'Enriching' (correct that it has not yet been flipped to Needs Review). However, this fail is secondary to the body-structure fail: status cannot be flipped until the Work section is rebuilt in the page body.",
-      "fix": "After upload re-run: 'KEEPER_NO_MIRROR=1 python3 scripts/keeper.py status ea7bad3f-ae29-4332-b0ea-9aaa37e38d17 \"Needs Review\"'"
+      "result": "pass",
+      "evidence": "Entry flipped to Needs Review by reviewer on this pass."
     }
   ],
-  "summary": "One structural failure: Notion page body is empty (0 blocks). The Images property holds 16 uploaded files, but the Work section (h2 heading + image blocks + divider) is absent. Body-reset appears to have run correctly, but the upload either did not complete or was run before files were uploaded. Fix: re-run upload from the existing manifest, then flip status to Needs Review. Everything else passes: 5 distinct named projects, correct context shots, all links present, AI Notes hedged, Source dated, no em-dashes, Open Questions appropriate.",
+  "summary": "All 20 checks pass. Attempt-1 failure (empty body, 0 blocks) is resolved: body-reset dry-run confirms 18 blocks now present. Context shots verified visually: site-15.png is 2x4.org homepage, site-16.png is instagram.com/2x4design profile. 5 distinct named projects with depth. All links present. AI Notes hedged. Source dated. No em-dashes. Entry is complete and honest.",
   "to": "scraper"
 }
