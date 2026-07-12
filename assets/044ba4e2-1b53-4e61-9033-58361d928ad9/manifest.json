@@ -13,7 +13,9 @@
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/in_fo_co/",
     "captured_at": "2026-07-08",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "IG error page (Something went wrong / page could not be loaded); not the real Instagram profile"
   },
   {
     "file": "site-03.jpg",
@@ -41,34 +43,154 @@
     "source_url": "https://in-fo.co/media/pages/form-content/hans-haacke-all-connected/c9621e9d1f-1605775703/hans_haacke_04.jpg",
     "caption": "Hans Haacke: All Connected, New Museum, 2019",
     "link": "https://in-fo.co/form-content/hans-haacke-all-connected",
-    "captured_at": "2026-07-11"
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejected_reason": "Reducing Hans Haacke to 3 images for project diversity; this is the 4th shot from the same project"
   },
   {
     "file": "site-07.jpg",
     "source_url": "https://in-fo.co/media/pages/form-content/hans-haacke-all-connected/c72ce020ac-1605775703/hans_haacke_05.jpg",
     "caption": "Hans Haacke: All Connected, New Museum, 2019",
     "link": "https://in-fo.co/form-content/hans-haacke-all-connected",
-    "captured_at": "2026-07-11"
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejected_reason": "Reducing Hans Haacke to 3 images for project diversity; this is the 5th shot from the same project"
   },
   {
     "file": "site-08.jpg",
     "source_url": "https://in-fo.co/media/pages/form-content/hans-haacke-all-connected/9c44448308-1605775701/hans_haacke_06.jpg",
     "caption": "Hans Haacke: All Connected, New Museum, 2019",
     "link": "https://in-fo.co/form-content/hans-haacke-all-connected",
-    "captured_at": "2026-07-11"
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejected_reason": "Reducing Hans Haacke to 3 images for project diversity; this is the 6th shot from the same project"
   },
   {
     "file": "site-09.jpg",
     "source_url": "https://in-fo.co/media/pages/form-content/hans-haacke-all-connected/1f9f877ec4-1605775702/hans_haacke_07.jpg",
     "caption": "Hans Haacke: All Connected, New Museum, 2019",
     "link": "https://in-fo.co/form-content/hans-haacke-all-connected",
-    "captured_at": "2026-07-11"
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejected_reason": "Reducing Hans Haacke to 3 images for project diversity; this is the 7th shot from the same project"
   },
   {
     "file": "site-10.jpg",
     "source_url": "https://in-fo.co/media/pages/form-content/hans-haacke-all-connected/c8bff32eb8-1605775704/hans_haacke_08.jpg",
     "caption": "Hans Haacke: All Connected, New Museum, 2019",
     "link": "https://in-fo.co/form-content/hans-haacke-all-connected",
-    "captured_at": "2026-07-11"
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejected_reason": "Reducing Hans Haacke to 3 images for project diversity; this is the 8th shot from the same project"
+  },
+  {
+    "file": "hans_haacke_interior_08.jpg",
+    "source_url": "https://in-fo.co/form-content/hans-haacke-all-connected",
+    "caption": "Hans Haacke: All Connected, New Museum, 2019",
+    "link": "https://in-fo.co/form-content/hans-haacke-all-connected",
+    "captured_at": "2026-07-11",
+    "rejected": true,
+    "rejected_reason": "Broken/empty file (9 bytes, not a valid image)"
+  },
+  {
+    "file": "infoco_barbarakruger_cover_02.jpg",
+    "source_url": "https://in-fo.co/form-content/barbara-kruger-thinking-of-you-i-mean-me-i-mean-you",
+    "caption": "Barbara Kruger: Thinking of You. I Mean Me. I Mean You., book design, 2021",
+    "link": "https://in-fo.co/form-content/barbara-kruger-thinking-of-you-i-mean-me-i-mean-you",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "infoco_barbarakruger_cover_04.jpg",
+    "source_url": "https://in-fo.co/form-content/barbara-kruger-thinking-of-you-i-mean-me-i-mean-you",
+    "caption": "Barbara Kruger: Thinking of You. I Mean Me. I Mean You., book design, 2021",
+    "link": "https://in-fo.co/form-content/barbara-kruger-thinking-of-you-i-mean-me-i-mean-you",
+    "captured_at": "2026-07-08",
+    "rejected": true,
+    "rejected_reason": "Second cover-angle of same book; keeping cover_02 and interior spread instead; two cover angles is redundant"
+  },
+  {
+    "file": "infoco_barbarakruger_interior_19-copy.jpg",
+    "source_url": "https://in-fo.co/form-content/barbara-kruger-thinking-of-you-i-mean-me-i-mean-you",
+    "caption": "Barbara Kruger: Thinking of You. I Mean Me. I Mean You., interior spread, 2021",
+    "link": "https://in-fo.co/form-content/barbara-kruger-thinking-of-you-i-mean-me-i-mean-you",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "academy_exhibition_001.jpg",
+    "source_url": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "caption": "Academy Museum of Motion Pictures, Stories of Cinema exhibition, 2021",
+    "link": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "captured_at": "2026-07-08",
+    "rejected": true,
+    "rejected_reason": "Exterior architectural/aerial photo of the building at night; not IN-FO.CO's graphic/exhibition design work"
+  },
+  {
+    "file": "academy_exhibition_003.jpg",
+    "source_url": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "caption": "Academy Museum of Motion Pictures, Stories of Cinema exhibition interior, 2021",
+    "link": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "academy_exhibition_005.jpg",
+    "source_url": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "caption": "Academy Museum of Motion Pictures, Stories of Cinema exhibition gallery, 2021",
+    "link": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "academy_exhibition_007.jpg",
+    "source_url": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "caption": "Academy Museum of Motion Pictures, Stories of Cinema exhibition display, 2021",
+    "link": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "academy_exhibition_010.jpeg",
+    "source_url": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "caption": "Academy Museum of Motion Pictures, Stories of Cinema exhibition, 2021",
+    "link": "https://in-fo.co/form-content/academy-museum-of-motion-pictures-1",
+    "captured_at": "2026-07-08",
+    "rejected": true,
+    "rejected_reason": "Event/opening night photo (guests visible, Paul Newman watch case on display); documents the opening, not IN-FO.CO's exhibition design work"
+  },
+  {
+    "file": "aam_web.png",
+    "source_url": "https://in-fo.co/form-content/aspen-art-museum",
+    "caption": "Aspen Art Museum identity system",
+    "link": "https://in-fo.co/form-content/aspen-art-museum",
+    "captured_at": "2026-07-08",
+    "rejected": true,
+    "rejected_reason": "Plain wordmark/logotype on white background; logo trap, not a useful portfolio shot"
+  },
+  {
+    "file": "aam_stamp.png",
+    "source_url": "https://in-fo.co/form-content/aspen-art-museum",
+    "caption": "Aspen Art Museum identity, custom asterisk stamp marks, in-fo.co",
+    "link": "https://in-fo.co/form-content/aspen-art-museum",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "aam_web_02.png",
+    "source_url": "https://in-fo.co/form-content/aspen-art-museum",
+    "caption": "Aspen Art Museum website design, John Chamberlain exhibition page, in-fo.co",
+    "link": "https://in-fo.co/form-content/aspen-art-museum",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "aam_web_04.png",
+    "source_url": "https://in-fo.co/form-content/aspen-art-museum",
+    "caption": "Aspen Art Museum website design, homepage, in-fo.co",
+    "link": "https://in-fo.co/form-content/aspen-art-museum",
+    "captured_at": "2026-07-08"
+  },
+  {
+    "file": "aam_web_09.png",
+    "source_url": "https://in-fo.co/form-content/aspen-art-museum",
+    "caption": "Aspen Art Museum website design, in-fo.co",
+    "link": "https://in-fo.co/form-content/aspen-art-museum",
+    "captured_at": "2026-07-08",
+    "rejected": true,
+    "rejected_reason": "Less distinctive homepage view; keeping aam_web_02 and aam_web_04 as better representatives of the web design work"
   }
 ]

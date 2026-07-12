@@ -72,6 +72,16 @@ know exactly what to fix.
       verified right person), LinkedIn, public Email. A missing link is usually a
       skipped search, not an absence -- FAIL if an obvious search would have found it.
 - [ ] **Capabilities tagged** per TAXONOMY.md (objective, what they CAN DO).
+      CALIBRATION (2026-07-12): on MIGRATED entries the Capabilities field is
+      `set_by: jonathan` and LOCKED (the contract: "Notes and Capabilities stay
+      jonathan on migrated entries; propose changes via Open Questions"). The scout
+      CANNOT overwrite it. So if evidence supports ADDITIONAL tags and the scout has
+      filed an Open Question proposing them, that is the CORRECT contract-compliant
+      output -- treat it as PASS, do NOT FAIL/bounce demanding the tags be written.
+      Only FAIL this check when the EXISTING tag is wrong/off-capability, or when
+      Capabilities is agent/clipper-set (not locked) AND an obvious tag is missing
+      with no Open Question raised. Reviewers repeatedly bounced locked-Capabilities +
+      OQ entries (Anyways, Base Design, A Practice, 2026-07-12); this note ends that.
 - [ ] **Country / Size / Work Status** set, with Work Status resolved by the
       objective multi-source rule (not a vibe), and the sources named in AI Notes.
 - [ ] **Autonomy** estimated (set_by agent) with reasoning, grounded in real work

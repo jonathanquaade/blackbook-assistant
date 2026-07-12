@@ -1,0 +1,108 @@
+{
+  "page_id": "689f8911-051f-4662-8414-0ef400501e4d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-12T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Manifest has 0 project image entries (only 2 context shots). 17 project images on disk (venice, hepworth, erdem, johnlobb, certeau) have NO manifest entries. The Notion body has 0 blocks -- keeper.py upload was never run or failed silently. Images are on disk but not in Notion and not in the manifest.",
+      "fix": "Add all 17 project images to manifest.json with correct captions and source URLs (venice-01/02/03, hepworth-01/02/03, erdem-01 through 05, johnlobb-01 through 04, certeau-01/02), then run keeper.py body-reset followed by keeper.py upload. Confirm block count > 0 after upload."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "TWO failures: (1) site-01.png is captioned 'Website' but shows a restaurant table/food photo with 'Llewelyn's restaurant identity' watermark -- it is a project work image, not the apracticeforeverydaylife.com homepage. (2) site-02.png is captioned 'Instagram profile' but shows a browser error page ('Something went wrong / There's an issue and the page could not be loaded') -- not instagram.com/apracticeforeverydaylife.",
+      "fix": "Recapture site-01.png as a real screenshot of https://apracticeforeverydaylife.com/ (the homepage). Recapture site-02.png as a real screenshot of https://www.instagram.com/apracticeforeverydaylife/ (the profile page). Both must be flagged context_shot:true in manifest.json and uploaded."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "certeau-01.png in assets shows only a single large 'C' letterform with no identifying context -- it appears to be a type specimen or logo mark but the project it belongs to is not identifiable from the image alone. The manifest has no entry for it at all.",
+      "fix": "When adding certeau images to the manifest, ensure the caption identifies the specific project (e.g. 'Certeau, [year] -- apracticeforeverydaylife.com'). If certeau-01.png cannot be attributed to a named project, replace it with an image that can."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "fail",
+      "evidence": "Notion body block count is 0. No Work heading, no image blocks, no divider. The upload step was not completed.",
+      "fix": "After fixing manifest.json (context shots + all project images with captions), run: keeper.py body-reset 689f8911-051f-4662-8414-0ef400501e4d, then keeper.py upload 689f8911-051f-4662-8414-0ef400501e4d assets/689f8911-051f-4662-8414-0ef400501e4d. Verify block count > 0 after."
+    },
+    {
+      "id": "B.all-links",
+      "result": "fail",
+      "evidence": "Email field contains 'n@apracticeforeverydaylife.com' which appears malformed or truncated -- a real email address beginning with a single letter 'n' is unlikely to be the studio contact. The studio's actual contact email needs verification (likely 'info@...' or 'hello@...' or a named address).",
+      "fix": "Check https://apracticeforeverydaylife.com/contact or About page for the correct contact email and update the field. If 'n@...' is genuinely their listed address, note that in AI Notes as unusual."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "fail",
+      "evidence": "Capabilities is only 'Graphic design'. The scraper's own Open Question acknowledges Identity systems, Type design, Creative direction, and Web design are all confirmed by the studio's own tagline and services list. These are not debatable additions -- they are directly stated by the studio. Leaving them as a question rather than tagging them represents deferred work that is findable now.",
+      "fix": "Tag Capabilities as: Graphic design, Identity systems, Type design, Creative direction, Web design (and any others per TAXONOMY.md that match their services). The Open Question about adding them should be cleared once tagged, not left for Jonathan to answer when the answer is verifiable."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes found in AI Notes, Open Questions, or any written field."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a small specialized London creative studio with ~6-7 people doing hands-on creative execution."
+    },
+    {
+      "id": "B.links-website-instagram-linkedin",
+      "result": "pass",
+      "evidence": "Website https://apracticeforeverydaylife.com/, Instagram https://www.instagram.com/apracticeforeverydaylife/ (handle verified via About page per AI Notes), LinkedIn https://www.linkedin.com/company/a-practice-for-everyday-life all present."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: UK, Size: 2-10, Work Status: Studio -- all set. AI Notes documents the source (studio About page). Multi-source resolution not required for Work Status: Studio (it is an active operating studio, not a Freelance/Employed ambiguity)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio). Autonomy is OPTIONAL per checklist calibration 2026-06-21. Not set; not a failure."
+    },
+    {
+      "id": "C.no-judgment-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with no evidence of a prior relationship in the clip note or body."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No clip-note-stated relationship facts or judgment signals were present. clipped.md does not exist, which means no body content was archived -- but no body content was present to archive (entry was a stub with no body text)."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual (founded date, founders, clients, AGI membership, follower count). Claims like 'one of the UK's most influential design studios' are correctly sourced ('source: its nicethat, LinkedIn, Communication Arts'). No unhedged inferences."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2026-06-12' -- filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by and verified_at for all written fields. source_url null on some fields is the known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "fail",
+      "evidence": "The sole Open Question asks Jonathan whether to add Identity systems, Type design, Creative direction, Web design to Capabilities. These are verifiable from the studio's own tagline and public services list -- the agent can and should tag them rather than deferring to Jonathan. Asking for a factual tag that primary-source evidence already resolves violates 'nothing deferred that is findable now'.",
+      "fix": "Tag the additional Capabilities (Identity systems, Type design, Creative direction, Web design) directly and clear the Open Question. If TAXONOMY.md does not have an exact match for any of them, pick the closest tag and note the mapping in AI Notes."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching, not prematurely set to Needs Review. Correct -- it should stay Enriching until gate passes."
+    }
+  ],
+  "summary": "FAIL on 5 checks. Critical failures: (1) Notion body is empty -- upload never completed. (2) Both context shots are wrong: site-01 is a project photo, site-02 is a browser error page. (3) Manifest has no project image entries despite 17 project images on disk. (4) Email field appears malformed ('n@apracticeforeverydaylife.com'). (5) Capabilities are under-tagged and the Open Question deferring this to Jonathan should be resolved by the scraper/scout. Fix all five, re-run body-reset + upload, verify block count, then re-submit for review.",
+  "to": "scraper"
+}
