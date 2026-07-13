@@ -1,118 +1,20 @@
 {
   "page_id": "127cbee1-3509-4b4c-b1f7-e7f372c61427",
-  "reviewer_version": "v1",
+  "reviewer_version": "v1-adjudicator",
   "reviewed_at": "2026-07-13T00:00:00",
-  "verdict": "fail",
+  "verdict": "pass",
   "attempt": 2,
+  "adjudication": "UPHOLD",
+  "adjudication_reasoning": "The first reviewer's A.project-diversity failure is correct and upheld. The live site character.co is DNS-unreachable, but the dead-site exception in the checklist applies only to context shots (the IG throttle carve-out), not to project diversity. Wayback Machine has real case-study pages for Favor (http://web.archive.org/web/20221001090450/https://character.co/work/favor, confirmed HTTP 200, 33 image candidates), JVN, and lululemon -- the same Wayback approach used to capture DoorDash and Palm images. A third project was genuinely reachable and not captured. The failure is real. However, the retry cap (attempt 2) is reached, so the entry is promoted to Needs Review regardless, with the gap documented in Open Questions and AI Notes for Jonathan.",
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "Only 2 distinct projects in the body: DoorDash (4 images) and Palm (4 images). Checklist requires 3+ distinct projects. Character Co's AI Notes lists a broad client roster (Google, Amazon, Nike, Netflix, Sephora, Oculus, Fitbit, Restoration Hardware, Pottery Barn Kids) and their Wayback-archived case study list at character.co/work shows further projects (Favor, JVN, lululemon visible in the site-01 screenshot). A third project is reachable via Wayback.",
-      "fix": "Capture 2-4 images from a third named project via Wayback Machine (e.g. https://web.archive.org/web/2022/https://character.co/work/favor or another listed project), add to manifest with caption and source link, run body-reset and keeper.py upload."
-    },
-    {
-      "id": "A.depth-over-breadth",
-      "result": "pass",
-      "evidence": "4 images per project, showing billboard mockup, campaign materials, brand guidelines, and lifestyle application for DoorDash; brand device, style guidelines, identity system, and lifestyle for Palm. Genuine depth within each project. PASS."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "pass",
-      "evidence": "DoorDash brand campaign and Palm brand identity are squarely on-capability for a Graphic design / branding agency. PASS."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "pass",
-      "evidence": "Website context shot present: site-08.png is a Wayback Machine capture of character.co homepage (address bar reads https://character.co/, Jun 2022), acceptable because character.co is DNS-unreachable and Wayback is the documented substitute. IG throttle exception fully met: site-02 and site-04 (error pages) are marked rejected:true in manifest, @characterdotco is in state/ig-queue.json, and AI Notes documents the block. PASS."
-    },
-    {
-      "id": "A.no-uncaptioned-images",
-      "result": "pass",
-      "evidence": "All 10 uploaded images have captions. doordash-01 and doordash-04 share the caption 'DoorDash, brand campaign' -- the images are visually distinct (billboard vs. riders) so this is a labelling imprecision, not a missing caption. PASS (note for scraper: differentiate the caption on doordash-04, e.g. 'DoorDash, campaign lifestyle')."
-    },
-    {
-      "id": "A.embeds-for-video",
-      "result": "pass",
-      "evidence": "Branding agency; no video/audio embeds expected. PASS."
-    },
-    {
-      "id": "A.absence-explained",
-      "result": "pass",
-      "evidence": "AI Notes explains DNS-unreachable character.co site, Wayback source for work and context shots, and IG throttle path. PASS."
-    },
-    {
-      "id": "A.body-clean",
-      "result": "pass",
-      "evidence": "Notion body has exactly 12 blocks: h2 'Work', 10 image blocks (each with caption), 1 divider. No orphan blocks, no duplicated sections. PASS."
-    },
-    {
-      "id": "B.type-classified",
-      "result": "pass",
-      "evidence": "Type = Agency. Full-service branding shop acquired by Dentsu, 30-40 people, two offices. Agency classification is correct per schema. PASS."
-    },
-    {
-      "id": "B.links-present",
-      "result": "pass",
-      "evidence": "Website https://character.co/ present; Instagram https://www.instagram.com/characterdotco/ present (handle verified from 2019 press release per AI Notes); LinkedIn https://www.linkedin.com/company/characterdotco present. No public email: AI Notes documents the absence and notes internal format inferred from RocketReach. PASS."
-    },
-    {
-      "id": "B.capabilities-tagged",
-      "result": "pass",
-      "evidence": "Capabilities = [Graphic design], set_by jonathan (locked migration field). Scout filed an Open Question proposing Brand strategy, Identity systems, Web design, Environmental design additions. Per checklist calibration 2026-07-12: jonathan-locked Capabilities + OQ proposing additions = PASS."
-    },
-    {
-      "id": "B.country-size-workstatus",
-      "result": "pass",
-      "evidence": "Country: US. Size: 11-40 (Clutch: 31-40, LinkedIn: 11-50, sources named in AI Notes). Work Status: Studio (org-level, appropriate). PASS."
-    },
-    {
-      "id": "B.autonomy",
-      "result": "pass",
-      "evidence": "Type = Agency (org). Per checklist calibration 2026-06-21: Autonomy is optional for org-type entries. PASS."
-    },
-    {
-      "id": "C.no-judgment-contradiction",
-      "result": "pass",
-      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note signals a prior relationship. Zero-states appropriate. PASS."
-    },
-    {
-      "id": "C.clip-note-acted-on",
-      "result": "pass",
-      "evidence": "Source = 'Web clipper, 2020-11-01'. No relationship facts or instructions in the Name field. No clip note to act on beyond the URL. PASS."
-    },
-    {
-      "id": "C.ai-notes-hedged",
-      "result": "pass",
-      "evidence": "AI Notes are factual and specific: founding date, acquisition detail, office count, team size with sources, client roster, IG handle verification method, LinkedIn, DNS issue documented, IG queue noted. No unhedged inferences. No em-dashes. PASS."
-    },
-    {
-      "id": "D.source-filled",
-      "result": "pass",
-      "evidence": "Source = 'Web clipper, 2020-11-01'. Created date present. PASS."
-    },
-    {
-      "id": "D.provenance-written",
-      "result": "pass",
-      "evidence": "Provenance file covers all touched fields with set_by values. source_url nulls are a known systemic tooling gap (checklist note 2026-06-21), not a gate failure. PASS."
-    },
-    {
-      "id": "D.no-em-dashes",
-      "result": "pass",
-      "evidence": "AI Notes clean. Notion body blocks verified via API: all image caption separators use ' . ' (middle dot), no em-dashes found in any of the 12 body blocks. keeper.py line 547 uses ' . ' not ' -- '. PASS."
-    },
-    {
-      "id": "D.open-questions",
-      "result": "pass",
-      "evidence": "One terse conditional Open Question proposing Capabilities additions for jonathan to confirm. Appropriate and non-redundant. PASS."
-    },
-    {
-      "id": "D.status-correct",
-      "result": "fail",
-      "evidence": "Entry is Enriching. Correct for a FAIL verdict -- status must not advance until the single failing check is fixed.",
-      "fix": "After adding a third project and re-uploading, the reviewer flips to Needs Review."
+      "result": "fail-upheld",
+      "evidence": "Entry has 2 named projects: DoorDash (4 images) and Palm (4 images). Checklist requires 3+. Wayback has Favor, JVN, and lululemon case study pages all returning HTTP 200 with 33+ image candidates (verified by adjudicator). First reviewer's failure is correct; the bar is not unreasonable given Wayback was the active capture method. Gap documented in Open Questions (question 2) and AI Notes; Jonathan can decide whether a follow-up scrape pass is warranted.",
+      "fix": "Optional follow-up: capture 2-3 images from http://web.archive.org/web/20221001090450/https://character.co/work/favor (or /work/jvn or /work/lululemon), add to manifest, run body-reset + keeper.py upload."
     }
   ],
-  "summary": "One remaining failure: only 2 distinct projects (DoorDash, Palm) where the checklist requires 3+. All prior bounce failures are fixed: images are uploaded (10 files in Notion), body is clean (12 blocks, no orphans), IG error shots are rejected+documented+queued, website context shot is Wayback homepage, Source has a date. The single fix needed is adding 2-4 images from a third Character Co project via Wayback (Favor, JVN, lululemon, and others are visible in the site-01 work listing screenshot).",
-  "to": "scraper"
+  "all_other_checks": "pass",
+  "summary": "UPHOLD. The 3rd-project gap is a real, fixable omission -- Wayback works for this site and has 33+ candidates on the Favor page alone. Entry reaches Jonathan at retry cap with the gap surfaced in Open Questions (question 2) and an adjudicator note in AI Notes. All other checks pass: 10 images uploaded, body clean (12 blocks, no orphans), IG error shots rejected+documented+queued, Wayback website context shot present, Source filled, no em-dashes.",
+  "to": "jonathan"
 }
