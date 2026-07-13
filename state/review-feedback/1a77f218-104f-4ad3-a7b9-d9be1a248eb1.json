@@ -1,0 +1,115 @@
+{
+  "page_id": "1a77f218-104f-4ad3-a7b9-d9be1a248eb1",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects: Superkilen 2012, Flooded McDonald's 2009, Modern Times Forever 2011, One Two Three Swing! 2017, Free Beer 2004/2007, The Financial Crisis 2009. Captions and source URLs confirm separate works."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project for Superkilen, Flooded McDonald's, Modern Times Forever, Swing; 2 each for Free Beer and Financial Crisis. Goes inside each project (installation views, film stills, performance shots) rather than hero covers only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities are Art practice + Spatial & exhibition design. Captured work spans public space (Superkilen), video art (Flooded McDonald's installation view + Vimeo embed), film (Modern Times Forever + YouTube embed), participatory installation (Swing!), social proposition (Free Beer), performance (Financial Crisis). All on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-05.png: superflex.net homepage, shows SUPERFLEX nav and branded hero. site-06.png: instagram.com/@superflexstudio profile page, shows handle 'superflexstudio', follower count, verified-style grid. Both correct and distinct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project. site-02.jpg is marked rejected and excluded from upload. All 23 uploaded images have captions."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 embeds present: Vimeo for Flooded McDonald's and YouTube for Modern Times Forever. Both have thumbnail preview images (flooded-thumb.jpg, moderntimes-thumb.jpg) and linked captions. Paragraph metadata lines below embeds use middle dot, no em-dash."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained gaps. AI Notes documents sources used."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "Notion body: 29 blocks. Block 0 is h2 'Work', blocks 1-27 are work items (images, embeds, metadata paragraphs), block 28 is divider. No orphan blocks above heading, no duplication."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type: Studio. Correct for a collective with staff, gallery representation, studio address."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://superflex.net. Instagram: https://www.instagram.com/superflexstudio/ (confirmed by profile screenshot showing handle + bio). LinkedIn: https://dk.linkedin.com/company/superflexstudio. Email: contact@superflex.net."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities set_by jonathan (locked migration field): Art practice + Spatial & exhibition design. Scout filed OQ proposing Film & video production. Per 2026-07-12 calibration, locked-Capabilities + OQ = PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Denmark. Size: 11-40 (LinkedIn 11-50, About page lists 7 staff). Work Status: Studio, confirmed by studio address + gallery representation + institutional profile as noted in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy: 5, set_by agent with reasoning in AI Notes ('fully self-directed collective, no employer, long institutional track record'). Studio entry: Autonomy optional per calibration note, but set here because the three named founders clearly embody the org. No issue either way."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict the clip note 'Web clipper, 2020-11-01', which carries no relationship facts or stated judgments."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No instructions or relationship facts in the clip note. Nothing to act on beyond standard P1."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (founders named, gallery representation, institutional collections, awards, staff count) and hedge the Work Status inference ('confirmed by studio address, gallery representation, and institutional profile'). Seniority read present ('over 30 years of self-directed practice'). No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by values for all touched fields. Capabilities correctly shows set_by: jonathan (locked). Null source_url is the known systemic gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, captions, or body paragraphs. Keeper.py line 547 uses ' · ' (middle dot). Paragraph metadata lines confirmed: 'Flooded McDonald's, 2009 · superflex.net · video' and 'Modern Times Forever ... 2011 · superflex.net · video'."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "1 Open Question proposing Film & video production addition. Terse, conditional (Capabilities not already including it), no story-nudge needed (no relationship indicators)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry currently in Enriching; will be flipped to Needs Review by this reviewer on pass."
+    }
+  ],
+  "to": null
+}

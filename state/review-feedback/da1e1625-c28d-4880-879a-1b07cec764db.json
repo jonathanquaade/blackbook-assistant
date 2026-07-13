@@ -1,0 +1,32 @@
+{
+  "page_id": "da1e1625-c28d-4880-879a-1b07cec764db",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "7 distinct named projects: State of Fashion Biennale, Martine Rose x Nike, Maison Margiela PLAY, Selfridges Superfutures, PinkPantheress live, CUTE Somerset House, MM6"},
+    {"id": "A.depth", "result": "pass", "evidence": "Goes inside each project: exhibition interior, signage system, city-scale install, campaign character sheets, blockchain token object, app UI mockup, 3D render, window install, interactive installation, colour calibration ecomm system"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Capabilities are Web design + Graphic design (jonathan-locked). Captured work covers web/app, graphic design, spatial/experiential work. PinkPantheress shots show stage visual design system (LED backdrop); borderline but attributable to live experience work"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-04.png: confirmed intmagic.com (nav bar, project listings visible). site-05.png: confirmed instagram.com/intmagicgroup (IG UI, handle, bio, grid visible)"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 16 work images have project names and source links. Context shots captioned Website and Instagram profile with matching links"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "Mux video on Margiela project captured via thumbnail image (mux-thumb-margiela.jpg) with link caption. Mux is not a standard embed platform; thumbnail-plus-link is the correct pattern per CLAUDE.md for non-YouTube/Vimeo sources"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "All rejected images documented in manifest with specific reasons. No unexplained thin areas"},
+    {"id": "A.body-structure", "result": "pass", "evidence": "20 blocks in Notion body: 1 h2 Work + 16 work images + 2 context shots + 1 divider. No orphan blocks"},
+    {"id": "B.type", "result": "pass", "evidence": "Studio, correctly classified (small specialized team doing hands-on creative execution)"},
+    {"id": "B.links", "result": "pass", "evidence": "Website intmagic.com, Instagram intmagicgroup, LinkedIn company page, Email hello@intmagic.com all present"},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Capabilities locked as jonathan. Scout filed Open Question 1 proposing Creative technology, Identity systems, Brand strategy, Film & video production, Spatial & exhibition design. Contract-compliant per 2026-07-12 calibration note"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country UK, Size 2-10, Work Status Studio. Sources named in AI Notes: intmagic.com, LinkedIn company, developments.media interview, itsnicethat.com 2017 profile"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Studio entity; Autonomy not applicable per calibration note. AI Notes states this explicitly"},
+    {"id": "C.no-contradiction", "result": "pass", "evidence": "Clip note had no relationship facts. Zero-states are appropriate. Jonathan's Notes field referenced in Open Question, not overwritten"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note contained only the bare name. Source correctly set as Web clipper 2020-11-01. Notes field Creative Technology,Ecommerce addressed via Open Question 1"},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Founding date hedged (circa 2016), team size hedged (approx 8 people), sources listed explicitly. No unverified assertions stated as fact"},
+    {"id": "D.source", "result": "pass", "evidence": "Source: Web clipper, 2020-11-01"},
+    {"id": "D.provenance", "result": "pass", "evidence": "All fields have provenance with correct set_by. source_url null is the known systemic tooling gap, not a gate failure"},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes found in AI Notes, Open Questions, or captions"},
+    {"id": "D.open-questions", "result": "pass", "evidence": "One well-formed, conditional OQ about Capabilities expansion. Terse, includes Notes field context as relevant signal"},
+    {"id": "D.status", "result": "pass", "evidence": "Flipped to Needs Review by reviewer"}
+  ],
+  "to": null,
+  "notes": "Clean pass. Studio entry with 7 diverse projects, verified context shots, locked Capabilities correctly handled via Open Question."
+}
