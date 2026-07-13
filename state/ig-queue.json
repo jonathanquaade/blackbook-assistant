@@ -1933,7 +1933,7 @@
   },
   {
     "page_id": "c9535056-53fd-4d8f-b9cf-1b419ae4e909",
-    "name": "BANK™",
+    "name": "BANK\u2122",
     "ig_url": "https://www.instagram.com/bank_graphic_design_today/",
     "reason": "IG context screenshot returned 'Something went wrong' error page (headless Playwright rate-limited logged out). Need logged-in ig.py grab for @bank_graphic_design_today profile context shot.",
     "queued_at": "2026-07-11"
@@ -2007,5 +2007,12 @@
     "ig_url": "https://www.instagram.com/characterdotco/",
     "reason": "IG error page on headless capture; needs logged-in ig.py grab",
     "queued_at": "2026-07-12"
+  },
+  {
+    "page_id": "28af4aed-7ac3-4307-9728-46b8ebec37e7",
+    "name": "FranklinTill",
+    "ig_url": "https://www.instagram.com/franklintill/",
+    "reason": "Headless Playwright returned IG error page (Profile not available) logged-out; logged-in ig.py grab needed for context shot.",
+    "queued_at": "2026-07-13"
   }
 ]

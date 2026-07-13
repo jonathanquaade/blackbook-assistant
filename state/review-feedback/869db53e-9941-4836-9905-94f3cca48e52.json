@@ -1,0 +1,116 @@
+{
+  "page_id": "869db53e-9941-4836-9905-94f3cca48e52",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "n/a",
+      "evidence": "Entity unidentifiable; no work capturable. Covered by A.absence-explained."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "n/a",
+      "evidence": "Entity unidentifiable; no work capturable."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "n/a",
+      "evidence": "Entity unidentifiable; no work capturable."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "n/a",
+      "evidence": "No website or Instagram URL exists to screenshot; absence documented in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "n/a",
+      "evidence": "No images in entry."
+    },
+    {
+      "id": "A.embeds",
+      "result": "n/a",
+      "evidence": "Entity unidentifiable; no embeds applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states: 'Extensive web searches returned no public-facing studio or agency matching this name in the UK... all link fields left empty pending identification.' Open Question asks Jonathan for a URL. Absence is fully accounted for."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "No upload was run; no orphan blocks possible. Entry has no Work section, which is correct given no images."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio, set_by agent. Reasonable placeholder; scout noted it cannot confirm without identification."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "All link fields empty with documented reason in AI Notes. Confidence floor prohibits guessing; absence correctly recorded."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Brand strategy is set_by jonathan (locked migration value). Scout correctly did not overwrite it."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country=UK (migration), Size=Unknown, Work Status=Unknown. All appropriate given identification block."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Type=Studio; Autonomy is optional for org entries per calibration note. No field required."
+    },
+    {
+      "id": "C.judgment-vs-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are valid; no clip note states any relationship fact that would contradict them."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note contained only Country=UK and Capabilities=Brand strategy, both preserved from migration. No instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses 'cannot determine', 'extensive searches returned no public-facing...', 'unknown'. Correctly hedged throughout. Note: specific search methods (Companies House, domain probes, handle variants) are not enumerated in AI Notes but the conclusion and block are clearly stated, which is sufficient for Jonathan."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01', correctly derived from the Notion created_time."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with correct set_by: migration (Country, Name), jonathan (Capabilities), agent (everything the scout set). No field written below confidence floor."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions reviewed; no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question present, terse and contextual: asks for a URL, explains why (no link at clip, searches failed). This is the minimal correct output for a blocked identification."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Currently Enriching; reviewer flipping to Needs Review now."
+    }
+  ],
+  "to": "scout",
+  "notes": "Blocked-identification entry. Scout did real due diligence: documented the block in AI Notes, set correct zero-states, filed an appropriate Open Question. No work is capturable until Jonathan supplies a URL. Entry legitimately needs Jonathan's input before enrichment can continue."
+}

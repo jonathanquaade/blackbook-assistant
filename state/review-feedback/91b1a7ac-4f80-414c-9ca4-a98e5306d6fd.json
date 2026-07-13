@@ -1,132 +1,116 @@
 {
   "page_id": "91b1a7ac-4f80-414c-9ca4-a98e5306d6fd",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-12T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "Manifest has exactly 1 entry (site-01.png, the website context shot). 16 image files for 4 distinct projects (gp-*, kanal-*, phillips-*, stumu-*) are on disk but NOT in manifest.json and NOT uploaded to Notion. The Notion body has 1 block: a single uncaptioned image. Zero project work reached Notion.",
-      "fix": "Add all captured project images to manifest.json with captions and source links (Grand Palais, Kanal, Phillips, Studio Museum in Harlem), then run body-reset + upload. At minimum 3 distinct projects must be represented in Notion."
+      "result": "pass",
+      "evidence": "15 project images across 4 distinct named projects: Grand Palais (gp-01/02/03), Kanal Centre Pompidou (kanal-02/03/04/video-thumb), Phillips (phillips-01/02/03), Studio Museum in Harlem (stumu-01/02/03). All present in manifest and Notion Images property."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "Cannot assess depth because no project images are in the manifest or Notion. Files on disk include interiors (gp-03.png, interior of Grand Palais dome), identity spreads (phillips-02.jpg, stationery), and logo sheets (gp-04.png is a near-blank wordmark-only image that should be excluded or used sparingly), which suggests usable depth exists but was never surfaced.",
-      "fix": "When building the manifest, include interior/spread shots over wordmark-only frames. gp-04.png (blank cream page, wordmark only) is thin; prefer gp-01 through gp-03 and add kanal/phillips/stumu interiors."
+      "result": "pass",
+      "evidence": "Grand Palais: exterior facade with brand banners (gp-01), wordmark/logo construction graphic (gp-02), interior dome with brand overlay (gp-03) -- genuine interior depth. Phillips: window signage (phillips-01), stationery/collateral (phillips-02), auction label card in situ (phillips-03). Kanal: aerial context (kanal-02), type specimen (kanal-03), brand strategy card (kanal-04), identity film still (kanal-video-thumb). Studio Museum: two website screenshots (stumu-01, stumu-02) are near-identical homepage views (thin), plus a mobile page (stumu-03). Stumu selection is the weakest leg but the other three projects show genuine depth. Not a gate failure."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Images on disk are brand identity and graphic design work (Grand Palais identity, Kanal identity, Phillips auction house, Studio Museum in Harlem web/identity). Matches the tagged Capability (Graphic design) and the broader identity/brand work Base is known for."
+      "evidence": "Graphic design and brand identity work across all four projects. kanal-02.png (aerial drone photo of Kanal building site) does not itself show design work, but functions as an architectural/context photo within the brand case study -- a common framing for cultural-institution identity projects. Not off-capability in the way a Sound designer's brand side-projects would be. All other images show design outputs directly: signage, collateral, type systems, web design, brand strategy documents."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Website context shot (site-01.png) is present and correctly shows basedesign.com. Instagram context shot is absent: no ig-* file exists in assets, no entry in manifest, not marked rejected, not documented in AI Notes, not queued to state/ig-queue.json. This is a missing context shot, not a sanctioned throttle exception.",
-      "fix": "Capture an Instagram profile screenshot for https://www.instagram.com/base_design/ via scrape.py shot, add to manifest as context_shot with caption 'Instagram profile', and re-run upload. If scrape.py returns a degraded/error page, mark it rejected, document in AI Notes, and add to ig-queue.json."
+      "result": "pass",
+      "evidence": "site-01.png visually confirmed as basedesign.com homepage (portfolio grid, Base logo top-left). site-02.png visually confirmed as instagram.com showing base_design profile (Instagram header, 'base_design' username, bio, grid). Both correctly labeled and real."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "The one image block in Notion has no caption (confirmed by block inspection: caption array is empty). All disk images lack manifest entries so they have no captions at all.",
-      "fix": "Every manifest entry must have a caption naming the project. The single uploaded image must be recaptured with caption 'Website' (or removed and re-uploaded correctly via body-reset + upload from a complete manifest)."
+      "result": "pass",
+      "evidence": "All 15 manifest entries carry named captions. Notion body block inspection confirms all 15 image blocks have captions (e.g. 'Grand Palais, brand identity', 'Website', 'Instagram profile'). No uncaptioned blocks."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "kanal-video-thumb.jpg is on disk (a video thumbnail for the Kanal project), suggesting the scraper identified a video. However with no manifest entries at all this cannot be fully assessed. No embed-capable disciplines tagged (this is an identity/graphic design studio); video embeds are a nice-to-have not a gate failure here."
+      "evidence": "Kanal identity film captured as a thumbnail still (kanal-video-thumb.jpg). No embed was added. For an identity/graphic design studio entry, missing a Vimeo embed is not a gate failure per checklist ('nice-to-have not a gate failure here' for non-video-primary disciplines). Entry has no embed-type disciplines tagged."
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "The manifest omission of 16 captured files is unexplained. AI Notes say nothing about image status. The Notion body is effectively empty of work.",
-      "fix": "The scraper must complete the manifest, run body-reset, and run upload so the Work section reflects actual captured files."
+      "result": "pass",
+      "evidence": "Upload ran successfully. 15 images in Notion Images property and body. No unexplained absence."
     },
     {
       "id": "A.body-structure-clean",
-      "result": "fail",
-      "evidence": "Notion body has 1 block: a single uncaptioned image with no Work heading and no divider. upload was either not run or ran against a single-item manifest before the project images were added. Body structure is wrong.",
-      "fix": "After completing the manifest, run body-reset then upload to produce the canonical Work heading + captioned images + divider structure."
+      "result": "pass",
+      "evidence": "Notion body: 17 blocks total = h2 'Work' + 15 image blocks (all captioned) + divider. No orphan blocks above the Work heading, no duplicate blocks. body-reset ran cleanly before upload."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Studio, with reasoning in AI Notes (self-describes as studio network, creatively led). Plausible given the schema's Studio vs Agency rule."
+      "evidence": "Type = Studio with explicit reasoning in AI Notes (self-describes as studio network, creatively led, Agency threshold not met). Correct."
     },
     {
       "id": "B.all-links-present",
       "result": "pass",
-      "evidence": "Website (https://www.basedesign.com), Instagram (https://www.instagram.com/base_design/), LinkedIn (https://www.linkedin.com/company/base-design), Email (global@basedesign.com) all present."
+      "evidence": "Website (https://www.basedesign.com), Instagram (https://www.instagram.com/base_design/ -- confirmed as the real account via the profile screenshot), LinkedIn (https://www.linkedin.com/company/base-design), Email (global@basedesign.com). All four present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design is tagged (set_by jonathan per provenance, so locked). Open Question 1 correctly proposes adding Brand strategy, Identity systems, 3D & motion, Web design, Creative direction without overwriting his tag. That is the right approach."
+      "evidence": "Graphic design is the existing tag (set_by: jonathan, locked). Open Question 1 correctly proposes adding Brand strategy, Identity systems, 3D & motion, Web design, Creative direction without overwriting his tag. Correct contract-compliant approach per checklist calibration 2026-07-12."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country = [Australia, Belgium, Switzerland, US, Vietnam] (five-office footprint, confirmed per AI Notes). Size = 100+. Work Status = Studio. AI Notes names the sources (contact page, Instagram bio)."
+      "evidence": "Country = [Australia, Belgium, Switzerland, US, Vietnam] (five offices confirmed). Size = 100+. Work Status = Studio. AI Notes names the confirmation sources (contact page, Instagram bio)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Entry Type is Studio; Autonomy is OPTIONAL for org-type entries per checklist calibration (2026-06-21). No Autonomy field set, which is correct."
+      "evidence": "Entry Type is Studio. Autonomy is optional for org-type entries per checklist calibration 2026-06-21. Correctly omitted. AI Notes covers the leadership/founding context."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note contains relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate and not contradicted by any evidence."
+      "evidence": "No clip note contains relationship facts. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate and not contradicted by evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note (clipped.md) had no instructions beyond the website URL. No action was required beyond standard enrichment."
+      "evidence": "clipped.md had no instructions beyond the website URL. No further action was required."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges size ('multiple sources suggest ~180 as of mid-2025'), attributes self-description rather than asserting ('self-describes as a studio network'), and records the reasoning for Type classification. No unhedged inferences detected. Seniority/Autonomy notes are not required for Studio entries."
+      "evidence": "AI Notes hedges size ('multiple sources suggest ~180 as of mid-2025'), attributes self-description rather than asserting ('self-describes as a studio network'), names client roster as published facts, and records the Studio vs Agency reasoning. No unhedged inferences. Seniority/Autonomy not required for Studio entries."
     },
     {
       "id": "D.source-filled",
-      "result": "fail",
-      "evidence": "Source = 'Web clipper' with no date. CLAUDE.md specifies Source should be 'Web clipper, <page created date>' for backfill entries where no clip note provides provenance. The created date is missing.",
-      "fix": "Fetch the Notion page created_time via the API and set Source to 'Web clipper, YYYY-MM-DD'."
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Date is present. Provenance confirmed set at 2026-07-12T17:41:36. Prior fail resolved."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file is present and complete for all touched fields. null source_url is a known systemic tooling gap (noted in checklist), not a gate failure. set_by values are correct (agent for researched fields, jonathan for Capabilities which was set by him)."
+      "evidence": "Provenance file present and complete for all touched fields. null source_url is a known systemic tooling gap (not a gate failure). set_by values are correct: jonathan for Capabilities (locked), agent for all researched fields."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions contain no em-dashes. Notion body has only one uncaptioned image block with no text, so the keeper.py line-547 em-dash bug is not triggered (no embed paragraph blocks exist)."
+      "evidence": "AI Notes and Open Questions contain no em-dashes. Notion body has only image blocks (h2 + images + divider), no paragraph/embed blocks, so the keeper line-547 em-dash bug does not trigger."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse, conditional Open Question about Capabilities expansion. Correctly avoids asking about fields that already have values. No story-nudge scenario applies (a Studio entry)."
+      "evidence": "One terse, conditional Open Question on Capabilities expansion. No field with an existing non-zero value is asked about. No story-nudge scenario (Studio entry, Worked Together: Never)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Reviewer (this gate) has not yet flipped it; will remain Enriching pending the scraper fixing the manifest/upload failures."
+      "evidence": "Entry was in Enriching (correct during the doer bounce loop). Being flipped to Needs Review by this gate pass now."
     }
   ],
-  "summary": "Scout metadata is solid: all four links present, fields set, AI Notes hedged, Open Question well-formed. The scraper captured 16 image files across 4 distinct projects (Grand Palais, Kanal, Phillips, Studio Museum in Harlem) but critically FAILED to write them into manifest.json and FAILED to run body-reset + upload. The Notion body has one uncaptioned image block with no Work heading, no project images, and no divider. Instagram context shot is absent with no documented reason. Source is missing its creation date. The entry is structurally incomplete as a Notion record.",
-  "to": "scraper",
-  "failing_checks": [
-    "A.project-diversity",
-    "A.depth-over-breadth",
-    "A.context-shots",
-    "A.no-uncaptioned-images",
-    "A.absence-explained",
-    "A.body-structure-clean",
-    "D.source-filled"
-  ]
+  "summary": "All 7 fails from attempt 1 are resolved: manifest is fully populated with 15 named-project images across Grand Palais, Kanal Centre Pompidou, Phillips, and Studio Museum in Harlem; body-reset and upload ran (17 clean blocks: h2 + 15 captioned images + divider); Instagram context shot (site-02.png) is confirmed real (instagram.com/base_design profile); Source date is present (Web clipper, 2020-11-01). Scout metadata, links, Open Question, and AI Notes all remain solid. Entry is complete and ready for Jonathan.",
+  "to": "jonathan"
 }
