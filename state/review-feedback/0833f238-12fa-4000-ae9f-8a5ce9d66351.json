@@ -1,0 +1,115 @@
+{
+  "page_id": "0833f238-12fa-4000-ae9f-8a5ce9d66351",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects in active set: Alphaputt (5 images), Steasy (4), Google HK Ho Jeng AR (2), LUMI by ROLI (2), Enzyme rebrand (2). No caption repeats or near-duplicate hashes."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Goes inside projects: Alphaputt has A-Z diorama grid, level-select UI, in-game view, and loop-track level. Steasy has colour palette, design system components, dashboard screen, and icon system. Not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities locked as 'Frontend development (web)' (jonathan-set) with OQ proposing expansion. Per 2026-07-12 calibration note, locked-Capabilities+OQ is a PASS. Work shown (digital product, AR, games, motion, branding) is on-capability for a digital product studio."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png verified as sennep.com homepage (yellow background, Sennep logo, 'Digital experiences lovingly made with a human touch'). site-02.png verified as instagram.com/sennepldn/ (Instagram chrome, sennepldn handle, 3,900 followers, Sennep bio)."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All 17 active images carry project-name captions with year. Context shots captioned 'Website' and 'Instagram profile'."
+    },
+    {
+      "id": "A.embeds-video",
+      "result": "pass",
+      "evidence": "YouTube embed present for Alphaputt behind-the-scenes (youtube.com/watch?v=TmPuFH9yB3Q). Thumbnail image (alphaputt-yt-thumb.jpg) provided as preview, linked to video. Pattern: thumbnail image + linked caption + playable embed."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No sources flagged as blocked or thin. 5 projects, 17 images, 1 embed. Entry is substantive."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "keeper.py get does not expose body blocks for direct count verification. Clipped.md shows entry had only a name-only web-clipper stub (no body content to orphan). Images provenance timestamp (10:11:42) follows all field writes, consistent with upload running after body-reset. Em-dash bug at keeper.py line 547 confirmed fixed (uses dot-separator now). No positive evidence of orphan blocks."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialist team doing hands-on digital product execution."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: sennep.com. Instagram: instagram.com/sennepldn/. LinkedIn: uk.linkedin.com/company/sennep. Email: hello@sennep.com. All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities is set_by jonathan (locked). Scout filed OQ proposing expansion tags. Per 2026-07-12 calibration, locked-Capabilities+OQ = PASS."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country: UK. Size: 2-10 (corrected from migration's 11-40; LinkedIn lists 3 employees, RocketReach ~4; OQ asks Jonathan to confirm). Work Status: Studio. Sources cited in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org-type entry; Autonomy field is OPTIONAL per 2026-06-21 calibration. AI Notes provides seniority read: founders Matt Rice (Creative Director) and Hege Aaby (Managing Director), 20+ years history, ~3-4 people."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never / Don't know them / Unvetted) consistent with clip note having no relationship text."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was empty ('None - Name field contains only the studio name'). Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Client list and award count are verifiable public facts from sennep.com. Size hedged with '~3-4 people'. Founders named with roles and founding year. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-12'. Correct format."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance with correct set_by values (agent for metadata, jonathan for Capabilities). source_url null throughout - known systemic tooling gap, not a v1 gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, Open Questions, or captions. keeper.py line 547 confirmed fixed to use dot-separator rather than ' -- '."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two questions: (1) Capabilities expansion proposal via correct channel (locked field, OQ is the right path); (2) Size confirmation. Both terse and conditional."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status is Enriching, awaiting this gate. Will be flipped to Needs Review on pass."
+    }
+  ],
+  "to": null
+}

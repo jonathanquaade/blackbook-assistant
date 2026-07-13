@@ -1,0 +1,116 @@
+{
+  "page_id": "7f1b0192-c748-4b1f-9712-1725995bb19e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct clients: Anima/fundacio.cat, Six N Five, Elisava (SOTD), Cafes el Magnifico, Graydon Herriott. No repeated captions or near-identical images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "1 screenshot per built site. For a web studio, the delivered website IS the work; a live-site UI screenshot (navigation, layout, hero, content) is substantive depth, not a hero-only cover shot. site-07 is an interior page of the Anima experience. Acceptable coverage at 5 projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 5 active images are web UI screenshots of built sites. 9 rejected images correctly excluded (editorial photography, 3D client artwork, illustrative content inside site pages)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-12.png: real metodica.co homepage (confirmed). site-13.png: real instagram.com/@metodica.co profile page with handle 'metodica.co', follower count, and grid visible. Both correctly labeled and correct content."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 7 active manifest entries have captions and source links."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio embeds needed; this is a web design/dev studio and image screenshots are the appropriate capture format."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Images are present; no gap to explain."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Upload timestamp (10:14) is after scout pass (10:06), indicating a fresh upload. No prior upload session to leave orphan blocks. Cannot read Notion blocks directly, but no evidence of a prior upload."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio. Correctly classified as small specialized digital studio (not Agency)."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (metodica.co), Instagram (instagram.com/metodica.co), LinkedIn (es.linkedin.com/company/wearemetodica), Email (info@metodica.co). All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities 'Frontend development (web)' is set_by jonathan (locked migration field). OQ proposes expansion to Brand strategy, Graphic design, Identity systems, Web design, Frontend development (web). Per 2026-07-12 calibration: locked Capabilities + OQ = PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Spain, Size: 2-10, Work Status: Studio. AI Notes cites LinkedIn for team size confirmation. Work Status resolved by evidence (registered studio entity with named team)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org-type entry (Studio); Autonomy not applicable per 2026-06-21 calibration. AI Notes states 'Studio-level entity; Autonomy not applicable (org, not individual).' PASS."
+    },
+    {
+      "id": "C.no-contradicting-judgment",
+      "result": "pass",
+      "evidence": "Clip note was bare studio name only (per clipped.md). Zero-states (Never/Don't know them/Unvetted) have no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md: 'No relationship facts, passcodes, or tagging direction in the clip note.' Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Self-description attributed to studio ('self-described digital alchemists'). Client list and Awwwards record are verifiable facts. LinkedIn team source cited. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Filled."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by. Null source_url is the known systemic tooling gap, not a gate failure per calibration. set_by: jonathan on Capabilities (correctly locked). All other agent fields set_by: agent."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Confirmed no em-dashes in AI Notes or Open Questions. No embeds in manifest, so the keeper.py paragraph metadata line does not fire."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ proposing Capabilities expansion. Terse, conditional, no double-asking. No story nudge needed (zero relationship engagement)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Currently Enriching; reviewer is flipping to Needs Review."
+    }
+  ],
+  "to": null,
+  "summary": "All checks pass. Full-service Barcelona digital studio with 5 distinct on-capability web UI screenshots, correct context shots, all links, locked Capabilities + OQ proposal, no em-dashes, no judgment contradictions."
+}
