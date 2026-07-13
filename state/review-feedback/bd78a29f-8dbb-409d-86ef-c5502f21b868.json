@@ -1,0 +1,116 @@
+{
+  "page_id": "bd78a29f-8dbb-409d-86ef-c5502f21b868",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "6 distinct projects confirmed visually: Nike/Sports Direct, Prison Radio Association, Gareth Ward, Our Streets Now, Blenheim Forge, Black Cab. No repeated captions or near-identical images."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Mandated video pattern: one Vimeo thumbnail preview per project paired with a playable embed. For a film production studio, the embed is the depth. Pattern is correct."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All 6 projects are films or commercials. Capabilities = Film & video production. No off-capability work captured."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed as brotherfilmco.com homepage. site-02.png confirmed as instagram.com/brother___film profile (logged-out grid view, correct account name and bio visible)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 images have captions. Thumbnail images include source links to brotherfilmco.com project pages. Context shots captioned Website and Instagram profile."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "6 Vimeo embeds present, one per project, each paired with a thumbnail preview image. Pattern matches CLAUDE.md mandated video pattern."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained thin coverage; 6 projects with images and embeds is solid for a film studio."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "22 blocks: heading_2 Work, 6 thumbnail images, 6 embeds each with a paragraph metadata line (using middle dot, not em-dash), 2 context shot images, divider. No orphan blocks."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialized team doing hands-on creative execution."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website (brotherfilmco.com), Instagram (instagram.com/brother___film), LinkedIn (uk.linkedin.com/company/brotherfilmco), Email (hello@brotherfilmco.com). All four link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = Film & video production, set_by jonathan (locked migration entry). Scout proposed adding Sound design via Open Question. Per checklist calibration 2026-07-12, locked Capabilities + OQ = PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = UK, Size = 2-10 (LinkedIn lists 7), Work Status = Studio. AI Notes references LinkedIn for size."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5, set_by agent. Studio entry; per calibration note Autonomy is optional for orgs. Scout provided reasoning: fully self-directed end-to-end production. Present and grounded."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together = Never, Familiarity = Don't know them, Work With? = Unvetted) are all valid. No clip note states a relationship."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source = Web clipper, 2020-11-01. No relationship facts or special instructions in clip note. Nothing left unacted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes assert verifiable facts (clients, APA membership, founding year, award). Autonomy reasoning is present. No unhedged inferences found. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = Web clipper, 2020-11-01."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields have set_by values. source_url is null throughout but this is the known systemic tooling gap (not a gate failure per calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes: no em-dashes. Open Questions uses -- (double hyphen), not em-dash. Body paragraph metadata lines use middle dot (confirmed by block inspection). keeper.py line 547 already patched to use ' . ' not ' -- '."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ: Sound design addition (Capabilities is locked, OQ is the correct channel). Terse. Conditional (not asking for a field that already has a non-zero value)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Status flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null,
+  "summary": "All 21 checks pass. Entry is complete and honest. 6 distinct on-capability film projects with thumbnail previews and Vimeo embeds, both context shots verified correct, all four link types present, Capabilities OQ correctly filed for locked jonathan field, body structure clean with no orphan blocks and no em-dashes."
+}
