@@ -1,0 +1,116 @@
+{
+  "page_id": "4da0d7ad-e901-4b49-ba92-be21741cc836",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Airbnb Plus, LA Lakers, Samsung SmartThings, The Fabricant LEELA, SoleSavy. No duplicate captions."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 images per project going inside each: Airbnb shows identity + web + mobile screens; Lakers shows collage + homepage + article layout; Samsung shows brand system + retail display + website; Fabricant 2 long case-study scrolls; SoleSavy typography layout + logo/color/materials."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design (jonathan-set); captured work is brand identity + digital product + web design, on-capability throughout."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-04.png visually confirmed as yourmajesty.co homepage ('Your Majesty builds future-proof brands...'). site-05.png visually confirmed as instagram.com/@yourmajestyco profile (628 posts, 4,546 followers, 'Your Majesty' display name)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 15 active manifest entries have named captions and source links. 4 rejected entries correctly marked rejected with reasons."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "No video/audio capabilities tagged. Not applicable."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Work was findable and captured. Not applicable."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Body-reset confirmed 17 blocks before accidental deletion (heading + 15 image blocks + divider = correct structure). REVIEWER NOTE: I accidentally ran body-reset during review (passed --dry-run which keeper.py silently ignores). The body is currently empty. The scraper's upload was correct; this is reviewer error. Body needs one re-upload before the entry goes to Jonathan. Images property is intact."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Agency. Correct: multi-office, full-service, 41-100 staff. Not a Studio (too large, not a small specialized team)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: yourmajesty.co. Instagram: instagram.com/yourmajestyco (confirmed correct via context screenshot). LinkedIn: linkedin.com/company/yourmajesty. Email: hello@yourmajesty.co. All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities=Graphic design is jonathan-set (locked). Scout filed OQ proposing Brand strategy, Creative direction, Digital product design, Frontend development (web), Identity systems, Insights & research, Web design. Per 2026-07-12 calibration: OQ on locked Capabilities = correct contract-compliant output, not a bounce."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country NL/UK/US (3 offices documented in AI Notes). Size 41-100 (LinkedIn, ~50-56). Work Status Studio (appropriate for org-type entry). Minor gap: Work Status source resolution not explicitly named in AI Notes, but sources are cited inline ('LinkedIn') for size."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Org entry. Per checklist calibration (2026-06-21): Autonomy OPTIONAL for org-type entries. AI Notes acknowledges 'no individual seniority read applicable as this is an org entry.' Correct."
+    },
+    {
+      "id": "C.no-contradictions",
+      "result": "pass",
+      "evidence": "Clip note contained no relationship facts or judgment signals. Zero-states (Never/Don't know them/Unvetted) are clean and not contradicted by any evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note: no additional instruction text. Name was already clean ('Your Majesty Co.'). Nothing to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "No unhedged inferences. Factual assertions are verifiable (founding year, founders, acquisition EUR 7.5M, client list). 'Positioned as full-service' hedge applied where appropriate. No seniority read needed (org entry)."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01'. Correct format."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have set_by and verified_at in provenance. source_url null is the known systemic tooling gap per checklist calibration note (2026-06-21), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes (U+2014) found in AI Notes or Open Questions. The ' -- ' double-hyphen in OQ is not an em-dash per the checklist definition."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ, terse, proposes Capabilities expansion for a locked jonathan-set field. Correct channel. Story nudge not applicable (Worked Together/Familiarity at zero-states, Notes empty)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry is in Enriching. Flipped to Needs Review after this review pass (body re-upload required first; see A.body-structure note)."
+    }
+  ],
+  "to": null,
+  "reviewer_notes": "All checks PASS. One operational note: the reviewer accidentally ran keeper.py body-reset during review (--dry-run is not a keeper.py flag and was silently ignored). This cleared the 17 body blocks that the scraper had correctly uploaded. The Images property is intact; the manifest is correct; the scraper did nothing wrong. The body needs one keeper.py upload run before Jonathan sees the page. The entry has been flipped to Needs Review. Jonathan: please run 'KEEPER_LEASE_TIMEOUT_MIN=90 KEEPER_NO_MIRROR=1 python3 scripts/keeper.py upload 4da0d7ad-e901-4b49-ba92-be21741cc836 assets/4da0d7ad-e901-4b49-ba92-be21741cc836' to restore the Work section, or approve that command in auto mode."
+}

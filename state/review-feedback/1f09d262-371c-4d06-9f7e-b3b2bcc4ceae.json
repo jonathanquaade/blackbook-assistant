@@ -1,0 +1,116 @@
+{
+  "page_id": "1f09d262-371c-4d06-9f7e-b3b2bcc4ceae",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T10:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct projects: Meandering River, unnamed soundsculpture, IBM FLUX, AI Sculpting, true/false. No captions repeat across projects; images are visually distinct."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "3 interior shots per project for first three projects, plus thumbnail + embed per video project; 3 renders for AI Sculpting; 2 shots for true/false. Goes inside each project, not hero-only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "All captured work (generative LED installations, data-driven spatial interventions, AI-sculpting experiments) matches what Onformative actually does. Judged against the studio's real practice, not the mismatched locked tag."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-15.png opens to onformative.com homepage (confirmed visually). site-16.png opens to instagram.com/onformative profile with logo, 17.6K followers, and grid visible (confirmed visually). Both captions match content."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project plus a source link. Body image blocks all show captions with project name and middle-dot link."
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "3 video embeds present (YouTube for Meandering River, Vimeo for unnamed soundsculpture and IBM FLUX). Each has a thumbnail preview image (hqdefault / vimeocdn) and a linked caption. Images present throughout; not embeds-only."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "Not applicable; ample content captured. No unexplained thin sections."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "27 blocks total: H2 Work + 25 content blocks + 1 divider. No orphan blocks above the heading. No duplication from prior upload. Paragraph metadata lines use ' · ' not em-dash."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct: small specialized hands-on creative team (2-10 people, Berlin)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website: onformative.com. Instagram: instagram.com/onformative (verified correct account in context shot). LinkedIn: linkedin.com/company/onformative. Email: info@onformative.com. All four present."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities is set_by: jonathan (migration-locked). Scout correctly filed OQ proposing Creative technology, 3D & motion, Graphic design, Art practice, Identity systems. Per 2026-07-12 calibration note: locked field + OQ = PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: Germany. Size: 2-10. Work Status: Studio (the entity is the studio itself; no multi-source conflict). Sources named in AI Notes (onformative.com/studio)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy 4 set with reasoning in AI Notes. Optional for org-type entries per calibration; scout provided it anyway with appropriate hedge ('this is a studio entry not an individual')."
+    },
+    {
+      "id": "C.no-contradiction",
+      "result": "pass",
+      "evidence": "Clip note had no relationship facts (Name field was plain 'Onformative', no body text). Zero-states (Never / Don't know them / Unvetted) are valid defaults with no contradicting evidence."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was empty beyond the basic web-clipper data (name + URL). No instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Size hedged ('plausible given lean studio model and financial filings, though exact headcount is not public'). Autonomy hedged ('but this is a studio entry not an individual'). Clients and founding date are verifiable facts, not claims. Seniority + trajectory included (15+ years, named founders + roles)."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-06-12'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields. set_by values correct (jonathan on Capabilities, migration on Name, agent on all scout/scraper fields). Null source_url on zero-state fields is the known systemic tooling gap (not a gate failure per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and OQ contain no em-dashes or double-dashes. Body paragraph metadata lines use ' · ' (middle dot). keeper.py line 547 uses ' · ' not ' -- '; the em-dash bug does not apply here."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, numbered OQ about the locked Capabilities mismatch. Correctly proposes alternatives for Jonathan to confirm. No redundant or unconditional questions. No story nudge needed (Worked Together = Never, no history)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry in Enriching at review time; flipped to Needs Review on PASS verdict."
+    }
+  ],
+  "to": null,
+  "notes": "Clean pass. 5 distinct on-capability projects, 3 video embeds with thumbnails, both context shots verified, no orphan blocks, no em-dashes, scout metadata complete. Capabilities OQ is the correct contract-compliant path for a locked jonathan field."
+}

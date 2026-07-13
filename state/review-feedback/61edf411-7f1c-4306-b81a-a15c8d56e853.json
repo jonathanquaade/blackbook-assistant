@@ -1,0 +1,31 @@
+{
+  "page_id": "61edf411-7f1c-4306-b81a-a15c8d56e853",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "6 distinct projects in non-rejected manifest entries: IBM Technology Garden, H&M Infinite Dreams, GSK, Centersquare, MRI of the Earth, Divergence"},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Multiple interior images per project (GSK molecular particle system, Centersquare bespoke tool UI, MRI UMAP point-cloud); not hero-only"},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All work is computational/generative art and data visualisation, matching Graphic design + Frontend development (web) tags and the proposed additional capabilities in OQ"},
+    {"id": "A.context-shots", "result": "pass", "evidence": "site-10.png: variable.io homepage verified visually (dark theme, wordmark, Solutions section). site-11.png: instagram.com/variable_io/ verified visually (bio: Data Art and Generative Design Studio in London, @nodes.io)"},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All 14 uploaded images carry project name captions with source links in manifest and Notion blocks"},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "2 Vimeo embeds present (IBM Technology Garden vimeo.com/347279603, H&M Infinite Dreams vimeo.com/877087207), each with a thumbnail preview image and paragraph metadata line below using middle-dot separator"},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "No absent sources; studio site fully accessible and captured"},
+    {"id": "A.body-structure-clean", "result": "pass", "evidence": "20 blocks total: [0] H2 Work, [1-18] work items including 12 images + 2 embeds + 2 paragraphs, [19] Divider. Single heading, single divider, no orphan blocks, no duplication"},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type: Studio (set_by agent, verified 2026-07-13)"},
+    {"id": "B.links-present", "result": "pass", "evidence": "Website: https://variable.io, Instagram: https://www.instagram.com/variable_io/ (verified via context shot), LinkedIn: https://uk.linkedin.com/company/variable-io, Email: hello@variable.io"},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Capabilities set_by jonathan (locked migrated field): Graphic design + Frontend development (web). Scout filed OQ proposing Creative technology + 3D & motion. Locked-Capabilities + OQ = PASS per 2026-07-12 calibration note"},
+    {"id": "B.country-size-workstatus", "result": "pass", "evidence": "Country: UK, Size: 2-10 (corrected from pre-set 11-40; sources documented in AI Notes as LinkedIn + studio page), Work Status: Studio"},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Entry is Type: Studio; Autonomy is optional for org-type entries per calibration note. AI Notes names both principals with role/background context"},
+    {"id": "C.no-judgment-contradiction", "result": "pass", "evidence": "No clip note states a relationship fact. Zero-states (Never, Don't know them, Unvetted) are appropriate with no contradicting evidence"},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "clipped.md shows: No clip note text found in Name field. Name is clean. Nothing to act on."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "Clients named are evidenced by actual captured project work. Size correction documented with sources. Founders background stated as career facts. No unhedged inferences. Seniority read present for both principals."},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source: Web clipper, 2026-07-13"},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "All touched fields have provenance entries with correct set_by values. Capabilities correctly set_by jonathan (locked). Null source_urls are the known systemic tooling gap, not a fail."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "Paragraph blocks [4] and [9] use middle-dot separators, confirmed in live Notion blocks. keeper.py line 547 already uses ' · ' not ' -- '. No em-dashes in AI Notes or Open Questions."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Single conditional OQ on Capabilities additions; terse and actionable. No story nudge applies (all judgment fields at zero-state, no relationship evidence)."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Currently Enriching; flipped to Needs Review by this reviewer pass"}
+  ],
+  "to": null
+}
