@@ -1,100 +1,90 @@
 {
   "page_id": "4e4b0f3c-9d79-4442-a84a-a133563e481b",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-13T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-13T10:05:00",
+  "verdict": "pass",
+  "attempt": 2,
   "to": "scraper",
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "11 work image files exist in assets/4e4b0f3c (bumble-dating-trends-01.png, dirty-words-community-01.png, dirty-words-exclusivity-01.png, dirty-words-influence-01.png, dirty-words-nostalgia-01.png, dirty-words-nostalgia-02.png, future-creatives-report-01.png, jagermeister-night-embassy-thumb.jpg, night-embassy-case-video-thumb.jpg, snapchat-friendship-report-01.png, plus site-01.png context shot) but manifest.json only lists the website context shot. keeper.py upload was never run. Notion Images property is null and the page body has no Work section.",
-      "fix": "Update manifest.json with all captured work images (with captions and source links), run keeper.py body-reset then keeper.py upload 4e4b0f3c-9d79-4442-a84a-a133563e481b assets/4e4b0f3c-9d79-4442-a84a-a133563e481b. Verify Notion Images property is populated after upload."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "Only website context shot (site-01.png) is in the manifest. No Instagram profile screenshot was captured, no ig-queue entry exists for this page, and AI Notes does not document any IG capture attempt or throttle block.",
-      "fix": "Attempt a headless scrape.py shot of instagram.com/proteinagency/ for the IG context shot. If IG blocks headless (rate-limited), mark the attempted capture rejected in manifest, add an ig-queue entry ({page_id, name, ig_url, reason, queued_at}), and note the block in AI Notes. Then proceed with upload."
-    },
-    {
-      "id": "D.em-dashes",
-      "result": "fail",
-      "evidence": "Open Questions field contains an em-dash: 'quantitative audience studies) — add Insights & research alongside Brand strategy?'",
-      "fix": "Rewrite the Open Question replacing the em-dash with a colon or comma: e.g. 'site and work portfolio show explicit research methodology (SEED CLUB ethnography, quantitative audience studies): add Insights & research alongside Brand strategy?' Then re-set via keeper.py."
+      "result": "pass",
+      "evidence": "11 work images across 6 distinct projects: Bumble Dating Trends, Dirty Words Issues 1/2/4/5 (4 issues), Future Creatives Report, Snapchat Friendship Report, Jagermeister Night Embassy. All uploaded to Notion Images property and body Work section."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Captured images span multiple distinct projects (Bumble Dating Trends, Dirty Words series multiple issues, Future Creatives Report, Snapchat Friendship Report, Jagermeister Night Embassy) once uploaded."
+      "evidence": "Dirty Words captures 4 separate issue covers plus 2 spreads from Issue 5. Night Embassy has both a programme thumbnail and a case video thumbnail. Goes inside projects."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Captured work (research reports, brand strategy deliverables, cultural insight projects) matches the tagged Brand strategy capability."
+      "evidence": "Capabilities = Brand strategy (locked, set_by jonathan). Captured work (research reports, cultural insight deliverables, brand strategy case studies) matches."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed: proteinagency.com homepage (Protein AGENCY headline, client scatter plot visible). site-02.png confirmed: instagram.com/proteinagency/ profile page (Instagram chrome, handle 'proteinagency', display name 'Protein AGENCY', 2944 followers shown). Both correct and unambiguous."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "conditional",
-      "evidence": "Filenames suggest named projects but manifest entries for work images are missing entirely. Once manifest is populated, each entry must have a caption naming the project and a source link."
+      "result": "pass",
+      "evidence": "Every manifest entry has a caption naming the project and a source link. No anonymous images."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Two video thumbnails (jagermeister-night-embassy-thumb.jpg, night-embassy-case-video-thumb.jpg) are present. Protein is primarily a strategy agency; embed-or-not is a scraper judgment call. No obvious video-first deliverable missed."
+      "evidence": "Two Night Embassy thumbnails present and linked to the Vimeo/work URL. No standalone embeddable YouTube/Vimeo found on project pages; thumbnails with links are the correct pattern. Protein is a strategy agency, not video-first."
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "Covered under A.context-shots above: IG context shot absence is not documented.",
-      "fix": "See A.context-shots fix."
+      "result": "pass",
+      "evidence": "No unexplained absences. IG context shot present and confirmed correct."
     },
     {
       "id": "A.body-structure",
-      "result": "fail",
-      "evidence": "No Work section exists in Notion body (upload was never run). This resolves once upload is completed.",
-      "fix": "See A.project-diversity fix."
+      "result": "pass",
+      "evidence": "Notion body: 14 blocks total (h2 'Work' + 12 image blocks + divider). Clean, no orphan blocks from prior uploads."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Agency, set_by agent, with reasoning in AI Notes (large, full-service, strategy-at-scale)."
+      "evidence": "Type = Agency, set_by agent, reasoning in AI Notes (large, full-service, strategy-at-scale)."
     },
     {
       "id": "B.all-links-present",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, Email all populated and plausible."
+      "evidence": "Website, Instagram, LinkedIn, Email all populated and verified."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Capabilities = [Brand strategy], set_by jonathan (locked/migration). Open Question proposes adding Insights & research. Correct contract-compliant output per checklist calibration note 2026-07-12."
+      "evidence": "Capabilities = [Brand strategy], set_by jonathan (locked migration entry). OQ proposes adding Insights & research. Correct contract-compliant output per calibration note 2026-07-12."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country = UK, Size = 11-40, Work Status = Studio (correct for an org-type entry). AI Notes names sources checked (proteinagency.com, protein.co.uk, LinkedIn, Companies House)."
+      "evidence": "Country = UK, Size = 11-40, Work Status = Studio. Sources checked named in AI Notes (proteinagency.com, protein.co.uk, LinkedIn, Companies House)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Autonomy is OPTIONAL for org-type entries (Agency). No Autonomy field set, no seniority/leadership read required per checklist calibration note 2026-06-21."
+      "evidence": "Org-type entry (Agency). Autonomy optional per calibration note 2026-06-21. Not required."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with the clip note which had no relationship instructions."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) consistent with clip note (plain name only, no relationship instructions). clipped.md confirms."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note was plain name only (no instructions). clipped.md confirms no instructions were present."
+      "evidence": "Clip note was plain name only. clipped.md confirms no instructions present."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes contains verifiable factual claims (clients, founding year, LinkedIn headcount, Companies House record). No unverified inferences stated as fact. Does not include seniority/Autonomy (org entry, not required)."
+      "evidence": "AI Notes states verifiable facts only (founding year, named clients, Companies House headcount, LinkedIn team size). No unverified inferences asserted as fact. Org entry; seniority/Autonomy read not required."
     },
     {
       "id": "D.source-filled",
@@ -104,19 +94,23 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file present with set_by and verified_at for all touched fields. null source_url is a known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+      "evidence": "Provenance present with correct set_by for all fields (Capabilities = jonathan, others = agent or migration). null source_url is the known systemic tooling gap, not a gate failure per calibration note 2026-06-21."
+    },
+    {
+      "id": "D.em-dashes",
+      "result": "pass",
+      "evidence": "Open Questions confirmed no em-dash: '...quantitative audience studies): add Insights & research alongside Brand strategy?' uses a colon. AI Notes has no em-dashes. No embed blocks present so the keeper.py line 547 bug does not apply."
     },
     {
       "id": "D.open-questions-terse",
-      "result": "fail",
-      "evidence": "Open Question contains an em-dash (covered under D.em-dashes). Otherwise the OQ is terse and appropriate.",
-      "fix": "See D.em-dashes fix."
+      "result": "pass",
+      "evidence": "One question, terse, conditional (Capabilities is locked; proposing an addition is appropriate). No redundant or already-answered fields asked about."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching status. Has not been flipped to Needs Review without the reviewer gate."
+      "evidence": "Entry was in Enriching. Flipped to Needs Review by this gate pass."
     }
   ],
-  "summary": "Three blocking failures: (1) keeper.py upload was never run so all 11 work images in assets/ are absent from Notion (Images property null, no Work section in body); (2) no Instagram context shot and no documented block/queue entry; (3) em-dash in Open Questions text. The scout metadata is complete and correct. Fix: populate manifest.json with all work image entries, attempt IG context shot or document/queue it, fix the em-dash in OQ, then run body-reset + upload."
+  "summary": "All three prior failures resolved: (1) 12 images uploaded (11 work + 1 IG context shot), Notion body clean with h2 Work + 12 image blocks + divider; (2) IG context shot present and confirmed as genuine instagram.com/proteinagency/ profile; (3) em-dash in Open Questions replaced with a colon. All metadata checks pass. Entry flipped to Needs Review."
 }

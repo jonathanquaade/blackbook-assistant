@@ -1,0 +1,32 @@
+{
+  "page_id": "4f9f95ca-8b1d-46fe-af52-d17e176cad34",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "No images; absence documented in AI Notes (entity unidentifiable at 0.8 floor)."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "N/A; absence explained."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "N/A; no work captured to misclassify."},
+    {"id": "A.context-shots", "result": "pass", "evidence": "No URL exists to screenshot; entity unidentified; blocker documented in AI Notes."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "No images present."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "N/A; no work to embed."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "AI Notes documents seven candidates checked (x5.co, x5.studio, x5.agency, teamx5, X5 Studios Miami, X5 Tech Moscow, X5 Website Designer Leicester) with specific reasons each was ruled out or insufficient."},
+    {"id": "A.body-structure-clean", "result": "pass", "evidence": "No upload ran; asset dir contains only clipped.md; no orphan block risk."},
+    {"id": "B.type-classified", "result": "pass", "evidence": "Type=Studio, agent-set; consistent with migration data (11-40 employees)."},
+    {"id": "B.all-findable-links", "result": "pass", "evidence": "All links empty; entity cannot be identified so no link is findable. Blocker documented."},
+    {"id": "B.capabilities-tagged", "result": "pass", "evidence": "Capabilities=Frontend development (web), set_by: jonathan (locked). Scout correctly left it untouched."},
+    {"id": "B.country-size-work-status", "result": "pass", "evidence": "Country/Size inherited from migration (correct). Work Status=Unknown (agent); correct output when entity cannot be confirmed."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Org-type entry (Studio); Autonomy is optional per calibration note. AI Notes explains why no read is possible."},
+    {"id": "C.no-contradicting-judgment", "result": "pass", "evidence": "Clip note was bare name only; no relationship facts stated; zero-states are clean."},
+    {"id": "C.clip-note-acted-on", "result": "pass", "evidence": "Clip note was Name=X5 only, no instructions, no URL, no relationship text. Nothing to act on beyond name."},
+    {"id": "C.ai-notes-hedged", "result": "pass", "evidence": "AI Notes hedges throughout (cannot identify, insufficient evidence, best candidate). Seniority/Autonomy omission is explained."},
+    {"id": "D.source-filled", "result": "pass", "evidence": "Source=Web clipper, 2020-11-01; matches created_time in clipped.md."},
+    {"id": "D.provenance-written", "result": "pass", "evidence": "Provenance file present with correct set_by values on all fields. Null source_url is the known systemic tooling gap, not a gate failure."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "AI Notes, Open Questions, and Source reviewed; no em-dashes found."},
+    {"id": "D.open-questions-terse", "result": "pass", "evidence": "One question; names the best candidate; gives Jonathan enough context to confirm or redirect; not redundant."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Status flipped to Needs Review by this reviewer after gate passes."}
+  ],
+  "to": "scout",
+  "notes": "Special case: thin 2020 migration entry with only Name=X5, Country=UK, Size=11-40, no URL, no clip note, no body. Scout correctly documented an identification blocker after seven candidates, named the best guess, filed a focused Open Question, and used Unknown/empty for all unverifiable fields. Every absence is explained. This is the correct output for an unidentifiable entry; Jonathan's answer to the Open Question unblocks all further enrichment."
+}

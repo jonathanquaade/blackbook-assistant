@@ -1,46 +1,49 @@
 {
   "page_id": "81243696-05f1-4170-9bcf-dbf53c2a927d",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "Images span distinct subjects (exhibition interiors, websites on phone, outdoor installation documentation) so are not the same project from multiple angles. However this check cannot be fully confirmed because captions do not name projects; see A.uncaptioned-images below."
+      "evidence": "13 work images span 6 distinct named projects: De Commemoraton exhibition, Double Bound Economies, Guy de Cointet Complete Plays, Helden Creeren/Hero-Making, ENSASE website, Interiors Notes and Figures. No captions repeat across unrelated projects."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "site-06 and site-07 are outdoor documentary photos of concrete/stone fragments with no design work visible. site-09 is an Instagram story screengrab of a person presenting in front of a screen at an event. These are not interior design shots and add no depth to the portfolio view. The notable work cited in AI Notes (Belgian Pavilion catalogue/identity, Venice Biennale 2014) is not represented by any image that goes inside those projects.",
-      "fix": "Replace site-06, site-07, and site-09 with interior/spread shots from named projects. The Belgian Pavilion Venice 2014 catalogue, the exhibition graphics from site-02 and site-03 contexts, or publication spreads from Spector/Roma publications are the documented client projects; go inside those."
+      "result": "pass",
+      "evidence": "dbe-02/03 are interior spreads of Double Bound Economies. gdc-02/03 are interior page spreads of the Guy de Cointet catalogue. int-02/03 are interior spread and index pages of Interiors Notes and Figures. The three weak images from attempt 1 (site-06, site-07, site-09) are all marked rejected in the manifest with documented reasons."
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Capability tagged is Graphic design (with an Open Question proposing Identity systems and Web design as additions). The images show exhibition typography, multilingual wall text, and web projects on phones, which is consistent with a graphic/editorial cultural-sector studio. No off-capability capture detected."
+      "evidence": "Tagged Capability is Graphic design. All 13 work images show publication design (dbe, gdc, int batches), exhibition typography/signage (site-02/03/05), and web design on device (site-08). No off-capability capture."
     },
     {
       "id": "A.context-shots",
       "result": "pass",
-      "evidence": "site-04.png is the website context shot (giletti-dapra.com homepage grid, correct). No Instagram context shot is present, but AI Notes documents 'No public Instagram or LinkedIn found after search' and no IG account is known for this studio, so there is nothing to screenshot. Absence is explained; sanctioned omission."
+      "evidence": "site-04.png confirmed as giletti-dapra.com website grid (homepage project tiles visible). No Instagram found for this studio; AI Notes documents 'No public Instagram or LinkedIn found after search.' No IG to screenshot or queue. Sanctioned omission."
     },
     {
       "id": "A.uncaptioned-images",
-      "result": "fail",
-      "evidence": "site-01, site-02, site-03 are all captioned 'Website, giletti-dapra.com' with no project name. site-05, site-06, site-07, site-08, site-09 are all captioned 'Giletti-Dapra studio, portfolio overview' with no project name. Not a single work image names its project. AI Notes lists specific known projects (Belgian Pavilion identity + catalogue, Venice Biennale 2014; ENSASE website visible in site-08 is at least identifiable from the URL). The checklist requires every image to name its project plus a source link.",
-      "fix": "Caption every work image with its specific project name: e.g. site-02 and site-03 appear to be exhibition graphics for 'De Commemoraton' (visible wall text); site-05 appears to be 'Helden Creeren' exhibition; site-08 is the ENSASE (Ecole Nationale Superieure d'Architecture de Saint-Etienne) website. Identify and name each. The 12 files in assets/ that were NOT included in the manifest (dbe-01/02/03, gdc-01/02/03, int-01/02/03, kt-01/02/03) suggest additional project batches were downloaded but never added to the manifest or Notion; review those and prefer named-project images over anonymous site pulls."
+      "result": "pass",
+      "evidence": "All 14 active manifest entries have named-project captions and source links. Context shot has caption 'Website' with link. All 13 work images carry specific project names. Previously flagged failure fully resolved."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "Studio is Graphic design; no audio/video capability tagged. No embed requirement applies."
+      "evidence": "Studio tagged Graphic design only. No video/audio work embedded. No embed requirement applies."
     },
     {
       "id": "A.absence-explained",
       "result": "pass",
-      "evidence": "No Instagram found; documented in AI Notes. Website 403-blocked; documented in AI Notes and Open Questions. No IG queue entry is present but there is no known IG to queue."
+      "evidence": "No Instagram found; documented in AI Notes. Website 403-blocked; documented in AI Notes and Open Question 2. No unexplained gaps."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Notion body has exactly 16 blocks: heading_2 'Work', 14 image blocks, divider. No orphan blocks above the Work heading, no duplicates. Clean single-upload structure confirmed via block count."
     },
     {
       "id": "B.type-classified",
@@ -50,37 +53,37 @@
     {
       "id": "B.links-present",
       "result": "pass",
-      "evidence": "Website set (eurogroupe.org, with Open Question about redirect to giletti-dapra.com). Instagram and LinkedIn documented as not found in AI Notes. Email not set; AI Notes does not mention a search for public email. Minor gap but tolerable for a studio with no public contact page reachable due to 403 block."
+      "evidence": "Website set (eurogroupe.org, Open Question asks about redirect to giletti-dapra.com). Instagram and LinkedIn not found after search, documented in AI Notes. Email: site is 403-blocked so a public contact page could not be verified; absence is a documented blocked-source gap, not a skipped search."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged (Jonathan's set_by). Open Question proposes adding Identity systems and Web design based on research. Appropriate handling: capabilities are jonathan-set so an Open Question is the correct path."
+      "evidence": "Graphic design tagged (set_by: jonathan, locked from migration). Open Question 1 proposes adding Identity systems and Web design. Correct contract-compliant handling per calibration note (2026-07-12)."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country: Belgium. Size: 2-10. Work Status: Studio. All consistent with a two-person Brussels studio. AI Notes states basis."
+      "evidence": "Country: Belgium. Size: 2-10. Work Status: Studio. Consistent with a two-person Brussels studio. AI Notes provides basis."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "Studio entry; Autonomy is optional per checklist calibration note (2026-06-21). AI Notes includes a seniority read ('mid-to-senior studio founders, approximately 12+ years of practice'). Sufficient."
+      "evidence": "Studio entry; Autonomy is optional per calibration note (2026-06-21). AI Notes includes seniority read: 'mid-to-senior studio founders, approximately 12+ years of practice; highly specialised in content-rich, editorial and cultural-sector design.' Sufficient for an org entry."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are not contradicted by any evidence in the clip note or entry content. Source is 'Web clipper, 2020-11-01' with no relationship signal."
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) not contradicted by any evidence. Source is a bare web clipper with no relationship signal."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Clip note is a bare web clipper capture with no instructions, relationship facts, or passcodes. Nothing to act on beyond the baseline fields."
+      "evidence": "Clip note is a bare web clipper capture with no instructions, relationship facts, or passcodes. Nothing to act on beyond baseline fields."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes hedges inferences appropriately. 'Founded circa 2012-2013', 'approximately 12+ years', 'Autonomy not set (studio entry)' are all appropriately hedged. Verifiable facts (Belgian Pavilion, clients, Werkplaats Typografie training) are asserted. No em-dashes present."
+      "evidence": "AI Notes hedges inferences: 'founded circa 2012-2013', 'approximately 12+ years', 'Autonomy not set (studio entry)'. Verifiable facts (clients, training institutions, specific projects) stated plainly. No em-dashes. Seniority read present."
     },
     {
       "id": "D.source-filled",
@@ -90,25 +93,24 @@
     {
       "id": "D.provenance",
       "result": "pass",
-      "evidence": "Provenance file present with set_by values for all touched fields. source_url is null throughout, which is a known systemic tooling gap, not a gate failure per calibration note (2026-06-21). Capabilities is correctly marked set_by: jonathan (migrated)."
+      "evidence": "Provenance file present with set_by for all touched fields. Capabilities correctly set_by: jonathan (migrated, locked). source_url null throughout (known systemic tooling gap, not a gate failure per calibration 2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes, Open Questions, and captions reviewed; no em-dashes found."
+      "evidence": "All 16 Notion body blocks checked programmatically: no em-dashes in any paragraph block. Image captions use the correct ' · ' separator. AI Notes and Open Questions contain no em-dashes."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Three questions: (1) Capabilities addition proposal, conditional and reasoned. (2) Website redirect update, practical. (3) Rating? Terse and appropriate for an unrated entry. No field already set is re-asked."
+      "evidence": "Three questions: (1) Capabilities addition, conditional and reasoned. (2) Website redirect, practical. (3) Rating?, terse. No field already holding a non-zero value is re-asked. Story nudge not triggered (Notes empty, but Worked Together is Never and Familiarity is Don't know them)."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is in Enriching. Status flip to Needs Review is blocked by this review's fails; correct."
+      "evidence": "Status flipped to Needs Review by this reviewer on passing this gate."
     }
   ],
-  "failing_checks": ["A.depth-over-breadth", "A.uncaptioned-images"],
-  "summary": "Two failures, both in the work/images section. (1) All 8 work images (excluding the context shot) carry generic captions with no project names: 'Website, giletti-dapra.com' or 'Giletti-Dapra studio, portfolio overview'. The checklist requires every image to name its project. The studio's known projects (De Commemoraton exhibition, Helden Creeren exhibition, ENSASE website, Belgian Pavilion identity/catalogue) are partially identifiable from the images but none are captioned as such. (2) Three images (site-06, site-07, site-09) add no design depth: two are outdoor stone-fragment documentary photos with no visible graphic design work, one is an Instagram story event photo. Also: 12 image files in assets/ were downloaded but never added to the manifest or Notion (dbe-*, gdc-*, int-*, kt-* batches), suggesting incomplete or abandoned project pulls. Scraper needs to: (a) identify and name each project per image, (b) replace the three weak images with interior/spread shots from named projects, (c) review the 12 orphan files and include strong ones under their correct project names.",
-  "to": "scraper"
+  "summary": "All checks pass. The two failures from attempt 1 (uncaptioned images and weak depth shots) are fully resolved: 13 work images now span 6 distinct named projects with interior/spread depth, all 7 rejected files properly marked in the manifest, body is clean with 16 blocks and no orphan residue, and no em-dashes detected anywhere in the body or metadata. Entry is ready for Jonathan.",
+  "to": "jonathan"
 }
