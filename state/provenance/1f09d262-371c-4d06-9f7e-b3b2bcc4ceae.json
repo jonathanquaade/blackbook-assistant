@@ -4,9 +4,9 @@
   "fields": {
     "Website": {
       "value": "https://onformative.com/",
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -22,17 +22,17 @@
     },
     "Size": {
       "value": "2\u201310",
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "Germany"
       ],
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
-      "source_url": null,
-      "verified_at": null,
+      "value": "Studio",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,54 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/onformative/",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/onformative/",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "info@onformative.com",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2026-06-12",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Onformative is a Berlin studio for generative art, design, and creative technology, founded in 2010 by Julia Laub (co-founder, managing director) and Cedric Kiefer (co-founder, creative lead). Both founders have 15+ years building at the intersection of code, art, and brand communication. Clients include Nike, Samsung, Porsche, IBM, AT&T, Klarna, and OPPO; work spans data-driven installations, AI-augmented artworks, generative brand systems, and spatial interventions. The studio self-describes as a small, experienced core team with flat hierarchies; the 2-10 size is plausible given the lean studio model and financial filings, though exact headcount is not public. Autonomy set to 4: director-level founders with deep specialist practice, but this is a studio entry not an individual. Work Status: Studio (the entity is the studio itself). Capabilities currently tagged as Frontend development (web) appears to be a migration bulk default and likely does not reflect the studio's actual practice; open question filed.",
+      "source_url": "https://onformative.com/studio/",
+      "verified_at": "2026-07-13T10:09:42",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: the current tag \"Frontend development (web)\" looks like a migration bulk-default and does not match onformative's actual practice. Their work is generative design, data-driven installations, AI-augmented art, spatial interventions, and identity systems using code. Suggested replacement: Creative technology, 3D & motion, Graphic design, Art practice, Identity systems. Confirm or adjust?\n",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:09:57",
+      "set_by": "agent"
     }
   }
 }

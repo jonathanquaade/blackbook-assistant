@@ -1,0 +1,116 @@
+{
+  "page_id": "2f0d20bc-763d-4ee6-9326-a546500b7540",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T10:15:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No images present, but absence is explained: scout could not identify the person at 0.8 confidence. Checklist A.absence-explained covers this case."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "N/A -- no images possible without identification."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "N/A -- no images possible without identification."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No website or Instagram URL exists to screenshot. Absence flows from the identification failure, which is documented. Not a check failure."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "No images uploaded -- nothing to caption."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "N/A -- no source located."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explicitly records all searches attempted: web search, IG handles @wongyoung and @wongyoung_, Behance, LinkedIn snippets, domain probes (.com/.kr/.studio/.design). Reason for absence is documented, not silent."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "body-reset --dry-run shows 0 blocks in body. No stale or orphan blocks present."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person, set_by agent. Reasonable default for a Name-only entry; no evidence contradicts it."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Scout documented domain probes and handle searches. No link was findable because the person cannot be identified. Absence is earned, not skipped."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = Graphic design, set_by jonathan (migration lock). Per calibration note (2026-07-12): locked Capabilities cannot be overwritten; scout correctly left it and did not propose changes because no additional evidence was surfaced. PASS."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = South Korea (migration, set_by migration). Size = 1 (agent). Work Status = Unknown (agent -- correct: no sources found). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy not set. This is correct: the person cannot be identified so no work history exists to ground an Autonomy estimate. Setting a number without evidence would breach the 0.8 confidence floor. AI Notes explicitly notes 'seniority and work history unknown pending identification'."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with a 2020 migration entry with no clip note and no relationship signal."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md shows: Raw Name = Wong Young, no clip note or body text. Nothing to act on beyond the name itself."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes uses hedged language throughout ('may be surname-first', 'suggesting', 'unknown pending identification'). No assertions made without evidence. Seniority is noted as unknown with a clear reason."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01', matching the entry's created_time. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present for all touched fields with correct set_by values (agent/migration/jonathan). Null source_url is the known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes, Open Questions, and Source field contain no em-dashes. Body is empty so no embed paragraph lines exist."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "One Open Question filed: asks for website, IG handle, or Korean name spelling -- exactly the identifying detail needed. Conditional: it is the only ask because all other fields are either locked (jonathan) or correctly Unknown/empty given the unresolved identity. No fields are double-asked."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Currently Enriching. Will be flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "notes": "Blocked-entry special case: scout ran real due diligence on a Name-only 2020 migration entry with no URL and no clip note. The identification barrier is documented; all checklist items that require a source URL are N/A with that reason on record. The entry reaches Jonathan with one clean Open Question so he can supply identifying detail. This is the correct and complete output for this situation.",
+  "to": "scout"
+}
