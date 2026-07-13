@@ -1,125 +1,116 @@
 {
   "page_id": "11af69a0-53ea-4156-bb4d-634dc0bde427",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-12T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "12 work images are on disk (adobe-max-02 through adobe-max-07, lego-ldf-01/02/03, levis-01/02/03) but none appear in manifest.json. The manifest lists only 5 context shots. The Notion body has never received work content because keeper.py upload was never run against the completed set. Entry is effectively image-less in Notion.",
-      "fix": "Finalize manifest.json to include all work images with correct captions and source links, then run keeper.py body-reset and keeper.py upload. Verify the body in Notion shows the Work section."
-    },
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-01.png (captioned 'Website') is a 404 DEPLOYMENT_NOT_FOUND error page, not anyways.co. site-02.png (captioned 'Instagram profile') is an Instagram 'Something went wrong' error page -- it is NOT marked rejected in the manifest, NOT documented as a throttle block in AI Notes, and NOT queued to state/ig-queue.json, so the sanctioned exception does not apply. site-03.png and site-04.png are Wayback Machine calendar pages, not actual site captures. Only site-05.png (archived Nov 2024 homepage) is a valid context shot.",
-      "fix": "Recapture the website context shot using scrape.py shot on a working URL (e.g. the Wayback snapshot URL used for site-05, or anyways.co via archive). For Instagram: either (a) successfully capture the real instagram.com/anywayscreative profile, or (b) mark the broken capture as rejected in the manifest, document the throttle block in AI Notes, and add the entry to state/ig-queue.json. Remove or replace the two Wayback calendar page shots (site-03, site-04) -- they are not useful context shots."
-    },
-    {
-      "id": "A.on-capability",
-      "result": "fail",
-      "evidence": "levis-01/02/03.jpg are lifestyle fashion model photographs. Anyways is tagged Graphic design (and Open Question #1 proposes adding Brand strategy, Creative direction, Identity systems). Fashion model shots are off-capability for all of those. The Levi's project likely involved brand/creative direction work, but the captured images show only the product photography output, not the graphic/brand work.",
-      "fix": "Replace the levis lifestyle shots with on-capability images: identity system mockups, brand materials, typographic layouts, or campaign graphic assets that show graphic design or brand work. If the Levi's project has no usable graphic/brand-system images, substitute a different Anyways project that does."
+      "result": "pass",
+      "evidence": "11 images across 3 distinct projects: Adobe MAX rebrand x6, LEGO Piece Garden x3, Google Pixel World of Magic x1, plus 1 website context shot. No repeated captions across projects."
     },
     {
       "id": "A.depth-over-breadth",
       "result": "pass",
-      "evidence": "Three projects represented (Adobe MAX, LEGO LDF, Levi's) with multiple images each. Adobe MAX images show system elements (motion stills, color palettes). Reasonable spread if manifest is fixed."
+      "evidence": "Adobe MAX images go inside the system: icon grid, full visual identity, environmental branding at conference, outdoor poster, design process and material exploration, colour palette. LEGO shows campaign identity and graphic system. More than hero shots."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities locked at Graphic design; OQ proposes Brand strategy / Identity systems / Creative direction. All captured work (Adobe MAX identity, LEGO campaign graphics, Google Pixel branded environment) is on-capability for a graphic/brand agency. Levi's lifestyle shots correctly rejected in manifest. Google Pixel experiential shot is borderline but captioned honestly (taste is Jonathan's)."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot (site-05.png) visually confirmed as Wayback Machine archived anyways.co homepage showing the wordmark and nav. Caption correctly notes 'archived Nov 2024; studio merged into BUCK in Feb 2025'. IG context shot (site-02.png) marked rejected in manifest with reason 'Instagram error page, not the real profile. IG capture queued to ig-queue.json.' AI Notes states 'Instagram context shot failed headless (error page); queued to ig-queue.json for logged-in capture.' Entry confirmed in ig-queue.json at line 1998. Sanctioned IG-throttle exception fully met."
     },
     {
       "id": "A.no-uncaptioned-images",
-      "result": "fail",
-      "evidence": "Work images on disk have no manifest entries at all -- they cannot have captions in Notion since they were never uploaded. Cannot assess captions for images that were never included in the manifest.",
-      "fix": "Add each work image to manifest.json with caption (project name + context) and source link before running upload."
+      "result": "pass",
+      "evidence": "All 11 active manifest entries have project-named captions. Notion body confirms captions present on all 11 image blocks."
     },
     {
       "id": "A.embeds-for-video",
       "result": "pass",
-      "evidence": "No video/audio capability tagged. Entry is graphic design / brand; images are the appropriate medium."
+      "evidence": "No video/audio capability. Graphic design / brand agency; images are the correct medium."
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "The IG error context shot is silently broken with no documentation. The missing email is unaddressed. The website being down (404) is noted in AI Notes only indirectly (merger into BUCK); it is not documented as the reason for the broken website context shot.",
-      "fix": "Document in AI Notes: (1) anyways.co is a 404 post-merger so a live website screenshot was unobtainable, archived snapshot used instead; (2) IG capture produced an error page due to rate-limiting, entry queued to ig-queue.json. Also note email search outcome (dissolved studio, no public contact found)."
+      "result": "pass",
+      "evidence": "AI Notes covers: (1) anyways.co returns 404 post-dissolution, Wayback archived snapshot used; (2) IG context shot failed headless, queued; (3) hello@anyways.co found but studio dissolved Feb 2025, address likely inactive."
     },
     {
       "id": "A.body-structure-clean",
-      "result": "fail",
-      "evidence": "Cannot confirm body structure because upload was never run with work images. The manifest only contains context shots, so the Notion body either has no Work section or a Work section with only context shots and no project images.",
-      "fix": "After fixing the manifest, run keeper.py body-reset then keeper.py upload to build a clean Work section."
+      "result": "pass",
+      "evidence": "Notion body has exactly 13 blocks: h2 Work + 11 image blocks + divider. No orphan blocks, no duplicates. No paragraph metadata lines (all manifest items are images, no embeds), so the keeper.py upload em-dash bug (line 547) does not fire here."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type = Agency. Anyways at 53 people with Nike/Adobe/Google clients and full-service brand campaigns fits Agency over Studio per CLAUDE.md definition."
+      "evidence": "Type = Agency. Correct for a 53-person full-service creative agency with Nike, Google, Adobe clients."
     },
     {
       "id": "B.all-links-present",
-      "result": "fail",
-      "evidence": "Email is absent with no explanation in AI Notes. Website, Instagram, and LinkedIn are present.",
-      "fix": "Search for a public contact email for Anyways / BUCK European group (post-merger contact may redirect there). If genuinely none found after searching, note 'No public email found; studio dissolved Feb 2025 into BUCK' in AI Notes."
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn all present. Email (hello@anyways.co) was found but not populated in the Email field because the studio dissolved; this is documented in AI Notes with reasoning. Search was not skipped. Note for Jonathan: AI Notes contains the email address if he wants it added."
     },
     {
       "id": "B.capabilities-tagged",
-      "result": "fail",
-      "evidence": "Only 'Graphic design' is tagged, yet the scout itself raised Open Question #1 flagging Brand strategy, Creative direction, and Identity systems as evident from the work. The scout left a known gap unfixed rather than resolving it or escalating clearly. A dissolved studio's capabilities are factual and findable from its past work.",
-      "fix": "Resolve Open Question #1 now: add Brand strategy, Creative direction, and Identity systems to Capabilities (all supported by Adobe MAX rebrand, Hinge/Nike/Levi's campaigns). Clear OQ #1 once done, or note in OQ that this requires Jonathan's confirmation if taxonomy is uncertain."
+      "result": "pass",
+      "evidence": "Capabilities = Graphic design, set_by: jonathan (locked, migration entry). OQ 1 proposes adding Brand strategy, Creative direction, Identity systems. Per checklist calibration (2026-07-12): locked Capabilities + OQ is the correct contract-compliant output. Not a fail."
     },
     {
       "id": "B.country-size-work-status",
       "result": "pass",
-      "evidence": "Country = UK, Size = 41-100 (consistent with PitchBook ~53), Work Status = Studio (org entity; schema has no Agency-specific option). Sources named in AI Notes."
+      "evidence": "Country UK, Size 41-100, Work Status Studio (org entity). Sources named in AI Notes (LinkedIn 11-50, PitchBook ~53)."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "This is an Agency/org entry. Per checklist calibration note (2026-06-21), Autonomy is optional for org-type entries. AI Notes include a leadership/founder read (Alex Bec and Will Hudson). Not a failure."
+      "evidence": "Agency / org entry. Per calibration (2026-06-21), Autonomy is optional for org-type entries. AI Notes includes leadership read (co-founders Alex Bec and Will Hudson)."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note states a relationship. Zero-states (Never, Don't know them, Unvetted) are not contradicted by any evidence."
+      "evidence": "No clip note relationship stated. Zero-states (Never, Don't know them, Unvetted) not contradicted by any evidence."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "No clipped.md exists (file not found), so no clip-note instructions were present beyond the basic URL. The Name field is clean."
+      "evidence": "clipped.md contains only 'Work' (a section heading from the page body, no Jonathan instructions). Name field is clean."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes use factual, verifiable claims (clients, merger date, co-founders). Headcount is appropriately hedged ('approximately 53'). Work Status reasoning is documented. No unverified inferences asserted as fact."
+      "evidence": "AI Notes use verifiable facts (clients, merger date, co-founders, IG bio). Headcount hedged ('approximately 53'). Dissolution clearly stated. No unverified inferences asserted as fact. Seniority read correctly deferred ('No individual seniority read applicable' for an org entry)."
     },
     {
       "id": "D.source-filled",
-      "result": "fail",
-      "evidence": "Source = 'Web clipper' with no created date appended. CLAUDE.md requires 'Web clipper, <page created date>' for backfill entries where no other provenance text exists.",
-      "fix": "Retrieve the page created_time via the API and update Source to 'Web clipper, YYYY-MM-DD'."
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Date present."
     },
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file exists for all touched fields. source_url is null across the board -- per calibration note (2026-06-21) this is a known systemic tooling gap and is not a gate failure. set_by values are correct (agent for factual fields, jonathan for Capabilities which was set by migration/Jonathan)."
+      "evidence": "Provenance file covers all touched fields with correct set_by values (jonathan for Capabilities, agent for all others). source_url null is a known systemic tooling gap, not a gate failure per calibration (2026-06-21)."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "AI Notes and Open Questions contain no em-dashes. Body upload never ran so no keeper.py upload em-dash bug applies yet."
+      "evidence": "No em-dashes in AI Notes or Open Questions. No paragraph metadata blocks in the Notion body (images-only manifest), so the keeper.py line 547 bug does not apply."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "Two questions present, both terse and conditional. OQ #2 (keep or reject post-merger) is appropriate for Jonathan to decide."
+      "evidence": "Two terse, conditional questions: OQ 1 proposes Capabilities additions (correct channel for locked field); OQ 2 asks keep or reject post-dissolution (appropriate Jonathan decision). No questions asked for fields that already have non-zero values."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Entry is still in Enriching. Reviewer holds it there on FAIL."
+      "evidence": "Entry in Enriching; reviewer flipping to Needs Review now."
     }
   ],
-  "to": "scraper",
-  "summary": "6 failures, all fixable by the scraper. Critical: (1) work images on disk were never added to manifest.json so Notion has no work content at all -- finalize the manifest and run body-reset + upload; (2) both context shots are error pages and need recapture or proper rejection/queuing per the IG exception rule; (3) levis lifestyle shots are off-capability for a graphic design/brand entry, replace with on-capability graphic/brand assets; (4) Capabilities are incomplete (Brand strategy, Creative direction, Identity systems clearly evidenced); (5) Source needs a created date; (6) email absence unaddressed. Fix all six and resubmit."
+  "to": null,
+  "summary": "All 20 checks pass on re-review. The scraper resolved all 6 prior failures: work images finalized in manifest and uploaded (11 images, 3 projects); bad context shots rejected/documented/queued per sanctioned exception; Levi's off-capability shots rejected; Capabilities correctly handled via OQ (locked field); Source date filled; email absence documented in AI Notes. Notion body is clean (h2 + 11 images + divider, no orphan blocks). Ready for Jonathan."
 }
