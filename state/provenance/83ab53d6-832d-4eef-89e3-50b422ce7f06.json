@@ -15,18 +15,42 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "11\u201340",
+      "value": "100+",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
-        "UK"
+        "UK",
+        "USA",
+        "Canada",
+        "Germany",
+        "France",
+        "Australia",
+        "India",
+        "Japan",
+        "Singapore",
+        "Spain",
+        "Italy",
+        "Netherlands",
+        "Sweden",
+        "Denmark",
+        "Norway",
+        "Ireland",
+        "Belgium",
+        "Switzerland",
+        "Poland",
+        "Brazil",
+        "Mexico",
+        "China",
+        "Hong Kong",
+        "South Korea",
+        "Malaysia"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
@@ -41,9 +65,9 @@
       "set_by": "agent"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-13T10:34:35",
       "set_by": "agent"
     },
     "Name": {
@@ -51,6 +75,67 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Agency",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "Capabilities": {
+      "value": [
+        "Brand strategy",
+        "Creative direction",
+        "Film & video production",
+        "Insights & research",
+        "Social media content",
+        "Web design"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://www.theandpartnership.com",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/theandpartnership/",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://uk.linkedin.com/company/the&partnership",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "hello@theandpartnership.com",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2026-07-13",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "The & Partnership (rebranded T&Pm after merging with mSix&Partners in March 2024) is a global full-service advertising and media network, London-headquartered (Charlotte Building, 17 Gresse Street), backed by WPP and GroupM. Approx 1,900 people across 45 offices on four continents; over $1.2bn in billings; largest client is Toyota. Core offer spans campaign creative, film and TV production, media planning and buying, brand strategy, data and analytics, and AI-powered content. This is a large ad network that commissions and directs work at scale rather than a small hands-on execution studio. Country field shows primary markets only; full footprint covers ~40 countries across EMEA, Americas, APAC. Size corrected to 100+ from erroneous pre-filled 11-40. Open question filed on fit for the blackbook.",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:35",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. The & Partnership (now T&Pm) is a ~1,900-person WPP-backed global ad network with 45 offices, operating as an AOR for Toyota and similar large clients. It directs work at scale rather than doing hands-on execution. Worth keeping in the blackbook as a contact/reference, or should this be Rejected?\n",
+      "source_url": null,
+      "verified_at": "2026-07-13T10:34:45",
+      "set_by": "agent"
     }
   }
 }
