@@ -1,0 +1,94 @@
+{
+  "page_id": "7fd49af4-0a36-4c25-aa42-c33e8824e586",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.body-structure",
+      "result": "fail",
+      "evidence": "Notion page body has 0 blocks and Images property has 0 files. keeper.py upload was never run (or failed silently). 17 image files exist in assets/ locally but none appear in Notion.",
+      "fix": "Run body-reset then keeper.py upload 7fd49af4-0a36-4c25-aa42-c33e8824e586 assets/7fd49af4-0a36-4c25-aa42-c33e8824e586 to push the work section and Images property to Notion."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Neither a website homepage screenshot nor an Instagram profile screenshot is present in the manifest or assets folder. All 17 manifest entries are project work images; no context shots at all.",
+      "fix": "Add two context shots: (1) scrape.py shot https://www.abm-studio.com --out assets/7fd49af4... --caption 'Website'; (2) scrape.py shot https://www.instagram.com/abm.studio/ --out assets/7fd49af4... --caption 'Instagram profile'. If IG is throttled, document it in AI Notes and queue to state/ig-queue.json per the sanctioned path."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "site-01, site-02, and site-03 are all captioned 'ABM Studio projects overview' -- a generic label. site-01 visually shows the 'This is Not a Fair / A10-43' art fair event (a distinct named project). site-02 and site-04 are near-identical crops of the same Arles 2022 outdoor scene (same two people seated, same signage -- different zoom level only).",
+      "fix": "Give site-01 a named caption (e.g. 'This is Not a Fair, A10-43 art fair, 2022') if it is a confirmed ABM project. Replace one of site-02/site-04 (the duplicate Arles 2022 crop) with a distinct image from a different year or a different Arles deliverable. Rename site-02 and site-03 generic captions to their actual project names."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type: Studio -- correct for a small Paris creative studio."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website, Instagram, LinkedIn, and Email all present and plausible."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities is jonathan-locked at Graphic design; scout filed OQ proposing Identity systems addition. Correct contract-compliant handling per calibration note."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "France, 2-10, Studio -- all set and consistent with AI Notes evidence."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio entry; Autonomy 5 noted in AI Notes (org-level, field optional for Studio per calibration note)."
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With: Unvetted) are appropriate; no clip note contradicts them."
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "No clip note instructions detected beyond the entry name. Source set to 'Web clipper'."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are hedged, name multiple checked sources, note the site timeout, and confirm Instagram handle via multiple search results."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source field is set to 'Web clipper'. CLAUDE.md asks for 'Web clipper, <created date>' format but this is a minor gap, not a gate failure."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "Provenance file present with set_by fields correct. source_url nulls are a known systemic tooling gap, not a gate failure per calibration note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Open Questions use '--' not em-dashes. Body is empty (no upload yet). keeper.py line 547 uses ' . ' separator, not ' -- ', so no tool-level em-dash bug applies."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Single OQ is terse and conditional (Capabilities is the one genuine ambiguity)."
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Entry Status is Enriching -- correct; reviewer does not flip to Needs Review on fail."
+    }
+  ],
+  "summary": "Three fails block this entry. The critical one is that keeper.py upload was never run: the Notion page body is empty (0 blocks) and the Images property has 0 files, even though 17 images exist locally. There are also no context shots (website + Instagram) anywhere in the manifest. And three images carry a generic 'ABM Studio projects overview' caption instead of named project captions, with site-02 and site-04 being near-identical crops of the same Arles 2022 scene.",
+  "to": "scraper"
+}

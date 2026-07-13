@@ -1,0 +1,28 @@
+{
+  "page_id": "28af4aed-7ac3-4307-9728-46b8ebec37e7",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-02.png (captioned 'Instagram profile') shows an Instagram error page: 'Profile isn't available / The link may be broken, or the profile may have been removed.' It is not an actual @franklintill profile screenshot. The broken shot is not marked rejected in manifest.json, is not documented in AI Notes, and the entry is not in state/ig-queue.json. The sanctioned exception (rejected + documented + queued) is not satisfied.",
+      "fix": "Mark site-02.png as rejected in manifest.json ({\"rejected\": true}). Add a note to AI Notes that the IG context shot returned a 'Profile isn't available' error page logged-out and requires a logged-in ig.py grab. Add an entry to state/ig-queue.json for page_id 28af4aed-7ac3-4307-9728-46b8ebec37e7 / @franklintill. Then re-run keeper.py body-reset and keeper.py upload so the rejected shot is removed from the Notion page."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "manifest.json contains only 2 entries (site-01.png and site-02.png, both context shots). Thirteen work image files exist in assets/28af4aed-7ac3-4307-9728-46b8ebec37e7/ (radical-matter-cover.jpg, radical-matter-01 through -04, viewpoint-mag-01 through -04, viewpoint42-01 through -03) but none are registered in manifest.json. These images were never uploaded to Notion; the entry currently has zero work images in the Notion body.",
+      "fix": "Add all 13 work images to manifest.json with correct captions and source_url values (at minimum: radical-matter images captioned 'Radical Matter, Thames and Hudson' with source link; viewpoint-mag images captioned 'Viewpoint magazine' with source link; viewpoint42 images captioned 'Viewpoint 42' with source link). Then run keeper.py body-reset followed by keeper.py upload to write the complete Work section to Notion."
+    },
+    {
+      "id": "B.links-email",
+      "result": "fail",
+      "evidence": "Email field is empty. AI Notes does not document that a public contact email was searched and not found. FranklinTill/TILT is an active studio with a website (tiltfutures.co); a contact or studio email is likely present on the site or findable via a search.",
+      "fix": "Check tiltfutures.co contact page and any 'hello@' / 'studio@' / 'info@' address. If found, set Email. If genuinely absent after a search, document in AI Notes: 'No public email found on tiltfutures.co or via web search.'"
+    }
+  ],
+  "to": "scraper"
+}

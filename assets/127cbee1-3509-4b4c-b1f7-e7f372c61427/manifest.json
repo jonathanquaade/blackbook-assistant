@@ -1,34 +1,104 @@
 [
   {
+    "file": "doordash-01.jpg",
+    "source_url": "https://character.co/work/doordash",
+    "caption": "DoorDash, brand campaign",
+    "link": "https://character.co/work/doordash",
+    "captured_at": "2026-07-12"
+  },
+  {
+    "file": "doordash-02.jpg",
+    "source_url": "https://character.co/work/doordash",
+    "caption": "DoorDash, campaign materials",
+    "link": "https://character.co/work/doordash",
+    "captured_at": "2026-07-12"
+  },
+  {
+    "file": "doordash-03.jpg",
+    "source_url": "https://character.co/work/doordash",
+    "caption": "DoorDash, brand guidelines",
+    "link": "https://character.co/work/doordash",
+    "captured_at": "2026-07-12"
+  },
+  {
+    "file": "doordash-04.jpg",
+    "source_url": "https://character.co/work/doordash",
+    "caption": "DoorDash, brand campaign",
+    "link": "https://character.co/work/doordash",
+    "captured_at": "2026-07-12"
+  },
+  {
+    "file": "palm-01.jpg",
+    "source_url": "https://character.co/work/palm",
+    "caption": "Palm, brand identity",
+    "link": "https://character.co/work/palm",
+    "captured_at": "2026-07-12"
+  },
+  {
+    "file": "palm-02.jpg",
+    "source_url": "https://character.co/work/palm",
+    "caption": "Palm, brand style guidelines",
+    "link": "https://character.co/work/palm",
+    "captured_at": "2026-07-12"
+  },
+  {
+    "file": "palm-03.jpg",
+    "source_url": "https://character.co/work/palm",
+    "caption": "Palm, identity system",
+    "link": "https://character.co/work/palm",
+    "captured_at": "2026-07-12"
+  },
+  {
+    "file": "palm-04.jpg",
+    "source_url": "https://character.co/work/palm",
+    "caption": "Palm, brand identity",
+    "link": "https://character.co/work/palm",
+    "captured_at": "2026-07-12"
+  },
+  {
     "file": "site-01.png",
-    "source_url": "https://web.archive.org/web/20240601000000/https://character.co/work",
+    "source_url": "https://web.archive.org/web/20220814000000/https://character.co/work",
+    "caption": "Website, character.co/work (archived Aug 2022)",
+    "link": "https://character.co/work",
+    "captured_at": "2026-07-12",
+    "context_shot": true
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://web.archive.org/web/20220601120000/https://character.co/",
     "caption": "Website",
-    "link": "https://web.archive.org/web/20240601000000/https://character.co/work",
-    "captured_at": "2026-07-11",
+    "link": "https://character.co/",
+    "captured_at": "2026-07-13",
     "context_shot": true
   },
   {
     "file": "site-02.png",
-    "source_url": "https://www.instagram.com/characterdotco/",
-    "caption": "Instagram profile",
-    "link": "https://www.instagram.com/characterdotco/",
-    "captured_at": "2026-07-11",
-    "context_shot": true
+    "rejected": true,
+    "reason": "Instagram error page (Profile not available); logged-out headless Playwright blocked by Instagram. IG capture queued."
   },
   {
     "file": "site-03.png",
-    "source_url": "https://web.archive.org/web/20220814120000*/character.co/",
-    "caption": "Website",
-    "link": "https://web.archive.org/web/20220814120000*/character.co/",
-    "captured_at": "2026-07-11",
-    "context_shot": true
+    "rejected": true,
+    "reason": "Wayback Machine calendar index page, not a website screenshot."
   },
   {
     "file": "site-04.png",
-    "source_url": "https://www.instagram.com/characterdotco/",
-    "caption": "Instagram profile",
-    "link": "https://www.instagram.com/characterdotco/",
-    "captured_at": "2026-07-11",
-    "context_shot": true
+    "rejected": true,
+    "reason": "Duplicate Instagram error page."
+  },
+  {
+    "file": "site-05.png",
+    "rejected": true,
+    "reason": "Blank white page; Wayback Machine failed to render character.co JS site."
+  },
+  {
+    "file": "site-06.png",
+    "rejected": true,
+    "reason": "Wayback Machine calendar index page, captured during website screenshot attempts."
+  },
+  {
+    "file": "site-07.png",
+    "rejected": true,
+    "reason": "Redirected to dentsu creative page at tiny resolution; not a character.co homepage."
   }
 ]

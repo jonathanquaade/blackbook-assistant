@@ -1933,7 +1933,7 @@
   },
   {
     "page_id": "c9535056-53fd-4d8f-b9cf-1b419ae4e909",
-    "name": "BANK\u2122",
+    "name": "BANK™",
     "ig_url": "https://www.instagram.com/bank_graphic_design_today/",
     "reason": "IG context screenshot returned 'Something went wrong' error page (headless Playwright rate-limited logged out). Need logged-in ig.py grab for @bank_graphic_design_today profile context shot.",
     "queued_at": "2026-07-11"
@@ -1992,6 +1992,20 @@
     "name": "Info CO",
     "ig_url": "https://www.instagram.com/in_fo_co/",
     "reason": "IG error page on capture; needs logged-in ig.py grab",
+    "queued_at": "2026-07-12"
+  },
+  {
+    "page_id": "11af69a0-53ea-4156-bb4d-634dc0bde427",
+    "name": "Anyways",
+    "ig_url": "https://www.instagram.com/anywayscreative/",
+    "reason": "IG error page on headless capture; needs logged-in ig.py grab (studio merged into BUCK, bio now Now part of @buck_design)",
+    "queued_at": "2026-07-12"
+  },
+  {
+    "page_id": "127cbee1-3509-4b4c-b1f7-e7f372c61427",
+    "name": "Character Co",
+    "ig_url": "https://www.instagram.com/characterdotco/",
+    "reason": "IG error page on headless capture; needs logged-in ig.py grab",
     "queued_at": "2026-07-12"
   }
 ]

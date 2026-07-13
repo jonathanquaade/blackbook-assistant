@@ -1,0 +1,116 @@
+{
+  "page_id": "160ed127-ed31-4905-a857-82bb83942b5f",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct named projects: Dua Lipa Physical, Rosalia+Travis TKN, Rosalia Pienso En Tu Mira, Rosalia Malamente, Tame Impala The Less I Know The Better, Phoenix Trying To Be Cool, Justice New Lands, El Guincho Bombay. Three Rosalia videos are distinct projects (different songs, different visual treatments, 2018 and 2020), not angles of the same project."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has both a Vimeo thumbnail image (preview) and a playable embed (the actual work). This is the mandated thumbnail+embed pattern for video studios per CLAUDE.md. The embed IS the depth for a film production collective; thumbnails are preview anchors."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Film & video production (set_by: jonathan). All 8 captured projects are music videos produced by CANADA, on-capability."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-01.png confirmed canadacanada.com homepage (CANADA nav visible, dark editorial layout). site-02.png confirmed instagram.com/canadacanadacom profile page (Instagram logo visible, canadacanadacom handle, 139k followers, Barcelona/London/LA bio)."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 8 thumbnail images captioned with project name and source link (e.g. 'Dua Lipa - Physical, 2020'). All 8 embeds have captions and links. Context shots captioned 'Website' and 'Instagram profile'."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "8 Vimeo embeds present for all 8 video projects. Each embed accompanied by a thumbnail preview image. Pattern correctly implemented: images gallery then embeds below."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No absence to explain; work is well populated from Vimeo/canadacanada.com project pages."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "28 Notion blocks confirmed: h2 Work + 8 thumbnail images + 8 video embeds + 8 paragraph metadata lines + 2 context images + 1 divider. No orphan blocks above the Work heading. Paragraph metadata lines use ' · ' separator (no em-dashes)."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio. CANADA is a directors collective and production company with 3 offices and a roster of directors; Studio is correct per the schema (small specialized team doing hands-on creative execution)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://www.canadacanada.com (verified). Instagram: https://www.instagram.com/canadacanadacom/ (verified via context shot). LinkedIn: https://www.linkedin.com/company/canadacanadacom. Email: info@canadacanada.com. All 4 link types present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Film & video production], set_by: jonathan (locked migrated field). Tag matches the work captured. No additional capability tags appear obviously missing for a directors collective."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = [Spain, United Kingdom, United States] (3 confirmed offices). Size = 11-40 (LinkedIn + APA roster cited in AI Notes). Work Status = Studio (unambiguous; org entity). Sources named in AI Notes."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Studio/org entry; Autonomy not applicable per calibration note. AI Notes states 'Autonomy not applicable (studio entity, not an individual).' Correct handling."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate: clipped.md shows no clip-note annotations or relationship facts from Jonathan. No evidence contradicts these defaults."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md confirms: 'Name field contained no clip-note annotations. No body content was present.' Raw Name was simply 'CANADA'. No instructions to act on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes covers founding year, founders, office locations, director roster count, clients, awards, and Work Status resolution with sources cited. Seniority/experience read included (15 years in operation, well-established). Factual claims are verifiable (client names, award names). No unhedged inferences detected."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01'. Created date matches page created_time 2020-11-01T10:18:00.000Z. Correct format."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All fields have provenance entries with set_by values. Capabilities correctly marked set_by: jonathan. Country, Type, Size, Work Status, Name, Website, Instagram, LinkedIn, Email, Source, AI Notes, Images all set_by: agent. Null source_url is a known systemic tooling gap (not a gate failure per calibration note)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Paragraph body blocks confirmed to use ' · ' not ' -- ' or em-dash. AI Notes, Source, captions all reviewed: no em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions is empty. No unresolvable fields requiring questions; no story nudge triggered (Worked Together remains Never, Familiarity is Don't know them)."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status = Enriching (correct pre-gate status). Will be flipped to Needs Review on this pass."
+    }
+  ],
+  "to": null,
+  "notes": "Clean entry. CANADA is a well-documented film/video production collective with a strong catalog. Thumbnail+embed pattern correctly implemented for all 8 projects. Context shots verified. No clip-note instructions. All metadata complete."
+}

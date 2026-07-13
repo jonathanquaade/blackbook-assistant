@@ -6,3 +6,6 @@ Name field (raw): Base Design
 Website (raw): https://www.basedesign.com/work
 
 No clip note in Name field. No body content noted.
+# Archived page body (2026-07-13)
+
+Work

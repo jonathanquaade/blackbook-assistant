@@ -23,9 +23,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T23:04:25",
+      "verified_at": "2026-07-13T09:48:20",
       "set_by": "agent"
     },
     "Work With?": {
@@ -53,6 +53,36 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-13T09:52:16",
+      "set_by": "agent"
+    },
+    "Size": {
+      "value": "Unknown",
+      "source_url": null,
+      "verified_at": "2026-07-13T09:52:16",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-11-01",
+      "source_url": null,
+      "verified_at": "2026-07-13T09:52:16",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "605 is a UK-based brand strategy entity clipped in 2020 with no URL, body text, or additional identifying context. Extensive web searches returned no public-facing studio or agency matching this name in the UK. Cannot determine whether this is a studio, consultancy, or individual practitioner without a website or further context. Work Status, Size, Autonomy, and all link fields left empty pending identification. Seniority and experience unknown.",
+      "source_url": null,
+      "verified_at": "2026-07-13T09:52:16",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Website or URL? Clipped in 2020 with no link and no body text. Extensive searches found no public UK brand strategy entity matching \"605\". Cannot identify or enrich without a starting URL.\n",
+      "source_url": null,
+      "verified_at": "2026-07-13T09:52:27",
+      "set_by": "agent"
     }
   }
 }

@@ -1,0 +1,125 @@
+{
+  "page_id": "127cbee1-3509-4b4c-b1f7-e7f372c61427",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-12T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Manifest has ZERO project images. Files doordash-01/02/03/04.jpg and palm-01/02/03/04.jpg exist on disk but are not in manifest.json and not uploaded to Notion. The Notion body has 0 blocks.",
+      "fix": "Add doordash-01 through doordash-04 and palm-01 through palm-04 to manifest.json with project captions and source links, then run body-reset and keeper.py upload."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "fail",
+      "evidence": "No project images in manifest or Notion body at all. Cannot assess depth.",
+      "fix": "Complete manifest and upload. With 4 doordash + 4 palm images already on disk, this is a manifest-and-upload-only fix."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Cannot verify on-capability match because no project images are in the manifest or uploaded. Disk images (DoorDash campaign, Palm phone) do appear to be brand/identity work consistent with tagged Graphic design / Agency, but the upload was never completed.",
+      "fix": "Complete upload. Verify doordash and palm images are on-capability (brand identity, campaign work) before uploading."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "Three distinct failures: (1) site-02 and site-04 are both Instagram 'Profile isn't available' error pages, not profile screenshots, and neither is marked rejected in manifest nor is the entry in ig-queue.json; the IG throttle exception requires all three conditions (rejected flag + AI Notes doc + ig-queue entry) -- none are met. (2) site-03 is captioned 'Website' but shows the Wayback Machine calendar/index page (archive.org calendar for character.co), not a screenshot of character.co itself. (3) site-02 and site-04 are duplicate images of the same error page.",
+      "fix": "(1) For IG: mark site-02 and site-04 as rejected:true in manifest, add entry to state/ig-queue.json, and note 'IG capture unavailable logged-out; queued for ig.py' in AI Notes. (2) For website: replace site-03 (Wayback calendar) with an actual screenshot of character.co or a meaningful archived page (site-01 already shows an archived work page, which is acceptable -- site-03 should be removed or replaced with character.co homepage). (3) Remove the duplicate IG error shot."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "fail",
+      "evidence": "Project images on disk have no captions in manifest (they are not in manifest at all). Context shots that are present are mislabeled.",
+      "fix": "Add captioned manifest entries for doordash and palm images with project names and source URLs."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "Character Co is a branding/identity agency; no video/audio embeds expected. Disk images are stills. PASS."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "8 project images exist on disk but are simply not in the manifest or uploaded. This is not a source absence -- it is an incomplete scraper run where manifest population and upload were not finished.",
+      "fix": "Add disk images to manifest and run upload."
+    },
+    {
+      "id": "A.body-clean",
+      "result": "fail",
+      "evidence": "Notion body has 0 blocks. No Work section, no images, no divider. Upload was never run.",
+      "fix": "Run keeper.py body-reset then keeper.py upload after fixing the manifest."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency, set_by agent. Character Co is a full-service branding studio acquired by Dentsu; Agency classification is defensible per the schema (large full-service org). PASS."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website: https://character.co/ (confirmed). Instagram: https://www.instagram.com/characterdotco/ (handle verified from 2019 press release per AI Notes; profile currently showing error likely due to logged-out IG restriction, handle is plausible). LinkedIn: https://www.linkedin.com/company/characterdotco (present). Email: AI Notes notes no public email found, internal format inferred from RocketReach. No public email = documented absence. PASS."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Graphic design], set_by jonathan (locked, migration entry). Scout filed an Open Question proposing additions (Brand strategy, Identity systems, Web design, Environmental design). Per checklist calibration 2026-07-12: jonathan-locked Capabilities + OQ proposing additions = PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country: US. Size: 11-40. Work Status: Studio (org-level, appropriate for an agency). AI Notes names sources (Clutch: 31-40, LinkedIn: 11-50). PASS."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry type is Agency (org). Per checklist calibration 2026-06-21: Autonomy is optional for org-type entries. Not required here. PASS."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted. No clip note signals a prior relationship. Zero-states are appropriate. PASS."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Source field says 'Web clipper' with no clip note body evident. No relationship facts or instructions in the name field. PASS."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes are factual and specific (founding date, acquisition by Dentsu, client roster, offices, sources named). Inferences are absent or clearly labeled. No em-dashes detected. Seniority/trajectory read is included (agency-level, 30-40 person team, Dentsu umbrella). PASS."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "fail",
+      "evidence": "Source = 'Web clipper' with no date. Per runbook: 'for backfill entries Source is Web clipper, <page created date>'. The created date is missing.",
+      "fix": "Set Source to 'Web clipper, <page created date>' -- check the page creation timestamp via the API and append it."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Provenance file present, all touched fields have set_by values. source_url nulls are a known systemic tooling gap (per checklist note 2026-06-21), not a gate failure. PASS."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes reviewed: no em-dashes found. Notion body has 0 blocks so no body em-dash risk. PASS."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One Open Question: proposing Capabilities additions for jonathan to confirm. Terse, conditional (Capabilities is locked, question is appropriate). PASS."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "fail",
+      "evidence": "Entry remains Enriching. Not gated to Needs Review yet (correct for a FAIL verdict). Will remain Enriching until fixes applied.",
+      "fix": "Scraper fixes manifest, runs upload, sets Source with date, fixes IG context shot handling. Then reviewer re-gates."
+    }
+  ],
+  "summary": "Entry has 5 distinct failures, all owned by the scraper. The core failure is that the scraper captured 8 project images (doordash-01/02/03/04, palm-01/02/03/04) but never populated the manifest with them and never ran upload -- so the Notion body is empty (0 blocks). The context shots have two additional problems: the IG context shot is an error page (not a real profile) and was not handled per the throttle exception protocol (no rejected flag, no ig-queue entry, no AI Notes documentation), and site-03 is the Wayback Machine calendar index page, not a website screenshot. Source is also missing its creation date. These are all mechanical completion failures, not taste issues.",
+  "to": "scraper"
+}

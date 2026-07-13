@@ -1,83 +1,89 @@
 {
   "page_id": "044ba4e2-1b53-4e61-9033-58361d928ad9",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-11T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-12T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "All three work images (site-03, site-04, site-05) are from one project: Hans Haacke All Connected, New Museum, 2019. The entry shows zero project diversity. The asset directory contains 12 additional captured images (barbara kruger cover/interior shots, academy_exhibition, aam_web) that were never added to manifest.json or uploaded.",
-      "fix": "Add the captured barbara kruger, academy_exhibition, and aam_web images to manifest.json with correct captions and source links, then re-run keeper.py upload to rebuild the Work section across at least 3 distinct projects."
+      "result": "pass",
+      "evidence": "12 images across 4 distinct projects: Hans Haacke All Connected (book design, 3 shots), Barbara Kruger book (2 shots), Academy Museum of Motion Pictures Stories of Cinema exhibition (3 shots), Aspen Art Museum identity and website (3 shots). Confirmed from manifest and live body blocks."
     },
     {
       "id": "A.depth-over-breadth",
-      "result": "fail",
-      "evidence": "site-03 is a book cover shot only (hero/cover of Hans Haacke book). Depth requires going inside projects (spreads, interiors, exhibition installs). The unused academy_exhibition and aam_web captures may fix this but they are not in the manifest.",
-      "fix": "Ensure manifest includes interior/spread/exhibition shots from multiple projects, not just the Hans Haacke cover."
+      "result": "pass",
+      "evidence": "Hans Haacke: book cover + title spread + interior text spread. Barbara Kruger: cover + interior text spread. Academy Museum: 3 exhibition interiors showing typography, signage, and display systems design. Aspen Art Museum: identity mark sheet + 2 website screenshots. Goes inside all four projects."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities is Graphic design (set_by jonathan). All captured work is book/editorial design, exhibition environmental graphics, identity, and web design. On-capability throughout."
     },
     {
       "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-02.png is captioned 'Instagram profile' and source_url is instagram.com/in_fo_co/, but the actual image is an Instagram error page ('Something went wrong / There's an issue and the page could not be loaded'). This is not a sanctioned pass: the broken capture is NOT marked rejected in manifest.json, AI Notes does not document the IG block, and the entry is NOT in state/ig-queue.json.",
-      "fix": "Mark site-02.png as rejected in manifest.json, document the IG throttle block in AI Notes, add this entry to state/ig-queue.json with reason 'IG error page on capture; needs logged-in ig.py grab', then re-run keeper.py upload."
+      "result": "pass",
+      "evidence": "site-01.png is the real in-fo.co homepage (verified visually: IN-FO.CO header, LA address). site-02.png (IG error page) is marked rejected in manifest with reason documented, IG block is in AI Notes, entry is in state/ig-queue.json. Sanctioned exception per checklist."
     },
     {
       "id": "A.no-uncaptioned-images",
       "result": "pass",
-      "evidence": "All manifest entries have captions. The unused asset files are not in the manifest so not surfaced as uncaptioned."
+      "evidence": "All 12 non-rejected manifest entries have captions and source links. Live body blocks [1]-[12] all have captions confirmed."
     },
     {
       "id": "A.embeds-for-video-audio",
       "result": "pass",
-      "evidence": "Studio is primarily a graphic/editorial/book studio; no video embeds expected from the site. No video-heavy project pages evident."
+      "evidence": "Studio is graphic/editorial design; no video-centric project pages expected. No video embeds applicable."
     },
     {
       "id": "A.absence-explained",
-      "result": "fail",
-      "evidence": "The IG error page capture is not explained in AI Notes and the entry is not in ig-queue. The presence of 12 additional image files in the asset directory that are absent from the manifest is also unexplained.",
-      "fix": "Document IG throttle in AI Notes. Add to ig-queue. Incorporate the additional captured images into the manifest."
+      "result": "pass",
+      "evidence": "IG block documented in AI Notes ('IG context shot blocked: headless capture returned error page; entry queued for logged-in ig.py grab') and entry is in ig-queue.json."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "14 top-level blocks: [0] heading_2 Work, [1]-[12] image blocks, [13] divider. No orphan blocks above the Work heading. Clean single-pass upload."
     },
     {
       "id": "B.type-classified",
       "result": "pass",
-      "evidence": "Type: Studio. Correct for an independent design studio."
+      "evidence": "Type: Studio. Correct for an independent design and editorial studio."
     },
     {
       "id": "B.all-findable-links",
       "result": "pass",
-      "evidence": "Website, Instagram, LinkedIn, and Email all present and plausible for this studio."
+      "evidence": "Website (in-fo.co), Instagram (instagram.com/in_fo_co/), LinkedIn (linkedin.com/company/in-fo-co), Email (info@in-fo.co). All four present."
     },
     {
       "id": "B.capabilities-tagged",
       "result": "pass",
-      "evidence": "Graphic design tagged (Jonathan's original tag, set_by jonathan). Open Question correctly asks about adding Identity, Web design, Spatial and exhibition design. No override needed here."
+      "evidence": "Graphic design, set_by jonathan (locked). Open Question proposes adding Identity systems, Web design, Spatial and exhibition design. Contract-compliant per checklist calibration 2026-07-12: locked Capabilities + OQ is a PASS."
     },
     {
       "id": "B.country-size-workstatus",
       "result": "pass",
-      "evidence": "Country USA confirmed (AI Notes notes migration had tagged UK, now corrected). Size 2-10 confirmed via team page and LinkedIn. Work Status Studio correct."
+      "evidence": "Country USA (LA, confirmed by site homepage and AI Notes; migration UK tag corrected). Size 2-10 (confirmed via LinkedIn + team page, noted in AI Notes). Work Status Studio."
     },
     {
       "id": "B.autonomy",
       "result": "pass",
-      "evidence": "This is a Studio (org) entry. Per checklist calibration 2026-06-21, Autonomy is optional for org-type entries. AI Notes contains a seniority/leadership read (principals Adam Michaels and Shannon Harvey, Cooper Hewitt award, etc.). No fail."
+      "evidence": "Studio (org) entry. Per calibration 2026-06-21, Autonomy is optional for org entries. AI Notes documents principals Adam Michaels and Shannon Harvey and Cooper Hewitt award. Sufficient leadership read."
     },
     {
       "id": "C.no-judgment-contradiction",
       "result": "pass",
-      "evidence": "No clip note states a relationship fact. Zero-states (Worked Together Never, Familiarity Don't know them, Work With? Unvetted) are consistent with an org entry with no stated relationship."
+      "evidence": "No clip note with relationship facts. Zero-states (Never, Don't know them, Unvetted) are appropriate for an org entry with no stated relationship."
     },
     {
       "id": "C.clip-note-acted-on",
       "result": "pass",
-      "evidence": "Source is 'Web clipper, 2020-11-01'; no clip note content implies relationship facts or stated judgments to act on beyond what is recorded."
+      "evidence": "Source is 'Web clipper, 2020-11-01'. No clip note relationship instructions present."
     },
     {
       "id": "C.ai-notes-hedged",
       "result": "pass",
-      "evidence": "AI Notes contain verifiable facts (founding date, principals, Cooper Hewitt award, team count, LA location). No unhedged inferences detected. Country correction is documented."
+      "evidence": "AI Notes cite verifiable facts (founding date, principals, Cooper Hewitt award, team count from in-fo.co/studio, LA location). Country correction and IG block both documented. No unhedged inferences."
     },
     {
       "id": "D.source-filled",
@@ -87,24 +93,24 @@
     {
       "id": "D.provenance-written",
       "result": "pass",
-      "evidence": "Provenance file exists with set_by agent on agent-researched fields and set_by jonathan on Capabilities (correctly preserving his tag). null source_url is noted as a known systemic tooling gap per checklist calibration 2026-06-21, not a gate failure."
+      "evidence": "Provenance file present with correct set_by values. Null source_url is known systemic gap, not a gate failure per calibration 2026-06-21."
     },
     {
       "id": "D.no-em-dashes",
       "result": "pass",
-      "evidence": "No em-dashes found in AI Notes or Open Questions."
+      "evidence": "No embed/bookmark blocks in the upload (all 12 work blocks are images), so keeper.py em-dash paragraph bug path is not triggered. AI Notes and Open Questions contain no em-dashes. Body separators use the middle dot."
     },
     {
       "id": "D.open-questions",
       "result": "pass",
-      "evidence": "One terse, conditional Open Question about Capabilities expansion. Jonathan's tag is respected; question is additive. No story nudge needed (org entry, no personal relationship facts)."
+      "evidence": "One terse conditional question on Capabilities (additive, not duplicating existing tag). No story nudge needed for an org entry. No ghost questions."
     },
     {
       "id": "D.status-correct",
       "result": "pass",
-      "evidence": "Status is Enriching; reviewer is the gate. Not pre-flipped."
+      "evidence": "Flipped to Needs Review by reviewer on this pass."
     }
   ],
-  "to": "scraper",
-  "summary": "Three hard fails, all image-layer. (1) Project diversity: all three work shots are from a single project (Hans Haacke All Connected); the asset directory has 12 more captured images (Barbara Kruger, academy_exhibition, aam_web) that were never added to manifest.json or uploaded. (2) Instagram context shot: site-02.png shows an IG error page, not the actual profile; the broken capture is not marked rejected, not documented in AI Notes, and the entry is absent from ig-queue.json. (3) Depth: the one represented project shows only a book cover, not interior spreads or installation shots. Fix: add the existing captured images to manifest.json across 3+ distinct projects, mark site-02.png rejected and add entry to ig-queue, document the IG block in AI Notes, then re-run keeper.py upload."
+  "to": "jonathan",
+  "summary": "All 20 checks PASS at attempt 2. The three image-layer failures from attempt 1 are resolved: (1) 4 distinct projects are now in the manifest and uploaded; (2) the IG error-page shot is marked rejected, documented in AI Notes, and queued in ig-queue.json; (3) Hans Haacke now shows cover + two interior spreads. Body structure is clean (14 blocks, no orphans). Entry is in Needs Review."
 }
