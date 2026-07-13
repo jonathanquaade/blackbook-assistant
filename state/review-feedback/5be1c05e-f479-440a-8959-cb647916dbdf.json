@@ -1,0 +1,115 @@
+{
+  "page_id": "5be1c05e-f479-440a-8959-cb647916dbdf",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "15 work images span 5 distinct named projects: Prada SS 2019, Berluti branding, Dior FW 2007, Dunhill Voice, multi-brand branding overview (Prada Candy, Berluti, Loewe). No caption repeats a single project exclusively."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Each project has 2-3 interior shots (print advertising spreads, film stills, product detail, packaging range) rather than hero covers only."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Tagged Graphic design; all captured work is print campaigns, brand identity, and packaging for luxury clients. No off-capability material. Site disciplines (creative direction, film) are flagged as an OQ proposing additional Capabilities tags, which is the correct contract-compliant path for a jonathan-locked Capabilities field."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-16.png shows dja.dj homepage ('DJA Creative Direction, Branding & Content'); site-17.png shows instagram.com/@dja_dj profile page with 14.6K followers, logo, and grid. Both are correct and verified by opening the images."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 17 images in manifest have captions naming the project and a link to the source page. No anonymous shots."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "DJA is a Studio/Graphic design entry; video is an adjunct discipline (OQ proposes Film & video). No video embeds required for the current tagged capability. No embeds-only situation."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "15 work images captured; no thin entry. No IG queue needed; logged-out IG context shot obtained successfully."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "Body has exactly 19 blocks: heading_2 'Work', 17 image blocks, 1 divider. No orphan blocks above the Work heading and no duplicates."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Studio, set_by agent, consistent with a small specialist creative team (David James Associates)."
+    },
+    {
+      "id": "B.links-present",
+      "result": "pass",
+      "evidence": "Website https://dja.dj, Instagram https://www.instagram.com/dja_dj/ (verified correct: bio shows 'DJA, Creative Direction, Branding & Content'), LinkedIn https://www.linkedin.com/company/david-james-associates, Email info@dja.dj. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Graphic design], set_by jonathan (migrated, locked). Scout filed OQ 1 proposing Creative direction, Identity systems, Film & video to Jonathan. This is the correct contract-compliant output per the 2026-07-12 calibration note; treat as PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = [UK], Size = 11-40, Work Status = Studio, all set_by agent with verified_at timestamps. Size OQ 2 flags the migration discrepancy (2-10 vs LinkedIn 11-50) for Jonathan to confirm. Work Status = Studio is well-evidenced for a named studio entity."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Entry is Type = Studio (org-type). Autonomy is OPTIONAL for org-type entries per the 2026-06-21 calibration. AI Notes contains a seniority/leadership read ('Studio operates at a senior, director-led level with deep luxury sector expertise across three decades'), which satisfies the requirement."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "No clip note relationship facts found. Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are appropriate given no prior relationship is indicated."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was 'Web clipper, 2020-11-01' with no relationship instructions. Source field reflects this verbatim. Nothing left unactioned."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes records verifiable facts (founding year, CD roles, client names, BoF 500 listing, team size from LinkedIn). Seniority read present ('director-led level, three decades'). No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-11-01', set_by agent with verified timestamp."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "All touched fields present in provenance with correct set_by values. source_url null throughout, which is the known systemic tooling gap (not a gate failure per calibration 2026-06-21)."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Verified: no em-dashes in AI Notes, Open Questions, or any of the 17 Notion body image captions. Caption separator is ' · ' (middle dot), not ' -- ' or em-dash. keeper.py em-dash bug (line 547) was NOT triggered."
+    },
+    {
+      "id": "D.open-questions-terse",
+      "result": "pass",
+      "evidence": "Two OQs: (1) Capabilities expansion proposal (locked field, OQ is the correct channel); (2) Size correction from migration. Both are conditional on fields that have agent/migration-set values. No redundant or unconditional questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is currently Enriching. This review gate passes; status will be flipped to Needs Review by this reviewer."
+    }
+  ],
+  "to": null
+}
