@@ -2049,5 +2049,12 @@
     "ig_url": "https://www.instagram.com/jakobmihailo/",
     "reason": "core work is long-form YouTube video (embedded); logged-out static fetch + scrape.py --render both returned 0 downloadable grid images (IG serves the grid via JS/GraphQL, not in initial HTML); logged-in ig.py grab would add full-res IG reel stills/video as supplement to the YouTube work already captured",
     "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "39ff84ba-ae13-8190-882b-c2013b6ff067",
+    "name": "David Zrolko",
+    "ig_url": "https://www.instagram.com/davidzrolko/",
+    "reason": "DOP; logged-out grid confirmed active (bio: London/Berlin based DOP, highlights labelled DOP bits/more DOP bits) but grid/reel stills are 640px and reels need login for full-res video; profile context shot captured successfully so only the WORK capture is queued",
+    "queued_at": "2026-07-26"
   }
 ]
