@@ -3,9 +3,9 @@
   "migrated_at": null,
   "fields": {
     "Entry Status": {
-      "value": "Enriching",
+      "value": "Needs Review",
       "source_url": null,
-      "verified_at": "2026-07-26T16:14:29",
+      "verified_at": "2026-07-26T16:34:18",
       "set_by": "agent"
     },
     "Name": {
@@ -97,9 +97,29 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Video editor, in-house/regular at Teepee Films (London production company doing music videos and branded content for clients incl. Mercedes-Benz, M&S). Work Status Employed: IG bio and LinkedIn agree (\"Editor @teepeefilms\"). No personal portfolio site or Vimeo reel found in a time-boxed search; no prior employer history surfaced, so seniority is a hedge. Reads as a working craft editor rather than a director or in-house lead (Teepee's director roster on their site does not list her), so Autonomy estimated at 3 (executes given projects, likely with director/client feedback loops typical of edit work), not verified first-hand.",
+      "value": "Video editor, in-house/regular at Teepee Films (London production company doing music videos and branded content for clients incl. Mercedes-Benz, M&S). Work Status Employed: IG bio and LinkedIn agree (\"Editor @teepeefilms\"). No personal portfolio site or Vimeo reel found in a time-boxed search; no prior employer history surfaced, so seniority is a hedge. Reads as a working craft editor rather than a director or in-house lead (Teepee's director roster on their site does not list her), so Autonomy estimated at 3 (executes given projects, likely with director/client feedback loops typical of edit work), not verified first-hand. Work capture: Teepee Films' Framer site publishes named credits per project; confirmed her as Editor on 4 projects (Mercedes-Benz Sprinter/Opening Doors, M&S x Ian Wright/Christmas with Wrightey, Remescar/The Product Does The Talking, Molecule), each with an embeddable Vimeo cut, so those are embedded plus frame stills and Vimeo thumbnails. Instagram (rosamund_bullard) served a logged-out error page on two tries (shot and rendered probe), so it is queued to state/ig-queue.json for a logged-in ig.py grab rather than shipped thin; website context shot used instead (Teepee Films homepage, as employer, no personal site to shot).",
       "source_url": null,
-      "verified_at": "2026-07-26T16:18:19",
+      "verified_at": "2026-07-26T16:30:25",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "thumb_sprinter.jpg",
+        "thumb_mands.jpg",
+        "thumb_remescar.jpg",
+        "thumb_molecule.jpg",
+        "still_sprinter_1.png",
+        "still_sprinter_2.png",
+        "still_mands_1.png",
+        "still_mands_2.png",
+        "still_remescar_1.jpg",
+        "still_remescar_2.jpg",
+        "still_molecule_1.jpg",
+        "still_molecule_2.jpg",
+        "site-01.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-26T16:29:30",
       "set_by": "agent"
     }
   }

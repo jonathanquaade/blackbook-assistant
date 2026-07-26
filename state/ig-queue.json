@@ -2070,5 +2070,12 @@
     "ig_url": "https://www.instagram.com/rosamund_bullard/",
     "reason": "scrape.py shot to instagram.com/rosamund_bullard/ errored (Something went wrong page) on two tries (shot + render --probe); no personal site/reel to fall back on, editor work captured instead from 4 named Teepee Films project pages (Vimeo embeds + thumbnails + stills) where she is credited Editor; website context shot of employer Teepee Films succeeded",
     "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "39cf84ba-ae13-8145-8208-d9be3d7073de",
+    "name": "Melanie Lehmann",
+    "ig_url": "https://www.instagram.com/melony.lemon/",
+    "reason": "logged-out IG served throttle error page (Something went wrong) twice; site + YouTube fully captured, IG queued for logged-in profile pass",
+    "queued_at": "2026-07-26"
   }
 ]
