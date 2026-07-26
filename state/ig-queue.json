@@ -2084,5 +2084,19 @@
     "ig_url": "https://www.instagram.com/lou3e/",
     "reason": "creator, editor tagged Social media content; logged-out render got 8 static grid stills + profile shot, but several top posts are video reels and the crafted edited video itself (his actual work as an editor) is not capturable logged-out. Needs logged-in ig.py pass for reel video.",
     "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "39cf84ba-ae13-8171-9022-e5988cca29c1",
+    "name": "Dustears",
+    "ig_url": "https://www.instagram.com/superveryfine/",
+    "reason": "Dustears' dedicated fashion photography work account (per his own @dustears bio: 'My work: @superveryfine'). Confirmed PRIVATE (curl fetch shows og:description 'Private', logged-out render/shot both errored 'Something went wrong'). @dustears (personal) grid is casual selfies/travel, not his craft; 3 credited work pieces were found there instead (CELIMAX 3D product spec ad, SOGU 2 years fashion video, Heybabes Cosmetics 3D render) and captured as embeds. Need Jonathan to check if his IG account already follows @superveryfine (or can request/view) before a logged-in ig.py grab of his actual photography portfolio.",
+    "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "e9ee0c1f-50d8-41c5-bd41-ca996eba2c7b",
+    "name": "Droga5",
+    "ig_url": "https://www.instagram.com/droga5/",
+    "reason": "logged-out capture returned IG throttle error page; profile shot needs logged-in ig.py pass",
+    "queued_at": "2026-07-26"
   }
 ]
