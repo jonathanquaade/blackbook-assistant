@@ -1,32 +1,62 @@
 {
   "page_id": "a17eaf24-2147-43e3-8b30-b84276235f96",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-26T21:30:57",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-26T22:35:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {
       "id": "A.scrape-upload-complete",
-      "result": "fail",
-      "evidence": "assets/a17eaf24-2147-43e3-8b30-b84276235f96/manifest.json has 9 captioned entries (8 work images + 1 website context shot), all files present on disk, but the live Notion page has Images property = [] (empty) and 0 body blocks (no Work section at all). The scraper was interrupted mid-manifest (session limit) before running body-reset + upload, so none of the captured work ever reached the page.",
-      "fix": "Run keeper.py body-reset a17eaf24-2147-43e3-8b30-b84276235f96 then keeper.py upload a17eaf24-2147-43e3-8b30-b84276235f96 assets/a17eaf24-2147-43e3-8b30-b84276235f96 to push the existing manifest to the live page. Manifest content itself looks strong (8 distinct projects: Nike x Martine Rose, AISOMA/Google Arts and Culture Lab, Say What You See, GT Planar with GrilliType, Cash App Virtual Nature Walk with Superficial Studio, Martine Rose What We Do All Day with International Magic, The Experience Machine, The 1975 People Launch with Ben Ditto) so no re-scraping should be needed, just the upload step, then confirm Images property and body populate before handing back."
-    },
-    {
-      "id": "A.context-shots",
       "result": "pass",
-      "evidence": "Website context shot present in manifest (site-11.png, captioned Website, isjackwild.com, context_shot: true) and file opens correctly showing the real site. Instagram profile screenshot could not be captured logged-out (scrape.py shot errored twice per state/ig-queue.json entry for this page_id, queued 2026-07-26 for a logged-in ig.py grab), which is the sanctioned exception path per CLAUDE.md/checklist since it is documented and queued.",
+      "evidence": "Fixed since attempt 1. Live Notion body now has exactly 11 blocks: heading_2 'Work', 8 project images, 1 website context shot, 1 trailing divider. No orphan blocks, no duplication. Images property lists all 9 files (site-01,02,03,04,05,07,08,10,11), matching manifest.json exactly (9 entries, all with source_url+caption+link, none rejected).",
       "fix": null
     },
     {
       "id": "A.project-diversity",
       "result": "pass",
-      "evidence": "8 distinct named projects in the manifest, no repeated project across multiple images.",
+      "evidence": "8 distinct named projects, verified against captions and manifest: Nike x Martine Rose (nike.martine-rose.com), AISOMA + Say What You See (two separate Google Arts & Culture Lab experiments, distinct URLs), GT Planar (gt-planar.com), Cash by Cash App Virtual Nature Walk (vercel.app), Martine Rose What We Do All Day (allday.martine-rose.com), The Experience Machine (the-experience-machine.com), The 1975 People Launch (staging.isjackwild.com). No repeated project, no near-identical crops.",
       "fix": null
     },
     {
       "id": "A.on-capability",
       "result": "pass",
-      "evidence": "Captured work is frontend/creative-tech build work (interactive sites, WebGPU/generative experiments) matching the tagged Capability Frontend development (web).",
+      "evidence": "Opened site-04 (GT Planar) and site-10 (The 1975 People Launch) directly: both are the actual interactive frontend builds (WebGPU/canvas typeface showcase; real-time video-effect reveal site), matching tagged Capability Frontend development (web). The 1975 project page embeds a YouTube video as part of the site content, but the deliverable being reviewed is Jack's web build that hosts it, not a video he authored himself, so a full-page screenshot of the built site (rather than an embed block) is the correct capture, not a checklist violation.",
+      "fix": null
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-11.png opened and confirmed as the real isjackwild.com project index (captioned 'Website', matches). Instagram profile screenshot genuinely unobtainable logged-out (documented failure), queued in state/ig-queue.json (page_id present, reason: 'logged-out scrape.py shot errored twice ... IG context shot still needed via ig.py'), noted in AI Notes indirectly via the queue mechanism. Sanctioned exception path, not a fail.",
+      "fix": null
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "Every image block has a caption naming the project, collaborator, and year, plus the source domain (e.g. 'Martine Rose, What We Do All Day, SS21, with International Magic, 2020 - allday.martine-rose.com').",
+      "fix": null
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Checked live block count via API: 11 blocks total = 1 heading + 8 images + 1 context shot + 1 divider, exactly matching a clean body-reset + upload with no residue from the earlier failed attempt.",
+      "fix": null
+    },
+    {
+      "id": "B.scout-completeness",
+      "result": "pass",
+      "evidence": "Type=Person, Website/Instagram/LinkedIn/Email all present, Country=UK, Size=1, Work Status=Freelance with sourcing named in AI Notes (site + LinkedIn agree), Autonomy=4 with hedged reasoning. Capabilities is jonathan-locked (migrated entry) with 2 open, on-point Open Questions proposing additions; per calibration note this is correct, not a fail.",
+      "fix": null
+    },
+    {
+      "id": "C.judgment-honesty",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict any evidence found. Rating=2 and Notes='Ecommerce' are jonathan-set/locked and untouched. Open Question #2 correctly flags that no ecommerce work was found matching the Notes field, rather than silently dropping or contradicting it.",
+      "fix": null
+    },
+    {
+      "id": "D.machinery",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-10-28' (filled). Provenance file present with set_by correctly split (jonathan for Rating/Notes/Capabilities, migration for factual baseline, agent for Work Status/Worked Together/Familiarity/Work With). No em-dash found anywhere in AI Notes, Open Questions, or captions (checked programmatically across all field values). Status was Enriching pre-flip; flipped to Needs Review as part of this pass.",
       "fix": null
     }
   ],

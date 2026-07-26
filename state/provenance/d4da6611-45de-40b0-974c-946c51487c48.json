@@ -28,16 +28,16 @@
     },
     "Country": {
       "value": [
-        "UK"
+        "US"
       ],
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "source_url": "https://urmston.website/",
+      "verified_at": "2026-07-26T22:33:55",
+      "set_by": "agent"
     },
     "Entry Status": {
       "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-07-26T17:02:30",
+      "verified_at": "2026-07-26T22:34:06",
       "set_by": "agent"
     },
     "Work With?": {
@@ -65,6 +65,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": "https://urmston.website/",
+      "verified_at": "2026-07-26T22:33:55",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/will-urmston-598916320",
+      "source_url": "https://urmston.website/",
+      "verified_at": "2026-07-26T22:33:55",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "willurmston@fastmail.com",
+      "source_url": "https://urmston.website/",
+      "verified_at": "2026-07-26T22:33:55",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "3",
+      "source_url": "https://urmston.website/",
+      "verified_at": "2026-07-26T22:33:55",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": "https://urmston.website/",
+      "verified_at": "2026-07-26T22:33:55",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Senior Frontend Engineer, ~8-10 yrs experience (RISD BFA Graphic Design 2016, internships at Facebook Design and IFTTT). Lead web developer at Universe 2017-2018, then Frontend Engineer to Senior Frontend Engineer on Paste/WeTransfer 2019-2024 (shipped features to 80M MAU product). Also does freelance web design/build and creative-tech side projects (interactive audio/performance pieces like Device Phase, Desktop Ensemble). Autonomy estimated 3 (senior IC executing within cross-functional product teams, collaborative rather than fully self-directed per own site's phrasing; hedged, no direct testimony). Based in Seattle (own site, GitHub profile both say Seattle), corrected Country from UK to US on migration. His own site's newest entry ends WeTransfer 2022-2024 with no update since, so current employment status is unclear: GitHub profile still lists WeTransfer as employer but that field may be stale. Work Status left Unknown pending confirmation, see Open Questions.",
+      "source_url": "https://urmston.website/",
+      "verified_at": "2026-07-26T22:33:55",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Work Status: still at WeTransfer, or freelance/between now? His site's newest entry ends \"WeTransfer, 2022 to 2024\" with nothing dated since, GitHub profile still lists WeTransfer as employer (may be stale).\n2. Capabilities: add Creative technology alongside Frontend development (web)? Portfolio includes interactive/generative audio pieces (Device Phase, Desktop Ensemble) beyond pure web frontend work.\n3. Instagram: none found under his own name after a couple of searches, can't confirm one exists. Know a handle?\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:34:05",
+      "set_by": "agent"
     }
   }
 }
