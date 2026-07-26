@@ -22,10 +22,26 @@
     "captured_at": "2026-07-26"
   },
   {
+    "file": "project-03.gif",
+    "source_url": "https://web.archive.org/web/20181024003322/https://jmorgadosoares.com/csm_fineart_logo/images/img1.gif",
+    "caption": "CSM Fine Art 2017 degree show logo (identity/print design), 2017",
+    "link": "https://web.archive.org/web/20170616234043/http://jmorgadosoares.com/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "project-04.jpg",
+    "source_url": "https://web.archive.org/web/20181024030311/https://jmorgadosoares.com/foundation_final_proj/images/img1.jpg",
+    "caption": "The abstract, communication and legibility, typographic print book (Foundation year), 2017",
+    "link": "https://web.archive.org/web/20170618124920/http://jmorgadosoares.com/foundation_final_proj/",
+    "captured_at": "2026-07-26"
+  },
+  {
     "file": "site-04.png",
     "source_url": "https://web.archive.org/web/20190918183420/https://jmorgadosoares.com/design_for_dance/",
-    "caption": "The Grid, coded web experiment (canvas/JS), 2018",
+    "caption": "Design for Dance / The Grid (broken Wayback render, toolbar chrome only, not real project content)",
     "link": "https://web.archive.org/web/20190918183420/https://jmorgadosoares.com/design_for_dance/",
-    "captured_at": "2026-07-26"
+    "captured_at": "2026-07-26",
+    "rejected": true,
+    "rejected_reason": "Wayback capture only renders repeated broken text and archive.org toolbar chrome, both statically and with --render (tried twice, 2026-07-26); it is a p5.js canvas experiment whose JS dependencies do not execute correctly inside Wayback's rewritten resource paths. No real project content is recoverable from this URL."
   }
 ]
