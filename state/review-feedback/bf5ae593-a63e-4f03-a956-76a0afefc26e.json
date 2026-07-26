@@ -1,22 +1,23 @@
 {
   "page_id": "bf5ae593-a63e-4f03-a956-76a0afefc26e",
-  "reviewer_version": "v1-gate",
-  "reviewed_at": "2026-07-26T17:30:00",
-  "verdict": "fail",
+  "reviewer_version": "adjudicator",
+  "reviewed_at": "2026-07-26T18:00:00",
+  "verdict": "pass",
   "attempt": 2,
+  "adjudication": "overturn",
   "checks": [
-    {"id": "A.context-shots", "result": "fail",
-     "evidence": "Re-verified the fix via API and manifest. Two of the three sanctioned-exception conditions ARE met: (1) manifest.json's instagram-profile.png entry now has \"rejected\": true with a clear rejected_reason, and the file itself is deleted from assets/bf5ae593.../ (confirmed, no instagram-profile.png on disk); (3) state/ig-queue.json (291 entries) contains the Poplar entry: {page_id, name:'Poplar', ig_url:'https://www.instagram.com/poplarstudioar/', reason:'logged-out IG capture returned error screen; needs logged-in ig.py pass', queued_at:'2026-07-26'}. Condition (2) is NOT met: pulled AI Notes verbatim via keeper.py get and it contains zero mention of Instagram, the capture failure, the rejection, or the queue. AI Notes only covers company background and the Capabilities Open Question. The checklist's exception is an AND of all three conditions; without the AI Notes line, this still fails A.context-shots on the letter of the exception, and practically it means anyone reading the entry in Notion has no record of why there is no Instagram profile shot.",
-     "fix": "Append one sentence to AI Notes documenting the IG capture failure, e.g. \"Instagram profile screenshot could not be captured logged-out (Instagram served its generic error page twice, 2026-07-26); queued for a logged-in ig.py pass, see state/ig-queue.json.\" No other change needed; do not re-touch images, body, or the ig-queue entry, all of which are correct."},
-    {"id": "A.project-diversity", "result": "pass", "evidence": "Unchanged from attempt 1: 12 images + 3 embeds across 6 named projects (Maybelline, NYX x Cirque du Soleil, Coach x Cyril Lancelin, L'Oreal, Shopify, Spin Master) plus a showreel/demo set, re-verified live in Notion body."},
-    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Unchanged: Shopify has 3 interior screens, Maybelline has 2 distinct shots."},
-    {"id": "A.on-capability", "result": "pass", "evidence": "Unchanged: all captured work is AR/3D product visualisation matching the studio's actual output."},
-    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "Re-verified via live block dump: all 12 project images + website context shot are captioned with project + source link (middle-dot separator, no em-dash)."},
-    {"id": "A.embeds-for-video", "result": "pass", "evidence": "3 YouTube embeds each preceded by a downloaded maxresdefault thumbnail and followed by a linked caption paragraph, confirmed live."},
-    {"id": "A.absence-explained", "result": "pass", "evidence": "poplar.studio DNS outage still documented in AI Notes and Open Question #2, Wayback fallback used consistently."},
-    {"id": "A.body-structure", "result": "pass", "evidence": "Live block dump: 21 blocks = 1 h2 Work + 13 images (12 project + 1 website context shot) + 3 embeds + 3 linked-metadata paragraphs + 1 trailing divider. No orphan blocks, no residue, no instagram-profile image block present. Matches the scraper's claimed 13 image blocks (down from 14) exactly."},
-    {"id": "D.no-em-dashes", "result": "pass", "evidence": "Re-scanned all captions/paragraphs/AI Notes/Open Questions via API: none use em-dash, all use ' · ' or plain punctuation."},
-    {"id": "D.status-correct", "result": "fail-pending", "evidence": "Entry Status remains Enriching pending the AI Notes fix, correct while a FAIL is open."}
+    {"id": "A.context-shots", "result": "pass",
+     "evidence": "All three sanctioned-exception conditions independently verified via API/files: (1) manifest.json instagram-profile.png has rejected:true with a full rejected_reason (Instagram served its generic error page, retried, still blocked; file removed from assets dir); (2) state/ig-queue.json contains the Poplar entry (page_id, name, ig_url, reason, queued_at 2026-07-26); (3) AI Notes now ends with the exact sentence documenting the failed logged-out capture and pointing to the queue. The attempt-2 reviewer's fail was correct at the time (AI Notes gap was real) but the fix closed it cleanly; entry now meets the letter of the exception."},
+    {"id": "A.project-diversity", "result": "pass", "evidence": "Confirmed unchanged: 6 named AR/3D projects (Maybelline, NYX x Cirque du Soleil, Coach x Cyril Lancelin, L'Oreal, Shopify, Spin Master) across 13 images + 3 embeds."},
+    {"id": "A.depth-over-breadth", "result": "pass", "evidence": "Shopify 3 interiors, Maybelline 2 shots, unchanged from attempt 2."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "All captured work is AR/3D product visualisation, matches studio output."},
+    {"id": "A.no-uncaptioned-images", "result": "pass", "evidence": "All images captioned with project + source link."},
+    {"id": "A.embeds-for-video", "result": "pass", "evidence": "3 YouTube embeds each with downloaded thumbnail + linked caption."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "poplar.studio DNS outage documented in AI Notes and Open Question #2, Wayback fallback used."},
+    {"id": "A.body-structure", "result": "pass", "evidence": "21 blocks, no orphans, no instagram-profile image block (correctly removed)."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dashes in captions/AI Notes/Open Questions."},
+    {"id": "D.status-correct", "result": "pass", "evidence": "Flipped Enriching -> Needs Review by adjudicator after overturn."}
   ],
-  "to": "scraper"
+  "to": "jonathan",
+  "note": "Second reviewer's fail (attempt 2) was a correct catch at the time; the one-line AI Notes gap has now been closed by the scraper/orchestrator. Overturning to pass, entry flipped to Needs Review."
 }
