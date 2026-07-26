@@ -1,17 +1,27 @@
 {
   "page_id": "649837b9-c483-4cc6-9a6a-6f3a1c61ed2e",
   "reviewer_version": "v1",
-  "reviewed_at": "2026-07-26T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewed_at": "2026-07-26T16:00:00",
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
-    {"id": "A.upload-not-run", "result": "fail",
-     "evidence": "Notion 'Images' property has 0 files and the page body has 0 blocks (checked live via API) even though assets/649837b9-c483-4cc6-9a6a-6f3a1c61ed2e/manifest.json lists 21 well-captioned entries and the files exist on disk. keeper.py body-reset + keeper.py upload were never run, so Jonathan would open the page and see nothing: no Work section, no context shots, no images at all.",
-     "fix": "run `python3 scripts/keeper.py body-reset 649837b9-c483-4cc6-9a6a-6f3a1c61ed2e` then `python3 scripts/keeper.py upload 649837b9-c483-4cc6-9a6a-6f3a1c61ed2e assets/649837b9-c483-4cc6-9a6a-6f3a1c61ed2e` to actually push the manifest to the page before flipping status."},
-    {"id": "A.on-capability-depth", "result": "fail",
-     "evidence": "Of the 8 images captioned 'Granby Four Streets, 2013', 4 are pure archival/historical documentation with no Assemble design work visible at all: site-02.jpg (a 1960s black-and-white aerial photo of the wider neighbourhood), site-03.jpg (a scanned OS map with a red triangle marking the site), site-17.jpg and site-18.jpg (1970s archival street photographs of shopfronts, pre-dating Assemble's involvement by decades). site-21.jpg is also just a plain 'before' derelict-terrace documentary shot with no visible intervention. Meanwhile the same project page (https://assemblestudio.co.uk/projects/granby-four-streets-2) has clearly on-capability design material that was skipped: an axonometric masterplan illustration (assemble-granby_terraces-37-1600x1130.jpg), a hand-drawn vision illustration of the Four Corners scheme (assemble-four_corners-01-1600x1307.jpg), and further finished-streetscape photos (assemble-granby_terraces-16/17/22/38/39).",
-     "fix": "swap out the pure archival/context images (site-02, site-03, site-17, site-18, site-21) for the actual design/vision images available on the same project page (the axonometric masterplan drawing, the Four Corners hand-drawn illustration, and 1-2 more finished-house streetscape shots), so the Granby set shows what Assemble actually designed, not just neighbourhood history. Yardhouse, Goldsmiths CCA and Blackhorse Workshop selections were checked and are genuinely on-capability, keep those as-is."}
+    {"id": "A.upload-run", "result": "pass",
+     "evidence": "Verified live via API: Images property has 19 files matching manifest (non-rejected entries), body has 21 blocks (heading_2 Work + 19 captioned images + divider), no orphan blocks, no duplication. Attempt-1 fail (upload never run) is fixed."},
+    {"id": "A.project-diversity", "result": "pass",
+     "evidence": "5 distinct projects: Granby Four Streets (6), Yardhouse (3), Goldsmiths CCA (3), Blackhorse Workshop (3), Brutalist Playground (2), plus 2 context shots."},
+    {"id": "A.on-capability-depth", "result": "pass",
+     "evidence": "Opened all 5 new/changed Granby images. site-22 is a genuine axonometric masterplan illustration, site-23 the hand-drawn Four Corners vision illustration (bakery/barber/workshop facades), site-24 and site-25 are finished/activated streetscape photos (renovated red facade with tyre planters; kids playing on a residential street with renovated frontages), site-01 (kept, unchanged) is the activated market-street festival photo. site-26 is one retained 'before' documentary shot (boarded derelict building) which is defensible as a single before/after contrast image alongside 5 on-capability shots, not a majority-archival set anymore. This resolves the attempt-1 fail (was 4-5 of 8 pure archival, now 1 of 6, and the masterplan/vision-illustration gap the reviewer flagged by name is filled). Yardhouse, Goldsmiths CCA, Blackhorse Workshop, Brutalist Playground independently re-checked, remain on-capability (interiors, tiling, workshop benches, playground structures), unchanged from before, correctly left alone."},
+    {"id": "A.context-shots", "result": "pass",
+     "evidence": "Re-verified by opening both files: site-15.png is the real assemblestudio.co.uk homepage (Projects/Workspace/About nav visible); site-16.png is the real instagram.com/assembleofficial profile page (406 posts, 81.1K followers). Correctly captioned and unchanged from attempt 1."},
+    {"id": "A.captions-links", "result": "pass",
+     "evidence": "Every one of the 19 live images has a caption (project name + year or Website/Instagram profile) and a link in the Notion body (' Project · assemblestudio.co.uk' etc via keeper.py upload metadata line). No uncaptioned images."},
+    {"id": "D.no-em-dash", "result": "pass",
+     "evidence": "Body captions use ' · ' separator, not an em-dash. AI Notes and Open Questions checked, no em-dashes present."},
+    {"id": "B.scout-completeness", "result": "pass",
+     "evidence": "Unchanged from attempt 1, already verified correct: Type/Country/Size/Work Status/links/Source all filled; Capabilities is jonathan-locked (migrated) with an appropriate Open Question proposing additions, correct per calibration note, not a fail."},
+    {"id": "D.status", "result": "pass",
+     "evidence": "Flipping Entry Status to Needs Review as part of this pass."}
   ],
-  "notes": "Context shots (site-15 Website, site-16 Instagram) verified correct and real. Capabilities is jonathan-locked (migrated) with an appropriate Open Question proposing additions - correct per calibration, not a fail. No em-dashes found in AI Notes or Open Questions. Source field filled. These two fixes are scraper-side (manifest content + running the actual upload step); once done, re-submit for review.",
-  "to": "scraper"
+  "notes": "Both attempt-1 fails resolved: (1) upload actually run, body/Images property live and correctly structured; (2) Granby Four Streets set rebalanced from mostly-archival to majority on-capability design work (masterplan, vision illustration, finished streetscape), with only 1 intentional before-shot retained for contrast. No new issues found on independent re-check.",
+  "to": "none"
 }
