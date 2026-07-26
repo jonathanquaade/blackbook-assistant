@@ -83,15 +83,34 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Instagram-only creator, @karlsworlddd (verified: 11 posts, 3.2k followers, bio phoning around and finding out). Every post is a short video, not a photo, cinematic grading, silhouettes, macro close-ups, one title card reading Brotherhood, reads as crafted short-form narrative film rather than platform-hook social content, so tagged Film & video production over Social media content per TAXONOMY. No real name, personal site, or LinkedIn surfaced after several searches (handle is not indexed elsewhere online), so those stay empty rather than guessed. Seniority/experience unclear given the thin, IG-only public footprint (only 11 posts): reads as an independent creator making self-directed work, no verifiable employer, agency credit or commercial client found. Autonomy estimated at 2 on this basis, low confidence, hedged pending more history.",
+      "value": "Instagram-only creator, @karlsworlddd (verified: 11 posts, 3.2k followers, bio phoning around and finding out). Every post is a short video, not a photo, cinematic grading, silhouettes, macro close-ups, one title card reading Brotherhood, reads as crafted short-form narrative film rather than platform-hook social content, so tagged Film & video production over Social media content per TAXONOMY. No real name, personal site, or LinkedIn surfaced after several searches (handle is not indexed elsewhere online), so those stay empty rather than guessed. Seniority/experience unclear given the thin, IG-only public footprint (only 11 posts): reads as an independent creator making self-directed work, no verifiable employer, agency credit or commercial client found. Autonomy estimated at 2 on this basis, low confidence, hedged pending more history.\n\nWork capture: no website exists, so all 11 reel thumbnails were pulled logged-out via a rendered IG grid grab, each matched to its own permalink and caption text (post captions read as short reflective narration, e.g. \"Brotherhood\", \"4am sessions\", \"There's always a hope\"). Logged-out thumbnails cap at 320-640px, well below full-res, because Instagram only serves small crops without a session. Queued to state/ig-queue.json for a logged-in ig.py pass to pull the real video files / higher-res frames; this entry should not wait on that queue to reach Needs Review per the IG-queue rule.",
       "source_url": null,
-      "verified_at": "2026-07-26T16:06:12",
+      "verified_at": "2026-07-26T16:17:09",
       "set_by": "agent"
     },
     "Open Questions": {
       "value": "1. Real name / Country? Only public trace is @karlsworlddd (11 posts, 3.2k followers), no linked site, no LinkedIn found after searching the handle.\n2. Do you know this person personally, or is this a cold find? Changes Familiarity/Worked Together.\n",
       "source_url": null,
       "verified_at": "2026-07-26T16:06:21",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-01.png",
+        "reel-01.jpg",
+        "reel-02.jpg",
+        "reel-03.jpg",
+        "reel-04.jpg",
+        "reel-05.jpg",
+        "reel-06.jpg",
+        "reel-07.jpg",
+        "reel-08.jpg",
+        "reel-09.jpg",
+        "reel-10.jpg",
+        "reel-11.jpg"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-26T16:17:32",
       "set_by": "agent"
     }
   }

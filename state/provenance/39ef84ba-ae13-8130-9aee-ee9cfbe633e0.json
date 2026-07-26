@@ -91,9 +91,9 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Independent travel/adventure filmmaker from Canada (IG bio: Filmmaker from Canada; LinkedIn based Vancouver per snippet). Solo creator: shoots, edits and produces his own long-form YouTube work (channel ~180k subs per third-party trackers, unverified first-hand) plus IG/TikTok posting; no employer found on site, IG, YouTube or LinkedIn across multiple sources, so read as self-employed/independent, not agency-repped. Established solo operation (own site, own contact email, monetized channel) suggests mid-level autonomy, can likely run a shoot-edit-deliver cycle unsupervised; no evidence yet of leading a crew or client-facing brand work, so hedge below creative-director-level.",
-      "source_url": "https://www.instagram.com/jakobmihailo",
-      "verified_at": "2026-07-26T16:12:37",
+      "value": "Independent travel/adventure filmmaker from Canada (IG bio: Filmmaker from Canada; LinkedIn based Vancouver per snippet). Solo creator: shoots, edits and produces his own long-form YouTube work (channel ~180k subs per third-party trackers, unverified first-hand) plus IG/TikTok posting; no employer found on site, IG, YouTube or LinkedIn across multiple sources, so read as self-employed/independent, not agency-repped. Established solo operation (own site, own contact email, monetized channel) suggests mid-level autonomy, can likely run a shoot-edit-deliver cycle unsupervised; no evidence yet of leading a crew or client-facing brand work, so hedge below creative-director-level. Work capture: his own site is a thin link hub, so his real portfolio is his YouTube channel, embedded 5 of his strongest long-form travel films (Why I Traveled the World this Year 2.7M views, Sony A7III x Bali, Norway Mountains, The Eternal Summer self-funded, How One Summer Lasted 4 Years), each with a maxresdefault thumbnail preview. Instagram grid is active (36.4k followers, video reels) but not downloadable logged-out: static fetch and scrape.py --render both returned 0 grid images since IG now serves the grid via JS/GraphQL, not initial HTML. Queued to state/ig-queue.json for a logged-in ig.py pass to pull full-res reel stills/video as a supplement; the YouTube work already represents his capability.",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:18:24",
       "set_by": "agent"
     },
     "Source": {
@@ -106,6 +106,20 @@
       "value": "3",
       "source_url": "https://www.instagram.com/jakobmihailo",
       "verified_at": "2026-07-26T16:12:53",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "yt-3U1wvyFipBA.jpg",
+        "yt-qG32jM4tGFk.jpg",
+        "yt-mB1dE0FotdY.jpg",
+        "yt-GK5NtJW4Krk.jpg",
+        "yt-weaiJklgv9c.jpg",
+        "site-01.png",
+        "site-02.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-26T16:17:43",
       "set_by": "agent"
     }
   }

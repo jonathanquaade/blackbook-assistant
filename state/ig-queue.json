@@ -2035,5 +2035,19 @@
     "ig_url": "https://www.instagram.com/markpaterson_/",
     "reason": "IG is his only shop window (no website); his work is video (World Triathlon event coverage, Le Chameau/Kiprun/Van Rysel/Defender brand films) but logged-out render only returns static grid thumbnails at 640-1080px, no reels/video files. Need logged-in ig.py grab for full-res stills and the actual video posts.",
     "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "39ef84ba-ae13-81c6-821e-c7b9c3da5911",
+    "name": "Karls world",
+    "ig_url": "https://www.instagram.com/karlsworlddd/",
+    "reason": "IG-only short-form film creator (no website); logged-out grid render only yields 320-640px thumbnails, real work is the full-res video/reels; needs logged-in ig.py grab",
+    "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "39ef84ba-ae13-8130-9aee-ee9cfbe633e0",
+    "name": "Jakob Mihailo",
+    "ig_url": "https://www.instagram.com/jakobmihailo/",
+    "reason": "core work is long-form YouTube video (embedded); logged-out static fetch + scrape.py --render both returned 0 downloadable grid images (IG serves the grid via JS/GraphQL, not in initial HTML); logged-in ig.py grab would add full-res IG reel stills/video as supplement to the YouTube work already captured",
+    "queued_at": "2026-07-26"
   }
 ]
