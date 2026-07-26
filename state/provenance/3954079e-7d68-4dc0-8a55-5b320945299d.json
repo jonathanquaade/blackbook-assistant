@@ -53,9 +53,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T23:05:55",
+      "verified_at": "2026-07-26T16:47:26",
       "set_by": "agent"
     },
     "Work With?": {
@@ -79,10 +79,40 @@
       "set_by": "agent"
     },
     "Name": {
-      "value": "Jose Morgardo Soares",
+      "value": "Jose Morgado Soares",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-26T16:49:28",
+      "set_by": "agent"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:49:28",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "3",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:49:28",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:49:28",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "UK based, likely freelance web developer specialising in ecommerce frontend build (per Jonathan's Notes: Ecommerce). Personal site (josemorgadosoares.com) is now dead: the domain is unregistered (whois: no match) and has no Wayback Machine snapshot on record, so his site nav, project work and stated employment could not be verified. No confirmable LinkedIn, Instagram or public email found after several searches (common name, collisions with unrelated Soares/Morgado profiles). Autonomy estimated at 3 (mid level) from the day rate (220) and single-discipline ecommerce focus only, heavily hedged: no independent evidence of seniority, agency history or team leadership. Name corrected from clipped 'Jose Morgardo Soares' to 'Jose Morgado Soares' per the site domain (josemorgadosoares.com).",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:49:28",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Personal site (josemorgadosoares.com) is dead (domain unregistered, no Wayback snapshot). Any other portfolio/CV link for him?\n2. LinkedIn?\n3. Instagram?\n4. Public email?\n5. Capabilities currently only Frontend development (web); given the Ecommerce note, should Web design be added too, or is he build-only (e.g. Shopify theme dev, not the visual design)?\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:49:40",
+      "set_by": "agent"
     }
   }
 }
