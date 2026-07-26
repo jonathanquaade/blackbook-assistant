@@ -2021,5 +2021,19 @@
     "ig_url": "https://www.instagram.com/amandaldn/",
     "reason": "IG error page (Profile isn't available) on headless capture, logged-out rate-limited; needs logged-in ig.py grab for context shot",
     "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "bf5ae593-a63e-4f03-a956-76a0afefc26e",
+    "name": "Poplar",
+    "ig_url": "https://www.instagram.com/poplarstudioar/",
+    "reason": "logged-out IG capture returned error screen; needs logged-in ig.py pass",
+    "queued_at": "2026-07-26"
+  },
+  {
+    "page_id": "39ef84ba-ae13-81d9-bcf3-e1be6cd2864b",
+    "name": "Mark Paterson",
+    "ig_url": "https://www.instagram.com/markpaterson_/",
+    "reason": "IG is his only shop window (no website); his work is video (World Triathlon event coverage, Le Chameau/Kiprun/Van Rysel/Defender brand films) but logged-out render only returns static grid thumbnails at 640-1080px, no reels/video files. Need logged-in ig.py grab for full-res stills and the actual video posts.",
+    "queued_at": "2026-07-26"
   }
 ]

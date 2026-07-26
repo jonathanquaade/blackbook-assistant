@@ -101,6 +101,8 @@
     "source_url": "https://www.instagram.com/poplarstudioar/",
     "caption": "Instagram profile",
     "link": "https://www.instagram.com/poplarstudioar/",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Logged-out capture returned Instagram's generic 'Something went wrong / page could not be loaded' error screen, not the real profile. Retried once (2026-07-26), same result both times. Throttled/blocked logged-out access, not a real content shot. Queued for a logged-in ig.py pass instead of shipping a mislabeled broken image."
   }
 ]
