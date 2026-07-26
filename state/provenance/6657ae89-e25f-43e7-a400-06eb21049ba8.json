@@ -62,9 +62,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Freelance",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-26T16:39:49",
       "set_by": "agent"
     },
     "Name": {
@@ -72,6 +72,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:39:49",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "tm@thor-merlin.no",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:39:49",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/rohtie/",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:39:49",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:39:49",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:39:49",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Norwegian (Oslo-based since 2011, b. 1992) live-coding visual performance artist and creative technologist working under the name rohtie: BA Programming (University of Oslo) plus BA Illustration/Design (Oslo National Academy of the Arts). Builds his own real-time visual tools (Sakuhin, Zypit, both on GitHub) using shaders, distance-field math, cellular automata and audio-reactive raymarching, performed live at Oyafestivalen, Slottsfjell, Riksscenen and Revision demoparty; also teaches code/visual art at Oslo National Academy of the Arts and mentors the DEMO youth art group in Drammen. Reads as an established independent practice: multiple unrelated commissions (Dawg Phaze, Aiming for Enrike, Kulturradet-supported work), no employer found on site, GitHub or two LinkedIn searches, so Work Status set Freelance on site-as-primary-source (his own portfolio, no employer named anywhere). Autonomy estimated 4: runs his own commissioned projects solo end to end, builds proprietary tools, and teaches/mentors others, hedged since no direct client testimonials seen. Capabilities currently Frontend development (web) + Creative technology (locked, jonathan-set on migration): the site shows no web-dev client work at all, only generative/live-coded art and installations, so filed an Open Question rather than overwrite the locked field.",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:39:49",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: site (thor-merlin.no) shows only live-coded generative visual art, installations and performance (Sakuhin/Zypit shader tools, festival performances, teaching), no web-dev client work. Drop \"Frontend development (web)\" and add \"Art practice\" (he exhibits/performs/is commissioned as an artist), keep \"Creative technology\"?\n2. LinkedIn: none found after two searches (his own site + GitHub have no employer link). Leave empty, or do you have one?\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:39:56",
+      "set_by": "agent"
     }
   }
 }

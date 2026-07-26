@@ -71,9 +71,9 @@
       "set_by": "agent"
     },
     "AI Notes": {
-      "value": "Product designer employed at Fuse Energy (London/NYC energy tech startup, an app-based energy supplier), per Jonathan's clip note; tagged Digital product design since Fuse ships a software product, not physical goods. No independent portfolio, LinkedIn, Instagram or press found under this name after several searches (Georgian name, likely low web presence, similar to Rory Keohane's entry). Title reads as individual-contributor level (no senior/lead modifier), so Autonomy estimated low-mid on that alone, hedge heavily as there is no corroborating work history. Listed Website is a Figma deck of portfolio samples, not a live site.",
-      "source_url": null,
-      "verified_at": "2026-07-26T16:00:21",
+      "value": "Product designer employed at Fuse Energy (London/NYC energy tech startup, an app-based energy supplier), per Jonathan's clip note; tagged Digital product design since Fuse ships a software product, not physical goods. No independent portfolio, LinkedIn, Instagram or press found under this name after several searches (Georgian name, likely low web presence, similar to Rory Keohane's entry). Title reads as individual-contributor level (no senior/lead modifier), so Autonomy estimated low-mid on that alone, hedge heavily as there is no corroborating work history. Listed Website is a Figma deck of portfolio samples, not a live site. WORK CAPTURE NOTE (2026-07-26): the Figma file is NOT empty (the scout's impression was wrong); its structure confirms 5 substantial product-design projects with hundreds of frames: Ask Abu Dhabi (AI itinerary chatbot), Blacklane (chauffeur booking app, the largest section), Al Khafji (property app), Lightspeed (install booking simulator), and case studies (Abound, Softr, Crowded). Full-res per-project image export via the Figma REST /v1/images endpoint is currently BLOCKED: the shared FIGMA_API_KEY hit an HTTP 429 rate limit (starter tier, low type) with retry-after ~4.6 days, resetting around 2026-07-31 06:00 GMT. A re-scrape is queued (state/figma-queue.json) to export the 13 selected frames after the quota resets. The Work section currently shows only a low-res whole-file overview thumbnail as a placeholder. NOTE for Jonathan: this rate limit is on the API KEY itself, so any other Figma-export entry is blocked for the same window.",
+      "source_url": "https://api.figma.com/v1/files/0QeK3m2uOQz5e5tp2K3kJr",
+      "verified_at": "2026-07-26T16:40:15",
       "set_by": "agent"
     },
     "Autonomy": {
@@ -83,9 +83,17 @@
       "set_by": "agent"
     },
     "Open Questions": {
-      "value": "1. Duplicate: this entry looks like a duplicate of page 39ef84ba-ae13-81e7-8118-e2533eb90761 (same Figma link, same \"employed at fuse as a product designer\" note, but missing his name). Keep this one and reject the other, or the reverse?\n2. Country, LinkedIn, Instagram, Email: not findable after several searches (Georgian name, very low web presence). Confirm okay to leave empty, or do you have a link for him?\n",
+      "value": "1. Duplicate: this entry looks like a duplicate of page 39ef84ba-ae13-81e7-8118-e2533eb90761 (same Figma link, same \"employed at fuse as a product designer\" note, but missing his name). Keep this one and reject the other, or the reverse?\n2. Country, LinkedIn, Instagram, Email: not findable after several searches (Georgian name, very low web presence). Confirm okay to leave empty, or do you have a link for him?\n3. Work capture: his Figma has 5 real projects (Blacklane, Ask Abu Dhabi, Al Khafji, Lightspeed, case studies) but full-res export is blocked by a Figma API rate limit until ~2026-07-31; a re-scrape is queued and only a low-res overview is shown for now. OK to ship as-is with the full work landing after the reset?\n",
       "source_url": null,
-      "verified_at": "2026-07-26T16:00:52",
+      "verified_at": "2026-07-26T16:40:16",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "figma-file-thumbnail.png"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-26T16:40:21",
       "set_by": "agent"
     }
   }
