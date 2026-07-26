@@ -1,0 +1,34 @@
+{
+  "page_id": "3954079e-7d68-4dc0-8a55-5b320945299d",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-26T22:50:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "site-04.png is captioned 'The Grid, coded web experiment (canvas/JS), 2018' (Design for Dance) but the actual image shows only the Wayback Machine's own toolbar/calendar UI plus 8 repeated lines of raw unstyled text reading 'Design for dance' with no visible interactive/canvas content whatsoever. It does not show the project it claims to.",
+      "fix": "Do not ship this capture. Try re-fetching the archived page without the Wayback toolbar overlay (the if_ modifier, e.g. https://web.archive.org/web/20190918183420if_/https://jmorgadosoares.com/design_for_dance/) and confirm the canvas/JS actually renders in a headless screenshot. If it genuinely does not render in any snapshot, drop this project and capture one of the 3 projects actually listed on the real final homepage (site-01.png shows 'The Database' 2019, 'Hello World' 2019, 'CSM Degree show identity' 2019 with named subpages/images) instead."
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "Once site-04.png is discounted as non-content, only 2 of the intended 3 named projects (CSM Fine Art degree show 2017, Defying Structures 2018) actually show real work. The homepage context shot itself lists 3 different, more current named projects (The Database, Hello World, CSM Degree show identity, all 2019) that were never attempted.",
+      "fix": "Capture at least one more distinct, real project image from the 2019 project list visible on site-01.png (The Database / Hello World / CSM Degree show identity), following the same wayback asset-path pattern used successfully for project-01/project-02."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "fail",
+      "evidence": "AI Notes still reads 'Personal site (josemorgadosoares.com) is now dead... has no Wayback Machine snapshot on record, so his site nav, project work and stated employment could not be verified.' This is now false: this same pass found and used a full archived portfolio at the domain variant jmorgadosoares.com with multiple Wayback snapshots (2017-2021) and captured 3 named projects from it.",
+      "fix": "Rewrite AI Notes to state the actual current finding: josemorgadosoares.com (the domain on file) is dead/unregistered, but the correct root domain jmorgadosoares.com was found archived on Wayback (snapshots 2017-2021) and used to source the captured images. Note the captured work is his 2016-2019 CSM art-school coding portfolio and may not reflect his current ecommerce specialty (mirror what's already honestly said in Open Questions #1 so a reader of AI Notes alone gets the same honest picture)."
+    },
+    {
+      "id": "B.links",
+      "result": "fail",
+      "evidence": "Website property still holds 'www.josemorgadosoares.com', the wrong/dead domain. The scraper discovered the actual correct root domain (jmorgadosoares.com) with real archived content this same pass but never corrected the field.",
+      "fix": "Update Website to jmorgadosoares.com (note it is also currently dead/unregistered, archived via Wayback) with the Wayback snapshot URL as source_url, rather than leaving the on-file domain that never had any real content."
+    }
+  ],
+  "to": "scraper"
+}

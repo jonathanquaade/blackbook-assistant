@@ -21,10 +21,10 @@
       "set_by": "agent"
     },
     "Size": {
-      "value": "11\u201340",
+      "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-26T22:44:52",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
@@ -35,9 +35,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T23:06:12",
+      "verified_at": "2026-07-26T22:42:21",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-26T22:44:52",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:44:52",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/subism/",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:44:52",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/subism",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:44:52",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "hello@subism.co.uk",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:44:52",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:44:52",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "UK web design and development studio (Derby, with a London office), founded 2012. Specialises in websites and digital platforms for charities, non-profits, festivals and events (CALM, Royal Marsden Cancer Charity, Manchester Women's Aid, BST Hyde Park, Eventim Apollo, Pankhurst Trust). Core team of about 6: co-founders Stuart Boyd (Creative Director) and Marc Wongsam (Digital Director), plus senior/full-stack developers and a project manager, backed by a freelance network of animators, illustrators and videographers for scale. Site says design and development both in-house (Craft CMS, Webflow, Shopify), so this reads as a small specialised studio rather than a large agency, per the Studio vs Agency bias. Also lists Brand Transformation and UX as services though no brand case studies were visible to confirm depth there.",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:44:52",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: add Web design? Site and case studies show design and build together (\"design and development\" throughout, e.g. Manchester Women's Aid \"website design\"), not just build. Capabilities is locked as jonathan-set on this migrated entry so I have not changed it.\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:45:02",
+      "set_by": "agent"
     }
   }
 }
