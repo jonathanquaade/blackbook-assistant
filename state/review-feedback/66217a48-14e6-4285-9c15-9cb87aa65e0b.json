@@ -3,32 +3,31 @@
   "name": "Six N. Five",
   "reviewer_version": "v1",
   "reviewed_at": "2026-07-26T00:00:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "verdict": "pass",
+  "attempt": 2,
   "checks": [
     {"id": "A.project-diversity", "result": "pass",
-     "evidence": "13 images span 5 distinct projects (New Life, Metamorphose, Species, Windows 11 Bloom, Among the Sky), captions differ per project, no repeated single-project padding."},
+     "evidence": "19 images span 5 distinct projects (New Life, Metamorphose, Species, Windows 11 Bloom, Among the Sky), each captioned distinctly, no repeated single-project padding."},
     {"id": "A.depth-over-breadth", "result": "pass",
-     "evidence": "2-3 images per project showing different compositions/frames, not a single hero shot repeated."},
+     "evidence": "2-3 stills per project plus a video-still per project for 4 of the 5, not single hero shots."},
     {"id": "A.on-capability", "result": "pass",
-     "evidence": "Capabilities = 3D & motion; captured stills are CGI/3D artwork, on-capability."},
-    {"id": "A.embeds-video", "result": "fail",
-     "evidence": "New Life, Metamorphose, Species and Among the Sky project pages each embed live Vimeo players (e.g. sixnfive.com/projects/among-the-sky/ has 5 distinct vimeo.com/video/ ids; new-life, metamorphose, species each have at least one) but the manifest only captured static PNG screenshots (site-01..03, 04..06, 07..09, 11..13) of these motion pieces. The tagged Capability is '3D & motion' so the video IS the on-capability work, not a bonus.",
-     "fix": "For each project with a live Vimeo embed (new-life, metamorphose, species, among-the-sky), add a {type:'embed', url:'https://vimeo.com/<id>', caption, link} manifest entry per CLAUDE.md, plus a Vimeo-oEmbed thumbnail image (Notion does not preview Vimeo embeds). Keep the existing stills as supplementary images; do not remove them."},
-    {"id": "A.context-shots", "result": "fail",
-     "evidence": "site-14.png and site-16.png are both captioned 'Website' and are byte-identical (md5 0707ec1159..., 5970 bytes, 1440x900) but both render as a solid black frame with a single stray white line, not sixnfive.com's homepage. sixnfive.com returns HTTP 200 and has real content, so this is a broken capture, not a genuinely unreachable site (the IG-throttle exception in the checklist does not apply here). site-15.png (Instagram) is correct: real instagram.com/sixnfive profile, avatar/bio/grid all match.",
-     "fix": "Delete site-14.png and site-16.png (and their manifest entries), re-capture a real homepage screenshot with scrape.py shot https://sixnfive.com/ --out assets/66217a48-14e6-4285-9c15-9cb87aa65e0b --caption Website (verify the PNG actually shows page content before adding it back), and remove the duplicate context-shot entry so there is exactly one Website shot."},
+     "evidence": "Capabilities = 3D & motion; captured stills and embedded Vimeo videos are the studio's CGI/motion work, on-capability."},
+    {"id": "A.embeds-video", "result": "pass",
+     "evidence": "Fixed. Manifest now has 4 {type:embed} entries (vimeo.com/1120902462, 1072143366, 917075027, 828004725) for New Life, Metamorphose, Species and Among the Sky, each with a Vimeo-oEmbed thumbnail still (site-19..22, verified by opening each: matches its project) and a captioned link to the source project page. Confirmed live in the Notion body: embed block immediately followed by a paragraph metadata line ('New Life, 2025 - sixnfive.com - video') using a middle dot, not an em-dash."},
+    {"id": "A.context-shots", "result": "pass",
+     "evidence": "Re-verified both context shots by opening the files. site-18.png (Website) now shows the real sixnfive.com homepage (Digital/Physical work grid, real content, no longer the black-frame capture). site-15.png (Instagram) is unchanged from attempt 1 and still correct: real instagram.com/sixnfive profile, avatar/bio/grid match Ezequiel Pini / Six N. Five. The old duplicate black-frame site-14.png/site-16.png files are gone from the asset dir and not in the manifest."},
     {"id": "A.no-uncaptioned-images", "result": "pass",
-     "evidence": "Every manifest entry has a caption; project entries also carry a link to the source project page."},
+     "evidence": "Checked every image block's Notion caption directly via the API: all 19 images carry a project/context caption plus a source domain, no blanks."},
     {"id": "A.absence-explained", "result": "n/a",
      "evidence": "Site is live and rich in content; not applicable."},
-    {"id": "A.body-structure-clean / images-delivered", "result": "fail",
-     "evidence": "The Notion page currently has ZERO body blocks (blocks/<id>/children returns 0 results) and the Images property is empty ([]), despite manifest.json having 16 fully-captioned entries and all 16 files present on disk in assets/66217a48-14e6-4285-9c15-9cb87aa65e0b/. keeper.py upload (and likely body-reset before it) was never actually run against this page, or its result was never persisted -- Jonathan currently sees no work at all on this entry.",
-     "fix": "After fixing the embed and context-shot issues above, run keeper.py body-reset then keeper.py upload 66217a48-14e6-4285-9c15-9cb87aa65e0b assets/66217a48-14e6-4285-9c15-9cb87aa65e0b and confirm afterward (via the API, not just the command exit code) that the Images property and body Work section are actually populated."}
+    {"id": "A.body-structure-clean / images-delivered", "result": "pass",
+     "evidence": "Fixed. Queried blocks/<id>/children directly: 29 blocks total = 1 heading_2 'Work' + 17 project images + 4x(embed + paragraph) + 2 context-shot images + 1 divider. Matches manifest exactly (19 images + 4 embeds). Images property on the page also lists all 19 files. Jonathan will actually see the work this time."},
+    {"id": "housekeeping", "result": "pass",
+     "evidence": "The 3 unused thumb-*.jpg files flagged in attempt 1 are gone from the asset directory; the video-still captures (site-19..22) replaced them as the wired-in embed thumbnails."}
   ],
   "other_notes": [
-    "3 unused thumb-*.jpg files (thumb-metamorphose.jpg, thumb-new-life.jpg, thumb-species.jpg) sit in the asset dir but are not referenced by any manifest entry -- likely leftover from an earlier draft; either wire them in as embed-thumbnail previews for the new video embeds (fix above) or delete them so the asset dir isn't confusing on a later pass.",
-    "Metadata (B/C/D) looks complete and correct: Type, links, Country/Size/Work Status (Studio, objective sourcing described in AI Notes), Autonomy=5 with reasoning, Source filled, no em-dashes, Open Question is a properly conditional proposal for additional Capabilities on a jonathan-locked migrated field (per 2026-07-12 calibration, this is correct, not a fail)."
+    "Metadata (B/C/D) unchanged from attempt 1 and still correct: Type, links, Country/Size/Work Status, Autonomy=5 with reasoning, Source filled, no em-dashes, conditional Open Question on additional Capabilities for a jonathan-locked migrated field (correct per 2026-07-12 calibration).",
+    "All attempt-1 fails are resolved. Flipping to Needs Review."
   ],
   "to": "scraper"
 }
