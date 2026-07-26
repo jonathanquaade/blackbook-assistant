@@ -59,3 +59,8 @@ Education: BFA Graphic Design 2016, Rhode Island School of Design
 Previously: Facebook, Universe, DVTK, IFTTT
 
 Current interests: peer-to-peer web, social equity, DJing, privacy, public transportation + urban planning, libraries...
+# Archived page body (2026-07-26)
+
+Work
+
+Device Phase, 2016 (documentation video: music composition, development, interaction design, performance) · vimeo.com
