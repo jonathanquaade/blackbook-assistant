@@ -3,10 +3,10 @@
   "migrated_at": "2026-06-12",
   "fields": {
     "Website": {
-      "value": "https://coreyward.svbtle.com/",
-      "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "value": "https://www.coreyward.dev/",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
     },
     "Worked Together": {
       "value": "Never",
@@ -67,9 +67,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
-      "source_url": null,
-      "verified_at": null,
+      "value": "Employed",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
       "set_by": "agent"
     },
     "Name": {
@@ -77,6 +77,54 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/coreyward/",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/in/-coreyward/",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
+    },
+    "Works At Link": {
+      "value": "https://www.projectread.ai/",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "5",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Senior full-stack engineer, ~20 yrs experience: freelance contractor (Kolbe A Index bio, old day-rate era) then Jones-Dilworth, The Bearded Bastard, Senior Web Developer at Figma, now Co-Founder and CTO at Project Read AI (an ed-tech AI startup). Contra profile still lists him as an active $200-250/hr freelancer, but his own site and GitHub bio both currently read Project Read as his role, treated as more current per Work Status rule (self-maintained sources agree, Contra likely stale). High autonomy inferred: founder-level, worked solo without spec or review per his own old bio, clients reportedly include Figma, Netlify, Pentagram, ASICS. Hedged, no first-hand evidence.",
+      "source_url": "https://www.coreyward.dev/",
+      "verified_at": "2026-07-26T22:39:34",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: currently just Frontend development (web) (locked to your set). His work is full-stack (React, Next.js, TypeScript, PostgreSQL, APIs) per his site, GitHub and Contra profile. Add Backend development too?\n2. Email: could not confirm a public one at confidence, left empty.\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T22:39:42",
+      "set_by": "agent"
     }
   }
 }
