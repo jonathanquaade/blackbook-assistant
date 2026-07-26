@@ -1,0 +1,116 @@
+{
+  "page_id": "a3f85d72-7b18-4fdf-82a0-b32e98e66e1c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-26T23:45:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named projects across 10 active work images: Arketa (2), Theran (2), Neureal (2) typefaces from outline-online.com, YO eyewear identity (2, uses Arketa as wordmark), Takenoko-zoku book design (2, lauracsocsan.com). Confirmed distinct Sanity asset IDs per typeface (450b97c8..., 530e9e62..., 448ba357..., 738c47cf..., 189703006..., 3b087f1a...), no re-used file across products (Sanity contamination trap correctly avoided)."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "2 images per project going beyond a single hero shot: Arketa shown in 2 different FORM Design Magazine editorial contexts, Theran in a hero shot plus a weight/dot-density progression grid, Neureal in a print-distortion letterform test plus a tabular-numerals book application, YO in a font-approval spec sheet plus embossed packaging, Takenoko-zoku in cover plus interior spread."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capability is Type design. Arketa/Theran/Neureal are pure type-design specimens. YO eyewear identity is documentary proof the wordmark uses her own Arketa font (site-10.jpg literally shows the font-approval spec naming 'Outline Online: Arketa'). Takenoko-zoku is custom cover lettering (verified genuine: the cover image itself reads 竹の子族 = Takenoko-zoku and 渋谷典子 = Shibuya Noriko in kanji, so the caption was read off the primary artifact, not invented). Scout already filed an Open Question proposing an additional Graphic design tag for the adjacent identity/book work rather than overwriting the locked Capabilities field, which is the contract-correct move."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-14.png verified as the real lauracsocsan.com homepage (nav, About, typefaces, clients list all visible, matches live curl of the site). site-15.png verified as the real instagram.com/cs__laura profile (handle, 'Laura Csocsan', 'Consulting + Type and Design Direction', '1/2 of @outline_____online' bio, matches the Instagram field). Both correctly captioned and correct."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "pass",
+      "evidence": "All 12 images captioned with project name + source link. Cross-checked 6 of the 10 work-image captions against the live outline-online.com Sanity JSON (own site captions): scraper's captions are accurate, if slightly more generic, paraphrases of the site's own figure captions (e.g. site-06 official caption is 'Weight progression of styles in Theran, showing key stages of dots on the matrix', scraper wrote 'Theran typeface specimen, display application'; minor imprecision, not a factual error, and not worth a bounce)."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "pass",
+      "evidence": "No video/audio source material on any of the 5 project pages checked (product pages are static image sliders). Not applicable, none skipped."
+    },
+    {
+      "id": "A.absence-is-explained",
+      "result": "pass",
+      "evidence": "Work is present and full; nothing thin or unexplained."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "pass",
+      "evidence": "Verified live via API: exactly 14 blocks (heading_2 'Work', 12 captioned images, divider). Matches manifest.json 1:1, no orphan or duplicated blocks."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Person. Correct, Laura Csocsan is an individual designer."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website, Instagram (verified right person via bio match), LinkedIn, and Email all present. Note (not a fail, flagged per instructions): Website field is lauracsocsan.xyz, confirmed live 409 (bot-blocked); her working current domain is lauracsocsan.com (200, used successfully for the scrape) plus her foundry outline-online.com. Suggest the scout swap the Website field to lauracsocsan.com or add outline-online.com as a supplementary link on the next metadata pass, but this does not block the entry, both domains were findable and used."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities = [Type design], set_by jonathan (locked, migrated). Scout correctly did not overwrite it and instead filed an Open Question proposing Graphic design as an addition, per the calibration note in the checklist."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Country = Hungary, Size = 1, Work Status = Freelance (per her own site's explicit statement, objective-rule compliant, AI Notes names the source)."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 4, set_by agent, reasoned in AI Notes (self-initiates and ships her own retail typeface releases end to end, studio background, hedged as no direct feedback from Jonathan yet)."
+    },
+    {
+      "id": "C.no-judgment-contradicts-evidence",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) do not contradict anything in the raw clip text, which is only archived product-license copy (clipped.md), not a relationship claim."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "clipped.md contains only site license-tier copy ('Ambiant - Print License', 'Zorn - Web License' etc), correctly archived, nothing actionable was left unaddressed."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes asserts verifiable facts (ECAL/MOME education, past stints at &Walsh/Ockto/Portfolio.hu) and hedges the Autonomy inference explicitly. Seniority read present ('Senior-leaning independent, ~7 yrs since 2019 graduation'). One minor staleness noted per task brief: the typeface list in AI Notes (Ambiant/Zorn/Neureal/OO Arketa) omits Theran and may not reflect the current outline-online.com lineup (confirmed live: Arketa, Theran, Neureal all present on the site). Worth a quick refresh next pass, not a block now."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2020-10-28'."
+    },
+    {
+      "id": "D.provenance-written",
+      "result": "pass",
+      "evidence": "Every touched field has a set_by in state/provenance/a3f85d72-7b18-4fdf-82a0-b32e98e66e1c.json. Capabilities correctly stays set_by jonathan (locked/migrated), all agent-researched fields are set_by agent. null source_url is the known systemic tooling gap, not a fail per the checklist note."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Scanned AI Notes, Open Questions, captions and body paragraph text via the API. No em-dash characters found anywhere."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One terse, conditional Open Question: proposing an additional Graphic design capability, correctly framed as a question rather than an overwrite of the locked field."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry Status was Enriching at review time, now flipped to Needs Review by this gate pass."
+    }
+  ],
+  "to": "scraper",
+  "notes": "Strong entry, genuinely deep type-design work with real documentary proof (the YO eyewear font-approval spec, the Takenoko-zoku kanji cover read off the image itself rather than guessed). Investigated two things that looked suspicious on first pass and both cleared: the Takenoko-zoku/Shibuya Noriko attribution is verified directly from the book cover's own Japanese text (Takenoko-zoku / Shibuya Noriko), not fabricated; and the Arketa 'magazine spread' captions were checked against outline-online.com's own Sanity figure captions and matched (Detail from FORM Design Magazine, pre-release Arketa shapes). Two pre-flagged scout-metadata nits do not block: (1) Website field lauracsocsan.xyz 409s live, lauracsocsan.com and outline-online.com are her live current domains, worth a Website field swap next scout pass; (2) AI Notes typeface list is slightly stale (misses Theran, which is live on the site). Neither undermines the captured work. PASS."
+}
