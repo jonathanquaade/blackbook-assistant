@@ -65,6 +65,18 @@ know exactly what to fix.
       block count via keeper.api (expected ~2 + items, not 2x). (Field.io, 2026-07-11:
       a successful upload without a prior body-reset left 5 orphan blocks above the
       Work heading and duplicated context shots.)
+- [ ] **Body is not empty after a bounce-fix.** When re-reviewing a bounce, verify the
+      LIVE page state via the Notion API (block count + the Images property), never
+      trust manifest.json alone as proof a fix reached Notion. A corrected manifest
+      means nothing if `keeper.py upload` was never re-run after it; a stray second
+      `body-reset` with no follow-up `upload` leaves 0 body blocks and a stale Images
+      property (still carrying the very file the fix rejected), which is WORSE than
+      the original failure. FAIL if block count is 0 or the Images property still
+      contains a file flagged `rejected: true` in the manifest. (Boulevard LAB,
+      2026-07-26: manifest fix was correct on attempt 2, but body-reset was run a
+      second time without a following upload, leaving the live page with 0 blocks and
+      the Images property still listing the rejected ink-cartridge photo; caught only
+      by checking the live API, not the manifest.)
 
 ### B. Scout completeness (the scraper inherits a finished metadata entry)
 - [ ] **Type classified** (Person/Studio/Agency/Foundry/Publication).
