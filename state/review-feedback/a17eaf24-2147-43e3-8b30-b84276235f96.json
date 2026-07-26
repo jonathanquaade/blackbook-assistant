@@ -1,0 +1,34 @@
+{
+  "page_id": "a17eaf24-2147-43e3-8b30-b84276235f96",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-26T21:30:57",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.scrape-upload-complete",
+      "result": "fail",
+      "evidence": "assets/a17eaf24-2147-43e3-8b30-b84276235f96/manifest.json has 9 captioned entries (8 work images + 1 website context shot), all files present on disk, but the live Notion page has Images property = [] (empty) and 0 body blocks (no Work section at all). The scraper was interrupted mid-manifest (session limit) before running body-reset + upload, so none of the captured work ever reached the page.",
+      "fix": "Run keeper.py body-reset a17eaf24-2147-43e3-8b30-b84276235f96 then keeper.py upload a17eaf24-2147-43e3-8b30-b84276235f96 assets/a17eaf24-2147-43e3-8b30-b84276235f96 to push the existing manifest to the live page. Manifest content itself looks strong (8 distinct projects: Nike x Martine Rose, AISOMA/Google Arts and Culture Lab, Say What You See, GT Planar with GrilliType, Cash App Virtual Nature Walk with Superficial Studio, Martine Rose What We Do All Day with International Magic, The Experience Machine, The 1975 People Launch with Ben Ditto) so no re-scraping should be needed, just the upload step, then confirm Images property and body populate before handing back."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website context shot present in manifest (site-11.png, captioned Website, isjackwild.com, context_shot: true) and file opens correctly showing the real site. Instagram profile screenshot could not be captured logged-out (scrape.py shot errored twice per state/ig-queue.json entry for this page_id, queued 2026-07-26 for a logged-in ig.py grab), which is the sanctioned exception path per CLAUDE.md/checklist since it is documented and queued.",
+      "fix": null
+    },
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "8 distinct named projects in the manifest, no repeated project across multiple images.",
+      "fix": null
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Captured work is frontend/creative-tech build work (interactive sites, WebGPU/generative experiments) matching the tagged Capability Frontend development (web).",
+      "fix": null
+    }
+  ],
+  "to": "scraper"
+}
