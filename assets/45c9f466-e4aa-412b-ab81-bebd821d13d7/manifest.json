@@ -60,11 +60,20 @@
     "source_url": "https://freight.cargo.site/w/1500/i/df8cac59dbe03675145cd666bf9e4c6830c376d43d12ed3ea2720731938641f5/Office-Times-Boulevard-LAB-Sharp.jpg",
     "caption": "Office Times",
     "link": "https://boulevardlab.com/Office-Times",
-    "captured_at": "2026-07-26"
+    "captured_at": "2026-07-26",
+    "rejected": true,
+    "rejection_reason": "Reviewer bounce (2026-07-26): although this file genuinely comes from the Office-Times page (URL/hash confirmed by direct re-fetch), it is one of the foundry's mock ecommerce-listing specimen images (font set as a fake product title, here 'Tri-Colour Original Ink Cartridges, (2 Pack)'). Opened and confirmed it reads as an unrelated product photo rather than a legible type specimen, so it does not represent the typeface clearly. Replaced with site-13.jpg, a clean Gg glyph specimen from the same page."
   },
   {
     "file": "site-10.jpg",
     "source_url": "https://freight.cargo.site/w/1500/i/7240438605eb7a4ca3d91602fe27b9e498bcf59aa0ce199e6ad93102a55f87d1/Office-Times-Boulevard-LAB-Mono-Aa.jpg",
+    "caption": "Office Times",
+    "link": "https://boulevardlab.com/Office-Times",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-13.jpg",
+    "source_url": "https://freight.cargo.site/w/1500/i/1014bace77dca4776387109f32c7b70ec33a7097cdb6356ec3dee4b36ce5908c/Office-Times-Boulevard-LAB-Mono-Gg.jpg",
     "caption": "Office Times",
     "link": "https://boulevardlab.com/Office-Times",
     "captured_at": "2026-07-26"

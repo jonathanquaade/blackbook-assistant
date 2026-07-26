@@ -1,0 +1,3 @@
+# Archived page body (2026-07-26)
+
+Ouroboros v2.031 October 2019The 2019 update of Ouroboros, called Protean, contains several new features. The font now fully supports Vietnamese. It also has a basic Cyrillic set, with additional Ukrainian, Serbian and Macedonian support, and some historical forms (as suggested by Cyrillic users). The alchemical set has been completed and fully reviewed for improved contrast, proportions and kerning. Some other symbols have been added, such as a full zodiac set. Spacing and kerning has been improved, making it subtly more relaxed. More than one hundred ligatures have been set as default (they were previously discretionary ligatures), making Ouroboros more versatile and changing than ever.More

@@ -1,0 +1,90 @@
+[
+  {
+    "file": "site-01.png",
+    "source_url": "https://klim.co.nz/",
+    "caption": "Website",
+    "link": "https://klim.co.nz/",
+    "captured_at": "2026-07-26",
+    "context_shot": true
+  },
+  {
+    "file": "site-02.png",
+    "source_url": "https://www.instagram.com/klim_type_foundry/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/klim_type_foundry/",
+    "captured_at": "2026-07-26",
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "IG served a blank/throttled page logged out (two attempts, site-02 and site-03), not the real profile. Queued for a logged-in ig.py grab instead of shipping a broken shot."
+  },
+  {
+    "file": "site-03.png",
+    "source_url": "https://www.instagram.com/klim_type_foundry/",
+    "caption": "Instagram profile retry",
+    "link": "https://www.instagram.com/klim_type_foundry/",
+    "captured_at": "2026-07-26",
+    "context_shot": true,
+    "rejected": true,
+    "rejected_reason": "Second attempt, still just an infinite loading spinner logged out. See site-02 note."
+  },
+  {
+    "file": "klim-01-founders-grotesk-specimen.png",
+    "source_url": "https://klim.imgix.net/images/Founders-Grotesk-Collection.png?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "Founders Grotesk, type specimen",
+    "link": "https://klim.co.nz/collections/founders-grotesk/"
+  },
+  {
+    "file": "klim-02-calibre-specimen.png",
+    "source_url": "https://klim.imgix.net/images/Calibre.png?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "Calibre, type specimen",
+    "link": "https://klim.co.nz/fonts/calibre/"
+  },
+  {
+    "file": "klim-03-tiempos-specimen.png",
+    "source_url": "https://klim.imgix.net/images/Tiempos-Collection_P3SvyJm.png?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "Tiempos, type specimen",
+    "link": "https://klim.co.nz/collections/tiempos/"
+  },
+  {
+    "file": "klim-04-untitled-specimen.png",
+    "source_url": "https://klim.imgix.net/images/Untitled-Collection.png?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "Untitled (Sans/Serif/Mono), type specimen",
+    "link": "https://klim.co.nz/collections/untitled/"
+  },
+  {
+    "file": "klim-05-sohne-specimen.png",
+    "source_url": "https://klim.imgix.net/images/Sohne-Collection.png?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "Sohne, type specimen",
+    "link": "https://klim.co.nz/collections/soehne/"
+  },
+  {
+    "file": "klim-06-national-specimen.png",
+    "source_url": "https://klim.imgix.net/images/National.png?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "National, type specimen",
+    "link": "https://klim.co.nz/fonts/national/"
+  },
+  {
+    "file": "klim-07-epicene-specimen.png",
+    "source_url": "https://klim.imgix.net/images/Epicene-Collection-1.png?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "Epicene, type specimen",
+    "link": "https://klim.co.nz/collections/epicene/"
+  },
+  {
+    "file": "klim-08-diegrotesk-specimen.jpg",
+    "source_url": "https://klim.imgix.net/images/DieGrotesk_social_share_11_Oz0iGOG.jpg?w=2400&fit=crop&crop=edges&ar=1.91:1&auto=format,compress&cs=srgb&q=90",
+    "caption": "Die Grotesk, type specimen",
+    "link": "https://klim.co.nz/fonts/die-grotesk/"
+  },
+  {
+    "file": "klim-09-sohne-inuse-stripe.jpg",
+    "source_url": "https://klim.imgix.net/original_images/Sohne_Stripe_2.jpg?auto=format,compress&fit=max&w=2000",
+    "caption": "Sohne in use: Stripe billboard, Make progress campaign",
+    "link": "https://klim.co.nz/in-use/"
+  },
+  {
+    "file": "klim-10-founders-inuse-brittensinfonia.jpg",
+    "source_url": "https://klim.imgix.net/original_images/Founders_BrittenSinfonia_1.jpg?auto=format,compress&fit=max&w=2000",
+    "caption": "Founders Grotesk in use: Britten Sinfonia identity banners",
+    "link": "https://klim.co.nz/in-use/"
+  }
+]

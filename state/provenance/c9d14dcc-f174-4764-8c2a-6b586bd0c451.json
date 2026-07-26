@@ -23,21 +23,21 @@
     "Size": {
       "value": "2\u201310",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-26T23:20:36",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "New Zealand"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-26T23:20:36",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T23:08:20",
+      "verified_at": "2026-07-26T23:16:42",
       "set_by": "agent"
     },
     "Work With?": {
@@ -55,9 +55,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-26T23:20:36",
       "set_by": "agent"
     },
     "Name": {
@@ -65,6 +65,66 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Foundry",
+      "source_url": null,
+      "verified_at": "2026-07-26T23:20:36",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/klim_type_foundry/",
+      "source_url": null,
+      "verified_at": "2026-07-26T23:20:36",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/klim-type-foundry",
+      "source_url": null,
+      "verified_at": "2026-07-26T23:20:36",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "support@klim.co.nz",
+      "source_url": null,
+      "verified_at": "2026-07-26T23:20:36",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": null,
+      "verified_at": "2026-07-26T23:20:36",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Independent digital type foundry founded 2005 by Kris Sowersby, based in Wellington, New Zealand, with a small core team (about 5 full time) plus international part time collaborators (Barcelona, Berlin, Sydney, Melbourne per their About page). Retail typefaces (Founders Grotesk, Calibre, Tiempos, Untitled Sans, Sohne, National, Epicene) plus custom typeface and lettering commissions for clients like Financial Times, PayPal, National Geographic, Trade Me and Tourism NZ. Well established, widely respected foundry (TDC and ADC awards, fonts shipped in macOS since Catalina). Instagram and LinkedIn verified from their own site/search, no first hand contact yet. Instagram context shot (klim_type_foundry) could not be captured logged-out (blank page then infinite spinner, twice); queued to state/ig-queue.json for a logged-in ig.py pass.",
+      "source_url": "https://klim.co.nz",
+      "verified_at": "2026-07-26T23:44:06",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: site also lists custom lettering and logotypes alongside retail/custom type design. Add Graphic design (or Identity systems) for that, or keep Type design only?\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T23:20:56",
+      "set_by": "agent"
+    },
+    "Images": {
+      "value": [
+        "site-01.png",
+        "klim-01-founders-grotesk-specimen.png",
+        "klim-02-calibre-specimen.png",
+        "klim-03-tiempos-specimen.png",
+        "klim-04-untitled-specimen.png",
+        "klim-05-sohne-specimen.png",
+        "klim-06-national-specimen.png",
+        "klim-07-epicene-specimen.png",
+        "klim-08-diegrotesk-specimen.jpg",
+        "klim-09-sohne-inuse-stripe.jpg",
+        "klim-10-founders-inuse-brittensinfonia.jpg"
+      ],
+      "source_url": null,
+      "verified_at": "2026-07-26T23:38:39",
+      "set_by": "agent"
     }
   }
 }

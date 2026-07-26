@@ -20,3 +20,20 @@ No first-person Jonathan commentary found in the body.
 
 Typefaces - VJ-TYPE
 
+# Archived page body (2026-07-26)
+
+ Cako  
+
+ Love  
+
+ KOBE   
+
+ Dida   
+
+ Nord  
+
+ Sud  
+
+ Traviata  
+
+ Canopée  
