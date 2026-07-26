@@ -1,0 +1,116 @@
+{
+  "page_id": "83ab53d6-832d-4eef-89e3-50b422ce7f06",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "n/a",
+      "evidence": "Work capture deliberately deferred pending Jonathan's keep/reject decision; absence documented in AI Notes and Open Question 1."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "n/a",
+      "evidence": "Same as above; deferred capture is the correct approach for a likely-reject decision gate."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "n/a",
+      "evidence": "No images captured; deferred."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "n/a",
+      "evidence": "No context shots captured; deferred pending keep/reject call. Absence documented in AI Notes."
+    },
+    {
+      "id": "A.no-uncaptioned-images",
+      "result": "n/a",
+      "evidence": "No images present."
+    },
+    {
+      "id": "A.embeds-for-video-audio",
+      "result": "n/a",
+      "evidence": "No embeds captured; deferred."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes states this is a large ad network directing work at scale, not a hands-on studio; capture deferred to avoid wasted effort on a likely reject. Open Question 1 surfaces the keep/reject decision explicitly. Documentation is clear and sufficient."
+    },
+    {
+      "id": "A.body-structure-clean",
+      "result": "n/a",
+      "evidence": "No upload run on this entry; body is empty (clipped.md confirms body was blank at clip time). No orphan blocks possible."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency. Correct per CLAUDE.md: large full-service org built for scale (~1,900 people, 45 offices, WPP-backed AOR for Toyota). Not a Studio."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website: https://www.theandpartnership.com. Instagram: https://www.instagram.com/theandpartnership/. LinkedIn: https://uk.linkedin.com/company/the&partnership. Email: hello@theandpartnership.com. All four present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Six capabilities set by agent: Brand strategy, Creative direction, Film & video production, Insights & research, Social media content, Web design. Plausible for a full-service ad network. Not migration-locked, so agent may write directly."
+    },
+    {
+      "id": "B.country-size-work-status",
+      "result": "pass",
+      "evidence": "Size corrected to 100+ from erroneous pre-filled 11-40 (documented in AI Notes). Country is 25-entry multi-select reflecting global footprint. Work Status = Studio: this is the schema's org-entity option (Freelance/Employed/Studio/Unknown); 'Studio' is the least-wrong available value for an agency org. Minor semantic oddness noted but not a scout error."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Agency entry, not a Person. Per checklist calibration: Autonomy is optional for org-type entries. Not set; not required."
+    },
+    {
+      "id": "C.no-judgment-contradictions",
+      "result": "pass",
+      "evidence": "Zero-states (Never/Don't know them/Unvetted) are consistent with the clipped.md, which contains no relationship facts or Jonathan commentary."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip was bare: name + URL + pre-existing Country/Size/Work Status fields only. No instructions present. Size correction (11-40 to 100+) was acted on."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Notes use appropriately hedged language ('approx 1,900 people', 'over $1.2bn in billings'). Verifiable facts (WPP/GroupM backing, Toyota AOR, office count) are asserted. No em-dashes. Seniority/Autonomy read not required for org entry."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper, 2026-07-13'. Filled correctly."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All touched fields have provenance entries with correct set_by values. source_url is null throughout; this is the known systemic tooling gap (not a gate failure per calibration note). No field written below 0.8 confidence."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "Checked AI Notes and Open Questions text. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One question, terse and specific: names the org size, WPP backing, AOR role, and asks keep/reject explicitly. No redundant fields asked. Conditional check: no field with existing non-zero value is being re-asked."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Entry is in Enriching; reviewer will flip to Needs Review on this pass."
+    }
+  ],
+  "notes": "Decision-gate entry (scout-flagged possible reject). Work/images deferred intentionally and documented. Metadata is complete and honest. One minor schema note: Work Status = 'Studio' is the best available option for an Agency org in the current schema; not a correctness error. Flipping to Needs Review so Jonathan can rule on the keep/reject Open Question.",
+  "to": "scout"
+}

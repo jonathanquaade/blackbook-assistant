@@ -1,0 +1,107 @@
+{
+  "page_id": "464da4f7-05ca-4c00-a701-94b8b9289208",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T10:40:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "mode": "decision-gate",
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "No images captured; capture deliberately deferred pending Jonathan keep/reject decision. Absence is documented."
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "n/a - intentional deferral, not a scraper shortfall."
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "n/a - no images to evaluate."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "n/a - this is a decision-gate review; context shots belong to a subsequent scraper pass if Jonathan confirms keep."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes explain the agency scale and why capture is deferred; OQ 2 is the explicit keep/reject ask."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "No upload ran; no body content to check."
+    },
+    {
+      "id": "B.type-classified",
+      "result": "pass",
+      "evidence": "Type = Agency; correct for a 250-person full-service advertising organisation."
+    },
+    {
+      "id": "B.all-findable-links",
+      "result": "pass",
+      "evidence": "Website (motherlondon.com), Instagram (instagram.com/motherlondon), LinkedIn (linkedin.com/company/mother), Email (newbiz@motherlondon.com) all present."
+    },
+    {
+      "id": "B.capabilities-tagged",
+      "result": "pass",
+      "evidence": "Capabilities set_by: jonathan (locked). Scout left clipper value intact and raised OQ 1 proposing expansion. Correct contract-compliant path per 2026-07-12 calibration."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country UK/US correct (London HQ + NY/LA offices). Size 100+ correct (250+ staff). Work Status = Studio is the conventional org-placeholder; no Agency option exists in the field. Note: schema limitation, not an error."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy optional for Agency-type entries per 2026-06-21 calibration; not set, which is correct. AI Notes contain an equivalent leadership read."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) match the absence of any clip-note relationship evidence."
+    },
+    {
+      "id": "C.clip-note-fully-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was a bare web-clipper entry (2020-11-01); no embedded instructions. Source set verbatim."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "AI Notes cite verifiable facts only (founded 1996, client roster, offices, scale). Capabilities mismatch framed as a proposal in OQ, not asserted. No unhedged inferences. No em-dashes."
+    },
+    {
+      "id": "D.source-filled",
+      "result": "pass",
+      "evidence": "Source: 'Web clipper, 2020-11-01' present."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have set_by recorded; Capabilities correctly marked set_by: jonathan. Null source_urls are the known systemic tooling gap, not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "AI Notes and Open Questions use semicolons, commas and periods throughout. No em-dashes found."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Two numbered questions: OQ 1 proposes Capabilities expansion (correct channel for a locked field); OQ 2 asks keep/use. Both terse, neither asks for a field that already has a non-zero value."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipping to Needs Review in this pass."
+    }
+  ],
+  "notes": "This is a DECISION-GATE entry. No work images are expected or required at this stage; the scraper pass is explicitly conditional on Jonathan's keep/reject answer to OQ 2. All metadata is complete and honest. Work Status = Studio is a schema-level limitation (no Agency option in that field), not a scout error.",
+  "to": null
+}

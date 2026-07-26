@@ -1,0 +1,115 @@
+{
+  "page_id": "a181e15d-23bf-4c65-a186-6e461453a8f0",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-13T00:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 distinct named exhibitions: Biovortex Kyoto, Planets Tokyo, Borderless Azabudai, A Forest Where Gods Live (Mifuneyama Rakuen), Phenomena Abu Dhabi; plus 2 YouTube thumbnails"
+    },
+    {
+      "id": "A.depth-over-breadth",
+      "result": "pass",
+      "evidence": "Multiple interior installation views per venue (Abu Dhabi 5 individual artwork shots, Borderless 4 interior shots, Planets 4 interior shots, Mifuneyama 2 interior shots)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Capabilities locked jonathan ('Frontend development (web)'); scout filed OQ proposing Art practice / Creative technology / 3D & motion / Spatial & exhibition design. Per 2026-07-12 calibration: locked tag + OQ = PASS. Work captured is teamLab's actual immersive digital art practice."
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "site-25.png verified as teamlab.art homepage (teamLab nav, Biovortex Kyoto hero). site-26.png verified as instagram.com/teamlab profile (606K followers, correct bio 'interdisciplinary art collective')."
+    },
+    {
+      "id": "A.no-uncaptioned",
+      "result": "pass",
+      "evidence": "All images have captions and source links. site-02.jpg caption is generic ('teamLab immersive digital installation') without a named project but source link is present; minor, not systemic."
+    },
+    {
+      "id": "A.embeds-for-video",
+      "result": "pass",
+      "evidence": "2 YouTube embeds (Borderless highlight + Phenomena highlight), each paired with a thumbnail image that links to the video."
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "AI Notes documents no public general email (press form only). IG context shot obtained. No unexplained gaps."
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "29 blocks: [0] h2 Work, [1-22] images, [23-27] 2 embeds each with paragraph metadata + thumbnail, [28] divider. No orphan blocks. Paragraph metadata uses ' · ' not ' -- '."
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type = Studio. Correct for teamLab (specialized hands-on creative execution team, not a large full-service agency)."
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website teamlab.art, Instagram instagram.com/teamlab (verified correct account), LinkedIn linkedin.com/company/teamlab. No public email documented in AI Notes (press form only)."
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Locked jonathan value ('Frontend development (web)') with OQ proposing correct tags. 2026-07-12 calibration: locked + OQ = PASS."
+    },
+    {
+      "id": "B.country-size-workstatus",
+      "result": "pass",
+      "evidence": "Country = Japan (Tokyo/Chiyoda-ku HQ confirmed; clipped multi-country values explained as exhibition venue regions). Size = 100+ (LinkedIn 501-1,000, sources ~1,000). Work Status = Studio."
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy = 5 set_by agent. Org-type entry; field is optional per 2026-06-21 calibration but was set with valid rationale ('fully independent creative studio'). Acceptable."
+    },
+    {
+      "id": "C.no-judgment-contradiction",
+      "result": "pass",
+      "evidence": "Zero-states (Worked Together: Never, Familiarity: Don't know them, Work With?: Unvetted) are consistent with clip note which contained no relationship information."
+    },
+    {
+      "id": "C.clip-note-acted-on",
+      "result": "pass",
+      "evidence": "Clip note was bare name 'Team Lab' only. Name corrected to 'teamLab' (official casing). No instructions or relationship facts present."
+    },
+    {
+      "id": "C.ai-notes-hedged",
+      "result": "pass",
+      "evidence": "Verifiable facts stated plainly (founded 2001, Pace Gallery since 2014, 20+ venues). Size hedged ('LinkedIn lists 501-1,000; Art Basel/Wikipedia suggest around 1,000'). Country discrepancy documented. Autonomy reasoning stated."
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source = 'Web clipper'. Date suffix missing per CLAUDE.md backfill convention ('Web clipper, <created date>') but field is filled and accurate. Minor gap, not a block."
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "All fields have correct set_by values. source_url null is the known systemic tooling gap (2026-06-21 calibration), not a gate failure."
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "keeper.py line 547 uses ' · ' in embed metadata paragraphs. No em-dashes found in AI Notes, OQ, or captions."
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "One OQ, terse and conditional: Capabilities correction proposal. No redundant or unconditional questions."
+    },
+    {
+      "id": "D.status-correct",
+      "result": "pass",
+      "evidence": "Flipped to Needs Review by this reviewer pass."
+    }
+  ],
+  "to": null
+}
