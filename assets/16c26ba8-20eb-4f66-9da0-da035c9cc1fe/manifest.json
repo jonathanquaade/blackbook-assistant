@@ -5,15 +5,9 @@
     "caption": "Norman Foster Foundation",
     "link": "https://normanfosterfoundation.org",
     "captured_at": "2026-07-26",
-    "context_shot": true
-  },
-  {
-    "file": "site-05.png",
-    "source_url": "https://mouthwash.studio",
-    "caption": "MOUTHWASH Studio",
-    "link": "https://mouthwash.studio",
-    "captured_at": "2026-07-26",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Cloudflare bot-check (Verify you are human) blocked the shot; never solve a CAPTCHA. Tried once, live site gated."
   },
   {
     "file": "site-06.png",
@@ -21,61 +15,71 @@
     "caption": "Nike After Dark Tour",
     "link": "https://www.afterdarktour.nike.com/en/home",
     "captured_at": "2026-07-26",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "404, the 2023 Mouthwash-built tour microsite path is gone; the live afterdarktour.nike.com now serves a redesigned 2026 edition not attributable to this project. Used Sanity CDN case-study images instead (nike-after-dark-01/02.jpg)."
+  },
+  {
+    "file": "nike-after-dark-01.jpg",
+    "source_url": "https://cdn.sanity.io/images/ew1yzffi/production/0a65b76904269b6a8a2416fc1f4879014c14f50b-2840x1720.jpg?w=2000&auto=format",
+    "caption": "Nike After Dark Tour (Nike), device UI screens",
+    "link": "https://mouthwash.studio/project/nike-after-dark/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "nike-after-dark-02.jpg",
+    "source_url": "https://cdn.sanity.io/images/ew1yzffi/production/7c291f343d23c9dbb31ff3ce6efc56af3ce2a5f9-2840x1720.jpg?w=2000&auto=format",
+    "caption": "Nike After Dark Tour (Nike), site content page",
+    "link": "https://mouthwash.studio/project/nike-after-dark/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://mouthwash.studio",
+    "caption": "MOUTHWASH Studio, homepage (his employer, site he helps build)",
+    "link": "https://mouthwash.studio",
+    "captured_at": "2026-07-26"
   },
   {
     "file": "site-07.png",
     "source_url": "https://mirage.place",
-    "caption": "Mirage at Apple Park",
+    "caption": "Mirage at Apple Park (Apple)",
     "link": "https://mirage.place",
-    "captured_at": "2026-07-26",
-    "context_shot": true
+    "captured_at": "2026-07-26"
   },
   {
     "file": "site-08.png",
     "source_url": "https://airmade.aircompany.com",
     "caption": "Air Company, AIRMADE system",
     "link": "https://airmade.aircompany.com",
-    "captured_at": "2026-07-26",
-    "context_shot": true
+    "captured_at": "2026-07-26"
   },
   {
     "file": "site-09.png",
     "source_url": "https://www.woset.world",
-    "caption": "Woset",
+    "caption": "Woset, playable web identity for kids brand",
     "link": "https://www.woset.world",
-    "captured_at": "2026-07-26",
-    "context_shot": true
+    "captured_at": "2026-07-26"
   },
   {
     "file": "site-10.png",
     "source_url": "https://lastcrumb.com",
     "caption": "Last Crumb",
     "link": "https://lastcrumb.com",
-    "captured_at": "2026-07-26",
-    "context_shot": true
+    "captured_at": "2026-07-26"
   },
   {
     "file": "site-11.png",
     "source_url": "https://www.porttanger.com",
     "caption": "Port Tanger",
     "link": "https://www.porttanger.com",
-    "captured_at": "2026-07-26",
-    "context_shot": true
+    "captured_at": "2026-07-26"
   },
   {
     "file": "site-12.png",
     "source_url": "https://rcobiella.net",
     "caption": "Website",
     "link": "https://rcobiella.net",
-    "captured_at": "2026-07-26",
-    "context_shot": true
-  },
-  {
-    "file": "site-13.png",
-    "source_url": "https://www.instagram.com/rafacobiella/",
-    "caption": "Instagram profile",
-    "link": "https://www.instagram.com/rafacobiella/",
     "captured_at": "2026-07-26",
     "context_shot": true
   }

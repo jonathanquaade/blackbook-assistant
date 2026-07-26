@@ -111,6 +111,19 @@ know exactly what to fix.
       Jonathan's note says "working with him atm" -- that should be empty + a question).
 - [ ] **Clip note fully acted on.** Every instruction in the raw Name/clip text is
       done or asked about; stated facts written via `--from-jonathan`.
+- [ ] **Body-content check on every migrated/backfill entry: open assets/<id>/clipped.md.**
+      If it contains Jonathan's own voice/opinion (a verdict like "Should we work with
+      him?", first-person "I/we", a rating, named past engagements with rates) rather
+      than the subject's own site copy, that content MUST have been relocated verbatim
+      to Notes via `set-notes --relocated-from-body` and any explicit judgment written
+      via `--from-jonathan` (e.g. his own "Yes" to working with them maps to Work With?,
+      not a left-over Unvetted zero-state). Verify live via the API that Notes is
+      non-empty when clipped.md holds his commentary -- do not trust that archiving to
+      clipped.md alone was the whole job. FAIL if his commentary sits unread in
+      clipped.md while a judgment field still shows a zero-state his own words
+      contradict. (Recurring failure, logged repeatedly before this entry: Rafa
+      Cobiella, 2026-07-27, "Should we work with him? Yes" left as Work With?: Unvetted,
+      Notes empty.)
 - [ ] **AI Notes hedged.** Unverified inferences are hedged; only verifiable facts
       (clients, awards, published work) are asserted. Includes a seniority + experience
       read paired with the Autonomy estimate.
