@@ -17,22 +17,25 @@
     "Size": {
       "value": "41\u2013100",
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
     },
     "Country": {
       "value": [
         "UK",
-        "US"
+        "France",
+        "Belgium",
+        "South Korea",
+        "India"
       ],
       "source_url": null,
-      "verified_at": null,
-      "set_by": "migration"
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T23:05:33",
+      "verified_at": "2026-07-26T16:22:42",
       "set_by": "agent"
     },
     "Work With?": {
@@ -50,9 +53,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-26T16:25:10",
       "set_by": "agent"
     },
     "Name": {
@@ -60,6 +63,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Studio",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
+    },
+    "Website": {
+      "value": "https://www.themill.com",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
+    },
+    "LinkedIn": {
+      "value": "https://www.linkedin.com/company/the-mill",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "jobs@themill.com",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "World famous VFX and creative production studio, founded 1990 London (Robin Shenfield and Pat Joseph), known for advertising VFX incl Chevy The Robot. Owned by Technicolor 2015-2025; Technicolor Group collapsed into administration Feb 2025, shutting The Mill's US operations entirely (staff largely moved to a new venture, Arc Creative) and severely hitting the UK team. TransPerfect acquired The Mill and MPC's operations (France first, April 2025) and relaunched The Mill from Oct 2025, London-led with Seoul and Bangalore reopening; June 2026 TransPerfect merged MPC and The Mill under one The Mill brand and relaunched themill.com. Currently operating per own site/press: London (HQ), Paris, Liege, Seoul, Bangalore; US presence described as planned, not yet confirmed live, so US dropped from Country pending confirmation. Size uncertain post relaunch/merger (LinkedIn shows 51-200; early London reopening was ~15 people per Adweek), kept at 41-100 as a hedge, could be understated now that MPC has merged in.",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:25:10",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. Capabilities: currently \"Frontend development (web)\" (locked, set_by you), which reads wrong for a VFX/post-production studio and looks like the bulk \"Can build websites\" migration default. Propose \"3D & motion\" + \"Film & video production\" instead (VFX, animation, live-action production, post). OK to replace?\n2. Country/Size just corrected from the old migration baseline [UK, US] / 41-100 to reflect the 2025-2026 relaunch (Technicolor collapsed Feb 2025, TransPerfect bought and relaunched, merged MPC in June 2026): now UK, France, Belgium, South Korea, India, no confirmed live US office yet (only \"planned\"). Size kept at 41-100 as a hedge, could be bigger post MPC merger, flag if you want it bumped to 100+.\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:25:20",
+      "set_by": "agent"
     }
   }
 }
