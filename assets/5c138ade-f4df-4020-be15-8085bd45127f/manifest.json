@@ -1,48 +1,82 @@
 [
   {
+    "file": "site-03.png",
+    "source_url": "https://korg.berlin/",
+    "caption": "Korg Berlin, 2024, microsite with checkout and team section, design and development by Martin Wecke / On Signals",
+    "link": "https://korg.berlin/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-04.png",
+    "source_url": "https://www.ashley.systems/",
+    "caption": "Ashley Systems, 2022, retro-futuristic 3D product site with spatial audio, design and development by Martin Wecke / On Signals",
+    "link": "https://www.ashley.systems/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-05.png",
+    "source_url": "https://12.berlinbiennale.de/",
+    "caption": "12th Berlin Biennale, 2022, website and visual identity, design and development by Martin Wecke / On Signals (with Fabian Maier-Bode)",
+    "link": "https://12.berlinbiennale.de/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-06.png",
+    "source_url": "https://saf.world/",
+    "caption": "Studio Amos Fricke, 2020, portfolio site with app-like micro interactions, design and development by Martin Wecke / On Signals",
+    "link": "https://saf.world/",
+    "captured_at": "2026-07-26"
+  },
+  {
     "file": "site-01.jpg",
     "source_url": "https://onsignals.net/_next/image",
-    "caption": "On Signals studio site, homepage",
-    "link": "https://onsignals.net/",
+    "caption": "Colors Studios (COLORSxSTUDIOS), 2020, custom video player and layouts, creative development by Martin Wecke / On Signals (design by Studio Gruhl)",
+    "link": "https://colorsxstudios.com/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-07.png",
+    "source_url": "https://colorsxstudios.com/",
+    "caption": "Colors Studios (COLORSxSTUDIOS), 2020, live site today, creative development by Martin Wecke / On Signals",
+    "link": "https://colorsxstudios.com/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-08.png",
+    "source_url": "https://anorakfilm.com/",
+    "caption": "Anorak Film, 2019, site handling 800+ videos with a custom player, creative development by Martin Wecke / On Signals (design by Workout Services)",
+    "link": "https://anorakfilm.com/",
     "captured_at": "2026-07-26"
   },
   {
     "file": "site-02.jpg",
     "source_url": "https://onsignals.net/_next/image",
-    "caption": "On Signals studio site, homepage",
+    "caption": "Icon Magazine, 2020, micro-publishing platform with print-inspired editorial system, design and development by Martin Wecke / On Signals",
     "link": "https://onsignals.net/",
     "captured_at": "2026-07-26"
   },
   {
-    "file": "site-03.png",
-    "source_url": "https://korg.berlin/",
-    "caption": "Korg Berlin, 2024, site by Martin Wecke / On Signals",
-    "link": "https://korg.berlin/",
+    "file": "site-09.png",
+    "source_url": "https://martinwecke.de/108/",
+    "caption": "108, browser drum machine, solo creative-coding project built by Martin Wecke",
+    "link": "https://martinwecke.de/108/",
+    "captured_at": "2026-07-26"
+  },
+  {
+    "file": "site-10.png",
+    "source_url": "https://onsignals.net/",
+    "caption": "Website",
+    "link": "https://onsignals.net/",
     "captured_at": "2026-07-26",
     "context_shot": true
   },
   {
-    "file": "site-04.png",
-    "source_url": "https://www.ashley.systems/",
-    "caption": "Ashley Systems, 2022, site by Martin Wecke / On Signals",
-    "link": "https://www.ashley.systems/",
+    "source_url": "https://www.instagram.com/on.signals/",
+    "caption": "Instagram profile",
+    "link": "https://www.instagram.com/on.signals/",
     "captured_at": "2026-07-26",
-    "context_shot": true
-  },
-  {
-    "file": "site-05.png",
-    "source_url": "https://12.berlinbiennale.de/",
-    "caption": "12th Berlin Biennale, 2022, site and identity by Martin Wecke / On Signals",
-    "link": "https://12.berlinbiennale.de/",
-    "captured_at": "2026-07-26",
-    "context_shot": true
-  },
-  {
-    "file": "site-06.png",
-    "source_url": "https://saf.world/",
-    "caption": "Studio Amos Fricke, 2020, site by Martin Wecke / On Signals",
-    "link": "https://saf.world/",
-    "captured_at": "2026-07-26",
-    "context_shot": true
+    "context_shot": true,
+    "rejected": true,
+    "reject_reason": "Instagram served a logged-out 'Something went wrong' error page under rate-limiting on two attempts (scrape.py shot, no login). Queued to state/ig-queue.json for a logged-in ig.py grab. Website context shot captured fine (site-10.png)."
   }
 ]

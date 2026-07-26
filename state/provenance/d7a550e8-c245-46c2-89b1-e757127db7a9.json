@@ -41,9 +41,9 @@
       "set_by": "migration"
     },
     "Entry Status": {
-      "value": "New",
+      "value": "Enriching",
       "source_url": null,
-      "verified_at": "2026-06-28T23:06:00",
+      "verified_at": "2026-07-26T16:51:28",
       "set_by": "agent"
     },
     "Work With?": {
@@ -62,9 +62,9 @@
       "set_by": "jonathan"
     },
     "Work Status": {
-      "value": "Unknown",
+      "value": "Studio",
       "source_url": null,
-      "verified_at": null,
+      "verified_at": "2026-07-26T16:56:10",
       "set_by": "agent"
     },
     "Name": {
@@ -72,6 +72,48 @@
       "source_url": null,
       "verified_at": null,
       "set_by": "migration"
+    },
+    "Type": {
+      "value": "Person",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:56:10",
+      "set_by": "agent"
+    },
+    "Instagram": {
+      "value": "https://www.instagram.com/ap.studio_/",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:56:10",
+      "set_by": "agent"
+    },
+    "Email": {
+      "value": "hello@a-p.studio",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:56:10",
+      "set_by": "agent"
+    },
+    "Autonomy": {
+      "value": "4",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:56:10",
+      "set_by": "agent"
+    },
+    "Source": {
+      "value": "Web clipper, 2020-10-28",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:56:10",
+      "set_by": "agent"
+    },
+    "AI Notes": {
+      "value": "Solo creative technologist running a-p.studio (site is a minimal one-person landing page, no public case studies). Instagram (@ap.studio_) self-describes as dev for the arts and creative industries, suggesting code-driven, on-capability Frontend/Web design work; hedge that Creative technology may also fit but no visible portfolio confirms it (flagged as Open Question). A LinkedIn (linkedin.com/in/adrienpicard) shows an Adrien Picard as Lead Design Engineer at No Plans studio, UK-based, 15+ yrs, worked on KO Collective, but the name is common and this is not confirmed as the same person, left unconfirmed rather than attached. Runs his own practice under his own brand, which reads as more autonomous/senior than junior; Rating 4 from Jonathan is independent signal of strong quality. Autonomy estimated at 4, hedged given thin public trail.",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:56:10",
+      "set_by": "agent"
+    },
+    "Open Questions": {
+      "value": "1. LinkedIn: possible match linkedin.com/in/adrienpicard (Lead Design Engineer at No Plans studio, UK, 15+ yrs, worked on KO Collective), but Adrien Picard is a common name and this could not be confirmed as the same person. Attach it?\n2. Country: site is en-GB locale and his Twitter bio reads London-based, but Country is set to France. Still France, or move/add UK?\n3. Capabilities (currently Frontend development (web), Web design, jonathan-set): his Instagram bio reads \"dev for the arts and creative industries\", which may fit Creative technology too, but his site has no visible portfolio to confirm. Add Creative technology?\n",
+      "source_url": null,
+      "verified_at": "2026-07-26T16:56:20",
+      "set_by": "agent"
     }
   }
 }
