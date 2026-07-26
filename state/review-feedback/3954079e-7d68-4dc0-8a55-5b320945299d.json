@@ -1,34 +1,16 @@
 {
   "page_id": "3954079e-7d68-4dc0-8a55-5b320945299d",
-  "reviewer_version": "v1",
-  "reviewed_at": "2026-07-26T22:50:00",
-  "verdict": "fail",
-  "attempt": 1,
+  "reviewer_version": "adjudicator",
+  "reviewed_at": "2026-07-26T00:00:00",
+  "verdict": "pass",
+  "role": "adjudicator",
+  "adjudicates_attempt": 2,
+  "ruling": "OVERTURN",
   "checks": [
-    {
-      "id": "A.context-shots",
-      "result": "fail",
-      "evidence": "site-04.png is captioned 'The Grid, coded web experiment (canvas/JS), 2018' (Design for Dance) but the actual image shows only the Wayback Machine's own toolbar/calendar UI plus 8 repeated lines of raw unstyled text reading 'Design for dance' with no visible interactive/canvas content whatsoever. It does not show the project it claims to.",
-      "fix": "Do not ship this capture. Try re-fetching the archived page without the Wayback toolbar overlay (the if_ modifier, e.g. https://web.archive.org/web/20190918183420if_/https://jmorgadosoares.com/design_for_dance/) and confirm the canvas/JS actually renders in a headless screenshot. If it genuinely does not render in any snapshot, drop this project and capture one of the 3 projects actually listed on the real final homepage (site-01.png shows 'The Database' 2019, 'Hello World' 2019, 'CSM Degree show identity' 2019 with named subpages/images) instead."
-    },
-    {
-      "id": "A.project-diversity",
-      "result": "fail",
-      "evidence": "Once site-04.png is discounted as non-content, only 2 of the intended 3 named projects (CSM Fine Art degree show 2017, Defying Structures 2018) actually show real work. The homepage context shot itself lists 3 different, more current named projects (The Database, Hello World, CSM Degree show identity, all 2019) that were never attempted.",
-      "fix": "Capture at least one more distinct, real project image from the 2019 project list visible on site-01.png (The Database / Hello World / CSM Degree show identity), following the same wayback asset-path pattern used successfully for project-01/project-02."
-    },
-    {
-      "id": "C.ai-notes-hedged",
-      "result": "fail",
-      "evidence": "AI Notes still reads 'Personal site (josemorgadosoares.com) is now dead... has no Wayback Machine snapshot on record, so his site nav, project work and stated employment could not be verified.' This is now false: this same pass found and used a full archived portfolio at the domain variant jmorgadosoares.com with multiple Wayback snapshots (2017-2021) and captured 3 named projects from it.",
-      "fix": "Rewrite AI Notes to state the actual current finding: josemorgadosoares.com (the domain on file) is dead/unregistered, but the correct root domain jmorgadosoares.com was found archived on Wayback (snapshots 2017-2021) and used to source the captured images. Note the captured work is his 2016-2019 CSM art-school coding portfolio and may not reflect his current ecommerce specialty (mirror what's already honestly said in Open Questions #1 so a reader of AI Notes alone gets the same honest picture)."
-    },
-    {
-      "id": "B.links",
-      "result": "fail",
-      "evidence": "Website property still holds 'www.josemorgadosoares.com', the wrong/dead domain. The scraper discovered the actual correct root domain (jmorgadosoares.com) with real archived content this same pass but never corrected the field.",
-      "fix": "Update Website to jmorgadosoares.com (note it is also currently dead/unregistered, archived via Wayback) with the Wayback snapshot URL as source_url, rather than leaving the on-file domain that never had any real content."
-    }
+    {"id": "A.on-capability", "result": "pass",
+     "evidence": "Second reviewer's attempt-2 fail (2 of 5 images, project-03 CSM logo + project-04 typographic print book, are graphic-design/identity work off the single tagged Capability 'Frontend development (web)', with no OQ flagging it) is now resolved via the exact text-only fix the reviewer specified. Verified live: AI Notes states the archived site title reads 'Graphic Design / Developer' and hedges that the CSM-era work predates/is not confirmed to represent his current ecommerce specialty. Open Question #4 (verified via keeper.py get) explicitly reads: 'Capabilities: currently only Frontend development (web), but his archived site self-describes as \"Graphic Design / Developer\" and 2 of the captured pieces are graphic/identity work (a CSM Fine Art degree-show logo, a typographic print book), not web. Add Graphic design and/or Identity systems? (And/or Web design per the Ecommerce note, or is he build-only, e.g. Shopify theme dev?)' This names both images as evidence and puts the tag decision to Jonathan, which is the honest handling for a thin archived-source entry: the images are kept (best material available, correctly captioned) and the capability tension is surfaced rather than silently shipped."},
+    {"id": "D.status", "result": "pass", "evidence": "Flipped to Needs Review via keeper.py status after confirming the fix."}
   ],
-  "to": "scraper"
+  "notes": "Second reviewer's attempt-2 fail was correct when raised (real gap: off-capability images with no flag). The gap has since been closed exactly per the reviewer's own prescribed fix (AI Notes line + OQ4 rewrite), independently verified here against the live Notion page and manifest.json before overturning. No re-derivation of taste; this is a mechanical confirmation that the specified remediation was applied.",
+  "to": "none"
 }
