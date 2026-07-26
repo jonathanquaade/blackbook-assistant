@@ -1,0 +1,30 @@
+{
+  "page_id": "2de9b4d3-ce9e-48bb-9668-19d8e7212ffe",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-26T14:38:11",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass",
+     "evidence": "manifest.json has 10 images across 4 distinct projects (Do Not Touch, Dance Tonite, Your Line or Mine, Fungus Series), all captioned and linked to their own project pages on studiomoniker.com"},
+    {"id": "A.depth-over-breadth", "result": "pass",
+     "evidence": "2-3 images per project going inside the work (e.g. exterior + interior of Your Line or Mine, two sketch frames of Dance Tonite), not single covers"},
+    {"id": "A.on-capability", "result": "pass",
+     "evidence": "captured projects (generative/interactive installations, WebGL music video, generative visuals) match the studio's actual creative-technology/interactive practice; note Capabilities field itself is flagged wrong in an Open Question (see scout notes), separate issue"},
+    {"id": "A.context-shots", "result": "fail",
+     "evidence": "manifest.json contains no Website-homepage or Instagram-profile screenshot at all, and none appear in the page body either",
+     "fix": "capture scrape.py shot https://studiomoniker.com/ --caption \"Website\" and an Instagram profile shot of https://www.instagram.com/studiomoniker/, add both to manifest.json"},
+    {"id": "A.no-uncaptioned-images", "result": "fail",
+     "evidence": "moot until upload runs, see body-structure below: currently ZERO of the 10 manifest images are on the Notion page at all (Images property is empty: []), so nothing is even captioned in Notion yet",
+     "fix": "run keeper.py body-reset then keeper.py upload 2de9b4d3-ce9e-48bb-9668-19d8e7212ffe assets/2de9b4d3-ce9e-48bb-9668-19d8e7212ffe to push the manifest into the page"},
+    {"id": "A.embeds-for-video", "result": "n/a",
+     "evidence": "no video/audio project pages identified in the manifest work; Dance Tonite (webgl film) captured as stills, acceptable if no embeddable player exists on the project page, not verified independently this pass"},
+    {"id": "A.absence-explained", "result": "pass",
+     "evidence": "work is present and plentiful; not a thin-entry case"},
+    {"id": "A.body-structure-clean", "result": "fail",
+     "evidence": "queried the live Notion page body via the API: it has only 3 blocks (image, paragraph captioned \"Pied de Poules Fermier - Participatory scarf design view project\", image) that do NOT match manifest.json at all (no Do Not Touch/Dance Tonite/Your Line or Mine/Fungus content), no h2 'Work' heading, no divider. This is stale leftover content, not the current capture. keeper.py body-reset + keeper.py upload were never run against this manifest.",
+     "fix": "run keeper.py body-reset 2de9b4d3-ce9e-48bb-9668-19d8e7212ffe then keeper.py upload 2de9b4d3-ce9e-48bb-9668-19d8e7212ffe assets/2de9b4d3-ce9e-48bb-9668-19d8e7212ffe so the Work section reflects the actual manifest and the Images property gets populated (currently empty: [])"}
+  ],
+  "notes": "Housekeeping: assets/2de9b4d3-ce9e-48bb-9668-19d8e7212ffe/thumb-do-not-touch.jpg is an orphan file not referenced in manifest.json (its content is actually a Dance Tonite cursor-swarm frame, not Do Not Touch, so the filename is also mislabeled) -- either wire it into the manifest with a correct caption or delete it so the asset folder matches the manifest exactly. Scout-side (informational, not why this fails): Open Question 2 asks 'entry shows 11-40 but LinkedIn shows 2-10 ... which should I use?' but the Size field has ALREADY been set to 2-10 in Notion -- the question is stale/already-resolved and should be cleared or reworded to state the resolution rather than ask it as open. Open Question 1 (Capabilities) is correctly handled per the locked-field calibration note: Capabilities is set_by jonathan on this migrated entry, tag looks off given the studio's actual creative-technology/installation work, and the scout proposed a fix via Open Question instead of overwriting it. That is compliant, not a fail.",
+  "to": "scraper"
+}

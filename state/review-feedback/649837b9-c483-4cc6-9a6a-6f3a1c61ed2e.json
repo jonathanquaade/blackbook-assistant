@@ -1,0 +1,17 @@
+{
+  "page_id": "649837b9-c483-4cc6-9a6a-6f3a1c61ed2e",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-26T00:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "checks": [
+    {"id": "A.upload-not-run", "result": "fail",
+     "evidence": "Notion 'Images' property has 0 files and the page body has 0 blocks (checked live via API) even though assets/649837b9-c483-4cc6-9a6a-6f3a1c61ed2e/manifest.json lists 21 well-captioned entries and the files exist on disk. keeper.py body-reset + keeper.py upload were never run, so Jonathan would open the page and see nothing: no Work section, no context shots, no images at all.",
+     "fix": "run `python3 scripts/keeper.py body-reset 649837b9-c483-4cc6-9a6a-6f3a1c61ed2e` then `python3 scripts/keeper.py upload 649837b9-c483-4cc6-9a6a-6f3a1c61ed2e assets/649837b9-c483-4cc6-9a6a-6f3a1c61ed2e` to actually push the manifest to the page before flipping status."},
+    {"id": "A.on-capability-depth", "result": "fail",
+     "evidence": "Of the 8 images captioned 'Granby Four Streets, 2013', 4 are pure archival/historical documentation with no Assemble design work visible at all: site-02.jpg (a 1960s black-and-white aerial photo of the wider neighbourhood), site-03.jpg (a scanned OS map with a red triangle marking the site), site-17.jpg and site-18.jpg (1970s archival street photographs of shopfronts, pre-dating Assemble's involvement by decades). site-21.jpg is also just a plain 'before' derelict-terrace documentary shot with no visible intervention. Meanwhile the same project page (https://assemblestudio.co.uk/projects/granby-four-streets-2) has clearly on-capability design material that was skipped: an axonometric masterplan illustration (assemble-granby_terraces-37-1600x1130.jpg), a hand-drawn vision illustration of the Four Corners scheme (assemble-four_corners-01-1600x1307.jpg), and further finished-streetscape photos (assemble-granby_terraces-16/17/22/38/39).",
+     "fix": "swap out the pure archival/context images (site-02, site-03, site-17, site-18, site-21) for the actual design/vision images available on the same project page (the axonometric masterplan drawing, the Four Corners hand-drawn illustration, and 1-2 more finished-house streetscape shots), so the Granby set shows what Assemble actually designed, not just neighbourhood history. Yardhouse, Goldsmiths CCA and Blackhorse Workshop selections were checked and are genuinely on-capability, keep those as-is."}
+  ],
+  "notes": "Context shots (site-15 Website, site-16 Instagram) verified correct and real. Capabilities is jonathan-locked (migrated) with an appropriate Open Question proposing additions - correct per calibration, not a fail. No em-dashes found in AI Notes or Open Questions. Source field filled. These two fixes are scraper-side (manifest content + running the actual upload step); once done, re-submit for review.",
+  "to": "scraper"
+}

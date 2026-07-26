@@ -1,0 +1,29 @@
+{
+  "page_id": "2e05b072-5320-4497-a1f0-d5b7069c039c",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-07-26T00:00:00",
+  "verdict": "pass",
+  "attempt": 2,
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass",
+     "evidence": "manifest.json now has 15 named-project images across 5 distinct clients (Fondation Cartier x4, ElevenLabs x3, The New York Times x2, OpenAI x3, Saint Laurent x3), verified distinct by opening files (e.g. nyt_01_overview.png is nytco.com, ysl_03_rive-droite.png is the Rive Droite Shop e-commerce grid; genuinely different sites/projects, not crops of one)."},
+    {"id": "A.depth-over-breadth", "result": "pass",
+     "evidence": "Multiple images per project go inside case studies (product pages, mobile app, PDP/PLP screens), not one hero shot per client."},
+    {"id": "A.on-capability", "result": "pass",
+     "evidence": "All captured work is website/product screens matching tagged Capabilities (Web design, Frontend development (web))."},
+    {"id": "A.context-shots", "result": "pass",
+     "evidence": "Opened both files directly: site-01.png is genuinely area17.com homepage (A/ logo, nav, hero copy); site-02.png is genuinely instagram.com/area_17_/ profile (314 posts, AREA 17 bio). Both correctly captioned and now uploaded as blocks 16 and 17."},
+    {"id": "A.no-uncaptioned-images", "result": "pass",
+     "evidence": "Verified via Notion blocks/children API: every one of the 17 images has a caption 'Project, detail · domain' with the domain hyperlinked to the actual project/case-study or profile URL (e.g. area17.com/clients/openai, instagram.com/area_17_)."},
+    {"id": "A.body-structure", "result": "pass",
+     "evidence": "blocks/children API returns exactly 19 blocks: heading_2 'Work' + 17 images + 1 divider. No orphan or duplicated blocks; count matches manifest exactly (15 work + 2 context = 17)."},
+    {"id": "A.manifest-tracked", "result": "pass",
+     "evidence": "assets/2e05b072.../manifest.json is now git-tracked (shows as modified, not untracked), resolving the prior reviewer's note that it was an untracked/interrupted file."},
+    {"id": "D.no-em-dashes", "result": "pass",
+     "evidence": "Caption text uses ' · ' as separator, not an em-dash; checked all 17 captions via the API."},
+    {"id": "B/C/D other checks", "result": "pass",
+     "evidence": "Unchanged since attempt 1 (already passed then): links, capabilities/locked+OQ, country/size/work-status, autonomy n/a for org, judgment zero-states, source, provenance, open questions."}
+  ],
+  "summary": "Both attempt-1 FAILs are fixed: manifest.json now registers all 13 (actually 15) named-project images plus the 2 context shots, and body-reset + upload were run so the live Notion page has the full Work section (19 clean blocks, no orphans) instead of 0. Verified independently via the Notion API and by opening the actual image files. Entry is complete and honest; flipping to Needs Review.",
+  "to": "scraper"
+}
