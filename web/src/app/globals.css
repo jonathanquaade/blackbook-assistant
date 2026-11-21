@@ -1797,6 +1797,43 @@ main {
   border: 1px solid var(--line);
   background: var(--panel);
 }
+.result-groups {
+  display: grid;
+  gap: 32px;
+}
+.result-group-heading {
+  margin-bottom: 16px;
+}
+.result-group-heading h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.result-group-heading h3 span {
+  color: var(--muted);
+  margin-left: 6px;
+}
+.result-group-heading p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.include-review {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.review-warning,
+.match-gaps {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.review-warning {
+  font-weight: 600;
+}
 .review-card {
   display: grid;
   grid-template-columns: minmax(270px, 1fr) minmax(0, 2fr);

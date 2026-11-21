@@ -27,9 +27,21 @@ export const CAPABILITIES = [
   "Web design",
 ] as const;
 export type Capability = (typeof CAPABILITIES)[number];
-export const PROFILE_TYPES = ["Agency", "Foundry", "Person", "Publication", "Studio"] as const;
-export const WORK_STATUSES = ["Employed", "Freelance", "Studio", "Unknown"] as const;
-export type EntryStatus = "New" | "Enriching" | "Needs Review" | "Verified" | "Revisit" | "Rejected";
+export const PROFILE_TYPES = [
+  "Agency",
+  "Foundry",
+  "Person",
+  "Publication",
+  "Studio",
+] as const;
+export const WORK_STATUSES = [
+  "Employed",
+  "Freelance",
+  "Studio",
+  "Unknown",
+] as const;
+export type EntryStatus =
+  "New" | "Enriching" | "Needs Review" | "Verified" | "Revisit" | "Rejected";
 export type ArtworkKind =
   | "olive"
   | "type"

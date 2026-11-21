@@ -49,6 +49,16 @@ export function ProfileDialog({
             </button>
           </div>
           <div className="tag-list">
+            <span
+              className={
+                profile.status === "Needs Review" ? "tag review-warning" : "tag"
+              }
+            >
+              {profile.status}
+              {profile.status === "Needs Review"
+                ? " · not verified"
+                : " sample"}
+            </span>
             {profile.capabilities.map((tag) => (
               <span className="tag" key={tag}>
                 {tag}
@@ -56,6 +66,12 @@ export function ProfileDialog({
             ))}
           </div>
           <section className="evidence-box">
+            <p className="fine-print">
+              Owner signals (read-only): Rating{" "}
+              {profile.rating ?? "not recorded"}; Work With?{" "}
+              {profile.workWith ?? "not recorded"}; Worked Together{" "}
+              {profile.workedTogether ?? "not recorded"}.
+            </p>
             <h3>What the work shows</h3>
             {profile.evidence.map((item) => (
               <p key={item}>

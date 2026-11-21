@@ -226,8 +226,14 @@ export function Shell({ children }: { children: ReactNode }) {
             profile into Explore or verify it in Notion. Use Reset demo to clear
             the sandbox. Do not enter sensitive information.
           </p>
-          <button className="button secondary" onClick={() => { setAboutOpen(false); setResetOpen(true); }}>
-            <RotateCcw size={14}/> Reset demo
+          <button
+            className="button secondary"
+            onClick={() => {
+              setAboutOpen(false);
+              setResetOpen(true);
+            }}
+          >
+            <RotateCcw size={14} /> Reset demo
           </button>
         </div>
       </Modal>

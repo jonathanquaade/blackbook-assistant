@@ -21,14 +21,17 @@ import {
   searchProfiles,
   type Filters,
 } from "@/lib/search";
-import type { Capability, Profile } from "@/lib/types";
+import {
+  CAPABILITIES,
+  PROFILE_TYPES,
+  WORK_STATUSES,
+  type Capability,
+  type Profile,
+} from "@/lib/types";
 import { Artwork } from "./artwork";
 import { ProfileDialog } from "./profile-dialog";
 import { useWorkspace } from "./workspace-provider";
 
-const capabilities = [
-  ...new Set(profiles.flatMap((profile) => profile.capabilities)),
-].sort();
 const examples = [
   "Type-led food packaging",
   "Freelance product designers",
@@ -65,11 +68,43 @@ export function Explore({
   const results = searchProfiles(pool, query, filters, muted);
   const interpreted = [
     ...(intent.freelance && !muted.includes("freelance") ? ["freelance"] : []),
+    ...intent.types
+      .map((type) => `type:${type}`)
+      .filter((type) => !muted.includes(type)),
     ...intent.terms.filter((term) => !muted.includes(term)),
   ];
   const filterCount = Object.values(filters).filter(
-    (value) => value !== "All",
+    (value) => value !== "All" && value !== false,
   ).length;
+  const groups = [
+    {
+      title: query ? "Strong keyword matches" : "Verified samples",
+      description: query
+        ? "All remaining keywords matched demo fields. This is not a quality or availability judgment."
+        : "Fictional profiles for exploring the interface.",
+      results: results.filter(
+        (result) =>
+          result.profile.status === "Verified" && result.tier === "strong",
+      ),
+    },
+    {
+      title: "Weaker matches",
+      description:
+        "Partial keyword or close-spelling matches, not confident recommendations. Work status, type and discipline filters are still respected.",
+      results: results.filter(
+        (result) =>
+          result.profile.status === "Verified" && result.tier === "weak",
+      ),
+    },
+    {
+      title: "Needs Review · not verified",
+      description:
+        "Draft samples, shown only because you opted in. Not approved or ready to recommend.",
+      results: results.filter(
+        (result) => result.profile.status === "Needs Review",
+      ),
+    },
+  ].filter((group) => group.results.length > 0);
   function search(value: string) {
     setInput(value);
     setQuery(value);
@@ -82,6 +117,10 @@ export function Explore({
   function clear() {
     search("");
     setFilters(emptyFilters);
+  }
+  function removeTerm(term: string) {
+    if (interpreted.length === 1) search("");
+    else setMuted([...muted, term]);
   }
 
   return (
@@ -159,7 +198,7 @@ export function Explore({
             <button
               key={term}
               className="intent-chip"
-              onClick={() => setMuted([...muted, term])}
+              onClick={() => removeTerm(term)}
               aria-label={`Remove ${term} from search`}
             >
               {term}
@@ -191,8 +230,24 @@ export function Explore({
         </div>
         <div className="gallery-controls">
           <span className="verified-label">
-            <CheckCheck size={13} /> Verified samples only
+            <CheckCheck size={13} />{" "}
+            {filters.includeNeedsReview
+              ? "Review status shown separately"
+              : "Verified samples only"}
           </span>
+          <label className="include-review">
+            <input
+              type="checkbox"
+              checked={filters.includeNeedsReview}
+              onChange={(event) =>
+                setFilters({
+                  ...filters,
+                  includeNeedsReview: event.target.checked,
+                })
+              }
+            />{" "}
+            Include Needs Review
+          </label>
           <button
             className={`button small secondary ${showFilters ? "is-active" : ""}`}
             onClick={() => setShowFilters(!showFilters)}
@@ -222,7 +277,7 @@ export function Explore({
               }
             >
               <option value="All">All disciplines</option>
-              {capabilities.map((capability) => (
+              {CAPABILITIES.map((capability) => (
                 <option key={capability}>{capability}</option>
               ))}
             </select>
@@ -239,9 +294,9 @@ export function Explore({
               }
             >
               <option value="All">Any work status</option>
-              <option>Freelance</option>
-              <option>Studio</option>
-              <option>Unknown</option>
+              {WORK_STATUSES.map((status) => (
+                <option key={status}>{status}</option>
+              ))}
             </select>
           </label>
           <label>
@@ -255,9 +310,10 @@ export function Explore({
                 })
               }
             >
-              <option value="All">People & studios</option>
-              <option>Person</option>
-              <option>Studio</option>
+              <option value="All">All profile types</option>
+              {PROFILE_TYPES.map((type) => (
+                <option key={type}>{type}</option>
+              ))}
             </select>
           </label>
           <button
@@ -272,95 +328,131 @@ export function Explore({
         </div>
       )}
       {results.length > 0 ? (
-        <div className="profile-grid">
-          {results.map(({ profile, reason }, index) => {
-            const saved = state.shortlist.includes(profile.id);
-            return (
-              <article
-                className="profile-card"
-                key={profile.id}
-                style={{ animationDelay: `${index * 45}ms` }}
-              >
-                <div className="card-work">
-                  <button
-                    className="work-open"
-                    onClick={() => setSelected(profile)}
-                    aria-label={`View ${profile.name}’s work`}
-                  >
-                    <Artwork project={profile.projects[0]} variation={index} />
-                    <span className="view-work">
-                      View selected work <ArrowRight size={13} />
-                    </span>
-                  </button>
-                  <button
-                    className={`save-button ${saved ? "saved" : ""}`}
-                    aria-label={`${saved ? "Remove" : "Save"} ${profile.name} ${saved ? "from" : "to"} shortlist`}
-                    aria-pressed={saved}
-                    onClick={() => toggleShortlist(profile.id)}
-                  >
-                    {saved ? <Check size={15} /> : <Bookmark size={15} />}
-                  </button>
-                  <span className="work-count">
-                    {profile.projects.length} projects
-                  </span>
-                </div>
-                <div className="profile-card-body">
-                  <button
-                    className="card-profile-link"
-                    onClick={() => setSelected(profile)}
-                  >
-                    <span className={`avatar avatar-${index % 4}`}>
-                      {profile.initials}
-                    </span>
-                    <span>
-                      <strong>
-                        {profile.name}
-                        <CheckCheck size={13} />
-                      </strong>
-                      <small>{profile.role}</small>
-                    </span>
-                    <ArrowRight className="profile-arrow" size={15} />
-                  </button>
-                  <div className="profile-meta">
-                    <span>{profile.location}</span>
-                    <span
-                      className={
-                        profile.workStatus === "Freelance"
-                          ? "work-status freelance"
-                          : "work-status"
-                      }
-                    >
-                      <span />
-                      {profile.workStatus === "Unknown"
-                        ? "Status unknown"
-                        : profile.workStatus}
-                    </span>
-                  </div>
-                  <div className="tag-list">
-                    {profile.capabilities.slice(0, 2).map((tag) => (
-                      <span className="tag" key={tag}>
-                        {tag}
-                      </span>
-                    ))}
-                    {profile.capabilities.length > 2 && (
-                      <span
-                        className="tag tag-count"
-                        title={profile.capabilities.slice(2).join(", ")}
+        <div className="result-groups">
+          {groups.map((group) => (
+            <section key={group.title} aria-label={group.title}>
+              <div className="result-group-heading">
+                <h3>
+                  {group.title} <span>{group.results.length}</span>
+                </h3>
+                <p>{group.description}</p>
+              </div>
+              <div className="profile-grid">
+                {group.results.map(
+                  ({ profile, reason, missingTerms }, index) => {
+                    const saved = state.shortlist.includes(profile.id);
+                    return (
+                      <article
+                        className="profile-card"
+                        key={profile.id}
+                        style={{ animationDelay: `${index * 45}ms` }}
                       >
-                        +{profile.capabilities.length - 2}
-                      </span>
-                    )}
-                  </div>
-                  {query && (
-                    <div className="match-reason">
-                      <Sparkles size={12} />
-                      <p>{reason}</p>
-                    </div>
-                  )}
-                </div>
-              </article>
-            );
-          })}
+                        <div className="card-work">
+                          <button
+                            className="work-open"
+                            onClick={() => setSelected(profile)}
+                            aria-label={`View ${profile.name}’s work`}
+                          >
+                            <Artwork
+                              project={profile.projects[0]}
+                              variation={index}
+                            />
+                            <span className="view-work">
+                              View selected work <ArrowRight size={13} />
+                            </span>
+                          </button>
+                          <button
+                            className={`save-button ${saved ? "saved" : ""}`}
+                            aria-label={`${saved ? "Remove" : "Save"} ${profile.name} ${saved ? "from" : "to"} shortlist`}
+                            aria-pressed={saved}
+                            onClick={() => toggleShortlist(profile.id)}
+                          >
+                            {saved ? (
+                              <Check size={15} />
+                            ) : (
+                              <Bookmark size={15} />
+                            )}
+                          </button>
+                          <span className="work-count">
+                            {profile.projects.length} projects
+                          </span>
+                        </div>
+                        <div className="profile-card-body">
+                          <button
+                            className="card-profile-link"
+                            onClick={() => setSelected(profile)}
+                          >
+                            <span className={`avatar avatar-${index % 4}`}>
+                              {profile.initials}
+                            </span>
+                            <span>
+                              <strong>
+                                {profile.name}
+                                {profile.status === "Verified" && (
+                                  <CheckCheck
+                                    size={13}
+                                    aria-label="Verified sample"
+                                  />
+                                )}
+                              </strong>
+                              <small>{profile.role}</small>
+                            </span>
+                            <ArrowRight className="profile-arrow" size={15} />
+                          </button>
+                          <div className="profile-meta">
+                            <span>{profile.location}</span>
+                            <span
+                              className={
+                                profile.workStatus === "Freelance"
+                                  ? "work-status freelance"
+                                  : "work-status"
+                              }
+                            >
+                              <span />
+                              {profile.workStatus === "Unknown"
+                                ? "Status unknown"
+                                : profile.workStatus}
+                            </span>
+                          </div>
+                          <div className="tag-list">
+                            {profile.capabilities.slice(0, 2).map((tag) => (
+                              <span className="tag" key={tag}>
+                                {tag}
+                              </span>
+                            ))}
+                            {profile.capabilities.length > 2 && (
+                              <span
+                                className="tag tag-count"
+                                title={profile.capabilities.slice(2).join(", ")}
+                              >
+                                +{profile.capabilities.length - 2}
+                              </span>
+                            )}
+                          </div>
+                          {profile.status === "Needs Review" && (
+                            <p className="review-warning">
+                              Needs Review · not verified
+                            </p>
+                          )}
+                          {query && reason && (
+                            <div className="match-reason">
+                              <Sparkles size={12} />
+                              <p>{reason}</p>
+                            </div>
+                          )}
+                          {query && missingTerms.length > 0 && (
+                            <p className="match-gaps">
+                              No evidence matched: {missingTerms.join(", ")}
+                            </p>
+                          )}
+                        </div>
+                      </article>
+                    );
+                  },
+                )}
+              </div>
+            </section>
+          ))}
         </div>
       ) : (
         <div className="empty-state">
@@ -375,7 +467,7 @@ export function Explore({
           <p>
             {shortlistOnly && !query && !filterCount
               ? "Save people from Explore and they’ll be right here when you need them."
-              : "Try fewer terms or relax a filter. We won’t fill the gap with unreviewed people."}
+              : "Try fewer terms or relax a filter. Needs Review drafts are excluded unless you explicitly include them."}
           </p>
           {shortlistOnly && !query && !filterCount ? (
             <a className="button primary" href="/explore">
