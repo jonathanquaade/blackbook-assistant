@@ -103,7 +103,12 @@ export function Shell({ children }: { children: ReactNode }) {
             <span className="nav-count">{hydrated ? readyCount : "…"}</span>
           </Link>
         </nav>
-        <button className="sidebar-add" onClick={() => setAddOpen(true)}>
+        <button
+          className="sidebar-add"
+          aria-label="Add for review"
+          title="Add for review"
+          onClick={() => setAddOpen(true)}
+        >
           <Plus size={15} /> Add for review
         </button>
         <div className="sidebar-bottom">
