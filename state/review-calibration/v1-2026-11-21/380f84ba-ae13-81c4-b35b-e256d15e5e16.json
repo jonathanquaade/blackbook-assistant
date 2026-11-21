@@ -1,0 +1,135 @@
+{
+  "page_id": "380f84ba-ae13-81c4-b35b-e256d15e5e16",
+  "name": "Madeleine Carrucan",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-11-21T04:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "calibration": true,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "9 images in Images property across named projects in captions"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Multiple images per project where the source has them"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "fail",
+      "evidence": "Copywriter, but 8 of 8 images are COLLINS brand visuals incl. a \"COLLINS team page\" shot; her writing is only in 4 embeds",
+      "fix": "drop the team-page image; caption each brand image with the copy she wrote (or capture copy-bearing spreads/headlines)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "No personal website exists; IG profile shot present and is instagram.com"
+    },
+    {
+      "id": "A.captions",
+      "result": "pass",
+      "evidence": "Every image captioned with project/client and source host"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Video/audio embedded where the practice is time-based, or none needed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absences"
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Live body 19 blocks, single h2 Work section, matches Images property"
+    },
+    {
+      "id": "A.images-present",
+      "result": "pass",
+      "evidence": "9 live images"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type=Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website/IG/LinkedIn/Email present or absence documented"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: Copywriting"
+    },
+    {
+      "id": "B.country-size-status",
+      "result": "pass",
+      "evidence": "Country=['United States'], Size=1, Work Status=Employed"
+    },
+    {
+      "id": "B.work-status",
+      "result": "pass",
+      "evidence": "Work Status sources named in AI Notes per resolution rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=4 with reasoning in AI Notes"
+    },
+    {
+      "id": "C.judgment",
+      "result": "pass",
+      "evidence": "Judgment fields untouched by agent / zero-states (WT=Never, Fam=Don't know them, WW=Unvetted, Rating=None)"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note intent reflected in entry"
+    },
+    {
+      "id": "C.migrated-body",
+      "result": "pass",
+      "evidence": "Clipped/migrated body archived to clipped.md, no stray body text"
+    },
+    {
+      "id": "C.ai-notes",
+      "result": "pass",
+      "evidence": "AI Notes hedged, includes seniority + Autonomy reasoning"
+    },
+    {
+      "id": "D.source",
+      "result": "fail",
+      "evidence": "Source says \"Designer at COLLINS\" but AI Notes/role say ACD Story (copywriter)",
+      "fix": "correct Source to \"Associate Creative Director, Story (copywriter) at COLLINS\""
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance file present (null source_url tolerated)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "fail",
+      "evidence": "Body has 4 embed metadata paragraph(s) ending ' (em-dash) <host>' (pre-c605939 keeper upload)",
+      "fix": "keeper.py line 547 is already fixed (c605939); re-run keeper.py body-reset then upload to regenerate body with ' · '"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions terse, conditional, story nudge where due"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Needs Review earned after complete pass"
+    }
+  ],
+  "to": "scout+scraper"
+}

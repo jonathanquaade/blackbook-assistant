@@ -1,0 +1,136 @@
+{
+  "page_id": "3b9f84ba-ae13-818d-a100-f01e9bfae8a3",
+  "name": "James Morrins",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-11-21T04:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "calibration": true,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "1 images in Images property across named projects in captions"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Multiple images per project where the source has them"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work matches tagged Capabilities (Film & video production)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No personal site and IG unconfirmed; only shot is employer site",
+      "fix": "fine to leave IG pending OQ 3; document absence in AI Notes"
+    },
+    {
+      "id": "A.captions",
+      "result": "pass",
+      "evidence": "Every image captioned with project/client and source host"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Video/audio embedded where the practice is time-based, or none needed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absences"
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Live body 3 blocks, single h2 Work section, matches Images property"
+    },
+    {
+      "id": "A.images-present",
+      "result": "fail",
+      "evidence": "1 image, a Fuse Energy website shot used as context; no work captured",
+      "fix": "capture his edit/video work (Fuse Energy brand videos he edited, LinkedIn media)"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type=Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "LinkedIn only; Email/site/IG searched and raised as OQs"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: Film & video production"
+    },
+    {
+      "id": "B.country-size-status",
+      "result": "pass",
+      "evidence": "Country=['United Kingdom'], Size=1, Work Status=Freelance"
+    },
+    {
+      "id": "B.work-status",
+      "result": "pass",
+      "evidence": "Work Status sources named in AI Notes per resolution rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=2 with reasoning in AI Notes"
+    },
+    {
+      "id": "C.judgment",
+      "result": "fail",
+      "evidence": "Worked Together=Repeatedly, Familiarity=Know them well set with NO provenance; clip says \"worked with me at fuse as freelancer\" (supports not-Never but not \"Repeatedly\"/\"Know them well\")",
+      "fix": "record set_by for both; if agent-written, clear to empty + ask \"Worked Together? Familiarity?\" (agent may not assert non-zero values)"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note intent reflected in entry"
+    },
+    {
+      "id": "C.migrated-body",
+      "result": "pass",
+      "evidence": "Clipped/migrated body archived to clipped.md, no stray body text"
+    },
+    {
+      "id": "C.ai-notes",
+      "result": "pass",
+      "evidence": "AI Notes hedged, includes seniority + Autonomy reasoning"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: James Morrins (editor/videographer). worked with me at fuse "
+    },
+    {
+      "id": "D.provenance",
+      "result": "fail",
+      "evidence": "No provenance file, no manifest",
+      "fix": "write provenance"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, OQs, captions, Source or body"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions terse, conditional, story nudge where due"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Needs Review earned after complete pass"
+    }
+  ],
+  "to": "scout+scraper"
+}

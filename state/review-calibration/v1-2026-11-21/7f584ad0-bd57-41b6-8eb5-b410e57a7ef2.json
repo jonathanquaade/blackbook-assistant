@@ -1,0 +1,132 @@
+{
+  "page_id": "7f584ad0-bd57-41b6-8eb5-b410e57a7ef2",
+  "name": "République Studio",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-11-21T04:00:00",
+  "verdict": "pass",
+  "attempt": 1,
+  "calibration": true,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "16 images in Images property across named projects in captions"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Multiple images per project where the source has them"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work matches tagged Capabilities (Graphic design)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website shot correct; IG login wall rejected + documented + queued"
+    },
+    {
+      "id": "A.captions",
+      "result": "pass",
+      "evidence": "Every image captioned with project/client and source host"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Video/audio embedded where the practice is time-based, or none needed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absences"
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Live body 18 blocks, single h2 Work section, matches Images property"
+    },
+    {
+      "id": "A.images-present",
+      "result": "pass",
+      "evidence": "16 live images"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type=Studio"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "No public email after site/LinkedIn/directories, documented"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design"
+    },
+    {
+      "id": "B.country-size-status",
+      "result": "pass",
+      "evidence": "Country=['France'], Size=2–10, Work Status=Studio"
+    },
+    {
+      "id": "B.work-status",
+      "result": "pass",
+      "evidence": "Work Status sources named in AI Notes per resolution rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=None with reasoning in AI Notes"
+    },
+    {
+      "id": "C.judgment",
+      "result": "pass",
+      "evidence": "Judgment fields untouched by agent / zero-states (WT=Never, Fam=Don't know them, WW=Unvetted, Rating=None)"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note intent reflected in entry"
+    },
+    {
+      "id": "C.migrated-body",
+      "result": "pass",
+      "evidence": "Clipped/migrated body archived to clipped.md, no stray body text"
+    },
+    {
+      "id": "C.ai-notes",
+      "result": "pass",
+      "evidence": "AI Notes hedged, includes seniority + Autonomy reasoning"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance file present (null source_url tolerated)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, OQs, captions, Source or body"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions terse, conditional, story nudge where due"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Needs Review earned after complete pass"
+    }
+  ],
+  "to": null
+}

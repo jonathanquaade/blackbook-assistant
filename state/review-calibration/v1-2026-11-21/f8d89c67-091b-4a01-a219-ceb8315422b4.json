@@ -1,0 +1,134 @@
+{
+  "page_id": "f8d89c67-091b-4a01-a219-ceb8315422b4",
+  "name": "Sharon Park",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-11-21T04:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "calibration": true,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "0 images in Images property across named projects in captions"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Multiple images per project where the source has them"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work matches tagged Capabilities (Graphic design)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website and Instagram context shots present and correctly labeled"
+    },
+    {
+      "id": "A.captions",
+      "result": "pass",
+      "evidence": "Every image captioned with project/client and source host"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Video/audio embedded where the practice is time-based, or none needed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absences"
+    },
+    {
+      "id": "A.body-structure",
+      "result": "fail",
+      "evidence": "Live page has 0 body blocks and Images property EMPTY while manifest lists 14 work images + 2 context shots (prior review passed it at attempt 2 off the manifest)",
+      "fix": "re-run keeper.py upload; verify live block count and Images"
+    },
+    {
+      "id": "A.images-present",
+      "result": "fail",
+      "evidence": "0 live images",
+      "fix": "same"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type=Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website/IG/LinkedIn/Email present or absence documented"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design"
+    },
+    {
+      "id": "B.country-size-status",
+      "result": "pass",
+      "evidence": "Country=['US'], Size=1, Work Status=Freelance"
+    },
+    {
+      "id": "B.work-status",
+      "result": "pass",
+      "evidence": "Work Status sources named in AI Notes per resolution rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=4 with reasoning in AI Notes"
+    },
+    {
+      "id": "C.judgment",
+      "result": "pass",
+      "evidence": "Judgment fields untouched by agent / zero-states (WT=Never, Fam=Don't know them, WW=Unvetted, Rating=None)"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note intent reflected in entry"
+    },
+    {
+      "id": "C.migrated-body",
+      "result": "pass",
+      "evidence": "Clipped/migrated body archived to clipped.md, no stray body text"
+    },
+    {
+      "id": "C.ai-notes",
+      "result": "pass",
+      "evidence": "AI Notes hedged, includes seniority + Autonomy reasoning"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, 2021-10-09"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance file present (null source_url tolerated)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, OQs, captions, Source or body"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions terse, conditional, story nudge where due"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Needs Review earned after complete pass"
+    }
+  ],
+  "to": "scraper"
+}
