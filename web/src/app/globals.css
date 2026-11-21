@@ -2648,9 +2648,8 @@ main {
 }
 .toast {
   position: fixed;
-  bottom: 115px;
-  left: calc(50% + 108px);
-  transform: translateX(-50%);
+  top: 66px;
+  right: 20px;
   z-index: 60;
   display: flex;
   align-items: center;
@@ -2828,9 +2827,6 @@ main {
   }
   .art-credit {
     font-size: 7px;
-  }
-  .toast {
-    left: calc(50% + 95px);
   }
 }
 @media (max-width: 1000px) {
@@ -3404,7 +3400,10 @@ main {
     padding: 20px;
   }
   .toast {
+    top: auto;
+    right: auto;
     left: 50%;
+    transform: translateX(-50%);
     bottom: calc(120px + env(safe-area-inset-bottom));
     font-size: 11px;
     padding: 10px 7px 10px 12px;

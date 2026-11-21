@@ -2,6 +2,7 @@
 
 import {
   createContext,
+  Fragment,
   useContext,
   useState,
   useSyncExternalStore,
@@ -88,6 +89,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     () => false,
   );
   const [notice, setNotice] = useState("");
+  const [resetGeneration, setResetGeneration] = useState(0);
   const persist = (next: WorkspaceState, message: string) =>
     setNotice(
       save(next)
@@ -180,15 +182,17 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
         "Detail draft discarded. Original demo facts restored.",
       );
     },
-    reset: () =>
+    reset: () => {
       persist(
         emptyWorkspace,
-        "Sandbox reset. Your local demo decisions and shortlist were cleared.",
-      ),
+        "Sandbox reset. Local demo drafts, decisions, shortlist and submissions were cleared.",
+      );
+      setResetGeneration((generation) => generation + 1);
+    },
   };
   return (
     <WorkspaceContext.Provider value={value}>
-      {children}
+      <Fragment key={resetGeneration}>{children}</Fragment>
     </WorkspaceContext.Provider>
   );
 }
