@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
 import {
   ArrowLeft,
   ArrowRight,
@@ -88,6 +89,12 @@ export function Review() {
         <span className="review-mode">
           <ShieldCheck size={14} /> Owner review <span>Demo</span>
         </span>
+      </div>
+      <div className="shadow-source">
+        <span>Fictional sandbox · Local decisions</span>
+        <Link href="/review/blackbook">
+          Open private shadow review <ArrowRight size={14} />
+        </Link>
       </div>
       <div className="review-tabs" role="tablist" aria-label="Review queues">
         {tabs.map((tab) => (

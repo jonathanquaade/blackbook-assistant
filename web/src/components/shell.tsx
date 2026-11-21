@@ -27,6 +27,7 @@ import { useWorkspace } from "./workspace-provider";
 
 export function Shell({ children }: { children: ReactNode }) {
   const path = usePathname();
+  const privateReview = path.startsWith("/review/blackbook");
   const { state, hydrated, notice, notify, reset } = useWorkspace();
   const [addOpen, setAddOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -39,12 +40,11 @@ export function Shell({ children }: { children: ReactNode }) {
   const readyCount = submissions.filter(
     (submission) => isReady(submission) && !decisionFor(state, submission),
   ).length;
-  const view =
-    path === "/review"
-      ? "Review"
-      : path === "/shortlist"
-        ? "Shortlist"
-        : "Explore";
+  const view = path.startsWith("/review")
+    ? "Review"
+    : path === "/shortlist"
+      ? "Shortlist"
+      : "Explore";
   function toggleTheme() {
     const root = document.documentElement;
     const theme = root.dataset.theme === "dark" ? "light" : "dark";
@@ -100,7 +100,9 @@ export function Shell({ children }: { children: ReactNode }) {
           >
             <CheckCheck size={17} />
             <span>Review</span>
-            <span className="nav-count">{hydrated ? readyCount : "…"}</span>
+            <span className="nav-count">
+              {privateReview ? "L0" : hydrated ? readyCount : "…"}
+            </span>
           </Link>
         </nav>
         <button
@@ -170,7 +172,13 @@ export function Shell({ children }: { children: ReactNode }) {
           </div>
         </header>
         <div className="preview-strip">
-          {notice ? (
+          {privateReview ? (
+            <span>
+              <ShieldCheck size={12} />
+              <strong>Shadow review</strong> Owner access required. L0: every
+              decision is yours. No Notion writes.
+            </span>
+          ) : notice ? (
             <div className="workspace-notice" role="status">
               <CheckCheck size={17} />
               <span>
@@ -217,9 +225,9 @@ export function Shell({ children }: { children: ReactNode }) {
           <div className="quiet-callout">
             <ShieldCheck size={20} />
             <p>
-              This preview uses fictional profiles and original illustrative
-              work. Your actual Blackbook records, private notes, and
-              credentials are not included.
+              {privateReview
+                ? "Private shadow review reads your Needs Review entries only after owner sign-in. Feedback stays in private server storage. It never changes Notion, publishes entries, or edits your judgment fields."
+                : "This preview uses fictional profiles and original illustrative work. Your actual Blackbook records, private notes, and credentials are not included."}
             </p>
           </div>
           <h3>You can try</h3>
