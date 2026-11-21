@@ -9,13 +9,15 @@
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "0 images in Images property across named projects in captions"
+      "result": "fail",
+      "evidence": "0 live image(s), no work captured, so no projects to count",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
     },
     {
       "id": "A.depth",
-      "result": "pass",
-      "evidence": "Multiple images per project where the source has them"
+      "result": "fail",
+      "evidence": "No work images, no depth to assess",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
     },
     {
       "id": "A.on-capability",

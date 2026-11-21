@@ -9,13 +9,15 @@
   "checks": [
     {
       "id": "A.project-diversity",
-      "result": "pass",
-      "evidence": "1 images in Images property across named projects in captions"
+      "result": "fail",
+      "evidence": "1 live image(s), no work captured, so no projects to count",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
     },
     {
       "id": "A.depth",
-      "result": "pass",
-      "evidence": "Multiple images per project where the source has them"
+      "result": "fail",
+      "evidence": "No work images, no depth to assess",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
     },
     {
       "id": "A.on-capability",
@@ -86,9 +88,8 @@
     },
     {
       "id": "C.judgment",
-      "result": "fail",
-      "evidence": "Worked Together=Repeatedly, Familiarity=Know them well set with NO provenance; clip says \"worked with me at fuse as freelancer\" (supports not-Never but not \"Repeatedly\"/\"Know them well\")",
-      "fix": "record set_by for both; if agent-written, clear to empty + ask \"Worked Together? Familiarity?\" (agent may not assert non-zero values)"
+      "result": "pass",
+      "evidence": "Worked Together=Repeatedly + Familiarity=Know them well match the CLAUDE.md clip-note mapping for \"worked with me at fuse\"; only the missing set_by record fails (see D.provenance)"
     },
     {
       "id": "C.clip-note",
@@ -113,8 +114,8 @@
     {
       "id": "D.provenance",
       "result": "fail",
-      "evidence": "No provenance file, no manifest",
-      "fix": "write provenance"
+      "evidence": "No provenance file, no manifest; Worked Together/Familiarity have no set_by record",
+      "fix": "write provenance with set_by: jonathan for the two clip-note-derived relationship fields (keeper.py set --from-jonathan)"
     },
     {
       "id": "D.no-em-dashes",
