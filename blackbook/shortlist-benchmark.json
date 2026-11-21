@@ -1,0 +1,1087 @@
+{
+  "version": 1,
+  "created": "2026-11-21",
+  "source_snapshot": "backups/latest.csv @ 265438f (2026-11-20, 862 rows)",
+  "grade_scale": {
+    "3": "ideal: should be in top 5",
+    "2": "good: useful if shown",
+    "1": "acceptable with a caveat, should not lead"
+  },
+  "scoring": {
+    "useful_result": "any expected entry with grade>=2 in the top 5 (duplicates of one person count once)",
+    "slice1_gate": "useful_result for >=80% of briefs with scope=pilot (16 briefs, so >=13)",
+    "coverage": "report separately: share of briefs with scope=catalog that are answerable once Needs Review entries are searchable",
+    "should_not_lead": "an entry listed here at rank 1 counts as a miss for that brief"
+  },
+  "scope_meaning": {
+    "pilot": "answerable from the 45 Verified entries (the slice 1 catalog)",
+    "catalog": "needs Needs Review entries; the pilot must say matches are weak, not invent one"
+  },
+  "privacy": "Reasons cite Jonathan's Notes for the human grader. The search system must not send Notes to a model provider (plan section 3).",
+  "briefs": [
+    {
+      "id": "B01",
+      "brief": "Find freelance designers for a type-led food packaging project",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "hard": {
+          "work_status": [
+            "Freelance"
+          ]
+        },
+        "tags": [
+          "Type design",
+          "Identity systems",
+          "Graphic design"
+        ],
+        "soft": [
+          "packaging",
+          "food",
+          "typography"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Pedro Destefani",
+          "page_ids": [
+            "380f84ba-ae13-812c-a15c-c7959cc26b67"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Freelance ex-Mucho Design Director; identity systems plus his own typefaces (Ravena, BPM Display)."
+        },
+        {
+          "name": "Julia Miceli Pitta",
+          "page_ids": [
+            "380f84ba-ae13-812a-be69-c0912818ac57"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Freelance; AI Notes list packaging alongside identity and editorial systems."
+        },
+        {
+          "name": "Leonhard Laupichler",
+          "page_ids": [
+            "380f84ba-ae13-810b-a3ad-f049196b1420"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Freelance type designer with published faces; identity-led rather than packaging-proven."
+        },
+        {
+          "name": "Sophia Brinkgerd",
+          "page_ids": [
+            "380f84ba-ae13-8111-8bdb-f8ef7ded24cf"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Freelance; custom typography and logotypes for branding."
+        }
+      ],
+      "should_not_lead": [
+        {
+          "name": "Morgan Light",
+          "page_ids": [
+            "13b61ed0-6403-4abf-a38e-2ed44aa5ffb0"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Packaging is on-brief (Target up&up) but she is Employed and declined Fuse; caveat, not a lead."
+        }
+      ],
+      "note": "The plan's own example prompt."
+    },
+    {
+      "id": "B02",
+      "brief": "Freelance identity designer for a bold, system-driven challenger rebrand with a strong typographic backbone",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "hard": {
+          "work_status": [
+            "Freelance"
+          ]
+        },
+        "tags": [
+          "Identity systems",
+          "Type design"
+        ],
+        "soft": [
+          "system-driven",
+          "bold",
+          "rebrand"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Leonhard Laupichler",
+          "page_ids": [
+            "380f84ba-ae13-810b-a3ad-f049196b1420"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Tier 1 in the June shortlist; Supreme and Athens Kallithea FC identity work; Jonathan met him."
+        },
+        {
+          "name": "Daan Rietbergen",
+          "page_ids": [
+            "380f84ba-ae13-81c7-9f72-f5c91aaa36b5"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Studio Dumbar identity systems (Dutch National Police); Work With? Yes after the Fuse call."
+        },
+        {
+          "name": "Sophia Brinkgerd",
+          "page_ids": [
+            "380f84ba-ae13-8111-8bdb-f8ef7ded24cf"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Works as a duo with Laupichler; identity plus custom type."
+        },
+        {
+          "name": "Pedro Destefani",
+          "page_ids": [
+            "380f84ba-ae13-812c-a15c-c7959cc26b67"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Identity systems plus type design, freelance since 2025/26."
+        },
+        {
+          "name": "Julia Miceli Pitta",
+          "page_ids": [
+            "380f84ba-ae13-812a-be69-c0912818ac57"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Brand systems; solo-studio founder caveat."
+        }
+      ],
+      "should_not_lead": [
+        {
+          "name": "Julen Saenz",
+          "page_ids": [
+            "380f84ba-ae13-81e7-962b-e191a79aab07"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Jonathan's Notes: only works through his studio HIRUKI now, not a freelancer."
+        }
+      ],
+      "note": "Mirrors freelance-branding-shortlist-2026-06-15.md."
+    },
+    {
+      "id": "B03",
+      "brief": "Senior product designer for a B2B SaaS design system",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Digital product design"
+        ],
+        "soft": [
+          "design system",
+          "B2B",
+          "SaaS"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Eugene Serpokrylov",
+          "page_ids": [
+            "37df84ba-ae13-8123-b9dd-fa9393f6bcd0"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Jonathan: impressed with his design-system work; Definitely, worked together repeatedly."
+        },
+        {
+          "name": "Rory Keohane",
+          "page_ids": [
+            "37df84ba-ae13-816f-ad85-fce52caa26b2"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Rating 5, Definitely, worked together repeatedly."
+        },
+        {
+          "name": "Vova Stegantsov",
+          "page_ids": [
+            "37df84ba-ae13-8135-941c-fb4d6bd5a272"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Rating 5, Definitely, worked together repeatedly."
+        },
+        {
+          "name": "Georgy Gushchin",
+          "page_ids": [
+            "37df84ba-ae13-813a-88e1-dd255011c652"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Yes, worked together repeatedly."
+        },
+        {
+          "name": "Daniella Marynova",
+          "page_ids": [
+            "1f2f84ba-ae13-81bd-b205-f3713a28c0da"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "SaaS/fintech product work; In a pinch, employed full-time."
+        }
+      ],
+      "should_not_lead": [
+        {
+          "name": "Eugene Ekuban",
+          "page_ids": [
+            "162f84ba-ae13-8179-885f-f087601ecc57"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Jonathan's Notes: not much B2B product experience."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "B04",
+      "brief": "Web designer who can also code an experimental, bespoke portfolio site",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Web design",
+          "Frontend development (web)"
+        ],
+        "soft": [
+          "experimental",
+          "bespoke",
+          "design and build"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Fernanda Ruiz",
+          "page_ids": [
+            "15ff84ba-ae13-815e-9be4-c649796da857"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Designer and creative developer; Jonathan's 'best of the best', Rating 5, Definitely."
+        },
+        {
+          "name": "Paul Lacour",
+          "page_ids": [
+            "8d1fbeb0-37c0-4728-b2d8-72cef05df3f2",
+            "a44c42d0-c6b4-41cb-bc57-d54f2c8ab764"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Paris designer-developer at the intersection of code and art direction. Two Verified entries exist: show once."
+        },
+        {
+          "name": "Laura Piccolo",
+          "page_ids": [
+            "92e39b1f-8b21-4aad-ac70-d041990a7d32"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Designs and codes sites for cultural institutions and artists; Awwwards HM."
+        }
+      ],
+      "should_not_lead": [],
+      "note": "Also a dedupe check: Paul Lacour has two Verified pages and must appear as one card."
+    },
+    {
+      "id": "B05",
+      "brief": "Luxury fashion website art director in Paris or London",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "hard": {
+          "location": [
+            "France",
+            "UK",
+            "United Kingdom"
+          ]
+        },
+        "tags": [
+          "Web design"
+        ],
+        "soft": [
+          "luxury",
+          "fashion",
+          "art direction"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Elodie Fabbri",
+          "page_ids": [
+            "9f9f2360-fd68-4bf1-b8d9-50a4742a3360"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Kenzo, Chanel, Bottega Veneta, Maison Margiela; Rating 5; highly recommended to Jonathan."
+        },
+        {
+          "name": "Sandra Autukaite",
+          "page_ids": [
+            "f8720db8-096a-4edc-972c-2df30574a03b"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Luxury fashion web experience (Moncler at R/GA); worked together repeatedly."
+        },
+        {
+          "name": "Catherine Uhlrich",
+          "page_ids": [
+            "8290b9ba-b414-4b37-a9d9-da139913deac"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Ex-AKQA/Instrument digital design director; Kenzo, Dior."
+        },
+        {
+          "name": "Thomas Hervé",
+          "page_ids": [
+            "aed6b998-bd71-4529-8858-b1d3200d055c"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Paris solo studio; fashion/lifestyle clients."
+        },
+        {
+          "name": "Eugene Ekuban",
+          "page_ids": [
+            "162f84ba-ae13-8179-885f-f087601ecc57"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Luxury/editorial leaning web designer (Rolls-Royce, OMNIYAT)."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B06",
+      "brief": "Someone I've worked with repeatedly who can help on a digital project next week",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "hard": {
+          "worked_together": [
+            "Repeatedly"
+          ]
+        },
+        "tags": [
+          "Digital product design",
+          "Web design"
+        ],
+        "soft": [
+          "availability"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Fernanda Ruiz",
+          "page_ids": [
+            "15ff84ba-ae13-815e-9be4-c649796da857"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Repeatedly, Definitely, freelance."
+        },
+        {
+          "name": "Sandra Autukaite",
+          "page_ids": [
+            "f8720db8-096a-4edc-972c-2df30574a03b"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Repeatedly; freelance web designer."
+        },
+        {
+          "name": "Rory Keohane",
+          "page_ids": [
+            "37df84ba-ae13-816f-ad85-fce52caa26b2"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Repeatedly, Definitely; employed, so availability unknown."
+        },
+        {
+          "name": "Vova Stegantsov",
+          "page_ids": [
+            "37df84ba-ae13-8135-941c-fb4d6bd5a272"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Repeatedly, Definitely; employed."
+        },
+        {
+          "name": "Eugene Serpokrylov",
+          "page_ids": [
+            "37df84ba-ae13-8123-b9dd-fa9393f6bcd0"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Repeatedly, Definitely; employed."
+        }
+      ],
+      "should_not_lead": [],
+      "note": "Tests the relationship filter. 'Next week' cannot be verified: results must say availability is unknown, never imply it."
+    },
+    {
+      "id": "B07",
+      "brief": "Swiss-style poster designer for a cultural institution",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Graphic design"
+        ],
+        "soft": [
+          "poster",
+          "Swiss typography",
+          "cultural"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Claudia Colombo",
+          "page_ids": [
+            "96ddd4a8-5f73-40be-9495-94e4d685db8d"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Swiss Design Award 2022, 100 Beste Plakate; London/Zurich; worked together repeatedly."
+        },
+        {
+          "name": "Daan Rietbergen",
+          "page_ids": [
+            "380f84ba-ae13-81c7-9f72-f5c91aaa36b5"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Amsterdam Sinfonietta poster series at Studio Dumbar; TDC Ascenders."
+        },
+        {
+          "name": "Salome Frenzel",
+          "page_ids": [
+            "380f84ba-ae13-8181-a25d-d0f2692d43d9"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Swiss typography meets experimental posters; Jonathan: more editorial than corporate."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B08",
+      "brief": "Editorial and book designer for an art publisher",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Graphic design"
+        ],
+        "soft": [
+          "editorial",
+          "book design",
+          "publishing"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Vitor Carvalho",
+          "page_ids": [
+            "380f84ba-ae13-81f0-ac47-dfe1fbb64e95"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Specialises in editorial and book design, publication systems."
+        },
+        {
+          "name": "Julia Miceli Pitta",
+          "page_ids": [
+            "380f84ba-ae13-812a-be69-c0912818ac57"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Clients include Phaidon and Thames & Hudson."
+        },
+        {
+          "name": "Salome Frenzel",
+          "page_ids": [
+            "380f84ba-ae13-8181-a25d-d0f2692d43d9"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Editorial and book design; Jonathan notes editorial strength."
+        },
+        {
+          "name": "Daan Rietbergen",
+          "page_ids": [
+            "380f84ba-ae13-81c7-9f72-f5c91aaa36b5"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Editorial/book design is part of his practice."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B09",
+      "brief": "3D and CGI motion designer for a tech product launch film",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "3D & motion"
+        ],
+        "soft": [
+          "CGI",
+          "product launch",
+          "film"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Vincenzo Marchese Ragona",
+          "page_ids": [
+            "24ff84ba-ae13-810b-b688-d8a00ea7767e"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "CGI and motion direction for Apple AirPods, Nike, Puma; ex-Porto Rocha."
+        },
+        {
+          "name": "Alexander Houben",
+          "page_ids": [
+            "380f84ba-ae13-81b0-80a4-ef272640517c"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Motion systems, ex-filmmaker; graphic-motion rather than CGI product."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B10",
+      "brief": "Director and DoP for an athletic brand film",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Film & video production"
+        ],
+        "soft": [
+          "sport",
+          "athlete",
+          "brand film"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Lex Carthur",
+          "page_ids": [
+            "24ff84ba-ae13-81d8-a059-e158f6fc86d5"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Athlete-driven brand films for Nike, Adidas, On, Rapha; Jonathan: 'a very cool rapha campaign'."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B11",
+      "brief": "Music and sound design for a fashion campaign film",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Sound design"
+        ],
+        "soft": [
+          "fashion",
+          "campaign",
+          "music"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Alex Hislop",
+          "page_ids": [
+            "24ff84ba-ae13-819e-b9e0-e3a97eff2354"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Music and sound for Miu Miu, Prada, Nike, Alexander McQueen."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B12",
+      "brief": "Set designer or art director with an edgy art practice for a fashion shoot",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Art practice",
+          "Spatial & exhibition design"
+        ],
+        "soft": [
+          "set design",
+          "fashion",
+          "edgy"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Sofia Alazraki",
+          "page_ids": [
+            "24ff84ba-ae13-8161-b6d4-c09e31b21571"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Art director and set designer, fashion-led; Rating 5; Jonathan: an edgier Isabel & Helen."
+        },
+        {
+          "name": "Nadia Lee Cohen",
+          "page_ids": [
+            "368f84ba-ae13-81fb-87e3-dc03ea6756f8"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Photographer/artist with strong art direction; adjacent, not a set designer."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B13",
+      "brief": "Photographer for a high-profile fashion campaign",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Photography"
+        ],
+        "soft": [
+          "fashion",
+          "campaign",
+          "celebrity"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Nadia Lee Cohen",
+          "page_ids": [
+            "368f84ba-ae13-81fb-87e3-dc03ea6756f8"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Balenciaga, Gucci, Miu Miu campaigns; Rating 5. Jonathan: a celebrity photographer."
+        },
+        {
+          "name": "Lex Carthur",
+          "page_ids": [
+            "24ff84ba-ae13-81d8-a059-e158f6fc86d5"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Came up through photography; now mainly moving image, sport."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B14",
+      "brief": "Type designer for a custom brand typeface with multi-script support",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Type design"
+        ],
+        "soft": [
+          "custom typeface",
+          "multi-script",
+          "brand font"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Florian Runge",
+          "page_ids": [
+            "37df84ba-ae13-81d4-b403-d8670881b7a0"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Multi-script (Armenian, Cyrillic, Devanagari, Georgian, Greek, Hebrew, Latin); Samsung One with Brody."
+        },
+        {
+          "name": "Studio DRAMA",
+          "page_ids": [
+            "37df84ba-ae13-81a4-9ea7-dd8afecdfb60"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Custom type for Mozilla/Firefox, Heinz, Vogue; D&AD Wood Pencils."
+        },
+        {
+          "name": "Pedro Destefani",
+          "page_ids": [
+            "380f84ba-ae13-812c-a15c-c7959cc26b67"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Draws his own display faces; Latin, not multi-script."
+        },
+        {
+          "name": "Leonhard Laupichler",
+          "page_ids": [
+            "380f84ba-ae13-810b-a3ad-f049196b1420"
+          ],
+          "entry_status": "Verified",
+          "grade": 1,
+          "why": "Published typefaces; not multi-script."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B15",
+      "brief": "Senior ex-COLLINS or Porto Rocha level identity designer",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Identity systems"
+        ],
+        "soft": [
+          "COLLINS",
+          "Porto Rocha",
+          "senior"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Megan Bowker",
+          "page_ids": [
+            "37cf84ba-ae13-81bb-85ae-ff8bd5da0633"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Former COLLINS Design Director; led Girl Scouts rebrand."
+        },
+        {
+          "name": "Joseph Lebus",
+          "page_ids": [
+            "380f84ba-ae13-816f-a625-d780d0a07cc5"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Design Principal, Porto Rocha London; Rating 5."
+        },
+        {
+          "name": "Morgan Light",
+          "page_ids": [
+            "13b61ed0-6403-4abf-a38e-2ed44aa5ffb0"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "COLLINS Design Director (Target up&up); not available per Notes."
+        },
+        {
+          "name": "Yedo Han",
+          "page_ids": [
+            "380f84ba-ae13-8186-879a-e90f1f3e43f0"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Senior Designer, Porto Rocha NY; Rating 5."
+        },
+        {
+          "name": "Jessica Bong-Woon",
+          "page_ids": [
+            "380f84ba-ae13-8171-8be6-fe2ce55b9a56"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "CD/ACD at Ragged Edge."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B16",
+      "brief": "Emerging junior type and identity designer for support work",
+      "scope": "pilot",
+      "expected_interpretation": {
+        "tags": [
+          "Type design",
+          "Identity systems",
+          "Graphic design"
+        ],
+        "soft": [
+          "junior",
+          "emerging"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Surya Anand",
+          "page_ids": [
+            "1caf84ba-ae13-81c6-8e62-d34fb0db4c5e"
+          ],
+          "entry_status": "Verified",
+          "grade": 3,
+          "why": "Associate Designer at Porto Rocha, b. 2003; display typefaces and identity."
+        },
+        {
+          "name": "Leonard Behre",
+          "page_ids": [
+            "24ff84ba-ae13-817c-88e3-cfade01100fa"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "MA typography student; experimental type on Instagram."
+        },
+        {
+          "name": "Salome Frenzel",
+          "page_ids": [
+            "380f84ba-ae13-8181-a25d-d0f2692d43d9"
+          ],
+          "entry_status": "Verified",
+          "grade": 2,
+          "why": "Early-career freelance (graduated 2021); posters and identity."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    },
+    {
+      "id": "B17",
+      "brief": "Creative technologist for an interactive installation in London",
+      "scope": "catalog",
+      "expected_interpretation": {
+        "hard": {
+          "location": [
+            "UK",
+            "United Kingdom"
+          ]
+        },
+        "tags": [
+          "Creative technology"
+        ],
+        "soft": [
+          "installation",
+          "interactive",
+          "generative"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Mat Hill",
+          "page_ids": [
+            "e6e4c41b-891e-4d6f-b2c8-a15e36370b8a"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 3,
+          "why": "Generative tools and installations for Pentagram (Barbican Mechasobi, NHM); Rating 5, worked together repeatedly."
+        },
+        {
+          "name": "Felix Faire – Music. Code. Design",
+          "page_ids": [
+            "35c12798-6874-429c-9b71-dba1cb2a5720"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 3,
+          "why": "Computational designer; worked on Intrinsic at Pentagram with Jonathan."
+        },
+        {
+          "name": "Adam Heslop (Pixels in Progress)",
+          "page_ids": [
+            "ea85ca28-c3d4-4e95-8f6f-63d3fd80ac56"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 2,
+          "why": "3D and creative tech; worked together once (Cohere tool)."
+        }
+      ],
+      "should_not_lead": [],
+      "note": "No Verified entry carries Creative technology: the pilot must answer 'no strong match' and offer to include Needs Review entries or relax a constraint."
+    },
+    {
+      "id": "B18",
+      "brief": "Frontend development studio for a WebGL-heavy marketing site",
+      "scope": "catalog",
+      "expected_interpretation": {
+        "tags": [
+          "Frontend development (web)"
+        ],
+        "soft": [
+          "WebGL",
+          "3D web",
+          "studio"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Basement Studio",
+          "page_ids": [
+            "32f53531-d20a-4c30-8b48-7a0c0f86e9ae"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 3,
+          "why": "Next.js/3D sites for Vercel, Linear, Cursor; Jonathan: Definitely, 'YES hahaha'."
+        },
+        {
+          "name": "DXR Zone",
+          "page_ids": [
+            "d27d5056-e338-45e3-add2-3584468802f6"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 2,
+          "why": "Work With? Yes: talented, organised, honest."
+        },
+        {
+          "name": "Victor Costa",
+          "page_ids": [
+            "0836f34e-f93f-4fef-9eff-5dd3b7ab0db2"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 2,
+          "why": "Rating 5, Work With? Yes; individual rather than studio."
+        },
+        {
+          "name": "Fictive Kin",
+          "page_ids": [
+            "d456407d-e8ab-41ee-b9d3-680e9af75258"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 2,
+          "why": "Worked together repeatedly on Hebbia.ai."
+        }
+      ],
+      "should_not_lead": [
+        {
+          "name": "Midnight",
+          "page_ids": [
+            "56c7f50f-cfa3-4fb2-9d91-336652c349d0"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 1,
+          "why": "Jonathan: only in a pinch."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "B19",
+      "brief": "London printer for a short-run luxury print job on premium stock",
+      "scope": "catalog",
+      "expected_interpretation": {
+        "hard": {
+          "location": [
+            "UK",
+            "United Kingdom"
+          ]
+        },
+        "tags": [
+          "Print production"
+        ],
+        "soft": [
+          "short-run",
+          "luxury",
+          "litho"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Identity Print",
+          "page_ids": [
+            "9d493df7-1b7d-4aa0-9aff-c21fc3a0b693",
+            "ea866e6c-cc6f-4fe2-ac6d-4e6b56b3cce7"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 3,
+          "why": "Short-run luxury print on premium stocks. Two pages exist: show once."
+        },
+        {
+          "name": "Push Print",
+          "page_ids": [
+            "73a8f4a8-65aa-4e41-abc1-0181779c9ee3"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 3,
+          "why": "High-end litho print and finishing, London."
+        },
+        {
+          "name": "Dot Studio",
+          "page_ids": [
+            "2d98c9ee-711f-4bea-8f48-1b5bcdb362ec"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 2,
+          "why": "Small independent London print production studio."
+        },
+        {
+          "name": "GF Smith",
+          "page_ids": [
+            "99679f78-1596-4a95-9779-9a68d8a70f91"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 1,
+          "why": "Premium paper merchant: supplier for the stock, not the printer."
+        }
+      ],
+      "should_not_lead": [],
+      "note": "Vendor brief: Paper & materials entries are suppliers and should rank below printers (TAXONOMY.md)."
+    },
+    {
+      "id": "B20",
+      "brief": "Furniture designer for a limited-edition object collaboration",
+      "scope": "catalog",
+      "expected_interpretation": {
+        "tags": [
+          "Industrial design"
+        ],
+        "soft": [
+          "furniture",
+          "object",
+          "limited edition"
+        ]
+      },
+      "expected": [
+        {
+          "name": "Mac Collins",
+          "page_ids": [
+            "fa91ef5c-74e7-4505-97f6-c29d45ce534e"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 3,
+          "why": "Furniture designer and artist (Iklwa chair); Rating 5, worked together repeatedly."
+        },
+        {
+          "name": "Special Projects",
+          "page_ids": [
+            "226f84ba-ae13-81e1-844c-e175604905c7"
+          ],
+          "entry_status": "Needs Review",
+          "grade": 1,
+          "why": "Design and innovation studio; product/object adjacent."
+        }
+      ],
+      "should_not_lead": [],
+      "note": ""
+    }
+  ]
+}
