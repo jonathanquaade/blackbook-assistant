@@ -170,14 +170,32 @@ export function Shell({ children }: { children: ReactNode }) {
           </div>
         </header>
         <div className="preview-strip">
-          <span>
-            <FlaskConical size={12} />
-            <strong>Sandbox</strong> Fictional profiles. Original sample work.
-            Nothing writes to Notion.
-          </span>
-          <button onClick={() => setAboutOpen(true)}>
-            What’s connected? <ArrowUpRight size={12} />
-          </button>
+          {notice ? (
+            <div className="workspace-notice" role="status">
+              <CheckCheck size={17} />
+              <span>
+                <strong>Sandbox</strong> · {notice}
+              </span>
+              <button
+                className="icon-button"
+                aria-label="Dismiss notification"
+                onClick={() => notify("")}
+              >
+                <X size={14} />
+              </button>
+            </div>
+          ) : (
+            <>
+              <span>
+                <FlaskConical size={12} />
+                <strong>Sandbox</strong> Fictional profiles. Original sample
+                work. Nothing writes to Notion.
+              </span>
+              <button onClick={() => setAboutOpen(true)}>
+                What’s connected? <ArrowUpRight size={12} />
+              </button>
+            </>
+          )}
         </div>
         <main id="main-content">{children}</main>
         <footer className="workspace-footer">
@@ -188,19 +206,6 @@ export function Shell({ children }: { children: ReactNode }) {
           <span>BLACKBOOK / EARLY PREVIEW</span>
         </footer>
       </div>
-      {notice && (
-        <div className="toast" role="status">
-          <CheckCheck size={17} />
-          <span>{notice}</span>
-          <button
-            className="icon-button"
-            aria-label="Dismiss notification"
-            onClick={() => notify("")}
-          >
-            <X size={14} />
-          </button>
-        </div>
-      )}
       <AddDialog open={addOpen} onOpenChange={setAddOpen} />
       <Modal
         open={aboutOpen}

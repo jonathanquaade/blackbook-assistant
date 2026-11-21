@@ -2646,28 +2646,29 @@ main {
   margin-top: 15px;
   padding-top: 15px;
 }
-.toast {
-  position: fixed;
-  top: 66px;
-  right: 20px;
-  z-index: 60;
+.workspace-notice {
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: min(520px, calc(100% - 35px));
-  padding: 12px 10px 12px 15px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  box-shadow: 0 4px 25px #15253520;
-  border-radius: 9px;
+  width: 100%;
+  min-width: 0;
+  color: var(--text);
   font-size: 11px;
   line-height: 1.7;
 }
-.toast > svg {
+.workspace-notice > svg {
   color: var(--green);
+  flex-shrink: 0;
 }
-.toast > .icon-button {
+.workspace-notice > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.workspace-notice > .icon-button {
   margin-left: auto;
+  flex-shrink: 0;
+  min-width: 44px;
+  min-height: 44px;
 }
 @media (min-width: 1600px) {
   .explore-page {
@@ -3398,17 +3399,6 @@ main {
   }
   .add-form {
     padding: 20px;
-  }
-  .toast {
-    top: auto;
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: calc(120px + env(safe-area-inset-bottom));
-    font-size: 11px;
-    padding: 10px 7px 10px 12px;
-    width: max-content;
-    max-width: calc(100% - 28px);
   }
   .filter-panel {
     padding: 12px;
