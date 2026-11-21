@@ -1,0 +1,111 @@
+{
+ "page_id": "41ef84ba-ae13-8167-92dc-f5e90c6a8f41",
+ "reviewer_version": "v1",
+ "reviewed_at": "2026-11-21T03:10:32",
+ "verdict": "pass",
+ "attempt": 1,
+ "checks": [
+  {
+   "id": "A.project-diversity",
+   "result": "pass",
+   "evidence": "6 distinct films (MAYHEM, NOAH, PUMA, REEF, Outerknown, DEMO)"
+  },
+  {
+   "id": "A.on-capability",
+   "result": "pass",
+   "evidence": "Film & video production: Vimeo embeds + thumbnails, his own direction/DP work"
+  },
+  {
+   "id": "A.embeds",
+   "result": "pass",
+   "evidence": "6 Vimeo embeds with linked captions and thumbnail previews"
+  },
+  {
+   "id": "A.context-shots",
+   "result": "pass",
+   "evidence": "site-01 andywoodwardphoto.com, site-02 real instagram.com/andywoodward"
+  },
+  {
+   "id": "A.no-uncaptioned",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "A.body-structure",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.type",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.links",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.capabilities",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.country-size-workstatus",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.autonomy",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "C.no-contradiction",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "C.clip-note",
+   "result": "pass",
+   "evidence": "recommended by james morrins -> Familiarity: Recommended by a friend via --from-jonathan (James: Worked Together Repeatedly, Know them well); note verbatim in Source"
+  },
+  {
+   "id": "C.body-content",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "C.ai-notes-hedged",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.source",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.provenance",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.no-em-dashes",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.open-questions",
+   "result": "pass",
+   "evidence": "none needed"
+  },
+  {
+   "id": "D.provenance-note",
+   "result": "pass",
+   "evidence": "source_url null on provenance fields: known systemic keeper gap, not a gate failure"
+  }
+ ],
+ "to": "scraper",
+ "note": "Reviewed in the same session that scouted/scraped (Devin run, no separate subagent); checks run against live Notion state."
+}

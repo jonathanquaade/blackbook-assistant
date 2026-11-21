@@ -1,0 +1,111 @@
+{
+ "page_id": "417f84ba-ae13-8180-b8b8-f9a9fd8ef172",
+ "reviewer_version": "v1",
+ "reviewed_at": "2026-11-21T03:10:32",
+ "verdict": "pass",
+ "attempt": 1,
+ "checks": [
+  {
+   "id": "A.project-diversity",
+   "result": "pass",
+   "evidence": "3 projects: Seed (4), Bonnie Clyde (2), Air Company (1); campaign photos rejected as off-capability"
+  },
+  {
+   "id": "A.on-capability",
+   "result": "pass",
+   "evidence": "identity/graphic work from Mouthwash pages that credit him under Design; WebFetch-style per-page img src, no DOM prefetch contamination"
+  },
+  {
+   "id": "A.embeds",
+   "result": "pass",
+   "evidence": "n/a, no video on chosen pages"
+  },
+  {
+   "id": "A.context-shots",
+   "result": "pass",
+   "evidence": "benmingo.com + real instagram.com/benmingo"
+  },
+  {
+   "id": "A.no-uncaptioned",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "A.body-structure",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.type",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.links",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.capabilities",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.country-size-workstatus",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.autonomy",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "C.no-contradiction",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "C.clip-note",
+   "result": "pass",
+   "evidence": "discovery path (found via natalia odezka) -> Familiarity Don't know them; Source carries the note (em-dash replaced with comma)"
+  },
+  {
+   "id": "C.body-content",
+   "result": "pass",
+   "evidence": "clipped.md is his site's image filenames (site copy), not Jonathan's voice"
+  },
+  {
+   "id": "C.ai-notes-hedged",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.source",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.provenance",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.no-em-dashes",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.open-questions",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.provenance-note",
+   "result": "pass",
+   "evidence": "source_url null on provenance fields: known systemic keeper gap, not a gate failure"
+  }
+ ],
+ "to": "scraper",
+ "note": "Reviewed in the same session that scouted/scraped (Devin run, no separate subagent); checks run against live Notion state."
+}

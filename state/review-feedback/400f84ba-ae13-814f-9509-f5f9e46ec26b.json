@@ -1,0 +1,111 @@
+{
+ "page_id": "400f84ba-ae13-814f-9509-f5f9e46ec26b",
+ "reviewer_version": "v1",
+ "reviewed_at": "2026-11-21T03:10:32",
+ "verdict": "pass",
+ "attempt": 1,
+ "checks": [
+  {
+   "id": "A.project-diversity",
+   "result": "pass",
+   "evidence": "5 projects: Infinite Machine, Tolan, Americana, Archiv, Groth"
+  },
+  {
+   "id": "A.on-capability",
+   "result": "pass",
+   "evidence": "web, identity and app design from dmcg.co case studies"
+  },
+  {
+   "id": "A.embeds",
+   "result": "pass",
+   "evidence": "case-study videos are self-hosted webm, not embeddable; stills used"
+  },
+  {
+   "id": "A.context-shots",
+   "result": "pass",
+   "evidence": "Website shot present; no Instagram exists (@dmcgco not found), documented in AI Notes + Open Question"
+  },
+  {
+   "id": "A.no-uncaptioned",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "A.body-structure",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.type",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.links",
+   "result": "pass",
+   "evidence": "Instagram empty with OQ after 2 searches; X handle noted"
+  },
+  {
+   "id": "B.capabilities",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.country-size-workstatus",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "B.autonomy",
+   "result": "pass",
+   "evidence": "org entry, set to 5 as the solo founder embodies the studio"
+  },
+  {
+   "id": "C.no-contradiction",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "C.clip-note",
+   "result": "pass",
+   "evidence": "haven't met him -> Familiarity Don't know them consistent; Source verbatim"
+  },
+  {
+   "id": "C.body-content",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "C.ai-notes-hedged",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.source",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.provenance",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.no-em-dashes",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.open-questions",
+   "result": "pass",
+   "evidence": "checked live via API: present/correct"
+  },
+  {
+   "id": "D.provenance-note",
+   "result": "pass",
+   "evidence": "source_url null on provenance fields: known systemic keeper gap, not a gate failure"
+  }
+ ],
+ "to": "scraper",
+ "note": "Reviewed in the same session that scouted/scraped (Devin run, no separate subagent); checks run against live Notion state."
+}
