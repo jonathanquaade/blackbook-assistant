@@ -71,3 +71,11 @@ Search still uses one small embedding model and no generative calls. Consider Ha
 | **3. Owner writeback and bounded jobs** | Separately approve writeback and then pilot the queue. Store the decision and retryable write job together; check for conflicts and read back from Notion before publishing. | Jonathan owns every verification/rating decision, dry-run and rollback work, and jobs stay within the approved cost and scope. Only then consider weekly schedules. |
 
 Do not add public sharing, collaborator invites, bulk rescraping, or replace Notion in v1. Get explicit approval before production writes, recurring ACU spend, or sending real catalog content to a provider.
+
+### Roadmap: roster map
+
+Once the read-only projection is stable, add a private, read-only **Roster Map**. Find a studio such as PORTO ROCHA, expand its current and former team, then select a person to see the other studios they worked at. Start with a focused neighborhood for readability; make the full roster, including reference studios and unconnected records, findable through a searchable list. Label unverified entries, keep rejected entries out, and leave Explore's Verified 4–5 rule unchanged.
+
+Use the [existing roster](../state/roster): studio and designer IDs identify nodes, and recorded tenures link them. Show current vs former as last observed, with role, years and source where known. Keep overlapping or repeat tenures distinct. Don't infer a link from a name match or treat the year someone first appeared on a team page as their hire year. The tracked studio and tenure files are empty today, so first validate the interaction with fixtures, then seed a small, evidence-backed slice before expanding to the full roster. Browsing the map does not run Scout or call a model.
+
+**Acceptance test:** Starting at a PORTO ROCHA fixture, follow a former team member to another studio and inspect both tenures. Reference studios and unconnected people are still findable, and nothing in the map changes what appears in Explore.
