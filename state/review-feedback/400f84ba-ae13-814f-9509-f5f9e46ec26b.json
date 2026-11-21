@@ -1,0 +1,111 @@
+{
+ "page_id": "400f84ba-ae13-814f-9509-f5f9e46ec26b",
+ "reviewer_version": "v1",
+ "reviewed_at": "2026-11-21T03:17:04",
+ "verdict": "pass",
+ "attempt": 1,
+ "checks": [
+  {
+   "id": "A.project-diversity",
+   "result": "pass",
+   "evidence": "10 images across 5 distinct dmcg.co projects; distinct hashes."
+  },
+  {
+   "id": "A.depth",
+   "result": "pass",
+   "evidence": "Inside-project views (screens, systems, print), not only covers. Note only: the Groth image captioned identity shows the website Research section; same project, minor wording."
+  },
+  {
+   "id": "A.on-capability",
+   "result": "pass",
+   "evidence": "Brand, web and product design work, matching the tags."
+  },
+  {
+   "id": "A.context-shots",
+   "result": "pass",
+   "evidence": "Website shot is dmcg.co. No Instagram shot because no Instagram account is findable: dmcg.co links only x.com/dmcgco, @dmcgco does not exist per AI Notes, and an Open Question asks. Not a mislabel; nothing to capture."
+  },
+  {
+   "id": "A.captions",
+   "result": "pass",
+   "evidence": "Every image captioned with project + dmcg.co link; Groth source image ID confirmed on dmcg.co/work/groth."
+  },
+  {
+   "id": "A.embeds",
+   "result": "pass",
+   "evidence": "No video/audio on the source pages needing embeds."
+  },
+  {
+   "id": "A.absence-explained",
+   "result": "pass",
+   "evidence": "Missing Instagram documented in AI Notes and asked in Open Questions."
+  },
+  {
+   "id": "A.body-structure",
+   "result": "pass",
+   "evidence": "13 live blocks, clean; Images property matches body by hash."
+  },
+  {
+   "id": "B.type-links",
+   "result": "pass",
+   "evidence": "Studio; Website, LinkedIn (dmcgillivray) and Email office@dmcg.co (on dmcg.co) present; Instagram empty pending the Open Question, correct below the confidence floor."
+  },
+  {
+   "id": "B.capabilities",
+   "result": "pass",
+   "evidence": "Creative direction, Digital product design (Archiv, Hedroom apps), Identity systems, Web design fit the dmcg.co about and work pages."
+  },
+  {
+   "id": "B.country-size-status",
+   "result": "pass",
+   "evidence": "Location United States, Size 1 (solo-led), Work Status Studio from site + LinkedIn, named in AI Notes."
+  },
+  {
+   "id": "B.autonomy",
+   "result": "pass",
+   "evidence": "Org entry with Autonomy 5 set and reasoned; allowed since a single founder embodies the studio."
+  },
+  {
+   "id": "C.judgment",
+   "result": "pass",
+   "evidence": "Clip says haven't met him; Familiarity Don't know them and Worked Together Never agree."
+  },
+  {
+   "id": "C.clip-note",
+   "result": "pass",
+   "evidence": "brand and product designer reflected in tags; siteinspire discovery kept in Source."
+  },
+  {
+   "id": "C.ai-notes",
+   "result": "pass",
+   "evidence": "Brighton, D&AD New Blood 2011 Graphite Pencil for a Taschen iPad app, practice since 2015 and Parsons teaching all verified on dmcg.co/about. Seniority + Autonomy present and hedged."
+  },
+  {
+   "id": "D.open-questions",
+   "result": "pass",
+   "evidence": "One terse conditional question (Instagram?) for an empty field."
+  },
+  {
+   "id": "D.source",
+   "result": "pass",
+   "evidence": "Source holds the clip note verbatim."
+  },
+  {
+   "id": "D.provenance",
+   "result": "pass",
+   "evidence": "state/provenance present; judgment zero-states and researched fields set_by agent, clip facts set_by jonathan. source_url null is the known tooling gap, noted not failed."
+  },
+  {
+   "id": "D.no-em-dashes",
+   "result": "pass",
+   "evidence": "0 em-dashes in live page properties and all body blocks (checked page.json + blocks.json via keeper.api); keeper.py separators use the middle dot."
+  },
+  {
+   "id": "D.status",
+   "result": "pass",
+   "evidence": "Live Entry Status is Needs Review; Notes untouched (empty)."
+  }
+ ],
+ "to": "scraper",
+ "note": "Independent review by a separate reviewer session (devin-7716019f31e149a2b0777cc7fa44db5b), read-only, checked against live Notion state; replaces the doer's self-review."
+}
