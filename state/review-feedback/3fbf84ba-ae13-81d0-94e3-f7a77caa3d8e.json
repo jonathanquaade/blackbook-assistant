@@ -1,111 +1,111 @@
 {
  "page_id": "3fbf84ba-ae13-81d0-94e3-f7a77caa3d8e",
  "reviewer_version": "v1",
- "reviewed_at": "2026-11-21T03:10:32",
+ "reviewed_at": "2026-11-21T03:17:04",
  "verdict": "pass",
  "attempt": 1,
  "checks": [
   {
    "id": "A.project-diversity",
    "result": "pass",
-   "evidence": "7 distinct films (Dior, Zara Harper, Bergdorf, Max Mara, A.P.C., Girls Have Spoken, clipped IG reel)"
+   "evidence": "7 distinct pieces: the clipped Instagram reel plus 6 different Vimeo films; distinct hashes."
+  },
+  {
+   "id": "A.depth",
+   "result": "pass",
+   "evidence": "Vimeo embeds under each thumbnail make every film playable."
   },
   {
    "id": "A.on-capability",
    "result": "pass",
-   "evidence": "Film & video production: her directed spots"
-  },
-  {
-   "id": "A.embeds",
-   "result": "pass",
-   "evidence": "6 Vimeo embeds + thumbnails; clipped IG reel as linked image"
+   "evidence": "All work is directed film, matching Film & video production."
   },
   {
    "id": "A.context-shots",
    "result": "pass",
-   "evidence": "javajacobs.com (live site has broken Cargo images, documented) + real instagram.com/javajacobs"
+   "evidence": "Website shot shows javajacobs.com as it renders (broken image assets, explained in AI Notes); Instagram shot is a real instagram.com/javajacobs profile page."
   },
   {
-   "id": "A.no-uncaptioned",
+   "id": "A.captions",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Every image captioned with project + linked source; reel caption matches the clipped post DUvk2akjE2A."
+  },
+  {
+   "id": "A.embeds",
+   "result": "pass",
+   "evidence": "6 Vimeo embeds present with thumbnails."
+  },
+  {
+   "id": "A.absence-explained",
+   "result": "pass",
+   "evidence": "AI Notes says javajacobs.com renders broken and work was taken from Vimeo; confirmed the site returns an empty shell."
   },
   {
    "id": "A.body-structure",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "23 live blocks, clean Work heading/items/divider; Images property matches body by hash."
   },
   {
-   "id": "B.type",
+   "id": "B.type-links",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "B.links",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Person; Website, Instagram, LinkedIn and Email all present."
   },
   {
    "id": "B.capabilities",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Film & video production fits a writer-director."
   },
   {
-   "id": "B.country-size-workstatus",
+   "id": "B.country-size-status",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Location United States, Size 1, Freelance (MindsEye roster + LinkedIn, named in AI Notes)."
   },
   {
    "id": "B.autonomy",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Autonomy 4 with hedged reasoning from credits."
   },
   {
-   "id": "C.no-contradiction",
+   "id": "C.judgment",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Zero-states not contradicted; clip gives only a discovery path."
   },
   {
    "id": "C.clip-note",
    "result": "pass",
-   "evidence": "found through video -> discovery, Don't know them; clipped reel identified and captured; Source verbatim"
+   "evidence": "Clipped reel captured as the first work item; website link used."
   },
   {
-   "id": "C.body-content",
+   "id": "C.ai-notes",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "C.ai-notes-hedged",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.source",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.provenance",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.no-em-dashes",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "MindsEye and Groupe Premiere Heure representation, Zara/Dior credits and 2021 Webby verified in public sources. Seniority + Autonomy present and hedged."
   },
   {
    "id": "D.open-questions",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Empty; nothing outstanding."
   },
   {
-   "id": "D.provenance-note",
+   "id": "D.source",
    "result": "pass",
-   "evidence": "source_url null on provenance fields: known systemic keeper gap, not a gate failure"
+   "evidence": "Source holds the clip note verbatim."
+  },
+  {
+   "id": "D.provenance",
+   "result": "pass",
+   "evidence": "state/provenance present; judgment zero-states and researched fields set_by agent, clip facts set_by jonathan. source_url null is the known tooling gap, noted not failed."
+  },
+  {
+   "id": "D.no-em-dashes",
+   "result": "pass",
+   "evidence": "0 em-dashes in live page properties and all body blocks (checked page.json + blocks.json via keeper.api); keeper.py separators use the middle dot."
+  },
+  {
+   "id": "D.status",
+   "result": "pass",
+   "evidence": "Live Entry Status is Needs Review; Notes untouched (empty)."
   }
  ],
  "to": "scraper",
- "note": "Reviewed in the same session that scouted/scraped (Devin run, no separate subagent); checks run against live Notion state."
+ "note": "Independent review by a separate reviewer session (devin-7716019f31e149a2b0777cc7fa44db5b), read-only, checked against live Notion state; replaces the doer's self-review."
 }

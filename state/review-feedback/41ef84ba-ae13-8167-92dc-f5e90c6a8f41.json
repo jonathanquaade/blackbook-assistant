@@ -1,111 +1,106 @@
 {
  "page_id": "41ef84ba-ae13-8167-92dc-f5e90c6a8f41",
  "reviewer_version": "v1",
- "reviewed_at": "2026-11-21T03:10:32",
+ "reviewed_at": "2026-11-21T03:17:04",
  "verdict": "pass",
  "attempt": 1,
  "checks": [
   {
    "id": "A.project-diversity",
    "result": "pass",
-   "evidence": "6 distinct films (MAYHEM, NOAH, PUMA, REEF, Outerknown, DEMO)"
+   "evidence": "6 distinct films (MAYHEM for Lost Surfboards, PUMA x Hello Sunrise, THE ART OF SURFING, Reef x Rose, Outerknown, Tenore); 6 thumbnails with distinct hashes, all titles on andywoodwardphoto.com."
+  },
+  {
+   "id": "A.depth",
+   "result": "pass",
+   "evidence": "Each film has a playable Vimeo embed under its thumbnail, so the full piece is viewable, not just a cover."
   },
   {
    "id": "A.on-capability",
    "result": "pass",
-   "evidence": "Film & video production: Vimeo embeds + thumbnails, his own direction/DP work"
-  },
-  {
-   "id": "A.embeds",
-   "result": "pass",
-   "evidence": "6 Vimeo embeds with linked captions and thumbnail previews"
+   "evidence": "All work is moving image he directed/shot, matching Film & video production. Note only: no still photography shown though Photography is tagged; his site links a public Photo Archive (f.io/XryVhE1e) the next pass could sample. Not off-capability, so not a fail."
   },
   {
    "id": "A.context-shots",
    "result": "pass",
-   "evidence": "site-01 andywoodwardphoto.com, site-02 real instagram.com/andywoodward"
+   "evidence": "Website shot is andywoodwardphoto.com homepage; Instagram shot is a real instagram.com/andywoodward profile page (opened the downloaded files)."
   },
   {
-   "id": "A.no-uncaptioned",
+   "id": "A.captions",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Every image captioned with project + linked source; captions match the frames shown."
+  },
+  {
+   "id": "A.embeds",
+   "result": "pass",
+   "evidence": "6 Vimeo embeds present with thumbnail previews."
   },
   {
    "id": "A.body-structure",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "22 live blocks: Work heading, items, context shots, divider; no orphans or duplicates. Images property files hash-identical to body images."
   },
   {
-   "id": "B.type",
+   "id": "B.type-links",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "B.links",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Person; Website, Instagram, LinkedIn (andywoodwardphoto) and Email (andywoodwardphoto@gmail.com, on his site) all present and the right person."
   },
   {
    "id": "B.capabilities",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Film & video production + Photography fit TAXONOMY; clip says editor/videographer/director, editing has no separate tag."
   },
   {
-   "id": "B.country-size-workstatus",
+   "id": "B.country-size-status",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Location United States, Size 1, Freelance with site + LinkedIn + Statement Content roster named in AI Notes."
   },
   {
    "id": "B.autonomy",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Autonomy 3 with reasoning grounded in credits."
   },
   {
-   "id": "C.no-contradiction",
+   "id": "C.judgment",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Familiarity Recommended by a friend from the clip (set_by jonathan); Worked Together Never and Work With? Unvetted not contradicted."
   },
   {
    "id": "C.clip-note",
    "result": "pass",
-   "evidence": "recommended by james morrins -> Familiarity: Recommended by a friend via --from-jonathan (James: Worked Together Repeatedly, Know them well); note verbatim in Source"
+   "evidence": "Recommendation by James Morrins recorded in Familiarity and AI Notes; editor/videographer/director reflected."
   },
   {
-   "id": "C.body-content",
+   "id": "C.ai-notes",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "C.ai-notes-hedged",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.source",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.provenance",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.no-em-dashes",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Facts verified: Red Bull TV lists NOAH (2023, with filmmaker Andy Woodward); Stockyard credits him on the Vimeo Staff Picked MAYHEM for Lost Surfboards; Montana State marketing + photography minor confirmed (Teton Gravity, Shoutout Colorado). Seniority + Autonomy present, inferences hedged."
   },
   {
    "id": "D.open-questions",
    "result": "pass",
-   "evidence": "none needed"
+   "evidence": "Empty; nothing outstanding to ask."
   },
   {
-   "id": "D.provenance-note",
+   "id": "D.source",
    "result": "pass",
-   "evidence": "source_url null on provenance fields: known systemic keeper gap, not a gate failure"
+   "evidence": "Source holds the clip note verbatim."
+  },
+  {
+   "id": "D.provenance",
+   "result": "pass",
+   "evidence": "state/provenance present; judgment zero-states and researched fields set_by agent, clip facts set_by jonathan. source_url null is the known tooling gap, noted not failed."
+  },
+  {
+   "id": "D.no-em-dashes",
+   "result": "pass",
+   "evidence": "0 em-dashes in live page properties and all body blocks (checked page.json + blocks.json via keeper.api); keeper.py separators use the middle dot."
+  },
+  {
+   "id": "D.status",
+   "result": "pass",
+   "evidence": "Live Entry Status is Needs Review; Notes untouched (empty)."
   }
  ],
  "to": "scraper",
- "note": "Reviewed in the same session that scouted/scraped (Devin run, no separate subagent); checks run against live Notion state."
+ "note": "Independent review by a separate reviewer session (devin-7716019f31e149a2b0777cc7fa44db5b), read-only, checked against live Notion state; replaces the doer's self-review."
 }

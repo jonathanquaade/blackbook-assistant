@@ -1,111 +1,111 @@
 {
  "page_id": "417f84ba-ae13-8180-b8b8-f9a9fd8ef172",
  "reviewer_version": "v1",
- "reviewed_at": "2026-11-21T03:10:32",
+ "reviewed_at": "2026-11-21T03:17:04",
  "verdict": "pass",
  "attempt": 1,
  "checks": [
   {
    "id": "A.project-diversity",
    "result": "pass",
-   "evidence": "3 projects: Seed (4), Bonnie Clyde (2), Air Company (1); campaign photos rejected as off-capability"
+   "evidence": "3 distinct projects: Seed (4), Bonnie Clyde (2), Air Company (1). Source image IDs confirmed on the matching mouthwash.studio project pages."
+  },
+  {
+   "id": "A.depth",
+   "result": "pass",
+   "evidence": "Goes inside projects: Seed packaging, type and system spreads; Bonnie Clyde wordmark and letterform detail."
   },
   {
    "id": "A.on-capability",
    "result": "pass",
-   "evidence": "identity/graphic work from Mouthwash pages that credit him under Design; WebFetch-style per-page img src, no DOM prefetch contamination"
-  },
-  {
-   "id": "A.embeds",
-   "result": "pass",
-   "evidence": "n/a, no video on chosen pages"
+   "evidence": "Identity, type and graphic work, matching Graphic design / Identity systems; campaign photography correctly rejected in the manifest."
   },
   {
    "id": "A.context-shots",
    "result": "pass",
-   "evidence": "benmingo.com + real instagram.com/benmingo"
+   "evidence": "Website shot is benmingo.com; Instagram shot is a real instagram.com/benmingo profile page."
   },
   {
-   "id": "A.no-uncaptioned",
+   "id": "A.captions",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "All 7 work images captioned with project + mouthwash.studio link; captions match what each shows."
+  },
+  {
+   "id": "A.embeds",
+   "result": "pass",
+   "evidence": "No video embeds on the source project pages used; none required."
+  },
+  {
+   "id": "A.absence-explained",
+   "result": "pass",
+   "evidence": "AI Notes says benmingo.com could not be extracted; confirmed independently: headless render draws the index to a canvas with no img/src in the DOM."
   },
   {
    "id": "A.body-structure",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "11 live blocks, clean; Images property matches body by hash."
   },
   {
-   "id": "B.type",
+   "id": "B.type-links",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "B.links",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Person; Website, Instagram, LinkedIn, Email (from his Behance) present."
   },
   {
    "id": "B.capabilities",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Graphic design, Identity systems, Web design supported by Mouthwash credits (Visual Identity, Digital Design). Creative direction rests on his Partner/Design Director title; project credits list him under Design, not Direction, so it is borderline but not wrong."
   },
   {
-   "id": "B.country-size-workstatus",
+   "id": "B.country-size-status",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Location United States, Size 1, Work Status Studio from site title + IG bio + LinkedIn, named in AI Notes."
   },
   {
    "id": "B.autonomy",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Autonomy 5 with hedged reasoning."
   },
   {
-   "id": "C.no-contradiction",
+   "id": "C.judgment",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Zero-states not contradicted; Natalia Odezka is a discovery path, not a vouch, as AI Notes says."
   },
   {
    "id": "C.clip-note",
    "result": "pass",
-   "evidence": "discovery path (found via natalia odezka) -> Familiarity Don't know them; Source carries the note (em-dash replaced with comma)"
+   "evidence": "Mouthwash partner role and discovery path recorded."
   },
   {
-   "id": "C.body-content",
+   "id": "C.ai-notes",
    "result": "pass",
-   "evidence": "clipped.md is his site's image filenames (site copy), not Jonathan's voice"
-  },
-  {
-   "id": "C.ai-notes-hedged",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.source",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.provenance",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
-  },
-  {
-   "id": "D.no-em-dashes",
-   "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Mouthwash credits verified (Design: Ben Mingo on Seed, Bonnie Clyde, Air Company). Team authorship caveat stated. Seniority + Autonomy present."
   },
   {
    "id": "D.open-questions",
    "result": "pass",
-   "evidence": "checked live via API: present/correct"
+   "evidence": "Empty; nothing outstanding."
   },
   {
-   "id": "D.provenance-note",
+   "id": "D.source",
    "result": "pass",
-   "evidence": "source_url null on provenance fields: known systemic keeper gap, not a gate failure"
+   "evidence": "Source holds the clip note verbatim."
+  },
+  {
+   "id": "D.provenance",
+   "result": "pass",
+   "evidence": "state/provenance present; judgment zero-states and researched fields set_by agent, clip facts set_by jonathan. source_url null is the known tooling gap, noted not failed."
+  },
+  {
+   "id": "D.no-em-dashes",
+   "result": "pass",
+   "evidence": "0 em-dashes in live page properties and all body blocks (checked page.json + blocks.json via keeper.api); keeper.py separators use the middle dot."
+  },
+  {
+   "id": "D.status",
+   "result": "pass",
+   "evidence": "Live Entry Status is Needs Review; Notes untouched (empty)."
   }
  ],
  "to": "scraper",
- "note": "Reviewed in the same session that scouted/scraped (Devin run, no separate subagent); checks run against live Notion state."
+ "note": "Independent review by a separate reviewer session (devin-7716019f31e149a2b0777cc7fa44db5b), read-only, checked against live Notion state; replaces the doer's self-review."
 }
