@@ -20,7 +20,7 @@ import {
   X,
 } from "lucide-react";
 import { profileById, submissions } from "@/lib/fixtures";
-import { decisionFor, draftFor, isReady } from "@/lib/workspace";
+import { decisionFor, draftFor, isReady, reviewEdits } from "@/lib/workspace";
 import {
   CAPABILITIES,
   WORK_STATUSES,
@@ -334,26 +334,10 @@ function ReviewEntry({
   const capabilitiesRef = useRef<HTMLFieldSetElement>(null);
   const project = profile.projects[projectIndex];
   const ready = isReady(submission);
-  const detailEdits = (Object.keys(draft) as (keyof typeof draft)[])
-    .filter((field) => draft[field].trim() !== profile[field])
-    .map((field) => ({
-      field,
-      before: profile[field],
-      after: draft[field].trim(),
-    }));
-  const edits = [
-    ...detailEdits,
-    ...(draftCapabilities.join(", ") !==
-    [...profile.capabilities].sort().join(", ")
-      ? [
-          {
-            field: "Capabilities",
-            before: profile.capabilities.join(", "),
-            after: draftCapabilities.join(", "),
-          },
-        ]
-      : []),
-  ];
+  const edits = reviewEdits(profile, {
+    ...draft,
+    capabilities: draftCapabilities,
+  });
   function decision(action: DecisionAction) {
     if (editing) {
       setError("Save your detail edits before deciding.");
@@ -531,7 +515,7 @@ function ReviewEntry({
                   location: profile.location,
                   workStatus: profile.workStatus,
                 });
-                setDraftCapabilities(profile.capabilities);
+                setDraftCapabilities([...profile.capabilities].sort());
                 setEditing(false);
                 setError("");
               }}

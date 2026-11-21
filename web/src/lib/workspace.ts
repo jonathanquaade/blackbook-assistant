@@ -121,6 +121,21 @@ export function recordDecision(
   };
 }
 
+export function reviewEdits(original: ReviewDetails, revised: ReviewDetails) {
+  const fields = ["name", "role", "location", "workStatus"] as const;
+  const edits: NonNullable<Decision["edits"]> = fields
+    .filter((field) => revised[field].trim() !== original[field])
+    .map((field) => ({
+      field,
+      before: original[field],
+      after: revised[field].trim(),
+    }));
+  const before = [...original.capabilities].sort().join(", ");
+  const after = [...revised.capabilities].sort().join(", ");
+  if (before !== after) edits.push({ field: "Capabilities", before, after });
+  return edits;
+}
+
 export function parseWorkspace(raw: string | null): WorkspaceState {
   if (!raw) return emptyWorkspace;
   try {

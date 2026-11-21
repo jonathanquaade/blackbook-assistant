@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { submissions } from "./fixtures";
+import { profileById, submissions } from "./fixtures";
 import type { Decision } from "./types";
 import {
   decisionFor,
@@ -10,6 +10,7 @@ import {
   recordDecision,
   draftFor,
   saveReviewDraft,
+  reviewEdits,
   validateAddition,
 } from "./workspace";
 
@@ -71,6 +72,41 @@ test("a second Save details replaces only its own draft", () => {
   );
   assert.equal(state.drafts.length, 1);
   assert.equal(draftFor(state, ready)?.details.name, "Latest name");
+});
+
+test("discarded and merely reordered capabilities do not create false decision edits", () => {
+  const profile = profileById(ready.profileId)!;
+  assert.deepEqual(
+    reviewEdits(profile, {
+      ...profile,
+      capabilities: [...profile.capabilities],
+    }),
+    [],
+  );
+  assert.deepEqual(
+    reviewEdits(profile, {
+      ...profile,
+      capabilities: [...profile.capabilities].reverse(),
+    }),
+    [],
+  );
+});
+
+test("real capability changes record canonical before and after values without mutating fixtures", () => {
+  const profile = profileById(ready.profileId)!;
+  const original = [...profile.capabilities];
+  const edits = reviewEdits(profile, {
+    ...profile,
+    capabilities: ["Type design"],
+  });
+  assert.deepEqual(edits, [
+    {
+      field: "Capabilities",
+      before: [...original].sort().join(", "),
+      after: "Type design",
+    },
+  ]);
+  assert.deepEqual(profile.capabilities, original);
 });
 
 test("draft validation rejects blank fields, oversized names and invalid capability values", () => {
