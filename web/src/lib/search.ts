@@ -92,7 +92,7 @@ function matchesTerm(text: string, term: string) {
 
 function closeSpelling(left: string, right: string) {
   if (
-    Math.min(left.length, right.length) < 5 ||
+    Math.min(left.length, right.length) < 4 ||
     Math.abs(left.length - right.length) > 1
   )
     return false;

@@ -11,6 +11,7 @@ import {
   emptyWorkspace,
   parseWorkspace,
   recordDecision,
+  saveReviewDraft,
 } from "@/lib/workspace";
 import type {
   Addition,
@@ -18,6 +19,7 @@ import type {
   DecisionAction,
   Submission,
   WorkspaceState,
+  ReviewDetails,
 } from "@/lib/types";
 
 const KEY = "blackbook-sandbox-v1";
@@ -61,6 +63,7 @@ function save(state: WorkspaceState) {
 
 interface WorkspaceContextValue {
   state: WorkspaceState;
+  hydrated: boolean;
   notice: string;
   notify: (message: string) => void;
   toggleShortlist: (id: string) => void;
@@ -71,12 +74,19 @@ interface WorkspaceContextValue {
     edits?: Decision["edits"],
   ) => boolean;
   add: (input: string, note: string) => void;
+  saveDetails: (submission: Submission, details: ReviewDetails) => boolean;
+  discardDetails: (submission: Submission) => void;
   reset: () => void;
 }
 const WorkspaceContext = createContext<WorkspaceContextValue | null>(null);
 
 export function WorkspaceProvider({ children }: { children: ReactNode }) {
   const state = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const hydrated = useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false,
+  );
   const [notice, setNotice] = useState("");
   const persist = (next: WorkspaceState, message: string) =>
     setNotice(
@@ -86,6 +96,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     );
   const value: WorkspaceContextValue = {
     state,
+    hydrated,
     notice,
     notify: setNotice,
     toggleShortlist: (id) => {
@@ -137,6 +148,36 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       persist(
         { ...current, additions: [...current.additions, addition] },
         "Added to your demo submission list. No live research has been started.",
+      );
+    },
+    saveDetails: (submission, details) => {
+      try {
+        persist(
+          saveReviewDraft(getSnapshot(), submission, details),
+          "Detail draft saved in this browser. No decision or Notion write.",
+        );
+        return true;
+      } catch (error) {
+        setNotice(
+          error instanceof Error
+            ? error.message
+            : "Could not save detail draft.",
+        );
+        return false;
+      }
+    },
+    discardDetails: (submission) => {
+      const current = getSnapshot();
+      persist(
+        {
+          ...current,
+          drafts: current.drafts.filter(
+            (draft) =>
+              draft.submissionId !== submission.id ||
+              draft.revision !== submission.revision,
+          ),
+        },
+        "Detail draft discarded. Original demo facts restored.",
       );
     },
     reset: () =>

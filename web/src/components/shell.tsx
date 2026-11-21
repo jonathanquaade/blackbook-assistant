@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -27,10 +27,15 @@ import { useWorkspace } from "./workspace-provider";
 
 export function Shell({ children }: { children: ReactNode }) {
   const path = usePathname();
-  const { state, notice, notify, reset } = useWorkspace();
+  const { state, hydrated, notice, notify, reset } = useWorkspace();
   const [addOpen, setAddOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [resetOpen, setResetOpen] = useState(false);
+  useEffect(() => {
+    if (!notice) return;
+    const timer = setTimeout(() => notify(""), 6000);
+    return () => clearTimeout(timer);
+  }, [notice, notify]);
   const readyCount = submissions.filter(
     (submission) => isReady(submission) && !decisionFor(state, submission),
   ).length;
@@ -95,7 +100,7 @@ export function Shell({ children }: { children: ReactNode }) {
           >
             <CheckCheck size={17} />
             <span>Review</span>
-            <span className="nav-count">{readyCount}</span>
+            <span className="nav-count">{hydrated ? readyCount : "…"}</span>
           </Link>
         </nav>
         <button className="sidebar-add" onClick={() => setAddOpen(true)}>
@@ -245,8 +250,8 @@ export function Shell({ children }: { children: ReactNode }) {
       >
         <div className="about-content">
           <p>
-            Your shortlist, demo decisions, feedback, and submitted names will
-            be cleared. No real Blackbook data is affected.
+            Your shortlist, saved detail drafts, demo decisions, feedback, and
+            submitted names will be cleared. No real Blackbook data is affected.
           </p>
           <div className="form-actions">
             <button

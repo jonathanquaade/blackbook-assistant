@@ -117,4 +117,15 @@ export interface WorkspaceState {
   shortlist: string[];
   decisions: Decision[];
   additions: Addition[];
+  drafts: ReviewDraft[];
+}
+
+export type ReviewDetails = Pick<
+  Profile,
+  "name" | "role" | "location" | "workStatus" | "capabilities"
+>;
+export interface ReviewDraft {
+  submissionId: string;
+  revision: number;
+  details: ReviewDetails;
 }

@@ -279,3 +279,10 @@ test("name matches beat incidental project mentions at the same match strength",
   assert.equal(search("Other")[0].profile.id, "other");
   assert.equal(search("Other Office")[0].profile.id, "other");
 });
+
+test("Mnia is a labeled close-spelling name match, never an invented exact match", () => {
+  const [result] = search("Mnia");
+  assert.equal(result.profile.id, "mina");
+  assert.equal(result.tier, "weak");
+  assert.match(result.reason!, /close spelling/);
+});

@@ -31,11 +31,7 @@ export function Artwork({
           <div className="oil-tin">
             <div className="tin-lid" />
             <span className="oil-small">SMALL GROVE. BIG FLAVOUR.</span>
-            <b>
-              Olive
-              <br />
-              <i>& Other.</i>
-            </b>
+            <b>{project.title}</b>
             <svg viewBox="0 0 120 80" aria-hidden="true">
               <path
                 d="M27 72Q60 38 95 11M61 39Q22 36 27 13Q57 9 61 39M65 35Q97 48 106 31Q90 14 65 35"
@@ -53,9 +49,8 @@ export function Artwork({
               />
             </svg>
             <span className="oil-small">
-              EXTRA VIRGIN OLIVE OIL
-              <br />
-              500 ml · A little everyday good.
+              ORIGINAL PACKAGING STUDY
+              <br />A little everyday good.
             </span>
           </div>
           <div className="oil-label">
@@ -67,14 +62,14 @@ export function Artwork({
               <i>naturally.</i>
             </span>
           </div>
-          <span className="art-corner">OLIVE & OTHER®</span>
+          <span className="art-corner">{project.title.toUpperCase()}</span>
         </>
       )}
       {project.kind === "type" && (
         <>
           <div className="type-grid" />
           <span className="art-top">
-            FORMA® &nbsp; INDEPENDENT JOURNAL OF IDEAS
+            {project.title.toUpperCase()} &nbsp; TYPE / CULTURE / FORM
           </span>
           <span className="type-title">
             Aa
@@ -95,7 +90,7 @@ export function Artwork({
         <>
           <div className="app-window">
             <div className="app-rail">
-              <b>a.</b>
+              <b>{project.title[0].toLowerCase()}.</b>
               <span>◫</span>
               <span>▤</span>
               <span>◌</span>
@@ -114,7 +109,8 @@ export function Artwork({
                   <em>↗ 12.8% this month</em>
                 </div>
                 <div className="mini-card">
-                  arc.<span>•••• 2048</span>
+                  {project.title.split(/[ ,]/)[0].toLowerCase()}.
+                  <span>•••• 2048</span>
                 </div>
               </div>
               <div className="chart">
@@ -136,7 +132,9 @@ export function Artwork({
               </div>
             </div>
           </div>
-          <span className="art-corner">ARC / DIGITAL PRODUCT DESIGN</span>
+          <span className="art-corner">
+            {project.title.toUpperCase()} / DIGITAL PRODUCT DESIGN
+          </span>
         </>
       )}
       {project.kind === "motion" && (
@@ -144,7 +142,9 @@ export function Artwork({
           <div className="orb orb-one" />
           <div className="orb orb-two" />
           <div className="orb orb-three" />
-          <span className="art-top">SOFT SIGNAL® &nbsp; A STUDY IN PLAY</span>
+          <span className="art-top">
+            {project.title.toUpperCase()} &nbsp; A STUDY IN PLAY
+          </span>
           <span className="motion-title">
             Less rigid.
             <br />
@@ -160,11 +160,7 @@ export function Artwork({
             <div className="journal-top">
               INDEPENDENT CULTURE & DESIGN <b>07</b>
             </div>
-            <strong>
-              Field
-              <br />
-              <i>notes.</i>
-            </strong>
+            <strong>{project.title}</strong>
             <div className="journal-art">
               <span />
               <span />
@@ -172,7 +168,9 @@ export function Artwork({
             </div>
             <span className="journal-foot">THE SPACE BETWEEN THINGS</span>
           </div>
-          <span className="art-corner">ÉDITIONS / PRINTED MATTER</span>
+          <span className="art-corner">
+            {project.title.toUpperCase()} / PRINTED MATTER
+          </span>
         </>
       )}
       {project.kind === "objects" && (
@@ -181,7 +179,7 @@ export function Artwork({
           <div className="object-block" />
           <div className="object-ball" />
           <span className="objects-title">
-            matter
+            {project.title.split(",")[0]}
             <span>
               Objects for
               <br />a slower everyday.
@@ -229,12 +227,10 @@ export function Artwork({
             </g>
             <circle cx="150" cy="150" r="29" fill="#f4bfc6" />
           </svg>
-          <span className="flora-title">
-            Common
-            <br />
-            <i>ground.</i>
+          <span className="flora-title">{project.title}</span>
+          <span className="art-corner">
+            {project.title.toUpperCase()} / ROOM TO GROW.
           </span>
-          <span className="art-corner">ROOM TO GROW. / BOTANICAL STUDIES</span>
         </>
       )}
       {project.kind === "mono" && (
@@ -254,7 +250,9 @@ export function Artwork({
               <b>Make room for good things ↗</b>
             </div>
           </div>
-          <span className="art-corner">DAYLIGHT / PRODUCT EXPLORATION</span>
+          <span className="art-corner">
+            {project.title.toUpperCase()} / PRODUCT EXPLORATION
+          </span>
         </>
       )}
       {project.mediaType === "motion-study" && (

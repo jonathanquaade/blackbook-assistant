@@ -306,6 +306,11 @@ small {
   background: var(--sidebar);
   border-right: 1px solid var(--line);
   z-index: 20;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.sidebar > * {
+  flex-shrink: 0;
 }
 .brand {
   display: flex;
@@ -606,11 +611,9 @@ main {
 @keyframes page-enter {
   from {
     opacity: 0;
-    transform: translateY(5px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 .explore-page {
@@ -810,6 +813,7 @@ main {
 }
 .gallery-controls {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 14px;
 }
@@ -1175,6 +1179,7 @@ main {
   border-top: 1px solid #6e77503f;
 }
 .oil-tin b {
+  max-width: 100%;
   font-family: Georgia, serif;
   font-size: 7.7cqw;
   line-height: 0.84;
@@ -1597,17 +1602,19 @@ main {
 }
 .flower {
   position: absolute;
-  width: 70%;
+  width: 50%;
   height: 100%;
-  right: -11%;
+  right: -12%;
   top: -10%;
   transform: rotate(-15deg);
 }
 .flora-title {
+  max-width: 50%;
+  z-index: 1;
   position: absolute;
   left: 7%;
   top: 20%;
-  font-size: 12cqw;
+  font-size: 10cqw;
   line-height: 0.84;
   letter-spacing: -0.085em;
   font-weight: 600;
@@ -1840,7 +1847,7 @@ main {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 9px;
-  overflow: hidden;
+  overflow: clip;
   box-shadow: var(--shadow);
 }
 .review-info {
@@ -2152,6 +2159,9 @@ main {
   text-align: right;
 }
 .review-action-rail {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
   margin-top: auto;
   padding: 20px 22px 15px;
   border-top: 1px solid var(--line);
@@ -2353,6 +2363,10 @@ main {
   max-width: 960px;
 }
 .modal-heading {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--panel);
   padding: 22px 24px 18px;
   display: flex;
   align-items: flex-start;
@@ -2634,7 +2648,7 @@ main {
 }
 .toast {
   position: fixed;
-  bottom: 20px;
+  bottom: 115px;
   left: calc(50% + 108px);
   transform: translateX(-50%);
   z-index: 60;
@@ -3391,7 +3405,7 @@ main {
   }
   .toast {
     left: 50%;
-    bottom: 105px;
+    bottom: calc(120px + env(safe-area-inset-bottom));
     font-size: 11px;
     padding: 10px 7px 10px 12px;
     width: max-content;
@@ -3534,6 +3548,43 @@ main {
   }
   .gallery-end {
     gap: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .gallery-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .gallery-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .include-review {
+    min-height: 44px;
+  }
+}
+@media (pointer: coarse), (max-width: 760px) {
+  button,
+  select,
+  .nav-item,
+  .button,
+  .include-review,
+  label:has(input[type="checkbox"]) {
+    min-height: 44px;
+  }
+  .icon-button,
+  .save-button,
+  .search-submit {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .intent-chip,
+  .suggestions > button,
+  .text-button {
+    padding: 10px 12px;
+  }
+  .work-thumbnails button {
+    min-width: 44px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

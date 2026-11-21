@@ -20,7 +20,7 @@ import {
   X,
 } from "lucide-react";
 import { profileById, submissions } from "@/lib/fixtures";
-import { decisionFor, isReady } from "@/lib/workspace";
+import { decisionFor, draftFor, isReady } from "@/lib/workspace";
 import {
   CAPABILITIES,
   WORK_STATUSES,
@@ -39,7 +39,7 @@ const actionLabels = {
 };
 
 export function Review() {
-  const { state } = useWorkspace();
+  const { state, hydrated } = useWorkspace();
   const [queue, setQueue] = useState<Queue>("ready");
   const [selectedId, setSelectedId] = useState("");
   const pending = submissions.filter(
@@ -60,6 +60,19 @@ export function Review() {
     { value: "history", label: "Decisions", count: state.decisions.length },
     { value: "submitted", label: "Submitted", count: state.additions.length },
   ];
+  if (!hydrated)
+    return (
+      <div className="review-page" role="status">
+        Loading your local review queue…
+      </div>
+    );
+  function afterDecision() {
+    requestAnimationFrame(() => {
+      const content = document.getElementById("review-content");
+      content?.focus({ preventScroll: true });
+      content?.scrollIntoView({ block: "start" });
+    });
+  }
   return (
     <div className="review-page page-enter">
       <div className="review-heading">
@@ -105,7 +118,12 @@ export function Review() {
           </button>
         ))}
       </div>
-      <div id="review-content" role="tabpanel" aria-labelledby={`tab-${queue}`}>
+      <div
+        id="review-content"
+        role="tabpanel"
+        tabIndex={-1}
+        aria-labelledby={`tab-${queue}`}
+      >
         {(queue === "ready" || queue === "check") && (
           <>
             {visible.length > 0 && selected && profile ? (
@@ -153,6 +171,7 @@ export function Review() {
                   key={`${selected.id}-${selected.revision}`}
                   submission={selected}
                   profile={profile}
+                  onDecision={afterDecision}
                 />
               </>
             ) : (
@@ -287,25 +306,32 @@ export function Review() {
 function ReviewEntry({
   submission,
   profile,
+  onDecision,
 }: {
   submission: Submission;
   profile: Profile;
+  onDecision: () => void;
 }) {
-  const { decide } = useWorkspace();
+  const { state, decide, saveDetails, discardDetails } = useWorkspace();
+  const saved = draftFor(state, submission)?.details ?? profile;
   const [projectIndex, setProjectIndex] = useState(0);
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState({
-    name: profile.name,
-    role: profile.role,
-    location: profile.location,
-    workStatus: profile.workStatus,
+    name: saved.name,
+    role: saved.role,
+    location: saved.location,
+    workStatus: saved.workStatus,
   });
   const [draftCapabilities, setDraftCapabilities] = useState(
-    profile.capabilities,
+    [...saved.capabilities].sort(),
   );
   const [note, setNote] = useState("");
   const [error, setError] = useState("");
   const noteRef = useRef<HTMLTextAreaElement>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const roleRef = useRef<HTMLInputElement>(null);
+  const locationRef = useRef<HTMLInputElement>(null);
+  const capabilitiesRef = useRef<HTMLFieldSetElement>(null);
   const project = profile.projects[projectIndex];
   const ready = isReady(submission);
   const detailEdits = (Object.keys(draft) as (keyof typeof draft)[])
@@ -317,7 +343,8 @@ function ReviewEntry({
     }));
   const edits = [
     ...detailEdits,
-    ...(draftCapabilities.join(", ") !== profile.capabilities.join(", ")
+    ...(draftCapabilities.join(", ") !==
+    [...profile.capabilities].sort().join(", ")
       ? [
           {
             field: "Capabilities",
@@ -330,6 +357,8 @@ function ReviewEntry({
   function decision(action: DecisionAction) {
     if (editing) {
       setError("Save your detail edits before deciding.");
+      nameRef.current?.focus();
+      nameRef.current?.scrollIntoView({ block: "center" });
       return;
     }
     if ((action === "request-changes" || action === "reject") && !note.trim()) {
@@ -341,7 +370,7 @@ function ReviewEntry({
       noteRef.current?.focus();
       return;
     }
-    decide(submission, action, note, edits);
+    if (decide(submission, action, note, edits)) onDecision();
   }
   function saveEdits() {
     if (
@@ -353,8 +382,25 @@ function ReviewEntry({
       setError(
         "Keep name, role, location, and at least one capability. Use Unknown where appropriate.",
       );
+      const invalid = !draft.name.trim()
+        ? nameRef.current
+        : !draft.role.trim()
+          ? roleRef.current
+          : !draft.location.trim()
+            ? locationRef.current
+            : capabilitiesRef.current;
+      invalid?.focus();
+      invalid?.scrollIntoView({ block: "center" });
       return;
     }
+    if (!saveDetails(submission, { ...draft, capabilities: draftCapabilities }))
+      return;
+    setDraft({
+      name: draft.name.trim(),
+      role: draft.role.trim(),
+      location: draft.location.trim(),
+      workStatus: draft.workStatus,
+    });
     setEditing(false);
     setError("");
   }
@@ -383,9 +429,17 @@ function ReviewEntry({
         </div>
         {editing ? (
           <div className="detail-form">
+            {error && (
+              <p className="form-error" id="detail-error" role="alert">
+                {error}
+              </p>
+            )}
             <label>
               Name
               <input
+                ref={nameRef}
+                aria-invalid={!!error && !draft.name.trim()}
+                aria-describedby={error ? "detail-error" : undefined}
                 value={draft.name}
                 maxLength={120}
                 onChange={(event) =>
@@ -396,6 +450,9 @@ function ReviewEntry({
             <label>
               Role
               <input
+                ref={roleRef}
+                aria-invalid={!!error && !draft.role.trim()}
+                aria-describedby={error ? "detail-error" : undefined}
                 value={draft.role}
                 maxLength={160}
                 onChange={(event) =>
@@ -406,6 +463,9 @@ function ReviewEntry({
             <label>
               Location
               <input
+                ref={locationRef}
+                aria-invalid={!!error && !draft.location.trim()}
+                aria-describedby={error ? "detail-error" : undefined}
                 value={draft.location}
                 maxLength={120}
                 onChange={(event) =>
@@ -429,7 +489,12 @@ function ReviewEntry({
                 ))}
               </select>
             </label>
-            <fieldset className="capability-editor">
+            <fieldset
+              className="capability-editor"
+              ref={capabilitiesRef}
+              tabIndex={-1}
+              aria-describedby={error ? "detail-error" : undefined}
+            >
               <legend>Capabilities</legend>
               {CAPABILITIES.filter(
                 (capability) =>
@@ -459,6 +524,7 @@ function ReviewEntry({
             <button
               className="text-button"
               onClick={() => {
+                discardDetails(submission);
                 setDraft({
                   name: profile.name,
                   role: profile.role,
@@ -497,8 +563,9 @@ function ReviewEntry({
           <div className="pending-edits">
             <div className="draft-edits">
               <Pencil size={12} />
-              {edits.length} detail edit{edits.length > 1 ? "s" : ""} will be
-              recorded with your demo decision.
+              Saved locally. {edits.length} detail edit
+              {edits.length > 1 ? "s" : ""} will be recorded with your demo
+              decision.
             </div>
             {edits.map((edit) => (
               <div className="field-diff" key={edit.field}>
@@ -575,7 +642,7 @@ function ReviewEntry({
           }}
           placeholder="What works, what’s missing, or why it isn’t right…"
         />
-        {error && (
+        {error && !editing && (
           <p className="form-error" role="alert">
             {error}
           </p>
