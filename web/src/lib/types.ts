@@ -1,11 +1,35 @@
-export type Capability =
-  | "Identity systems"
-  | "Graphic design"
-  | "Type design"
-  | "Digital product design"
-  | "Web design"
-  | "3D & motion"
-  | "Photography";
+export const CAPABILITIES = [
+  "3D & motion",
+  "Art practice",
+  "Backend development",
+  "Brand strategy",
+  "Copywriting",
+  "Creative direction",
+  "Creative technology",
+  "Digital product design",
+  "Fabrication",
+  "Film & video production",
+  "Frontend development (apps)",
+  "Frontend development (web)",
+  "Graphic design",
+  "Identity systems",
+  "Illustration",
+  "Industrial design",
+  "Insights & research",
+  "Paper & materials",
+  "Photography",
+  "Print production",
+  "Product design",
+  "Social media content",
+  "Sound design",
+  "Spatial & exhibition design",
+  "Type design",
+  "Web design",
+] as const;
+export type Capability = (typeof CAPABILITIES)[number];
+export const PROFILE_TYPES = ["Agency", "Foundry", "Person", "Publication", "Studio"] as const;
+export const WORK_STATUSES = ["Employed", "Freelance", "Studio", "Unknown"] as const;
+export type EntryStatus = "New" | "Enriching" | "Needs Review" | "Verified" | "Revisit" | "Rejected";
 export type ArtworkKind =
   | "olive"
   | "type"
@@ -30,15 +54,18 @@ export interface Profile {
   name: string;
   initials: string;
   role: string;
-  type: "Person" | "Studio";
+  type: (typeof PROFILE_TYPES)[number];
   location: string;
-  workStatus: "Freelance" | "Studio" | "Unknown";
+  workStatus: (typeof WORK_STATUSES)[number];
   capabilities: Capability[];
   summary: string;
   evidence: string[];
   keywords: string[];
   projects: Project[];
-  status: "Verified" | "Needs Review";
+  status: EntryStatus;
+  rating?: 1 | 2 | 3 | 4 | 5 | null;
+  workWith?: "Definitely" | "Yes" | "In a pinch" | "No" | "Unvetted" | null;
+  workedTogether?: "Never" | "Once" | "Repeatedly" | null;
   revision: number;
 }
 

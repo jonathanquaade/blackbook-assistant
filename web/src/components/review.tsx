@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import { profileById, submissions } from "@/lib/fixtures";
 import { decisionFor, isReady } from "@/lib/workspace";
-import type { DecisionAction, Profile, Submission } from "@/lib/types";
+import { CAPABILITIES, WORK_STATUSES, type DecisionAction, type Profile, type Submission } from "@/lib/types";
 import { Artwork } from "./artwork";
 import { useWorkspace } from "./workspace-provider";
 
@@ -418,24 +418,12 @@ function ReviewEntry({
                   })
                 }
               >
-                <option>Freelance</option>
-                <option>Studio</option>
-                <option>Unknown</option>
+                {WORK_STATUSES.map(status => <option key={status}>{status}</option>)}
               </select>
             </label>
             <fieldset className="capability-editor">
               <legend>Capabilities</legend>
-              {(
-                [
-                  "Identity systems",
-                  "Graphic design",
-                  "Type design",
-                  "Digital product design",
-                  "Web design",
-                  "3D & motion",
-                  "Photography",
-                ] as Profile["capabilities"]
-              ).map((capability) => (
+              {CAPABILITIES.filter(capability => capability !== "Product design" || draftCapabilities.includes(capability)).map((capability) => (
                 <label key={capability}>
                   <input
                     type="checkbox"
@@ -450,7 +438,7 @@ function ReviewEntry({
                       )
                     }
                   />
-                  {capability}
+                  {capability === "Product design" ? "Product design (legacy)" : capability}
                 </label>
               ))}
             </fieldset>
