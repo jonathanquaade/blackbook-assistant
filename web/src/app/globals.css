@@ -3586,6 +3586,28 @@ main {
     min-width: 44px;
   }
 }
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .review-page {
+    padding-top: 8px;
+  }
+  .review-heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    margin: 0;
+  }
+  .review-tabs button {
+    padding-bottom: 5px;
+  }
+  .queue-toolbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *:before,

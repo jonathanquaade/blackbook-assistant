@@ -543,7 +543,7 @@ function ReviewEntry({
             </span>
           ))}
         </div>
-        {edits.length > 0 && (
+        {!editing && edits.length > 0 && (
           <div className="pending-edits">
             <div className="draft-edits">
               <Pencil size={12} />
@@ -695,6 +695,7 @@ function ReviewEntry({
           <div className="decision-buttons">
             <button
               className="decision-button decline"
+              disabled={editing}
               onClick={() => decision("reject")}
             >
               <X size={18} />
@@ -702,6 +703,7 @@ function ReviewEntry({
             </button>
             <button
               className="decision-button changes"
+              disabled={editing}
               onClick={() => decision("request-changes")}
             >
               <RotateCcw size={17} />
@@ -709,12 +711,14 @@ function ReviewEntry({
             </button>
             <button
               className="decision-button approve"
-              disabled={!ready}
+              disabled={editing || !ready}
               onClick={() => decision("approve")}
               title={
-                ready
-                  ? "Save approval in this demo only"
-                  : "This revision needs an independent check"
+                editing
+                  ? "Save or discard detail edits before deciding"
+                  : ready
+                    ? "Save approval in this demo only"
+                    : "This revision needs an independent check"
               }
             >
               <Check size={19} />
@@ -722,9 +726,11 @@ function ReviewEntry({
             </button>
           </div>
           <p>
-            {ready
-              ? "Your taste is the benchmark. Demo decisions do not publish or change Notion."
-              : "Approval is blocked until an independent check matches this revision."}
+            {editing
+              ? "Save or discard detail edits before deciding."
+              : ready
+                ? "Your taste is the benchmark. Demo decisions do not publish or change Notion."
+                : "Approval is blocked until an independent check matches this revision."}
           </p>
         </div>
       </div>
