@@ -1,0 +1,29 @@
+[Unit]
+Description=Blackbook private Explore
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=blackbook
+Group=blackbook
+StateDirectory=blackbook
+StateDirectoryMode=0700
+WorkingDirectory=/opt/blackbook/current/web
+Environment=NODE_ENV=production
+Environment=BLACKBOOK_DATA_DIR=/var/lib/blackbook
+Environment=BLACKBOOK_AUTO_SYNC=1
+Environment=HOME=/var/lib/blackbook
+LoadCredentialEncrypted=notion:/etc/blackbook/notion.cred
+LoadCredentialEncrypted=owner-password:/etc/blackbook/owner-password.cred
+ExecStart=/bin/sh /opt/blackbook/start-live.sh
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target
