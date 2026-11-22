@@ -52,15 +52,18 @@ export function createMediaLookup(
 
 const localLookup = createMediaLookup(queryEligiblePages, () => readStatus().lastGood?.dir);
 
-const byCheck = new WeakMap<EligibilitySnapshot, Map<string, Signed>>();
 /** Serverless path: signed links come from the same fresh eligibility check that gates search. */
-async function bundledLookup(pageId: string, file: string) {
-  const snapshot = await currentEligibility();
-  let files = byCheck.get(snapshot);
-  if (!files) byCheck.set(snapshot, (files = signedFiles(snapshot.pages)));
-  const signed = files.get(key(pageId, file));
-  return signed && signed.expires - Date.now() > 5 * 60_000 ? signed.url : null;
+export function createBundledMediaLookup(check: () => Promise<EligibilitySnapshot>, now = Date.now) {
+  const byCheck = new WeakMap<EligibilitySnapshot, Map<string, Signed>>();
+  return async (pageId: string, file: string) => {
+    const snapshot = await check();
+    let files = byCheck.get(snapshot);
+    if (!files) byCheck.set(snapshot, (files = signedFiles(snapshot.pages)));
+    const signed = files.get(key(pageId, file));
+    return signed && signed.expires - now() > 5 * 60_000 ? signed.url : null;
+  };
 }
+const bundledLookup = createBundledMediaLookup(currentEligibility);
 
 export const signedImageUrl = (pageId: string, file: string) =>
   usesBundledIndex() ? bundledLookup(pageId, file) : localLookup(pageId, file);

@@ -20,13 +20,14 @@ jobs:
   preview:
     runs-on: ubuntu-latest
     env:
-      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
       BRANCH: ${{ github.ref_name }}
     steps:
       - name: Check secrets
         id: gate
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
           if [ -z "$VERCEL_TOKEN" ] || [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
             echo "VERCEL_TOKEN, VERCEL_ORG_ID or VERCEL_PROJECT_ID is not set; skipping preview." | tee -a "$GITHUB_STEP_SUMMARY"
@@ -46,13 +47,18 @@ jobs:
       # Run from the repository root: the project's Root Directory setting (web) is applied by the CLI.
       - name: Pull preview settings and environment
         if: steps.gate.outputs.run == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: vercel pull --yes --environment=preview --git-branch="$BRANCH" --token="$VERCEL_TOKEN"
       - name: Build
         if: steps.gate.outputs.run == 'true'
-        run: vercel build --token="$VERCEL_TOKEN"
+        # No VERCEL_TOKEN here: this step runs branch code. A prebuilt local build reads .vercel/ from the pull.
+        run: vercel build
       - name: Deploy preview
         id: deploy
         if: steps.gate.outputs.run == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
           url=$(vercel deploy --prebuilt --token="$VERCEL_TOKEN")
           echo "url=$url" >> "$GITHUB_OUTPUT"

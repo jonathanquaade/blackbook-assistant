@@ -203,7 +203,7 @@ export function LiveExplore({ builtAt, entries }: { builtAt: string; entries: nu
             {query ? "Your matches" : "Your rated network"} <span>{results.length.toString().padStart(2, "0")}</span>
           </h2>
           <p>
-            Index built {built} · {entries} entries
+            Index built {built} · {entries} indexed
             {data?.eligibilityCheckedAt ? ` · eligibility checked ${stamp(data.eligibilityCheckedAt)}` : ""}
             {data && query ? ` · ${data.ms} ms` : ""}
           </p>

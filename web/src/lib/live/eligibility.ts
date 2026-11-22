@@ -4,6 +4,19 @@ import { readEligibility, type NotionPage } from "./projection";
 export const ELIGIBILITY_TTL_MS = 60_000;
 export const ELIGIBILITY_MAX_STALE_MS = 5 * 60_000;
 
+const KEPT_PROPERTIES = ["Entry Status", "Rating", "Images"];
+
+/**
+ * Keeps only what the eligibility gate and signed image links need. Notion's databases/query accepts
+ * filter_properties only as property ids, which would need a schema fetch; stripping on receipt
+ * instead means Notes, Email and Day Rate never outlive the query response.
+ */
+function slim(page: NotionPage): NotionPage {
+  const properties: NotionPage["properties"] = {};
+  for (const name of KEPT_PROPERTIES) if (page.properties[name]) properties[name] = page.properties[name];
+  return { id: page.id, last_edited_time: page.last_edited_time, in_trash: page.in_trash, archived: page.archived, is_archived: page.is_archived, properties };
+}
+
 export class EligibilityUnavailableError extends Error {
   constructor() {
     super("Eligibility could not be checked against Notion.");
@@ -14,7 +27,7 @@ export interface EligibilitySnapshot {
   /** Page ids that are, right now, Verified and rated 4 or 5. */
   ids: Set<string>;
   ratings: Map<string, number>;
-  /** The eligible pages themselves, in memory only, for signed image links. */
+  /** Eligible pages stripped to status, rating and Images only, in memory, for signed image links. */
   pages: NotionPage[];
   checkedAt: number;
 }
@@ -35,7 +48,7 @@ export function createEligibilityChecker(
   let inflight: Promise<EligibilitySnapshot> | undefined;
 
   async function refresh() {
-    const pages = (await load()).filter((page) => readEligibility(page).eligible);
+    const pages = (await load()).filter((page) => readEligibility(page).eligible).map(slim);
     const next: EligibilitySnapshot = {
       ids: new Set(pages.map((page) => page.id)),
       ratings: new Map(pages.map((page) => [page.id, readEligibility(page).rating as number])),

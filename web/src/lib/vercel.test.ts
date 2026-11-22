@@ -8,6 +8,7 @@ import { bundleFile, readBundle, writeBundle, type BundledIndex } from "./live/b
 import { toBundledEntry } from "./live/build-bundle";
 import { collectEntries } from "./live/collect";
 import { createEligibilityChecker, EligibilityUnavailableError } from "./live/eligibility";
+import { createBundledMediaLookup } from "./live/media";
 import { searchEntries } from "./live/memory-search";
 import { EMBEDDING_MODEL } from "./live/model";
 import { embeddingInputs, projectPage, type NotionPage } from "./live/projection";
@@ -270,4 +271,43 @@ test("a deployment without an index answers 503 and leaks no path", async () => 
     assert.equal(response.status, 503);
     assert.doesNotMatch(await response.text(), /bb-missing-index|ENOENT/);
   });
+});
+
+test("signed image links follow the live eligibility check: downgraded pages get none, an expired check fails closed", async () => {
+  let t = Date.parse("2026-11-21T00:00:00.000Z");
+  let down = false;
+  let rating = "5";
+  const withImage = (rating: string) => {
+    const item = page("1", "Ada", { rating });
+    item.properties.Images = { type: "files", files: [{ name: "a.jpg", type: "file", file: {
+      url: "https://example.test/signed", expiry_time: new Date(t + 60 * 60_000).toISOString(),
+    } }] };
+    return item;
+  };
+  const checker = createEligibilityChecker(async () => {
+    if (down) throw new Error("Notion 500");
+    return [withImage(rating)];
+  }, () => t);
+  const lookup = createBundledMediaLookup(checker, () => t);
+  assert.equal(await lookup("1", "a.jpg"), "https://example.test/signed");
+  // Downgraded in Notion after the index was built: the next check drops it, no link is signed.
+  rating = "3";
+  t += 61_000;
+  assert.equal(await lookup("1", "a.jpg"), null);
+  // Eligible again, then Notion goes down: tolerated within 5 minutes, refused after.
+  rating = "5";
+  t += 61_000;
+  assert.equal(await lookup("1", "a.jpg"), "https://example.test/signed");
+  down = true;
+  t += 5 * 60_000;
+  assert.equal(await lookup("1", "a.jpg"), "https://example.test/signed", "within 5 minutes of the last good check");
+  t += 1;
+  await assert.rejects(lookup("1", "a.jpg"), EligibilityUnavailableError);
+});
+
+test("the eligibility snapshot keeps no private fields from Notion pages", async () => {
+  const checker = createEligibilityChecker(async () => [page("1", "Ada")]);
+  const [kept] = (await checker()).pages;
+  assert.deepEqual(Object.keys(kept.properties).sort(), ["Entry Status", "Images", "Rating"]);
+  assert.equal(JSON.stringify(kept).includes("PRIVATE-NOTE"), false);
 });

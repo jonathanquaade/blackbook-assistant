@@ -1,7 +1,10 @@
 /**
  * Vercel prebuild: read Notion (read-only), embed locally, write .blackbook-index/index.json.
- * Never fails the build. Skips when live mode is not configured, so a build without the
- * environment variables ships live mode disabled, never fixtures posing as live data.
+ * Skips (exit 0) only when live mode is not configured, so a build without the environment variables
+ * ships live mode disabled, never fixtures posing as live data. Once live mode is configured, a failed
+ * index build exits non-zero so Vercel keeps the previous deployment (a Notion outage during an hourly
+ * redeploy must not replace a working production deploy with one that 503s every search). A failed
+ * embedding is not a failure: buildBundle falls back to a keyword-only index.
  * Runs on Vercel (VERCEL=1) or when BLACKBOOK_BUILD_INDEX=1; `--from-backup` reads ../backups.
  */
 import path from "node:path";
@@ -24,7 +27,7 @@ main().then(
   () => process.exit(0),
   (error) => {
     // Notion messages are status codes only; never print payloads.
-    console.error(`Index build failed, deploying without an index: ${error instanceof Error ? error.message : "unknown error"}`);
-    process.exit(0);
+    console.error(`Index build failed, aborting the deploy: ${error instanceof Error ? error.message : "unknown error"}`);
+    process.exit(1);
   },
 );

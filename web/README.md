@@ -31,6 +31,8 @@ GitHub repository secrets (Settings, Secrets and variables, Actions):
 
 Preview deploys: pushing a `claude/**` or `devin/**` branch runs `.github/workflows/vercel-preview.yml` (Vercel CLI `pull`, `build`, `deploy --prebuilt`, because the Git integration refuses commits not authored by the team owner). The URL goes to the job summary and, if a pull request exists, a comment on it. Vercel Deployment Protection may add its own login in front of the app's password.
 
+**Security:** the workflow runs branch code inside `vercel build`, and `vercel pull` writes the Preview environment variables to disk first. Anyone who can push to a `claude/**` or `devin/**` branch therefore has access to the Preview environment secrets. Use a separate, read-only Notion integration (read content only) for the Preview environment. `VERCEL_TOKEN` is scoped to the pull and deploy steps only; `vercel build` runs without it.
+
 Not verified yet: the deployed function size (onnxruntime-node and the model; other platforms' binaries are excluded in `next.config.ts`) and the first-request model load time on Vercel. If search is keyword-only in production, check `modeReason` in the response.
 
 ### Self-hosted (one always-on process)
