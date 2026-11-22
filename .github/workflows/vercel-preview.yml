@@ -54,7 +54,8 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          url=$(vercel deploy --token="$VERCEL_TOKEN")
+          # The CLI streams the remote build log to stderr; keep it so the next step can read the index line.
+          url=$(vercel deploy --token="$VERCEL_TOKEN" 2> >(tee deploy.log >&2))
           echo "url=$url" >> "$GITHUB_OUTPUT"
           echo "Preview for \`$BRANCH\`: $url" >> "$GITHUB_STEP_SUMMARY"
       # Surface whether the remote build made the live index, without opening Vercel.
@@ -65,7 +66,7 @@ jobs:
           PREVIEW_URL: ${{ steps.deploy.outputs.url }}
         run: |
           vercel inspect "$PREVIEW_URL" --logs --wait --token="$VERCEL_TOKEN" > build.log 2>&1 || true
-          line=$(grep -i -E "index (build|built)" build.log | head -3 || true)
+          line=$(cat deploy.log build.log 2>/dev/null | grep -i -E "index (build|built)" | grep -v -i "no index-build" | head -3 || true)
           if [ -z "$line" ]; then line="No index-build line found in the Vercel build log."; fi
           printf 'Index build: %s\n' "$line" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Comment on the pull request

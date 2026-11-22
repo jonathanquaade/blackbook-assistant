@@ -62,8 +62,13 @@ function checkTraces() {
   check(!search.some((f) => /sharp-(libvips-)?linuxmusl|sharp-wasm32/.test(f)), "/api/search trace excludes musl and wasm sharp");
 }
 
-/** Vercel's function limit is 250 MB unzipped; fail well before it. Sums every file each route's trace lists. */
+/**
+ * Vercel's function limit is 250 MB unzipped; fail well before it. Each function ships its own trace plus
+ * the instrumentation trace (every route's nft lists instrumentation.js), and /api/search also ships the
+ * embedding model, which is downloaded at deploy build and absent here, so it gets a fixed allowance.
+ */
 const MAX_ROUTE_MB = 220;
+const MODEL_ALLOWANCE_MB = 40;
 function walkNft(dir: string, out: string[] = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
@@ -72,12 +77,16 @@ function walkNft(dir: string, out: string[] = []) {
   }
   return out;
 }
+const tracedFiles = (nft: string) =>
+  (JSON.parse(fs.readFileSync(nft, "utf8")).files as string[]).map((rel) => path.resolve(path.dirname(nft), rel));
 function checkRouteSizes() {
-  for (const nft of walkNft(path.join(".next", "server")).sort()) {
+  const server = path.join(".next", "server");
+  const instrumentationNft = path.join(server, "instrumentation.js.nft.json");
+  const shared = fs.existsSync(instrumentationNft) ? tracedFiles(instrumentationNft) : [];
+  for (const nft of walkNft(server).sort()) {
     const seen = new Set<string>();
     let bytes = 0;
-    for (const rel of JSON.parse(fs.readFileSync(nft, "utf8")).files as string[]) {
-      const file = path.resolve(path.dirname(nft), rel);
+    for (const file of [...tracedFiles(nft), ...shared]) {
       if (seen.has(file)) continue;
       seen.add(file);
       try {
@@ -87,8 +96,9 @@ function checkRouteSizes() {
         // Missing optional file: contributes nothing.
       }
     }
-    const mb = bytes / 1024 / 1024;
-    check(mb <= MAX_ROUTE_MB, `${path.relative(path.join(".next", "server"), nft)} traces ${mb.toFixed(1)} MB (limit ${MAX_ROUTE_MB})`);
+    const route = path.relative(server, nft);
+    const mb = bytes / 1024 / 1024 + (route.startsWith(path.join("app", "api", "search")) ? MODEL_ALLOWANCE_MB : 0);
+    check(mb <= MAX_ROUTE_MB, `${route} ships about ${mb.toFixed(1)} MB with instrumentation${route.includes("search") ? " and model" : ""} (limit ${MAX_ROUTE_MB})`);
   }
 }
 
