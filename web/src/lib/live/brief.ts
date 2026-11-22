@@ -32,6 +32,7 @@ const locationNames = new Map(locationsByName.flatMap(([name, aliases]) => alias
 const locationPrefix = new RegExp("^\\s*(?:the\\s+)?(" +
   [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[\\s,])");
 const locationSeparator = /^(?:\s*,\s*(?:(?:and|or)\s+)?|\s+(?:and|or)\s+)/;
+const briefQualifier = /^\s+(?:with|without|who|that|for|working|speciali[sz]ing)\b/;
 
 export function canonicalLocation(location: string) {
   const value = location.trim().toLowerCase();
@@ -63,7 +64,7 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
       const alias = match[1];
       const separator = locationSeparator.exec(rest);
       if (alias === "porto" && /^\s+rocha\b/.test(rest)) break;
-      if (afterBareComma && alias.length <= 2 && rest.trim() && !separator) break;
+      if (afterBareComma && alias.length <= 2 && rest.trim() && !separator && !briefQualifier.test(rest)) break;
       addLocation(alias);
       if (!separator) break;
       afterBareComma = separator[0].trim() === ",";
