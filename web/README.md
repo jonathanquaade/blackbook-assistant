@@ -20,7 +20,7 @@ Vercel project settings (Project, Settings, Environment Variables), for **Produc
 - `NOTION_DATABASE_ID`: optional, overrides the Companies database id.
 - `BLACKBOOK_OWNER_PASSWORD`: 20+ random characters (for example `openssl rand -base64 24`). Sign in as `jonathan`.
 
-Leave these three **not** marked Sensitive: `vercel pull` does not download Sensitive values, so the preview workflow's build would see no Notion key and ship live mode off. Also keep "Include source files outside of the Root Directory in the Build Step" enabled (the default), because the build reads `assets/<page-id>/manifest.json` from the repository root.
+Marking these three **Sensitive** is fine and recommended: the preview workflow no longer uses `vercel pull`, it deploys source and Vercel builds it remotely, where Sensitive values are available. Keep "Include source files outside of the Root Directory in the Build Step" enabled (the default), because the build reads `assets/<page-id>/manifest.json` from the repository root.
 
 GitHub repository secrets (Settings, Secrets and variables, Actions):
 
@@ -29,9 +29,9 @@ GitHub repository secrets (Settings, Secrets and variables, Actions):
 - `VERCEL_PROJECT_ID`: `prj_oez3KUTls3SBkQT5srTMMvrivzDV` (Project Settings, General).
 - `VERCEL_DEPLOY_HOOK`: Project Settings, Git, Deploy Hooks, create a hook on `main`, paste its URL. The hourly workflow `vercel-redeploy.yml` posts to it (also runnable by hand) and skips cleanly if the secret is absent.
 
-Preview deploys: pushing a `claude/**` or `devin/**` branch runs `.github/workflows/vercel-preview.yml` (Vercel CLI `pull`, `build`, `deploy --prebuilt`, because the Git integration refuses commits not authored by the team owner). The URL goes to the job summary and, if a pull request exists, a comment on it. Vercel Deployment Protection may add its own login in front of the app's password.
+Preview deploys: pushing a `claude/**` or `devin/**` branch runs `.github/workflows/vercel-preview.yml`, which runs `vercel deploy` from the repository root (no `--prebuilt`, no local build, no environment pull) so the build happens on Vercel with the real Preview environment, because the Git integration refuses commits not authored by the team owner. The root `.vercelignore` limits the upload to `web/` source and `assets/*/manifest.json`; backups, state, scripts, images and env files are never uploaded. The job summary shows the URL and the build's "Index built" or "Index build skipped" line (from `vercel inspect --logs`), and a pull request gets a comment with the URL. Vercel Deployment Protection may add its own login in front of the app's password.
 
-**Security:** the workflow runs branch code inside `vercel build`, and `vercel pull` writes the Preview environment variables to disk first. Anyone who can push to a `claude/**` or `devin/**` branch therefore has access to the Preview environment secrets. Use a separate, read-only Notion integration (read content only) for the Preview environment. `VERCEL_TOKEN` is scoped to the pull and deploy steps only; `vercel build` runs without it.
+**Security:** the Notion key no longer reaches GitHub runners; only `VERCEL_TOKEN` does, and only on the deploy and report steps. Anyone who can push to a `claude/**` or `devin/**` branch can still run branch code inside Vercel's build with the Preview environment variables, so the Preview environment's Notion integration must be a separate, read-only one (read content only).
 
 Not verified yet: the deployed function size (onnxruntime-node and the model; other platforms' binaries are excluded in `next.config.ts`) and the first-request model load time on Vercel. If search is keyword-only in production, check `modeReason` in the response.
 

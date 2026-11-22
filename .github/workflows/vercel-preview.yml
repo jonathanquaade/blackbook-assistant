@@ -44,39 +44,30 @@ jobs:
       - name: Install Vercel CLI
         if: steps.gate.outputs.run == 'true'
         run: npm install --global vercel@66.6.0
-      # Run from the repository root: the project's Root Directory setting (web) is applied by the CLI.
-      - name: Pull preview settings and environment
-        if: steps.gate.outputs.run == 'true'
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: vercel pull --yes --environment=preview --git-branch="$BRANCH" --token="$VERCEL_TOKEN"
-      # Names only, never values: shows which live-mode variables Vercel handed to the preview.
-      - name: Check live-mode variables
-        if: steps.gate.outputs.run == 'true'
-        run: |
-          f=.vercel/.env.preview.local
-          for name in NOTION_API_KEY NOTION_DATABASE_ID BLACKBOOK_OWNER_PASSWORD; do
-            line=$(grep -E "^${name}=" "$f" | head -1 || true)
-            value=${line#*=}; value=${value#\"}; value=${value%\"}
-            if [ -z "$line" ]; then state="missing (not set for Preview, or marked Sensitive)"
-            elif [ -z "$value" ]; then state="present but empty (Sensitive values arrive empty)"
-            elif [ "$name" = BLACKBOOK_OWNER_PASSWORD ] && [ ${#value} -lt 20 ]; then state="present but under 20 characters"
-            else state="ok"; fi
-            echo "$name: $state" | tee -a "$GITHUB_STEP_SUMMARY"
-          done
-      - name: Build
-        if: steps.gate.outputs.run == 'true'
-        # No VERCEL_TOKEN here: this step runs branch code. A prebuilt local build reads .vercel/ from the pull.
-        run: vercel build
-      - name: Deploy preview
+      # Deploy source and let Vercel build it remotely: Sensitive variables are only available to builds on
+      # Vercel's own machines, so no local build and no `vercel pull` of the environment. Run from the
+      # repository root (the project's Root Directory setting, web, is applied by Vercel); .vercelignore
+      # keeps the upload to web/ plus assets/*/manifest.json.
+      - name: Deploy preview (built on Vercel)
         id: deploy
         if: steps.gate.outputs.run == 'true'
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          url=$(vercel deploy --prebuilt --token="$VERCEL_TOKEN")
+          url=$(vercel deploy --token="$VERCEL_TOKEN")
           echo "url=$url" >> "$GITHUB_OUTPUT"
           echo "Preview for \`$BRANCH\`: $url" >> "$GITHUB_STEP_SUMMARY"
+      # Surface whether the remote build made the live index, without opening Vercel.
+      - name: Report index build
+        if: steps.gate.outputs.run == 'true' && steps.deploy.outputs.url != ''
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          PREVIEW_URL: ${{ steps.deploy.outputs.url }}
+        run: |
+          vercel inspect "$PREVIEW_URL" --logs --wait --token="$VERCEL_TOKEN" > build.log 2>&1 || true
+          line=$(grep -i -E "index (build|built)" build.log | head -3 || true)
+          if [ -z "$line" ]; then line="No index-build line found in the Vercel build log."; fi
+          printf 'Index build: %s\n' "$line" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Comment on the pull request
         if: steps.gate.outputs.run == 'true'
         uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
