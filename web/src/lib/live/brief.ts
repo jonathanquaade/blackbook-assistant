@@ -32,6 +32,9 @@ const locationNames = new Map(locationsByName.flatMap(([name, aliases]) => alias
 const locationPrefix = new RegExp("^\\s*(?:the\\s+)?(" +
   [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[-\\s,])");
 const locationSeparator = /^(?:\s*,\s*(?:(?:and|or)\s+)?|\s+(?:and|or)\s+)/;
+const exclusiveModifier = /^\s+(?:only|exclusively)(?=$|[\s,])/;
+const explicitAlternative = /^(?:\s*,\s*|\s+)or\s+/;
+const marketPurpose = /^\s+for\s+(?:(?:a|an|the|some|our|their)\s+)?(?:(?:prior|previous|past|relevant|local|existing|better|more|normal|standard)\s+)*(?:client\s+(?:experience|references?)|clients|markets|(?:business|working)\s+hours|time\s*zones?(?:\s+(?:overlap|coverage|alignment|compatibility))?)(?=\s*(?:$|,)|\s+(?:with|from|during|preferred|required|if|when|unless)\b)/;
 const briefQualifier = /^\s+(?:with|without|who|that|for|working\s+(?:remotely|independently)|(?:working|speciali[sz]ing)\s+(?:[a-z]+ly\s+)*(?:in|on|at|for|with|from|across))(?=$|[\s,])/;
 
 export function canonicalLocation(location: string) {
@@ -65,13 +68,17 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
     for (let match; (match = locationPrefix.exec(rest));) {
       rest = rest.slice(match[0].length);
       const alias = match[1];
-      const separator = locationSeparator.exec(rest);
       if (alias === "porto" && /^[-\s]+rocha\b/.test(rest)) break;
-      if (isContinuation && alias.length <= 2 && rest.trim() && !separator && !briefQualifier.test(rest)) break;
+      const modifier = exclusiveModifier.exec(rest);
+      const tail = modifier ? rest.slice(modifier[0].length) : rest;
+      const separator = (modifier ? explicitAlternative : locationSeparator).exec(tail);
+      const qualifier = briefQualifier.test(tail) && !marketPurpose.test(tail.replaceAll("-", " "));
+      if (isContinuation && alias.length <= 2 && tail.trim() && !separator &&
+        !qualifier && !(modifier && /^\s*,/.test(tail))) break;
       addLocation(alias);
       if (!separator) break;
       isContinuation = true;
-      rest = rest.slice(separator[0].length);
+      rest = tail.slice(separator[0].length);
     }
   }
   const words = " " + lower.replace(/[-,\s]+/g, " ") + " ";

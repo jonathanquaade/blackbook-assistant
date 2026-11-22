@@ -206,6 +206,52 @@ test("brief parsing, tsquery and fusion", () => {
   assert.ok(scores.get("b")! > scores.get("a")!);
 });
 
+test("standalone modifiers preserve coordinated locations without admitting client markets", () => {
+  for (const suffix of [
+    "only", "exclusively", "only with packaging experience",
+    "only for a packaging project", "only working remotely",
+    "for a timezone converter app", "only for a client experience redesign",
+    "for an app tracking working hours when offline",
+  ]) {
+    const brief = parseLiveBrief(`Packaging designers in the UK or US ${suffix}`);
+    assert.deepEqual(brief.locations, ["United Kingdom", "United States"], suffix);
+    assert.ok(!brief.terms.includes("us"));
+  }
+  const market = parseLiveBrief("Packaging designers in the UK, and US only recently became a client market");
+  assert.deepEqual(market.locations, ["United Kingdom"]);
+  assert.ok(market.terms.includes("us"));
+  const closedList = parseLiveBrief("Packaging designers in Berlin only, UK or US client experience preferred");
+  assert.deepEqual(closedList.locations, ["Germany"]);
+  assert.ok(closedList.terms.includes("uk"));
+  assert.ok(closedList.terms.includes("us"));
+  const scopedMarket = parseLiveBrief("Packaging designers in Berlin, US only for client experience, not location");
+  assert.deepEqual(scopedMarket.locations, ["Germany"]);
+  assert.ok(scopedMarket.terms.includes("us"));
+  for (const preference of [
+    "Berlin, US only for time-zone overlap",
+    "Berlin, US only for timezone overlap",
+    "Berlin, US only for time-zone overlap with the team",
+    "Berlin, US only for time-zone overlap when possible",
+    "Berlin only, or US for prior client references",
+    "Berlin, US only for client references if available",
+    "Berlin, US only for some relevant client experience",
+  ]) {
+    const brief = parseLiveBrief(`Packaging designers in ${preference}`);
+    assert.deepEqual(brief.locations, ["Germany"], preference);
+    assert.ok(brief.terms.includes("us"));
+  }
+  assert.deepEqual(
+    parseLiveBrief("Packaging designers in the UK or US only, remote is fine").locations,
+    ["United Kingdom", "United States"],
+  );
+  for (const separator of [" or ", ", or "]) {
+    assert.deepEqual(
+      parseLiveBrief(`Packaging designers in the UK only${separator}US with packaging experience`).locations,
+      ["United Kingdom", "United States"],
+    );
+  }
+});
+
 test("search never returns ineligible rows and applies explicit filters", async () => {
   const db = await createDb();
   const entries = [
