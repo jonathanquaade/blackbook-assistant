@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { isOwner, ownerPassword } from "./lib/live/auth";
+import { allowsOwnerTransport, isOwner, ownerPassword } from "./lib/live/auth";
+import { liveSetting } from "./lib/live/config";
 
 export function proxy(request: NextRequest) {
   const password = ownerPassword();
@@ -8,6 +9,9 @@ export function proxy(request: NextRequest) {
     return request.nextUrl.pathname.startsWith("/api/")
       ? new NextResponse(null, { status: 404, headers })
       : NextResponse.next();
+  }
+  if (!allowsOwnerTransport(request.headers, liveSetting("BLACKBOOK_ALLOW_HTTP_LOOPBACK") === "1")) {
+    return new NextResponse("Live Explore requires HTTPS.", { status: 403, headers });
   }
   if (!isOwner(request.headers.get("authorization"), password)) {
     return new NextResponse("Blackbook owner access required.", {

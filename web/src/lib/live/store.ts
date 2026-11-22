@@ -27,6 +27,7 @@ create table if not exists projects (
   idx int not null,
   caption text,
   link text,
+  media jsonb not null,
   images jsonb not null,
   context_shot boolean not null,
   primary key (entry_id, idx)
@@ -66,7 +67,7 @@ export async function writeEntries(db: PGlite, entries: IndexedEntry[]) {
       [entry.id, entry.pageIds, entry.name, entry.type, entry.capabilities, entry.workStatus, entry.locations, entry.employer, entry.status, entry.rating, entry.lastEdited, captions],
     );
     for (const project of entry.projects)
-      await db.query("insert into projects values ($1,$2,$3,$4,$5,$6)", [entry.id, project.idx, project.caption, project.link, JSON.stringify(project.images), project.contextShot]);
+      await db.query("insert into projects values ($1,$2,$3,$4,$5,$6,$7)", [entry.id, project.idx, project.caption, project.link, JSON.stringify(project.media), JSON.stringify(project.images), project.contextShot]);
   }
 }
 

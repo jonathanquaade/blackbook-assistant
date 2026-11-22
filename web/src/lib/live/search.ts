@@ -1,6 +1,6 @@
 import type { PGlite } from "@electric-sql/pglite";
 import { parseLiveBrief, reciprocalRankFusion, toTsQuery } from "./brief";
-import { roleLine, type IndexedImage } from "./projection";
+import { roleLine, type IndexedImage, type IndexedProject } from "./projection";
 
 /** bge-small cosine similarity cut-offs, calibrated on the benchmark briefs (blackbook/stage1-eval.md). */
 export const STRONG_SIMILARITY = 0.68;
@@ -11,12 +11,7 @@ export interface LiveFilters {
   workStatus?: string | null;
   type?: string | null;
 }
-export interface LiveProject {
-  caption: string | null;
-  link: string | null;
-  images: IndexedImage[];
-  contextShot: boolean;
-}
+export type LiveProject = Omit<IndexedProject, "idx">;
 export interface LiveResult {
   id: string;
   pageIds: string[];
@@ -73,7 +68,7 @@ export async function searchIndex(
     [brief.freelance, brief.types, brief.locations, filters.capability ?? null, filters.workStatus ?? null, filters.type ?? null, options.ids ?? null],
   );
   const ids = entries.map((entry) => entry.id);
-  const { rows: projectRows } = await db.query<{ entry_id: string; idx: number; caption: string | null; link: string | null; images: IndexedImage[]; context_shot: boolean }>(
+  const { rows: projectRows } = await db.query<{ entry_id: string; idx: number; caption: string | null; link: string | null; media?: string[]; images: IndexedImage[]; context_shot: boolean }>(
     "select * from projects where entry_id = any($1::text[]) order by entry_id, context_shot, idx",
     [ids],
   );
@@ -148,7 +143,7 @@ export async function searchIndex(
       locations: entry.locations,
       employer: entry.employer,
       rating: entry.rating,
-      projects: projects.map((project) => ({ caption: project.caption, link: project.link, images: project.images, contextShot: project.context_shot })),
+      projects: projects.map((project) => ({ caption: project.caption, link: project.link, media: project.media ?? [], images: project.images, contextShot: project.context_shot })),
       tier,
       score: hasQuery ? (isName ? 1 : 0) + (fused.get(entry.id) ?? 0) : (entry.rating ?? 0),
       similarity,

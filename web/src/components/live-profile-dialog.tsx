@@ -2,13 +2,14 @@
 
 import { ArrowUpRight, Check, MapPin, Sparkles } from "lucide-react";
 import type { LiveResult } from "@/lib/live/search";
+import { hasSelectedWork } from "@/lib/live/project-work";
 import { Modal } from "./modal";
 import { WorkImage } from "./work-image";
 
 export const notionUrl = (pageId: string) => `https://www.notion.so/${pageId.replace(/-/g, "")}`;
 
 export function LiveProfileDialog({ result, onClose }: { result: LiveResult | null; onClose: () => void }) {
-  const work = result?.projects.filter((project) => !project.contextShot && (project.images.length || project.link)) ?? [];
+  const work = result?.projects.filter(hasSelectedWork) ?? [];
   const context = result?.projects.filter((project) => project.contextShot && project.images.length) ?? [];
   return (
     <Modal
@@ -74,11 +75,15 @@ export function LiveProfileDialog({ result, onClose }: { result: LiveResult | nu
                 {project.images.length > 0 && (
                   <div className="profile-project-images">
                     {project.images.map((image, imageIndex) => (
-                      <WorkImage
-                        key={`${image.pageId}/${image.file}`}
-                        image={image}
-                        alt={`${project.caption ?? `${result.name} work`}${project.images.length > 1 ? `, image ${imageIndex + 1}` : ""}`}
-                      />
+                      <div key={`${image.pageId}/${image.file}`}>
+                        <WorkImage
+                          image={image}
+                          alt={`${project.caption ?? `${result.name} work`}${project.images.length > 1 ? `, image ${imageIndex + 1}` : ""}`}
+                        />
+                        {image.source && (project.images.length > 1 || image.source !== project.link) && (
+                          <small><a href={image.source} target="_blank" rel="noreferrer">Image source <ArrowUpRight size={11} /></a></small>
+                        )}
+                      </div>
                     ))}
                   </div>
                 )}
@@ -87,10 +92,17 @@ export function LiveProfileDialog({ result, onClose }: { result: LiveResult | nu
                   {project.link && (
                     <small>
                       <a href={project.link} target="_blank" rel="noreferrer">
-                        {project.images.length ? "Source" : "Open project"} <ArrowUpRight size={11} />
+                        Source <ArrowUpRight size={11} />
                       </a>
                     </small>
                   )}
+                  {project.media.map((url, mediaIndex) => (
+                    <small key={url}>
+                      <a href={url} target="_blank" rel="noreferrer">
+                        Open media{project.media.length > 1 ? ` ${mediaIndex + 1}` : ""} <ArrowUpRight size={11} />
+                      </a>
+                    </small>
+                  ))}
                 </figcaption>
               </figure>
             ))}

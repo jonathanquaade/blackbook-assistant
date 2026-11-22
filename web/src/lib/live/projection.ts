@@ -27,11 +27,13 @@ export interface ManifestItem {
 export interface IndexedImage {
   pageId: string;
   file: string;
+  source?: string;
 }
 export interface IndexedProject {
   idx: number;
   caption: string | null;
   link: string | null;
+  media: string[];
   images: IndexedImage[];
   contextShot: boolean;
 }
@@ -103,24 +105,25 @@ function projectsFor(page: NotionPage, manifest: ManifestItem[]) {
   for (const item of manifest) {
     if (item.rejected || !item.caption) continue;
     if (item.file && !current.includes(item.file)) continue;
-    const link = safeProjectUrl(item.link ?? "") ?? (
-      item.type === "embed" || item.type === "bookmark" ? safeProjectUrl(item.url ?? "") : null
-    );
+    const media = item.type === "embed" ? safeProjectUrl(item.url ?? "") : null;
+    const link = safeProjectUrl(item.link ?? "") ??
+      (item.type === "bookmark" ? safeProjectUrl(item.url ?? "") : null);
     let project = byCaption.get(item.caption);
     if (!project) {
-      project = { idx: projects.length, caption: item.caption, link, images: [], contextShot: isContextShot(item) };
+      project = { idx: projects.length, caption: item.caption, link, media: [], images: [], contextShot: isContextShot(item) };
       byCaption.set(item.caption, project);
       projects.push(project);
     }
     project.link ??= link;
+    if (media && !project.media.includes(media)) project.media.push(media);
     if (item.file && !placed.has(item.file)) {
-      project.images.push({ pageId: page.id, file: item.file });
+      project.images.push({ pageId: page.id, file: item.file, ...(link ? { source: link } : {}) });
       placed.add(item.file);
     }
   }
   const unlisted = current.filter((file) => !placed.has(file));
   if (unlisted.length)
-    projects.push({ idx: projects.length, caption: null, link: null, contextShot: false, images: unlisted.map((file) => ({ pageId: page.id, file })) });
+    projects.push({ idx: projects.length, caption: null, link: null, media: [], contextShot: false, images: unlisted.map((file) => ({ pageId: page.id, file })) });
   return projects;
 }
 
@@ -168,15 +171,15 @@ export function mergeDuplicates(entries: IndexedEntry[]) {
   return [...groups.values()].map((group) => {
     const [primary, ...rest] = [...group].sort((a, b) => b.lastEdited.localeCompare(a.lastEdited));
     if (!rest.length) return primary;
-    const projects = primary.projects.map((project) => ({ ...project, images: [...project.images] }));
+    const projects = primary.projects.map((project) => ({ ...project, media: [...project.media], images: [...project.images] }));
     for (const other of rest)
       for (const project of other.projects) {
         const same = project.caption && projects.find((item) => item.caption === project.caption);
         if (same) {
           same.link ??= project.link;
+          same.media = [...new Set([...same.media, ...project.media])];
           same.images.push(...project.images);
-        }
-        else projects.push({ ...project, idx: projects.length });
+        } else projects.push({ ...project, idx: projects.length });
       }
     return {
       ...primary,

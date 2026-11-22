@@ -28,18 +28,21 @@ export function createMediaLookup(
 ) {
   let cache: { generation: string; at: number; files: Promise<Map<string, Signed>> } | undefined;
   return async (pageId: string, file: string) => {
-    const current = generation();
-    if (!current) return null;
-    if (cache?.generation !== current || now() - cache.at >= 60_000) {
-      const snapshot = { generation: current, at: now(), files: loadFiles(loadPages) };
-      cache = snapshot;
-      void snapshot.files.catch(() => {
-        if (cache === snapshot) cache = undefined;
-      });
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const current = generation();
+      if (!current) return null;
+      if (cache?.generation !== current || now() - cache.at >= 60_000) {
+        const snapshot = { generation: current, at: now(), files: loadFiles(loadPages) };
+        cache = snapshot;
+        void snapshot.files.catch(() => {
+          if (cache === snapshot) cache = undefined;
+        });
+      }
+      const signed = (await cache.files).get(key(pageId, file));
+      if (current !== generation()) continue;
+      return signed && signed.expires - now() > 5 * 60_000 ? signed.url : null;
     }
-    const signed = (await cache.files).get(key(pageId, file));
-    if (current !== generation()) return null;
-    return signed && signed.expires - now() > 5 * 60_000 ? signed.url : null;
+    return null;
   };
 }
 

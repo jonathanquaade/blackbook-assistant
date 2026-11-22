@@ -5,50 +5,50 @@ A brief is answerable when at least one expected entry (grade 2 or 3) is in that
 
 | Mode | Useful top five | Answerable briefs | Briefs with no strong match | Ineligible results | p95 ms |
 | --- | --- | --- | --- | --- | --- |
-| keyword | 15 (94%) | 16 of 20 | 16 | 0 | 16 |
-| hybrid | 16 (100%) | 16 of 20 | 13 | 0 | 34 |
+| keyword | 15 (94%) | 16 of 20 | 16 | 0 | 13 |
+| hybrid | 16 (100%) | 16 of 20 | 13 | 0 | 30 |
 
 ## Per brief
 
 | Mode | Brief | Scope | Useful | Strong | Top five | ms |
 | --- | --- | --- | --- | --- | --- | --- |
-| keyword | B01 | pilot | yes | 0 | Florian Runge (weak), Daan Rietbergen (weak), Leonhard Laupichler (weak), Sophia Brinkgerd (weak), Pedro Destefani (weak) | 11 |
-| keyword | B02 | pilot | yes | 0 | Sophia Brinkgerd (weak), Leonhard Laupichler (weak), Daan Rietbergen (weak), Florian Runge (weak), Pedro Destefani (weak) | 13 |
-| keyword | B03 | pilot | yes | 0 | Alex Hislop (weak), Julen Saenz (weak), Vova Stegantsov (weak), Eugene Serpokrylov (weak), Joseph Lebus (weak) | 16 |
-| keyword | B04 | pilot | yes | 0 | Elodie Fabbri (weak), Thomas Hervé (weak), Paul Lacour (weak), Sandra Autukaite (weak), Alberto Serna (weak) | 19 |
-| keyword | B05 | pilot | yes | 0 | Elodie Fabbri (weak), Thomas Hervé (weak), Paul Lacour (weak), Sandra Autukaite (weak), Alberto Serna (weak) | 11 |
-| keyword | B06 | pilot | yes | 0 | Vova Stegantsov (weak), Nuno Ventura (weak), Joseph Lebus (weak), Eugene Serpokrylov (weak), Georgy Gushchin (weak) | 14 |
-| keyword | B07 | pilot | yes | 0 | Daan Rietbergen (weak), Joseph Lebus (weak) | 16 |
-| keyword | B08 | pilot | yes | 3 | Alexander Houben, Nadia Lee Cohen, Salome Frenzel, Leonhard Laupichler (weak), Sofia Alazraki (weak) | 9 |
-| keyword | B09 | pilot | yes | 0 | Alexander Houben (weak), Alex Hislop (weak), Lex Carthur (weak), Nadia Lee Cohen (weak), Vincenzo Marchese Ragona (weak) | 9 |
-| keyword | B10 | pilot | yes | 0 | Julen Saenz (weak), Joseph Lebus (weak), Lex Carthur (weak), Morgan Light (weak), Nadia Lee Cohen (weak) | 11 |
-| keyword | B11 | pilot | yes | 2 | Alex Hislop, Nadia Lee Cohen, Alexander Houben (weak), Lex Carthur (weak), Paul Lacour (weak) | 13 |
-| keyword | B12 | pilot | yes | 0 | Sofia Alazraki (weak), Nadia Lee Cohen (weak), Alexander Houben (weak), Leonhard Laupichler (weak), Paul Lacour (weak) | 11 |
-| keyword | B13 | pilot | yes | 2 | Nadia Lee Cohen, Alexander Houben, Lex Carthur (weak), Alex Hislop (weak), Georgy Gushchin (weak) | 9 |
-| keyword | B14 | pilot | yes | 2 | Florian Runge, Joseph Lebus, Sophia Brinkgerd (weak), Daan Rietbergen (weak), Leonhard Laupichler (weak) | 15 |
-| keyword | B15 | pilot | yes | 0 | Joseph Lebus (weak), Sophia Brinkgerd (weak), Yedo Han (weak), Megan Bowker (weak), Surya Anand (weak) | 9 |
-| keyword | B16 | pilot | **no** | 0 | Sophia Brinkgerd (weak), Leonhard Laupichler (weak), Florian Runge (weak), Joseph Lebus (weak), Daan Rietbergen (weak) | 10 |
-| keyword | B17 | catalog | not in rated catalog | 0 | Alberto Serna (weak), Joseph Lebus (weak) | 6 |
-| keyword | B18 | catalog | not in rated catalog | 0 | none | 3 |
+| keyword | B01 | pilot | yes | 0 | Florian Runge (weak), Daan Rietbergen (weak), Leonhard Laupichler (weak), Sophia Brinkgerd (weak), Pedro Destefani (weak) | 10 |
+| keyword | B02 | pilot | yes | 0 | Sophia Brinkgerd (weak), Leonhard Laupichler (weak), Daan Rietbergen (weak), Florian Runge (weak), Pedro Destefani (weak) | 12 |
+| keyword | B03 | pilot | yes | 0 | Alex Hislop (weak), Julen Saenz (weak), Vova Stegantsov (weak), Eugene Serpokrylov (weak), Joseph Lebus (weak) | 13 |
+| keyword | B04 | pilot | yes | 0 | Elodie Fabbri (weak), Thomas Hervé (weak), Paul Lacour (weak), Sandra Autukaite (weak), Alberto Serna (weak) | 12 |
+| keyword | B05 | pilot | yes | 0 | Elodie Fabbri (weak), Thomas Hervé (weak), Paul Lacour (weak), Sandra Autukaite (weak), Alberto Serna (weak) | 7 |
+| keyword | B06 | pilot | yes | 0 | Vova Stegantsov (weak), Nuno Ventura (weak), Joseph Lebus (weak), Eugene Serpokrylov (weak), Georgy Gushchin (weak) | 16 |
+| keyword | B07 | pilot | yes | 0 | Daan Rietbergen (weak), Joseph Lebus (weak) | 8 |
+| keyword | B08 | pilot | yes | 3 | Alexander Houben, Nadia Lee Cohen, Salome Frenzel, Leonhard Laupichler (weak), Sofia Alazraki (weak) | 7 |
+| keyword | B09 | pilot | yes | 0 | Alexander Houben (weak), Alex Hislop (weak), Lex Carthur (weak), Nadia Lee Cohen (weak), Vincenzo Marchese Ragona (weak) | 10 |
+| keyword | B10 | pilot | yes | 0 | Julen Saenz (weak), Joseph Lebus (weak), Lex Carthur (weak), Morgan Light (weak), Nadia Lee Cohen (weak) | 8 |
+| keyword | B11 | pilot | yes | 2 | Alex Hislop, Nadia Lee Cohen, Alexander Houben (weak), Lex Carthur (weak), Paul Lacour (weak) | 7 |
+| keyword | B12 | pilot | yes | 0 | Sofia Alazraki (weak), Nadia Lee Cohen (weak), Alexander Houben (weak), Leonhard Laupichler (weak), Paul Lacour (weak) | 8 |
+| keyword | B13 | pilot | yes | 2 | Nadia Lee Cohen, Alexander Houben, Lex Carthur (weak), Alex Hislop (weak), Georgy Gushchin (weak) | 8 |
+| keyword | B14 | pilot | yes | 2 | Florian Runge, Joseph Lebus, Sophia Brinkgerd (weak), Daan Rietbergen (weak), Leonhard Laupichler (weak) | 8 |
+| keyword | B15 | pilot | yes | 0 | Joseph Lebus (weak), Sophia Brinkgerd (weak), Yedo Han (weak), Megan Bowker (weak), Surya Anand (weak) | 10 |
+| keyword | B16 | pilot | **no** | 0 | Sophia Brinkgerd (weak), Leonhard Laupichler (weak), Florian Runge (weak), Joseph Lebus (weak), Daan Rietbergen (weak) | 8 |
+| keyword | B17 | catalog | not in rated catalog | 0 | Alberto Serna (weak), Joseph Lebus (weak) | 7 |
+| keyword | B18 | catalog | not in rated catalog | 0 | none | 2 |
 | keyword | B19 | catalog | not in rated catalog | 0 | Joseph Lebus (weak), Lex Carthur (weak) | 4 |
-| keyword | B20 | catalog | not in rated catalog | 0 | Paul Lacour (weak), Alexander Houben (weak), Leonhard Laupichler (weak), Salome Frenzel (weak), Sofia Alazraki (weak) | 10 |
+| keyword | B20 | catalog | not in rated catalog | 0 | Paul Lacour (weak), Alexander Houben (weak), Leonhard Laupichler (weak), Salome Frenzel (weak), Sofia Alazraki (weak) | 7 |
 | hybrid | B01 | pilot | yes | 0 | Florian Runge (weak), Daan Rietbergen (weak), Leonhard Laupichler (weak), Sophia Brinkgerd (weak), Pedro Destefani (weak) | 30 |
-| hybrid | B02 | pilot | yes | 0 | Sophia Brinkgerd (weak), Leonhard Laupichler (weak), Daan Rietbergen (weak), Florian Runge (weak), Pedro Destefani (weak) | 21 |
-| hybrid | B03 | pilot | yes | 0 | Alex Hislop (weak), Julen Saenz (weak), Vova Stegantsov (weak), Eugene Serpokrylov (weak), Joseph Lebus (weak) | 32 |
-| hybrid | B04 | pilot | yes | 1 | Paul Lacour, Thomas Hervé (weak), Sandra Autukaite (weak), Elodie Fabbri (weak), Alberto Serna (weak) | 30 |
-| hybrid | B05 | pilot | yes | 0 | Elodie Fabbri (weak), Thomas Hervé (weak), Paul Lacour (weak), Sandra Autukaite (weak), Alberto Serna (weak) | 22 |
-| hybrid | B06 | pilot | yes | 0 | Vova Stegantsov (weak), Nuno Ventura (weak), Joseph Lebus (weak), Eugene Serpokrylov (weak), Georgy Gushchin (weak) | 54 |
-| hybrid | B07 | pilot | yes | 0 | Daan Rietbergen (weak), Joseph Lebus (weak) | 23 |
-| hybrid | B08 | pilot | yes | 3 | Salome Frenzel, Alexander Houben, Nadia Lee Cohen, Leonhard Laupichler (weak), Paul Lacour (weak) | 27 |
-| hybrid | B09 | pilot | yes | 2 | Alexander Houben, Vincenzo Marchese Ragona, Alex Hislop (weak), Lex Carthur (weak), Nadia Lee Cohen (weak) | 24 |
-| hybrid | B10 | pilot | yes | 0 | Julen Saenz (weak), Joseph Lebus (weak), Lex Carthur (weak), Morgan Light (weak), Nadia Lee Cohen (weak) | 23 |
-| hybrid | B11 | pilot | yes | 2 | Alex Hislop, Nadia Lee Cohen, Alexander Houben (weak), Lex Carthur (weak), Paul Lacour (weak) | 34 |
-| hybrid | B12 | pilot | yes | 0 | Sofia Alazraki (weak), Nadia Lee Cohen (weak), Alexander Houben (weak), Leonhard Laupichler (weak), Paul Lacour (weak) | 32 |
-| hybrid | B13 | pilot | yes | 2 | Nadia Lee Cohen, Alexander Houben, Lex Carthur (weak), Alex Hislop (weak), Georgy Gushchin (weak) | 28 |
-| hybrid | B14 | pilot | yes | 3 | Florian Runge, Daan Rietbergen, Joseph Lebus, Sophia Brinkgerd (weak), Leonhard Laupichler (weak) | 22 |
-| hybrid | B15 | pilot | yes | 0 | Joseph Lebus (weak), Sophia Brinkgerd (weak), Yedo Han (weak), Megan Bowker (weak), Surya Anand (weak) | 23 |
-| hybrid | B16 | pilot | yes | 1 | Surya Anand, Sophia Brinkgerd (weak), Yedo Han (weak), Pedro Destefani (weak), Salome Frenzel (weak) | 23 |
-| hybrid | B17 | catalog | not in rated catalog | 0 | Alberto Serna (weak), Joseph Lebus (weak) | 14 |
-| hybrid | B18 | catalog | not in rated catalog | 0 | none | 11 |
+| hybrid | B02 | pilot | yes | 0 | Sophia Brinkgerd (weak), Leonhard Laupichler (weak), Daan Rietbergen (weak), Florian Runge (weak), Pedro Destefani (weak) | 28 |
+| hybrid | B03 | pilot | yes | 0 | Alex Hislop (weak), Julen Saenz (weak), Vova Stegantsov (weak), Eugene Serpokrylov (weak), Joseph Lebus (weak) | 30 |
+| hybrid | B04 | pilot | yes | 1 | Paul Lacour, Thomas Hervé (weak), Sandra Autukaite (weak), Elodie Fabbri (weak), Alberto Serna (weak) | 23 |
+| hybrid | B05 | pilot | yes | 0 | Elodie Fabbri (weak), Thomas Hervé (weak), Paul Lacour (weak), Sandra Autukaite (weak), Alberto Serna (weak) | 30 |
+| hybrid | B06 | pilot | yes | 0 | Vova Stegantsov (weak), Nuno Ventura (weak), Joseph Lebus (weak), Eugene Serpokrylov (weak), Georgy Gushchin (weak) | 20 |
+| hybrid | B07 | pilot | yes | 0 | Daan Rietbergen (weak), Joseph Lebus (weak) | 20 |
+| hybrid | B08 | pilot | yes | 3 | Salome Frenzel, Alexander Houben, Nadia Lee Cohen, Leonhard Laupichler (weak), Paul Lacour (weak) | 25 |
+| hybrid | B09 | pilot | yes | 2 | Alexander Houben, Vincenzo Marchese Ragona, Alex Hislop (weak), Lex Carthur (weak), Nadia Lee Cohen (weak) | 18 |
+| hybrid | B10 | pilot | yes | 0 | Julen Saenz (weak), Joseph Lebus (weak), Lex Carthur (weak), Morgan Light (weak), Nadia Lee Cohen (weak) | 18 |
+| hybrid | B11 | pilot | yes | 2 | Alex Hislop, Nadia Lee Cohen, Alexander Houben (weak), Lex Carthur (weak), Paul Lacour (weak) | 20 |
+| hybrid | B12 | pilot | yes | 0 | Sofia Alazraki (weak), Nadia Lee Cohen (weak), Alexander Houben (weak), Leonhard Laupichler (weak), Paul Lacour (weak) | 17 |
+| hybrid | B13 | pilot | yes | 2 | Nadia Lee Cohen, Alexander Houben, Lex Carthur (weak), Alex Hislop (weak), Georgy Gushchin (weak) | 15 |
+| hybrid | B14 | pilot | yes | 3 | Florian Runge, Daan Rietbergen, Joseph Lebus, Sophia Brinkgerd (weak), Leonhard Laupichler (weak) | 20 |
+| hybrid | B15 | pilot | yes | 0 | Joseph Lebus (weak), Sophia Brinkgerd (weak), Yedo Han (weak), Megan Bowker (weak), Surya Anand (weak) | 21 |
+| hybrid | B16 | pilot | yes | 1 | Surya Anand, Sophia Brinkgerd (weak), Yedo Han (weak), Pedro Destefani (weak), Salome Frenzel (weak) | 18 |
+| hybrid | B17 | catalog | not in rated catalog | 0 | Alberto Serna (weak), Joseph Lebus (weak) | 12 |
+| hybrid | B18 | catalog | not in rated catalog | 0 | none | 9 |
 | hybrid | B19 | catalog | not in rated catalog | 0 | Joseph Lebus (weak), Lex Carthur (weak) | 12 |
-| hybrid | B20 | catalog | not in rated catalog | 0 | Alexander Houben (weak), Paul Lacour (weak), Vova Stegantsov (weak), Eugene Serpokrylov (weak), Leonhard Laupichler (weak) | 25 |
+| hybrid | B20 | catalog | not in rated catalog | 0 | Alexander Houben (weak), Paul Lacour (weak), Vova Stegantsov (weak), Eugene Serpokrylov (weak), Leonhard Laupichler (weak) | 24 |

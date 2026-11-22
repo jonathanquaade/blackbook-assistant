@@ -8,13 +8,13 @@ export const mediaUrl = (image: IndexedImage) =>
   `/api/media?page=${encodeURIComponent(image.pageId)}&file=${encodeURIComponent(image.file)}`;
 
 /** A portfolio image from Notion, fetched through a fresh signed link. */
-export function WorkImage({ image, alt }: { image?: IndexedImage; alt: string }) {
+export function WorkImage({ image, alt, emptyLabel = "Work not captured yet" }: { image?: IndexedImage; alt: string; emptyLabel?: string }) {
   const [failed, setFailed] = useState(false);
   if (!image || failed)
     return (
       <div className="artwork art-missing" role="img" aria-label="Portfolio media unavailable">
         <ImageOff size={25} />
-        <span>{image ? "Image did not load" : "Work not captured yet"}</span>
+        <span>{image ? "Image did not load" : emptyLabel}</span>
       </div>
     );
   return (

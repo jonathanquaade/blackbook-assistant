@@ -28,14 +28,14 @@ const locationsByName = [
   ...Object.entries(LOCATION_ALIASES),
   ...SOURCE_COUNTRIES.map((name): [string, string[]] => [name, [name.toLowerCase()]]),
 ];
-const contextualAliases = new Set(["porto"]);
+const locationNames = new Map(locationsByName.flatMap(([name, aliases]) => aliases.map((alias) => [alias, name] as const)));
+const locationPrefix = new RegExp("^\\s*(?:the\\s+)?(" +
+  [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[\\s,])");
+const locationSeparator = /^(?:\s*,\s*(?:(?:and|or)\s+)?|\s+(?:and|or)\s+)/;
 
 export function canonicalLocation(location: string) {
   const value = location.trim().toLowerCase();
-  const match = locationsByName.find(
-    ([name, aliases]) => name.toLowerCase() === value || aliases.includes(value),
-  );
-  return match ? match[0] : location.trim();
+  return locationNames.get(value) ?? location.trim();
 }
 
 export interface LiveBrief {
@@ -47,24 +47,33 @@ export interface LiveBrief {
 
 export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
   const intent = interpretBrief(query);
-  const lower = ` ${query.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ")} `;
+  const lower = query.toLowerCase().replace(/[^\p{L}\p{N}\s,]/gu, " ").replace(/\s+/g, " ");
   const locationWords = new Set<string>();
-  const locations = locationsByName
-    .filter(([, aliases]) =>
-      aliases.some((alias) => {
-        const hit = alias.length <= 2 || contextualAliases.has(alias)
-          ? new RegExp(` (?:in|from|near|around|across) (?:the )?${alias} `).test(lower)
-          : lower.includes(` ${alias} `);
-        if (hit) alias.split(" ").forEach((word) => locationWords.add(word));
-        return hit;
-      }),
-    )
-    .map(([name]) => name)
-    .filter((name) => !muted.includes(`location:${name}`));
+  const locations = new Set<string>();
+  const addLocation = (alias: string) => {
+    const name = canonicalLocation(alias);
+    if (!muted.includes("location:" + name)) locations.add(name);
+    alias.split(" ").forEach((word) => locationWords.add(word));
+  };
+  for (const phrase of lower.matchAll(/\b(?:in|from|near|around|across)\s+/g)) {
+    let rest = lower.slice(phrase.index + phrase[0].length);
+    for (let match; (match = locationPrefix.exec(rest));) {
+      rest = rest.slice(match[0].length);
+      if (match[1] === "porto" && /^\s+rocha\b/.test(rest)) break;
+      addLocation(match[1]);
+      const separator = locationSeparator.exec(rest);
+      if (!separator) break;
+      rest = rest.slice(separator[0].length);
+    }
+  }
+  const words = " " + lower.replace(/,\s*/g, " ") + " ";
+  for (const alias of locationNames.keys()) {
+    if (alias.length > 2 && alias !== "porto" && words.includes(" " + alias + " ")) addLocation(alias);
+  }
   return {
     freelance: intent.freelance && !muted.includes("freelance"),
     types: intent.types.filter((type) => !muted.includes(`type:${type}`)),
-    locations,
+    locations: [...locations],
     terms: intent.terms.filter(
       (term) => !locationWords.has(term) && !muted.includes(term),
     ),

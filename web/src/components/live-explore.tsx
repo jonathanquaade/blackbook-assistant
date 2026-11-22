@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { ArrowDown, ArrowRight, ArrowUp, CheckCheck, ChevronDown, Search, SlidersHorizontal, Sparkles, X } from "lucide-react";
 import type { LiveBrief } from "@/lib/live/brief";
 import type { LiveFilters, LiveResult } from "@/lib/live/search";
+import { hasSelectedWork } from "@/lib/live/project-work";
 import { CAPABILITIES, PROFILE_TYPES, WORK_STATUSES } from "@/lib/types";
 import { LiveProfileDialog } from "./live-profile-dialog";
 import { WorkImage } from "./work-image";
@@ -283,12 +284,16 @@ export function LiveExplore({ syncedAt, entries }: { syncedAt: string; entries: 
               <div className="profile-grid">
                 {group.results.map((result, index) => {
                   const project = cover(result);
-                  const workCount = result.projects.filter((item) => !item.contextShot && item.images.length).length;
+                  const workCount = result.projects.filter(hasSelectedWork).length;
                   return (
                     <article className="profile-card" key={result.id} style={{ animationDelay: `${index * 45}ms` }}>
                       <div className="card-work">
                         <button className="work-open" onClick={() => setSelected(result)} aria-label={`View ${result.name}’s work`}>
-                          <WorkImage image={project?.images[0]} alt={project?.caption ?? `${result.name} work`} />
+                          <WorkImage
+                            image={project?.images[0]}
+                            alt={project?.caption ?? `${result.name} work`}
+                            emptyLabel={workCount ? "Work links in profile" : undefined}
+                          />
                           <span className="view-work">
                             View selected work <ArrowRight size={13} />
                           </span>

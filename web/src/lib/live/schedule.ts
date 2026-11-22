@@ -7,7 +7,7 @@ export function startScheduledSync() {
   if (state.__blackbookSyncScheduled) return;
   if (!liveSetting("NOTION_API_KEY") || !liveSetting("BLACKBOOK_OWNER_PASSWORD"))
     throw new Error("Live Explore requires NOTION_API_KEY and BLACKBOOK_OWNER_PASSWORD.");
-  const minutes = Number(process.env.BLACKBOOK_SYNC_MINUTES ?? 15);
+  const minutes = Number(liveSetting("BLACKBOOK_SYNC_MINUTES") ?? 15);
   if (!Number.isSafeInteger(minutes) || minutes < 1 || minutes > 1440)
     throw new Error("BLACKBOOK_SYNC_MINUTES must be a whole number between 1 and 1440.");
   state.__blackbookSyncScheduled = true;

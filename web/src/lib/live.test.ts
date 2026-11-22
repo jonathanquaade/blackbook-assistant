@@ -3,11 +3,12 @@ import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
-import { isOwner } from "./live/auth";
+import { allowsOwnerTransport, isOwner } from "./live/auth";
 import { parseLiveBrief, reciprocalRankFusion, toTsQuery } from "./live/brief";
 import { liveSetting } from "./live/config";
 import { createMediaLookup } from "./live/media";
 import { EMBEDDING_MODEL } from "./live/model";
+import { hasSelectedWork } from "./live/project-work";
 import { embeddingInputs, mergeDuplicates, projectPage, readEligibility, type NotionPage } from "./live/projection";
 import { searchIndex } from "./live/search";
 import { createDb, writeEntries, writeVectors } from "./live/store";
@@ -57,6 +58,18 @@ test("only the configured owner credential grants live access", () => {
   assert.equal(isOwner(basic("jonathan:demo"), "demo"), true);
 });
 
+test("owner access requires HTTPS unless explicitly testing on loopback", () => {
+  const request = (host: string, proto: string) => new Headers({ host, "x-forwarded-proto": proto });
+  assert.equal(allowsOwnerTransport(request("blackbook.example", "https"), false), true);
+  assert.equal(allowsOwnerTransport(request("blackbook.example", "https,http"), false), false);
+  assert.equal(allowsOwnerTransport(request("blackbook.example", "http"), true), false);
+  assert.equal(allowsOwnerTransport(request("127.0.0.1:3000", "http"), false), false);
+  assert.equal(allowsOwnerTransport(request("127.0.0.1:3000", "http"), true), true);
+  const proxied = request("127.0.0.1:3000", "http");
+  proxied.set("x-forwarded-host", "blackbook.example");
+  assert.equal(allowsOwnerTransport(proxied, true), false);
+});
+
 test("media rechecks eligibility after a sync and never serves an expired cache", async () => {
   let now = Date.parse("2026-11-21T00:00:00.000Z");
   let generation = "first";
@@ -78,6 +91,21 @@ test("media rechecks eligibility after a sync and never serves an expired cache"
   now += 60_000;
   assert.equal(await lookup("1", "a.jpg"), "https://example.test/image");
   assert.equal(reads, 3);
+});
+
+test("an image requested during a snapshot swap is rechecked against the new generation", async () => {
+  let generation = "first";
+  const item = page("1", "Ada");
+  item.properties.Images.files = [{ type: "file", name: "a.jpg", file: {
+    url: "https://example.test/image", expiry_time: "2026-11-22T00:00:00Z",
+  } }];
+  let reads = 0;
+  const lookup = createMediaLookup(async () => {
+    if (++reads === 1) generation = "second";
+    return [item];
+  }, () => generation, () => Date.parse("2026-11-21T00:00:00Z"));
+  assert.equal(await lookup("1", "a.jpg"), "https://example.test/image");
+  assert.equal(reads, 2);
 });
 
 test("only Verified entries rated 4 or 5 are eligible", () => {
@@ -106,16 +134,21 @@ test("manifest images removed from Notion are not shown", () => {
   assert.deepEqual(entry.projects.map((project) => project.caption), ["Current"]);
 });
 
-test("linked projects without photos and all current project images are preserved", () => {
+test("work links, distinct media destinations and per-image sources are preserved", () => {
   const entry = projectPage(page("1", "Ada", { images: ["a.jpg", "b.jpg", "removed.jpg"] }), [
-    { type: "embed", caption: "Sound work", url: "https://vimeo.com/123" },
-    { file: "a.jpg", caption: "Print work" },
-    { file: "b.jpg", caption: "Print work" },
+    { type: "embed", caption: "Sound work", link: "https://example.test/sound", url: "https://vimeo.com/123" },
+    { type: "embed", caption: "Sound work", link: "https://example.test/sound", url: "https://vimeo.com/456" },
+    { type: "embed", caption: "Video only", url: "https://vimeo.com/789" },
+    { type: "bookmark", caption: "Case study", url: "https://example.test/video" },
+    { file: "a.jpg", caption: "Print work", link: "https://example.test/a" },
+    { file: "b.jpg", caption: "Print work", link: "https://example.test/b" },
     { file: "removed.jpg", caption: "Removed", rejected: true },
   ]);
-  assert.deepEqual(entry.projects.map((project) => [project.caption, project.link, project.images.length]), [
-    ["Sound work", "https://vimeo.com/123", 0],
-    ["Print work", null, 2],
+  assert.deepEqual(entry.projects.filter(hasSelectedWork).map((project) => [project.caption, project.link, project.media, project.images.map((image) => image.source)]), [
+    ["Sound work", "https://example.test/sound", ["https://vimeo.com/123", "https://vimeo.com/456"], []],
+    ["Video only", null, ["https://vimeo.com/789"], []],
+    ["Case study", "https://example.test/video", [], []],
+    ["Print work", "https://example.test/a", [], ["https://example.test/a", "https://example.test/b"]],
   ]);
 });
 
@@ -134,6 +167,11 @@ test("brief parsing, tsquery and fusion", () => {
   assert.deepEqual(studio.locations, []);
   assert.ok(studio.terms.includes("porto"));
   assert.deepEqual(parseLiveBrief("Designers based in Porto").locations, ["Portugal"]);
+  assert.deepEqual(parseLiveBrief("Work inspired by designers from Porto Rocha").locations, []);
+  assert.deepEqual(parseLiveBrief("Designers in the UK or US").locations, ["United Kingdom", "United States"]);
+  assert.deepEqual(parseLiveBrief("Designers in Japan, the UK, and LA").locations, ["Japan", "United Kingdom", "United States"]);
+  assert.deepEqual(parseLiveBrief("Designers near Porto and GB", ["location:Portugal"]).locations, ["United Kingdom"]);
+  assert.deepEqual(parseLiveBrief("Show us packaging designers").locations, []);
   assert.equal(toTsQuery(["type", "a", "o'neil"]), "type:* | oneil:*");
   assert.equal(toTsQuery([]), null);
   const scores = reciprocalRankFusion([["a", "b"], ["b"]]);
