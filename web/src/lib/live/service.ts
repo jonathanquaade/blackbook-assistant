@@ -126,14 +126,3 @@ export async function runSearch(request: SearchRequest) {
   if (!usesBundledIndex()) return runLocalSearch(request);
   return runBundledSearch(request, { index: readBundle, eligibility: currentEligibility, embed: embedQuery });
 }
-
-/** Facts for the Explore page header, without opening PGlite on serverless. */
-export async function indexSummary() {
-  if (usesBundledIndex()) {
-    const index = readBundle();
-    return index && { builtAt: index.builtAt, entries: index.entries.length };
-  }
-  const { readStatus } = await import("./store");
-  const lastGood = readStatus().lastGood;
-  return lastGood && { builtAt: lastGood.at, entries: lastGood.merged };
-}

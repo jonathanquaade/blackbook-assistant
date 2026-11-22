@@ -1,4 +1,3 @@
-import { env, pipeline } from "@huggingface/transformers";
 import { EMBEDDING_MODEL } from "./model";
 import { modelCacheDir } from "./paths";
 
@@ -9,14 +8,21 @@ type Extractor = (
 
 const globalCache = globalThis as unknown as { __blackbookEmbedder?: Promise<Extractor> };
 
+async function createExtractor(): Promise<Extractor> {
+  // Lazy on purpose: the native ONNX runtime must never load (or crash) a page that only reads the index.
+  // Any import failure rejects here and the caller degrades to keyword-only search.
+  const { env, pipeline } = await import("@huggingface/transformers");
+  env.cacheDir = modelCacheDir();
+  return (await pipeline("feature-extraction", EMBEDDING_MODEL.id, {
+    revision: EMBEDDING_MODEL.revision,
+    dtype: EMBEDDING_MODEL.dtype,
+  })) as unknown as Extractor;
+}
+
 /** Runs the pinned model on this machine: no API key, no provider, no per-call cost. */
 export function loadEmbedder() {
   if (!globalCache.__blackbookEmbedder) {
-    env.cacheDir = modelCacheDir();
-    globalCache.__blackbookEmbedder = pipeline("feature-extraction", EMBEDDING_MODEL.id, {
-      revision: EMBEDDING_MODEL.revision,
-      dtype: EMBEDDING_MODEL.dtype,
-    }) as unknown as Promise<Extractor>;
+    globalCache.__blackbookEmbedder = createExtractor();
     globalCache.__blackbookEmbedder.catch(() => {
       globalCache.__blackbookEmbedder = undefined;
     });

@@ -13,6 +13,7 @@
     "test": "tsx --test src/lib/*.test.ts",
     "sync": "tsx scripts/sync-index.ts",
     "build:index": "BLACKBOOK_BUILD_INDEX=1 tsx scripts/build-index.ts",
+    "smoke": "tsx scripts/smoke.ts",
     "eval": "tsx scripts/eval-benchmark.ts"
   },
   "dependencies": {

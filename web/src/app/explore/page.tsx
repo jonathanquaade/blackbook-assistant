@@ -2,7 +2,7 @@ import { Explore } from "@/components/explore";
 import { LiveExplore } from "@/components/live-explore";
 import { ownerPassword } from "@/lib/live/auth";
 import { requireOwner } from "@/lib/live/guard";
-import { indexSummary } from "@/lib/live/service";
+import { indexSummary } from "@/lib/live/summary";
 import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
