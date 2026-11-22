@@ -13,6 +13,7 @@ import { searchEntries } from "./live/memory-search";
 import { EMBEDDING_MODEL } from "./live/model";
 import { embeddingInputs, projectPage, type NotionPage } from "./live/projection";
 import { validateSearchBody } from "./live/request";
+import { embedQuery, setTransformersLoaderForTests } from "./live/embed";
 import { runBundledSearch } from "./live/service";
 
 const rich = (value: string) => [{ plain_text: value }];
@@ -310,4 +311,19 @@ test("the eligibility snapshot keeps no private fields from Notion pages", async
   const [kept] = (await checker()).pages;
   assert.deepEqual(Object.keys(kept.properties).sort(), ["Entry Status", "Images", "Rating"]);
   assert.equal(JSON.stringify(kept).includes("PRIVATE-NOTE"), false);
+});
+
+test("an embedder import failure degrades to keyword-only with a reason and never throws", async () => {
+  const index = bundle([page("1", "Ada")]);
+  setTransformersLoaderForTests(async () => {
+    throw new Error("Cannot find module 'onnxruntime-node'");
+  });
+  try {
+    const result = await runBundledSearch({ query: "bakery packaging" }, { ...deps(index, eligibleNow(["1"])), embed: embedQuery });
+    assert.equal(result.mode, "keyword");
+    assert.equal(result.modeReason, "model unavailable");
+    assert.deepEqual(result.results.map((r) => r.name), ["Ada"]);
+  } finally {
+    setTransformersLoaderForTests();
+  }
 });

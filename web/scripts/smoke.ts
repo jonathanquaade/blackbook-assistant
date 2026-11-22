@@ -58,11 +58,44 @@ function checkTraces() {
   ])
     check(search.some((f) => f.includes(needle)), `/api/search trace includes ${needle}`);
   check(!search.some((f) => /napi-v6\/(darwin|win32)|napi-v6\/linux\/arm64/.test(f)), "/api/search trace excludes other platforms' ONNX binaries");
+  check(!search.some((f) => /providers_(cuda|tensorrt)/.test(f)), "/api/search trace excludes the cuda and tensorrt providers");
+  check(!search.some((f) => /sharp-(libvips-)?linuxmusl|sharp-wasm32/.test(f)), "/api/search trace excludes musl and wasm sharp");
+}
+
+/** Vercel's function limit is 250 MB unzipped; fail well before it. Sums every file each route's trace lists. */
+const MAX_ROUTE_MB = 220;
+function walkNft(dir: string, out: string[] = []) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) walkNft(full, out);
+    else if (entry.name.endsWith(".nft.json")) out.push(full);
+  }
+  return out;
+}
+function checkRouteSizes() {
+  for (const nft of walkNft(path.join(".next", "server")).sort()) {
+    const seen = new Set<string>();
+    let bytes = 0;
+    for (const rel of JSON.parse(fs.readFileSync(nft, "utf8")).files as string[]) {
+      const file = path.resolve(path.dirname(nft), rel);
+      if (seen.has(file)) continue;
+      seen.add(file);
+      try {
+        const stat = fs.statSync(file);
+        if (stat.isFile()) bytes += stat.size;
+      } catch {
+        // Missing optional file: contributes nothing.
+      }
+    }
+    const mb = bytes / 1024 / 1024;
+    check(mb <= MAX_ROUTE_MB, `${path.relative(path.join(".next", "server"), nft)} traces ${mb.toFixed(1)} MB (limit ${MAX_ROUTE_MB})`);
+  }
 }
 
 async function main() {
   if (!fs.existsSync(path.join(".next", "BUILD_ID"))) throw new Error("Run `npm run build` first.");
   checkTraces();
+  checkRouteSizes();
   const built = spawnSync("npx", ["tsx", "scripts/build-index.ts", "--from-backup"], {
     env: { ...env, BLACKBOOK_BUILD_INDEX: "1" },
     encoding: "utf8",

@@ -8,10 +8,19 @@ type Extractor = (
 
 const globalCache = globalThis as unknown as { __blackbookEmbedder?: Promise<Extractor> };
 
+type TransformersModule = typeof import("@huggingface/transformers");
+let importTransformers = (): Promise<TransformersModule> => import("@huggingface/transformers");
+
+/** Test seam: swap the module loader (and drop any cached embedder) to simulate an import failure. */
+export function setTransformersLoaderForTests(loader?: () => Promise<TransformersModule>) {
+  importTransformers = loader ?? (() => import("@huggingface/transformers"));
+  globalCache.__blackbookEmbedder = undefined;
+}
+
 async function createExtractor(): Promise<Extractor> {
   // Lazy on purpose: the native ONNX runtime must never load (or crash) a page that only reads the index.
   // Any import failure rejects here and the caller degrades to keyword-only search.
-  const { env, pipeline } = await import("@huggingface/transformers");
+  const { env, pipeline } = await importTransformers();
   env.cacheDir = modelCacheDir();
   return (await pipeline("feature-extraction", EMBEDDING_MODEL.id, {
     revision: EMBEDDING_MODEL.revision,
