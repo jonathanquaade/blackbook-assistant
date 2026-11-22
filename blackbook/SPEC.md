@@ -12,9 +12,9 @@
 | **Review** | Separate proposals that are ready from those that still need a check. Show work, evidence, proposed changes, and reviewer findings. Approve, reject, or request changes with a note. New candidate rejection prevents re-surfacing; rejecting an update keeps the last approved profile. |
 | **Add for review** | Enter a URL or name, surface duplicates, and create a trackable proposal. The submitter gets a status, not an immediate Explore result. |
 
-**Terrayne** owns this spec, priorities, acceptance tests, and release recommendations. Jonathan approves the spec and changes to scope, budget, and live permissions.
+**The orchestrating Claude session** owns this spec, priorities, acceptance tests, and release recommendations (Jonathan, 2026-11-22: Claude owns the project; Devin helps occasionally on scoped tasks). Jonathan approves the spec and changes to scope, budget, and live permissions.
 
-The **frontend and data builders** implement the spec; **QA** independently checks relevance, permissions, mobile and keyboard use, sync failures, and decision retries. **Scout**, **Scraper**, and **Portfolio Reviewer** operate the intake system described below. Only Jonathan decides taste, verification, and ratings. Keep his Notes and protected fields out of agent writes.
+The **Engineer** builds; **QA** independently checks relevance, permissions, mobile and keyboard use, sync failures, and decision retries. **Scout**, **Scraper**, and **Portfolio Reviewer** operate the intake system described below. Roles and gates are defined in [CLAUDE.md](../CLAUDE.md#the-team-jonathan-2026-11-22-supersedes-the-2026-06-15-three-agent-split). Only Jonathan decides taste, verification, and ratings. Keep his Notes and protected fields out of agent writes.
 
 ## 2. Retrieval: embed once, filter first
 
@@ -41,6 +41,8 @@ Roster implementation: [`roster.py`](../scripts/roster.py) lists maintained stud
 Each job must have a durable cursor or idempotency key, a small explicit scope, an independent reviewer where applicable, and a stop on failed authentication or repeated source failures. Use source fingerprints and cached artifacts to skip unchanged work. Log counts, evidence gaps, spend, and what was deferred. The product never invokes these jobs from search. For reviewer learning, record Jonathan's fixes by field, asset, and rubric version; propose changes from recurring misses, test against held-out cases, and have QA and Jonathan approve changes before using them.
 
 ## 4. Devin modes, quality, and ACU budget
+
+**Superseded 2026-11-22.** Claude now runs the roles (subagents on Sonnet, orchestrator on Opus, per CLAUDE.md). The Devin mode trial below is not planned; keep it only as a pattern if Devin takes on a recurring role again. Cost reporting becomes tokens per accepted entry instead of ACUs.
 
 **What happened.** The fixture builder used frontend design mode. Scout, Scraper, Portfolio Reviewer, and QA inherited the Devin default; no mode was chosen per role. That does not identify a specific underlying model. The older [Keeper policy](../CLAUDE.md#the-agent-split-jonathan-2026-06-15) pins its Claude subagents to Sonnet 4.6. That is separate from the mode of a Devin bot or child session. We have not measured quality or ACUs by mode yet.
 

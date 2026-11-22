@@ -1,0 +1,49 @@
+{
+ "page_id": "3fbf84ba-ae13-81d0-94e3-f7a77caa3d8e",
+ "name": "Java Jacobs",
+ "auditor": "claude-reviewer",
+ "mode": "desk-audit-offline",
+ "reviewed_at": "2026-11-22",
+ "verdict": "pass-pending-online",
+ "checks": [
+  {"id": "A.project-diversity", "result": "pass", "evidence": "Manifest has 7 distinct named projects (IG reel, Dior, Zara, Bergdorf, Max Mara, A.P.C., Girls Have Spoken), distinct Vimeo/IG source URLs. Hash distinctness not checkable offline."},
+  {"id": "A.depth", "result": "pass", "evidence": "Film work: each project has thumbnail + playable embed with link; stills 'inside' a film are not the right unit for a director."},
+  {"id": "A.on-capability", "result": "pass", "evidence": "Tag is Film & video production (TAXONOMY: directors, DOPs, producers); all captured items are directed commercial/fashion films."},
+  {"id": "A.context-shots", "result": "cannot-verify-offline", "evidence": "site-01 (source javajacobs.com, caption Website) and site-02 (source instagram.com/javajacobs, caption Instagram profile) have correct URLs and context_shot flags, but the images are not on disk so I cannot confirm site-02 is a real IG profile and not an error page, nor that site-01 is the broken-render the AI Notes describes."},
+  {"id": "A.captions", "result": "pass", "evidence": "All 15 manifest entries carry a caption naming project plus a link. Minor: Max Mara caption has no year."},
+  {"id": "A.embeds", "result": "pass", "evidence": "6 player.vimeo.com embeds, each with caption and link, each with a matching thumbnail image. Reel is IG so link-only is acceptable."},
+  {"id": "A.absence-explained", "result": "pass", "evidence": "AI Notes says javajacobs.com renders broken and work was taken from Vimeo. Live-site claim itself not verifiable offline."},
+  {"id": "A.low-res-ig", "result": "pass", "evidence": "ig-break-up-with-them.jpg is a 640x640 cdninstagram capture (s640x640 in URL) and the entry is NOT in state/ig-queue.json. It is one cover of seven, not primary work, so not a fail, but the reel (the clipped item) has only a 640px cover; optional queue for a hi-res grab."},
+  {"id": "A.body-structure", "result": "cannot-verify-offline", "evidence": "Live block count and Images-property-vs-body sync need Notion. Images property in the Nov 21 backup lists 9 files, which matches the 9 file entries in the manifest (none rejected)."},
+  {"id": "B.type-links", "result": "pass", "evidence": "Type Person; Website, Instagram, LinkedIn, Email all set. Handle correctness for IG/LinkedIn is not verifiable offline."},
+  {"id": "B.capabilities", "result": "pass", "evidence": "Single tag Film & video production fits a writer-director per TAXONOMY line 30; scout-set, not locked."},
+  {"id": "B.country-size-status", "result": "pass", "evidence": "Location US, Size 1, Work Status Freelance. Weakness: AI Notes names MindsEye roster and LinkedIn only; neither is a self-maintained source (site is broken, IG bio not cited), and she runs 1/33 Productions. Passable under the two-sources-agree rule but flag for online check."},
+  {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 4 set_by agent, reasoning from repeated major-client credits, hedged 'inferred from credits, no first-hand evidence'."},
+  {"id": "C.judgment", "result": "pass", "evidence": "Work With? Unvetted, Worked Together Never, Familiarity Don't know them are zero-states set_by agent. Clip note ('found through the girl therapist video') is a discovery path, not a relationship fact; nothing contradicts them. Rating empty, Notes empty."},
+  {"id": "C.clip-note", "result": "pass", "evidence": "clipped.md raw note: director, found via a video, IG post DUvk2akjE2A, javajacobs.com. Website set to javajacobs.com; IG post captured as reel item (caption/link to reel/DUvk2akjE2A). Caveat: the note calls it 'the girl therapist video'; entry assumes that is the BREAK UP WITH THEM reel, unconfirmed offline. No body commentary of Jonathan's in clipped.md."},
+  {"id": "C.ai-notes", "result": "pass", "evidence": "Seniority + experience present (senior director, about 11 years, SVA, MindsEye since 2021), Autonomy reasoning hedged, work-status sources named, absence explained. Minor: 'about 11 years' is asserted without a hedge word or source and the 'Paris-born/trained at SVA/Webby/NBR' facts cannot be re-verified offline."},
+  {"id": "D.open-questions", "result": "pass", "evidence": "Empty; nothing needed since no judgment field is blocked. Story nudge not due (Familiarity Don't know them, Work With? Unvetted)."},
+  {"id": "D.source", "result": "pass", "evidence": "Source equals the raw clip text verbatim (typos 'foudnd thorugh' preserved), matches clipped.md."},
+  {"id": "D.provenance", "result": "pass", "evidence": "All 17 touched fields present, set_by agent, source_url null (known tooling gap, not a fail). Source set_by agent is acceptable (no judgment in it)."},
+  {"id": "D.no-em-dashes", "result": "pass", "evidence": "grep for the em-dash character in provenance, manifest and clipped.md returned 0; AI Notes and Source in the props backup read clean; scripts/keeper.py has no ' -- ' em-dash separator at upload. Live body blocks not checkable offline."},
+  {"id": "D.status", "result": "pass", "evidence": "Entry Status Needs Review in backup; no Verified, Notes untouched."}
+ ],
+ "disagreements_with_prior_report": [
+  "Prior report says 'to: scraper' with verdict pass; a pass should carry to: null.",
+  "Prior A.context-shots states the IG shot 'is a real instagram.com/javajacobs profile page' as fact; only the manifest source URL supports that offline, so I downgrade to cannot-verify until the image is opened.",
+  "Prior A.low-res IG capture issue not raised: the clipped reel image is a 640px cdninstagram cover and is not in ig-queue.json (not a fail, since not primary work).",
+  "Prior B.country-size-status accepts Freelance with 'MindsEye roster + LinkedIn' without noting neither is a self-maintained source; I pass it but flag it as marginal under the Work Status objective rule.",
+  "Prior C.clip-note treats the clipped reel as 'the girl therapist video' without noting it is an assumption.",
+  "Prior report omits the 'fix' field in checks and uses 'reviewer_version v1'; no substantive failure disagreement: I find no FAIL that Devin missed, and no wrong em-dash claim."
+ ],
+ "to": null,
+ "online_checks_pending": [
+  "Open site-02.png and confirm it is a real instagram.com/javajacobs profile (not an error/login page).",
+  "Open site-01.png and confirm it is javajacobs.com as rendered, matching the AI Notes 'broken image assets' description.",
+  "Confirm live body block count (clean Work heading, items, divider) and Images property hash-match, plus 0 em-dashes in body paragraph blocks.",
+  "Confirm IG post DUvk2akjE2A is the BREAK UP WITH THEM reel and is the 'girl therapist video' Jonathan meant.",
+  "Spot-check Work Status (IG bio / any current site statement) and LinkedIn current role.",
+  "Confirm IG handle javajacobs and LinkedIn java-jacobs-425b9392 are the right person.",
+  "Optionally queue a hi-res IG grab for the reel cover in state/ig-queue.json."
+ ]
+}

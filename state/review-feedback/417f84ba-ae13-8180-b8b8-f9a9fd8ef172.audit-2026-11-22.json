@@ -1,0 +1,50 @@
+{
+  "page_id": "417f84ba-ae13-8180-b8b8-f9a9fd8ef172",
+  "name": "Ben Mingo",
+  "auditor": "claude-reviewer",
+  "mode": "desk-audit-offline",
+  "reviewed_at": "2026-11-22",
+  "verdict": "pass-pending-online",
+  "checks": [
+    {"id": "A.project-diversity", "result": "pass", "evidence": "Manifest (non-rejected) has 3 distinct projects by caption and link: Seed x4, Bonnie Clyde x2, Air Company x1. Distinct source image hashes. Skewed (4/2/1) but meets the 3-project bar. Visual near-duplicate check is CANNOT-VERIFY-OFFLINE."},
+    {"id": "A.depth", "result": "cannot-verify-offline", "evidence": "Captions only say 'identity'; no spreads/interiors are named. Source sizes (2160x2701, 1868x2356 portrait) suggest inner shots, but I cannot view them. Air Company has a single image."},
+    {"id": "A.on-capability", "result": "pass", "evidence": "Seed/Bonnie Clyde identity work matches Graphic design + Identity systems; two Bonnie Clyde campaign photos correctly marked rejected. Web design has no captured work (no site/screens shown); Creative direction not demonstrated (credits list him under Design). Minor, see B.capabilities."},
+    {"id": "A.context-shots", "result": "cannot-verify-offline", "evidence": "Manifest source_url for site-01 is https://benmingo.com/ and for site-02 is https://www.instagram.com/benmingo/, both captioned correctly, so labels are plausible. Whether site-02 is a real profile page and not an IG error page, and whether site-01 is not a blank canvas (AI Notes says the site draws to canvas), cannot be seen offline. Not in state/ig-queue.json, so the IG-error exception does not apply: if site-02 is an error page this is a FAIL."},
+    {"id": "A.captions", "result": "pass", "evidence": "All 7 work images and both context shots have caption + link; all work captions name the project and 'at Mouthwash'. No em-dashes (grep count 0 in manifest). Embeds not used, so embed-link rule is n/a."},
+    {"id": "A.embeds", "result": "cannot-verify-offline", "evidence": "No embeds in manifest. Self-described focus includes motion; whether Mouthwash project pages carry Vimeo/YouTube cannot be checked without network."},
+    {"id": "A.absence-explained", "result": "pass", "evidence": "AI Notes explains benmingo.com could not be extracted (script-loaded index). Clipped body shows ~12 project folders (MV, ACRE, AIR, WAKA, VDL...) that were not captured; those are filenames only, so not extractable offline. IG work capture (CLAUDE.md says check IG for recent work) is neither done nor queued nor mentioned in AI Notes: gap, see pending."},
+    {"id": "A.body-structure", "result": "cannot-verify-offline", "evidence": "Needs live block count (expected 2 + 9 items + captions) and Images property vs manifest. Backup props list 9 Images = 7 work + 2 context, matching manifest non-rejected files, and none of the rejected files (bonnie-clyde-4, -6) are present: good sign for the rejected-in-property rule."},
+    {"id": "B.type-links", "result": "pass", "evidence": "Type Person; Website, Instagram, LinkedIn, Email present. Email is a personal gmail from his Behance (stated in AI Notes). IG handle correct-person verification is not recorded in AI Notes; online check pending."},
+    {"id": "B.capabilities", "result": "pass", "evidence": "Provenance set_by agent (not locked). Graphic design and Identity systems supported by Seed/Bonnie Clyde. Web design: only 'identity + digital' in a caption, no web work shown; Creative direction: TAXONOMY says 'leads the making', evidence is only Partner/Design Director title. Borderline but defensible hedged inference; recommend Jonathan eyeball."},
+    {"id": "B.country-size-status", "result": "pass", "evidence": "Location United States, Size 1 (person), Work Status Studio with sources named in AI Notes (site title, IG bio, LinkedIn agree). Caveat: site was not renderable, so 'site title' evidence is thin; IG + LinkedIn plus own-role statement still satisfy two-source rule."},
+    {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 5, set_by agent, reasoning in AI Notes (co-runs studio, design director), hedged 'inferred, no first-hand evidence'. Seniority/experience read present: ~13 yrs, Ueno, BASIC/DEPT, Random Studio, Mouthwash."},
+    {"id": "C.judgment", "result": "pass", "evidence": "Worked Together Never, Familiarity Don't know them, Work With? Unvetted, Rating empty. Clip note says only 'found him via natalia odezka's website', a discovery path, so no contradiction; none written as set_by jonathan (correct, since the note states no judgment)."},
+    {"id": "C.clip-note", "result": "pass", "evidence": "Clip note = name + role (Designer and Partner at Mouthwash) + discovery path. Role reflected in Works At Link, Work Status, AI Notes; discovery path recorded in AI Notes and Source. No instruction left unacted. clipped.md body is only filenames of his site's project index, no Jonathan commentary, so Notes empty is correct."},
+    {"id": "C.ai-notes", "result": "pass", "evidence": "Hedged where inferred (authorship, Autonomy). Minor internal inconsistency: 'co-founder' with 'founded 2019' vs 'Mouthwash partner since 2021'; co-founder claim looks unreconciled with the 2021 join date. Recommend online fix or hedge; not a gate failure."},
+    {"id": "D.source", "result": "pass", "evidence": "Source = 'Ben Mingo, Designer and Partner at Mouthwash (found him via natalia odezka's website)'. Raw clip had an em-dash after the name, replaced with a comma because em-dashes are forbidden. Content is verbatim otherwise; Devin's 'verbatim' is slightly loose but justified."},
+    {"id": "D.provenance", "result": "pass", "evidence": "All 20 fields set_by agent, verified_at 2026-11-21, source_url null (known tooling gap, not a fail). No fact below the confidence floor evident from the file."},
+    {"id": "D.no-em-dashes", "result": "pass", "evidence": "grep for em-dash returns 0 in props.json (AI Notes, Source, Open Questions), provenance, and manifest captions. Body paragraph blocks / keeper.py upload separator CANNOT-VERIFY-OFFLINE (check keeper.py line ~547 separator and live blocks)."},
+    {"id": "D.open-questions", "result": "pass", "evidence": "Empty. Defensible: no field is asked that has a non-zero value. Story nudge not due (Worked Together Never, Familiarity zero-state)."},
+    {"id": "D.status", "result": "pass", "evidence": "Backup shows Entry Status Needs Review (2026-11-21). Verified is not set by the agent. Notes empty and untouched."}
+  ],
+  "disagreements_with_prior_report": [
+    "D.provenance: Devin says 'clip facts set_by jonathan'. Wrong: provenance has zero set_by jonathan fields, all 20 are agent. Harmless because the clip note states no judgment/relationship fact, but the evidence line is inaccurate.",
+    "D.source: Devin says Source holds the clip note 'verbatim'. Not exactly: the clip's em-dash was changed to a comma. Justified, but not verbatim.",
+    "A.context-shots: Devin passes on 'real instagram.com/benmingo profile page'. That is a visual claim I cannot confirm from the manifest, which only proves intended URL. Same for 'A.body-structure' (11 live blocks) and 'A.embeds'. Treated as unverified, not pass.",
+    "B.capabilities: Devin calls Web design supported by 'Digital Design' credits. No web design work is among the captured images; support is a caption word and credits I cannot see offline. Creative direction acknowledged borderline by Devin; I agree and flag both for Jonathan.",
+    "A.depth: Devin asserts 'Seed packaging, type and system spreads; Bonnie Clyde wordmark and letterform detail'. Captions are bare 'identity', so that reading is not visible from the manifest; unverifiable offline.",
+    "Process: report is self-labelled 'independent' but came from the same session as the doer (per the audit brief), and carries 'to: scraper' on a pass verdict.",
+    "Not raised by Devin: AI Notes 'co-founder' (founded 2019) conflicts with 'partner since 2021'; IG recent-work check neither done, queued, nor noted despite CLAUDE.md step 3 and the 7-image / one-employer capture (no Ueno/BASIC/Random work, Air Company only 1 image)."
+  ],
+  "to": null,
+  "online_checks_pending": [
+    "Open site-02.png: confirm it is a real instagram.com/benmingo profile page, not an error/login wall; if it is an error page and not rejected+queued, bounce to scraper.",
+    "Open site-01.png: confirm benmingo.com screenshot is not blank (canvas site).",
+    "Live Notion: body block count (expected 2 + items, no orphans), Images property equals manifest non-rejected files, no em-dash in body paragraphs (keeper.py upload separator).",
+    "Confirm instagram.com/benmingo is the right Ben Mingo (bio + grid, Mouthwash partner).",
+    "Check mouthwash.studio Seed / Bonnie Clyde / Air Company pages for Vimeo/YouTube video that should be embedded.",
+    "Check Ben's IG for newer or better work; if hi-res needed, append to state/ig-queue.json and note in AI Notes.",
+    "Reconcile 'co-founder' vs 'partner since 2021' in AI Notes; confirm Mouthwash is not already a Studio entry in the DB (Works At relation vs Works At Link).",
+    "Confirm credit 'Design: Ben Mingo' on the three Mouthwash pages and that images are inner-project shots, not heroes."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "page_id": "41ef84ba-ae13-8167-92dc-f5e90c6a8f41",
+ "name": "Andy Woodward",
+ "auditor": "claude-reviewer",
+ "mode": "desk-audit-offline",
+ "reviewed_at": "2026-11-22T00:00:00",
+ "verdict": "fail",
+ "checks": [
+  {"id": "A.project-diversity", "result": "pass", "evidence": "Manifest has 6 thumbnails with 6 distinct Vimeo CDN ids and distinct captions: MAYHEM, NOAH, PUMA x Hello Sunrise, REEF x ROSE, Outerknown, DEMO. Pixel-level distinctness cannot be checked offline."},
+  {"id": "A.depth", "result": "pass", "evidence": "Each thumbnail has a matching playable Vimeo embed. For a film creative the full film is the depth."},
+  {"id": "A.on-capability", "result": "fail", "evidence": "Capabilities tag Photography, but all 6 captured items are film. No stills captured, and Prior report admits this. Site is andywoodwardphoto.com with a public Photo Archive link, so stills were reachable. Not a deferral candidate under 'nothing deferred that is findable NOW'.", "fix": "Either capture 3+ named stills from the Photo Archive (f.io/XryVhE1e or site), or drop Photography and ask via Open Question. Agent-set tag, so it can be changed."},
+  {"id": "A.context-shots", "result": "cannot-verify-offline", "evidence": "Manifest: site-01.png source https://andywoodwardphoto.com/ captioned Website; site-02.png source https://www.instagram.com/andywoodward/ captioned Instagram profile, both context_shot true. URLs are plausible. Image files not on disk, and logged-out IG often serves an error page; no rejection or ig-queue entry exists (state/ig-queue.json has 0 hits for this id), so a genuine capture must be visually confirmed."},
+  {"id": "A.captions", "result": "pass", "evidence": "All 8 manifest image entries have captions naming a project (or Website / Instagram profile) and a link."},
+  {"id": "A.embeds", "result": "pass", "evidence": "6 embed entries, each with caption and link, each matching a thumbnail. Source links for NOAH and MAYHEM are site pages; others link vimeo.com."},
+  {"id": "A.body-structure", "result": "cannot-verify-offline", "evidence": "No live Notion access. Prior '22 live blocks' claim is unverified here. Expected: 1 h2 + 6 thumbs + 6 embeds + 6 meta lines + 2 context shots + divider is roughly 22, so it is plausible."},
+  {"id": "A.ig-low-res", "result": "pass", "evidence": "No IG-sourced work images used as primary; only the profile context shot. No queue needed."},
+  {"id": "B.type-links", "result": "pass", "evidence": "Type Person; Website, Instagram, LinkedIn, Email all present. Right-person match for IG/LinkedIn rests on AI Notes only (online check pending)."},
+  {"id": "B.capabilities", "result": "fail", "evidence": "Film & video production fits clip (editor, videographer, director). Photography is unsupported by captured work (see A.on-capability). Clip 'editor' has no separate tag, acceptable."},
+  {"id": "B.country-size-status", "result": "pass", "evidence": "Location United States, Size 1, Work Status Freelance with sources named in AI Notes (own site, LinkedIn, Statement Content roster agree). IG not named as a checked source, minor."},
+  {"id": "B.autonomy", "result": "pass", "evidence": "Autonomy 3 set_by agent in provenance, reasoning in AI Notes with 'inferred from credits, no first-hand evidence'."},
+  {"id": "C.judgment", "result": "pass", "evidence": "Only Familiarity (set_by jonathan, quote in Source) plus zero-states Worked Together Never and Work With? Unvetted (set_by agent). Clip note does not contradict Never. Rating empty. Caveat: Familiarity 'Recommended by a friend' assumes James Morrins is Jonathan's friend; CLAUDE.md requires that to be genuine. Clip note says 'recommended by', an active vouch, so acceptable but unverifiable here."},
+  {"id": "C.clip-note", "result": "pass", "evidence": "clipped.md raw Name: 'Andy woodward edtor, videographer, director (recommended by james morrins)'. Archived; recommendation recorded in Familiarity; roles reflected in Capabilities. No site passcodes or other instructions. No Jonathan commentary in body clip, so Notes empty is correct."},
+  {"id": "C.ai-notes", "result": "fail", "evidence": "Hedging and seniority present, but 'James Morrins (worked with you at Fuse) ... per your clip note' is NOT in the clip note (clipped.md only says 'recommended by james morrins'). Fuse claim has no visible source, and AI Notes addresses Jonathan as 'you'. Seniority line 'mid-level, roughly 5 to 6 years' is stated flatly rather than hedged.", "fix": "Remove or source the Fuse claim, state only 'recommended by James Morrins (clip note)'. Hedge seniority ('reads as mid-level, ~5 to 6 yrs, inferred from graduation ~2020')."},
+  {"id": "D.open-questions", "result": "pass", "evidence": "Empty. Acceptable only if Photography is resolved; if the tag is dropped or kept, a terse question may be due."},
+  {"id": "D.source", "result": "pass", "evidence": "Source 'Andy woodward edtor, videographer, director (recommended by james morrins)' matches clipped.md raw Name verbatim, typo preserved."},
+  {"id": "D.provenance", "result": "pass", "evidence": "Provenance file covers every written field, judgment zero-states agent, Familiarity and Source jonathan. source_url null is known tooling gap, not a fail."},
+  {"id": "D.no-em-dashes", "result": "pass", "evidence": "No em-dash in AI Notes, Source, Open Questions, or any manifest caption. keeper.py lines 525 and 547 use middle dot, so the tool-level em-dash bug is fixed. Live body not checkable."},
+  {"id": "D.status", "result": "pass", "evidence": "Props show Entry Status Needs Review as of Nov 21 backup; Notes empty; Status Last Verified null; Rating null."}
+ ],
+ "disagreements_with_prior_report": [
+  "A.on-capability / B.capabilities: Devin passed with a note that no stills are shown despite Photography tag. I fail it: tag unsupported by captured work and the photo archive was reachable now.",
+  "C.ai-notes: Devin passed. AI Notes cites 'worked with you at Fuse' and 'per your clip note', which the clip note does not say. Unsourced claim attributed to Jonathan's note.",
+  "A.project-diversity evidence is wrong: Devin lists 'THE ART OF SURFING' and 'Tenore' as 6 films, but the manifest contains NOAH (whose link slug is theartofsurfing) and DEMO, with no Tenore entry.",
+  "A.context-shots: Devin claims files were opened and verified; I cannot confirm offline, and no ig-queue entry exists, so treat as pending until visually checked.",
+  "Prior report was written by the same session that did the enrichment, so not independent. It also claimed live-API checks (22 blocks, hash-identical) which I cannot reproduce here."
+ ],
+ "to": "scraper",
+ "online_checks_pending": [
+  "Open site-01.png and site-02.png: confirm site-02 is a real instagram.com/andywoodward profile, not an error page or website shot.",
+  "Live body block count and Images property vs manifest (expect 8 images, no rejected files).",
+  "Verify @andywoodward is the right person (bio + grid) and LinkedIn andywoodwardphoto matches.",
+  "Confirm James Morrins is Jonathan's friend and the Fuse connection source (or remove it).",
+  "Sample Photo Archive stills if Photography stays tagged."
+ ]
+}

@@ -25,10 +25,40 @@ are historical (its principles and browser guardrails remain binding).
 4. **Quality bar ("Never Settle"):** high quality over speed, but move fast once
    sure; if a requirement seems dumb, question it instead of implementing it.
 
-## The agent split (Jonathan, 2026-06-15)
+## The team (Jonathan, 2026-11-22; supersedes the 2026-06-15 three-agent split)
 
-The work is divided across three specialist subagents (`.claude/agents/`), spawned by
-the orchestrating session, because one agent doing everything and grading its own work
+**Claude owns the whole project**: the Notion blackbook (Keeper) AND the Blackbook web
+app (`web/`, `blackbook/SPEC.md`). The orchestrating Claude session plans, spawns the
+roles below, merges results and reports to Jonathan. It coordinates; it does not grade
+its own or a role's work. Five roles, one unit of work per spawn, doers and checkers
+always separate:
+
+| Role | Agent file | Does | Checked by |
+|---|---|---|---|
+| Scout | `scout.md` | Entry metadata + studio roster | Portfolio Reviewer |
+| Scraper | `scraper.md` | Entry work: images, embeds, context shots | Portfolio Reviewer |
+| Portfolio Reviewer | `reviewer.md` | Gate on ENTRIES (checklists/entry-review.md) | Jonathan (spot-checks) |
+| Engineer | `engineer.md` | Code: `web/`, `scripts/`, CI, deploy | QA |
+| QA | `qa.md` | Gate on CODE: diff, tests, hard rules | Jonathan (merges) |
+
+**Devin is an occasional helper, not an owner** (Jonathan: "he sleeps a lot"). When
+Devin turns up it takes a scoped task the orchestrator hands it, works on a `devin/`
+branch, and follows this file in full. Its work goes through the same gates as ours:
+code through QA, entries through the Portfolio Reviewer, run by a Claude session. A
+Devin session reviewing its own work in-session does NOT count as the independent gate
+(2026-11-21 P1 run: four entries "independently reviewed" in the same session that
+enriched them; re-audited by Claude 2026-11-22). Devin commits under Jonathan's git
+identity with a `Co-Authored-By: Devin AI` trailer; identify its work by that trailer
+and the `devin/` branch prefix.
+
+**Code work flow:** orchestrator scopes the task + names the SPEC stage → Engineer
+builds on a branch with tests → QA reviews the diff cold (no author summary) → fixes
+loop back to Engineer (cap 2) → PR for Jonathan to merge. Nothing ships for a SPEC
+stage Jonathan has not approved.
+
+### Entry roles in detail (2026-06-15, still binding)
+
+The entry work is split because one agent doing everything and grading its own work
 let failures through (Zuzanna Rogatty: three angles of one project + a website shot
 mislabeled "Instagram profile", self-reviewed and passed). One unit of work per agent:
 1. **scout** — identifies the person/studio and fills ALL metadata EXCEPT images
@@ -49,7 +79,7 @@ Pipeline for a New entry: scout (metadata) → scraper (work) → reviewer (gate
 Review → Jonathan (taste + Rating). The doers leave the entry in Enriching; only the
 reviewer flips it to Needs Review.
 
-**Agent models (Jonathan, 2026-06-16 — cost discipline).** All three subagents run on
+**Agent models (Jonathan, 2026-06-16 — cost discipline).** All subagents (now five) run on
 **Sonnet 4.6** (`model: sonnet` in their frontmatter), NOT Opus. Subagent-heavy Opus
 runs were 88% of one session's spend for work Sonnet does well; the orchestrating
 session (which only coordinates and reasons over the contract) stays on Opus. Keep
