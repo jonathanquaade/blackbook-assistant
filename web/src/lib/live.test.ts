@@ -170,6 +170,10 @@ test("brief parsing, tsquery and fusion", () => {
   assert.deepEqual(parseLiveBrief("Work inspired by designers from Porto Rocha").locations, []);
   assert.deepEqual(parseLiveBrief("Designers in the UK or US").locations, ["United Kingdom", "United States"]);
   assert.deepEqual(parseLiveBrief("Designers in Japan, the UK, and LA").locations, ["Japan", "United Kingdom", "United States"]);
+  assert.deepEqual(parseLiveBrief("Designers in Berlin, US").locations, ["Germany", "United States"]);
+  const clientMarket = parseLiveBrief("Identity designers in Berlin, US client experience preferred");
+  assert.deepEqual(clientMarket.locations, ["Germany"]);
+  assert.ok(clientMarket.terms.includes("client"));
   assert.deepEqual(parseLiveBrief("Designers near Porto and GB", ["location:Portugal"]).locations, ["United Kingdom"]);
   assert.deepEqual(parseLiveBrief("Show us packaging designers").locations, []);
   assert.equal(toTsQuery(["type", "a", "o'neil"]), "type:* | oneil:*");
