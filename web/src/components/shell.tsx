@@ -25,7 +25,7 @@ import { AddDialog } from "./add-dialog";
 import { Modal } from "./modal";
 import { useWorkspace } from "./workspace-provider";
 
-export function Shell({ children }: { children: ReactNode }) {
+export function Shell({ children, liveEnabled }: { children: ReactNode; liveEnabled: boolean }) {
   const path = usePathname();
   const { state, hydrated, notice, notify, reset } = useWorkspace();
   const [addOpen, setAddOpen] = useState(false);
@@ -45,6 +45,7 @@ export function Shell({ children }: { children: ReactNode }) {
       : path === "/shortlist"
         ? "Shortlist"
         : "Explore";
+  const liveExplore = liveEnabled && view === "Explore";
   function toggleTheme() {
     const root = document.documentElement;
     const theme = root.dataset.theme === "dark" ? "light" : "dark";
@@ -170,7 +171,7 @@ export function Shell({ children }: { children: ReactNode }) {
           </div>
         </header>
         <div className="preview-strip">
-          {notice ? (
+          {notice && !liveExplore ? (
             <div className="workspace-notice" role="status">
               <CheckCheck size={17} />
               <span>
@@ -184,6 +185,11 @@ export function Shell({ children }: { children: ReactNode }) {
                 <X size={14} />
               </button>
             </div>
+          ) : liveExplore ? (
+            <span>
+              <ShieldCheck size={12} />
+              <strong>Live Explore</strong> Your Verified Notion profiles rated 4 or 5. Nothing writes to Notion.
+            </span>
           ) : (
             <>
               <span>
@@ -210,10 +216,15 @@ export function Shell({ children }: { children: ReactNode }) {
       <Modal
         open={aboutOpen}
         onOpenChange={setAboutOpen}
-        title="A first look at Blackbook"
-        description="Slice 0 · a private, interactive product sandbox"
+        title={liveExplore ? "What’s connected?" : "A first look at Blackbook"}
+        description={liveExplore ? "Stage 1 · private, read-only Explore" : "Slice 0 · a private, interactive product sandbox"}
       >
-        <div className="about-content">
+        {liveExplore ? (
+          <div className="about-content">
+            <p>Explore searches your Verified Notion profiles rated 4 or 5. Notion stays the source of truth, and Blackbook does not write to it.</p>
+            <p>Shortlist, Review and Add for review still use demo data in this browser.</p>
+          </div>
+        ) : <div className="about-content">
           <div className="quiet-callout">
             <ShieldCheck size={20} />
             <p>
@@ -250,7 +261,7 @@ export function Shell({ children }: { children: ReactNode }) {
           >
             <RotateCcw size={14} /> Reset demo
           </button>
-        </div>
+        </div>}
       </Modal>
       <Modal
         open={resetOpen}

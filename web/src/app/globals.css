@@ -2553,6 +2553,11 @@ main {
 .profile-intro > div {
   max-width: 550px;
 }
+.profile-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
 .profile-intro p {
   font-size: 17px;
   line-height: 1.7;
@@ -2615,6 +2620,10 @@ main {
 .profile-projects figure {
   margin: 0;
   min-width: 0;
+}
+.profile-project-images {
+  display: grid;
+  gap: 6px;
 }
 .profile-projects .artwork {
   aspect-ratio: 1.25;
@@ -3713,4 +3722,18 @@ main {
 }
 .pending-edits .field-diff:last-child {
   padding-bottom: 0;
+}
+
+.art-photo {
+  background: var(--surface-2, #f1efe9);
+}
+.art-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.result-groups.is-loading {
+  opacity: 0.55;
+  transition: opacity 0.2s;
 }
