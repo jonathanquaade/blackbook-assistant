@@ -168,10 +168,15 @@ test("brief parsing, tsquery and fusion", () => {
   assert.ok(studio.terms.includes("porto"));
   assert.deepEqual(parseLiveBrief("Designers based in Porto").locations, ["Portugal"]);
   assert.deepEqual(parseLiveBrief("Work inspired by designers from Porto Rocha").locations, []);
+  assert.deepEqual(parseLiveBrief("Identity designers from Porto-Rocha-style studios").locations, []);
+  assert.deepEqual(parseLiveBrief("Identity designers from Porto‑Rocha-style studios").locations, []);
+  assert.deepEqual(parseLiveBrief("Identity designers from Porto-based studios").locations, ["Portugal"]);
   assert.deepEqual(parseLiveBrief("Designers in the UK or US").locations, ["United Kingdom", "United States"]);
+  assert.deepEqual(parseLiveBrief("Packaging designers in the UK\u2014or the US").locations, ["United Kingdom", "United States"]);
   assert.deepEqual(parseLiveBrief("Designers in Japan, the UK, and LA").locations, ["Japan", "United Kingdom", "United States"]);
   assert.deepEqual(parseLiveBrief("Designers in Berlin, US").locations, ["Germany", "United States"]);
   assert.deepEqual(parseLiveBrief("Designers in Berlin, the UK with packaging experience").locations, ["Germany", "United Kingdom"]);
+  assert.deepEqual(parseLiveBrief("Designers in Berlin, UK\u2014with packaging experience").locations, ["Germany", "United Kingdom"]);
   assert.deepEqual(parseLiveBrief("Designers in Berlin, UK who do packaging").locations, ["Germany", "United Kingdom"]);
   assert.deepEqual(parseLiveBrief("Designers in Berlin, UK working in packaging").locations, ["Germany", "United Kingdom"]);
   for (const qualifier of ["for a packaging project", "working remotely", "specializing primarily in packaging"]) {

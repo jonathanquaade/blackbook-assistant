@@ -30,7 +30,7 @@ const locationsByName = [
 ];
 const locationNames = new Map(locationsByName.flatMap(([name, aliases]) => aliases.map((alias) => [alias, name] as const)));
 const locationPrefix = new RegExp("^\\s*(?:the\\s+)?(" +
-  [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[\\s,\\p{Pd}])", "u");
+  [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[-\\s,])");
 const locationSeparator = /^(?:\s*,\s*(?:(?:and|or)\s+)?|\s+(?:and|or)\s+)/;
 const briefQualifier = /^\s+(?:with|without|who|that|for|working\s+(?:remotely|independently)|(?:working|speciali[sz]ing)\s+(?:[a-z]+ly\s+)*(?:in|on|at|for|with|from|across))(?=$|[\s,])/;
 
@@ -48,8 +48,10 @@ export interface LiveBrief {
 
 export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
   const intent = interpretBrief(query);
-  const lower = query.toLowerCase().replace(/[^\p{L}\p{N}\s,\p{Pd}]/gu, " ")
-    .replace(/(?<![\p{L}\p{N}])\p{Pd}|\p{Pd}(?![\p{L}\p{N}])/gu, " ").replace(/\s+/g, " ");
+  const lower = query.toLowerCase().replace(/[\u2010\u2011]/g, "-")
+    .replace(/[^-\p{L}\p{N}\s,]/gu, " ")
+    .replace(/(?<![\p{L}\p{N}])-|-(?![\p{L}\p{N}])/gu, " ")
+    .replace(/\s+/g, " ");
   const locationWords = new Set<string>();
   const locations = new Set<string>();
   const addLocation = (alias: string) => {
@@ -64,7 +66,7 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
       rest = rest.slice(match[0].length);
       const alias = match[1];
       const separator = locationSeparator.exec(rest);
-      if (alias === "porto" && /^\s+rocha\b/.test(rest)) break;
+      if (alias === "porto" && /^[-\s]+rocha\b/.test(rest)) break;
       if (afterBareComma && alias.length <= 2 && rest.trim() && !separator && !briefQualifier.test(rest)) break;
       addLocation(alias);
       if (!separator) break;
@@ -72,7 +74,7 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
       rest = rest.slice(separator[0].length);
     }
   }
-  const words = " " + lower.replace(/[,\s\p{Pd}]+/gu, " ") + " ";
+  const words = " " + lower.replace(/[-,\s]+/g, " ") + " ";
   for (const alias of locationNames.keys()) {
     if (alias.length > 2 && alias !== "porto" && words.includes(" " + alias + " ")) addLocation(alias);
   }
