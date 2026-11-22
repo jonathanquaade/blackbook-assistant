@@ -15,7 +15,7 @@ async function main() {
   const fromBackup = process.argv.includes("--from-backup");
   if (!process.env.VERCEL && process.env.BLACKBOOK_BUILD_INDEX !== "1") return console.log("Index build skipped (not on Vercel).");
   const { liveSetting } = await import("../src/lib/live/config");
-  if (!ownerPassword()) return console.log("Index build skipped: live mode disabled (BLACKBOOK_OWNER_PASSWORD missing or under 20 characters).");
+  if (!ownerPassword()) return console.log("Index build skipped: live mode disabled (BLACKBOOK_OWNER_PASSWORD missing or under 12 characters).");
   if (!fromBackup && !liveSetting("NOTION_API_KEY")) return console.log("Index build skipped: NOTION_API_KEY is not set. Live mode will report no index.");
   process.env.BLACKBOOK_MODEL_DIR ??= path.join(bundleDir(), "models");
   const { buildBundle } = await import("../src/lib/live/build-bundle");

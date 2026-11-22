@@ -1,11 +1,11 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { liveSetting } from "./config";
 
-export const MIN_PASSWORD_LENGTH = 20;
+export const MIN_PASSWORD_LENGTH = 12;
 const warned = globalThis as unknown as { __blackbookShortPasswordWarned?: boolean };
 
 /**
- * The owner password, or null when live mode is off. A password shorter than 20 characters is
+ * The owner password, or null when live mode is off. A password shorter than 12 characters is
  * treated as absent (live mode stays disabled) so a guessable value never protects real data.
  */
 export function ownerPassword() {
@@ -44,7 +44,7 @@ export function isOwner(authorization: string | null, password: string) {
  * Best-effort throttle for wrong passwords: the Nth recent failure from one client address waits
  * 250ms * 2^(N-1), capped at 8s, before the 401 is sent. State is per process memory, so on
  * serverless it resets whenever an instance is recycled and is not shared between instances. It
- * slows casual guessing only; the 20 character minimum password is the real protection.
+ * slows casual guessing only; the 12 character minimum random password is the real protection.
  */
 export function createFailureTracker(now: () => number = Date.now, windowMs = 15 * 60_000, maxClients = 500) {
   const failures = new Map<string, { count: number; last: number }>();

@@ -234,12 +234,12 @@ async function withEnv<T>(env: Record<string, string | undefined>, run: () => Pr
 const post = (body: string, headers: Record<string, string> = {}) =>
   new Request("https://blackbook.test/api/search", { method: "POST", body, headers: { "x-forwarded-proto": "https", "content-type": "application/json", ...headers } });
 
-test("a password under 20 characters keeps live mode off", async () => {
+test("a password under 12 characters keeps live mode off", async () => {
   const { ownerPassword } = await import("./live/auth");
-  await withEnv({ BLACKBOOK_OWNER_PASSWORD: "short-password", BLACKBOOK_REPO_ROOT: os.tmpdir() }, async () => {
+  await withEnv({ BLACKBOOK_OWNER_PASSWORD: "short-pw", BLACKBOOK_REPO_ROOT: os.tmpdir() }, async () => {
     assert.equal(ownerPassword(), null);
     const { POST } = await import("../app/api/search/route");
-    const response = await POST(post('{"query":"x"}', { authorization: basic("jonathan:short-password") }));
+    const response = await POST(post('{"query":"x"}', { authorization: basic("jonathan:short-pw") }));
     assert.equal(response.status, 404);
   });
   await withEnv({ BLACKBOOK_OWNER_PASSWORD: PASSWORD, BLACKBOOK_REPO_ROOT: os.tmpdir() }, async () => {
