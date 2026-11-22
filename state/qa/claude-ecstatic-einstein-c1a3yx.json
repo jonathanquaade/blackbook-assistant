@@ -87,5 +87,39 @@
         "issue": "Live configured with wrong Notion creds now fails the build (exit 1). First-ever production deploy then fails with no previous deploy to fall back on; acceptable, fails loudly, fixed by correcting env vars. Does not affect skip paths (exit 0)."
       }
     ]
-  }
+  },
+  "reviews": [
+    {
+      "commit": "741d567",
+      "date": "2026-11-22",
+      "verdict": "fail",
+      "checks": {
+        "npm ci": "ok",
+        "npm test": "67/67",
+        "lint": "ok",
+        "typecheck": "ok",
+        "build": "ok",
+        "smoke": "12/12 ok"
+      },
+      "findings": [
+        {
+          "severity": "blocking",
+          "file": "web/next.config.ts:8-18",
+          "issue": "/api/search traced files sum to 398 MB unzipped (route.js.nft.json, 617 files). onnxruntime-node/bin/napi-v6/linux/x64 is 319 MB, of which libonnxruntime_providers_cuda.so is 272 MB and tensorrt 1 MB. Over Vercel's 250 MB limit, so deploy will likely fail or the function not ship. Smoke test does not check size.",
+          "fix": "Include only onnxruntime_binding.node and libonnxruntime.so.1 (+ providers_shared) instead of the whole x64 dir (about 126 MB total); drop sharp musl/wasm if possible; add a size assertion to smoke.ts."
+        },
+        {
+          "severity": "nit",
+          "file": "web/scripts/smoke.ts:77-82",
+          "issue": "Smoke runs with Notion unreachable, so /api/search returns 503 before the embed path; the lazy-load/degrade path is not actually exercised, and the test mutates .blackbook-index/index.json."
+        },
+        {
+          "severity": "nit",
+          "file": "web/scripts/smoke.ts",
+          "issue": "No unit test for embed failure degrading; behaviour covered only by existing tests."
+        }
+      ],
+      "hard_rules": "/explore imports summary.ts (bundle, paths, status), no embed/transformers; /api/media imports guard+media only; explore trace 2.2 MB, media 1.9 MB. Auth/eligibility code unchanged in diff; unauth /explore 401 confirmed."
+    }
+  ]
 }
