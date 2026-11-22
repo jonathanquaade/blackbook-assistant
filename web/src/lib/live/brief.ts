@@ -32,7 +32,7 @@ const locationNames = new Map(locationsByName.flatMap(([name, aliases]) => alias
 const locationPrefix = new RegExp("^\\s*(?:the\\s+)?(" +
   [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[\\s,])");
 const locationSeparator = /^(?:\s*,\s*(?:(?:and|or)\s+)?|\s+(?:and|or)\s+)/;
-const briefQualifier = /^\s+(?:with|without|who|that|for|working|speciali[sz]ing)\b/;
+const briefQualifier = /^\s+(?:with|without|who|that|working\s+(?:in|on|at|for)|speciali[sz]ing\s+in)\b/;
 
 export function canonicalLocation(location: string) {
   const value = location.trim().toLowerCase();
