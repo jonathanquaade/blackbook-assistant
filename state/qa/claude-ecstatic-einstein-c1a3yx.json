@@ -3,14 +3,51 @@
   "base": "origin/main",
   "date": "2026-11-22",
   "verdict": "pass",
-  "checks": {"npm ci": "ok", "npm test": "65/65 pass", "lint": "ok", "typecheck": "ok", "build": "ok", "build-index --from-backup": "31 entries from 32 eligible of 862; keyword-only (no network for model); no private field values found in index.json"},
+  "checks": {
+    "npm ci": "ok",
+    "npm test": "65/65 pass",
+    "lint": "ok",
+    "typecheck": "ok",
+    "build": "ok",
+    "build-index --from-backup": "31 entries from 32 eligible of 862; keyword-only (no network for model); no private field values found in index.json"
+  },
   "findings": [
-    {"severity": "important", "file": "web/scripts/build-index.ts:25-30", "issue": "Any index-build failure (Notion down at build time) is swallowed with exit 0, so the hourly redeploy promotes a deployment with no index (503 on every search) over the working one.", "fix": "On Vercel with live configured, exit non-zero on failure so the previous production deployment stays live."},
-    {"severity": "important", "file": ".github/workflows/vercel-preview.yml:23-26,48-53", "issue": "VERCEL_TOKEN is job-level env, so vercel build (runs branch code: prebuild tsx, npm scripts) sees it, plus the pulled preview env (Notion key, owner password). Anyone with push rights to claude/** or devin/** can exfiltrate. Not a fork or pull_request_target risk (push trigger, no fork secrets).", "fix": "Scope the token to the pull and deploy steps, keep preview env free of the production Notion key or use a read-only integration, document that push access equals secret access."},
-    {"severity": "nit", "file": "web/next.config.ts:5-10", "issue": "onnxruntime-node is absent from the traced files of /api/search; could not verify query embedding works on Vercel. Failure degrades to keyword-only with a reported reason, never fixtures.", "fix": "Check the first preview deploy reports mode hybrid."},
-    {"severity": "nit", "file": "web/src/lib/live/eligibility.ts:15,37", "issue": "Full Notion pages (including Notes, Email, Day Rate) are held in memory for signed links. Not written or logged (verified), but unnecessary exposure.", "fix": "Keep only id and Images files; use filter_properties on the query."},
-    {"severity": "nit", "file": "web/src/lib/vercel.test.ts", "issue": "No test drives bundledLookup (media) with a downgraded page or a failed check. Code reads correct (only snapshot pages, throws 503).", "fix": "Add a media lookup test."},
-    {"severity": "nit", "file": "web/src/app/explore/page.tsx", "issue": "Header entry count comes from the bundle, not intersected with live eligibility. Owner only.", "fix": "Accept or label it as index count."}
+    {
+      "severity": "important",
+      "file": "web/scripts/build-index.ts:25-30",
+      "issue": "Any index-build failure (Notion down at build time) is swallowed with exit 0, so the hourly redeploy promotes a deployment with no index (503 on every search) over the working one.",
+      "fix": "On Vercel with live configured, exit non-zero on failure so the previous production deployment stays live."
+    },
+    {
+      "severity": "important",
+      "file": ".github/workflows/vercel-preview.yml:23-26,48-53",
+      "issue": "VERCEL_TOKEN is job-level env, so vercel build (runs branch code: prebuild tsx, npm scripts) sees it, plus the pulled preview env (Notion key, owner password). Anyone with push rights to claude/** or devin/** can exfiltrate. Not a fork or pull_request_target risk (push trigger, no fork secrets).",
+      "fix": "Scope the token to the pull and deploy steps, keep preview env free of the production Notion key or use a read-only integration, document that push access equals secret access."
+    },
+    {
+      "severity": "nit",
+      "file": "web/next.config.ts:5-10",
+      "issue": "onnxruntime-node is absent from the traced files of /api/search; could not verify query embedding works on Vercel. Failure degrades to keyword-only with a reported reason, never fixtures.",
+      "fix": "Check the first preview deploy reports mode hybrid."
+    },
+    {
+      "severity": "nit",
+      "file": "web/src/lib/live/eligibility.ts:15,37",
+      "issue": "Full Notion pages (including Notes, Email, Day Rate) are held in memory for signed links. Not written or logged (verified), but unnecessary exposure.",
+      "fix": "Keep only id and Images files; use filter_properties on the query."
+    },
+    {
+      "severity": "nit",
+      "file": "web/src/lib/vercel.test.ts",
+      "issue": "No test drives bundledLookup (media) with a downgraded page or a failed check. Code reads correct (only snapshot pages, throws 503).",
+      "fix": "Add a media lookup test."
+    },
+    {
+      "severity": "nit",
+      "file": "web/src/app/explore/page.tsx",
+      "issue": "Header entry count comes from the bundle, not intersected with live eligibility. Owner only.",
+      "fix": "Accept or label it as index count."
+    }
   ],
   "hard_rules": {
     "explore_eligibility": "pass: applyEligibility every(pageIds) plus searchEntries re-check; media only from eligible snapshot; merged entries hidden if any page downgraded",
@@ -20,5 +57,35 @@
     "em_dashes": "pass: none in changed text"
   },
   "spec_gate": "Stage 1 live mode approved by Jonathan 2026-11-22",
-  "overfitting": "n/a"
+  "overfitting": "n/a",
+  "recheck": {
+    "commit": "77fd28d",
+    "date": "2026-11-22",
+    "verdict": "pass",
+    "checks": {
+      "npm test": "67/67 pass",
+      "lint": "ok",
+      "typecheck": "ok",
+      "build": "ok"
+    },
+    "resolved": [
+      "index-build exits 1 only after live-configured checks (build-index.ts skips return before failure path)",
+      "VERCEL_TOKEN only on gate, pull, deploy steps; README security note",
+      "eligibility snapshot slimmed to Entry Status/Rating/Images; test asserts keys",
+      "media lookup test covers downgrade, 5 min boundary, fail-closed",
+      "header says 'indexed'"
+    ],
+    "findings": [
+      {
+        "severity": "nit",
+        "file": ".github/workflows/vercel-preview.yml:55",
+        "issue": "vercel build without --token is unverified. It is local and reads .vercel/ from pull (project.json, env), so it should not need auth, but I could not run the Vercel CLI here. Fallback: first preview run fails visibly, nothing unsafe."
+      },
+      {
+        "severity": "nit",
+        "file": "web/scripts/build-index.ts:30",
+        "issue": "Live configured with wrong Notion creds now fails the build (exit 1). First-ever production deploy then fails with no previous deploy to fall back on; acceptable, fails loudly, fixed by correcting env vars. Does not affect skip paths (exit 0)."
+      }
+    ]
+  }
 }
