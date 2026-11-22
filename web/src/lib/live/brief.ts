@@ -32,7 +32,9 @@ const locationNames = new Map(locationsByName.flatMap(([name, aliases]) => alias
 const locationPrefix = new RegExp("^\\s*(?:the\\s+)?(" +
   [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[-\\s,])");
 const locationSeparator = /^(?:\s*,\s*(?:(?:and|or)\s+)?|\s+(?:and|or)\s+)/;
-const exclusiveLocationEnd = /^\s+(?:only|exclusively)(?=\s*(?:$|,)|\s+(?:with|without|who|that)(?=$|[\s,]))/;
+const exclusiveModifier = /^\s+(?:only|exclusively)(?=$|[\s,])/;
+const explicitAlternative = /^(?:\s*,\s*|\s+)or\s+/;
+const marketPurpose = /^\s+for\s+(?:[a-z]+\s+){0,3}(?:client\s+(?:experience|references?)|clients|markets|(?:business|working)\s+hours|time\s+zones?)(?=$|[\s,])/;
 const briefQualifier = /^\s+(?:with|without|who|that|for|working\s+(?:remotely|independently)|(?:working|speciali[sz]ing)\s+(?:[a-z]+ly\s+)*(?:in|on|at|for|with|from|across))(?=$|[\s,])/;
 
 export function canonicalLocation(location: string) {
@@ -67,13 +69,16 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
       rest = rest.slice(match[0].length);
       const alias = match[1];
       if (alias === "porto" && /^[-\s]+rocha\b/.test(rest)) break;
-      const separator = locationSeparator.exec(rest);
-      if (isContinuation && alias.length <= 2 && rest.trim() && !separator &&
-        !briefQualifier.test(rest) && !exclusiveLocationEnd.test(rest)) break;
+      const modifier = exclusiveModifier.exec(rest);
+      const tail = modifier ? rest.slice(modifier[0].length) : rest;
+      const separator = (modifier ? explicitAlternative : locationSeparator).exec(tail);
+      const qualifier = briefQualifier.test(tail) && !(modifier && marketPurpose.test(tail));
+      if (isContinuation && alias.length <= 2 && tail.trim() && !separator &&
+        !qualifier && !(modifier && /^\s*,/.test(tail))) break;
       addLocation(alias);
       if (!separator) break;
       isContinuation = true;
-      rest = rest.slice(separator[0].length);
+      rest = tail.slice(separator[0].length);
     }
   }
   const words = " " + lower.replace(/[-,\s]+/g, " ") + " ";

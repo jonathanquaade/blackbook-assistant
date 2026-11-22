@@ -207,7 +207,10 @@ test("brief parsing, tsquery and fusion", () => {
 });
 
 test("standalone modifiers preserve coordinated locations without admitting client markets", () => {
-  for (const suffix of ["only", "exclusively", "only with packaging experience"]) {
+  for (const suffix of [
+    "only", "exclusively", "only with packaging experience",
+    "only for a packaging project", "only working remotely",
+  ]) {
     const brief = parseLiveBrief(`Packaging designers in the UK or US ${suffix}`);
     assert.deepEqual(brief.locations, ["United Kingdom", "United States"], suffix);
     assert.ok(!brief.terms.includes("us"));
@@ -226,6 +229,12 @@ test("standalone modifiers preserve coordinated locations without admitting clie
     parseLiveBrief("Packaging designers in the UK or US only, remote is fine").locations,
     ["United Kingdom", "United States"],
   );
+  for (const separator of [" or ", ", or "]) {
+    assert.deepEqual(
+      parseLiveBrief(`Packaging designers in the UK only${separator}US with packaging experience`).locations,
+      ["United Kingdom", "United States"],
+    );
+  }
 });
 
 test("search never returns ineligible rows and applies explicit filters", async () => {
