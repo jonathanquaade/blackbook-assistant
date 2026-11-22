@@ -30,9 +30,9 @@ const locationsByName = [
 ];
 const locationNames = new Map(locationsByName.flatMap(([name, aliases]) => aliases.map((alias) => [alias, name] as const)));
 const locationPrefix = new RegExp("^\\s*(?:the\\s+)?(" +
-  [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[\\s,])");
+  [...locationNames.keys()].sort((a, b) => b.length - a.length).join("|") + ")(?=$|[\\s,\\p{Pd}])", "u");
 const locationSeparator = /^(?:\s*,\s*(?:(?:and|or)\s+)?|\s+(?:and|or)\s+)/;
-const briefQualifier = /^\s+(?:with|without|who|that|for|working\s+(?:remotely|independently)|(?:working|speciali[sz]ing)\s+(?:[a-z]+ly\s+)*(?:in|on|at|for|with|from|across))\b/;
+const briefQualifier = /^\s+(?:with|without|who|that|for|working\s+(?:remotely|independently)|(?:working|speciali[sz]ing)\s+(?:[a-z]+ly\s+)*(?:in|on|at|for|with|from|across))(?=$|[\s,])/;
 
 export function canonicalLocation(location: string) {
   const value = location.trim().toLowerCase();
@@ -48,7 +48,8 @@ export interface LiveBrief {
 
 export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
   const intent = interpretBrief(query);
-  const lower = query.toLowerCase().replace(/[^\p{L}\p{N}\s,]/gu, " ").replace(/\s+/g, " ");
+  const lower = query.toLowerCase().replace(/[^\p{L}\p{N}\s,\p{Pd}]/gu, " ")
+    .replace(/(?<![\p{L}\p{N}])\p{Pd}|\p{Pd}(?![\p{L}\p{N}])/gu, " ").replace(/\s+/g, " ");
   const locationWords = new Set<string>();
   const locations = new Set<string>();
   const addLocation = (alias: string) => {
@@ -71,7 +72,7 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
       rest = rest.slice(separator[0].length);
     }
   }
-  const words = " " + lower.replace(/,\s*/g, " ") + " ";
+  const words = " " + lower.replace(/[,\s\p{Pd}]+/gu, " ") + " ";
   for (const alias of locationNames.keys()) {
     if (alias.length > 2 && alias !== "porto" && words.includes(" " + alias + " ")) addLocation(alias);
   }
