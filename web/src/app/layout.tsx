@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Shell } from "@/components/shell";
 import { WorkspaceProvider } from "@/components/workspace-provider";
+import { ownerPassword } from "@/lib/live/auth";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
     "A private creative network. Explore the work, find your people, and curate with care. Interactive sandbox preview.",
   robots: { index: false, follow: false },
 };
+
+export const dynamic = "force-dynamic";
 
 const themeScript = `(function(){try{var t=localStorage.getItem('blackbook-theme');document.documentElement.dataset.theme=t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'}catch(e){}})()`;
 
@@ -25,7 +28,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <WorkspaceProvider>
-          <Shell>{children}</Shell>
+          <Shell liveEnabled={!!ownerPassword()}>{children}</Shell>
         </WorkspaceProvider>
       </body>
     </html>

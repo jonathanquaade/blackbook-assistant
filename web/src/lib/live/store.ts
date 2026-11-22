@@ -116,16 +116,36 @@ export function writeStatus(status: SyncStatus) {
   fs.renameSync(`${statusFile()}.tmp`, statusFile());
 }
 
-const cache = globalThis as unknown as { __blackbookIndex?: { dir: string; db: Promise<PGlite> } };
+interface Snapshot {
+  dir: string;
+  db: Promise<PGlite>;
+  readers: number;
+  retired?: boolean;
+}
+const cache = globalThis as unknown as { __blackbookIndex?: Snapshot };
 
 /** The last good index, reopened when a newer sync lands. Null until the first sync succeeds. */
-export async function openIndex() {
+export async function withIndex<T>(read: (db: PGlite) => Promise<T>) {
   const dir = readStatus().lastGood?.dir;
   if (!dir || !fs.existsSync(dir)) return null;
   if (cache.__blackbookIndex?.dir !== dir) {
     const previous = cache.__blackbookIndex;
-    cache.__blackbookIndex = { dir, db: PGlite.create({ dataDir: dir, extensions: { vector } }) };
-    previous?.db.then((db) => db.close()).catch(() => {});
+    cache.__blackbookIndex = { dir, db: PGlite.create({ dataDir: dir, extensions: { vector } }), readers: 0 };
+    if (previous) {
+      previous.retired = true;
+      if (!previous.readers) closeSnapshot(previous);
+    }
   }
-  return cache.__blackbookIndex.db;
+  const snapshot = cache.__blackbookIndex;
+  snapshot.readers++;
+  try {
+    return await read(await snapshot.db);
+  } finally {
+    snapshot.readers--;
+    if (snapshot.retired && !snapshot.readers) closeSnapshot(snapshot);
+  }
+}
+
+function closeSnapshot(snapshot: Snapshot) {
+  snapshot.db.then((db) => db.close()).catch(() => {});
 }

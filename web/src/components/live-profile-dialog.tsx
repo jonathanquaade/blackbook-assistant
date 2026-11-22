@@ -8,7 +8,7 @@ import { WorkImage } from "./work-image";
 export const notionUrl = (pageId: string) => `https://www.notion.so/${pageId.replace(/-/g, "")}`;
 
 export function LiveProfileDialog({ result, onClose }: { result: LiveResult | null; onClose: () => void }) {
-  const work = result?.projects.filter((project) => !project.contextShot && project.images.length) ?? [];
+  const work = result?.projects.filter((project) => !project.contextShot && (project.images.length || project.link)) ?? [];
   const context = result?.projects.filter((project) => project.contextShot && project.images.length) ?? [];
   return (
     <Modal
@@ -32,9 +32,13 @@ export function LiveProfileDialog({ result, onClose }: { result: LiveResult | nu
                 {result.workStatus === "Unknown" ? "Work status unknown" : result.workStatus}
               </span>
             </div>
-            <a className="button secondary" href={notionUrl(result.pageIds[0])} target="_blank" rel="noreferrer">
-              Open in Notion <ArrowUpRight size={14} />
-            </a>
+            <div className="profile-source-links">
+              {result.pageIds.map((pageId, index) => (
+                <a key={pageId} className="button secondary" href={notionUrl(pageId)} target="_blank" rel="noreferrer">
+                  {result.pageIds.length === 1 ? "Open in Notion" : `Open Notion source ${index + 1}`} <ArrowUpRight size={14} />
+                </a>
+              ))}
+            </div>
           </div>
           <div className="tag-list">
             <span className="tag">Verified · {result.rating}</span>
@@ -67,14 +71,23 @@ export function LiveProfileDialog({ result, onClose }: { result: LiveResult | nu
           <div className="profile-projects">
             {[...work, ...context].map((project, index) => (
               <figure key={`${project.caption}-${index}`}>
-                <WorkImage image={project.images[0]} alt={project.caption ?? `${result.name} work`} />
+                {project.images.length > 0 && (
+                  <div className="profile-project-images">
+                    {project.images.map((image, imageIndex) => (
+                      <WorkImage
+                        key={`${image.pageId}/${image.file}`}
+                        image={image}
+                        alt={`${project.caption ?? `${result.name} work`}${project.images.length > 1 ? `, image ${imageIndex + 1}` : ""}`}
+                      />
+                    ))}
+                  </div>
+                )}
                 <figcaption>
                   <strong>{project.caption ?? "Uncaptioned work"}</strong>
-                  {project.images.length > 1 && <p>{project.images.length} images</p>}
                   {project.link && (
                     <small>
                       <a href={project.link} target="_blank" rel="noreferrer">
-                        Source <ArrowUpRight size={11} />
+                        {project.images.length ? "Source" : "Open project"} <ArrowUpRight size={11} />
                       </a>
                     </small>
                   )}

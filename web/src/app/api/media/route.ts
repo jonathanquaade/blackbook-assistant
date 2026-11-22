@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
   try {
     const url = await signedImageUrl(page, file);
     if (!url) return new NextResponse(null, { status: 404 });
-    return NextResponse.redirect(url, { status: 302, headers: { "Cache-Control": "private, max-age=600" } });
+    return NextResponse.redirect(url, { status: 302, headers: { "Cache-Control": "private, no-store" } });
   } catch {
     return new NextResponse(null, { status: 503 });
   }

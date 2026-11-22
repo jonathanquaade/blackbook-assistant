@@ -1,7 +1,7 @@
 import { interpretBrief } from "../search";
 
 const LOCATION_ALIASES: Record<string, string[]> = {
-  "United Kingdom": ["uk", "united kingdom", "britain", "british", "england", "london", "scotland"],
+  "United Kingdom": ["uk", "gb", "united kingdom", "britain", "british", "england", "london", "scotland"],
   "United States": ["us", "usa", "united states", "america", "american", "new york", "nyc", "los angeles", "la"],
   France: ["france", "french", "paris"],
   Germany: ["germany", "german", "berlin"],
@@ -12,11 +12,27 @@ const LOCATION_ALIASES: Record<string, string[]> = {
   Poland: ["poland", "polish", "warsaw"],
   "South Korea": ["south korea", "korea", "korean", "seoul"],
   Russia: ["russia", "russian", "moscow"],
+  Japan: ["japan", "tokyo", "osaka"],
+  "United Arab Emirates": ["united arab emirates", "uae", "dubai", "abu dhabi"],
 };
+
+const SOURCE_COUNTRIES = [
+  "Argentina", "Armenia", "Australia", "Belgium", "Bosnia and Herzegovina", "Brazil",
+  "Canada", "China", "Colombia", "Costa Rica", "Czech Republic", "Denmark", "Estonia",
+  "Finland", "Ghana", "Greece", "Hong Kong", "Hungary", "Iceland", "India", "Ireland",
+  "Israel", "Italy", "Kenya", "Malaysia", "Mexico", "New Zealand", "Nigeria", "Norway",
+  "Pakistan", "Qatar", "Singapore", "Slovakia", "Slovenia", "South Africa", "Sweden",
+  "Switzerland", "Taiwan", "Uganda", "Ukraine", "Uruguay", "Vietnam",
+];
+const locationsByName = [
+  ...Object.entries(LOCATION_ALIASES),
+  ...SOURCE_COUNTRIES.map((name): [string, string[]] => [name, [name.toLowerCase()]]),
+];
+const contextualAliases = new Set(["porto"]);
 
 export function canonicalLocation(location: string) {
   const value = location.trim().toLowerCase();
-  const match = Object.entries(LOCATION_ALIASES).find(
+  const match = locationsByName.find(
     ([name, aliases]) => name.toLowerCase() === value || aliases.includes(value),
   );
   return match ? match[0] : location.trim();
@@ -33,10 +49,12 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
   const intent = interpretBrief(query);
   const lower = ` ${query.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ")} `;
   const locationWords = new Set<string>();
-  const locations = Object.entries(LOCATION_ALIASES)
+  const locations = locationsByName
     .filter(([, aliases]) =>
       aliases.some((alias) => {
-        const hit = alias.length > 2 && lower.includes(` ${alias} `);
+        const hit = alias.length <= 2 || contextualAliases.has(alias)
+          ? new RegExp(` (?:in|from|near|around|across) (?:the )?${alias} `).test(lower)
+          : lower.includes(` ${alias} `);
         if (hit) alias.split(" ").forEach((word) => locationWords.add(word));
         return hit;
       }),

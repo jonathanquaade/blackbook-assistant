@@ -6,7 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { repoRoot } from "../src/lib/live/paths";
 import { runSearch } from "../src/lib/live/service";
-import { openIndex } from "../src/lib/live/store";
+import { withIndex } from "../src/lib/live/store";
 
 interface Brief {
   id: string;
@@ -20,8 +20,11 @@ const norm = (value: string) => value.toLowerCase().normalize("NFKD").replace(/\
 async function main() {
   const benchmark = JSON.parse(fs.readFileSync(path.join(repoRoot(), "blackbook", "shortlist-benchmark.json"), "utf8"));
   const briefs: Brief[] = benchmark.briefs;
-  const db = (await openIndex())!;
-  const { rows } = await db.query<{ name: string; status: string; rating: number }>("select name, status, rating from entries");
+  const snapshot = await withIndex((db) =>
+    db.query<{ name: string; status: string; rating: number }>("select name, status, rating from entries"),
+  );
+  if (!snapshot) throw new Error("No search index; run npm run sync first.");
+  const { rows } = snapshot;
   const indexed = new Set(rows.map((row) => norm(row.name)));
   const lines: string[] = [];
   const summary: Record<string, { useful: number; answerable: number; noStrong: number; ineligible: number; times: number[] }> = {};

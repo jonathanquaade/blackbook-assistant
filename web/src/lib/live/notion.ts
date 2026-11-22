@@ -1,11 +1,12 @@
 import type { NotionPage } from "./projection";
+import { liveSetting } from "./config";
 
 const VERSION = "2022-06-28";
-export const databaseId = () => process.env.NOTION_DATABASE_ID ?? "50cacdf6-02f6-4685-942a-55d26caa27a9";
+export const databaseId = () => liveSetting("NOTION_DATABASE_ID") ?? "50cacdf6-02f6-4685-942a-55d26caa27a9";
 
 /** Read-only Notion client: database query and page retrieve. It never writes. */
 async function notion<T>(pathname: string, init: { method: "GET" | "POST"; body?: unknown }): Promise<T> {
-  const token = process.env.NOTION_API_KEY;
+  const token = liveSetting("NOTION_API_KEY");
   if (!token) throw new Error("NOTION_API_KEY is not set");
   for (let attempt = 0; ; attempt++) {
     const response = await fetch(`https://api.notion.com/v1/${pathname}`, {
@@ -13,6 +14,7 @@ async function notion<T>(pathname: string, init: { method: "GET" | "POST"; body?
       headers: { Authorization: `Bearer ${token}`, "Notion-Version": VERSION, "Content-Type": "application/json" },
       body: init.body ? JSON.stringify(init.body) : undefined,
       cache: "no-store",
+      signal: AbortSignal.timeout(15_000),
     });
     if (response.status === 429 && attempt < 3) {
       await new Promise((resolve) => setTimeout(resolve, Number(response.headers.get("retry-after") ?? 1) * 1000));
@@ -45,6 +47,8 @@ export async function queryEligiblePages() {
       },
     );
     pages.push(...result.results);
+    if (result.has_more && (!result.next_cursor || result.next_cursor === cursor))
+      throw new Error("Notion returned an invalid pagination cursor");
     cursor = result.has_more ? (result.next_cursor ?? undefined) : undefined;
   } while (cursor);
   return pages;

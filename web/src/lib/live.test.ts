@@ -1,13 +1,19 @@
 import assert from "node:assert/strict";
+import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import test from "node:test";
+import { isOwner } from "./live/auth";
 import { parseLiveBrief, reciprocalRankFusion, toTsQuery } from "./live/brief";
+import { liveSetting } from "./live/config";
+import { createMediaLookup } from "./live/media";
 import { EMBEDDING_MODEL } from "./live/model";
 import { embeddingInputs, mergeDuplicates, projectPage, readEligibility, type NotionPage } from "./live/projection";
 import { searchIndex } from "./live/search";
 import { createDb, writeEntries, writeVectors } from "./live/store";
 
 const rich = (value: string) => [{ plain_text: value }];
-function page(id: string, name: string, extra: { status?: string; rating?: string | null; capabilities?: string[]; work?: string; notes?: string; images?: string[] } = {}): NotionPage {
+function page(id: string, name: string, extra: { status?: string; rating?: string | null; capabilities?: string[]; work?: string; notes?: string; images?: string[]; country?: string } = {}): NotionPage {
   return {
     id,
     last_edited_time: "2026-11-01T00:00:00.000Z",
@@ -18,13 +24,61 @@ function page(id: string, name: string, extra: { status?: string; rating?: strin
       Type: { type: "select", select: { name: "Person" } },
       Capabilities: { type: "multi_select", multi_select: (extra.capabilities ?? ["Type design"]).map((item) => ({ name: item })) },
       "Work Status": { type: "select", select: { name: extra.work ?? "Freelance" } },
-      Country: { type: "multi_select", multi_select: [{ name: "Germany" }] },
+      Country: { type: "multi_select", multi_select: [{ name: extra.country ?? "Germany" }] },
       Notes: { type: "rich_text", rich_text: rich(extra.notes ?? "PRIVATE NOTE day rate 900") },
       Email: { type: "email", email: "private@example.com" },
       Images: { type: "files", files: (extra.images ?? ["a.jpg"]).map((file) => ({ name: file, type: "file" })) },
     },
   };
 }
+
+test("live configuration falls back to root .env, with exported overrides", (t) => {
+  const root = mkdtempSync(path.join(os.tmpdir(), "blackbook-settings-"));
+  const original = process.env.BLACKBOOK_REPO_ROOT;
+  const setting = "BLACKBOOK_TEST_CONFIG_VALUE";
+  process.env.BLACKBOOK_REPO_ROOT = root;
+  t.after(() => {
+    if (original === undefined) delete process.env.BLACKBOOK_REPO_ROOT;
+    else process.env.BLACKBOOK_REPO_ROOT = original;
+    delete process.env[setting];
+    rmSync(root, { recursive: true, force: true });
+  });
+  writeFileSync(path.join(root, ".env"), `${setting}="file value"\n`);
+  assert.equal(liveSetting(setting), "file value");
+  process.env[setting] = "exported value";
+  assert.equal(liveSetting(setting), "exported value");
+});
+
+test("only the configured owner credential grants live access", () => {
+  const basic = (s: string) => `Basic ${Buffer.from(s).toString("base64")}`;
+  assert.equal(isOwner(null, "demo"), false);
+  assert.equal(isOwner(basic("visitor:demo"), "demo"), false);
+  assert.equal(isOwner(basic("jonathan:other"), "demo"), false);
+  assert.equal(isOwner(basic("jonathan:demo"), "demo"), true);
+});
+
+test("media rechecks eligibility after a sync and never serves an expired cache", async () => {
+  let now = Date.parse("2026-11-21T00:00:00.000Z");
+  let generation = "first";
+  const item = page("1", "Ada");
+  item.properties.Images.files = [{ type: "file", name: "a.jpg", file: {
+    url: "https://example.test/image",
+    expiry_time: new Date(now + 60 * 60_000).toISOString(),
+  } }];
+  let pages = [item];
+  let reads = 0;
+  const lookup = createMediaLookup(async () => { reads++; return pages; }, () => generation, () => now);
+  assert.equal(await lookup("1", "a.jpg"), "https://example.test/image");
+  assert.equal(await lookup("1", "a.jpg"), "https://example.test/image");
+  assert.equal(reads, 1);
+  pages = [{ ...item, properties: { ...item.properties, Rating: { type: "select", select: { name: "3" } } } }];
+  generation = "second";
+  assert.equal(await lookup("1", "a.jpg"), null);
+  pages = [item];
+  now += 60_000;
+  assert.equal(await lookup("1", "a.jpg"), "https://example.test/image");
+  assert.equal(reads, 3);
+});
 
 test("only Verified entries rated 4 or 5 are eligible", () => {
   assert.equal(readEligibility(page("1", "A")).eligible, true);
@@ -52,6 +106,19 @@ test("manifest images removed from Notion are not shown", () => {
   assert.deepEqual(entry.projects.map((project) => project.caption), ["Current"]);
 });
 
+test("linked projects without photos and all current project images are preserved", () => {
+  const entry = projectPage(page("1", "Ada", { images: ["a.jpg", "b.jpg", "removed.jpg"] }), [
+    { type: "embed", caption: "Sound work", url: "https://vimeo.com/123" },
+    { file: "a.jpg", caption: "Print work" },
+    { file: "b.jpg", caption: "Print work" },
+    { file: "removed.jpg", caption: "Removed", rejected: true },
+  ]);
+  assert.deepEqual(entry.projects.map((project) => [project.caption, project.link, project.images.length]), [
+    ["Sound work", "https://vimeo.com/123", 0],
+    ["Print work", null, 2],
+  ]);
+});
+
 test("duplicate pages for one person merge into one result", () => {
   const merged = mergeDuplicates([projectPage(page("1", "Ada Lovelace"), []), projectPage(page("2", "Ada  Lovelace"), [])]);
   assert.equal(merged.length, 1);
@@ -63,6 +130,10 @@ test("brief parsing, tsquery and fusion", () => {
   assert.equal(brief.freelance, true);
   assert.deepEqual(brief.locations, ["Germany"]);
   assert.ok(!brief.terms.includes("berlin"));
+  const studio = parseLiveBrief("Senior ex-COLLINS or Porto Rocha level identity designer");
+  assert.deepEqual(studio.locations, []);
+  assert.ok(studio.terms.includes("porto"));
+  assert.deepEqual(parseLiveBrief("Designers based in Porto").locations, ["Portugal"]);
   assert.equal(toTsQuery(["type", "a", "o'neil"]), "type:* | oneil:*");
   assert.equal(toTsQuery([]), null);
   const scores = reciprocalRankFusion([["a", "b"], ["b"]]);
@@ -72,7 +143,7 @@ test("brief parsing, tsquery and fusion", () => {
 test("search never returns ineligible rows and applies explicit filters", async () => {
   const db = await createDb();
   const entries = [
-    projectPage(page("1", "Ada", { capabilities: ["Type design"] }), [{ file: "a.jpg", caption: "Bakery packaging type" }]),
+    projectPage(page("1", "Ada", { capabilities: ["Type design"], country: "UK" }), [{ file: "a.jpg", caption: "Bakery packaging type" }]),
     projectPage(page("2", "Ben", { capabilities: ["Photography"], work: "Employed" }), [{ file: "a.jpg", caption: "Fashion campaign" }]),
     { ...projectPage(page("3", "Cy", { capabilities: ["Type design"] }), [{ file: "a.jpg", caption: "Bakery packaging type" }]), rating: 3 },
   ];
@@ -91,5 +162,12 @@ test("search never returns ineligible rows and applies explicit filters", async 
   assert.deepEqual(freelance.results.map((result) => result.name), []);
   const browse = await searchIndex(db, { query: "" });
   assert.deepEqual(browse.results.map((result) => result.name).sort(), ["Ada", "Ben"]);
+  const japan = await searchIndex(db, { query: "Freelance Arabic type designer based in Japan" });
+  assert.deepEqual(japan.results, []);
+  assert.deepEqual(japan.brief.locations, ["Japan"]);
+  const uk = await searchIndex(db, { query: "Type designer in the UK" });
+  assert.deepEqual(uk.results.map((result) => result.name), ["Ada"]);
+  const germany = await searchIndex(db, { query: "Type designer in Berlin" });
+  assert.deepEqual(germany.results, []);
   await db.close();
 });

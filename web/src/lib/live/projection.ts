@@ -19,6 +19,7 @@ export interface ManifestItem {
   file?: string;
   caption?: string;
   link?: string;
+  url?: string;
   rejected?: boolean;
   context_shot?: boolean;
   type?: string;
@@ -94,19 +95,24 @@ export const isContextShot = (item: ManifestItem) =>
   Boolean(item.context_shot) || /^(instagram|website|behance)\b/i.test(item.caption ?? "");
 
 function projectsFor(page: NotionPage, manifest: ManifestItem[]) {
-  const current = files(page.properties["Images"]);
+  const rejected = new Set(manifest.filter((item) => item.rejected).map((item) => item.file));
+  const current = files(page.properties["Images"]).filter((file) => !rejected.has(file));
   const byCaption = new Map<string, IndexedProject>();
   const projects: IndexedProject[] = [];
   const placed = new Set<string>();
   for (const item of manifest) {
     if (item.rejected || !item.caption) continue;
     if (item.file && !current.includes(item.file)) continue;
+    const link = safeProjectUrl(item.link ?? "") ?? (
+      item.type === "embed" || item.type === "bookmark" ? safeProjectUrl(item.url ?? "") : null
+    );
     let project = byCaption.get(item.caption);
     if (!project) {
-      project = { idx: projects.length, caption: item.caption, link: item.link ?? null, images: [], contextShot: isContextShot(item) };
+      project = { idx: projects.length, caption: item.caption, link, images: [], contextShot: isContextShot(item) };
       byCaption.set(item.caption, project);
       projects.push(project);
     }
+    project.link ??= link;
     if (item.file && !placed.has(item.file)) {
       project.images.push({ pageId: page.id, file: item.file });
       placed.add(item.file);
@@ -116,6 +122,15 @@ function projectsFor(page: NotionPage, manifest: ManifestItem[]) {
   if (unlisted.length)
     projects.push({ idx: projects.length, caption: null, link: null, contextShot: false, images: unlisted.map((file) => ({ pageId: page.id, file })) });
   return projects;
+}
+
+function safeProjectUrl(value: string) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+  } catch {
+    return null;
+  }
 }
 
 export function projectPage(
@@ -153,11 +168,14 @@ export function mergeDuplicates(entries: IndexedEntry[]) {
   return [...groups.values()].map((group) => {
     const [primary, ...rest] = [...group].sort((a, b) => b.lastEdited.localeCompare(a.lastEdited));
     if (!rest.length) return primary;
-    const projects = [...primary.projects];
+    const projects = primary.projects.map((project) => ({ ...project, images: [...project.images] }));
     for (const other of rest)
       for (const project of other.projects) {
         const same = project.caption && projects.find((item) => item.caption === project.caption);
-        if (same) same.images.push(...project.images);
+        if (same) {
+          same.link ??= project.link;
+          same.images.push(...project.images);
+        }
         else projects.push({ ...project, idx: projects.length });
       }
     return {
