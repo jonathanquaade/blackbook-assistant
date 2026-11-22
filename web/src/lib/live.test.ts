@@ -206,6 +206,17 @@ test("brief parsing, tsquery and fusion", () => {
   assert.ok(scores.get("b")! > scores.get("a")!);
 });
 
+test("standalone modifiers preserve coordinated locations without admitting client markets", () => {
+  for (const suffix of ["only", "exclusively", "only with packaging experience"]) {
+    const brief = parseLiveBrief(`Packaging designers in the UK or US ${suffix}`);
+    assert.deepEqual(brief.locations, ["United Kingdom", "United States"], suffix);
+    assert.ok(!brief.terms.includes("us"));
+  }
+  const market = parseLiveBrief("Packaging designers in the UK, and US only recently became a client market");
+  assert.deepEqual(market.locations, ["United Kingdom"]);
+  assert.ok(market.terms.includes("us"));
+});
+
 test("search never returns ineligible rows and applies explicit filters", async () => {
   const db = await createDb();
   const entries = [
