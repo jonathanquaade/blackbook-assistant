@@ -211,6 +211,7 @@ test("standalone modifiers preserve coordinated locations without admitting clie
     "only", "exclusively", "only with packaging experience",
     "only for a packaging project", "only working remotely",
     "for a timezone converter app", "only for a client experience redesign",
+    "for an app tracking working hours when offline",
   ]) {
     const brief = parseLiveBrief(`Packaging designers in the UK or US ${suffix}`);
     assert.deepEqual(brief.locations, ["United Kingdom", "United States"], suffix);
@@ -233,6 +234,7 @@ test("standalone modifiers preserve coordinated locations without admitting clie
     "Berlin, US only for time-zone overlap when possible",
     "Berlin only, or US for prior client references",
     "Berlin, US only for client references if available",
+    "Berlin, US only for some relevant client experience",
   ]) {
     const brief = parseLiveBrief(`Packaging designers in ${preference}`);
     assert.deepEqual(brief.locations, ["Germany"], preference);
