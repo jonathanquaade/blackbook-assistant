@@ -185,6 +185,11 @@ test("brief parsing, tsquery and fusion", () => {
   const clientMarket = parseLiveBrief("Identity designers in Berlin, US client experience preferred");
   assert.deepEqual(clientMarket.locations, ["Germany"]);
   assert.ok(clientMarket.terms.includes("client"));
+  for (const separator of [" and ", ", and ", "\u2014and "]) {
+    const market = parseLiveBrief(`Packaging designers in the UK${separator}US clients are a plus`);
+    assert.deepEqual(market.locations, ["United Kingdom"], separator);
+    assert.ok(market.terms.includes("us"));
+  }
   assert.deepEqual(parseLiveBrief("Designers in Berlin, the US client prefers packaging experience").locations, ["Germany"]);
   for (const modifier of ["for-profit", "for‑profit"]) {
     assert.deepEqual(parseLiveBrief(`Brand designers in Berlin, US ${modifier} client experience preferred`).locations, ["Germany"], modifier);

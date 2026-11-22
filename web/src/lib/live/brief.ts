@@ -61,16 +61,16 @@ export function parseLiveBrief(query: string, muted: string[] = []): LiveBrief {
   };
   for (const phrase of lower.matchAll(/\b(?:in|from|near|around|across)\s+/g)) {
     let rest = lower.slice(phrase.index + phrase[0].length);
-    let afterBareComma = false;
+    let isContinuation = false;
     for (let match; (match = locationPrefix.exec(rest));) {
       rest = rest.slice(match[0].length);
       const alias = match[1];
       const separator = locationSeparator.exec(rest);
       if (alias === "porto" && /^[-\s]+rocha\b/.test(rest)) break;
-      if (afterBareComma && alias.length <= 2 && rest.trim() && !separator && !briefQualifier.test(rest)) break;
+      if (isContinuation && alias.length <= 2 && rest.trim() && !separator && !briefQualifier.test(rest)) break;
       addLocation(alias);
       if (!separator) break;
-      afterBareComma = separator[0].trim() === ",";
+      isContinuation = true;
       rest = rest.slice(separator[0].length);
     }
   }
