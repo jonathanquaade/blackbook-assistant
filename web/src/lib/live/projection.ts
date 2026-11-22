@@ -46,6 +46,12 @@ export interface IndexedEntry {
   workStatus: string;
   locations: string[];
   employer: string | null;
+  /** Page id of the employer when `employer` is its name; checked for eligibility again at query time. */
+  employerId?: string | null;
+  /** Works At Link host, shown instead if the employer page stops being eligible. */
+  employerFallback?: string | null;
+  /** Normalised Website/Instagram/LinkedIn keys, used only to decide duplicates. Stripped before indexing. */
+  identity?: string[];
   status: string;
   rating: number | null;
   lastEdited: string;
@@ -80,6 +86,11 @@ export function readEligibility(page: NotionPage) {
   const rating = Number(select(page.properties["Rating"])) || null;
   const archived = Boolean(page.in_trash || page.archived || page.is_archived);
   return { status, rating, eligible: !archived && status === "Verified" && (rating === 4 || rating === 5) };
+}
+
+export function pageTitleOf(page: NotionPage) {
+  const title = Object.values(page.properties).find((property) => property.type === "title");
+  return text(title);
 }
 
 export const worksAtIds = (page: NotionPage) => relationIds(page.properties["Works At"]);
@@ -143,8 +154,10 @@ export function projectPage(
 ): IndexedEntry {
   const { status, rating } = readEligibility(page);
   const p = page.properties;
-  const employer =
-    worksAtIds(page).map((id) => relationNames[id]).find(Boolean) ?? hostOf((p["Works At Link"]?.url as string) ?? null);
+  // relationNames must hold only employer pages that pass eligibility themselves.
+  const employerId = worksAtIds(page).find((id) => relationNames[id]) ?? null;
+  const employerFallback = hostOf((p["Works At Link"]?.url as string) ?? null);
+  const employer = employerId ? relationNames[employerId] : employerFallback;
   return {
     id: page.id,
     pageIds: [page.id],
@@ -154,6 +167,9 @@ export function projectPage(
     workStatus: select(p["Work Status"]) ?? "Unknown",
     locations: [...new Set(multi(p["Location"] ?? p["Country"]).map(canonicalLocation))],
     employer,
+    employerId,
+    employerFallback,
+    identity: identityKeys(page),
     status,
     rating,
     lastEdited: page.last_edited_time,
@@ -164,13 +180,49 @@ export function projectPage(
 const nameKey = (entry: IndexedEntry) =>
   `${entry.type}:${entry.name.toLowerCase().normalize("NFKD").replace(/\p{M}/gu, "").replace(/[^a-z0-9]/g, "")}`;
 
-/** One result per person: duplicate pages are merged under the most recently edited page. */
+/** Website, Instagram and LinkedIn reduced to host/path, so two pages for one person share a key. */
+function identityKeys(page: NotionPage) {
+  const keys: string[] = [];
+  for (const name of ["Website", "Instagram", "LinkedIn"]) {
+    const value = page.properties[name]?.url;
+    if (typeof value !== "string" || !value.trim()) continue;
+    try {
+      const url = new URL(value.trim().startsWith("http") ? value.trim() : `https://${value.trim()}`);
+      const key = `${url.hostname.replace(/^www\./, "")}${url.pathname.replace(/\/+$/, "")}`.toLowerCase();
+      if (key.includes(".")) keys.push(key);
+    } catch {
+      // An unparseable link is not an identity.
+    }
+  }
+  return keys;
+}
+
+/**
+ * One result per person. Same-name pages merge only when they also share a Website, Instagram or
+ * LinkedIn; two different people who happen to share a name stay separate. The most recently
+ * edited page is primary.
+ */
 export function mergeDuplicates(entries: IndexedEntry[]) {
-  const groups = new Map<string, IndexedEntry[]>();
-  for (const entry of entries) groups.set(nameKey(entry), [...(groups.get(nameKey(entry)) ?? []), entry]);
-  return [...groups.values()].map((group) => {
+  const byName = new Map<string, IndexedEntry[]>();
+  for (const entry of entries) byName.set(nameKey(entry), [...(byName.get(nameKey(entry)) ?? []), entry]);
+  const groups: IndexedEntry[][] = [];
+  for (const sameName of byName.values()) {
+    const parent = sameName.map((_, index) => index);
+    const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])));
+    sameName.forEach((a, i) =>
+      sameName.forEach((b, j) => {
+        if (j > i && a.identity?.some((key) => b.identity?.includes(key))) parent[find(j)] = find(i);
+      }),
+    );
+    const clusters = new Map<number, IndexedEntry[]>();
+    sameName.forEach((entry, i) => clusters.set(find(i), [...(clusters.get(find(i)) ?? []), entry]));
+    groups.push(...clusters.values());
+  }
+  return groups.map((group) => {
     const [primary, ...rest] = [...group].sort((a, b) => b.lastEdited.localeCompare(a.lastEdited));
-    if (!rest.length) return primary;
+    const { identity: _identity, ...clean } = primary;
+    void _identity;
+    if (!rest.length) return clean;
     const projects = primary.projects.map((project) => ({ ...project, media: [...project.media], images: [...project.images] }));
     for (const other of rest)
       for (const project of other.projects) {
@@ -182,7 +234,7 @@ export function mergeDuplicates(entries: IndexedEntry[]) {
         } else projects.push({ ...project, idx: projects.length });
       }
     return {
-      ...primary,
+      ...clean,
       pageIds: group.map((entry) => entry.id),
       capabilities: [...new Set(group.flatMap((entry) => entry.capabilities))],
       locations: [...new Set(group.flatMap((entry) => entry.locations))],

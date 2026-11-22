@@ -1,7 +1,25 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { liveSetting } from "./config";
 
-export const ownerPassword = () => liveSetting("BLACKBOOK_OWNER_PASSWORD") || null;
+export const MIN_PASSWORD_LENGTH = 20;
+const warned = globalThis as unknown as { __blackbookShortPasswordWarned?: boolean };
+
+/**
+ * The owner password, or null when live mode is off. A password shorter than 20 characters is
+ * treated as absent (live mode stays disabled) so a guessable value never protects real data.
+ */
+export function ownerPassword() {
+  const value = liveSetting("BLACKBOOK_OWNER_PASSWORD");
+  if (!value) return null;
+  if (value.length < MIN_PASSWORD_LENGTH) {
+    if (!warned.__blackbookShortPasswordWarned) {
+      warned.__blackbookShortPasswordWarned = true;
+      console.warn(`Live mode disabled: BLACKBOOK_OWNER_PASSWORD must be at least ${MIN_PASSWORD_LENGTH} characters.`);
+    }
+    return null;
+  }
+  return value;
+}
 
 export function allowsOwnerTransport(headers: Headers, allowHttpLoopback: boolean) {
   const proto = headers.get("x-forwarded-proto");
@@ -20,4 +38,36 @@ export function isOwner(authorization: string | null, password: string) {
   const credentials = Buffer.from(token, "base64");
   const digest = (value: string | Buffer) => createHash("sha256").update(value).digest();
   return timingSafeEqual(digest(credentials), digest(`jonathan:${password}`));
+}
+
+/**
+ * Best-effort throttle for wrong passwords: the Nth recent failure from one client address waits
+ * 250ms * 2^(N-1), capped at 8s, before the 401 is sent. State is per process memory, so on
+ * serverless it resets whenever an instance is recycled and is not shared between instances. It
+ * slows casual guessing only; the 20 character minimum password is the real protection.
+ */
+export function createFailureTracker(now: () => number = Date.now, windowMs = 15 * 60_000, maxClients = 500) {
+  const failures = new Map<string, { count: number; last: number }>();
+  return {
+    /** Records a failed attempt and returns how long to wait before answering. */
+    fail(client: string) {
+      const t = now();
+      for (const [key, value] of failures) if (t - value.last > windowMs) failures.delete(key);
+      const count = (failures.get(client)?.count ?? 0) + 1;
+      failures.delete(client);
+      failures.set(client, { count, last: t });
+      if (failures.size > maxClients) failures.delete(failures.keys().next().value as string);
+      return Math.min(250 * 2 ** (count - 1), 8000);
+    },
+    succeed(client: string) {
+      failures.delete(client);
+    },
+  };
+}
+
+export const failedLogins = createFailureTracker();
+
+export function clientAddress(headers: Headers) {
+  const forwarded = headers.get("x-forwarded-for")?.split(",").pop()?.trim();
+  return headers.get("x-real-ip")?.trim() || forwarded || "unknown";
 }

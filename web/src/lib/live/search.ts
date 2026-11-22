@@ -1,5 +1,5 @@
 import type { PGlite } from "@electric-sql/pglite";
-import { parseLiveBrief, reciprocalRankFusion, toTsQuery } from "./brief";
+import { parseLiveBrief, type LiveBrief, reciprocalRankFusion, toTsQuery } from "./brief";
 import { roleLine, type IndexedImage, type IndexedProject } from "./projection";
 
 /** bge-small cosine similarity cut-offs, calibrated on the benchmark briefs (blackbook/stage1-eval.md). */
@@ -32,7 +32,7 @@ export interface LiveResult {
   reason: string | null;
 }
 
-interface EntryRow {
+export interface EntryRow {
   id: string;
   page_ids: string[];
   name: string;
@@ -72,8 +72,6 @@ export async function searchIndex(
     "select * from projects where entry_id = any($1::text[]) order by entry_id, context_shot, idx",
     [ids],
   );
-  const projectsOf = (id: string) => projectRows.filter((row) => row.entry_id === id);
-
   const tsQuery = toTsQuery(brief.terms);
   const keyword = tsQuery
     ? (
@@ -104,20 +102,49 @@ export async function searchIndex(
       ).rows.sort((a, b) => b.similarity - a.similarity)
     : [];
 
-  const queryText = normalize(options.query);
+  return shapeResults({
+    brief,
+    query: options.query,
+    entries,
+    projectsOf: (id) =>
+      projectRows.filter((row) => row.entry_id === id).map((row) => ({
+        idx: row.idx, caption: row.caption, link: row.link, media: row.media ?? [], images: row.images, contextShot: row.context_shot,
+      })),
+    keyword: keyword.map((row) => row.id),
+    keywordProject: new Map(keywordProject.map((row) => [row.entry_id, row.idx])),
+    vector: vector.map((row) => ({ entryId: row.entry_id, projectIdx: row.project_idx, similarity: row.similarity })),
+  });
+}
+
+export interface RankedInputs {
+  brief: LiveBrief;
+  query: string;
+  entries: EntryRow[];
+  projectsOf: (id: string) => IndexedProject[];
+  /** Entry ids ranked by keyword relevance, best first. */
+  keyword: string[];
+  /** Best keyword-matching project index per entry. */
+  keywordProject: Map<string, number>;
+  /** Best vector hit per entry, sorted by similarity descending. */
+  vector: { entryId: string; projectIdx: number | null; similarity: number }[];
+}
+
+/** Fusion, tiers and reasons. Shared by the Postgres index and the bundled in-memory index. */
+export function shapeResults({ brief, query, entries, projectsOf, keyword, keywordProject, vector }: RankedInputs) {
+  const queryText = normalize(query);
   const nameHits = new Set(entries.filter((entry) => queryText && ` ${queryText} `.includes(` ${normalize(entry.name)} `)).map((entry) => entry.id));
-  const vectorIds = vector.filter((row) => row.similarity >= MIN_SIMILARITY).map((row) => row.entry_id);
-  const fused = reciprocalRankFusion([keyword.map((row) => row.id), vectorIds]);
+  const vectorIds = vector.filter((row) => row.similarity >= MIN_SIMILARITY).map((row) => row.entryId);
+  const fused = reciprocalRankFusion([keyword, vectorIds]);
   const hasQuery = brief.terms.length > 0;
 
   const results: LiveResult[] = entries.flatMap((entry) => {
     const projects = projectsOf(entry.id);
     const haystack = normalize([entry.name, entry.type, entry.employer ?? "", ...entry.capabilities, ...entry.locations, ...projects.map((project) => project.caption ?? "")].join(" ")).split(" ");
     const matchedTerms = brief.terms.filter((term) => haystack.some((word) => word === term || (term.length >= 4 && word.startsWith(term))));
-    const best = vector.find((row) => row.entry_id === entry.id);
+    const best = vector.find((row) => row.entryId === entry.id);
     const isName = nameHits.has(entry.id);
     if (hasQuery && !isName && !fused.has(entry.id)) return [];
-    const evidenceIdx = keywordProject.find((row) => row.entry_id === entry.id)?.idx ?? best?.project_idx ?? null;
+    const evidenceIdx = keywordProject.get(entry.id) ?? best?.projectIdx ?? null;
     const evidence = projects.find((project) => project.idx === evidenceIdx && project.caption);
     const capabilityHit = entry.capabilities.find((capability) => brief.terms.some((term) => normalize(capability).split(" ").some((word) => word.startsWith(term))));
     const reason = !hasQuery
@@ -143,7 +170,7 @@ export async function searchIndex(
       locations: entry.locations,
       employer: entry.employer,
       rating: entry.rating,
-      projects: projects.map((project) => ({ caption: project.caption, link: project.link, media: project.media ?? [], images: project.images, contextShot: project.context_shot })),
+      projects: projects.map(({ caption, link, media, images, contextShot }) => ({ caption, link, media, images, contextShot })),
       tier,
       score: hasQuery ? (isName ? 1 : 0) + (fused.get(entry.id) ?? 0) : (entry.rating ?? 0),
       similarity,

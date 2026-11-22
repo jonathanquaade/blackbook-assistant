@@ -14,7 +14,7 @@ import { searchIndex } from "./live/search";
 import { createDb, writeEntries, writeVectors } from "./live/store";
 
 const rich = (value: string) => [{ plain_text: value }];
-function page(id: string, name: string, extra: { status?: string; rating?: string | null; capabilities?: string[]; work?: string; notes?: string; images?: string[]; country?: string } = {}): NotionPage {
+function page(id: string, name: string, extra: { status?: string; rating?: string | null; capabilities?: string[]; work?: string; notes?: string; images?: string[]; country?: string; website?: string } = {}): NotionPage {
   return {
     id,
     last_edited_time: "2026-11-01T00:00:00.000Z",
@@ -28,6 +28,7 @@ function page(id: string, name: string, extra: { status?: string; rating?: strin
       Country: { type: "multi_select", multi_select: [{ name: extra.country ?? "Germany" }] },
       Notes: { type: "rich_text", rich_text: rich(extra.notes ?? "PRIVATE NOTE day rate 900") },
       Email: { type: "email", email: "private@example.com" },
+      Website: { type: "url", url: extra.website ?? null },
       Images: { type: "files", files: (extra.images ?? ["a.jpg"]).map((file) => ({ name: file, type: "file" })) },
     },
   };
@@ -152,10 +153,17 @@ test("work links, distinct media destinations and per-image sources are preserve
   ]);
 });
 
-test("duplicate pages for one person merge into one result", () => {
-  const merged = mergeDuplicates([projectPage(page("1", "Ada Lovelace"), []), projectPage(page("2", "Ada  Lovelace"), [])]);
+test("duplicate pages merge only when they share a Website, Instagram or LinkedIn", () => {
+  const merged = mergeDuplicates([
+    projectPage(page("1", "Ada Lovelace", { website: "https://www.ada.test/" }), []),
+    projectPage(page("2", "Ada  Lovelace", { website: "http://ada.test" }), []),
+  ]);
   assert.equal(merged.length, 1);
   assert.deepEqual(merged[0].pageIds.sort(), ["1", "2"]);
+  assert.equal("identity" in merged[0], false);
+  // Same name, different people: no shared link, or no links at all.
+  assert.equal(mergeDuplicates([projectPage(page("1", "Sam Lee", { website: "https://a.test" }), []), projectPage(page("2", "Sam Lee", { website: "https://b.test" }), [])]).length, 2);
+  assert.equal(mergeDuplicates([projectPage(page("1", "Sam Lee"), []), projectPage(page("2", "Sam Lee"), [])]).length, 2);
 });
 
 test("brief parsing, tsquery and fusion", () => {

@@ -1,7 +1,6 @@
-import path from "node:path";
 import { env, pipeline } from "@huggingface/transformers";
 import { EMBEDDING_MODEL } from "./model";
-import { dataDir } from "./paths";
+import { modelCacheDir } from "./paths";
 
 type Extractor = (
   texts: string[],
@@ -13,7 +12,7 @@ const globalCache = globalThis as unknown as { __blackbookEmbedder?: Promise<Ext
 /** Runs the pinned model on this machine: no API key, no provider, no per-call cost. */
 export function loadEmbedder() {
   if (!globalCache.__blackbookEmbedder) {
-    env.cacheDir = path.join(dataDir(), "models");
+    env.cacheDir = modelCacheDir();
     globalCache.__blackbookEmbedder = pipeline("feature-extraction", EMBEDDING_MODEL.id, {
       revision: EMBEDDING_MODEL.revision,
       dtype: EMBEDDING_MODEL.dtype,
