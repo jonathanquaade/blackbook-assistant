@@ -215,6 +215,17 @@ test("standalone modifiers preserve coordinated locations without admitting clie
   const market = parseLiveBrief("Packaging designers in the UK, and US only recently became a client market");
   assert.deepEqual(market.locations, ["United Kingdom"]);
   assert.ok(market.terms.includes("us"));
+  const closedList = parseLiveBrief("Packaging designers in Berlin only, UK or US client experience preferred");
+  assert.deepEqual(closedList.locations, ["Germany"]);
+  assert.ok(closedList.terms.includes("uk"));
+  assert.ok(closedList.terms.includes("us"));
+  const scopedMarket = parseLiveBrief("Packaging designers in Berlin, US only for client experience, not location");
+  assert.deepEqual(scopedMarket.locations, ["Germany"]);
+  assert.ok(scopedMarket.terms.includes("us"));
+  assert.deepEqual(
+    parseLiveBrief("Packaging designers in the UK or US only, remote is fine").locations,
+    ["United Kingdom", "United States"],
+  );
 });
 
 test("search never returns ineligible rows and applies explicit filters", async () => {
