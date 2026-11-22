@@ -120,6 +120,42 @@
         }
       ],
       "hard_rules": "/explore imports summary.ts (bundle, paths, status), no embed/transformers; /api/media imports guard+media only; explore trace 2.2 MB, media 1.9 MB. Auth/eligibility code unchanged in diff; unauth /explore 401 confirmed."
+    },
+    {
+      "commit": "99cc9a1",
+      "date": "2026-11-22",
+      "verdict": "pass",
+      "checks": {
+        "npm ci": "ok",
+        "npm test": "68/68",
+        "lint": "ok",
+        "typecheck": "ok",
+        "build": "ok",
+        "smoke": "all ok incl. per-route size and cuda/tensorrt/musl/wasm exclusions"
+      },
+      "resolved": "Prior blocking 398 MB finding. Independent re-sum of app/api/search/route.js.nft.json: 76.0 MB (408 files; libonnxruntime.so.1 45.8, libvips 18.7). No cuda/tensorrt/musl/wasm/pglite in the trace.",
+      "verification": {
+        "pglite": "Only store.ts (value import) and sync.ts import pglite; search.ts is type-only. service.ts:97 dynamic-imports ./store inside runLocalSearch, reached only when !usesBundledIndex() (service.ts:126; paths.ts:19 = VERCEL or BLACKBOOK_INDEX_MODE=bundle). No Vercel path to pglite; exclusion is safe. sync.ts is not imported by route.ts.",
+        "instrumentation": "instrumentation.js (76.6 MB, still carries pglite, musl/wasm sharp) is listed inside every route's nft. Union with it: /api/search 124.9, pages ~78, middleware 77.3 MB. Worst case well under 250 MB. Model (q8 bge-small, roughly 35 MB, bundled in .blackbook-index/models at deploy build, absent locally) would add to /api/search: est. about 160 MB worst case."
+      },
+      "findings": [
+        {
+          "severity": "nit",
+          "file": "web/scripts/smoke.ts:75-95",
+          "issue": "Size check sums each nft alone; it does not union with instrumentation.js (which Vercel pulls into every route, 125 MB for /api/search) and the local build has no model, so deploy size is understated by about 85 MB. Still far under limit; 220 MB threshold leaves margin only if you add the union."
+        },
+        {
+          "severity": "nit",
+          "file": "web/src/lib/vercel.test.ts:316",
+          "issue": "Test proves degrade-with-reason through the new loader seam; it does not exercise real ONNX load failure. Acceptable."
+        },
+        {
+          "severity": "nit",
+          "file": "web/next.config.ts",
+          "issue": "instrumentation.js trace still includes musl/wasm sharp and pglite (about 50 MB); harmless, could be excluded via the same '/*' key."
+        }
+      ],
+      "hard_rules": "No auth, eligibility or private-field code changed (diff touches next.config, smoke, embed.ts seam, test). No em-dashes added."
     }
   ]
 }
