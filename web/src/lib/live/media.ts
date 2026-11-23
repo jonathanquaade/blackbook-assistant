@@ -1,6 +1,8 @@
+import { currentEligibility, type EligibilitySnapshot } from "./eligibility";
 import { queryEligiblePages } from "./notion";
+import { usesBundledIndex } from "./paths";
 import { readEligibility, type NotionPage } from "./projection";
-import { readStatus } from "./store";
+import { readStatus } from "./status";
 
 interface Signed {
   url: string;
@@ -8,9 +10,9 @@ interface Signed {
 }
 const key = (pageId: string, file: string) => `${pageId}/${file}`;
 
-async function loadFiles(loadPages: () => Promise<NotionPage[]>) {
+function signedFiles(pages: NotionPage[]) {
   const files = new Map<string, Signed>();
-  for (const page of await loadPages()) {
+  for (const page of pages) {
     if (!readEligibility(page).eligible) continue;
     const images = page.properties["Images"];
     const list = (images?.files as { name: string; type: string; file?: { url: string; expiry_time: string } }[] | undefined) ?? [];
@@ -20,6 +22,8 @@ async function loadFiles(loadPages: () => Promise<NotionPage[]>) {
   }
   return files;
 }
+
+const loadFiles = async (loadPages: () => Promise<NotionPage[]>) => signedFiles(await loadPages());
 
 export function createMediaLookup(
   loadPages: () => Promise<NotionPage[]>,
@@ -46,4 +50,20 @@ export function createMediaLookup(
   };
 }
 
-export const signedImageUrl = createMediaLookup(queryEligiblePages, () => readStatus().lastGood?.dir);
+const localLookup = createMediaLookup(queryEligiblePages, () => readStatus().lastGood?.dir);
+
+/** Serverless path: signed links come from the same fresh eligibility check that gates search. */
+export function createBundledMediaLookup(check: () => Promise<EligibilitySnapshot>, now = Date.now) {
+  const byCheck = new WeakMap<EligibilitySnapshot, Map<string, Signed>>();
+  return async (pageId: string, file: string) => {
+    const snapshot = await check();
+    let files = byCheck.get(snapshot);
+    if (!files) byCheck.set(snapshot, (files = signedFiles(snapshot.pages)));
+    const signed = files.get(key(pageId, file));
+    return signed && signed.expires - now() > 5 * 60_000 ? signed.url : null;
+  };
+}
+const bundledLookup = createBundledMediaLookup(currentEligibility);
+
+export const signedImageUrl = (pageId: string, file: string) =>
+  usesBundledIndex() ? bundledLookup(pageId, file) : localLookup(pageId, file);

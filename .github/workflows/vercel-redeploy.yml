@@ -1,0 +1,30 @@
+name: Vercel redeploy
+
+# The live index is built at deploy time, so new Verified entries and edits appear after a rebuild.
+# Eligibility is re-checked against Notion on every search, so downgrades never wait for this.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: vercel-redeploy
+  cancel-in-progress: false
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger the Vercel Deploy Hook
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK" ]; then
+            echo "VERCEL_DEPLOY_HOOK is not set; skipping." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          status=$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' --max-time 30 --request POST "$VERCEL_DEPLOY_HOOK")
+          echo "Deploy hook responded with HTTP $status." | tee -a "$GITHUB_STEP_SUMMARY"
+          case "$status" in 2*) ;; *) exit 1 ;; esac

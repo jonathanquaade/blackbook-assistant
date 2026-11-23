@@ -16,6 +16,8 @@ interface Response {
   brief: LiveBrief;
   results: LiveResult[];
   ms: number;
+  indexBuiltAt?: string | null;
+  eligibilityCheckedAt?: string | null;
 }
 
 const initials = (name: string) =>
@@ -33,7 +35,7 @@ function cover(result: LiveResult) {
   );
 }
 
-export function LiveExplore({ syncedAt, entries }: { syncedAt: string; entries: number }) {
+export function LiveExplore({ builtAt, entries }: { builtAt: string; entries: number }) {
   const [input, setInput] = useState("");
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState<LiveFilters>({});
@@ -125,7 +127,8 @@ export function LiveExplore({ syncedAt, entries }: { syncedAt: string; entries: 
     if (interpreted.length === 1) search("");
     else setMuted([...muted, term]);
   }
-  const synced = new Date(syncedAt).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  const stamp = (iso: string) => new Date(iso).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  const built = stamp(builtAt);
 
   return (
     <div className="explore-page page-enter">
@@ -200,7 +203,8 @@ export function LiveExplore({ syncedAt, entries }: { syncedAt: string; entries: 
             {query ? "Your matches" : "Your rated network"} <span>{results.length.toString().padStart(2, "0")}</span>
           </h2>
           <p>
-            Synced from Notion {synced} · {entries} entries
+            Index built {built} · {entries} indexed
+            {data?.eligibilityCheckedAt ? ` · eligibility checked ${stamp(data.eligibilityCheckedAt)}` : ""}
             {data && query ? ` · ${data.ms} ms` : ""}
           </p>
         </div>

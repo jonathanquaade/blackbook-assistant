@@ -1,3 +1,4 @@
+import { ownerPassword } from "./auth";
 import { liveSetting } from "./config";
 import { syncIndex } from "./sync";
 
@@ -5,8 +6,8 @@ const state = globalThis as unknown as { __blackbookSyncScheduled?: boolean };
 
 export function startScheduledSync() {
   if (state.__blackbookSyncScheduled) return;
-  if (!liveSetting("NOTION_API_KEY") || !liveSetting("BLACKBOOK_OWNER_PASSWORD"))
-    throw new Error("Live Explore requires NOTION_API_KEY and BLACKBOOK_OWNER_PASSWORD.");
+  if (!liveSetting("NOTION_API_KEY") || !ownerPassword())
+    throw new Error("Live Explore requires NOTION_API_KEY and a BLACKBOOK_OWNER_PASSWORD of at least 12 characters.");
   const minutes = Number(liveSetting("BLACKBOOK_SYNC_MINUTES") ?? 15);
   if (!Number.isSafeInteger(minutes) || minutes < 1 || minutes > 1440)
     throw new Error("BLACKBOOK_SYNC_MINUTES must be a whole number between 1 and 1440.");

@@ -1,0 +1,24 @@
+# Upload allowlist for `vercel deploy` from the repo root (preview workflow).
+# The project Root Directory is web; the build also reads assets/<page-id>/manifest.json.
+# Everything else (backups, state, scripts, Notion exports, images, env files) stays out of the upload.
+
+# Exclude everything at the root, then re-include only what the build needs.
+/*
+!/web
+!/assets
+
+# web: source only, no installs, build output, local data or env files.
+/web/node_modules
+/web/.next
+/web/.data
+/web/.blackbook-index
+/web/.vercel
+/web/*.tsbuildinfo
+/web/.env*
+.env*
+
+# assets: manifests only, never image files or other per-entry files.
+/assets/*
+!/assets/*/
+/assets/*/*
+!/assets/*/manifest.json

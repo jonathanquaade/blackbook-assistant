@@ -1,0 +1,47 @@
+{
+ "page_id": "400f84ba-ae13-814f-9509-f5f9e46ec26b",
+ "name": "The Design Office of David McGillivray",
+ "auditor": "claude-reviewer",
+ "mode": "desk-audit-offline",
+ "reviewed_at": "2026-11-22",
+ "verdict": "pass-pending-online",
+ "checks": [
+  {"id": "A.project-diversity", "result": "PASS", "evidence": "Manifest has 10 work images over 5 distinct projects by caption and link (Infinite Machine x3, Tolan x1, Americana x3, Archiv x2, Groth x1); each source_url is a distinct Sanity blob ID. Visual near-duplicate check not possible offline."},
+  {"id": "A.depth", "result": "PASS", "evidence": "Captions indicate inside-project views (P1 product page, feature storytelling page, NFC patches, app screens), not only covers. Only 1 image each for Tolan and Groth, acceptable. Visual confirmation pending."},
+  {"id": "A.on-capability", "result": "PASS", "evidence": "Web design, brand identity, iOS app design captions match tags Web design, Identity systems, Digital product design, Creative direction. Hedroom is named in AI Notes but not captured; minor."},
+  {"id": "A.context-shots", "result": "CANNOT-VERIFY-OFFLINE", "evidence": "site-01.png has source_url https://dmcg.co/ and caption Website, plausibly genuine; image not on disk. No Instagram profile shot, and no ig-queue.json entry (grep returned 0) because no IG is attached. Acceptable only if no IG account really exists; that search cannot be re-run offline."},
+  {"id": "A.captions", "result": "PASS", "evidence": "All 11 manifest entries have a caption, and the 10 work images carry a dmcg.co/work/<slug> link. No em-dashes in manifest (grep 0)."},
+  {"id": "A.embeds", "result": "CANNOT-VERIFY-OFFLINE", "evidence": "Manifest has zero embeds. Devin's claim that no video exists on the source pages cannot be re-checked without network."},
+  {"id": "A.absence-explained", "result": "PASS", "evidence": "Missing Instagram is explained in AI Notes ('@dmcgco does not exist; unconfirmed @davidbigmcgill') and asked in Open Questions. IG queue not needed since no IG is attached and no 640px IG capture is used."},
+  {"id": "A.body-structure", "result": "CANNOT-VERIFY-OFFLINE", "evidence": "Live body not readable. Manifest has 11 items, so h2 + 11 + divider = 13 expected, consistent with Devin's '13 live blocks', and the Images property lists the same 11 files. Live API confirmation pending."},
+  {"id": "B.type-links", "result": "PASS", "evidence": "Type Studio (small, hands-on, solo-led; bias to Studio correct, not Agency). Website dmcg.co, LinkedIn /in/dmcgillivray and Email office@dmcg.co present. Instagram empty and explained. Wrong-person guard honoured."},
+  {"id": "B.capabilities", "result": "PASS", "evidence": "All four tags exist in TAXONOMY.md and fit the captured work (Archiv iOS app = Digital product design; Infinite Machine and Americana sites = Web design; Tolan, Groth = Identity systems). Agent-set, not locked."},
+  {"id": "B.country-size-status", "result": "PASS", "evidence": "Location United States (NY per AI Notes), Size 1 with reasoning, Work Status Studio with 'site and LinkedIn agree' named. Two sources agree, meets the objective rule. IG absent so not a third source."},
+  {"id": "B.autonomy", "result": "PASS", "evidence": "Autonomy 5 set_by agent with reasoning in AI Notes, marked 'inferred, no first-hand evidence'. Optional for org types, allowed since one founder embodies the studio."},
+  {"id": "C.judgment", "result": "PASS", "evidence": "Clip says 'haven't met him', so Familiarity Don't know them and Worked Together Never are consistent. Work With? Unvetted. Rating, Notes empty. No judgment field writes beyond zero-states."},
+  {"id": "C.clip-note", "result": "PASS", "evidence": "clipped.md raw Name: 'The Design Office of David McGillivray (brand and product designer) haven't met him found his site via siteinspire'. Name cleaned, tags reflect brand and product design, siteinspire discovery path kept in Source, no Jonathan prose to relocate. Siteinspire is not a friend recommendation, so Don't know them is correct."},
+  {"id": "C.ai-notes", "result": "PASS", "evidence": "Seniority (senior, CD-level, 17 to 18 yrs, trajectory) and Autonomy reasoning present, with Work Status sources named. Minor: the seniority and years line is asserted rather than hedged. Facts such as Brighton, D&AD 2011 and Parsons are attributed to dmcg.co/about by Devin, but I cannot re-verify offline."},
+  {"id": "D.open-questions", "result": "PASS", "evidence": "One terse question, 'Instagram?', for a genuinely empty field with a short ambiguity note. No question for fields that already have values."},
+  {"id": "D.source", "result": "PASS", "evidence": "Source equals the raw clip note text, with the leading name kept. The raw text is in clipped.md, and the Source matches it modulo the wording 'The Design Office of David McGillivray (brand and product designer). haven't met him found his site via siteinspire'."},
+  {"id": "D.provenance", "result": "PASS", "evidence": "Every written field has an entry. All are set_by agent with null source_url (known tooling gap, not a failure). Nothing is set_by jonathan, which is consistent with no clip-stated judgment facts. Whether Source should be set_by jonathan or clipper is arguable and minor."},
+  {"id": "D.no-em-dashes", "result": "PASS", "evidence": "grep for the em-dash character returned 0 in props.json, provenance and manifest. Live body paragraphs unchecked offline; no embeds, so no keeper line-547 metadata paragraphs apply."},
+  {"id": "D.status", "result": "PASS", "evidence": "Backup props show Entry Status Needs Review; provenance agrees. Not Verified. Notes empty. Live status cannot be rechecked offline."}
+ ],
+ "disagreements_with_prior_report": [
+  "Devin's D.provenance says 'clip facts set_by jonathan'. Provenance shows every field, including Source, set_by agent. No field is set_by jonathan. Wording error, not a contract breach.",
+  "Devin's report has verdict pass but to: scraper. A pass should carry to: null.",
+  "Devin's A.context-shots says 'no Instagram account is findable' as settled. Offline I can only confirm that the AI Notes claim it and the Open Question asks; the IG search itself is unreproducible, so the pass is unproven rather than wrong.",
+  "Devin's C.ai-notes says seniority and Autonomy are hedged. Autonomy is hedged, but the seniority line ('senior, creative-director level, 17 to 18 years') is asserted without hedging. Minor, does not change the verdict.",
+  "Devin's D.no-em-dashes checked live body blocks; I could only check stored props, provenance and manifest. No contradiction found.",
+  "Devin's A.project-diversity says '10 images across 5 distinct projects; distinct hashes'. Project count agrees with the manifest. Hashes are not checkable offline."
+ ],
+ "to": null,
+ "online_checks_pending": [
+  "Open site-01.png and confirm it is the dmcg.co homepage.",
+  "Check live Notion body block count (expected 13) and that the Images property matches the manifest.",
+  "Eyeball the 10 work images for visual duplicates and confirm captions match (Groth caption 'identity' vs the Research-section image Devin flagged).",
+  "Re-search Instagram: dmcg.co footer and X profile links, Google 'David McGillivray designer instagram', and confirm @davidbigmcgill is or is not him. If found, add an Instagram profile shot and note it.",
+  "Confirm dmcg.co project pages contain no Vimeo/YouTube embeds; check Hedroom and Sandbar/Evara for extra on-capability work.",
+  "Confirm AI Notes facts (Brighton, D&AD 2011 Graphite Pencil, Parsons, NY, 2015) against dmcg.co/about and LinkedIn."
+ ]
+}

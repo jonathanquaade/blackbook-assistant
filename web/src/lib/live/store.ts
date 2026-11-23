@@ -1,9 +1,7 @@
 import fs from "node:fs";
-import path from "node:path";
 import { PGlite } from "@electric-sql/pglite";
 import { vector } from "@electric-sql/pglite-pgvector";
 import { EMBEDDING_MODEL } from "./model";
-import { dataDir } from "./paths";
 import { embeddingInputs, type IndexedEntry } from "./projection";
 
 export const SCHEMA = `
@@ -99,23 +97,8 @@ export const pendingInputs = (entries: IndexedEntry[]) =>
 
 // ---- index pointer and last-good sync status ----
 
-export interface SyncStatus {
-  lastAttempt?: { at: string; ok: boolean; source: string; error?: string };
-  lastGood?: { at: string; source: string; dir: string; eligible: number; merged: number; embedded: number; reused: number };
-}
-const statusFile = () => path.join(dataDir(), "sync-status.json");
-export function readStatus(): SyncStatus {
-  try {
-    return JSON.parse(fs.readFileSync(statusFile(), "utf8"));
-  } catch {
-    return {};
-  }
-}
-export function writeStatus(status: SyncStatus) {
-  fs.mkdirSync(dataDir(), { recursive: true });
-  fs.writeFileSync(`${statusFile()}.tmp`, JSON.stringify(status, null, 2));
-  fs.renameSync(`${statusFile()}.tmp`, statusFile());
-}
+export { readStatus, writeStatus, type SyncStatus } from "./status";
+import { readStatus } from "./status";
 
 interface Snapshot {
   dir: string;

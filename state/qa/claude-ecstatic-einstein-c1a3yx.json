@@ -1,0 +1,190 @@
+{
+  "branch": "claude/ecstatic-einstein-c1a3yx",
+  "base": "origin/main",
+  "date": "2026-11-22",
+  "verdict": "pass",
+  "checks": {
+    "npm ci": "ok",
+    "npm test": "65/65 pass",
+    "lint": "ok",
+    "typecheck": "ok",
+    "build": "ok",
+    "build-index --from-backup": "31 entries from 32 eligible of 862; keyword-only (no network for model); no private field values found in index.json"
+  },
+  "findings": [
+    {
+      "severity": "important",
+      "file": "web/scripts/build-index.ts:25-30",
+      "issue": "Any index-build failure (Notion down at build time) is swallowed with exit 0, so the hourly redeploy promotes a deployment with no index (503 on every search) over the working one.",
+      "fix": "On Vercel with live configured, exit non-zero on failure so the previous production deployment stays live."
+    },
+    {
+      "severity": "important",
+      "file": ".github/workflows/vercel-preview.yml:23-26,48-53",
+      "issue": "VERCEL_TOKEN is job-level env, so vercel build (runs branch code: prebuild tsx, npm scripts) sees it, plus the pulled preview env (Notion key, owner password). Anyone with push rights to claude/** or devin/** can exfiltrate. Not a fork or pull_request_target risk (push trigger, no fork secrets).",
+      "fix": "Scope the token to the pull and deploy steps, keep preview env free of the production Notion key or use a read-only integration, document that push access equals secret access."
+    },
+    {
+      "severity": "nit",
+      "file": "web/next.config.ts:5-10",
+      "issue": "onnxruntime-node is absent from the traced files of /api/search; could not verify query embedding works on Vercel. Failure degrades to keyword-only with a reported reason, never fixtures.",
+      "fix": "Check the first preview deploy reports mode hybrid."
+    },
+    {
+      "severity": "nit",
+      "file": "web/src/lib/live/eligibility.ts:15,37",
+      "issue": "Full Notion pages (including Notes, Email, Day Rate) are held in memory for signed links. Not written or logged (verified), but unnecessary exposure.",
+      "fix": "Keep only id and Images files; use filter_properties on the query."
+    },
+    {
+      "severity": "nit",
+      "file": "web/src/lib/vercel.test.ts",
+      "issue": "No test drives bundledLookup (media) with a downgraded page or a failed check. Code reads correct (only snapshot pages, throws 503).",
+      "fix": "Add a media lookup test."
+    },
+    {
+      "severity": "nit",
+      "file": "web/src/app/explore/page.tsx",
+      "issue": "Header entry count comes from the bundle, not intersected with live eligibility. Owner only.",
+      "fix": "Accept or label it as index count."
+    }
+  ],
+  "hard_rules": {
+    "explore_eligibility": "pass: applyEligibility every(pageIds) plus searchEntries re-check; media only from eligible snapshot; merged entries hidden if any page downgraded",
+    "private_fields": "pass: toBundledEntry allow-list; inspected index.json; no logs",
+    "auth": "pass: requireOwner in proxy and both routes and explore page; 20-char minimum; no secrets logged",
+    "notion_read_only": "pass: only POST database query and GET page",
+    "em_dashes": "pass: none in changed text"
+  },
+  "spec_gate": "Stage 1 live mode approved by Jonathan 2026-11-22",
+  "overfitting": "n/a",
+  "recheck": {
+    "commit": "77fd28d",
+    "date": "2026-11-22",
+    "verdict": "pass",
+    "checks": {
+      "npm test": "67/67 pass",
+      "lint": "ok",
+      "typecheck": "ok",
+      "build": "ok"
+    },
+    "resolved": [
+      "index-build exits 1 only after live-configured checks (build-index.ts skips return before failure path)",
+      "VERCEL_TOKEN only on gate, pull, deploy steps; README security note",
+      "eligibility snapshot slimmed to Entry Status/Rating/Images; test asserts keys",
+      "media lookup test covers downgrade, 5 min boundary, fail-closed",
+      "header says 'indexed'"
+    ],
+    "findings": [
+      {
+        "severity": "nit",
+        "file": ".github/workflows/vercel-preview.yml:55",
+        "issue": "vercel build without --token is unverified. It is local and reads .vercel/ from pull (project.json, env), so it should not need auth, but I could not run the Vercel CLI here. Fallback: first preview run fails visibly, nothing unsafe."
+      },
+      {
+        "severity": "nit",
+        "file": "web/scripts/build-index.ts:30",
+        "issue": "Live configured with wrong Notion creds now fails the build (exit 1). First-ever production deploy then fails with no previous deploy to fall back on; acceptable, fails loudly, fixed by correcting env vars. Does not affect skip paths (exit 0)."
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "commit": "741d567",
+      "date": "2026-11-22",
+      "verdict": "fail",
+      "checks": {
+        "npm ci": "ok",
+        "npm test": "67/67",
+        "lint": "ok",
+        "typecheck": "ok",
+        "build": "ok",
+        "smoke": "12/12 ok"
+      },
+      "findings": [
+        {
+          "severity": "blocking",
+          "file": "web/next.config.ts:8-18",
+          "issue": "/api/search traced files sum to 398 MB unzipped (route.js.nft.json, 617 files). onnxruntime-node/bin/napi-v6/linux/x64 is 319 MB, of which libonnxruntime_providers_cuda.so is 272 MB and tensorrt 1 MB. Over Vercel's 250 MB limit, so deploy will likely fail or the function not ship. Smoke test does not check size.",
+          "fix": "Include only onnxruntime_binding.node and libonnxruntime.so.1 (+ providers_shared) instead of the whole x64 dir (about 126 MB total); drop sharp musl/wasm if possible; add a size assertion to smoke.ts."
+        },
+        {
+          "severity": "nit",
+          "file": "web/scripts/smoke.ts:77-82",
+          "issue": "Smoke runs with Notion unreachable, so /api/search returns 503 before the embed path; the lazy-load/degrade path is not actually exercised, and the test mutates .blackbook-index/index.json."
+        },
+        {
+          "severity": "nit",
+          "file": "web/scripts/smoke.ts",
+          "issue": "No unit test for embed failure degrading; behaviour covered only by existing tests."
+        }
+      ],
+      "hard_rules": "/explore imports summary.ts (bundle, paths, status), no embed/transformers; /api/media imports guard+media only; explore trace 2.2 MB, media 1.9 MB. Auth/eligibility code unchanged in diff; unauth /explore 401 confirmed."
+    },
+    {
+      "commit": "99cc9a1",
+      "date": "2026-11-22",
+      "verdict": "pass",
+      "checks": {
+        "npm ci": "ok",
+        "npm test": "68/68",
+        "lint": "ok",
+        "typecheck": "ok",
+        "build": "ok",
+        "smoke": "all ok incl. per-route size and cuda/tensorrt/musl/wasm exclusions"
+      },
+      "resolved": "Prior blocking 398 MB finding. Independent re-sum of app/api/search/route.js.nft.json: 76.0 MB (408 files; libonnxruntime.so.1 45.8, libvips 18.7). No cuda/tensorrt/musl/wasm/pglite in the trace.",
+      "verification": {
+        "pglite": "Only store.ts (value import) and sync.ts import pglite; search.ts is type-only. service.ts:97 dynamic-imports ./store inside runLocalSearch, reached only when !usesBundledIndex() (service.ts:126; paths.ts:19 = VERCEL or BLACKBOOK_INDEX_MODE=bundle). No Vercel path to pglite; exclusion is safe. sync.ts is not imported by route.ts.",
+        "instrumentation": "instrumentation.js (76.6 MB, still carries pglite, musl/wasm sharp) is listed inside every route's nft. Union with it: /api/search 124.9, pages ~78, middleware 77.3 MB. Worst case well under 250 MB. Model (q8 bge-small, roughly 35 MB, bundled in .blackbook-index/models at deploy build, absent locally) would add to /api/search: est. about 160 MB worst case."
+      },
+      "findings": [
+        {
+          "severity": "nit",
+          "file": "web/scripts/smoke.ts:75-95",
+          "issue": "Size check sums each nft alone; it does not union with instrumentation.js (which Vercel pulls into every route, 125 MB for /api/search) and the local build has no model, so deploy size is understated by about 85 MB. Still far under limit; 220 MB threshold leaves margin only if you add the union."
+        },
+        {
+          "severity": "nit",
+          "file": "web/src/lib/vercel.test.ts:316",
+          "issue": "Test proves degrade-with-reason through the new loader seam; it does not exercise real ONNX load failure. Acceptable."
+        },
+        {
+          "severity": "nit",
+          "file": "web/next.config.ts",
+          "issue": "instrumentation.js trace still includes musl/wasm sharp and pglite (about 50 MB); harmless, could be excluded via the same '/*' key."
+        }
+      ],
+      "hard_rules": "No auth, eligibility or private-field code changed (diff touches next.config, smoke, embed.ts seam, test). No em-dashes added."
+    },
+    {
+      "commit": "280bd87,f918bb4",
+      "date": "2026-11-23",
+      "verdict": "pass",
+      "checks": {
+        "test": "69/69 pass",
+        "lint": "ok",
+        "typecheck": "ok"
+      },
+      "findings": [
+        {
+          "severity": "nit",
+          "file": ".github/workflows/vercel-preview.yml:16-18",
+          "issue": "Concurrency group is shared by the push and pull_request runs of one branch with cancel-in-progress, so a PR-opened run can cancel an in-flight push run (or the reverse). Both deploy the same head SHA at open time, so harmless; a later push cancels the PR run as intended."
+        },
+        {
+          "severity": "nit",
+          "file": ".github/workflows/vercel-preview.yml:25-29",
+          "issue": "Safety rests on the job-level if plus GitHub withholding secrets from fork pull_request runs (defence in depth, both present). Same-repo PR runs execute the PR's own workflow and npm install, so it trusts anyone with write access; acceptable for this repo."
+        }
+      ],
+      "workflow_answers": {
+        "fork_pr_with_VERCEL_TOKEN": "No. Job if requires head.repo.full_name == github.repository, and fork pull_request runs get no secrets anyway. A deleted fork gives null repo, comparison false, job skipped.",
+        "other_branch_prefix": "No. Job skipped unless head_ref starts with claude/ or devin/ (push trigger is already branch-filtered).",
+        "head_ref_shell_injection": "None. head_ref reaches only expressions (if, concurrency group) and env BRANCH; run blocks use \"$BRANCH\" quoted as an env var; github-script reads process.env.BRANCH. No ${{ }} interpolation inside run: or script:.",
+        "checkout_sha": "Yes, ref is pull_request.head.sha || github.sha; SHA env used for the comment. No pull_request_target."
+      },
+      "hard_rules": "No auth/eligibility/private-field changes beyond rating key lookup (entry.id is the primary page, merged id = newest page per projection.ts:238 grouping and test). No em-dashes added. Test fails without the fix (old pageIds[0]=old gives 4, expected 5)."
+    }
+  ]
+}

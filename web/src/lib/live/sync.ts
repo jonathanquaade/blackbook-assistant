@@ -6,36 +6,18 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { collectEntries } from "./collect";
 import { embedPassages } from "./embed";
-import { pageTitle, queryEligiblePages, retrievePage } from "./notion";
-import { dataDir, repoRoot } from "./paths";
-import { mergeDuplicates, projectPage, readEligibility, worksAtIds, type ManifestItem, type NotionPage } from "./projection";
+import { dataDir } from "./paths";
 import { cachedVectors, createDb, pendingInputs, readStatus, withIndex, writeEntries, writeStatus, writeVectors } from "./store";
-
-function manifestFor(pageId: string): ManifestItem[] {
-  try {
-    return JSON.parse(fs.readFileSync(path.join(repoRoot(), "assets", pageId, "manifest.json"), "utf8"));
-  } catch {
-    return [];
-  }
-}
 
 export async function syncIndex(fromBackup = false) {
   const source = fromBackup ? "backup:backups/latest-raw.json" : "notion";
   const startedAt = new Date().toISOString();
   const status = readStatus();
   try {
-    const pages: NotionPage[] = fromBackup
-      ? JSON.parse(fs.readFileSync(path.join(repoRoot(), "backups", "latest-raw.json"), "utf8")).rows
-      : await queryEligiblePages();
-    const eligible = pages.filter((page) => readEligibility(page).eligible);
-    const byId = new Map(pages.map((page) => [page.id, page]));
-    const relationNames: Record<string, string> = {};
-    for (const id of new Set(eligible.flatMap(worksAtIds))) {
-      const page = byId.get(id) ?? (fromBackup ? undefined : await retrievePage(id).catch(() => undefined));
-      if (page) relationNames[id] = pageTitle(page);
-    }
-    const entries = mergeDuplicates(eligible.map((page) => projectPage(page, manifestFor(page.id), relationNames)));
+    const collected = await collectEntries(fromBackup);
+    const { entries } = collected;
 
     const dir = path.join(dataDir(), "index", startedAt.replace(/[:.]/g, "-"));
     fs.mkdirSync(path.dirname(dir), { recursive: true });
@@ -47,7 +29,7 @@ export async function syncIndex(fromBackup = false) {
     missing.forEach((input, index) => cache.set(input.hash, fresh[index]));
 
     const db = await createDb(dir);
-    const counts = { fetched: pages.length, eligible: eligible.length, merged: entries.length, embedded: missing.length, reused: inputs.length - missing.length };
+    const counts = { fetched: collected.fetched, eligible: collected.eligible, merged: entries.length, embedded: missing.length, reused: inputs.length - missing.length };
     try {
       await writeEntries(db, entries);
       await writeVectors(db, inputs.map((input) => ({ entryId: input.entryId, projectIdx: input.projectIdx, hash: input.hash, embedding: cache.get(input.hash)! })));
