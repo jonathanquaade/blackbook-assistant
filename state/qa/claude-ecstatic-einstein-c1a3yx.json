@@ -156,6 +156,35 @@
         }
       ],
       "hard_rules": "No auth, eligibility or private-field code changed (diff touches next.config, smoke, embed.ts seam, test). No em-dashes added."
+    },
+    {
+      "commit": "280bd87,f918bb4",
+      "date": "2026-11-23",
+      "verdict": "pass",
+      "checks": {
+        "test": "69/69 pass",
+        "lint": "ok",
+        "typecheck": "ok"
+      },
+      "findings": [
+        {
+          "severity": "nit",
+          "file": ".github/workflows/vercel-preview.yml:16-18",
+          "issue": "Concurrency group is shared by the push and pull_request runs of one branch with cancel-in-progress, so a PR-opened run can cancel an in-flight push run (or the reverse). Both deploy the same head SHA at open time, so harmless; a later push cancels the PR run as intended."
+        },
+        {
+          "severity": "nit",
+          "file": ".github/workflows/vercel-preview.yml:25-29",
+          "issue": "Safety rests on the job-level if plus GitHub withholding secrets from fork pull_request runs (defence in depth, both present). Same-repo PR runs execute the PR's own workflow and npm install, so it trusts anyone with write access; acceptable for this repo."
+        }
+      ],
+      "workflow_answers": {
+        "fork_pr_with_VERCEL_TOKEN": "No. Job if requires head.repo.full_name == github.repository, and fork pull_request runs get no secrets anyway. A deleted fork gives null repo, comparison false, job skipped.",
+        "other_branch_prefix": "No. Job skipped unless head_ref starts with claude/ or devin/ (push trigger is already branch-filtered).",
+        "head_ref_shell_injection": "None. head_ref reaches only expressions (if, concurrency group) and env BRANCH; run blocks use \"$BRANCH\" quoted as an env var; github-script reads process.env.BRANCH. No ${{ }} interpolation inside run: or script:.",
+        "checkout_sha": "Yes, ref is pull_request.head.sha || github.sha; SHA env used for the comment. No pull_request_target."
+      },
+      "hard_rules": "No auth/eligibility/private-field changes beyond rating key lookup (entry.id is the primary page, merged id = newest page per projection.ts:238 grouping and test). No em-dashes added. Test fails without the fix (old pageIds[0]=old gives 4, expected 5)."
     }
   ]
 }
