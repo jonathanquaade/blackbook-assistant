@@ -1,0 +1,138 @@
+{
+  "page_id": "380f84ba-ae13-810c-8fcc-c12a13435d75",
+  "name": "Alex Blumfelder",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-11-21T04:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "calibration": true,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "0 live image(s), no work captured, so no projects to count",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
+    },
+    {
+      "id": "A.depth",
+      "result": "fail",
+      "evidence": "No work images, no depth to assess",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work matches tagged Capabilities (none)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Website and Instagram context shots present and correctly labeled"
+    },
+    {
+      "id": "A.captions",
+      "result": "pass",
+      "evidence": "Every image captioned with project/client and source host"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Video/audio embedded where the practice is time-based, or none needed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "fail",
+      "evidence": "AI Notes explains role, not why there are no images",
+      "fix": "state in AI Notes that no hands-on work exists to capture"
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Live body 0 blocks, single h2 Work section, matches Images property"
+    },
+    {
+      "id": "A.images-present",
+      "result": "fail",
+      "evidence": "0 images, 0 body blocks, no manifest",
+      "fix": "none until scope answered; if kept, capture COLLINS case studies he is credited on"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type=Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website/IG/LinkedIn/Email present or absence documented"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "fail",
+      "evidence": "Capabilities empty; agent-set field, OQ asks scope instead of tagging",
+      "fix": "if Jonathan keeps him, tag Project management per TAXONOMY"
+    },
+    {
+      "id": "B.country-size-status",
+      "result": "pass",
+      "evidence": "Country=['United States'], Size=1, Work Status=Employed"
+    },
+    {
+      "id": "B.work-status",
+      "result": "pass",
+      "evidence": "Work Status sources named in AI Notes per resolution rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=4 with reasoning in AI Notes"
+    },
+    {
+      "id": "C.judgment",
+      "result": "pass",
+      "evidence": "Judgment fields untouched by agent / zero-states (WT=Never, Fam=Don't know them, WW=Unvetted, Rating=None)"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note intent reflected in entry"
+    },
+    {
+      "id": "C.migrated-body",
+      "result": "pass",
+      "evidence": "Clipped/migrated body archived to clipped.md, no stray body text"
+    },
+    {
+      "id": "C.ai-notes",
+      "result": "pass",
+      "evidence": "AI Notes hedged, includes seniority + Autonomy reasoning"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Found using Claude, 2026-06-15. Confirmed employed at COLLIN"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance file present (null source_url tolerated)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, OQs, captions, Source or body"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions terse, conditional, story nudge where due"
+    },
+    {
+      "id": "D.status",
+      "result": "fail",
+      "evidence": "Scope question open (account/MD, not hands-on: CLAUDE.md wants people who DO the work); entry not complete so Needs Review is not earned",
+      "fix": "hold in Revisit/Enriching until Jonathan answers OQ 1, or propose Reject"
+    }
+  ],
+  "to": "scout+scraper"
+}

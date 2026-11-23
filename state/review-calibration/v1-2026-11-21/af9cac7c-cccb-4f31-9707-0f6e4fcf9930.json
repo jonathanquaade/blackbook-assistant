@@ -1,0 +1,138 @@
+{
+  "page_id": "af9cac7c-cccb-4f31-9707-0f6e4fcf9930",
+  "name": "Lesley Boerio",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-11-21T04:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "calibration": true,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "fail",
+      "evidence": "0 live image(s), no work captured, so no projects to count",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
+    },
+    {
+      "id": "A.depth",
+      "result": "fail",
+      "evidence": "No work images, no depth to assess",
+      "fix": "capture 3+ distinct projects (or document in AI Notes why none are findable)"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work matches tagged Capabilities (Brand strategy)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "fail",
+      "evidence": "No website shot (site 404, raised as OQ 1) and no IG shot; IG queued",
+      "fix": "capture the 404 or note it in AI Notes; keep IG queued"
+    },
+    {
+      "id": "A.captions",
+      "result": "pass",
+      "evidence": "Every image captioned with project/client and source host"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Video/audio embedded where the practice is time-based, or none needed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absences"
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Live body 6 blocks, single h2 Work section, matches Images property"
+    },
+    {
+      "id": "A.images-present",
+      "result": "fail",
+      "evidence": "0 images in Images property; body has only 2 link embeds (House of Coco interview, LinkedIn)",
+      "fix": "capture Vyrao ecommerce launch or other named work; if none findable, say so in AI Notes"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type=Person"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "Website/IG/LinkedIn/Email present or absence documented"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: Brand strategy"
+    },
+    {
+      "id": "B.country-size-status",
+      "result": "pass",
+      "evidence": "Country=['UK'], Size=1, Work Status=Freelance"
+    },
+    {
+      "id": "B.work-status",
+      "result": "pass",
+      "evidence": "Work Status sources named in AI Notes per resolution rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=4 with reasoning in AI Notes"
+    },
+    {
+      "id": "C.judgment",
+      "result": "pass",
+      "evidence": "Judgment fields untouched by agent / zero-states (WT=Never, Fam=Don't know them, WW=Unvetted, Rating=None)"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note intent reflected in entry"
+    },
+    {
+      "id": "C.migrated-body",
+      "result": "pass",
+      "evidence": "Clipped/migrated body archived to clipped.md, no stray body text"
+    },
+    {
+      "id": "C.ai-notes",
+      "result": "fail",
+      "evidence": "AI Notes literally reads \"@/tmp/lesley_ai_notes.txt\": a file path was written instead of the content",
+      "fix": "rewrite AI Notes (seniority/autonomy read, Work Status sources)"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper, migrated entry; LinkedIn snippet via Google sea"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance file present (null source_url tolerated)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "fail",
+      "evidence": "Body has 2 embed metadata paragraph(s) ending ' (em-dash) <host>' (pre-c605939 keeper upload)",
+      "fix": "keeper.py line 547 is already fixed (c605939); re-run keeper.py body-reset then upload to regenerate body with ' · '"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions terse, conditional, story nudge where due"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Needs Review earned after complete pass"
+    }
+  ],
+  "to": "scout+scraper"
+}

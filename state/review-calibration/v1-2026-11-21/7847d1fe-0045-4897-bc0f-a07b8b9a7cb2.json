@@ -1,0 +1,133 @@
+{
+  "page_id": "7847d1fe-0045-4897-bc0f-a07b8b9a7cb2",
+  "name": "Stéréo buro ",
+  "reviewer_version": "v1",
+  "reviewed_at": "2026-11-21T04:00:00",
+  "verdict": "fail",
+  "attempt": 1,
+  "calibration": true,
+  "checks": [
+    {
+      "id": "A.project-diversity",
+      "result": "pass",
+      "evidence": "5 projects; but \"Poster and event work\" is a generic bucket"
+    },
+    {
+      "id": "A.depth",
+      "result": "pass",
+      "evidence": "Multiple images per project where the source has them"
+    },
+    {
+      "id": "A.on-capability",
+      "result": "pass",
+      "evidence": "Work matches tagged Capabilities (Graphic design)"
+    },
+    {
+      "id": "A.context-shots",
+      "result": "pass",
+      "evidence": "Site domain hijacked (casino) and IG deleted; both documented in AI Notes; exception reasoning applies though checklist only names the IG-throttle case"
+    },
+    {
+      "id": "A.captions",
+      "result": "fail",
+      "evidence": "3 images captioned \"Poster and event work\", no named project",
+      "fix": "name each poster/event or drop them"
+    },
+    {
+      "id": "A.embeds",
+      "result": "pass",
+      "evidence": "Video/audio embedded where the practice is time-based, or none needed"
+    },
+    {
+      "id": "A.absence-explained",
+      "result": "pass",
+      "evidence": "No unexplained absences"
+    },
+    {
+      "id": "A.body-structure",
+      "result": "pass",
+      "evidence": "Live body 17 blocks, single h2 Work section, matches Images property"
+    },
+    {
+      "id": "A.images-present",
+      "result": "pass",
+      "evidence": "15 live images"
+    },
+    {
+      "id": "B.type",
+      "result": "pass",
+      "evidence": "Type=Studio"
+    },
+    {
+      "id": "B.links",
+      "result": "pass",
+      "evidence": "No live site or email (studio dissolved Dec 2023), documented"
+    },
+    {
+      "id": "B.capabilities",
+      "result": "pass",
+      "evidence": "Capabilities: Graphic design"
+    },
+    {
+      "id": "B.country-size-status",
+      "result": "pass",
+      "evidence": "Country=['France'], Size=2–10, Work Status=Studio"
+    },
+    {
+      "id": "B.work-status",
+      "result": "pass",
+      "evidence": "Work Status sources named in AI Notes per resolution rule"
+    },
+    {
+      "id": "B.autonomy",
+      "result": "pass",
+      "evidence": "Autonomy=None with reasoning in AI Notes"
+    },
+    {
+      "id": "C.judgment",
+      "result": "pass",
+      "evidence": "Judgment fields untouched by agent / zero-states (WT=Never, Fam=Don't know them, WW=Unvetted, Rating=None)"
+    },
+    {
+      "id": "C.clip-note",
+      "result": "pass",
+      "evidence": "Clip note intent reflected in entry"
+    },
+    {
+      "id": "C.migrated-body",
+      "result": "pass",
+      "evidence": "Clipped/migrated body archived to clipped.md, no stray body text"
+    },
+    {
+      "id": "C.ai-notes",
+      "result": "pass",
+      "evidence": "AI Notes hedged, includes seniority + Autonomy reasoning"
+    },
+    {
+      "id": "D.source",
+      "result": "pass",
+      "evidence": "Source: Web clipper migration; confirmed via annuaire-entreprises.da"
+    },
+    {
+      "id": "D.provenance",
+      "result": "pass",
+      "evidence": "state/provenance file present (null source_url tolerated)"
+    },
+    {
+      "id": "D.no-em-dashes",
+      "result": "pass",
+      "evidence": "No em-dashes in AI Notes, OQs, captions, Source or body"
+    },
+    {
+      "id": "D.open-questions",
+      "result": "pass",
+      "evidence": "Open Questions terse, conditional, story nudge where due"
+    },
+    {
+      "id": "D.status",
+      "result": "pass",
+      "evidence": "Needs Review earned after complete pass"
+    }
+  ],
+  "to": "scraper"
+}
