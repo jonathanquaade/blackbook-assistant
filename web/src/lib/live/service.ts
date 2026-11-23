@@ -47,7 +47,7 @@ export function applyEligibility(entries: BundledEntry[], eligibility: Pick<Elig
       return {
         ...entry,
         employer: hide ? (entry.employerFallback ?? null) : entry.employer,
-        rating: eligibility.ratings.get(entry.pageIds[0]) ?? entry.rating,
+        rating: eligibility.ratings.get(entry.id) ?? entry.rating,
       };
     });
 }
