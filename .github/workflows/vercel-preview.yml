@@ -7,22 +7,32 @@ on:
     branches:
       - "claude/**"
       - "devin/**"
+  # A PR opened after the push run finished would otherwise never get the preview link. Same-repo claude/ and
+  # devin/ branches only (job-level `if` below); fork PRs never reach a step with secrets. Not pull_request_target.
+  pull_request:
+    types: [opened, reopened]
 
 permissions:
   contents: read
   pull-requests: write
 
 concurrency:
-  group: vercel-preview-${{ github.ref }}
+  group: vercel-preview-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
   preview:
+    if: >-
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      (startsWith(github.head_ref, 'claude/') || startsWith(github.head_ref, 'devin/')))
     runs-on: ubuntu-latest
     env:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-      BRANCH: ${{ github.ref_name }}
+      BRANCH: ${{ github.head_ref || github.ref_name }}
+      SHA: ${{ github.event.pull_request.head.sha || github.sha }}
     steps:
       - name: Check secrets
         id: gate
@@ -37,6 +47,8 @@ jobs:
           fi
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         if: steps.gate.outputs.run == 'true'
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         if: steps.gate.outputs.run == 'true'
         with:
@@ -79,7 +91,7 @@ jobs:
             const { owner, repo } = context.repo;
             const prs = await github.rest.pulls.list({ owner, repo, state: "open", head: `${owner}:${process.env.BRANCH}` });
             const marker = "<!-- blackbook-preview -->";
-            const body = `${marker}\nPreview deploy: ${process.env.PREVIEW_URL}\n\nCommit ${context.sha.slice(0, 7)}. Sign in as \`jonathan\` with the owner password.`;
+            const body = `${marker}\nPreview deploy: ${process.env.PREVIEW_URL}\n\nCommit ${process.env.SHA.slice(0, 7)}. Sign in as \`jonathan\` with the owner password.`;
             for (const pr of prs.data) {
               const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number: pr.number });
               const mine = comments.find((comment) => comment.body?.startsWith(marker));
