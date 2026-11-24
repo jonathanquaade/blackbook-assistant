@@ -266,3 +266,16 @@ Missing env credentials: NOTION_API_KEY, NOTION_DATABASE_ID (and FIGMA_API_KEY) 
 - 2026-11-21T03:10:35 — P1 run p1-1795230252 (Devin cloud session, Notion key bound via Bot secret): Andy Woodward, Ben Mingo, The Design Office of David McGillivray, Java Jacobs -> Needs Review. Pages: andywoodwardphoto.com, vimeo.com/andywoodward, mouthwash.studio/project/{seed,bonnie-clyde,air-company}, dmcg.co/work/*.md, vimeo.com/user1667433, instagram profiles (logged-out shots only). No logins. Anomaly: javajacobs.com renders with broken images. Reviewer ran in-session, not as an independent subagent.
 2026-11-22T23:10:28Z [process-new / scheduled drain] BLOCKED before any work: NOTION_API_KEY + NOTION_DATABASE_ID absent and api.notion.com not in the network allowlist in this cloud environment ('No env', env_01VPoJ9raWBGzQtX6Q1TKE6B). keeper.py raises KeyError on import; 0 entries processed. Routine-started session cannot switch environments. Fix: add both env vars to the environment the routine runs in and allow api.notion.com, then re-run /process-new. Neither 'No env' nor 'Default' currently holds the secrets.
 2026-11-23T23:10:45Z /process-new (cloud routine): BLOCKED, no work done. keeper.py fails at import (NOTION_API_KEY / NOTION_DATABASE_ID unset in the 'No env' cloud environment env_01VPoJ9raWBGzQtX6Q1TKE6B), and api.notion.com is not in that environment's network allowlist (proxy 403). CI backup still works (GitHub Actions has its own secrets + egress). Fix: add both env vars and allow api.notion.com on the cloud environment, then re-fire. Pipeline board could not be read.
+
+---
+## 2026-11-24 — cloud /process-new blocked (unchanged from 2026-11-23)
+Scheduled P1 drain fired. Still fully blocked, same cause as last run:
+- `NOTION_API_KEY` / `NOTION_DATABASE_ID` NOT set in the "No env" environment (keeper.py dies with KeyError before any work).
+- `api.notion.com` NOT allowlisted: proxy returns `CONNECT tunnel failed, response 403` on a direct test.
+- Checked the "Default" environment too: also unconfigured, and a routine-started session cannot switch to it.
+- Proposed allowlisting api.notion.com via update_environment; refused because no human is present to approve.
+No entries could be read or processed. 0 scouts/scrapers/reviewers spawned. Pipeline board unreadable.
+Fix (Jonathan, in the cloud environment's settings — title-bar env menu > Edit):
+  1. Add env vars: NOTION_API_KEY, NOTION_DATABASE_ID (and FIGMA_API_KEY for Figma portfolios).
+  2. Add allowed host: api.notion.com (plus api.figma.com if Figma capture is wanted).
+  Then a new scheduled run will drain the backlog. Or start this routine with "Run now" and approve the host prompt in that live run.
