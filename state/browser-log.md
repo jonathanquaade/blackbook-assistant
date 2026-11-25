@@ -279,3 +279,17 @@ Fix (Jonathan, in the cloud environment's settings — title-bar env menu > Edit
   1. Add env vars: NOTION_API_KEY, NOTION_DATABASE_ID (and FIGMA_API_KEY for Figma portfolios).
   2. Add allowed host: api.notion.com (plus api.figma.com if Figma capture is wanted).
   Then a new scheduled run will drain the backlog. Or start this routine with "Run now" and approve the host prompt in that live run.
+
+---
+## 2026-11-25 — cloud /process-new blocked (3rd consecutive, unchanged)
+Scheduled P1 drain fired. Still fully blocked, identical cause to 2026-11-23 and 2026-11-24:
+- `NOTION_API_KEY` / `NOTION_DATABASE_ID` NOT set in environment "No env" (env_01VPoJ9raWBGzQtX6Q1TKE6B). Confirmed via get_environment: `environment_variable_names: null` (zero env vars). keeper.py dies with `KeyError: 'NOTION_API_KEY'` at import, before any work.
+- `api.notion.com` NOT allowlisted: `network.allowed_hosts: []`. Proxy blocks the host.
+- This session started detached HEAD at the daily-backup commit; checked out main + fast-forwarded cleanly first.
+- No human present to approve an update_environment edit (unattended scheduled run), so the environment cannot be fixed from here.
+No entries read or processed. 0 scouts/scrapers/reviewers spawned. Pipeline board unreadable.
+Fix (Jonathan, in the cloud environment's settings — title-bar env menu > Edit on "No env"):
+  1. Add env vars: NOTION_API_KEY, NOTION_DATABASE_ID (and FIGMA_API_KEY for Figma portfolios).
+  2. Add allowed host: api.notion.com (plus api.figma.com if Figma capture is wanted).
+  Then a scheduled run will drain the backlog. Or "Run now" in a live session and approve the host prompt there.
+Not scheduling a heartbeat: the blocker is human-gated and re-firing would just re-crash identically.
