@@ -293,3 +293,21 @@ Fix (Jonathan, in the cloud environment's settings — title-bar env menu > Edit
   2. Add allowed host: api.notion.com (plus api.figma.com if Figma capture is wanted).
   Then a scheduled run will drain the backlog. Or "Run now" in a live session and approve the host prompt there.
 Not scheduling a heartbeat: the blocker is human-gated and re-firing would just re-crash identically.
+
+---
+## 2026-11-25T23:10Z — cloud /process-new blocked (4th consecutive this cadence; ~day 51)
+Scheduled P1 drain fired. Still fully blocked, identical cause to 2026-11-22/23/24:
+- `NOTION_API_KEY` / `NOTION_DATABASE_ID` / `FIGMA_API_KEY` all ABSENT from os.environ (verified `python3 -I`, all three False). No `.env` on disk. keeper.py dies with `KeyError: 'NOTION_API_KEY'` at import (line 42) before a single bucket can be read, so `work pipeline` and every scout/scraper/reviewer action are impossible.
+- `api.notion.com` NOT allowlisted: direct curl returns HTTP 000 (CONNECT tunnel blocked by proxy).
+- get_environment this run = env_01VPoJ9raWBGzQtX6Q1TKE6B ("No env", personal default, is_current, editable_by_you=true): `environment_variable_names: null`, `network_secrets: []`, network limited with `allowed_hosts: []`, other_cloud_environments=[Default]. Unchanged.
+- Started detached HEAD at the daily-backup tip; checked out main + pulled origin/main clean before logging.
+Two independent, human-gated blockers, both unchanged since 2026-10-05: (1) the three keys absent from the cloud SESSION env (keeper reads os.environ directly, so these must be real environment VARIABLES set in the env settings, not proxy network-secrets; request_credential cannot satisfy this and no human is watching a card), (2) api.notion.com not allowlisted. Daily backup GitHub Action stays green because GitHub ACTIONS secrets are a separate store NOT provisioned into the cloud session env. I CANNOT fix either from this unattended session: I do not hold the secret values and must never set them via update_environment, and a host-allowlist edit needs an approval prompt no one is watching (and would not unblock without a key anyway).
+0 entries read or processed. 0 scouts/scrapers/reviewers spawned. Pipeline board unreadable.
+Mobile push SENT this run: weekly anti-noise cadence came due (last push 2026-11-18T03:10Z, ~7 days ago, next due ~2026-11-25 = today). The fix-or-pause decision is still outstanding, so the weekly nudge goes out.
+No wakeup scheduled: the blocker is human-gated and a same-session heartbeat re-hits the identical dead env; the daily schedule re-fires on its own, and a fresh session only helps once the vars exist.
+Trigger NOT paused/disabled by me (altering a scheduled trigger is outside this unattended session's mandate; Jonathan has not asked).
+Fix (Jonathan, in the cloud environment's settings — title-bar env menu > Edit on "No env", env_01VPoJ9raWBGzQtX6Q1TKE6B):
+  1. Add env vars: NOTION_API_KEY, NOTION_DATABASE_ID (and FIGMA_API_KEY for Figma portfolios).
+  2. Add allowed host: api.notion.com (plus api.figma.com if Figma capture is wanted).
+  Then a scheduled run will drain the backlog. Or "Run now" in a live session and approve the host prompt there.
+  OR pause this daily routine until the vars exist, so it stops firing into a dead env.
