@@ -322,6 +322,17 @@ Scheduled P1 drain fired. Still fully blocked, identical unchanged cause:
 Both blockers human-gated, unchanged since 2026-10-05, unfixable from this unattended session (I do not hold the key values and must never set them via update_environment; a host-allowlist edit needs an approval prompt no one is watching and would not unblock without the keys; keeper reads os.environ directly so request_credential proxy-secrets cannot satisfy it).
 0 entries read or processed. 0 agents spawned. Pipeline board unreadable.
 NO mobile push this run: the weekly anti-noise push already went out earlier TODAY (~2026-11-25T03:10Z, commit 45a509b, whose log heading was mis-typed as 23:10Z but committed at 03:10Z). A second push the same day is exactly the redundant noise the weekly cadence avoids; next nudge due ~2026-12-02.
+
+---
+## 2026-11-26T (cloud /process-new blocked 6th consecutive; ~day 52)
+Scheduled P1 drain fired. Still fully blocked, identical unchanged cause:
+- NOTION_API_KEY / NOTION_DATABASE_ID absent from os.environ: keeper.py dies with KeyError at import (line 42) before a single bucket is read, so `work pipeline` and every scout/scraper/reviewer action are impossible. FIGMA_API_KEY also absent. No .env on disk.
+- api.notion.com NOT allowlisted: curl returns HTTP 000 (CONNECT tunnel failed, response 403).
+- get_environment unchanged: env_01VPoJ9raWBGzQtX6Q1TKE6B ("No env", personal default, is_current, editable_by_you=true): environment_variable_names=null, network_secrets=[], network limited allowed_hosts=[]. other_cloud_environments=[Default].
+- Started detached HEAD at the daily-backup tip (cb6dd45 = origin/main); checked out main clean.
+Both blockers human-gated and unchanged since 2026-10-05, unfixable from this unattended session: I do not hold the key values and must never set them via update_environment; keeper reads os.environ directly so request_credential proxy-secrets cannot satisfy it; a host-allowlist edit needs an approval prompt no one is watching and would not unblock without the keys anyway. Daily backup GitHub Action stays green because Actions secrets are a separate store not provisioned into the cloud session env.
+0 entries read or processed. 0 agents spawned. Pipeline board unreadable.
+NO mobile push this run: the weekly anti-noise nudge last went out ~2026-11-25T03:10Z (yesterday, commit 45a509b), next due ~2026-12-02. A second push one day later is exactly the redundant noise the weekly cadence avoids; the fix-or-pause decision is already in Jonathan's hands.
 No wakeup scheduled: human-gated blocker; a same-session heartbeat re-hits the identical dead env, and the daily schedule re-fires on its own. Trigger NOT paused/disabled (outside this unattended session's mandate; Jonathan has not asked).
 Fix (Jonathan, cloud env settings - title-bar env menu > Edit on "No env", env_01VPoJ9raWBGzQtX6Q1TKE6B):
   1. Add env vars NOTION_API_KEY, NOTION_DATABASE_ID (and FIGMA_API_KEY for Figma portfolios).
