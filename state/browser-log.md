@@ -338,3 +338,15 @@ Fix (Jonathan, cloud env settings - title-bar env menu > Edit on "No env", env_0
   1. Add env vars NOTION_API_KEY, NOTION_DATABASE_ID (and FIGMA_API_KEY for Figma portfolios).
   2. Add allowed host api.notion.com (plus api.figma.com if Figma capture wanted).
   Then a scheduled run drains the backlog. Or "Run now" in a live session and approve the host prompt there. OR pause this daily routine until the vars exist so it stops firing into a dead env.
+
+---
+## 2026-11-26 (cloud /process-new blocked 7th consecutive; ~day 53)
+Scheduled P1 drain fired. Identical unchanged cause, full diagnosis in the 5th/6th entries above:
+- NOTION_API_KEY / NOTION_DATABASE_ID absent from os.environ -> keeper.py KeyError at import (line 42) before any bucket is read. FIGMA_API_KEY also absent. No .env on disk.
+- api.notion.com not allowlisted.
+- get_environment env_01VPoJ9raWBGzQtX6Q1TKE6B ("No env", personal default, is_current, editable_by_you=true) unchanged: environment_variable_names=null, network_secrets=[], allowed_hosts=[]. other_cloud_environments=[Default].
+- Checked out main + pulled origin/main clean (started detached HEAD at daily-backup tip a5fbca7).
+0 entries read/processed, 0 agents spawned, pipeline board unreadable. Human-gated, unfixable from this unattended session.
+NO mobile push: weekly anti-noise nudge last sent ~2026-11-25 (commit 45a509b), next due ~2026-12-02; a push one day later is the redundant daily noise that cadence avoids.
+NO wakeup scheduled: daily schedule re-fires on its own; a heartbeat re-hits the same dead env.
+Fix (Jonathan, title-bar env menu > Edit "No env" env_01VPoJ9raWBGzQtX6Q1TKE6B): add env vars NOTION_API_KEY, NOTION_DATABASE_ID (+ FIGMA_API_KEY for Figma); add allowed host api.notion.com (+ api.figma.com if wanted). OR pause this daily routine until the vars exist so it stops firing into a dead env.
