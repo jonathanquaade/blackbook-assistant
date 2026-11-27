@@ -362,3 +362,14 @@ Scheduled P1 drain fired. Identical unchanged cause, full diagnosis in the 5th/6
 NO mobile push: weekly anti-noise nudge last sent ~2026-11-25 (commit 45a509b), next due ~2026-12-02; a push two days later is the redundant daily noise that cadence avoids. The fix-or-pause decision is already in Jonathan's hands.
 NO wakeup scheduled: daily schedule re-fires on its own; a heartbeat re-hits the same dead env.
 Fix (Jonathan, title-bar env menu > Edit "No env" env_01VPoJ9raWBGzQtX6Q1TKE6B): add env vars NOTION_API_KEY, NOTION_DATABASE_ID (+ FIGMA_API_KEY for Figma); add allowed host api.notion.com (+ api.figma.com if wanted). OR pause this daily routine until the vars exist so it stops firing into a dead env.
+
+---
+## 2026-11-27 (cloud /process-new blocked 9th consecutive; same-day re-fire of the 8th)
+Routine fired again the same day. State verified identical and unchanged from the 8th entry above (logged earlier today, commit 480a7d2):
+- NOTION_API_KEY / NOTION_DATABASE_ID still absent from os.environ -> keeper.py KeyError at import (line 42); `work pipeline` unreadable. No .env on disk.
+- get_environment env_01VPoJ9raWBGzQtX6Q1TKE6B ("No env", personal default, is_current, editable_by_you=true) re-checked this run: environment_variable_names=null, network_secrets=[], network limited allowed_hosts=[]. other_cloud_environments=[Default]. Unchanged.
+- Started detached HEAD at daily-backup tip (480a7d2 = origin/main); checked out main clean.
+0 entries read/processed, 0 agents spawned. Human-gated, unfixable from this unattended session.
+NO mobile push: weekly anti-noise nudge last sent ~2026-11-25 (commit 45a509b), next due ~2026-12-02; a second push on an already-known, already-reported blocker is the redundant noise that cadence avoids. Fix-or-pause decision already with Jonathan.
+NO wakeup scheduled: daily schedule re-fires on its own; a heartbeat re-hits the same dead env.
+Fix unchanged: add the two (three) env vars + allowlist api.notion.com on env_01VPoJ9raWBGzQtX6Q1TKE6B, OR pause this daily routine until the vars exist so it stops firing into a dead env.
