@@ -350,3 +350,15 @@ Scheduled P1 drain fired. Identical unchanged cause, full diagnosis in the 5th/6
 NO mobile push: weekly anti-noise nudge last sent ~2026-11-25 (commit 45a509b), next due ~2026-12-02; a push one day later is the redundant daily noise that cadence avoids.
 NO wakeup scheduled: daily schedule re-fires on its own; a heartbeat re-hits the same dead env.
 Fix (Jonathan, title-bar env menu > Edit "No env" env_01VPoJ9raWBGzQtX6Q1TKE6B): add env vars NOTION_API_KEY, NOTION_DATABASE_ID (+ FIGMA_API_KEY for Figma); add allowed host api.notion.com (+ api.figma.com if wanted). OR pause this daily routine until the vars exist so it stops firing into a dead env.
+
+---
+## 2026-11-27 (cloud /process-new blocked 8th consecutive; ~day 54)
+Scheduled P1 drain fired. Identical unchanged cause, full diagnosis in the 5th/6th/7th entries above:
+- NOTION_API_KEY / NOTION_DATABASE_ID absent from os.environ -> keeper.py KeyError at import (line 42) before any bucket is read. FIGMA_API_KEY also absent. No .env on disk.
+- api.notion.com not allowlisted (egress proxy 403 on the host).
+- get_environment env_01VPoJ9raWBGzQtX6Q1TKE6B ("No env", personal default, is_current, editable_by_you=true) unchanged: environment_variable_names=null, network_secrets=[], network limited allowed_hosts=[]. other_cloud_environments=[Default].
+- Started detached HEAD at the daily-backup tip (c20da05 = origin/main); checked out main clean.
+0 entries read/processed, 0 agents spawned, pipeline board unreadable. Human-gated, unfixable from this unattended session (I do not hold the key values and must never set them via update_environment; keeper reads os.environ directly so a request_credential proxy-secret cannot satisfy it; a host-allowlist edit needs an approval prompt no one is watching and would not unblock without the keys anyway).
+NO mobile push: weekly anti-noise nudge last sent ~2026-11-25 (commit 45a509b), next due ~2026-12-02; a push two days later is the redundant daily noise that cadence avoids. The fix-or-pause decision is already in Jonathan's hands.
+NO wakeup scheduled: daily schedule re-fires on its own; a heartbeat re-hits the same dead env.
+Fix (Jonathan, title-bar env menu > Edit "No env" env_01VPoJ9raWBGzQtX6Q1TKE6B): add env vars NOTION_API_KEY, NOTION_DATABASE_ID (+ FIGMA_API_KEY for Figma); add allowed host api.notion.com (+ api.figma.com if wanted). OR pause this daily routine until the vars exist so it stops firing into a dead env.
