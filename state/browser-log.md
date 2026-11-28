@@ -373,3 +373,16 @@ Routine fired again the same day. State verified identical and unchanged from th
 NO mobile push: weekly anti-noise nudge last sent ~2026-11-25 (commit 45a509b), next due ~2026-12-02; a second push on an already-known, already-reported blocker is the redundant noise that cadence avoids. Fix-or-pause decision already with Jonathan.
 NO wakeup scheduled: daily schedule re-fires on its own; a heartbeat re-hits the same dead env.
 Fix unchanged: add the two (three) env vars + allowlist api.notion.com on env_01VPoJ9raWBGzQtX6Q1TKE6B, OR pause this daily routine until the vars exist so it stops firing into a dead env.
+
+---
+## 2026-11-28 (cloud /process-new blocked 10th consecutive; ~day 54)
+Scheduled P1 drain fired. Identical unchanged cause, full diagnosis in the 5th-9th entries above:
+- NOTION_API_KEY / NOTION_DATABASE_ID absent from os.environ -> keeper.py KeyError at import (line 42) before any bucket is read, so `work pipeline` and every scout/scraper/reviewer action are impossible. FIGMA_API_KEY also absent. No .env on disk.
+- api.notion.com not allowlisted (egress proxy 403 on the host).
+- get_environment env_01VPoJ9raWBGzQtX6Q1TKE6B ("No env", personal default, is_current, editable_by_you=true) re-checked this run: environment_variable_names=null, network_secrets=[], network limited allowed_hosts=[]. other_cloud_environments=[Default]. Unchanged.
+- Started detached HEAD at the daily-backup tip (27da6e7 = origin/main); checked out main + pulled clean.
+0 entries read/processed, 0 agents spawned, pipeline board unreadable. Human-gated, unfixable from this unattended session (I do not hold the key values and must never set them via update_environment; keeper reads os.environ directly so a request_credential proxy-secret cannot satisfy it; a host-allowlist edit needs an approval prompt no one is watching and would not unblock without the keys anyway).
+NO mobile push: weekly anti-noise nudge last sent ~2026-11-25 (commit 45a509b), next due ~2026-12-02; today 2026-11-28 is inside that window, and a push on an already-known, already-reported, 10-day-unchanged blocker is exactly the redundant daily noise the weekly cadence avoids. Fix-or-pause decision already with Jonathan.
+NO wakeup scheduled: daily schedule re-fires on its own; a same-session heartbeat re-hits the identical dead env.
+Trigger NOT paused/disabled by me (altering a scheduled trigger Jonathan set up is a config change outside this unattended session's mandate; he has not asked).
+Fix (Jonathan, title-bar env menu > Edit "No env" env_01VPoJ9raWBGzQtX6Q1TKE6B): add env vars NOTION_API_KEY, NOTION_DATABASE_ID (+ FIGMA_API_KEY for Figma); add allowed host api.notion.com (+ api.figma.com if wanted). Then a scheduled run drains the backlog. OR pause this daily routine until the vars exist so it stops firing into a dead env.
